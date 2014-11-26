@@ -2,12 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f104e6d-3c77-41bf-a667-6d0409a84d60" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/get-aqlist-xml.js" />
-      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\output\AQList.xml" afterPath="" />
-      <change type="MOVED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\xml\AQList.xml" afterPath="$PROJECT_DIR$/data/xml/AQList.xml.bak.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/js/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archives/output/AQList-clean.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archives/output/AQList-raw.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archives/data/output/AQList.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archives/output/AQList.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archives/output/data1.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archives/output/data2.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archives/output/data3addMissingNodes-concatNames.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archives/output/data4cleanupids.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archives/output/data5addconnidsarray.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archives/output/data6addconnectionOBJECTSarray.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/sync-request-test.js" />
+      <change type="MOVED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\output\AQList-clean.json" afterPath="$PROJECT_DIR$/archives/data/output/AQList-clean.json" />
+      <change type="MOVED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\output\AQList-raw.json" afterPath="$PROJECT_DIR$/archives/data/output/AQList-raw.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/collect.js" afterPath="$PROJECT_DIR$/js/collect.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/test.js" afterPath="$PROJECT_DIR$/js/test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/setupData.js" afterPath="$PROJECT_DIR$/js/setupData.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/vis.js" afterPath="$PROJECT_DIR$/js/vis.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="aqlist-visualization.iws" />
@@ -32,51 +42,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1020">
-              <caret line="18" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/httpsync/build.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="289">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="collect.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/collect.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="6.181818" vertical-offset="0" max-vertical-offset="3927">
-              <caret line="158" column="0" selection-start-line="158" selection-start-column="0" selection-end-line="158" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="request-enhanced.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/node_modules/request-enhanced/lib/request-enhanced.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="4605" max-vertical-offset="5508">
-              <caret line="279" column="0" selection-start-line="279" selection-start-column="0" selection-end-line="279" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="setupData.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="setupData.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/setupData.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="850" max-vertical-offset="14739">
-              <caret line="64" column="14" selection-start-line="60" selection-start-column="1" selection-end-line="68" selection-end-column="6" />
+            <state vertical-scroll-proportion="0.29661018" vertical-offset="4263" max-vertical-offset="14416">
+              <caret line="259" column="66" selection-start-line="259" selection-start-column="66" selection-end-line="259" selection-end-column="66" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -85,50 +55,165 @@
         </entry>
       </file>
       <file leaf-file-name="collect.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/archives/collect.js">
+        <entry file="file://$PROJECT_DIR$/js/collect.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1224" max-vertical-offset="2788">
-              <caret line="89" column="24" selection-start-line="86" selection-start-column="6" selection-end-line="93" selection-end-column="12" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="867" max-vertical-offset="4471">
+              <caret line="64" column="50" selection-start-line="64" selection-start-column="50" selection-end-line="64" selection-end-column="50" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="get-aqlist-xml.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/get-aqlist-xml.js">
+      <file leaf-file-name="AQList.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/archives/output/AQList.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="197" max-vertical-offset="680">
-              <caret line="31" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="290224">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/test.js">
+      <file leaf-file-name="module.js" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/.WebStorm8/system/extLibs/nodejs-v0.10.32-src/core-modules-sources/lib/module.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="6962" max-vertical-offset="8925">
+              <caret line="438" column="24" selection-start-line="438" selection-start-column="24" selection-end-line="438" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="linenums.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/linenums.js">
+      <file leaf-file-name="data6addconnectionOBJECTSarray.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/output/data6addconnectionOBJECTSarray.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
-              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state vertical-scroll-proportion="84.588234" vertical-offset="348751" max-vertical-offset="676328">
+              <caret line="20261" column="21" selection-start-line="20261" selection-start-column="21" selection-end-line="20261" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AQList-clean.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/output/AQList-clean.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.0392156" vertical-offset="323406" max-vertical-offset="725475">
+              <caret line="19039" column="15" selection-start-line="19039" selection-start-column="15" selection-end-line="19039" selection-end-column="15" />
+              <folding>
+                <marker date="1417039708636" expanded="true" signature="505963:508444" placeholder="{&quot;name&quot;: &quot;AL-QAIDA IN IRAQ&quot;...}" />
+                <marker date="1417039708636" expanded="true" signature="508765:509347" placeholder="{&quot;VALUE&quot;: &quot;UN List&quot;...}" />
+                <marker date="1417039708636" expanded="true" signature="509390:509404" placeholder="{&quot;VALUE&quot;: &quot;2012-10-04T00:00:00&quot;...}" />
+                <marker date="1417039708636" expanded="true" signature="509443:510085" placeholder="[...]" />
+                <marker date="1417039708636" expanded="true" signature="509447:509504" placeholder="{&quot;QUALITY&quot;: &quot;a.k.a.&quot;...}" />
+                <marker date="1417039708636" expanded="true" signature="509581:509624" placeholder="{&quot;QUALITY&quot;: &quot;a.k.a.&quot;...}" />
+                <marker date="1417039708636" expanded="true" signature="509688:509731" placeholder="{&quot;QUALITY&quot;: &quot;a.k.a.&quot;...}" />
+                <marker date="1417039708636" expanded="true" signature="509806:509849" placeholder="{&quot;QUALITY&quot;: &quot;a.k.a.&quot;...}" />
+                <marker date="1417039708636" expanded="true" signature="509910:509953" placeholder="{&quot;QUALITY&quot;: &quot;a.k.a.&quot;...}" />
+                <marker date="1417039708636" expanded="true" signature="509997:510040" placeholder="{&quot;QUALITY&quot;: &quot;f.k.a.&quot;...}" />
+                <marker date="1417039708636" expanded="true" signature="510362:510430" placeholder="[...]" />
+                <marker date="1417039708636" expanded="true" signature="510717:511579" placeholder="{&quot;VALUE&quot;: &quot;UN List&quot;...}" />
+                <marker date="1417039708636" expanded="true" signature="511622:511738" placeholder="{...}" />
+                <marker date="1417039708636" expanded="true" signature="511619:511711" placeholder="[...]" />
+                <marker date="1417039708636" expanded="true" signature="511751:512594" placeholder="[...]" />
+                <marker date="1417039708636" expanded="true" signature="511752:511809" placeholder="{&quot;QUALITY&quot;: &quot;a.k.a.&quot;...}" />
+                <marker date="1417039708636" expanded="true" signature="511847:511890" placeholder="{&quot;QUALITY&quot;: &quot;a.k.a.&quot;...}" />
+                <marker date="1417039708636" expanded="true" signature="511928:511971" placeholder="{&quot;QUALITY&quot;: &quot;a.k.a.&quot;...}" />
+                <marker date="1417039708636" expanded="true" signature="512008:512051" placeholder="{&quot;QUALITY&quot;: &quot;a.k.a.&quot;...}" />
+                <marker date="1417039708636" expanded="true" signature="512112:512155" placeholder="{&quot;QUALITY&quot;: &quot;a.k.a.&quot;...}" />
+                <marker date="1417039708636" expanded="true" signature="512198:512241" placeholder="{&quot;QUALITY&quot;: &quot;a.k.a.&quot;...}" />
+                <marker date="1417039708636" expanded="true" signature="512276:512319" placeholder="{&quot;QUALITY&quot;: &quot;a.k.a.&quot;...}" />
+                <marker date="1417039708636" expanded="true" signature="512355:512398" placeholder="{&quot;QUALITY&quot;: &quot;a.k.a.&quot;...}" />
+                <marker date="1417039708636" expanded="true" signature="512434:512477" placeholder="{&quot;QUALITY&quot;: &quot;a.k.a.&quot;...}" />
+                <marker date="1417039708636" expanded="true" signature="512634:514173" placeholder="[...]" />
+                <marker date="1417039708636" expanded="true" signature="512608:512751" placeholder="{&quot;STREET&quot;: &quot;Kitas Ghar, Nazimabad 4, Dahgel-Iftah&quot;...}" />
+                <marker date="1417039708636" expanded="true" signature="512823:512953" placeholder="{&quot;STREET&quot;: &quot;Jamia Maajid, Sulalman Park, Melgium Pura&quot;...}" />
+                <marker date="1417039708636" expanded="true" signature="513028:513044" placeholder="{&quot;NOTE&quot;: &quot;Office Dha’rbi-M’unin, Opposite Khyber Bank, Abbottabad Road, Mansehra, Pakistan&quot;...}" />
+                <marker date="1417039708636" expanded="true" signature="513140:513156" placeholder="{&quot;NOTE&quot;: &quot;Office Dha’rbi-M’unin ZR Brothers, Katcherry Road, Chowk Yadgaar, Peshawar, Pakistan&quot;...}" />
+                <marker date="1417039708636" expanded="true" signature="513256:513272" placeholder="{&quot;NOTE&quot;: &quot;Office Dha’rbi-M’unin, Rm No. 3, Moti Plaza, Near Liaquat Bagh, Muree Road, Rawalpindi, Pakistan&quot;...}" />
+                <marker date="1417039708636" expanded="true" signature="513384:513400" placeholder="{&quot;NOTE&quot;: &quot;Office Dha’rbi-M’unin, Top Floor, Dr. Dawa Khan Dental Clinic Surgeon, Main Baxae, Mingora, Swat, Pakistan&quot;...}" />
+                <marker date="1417039708636" expanded="true" signature="513522:513538" placeholder="{&quot;NOTE&quot;: &quot;Kitab Ghar, Darul Ifta Wal Irshad, Nazimabad No. 4, Karachi, Pakistan, Phone 6683301; Phone 0300-8209199; Fax 6623814&quot;...}" />
+                <marker date="1417039708636" expanded="true" signature="513671:513687" placeholder="{&quot;NOTE&quot;: &quot;302b-40, Good Earth Court, Opposite Pia Planitarium, Block 13a, Gulshan -l Igbal, Karachi, Pakistan; Phone 4979263&quot;...}" />
+                <marker date="1417039708636" expanded="true" signature="513817:513833" placeholder="{&quot;NOTE&quot;: &quot;617 Clifton Center, Block 5, 6th Floor, Clifton, Karachi, Pakistan; Phone 587-2545&quot;...}" />
+                <marker date="1417039708636" expanded="true" signature="513931:513947" placeholder="{&quot;NOTE&quot;: &quot;j) 605 Landmark Plaza, 11 Chundrigar Road, Opposite Jang Building, Karachi, Pakistan; Phone 2623818-19&quot;...}" />
+                <marker date="1417039708636" expanded="true" signature="514065:514081" placeholder="{&quot;NOTE&quot;: &quot;Jamia Masjid, Sulaiman Park, Begum Pura, Lahore, Pakistan; Phone 042-6812081&quot;...}" />
+                <marker date="1417039708636" expanded="true" signature="514378:514483" placeholder="[...]" />
+                <marker date="1417039708636" expanded="true" signature="609888:612271" placeholder="{&quot;name&quot;: &quot;AL-QAIDA IN IRAQ&quot;...}" />
+                <marker date="1417039708636" expanded="true" signature="612582:613162" placeholder="{&quot;VALUE&quot;: &quot;UN List&quot;...}" />
+                <marker date="1417039708636" expanded="true" signature="613204:613216" placeholder="{&quot;VALUE&quot;: &quot;2012-10-04T00:00:00&quot;...}" />
+                <marker date="1417039708636" expanded="true" signature="613254:613871" placeholder="[...]" />
+                <marker date="1417039708636" expanded="true" signature="613257:613311" placeholder="{&quot;QUALITY&quot;: &quot;a.k.a.&quot;...}" />
+                <marker date="1417039708636" expanded="true" signature="613387:613427" placeholder="{&quot;QUALITY&quot;: &quot;a.k.a.&quot;...}" />
+                <marker date="1417039708636" expanded="true" signature="613490:613530" placeholder="{&quot;QUALITY&quot;: &quot;a.k.a.&quot;...}" />
+                <marker date="1417039708636" expanded="true" signature="613604:613644" placeholder="{&quot;QUALITY&quot;: &quot;a.k.a.&quot;...}" />
+                <marker date="1417039708636" expanded="true" signature="613704:613744" placeholder="{&quot;QUALITY&quot;: &quot;a.k.a.&quot;...}" />
+                <marker date="1417039708636" expanded="true" signature="613787:613827" placeholder="{&quot;QUALITY&quot;: &quot;f.k.a.&quot;...}" />
+                <marker date="1417039708636" expanded="true" signature="614139:614203" placeholder="[...]" />
+                <marker date="1417039708636" expanded="true" signature="614478:615338" placeholder="{&quot;VALUE&quot;: &quot;UN List&quot;...}" />
+                <marker date="1417039708636" expanded="true" signature="615380:615490" placeholder="{...}" />
+                <marker date="1417039708636" expanded="true" signature="615376:615464" placeholder="[...]" />
+                <marker date="1417039708636" expanded="true" signature="615502:616304" placeholder="[...]" />
+                <marker date="1417039708636" expanded="true" signature="615502:615556" placeholder="{&quot;QUALITY&quot;: &quot;a.k.a.&quot;...}" />
+                <marker date="1417039708636" expanded="true" signature="615593:615633" placeholder="{&quot;QUALITY&quot;: &quot;a.k.a.&quot;...}" />
+                <marker date="1417039708636" expanded="true" signature="615670:615710" placeholder="{&quot;QUALITY&quot;: &quot;a.k.a.&quot;...}" />
+                <marker date="1417039708636" expanded="true" signature="615746:615786" placeholder="{&quot;QUALITY&quot;: &quot;a.k.a.&quot;...}" />
+                <marker date="1417039708636" expanded="true" signature="615846:615886" placeholder="{&quot;QUALITY&quot;: &quot;a.k.a.&quot;...}" />
+                <marker date="1417039708636" expanded="true" signature="615928:615968" placeholder="{&quot;QUALITY&quot;: &quot;a.k.a.&quot;...}" />
+                <marker date="1417039708636" expanded="true" signature="616002:616042" placeholder="{&quot;QUALITY&quot;: &quot;a.k.a.&quot;...}" />
+                <marker date="1417039708636" expanded="true" signature="616077:616117" placeholder="{&quot;QUALITY&quot;: &quot;a.k.a.&quot;...}" />
+                <marker date="1417039708636" expanded="true" signature="616152:616192" placeholder="{&quot;QUALITY&quot;: &quot;a.k.a.&quot;...}" />
+                <marker date="1417039708636" expanded="true" signature="616343:617842" placeholder="[...]" />
+                <marker date="1417039708636" expanded="true" signature="616316:616454" placeholder="{&quot;STREET&quot;: &quot;Kitas Ghar, Nazimabad 4, Dahgel-Iftah&quot;...}" />
+                <marker date="1417039708636" expanded="true" signature="616525:616650" placeholder="{&quot;STREET&quot;: &quot;Jamia Maajid, Sulalman Park, Melgium Pura&quot;...}" />
+                <marker date="1417039708636" expanded="true" signature="616724:616738" placeholder="{&quot;NOTE&quot;: &quot;Office Dha’rbi-M’unin, Opposite Khyber Bank, Abbottabad Road, Mansehra, Pakistan&quot;...}" />
+                <marker date="1417039708636" expanded="true" signature="616833:616847" placeholder="{&quot;NOTE&quot;: &quot;Office Dha’rbi-M’unin ZR Brothers, Katcherry Road, Chowk Yadgaar, Peshawar, Pakistan&quot;...}" />
+                <marker date="1417039708636" expanded="true" signature="616946:616960" placeholder="{&quot;NOTE&quot;: &quot;Office Dha’rbi-M’unin, Rm No. 3, Moti Plaza, Near Liaquat Bagh, Muree Road, Rawalpindi, Pakistan&quot;...}" />
+                <marker date="1417039708636" expanded="true" signature="617071:617085" placeholder="{&quot;NOTE&quot;: &quot;Office Dha’rbi-M’unin, Top Floor, Dr. Dawa Khan Dental Clinic Surgeon, Main Baxae, Mingora, Swat, Pakistan&quot;...}" />
+                <marker date="1417039708636" expanded="true" signature="617206:617220" placeholder="{&quot;NOTE&quot;: &quot;Kitab Ghar, Darul Ifta Wal Irshad, Nazimabad No. 4, Karachi, Pakistan, Phone 6683301; Phone 0300-8209199; Fax 6623814&quot;...}" />
+                <marker date="1417039708636" expanded="true" signature="617352:617366" placeholder="{&quot;NOTE&quot;: &quot;302b-40, Good Earth Court, Opposite Pia Planitarium, Block 13a, Gulshan -l Igbal, Karachi, Pakistan; Phone 4979263&quot;...}" />
+                <marker date="1417039708636" expanded="true" signature="617495:617509" placeholder="{&quot;NOTE&quot;: &quot;617 Clifton Center, Block 5, 6th Floor, Clifton, Karachi, Pakistan; Phone 587-2545&quot;...}" />
+                <marker date="1417039708636" expanded="true" signature="617606:617620" placeholder="{&quot;NOTE&quot;: &quot;j) 605 Landmark Plaza, 11 Chundrigar Road, Opposite Jang Building, Karachi, Pakistan; Phone 2623818-19&quot;...}" />
+                <marker date="1417039708636" expanded="true" signature="617737:617751" placeholder="{&quot;NOTE&quot;: &quot;Jamia Masjid, Sulaiman Park, Begum Pura, Lahore, Pakistan; Phone 042-6812081&quot;...}" />
+                <marker date="1417039708636" expanded="true" signature="618039:618138" placeholder="[...]" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AQList.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/output/AQList.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.2" vertical-offset="260021" max-vertical-offset="290224">
+              <caret line="15303" column="36" selection-start-line="15303" selection-start-column="27" selection-end-line="15303" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="data5addconnidsarray.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/output/data5addconnidsarray.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="665788">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="data4cleanupids.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/output/data4cleanupids.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="8925" max-vertical-offset="655248">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="data3addMissingNodes-concatNames.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/output/data3addMissingNodes-concatNames.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="714" max-vertical-offset="644946">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -156,10 +241,8 @@
         <option value="$PROJECT_DIR$/objects.mozilla.js" />
         <option value="$PROJECT_DIR$/js/vis2.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/js/vis.js" />
         <option value="$PROJECT_DIR$/package.json.bak.txt" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/js/setupData.js" />
         <option value="$PROJECT_DIR$/archives/setupData-2014-11-23.js" />
         <option value="$PROJECT_DIR$/js/async-waterfall.js" />
         <option value="$PROJECT_DIR$/johns_notes.txt" />
@@ -167,7 +250,11 @@
         <option value="$PROJECT_DIR$/js/app.js" />
         <option value="$PROJECT_DIR$/js/test.js" />
         <option value="$PROJECT_DIR$/js/get-aqlist-xml.js" />
+        <option value="$PROJECT_DIR$/js/sync-request-test.js" />
+        <option value="$PROJECT_DIR$/js/vis.js" />
+        <option value="$PROJECT_DIR$/data/output/data1.json" />
         <option value="$PROJECT_DIR$/js/collect.js" />
+        <option value="$PROJECT_DIR$/js/setupData.js" />
       </list>
     </option>
   </component>
@@ -299,24 +386,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="xml" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aq-list-viz" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aq-list-viz" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="output" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -340,6 +409,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User1\WebstormProjects\aq-list-viz\archives" />
+      <recent name="C:\Users\User1\WebstormProjects\aq-list-viz\archives\data" />
       <recent name="C:\Users\User1\WebstormProjects\aq-list-viz" />
       <recent name="C:\Users\User1\WebstormProjects\aqlist-visualization\js\libs" />
       <recent name="C:\Users\User1\WebstormProjects\aqlist-visualization\js" />
@@ -351,10 +422,14 @@
     </key>
   </component>
   <component name="RunManager" selected="Node.js.app.js">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <method />
     </configuration>
-    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
@@ -364,8 +439,8 @@
       <setting name="preferredDebugBrowser" value="Chrome" />
       <method />
     </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
-      <envs />
+    <configuration default="true" type="ChromiumRemoteDebugType" factoryName="Chromium Remote">
+      <option name="name" value="" />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" uri="http://localhost:63342/aqlist-visualization/index.html">
@@ -388,7 +463,7 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" uri="http://localhost:63342/aqlist-visualization/index.html">
+    <configuration default="false" name="open index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" uri="http://localhost:63342/aq-list-viz/index.html">
       <RunnerSettings RunnerId="JavascriptDebugRunner" />
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
       <method />
@@ -415,7 +490,7 @@
       <method />
     </configuration>
     <list size="4">
-      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.open index.html" />
       <item index="1" class="java.lang.String" itemvalue="Node.js.app.js" />
       <item index="2" class="java.lang.String" itemvalue="Node.js.test.js" />
       <item index="3" class="java.lang.String" itemvalue="Node.js.collect.js" />
@@ -443,32 +518,32 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="916" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3105263" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31794196" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39973614" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30921054" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39973614" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Code Review" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24967907" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24967907" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24967907" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32849604" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32585752" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Get Gist" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31794196" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39973614" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39973614" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -493,41 +568,65 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/js/collect.js</url>
-          <line>158</line>
-          <option name="timeStamp" value="25" />
+          <condition expression="node.REFERENCE_NUMBER).match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/)[0] !== node.id" language="JavaScript" />
+          <url>file://$PROJECT_DIR$/js/setupData.js</url>
+          <line>395</line>
+          <option name="timeStamp" value="56" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/js/collect.js</url>
-          <line>161</line>
-          <option name="timeStamp" value="26" />
+          <url>file://$PROJECT_DIR$/js/setupData.js</url>
+          <line>371</line>
+          <option name="timeStamp" value="57" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/js/collect.js</url>
-          <line>160</line>
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/js/collect.js</url>
-          <line>148</line>
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/js/collect.js</url>
-          <line>151</line>
-          <option name="timeStamp" value="29" />
+          <condition expression="node.REFERENCE_NUMBER).match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/)[0] !== node.id" language="JavaScript" />
+          <url>file://$PROJECT_DIR$/js/setupData.js</url>
+          <line>299</line>
+          <option name="timeStamp" value="61" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="30" />
+      <option name="time" value="65" />
     </breakpoint-manager>
-    <watches-manager />
+    <watches-manager>
+      <configuration name="NodeJSConfigurationType">
+        <watch expression="data.nodes" language="JavaScript" />
+        <watch expression="data.links" language="JavaScript" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/js/get-aqlist-xml.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="197" max-vertical-offset="680">
+          <caret line="31" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="578">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/linenums.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="459">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/johns_notes.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1156" max-vertical-offset="3077">
           <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -535,7 +634,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -550,7 +648,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2788">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -659,13 +756,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/output/AQList-raw.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="429">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.WebStorm8/system/extLibs/nodejs-v0.10.32-src/core-modules-sources/lib/stream.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.28830644" vertical-offset="1115" max-vertical-offset="1938">
@@ -677,7 +767,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1013" max-vertical-offset="3077">
           <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -685,7 +774,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -693,15 +781,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="483">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/archives/collect.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1224" max-vertical-offset="2788">
-          <caret line="89" column="24" selection-start-line="86" selection-start-column="6" selection-end-line="93" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -717,7 +796,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="483">
           <caret line="0" column="54" selection-start-line="0" selection-start-column="54" selection-end-line="0" selection-end-column="54" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -725,7 +803,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -733,7 +810,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -741,25 +817,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/get-aqlist-xml.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="197" max-vertical-offset="680">
-          <caret line="31" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/setupData.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="850" max-vertical-offset="14739">
-          <caret line="64" column="14" selection-start-line="60" selection-start-column="1" selection-end-line="68" selection-end-column="6" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -767,15 +824,221 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="4605" max-vertical-offset="5508">
           <caret line="279" column="0" selection-start-line="279" selection-start-column="0" selection-end-line="279" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/get-aqlist-xml.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/archives/collect.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1224" max-vertical-offset="2788">
+          <caret line="87" column="142" selection-start-line="87" selection-start-column="4" selection-end-line="87" selection-end-column="142" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/sync-request-test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
+          <caret line="11" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/archives/data/output/AQList.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="290224">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/vis.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29372197" vertical-offset="13061" max-vertical-offset="19873">
+          <caret line="776" column="4" selection-start-line="776" selection-start-column="4" selection-end-line="776" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/output/AQList-raw.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="275840" max-vertical-offset="308142">
+          <caret line="16235" column="35" selection-start-line="16235" selection-start-column="26" selection-end-line="16235" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/output/data2.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="5661" max-vertical-offset="317220">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/output/data1.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
+          <caret line="0" column="19" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/output/data3addMissingNodes-concatNames.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="714" max-vertical-offset="644946">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/output/data4cleanupids.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="8925" max-vertical-offset="655248">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/output/data5addconnidsarray.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="665788">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.WebStorm8/system/extLibs/nodejs-v0.10.32-src/core-modules-sources/lib/module.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="6962" max-vertical-offset="8925">
+          <caret line="438" column="24" selection-start-line="438" selection-start-column="24" selection-end-line="438" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/archives/output/AQList.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="290224">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/collect.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="6.181818" vertical-offset="0" max-vertical-offset="3927">
-          <caret line="158" column="0" selection-start-line="158" selection-start-column="0" selection-end-line="158" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="867" max-vertical-offset="4471">
+          <caret line="64" column="50" selection-start-line="64" selection-start-column="50" selection-end-line="64" selection-end-column="50" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/output/AQList.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.2" vertical-offset="260021" max-vertical-offset="290224">
+          <caret line="15303" column="36" selection-start-line="15303" selection-start-column="27" selection-end-line="15303" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/output/AQList-clean.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.0392156" vertical-offset="323406" max-vertical-offset="725475">
+          <caret line="19039" column="15" selection-start-line="19039" selection-start-column="15" selection-end-line="19039" selection-end-column="15" />
+          <folding>
+            <marker date="1417039708636" expanded="true" signature="505963:508444" placeholder="{&quot;name&quot;: &quot;AL-QAIDA IN IRAQ&quot;...}" />
+            <marker date="1417039708636" expanded="true" signature="508765:509347" placeholder="{&quot;VALUE&quot;: &quot;UN List&quot;...}" />
+            <marker date="1417039708636" expanded="true" signature="509390:509404" placeholder="{&quot;VALUE&quot;: &quot;2012-10-04T00:00:00&quot;...}" />
+            <marker date="1417039708636" expanded="true" signature="509443:510085" placeholder="[...]" />
+            <marker date="1417039708636" expanded="true" signature="509447:509504" placeholder="{&quot;QUALITY&quot;: &quot;a.k.a.&quot;...}" />
+            <marker date="1417039708636" expanded="true" signature="509581:509624" placeholder="{&quot;QUALITY&quot;: &quot;a.k.a.&quot;...}" />
+            <marker date="1417039708636" expanded="true" signature="509688:509731" placeholder="{&quot;QUALITY&quot;: &quot;a.k.a.&quot;...}" />
+            <marker date="1417039708636" expanded="true" signature="509806:509849" placeholder="{&quot;QUALITY&quot;: &quot;a.k.a.&quot;...}" />
+            <marker date="1417039708636" expanded="true" signature="509910:509953" placeholder="{&quot;QUALITY&quot;: &quot;a.k.a.&quot;...}" />
+            <marker date="1417039708636" expanded="true" signature="509997:510040" placeholder="{&quot;QUALITY&quot;: &quot;f.k.a.&quot;...}" />
+            <marker date="1417039708636" expanded="true" signature="510362:510430" placeholder="[...]" />
+            <marker date="1417039708636" expanded="true" signature="510717:511579" placeholder="{&quot;VALUE&quot;: &quot;UN List&quot;...}" />
+            <marker date="1417039708636" expanded="true" signature="511622:511738" placeholder="{...}" />
+            <marker date="1417039708636" expanded="true" signature="511619:511711" placeholder="[...]" />
+            <marker date="1417039708636" expanded="true" signature="511751:512594" placeholder="[...]" />
+            <marker date="1417039708636" expanded="true" signature="511752:511809" placeholder="{&quot;QUALITY&quot;: &quot;a.k.a.&quot;...}" />
+            <marker date="1417039708636" expanded="true" signature="511847:511890" placeholder="{&quot;QUALITY&quot;: &quot;a.k.a.&quot;...}" />
+            <marker date="1417039708636" expanded="true" signature="511928:511971" placeholder="{&quot;QUALITY&quot;: &quot;a.k.a.&quot;...}" />
+            <marker date="1417039708636" expanded="true" signature="512008:512051" placeholder="{&quot;QUALITY&quot;: &quot;a.k.a.&quot;...}" />
+            <marker date="1417039708636" expanded="true" signature="512112:512155" placeholder="{&quot;QUALITY&quot;: &quot;a.k.a.&quot;...}" />
+            <marker date="1417039708636" expanded="true" signature="512198:512241" placeholder="{&quot;QUALITY&quot;: &quot;a.k.a.&quot;...}" />
+            <marker date="1417039708636" expanded="true" signature="512276:512319" placeholder="{&quot;QUALITY&quot;: &quot;a.k.a.&quot;...}" />
+            <marker date="1417039708636" expanded="true" signature="512355:512398" placeholder="{&quot;QUALITY&quot;: &quot;a.k.a.&quot;...}" />
+            <marker date="1417039708636" expanded="true" signature="512434:512477" placeholder="{&quot;QUALITY&quot;: &quot;a.k.a.&quot;...}" />
+            <marker date="1417039708636" expanded="true" signature="512634:514173" placeholder="[...]" />
+            <marker date="1417039708636" expanded="true" signature="512608:512751" placeholder="{&quot;STREET&quot;: &quot;Kitas Ghar, Nazimabad 4, Dahgel-Iftah&quot;...}" />
+            <marker date="1417039708636" expanded="true" signature="512823:512953" placeholder="{&quot;STREET&quot;: &quot;Jamia Maajid, Sulalman Park, Melgium Pura&quot;...}" />
+            <marker date="1417039708636" expanded="true" signature="513028:513044" placeholder="{&quot;NOTE&quot;: &quot;Office Dha’rbi-M’unin, Opposite Khyber Bank, Abbottabad Road, Mansehra, Pakistan&quot;...}" />
+            <marker date="1417039708636" expanded="true" signature="513140:513156" placeholder="{&quot;NOTE&quot;: &quot;Office Dha’rbi-M’unin ZR Brothers, Katcherry Road, Chowk Yadgaar, Peshawar, Pakistan&quot;...}" />
+            <marker date="1417039708636" expanded="true" signature="513256:513272" placeholder="{&quot;NOTE&quot;: &quot;Office Dha’rbi-M’unin, Rm No. 3, Moti Plaza, Near Liaquat Bagh, Muree Road, Rawalpindi, Pakistan&quot;...}" />
+            <marker date="1417039708636" expanded="true" signature="513384:513400" placeholder="{&quot;NOTE&quot;: &quot;Office Dha’rbi-M’unin, Top Floor, Dr. Dawa Khan Dental Clinic Surgeon, Main Baxae, Mingora, Swat, Pakistan&quot;...}" />
+            <marker date="1417039708636" expanded="true" signature="513522:513538" placeholder="{&quot;NOTE&quot;: &quot;Kitab Ghar, Darul Ifta Wal Irshad, Nazimabad No. 4, Karachi, Pakistan, Phone 6683301; Phone 0300-8209199; Fax 6623814&quot;...}" />
+            <marker date="1417039708636" expanded="true" signature="513671:513687" placeholder="{&quot;NOTE&quot;: &quot;302b-40, Good Earth Court, Opposite Pia Planitarium, Block 13a, Gulshan -l Igbal, Karachi, Pakistan; Phone 4979263&quot;...}" />
+            <marker date="1417039708636" expanded="true" signature="513817:513833" placeholder="{&quot;NOTE&quot;: &quot;617 Clifton Center, Block 5, 6th Floor, Clifton, Karachi, Pakistan; Phone 587-2545&quot;...}" />
+            <marker date="1417039708636" expanded="true" signature="513931:513947" placeholder="{&quot;NOTE&quot;: &quot;j) 605 Landmark Plaza, 11 Chundrigar Road, Opposite Jang Building, Karachi, Pakistan; Phone 2623818-19&quot;...}" />
+            <marker date="1417039708636" expanded="true" signature="514065:514081" placeholder="{&quot;NOTE&quot;: &quot;Jamia Masjid, Sulaiman Park, Begum Pura, Lahore, Pakistan; Phone 042-6812081&quot;...}" />
+            <marker date="1417039708636" expanded="true" signature="514378:514483" placeholder="[...]" />
+            <marker date="1417039708636" expanded="true" signature="609888:612271" placeholder="{&quot;name&quot;: &quot;AL-QAIDA IN IRAQ&quot;...}" />
+            <marker date="1417039708636" expanded="true" signature="612582:613162" placeholder="{&quot;VALUE&quot;: &quot;UN List&quot;...}" />
+            <marker date="1417039708636" expanded="true" signature="613204:613216" placeholder="{&quot;VALUE&quot;: &quot;2012-10-04T00:00:00&quot;...}" />
+            <marker date="1417039708636" expanded="true" signature="613254:613871" placeholder="[...]" />
+            <marker date="1417039708636" expanded="true" signature="613257:613311" placeholder="{&quot;QUALITY&quot;: &quot;a.k.a.&quot;...}" />
+            <marker date="1417039708636" expanded="true" signature="613387:613427" placeholder="{&quot;QUALITY&quot;: &quot;a.k.a.&quot;...}" />
+            <marker date="1417039708636" expanded="true" signature="613490:613530" placeholder="{&quot;QUALITY&quot;: &quot;a.k.a.&quot;...}" />
+            <marker date="1417039708636" expanded="true" signature="613604:613644" placeholder="{&quot;QUALITY&quot;: &quot;a.k.a.&quot;...}" />
+            <marker date="1417039708636" expanded="true" signature="613704:613744" placeholder="{&quot;QUALITY&quot;: &quot;a.k.a.&quot;...}" />
+            <marker date="1417039708636" expanded="true" signature="613787:613827" placeholder="{&quot;QUALITY&quot;: &quot;f.k.a.&quot;...}" />
+            <marker date="1417039708636" expanded="true" signature="614139:614203" placeholder="[...]" />
+            <marker date="1417039708636" expanded="true" signature="614478:615338" placeholder="{&quot;VALUE&quot;: &quot;UN List&quot;...}" />
+            <marker date="1417039708636" expanded="true" signature="615380:615490" placeholder="{...}" />
+            <marker date="1417039708636" expanded="true" signature="615376:615464" placeholder="[...]" />
+            <marker date="1417039708636" expanded="true" signature="615502:616304" placeholder="[...]" />
+            <marker date="1417039708636" expanded="true" signature="615502:615556" placeholder="{&quot;QUALITY&quot;: &quot;a.k.a.&quot;...}" />
+            <marker date="1417039708636" expanded="true" signature="615593:615633" placeholder="{&quot;QUALITY&quot;: &quot;a.k.a.&quot;...}" />
+            <marker date="1417039708636" expanded="true" signature="615670:615710" placeholder="{&quot;QUALITY&quot;: &quot;a.k.a.&quot;...}" />
+            <marker date="1417039708636" expanded="true" signature="615746:615786" placeholder="{&quot;QUALITY&quot;: &quot;a.k.a.&quot;...}" />
+            <marker date="1417039708636" expanded="true" signature="615846:615886" placeholder="{&quot;QUALITY&quot;: &quot;a.k.a.&quot;...}" />
+            <marker date="1417039708636" expanded="true" signature="615928:615968" placeholder="{&quot;QUALITY&quot;: &quot;a.k.a.&quot;...}" />
+            <marker date="1417039708636" expanded="true" signature="616002:616042" placeholder="{&quot;QUALITY&quot;: &quot;a.k.a.&quot;...}" />
+            <marker date="1417039708636" expanded="true" signature="616077:616117" placeholder="{&quot;QUALITY&quot;: &quot;a.k.a.&quot;...}" />
+            <marker date="1417039708636" expanded="true" signature="616152:616192" placeholder="{&quot;QUALITY&quot;: &quot;a.k.a.&quot;...}" />
+            <marker date="1417039708636" expanded="true" signature="616343:617842" placeholder="[...]" />
+            <marker date="1417039708636" expanded="true" signature="616316:616454" placeholder="{&quot;STREET&quot;: &quot;Kitas Ghar, Nazimabad 4, Dahgel-Iftah&quot;...}" />
+            <marker date="1417039708636" expanded="true" signature="616525:616650" placeholder="{&quot;STREET&quot;: &quot;Jamia Maajid, Sulalman Park, Melgium Pura&quot;...}" />
+            <marker date="1417039708636" expanded="true" signature="616724:616738" placeholder="{&quot;NOTE&quot;: &quot;Office Dha’rbi-M’unin, Opposite Khyber Bank, Abbottabad Road, Mansehra, Pakistan&quot;...}" />
+            <marker date="1417039708636" expanded="true" signature="616833:616847" placeholder="{&quot;NOTE&quot;: &quot;Office Dha’rbi-M’unin ZR Brothers, Katcherry Road, Chowk Yadgaar, Peshawar, Pakistan&quot;...}" />
+            <marker date="1417039708636" expanded="true" signature="616946:616960" placeholder="{&quot;NOTE&quot;: &quot;Office Dha’rbi-M’unin, Rm No. 3, Moti Plaza, Near Liaquat Bagh, Muree Road, Rawalpindi, Pakistan&quot;...}" />
+            <marker date="1417039708636" expanded="true" signature="617071:617085" placeholder="{&quot;NOTE&quot;: &quot;Office Dha’rbi-M’unin, Top Floor, Dr. Dawa Khan Dental Clinic Surgeon, Main Baxae, Mingora, Swat, Pakistan&quot;...}" />
+            <marker date="1417039708636" expanded="true" signature="617206:617220" placeholder="{&quot;NOTE&quot;: &quot;Kitab Ghar, Darul Ifta Wal Irshad, Nazimabad No. 4, Karachi, Pakistan, Phone 6683301; Phone 0300-8209199; Fax 6623814&quot;...}" />
+            <marker date="1417039708636" expanded="true" signature="617352:617366" placeholder="{&quot;NOTE&quot;: &quot;302b-40, Good Earth Court, Opposite Pia Planitarium, Block 13a, Gulshan -l Igbal, Karachi, Pakistan; Phone 4979263&quot;...}" />
+            <marker date="1417039708636" expanded="true" signature="617495:617509" placeholder="{&quot;NOTE&quot;: &quot;617 Clifton Center, Block 5, 6th Floor, Clifton, Karachi, Pakistan; Phone 587-2545&quot;...}" />
+            <marker date="1417039708636" expanded="true" signature="617606:617620" placeholder="{&quot;NOTE&quot;: &quot;j) 605 Landmark Plaza, 11 Chundrigar Road, Opposite Jang Building, Karachi, Pakistan; Phone 2623818-19&quot;...}" />
+            <marker date="1417039708636" expanded="true" signature="617737:617751" placeholder="{&quot;NOTE&quot;: &quot;Jamia Masjid, Sulaiman Park, Begum Pura, Lahore, Pakistan; Phone 042-6812081&quot;...}" />
+            <marker date="1417039708636" expanded="true" signature="618039:618138" placeholder="[...]" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/output/data6addconnectionOBJECTSarray.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="84.588234" vertical-offset="348751" max-vertical-offset="676328">
+          <caret line="20261" column="21" selection-start-line="20261" selection-start-column="21" selection-end-line="20261" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/setupData.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29661018" vertical-offset="4263" max-vertical-offset="14416">
+          <caret line="259" column="66" selection-start-line="259" selection-start-column="66" selection-end-line="259" selection-end-column="66" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

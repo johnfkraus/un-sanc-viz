@@ -57,10 +57,7 @@
     "name": "NASHWAN ABD AL-RAZZAQ ABD AL-BAQI",
     "id": "QI.A.12.01",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "111513",
@@ -124,10 +121,7 @@
     "name": "ABD AL WAHAB ABD AL HAFIZ",
     "id": "QI.A.157.04",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2827788",
@@ -179,13 +173,7 @@
     "name": "ADIL MUHAMMAD MAHMUD ABD AL-KHALIQ",
     "id": "QI.A.255.08",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.A.4.01",
-     "QE.L.11.01"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2959427",
@@ -284,12 +272,7 @@
     "name": "SAID JAN ‘ABD AL-SALAM",
     "id": "QI.A.289.11",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.A.4.01"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "111533",
@@ -344,12 +327,7 @@
     "name": "ABD ALLAH MOHAMED RAGAB ABDEL RAHMAN",
     "id": "QI.A.192.05",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.A.3.01"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "111449",
@@ -399,10 +377,7 @@
     "name": "MAJEED ABDUL CHAUDHRY",
     "id": "QI.A.54.01",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "111395",
@@ -529,10 +504,7 @@
     "name": "ZULKIFLI ABDUL HIR",
     "id": "QI.A.109.03",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "111450",
@@ -583,10 +555,7 @@
     "name": "DIEMAN ABDULKADIR IZZAT",
     "id": "QI.A.200.05",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "111514",
@@ -630,10 +599,7 @@
     "name": "ABDUL MANAN AGHA",
     "id": "QI.A.18.01",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2972739",
@@ -737,13 +703,7 @@
     "name": "MUHAMMAD JIBRIL ABDUL RAHMAN",
     "id": "QI.A.295.11",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.J.92.02",
-     "QI.A.86.03"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2786469",
@@ -801,12 +761,7 @@
     "name": "ALY SOLIMAN MASSOUD ABDUL SAYED",
     "id": "QI.A.229.07",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.L.11.01"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "111451",
@@ -891,10 +846,7 @@
     "name": "MOHAMAD IQBAL ABDURRAHMAN",
     "id": "QI.A.86.03",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2983651",
@@ -958,15 +910,7 @@
     "name": "ABDUR REHMAN",
     "id": "QI.A.309.12",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.A.4.01",
-     "QE.H.130.10",
-     "QE.J.19.01",
-     "QE.A.121.05"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2922613",
@@ -1067,10 +1011,7 @@
     "name": "MUHAMMAD ABDALLAH HASAN ABU-AL-KHAYR",
     "id": "QI.A.285.10",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "111640",
@@ -1141,14 +1082,7 @@
     "name": "MOHAMED GHASSAN ALI ABU DHESS",
     "id": "QI.A.130.03",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QI.S.128.03",
-     "QI.M.129.03",
-     "QI.A.132.03"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2758287",
@@ -1200,12 +1134,7 @@
     "name": "ISMAIL MOHAMED ISMAIL ABU SHAWEESH",
     "id": "QI.A.224.06",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QI.A.201.05"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "111732",
@@ -1270,12 +1199,7 @@
     "name": "YASSER MOHAMED ISMAIL ABU SHAWEESH",
     "id": "QI.A.201.05",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QI.A.224.06"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2983821",
@@ -1341,15 +1265,7 @@
     "name": "MOCHAMMAD ACHWAN",
     "id": "QI.A.304.12",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.J.133.12",
-     "QI.B.217.06",
-     "QI.B.293.11",
-     "QE.J.92.02"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "3012677",
@@ -1406,13 +1322,7 @@
     "name": "IYAD AG GHALI",
     "id": "QI.A.316.13",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.T.14.01",
-     "QE.M.134.12"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "111953",
@@ -1470,10 +1380,7 @@
     "name": "FARHAD KANABI AHMAD",
     "id": "QI.A.203.05",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2762998",
@@ -1530,10 +1437,7 @@
     "name": "NAJMUDDIN FARAJ AHMAD",
     "id": "QI.A.226.06",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2797952",
@@ -1623,10 +1527,7 @@
     "name": "JABER ABDALLAH JABER AHMAD AL-JALAHMAH",
     "id": "QI.A.237.08",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "111498",
@@ -1683,10 +1584,7 @@
     "name": "TARIQ ANWAR EL SAYED AHMED",
     "id": "QI.A.14.01",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "111641",
@@ -1743,12 +1641,7 @@
     "name": "ZAKI EZAT ZAKI AHMED",
     "id": "QI.A.193.05",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.A.3.01"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "111733",
@@ -1803,10 +1696,7 @@
     "name": "FARID AIDER",
     "id": "QI.A.161.04",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "3002734",
@@ -1853,12 +1743,7 @@
     "name": "DJAMEL AKKACHA",
     "id": "QI.A.313.13",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.T.14.01"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "111500",
@@ -1920,10 +1805,7 @@
     "name": "MOHAMED AMINE AKLI",
     "id": "QI.A.91.03",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "3152553",
@@ -2015,14 +1897,7 @@
     "name": "ABOU MOHAMED AL ADNANI",
     "id": "QI.A.325.14",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.J.115.04",
-     "QI.A.317.13",
-     "QI.A.299.11"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "3152437",
@@ -2082,12 +1957,7 @@
     "name": "HAJJAJ BIN FAHD AL AJMI",
     "id": "QI.A.328.14",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.A.137.14"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "3162065",
@@ -2146,12 +2016,7 @@
     "name": "SHAFI SULTAN MOHAMMED AL-AJMI",
     "id": "QI.A.338.14",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.A.137.14"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2797951",
@@ -2236,10 +2101,7 @@
     "name": "HAMID ABDALLAH AHMAD AL-ALI",
     "id": "QI.A.236.08",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "3152863",
@@ -2290,15 +2152,7 @@
     "name": "HAMID HAMAD HAMID AL-‘ALI",
     "id": "QI.A.326.14",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.J.115.04",
-     "QE.A.137.14",
-     "QI.A.299.11",
-     "QI.A.317.13"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "111734",
@@ -2396,10 +2250,7 @@
     "name": "MEHREZ BEN MAHMOUD BEN SASSI AL-AMDOUNI",
     "id": "QI.A.92.03",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "3162066",
@@ -2464,13 +2315,7 @@
     "name": "‘ABD AL-RAHMAN KHALAF ‘UBAYD JUDAY’ AL-‘ANIZI",
     "id": "QI.A.335.14",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.A.4.01",
-     "QE.J.115.04"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "111735",
@@ -2546,12 +2391,7 @@
     "name": "MOHAMED BEN BELGACEM BEN ABDALLAH AL-AOUADI",
     "id": "QI.A.60.02",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.A.143.14"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "111736",
@@ -2617,10 +2457,7 @@
     "name": "AQEEL ABDULAZIZ AQEEL AL-AQEEL",
     "id": "QI.A.171.04",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2962519",
@@ -2733,16 +2570,7 @@
     "name": "IBRAHIM HASSAN TALI AL-ASIRI",
     "id": "QI.A.291.11",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.A.129.10",
-     "QI.A.274.10",
-     "QI.A.275.10",
-     "QI.A.282.10",
-     "QI.A.283.10"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2913655",
@@ -2817,10 +2645,7 @@
     "name": "ANWAR NASSER ABDULLA AL-AULAQI",
     "id": "QI.A.283.10",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "111834",
@@ -2903,10 +2728,7 @@
     "name": "CHIHEB BEN MOHAMED BEN MOKHTAR AL-AYARI",
     "id": "QI.A.93.03",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "3152650",
@@ -2951,13 +2773,7 @@
     "name": "ABDUL MOHSEN ABDALLAH IBRAHIM AL CHAREKH",
     "id": "QI.A.324.14",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.A.4.01",
-     "QE.A.137.14"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "111835",
@@ -3087,10 +2903,7 @@
     "name": "SAID BEN ABDELHAKIM BEN OMAR AL-CHERIF",
     "id": "QI.A.138.03",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2786246",
@@ -3164,13 +2977,7 @@
     "name": "SALEM NOR ELDIN AMOHAMED AL-DABSKI",
     "id": "QI.A.231.07",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.L.11.01",
-     "QE.A.4.01"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "111836",
@@ -3218,14 +3025,7 @@
     "name": "ASCHRAF AL-DAGMA",
     "id": "QI.A.132.03",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QI.S.128.03",
-     "QI.M.129.03",
-     "QI.A.130.03"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2894441",
@@ -3330,12 +3130,7 @@
     "name": "MUTHANNA HARITH AL-DARI",
     "id": "QI.A.278.10",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.J.115.04"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "111837",
@@ -3401,10 +3196,7 @@
     "name": "NOUREDDINE BEN ALI BEN BELKASSEM AL-DRISSI",
     "id": "QI.A.149.03",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "111763",
@@ -3484,10 +3276,7 @@
     "name": "KHALID ABD AL-RAHMAN HAMD AL-FAWAZ",
     "id": "QI.A.59.02",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2760967",
@@ -3532,10 +3321,7 @@
     "name": "MOHAMMED AL GHABRA",
     "id": "QI.A.228.06",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2968403",
@@ -3624,14 +3410,7 @@
     "name": "OTHMAN AHMED OTHMAN AL-GHAMDI",
     "id": "QI.A.292.11",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.A.129.10",
-     "QI.A.282.10",
-     "QI.A.288.10"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "3161940",
@@ -3683,12 +3462,7 @@
     "name": "IBRAHIM SULEIMAN HAMAD AL-HABLAIN",
     "id": "QI.A.332.14",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.A.144.14"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "111857",
@@ -3765,10 +3539,7 @@
     "name": "FETHI BEN HASSEN BEN SALEM AL-HADDAD",
     "id": "QI.A.160.04",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "111916",
@@ -3862,10 +3633,7 @@
     "name": "KAMAL BEN MAOELDI BEN HASSAN AL-HAMRAOUI",
     "id": "QI.A.140.03",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2827324",
@@ -3932,12 +3700,7 @@
     "name": "ABD AL-RAHMAN MUHAMMAD JAFFAR ‘ALI",
     "id": "QI.A.254.08",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.A.4.01"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "111917",
@@ -4036,10 +3799,7 @@
     "name": "AHMED MOHAMMED HAMED ALI",
     "id": "QI.A.21.01",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "111496",
@@ -4089,10 +3849,7 @@
     "name": "SULAIMAN JASSEM SULAIMAN ALI ABO GHAITH",
     "id": "QI.A.154.04",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2975516",
@@ -4155,12 +3912,7 @@
     "name": "IBRAHIM AWWAD IBRAHIM ALI AL-BADRI AL-SAMARRAI",
     "id": "QI.A.299.11",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.J.115.04"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2973988",
@@ -4251,13 +4003,7 @@
     "name": "MATI UR-REHMAN ALI MUHAMMAD",
     "id": "QI.M.296.11",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.L.96.03",
-     "QE.H.130.10"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "111918",
@@ -4313,12 +4059,7 @@
     "name": "MOHAMMED AHMED SHAWKI AL ISLAMBOLLY",
     "id": "QI.A.194.05",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.A.3.01"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "3152864",
@@ -4431,12 +4172,7 @@
     "name": "ABDELRAHMAN MOUHAMAD ZAFIR AL DABIDI AL JAHANI",
     "id": "QI.A.327.14",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.A.137.14"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "111784",
@@ -4490,10 +4226,7 @@
     "name": "IMAD BEN BECHIR BEN HAMDA AL-JAMMALI",
     "id": "QI.A.176.04",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "3020633",
@@ -4544,15 +4277,7 @@
     "name": "ABU MOHAMMED AL-JAWLANI",
     "id": "QI.A.317.13",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.A.137.14",
-     "QE.J.115.04",
-     "QI.A.299.11",
-     "QI.A.6.01"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "111902",
@@ -4592,13 +4317,7 @@
     "name": "ABU BAKR AL-JAZIRI",
     "id": "QI.A.58.02",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.A.69.02",
-     "QE.A.4.01"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "112016",
@@ -4651,12 +4370,7 @@
     "name": "RIADH BEN BELKASSEM BEN MOHAMED AL-JELASSI",
     "id": "QI.A.71.02",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.T.90.02"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "112017",
@@ -4722,10 +4436,7 @@
     "name": "FAOUZI BEN MOHAMED BEN AHMED AL-JENDOUBI",
     "id": "QI.A.101.03",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "3162146",
@@ -4801,12 +4512,7 @@
     "name": "MAYSAR ALI MUSA ABDALLAH AL-JUBURI",
     "id": "QI.A.337.14",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.A.137.14"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "3026942",
@@ -4921,17 +4627,7 @@
     "name": "MUHAMMAD JAMAL ABD-AL RAHIM AHMAD AL-KASHIF",
     "id": "QI.A.318.13",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.A.4.01",
-     "QE.A.3.01",
-     "QE.M.136.13",
-     "QE.A.129.10",
-     "QI.A.6.01",
-     "QE.T.14.01"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2786785",
@@ -5055,12 +4751,7 @@
     "name": "FAHD MUHAMMAD 'ABD AL-'AZIZ AL-KHASHIBAN",
     "id": "QI.A.233.07",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.A.1.01"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "111925",
@@ -5123,10 +4814,7 @@
     "name": "HACENE ALLANE",
     "id": "QI.A.170.04",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "111785",
@@ -5183,10 +4871,7 @@
     "name": "HABIB BEN AHMED AL-LOUBIRI",
     "id": "QI.A.177.04",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "111920",
@@ -5257,10 +4942,7 @@
     "name": "TAREK BEN HABIB BEN AL-TOUMI AL-MAAROUFI",
     "id": "QI.A.74.02",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "3029127",
@@ -5352,10 +5034,7 @@
     "name": "ABD-AL-HAMID AL-MASLI",
     "id": "QI.A.320.13",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "3161939",
@@ -5425,12 +5104,7 @@
     "name": "AZZAM ABDULLAH ZUREIK AL-MAULID AL-SUBHI",
     "id": "QI.A.330.14",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.A.4.01"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2892251",
@@ -5483,12 +5157,7 @@
     "name": "AKRAM TURKI HISHAN AL-MAZIDIH",
     "id": "QI.A.276.10",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QI.A.277.10"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2892252",
@@ -5545,12 +5214,7 @@
     "name": "GHAZY FEZZA HISHAN AL-MAZIDIH",
     "id": "QI.A.277.10",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QI.A.276.10"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "3162145",
@@ -5631,13 +5295,7 @@
     "name": "‘ABD AL-RAHMAN BIN ‘UMAYR AL-NU’AYMI",
     "id": "QI.A.334.14",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.A.4.01",
-     "QE.J.115.04"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "113223",
@@ -5692,10 +5350,7 @@
     "name": "ISAM ALI MOHAMED ALOUCHE",
     "id": "QI.T.76.02",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2863393",
@@ -5775,12 +5430,7 @@
     "name": "FAZEEL-A-TUL SHAYKH ABU MOHAMMED AMEEN AL-PESHAWARI",
     "id": "QI.A.273.09",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.A.4.01"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "3161941",
@@ -5872,13 +5522,7 @@
     "name": "‘ABD AL-RAHMAN MUHAMMAD MUSTAFA AL-QADULI",
     "id": "QI.A.339.14",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.J.115.04",
-     "QE.A.4.01"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2903810",
@@ -5953,10 +5597,7 @@
     "name": "QASIM YAHYA MAHDI AL-RIMI",
     "id": "QI.A.282.10",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "111786",
@@ -6031,10 +5672,7 @@
     "name": "NAZIH ABDUL HAMED NABIH AL-RUQAI’I",
     "id": "QI.A.23.01",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2881835",
@@ -6156,14 +5794,7 @@
     "name": "SAID ALI AL-SHIHRI",
     "id": "QI.A.275.10",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QI.A.274.10",
-     "QE.A.129.10",
-     "QE.A.4.01"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2827659",
@@ -6234,12 +5865,7 @@
     "name": "KHALIFA MUHAMMAD TURKI AL-SUBAIY",
     "id": "QI.A.253.08",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.A.4.01"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2787013",
@@ -6342,12 +5968,7 @@
     "name": "ABDUL RAHIM AL-TALHI",
     "id": "QI.A.234.07",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.A.1.01"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "112022",
@@ -6403,10 +6024,7 @@
     "name": "AL-AZHAR BEN MOHAMMED BEN EL-ABED AL-TLILI",
     "id": "QI.A.77.02",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "112023",
@@ -6563,10 +6181,7 @@
     "name": "MOURAD BEN ALI BEN AL-BASHEER AL-TRABELSI",
     "id": "QI.A.151.03",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "112024",
@@ -6655,12 +6270,7 @@
     "name": "HASSAN ABDULLAH HERSI AL-TURKI",
     "id": "QI.A.172.04",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.A.2.01"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2881834",
@@ -6759,15 +6369,7 @@
     "name": "NASIR 'ABD-AL-KARIM 'ABDULLAH AL-WAHISHI",
     "id": "QI.A.274.10",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.A.129.10",
-     "QI.A.275.10",
-     "QE.A.4.01",
-     "QI.B.8.01"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "112026",
@@ -6821,10 +6423,7 @@
     "name": "MAHFOUZ OULD AL-WALID",
     "id": "QI.A.15.01",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "112027",
@@ -6889,10 +6488,7 @@
     "name": "NAJIB BEN MOHAMED BEN SALEM AL-WAZ",
     "id": "QI.A.104.03",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "3162382",
@@ -6964,12 +6560,7 @@
     "name": "AHMED ABDULLAH SALEH AL-KHAZMARI AL-ZAHRANI",
     "id": "QI.A.329.14",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.A.4.01"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "111923",
@@ -7090,13 +6681,7 @@
     "name": "AIMAN MUHAMMED RABI AL-ZAWAHIRI",
     "id": "QI.A.6.01",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.A.3.01",
-     "QI.B.8.01"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "111924",
@@ -7162,10 +6747,7 @@
     "name": "ABD-AL-MAJID AZIZ AL-ZINDANI",
     "id": "QI.A.156.04",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "112028",
@@ -7249,12 +6831,7 @@
     "name": "SAIFI AMMARI",
     "id": "QI.A.152.03",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.T.14.01"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "111790",
@@ -7306,10 +6883,7 @@
     "name": "ABDULLAH ANSHORI",
     "id": "QI.A.216.06",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "3152862",
@@ -7374,12 +6948,7 @@
     "name": "SAID ARIF",
     "id": "QI.A.323.14",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.A.137.14"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "111704",
@@ -7450,10 +7019,7 @@
     "name": "MUHSIN FADHIL AYED ASHOUR AL-FADHLI",
     "id": "QI.A.184.05",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2832890",
@@ -7536,12 +7102,7 @@
     "name": "HAJI MUHAMMAD ASHRAF",
     "id": "QI.A.265.08",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.L.118.05"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "111944",
@@ -7646,12 +7207,7 @@
     "name": "HASSAN DAHIR AWEYS",
     "id": "QI.D.42.01",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.A.2.01"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2813253",
@@ -7725,12 +7281,7 @@
     "name": "RICARDO PEREZ AYERAS",
     "id": "QI.A.248.08",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.R.128.08"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2983638",
@@ -7784,15 +7335,7 @@
     "name": "ABDUL ROSYID RIDHO BA’ASYIR",
     "id": "QI.B.305.12",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QI.B.217.06",
-     "QI.B.293.11",
-     "QE.J.133.12",
-     "QE.J.92.02"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "111792",
@@ -7844,10 +7387,7 @@
     "name": "ABU BAKAR BA'ASYIR",
     "id": "QI.B.217.06",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2971675",
@@ -7957,13 +7497,7 @@
     "name": "ABDUL RAHIM BA'AYSIR",
     "id": "QI.B.293.11",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.J.92.02",
-     "QI.B.217.06"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "112030",
@@ -8036,12 +7570,7 @@
     "name": "SAID BAHAJI",
     "id": "QI.B.80.02",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.A.4.01"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2832991",
@@ -8107,12 +7636,7 @@
     "name": "MAHMOUD MOHAMMAD AHMED BAHAZIQ",
     "id": "QI.B.266.08",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.L.118.05"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2999481",
@@ -8181,13 +7705,7 @@
     "name": "AYYUB BASHIR",
     "id": "QI.B.311.12",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.I.10.01",
-     "QI.R.303.12"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "112032",
@@ -8268,10 +7786,7 @@
     "name": "MAHMOOD SULTAN BASHIR-UD-DIN",
     "id": "QI.B.55.01",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2902221",
@@ -8321,12 +7836,7 @@
     "name": "MOHAMED BELKALEM",
     "id": "QI.B.279.10",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.T.14.01"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "111794",
@@ -8416,15 +7926,7 @@
     "name": "MOKHTAR BELMOKHTAR",
     "id": "QI.B.136.03",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.T.14.01",
-     "QE.M.139.14",
-     "QE.M.140.14",
-     "QE.M.141.14"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "3162144",
@@ -8492,13 +7994,7 @@
     "name": "SEIFALLAH BEN HASSINE",
     "id": "QI.B.333.14",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.T.90.02",
-     "QE.A.143.14"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2983834",
@@ -8573,13 +8069,7 @@
     "name": "HAFIZ ABDUL SALAM BHUTTAVI",
     "id": "QI.B.307.12",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.L.118.05",
-     "QI.S.263.08"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "111943",
@@ -8689,10 +8179,7 @@
     "name": "RAMZI MOHAMED ABDULLAH BINALSHIBH",
     "id": "QI.B.81.02",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "111942",
@@ -8721,10 +8208,7 @@
     "name": "BILAL BIN MARWAN",
     "id": "QI.B.9.01",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "112034",
@@ -8791,10 +8275,7 @@
     "name": "AL-MOKHTAR BEN MOHAMED BEN AL-MOKHTAR BOUCHOUCHA",
     "id": "QI.B.63.02",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "111798",
@@ -8848,10 +8329,7 @@
     "name": "FAYCAL BOUGHANEMI",
     "id": "QI.B.188.05",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "111799",
@@ -8918,10 +8396,7 @@
     "name": "HAMADI BEN ABDUL AZIZ BEN ALI BOUYEHIA",
     "id": "QI.B.143.03",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2999482",
@@ -8984,12 +8459,7 @@
     "name": "AAMIR ALI CHAUDHRY",
     "id": "QI.C.312.12",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.T.132.11"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "111800",
@@ -9044,10 +8514,7 @@
     "name": "YASSINE CHEKKOURI",
     "id": "QI.C.70.02",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2982105",
@@ -9112,13 +8579,7 @@
     "name": "MONIR CHOUKA",
     "id": "QI.C.300.12",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.I.10.01",
-     "QI.C.301.12"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2981652",
@@ -9183,13 +8644,7 @@
     "name": "YASSIN CHOUKA",
     "id": "QI.C.301.12",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.I.10.01",
-     "QI.C.300.12"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "112035",
@@ -9250,10 +8705,7 @@
     "name": "MAXAMED CABDULLAAH CIISE",
     "id": "QI.C.141.03",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "3162064",
@@ -9302,12 +8754,7 @@
     "name": "ANDERS CAMEROON OSTENSVIG DALE",
     "id": "QI.D.331.14",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.A.129.10"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2816243",
@@ -9360,12 +8807,7 @@
     "name": "AHMED DEGHDEGH",
     "id": "QI.D.252.08",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.T.14.01"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2813036",
@@ -9441,13 +8883,7 @@
     "name": "REDENDO CAIN DELLOSA",
     "id": "QI.D.246.08",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.R.128.08",
-     "QE.A.1.01"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2813147",
@@ -9501,12 +8937,7 @@
     "name": "FELICIANO SEMBORIO DELOS REYES JR.",
     "id": "QI.D.243.08",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.R.128.08"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "111803",
@@ -9556,12 +8987,7 @@
     "name": "OTHMAN DERAMCHI",
     "id": "QI.D.164.04",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QI.L.155.04"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2813149",
@@ -9639,14 +9065,7 @@
     "name": "PIO ABOGNE DE VERA",
     "id": "QI.D.245.08",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.R.128.08",
-     "QE.A.1.01",
-     "QE.J.92.02"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "3162262",
@@ -9692,12 +9111,7 @@
     "name": "OUMAR DIABY",
     "id": "QI.D.342.14",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.A.137.14"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "112037",
@@ -9757,12 +9171,7 @@
     "name": "KAMEL DJERMANE",
     "id": "QI.D.167.04",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.T.14.01"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2816344",
@@ -9810,12 +9219,7 @@
     "name": "YAHIA DJOUADI",
     "id": "QI.D.249.08",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.T.14.01"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2785476",
@@ -9861,12 +9265,7 @@
     "name": "ABDELMALEK DROUKDEL",
     "id": "QI.D.232.07",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.T.14.01"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "112038",
@@ -9977,10 +9376,7 @@
     "name": "LIONEL DUMONT",
     "id": "QI.D.95.03",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "112039",
@@ -10026,10 +9422,7 @@
     "name": "AGUS DWIKARNA",
     "id": "QI.D.111.03",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "111804",
@@ -10074,10 +9467,7 @@
     "name": "DHOU EL-AICH",
     "id": "QI.E.169.04",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "111947",
@@ -10130,10 +9520,7 @@
     "name": "ABDULLAH AHMED ABDULLAH EL ALFI",
     "id": "QI.E.19.01",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "112040",
@@ -10179,10 +9566,7 @@
     "name": "RADI ABD EL SAMIE ABOU EL YAZID EL AYASHI",
     "id": "QI.E.142.03",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2830919",
@@ -10249,10 +9633,7 @@
     "name": "REDOUANE EL HABHAB",
     "id": "QI.E.262.08",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "111951",
@@ -10308,10 +9689,7 @@
     "name": "MOUNIR EL MOTASSADEQ",
     "id": "QI.E.82.02",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "111805",
@@ -10363,10 +9741,7 @@
     "name": "ABD EL KADER MAHMOUD MOHAMED EL SAYED",
     "id": "QI.E.65.02",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "111806",
@@ -10442,10 +9817,7 @@
     "name": "SAMI BEN KHAMIS BEN SALEH ELSSEID",
     "id": "QI.E.64.02",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "112042",
@@ -10509,10 +9881,7 @@
     "name": "MOUSSA BEN OMAR BEN ALI ESSAADI",
     "id": "QI.E.96.03",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "112043",
@@ -10578,10 +9947,7 @@
     "name": "ZAKARYA ESSABAR",
     "id": "QI.E.83.02",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "111807",
@@ -10691,10 +10057,7 @@
     "name": "MUSTAFA MOHAMED FADHIL",
     "id": "QI.F.27.01",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2816345",
@@ -10748,13 +10111,7 @@
     "name": "SALAH EDDINE GASMI",
     "id": "QI.G.251.08",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.T.14.01",
-     "QI.D.232.07"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2830250",
@@ -10840,14 +10197,7 @@
     "name": "FRITZ MARTIN GELOWICZ",
     "id": "QI.G.259.08",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.I.119.05",
-     "QI.S.260.08",
-     "QI.Y.261.08"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "112044",
@@ -10989,10 +10339,7 @@
     "name": "AHMED KHALFAN GHAILANI",
     "id": "QI.G.28.01",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2816565",
@@ -11056,12 +10403,7 @@
     "name": "AMOR MOHAMED GHEDEIR",
     "id": "QI.H.250.08",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.T.14.01"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "3162147",
@@ -11098,12 +10440,7 @@
     "name": "KEVIN GUIAVARCH",
     "id": "QI.G.341.14",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.A.137.14"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "111952",
@@ -11167,12 +10504,7 @@
     "name": "GUN GUN RUSMAN GUNAWAN",
     "id": "QI.G.218.06",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QI.I.87.03"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "111919",
@@ -11255,12 +10587,7 @@
     "name": "SALIM AHMAD SALIM HAMDAN",
     "id": "QI.H.3.01",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QI.B.8.01"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "112033",
@@ -11332,10 +10659,7 @@
     "name": "ADEL BEN AL-AZHAR BEN YOUSSEF HAMDI",
     "id": "QI.B.68.02",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "111810",
@@ -11381,10 +10705,7 @@
     "name": "MOHAMMAD TAHIR HAMMID",
     "id": "QI.H.144.03",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "112075",
@@ -11445,10 +10766,7 @@
     "name": "ISNILON TOTONI HAPILON",
     "id": "QI.H.204.05",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2854925",
@@ -11550,12 +10868,7 @@
     "name": "ABDUL HAQ",
     "id": "QI.H.268.09",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.E.88.02"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "112077",
@@ -11618,10 +10931,7 @@
     "name": "GULBUDDIN HEKMATYAR",
     "id": "QI.H.88.03",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "112078",
@@ -11692,10 +11002,7 @@
     "name": "RI’AD MUHAMMAD HASAN MUHAMMAD HIJAZI",
     "id": "QI.H.29.01",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2758185",
@@ -11744,10 +11051,7 @@
     "name": "JAMAL HOUSNI",
     "id": "QI.H.221.06",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "112135",
@@ -11822,12 +11126,7 @@
     "name": "ZAYN AL-ABIDIN MUHAMMAD HUSSEIN",
     "id": "QI.H.10.01",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QI.B.8.01"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "112079",
@@ -11922,12 +11221,7 @@
     "name": "AL SAYYID AHMED FATHI HUSSEIN ELIWAH",
     "id": "QI.H.195.05",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.A.3.01"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "112166",
@@ -12012,10 +11306,7 @@
     "name": "MOSTAFA KAMEL MOSTAFA IBRAHIM",
     "id": "QI.I.67.02",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2983973",
@@ -12082,12 +11373,7 @@
     "name": "ZAFAR IQBAL",
     "id": "QI.I.308.12",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.L.118.05"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "112001",
@@ -12163,13 +11449,7 @@
     "name": "NURJAMAN RIDUAN ISAMUDDIN",
     "id": "QI.I.87.03",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.J.92.02",
-     "QI.G.218.06"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "3035478",
@@ -12211,12 +11491,7 @@
     "name": "MALIK MUHAMMAD ISHAQ",
     "id": "QI.I.321.14",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.L.96.03"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "112099",
@@ -12268,10 +11543,7 @@
     "name": "KHADAFI ABUBAKAR JANJALANI",
     "id": "QI.J.180.04",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "112100",
@@ -12363,10 +11635,7 @@
     "name": "KHALIL BEN AHMED BEN MOHAMED JARRAYA",
     "id": "QI.J.99.03",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "112007",
@@ -12416,10 +11685,7 @@
     "name": "SALIM Y SALAMUDDIN JULKIPLI",
     "id": "QI.J.114.03",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "112248",
@@ -12471,10 +11737,7 @@
     "name": "MEHDI BEN MOHAMED BEN MOHAMED KAMMOUN",
     "id": "QI.K.72.02",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2982423",
@@ -12557,12 +11820,7 @@
     "name": "MEVLÜT KAR",
     "id": "QI.K.302.12",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.I.119.05"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "112138",
@@ -12775,10 +12033,7 @@
     "name": "DAWOOD IBRAHIM KASKAR",
     "id": "QI.K.135.03",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2983746",
@@ -12856,12 +12111,7 @@
     "name": "MUSTAFA HAJJI MUHAMMAD KHAN",
     "id": "QI.K.306.12",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.A.4.01"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "3161942",
@@ -12916,12 +12166,7 @@
     "name": "ANAS HASAN KHATTAB",
     "id": "QI.A.336.14",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.A.137.14"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "112270",
@@ -12968,10 +12213,7 @@
     "name": "SAMIR ABD EL LATIF EL SAYED KISHK",
     "id": "QI.K.73.02",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "3162261",
@@ -13008,13 +12250,7 @@
     "name": "EMILIE KONIG",
     "id": "QI.K.340.14",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.J.115.04",
-     "QE.A.4.01"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "112483",
@@ -13069,10 +12305,7 @@
     "name": "ABDELKADER LAAGOUB",
     "id": "QI.L.190.05",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "3026710",
@@ -13121,12 +12354,7 @@
     "name": "MOHAMED LAHBOUS",
     "id": "QI.L.319.13",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.M.134.12"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "111796",
@@ -13207,10 +12435,7 @@
     "name": "MOHAMED LAKHAL",
     "id": "QI.B.62.02",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2832887",
@@ -13287,12 +12512,7 @@
     "name": "ZAKI-UR-REHMAN LAKHVI",
     "id": "QI.L.264.08",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.L.118.05"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2813150",
@@ -13411,14 +12631,7 @@
     "name": "RUBEN PESTANO LAVILLA, JR",
     "id": "QI.L.247.08",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.R.128.08",
-     "QI.J.180.04",
-     "QE.I.126.06"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "112494",
@@ -13466,12 +12679,7 @@
     "name": "DJAMEL LOUNICI",
     "id": "QI.L.155.04",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QI.D.164.04"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2936490",
@@ -13517,12 +12725,7 @@
     "name": "HAKIMULLAH MEHSUD",
     "id": "QI.M.286.10",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.T.132.11"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "112364",
@@ -13594,10 +12797,7 @@
     "name": "IBRAHIM MOHAMED KHALIL",
     "id": "QI.M.206.05",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "111783",
@@ -13659,12 +12859,7 @@
     "name": "MAZEN SALAH MOHAMMED",
     "id": "QI.A.202.05",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.A.98.03"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "113442",
@@ -13729,10 +12924,7 @@
     "name": "YUNOS UMPARA MOKLIS",
     "id": "QI.Y.126.03",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "112378",
@@ -13774,10 +12966,7 @@
     "name": "MOHAMED AMIN MOSTAFA",
     "id": "QI.M.147.03",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "112379",
@@ -13941,14 +13130,7 @@
     "name": "DJAMEL MOUSTFA",
     "id": "QI.M.129.03",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QI.S.128.03",
-     "QI.A.130.03",
-     "QI.A.132.03"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2797841",
@@ -14042,10 +13224,7 @@
     "name": "MUBARAK MUSHAKHAS SANAD MUBARAK AL-BATHALI",
     "id": "QI.A.238.08",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2863574",
@@ -14088,12 +13267,7 @@
     "name": "MOHAMMED YAHYA MUJAHID",
     "id": "QI.M.272.09",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.L.118.05"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "113211",
@@ -14136,10 +13310,7 @@
     "name": "ARIS MUNANDAR",
     "id": "QI.M.119.03",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "113313",
@@ -14214,10 +13385,7 @@
     "name": "ABDUL HAKIM MURAD",
     "id": "QI.M.120.03",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "113212",
@@ -14266,13 +13434,7 @@
     "name": "ALI SAYYID MUHAMED MUSTAFA BAKRI",
     "id": "QI.M.196.05",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.A.4.01",
-     "QE.A.3.01"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2901762",
@@ -14327,12 +13489,7 @@
     "name": "TAYEB NAIL",
     "id": "QI.N.280.10",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.T.14.01"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "3012888",
@@ -14398,14 +13555,7 @@
     "name": "ABDERRAHMANE OULD EL AMAR",
     "id": "QI.O.314.13",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.M.134.12",
-     "QE.T.14.01",
-     "QI.B.136.03"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "3013119",
@@ -14466,13 +13616,7 @@
     "name": "HAMADA OULD MOHAMED EL KHAIRY",
     "id": "QI.O.315.13",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.M.134.12",
-     "QE.T.14.01"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2974555",
@@ -14545,13 +13689,7 @@
     "name": "ABD AL-RAHMAN OULD MUHAMMAD AL-HUSAYN OULD MUHAMMAD SALIM",
     "id": "QI.O.298.11",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.A.4.01",
-     "QE.T.14.01"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2812923",
@@ -14619,12 +13757,7 @@
     "name": "DINNO AMOR ROSALEJOS PAREJA",
     "id": "QI.P.242.08",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.R.128.08"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2971762",
@@ -14700,13 +13833,7 @@
     "name": "UMAR PATEK",
     "id": "QI.P.294.11",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.J.92.02",
-     "QE.A.1.01"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2863362",
@@ -14772,13 +13899,7 @@
     "name": "ARIF QASMANI",
     "id": "QI.Q.271.09",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.L.118.05",
-     "QE.A.4.01"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2974860",
@@ -14893,12 +14014,7 @@
     "name": "HASSAN MUHAMMAD ABU BAKR QAYED",
     "id": "QI.Q.297.11",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.A.4.01"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2983791",
@@ -14970,13 +14086,7 @@
     "name": "FAZAL RAHIM",
     "id": "QI.R.303.12",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.I.10.01",
-     "QE.A.4.01"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "113214",
@@ -15036,10 +14146,7 @@
     "name": "AHMED HOSNI RARRBO",
     "id": "QI.R.103.03",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "111429",
@@ -15097,12 +14204,7 @@
     "name": "ATA ABDOULAZIZ RASHID",
     "id": "QI.A.199.05",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.A.98.03"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "113322",
@@ -15159,10 +14261,7 @@
     "name": "ABDELHALIM HAFED ABDELFATTAH REMADNA",
     "id": "QI.R.75.02",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "113435",
@@ -15269,10 +14368,7 @@
     "name": "TAUFIK RIFKI",
     "id": "QI.R.219.06",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "113436",
@@ -15334,10 +14430,7 @@
     "name": "AL-AZHAR BEN KHALIFA BEN AHMED ROUINE",
     "id": "QI.R.150.03",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "113215",
@@ -15400,10 +14493,7 @@
     "name": "ABU RUSDAN",
     "id": "QI.R.186.05",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "111497",
@@ -15460,12 +14550,7 @@
     "name": "AMIN MUHAMMAD UL HAQ SAAM KHAN",
     "id": "QI.A.2.01",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QI.B.8.01"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "111660",
@@ -15548,12 +14633,7 @@
     "name": "MOHAMMAD HAMDI MOHAMMAD SADIQ AL-AHDAL",
     "id": "QI.A.20.01",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.A.4.01"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2833107",
@@ -15643,12 +14723,7 @@
     "name": "HAFIZ MUHAMMAD SAEED",
     "id": "QI.S.263.08",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.L.118.05"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "113323",
@@ -15704,10 +14779,7 @@
     "name": "RADULAN SAHIRON",
     "id": "QI.S.208.05",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2758395",
@@ -15761,10 +14833,7 @@
     "name": "NESSIM BEN ROMDHANE SAHRAOUI",
     "id": "QI.S.222.06",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "113317",
@@ -15854,10 +14923,7 @@
     "name": "NESSIM BEN MOHAMED AL-CHERIF BEN MOHAMED SALEH AL-SAADI",
     "id": "QI.S.148.03",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2813148",
@@ -15945,13 +15011,7 @@
     "name": "HILARION DEL ROSARIO SANTOS III",
     "id": "QI.S.244.08",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.R.128.08",
-     "QE.A.1.01"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "113219",
@@ -16017,12 +15077,7 @@
     "name": "SAYF-AL ADL",
     "id": "QI.S.1.01",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QI.B.8.01"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2830001",
@@ -16089,14 +15144,7 @@
     "name": "DANIEL MARTIN SCHNEIDER",
     "id": "QI.S.260.08",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.I.119.05",
-     "QI.G.259.08",
-     "QI.Y.261.08"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "113324",
@@ -16158,14 +15206,7 @@
     "name": "ISMAIL ABDALLAH SBAITAN SHALABI",
     "id": "QI.S.128.03",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QI.M.129.03",
-     "QI.A.130.03",
-     "QI.A.132.03"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "3150494",
@@ -16240,12 +15281,7 @@
     "name": "ABUBAKAR MOHAMMED SHEKAU",
     "id": "QI.S.322.14",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.B.138.14"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "111782",
@@ -16303,10 +15339,7 @@
     "name": "THARWAT SALAH SHIHATA",
     "id": "QI.A.17.01",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "113220",
@@ -16354,10 +15387,7 @@
     "name": "PARLINDUNGAN SIREGAR",
     "id": "QI.S.122.03",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "113439",
@@ -16420,10 +15450,7 @@
     "name": "YAZID SUFAAT",
     "id": "QI.S.124.03",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "113222",
@@ -16487,10 +15514,7 @@
     "name": "YASSIN SYWAL",
     "id": "QI.S.123.03",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "111639",
@@ -16576,14 +15600,7 @@
     "name": "IBRAHIM ALI ABU BAKR TANTOUSH",
     "id": "QI.T.57.02",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.A.69.02",
-     "QE.R.70.02",
-     "QE.L.11.01"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2813362",
@@ -16649,14 +15666,7 @@
     "name": "ANGELO RAMIREZ TRINIDAD",
     "id": "QI.T.241.08",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.R.128.08",
-     "QE.A.1.01",
-     "QE.J.92.02"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "113440",
@@ -16699,12 +15709,7 @@
     "name": "MOHAMMED TUFAIL",
     "id": "QI.T.56.01",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.U.68.01"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2960872",
@@ -16745,10 +15750,7 @@
     "name": "DOKU KHAMATOVICH UMAROV",
     "id": "QI.U.290.11",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "112283",
@@ -16832,10 +15834,7 @@
     "name": "OMAR MAHMOUD UTHMAN",
     "id": "QI.M.31.01",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "113328",
@@ -16903,10 +15902,7 @@
     "name": "ABDUL RAHMAN YASIN",
     "id": "QI.Y.37.01",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2830354",
@@ -16958,14 +15954,7 @@
     "name": "ADEM YILMAZ",
     "id": "QI.Y.261.08",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.I.119.05",
-     "QI.G.259.08",
-     "QI.S.260.08"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "112285",
@@ -17015,12 +16004,7 @@
     "name": "RAFIK MOHAMAD YOUSEF",
     "id": "QI.M.205.05",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.A.98.03"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "112021",
@@ -17130,10 +16114,7 @@
     "name": "HANI AL-SAYYID AL-SEBAI YUSIF",
     "id": "QI.A.198.05",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "111922",
@@ -17213,10 +16194,7 @@
     "name": "IMED BEN MEKKI ZARKAOUI",
     "id": "QI.A.139.03",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "113330",
@@ -17283,12 +16261,7 @@
     "name": "AHMAD ZERFAOUI",
     "id": "QI.Z.168.04",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.T.14.01"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2758288",
@@ -17389,12 +16362,7 @@
     "name": "MERAI ZOGHBAI",
     "id": "QI.Z.223.06",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.L.11.01"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "113444",
@@ -17459,10 +16427,7 @@
     "name": "ZULKARNAEN",
     "id": "QI.Z.187.05",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "name": "Fahd Mohammed Ahmed al-Quso (no longer listed) second name (no longer listed)",
@@ -17509,10 +16474,7 @@
     "SORT_KEY": "__AAA",
     "SORT_KEY_LAST_MOD": "2007-07-27T00:00:00",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "name": "Usama Bin Laden (no longer listed) second name (no longer listed)",
@@ -17559,10 +16521,7 @@
     "SORT_KEY": "__AAA",
     "SORT_KEY_LAST_MOD": "2007-07-27T00:00:00",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "name": "Wa&apos;el Hamza Abd al-Fatah Julaidan (no longer listed) second name (no longer listed)",
@@ -17609,10 +16568,7 @@
     "SORT_KEY": "__AAA",
     "SORT_KEY_LAST_MOD": "2007-07-27T00:00:00",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "empty",
@@ -17659,12 +16615,7 @@
     "name": "Wali Ur Rehman second name (no longer listed)",
     "id": "QI.U.287.10",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.T.132.11"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "empty",
@@ -17711,12 +16662,7 @@
     "name": "Wali Ur Rehman second name (no longer listed)",
     "id": "QI.M.286.10",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.T.132.11"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    }
   ]
  },
@@ -17756,12 +16702,7 @@
     "name": "ABDALLAH AZZAM BRIGADES (AAB)",
     "id": "QE.A.144.14",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.A.137.14"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "113445",
@@ -17790,13 +16731,7 @@
     "name": "ABU SAYYAF GROUP",
     "id": "QE.A.1.01",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.J.92.02",
-     "QI.S.208.05"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "113226",
@@ -17839,13 +16774,7 @@
     "name": "AFGHAN SUPPORT COMMITTEE (ASC)",
     "id": "QE.A.69.02",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.R.70.02",
-     "QI.A.58.02"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "113227",
@@ -17903,15 +16832,7 @@
     "name": "AL-AKHTAR TRUST INTERNATIONAL",
     "id": "QE.A.121.05",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.J.19.01",
-     "QE.H.8.01",
-     "QE.L.96.03",
-     "QE.L.118.05"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "113231",
@@ -18009,10 +16930,7 @@
     "name": "AL FURQAN",
     "id": "QE.A.107.04",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "113453",
@@ -18039,10 +16957,7 @@
     "name": "AL-HARAMAIN: AFGHANISTAN BRANCH",
     "id": "QE.A.110.04",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "113335",
@@ -18068,10 +16983,7 @@
     "name": "AL-HARAMAIN: ALBANIA BRANCH",
     "id": "QE.A.111.04",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "113232",
@@ -18136,10 +17048,7 @@
     "name": "AL-HARAMAIN & AL MASJED AL-AQSA CHARITY FOUNDATION",
     "id": "QE.A.109.04",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "113454",
@@ -18165,10 +17074,7 @@
     "name": "AL-HARAMAIN: BANGLADESH BRANCH",
     "id": "QE.A.112.04",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "113233",
@@ -18194,10 +17100,7 @@
     "name": "AL-HARAMAIN: ETHIOPIA BRANCH",
     "id": "QE.A.113.04",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "113336",
@@ -18226,10 +17129,7 @@
     "name": "AL-HARAMAIN FOUNDATION (INDONESIA)",
     "id": "QE.A.103.04",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "113455",
@@ -18255,10 +17155,7 @@
     "name": "AL-HARAMAIN FOUNDATION (PAKISTAN)",
     "id": "QE.A.104.04",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "113234",
@@ -18284,10 +17181,7 @@
     "name": "AL-HARAMAIN FOUNDATION (UNION OF THE COMOROS)",
     "id": "QE.A.116.04",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "113456",
@@ -18332,12 +17226,7 @@
     "name": "AL-HARAMAIN ISLAMIC FOUNDATION",
     "id": "QE.A.71.02",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QI.A.104.03"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "244845",
@@ -18363,12 +17252,7 @@
     "name": "AL-HARAMAIN ISLAMIC FOUNDATION (SOMALIA)",
     "id": "QE.A.72.02",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QI.A.171.04"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "113235",
@@ -18397,12 +17281,7 @@
     "name": "AL-HARAMAIN: THE NETHERLANDS BRANCH",
     "id": "QE.A.114.04",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QI.A.171.04"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "113338",
@@ -18442,10 +17321,7 @@
     "name": "AL-HARAMAYN FOUNDATION (KENYA)",
     "id": "QE.A.105.04",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "113339",
@@ -18471,10 +17347,7 @@
     "name": "AL-HARAMAYN FOUNDATION (TANZANIA)",
     "id": "QE.A.106.04",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "113457",
@@ -18503,16 +17376,7 @@
     "name": "AL-ITIHAAD AL-ISLAMIYA / AIAI",
     "id": "QE.A.2.01",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.A.4.01",
-     "QI.A.6.01",
-     "QI.A.172.04",
-     "QI.D.42.01",
-     "QE.A.72.02"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "3116299",
@@ -18549,13 +17413,7 @@
     "name": "AL MOUAKAOUNE BIDDAM",
     "id": "QE.M.139.14",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.T.14.01",
-     "QI.B.136.03"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "3116737",
@@ -18596,15 +17454,7 @@
     "name": "AL MOULATHAMOUN",
     "id": "QE.M.140.14",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.T.14.01",
-     "QE.M.134.12",
-     "QE.T.14.01",
-     "QI.B.136.03"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "3116738",
@@ -18637,15 +17487,7 @@
     "name": "AL MOURABITOUN",
     "id": "QE.M.141.14",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.M.140.14",
-     "QE.M.134.12",
-     "QE.T.14.01",
-     "QI.B.136.03"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "3039466",
@@ -18687,17 +17529,7 @@
     "name": "AL-NUSRAH FRONT FOR THE PEOPLE OF THE LEVANT",
     "id": "QE.A.137.14",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.A.4.01",
-     "QI.A.299.11",
-     "QE.J.115.04",
-     "QE.J.115.04",
-     "QE.A.7.01",
-     "QE.J.115.04"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "113458",
@@ -18766,10 +17598,7 @@
     "name": "AL-QAIDA",
     "id": "QE.A.4.01",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "113966",
@@ -18866,10 +17695,7 @@
     "name": "AL-QAIDA IN IRAQ",
     "id": "QE.J.115.04",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2881836",
@@ -18919,14 +17745,7 @@
     "name": "AL-QAIDA IN THE ARABIAN PENINSULA (AQAP)",
     "id": "QE.A.129.10",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.A.4.01",
-     "QI.A.274.10",
-     "QI.A.275.10"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "113459",
@@ -19035,15 +17854,7 @@
     "name": "AL RASHID TRUST",
     "id": "QE.A.5.01",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.A.73.02",
-     "QE.A.73.02",
-     "QI.L.30.01",
-     "QE.J.19.01"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "3165860",
@@ -19105,15 +17916,7 @@
     "name": "ANSAR AL CHARIA BENGHAZI",
     "id": "QE.A.146.14",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.T.14.01",
-     "QE.M.141.14",
-     "QE.A.143.14",
-     "QE.A.145.14"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "3165859",
@@ -19163,14 +17966,7 @@
     "name": "ANSAR AL CHARIA DERNA",
     "id": "QE.A.145.14",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.T.14.01",
-     "QE.A.143.14",
-     "QE.A.146.14"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "113460",
@@ -19246,13 +18042,7 @@
     "name": "ANSAR AL-ISLAM",
     "id": "QE.A.98.03",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QI.A.226.06",
-     "QE.J.115.04"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "3162386",
@@ -19300,12 +18090,7 @@
     "name": "ANSAR AL-SHARI’A IN TUNISIA (AAS-T)",
     "id": "QE.A.143.14",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QI.B.333.14"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "3014161",
@@ -19332,15 +18117,7 @@
     "name": "ANSAR EDDINE",
     "id": "QE.A.135.13",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QI.A.316.13",
-     "QE.T.14.01",
-     "QE.M.134.12",
-     "QI.D.232.07"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "3150933",
@@ -19393,14 +18170,7 @@
     "name": "ANSARUL MUSLIMINA FI BILADIS SUDAN",
     "id": "QE.A.142.14",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.T.14.01",
-     "QE.B.138.14",
-     "QI.S.322.14"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "113237",
@@ -19443,10 +18213,7 @@
     "name": "ARMED ISLAMIC GROUP",
     "id": "QE.A.6.01",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "113461",
@@ -19477,12 +18244,7 @@
     "name": "ASBAT AL-ANSAR",
     "id": "QE.A.7.01",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.J.115.04"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "113474",
@@ -19570,12 +18332,7 @@
     "name": "BENEVOLENCE INTERNATIONAL FOUNDATION",
     "id": "QE.B.93.02",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.B.94.02"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "113245",
@@ -19616,13 +18373,7 @@
     "name": "DJAMAT HOUMAT DAAWA SALAFIA (DHDS)",
     "id": "QE.D.102.03",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.A.6.01",
-     "QE.T.14.01"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "113356",
@@ -19666,10 +18417,7 @@
     "name": "EASTERN TURKISTAN ISLAMIC MOVEMENT (ETIM)",
     "id": "QE.E.88.02",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "113236",
@@ -19718,12 +18466,7 @@
     "name": "EGYPTIAN ISLAMIC JIHAD",
     "id": "QE.A.3.01",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QI.A.6.01"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2971893",
@@ -19745,12 +18488,7 @@
     "name": "EMARAT KAVKAZ",
     "id": "QE.E.131.11",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QI.U.290.11"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "113476",
@@ -19797,10 +18535,7 @@
     "name": "GLOBAL RELIEF FOUNDATION (GRF)",
     "id": "QE.G.91.02",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2921366",
@@ -19858,12 +18593,7 @@
     "name": "HARAKAT-UL JIHAD ISLAMI",
     "id": "QE.H.130.10",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.H.8.01"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "113263",
@@ -19914,14 +18644,7 @@
     "name": "HARAKAT UL-MUJAHIDIN / HUM",
     "id": "QE.H.8.01",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.J.19.01",
-     "QE.L.96.03",
-     "QE.L.118.05"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "114074",
@@ -19942,10 +18665,7 @@
     "name": "ISLAMIC ARMY OF ADEN",
     "id": "QE.I.9.01",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "113963",
@@ -19994,13 +18714,7 @@
     "name": "ISLAMIC INTERNATIONAL BRIGADE (IIB)",
     "id": "QE.I.99.03",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.R.100.03",
-     "QE.S.101.03"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "113853",
@@ -20073,15 +18787,7 @@
     "name": "ISLAMIC JIHAD GROUP",
     "id": "QE.I.119.05",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QI.J.240.08",
-     "QI.B.239.08",
-     "QE.I.10.01",
-     "QE.E.131.11"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "113964",
@@ -20108,14 +18814,7 @@
     "name": "ISLAMIC MOVEMENT OF UZBEKISTAN",
     "id": "QE.I.10.01",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.E.88.02",
-     "QE.I.119.05",
-     "QE.E.131.11"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "113965",
@@ -20144,15 +18843,7 @@
     "name": "JAISH-I-MOHAMMED",
     "id": "QE.J.19.01",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.H.8.01",
-     "QE.L.118.05",
-     "QE.A.121.05",
-     "QE.H.130.10"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "3048562",
@@ -20196,13 +18887,7 @@
     "name": "JAMA'ATU AHLIS SUNNA LIDDA'AWATI WAL-JIHAD",
     "id": "QE.B.138.14",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.A.4.01",
-     "QE.T.14.01"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "113854",
@@ -20242,12 +18927,7 @@
     "name": "JAM'YAH TA'AWUN AL-ISLAMIA",
     "id": "QE.J.20.01",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QI.B.8.01"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "113967",
@@ -20292,12 +18972,7 @@
     "name": "JEMAAH ISLAMIYAH",
     "id": "QE.J.92.02",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.A.1.01"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2983820",
@@ -20345,13 +19020,7 @@
     "name": "JEMMAH ANSHORUT TAUHID (JAT)",
     "id": "QE.J.133.12",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QI.B.217.06",
-     "QE.J.92.02"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "114076",
@@ -20488,12 +19157,7 @@
     "name": "LASHKAR-E-TAYYIBA",
     "id": "QE.L.118.05",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QI.S.263.08"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "114089",
@@ -20517,10 +19181,7 @@
     "name": "LASHKAR I JHANGVI (LJ)",
     "id": "QE.L.96.03",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "114090",
@@ -20553,12 +19214,7 @@
     "name": "LIBYAN ISLAMIC FIGHTING GROUP",
     "id": "QE.L.11.01",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.A.4.01"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "113858",
@@ -20595,12 +19251,7 @@
     "name": "MAKHTAB AL-KHIDAMAT",
     "id": "QE.M.12.01",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.A.4.01"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "113977",
@@ -20636,12 +19287,7 @@
     "name": "MOROCCAN ISLAMIC COMBATANT GROUP",
     "id": "QE.M.89.02",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.T.14.01"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "3001252",
@@ -20670,13 +19316,7 @@
     "name": "MOUVEMENT POUR L’UNIFICATION ET LE JIHAD EN AFRIQUE DE L’OUEST (MUJAO)",
     "id": "QE.M.134.12",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.T.14.01",
-     "QI.B.136.03"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "3026605",
@@ -20717,16 +19357,7 @@
     "name": "MUHAMMAD JAMAL NETWORK (MJN)",
     "id": "QE.M.136.13",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QI.A.318.13",
-     "QE.A.4.01",
-     "QI.A.6.01",
-     "QE.A.129.10",
-     "QE.T.14.01"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "113993",
@@ -20752,12 +19383,7 @@
     "name": "RABITA TRUST",
     "id": "QE.R.21.01",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QI.J.79.02"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2812924",
@@ -20808,16 +19434,7 @@
     "name": "RAJAH SOLAIMAN MOVEMENT",
     "id": "QE.R.128.08",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QI.S.244.08",
-     "QE.A.1.01",
-     "QE.J.92.02",
-     "QE.I.126.06",
-     "QI.J.180.04"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "113994",
@@ -20870,13 +19487,7 @@
     "name": "REVIVAL OF ISLAMIC HERITAGE SOCIETY",
     "id": "QE.R.70.02",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QI.A.58.02",
-     "QE.A.69.02"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "113868",
@@ -20924,14 +19535,7 @@
     "name": "RIYADUS-SALIKHIN RECONNAISSANCE AND SABOTAGE BATTALION OF CHECHEN MARTYRS (RSRSBCM)",
     "id": "QE.R.100.03",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.I.99.03",
-     "QE.S.101.03",
-     "QE.E.131.11"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "114111",
@@ -20971,13 +19575,7 @@
     "name": "SPECIAL PURPOSE ISLAMIC REGIMENT (SPIR)",
     "id": "QE.S.101.03",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.I.99.03",
-     "QE.R.100.03"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "114112",
@@ -21039,10 +19637,7 @@
     "name": "TAIBAH INTERNATIONAL-BOSNIA OFFICES",
     "id": "QE.T.108.04",
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "2971894",
@@ -21081,13 +19676,7 @@
     "name": "TEHRIK-E TALIBAN PAKISTAN (TTP)",
     "id": "QE.T.132.11",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QI.M.286.10",
-     "QI.U.287.10"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "113995",
@@ -21154,12 +19743,7 @@
     "name": "THE ORGANIZATION OF AL-QAIDA IN THE ISLAMIC MAGHREB",
     "id": "QE.T.14.01",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QI.D.232.07"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "113997",
@@ -21203,12 +19787,7 @@
     "name": "TUNISIAN COMBATANT GROUP",
     "id": "QE.T.90.02",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.T.14.01"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "113883",
@@ -21234,14 +19813,7 @@
     "name": "UMMAH TAMEER E-NAU (UTN)",
     "id": "QE.U.68.01",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QI.B.55.01",
-     "QI.A.54.01",
-     "QI.T.56.01"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "DATAID": "114113",
@@ -21280,12 +19852,7 @@
     "name": "WAFA HUMANITARIAN ORGANIZATION",
     "id": "QE.W.15.01",
     "connectedToId": [],
-    "connections": [],
-    "links": [
-     "QE.A.4.01"
-    ],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "name": "",
@@ -21294,10 +19861,7 @@
     "COMMENTS1": "",
     "indiv0OrEnt1": 1,
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    },
    {
     "name": "",
@@ -21306,10 +19870,7 @@
     "COMMENTS1": "",
     "indiv0OrEnt1": 1,
     "connectedToId": [],
-    "connections": [],
-    "links": [],
-    "sourceCount": 0,
-    "targetCount": 0
+    "connections": []
    }
   ]
  },
@@ -21348,12 +19909,7 @@
    "name": "ABDALLAH AZZAM BRIGADES (AAB)",
    "id": "QE.A.144.14",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.A.137.14"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "113445",
@@ -21382,13 +19938,7 @@
    "name": "ABU SAYYAF GROUP",
    "id": "QE.A.1.01",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.J.92.02",
-    "QI.S.208.05"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "113226",
@@ -21431,13 +19981,7 @@
    "name": "AFGHAN SUPPORT COMMITTEE (ASC)",
    "id": "QE.A.69.02",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.R.70.02",
-    "QI.A.58.02"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "113227",
@@ -21495,15 +20039,7 @@
    "name": "AL-AKHTAR TRUST INTERNATIONAL",
    "id": "QE.A.121.05",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.J.19.01",
-    "QE.H.8.01",
-    "QE.L.96.03",
-    "QE.L.118.05"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "113231",
@@ -21601,10 +20137,7 @@
    "name": "AL FURQAN",
    "id": "QE.A.107.04",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "113453",
@@ -21631,10 +20164,7 @@
    "name": "AL-HARAMAIN: AFGHANISTAN BRANCH",
    "id": "QE.A.110.04",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "113335",
@@ -21660,10 +20190,7 @@
    "name": "AL-HARAMAIN: ALBANIA BRANCH",
    "id": "QE.A.111.04",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "113232",
@@ -21728,10 +20255,7 @@
    "name": "AL-HARAMAIN & AL MASJED AL-AQSA CHARITY FOUNDATION",
    "id": "QE.A.109.04",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "113454",
@@ -21757,10 +20281,7 @@
    "name": "AL-HARAMAIN: BANGLADESH BRANCH",
    "id": "QE.A.112.04",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "113233",
@@ -21786,10 +20307,7 @@
    "name": "AL-HARAMAIN: ETHIOPIA BRANCH",
    "id": "QE.A.113.04",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "113336",
@@ -21818,10 +20336,7 @@
    "name": "AL-HARAMAIN FOUNDATION (INDONESIA)",
    "id": "QE.A.103.04",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "113455",
@@ -21847,10 +20362,7 @@
    "name": "AL-HARAMAIN FOUNDATION (PAKISTAN)",
    "id": "QE.A.104.04",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "113234",
@@ -21876,10 +20388,7 @@
    "name": "AL-HARAMAIN FOUNDATION (UNION OF THE COMOROS)",
    "id": "QE.A.116.04",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "113456",
@@ -21924,12 +20433,7 @@
    "name": "AL-HARAMAIN ISLAMIC FOUNDATION",
    "id": "QE.A.71.02",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QI.A.104.03"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "244845",
@@ -21955,12 +20459,7 @@
    "name": "AL-HARAMAIN ISLAMIC FOUNDATION (SOMALIA)",
    "id": "QE.A.72.02",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QI.A.171.04"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "113235",
@@ -21989,12 +20488,7 @@
    "name": "AL-HARAMAIN: THE NETHERLANDS BRANCH",
    "id": "QE.A.114.04",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QI.A.171.04"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "113338",
@@ -22034,10 +20528,7 @@
    "name": "AL-HARAMAYN FOUNDATION (KENYA)",
    "id": "QE.A.105.04",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "113339",
@@ -22063,10 +20554,7 @@
    "name": "AL-HARAMAYN FOUNDATION (TANZANIA)",
    "id": "QE.A.106.04",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "113457",
@@ -22095,16 +20583,7 @@
    "name": "AL-ITIHAAD AL-ISLAMIYA / AIAI",
    "id": "QE.A.2.01",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.A.4.01",
-    "QI.A.6.01",
-    "QI.A.172.04",
-    "QI.D.42.01",
-    "QE.A.72.02"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "3116299",
@@ -22141,13 +20620,7 @@
    "name": "AL MOUAKAOUNE BIDDAM",
    "id": "QE.M.139.14",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.T.14.01",
-    "QI.B.136.03"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "3116737",
@@ -22188,15 +20661,7 @@
    "name": "AL MOULATHAMOUN",
    "id": "QE.M.140.14",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.T.14.01",
-    "QE.M.134.12",
-    "QE.T.14.01",
-    "QI.B.136.03"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "3116738",
@@ -22229,15 +20694,7 @@
    "name": "AL MOURABITOUN",
    "id": "QE.M.141.14",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.M.140.14",
-    "QE.M.134.12",
-    "QE.T.14.01",
-    "QI.B.136.03"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "3039466",
@@ -22279,17 +20736,7 @@
    "name": "AL-NUSRAH FRONT FOR THE PEOPLE OF THE LEVANT",
    "id": "QE.A.137.14",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.A.4.01",
-    "QI.A.299.11",
-    "QE.J.115.04",
-    "QE.J.115.04",
-    "QE.A.7.01",
-    "QE.J.115.04"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "113458",
@@ -22358,10 +20805,7 @@
    "name": "AL-QAIDA",
    "id": "QE.A.4.01",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "113966",
@@ -22458,10 +20902,7 @@
    "name": "AL-QAIDA IN IRAQ",
    "id": "QE.J.115.04",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2881836",
@@ -22511,14 +20952,7 @@
    "name": "AL-QAIDA IN THE ARABIAN PENINSULA (AQAP)",
    "id": "QE.A.129.10",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.A.4.01",
-    "QI.A.274.10",
-    "QI.A.275.10"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "113459",
@@ -22627,15 +21061,7 @@
    "name": "AL RASHID TRUST",
    "id": "QE.A.5.01",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.A.73.02",
-    "QE.A.73.02",
-    "QI.L.30.01",
-    "QE.J.19.01"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "3165860",
@@ -22697,15 +21123,7 @@
    "name": "ANSAR AL CHARIA BENGHAZI",
    "id": "QE.A.146.14",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.T.14.01",
-    "QE.M.141.14",
-    "QE.A.143.14",
-    "QE.A.145.14"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "3165859",
@@ -22755,14 +21173,7 @@
    "name": "ANSAR AL CHARIA DERNA",
    "id": "QE.A.145.14",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.T.14.01",
-    "QE.A.143.14",
-    "QE.A.146.14"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "113460",
@@ -22838,13 +21249,7 @@
    "name": "ANSAR AL-ISLAM",
    "id": "QE.A.98.03",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QI.A.226.06",
-    "QE.J.115.04"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "3162386",
@@ -22892,12 +21297,7 @@
    "name": "ANSAR AL-SHARI’A IN TUNISIA (AAS-T)",
    "id": "QE.A.143.14",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QI.B.333.14"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "3014161",
@@ -22924,15 +21324,7 @@
    "name": "ANSAR EDDINE",
    "id": "QE.A.135.13",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QI.A.316.13",
-    "QE.T.14.01",
-    "QE.M.134.12",
-    "QI.D.232.07"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "3150933",
@@ -22985,14 +21377,7 @@
    "name": "ANSARUL MUSLIMINA FI BILADIS SUDAN",
    "id": "QE.A.142.14",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.T.14.01",
-    "QE.B.138.14",
-    "QI.S.322.14"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "113237",
@@ -23035,10 +21420,7 @@
    "name": "ARMED ISLAMIC GROUP",
    "id": "QE.A.6.01",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "113461",
@@ -23069,12 +21451,7 @@
    "name": "ASBAT AL-ANSAR",
    "id": "QE.A.7.01",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.J.115.04"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "113474",
@@ -23162,12 +21539,7 @@
    "name": "BENEVOLENCE INTERNATIONAL FOUNDATION",
    "id": "QE.B.93.02",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.B.94.02"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "113245",
@@ -23208,13 +21580,7 @@
    "name": "DJAMAT HOUMAT DAAWA SALAFIA (DHDS)",
    "id": "QE.D.102.03",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.A.6.01",
-    "QE.T.14.01"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "113356",
@@ -23258,10 +21624,7 @@
    "name": "EASTERN TURKISTAN ISLAMIC MOVEMENT (ETIM)",
    "id": "QE.E.88.02",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "113236",
@@ -23310,12 +21673,7 @@
    "name": "EGYPTIAN ISLAMIC JIHAD",
    "id": "QE.A.3.01",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QI.A.6.01"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2971893",
@@ -23337,12 +21695,7 @@
    "name": "EMARAT KAVKAZ",
    "id": "QE.E.131.11",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QI.U.290.11"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "113476",
@@ -23389,10 +21742,7 @@
    "name": "GLOBAL RELIEF FOUNDATION (GRF)",
    "id": "QE.G.91.02",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2921366",
@@ -23450,12 +21800,7 @@
    "name": "HARAKAT-UL JIHAD ISLAMI",
    "id": "QE.H.130.10",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.H.8.01"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "113263",
@@ -23506,14 +21851,7 @@
    "name": "HARAKAT UL-MUJAHIDIN / HUM",
    "id": "QE.H.8.01",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.J.19.01",
-    "QE.L.96.03",
-    "QE.L.118.05"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "114074",
@@ -23534,10 +21872,7 @@
    "name": "ISLAMIC ARMY OF ADEN",
    "id": "QE.I.9.01",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "113963",
@@ -23586,13 +21921,7 @@
    "name": "ISLAMIC INTERNATIONAL BRIGADE (IIB)",
    "id": "QE.I.99.03",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.R.100.03",
-    "QE.S.101.03"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "113853",
@@ -23665,15 +21994,7 @@
    "name": "ISLAMIC JIHAD GROUP",
    "id": "QE.I.119.05",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QI.J.240.08",
-    "QI.B.239.08",
-    "QE.I.10.01",
-    "QE.E.131.11"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "113964",
@@ -23700,14 +22021,7 @@
    "name": "ISLAMIC MOVEMENT OF UZBEKISTAN",
    "id": "QE.I.10.01",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.E.88.02",
-    "QE.I.119.05",
-    "QE.E.131.11"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "113965",
@@ -23736,15 +22050,7 @@
    "name": "JAISH-I-MOHAMMED",
    "id": "QE.J.19.01",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.H.8.01",
-    "QE.L.118.05",
-    "QE.A.121.05",
-    "QE.H.130.10"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "3048562",
@@ -23788,13 +22094,7 @@
    "name": "JAMA'ATU AHLIS SUNNA LIDDA'AWATI WAL-JIHAD",
    "id": "QE.B.138.14",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.A.4.01",
-    "QE.T.14.01"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "113854",
@@ -23834,12 +22134,7 @@
    "name": "JAM'YAH TA'AWUN AL-ISLAMIA",
    "id": "QE.J.20.01",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QI.B.8.01"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "113967",
@@ -23884,12 +22179,7 @@
    "name": "JEMAAH ISLAMIYAH",
    "id": "QE.J.92.02",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.A.1.01"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2983820",
@@ -23937,13 +22227,7 @@
    "name": "JEMMAH ANSHORUT TAUHID (JAT)",
    "id": "QE.J.133.12",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QI.B.217.06",
-    "QE.J.92.02"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "114076",
@@ -24080,12 +22364,7 @@
    "name": "LASHKAR-E-TAYYIBA",
    "id": "QE.L.118.05",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QI.S.263.08"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "114089",
@@ -24109,10 +22388,7 @@
    "name": "LASHKAR I JHANGVI (LJ)",
    "id": "QE.L.96.03",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "114090",
@@ -24145,12 +22421,7 @@
    "name": "LIBYAN ISLAMIC FIGHTING GROUP",
    "id": "QE.L.11.01",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.A.4.01"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "113858",
@@ -24187,12 +22458,7 @@
    "name": "MAKHTAB AL-KHIDAMAT",
    "id": "QE.M.12.01",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.A.4.01"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "113977",
@@ -24228,12 +22494,7 @@
    "name": "MOROCCAN ISLAMIC COMBATANT GROUP",
    "id": "QE.M.89.02",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.T.14.01"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "3001252",
@@ -24262,13 +22523,7 @@
    "name": "MOUVEMENT POUR L’UNIFICATION ET LE JIHAD EN AFRIQUE DE L’OUEST (MUJAO)",
    "id": "QE.M.134.12",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.T.14.01",
-    "QI.B.136.03"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "3026605",
@@ -24309,16 +22564,7 @@
    "name": "MUHAMMAD JAMAL NETWORK (MJN)",
    "id": "QE.M.136.13",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QI.A.318.13",
-    "QE.A.4.01",
-    "QI.A.6.01",
-    "QE.A.129.10",
-    "QE.T.14.01"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "113993",
@@ -24344,12 +22590,7 @@
    "name": "RABITA TRUST",
    "id": "QE.R.21.01",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QI.J.79.02"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2812924",
@@ -24400,16 +22641,7 @@
    "name": "RAJAH SOLAIMAN MOVEMENT",
    "id": "QE.R.128.08",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QI.S.244.08",
-    "QE.A.1.01",
-    "QE.J.92.02",
-    "QE.I.126.06",
-    "QI.J.180.04"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "113994",
@@ -24462,13 +22694,7 @@
    "name": "REVIVAL OF ISLAMIC HERITAGE SOCIETY",
    "id": "QE.R.70.02",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QI.A.58.02",
-    "QE.A.69.02"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "113868",
@@ -24516,14 +22742,7 @@
    "name": "RIYADUS-SALIKHIN RECONNAISSANCE AND SABOTAGE BATTALION OF CHECHEN MARTYRS (RSRSBCM)",
    "id": "QE.R.100.03",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.I.99.03",
-    "QE.S.101.03",
-    "QE.E.131.11"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "114111",
@@ -24563,13 +22782,7 @@
    "name": "SPECIAL PURPOSE ISLAMIC REGIMENT (SPIR)",
    "id": "QE.S.101.03",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.I.99.03",
-    "QE.R.100.03"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "114112",
@@ -24631,10 +22844,7 @@
    "name": "TAIBAH INTERNATIONAL-BOSNIA OFFICES",
    "id": "QE.T.108.04",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2971894",
@@ -24673,13 +22883,7 @@
    "name": "TEHRIK-E TALIBAN PAKISTAN (TTP)",
    "id": "QE.T.132.11",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QI.M.286.10",
-    "QI.U.287.10"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "113995",
@@ -24746,12 +22950,7 @@
    "name": "THE ORGANIZATION OF AL-QAIDA IN THE ISLAMIC MAGHREB",
    "id": "QE.T.14.01",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QI.D.232.07"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "113997",
@@ -24795,12 +22994,7 @@
    "name": "TUNISIAN COMBATANT GROUP",
    "id": "QE.T.90.02",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.T.14.01"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "113883",
@@ -24826,14 +23020,7 @@
    "name": "UMMAH TAMEER E-NAU (UTN)",
    "id": "QE.U.68.01",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QI.B.55.01",
-    "QI.A.54.01",
-    "QI.T.56.01"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "114113",
@@ -24872,12 +23059,7 @@
    "name": "WAFA HUMANITARIAN ORGANIZATION",
    "id": "QE.W.15.01",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.A.4.01"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "name": "",
@@ -24886,10 +23068,7 @@
    "COMMENTS1": "",
    "indiv0OrEnt1": 1,
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "name": "",
@@ -24898,10 +23077,7 @@
    "COMMENTS1": "",
    "indiv0OrEnt1": 1,
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "111900",
@@ -24956,10 +23132,7 @@
    "name": "NASHWAN ABD AL-RAZZAQ ABD AL-BAQI",
    "id": "QI.A.12.01",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "111513",
@@ -25023,10 +23196,7 @@
    "name": "ABD AL WAHAB ABD AL HAFIZ",
    "id": "QI.A.157.04",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2827788",
@@ -25078,13 +23248,7 @@
    "name": "ADIL MUHAMMAD MAHMUD ABD AL-KHALIQ",
    "id": "QI.A.255.08",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.A.4.01",
-    "QE.L.11.01"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2959427",
@@ -25183,12 +23347,7 @@
    "name": "SAID JAN ‘ABD AL-SALAM",
    "id": "QI.A.289.11",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.A.4.01"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "111533",
@@ -25243,12 +23402,7 @@
    "name": "ABD ALLAH MOHAMED RAGAB ABDEL RAHMAN",
    "id": "QI.A.192.05",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.A.3.01"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "111449",
@@ -25298,10 +23452,7 @@
    "name": "MAJEED ABDUL CHAUDHRY",
    "id": "QI.A.54.01",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "111395",
@@ -25428,10 +23579,7 @@
    "name": "ZULKIFLI ABDUL HIR",
    "id": "QI.A.109.03",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "111450",
@@ -25482,10 +23630,7 @@
    "name": "DIEMAN ABDULKADIR IZZAT",
    "id": "QI.A.200.05",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "111514",
@@ -25529,10 +23674,7 @@
    "name": "ABDUL MANAN AGHA",
    "id": "QI.A.18.01",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2972739",
@@ -25636,13 +23778,7 @@
    "name": "MUHAMMAD JIBRIL ABDUL RAHMAN",
    "id": "QI.A.295.11",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.J.92.02",
-    "QI.A.86.03"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2786469",
@@ -25700,12 +23836,7 @@
    "name": "ALY SOLIMAN MASSOUD ABDUL SAYED",
    "id": "QI.A.229.07",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.L.11.01"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "111451",
@@ -25790,10 +23921,7 @@
    "name": "MOHAMAD IQBAL ABDURRAHMAN",
    "id": "QI.A.86.03",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2983651",
@@ -25857,15 +23985,7 @@
    "name": "ABDUR REHMAN",
    "id": "QI.A.309.12",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.A.4.01",
-    "QE.H.130.10",
-    "QE.J.19.01",
-    "QE.A.121.05"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2922613",
@@ -25966,10 +24086,7 @@
    "name": "MUHAMMAD ABDALLAH HASAN ABU-AL-KHAYR",
    "id": "QI.A.285.10",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "111640",
@@ -26040,14 +24157,7 @@
    "name": "MOHAMED GHASSAN ALI ABU DHESS",
    "id": "QI.A.130.03",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QI.S.128.03",
-    "QI.M.129.03",
-    "QI.A.132.03"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2758287",
@@ -26099,12 +24209,7 @@
    "name": "ISMAIL MOHAMED ISMAIL ABU SHAWEESH",
    "id": "QI.A.224.06",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QI.A.201.05"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "111732",
@@ -26169,12 +24274,7 @@
    "name": "YASSER MOHAMED ISMAIL ABU SHAWEESH",
    "id": "QI.A.201.05",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QI.A.224.06"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2983821",
@@ -26240,15 +24340,7 @@
    "name": "MOCHAMMAD ACHWAN",
    "id": "QI.A.304.12",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.J.133.12",
-    "QI.B.217.06",
-    "QI.B.293.11",
-    "QE.J.92.02"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "3012677",
@@ -26305,13 +24397,7 @@
    "name": "IYAD AG GHALI",
    "id": "QI.A.316.13",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.T.14.01",
-    "QE.M.134.12"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "111953",
@@ -26369,10 +24455,7 @@
    "name": "FARHAD KANABI AHMAD",
    "id": "QI.A.203.05",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2762998",
@@ -26429,10 +24512,7 @@
    "name": "NAJMUDDIN FARAJ AHMAD",
    "id": "QI.A.226.06",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2797952",
@@ -26522,10 +24602,7 @@
    "name": "JABER ABDALLAH JABER AHMAD AL-JALAHMAH",
    "id": "QI.A.237.08",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "111498",
@@ -26582,10 +24659,7 @@
    "name": "TARIQ ANWAR EL SAYED AHMED",
    "id": "QI.A.14.01",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "111641",
@@ -26642,12 +24716,7 @@
    "name": "ZAKI EZAT ZAKI AHMED",
    "id": "QI.A.193.05",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.A.3.01"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "111733",
@@ -26702,10 +24771,7 @@
    "name": "FARID AIDER",
    "id": "QI.A.161.04",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "3002734",
@@ -26752,12 +24818,7 @@
    "name": "DJAMEL AKKACHA",
    "id": "QI.A.313.13",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.T.14.01"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "111500",
@@ -26819,10 +24880,7 @@
    "name": "MOHAMED AMINE AKLI",
    "id": "QI.A.91.03",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "3152553",
@@ -26914,14 +24972,7 @@
    "name": "ABOU MOHAMED AL ADNANI",
    "id": "QI.A.325.14",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.J.115.04",
-    "QI.A.317.13",
-    "QI.A.299.11"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "3152437",
@@ -26981,12 +25032,7 @@
    "name": "HAJJAJ BIN FAHD AL AJMI",
    "id": "QI.A.328.14",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.A.137.14"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "3162065",
@@ -27045,12 +25091,7 @@
    "name": "SHAFI SULTAN MOHAMMED AL-AJMI",
    "id": "QI.A.338.14",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.A.137.14"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2797951",
@@ -27135,10 +25176,7 @@
    "name": "HAMID ABDALLAH AHMAD AL-ALI",
    "id": "QI.A.236.08",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "3152863",
@@ -27189,15 +25227,7 @@
    "name": "HAMID HAMAD HAMID AL-‘ALI",
    "id": "QI.A.326.14",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.J.115.04",
-    "QE.A.137.14",
-    "QI.A.299.11",
-    "QI.A.317.13"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "111734",
@@ -27295,10 +25325,7 @@
    "name": "MEHREZ BEN MAHMOUD BEN SASSI AL-AMDOUNI",
    "id": "QI.A.92.03",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "3162066",
@@ -27363,13 +25390,7 @@
    "name": "‘ABD AL-RAHMAN KHALAF ‘UBAYD JUDAY’ AL-‘ANIZI",
    "id": "QI.A.335.14",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.A.4.01",
-    "QE.J.115.04"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "111735",
@@ -27445,12 +25466,7 @@
    "name": "MOHAMED BEN BELGACEM BEN ABDALLAH AL-AOUADI",
    "id": "QI.A.60.02",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.A.143.14"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "111736",
@@ -27516,10 +25532,7 @@
    "name": "AQEEL ABDULAZIZ AQEEL AL-AQEEL",
    "id": "QI.A.171.04",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2962519",
@@ -27632,16 +25645,7 @@
    "name": "IBRAHIM HASSAN TALI AL-ASIRI",
    "id": "QI.A.291.11",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.A.129.10",
-    "QI.A.274.10",
-    "QI.A.275.10",
-    "QI.A.282.10",
-    "QI.A.283.10"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2913655",
@@ -27716,10 +25720,7 @@
    "name": "ANWAR NASSER ABDULLA AL-AULAQI",
    "id": "QI.A.283.10",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "111834",
@@ -27802,10 +25803,7 @@
    "name": "CHIHEB BEN MOHAMED BEN MOKHTAR AL-AYARI",
    "id": "QI.A.93.03",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "3152650",
@@ -27850,13 +25848,7 @@
    "name": "ABDUL MOHSEN ABDALLAH IBRAHIM AL CHAREKH",
    "id": "QI.A.324.14",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.A.4.01",
-    "QE.A.137.14"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "111835",
@@ -27986,10 +25978,7 @@
    "name": "SAID BEN ABDELHAKIM BEN OMAR AL-CHERIF",
    "id": "QI.A.138.03",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2786246",
@@ -28063,13 +26052,7 @@
    "name": "SALEM NOR ELDIN AMOHAMED AL-DABSKI",
    "id": "QI.A.231.07",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.L.11.01",
-    "QE.A.4.01"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "111836",
@@ -28117,14 +26100,7 @@
    "name": "ASCHRAF AL-DAGMA",
    "id": "QI.A.132.03",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QI.S.128.03",
-    "QI.M.129.03",
-    "QI.A.130.03"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2894441",
@@ -28229,12 +26205,7 @@
    "name": "MUTHANNA HARITH AL-DARI",
    "id": "QI.A.278.10",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.J.115.04"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "111837",
@@ -28300,10 +26271,7 @@
    "name": "NOUREDDINE BEN ALI BEN BELKASSEM AL-DRISSI",
    "id": "QI.A.149.03",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "111763",
@@ -28383,10 +26351,7 @@
    "name": "KHALID ABD AL-RAHMAN HAMD AL-FAWAZ",
    "id": "QI.A.59.02",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2760967",
@@ -28431,10 +26396,7 @@
    "name": "MOHAMMED AL GHABRA",
    "id": "QI.A.228.06",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2968403",
@@ -28523,14 +26485,7 @@
    "name": "OTHMAN AHMED OTHMAN AL-GHAMDI",
    "id": "QI.A.292.11",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.A.129.10",
-    "QI.A.282.10",
-    "QI.A.288.10"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "3161940",
@@ -28582,12 +26537,7 @@
    "name": "IBRAHIM SULEIMAN HAMAD AL-HABLAIN",
    "id": "QI.A.332.14",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.A.144.14"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "111857",
@@ -28664,10 +26614,7 @@
    "name": "FETHI BEN HASSEN BEN SALEM AL-HADDAD",
    "id": "QI.A.160.04",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "111916",
@@ -28761,10 +26708,7 @@
    "name": "KAMAL BEN MAOELDI BEN HASSAN AL-HAMRAOUI",
    "id": "QI.A.140.03",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2827324",
@@ -28831,12 +26775,7 @@
    "name": "ABD AL-RAHMAN MUHAMMAD JAFFAR ‘ALI",
    "id": "QI.A.254.08",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.A.4.01"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "111917",
@@ -28935,10 +26874,7 @@
    "name": "AHMED MOHAMMED HAMED ALI",
    "id": "QI.A.21.01",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "111496",
@@ -28988,10 +26924,7 @@
    "name": "SULAIMAN JASSEM SULAIMAN ALI ABO GHAITH",
    "id": "QI.A.154.04",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2975516",
@@ -29054,12 +26987,7 @@
    "name": "IBRAHIM AWWAD IBRAHIM ALI AL-BADRI AL-SAMARRAI",
    "id": "QI.A.299.11",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.J.115.04"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2973988",
@@ -29150,13 +27078,7 @@
    "name": "MATI UR-REHMAN ALI MUHAMMAD",
    "id": "QI.M.296.11",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.L.96.03",
-    "QE.H.130.10"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "111918",
@@ -29212,12 +27134,7 @@
    "name": "MOHAMMED AHMED SHAWKI AL ISLAMBOLLY",
    "id": "QI.A.194.05",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.A.3.01"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "3152864",
@@ -29330,12 +27247,7 @@
    "name": "ABDELRAHMAN MOUHAMAD ZAFIR AL DABIDI AL JAHANI",
    "id": "QI.A.327.14",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.A.137.14"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "111784",
@@ -29389,10 +27301,7 @@
    "name": "IMAD BEN BECHIR BEN HAMDA AL-JAMMALI",
    "id": "QI.A.176.04",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "3020633",
@@ -29443,15 +27352,7 @@
    "name": "ABU MOHAMMED AL-JAWLANI",
    "id": "QI.A.317.13",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.A.137.14",
-    "QE.J.115.04",
-    "QI.A.299.11",
-    "QI.A.6.01"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "111902",
@@ -29491,13 +27392,7 @@
    "name": "ABU BAKR AL-JAZIRI",
    "id": "QI.A.58.02",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.A.69.02",
-    "QE.A.4.01"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "112016",
@@ -29550,12 +27445,7 @@
    "name": "RIADH BEN BELKASSEM BEN MOHAMED AL-JELASSI",
    "id": "QI.A.71.02",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.T.90.02"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "112017",
@@ -29621,10 +27511,7 @@
    "name": "FAOUZI BEN MOHAMED BEN AHMED AL-JENDOUBI",
    "id": "QI.A.101.03",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "3162146",
@@ -29700,12 +27587,7 @@
    "name": "MAYSAR ALI MUSA ABDALLAH AL-JUBURI",
    "id": "QI.A.337.14",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.A.137.14"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "3026942",
@@ -29820,17 +27702,7 @@
    "name": "MUHAMMAD JAMAL ABD-AL RAHIM AHMAD AL-KASHIF",
    "id": "QI.A.318.13",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.A.4.01",
-    "QE.A.3.01",
-    "QE.M.136.13",
-    "QE.A.129.10",
-    "QI.A.6.01",
-    "QE.T.14.01"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2786785",
@@ -29954,12 +27826,7 @@
    "name": "FAHD MUHAMMAD 'ABD AL-'AZIZ AL-KHASHIBAN",
    "id": "QI.A.233.07",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.A.1.01"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "111925",
@@ -30022,10 +27889,7 @@
    "name": "HACENE ALLANE",
    "id": "QI.A.170.04",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "111785",
@@ -30082,10 +27946,7 @@
    "name": "HABIB BEN AHMED AL-LOUBIRI",
    "id": "QI.A.177.04",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "111920",
@@ -30156,10 +28017,7 @@
    "name": "TAREK BEN HABIB BEN AL-TOUMI AL-MAAROUFI",
    "id": "QI.A.74.02",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "3029127",
@@ -30251,10 +28109,7 @@
    "name": "ABD-AL-HAMID AL-MASLI",
    "id": "QI.A.320.13",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "3161939",
@@ -30324,12 +28179,7 @@
    "name": "AZZAM ABDULLAH ZUREIK AL-MAULID AL-SUBHI",
    "id": "QI.A.330.14",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.A.4.01"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2892251",
@@ -30382,12 +28232,7 @@
    "name": "AKRAM TURKI HISHAN AL-MAZIDIH",
    "id": "QI.A.276.10",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QI.A.277.10"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2892252",
@@ -30444,12 +28289,7 @@
    "name": "GHAZY FEZZA HISHAN AL-MAZIDIH",
    "id": "QI.A.277.10",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QI.A.276.10"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "3162145",
@@ -30530,13 +28370,7 @@
    "name": "‘ABD AL-RAHMAN BIN ‘UMAYR AL-NU’AYMI",
    "id": "QI.A.334.14",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.A.4.01",
-    "QE.J.115.04"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "113223",
@@ -30591,10 +28425,7 @@
    "name": "ISAM ALI MOHAMED ALOUCHE",
    "id": "QI.T.76.02",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2863393",
@@ -30674,12 +28505,7 @@
    "name": "FAZEEL-A-TUL SHAYKH ABU MOHAMMED AMEEN AL-PESHAWARI",
    "id": "QI.A.273.09",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.A.4.01"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "3161941",
@@ -30771,13 +28597,7 @@
    "name": "‘ABD AL-RAHMAN MUHAMMAD MUSTAFA AL-QADULI",
    "id": "QI.A.339.14",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.J.115.04",
-    "QE.A.4.01"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2903810",
@@ -30852,10 +28672,7 @@
    "name": "QASIM YAHYA MAHDI AL-RIMI",
    "id": "QI.A.282.10",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "111786",
@@ -30930,10 +28747,7 @@
    "name": "NAZIH ABDUL HAMED NABIH AL-RUQAI’I",
    "id": "QI.A.23.01",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2881835",
@@ -31055,14 +28869,7 @@
    "name": "SAID ALI AL-SHIHRI",
    "id": "QI.A.275.10",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QI.A.274.10",
-    "QE.A.129.10",
-    "QE.A.4.01"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2827659",
@@ -31133,12 +28940,7 @@
    "name": "KHALIFA MUHAMMAD TURKI AL-SUBAIY",
    "id": "QI.A.253.08",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.A.4.01"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2787013",
@@ -31241,12 +29043,7 @@
    "name": "ABDUL RAHIM AL-TALHI",
    "id": "QI.A.234.07",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.A.1.01"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "112022",
@@ -31302,10 +29099,7 @@
    "name": "AL-AZHAR BEN MOHAMMED BEN EL-ABED AL-TLILI",
    "id": "QI.A.77.02",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "112023",
@@ -31462,10 +29256,7 @@
    "name": "MOURAD BEN ALI BEN AL-BASHEER AL-TRABELSI",
    "id": "QI.A.151.03",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "112024",
@@ -31554,12 +29345,7 @@
    "name": "HASSAN ABDULLAH HERSI AL-TURKI",
    "id": "QI.A.172.04",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.A.2.01"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2881834",
@@ -31658,15 +29444,7 @@
    "name": "NASIR 'ABD-AL-KARIM 'ABDULLAH AL-WAHISHI",
    "id": "QI.A.274.10",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.A.129.10",
-    "QI.A.275.10",
-    "QE.A.4.01",
-    "QI.B.8.01"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "112026",
@@ -31720,10 +29498,7 @@
    "name": "MAHFOUZ OULD AL-WALID",
    "id": "QI.A.15.01",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "112027",
@@ -31788,10 +29563,7 @@
    "name": "NAJIB BEN MOHAMED BEN SALEM AL-WAZ",
    "id": "QI.A.104.03",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "3162382",
@@ -31863,12 +29635,7 @@
    "name": "AHMED ABDULLAH SALEH AL-KHAZMARI AL-ZAHRANI",
    "id": "QI.A.329.14",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.A.4.01"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "111923",
@@ -31989,13 +29756,7 @@
    "name": "AIMAN MUHAMMED RABI AL-ZAWAHIRI",
    "id": "QI.A.6.01",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.A.3.01",
-    "QI.B.8.01"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "111924",
@@ -32061,10 +29822,7 @@
    "name": "ABD-AL-MAJID AZIZ AL-ZINDANI",
    "id": "QI.A.156.04",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "112028",
@@ -32148,12 +29906,7 @@
    "name": "SAIFI AMMARI",
    "id": "QI.A.152.03",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.T.14.01"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "111790",
@@ -32205,10 +29958,7 @@
    "name": "ABDULLAH ANSHORI",
    "id": "QI.A.216.06",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "3152862",
@@ -32273,12 +30023,7 @@
    "name": "SAID ARIF",
    "id": "QI.A.323.14",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.A.137.14"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "111704",
@@ -32349,10 +30094,7 @@
    "name": "MUHSIN FADHIL AYED ASHOUR AL-FADHLI",
    "id": "QI.A.184.05",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2832890",
@@ -32435,12 +30177,7 @@
    "name": "HAJI MUHAMMAD ASHRAF",
    "id": "QI.A.265.08",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.L.118.05"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "111944",
@@ -32545,12 +30282,7 @@
    "name": "HASSAN DAHIR AWEYS",
    "id": "QI.D.42.01",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.A.2.01"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2813253",
@@ -32624,12 +30356,7 @@
    "name": "RICARDO PEREZ AYERAS",
    "id": "QI.A.248.08",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.R.128.08"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2983638",
@@ -32683,15 +30410,7 @@
    "name": "ABDUL ROSYID RIDHO BA’ASYIR",
    "id": "QI.B.305.12",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QI.B.217.06",
-    "QI.B.293.11",
-    "QE.J.133.12",
-    "QE.J.92.02"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "111792",
@@ -32743,10 +30462,7 @@
    "name": "ABU BAKAR BA'ASYIR",
    "id": "QI.B.217.06",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2971675",
@@ -32856,13 +30572,7 @@
    "name": "ABDUL RAHIM BA'AYSIR",
    "id": "QI.B.293.11",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.J.92.02",
-    "QI.B.217.06"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "112030",
@@ -32935,12 +30645,7 @@
    "name": "SAID BAHAJI",
    "id": "QI.B.80.02",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.A.4.01"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2832991",
@@ -33006,12 +30711,7 @@
    "name": "MAHMOUD MOHAMMAD AHMED BAHAZIQ",
    "id": "QI.B.266.08",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.L.118.05"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2999481",
@@ -33080,13 +30780,7 @@
    "name": "AYYUB BASHIR",
    "id": "QI.B.311.12",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.I.10.01",
-    "QI.R.303.12"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "112032",
@@ -33167,10 +30861,7 @@
    "name": "MAHMOOD SULTAN BASHIR-UD-DIN",
    "id": "QI.B.55.01",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2902221",
@@ -33220,12 +30911,7 @@
    "name": "MOHAMED BELKALEM",
    "id": "QI.B.279.10",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.T.14.01"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "111794",
@@ -33315,15 +31001,7 @@
    "name": "MOKHTAR BELMOKHTAR",
    "id": "QI.B.136.03",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.T.14.01",
-    "QE.M.139.14",
-    "QE.M.140.14",
-    "QE.M.141.14"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "3162144",
@@ -33391,13 +31069,7 @@
    "name": "SEIFALLAH BEN HASSINE",
    "id": "QI.B.333.14",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.T.90.02",
-    "QE.A.143.14"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2983834",
@@ -33472,13 +31144,7 @@
    "name": "HAFIZ ABDUL SALAM BHUTTAVI",
    "id": "QI.B.307.12",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.L.118.05",
-    "QI.S.263.08"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "111943",
@@ -33588,10 +31254,7 @@
    "name": "RAMZI MOHAMED ABDULLAH BINALSHIBH",
    "id": "QI.B.81.02",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "111942",
@@ -33620,10 +31283,7 @@
    "name": "BILAL BIN MARWAN",
    "id": "QI.B.9.01",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "112034",
@@ -33690,10 +31350,7 @@
    "name": "AL-MOKHTAR BEN MOHAMED BEN AL-MOKHTAR BOUCHOUCHA",
    "id": "QI.B.63.02",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "111798",
@@ -33747,10 +31404,7 @@
    "name": "FAYCAL BOUGHANEMI",
    "id": "QI.B.188.05",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "111799",
@@ -33817,10 +31471,7 @@
    "name": "HAMADI BEN ABDUL AZIZ BEN ALI BOUYEHIA",
    "id": "QI.B.143.03",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2999482",
@@ -33883,12 +31534,7 @@
    "name": "AAMIR ALI CHAUDHRY",
    "id": "QI.C.312.12",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.T.132.11"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "111800",
@@ -33943,10 +31589,7 @@
    "name": "YASSINE CHEKKOURI",
    "id": "QI.C.70.02",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2982105",
@@ -34011,13 +31654,7 @@
    "name": "MONIR CHOUKA",
    "id": "QI.C.300.12",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.I.10.01",
-    "QI.C.301.12"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2981652",
@@ -34082,13 +31719,7 @@
    "name": "YASSIN CHOUKA",
    "id": "QI.C.301.12",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.I.10.01",
-    "QI.C.300.12"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "112035",
@@ -34149,10 +31780,7 @@
    "name": "MAXAMED CABDULLAAH CIISE",
    "id": "QI.C.141.03",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "3162064",
@@ -34201,12 +31829,7 @@
    "name": "ANDERS CAMEROON OSTENSVIG DALE",
    "id": "QI.D.331.14",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.A.129.10"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2816243",
@@ -34259,12 +31882,7 @@
    "name": "AHMED DEGHDEGH",
    "id": "QI.D.252.08",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.T.14.01"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2813036",
@@ -34340,13 +31958,7 @@
    "name": "REDENDO CAIN DELLOSA",
    "id": "QI.D.246.08",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.R.128.08",
-    "QE.A.1.01"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2813147",
@@ -34400,12 +32012,7 @@
    "name": "FELICIANO SEMBORIO DELOS REYES JR.",
    "id": "QI.D.243.08",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.R.128.08"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "111803",
@@ -34455,12 +32062,7 @@
    "name": "OTHMAN DERAMCHI",
    "id": "QI.D.164.04",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QI.L.155.04"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2813149",
@@ -34538,14 +32140,7 @@
    "name": "PIO ABOGNE DE VERA",
    "id": "QI.D.245.08",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.R.128.08",
-    "QE.A.1.01",
-    "QE.J.92.02"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "3162262",
@@ -34591,12 +32186,7 @@
    "name": "OUMAR DIABY",
    "id": "QI.D.342.14",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.A.137.14"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "112037",
@@ -34656,12 +32246,7 @@
    "name": "KAMEL DJERMANE",
    "id": "QI.D.167.04",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.T.14.01"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2816344",
@@ -34709,12 +32294,7 @@
    "name": "YAHIA DJOUADI",
    "id": "QI.D.249.08",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.T.14.01"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2785476",
@@ -34760,12 +32340,7 @@
    "name": "ABDELMALEK DROUKDEL",
    "id": "QI.D.232.07",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.T.14.01"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "112038",
@@ -34876,10 +32451,7 @@
    "name": "LIONEL DUMONT",
    "id": "QI.D.95.03",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "112039",
@@ -34925,10 +32497,7 @@
    "name": "AGUS DWIKARNA",
    "id": "QI.D.111.03",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "111804",
@@ -34973,10 +32542,7 @@
    "name": "DHOU EL-AICH",
    "id": "QI.E.169.04",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "111947",
@@ -35029,10 +32595,7 @@
    "name": "ABDULLAH AHMED ABDULLAH EL ALFI",
    "id": "QI.E.19.01",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "112040",
@@ -35078,10 +32641,7 @@
    "name": "RADI ABD EL SAMIE ABOU EL YAZID EL AYASHI",
    "id": "QI.E.142.03",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2830919",
@@ -35148,10 +32708,7 @@
    "name": "REDOUANE EL HABHAB",
    "id": "QI.E.262.08",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "111951",
@@ -35207,10 +32764,7 @@
    "name": "MOUNIR EL MOTASSADEQ",
    "id": "QI.E.82.02",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "111805",
@@ -35262,10 +32816,7 @@
    "name": "ABD EL KADER MAHMOUD MOHAMED EL SAYED",
    "id": "QI.E.65.02",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "111806",
@@ -35341,10 +32892,7 @@
    "name": "SAMI BEN KHAMIS BEN SALEH ELSSEID",
    "id": "QI.E.64.02",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "112042",
@@ -35408,10 +32956,7 @@
    "name": "MOUSSA BEN OMAR BEN ALI ESSAADI",
    "id": "QI.E.96.03",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "112043",
@@ -35477,10 +33022,7 @@
    "name": "ZAKARYA ESSABAR",
    "id": "QI.E.83.02",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "111807",
@@ -35590,10 +33132,7 @@
    "name": "MUSTAFA MOHAMED FADHIL",
    "id": "QI.F.27.01",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2816345",
@@ -35647,13 +33186,7 @@
    "name": "SALAH EDDINE GASMI",
    "id": "QI.G.251.08",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.T.14.01",
-    "QI.D.232.07"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2830250",
@@ -35739,14 +33272,7 @@
    "name": "FRITZ MARTIN GELOWICZ",
    "id": "QI.G.259.08",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.I.119.05",
-    "QI.S.260.08",
-    "QI.Y.261.08"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "112044",
@@ -35888,10 +33414,7 @@
    "name": "AHMED KHALFAN GHAILANI",
    "id": "QI.G.28.01",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2816565",
@@ -35955,12 +33478,7 @@
    "name": "AMOR MOHAMED GHEDEIR",
    "id": "QI.H.250.08",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.T.14.01"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "3162147",
@@ -35997,12 +33515,7 @@
    "name": "KEVIN GUIAVARCH",
    "id": "QI.G.341.14",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.A.137.14"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "111952",
@@ -36066,12 +33579,7 @@
    "name": "GUN GUN RUSMAN GUNAWAN",
    "id": "QI.G.218.06",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QI.I.87.03"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "111919",
@@ -36154,12 +33662,7 @@
    "name": "SALIM AHMAD SALIM HAMDAN",
    "id": "QI.H.3.01",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QI.B.8.01"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "112033",
@@ -36231,10 +33734,7 @@
    "name": "ADEL BEN AL-AZHAR BEN YOUSSEF HAMDI",
    "id": "QI.B.68.02",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "111810",
@@ -36280,10 +33780,7 @@
    "name": "MOHAMMAD TAHIR HAMMID",
    "id": "QI.H.144.03",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "112075",
@@ -36344,10 +33841,7 @@
    "name": "ISNILON TOTONI HAPILON",
    "id": "QI.H.204.05",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2854925",
@@ -36449,12 +33943,7 @@
    "name": "ABDUL HAQ",
    "id": "QI.H.268.09",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.E.88.02"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "112077",
@@ -36517,10 +34006,7 @@
    "name": "GULBUDDIN HEKMATYAR",
    "id": "QI.H.88.03",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "112078",
@@ -36591,10 +34077,7 @@
    "name": "RI’AD MUHAMMAD HASAN MUHAMMAD HIJAZI",
    "id": "QI.H.29.01",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2758185",
@@ -36643,10 +34126,7 @@
    "name": "JAMAL HOUSNI",
    "id": "QI.H.221.06",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "112135",
@@ -36721,12 +34201,7 @@
    "name": "ZAYN AL-ABIDIN MUHAMMAD HUSSEIN",
    "id": "QI.H.10.01",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QI.B.8.01"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "112079",
@@ -36821,12 +34296,7 @@
    "name": "AL SAYYID AHMED FATHI HUSSEIN ELIWAH",
    "id": "QI.H.195.05",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.A.3.01"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "112166",
@@ -36911,10 +34381,7 @@
    "name": "MOSTAFA KAMEL MOSTAFA IBRAHIM",
    "id": "QI.I.67.02",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2983973",
@@ -36981,12 +34448,7 @@
    "name": "ZAFAR IQBAL",
    "id": "QI.I.308.12",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.L.118.05"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "112001",
@@ -37062,13 +34524,7 @@
    "name": "NURJAMAN RIDUAN ISAMUDDIN",
    "id": "QI.I.87.03",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.J.92.02",
-    "QI.G.218.06"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "3035478",
@@ -37110,12 +34566,7 @@
    "name": "MALIK MUHAMMAD ISHAQ",
    "id": "QI.I.321.14",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.L.96.03"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "112099",
@@ -37167,10 +34618,7 @@
    "name": "KHADAFI ABUBAKAR JANJALANI",
    "id": "QI.J.180.04",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "112100",
@@ -37262,10 +34710,7 @@
    "name": "KHALIL BEN AHMED BEN MOHAMED JARRAYA",
    "id": "QI.J.99.03",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "112007",
@@ -37315,10 +34760,7 @@
    "name": "SALIM Y SALAMUDDIN JULKIPLI",
    "id": "QI.J.114.03",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "112248",
@@ -37370,10 +34812,7 @@
    "name": "MEHDI BEN MOHAMED BEN MOHAMED KAMMOUN",
    "id": "QI.K.72.02",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2982423",
@@ -37456,12 +34895,7 @@
    "name": "MEVLÜT KAR",
    "id": "QI.K.302.12",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.I.119.05"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "112138",
@@ -37674,10 +35108,7 @@
    "name": "DAWOOD IBRAHIM KASKAR",
    "id": "QI.K.135.03",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2983746",
@@ -37755,12 +35186,7 @@
    "name": "MUSTAFA HAJJI MUHAMMAD KHAN",
    "id": "QI.K.306.12",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.A.4.01"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "3161942",
@@ -37815,12 +35241,7 @@
    "name": "ANAS HASAN KHATTAB",
    "id": "QI.A.336.14",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.A.137.14"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "112270",
@@ -37867,10 +35288,7 @@
    "name": "SAMIR ABD EL LATIF EL SAYED KISHK",
    "id": "QI.K.73.02",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "3162261",
@@ -37907,13 +35325,7 @@
    "name": "EMILIE KONIG",
    "id": "QI.K.340.14",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.J.115.04",
-    "QE.A.4.01"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "112483",
@@ -37968,10 +35380,7 @@
    "name": "ABDELKADER LAAGOUB",
    "id": "QI.L.190.05",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "3026710",
@@ -38020,12 +35429,7 @@
    "name": "MOHAMED LAHBOUS",
    "id": "QI.L.319.13",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.M.134.12"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "111796",
@@ -38106,10 +35510,7 @@
    "name": "MOHAMED LAKHAL",
    "id": "QI.B.62.02",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2832887",
@@ -38186,12 +35587,7 @@
    "name": "ZAKI-UR-REHMAN LAKHVI",
    "id": "QI.L.264.08",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.L.118.05"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2813150",
@@ -38310,14 +35706,7 @@
    "name": "RUBEN PESTANO LAVILLA, JR",
    "id": "QI.L.247.08",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.R.128.08",
-    "QI.J.180.04",
-    "QE.I.126.06"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "112494",
@@ -38365,12 +35754,7 @@
    "name": "DJAMEL LOUNICI",
    "id": "QI.L.155.04",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QI.D.164.04"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2936490",
@@ -38416,12 +35800,7 @@
    "name": "HAKIMULLAH MEHSUD",
    "id": "QI.M.286.10",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.T.132.11"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "112364",
@@ -38493,10 +35872,7 @@
    "name": "IBRAHIM MOHAMED KHALIL",
    "id": "QI.M.206.05",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "111783",
@@ -38558,12 +35934,7 @@
    "name": "MAZEN SALAH MOHAMMED",
    "id": "QI.A.202.05",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.A.98.03"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "113442",
@@ -38628,10 +35999,7 @@
    "name": "YUNOS UMPARA MOKLIS",
    "id": "QI.Y.126.03",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "112378",
@@ -38673,10 +36041,7 @@
    "name": "MOHAMED AMIN MOSTAFA",
    "id": "QI.M.147.03",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "112379",
@@ -38840,14 +36205,7 @@
    "name": "DJAMEL MOUSTFA",
    "id": "QI.M.129.03",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QI.S.128.03",
-    "QI.A.130.03",
-    "QI.A.132.03"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2797841",
@@ -38941,10 +36299,7 @@
    "name": "MUBARAK MUSHAKHAS SANAD MUBARAK AL-BATHALI",
    "id": "QI.A.238.08",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2863574",
@@ -38987,12 +36342,7 @@
    "name": "MOHAMMED YAHYA MUJAHID",
    "id": "QI.M.272.09",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.L.118.05"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "113211",
@@ -39035,10 +36385,7 @@
    "name": "ARIS MUNANDAR",
    "id": "QI.M.119.03",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "113313",
@@ -39113,10 +36460,7 @@
    "name": "ABDUL HAKIM MURAD",
    "id": "QI.M.120.03",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "113212",
@@ -39165,13 +36509,7 @@
    "name": "ALI SAYYID MUHAMED MUSTAFA BAKRI",
    "id": "QI.M.196.05",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.A.4.01",
-    "QE.A.3.01"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2901762",
@@ -39226,12 +36564,7 @@
    "name": "TAYEB NAIL",
    "id": "QI.N.280.10",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.T.14.01"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "3012888",
@@ -39297,14 +36630,7 @@
    "name": "ABDERRAHMANE OULD EL AMAR",
    "id": "QI.O.314.13",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.M.134.12",
-    "QE.T.14.01",
-    "QI.B.136.03"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "3013119",
@@ -39365,13 +36691,7 @@
    "name": "HAMADA OULD MOHAMED EL KHAIRY",
    "id": "QI.O.315.13",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.M.134.12",
-    "QE.T.14.01"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2974555",
@@ -39444,13 +36764,7 @@
    "name": "ABD AL-RAHMAN OULD MUHAMMAD AL-HUSAYN OULD MUHAMMAD SALIM",
    "id": "QI.O.298.11",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.A.4.01",
-    "QE.T.14.01"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2812923",
@@ -39518,12 +36832,7 @@
    "name": "DINNO AMOR ROSALEJOS PAREJA",
    "id": "QI.P.242.08",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.R.128.08"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2971762",
@@ -39599,13 +36908,7 @@
    "name": "UMAR PATEK",
    "id": "QI.P.294.11",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.J.92.02",
-    "QE.A.1.01"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2863362",
@@ -39671,13 +36974,7 @@
    "name": "ARIF QASMANI",
    "id": "QI.Q.271.09",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.L.118.05",
-    "QE.A.4.01"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2974860",
@@ -39792,12 +37089,7 @@
    "name": "HASSAN MUHAMMAD ABU BAKR QAYED",
    "id": "QI.Q.297.11",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.A.4.01"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2983791",
@@ -39869,13 +37161,7 @@
    "name": "FAZAL RAHIM",
    "id": "QI.R.303.12",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.I.10.01",
-    "QE.A.4.01"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "113214",
@@ -39935,10 +37221,7 @@
    "name": "AHMED HOSNI RARRBO",
    "id": "QI.R.103.03",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "111429",
@@ -39996,12 +37279,7 @@
    "name": "ATA ABDOULAZIZ RASHID",
    "id": "QI.A.199.05",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.A.98.03"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "113322",
@@ -40058,10 +37336,7 @@
    "name": "ABDELHALIM HAFED ABDELFATTAH REMADNA",
    "id": "QI.R.75.02",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "113435",
@@ -40168,10 +37443,7 @@
    "name": "TAUFIK RIFKI",
    "id": "QI.R.219.06",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "113436",
@@ -40233,10 +37505,7 @@
    "name": "AL-AZHAR BEN KHALIFA BEN AHMED ROUINE",
    "id": "QI.R.150.03",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "113215",
@@ -40299,10 +37568,7 @@
    "name": "ABU RUSDAN",
    "id": "QI.R.186.05",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "111497",
@@ -40359,12 +37625,7 @@
    "name": "AMIN MUHAMMAD UL HAQ SAAM KHAN",
    "id": "QI.A.2.01",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QI.B.8.01"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "111660",
@@ -40447,12 +37708,7 @@
    "name": "MOHAMMAD HAMDI MOHAMMAD SADIQ AL-AHDAL",
    "id": "QI.A.20.01",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.A.4.01"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2833107",
@@ -40542,12 +37798,7 @@
    "name": "HAFIZ MUHAMMAD SAEED",
    "id": "QI.S.263.08",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.L.118.05"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "113323",
@@ -40603,10 +37854,7 @@
    "name": "RADULAN SAHIRON",
    "id": "QI.S.208.05",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2758395",
@@ -40660,10 +37908,7 @@
    "name": "NESSIM BEN ROMDHANE SAHRAOUI",
    "id": "QI.S.222.06",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "113317",
@@ -40753,10 +37998,7 @@
    "name": "NESSIM BEN MOHAMED AL-CHERIF BEN MOHAMED SALEH AL-SAADI",
    "id": "QI.S.148.03",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2813148",
@@ -40844,13 +38086,7 @@
    "name": "HILARION DEL ROSARIO SANTOS III",
    "id": "QI.S.244.08",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.R.128.08",
-    "QE.A.1.01"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "113219",
@@ -40916,12 +38152,7 @@
    "name": "SAYF-AL ADL",
    "id": "QI.S.1.01",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QI.B.8.01"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2830001",
@@ -40988,14 +38219,7 @@
    "name": "DANIEL MARTIN SCHNEIDER",
    "id": "QI.S.260.08",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.I.119.05",
-    "QI.G.259.08",
-    "QI.Y.261.08"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "113324",
@@ -41057,14 +38281,7 @@
    "name": "ISMAIL ABDALLAH SBAITAN SHALABI",
    "id": "QI.S.128.03",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QI.M.129.03",
-    "QI.A.130.03",
-    "QI.A.132.03"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "3150494",
@@ -41139,12 +38356,7 @@
    "name": "ABUBAKAR MOHAMMED SHEKAU",
    "id": "QI.S.322.14",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.B.138.14"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "111782",
@@ -41202,10 +38414,7 @@
    "name": "THARWAT SALAH SHIHATA",
    "id": "QI.A.17.01",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "113220",
@@ -41253,10 +38462,7 @@
    "name": "PARLINDUNGAN SIREGAR",
    "id": "QI.S.122.03",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "113439",
@@ -41319,10 +38525,7 @@
    "name": "YAZID SUFAAT",
    "id": "QI.S.124.03",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "113222",
@@ -41386,10 +38589,7 @@
    "name": "YASSIN SYWAL",
    "id": "QI.S.123.03",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "111639",
@@ -41475,14 +38675,7 @@
    "name": "IBRAHIM ALI ABU BAKR TANTOUSH",
    "id": "QI.T.57.02",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.A.69.02",
-    "QE.R.70.02",
-    "QE.L.11.01"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2813362",
@@ -41548,14 +38741,7 @@
    "name": "ANGELO RAMIREZ TRINIDAD",
    "id": "QI.T.241.08",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.R.128.08",
-    "QE.A.1.01",
-    "QE.J.92.02"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "113440",
@@ -41598,12 +38784,7 @@
    "name": "MOHAMMED TUFAIL",
    "id": "QI.T.56.01",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.U.68.01"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2960872",
@@ -41644,10 +38825,7 @@
    "name": "DOKU KHAMATOVICH UMAROV",
    "id": "QI.U.290.11",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "112283",
@@ -41731,10 +38909,7 @@
    "name": "OMAR MAHMOUD UTHMAN",
    "id": "QI.M.31.01",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "113328",
@@ -41802,10 +38977,7 @@
    "name": "ABDUL RAHMAN YASIN",
    "id": "QI.Y.37.01",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2830354",
@@ -41857,14 +39029,7 @@
    "name": "ADEM YILMAZ",
    "id": "QI.Y.261.08",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.I.119.05",
-    "QI.G.259.08",
-    "QI.S.260.08"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "112285",
@@ -41914,12 +39079,7 @@
    "name": "RAFIK MOHAMAD YOUSEF",
    "id": "QI.M.205.05",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.A.98.03"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "112021",
@@ -42029,10 +39189,7 @@
    "name": "HANI AL-SAYYID AL-SEBAI YUSIF",
    "id": "QI.A.198.05",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "111922",
@@ -42112,10 +39269,7 @@
    "name": "IMED BEN MEKKI ZARKAOUI",
    "id": "QI.A.139.03",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "113330",
@@ -42182,12 +39336,7 @@
    "name": "AHMAD ZERFAOUI",
    "id": "QI.Z.168.04",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.T.14.01"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "2758288",
@@ -42288,12 +39437,7 @@
    "name": "MERAI ZOGHBAI",
    "id": "QI.Z.223.06",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.L.11.01"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "113444",
@@ -42358,10 +39502,7 @@
    "name": "ZULKARNAEN",
    "id": "QI.Z.187.05",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "name": "Fahd Mohammed Ahmed al-Quso (no longer listed) second name (no longer listed)",
@@ -42408,10 +39549,7 @@
    "SORT_KEY": "__AAA",
    "SORT_KEY_LAST_MOD": "2007-07-27T00:00:00",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "name": "Usama Bin Laden (no longer listed) second name (no longer listed)",
@@ -42458,10 +39596,7 @@
    "SORT_KEY": "__AAA",
    "SORT_KEY_LAST_MOD": "2007-07-27T00:00:00",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "name": "Wa&apos;el Hamza Abd al-Fatah Julaidan (no longer listed) second name (no longer listed)",
@@ -42508,10 +39643,7 @@
    "SORT_KEY": "__AAA",
    "SORT_KEY_LAST_MOD": "2007-07-27T00:00:00",
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "empty",
@@ -42558,12 +39690,7 @@
    "name": "Wali Ur Rehman second name (no longer listed)",
    "id": "QI.U.287.10",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.T.132.11"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "DATAID": "empty",
@@ -42610,12 +39737,7 @@
    "name": "Wali Ur Rehman second name (no longer listed)",
    "id": "QI.M.286.10",
    "connectedToId": [],
-   "connections": [],
-   "links": [
-    "QE.T.132.11"
-   ],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "name": "",
@@ -42624,10 +39746,7 @@
    "COMMENTS1": "",
    "indiv0OrEnt1": 0,
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "name": "",
@@ -42636,10 +39755,7 @@
    "COMMENTS1": "",
    "indiv0OrEnt1": 0,
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "name": "",
@@ -42648,10 +39764,7 @@
    "COMMENTS1": "",
    "indiv0OrEnt1": 1,
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   },
   {
    "name": "",
@@ -42660,11 +39773,7 @@
    "COMMENTS1": "",
    "indiv0OrEnt1": 0,
    "connectedToId": [],
-   "connections": [],
-   "links": [],
-   "sourceCount": 0,
-   "targetCount": 0
+   "connections": []
   }
- ],
- "links": []
+ ]
 }
