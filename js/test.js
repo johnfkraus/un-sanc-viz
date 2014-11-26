@@ -13,14 +13,16 @@ var async = require('async'),
   parseString = require('xml2js')
     .parseString;
 
-//var collect = require('./collect.js');
+var linenums = require('./linenums.js');
 // var setupData = require('./setupData.js');
 // var logger = require('./libs/logger.js');
 // var functionCount = 0;
-var removefile = require('./removefile.js');
+// var removefile = require('./removefile.js');
+var getAqXmlFile = require('./get-aqlist-xml.js')
 
 // collect.httpRequestXMLFile();
 // collect.convertXMLToJson();
 
-removefile.removeAFile();
+//removefile.removeAFile();
 
+getAqXmlFile.getXMLFile();

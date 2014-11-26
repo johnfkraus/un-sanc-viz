@@ -52,11 +52,3 @@ var runApp = function() {
   });
 };
 runApp();
-
-/*
- for (var i = 0; i < 50; i++) {
- if (i % 5 == 0) {
- logger.log_message('The value of i is ' + i, 'debug');
- }
- }
- */
