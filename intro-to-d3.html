@@ -1,0 +1,162 @@
+<!doctype html>
+<!--[if lt IE 7]>
+<html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Bar chart, Intro to d3 tutorial-https://blog.safaribooksonline.com/2013/11/18/intro-to-d3-a-data-visualization-primer/</title>
+  <meta name="description" content="U.N. Al-Qaida Sanctions List Network Visualization">
+  <meta name="author" content="John Kraus">
+  <style>
+    .chart div {
+      font: 10px sans-serif;
+      background-color: steelblue;
+      text-align: right;
+      padding: 3px;
+      margin: 1px;
+      color: white;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="chart"></div>
+  <script src="js/libs/d3.v3.js"></script>
+  <script src="js/libs/jquery-1.7.2.js"></script>
+  <script>
+    d3.json("data/AQList-2014-11-18.json", function(error, data) {
+      console.log(data);
+      var aliases;
+      var comments = "";
+      var links = "";
+      var connectedToId;
+      var aliasCount = 0;
+      var aliasArray = [];
+      var linkRegexMatch;
+      var connection;
+      var source;
+      var target;
+      var individuals = data.CONSOLIDATED_LIST.INDIVIDUALS.INDIVIDUAL;
+      var entities = data.CONSOLIDATED_LIST.ENTITIES.ENTITY;
+      console.log("entities", entities);
+
+      // for consistency, indivs will be identified by ids derived by removing any trailing period from REFERENCE_NUMBER
+      var cleanUpIds = function(indivsOrEntities) {
+        indivsOrEntities.forEach(function(indivOrEntity) {
+          var rawRefNum = indivOrEntity.REFERENCE_NUMBER;
+          // remove period from end of all reference numbers that have them; not all do.
+          refNumRegexMatch = (indivOrEntity.REFERENCE_NUMBER)
+            .match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/);
+          var id = refNumRegexMatch[0];
+          //  clean up indiv id for consistency;  none should have trailing period.
+          indivOrEntity.id = id;
+          // console.log("64 indivOrEntity with ids", indivOrEntity);
+        });
+      }
+      cleanUpIds(individuals);
+      cleanUpIds(entities);
+
+      // create a free-standing array containing alias counts 
+      individuals.forEach(function(indiv) {
+        // console.log("indiv = ", indiv);
+        aliases = indiv.INDIVIDUAL_ALIAS;
+        indiv.numAliases = aliases.length;
+        if(indiv.numAliases) {
+          aliasArray.push(indiv.numAliases);
+        } else {
+          aliasArray.push(0);
+        }
+      });
+      // create a links array containing ids of related parties
+      var addLinksArray = function(indivsOrEntities) {
+
+        indivsOrEntities.forEach(function(indivOrEntity) {
+          indivOrEntity.links = [];
+          comments = indivOrEntity.COMMENTS1;
+          if((typeof comments != 'undefined') && (typeof comments.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/gi) != 'undefined')) {
+            linkRegexMatch = comments.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/gi);
+            // console.log("91 linkRegexMatch = ", linkRegexMatch);
+            if((typeof(linkRegexMatch) !== 'undefined') && (linkRegexMatch !== null)) {
+              for(var l = 0; l < linkRegexMatch.length; l++) {
+                indivOrEntity.links.push(linkRegexMatch[l])
+              }
+            }
+            // console.log("indivOrEntity with links", indivOrEntity);
+          }
+        });
+
+      }
+      addLinksArray(individuals);
+      addLinksArray(entities);
+
+      // create an array of connection ids  
+      var addConnectionIdsArray = function(indivsOrEntities) {
+        indivsOrEntities.forEach(function(indivOrEntity) {
+          indivOrEntity.connectedToId = [];
+          comments = indivOrEntity.COMMENTS1;
+          if((typeof comments != 'undefined') && (typeof comments.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/gi) != 'undefined')) {
+            linkRegexMatch = comments.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/gi);
+            console.log("133 linkRegexMatch = ", linkRegexMatch);
+            if((typeof(linkRegexMatch) !== 'undefined') && (linkRegexMatch !== null)) {
+              for(var l = 0; l < linkRegexMatch.length; l++) {
+                indivOrEntity.connectedToId.push(linkRegexMatch[l])
+              }
+            }
+            console.log("136 indivorEntity with array of links", indivOrEntity);
+          }
+        });
+      }
+      addConnectionIdsArray(individuals);
+      addConnectionIdsArray(entities);
+
+      // create array of connection objects with source and target
+      var addConnectionObjectsArray = function(indivsOrEntities) {
+        indivsOrEntities.forEach(function(indivOrEntity) {
+            indivOrEntity.connections = [];
+            var connection = {};
+            if((typeof indivOrEntity.connectedToId != 'undefined') && (typeof indivOrEntity.connectedToId.length != 'undefined') && (indivOrEntity.connectedToId.length > 0)) {
+              var id = indivOrEntity.id;
+              for(var l = 0; l < indivOrEntity.connectedToId.length; l++) {
+                if(id !== indivOrEntity.connectedToId) {
+                  connection.source = id;
+                  connection.target = indivOrEntity.connectedToId[l];
+                  indivOrEntity.connections.push(connection);
+                }
+              }
+            }
+            console.log("178 indivOrEntity with connection objects array", indivOrEntity);
+          });
+        }
+      addConnectionObjectsArray(individuals);
+      addConnectionObjectsArray(entities);
+
+      //var individual_aliases = data.CONSOLIDATED_LIST.INDIVIDUALS.INDIVIDUAL.INDIVIDUAL_ALIAS;
+
+      var x = d3.scale.linear()
+        .domain([0, d3.max(aliasArray)])
+        .range([0, 420]);
+
+      d3.select(".chart")
+        .selectAll("div")
+        .data(aliasArray)
+        .enter()
+        .append("div")
+        .style("width", function(d) {
+          return x(d) + "px";
+        })
+        .text(function(d) {
+          return d;
+        });
+    }); 
+  </script>
+</body>
+</html>

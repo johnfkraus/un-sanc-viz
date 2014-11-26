@@ -1,0 +1,64 @@
+h1. U.N. Al-Qaida Sanctions Feed Network Visualization
+
+h2.  Preparing the data
+
+
+Download the AQList.xml file from here:
+
+
+Using the AQList-to-d3.xsl stylesheet, transform the AQList.xml to the AQ-d3.xml format.
+
+Convert the AQ-d3.xml file to JSON with the following filename: al-qaeda.json, and put the new JSON file in the data directory.
+
+Remove the root node from the al-qaida.json file.
+Make sure the al-qaida.json data file start off like this:
+
+<pre>
+{
+  "nodes": [
+    {
+      "match": 1,
+      "name": "Fahd Mohammed Ahmed al-Quso (no longer listed)",
+      "artist": "QI.A.288.10",
+      "id": "QI.A.288.10",
+      "playcount": 100
+    }, {
+    ...
+    }
+</pre>
+
+
+
+
+
+h2. Running
+
+Running apache2 on codio.
+http://shadow-context.codio.io:3000/
+or
+
+Running build-in HTTP server on custom port 63342 in WebStorm.
+http://localhost:63342/aqlist-visualization/index.html
+
+
+Running in xampp/tomcat/webapps.
+
+You can start up a local webserver by using python's simple server:
+
+<pre>
+python -m SimpleHTTTPServer -p 3000
+</pre>
+
+or @thin@ in ruby
+
+<pre>
+thin start
+# might have to run 'bundle install' first
+</pre>
+
+Now go to "http://0.0.0.0:3000":http://0.0.0.0:3000/
+
+h2.  To Do
+
+Import the narrative pages and collect additional nodes.
+Add click to documentation for each node.

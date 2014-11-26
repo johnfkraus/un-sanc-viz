@@ -1,0 +1,24 @@
+{
+// Configure your Run and Preview buttons here.
+
+// Run button configuration
+  "commands": {
+        "Node version": "node --version"
+  },
+
+// Preview button configuration
+  "preview": {
+    
+    "AQList-json": "https://imagine-rover.codio.io/AQList-json.html",
+    
+    "Intro to d3": "https://imagine-rover.codio.io/intro-to-d3.html",
+     "JSON bar chart demo": "https://imagine-rover.codio.io/bar-chart-json.html",
+    
+    
+        "Project Index (static)": "https://{{domain}}/{{index}}",
+        "Current File (static)": "https://{{domain}}/{{filepath}}",
+    "Box URL:3000": "http://{{domain}}:3000/",
+    "Box URL": "https://imagine-rover-3000.codio.io/",
+        "Box URL SSL": "https://{{domain}}:9500/"
+  }
+}
