@@ -309,7 +309,7 @@ Network = function () {
       } else {
         d.searched = false;
         return element.style("fill", function (d) {
-          return nodeColors(d.artist);
+           return nodeColors(d[$('#node_color_select').val()]);
         })
           .style("stroke-width", 1.0);
       }
@@ -334,7 +334,8 @@ Network = function () {
       } else {
         d.searched = false;
         return element.style("fill", function (d) {
-          return nodeColors(d.artist);
+          // return nodeColors(d.artist);
+          return nodeColors(d[$('#node_color_select').val()]);
         })
           .style("stroke-width", 1.0);
       }
@@ -348,6 +349,9 @@ Network = function () {
     return update();
   };
 
+  //  called once to clean up raw data and switch links to
+  //  point to node instances
+  //  Returns modified data
   setupData = function (data) {
     var circleRadius, count, countExtent, nodesMap;
     // console.log("data = ");
@@ -393,7 +397,7 @@ Network = function () {
       //return n.radius = circleRadius(n.playcount);
       // return n.radius = (n.linkCount);
       // determine radius of each node circle
-      return n.radius = circleRadius(Math.pow(n.linkCount * 3, 1/2));
+      return n.radius = circleRadius(Math.pow(n.linkCount * 3, 0.9));
     });
     nodesMap = mapNodes(data.nodes);
     count = 0;
@@ -423,38 +427,72 @@ Network = function () {
     return data;
   };
 
+  network.updateData2 = function (data) {
+    allData = setupData2(data);
+    link.remove();
+    node.remove();
+    return update();
+  };
+
   //  called once to clean up raw data and switch links to
   //  point to node instances
   //  Returns modified data
-/*
   setupData2 = function (data) {
     var circleRadius, count, countExtent, nodesMap;
+    // console.log("data = ");
+    // console.log(data);
     var result;
     countExtent = d3.extent(data.nodes, function (d) {
-      return parseInt(d.sourceCount, 10);
+      // console.log('showProps(d, "nodes") = ');
+      // console.log(showProps(d, "nodes"));
+      //result = parseInt(d.playcount, 10);
+      result = parseInt(d.linkCount, 10);
+      d.radius = d.linkCount;
+      // console.log("vis.js 197 parseInt(d.playcount, 10) = ");
+      // console.log(result);
+      return parseInt(d.linkCount, 10);
     });
+    // console.log("countExtent = ");
+    // console.log(countExtent);
     circleRadius = d3.scale.sqrt()
       .range([3, 12])
       .domain(countExtent);
+//      .domain(countExtent);
     data.nodes.forEach(function (n) {
-      //  set initial x/y to values within the width/height
-      //  of the visualization
-      var randomnumber;
-      n.x = randomnumber = Math.floor(Math.random() * width);
-      n.y = randomnumber = Math.floor(Math.random() * height);
-      // data.nodes.forEach(function(n) {
-      // console.log('254 showProps(n, "n")');
-      // console.log(showProps(n, "n"));
-      //});
-      //  add radius to the node so we can use it later
-      return n.radius = circleRadius(n.sourceCount + n.targetCount); //n.playcount);
-    });
-    //  id's -> node objects
-    nodesMap = mapNodes(data.nodes);
-    //  switch links to point to node objects instead of id's
-    count = 0;
-    var linkedByIndexData;
+      // console.log("n = ");
+      // console.log(n);
+//      var randomnumber;
+ //     n.x = randomnumber = Math.floor(Math.random() * width);
+ //     n.y = randomnumber = Math.floor(Math.random() * height);
+      // console.log("243 circleRadius(n.playcount) = ");
+      // console.log(circleRadius(n.playcount));
+      // console.log("245 n.weight = ");
+      // console.log(n.weight);
+      // console.log("245 data.nodes = ");
+      // console.log(data.nodes);
+      // console.log("247 data.nodes.weight = ");
+      // console.log(data.nodes.weight);
 
+      // console.log('250 data.nodes.forEach(function (n  = ');
+      data.nodes.forEach(function (n) {
+        // console.log('54 showProps(n, "n")');
+        // console.log(showProps(n, "n"));
+      });
+
+      //return n.radius = circleRadius(n.playcount);
+      // return n.radius = (n.linkCount);
+      // determine radius of each node circle
+      return n.radius = circleRadius(Math.pow(n.linkCount * 3, 0.9));
+    });
+    nodesMap = mapNodes(data.nodes);
+    count = 0;
+    data.nodes.forEach(function (n) {
+      // console.log("n = ")
+      // console.log(n.attr("weight"));
+      // console.log("267 n.weight = ")
+      // console.log(n.weight);
+    });
+    var linkedByIndexData;
     data.links.forEach(function (l) {
       count++;
       if (!(nodesMap.get(l.target))) {
@@ -462,199 +500,20 @@ Network = function () {
       }
       l.source = nodesMap.get(l.source);
       l.target = nodesMap.get(l.target);
-      //  linkedByIndex is used for link sorting
-      return linkedByIndex["" + l.source.id + "," + l.target.id] = 1;
-    });
-
-    var newData = {};
-    var aliases;
-    var comments = "";
-    var links = [];
-    var connectedToId;
-    var aliasCount = 0;
-    var aliasArray = [];
-    var linkRegexMatch;
-    var connection;
-    var source;
-    var target;
-    var conList = data.CONSOLIDATED_LIST;
-    var individuals = data.CONSOLIDATED_LIST.INDIVIDUALS.INDIVIDUAL;
-    var entities = data.CONSOLIDATED_LIST.ENTITIES.ENTITY;
-    var indivs = conList.INDIVIDUALS.INDIVIDUAL;
-    var ents = conList.ENTITIES.ENTITY;
-
-    newData.indivs = indivs;
-    newData.ents = ents;
-    newData.links = links;
-
-    // console.log("newData = ", newData);
-    data = newData;
-    indivs = data.indivs;
-    ents = data.ents;
-    links = data.links;
-    // console.log("entities", entities);
-    // for consistency, indivs will be identified by ids derived by removing any trailing period from REFERENCE_NUMBER
-    var cleanUpIds = function (indivsOrEntities) {
-      indivsOrEntities.forEach(function (indivOrEntity) {
-        var rawRefNum = indivOrEntity.REFERENCE_NUMBER;
-        // remove period from end of all reference numbers that have them; not all do.
-        refNumRegexMatch = (indivOrEntity.REFERENCE_NUMBER)
-          .match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/);
-        var id = refNumRegexMatch[0];
-        //  clean up indiv id for consistency;  none should have trailing period.
-        indivOrEntity.id = id;
-        // console.log("64 indivOrEntity with ids", indivOrEntity);
-      });
-    };
-    cleanUpIds(indivs);
-    cleanUpIds(ents);
-
-    // create a free-standing array containing alias counts 
-    indivs.forEach(function (indiv) {
-      // console.log("indiv = ", indiv);
-      aliases = indiv.INDIVIDUAL_ALIAS;
-      indiv.numAliases = aliases.length;
-      if (indiv.numAliases) {
-        aliasArray.push(indiv.numAliases);
-      } else {
-        aliasArray.push(0);
+      // linkedByIndexData = linkedByIndex["" + l.source.id + "," + l.target.id] = 1;
+      // console.log("vis.js 216 linkedByIndexData = ");
+      // console.log(linkedByIndexData);
+      if ((typeof(l.target) !== 'undefined') && (l.target !== null)) {
+        return linkedByIndex["" + l.source.id + "," + l.target.id] = 1;
       }
     });
-    // create a links array in each entity/indiv containing ids of related parties
-    var addLinksArray = function (indivsOrEntities) {
-      indivsOrEntities.forEach(function (indivOrEntity) {
-        indivOrEntity.links = [];
-        comments = indivOrEntity.COMMENTS1;
-        if ((typeof comments != 'undefined') && (typeof comments.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/gi) != 'undefined')) {
-          linkRegexMatch = comments.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/gi);
-          // console.log("91 linkRegexMatch = ", linkRegexMatch);
-          if ((typeof(linkRegexMatch) !== 'undefined') && (linkRegexMatch !== null)) {
-            for (var l = 0; l < linkRegexMatch.length; l++) {
-              indivOrEntity.links.push(linkRegexMatch[l]);
-            }
-          }
-          // console.log("indivOrEntity with links", indivOrEntity);
-        }
-      });
-    };
-    addLinksArray(indivs);
-    addLinksArray(ents);
-
-    // create an array of connection ids in each indiv/entity  
-    var addConnectionIdsArray = function (indivsOrEntities) {
-      indivsOrEntities.forEach(function (indivOrEntity) {
-        indivOrEntity.connectedToId = [];
-        comments = indivOrEntity.COMMENTS1;
-        if ((typeof comments != 'undefined') && (typeof comments.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/gi) != 'undefined')) {
-          linkRegexMatch = comments.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/gi);
-          // console.log("133 linkRegexMatch = ", linkRegexMatch);
-          if ((typeof(linkRegexMatch) !== 'undefined') && (linkRegexMatch !== null)) {
-            for (var l = 0; l < linkRegexMatch.length; l++) {
-              indivOrEntity.connectedToId.push(linkRegexMatch[l]);
-            }
-          }
-          // console.log("136 indivorEntity with array of links", indivOrEntity);
-        }
-      });
-    };
-    addConnectionIdsArray(indivs);
-    addConnectionIdsArray(ents);
-
-    // create array of connection objects with source and target
-    var addConnectionObjectsArray = function (indivsOrEntities) {
-      indivsOrEntities.forEach(function (indivOrEntity) {
-        indivOrEntity.connections = [];
-        var connection = {};
-        if ((typeof indivOrEntity.connectedToId != 'undefined') && (typeof indivOrEntity.connectedToId.length != 'undefined') && (indivOrEntity.connectedToId.length > 0)) {
-          var id = indivOrEntity.id;
-          for (var l = 0; l < indivOrEntity.connectedToId.length; l++) {
-            if (id !== indivOrEntity.connectedToId) {
-              connection.source = id;
-              connection.target = indivOrEntity.connectedToId[l];
-              indivOrEntity.connections.push(connection);
-            }
-          }
-        }
-        //      console.log("178 indivOrEntity with connection objects array", indivOrEntity);
-      });
-    };
-    addConnectionObjectsArray(indivs);
-    addConnectionObjectsArray(ents);
-
-    // consolidate links; remove duplicates
-    // create array of connection objects with source and target
-    var consolidateLinks = function (data) {
-      // data = newData;
-      data.links = [];
-      //var indivs = conList.INDIVIDUALS.INDIVIDUAL;
-      // var ents = conList.ENTITIES.ENTITY;
-
-      indivs.forEach(function (indiv) {
-        if ((typeof indiv.connections != 'undefined') && (typeof indiv.connections.length != 'undefined') && (indiv.connections.length > 0)) {
-          indiv.connections.forEach(function (conn) {
-            data.links.push(conn);
-          });
-        }
-      });
-      ents.forEach(function (ent) {
-        if ((typeof ent.connections != 'undefined') && (typeof ent.connections.length != 'undefined') && (ent.connections.length > 0)) {
-          ent.connections.forEach(function (conn) {
-            data.links.push(conn);
-          });
-        }
-      });
-      // console.log("160 conList modified", conList);
-    };
-    consolidateLinks(data);
-    // count the links      
-    var countLinks = function (data) {
-      // conList.links = [];
-      //var indivs = conList.INDIVIDUALS.INDIVIDUAL;
-      //var ents = conList.ENTITIES.ENTITY;
-
-      data.indivs.forEach(function (indiv) {
-        if ((typeof indiv.connections != 'undefined') && (typeof indiv.connections.length != 'undefined')) {
-          indiv.linkCount = indiv.connections.length;
-        }
-      });
-      data.ents.forEach(function (ent) {
-        if ((typeof ent.connections != 'undefined') && (typeof ent.connections.length != 'undefined')) {
-          ent.linkCount = ent.connections.length;
-        }
-      });
-      // console.log("aqlist-json.js 160 data modified", data);
-    };
-    countLinks(data);
-
-    var networkVis = function () {
-      var x = d3.scale.linear()
-        .domain([0, d3.max(aliasArray)])
-        .range([0, 420]);
-    };
-
-    var barChart = function () {
-      var x = d3.scale.linear()
-        .domain([0, d3.max(aliasArray)])
-        .range([0, 420]);
-
-      d3.select(".chart")
-        .selectAll("div")
-        .data(aliasArray)
-        .enter()
-        .append("div")
-        .style("width", function (d) {
-          return x(d) + "px";
-        })
-        .text(function (d) {
-          return d;
-        });
-    };
-
-    // console.log("814 data = ", data);
-
+    // console.log("vis.js 283 data = ");
+    // console.log(data);
     return data;
   };
-*/
+
+
+
   //  Helper function to map node id's to node objects.
   //  Returns d3.map of ids -> nodes
   mapNodes = function (nodes) {
@@ -783,20 +642,15 @@ Network = function () {
     curNodes = mapNodes(curNodes);
     return allLinks.filter(function (l) {
       if ((typeof l.target === 'undefined') && (l.target) === null) {
-        console.log("\n 791 Error null target where l.source.id = ", l.source.id, "; l.source = ", JSON.stringify(l.source));
-
+        console.log("\n ", __filename, "line", __line, "; Error null target where l.source.id = ", l.source.id, "; l.source = ", JSON.stringify(l.source));
       }
-
       try {
         if ((typeof l.target.id === 'undefined') && (l.target.id) === null) {
-          console.log("\n 797 Error null target id where l.source.id = ", l.source.id, "; l.source = ", JSON.stringify(l.source));
-
+          console.log("\n ", __filename, "line", __line, "; Error null target id where l.source.id = ", l.source.id, "; l.source = ", JSON.stringify(l.source));
         }
       } catch (error) {
-        console.log("\n 801 Error: ", error, "; null target id where l.source.id = ", l.source.id, "; l.source = ", JSON.stringify(l.source));
-
+        console.log("\n ", __filename, "line", __line, "; Error: ", error, "; null target id where l.source.id = ", l.source.id, "; l.source = ", JSON.stringify(l.source));
       }
-
       if ((typeof curNodes.get(l.target.id) !== 'undefined') && (curNodes.get(l.target.id) !== null)) {
         return curNodes.get(l.source.id) && curNodes.get(l.target.id);
       }
@@ -822,7 +676,7 @@ Network = function () {
         return (d.radius);
       })
       .style("fill", function (d) {
-        return nodeColors(d.name);
+        return nodeColors(d[$('#node_color_select').val()]);
       })
       .style("stroke", function (d) {
         return strokeFor(d);
@@ -1004,9 +858,14 @@ Network = function () {
   //  Mouseover tooltip function
   showDetails = function (d, i) {
     var content;
-    content = '<p class="main">' + d.name + '</span></p>';
+    content = '<p class="main"><span>' + d.name + '</span></p>';
     content += '<hr class="tooltip-hr">';
-    content += '<p class="main">id: ' + d.id + ' links: ' + d.linkCount + '</span></p>';
+    content += '<p class="main"><span>Id: ' + d.id + '&nbsp;&nbsp; Links: ' + d.linkCount + '</span></p>';
+    if (d.natnlty) {
+      content += '<hr class="tooltip-hr">';
+      content += '<p class="main"><span>Nationality: ' + d.natnlty;
+    }
+    content += '</span></p>';
     tooltip.showTooltip(content, d3.event);
     //  higlight connected links
     if (link) {
@@ -1109,6 +968,7 @@ $(function () {
       activate("sorts", newSort);
       return myNetwork.toggleSort(newSort);
     });
+  /*
   $("#song_select")
     .on("change", function (e) {
       var songFile;
@@ -1119,22 +979,37 @@ $(function () {
         return myNetwork.updateData(json);
       });
     });
-
+*/
   $("#force_charge_select")
     .on("change", function (e) {
-
       activate("layouts", "force");
       return myNetwork.toggleLayout("force");
-
     });
 
   $("#link_distance_select")
     .on("change", function (e) {
-
       activate("layouts", "force");
       return myNetwork.toggleLayout("force");
     });
 
+  $("#node_color_select")
+    .on("change", function (e) {
+      activate("layouts", "force");
+      return document.updateNodes(); //   .toggleLayout("force");
+    });
+/*
+  $("#node_color_select")
+
+    .on("change", function (e) {
+      var songFile = "data/output/AQList-clean.json";
+      // songFile = $(this)
+       // .val();
+      // console.log("vis 564 songfile = ", songfile);
+      return d3.json( songFile, function (json) {
+        return myNetwork.updateData2(json);
+      });
+    });
+*/
   $("#search")
     .keyup(function () {
       var searchTerm;
@@ -1150,6 +1025,12 @@ $(function () {
         .val();
       return myNetwork.updateSearch2(searchTerm);
     });
+
+  var check = function () {
+    document.getElementById("includeEnts").checked = true;
+    document.getElementById("includeIndivs").checked = true;
+  };
+  check();
 
   // LOAD THE JSON DATA FILE HERE
   // return d3.json("data/al-qaida.json", function(json) {
