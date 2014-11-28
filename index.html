@@ -16,7 +16,6 @@
     <title>U.N. Al-Qaida Sanctions List Network Visualization</title>
     <meta name="description" content="U.N. Al-Qaida Sanctions List Network Visualization">
     <meta name="author" content="John Kraus">
-
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
     <!-- CSS concatenated and minified via ant build script-->
@@ -29,7 +28,10 @@
     <script src="js/libs/modernizr.custom.99838.js"></script>
     <script src="js/utilities.js"></script>
     <script src="js/json-pruned.js"></script>
+    <script src="js/libs/underscore.js"></script>
+    <!--
     <script src="http://ajax.cdnjs.com/ajax/libs/underscore.js/1.1.6/underscore-min.js"></script>
+    -->
     <script src="js/libs/backbone.js"></script>
 </head>
 <body>
@@ -97,7 +99,6 @@
                     </form>
                 </div>
             </td>
-
             <td align="center" style="width: 450px;">
                 <div>
                     <h3>Visualization parameters</h3>
@@ -128,9 +129,7 @@
                             <option value="-400">-400</option>
                             <option value="-500">-500</option>
                             <option value="-1000">-1000</option>
-
                         </select>
-
                     </div>
                     <div class="force_selection control" style="">
                         <h4>Link distance</h4>
@@ -155,10 +154,8 @@
                             <option value="125">125 px</option>
                             <option value="150">150 px</option>
                             <option value="200">200 px</option>
-
                         </select>
                     </div>
-
                 </div>
             </td>
 
@@ -169,18 +166,17 @@
     <div id="main" role="main">
         <div id="vis"></div>
     </div>
-    <footer><p style="font-size: 12px; font-weight: bold;">A Thing by John Kraus</p>
-
+    <footer>
+        <!--
+        <p style="font-size: 12px; font-weight: bold;">A Thing by John Kraus</p>
         <p>
             Inspired by a tutorial/app by Jim Vallandingham
         </p>
-
         <p>Node size is proportional to number of links to other nodes. </p>
-
+-->
     </footer>
 </div>
 <!--! end of #container -->
-
 
 <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> -->
 <script>

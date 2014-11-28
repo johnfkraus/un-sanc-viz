@@ -173,3 +173,26 @@ If you receive a message about "access denied," you can read these instructions 
 
 If you're switching from HTTPS to SSH, you'll now need to update your remote repository URLs. For more information, see Changing a remote's URL.
 
+
+Argument for @NotNull parameter 'e' of com/intellij/openapi/ActionSystem/AnAction.update must not be null
+
+
+Short path to browser:
+
+"C:\Program Files\Internet Explorer\iexplore.exe"
+cmd /c for %A in ("C:\Documents and Settings\User\NTUSER.DAT") do @echo %~sA
+cmd /c for %A in ("C:\Program Files\Internet Explorer\iexplore.exe") do @echo %~sA
+C:\PROGRA~1\INTERN~1\iexplore.exe
+
+
+
+    2  heroku login
+   10  git clone https://github.com/heroku/node-js-getting-started.git
+   11  cd node-js-getting-started/
+   16  heroku create --http-git
+   18  git push heroku master
+   19  heroku ps:scale web=1
+   20  heroku open
+   21  heroku logs --tail
+   28  cd .ssh
+   32  clip < ~/.ssh/id_rsa.pub
