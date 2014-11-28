@@ -2,6 +2,9 @@
 //==============
 // window.globaldata = globaldata || {};
 var Network, RadialPlacement, activate, root;
+
+var dateAqListGeneratedString;
+
 root = typeof exports !== "undefined" && exports !== null ? exports : this;
 
 //  Help with the placement of nodes
@@ -148,8 +151,8 @@ Network = function () {
   var h = window.innerHeight;
   width = w - 20; // 1152;
   height = 960;
-  //  allData will store the unfiltered data
 
+  //  allData will store the unfiltered data
   allData = [];
   curLinksData = [];
   curNodesData = [];
@@ -192,6 +195,23 @@ Network = function () {
 
   network = function (selection, data) {
     var vis;
+
+    var genDate = function (data) {
+//      console.log("running genDate");
+      // dateAqListGeneratedString = data.dateGenerated;
+      // var dateAqListGenerated = new Date(dateAqListGeneratedString);
+      // dateFormat.masks.friendly_display = "dddd, mmmm dS, yyyy";
+      // var generatedFileDateString = dateFormat(dateAqListGenerated, "fullDate");
+      //   var message = "Collected AQList.xml labeled as generated on: " + dateAqListGeneratedString + " [" + dateAqListGeneratedString + "]";
+      //    console.log(message);
+      document.getElementById("dateGeneratedByUN").innerHTML = data.dateGenerated;
+
+      //return dateAqListGeneratedString;
+    };
+
+    genDate(data);
+    // console.log(dateAqListGeneratedString);
+
     // setupData2(data);
     //  format our data
     // allData = setupData(data);
@@ -212,6 +232,7 @@ Network = function () {
     setLayout("force");
     setFilter("all");
     //  perform rendering and start force layout
+    // console.log(genDate(data));
 
     return update();
   };
@@ -264,9 +285,9 @@ Network = function () {
   };
   //  Public function to switch between layouts
 
-  network.toggleLayout = function (newLayout) {
+  network.toggleLayout = function (newLayout, changeInt) {
     force.stop();
-    setLayout(newLayout);
+    setLayout(newLayout, changeInt);
     return update();
   };
   // where did this method come from????
@@ -309,7 +330,7 @@ Network = function () {
       } else {
         d.searched = false;
         return element.style("fill", function (d) {
-           return nodeColors(d[$('#node_color_select').val()]);
+          return nodeColors(d[$('#node_color_select').val()]);
         })
           .style("stroke-width", 1.0);
       }
@@ -462,8 +483,8 @@ Network = function () {
       // console.log("n = ");
       // console.log(n);
 //      var randomnumber;
- //     n.x = randomnumber = Math.floor(Math.random() * width);
- //     n.y = randomnumber = Math.floor(Math.random() * height);
+      //     n.x = randomnumber = Math.floor(Math.random() * width);
+      //     n.y = randomnumber = Math.floor(Math.random() * height);
       // console.log("243 circleRadius(n.playcount) = ");
       // console.log(circleRadius(n.playcount));
       // console.log("245 n.weight = ");
@@ -511,8 +532,6 @@ Network = function () {
     // console.log(data);
     return data;
   };
-
-
 
   //  Helper function to map node id's to node objects.
   //  Returns d3.map of ids -> nodes
@@ -744,12 +763,14 @@ Network = function () {
       .remove();
   };
   //  switches force to new layout parameters
-  setLayout = function (newLayout) {
+  setLayout = function (newLayout, changeInt) {
     layout = newLayout;
+    changeInt = changeInt || 0;
+    var forceCharge = $('#force_charge_select').val();
+    var newForceCharge = parseInt(forceCharge, 10) + changeInt;
     if (layout === "force") {
       return force.on("tick", forceTick)
-        .charge($('#force_charge_select')
-          .val())
+        .charge(newForceCharge)
         .linkDistance($('#link_distance_select')
           .val());
     } else if (layout === "radial") {
@@ -969,22 +990,31 @@ $(function () {
       return myNetwork.toggleSort(newSort);
     });
   /*
-  $("#song_select")
-    .on("change", function (e) {
-      var songFile;
-      songFile = $(this)
-        .val();
-      // console.log("vis 564 songfile = ", songfile);
-      return d3.json("data/" + songFile, function (json) {
-        return myNetwork.updateData(json);
-      });
-    });
-*/
+   $("#song_select")
+   .on("change", function (e) {
+   var songFile;
+   songFile = $(this)
+   .val();
+   // console.log("vis 564 songfile = ", songfile);
+   return d3.json("data/" + songFile, function (json) {
+   return myNetwork.updateData(json);
+   });
+   });
+   */
   $("#force_charge_select")
     .on("change", function (e) {
       activate("layouts", "force");
       return myNetwork.toggleLayout("force");
     });
+
+  var intervalID = setInterval(function () {
+    wiggle();
+  }, 20000);
+
+  var wiggle = function () {
+    activate("layouts", "force");
+    return myNetwork.toggleLayout("force", 0);
+  };
 
   $("#link_distance_select")
     .on("change", function (e) {
@@ -997,19 +1027,19 @@ $(function () {
       activate("layouts", "force");
       return document.updateNodes(); //   .toggleLayout("force");
     });
-/*
-  $("#node_color_select")
+  /*
+   $("#node_color_select")
 
-    .on("change", function (e) {
-      var songFile = "data/output/AQList-clean.json";
-      // songFile = $(this)
-       // .val();
-      // console.log("vis 564 songfile = ", songfile);
-      return d3.json( songFile, function (json) {
-        return myNetwork.updateData2(json);
-      });
-    });
-*/
+   .on("change", function (e) {
+   var songFile = "data/output/AQList-clean.json";
+   // songFile = $(this)
+   // .val();
+   // console.log("vis 564 songfile = ", songfile);
+   return d3.json( songFile, function (json) {
+   return myNetwork.updateData2(json);
+   });
+   });
+   */
   $("#search")
     .keyup(function () {
       var searchTerm;
@@ -1018,6 +1048,21 @@ $(function () {
       return myNetwork.updateSearch(searchTerm);
     });
 
+  // get list of radio buttons with name 'size'
+  var sz = document.forms['highlight'].elements['type'];
+
+// loop through list
+  for (var i = 0, len = sz.length; i < len; i++) {
+    sz[i].onclick = function () { // assign onclick handler function to each
+      // put clicked radio button's value in total field
+      // this.form.elements.value = this.value;
+      console.log(this.value);
+      searchTerm = $(this)
+        .val();
+      return myNetwork.updateSearch(searchTerm);
+    };
+  }
+
   $("#search2")
     .keyup(function () {
       var searchTerm;
@@ -1025,13 +1070,13 @@ $(function () {
         .val();
       return myNetwork.updateSearch2(searchTerm);
     });
-
-  var check = function () {
-    document.getElementById("includeEnts").checked = true;
-    document.getElementById("includeIndivs").checked = true;
-  };
-  check();
-
+  /*
+   var check = function () {
+   document.getElementById("includeEnts").checked = true;
+   document.getElementById("includeIndivs").checked = true;
+   };
+   check();
+   */
   // LOAD THE JSON DATA FILE HERE
   // return d3.json("data/al-qaida.json", function(json) {
   return d3.json("data/output/AQList-clean.json", function (json) {

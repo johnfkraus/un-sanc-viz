@@ -26,7 +26,9 @@
     <!--script src="js/libs/modernizr-2.0.6.min.js"></script-->
     <script src="js/libs/modernizr.custom.99838.js"></script>
     <script src="js/utilities.js"></script>
+    <!--
     <script src="js/json-pruned.js"></script>
+    -->
     <script src="js/libs/underscore.js"></script>
     <!--
     <script src="http://ajax.cdnjs.com/ajax/libs/underscore.js/1.1.6/underscore-min.js"></script>
@@ -40,6 +42,9 @@
             <td class="mainTitle">
                 <div id="mainTitle"><span style="margin-bottom: 0;"><a href="http://www.un.org/sc/committees/1267/AQList.xml" target="_blank" style="text-decoration: none;">U.N. Al-Qaida Sanctions List</a>
                     <br/>Network Visualization</span></div>
+
+<div><span><a href="http://www.un.org/sc/committees/1267/AQList.xml" target="_blank" style="text-decoration: none;">U.N. Sanctions List generated </a></span><span id="dateGeneratedByUN"></span></div>
+
                 <div>
                     <span style="font-size: 12px; line-height: 12px; padding-left: 2px;">A Thing by <a href="mailto:john@johnfkraus.com?Subject=Cowabunga!" target="_top">John Kraus</a></span>
                 </div>
@@ -89,12 +94,12 @@
                 </div>
             </td>
 
-            <td style="padding-top: 5px; color: #ddd;">
-                <div>
-                    <form action="">
-                        <input type="checkbox" id="includeEnts" name="includeEntsIndivs" value="entities"
-                               style="margin-bottom: 5px;"/>Entities<br>
-                        <input type="checkbox" id="includeIndivs" name="includeEntsIndivs" value="individuals"/>Individuals
+            <td style="padding-top: 5px;">
+                <div>Highlight
+                    <form action="highlight" id="highlight">
+                        <input type="radio" checked name="type" value="">&nbsp;None<br>
+                        <input type="radio" name="type" value="QE.">&nbsp;Entities<br>
+                        <input type="radio" name="type" value="QI.">&nbsp;Individuals
                     </form>
                 </div>
             </td>
@@ -107,6 +112,8 @@
                             <option  selected="selected"  value="name">Name (random)</option>
                             <option value="natnlty">Nationality</option>
                             <option value="other">Other</option>
+
+
                         </select>
                     </div>
                     <div class="force_selection control">

@@ -2,7 +2,7 @@
 //================
 var fs = require('fs');
 
-var filename = 'tutorial.log';
+var filename = 'aq-list-viz.log';
 var last_message = {
   date: null,
   msg: null,
@@ -25,7 +25,7 @@ var log_message = function(message, level) {
     if(err) {
       throw err;
     } else {
-      console.log(log);
+      console.log("logger.js says", log);
     }
   });
 };
