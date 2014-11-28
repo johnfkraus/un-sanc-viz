@@ -3,7 +3,7 @@
 // window.globaldata = globaldata || {};
 var Network, RadialPlacement, activate, root;
 
-var dateAqListGeneratedString;
+// var dateAqListGeneratedString;
 
 root = typeof exports !== "undefined" && exports !== null ? exports : this;
 
@@ -145,7 +145,7 @@ Network = function () {
   var allData, charge, curLinksData, curNodesData, filter, filterLinks, filterNodes, force, forceTick, groupCenters, height, hideDetails, layout, link, linkedByIndex, linksG, mapNodes, moveToRadialLayout, neighboring, network, node, nodeColors, nodeCounts, nodesG, radialTick, setFilter, setLayout, setSort, setupData, showDetails, sort, sortedArtists, strokeFor, tooltip, update, updateCenters, updateLinks, updateNodes, width;
 //  var setupData2;
   var forceChargeParam;
-  var songfile = "AQList-clean.json";
+  var artfile = "AQList-clean.json";
   var aqdata = window.data;
   var w = window.innerWidth;
   var h = window.innerHeight;
@@ -169,7 +169,7 @@ Network = function () {
 
   layout = "force";
   filter = "all";
-  sort = "songs";
+  sort = "arts";
   //  groupCenters will store our radial layout for
   //  the group by artist layout.
 
@@ -197,24 +197,12 @@ Network = function () {
     var vis;
 
     var genDate = function (data) {
-//      console.log("running genDate");
-      // dateAqListGeneratedString = data.dateGenerated;
-      // var dateAqListGenerated = new Date(dateAqListGeneratedString);
-      // dateFormat.masks.friendly_display = "dddd, mmmm dS, yyyy";
-      // var generatedFileDateString = dateFormat(dateAqListGenerated, "fullDate");
-      //   var message = "Collected AQList.xml labeled as generated on: " + dateAqListGeneratedString + " [" + dateAqListGeneratedString + "]";
-      //    console.log(message);
       document.getElementById("dateGeneratedByUN").innerHTML = data.dateGenerated;
-
-      //return dateAqListGeneratedString;
     };
 
     genDate(data);
-    // console.log(dateAqListGeneratedString);
 
-    // setupData2(data);
     //  format our data
-    // allData = setupData(data);
     allData = setupData(data);
     //  create our svg and groups
 
@@ -247,7 +235,7 @@ Network = function () {
   update = function () {
 
     // forceChargeParam = $("#force_charge_select").val();
-    var artists;
+    var targets;
     //  filter data to show based on current filter settings.
     curNodesData = filterNodes(allData.nodes);
     curLinksData = filterLinks(allData.links, curNodesData);
@@ -255,8 +243,8 @@ Network = function () {
     //  radial layout
 
     if (layout === "radial") {
-      artists = sortedArtists(curNodesData, curLinksData);
-      updateCenters(artists);
+      targets = sortedTargets(curNodesData, curLinksData);
+      updateCenters(targets);
     }
     //  reset nodes in force layout
     force.nodes(curNodesData);
@@ -355,7 +343,7 @@ Network = function () {
       } else {
         d.searched = false;
         return element.style("fill", function (d) {
-          // return nodeColors(d.artist);
+          // return nodeColors(d.target);
           return nodeColors(d[$('#node_color_select').val()]);
         })
           .style("stroke-width", 1.0);
@@ -545,7 +533,7 @@ Network = function () {
   };
   //  Helper function that returns an associative array
   //  with counts of unique attr in nodes
-  //  attr is value stored in node, like 'artist'
+  //  attr is value stored in node, like 'target'
 
   nodeCounts = function (nodes, attr) {
     // console.log("296 attr = ");
@@ -593,55 +581,55 @@ Network = function () {
     }
     return filteredNodes;
   };
-  //  Returns array of artists sorted based on
+  //  Returns array of targets sorted based on
   //  current sorting method.
 
-  sortedArtists = function (nodes, links) {
-    var artists, counts;
-    artists = [];
+  sortedTargets = function (nodes, links) {
+    var targets, counts;
+    targets = [];
     if (sort === "links") {
       counts = {};
       links.forEach(function (l) {
         var _name, _name1;
-        if (counts[_name = l.source.artist] == null) {
+        if (counts[_name = l.source.target] == null) {
           counts[_name] = 0;
         }
-        counts[l.source.artist] += 1;
-        if (counts[_name1 = l.target.artist] == null) {
+        counts[l.source.target] += 1;
+        if (counts[_name1 = l.target.target] == null) {
           counts[_name1] = 0;
         }
-        return counts[l.target.artist] += 1;
+        return counts[l.target.target] += 1;
       });
-      //  add any missing artists that dont have any links
+      //  add any missing targets that dont have any links
 
       nodes.forEach(function (n) {
         var _name;
-        return counts[_name = n.artist] != null ? counts[_name] : counts[_name] = 0;
+        return counts[_name = n.target] != null ? counts[_name] : counts[_name] = 0;
       });
       //  sort based on counts
-      artists = d3.entries(counts)
+      targets = d3.entries(counts)
         .sort(function (a, b) {
           return b.value - a.value;
         });
       //  get just names
 
-      artists = artists.map(function (v) {
+      targets = targets.map(function (v) {
         return v.key;
       });
     } else {
-      //  sort artists by song count
-      counts = nodeCounts(nodes, "artist");
-      artists = d3.entries(counts)
+      //  sort targets by art count
+      counts = nodeCounts(nodes, "target");
+      targets = d3.entries(counts)
         .sort(function (a, b) {
           return b.value - a.value;
         });
-      artists = artists.map(function (v) {
+      targets = targets.map(function (v) {
         return v.key;
       });
     }
-    return artists;
+    return targets;
   };
-  updateCenters = function (artists) {
+  updateCenters = function (targets) {
     if (layout === "radial") {
       return groupCenters = RadialPlacement()
         .center({
@@ -650,7 +638,7 @@ Network = function () {
         })
         .radius(300)
         .increment(18)
-        .keys(artists);
+        .keys(targets);
     }
   };
   //  Removes links from allLinks whose
@@ -702,18 +690,13 @@ Network = function () {
       })
       .style("stroke-width", 1.0);
 
-    // console.log("400 node = ");
-    // console.log(node);
-
     node.on("mouseover", showDetails)
       .on("mouseout", hideDetails);
 
     // console.log('409 viz.js showProps(node, "node") = ');
     // console.log(showProps(node, "node"));
     //console.log(stringify(node, null, '\t'));
-
     // var serialized = CircularJSON.stringify(node);
-
     // console.log("serialized = ", serialized);
     var countN = 0;
     node.forEach(function (n) {
@@ -728,9 +711,7 @@ Network = function () {
           //  console.log("825 showProps(circle.r, 'circle.r'), # = ", countN);
           //  console.log(showProps(circle.r, "circle.r"));
         }
-
       });
-
     });
 
     return node.exit()
@@ -863,7 +844,7 @@ Network = function () {
     k = alpha * 0.1;
     return function (d) {
       var centerNode;
-      centerNode = groupCenters(d.artist);
+      centerNode = groupCenters(d.target);
       d.x += (centerNode.x - d.x) * k;
       return d.y += (centerNode.y - d.y) * k;
     };
@@ -990,13 +971,13 @@ $(function () {
       return myNetwork.toggleSort(newSort);
     });
   /*
-   $("#song_select")
+   $("#art_select")
    .on("change", function (e) {
-   var songFile;
-   songFile = $(this)
+   var artFile;
+   artFile = $(this)
    .val();
-   // console.log("vis 564 songfile = ", songfile);
-   return d3.json("data/" + songFile, function (json) {
+   // console.log("vis 564 artfile = ", artfile);
+   return d3.json("data/" + artFile, function (json) {
    return myNetwork.updateData(json);
    });
    });
@@ -1027,19 +1008,6 @@ $(function () {
       activate("layouts", "force");
       return document.updateNodes(); //   .toggleLayout("force");
     });
-  /*
-   $("#node_color_select")
-
-   .on("change", function (e) {
-   var songFile = "data/output/AQList-clean.json";
-   // songFile = $(this)
-   // .val();
-   // console.log("vis 564 songfile = ", songfile);
-   return d3.json( songFile, function (json) {
-   return myNetwork.updateData2(json);
-   });
-   });
-   */
   $("#search")
     .keyup(function () {
       var searchTerm;
@@ -1081,9 +1049,6 @@ $(function () {
   // return d3.json("data/al-qaida.json", function(json) {
   return d3.json("data/output/AQList-clean.json", function (json) {
     //return d3.json("data/output/AQList-clean.json", function(json) {
-
-//    console.log("vis 733 json = ", json);
-
     return myNetwork("#vis", json);
   });
 
