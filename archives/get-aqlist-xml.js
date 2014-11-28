@@ -14,11 +14,11 @@ var async = require('async'),
     .parseString;
 
 
-var setupData = require('./setupData.js');
-var logger = require('./libs/logger.js');
+var setupData = require('./../js/setupData.js');
+var logger = require('./../js/libs/logger.js');
 var functionCount = 0;
 
-var linenums = require('./linenums.js');
+var linenums = require('./../js/linenums.js');
 
 var getXMLFile = function () {
 var fileNameToSaveTo = __dirname + "/../data/xml/AQList.xml";

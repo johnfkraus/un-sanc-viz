@@ -1,4 +1,4 @@
-var stringify = require('./stringify.js');
+var stringify = require('./../js/stringify.js');
 
 var circularObj = { a: 'b' };
 circularObj.circularRef = circularObj;

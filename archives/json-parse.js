@@ -8,45 +8,47 @@ fs.readFile(file, 'utf8', function(err, data) {
     return;
   }
 
-  data = JSON.parse(data);
-  data = setupData2(data);
-  
-  
-  var tarCount = 0;
-  var souCount = 0;
-  for(var n in data.nodes) {
-    console.log("14 data.nodes[", n, "] = ", data.nodes[n]);
-    console.log("15 data.nodes[", n, "].id = ", data.nodes[n].id);
-    data.nodes[n]['sourceCount'] = 0;
-    data.nodes[n]['targetCount'] = 0;
-    for(var l in data.links) {
-      // console.log("data.links[", n, "] = ", data.links[n]); 
+  var conList = JSON.parse(data);
+  data = setupData(conList);
 
-      if(data.links[l].source == data.nodes[n].id) {
-        console.log('22  ', data.links[l].source, ' == ', data.nodes[n].id, ' TRUE');
-        data.nodes[n].sourceCount = data.nodes[n].sourceCount + 1;
+  var doStuff = function() {
 
-        souCount++;
+    var tarCount = 0;
+    var souCount = 0;
+    for(var n in data.nodes) {
+      console.log("14 data.nodes[", n, "] = ", data.nodes[n]);
+      console.log("15 data.nodes[", n, "].id = ", data.nodes[n].id);
+      data.nodes[n]['sourceCount'] = 0;
+      data.nodes[n]['targetCount'] = 0;
+      for(var l in data.links) {
+        // console.log("data.links[", n, "] = ", data.links[n]); 
+
+        if(data.links[l].source == data.nodes[n].id) {
+          console.log('22  ', data.links[l].source, ' == ', data.nodes[n].id, ' TRUE');
+          data.nodes[n].sourceCount = data.nodes[n].sourceCount + 1;
+
+          souCount++;
+        }
+        if(data.links[l].target == data.nodes[n].id) {
+          console.log('26  ', data.links[l].target, ' == ', data.nodes[n].id, ' TRUE');
+          data.nodes[n].targetCount = data.nodes[n].targetCount + 1;
+          tarCount++;
+        }
+
       }
-      if(data.links[l].target == data.nodes[n].id) {
-        console.log('26  ', data.links[l].target, ' == ', data.nodes[n].id, ' TRUE');
-        data.nodes[n].targetCount = data.nodes[n].targetCount + 1;
-        tarCount++;
-      }
+      console.log('32  ', "data.nodes[", n, "].sourceCount = ", data.nodes[n].sourceCount);
+      console.log('33  ', "data.nodes[", n, "].targetCount = ", data.nodes[n].targetCount);
+
+      console.log("tarCount = ", tarCount);
+      console.log("souCount = ", souCount);
 
     }
-    console.log('32  ', "data.nodes[", n, "].sourceCount = ", data.nodes[n].sourceCount);
-    console.log('33  ', "data.nodes[", n, "].targetCount = ", data.nodes[n].targetCount);
 
-    console.log("tarCount = ", tarCount);
-    console.log("souCount = ", souCount);
-
-  }
-
-  console.log("data = ", data);
-  // alert("pause");
-  console.log("writefile ...");
-  // fs.writeFile('aq-qaida2.json', data, null, err);
+    console.log("data = ", data);
+    // alert("pause");
+    console.log("writefile ...");
+    // fs.writeFile('aq-qaida2.json', data, null, err);
+  };
 
   var outputFilename = '../data/test/al-qaida.test.json';
 
@@ -88,22 +90,22 @@ function alert(x) {
 
 //  called once to clean up raw data and switch links to
 //  point to node instances
-//  Returns modified data
-var setupData2 = function(data) {
+//  Returns data modified for d3
+var setupData = function(rawData) {
 
-  var circleRadius, count, countExtent, nodesMap;
-  var result;
-//  countExtent = d3.extent(data.nodes, function(d) {
-//    return parseInt(d.sourceCount, 10);
-//  });
+  //  var circleRadius, count, countExtent, nodesMap;
+  //  var result;
+  //  countExtent = d3.extent(data.nodes, function(d) {
+  //    return parseInt(d.sourceCount, 10);
+  //  });
 
-//  circleRadius = d3.scale.sqrt()
-//    .range([3, 12])
-//    .domain(countExtent);
-//  data.nodes.forEach(function(n) {
-    //  set initial x/y to values within the width/height
-    //  of the visualization
-/*
+  //  circleRadius = d3.scale.sqrt()
+  //    .range([3, 12])
+  //    .domain(countExtent);
+  //  data.nodes.forEach(function(n) {
+  //  set initial x/y to values within the width/height
+  //  of the visualization
+  /*
     var randomnumber;
     n.x = randomnumber = Math.floor(Math.random() * width);
     n.y = randomnumber = Math.floor(Math.random() * height);
@@ -117,39 +119,77 @@ var setupData2 = function(data) {
   });
   */
   //  id's -> node objects
-//  nodesMap = mapNodes(data.nodes);
+  //  nodesMap = mapNodes(data.nodes);
   //  switch links to point to node objects instead of id's
 
+  var cleanUp = function(rawData) {
+    var cleanUpIds, addAliasCount, addLinksArray, addConnectionIdsArray,
+      addConnectionObjectsArray,
+      consolidateLinks,
+      countLinks,
+      networkVis,
+      barChart;
+    var tempData = {};
+    var newData = {};
+    var aliases;
+    var comments = "";
+    var links = [];
+    var connectedToId;
+    var aliasCount = 0;
+    var aliasArray = [];
+    var linkRegexMatch;
+    var connection;
+    var source;
+    var target;
+    var conList = rawData.CONSOLIDATED_LIST;
+    var individuals = rawData.CONSOLIDATED_LIST.INDIVIDUALS.INDIVIDUAL;
+    var entities = rawData.CONSOLIDATED_LIST.ENTITIES.ENTITY;
+    var indivs = conList.INDIVIDUALS.INDIVIDUAL;
+    var ents = conList.ENTITIES.ENTITY;
 
-  var newData = {};
-  var aliases;
-  var comments = "";
-  var links = [];
-  var connectedToId;
-  var aliasCount = 0;
-  var aliasArray = [];
-  var linkRegexMatch;
-  var connection;
-  var source;
-  var target;
-  var conList = data.CONSOLIDATED_LIST;
-  var individuals = data.CONSOLIDATED_LIST.INDIVIDUALS.INDIVIDUAL;
-  var entities = data.CONSOLIDATED_LIST.ENTITIES.ENTITY;
-  var indivs = conList.INDIVIDUALS.INDIVIDUAL;
-  var ents = conList.ENTITIES.ENTITY;
+    tempData.indivs = indivs;
+    tempData.ents = ents;
+    tempData.links = [];
 
-  newData.indivs = indivs;
-  newData.ents = ents;
-  newData.links = links;
+    // console.log("tempData = ", tempData);
+    //  data = tempData;
+    //  indivs = tempData.indivs;
+    //  ents = data.ents;
+    //  links = data.links;
 
-  console.log("newData = ", newData);
-  data = newData;
-  indivs = data.indivs;
-  ents = data.ents;
-  links = data.links;
-  // console.log("entities", entities);
-  // for consistency, indivs will be identified by ids derived by removing any trailing period from REFERENCE_NUMBER
-  var cleanUpIds = function(indivsOrEntities) {
+    console.log("individuals", individuals);
+
+    // for consistency, indivs will be identified by ids derived by removing any trailing period from REFERENCE_NUMBER  
+    cleanUpIds(individuals);
+    cleanUpIds(ents);
+    addAliasCount(indivs);
+    addLinksArray(indivs);
+    addLinksArray(ents);
+    addConnectionIdsArray(indivs);
+    addConnectionIdsArray(ents);
+    addConnectionObjectsArray(indivs);
+    addConnectionObjectsArray(ents);
+
+    // entities and indivs each go into an array of 'nodes'  
+    ents.forEach(function(ent) {
+      // 1 = entity; 0 = individual
+      ent.indivOrEnt = 1;
+    });
+    indivs.forEach(function(indiv) {
+      // 1 = entity; 0 = individual
+      indiv.indivOrEnt = 1;
+    });
+    newData.nodes = [];
+    newData.nodes.push(indivs);
+    newData.nodes.push(ents);
+
+    newData.links = links;
+
+  };
+
+  cleanUp();
+
+  cleanUpIds = function(indivsOrEntities) {
     indivsOrEntities.forEach(function(indivOrEntity) {
       var rawRefNum = indivOrEntity.REFERENCE_NUMBER;
       // remove period from end of all reference numbers that have them; not all do.
@@ -161,22 +201,26 @@ var setupData2 = function(data) {
       // console.log("64 indivOrEntity with ids", indivOrEntity);
     });
   };
-  cleanUpIds(indivs);
-  cleanUpIds(ents);
+  // cleanUpIds(indivs);
+  // cleanUpIds(ents);
 
   // create a free-standing array containing alias counts 
-  indivs.forEach(function(indiv) {
-    // console.log("indiv = ", indiv);
-    aliases = indiv.INDIVIDUAL_ALIAS;
-    indiv.numAliases = aliases.length;
-    if(indiv.numAliases) {
-      aliasArray.push(indiv.numAliases);
-    } else {
-      aliasArray.push(0);
-    }
-  });
+
+  addAliasCount = function(indivs) {
+
+    indivs.forEach(function(indiv) {
+      // console.log("indiv = ", indiv);
+      aliases = indiv.INDIVIDUAL_ALIAS;
+      indiv.numAliases = aliases.length;
+      if(indiv.numAliases) {
+        aliasArray.push(indiv.numAliases);
+      } else {
+        aliasArray.push(0);
+      }
+    });
+  };
   // create a links array in each entity/indiv containing ids of related parties
-  var addLinksArray = function(indivsOrEntities) {
+  addLinksArray = function(indivsOrEntities) {
     indivsOrEntities.forEach(function(indivOrEntity) {
       indivOrEntity.links = [];
       comments = indivOrEntity.COMMENTS1;
@@ -192,11 +236,11 @@ var setupData2 = function(data) {
       }
     });
   };
-  addLinksArray(indivs);
-  addLinksArray(ents);
+  // addLinksArray(indivs);
+  // addLinksArray(ents);
 
   // create an array of connection ids in each indiv/entity  
-  var addConnectionIdsArray = function(indivsOrEntities) {
+  addConnectionIdsArray = function(indivsOrEntities) {
     indivsOrEntities.forEach(function(indivOrEntity) {
       indivOrEntity.connectedToId = [];
       comments = indivOrEntity.COMMENTS1;
@@ -212,11 +256,11 @@ var setupData2 = function(data) {
       }
     });
   };
-  addConnectionIdsArray(indivs);
-  addConnectionIdsArray(ents);
+  // addConnectionIdsArray(indivs);
+  // addConnectionIdsArray(ents);
 
   // create array of connection objects with source and target
-  var addConnectionObjectsArray = function(indivsOrEntities) {
+  addConnectionObjectsArray = function(indivsOrEntities) {
     indivsOrEntities.forEach(function(indivOrEntity) {
       indivOrEntity.connections = [];
       var connection = {};
@@ -233,12 +277,12 @@ var setupData2 = function(data) {
       //      console.log("178 indivOrEntity with connection objects array", indivOrEntity);
     });
   };
-  addConnectionObjectsArray(indivs);
-  addConnectionObjectsArray(ents);
+  // addConnectionObjectsArray(indivs);
+  // addConnectionObjectsArray(ents);
 
   // consolidate links; remove duplicates
   // create array of connection objects with source and target
-  var consolidateLinks = function(data) {
+  consolidateLinks = function(data) {
     // data = newData;
     data.links = [];
     //var indivs = conList.INDIVIDUALS.INDIVIDUAL;
@@ -260,9 +304,9 @@ var setupData2 = function(data) {
     });
     // console.log("160 conList modified", conList);
   };
-  consolidateLinks(data);
+  // consolidateLinks(data);
   // count the links      
-  var countLinks = function(data) {
+  countLinks = function(data) {
     // conList.links = [];
     //var indivs = conList.INDIVIDUALS.INDIVIDUAL;
     //var ents = conList.ENTITIES.ENTITY;
@@ -279,15 +323,15 @@ var setupData2 = function(data) {
     });
     console.log("aqlist-json.js 160 data modified", data);
   };
-  countLinks(data);
+  // countLinks(data);
 
-  var networkVis = function() {
+  networkVis = function() {
     var x = d3.scale.linear()
       .domain([0, d3.max(aliasArray)])
       .range([0, 420]);
   };
 
-  var barChart = function() {
+  barChart = function() {
     var x = d3.scale.linear()
       .domain([0, d3.max(aliasArray)])
       .range([0, 420]);

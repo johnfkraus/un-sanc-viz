@@ -365,7 +365,7 @@ Network = function() {
       console.log(showProps(d, "nodes"));
       result = parseInt(d.playcount, 10);
       d.radius = d.weight;
-      // console.log("vis.js 197 parseInt(d.playcount, 10) = ");
+      // console.log("viz.js 197 parseInt(d.playcount, 10) = ");
       // console.log(result);
       return parseInt(d.playcount, 10);
     });
@@ -416,11 +416,11 @@ Network = function() {
       l.source = nodesMap.get(l.source);
       l.target = nodesMap.get(l.target);
       // linkedByIndexData = linkedByIndex["" + l.source.id + "," + l.target.id] = 1;
-      // console.log("vis.js 216 linkedByIndexData = ");
+      // console.log("viz.js 216 linkedByIndexData = ");
       // console.log(linkedByIndexData);
       return linkedByIndex["" + l.source.id + "," + l.target.id] = 1;
     });
-    console.log("vis.js 283 data = ");
+    console.log("viz.js 283 data = ");
     console.log(data);
     return data;
   };
@@ -686,7 +686,7 @@ Network = function() {
       }
       return counts[d[attr]] += 1;
     });
-    // console.log("vis.js 239 counts = ");
+    // console.log("viz.js 239 counts = ");
     // console.log(counts);
     return counts;
   };
@@ -695,7 +695,7 @@ Network = function() {
   //  Uses linkedByIndex initialized in setupData
 
   neighboring = function(a, b) {
-    // console.log("vis.js 243 neighboring = ", linkedByIndex[a.id + "," + b.id] || linkedByIndex[b.id + "," + a.id]);
+    // console.log("viz.js 243 neighboring = ", linkedByIndex[a.id + "," + b.id] || linkedByIndex[b.id + "," + a.id]);
     return linkedByIndex[a.id + "," + b.id] || linkedByIndex[b.id + "," + a.id];
   };
   //  Removes nodes from input array
@@ -823,7 +823,7 @@ Network = function() {
     node.on("mouseover", showDetails)
       .on("mouseout", hideDetails);
 
-    // console.log('409 vis.js showProps(node, "node") = ');
+    // console.log('409 viz.js showProps(node, "node") = ');
     // console.log(showProps(node, "node"));
     //console.log(stringify(node, null, '\t'));
 
@@ -832,7 +832,7 @@ Network = function() {
     // console.log("serialized = ", serialized);
     var countN = 0;
     node.forEach(function(n) {
-      // console.log('646 vis.js node.forEach(function (n) { showProps(n, "n")');
+      // console.log('646 viz.js node.forEach(function (n) { showProps(n, "n")');
       // console.log(showProps(n, "n"));
 
       n.forEach(function(circle) {

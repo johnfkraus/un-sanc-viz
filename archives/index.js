@@ -10,7 +10,7 @@ if (typeof define !== 'function') {
 }
 
 define(function(require) {
-    var collect = require('./collect.js');
+    var collect = require('./../js/collect.js');
 
     //The value returned from the function is
     //used as the module export visible to Node.

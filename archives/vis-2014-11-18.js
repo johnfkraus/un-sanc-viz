@@ -312,12 +312,12 @@ Network = function() {
       }
       return counts[d[attr]] += 1;
     });
-    // console.log("vis.js 239 counts = ");
+    // console.log("viz.js 239 counts = ");
     // console.log(counts);
     return counts;
   };
   neighboring = function(a, b) {
-    // console.log("vis.js 243 neighboring = ", linkedByIndex[a.id + "," + b.id] || linkedByIndex[b.id + "," + a.id]);
+    // console.log("viz.js 243 neighboring = ", linkedByIndex[a.id + "," + b.id] || linkedByIndex[b.id + "," + a.id]);
     return linkedByIndex[a.id + "," + b.id] || linkedByIndex[b.id + "," + a.id];
   };
   filterNodes = function(allNodes) {
@@ -428,7 +428,7 @@ Network = function() {
     node.on("mouseover", showDetails)
       .on("mouseout", hideDetails);
 
-    // console.log('409 vis.js showProps(node, "node") = ');
+    // console.log('409 viz.js showProps(node, "node") = ');
     // console.log(showProps(node, "node"));
     //console.log(stringify(node, null, '\t'));
 
@@ -437,7 +437,7 @@ Network = function() {
     // console.log("serialized = ", serialized);
 var countN = 0;
     node.forEach(function(n) {
-      // console.log('646 vis.js node.forEach(function (n) { showProps(n, "n")');
+      // console.log('646 viz.js node.forEach(function (n) { showProps(n, "n")');
       // console.log(showProps(n, "n"));
 
       n.forEach(function(circle) {
