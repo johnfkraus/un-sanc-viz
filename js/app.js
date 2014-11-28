@@ -1,4 +1,5 @@
 // app.js
+//=============
 if(typeof define !== 'function') {
   var define = require('amdefine');
 }
@@ -15,18 +16,22 @@ var async = require('async'),
 var collect = require('./collect.js');
 var setupData = require('./setupData.js');
 var logger = require('./libs/logger.js');
+var linenums = require('./linenums.js');
 var functionCount = 0;
 
 var runApp = function() {
 
-  console.log("\n ", __filename, __line, ", runApp\n");
+//  console.log("\n ", __filename, __line, ", runApp\n");
+  console.log("\n ", __filename, "line", __line, Date());
 
   async.series([
     function(callback) {
       // collect AQList.xml from public web site, convert to json, save locally
       //(function() {
         console.log("\n ", __filename, __line, "  function 1#:", ++functionCount);
+      console.log("\n ", __filename, __line, Date());
         // collect.getXMLFile();
+//      document.getElementById("demo").innerHTML = Date();
         callback();
       //})();
     },

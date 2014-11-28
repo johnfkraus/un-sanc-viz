@@ -2,13 +2,12 @@
 // collect AQList.xml from internet, convert to json
 // =========================
 
-if(typeof define !== 'function') {
+if (typeof define !== 'function') {
   var define = require('amdefine');
 }
 
 var async = require('async'),
   re = require('request-enhanced'),
-  request = require('request'),
   fse = require('fs-extra'),
   util = require('util'),
   dateFormat = require('dateformat'),
@@ -18,7 +17,9 @@ var async = require('async'),
 
 var trunc = require('./trunc.js');
 var linenums = require('./linenums.js');
-var request = require('sync-request')
+var request = require('sync-request');
+// var request = require('request');
+
 
 require('console-stamp')(console, '\n[HH:MM:ss.l]');
 
@@ -29,14 +30,14 @@ var fsOptions = {
 };
 
 var truncateToNumChars = 400;
-console.log("__dirname = ", __dirname);
-console.log("linenum = ", __filename, __line);
+//console.log("__dirname = ", __dirname);
+//console.log("linenum = ", __filename, "line", __line);
 
-var functionCount = 0;
+// var functionCount = 0;
 
 String.prototype.trunc = String.prototype.trunc ||
-  function(n) {
-    return this.length > n ? this.substr(0, n - 1) + '&hellip,' : this;
+function (n) {
+  return this.length > n ? this.substr(0, n - 1) + '&hellip,' : this;
 };
 require('console-stamp')(console, '[HH:MM:ss.l]');
 // dateFormat.masks.hammerTime = 'yyyy-mm-dd-HHMMss';
@@ -46,50 +47,45 @@ dateFormat.masks.hammerTime = 'yyyy-mm-dd-HHMMss';
 var fileDateString = dateFormat(now, "hammerTime");
 xmlStandardFileName = __dirname + '/../data/xml/AQList.xml';
 
-
-var convertXMLToJson = function() {
+var convertXMLToJson = function () {
   var functionCount = 0;
   var savedXMLData = "";
   // var savedJson = "";
   var myResult;
   var descr;
   async.series([
-
-      function(callback) {
-        // remove old AQList.xml
+      function (callback) {
+        // remove old AQList.xml and other old files
         //var newPath = (__dirname + "/../data/output/AQList.xml")
         //  .toString();
         var newPath = (__dirname + "/../data/output/*")
           .toString();
-        console.log("newPath = ", newPath);
-        // console.log("fse.exists(newPath) = ", fse.exists(newPath));
-        fse.unlink(newPath, function(err) {
-          if(err) {
-            console.log("\n ", __filename, __line, " Error: file could not be deleted; not found");
+        console.log("\n ", __filename, "line", "line", __line, "; newPath = ", newPath);
+        fse.unlink(newPath, function (err) {
+          if (err) {
+            console.log("\n ", __filename, "line", "line", __line, "; Error: file could not be deleted; not found");
             callback();
           }
           //throw err;
-          console.log("successfully deleted ", newPath);
+          console.log("\n ", __filename, "line", "line", __line, "; successfully deleted ", newPath);
         });
         callback();
       },
 
-      function(callback) {
-
+      function (callback) {
         var res = request('GET', 'http://www.un.org/sc/committees/1267/AQList.xml');
-
-// console.log(res);
-        console.log(res.body.toString());
+        // console.log(res);
+        // console.log(res.body.toString());
         console.log("Reponse Body Length: ", res.getBody().length);
         AQList_xml = res.body.toString();
         callback();
       },
 
-      function(callback) {
+      function (callback) {
         writeAQListXML();
-//        console.log("\n ", __filename, __line, " function #:", ++functionCount);
+//        console.log("\n ", __filename, "line", __line, " function #:", ++functionCount);
         // var descr = "collect AQList.xml from public web site, save locally under original filename";
-        // console.log("\n ", __filename, __line, " function 1#:", ++functionCount, descr);
+        // console.log("\n ", __filename, "line", __line, " function 1#:", ++functionCount, descr);
 //          var myFile = __dirname + "/../data/output/AQList.xml";
         //       var fileNameToSaveTo = __dirname + "/../data/output/AQList.xml";
 
@@ -104,62 +100,62 @@ var convertXMLToJson = function() {
          */
         callback();
       },
-      function(callback) {
+      function (callback) {
         // read xml file
         var rawXmlFileName = __dirname + "/../data/output/AQList.xml";
         var descr = "; reading raw XML file: " + rawXmlFileName;
         console.log("\n ", __filename, "line", __line, "; function 1#:", ++functionCount, descr, fsOptions);
         AQList_xml = fse.readFileSync(rawXmlFileName, fsOptions); //, function (err, data) {
         // console.log("\n ", __filename, "line", __line, "; xmlFile = \n", trunc.truncn(xmlFile,200));
-        console.log("\n ", __filename, __line, " AQList_xml = ", trunc.n400(AQList_xml.toString()));
+        console.log("\n ", __filename, "line", __line, " AQList_xml = ", trunc.n400(AQList_xml.toString()));
         callback();
       },
       /*
        function(callback) {
        //write XMLFile
-       console.log("\n ", __filename, __line, " function #:", ++functionCount);
+       console.log("\n ", __filename, "line", __line, " function #:", ++functionCount);
        writeAQListXML();
-       // console.log("\n ", __filename, __line, " AQList_xml = ", AQList_xml.toString());
+       // console.log("\n ", __filename, "line", __line, " AQList_xml = ", AQList_xml.toString());
 
        callback();
        },*/
 
-      function(callback) {
+      function (callback) {
         // convert AQList.xml to json
-        console.log("\n ", __filename, __line, " function #:", ++functionCount);
-        console.log("\n ", __filename, __line, " typeof AQList_xml = ", (typeof AQList_xml));
-        console.log("\n ", __filename, __line, " AQList_xml = ", trunc.n400(AQList_xml.toString()));
+        console.log("\n ", __filename, "line", __line, " function #:", ++functionCount);
+        console.log("\n ", __filename, "line", __line, " typeof AQList_xml = ", (typeof AQList_xml));
+        console.log("\n ", __filename, "line", __line, " AQList_xml = ", trunc.n400(AQList_xml.toString()));
         // var myResult;
         parseString(AQList_xml, {
           explicitArray: false,
           trim: true
-        }, function(err, result) {
-          if(err) {
-            console.log("\n ", __filename, __line, " error attempting parseString: " + err, '\n');
+        }, function (err, result) {
+          if (err) {
+            console.log("\n ", __filename, "line", __line, " error attempting parseString: " + err, '\n');
           }
           myJsonData = result;
-          console.log("\n ", __filename, __line, " result = \n", util.inspect(myJsonData, false, null)
+          console.log("\n ", __filename, "line", __line, " result = \n", util.inspect(myJsonData, false, null)
             .trunc(truncateToNumChars));
         });
 
         callback();
       },
 
-      function(callback) {
+      function (callback) {
         // save raw json
-        console.log("\n ", __filename, __line, "function 4#:", ++functionCount);
+        console.log("\n ", __filename, "line", __line, "function 4#:", ++functionCount);
         var myFile = __dirname + "/../data/output/AQList-raw.json";
         // var myJsonData = savedJson;
-        console.log("\n ", __filename, __line, " myResult = trunc.n400(", myJsonData);
+        console.log("\n ", __filename, "line", __line, " myResult = trunc.n400(", myJsonData);
         try {
 
           fse.writeFileSync(myFile, JSON.stringify(myJsonData, null, " "), fsOptions);
-          console.log("\n ", __filename, __line, " file written to: ", myFile);
-          // console.log("\n ", __filename, __line, " file contained: ", trunc.n400(util.inspect(myResult, false, null))
+          console.log("\n ", __filename, "line", __line, " file written to: ", myFile);
+          // console.log("\n ", __filename, "line", __line, " file contained: ", trunc.n400(util.inspect(myResult, false, null))
           // .trunc(truncateToNumChars));
 
-        } catch(e) {
-          console.log("\n ", __filename, __line, " Error: ", e);
+        } catch (e) {
+          console.log("\n ", __filename, "line", __line, " Error: ", e);
         }
 
         //  console.log("14 arg1 = ", arg1);
@@ -167,25 +163,23 @@ var convertXMLToJson = function() {
       }
     ],
 
-    function(err) {
-      // console.log("\n ", __filename, __line, " savedJson = ", trunc.n400(myResult));
+    function (err) {
+      // console.log("\n ", __filename, "line", __line, " savedJson = ", trunc.n400(myResult));
 
     }
   );
 };
 
-
-
-var getOutputFileName = function() {
-  return __dirname + "/../data/output/AQList-" + fileDateString + '.xml';
-};
-var xmlToJson = function(data) {
+//var getOutputFileName = function() {
+//  return __dirname + "/../data/output/AQList-" + fileDateString + '.xml';
+// };
+var xmlToJson = function (data) {
   // var xml = "<root>Hello xml2js!</root>";
   parseString(data, {
     async: 'true',
     attrNameProcessors: 'nameToUpperCase'
-  }, function(err, result) {
-    console.dir("\n ", __filename, __line, " xmlToJson = \n", JSON.stringify(result, null, " "));
+  }, function (err, result) {
+    console.dir("\n ", __filename, "line", __line, " xmlToJson = \n", JSON.stringify(result, null, " "));
   });
 
 };
@@ -193,40 +187,40 @@ var xmlToJson = function(data) {
 var AQList_xml;
 var myJsonData;
 /*
-var getXMLFile = function() {
-  descr = "collect AQList.xml from public web site, save locally under original filename";
-  console.log("\n ", __filename, __line, " collect.js function 1#:", ++functionCount, descr);
-  var req = httpsync.get({
-    url: "http://www.un.org/sc/committees/1267/AQList.xml"
-  });
-  var res = req.end();
-  AQList_xml = res.data;
-  console.log("\n ", __filename, __line, " AQList_xml = \n", trunc.n400(AQList_xml.toString()));
-  /*
-  The response Object is what you get after req.end (), it has following fields:
-data A Buffer that stores data sent by server.
-headers Complete response headers, even contains those custom ones.
-ip IP address of the server.
-statusCode Status code that sent by server.  
+ var getXMLFile = function() {
+ descr = "collect AQList.xml from public web site, save locally under original filename";
+ console.log("\n ", __filename, "line", __line, " collect.js function 1#:", ++functionCount, descr);
+ var req = httpsync.get({
+ url: "http://www.un.org/sc/committees/1267/AQList.xml"
+ });
+ var res = req.end();
+ AQList_xml = res.data;
+ console.log("\n ", __filename, "line", __line, " AQList_xml = \n", trunc.n400(AQList_xml.toString()));
+ /*
+ The response Object is what you get after req.end (), it has following fields:
+ data A Buffer that stores data sent by server.
+ headers Complete response headers, even contains those custom ones.
+ ip IP address of the server.
+ statusCode Status code that sent by server.
 
-  return AQList_xml;
-};
-*/
+ return AQList_xml;
+ };
+ */
 
 var getXMLFileSync = function () {
 
   var res = request('GET', 'http://www.un.org/sc/committees/1267/AQList.xml');
 
 // console.log(res);
-  console.log(res.body.toString());
-  console.log("Reponse Body Length: ", res.getBody().length);
+  console.log("\n ", __filename, "line", __line, "; res.body.toString() = ", res.body.toString());
+  console.log("\n ", __filename, "line", __line, "; Reponse Body Length: ", res.getBody().length);
   return res.body.toString();
 
-}
+};
 
 var getXMLFile = function () {
-    // var descr = "collect AQList.xml from public web site, save locally under original filename";
-    // console.log("\n ", __filename, __line, " function 1#:", ++functionCount, descr);
+  // var descr = "collect AQList.xml from public web site, save locally under original filename";
+  // console.log("\n ", __filename, "line", __line, " function 1#:", ++functionCount, descr);
 //          var myFile = __dirname + "/../data/output/AQList.xml";
   var fileNameToSaveTo = __dirname + "/../data/output/AQList.xml";
   re.get("http://www.un.org/sc/committees/1267/AQList.xml", fileNameToSaveTo, function (error, filename) {
@@ -235,22 +229,20 @@ var getXMLFile = function () {
     }
     console.log("\n ", __filename, "line", __line, "; Saved content to: \n", filename);
   });
-}
+};
 
-
-
-var writeAQListXML = function() {
+var writeAQListXML = function () {
 
   var myFile = __dirname + "/../data/output/AQList.xml";
   try {
     fse.writeFileSync(myFile, AQList_xml, fsOptions);
-    console.log("\n ", __filename, __line, " file written to: ", myFile);
-    console.log("\n ", __filename, __line, "  file contained: ", util.inspect(AQList_xml.toString(), false, null)
+    console.log("\n ", __filename, "line", __line, " file written to: ", myFile);
+    console.log("\n ", __filename, "line", __line, "  file contained: ", util.inspect(AQList_xml.toString(), false, null)
       .trunc(truncateToNumChars));
-  } catch(e) {
-    console.log('\n ', __filename, __line, ' Error: ', e);
+  } catch (e) {
+    console.log('\n ', __filename, "line", __line, ' Error: ', e);
   }
-  console.log("\n ", __filename, __line, " AQList_xml = \n", trunc.n400(AQList_xml.toString()));
+  console.log("\n ", __filename, "line", __line, " AQList_xml = \n", trunc.n400(AQList_xml.toString()));
 };
 
 module.exports = {

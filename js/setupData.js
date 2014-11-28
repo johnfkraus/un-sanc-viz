@@ -24,7 +24,7 @@ var numObjectsToShow = 2;
 // var backbone =  require('backbone');
 var Set = require("backpack-node").collections.Set;
 var Bag = require("backpack-node").collections.Bag;
-// console.log("\n __dirname = ", __dirname + '\n');
+//console.log("\n __dirname = ", __dirname + '\n');
 // var counter = 0;
 
 var fsOptions = {
@@ -647,28 +647,7 @@ var createNationality = function (nodes) {
     "COMMENTS1": "",
     "indiv0OrEnt1": 0
   }];
-  /*
-   var missing_indivs0 = [{
-   "name": "Fahd Mohammed Ahmed al-Quso (no longer listed)",
-   "id": "QI.A.288.10",
-   "REFERENCE_NUMBER": "QI.A.288.10",
-   "COMMENTS1": "",
-   "indiv0OrEnt1": 0
 
-   }, {
-   "name": "Usama Bin Laden (no longer listed)",
-   "id": "QI.B.8.01",
-   "REFERENCE_NUMBER": "QI.B.8.01",
-   "COMMENTS1": "",
-   "indiv0OrEnt1": 0
-   }, {
-   "name": "Wa&apos;el Hamza Abd al-Fatah Julaidan (no longer listed)",
-   "id": "QI.J.79.02",
-   "REFERENCE_NUMBER": "QI.J.79.02",
-   "COMMENTS1": "",
-   "indiv0OrEnt1": 0
-   }];
-   */
   var missing_ents = [{
     "name": "International Islamic Relief Organization, Philippines, branch offices (no longer listed)",
     "FIRST_NAME": "International Islamic Relief Organization, Philippines, branch offices (no longer listed)",
@@ -701,15 +680,15 @@ var createNationality = function (nodes) {
     "indiv0OrEnt1": 0,
     "DATAID": "empty001",
     "VERSIONNUM": "10",
-    "FIRST_NAME": "Fahd Mohammed Ahmed al-Quso (no longer listed)",
-    "SECOND_NAME": "second name",
+    "FIRST_NAME": "Fahd Mohammed Ahmed al-Quso",
+    "SECOND_NAME": "",
     "THIRD_NAME": "(no longer listed)",
     "UN_LIST_TYPE": "Al-Qaida",
     "LISTED_ON": "2016-10-06T00:00:00",
     "NAME_ORIGINAL_SCRIPT": "نشوان عبد الرزاق عبد الباقي",
     "COMMENTS1": "comments",
     "NATIONALITY": {
-      "VALUE": "nationality value"
+      "VALUE": ""
     },
     "LIST_TYPE": {
       "VALUE": "UN List"
@@ -737,21 +716,21 @@ var createNationality = function (nodes) {
     "SORT_KEY": "__AAA",
     "SORT_KEY_LAST_MOD": "2007-07-27T00:00:00"
   }, {
-    "name": "Usama Bin Laden (no longer listed)",
+    "name": "Usama Bin Laden",
     "id": "QI.B.8.01",
     "REFERENCE_NUMBER": "QI.B.8.01",
     "indiv0OrEnt1": 0,
     "DATAID": "empty002",
     "VERSIONNUM": "10",
-    "FIRST_NAME": "Usama Bin Laden (no longer listed)",
-    "SECOND_NAME": "second name",
+    "FIRST_NAME": "Usama Bin Laden",
+    "SECOND_NAME": "",
     "THIRD_NAME": "(no longer listed)",
     "UN_LIST_TYPE": "Al-Qaida",
     "LISTED_ON": "2016-10-06T00:00:00",
     "NAME_ORIGINAL_SCRIPT": "نشوان عبد الرزاق عبد الباقي",
     "COMMENTS1": "comments",
     "NATIONALITY": {
-      "VALUE": "nationality value"
+      "VALUE": ""
     },
     "LIST_TYPE": {
       "VALUE": "UN List"
@@ -779,21 +758,21 @@ var createNationality = function (nodes) {
     "SORT_KEY": "__AAA",
     "SORT_KEY_LAST_MOD": "2007-07-27T00:00:00"
   }, {
-    "name": "Wa&apos;el Hamza Abd al-Fatah Julaidan (no longer listed)",
+    "name": "Wa&apos;el Hamza Abd al-Fatah Julaidan",
     "id": "QI.J.79.02",
     "REFERENCE_NUMBER": "QI.J.79.02",
     "indiv0OrEnt1": 0,
     "DATAID": "empty003",
     "VERSIONNUM": "10",
-    "FIRST_NAME": "Wa&apos;el Hamza Abd al-Fatah Julaidan (no longer listed)",
-    "SECOND_NAME": "second name",
+    "FIRST_NAME": "Wa&apos;el Hamza Abd al-Fatah Julaidan",
+    "SECOND_NAME": "",
     "THIRD_NAME": "(no longer listed)",
     "UN_LIST_TYPE": "Al-Qaida",
     "LISTED_ON": "2016-10-06T00:00:00",
     "NAME_ORIGINAL_SCRIPT": "نشوان عبد الرزاق عبد الباقي",
     "COMMENTS1": "comments",
     "NATIONALITY": {
-      "VALUE": "nationality value"
+      "VALUE": ""
     },
     "LIST_TYPE": {
       "VALUE": "UN List"
@@ -824,7 +803,7 @@ var createNationality = function (nodes) {
     "DATAID": "empty004",
     "VERSIONNUM": "10",
     "FIRST_NAME": "Wali Ur Rehman",
-    "SECOND_NAME": "second name",
+    "SECOND_NAME": "",
     "THIRD_NAME": "(no longer listed)",
     "UN_LIST_TYPE": "Al-Qaida",
     "REFERENCE_NUMBER": "QI.U.287.10",
@@ -832,7 +811,7 @@ var createNationality = function (nodes) {
     "NAME_ORIGINAL_SCRIPT": "نشوان عبد الرزاق عبد الباقي",
     "COMMENTS1": "Wali Ur Rehman is the Emir of Tehrik-e Taliban (TTP) (QE.T.132.11) for South Waziristan",
     "NATIONALITY": {
-      "VALUE": "nationality value"
+      "VALUE": ""
     },
     "LIST_TYPE": {
       "VALUE": "UN List"
@@ -864,7 +843,7 @@ var createNationality = function (nodes) {
     "DATAID": "empty005",
     "VERSIONNUM": "10",
     "FIRST_NAME": "Wali Ur Rehman",
-    "SECOND_NAME": "second name",
+    "SECOND_NAME": "",
     "THIRD_NAME": "(no longer listed)",
     "UN_LIST_TYPE": "Al-Qaida",
     "REFERENCE_NUMBER": "QI.M.286.10",
@@ -872,7 +851,7 @@ var createNationality = function (nodes) {
     "NAME_ORIGINAL_SCRIPT": "نشوان عبد الرزاق عبد الباقي",
     "COMMENTS1": "Tehrik-e Taliban (TTP) (QE.T.132.11) is based in the tribal areas along the Afghanistan/Pakistan border. Formed in 2007, its leader is Hakimullah Mehsud.",
     "NATIONALITY": {
-      "VALUE": "nationality value"
+      "VALUE": ""
     },
     "LIST_TYPE": {
       "VALUE": "UN List"
@@ -912,7 +891,7 @@ var createNationality = function (nodes) {
       "NAME_ORIGINAL_SCRIPT": "",
       "COMMENTS1": " Founder of the Al Rashid Trust (QE.A.5.01). Until 21 Oct. 2008, the Al Rashid Trust appeared also as &quot;Aid Organization of the Ulema, Pakistan&quot; (QE.A.73.02.).",
       "NATIONALITY": {
-        "VALUE": "nationality value"
+        "VALUE": ""
       },
       "LIST_TYPE": {
         "VALUE": "UN List"
@@ -952,7 +931,7 @@ var createNationality = function (nodes) {
       "NAME_ORIGINAL_SCRIPT": "",
       "COMMENTS1": "Leader of ",
       "NATIONALITY": {
-        "VALUE": "nationality value"
+        "VALUE": ""
       },
       "LIST_TYPE": {
         "VALUE": "UN List"
@@ -991,7 +970,7 @@ var createNationality = function (nodes) {
       "NAME_ORIGINAL_SCRIPT": "",
       "COMMENTS1": "Leader of ...",
       "NATIONALITY": {
-        "VALUE": "nationality value"
+        "VALUE": ""
       },
       "LIST_TYPE": {
         "VALUE": "UN List"
@@ -1026,15 +1005,15 @@ var createNationality = function (nodes) {
    "DATAID": "empty000",
    "VERSIONNUM": "10",
    "FIRST_NAME": "first name",
-   "SECOND_NAME": "second name",
+   "SECOND_NAME": "",
    "THIRD_NAME": "(no longer listed)",
    "UN_LIST_TYPE": "Al-Qaida",
    "REFERENCE_NUMBER": "QI.TBD",
    "LISTED_ON": "2016-10-06T00:00:00",
-   "NAME_ORIGINAL_SCRIPT": "نشوان عبد الرزاق عبد الباقي",
+   "NAME_ORIGINAL_SCRIPT": "",
    "COMMENTS1": "comments",
    "NATIONALITY": {
-   "VALUE": "nationality value"
+   "VALUE": ""
    },
    "LIST_TYPE": {
    "VALUE": "UN List"

@@ -25823,21 +25823,21 @@
    }
   },
   {
-   "name": "Fahd Mohammed Ahmed al-Quso (no longer listed) second name (no longer listed)",
+   "name": "Fahd Mohammed Ahmed al-Quso (no longer listed)",
    "id": "QI.A.288.10",
    "REFERENCE_NUMBER": "QI.A.288.10",
    "indiv0OrEnt1": 0,
    "DATAID": "empty001",
    "VERSIONNUM": "10",
-   "FIRST_NAME": "Fahd Mohammed Ahmed al-Quso (no longer listed)",
-   "SECOND_NAME": "second name",
+   "FIRST_NAME": "Fahd Mohammed Ahmed al-Quso",
+   "SECOND_NAME": "",
    "THIRD_NAME": "(no longer listed)",
    "UN_LIST_TYPE": "Al-Qaida",
    "LISTED_ON": "2016-10-06T00:00:00",
    "NAME_ORIGINAL_SCRIPT": "نشوان عبد الرزاق عبد الباقي",
    "COMMENTS1": "comments",
    "NATIONALITY": {
-    "VALUE": "nationality value"
+    "VALUE": ""
    },
    "LIST_TYPE": {
     "VALUE": "UN List"
@@ -25866,7 +25866,7 @@
    "INDIVIDUAL_DOCUMENT": "",
    "SORT_KEY": "__AAA",
    "SORT_KEY_LAST_MOD": "2007-07-27T00:00:00",
-   "natnlty": "nationality value",
+   "natnlty": "",
    "connectedToId": [],
    "linkSetArray": [],
    "connectionSet": {
@@ -25879,21 +25879,21 @@
    }
   },
   {
-   "name": "Usama Bin Laden (no longer listed) second name (no longer listed)",
+   "name": "Usama Bin Laden (no longer listed)",
    "id": "QI.B.8.01",
    "REFERENCE_NUMBER": "QI.B.8.01",
    "indiv0OrEnt1": 0,
    "DATAID": "empty002",
    "VERSIONNUM": "10",
-   "FIRST_NAME": "Usama Bin Laden (no longer listed)",
-   "SECOND_NAME": "second name",
+   "FIRST_NAME": "Usama Bin Laden",
+   "SECOND_NAME": "",
    "THIRD_NAME": "(no longer listed)",
    "UN_LIST_TYPE": "Al-Qaida",
    "LISTED_ON": "2016-10-06T00:00:00",
    "NAME_ORIGINAL_SCRIPT": "نشوان عبد الرزاق عبد الباقي",
    "COMMENTS1": "comments",
    "NATIONALITY": {
-    "VALUE": "nationality value"
+    "VALUE": ""
    },
    "LIST_TYPE": {
     "VALUE": "UN List"
@@ -25922,7 +25922,7 @@
    "INDIVIDUAL_DOCUMENT": "",
    "SORT_KEY": "__AAA",
    "SORT_KEY_LAST_MOD": "2007-07-27T00:00:00",
-   "natnlty": "nationality value",
+   "natnlty": "",
    "connectedToId": [],
    "linkSetArray": [],
    "connectionSet": {
@@ -25935,21 +25935,21 @@
    }
   },
   {
-   "name": "Wa&apos;el Hamza Abd al-Fatah Julaidan (no longer listed) second name (no longer listed)",
+   "name": "Wa&apos;el Hamza Abd al-Fatah Julaidan (no longer listed)",
    "id": "QI.J.79.02",
    "REFERENCE_NUMBER": "QI.J.79.02",
    "indiv0OrEnt1": 0,
    "DATAID": "empty003",
    "VERSIONNUM": "10",
-   "FIRST_NAME": "Wa&apos;el Hamza Abd al-Fatah Julaidan (no longer listed)",
-   "SECOND_NAME": "second name",
+   "FIRST_NAME": "Wa&apos;el Hamza Abd al-Fatah Julaidan",
+   "SECOND_NAME": "",
    "THIRD_NAME": "(no longer listed)",
    "UN_LIST_TYPE": "Al-Qaida",
    "LISTED_ON": "2016-10-06T00:00:00",
    "NAME_ORIGINAL_SCRIPT": "نشوان عبد الرزاق عبد الباقي",
    "COMMENTS1": "comments",
    "NATIONALITY": {
-    "VALUE": "nationality value"
+    "VALUE": ""
    },
    "LIST_TYPE": {
     "VALUE": "UN List"
@@ -25978,7 +25978,7 @@
    "INDIVIDUAL_DOCUMENT": "",
    "SORT_KEY": "__AAA",
    "SORT_KEY_LAST_MOD": "2007-07-27T00:00:00",
-   "natnlty": "nationality value",
+   "natnlty": "",
    "connectedToId": [],
    "linkSetArray": [],
    "connectionSet": {
@@ -25994,7 +25994,7 @@
    "DATAID": "empty004",
    "VERSIONNUM": "10",
    "FIRST_NAME": "Wali Ur Rehman",
-   "SECOND_NAME": "second name",
+   "SECOND_NAME": "",
    "THIRD_NAME": "(no longer listed)",
    "UN_LIST_TYPE": "Al-Qaida",
    "REFERENCE_NUMBER": "QI.U.287.10",
@@ -26002,7 +26002,7 @@
    "NAME_ORIGINAL_SCRIPT": "نشوان عبد الرزاق عبد الباقي",
    "COMMENTS1": "Wali Ur Rehman is the Emir of Tehrik-e Taliban (TTP) (QE.T.132.11) for South Waziristan",
    "NATIONALITY": {
-    "VALUE": "nationality value"
+    "VALUE": ""
    },
    "LIST_TYPE": {
     "VALUE": "UN List"
@@ -26033,8 +26033,8 @@
    "SORT_KEY_LAST_MOD": "2007-07-27T00:00:00",
    "indiv0OrEnt1": 0,
    "id": "QI.U.287.10",
-   "name": "Wali Ur Rehman second name (no longer listed)",
-   "natnlty": "nationality value",
+   "name": "Wali Ur Rehman (no longer listed)",
+   "natnlty": "",
    "connectedToId": [
     "QE.T.132.11"
    ],
@@ -26062,7 +26062,7 @@
    "DATAID": "empty005",
    "VERSIONNUM": "10",
    "FIRST_NAME": "Wali Ur Rehman",
-   "SECOND_NAME": "second name",
+   "SECOND_NAME": "",
    "THIRD_NAME": "(no longer listed)",
    "UN_LIST_TYPE": "Al-Qaida",
    "REFERENCE_NUMBER": "QI.M.286.10",
@@ -26070,7 +26070,7 @@
    "NAME_ORIGINAL_SCRIPT": "نشوان عبد الرزاق عبد الباقي",
    "COMMENTS1": "Tehrik-e Taliban (TTP) (QE.T.132.11) is based in the tribal areas along the Afghanistan/Pakistan border. Formed in 2007, its leader is Hakimullah Mehsud.",
    "NATIONALITY": {
-    "VALUE": "nationality value"
+    "VALUE": ""
    },
    "LIST_TYPE": {
     "VALUE": "UN List"
@@ -26101,8 +26101,8 @@
    "SORT_KEY_LAST_MOD": "2007-07-27T00:00:00",
    "indiv0OrEnt1": 0,
    "id": "QI.M.286.10",
-   "name": "Wali Ur Rehman second name (no longer listed)",
-   "natnlty": "nationality value",
+   "name": "Wali Ur Rehman (no longer listed)",
+   "natnlty": "",
    "connectedToId": [
     "QE.T.132.11"
    ],
@@ -26138,7 +26138,7 @@
    "NAME_ORIGINAL_SCRIPT": "",
    "COMMENTS1": " Founder of the Al Rashid Trust (QE.A.5.01). Until 21 Oct. 2008, the Al Rashid Trust appeared also as &quot;Aid Organization of the Ulema, Pakistan&quot; (QE.A.73.02.).",
    "NATIONALITY": {
-    "VALUE": "nationality value"
+    "VALUE": ""
    },
    "LIST_TYPE": {
     "VALUE": "UN List"
@@ -26170,7 +26170,7 @@
    "indiv0OrEnt1": 0,
    "id": "QI.L.30.01",
    "name": "Mufti Rashid Ahmad Ledahyanoy (no longer listed)",
-   "natnlty": "nationality value",
+   "natnlty": "",
    "connectedToId": [
     "QE.A.5.01",
     "QE.A.73.02"
@@ -26215,7 +26215,7 @@
    "NAME_ORIGINAL_SCRIPT": "",
    "COMMENTS1": "Leader of ",
    "NATIONALITY": {
-    "VALUE": "nationality value"
+    "VALUE": ""
    },
    "LIST_TYPE": {
     "VALUE": "UN List"
@@ -26247,7 +26247,7 @@
    "indiv0OrEnt1": 0,
    "id": "QI.J.240.08",
    "name": "Najmiddin Kamolitdinovich Jalolov (no longer listed)",
-   "natnlty": "nationality value",
+   "natnlty": "",
    "connectedToId": [],
    "linkSetArray": [],
    "connectionSet": {
@@ -26271,7 +26271,7 @@
    "NAME_ORIGINAL_SCRIPT": "",
    "COMMENTS1": "Leader of ...",
    "NATIONALITY": {
-    "VALUE": "nationality value"
+    "VALUE": ""
    },
    "LIST_TYPE": {
     "VALUE": "UN List"
@@ -26303,7 +26303,7 @@
    "indiv0OrEnt1": 0,
    "id": "QI.B.239.08",
    "name": "Suhayl Fatilloevich Buranov (no longer listed)",
-   "natnlty": "nationality value",
+   "natnlty": "",
    "connectedToId": [],
    "linkSetArray": [],
    "connectionSet": {
@@ -52133,21 +52133,21 @@
    }
   },
   {
-   "name": "Fahd Mohammed Ahmed al-Quso (no longer listed) second name (no longer listed)",
+   "name": "Fahd Mohammed Ahmed al-Quso (no longer listed)",
    "id": "QI.A.288.10",
    "REFERENCE_NUMBER": "QI.A.288.10",
    "indiv0OrEnt1": 0,
    "DATAID": "empty001",
    "VERSIONNUM": "10",
-   "FIRST_NAME": "Fahd Mohammed Ahmed al-Quso (no longer listed)",
-   "SECOND_NAME": "second name",
+   "FIRST_NAME": "Fahd Mohammed Ahmed al-Quso",
+   "SECOND_NAME": "",
    "THIRD_NAME": "(no longer listed)",
    "UN_LIST_TYPE": "Al-Qaida",
    "LISTED_ON": "2016-10-06T00:00:00",
    "NAME_ORIGINAL_SCRIPT": "نشوان عبد الرزاق عبد الباقي",
    "COMMENTS1": "comments",
    "NATIONALITY": {
-    "VALUE": "nationality value"
+    "VALUE": ""
    },
    "LIST_TYPE": {
     "VALUE": "UN List"
@@ -52176,7 +52176,7 @@
    "INDIVIDUAL_DOCUMENT": "",
    "SORT_KEY": "__AAA",
    "SORT_KEY_LAST_MOD": "2007-07-27T00:00:00",
-   "natnlty": "nationality value",
+   "natnlty": "",
    "connectedToId": [],
    "linkSetArray": [],
    "connectionSet": {
@@ -52189,21 +52189,21 @@
    }
   },
   {
-   "name": "Usama Bin Laden (no longer listed) second name (no longer listed)",
+   "name": "Usama Bin Laden (no longer listed)",
    "id": "QI.B.8.01",
    "REFERENCE_NUMBER": "QI.B.8.01",
    "indiv0OrEnt1": 0,
    "DATAID": "empty002",
    "VERSIONNUM": "10",
-   "FIRST_NAME": "Usama Bin Laden (no longer listed)",
-   "SECOND_NAME": "second name",
+   "FIRST_NAME": "Usama Bin Laden",
+   "SECOND_NAME": "",
    "THIRD_NAME": "(no longer listed)",
    "UN_LIST_TYPE": "Al-Qaida",
    "LISTED_ON": "2016-10-06T00:00:00",
    "NAME_ORIGINAL_SCRIPT": "نشوان عبد الرزاق عبد الباقي",
    "COMMENTS1": "comments",
    "NATIONALITY": {
-    "VALUE": "nationality value"
+    "VALUE": ""
    },
    "LIST_TYPE": {
     "VALUE": "UN List"
@@ -52232,7 +52232,7 @@
    "INDIVIDUAL_DOCUMENT": "",
    "SORT_KEY": "__AAA",
    "SORT_KEY_LAST_MOD": "2007-07-27T00:00:00",
-   "natnlty": "nationality value",
+   "natnlty": "",
    "connectedToId": [],
    "linkSetArray": [],
    "connectionSet": {
@@ -52245,21 +52245,21 @@
    }
   },
   {
-   "name": "Wa&apos;el Hamza Abd al-Fatah Julaidan (no longer listed) second name (no longer listed)",
+   "name": "Wa&apos;el Hamza Abd al-Fatah Julaidan (no longer listed)",
    "id": "QI.J.79.02",
    "REFERENCE_NUMBER": "QI.J.79.02",
    "indiv0OrEnt1": 0,
    "DATAID": "empty003",
    "VERSIONNUM": "10",
-   "FIRST_NAME": "Wa&apos;el Hamza Abd al-Fatah Julaidan (no longer listed)",
-   "SECOND_NAME": "second name",
+   "FIRST_NAME": "Wa&apos;el Hamza Abd al-Fatah Julaidan",
+   "SECOND_NAME": "",
    "THIRD_NAME": "(no longer listed)",
    "UN_LIST_TYPE": "Al-Qaida",
    "LISTED_ON": "2016-10-06T00:00:00",
    "NAME_ORIGINAL_SCRIPT": "نشوان عبد الرزاق عبد الباقي",
    "COMMENTS1": "comments",
    "NATIONALITY": {
-    "VALUE": "nationality value"
+    "VALUE": ""
    },
    "LIST_TYPE": {
     "VALUE": "UN List"
@@ -52288,7 +52288,7 @@
    "INDIVIDUAL_DOCUMENT": "",
    "SORT_KEY": "__AAA",
    "SORT_KEY_LAST_MOD": "2007-07-27T00:00:00",
-   "natnlty": "nationality value",
+   "natnlty": "",
    "connectedToId": [],
    "linkSetArray": [],
    "connectionSet": {
@@ -52304,7 +52304,7 @@
    "DATAID": "empty004",
    "VERSIONNUM": "10",
    "FIRST_NAME": "Wali Ur Rehman",
-   "SECOND_NAME": "second name",
+   "SECOND_NAME": "",
    "THIRD_NAME": "(no longer listed)",
    "UN_LIST_TYPE": "Al-Qaida",
    "REFERENCE_NUMBER": "QI.U.287.10",
@@ -52312,7 +52312,7 @@
    "NAME_ORIGINAL_SCRIPT": "نشوان عبد الرزاق عبد الباقي",
    "COMMENTS1": "Wali Ur Rehman is the Emir of Tehrik-e Taliban (TTP) (QE.T.132.11) for South Waziristan",
    "NATIONALITY": {
-    "VALUE": "nationality value"
+    "VALUE": ""
    },
    "LIST_TYPE": {
     "VALUE": "UN List"
@@ -52343,8 +52343,8 @@
    "SORT_KEY_LAST_MOD": "2007-07-27T00:00:00",
    "indiv0OrEnt1": 0,
    "id": "QI.U.287.10",
-   "name": "Wali Ur Rehman second name (no longer listed)",
-   "natnlty": "nationality value",
+   "name": "Wali Ur Rehman (no longer listed)",
+   "natnlty": "",
    "connectedToId": [
     "QE.T.132.11"
    ],
@@ -52372,7 +52372,7 @@
    "DATAID": "empty005",
    "VERSIONNUM": "10",
    "FIRST_NAME": "Wali Ur Rehman",
-   "SECOND_NAME": "second name",
+   "SECOND_NAME": "",
    "THIRD_NAME": "(no longer listed)",
    "UN_LIST_TYPE": "Al-Qaida",
    "REFERENCE_NUMBER": "QI.M.286.10",
@@ -52380,7 +52380,7 @@
    "NAME_ORIGINAL_SCRIPT": "نشوان عبد الرزاق عبد الباقي",
    "COMMENTS1": "Tehrik-e Taliban (TTP) (QE.T.132.11) is based in the tribal areas along the Afghanistan/Pakistan border. Formed in 2007, its leader is Hakimullah Mehsud.",
    "NATIONALITY": {
-    "VALUE": "nationality value"
+    "VALUE": ""
    },
    "LIST_TYPE": {
     "VALUE": "UN List"
@@ -52411,8 +52411,8 @@
    "SORT_KEY_LAST_MOD": "2007-07-27T00:00:00",
    "indiv0OrEnt1": 0,
    "id": "QI.M.286.10",
-   "name": "Wali Ur Rehman second name (no longer listed)",
-   "natnlty": "nationality value",
+   "name": "Wali Ur Rehman (no longer listed)",
+   "natnlty": "",
    "connectedToId": [
     "QE.T.132.11"
    ],
@@ -52448,7 +52448,7 @@
    "NAME_ORIGINAL_SCRIPT": "",
    "COMMENTS1": " Founder of the Al Rashid Trust (QE.A.5.01). Until 21 Oct. 2008, the Al Rashid Trust appeared also as &quot;Aid Organization of the Ulema, Pakistan&quot; (QE.A.73.02.).",
    "NATIONALITY": {
-    "VALUE": "nationality value"
+    "VALUE": ""
    },
    "LIST_TYPE": {
     "VALUE": "UN List"
@@ -52480,7 +52480,7 @@
    "indiv0OrEnt1": 0,
    "id": "QI.L.30.01",
    "name": "Mufti Rashid Ahmad Ledahyanoy (no longer listed)",
-   "natnlty": "nationality value",
+   "natnlty": "",
    "connectedToId": [
     "QE.A.5.01",
     "QE.A.73.02"
@@ -52525,7 +52525,7 @@
    "NAME_ORIGINAL_SCRIPT": "",
    "COMMENTS1": "Leader of ",
    "NATIONALITY": {
-    "VALUE": "nationality value"
+    "VALUE": ""
    },
    "LIST_TYPE": {
     "VALUE": "UN List"
@@ -52557,7 +52557,7 @@
    "indiv0OrEnt1": 0,
    "id": "QI.J.240.08",
    "name": "Najmiddin Kamolitdinovich Jalolov (no longer listed)",
-   "natnlty": "nationality value",
+   "natnlty": "",
    "connectedToId": [],
    "linkSetArray": [],
    "connectionSet": {
@@ -52581,7 +52581,7 @@
    "NAME_ORIGINAL_SCRIPT": "",
    "COMMENTS1": "Leader of ...",
    "NATIONALITY": {
-    "VALUE": "nationality value"
+    "VALUE": ""
    },
    "LIST_TYPE": {
     "VALUE": "UN List"
@@ -52613,7 +52613,7 @@
    "indiv0OrEnt1": 0,
    "id": "QI.B.239.08",
    "name": "Suhayl Fatilloevich Buranov (no longer listed)",
-   "natnlty": "nationality value",
+   "natnlty": "",
    "connectedToId": [],
    "linkSetArray": [],
    "connectionSet": {
@@ -52710,21 +52710,21 @@
    }
   },
   {
-   "name": "Fahd Mohammed Ahmed al-Quso (no longer listed) second name (no longer listed)",
+   "name": "Fahd Mohammed Ahmed al-Quso (no longer listed)",
    "id": "QI.A.288.10",
    "REFERENCE_NUMBER": "QI.A.288.10",
    "indiv0OrEnt1": 0,
    "DATAID": "empty001",
    "VERSIONNUM": "10",
-   "FIRST_NAME": "Fahd Mohammed Ahmed al-Quso (no longer listed)",
-   "SECOND_NAME": "second name",
+   "FIRST_NAME": "Fahd Mohammed Ahmed al-Quso",
+   "SECOND_NAME": "",
    "THIRD_NAME": "(no longer listed)",
    "UN_LIST_TYPE": "Al-Qaida",
    "LISTED_ON": "2016-10-06T00:00:00",
    "NAME_ORIGINAL_SCRIPT": "نشوان عبد الرزاق عبد الباقي",
    "COMMENTS1": "comments",
    "NATIONALITY": {
-    "VALUE": "nationality value"
+    "VALUE": ""
    },
    "LIST_TYPE": {
     "VALUE": "UN List"
@@ -52753,7 +52753,7 @@
    "INDIVIDUAL_DOCUMENT": "",
    "SORT_KEY": "__AAA",
    "SORT_KEY_LAST_MOD": "2007-07-27T00:00:00",
-   "natnlty": "nationality value",
+   "natnlty": "",
    "connectedToId": [],
    "linkSetArray": [],
    "connectionSet": {
@@ -52766,21 +52766,21 @@
    }
   },
   {
-   "name": "Usama Bin Laden (no longer listed) second name (no longer listed)",
+   "name": "Usama Bin Laden (no longer listed)",
    "id": "QI.B.8.01",
    "REFERENCE_NUMBER": "QI.B.8.01",
    "indiv0OrEnt1": 0,
    "DATAID": "empty002",
    "VERSIONNUM": "10",
-   "FIRST_NAME": "Usama Bin Laden (no longer listed)",
-   "SECOND_NAME": "second name",
+   "FIRST_NAME": "Usama Bin Laden",
+   "SECOND_NAME": "",
    "THIRD_NAME": "(no longer listed)",
    "UN_LIST_TYPE": "Al-Qaida",
    "LISTED_ON": "2016-10-06T00:00:00",
    "NAME_ORIGINAL_SCRIPT": "نشوان عبد الرزاق عبد الباقي",
    "COMMENTS1": "comments",
    "NATIONALITY": {
-    "VALUE": "nationality value"
+    "VALUE": ""
    },
    "LIST_TYPE": {
     "VALUE": "UN List"
@@ -52809,7 +52809,7 @@
    "INDIVIDUAL_DOCUMENT": "",
    "SORT_KEY": "__AAA",
    "SORT_KEY_LAST_MOD": "2007-07-27T00:00:00",
-   "natnlty": "nationality value",
+   "natnlty": "",
    "connectedToId": [],
    "linkSetArray": [],
    "connectionSet": {
@@ -52822,21 +52822,21 @@
    }
   },
   {
-   "name": "Wa&apos;el Hamza Abd al-Fatah Julaidan (no longer listed) second name (no longer listed)",
+   "name": "Wa&apos;el Hamza Abd al-Fatah Julaidan (no longer listed)",
    "id": "QI.J.79.02",
    "REFERENCE_NUMBER": "QI.J.79.02",
    "indiv0OrEnt1": 0,
    "DATAID": "empty003",
    "VERSIONNUM": "10",
-   "FIRST_NAME": "Wa&apos;el Hamza Abd al-Fatah Julaidan (no longer listed)",
-   "SECOND_NAME": "second name",
+   "FIRST_NAME": "Wa&apos;el Hamza Abd al-Fatah Julaidan",
+   "SECOND_NAME": "",
    "THIRD_NAME": "(no longer listed)",
    "UN_LIST_TYPE": "Al-Qaida",
    "LISTED_ON": "2016-10-06T00:00:00",
    "NAME_ORIGINAL_SCRIPT": "نشوان عبد الرزاق عبد الباقي",
    "COMMENTS1": "comments",
    "NATIONALITY": {
-    "VALUE": "nationality value"
+    "VALUE": ""
    },
    "LIST_TYPE": {
     "VALUE": "UN List"
@@ -52865,7 +52865,7 @@
    "INDIVIDUAL_DOCUMENT": "",
    "SORT_KEY": "__AAA",
    "SORT_KEY_LAST_MOD": "2007-07-27T00:00:00",
-   "natnlty": "nationality value",
+   "natnlty": "",
    "connectedToId": [],
    "linkSetArray": [],
    "connectionSet": {
@@ -52881,7 +52881,7 @@
    "DATAID": "empty004",
    "VERSIONNUM": "10",
    "FIRST_NAME": "Wali Ur Rehman",
-   "SECOND_NAME": "second name",
+   "SECOND_NAME": "",
    "THIRD_NAME": "(no longer listed)",
    "UN_LIST_TYPE": "Al-Qaida",
    "REFERENCE_NUMBER": "QI.U.287.10",
@@ -52889,7 +52889,7 @@
    "NAME_ORIGINAL_SCRIPT": "نشوان عبد الرزاق عبد الباقي",
    "COMMENTS1": "Wali Ur Rehman is the Emir of Tehrik-e Taliban (TTP) (QE.T.132.11) for South Waziristan",
    "NATIONALITY": {
-    "VALUE": "nationality value"
+    "VALUE": ""
    },
    "LIST_TYPE": {
     "VALUE": "UN List"
@@ -52920,8 +52920,8 @@
    "SORT_KEY_LAST_MOD": "2007-07-27T00:00:00",
    "indiv0OrEnt1": 0,
    "id": "QI.U.287.10",
-   "name": "Wali Ur Rehman second name (no longer listed)",
-   "natnlty": "nationality value",
+   "name": "Wali Ur Rehman (no longer listed)",
+   "natnlty": "",
    "connectedToId": [
     "QE.T.132.11"
    ],
@@ -52949,7 +52949,7 @@
    "DATAID": "empty005",
    "VERSIONNUM": "10",
    "FIRST_NAME": "Wali Ur Rehman",
-   "SECOND_NAME": "second name",
+   "SECOND_NAME": "",
    "THIRD_NAME": "(no longer listed)",
    "UN_LIST_TYPE": "Al-Qaida",
    "REFERENCE_NUMBER": "QI.M.286.10",
@@ -52957,7 +52957,7 @@
    "NAME_ORIGINAL_SCRIPT": "نشوان عبد الرزاق عبد الباقي",
    "COMMENTS1": "Tehrik-e Taliban (TTP) (QE.T.132.11) is based in the tribal areas along the Afghanistan/Pakistan border. Formed in 2007, its leader is Hakimullah Mehsud.",
    "NATIONALITY": {
-    "VALUE": "nationality value"
+    "VALUE": ""
    },
    "LIST_TYPE": {
     "VALUE": "UN List"
@@ -52988,8 +52988,8 @@
    "SORT_KEY_LAST_MOD": "2007-07-27T00:00:00",
    "indiv0OrEnt1": 0,
    "id": "QI.M.286.10",
-   "name": "Wali Ur Rehman second name (no longer listed)",
-   "natnlty": "nationality value",
+   "name": "Wali Ur Rehman (no longer listed)",
+   "natnlty": "",
    "connectedToId": [
     "QE.T.132.11"
    ],
@@ -53025,7 +53025,7 @@
    "NAME_ORIGINAL_SCRIPT": "",
    "COMMENTS1": " Founder of the Al Rashid Trust (QE.A.5.01). Until 21 Oct. 2008, the Al Rashid Trust appeared also as &quot;Aid Organization of the Ulema, Pakistan&quot; (QE.A.73.02.).",
    "NATIONALITY": {
-    "VALUE": "nationality value"
+    "VALUE": ""
    },
    "LIST_TYPE": {
     "VALUE": "UN List"
@@ -53057,7 +53057,7 @@
    "indiv0OrEnt1": 0,
    "id": "QI.L.30.01",
    "name": "Mufti Rashid Ahmad Ledahyanoy (no longer listed)",
-   "natnlty": "nationality value",
+   "natnlty": "",
    "connectedToId": [
     "QE.A.5.01",
     "QE.A.73.02"
@@ -53102,7 +53102,7 @@
    "NAME_ORIGINAL_SCRIPT": "",
    "COMMENTS1": "Leader of ",
    "NATIONALITY": {
-    "VALUE": "nationality value"
+    "VALUE": ""
    },
    "LIST_TYPE": {
     "VALUE": "UN List"
@@ -53134,7 +53134,7 @@
    "indiv0OrEnt1": 0,
    "id": "QI.J.240.08",
    "name": "Najmiddin Kamolitdinovich Jalolov (no longer listed)",
-   "natnlty": "nationality value",
+   "natnlty": "",
    "connectedToId": [],
    "linkSetArray": [],
    "connectionSet": {
@@ -53158,7 +53158,7 @@
    "NAME_ORIGINAL_SCRIPT": "",
    "COMMENTS1": "Leader of ...",
    "NATIONALITY": {
-    "VALUE": "nationality value"
+    "VALUE": ""
    },
    "LIST_TYPE": {
     "VALUE": "UN List"
@@ -53190,7 +53190,7 @@
    "indiv0OrEnt1": 0,
    "id": "QI.B.239.08",
    "name": "Suhayl Fatilloevich Buranov (no longer listed)",
-   "natnlty": "nationality value",
+   "natnlty": "",
    "connectedToId": [],
    "linkSetArray": [],
    "connectionSet": {

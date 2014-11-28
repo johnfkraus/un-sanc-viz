@@ -860,12 +860,12 @@ Network = function () {
     var content;
     content = '<p class="main"><span>' + d.name + '</span></p>';
     content += '<hr class="tooltip-hr">';
-    content += '<p class="main"><span>Id: ' + d.id + '&nbsp;&nbsp; Links: ' + d.linkCount + '</span></p>';
+    content += '<p class="main"><span>ID: ' + d.id + '&nbsp;&nbsp; Links: ' + d.linkCount + '</span></p>';
     if (d.natnlty) {
       content += '<hr class="tooltip-hr">';
       content += '<p class="main"><span>Nationality: ' + d.natnlty;
+      content += '</span></p>';
     }
-    content += '</span></p>';
     tooltip.showTooltip(content, d3.event);
     //  higlight connected links
     if (link) {

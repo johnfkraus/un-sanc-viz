@@ -32,15 +32,15 @@
     <script src="http://ajax.cdnjs.com/ajax/libs/underscore.js/1.1.6/underscore-min.js"></script>
     <script src="js/libs/backbone.js"></script>
 </head>
-
 <body>
-
 <div id="container" class="container">
     <table id="top-stuff" style="padding: 5px; width: 100%;">
         <tr>
             <td class="mainTitle">
-                <div id="mainTitle">U.N. Al-Qaida Sanctions List
-                    <br/>Network Visualization
+                <div id="mainTitle"><span style="margin-bottom: 0;"><a href="http://www.un.org/sc/committees/1267/AQList.xml" target="_blank" style="text-decoration: none;">U.N. Al-Qaida Sanctions List</a>
+                    <br/>Network Visualization</span></div>
+                <div>
+                    <span style="font-size: 12px; line-height: 12px; padding-left: 2px;">A Thing by <a href="mailto:john@johnfkraus.com?Subject=Cowabunga!" target="_top">John Kraus</a></span>
                 </div>
             </td>
             <td align="center">
@@ -58,7 +58,7 @@
                 <div id="layouts" class="control">
                     <h3>Layout</h3>
                     <a id="force" class="active">Force Directed</a>
-                    <a id="radial">Radial</a>
+                    <a id="radial" style="color: #ddd; background-color: #aaa;">Radial</a>
                 </div>
 
             </td>
@@ -88,7 +88,7 @@
                 </div>
             </td>
 
-            <td style="padding-top: 5px;">
+            <td style="padding-top: 5px; color: #ddd;">
                 <div>
                     <form action="">
                         <input type="checkbox" id="includeEnts" name="includeEntsIndivs" value="entities"
@@ -100,22 +100,15 @@
 
             <td align="center" style="width: 450px;">
                 <div>
-
-
                     <h3>Visualization parameters</h3>
-
-                    <div id="node_color" class="control"  style="float: left;">
+                    <div id="node_color" class="control"  style="float: left; color: #ddd;">
                         <h4>Node color</h4>
-                        <select id="node_color_select" style="width: 120px;">
-                            <option value="name">Name (random)</option>
-                            <option selected="selected" value="natnlty">Nationality</option>
+                        <select id="node_color_select" style="width: 120px; color: #ddd;">
+                            <option  selected="selected"  value="name">Name (random)</option>
+                            <option value="natnlty">Nationality</option>
                             <option value="other">Other</option>
-
                         </select>
-
                     </div>
-
-
                     <div class="force_selection control">
                         <h4>Force charge</h4>
                         <select id="force_charge_select" style="width: 60px;">
@@ -141,27 +134,27 @@
                     </div>
                     <div class="force_selection control" style="">
                         <h4>Link distance</h4>
-                        <select id="link_distance_select" style="width: 60px;">
-                            <option value="0">0</option>
-                            <option value="5">5</option>
-                            <option value="10">10</option>
-                            <option value="15">15</option>
-                            <option value="20">20</option>
-                            <option value="25">25</option>
-                            <option value="30">30</option>
-                            <option value="35">35</option>
-                            <option selected="selected" value="40">40</option>
-                            <option value="45">45</option>
-                            <option value="50">50</option>
-                            <option value="55">55</option>
-                            <option value="60">60</option>
-                            <option value="70">70</option>
-                            <option value="80">80</option>
-                            <option value="90">90</option>
-                            <option value="100">100</option>
-                            <option value="125">125</option>
-                            <option value="150">150</option>
-                            <option value="200">200</option>
+                        <select id="link_distance_select" style="width: 75px;">
+                            <option value="0">0 px</option>
+                            <option value="5">5 px</option>
+                            <option value="10">10 px</option>
+                            <option value="15">15 px</option>
+                            <option value="20">20 px</option>
+                            <option value="25">25 px</option>
+                            <option value="30">30 px</option>
+                            <option value="35">35 px</option>
+                            <option selected="selected" value="40">40 px</option>
+                            <option value="45">45 px</option>
+                            <option value="50">50 px</option>
+                            <option value="55">55 px</option>
+                            <option value="60">60 px</option>
+                            <option value="70">70 px</option>
+                            <option value="80">80 px</option>
+                            <option value="90">90 px</option>
+                            <option value="100">100 px</option>
+                            <option value="125">125 px</option>
+                            <option value="150">150 px</option>
+                            <option value="200">200 px</option>
 
                         </select>
                     </div>
