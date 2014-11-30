@@ -15,6 +15,7 @@ var async = require('async'),
 
 var collect = require('./collect.js');
 var setupData = require('./setupData.js');
+// var docs = require('./docs.js');
 var logger = require('./libs/logger.js');
 var linenums = require('./linenums.js');
 var functionCount = 0;
@@ -56,10 +57,21 @@ var runApp = function () {
       // put data in arrays for d3
       // (function() {
       if (consoleLog) {
-        console.log("\n ", __filename, __line, "; function 2#:", ++functionCount);
+        console.log("\n ", __filename, __line, "; function 3#:", ++functionCount);
       }
       //  if (consoleLog) { console.log("\n app.js function 3#:", ++functionCount);
       setupData.fixData();
+      callback();
+      // })();
+    },
+    function (callback) {
+      // put data in arrays for d3
+      // (function() {
+      if (consoleLog) {
+        console.log("\n ", __filename, __line, "; function 3#:", ++functionCount);
+      }
+      //  if (consoleLog) { console.log("\n app.js function 3#:", ++functionCount);
+      // docs.get_html_docs();
       callback();
       // })();
     }

@@ -125,7 +125,30 @@ USE GIT BASH
  # start the ssh-agent in the background
 ssh-agent -s
 # Agent pid 59566
+
 ssh-add ~/.ssh/id_rsa
+
+ssh-add .ssh/id_rsa
+
+$ ssh-add .ssh/id_rsa
+
+Could not open a connection to your authentication agent.
+
+User1@LENOVO-PC ~
+$ eval `ssh-agent -s`
+Agent pid 3556
+
+User1@LENOVO-PC ~
+$ ssh-add
+Enter passphrase for /c/Users/User1/.ssh/id_rsa:
+Identity added: /c/Users/User1/.ssh/id_rsa (/c/Users/User1/.ssh/id_rsa)
+
+User1@LENOVO-PC ~
+$
+
+
+
+
 Step 3: Add your SSH key to your account
 
 Run the following command to copy the key to your clipboard. Keep in mind that your key may also be

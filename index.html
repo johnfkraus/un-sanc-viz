@@ -34,6 +34,8 @@
     <script src="http://ajax.cdnjs.com/ajax/libs/underscore.js/1.1.6/underscore-min.js"></script>
     -->
     <script src="js/libs/backbone.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/objects.js"></script>
 </head>
 <body>
 <div id="container" class="container">
@@ -166,7 +168,13 @@
             </td>
         </tr>
     </table>
-
+    <div id="graph-container">
+        <div id="graph"></div>
+    </div>
+    <div id="docs-container">
+        <a id="docs-close" href="#">&times;</a>
+        <div id="docs" class="docs"></div>
+    </div>
     <div id="main" role="main">
         <div id="vis"></div>
     </div>
@@ -189,7 +197,9 @@
 
 
 <script defer src="js/plugins.js"></script>
+<!--
 <script defer src="js/script.js"></script>
+-->
 <!--script src="js/libs/coffee-script.js"></script-->
 <script src="js/libs/d3.v2.js"></script>
 <script src="js/Tooltip.js"></script>

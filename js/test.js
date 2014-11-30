@@ -18,11 +18,11 @@ var linenums = require('./linenums.js');
 // var logger = require('./libs/logger.js');
 // var functionCount = 0;
 // var removefile = require('./removefile.js');
-var getAqXmlFile = require('./get-aqlist-xml.js')
-
+// var getAqXmlFile = require('./get-aqlist-xml.js')
+var docs = require('./docs.js');
 // collect.httpRequestXMLFile();
 // collect.convertXMLToJson();
 
 //removefile.removeAFile();
-
-getAqXmlFile.getXMLFile();
+docs.get_html_docs();
+// getAqXmlFile.getXMLFile();

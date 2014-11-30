@@ -988,9 +988,11 @@ $(function () {
       return myNetwork.toggleLayout("force");
     });
 
-  var intervalID = setInterval(function () {
-    wiggle();
-  }, 20000);
+  if (false) {
+    var intervalID = setInterval(function () {
+      wiggle();
+    }, 20000);
+  }
 
   var wiggle = function () {
     activate("layouts", "force");
@@ -1038,6 +1040,25 @@ $(function () {
         .val();
       return myNetwork.updateSearch2(searchTerm);
     });
+
+  $('#docs-close')
+    .on('click', function () {
+      deselectObject();
+      return false;
+    });
+  $(document)
+    .on('click', '.select-object', function () {
+      var obj = data[$(this)
+        .data('name')];
+      if (obj) {
+        selectObject(obj);
+      }
+      return false;
+    });
+
+  $(window)
+    .on('resize', resize);
+
   /*
    var check = function () {
    document.getElementById("includeEnts").checked = true;
@@ -1053,3 +1074,102 @@ $(function () {
   });
 
 });
+
+
+function selectObject(obj, el) {
+  var node;
+  if (el) {
+    node = d3.select(el);
+  } else {
+    graph.node.each(function (d) {
+      if (d === obj) {
+        node = d3.select(el = this);
+      }
+    });
+  }
+  if (!node) return;
+
+  if (node.classed('selected')) {
+    deselectObject();
+    return;
+  }
+  deselectObject(false);
+
+  selected = {
+    obj: obj,
+    el: el
+  };
+
+  highlightObject(obj);
+
+  node.classed('selected', true);
+  $('#docs')
+    .html(obj.docs);
+  $('#docs-container')
+    .scrollTop(0);
+  resize(true);
+
+  var $graph = $('#graph-container'),
+    nodeRect = {
+      left: obj.x + obj.extent.left + graph.margin.left,
+      top: obj.y + obj.extent.top + graph.margin.top,
+      width: obj.extent.right - obj.extent.left,
+      height: obj.extent.bottom - obj.extent.top
+    },
+    graphRect = {
+      left: $graph.scrollLeft(),
+      top: $graph.scrollTop(),
+      width: $graph.width(),
+      height: $graph.height()
+    };
+  if (nodeRect.left < graphRect.left ||
+    nodeRect.top < graphRect.top ||
+    nodeRect.left + nodeRect.width > graphRect.left + graphRect.width ||
+    nodeRect.top + nodeRect.height > graphRect.top + graphRect.height) {
+
+    $graph.animate({
+      scrollLeft: nodeRect.left + nodeRect.width / 2 - graphRect.width / 2,
+      scrollTop: nodeRect.top + nodeRect.height / 2 - graphRect.height / 2
+    }, 500);
+  }
+}
+
+function deselectObject(doResize) {
+  if (doResize || typeof doResize == 'undefined') {
+    resize(false);
+  }
+  graph.node.classed('selected', false);
+  selected = {};
+  highlightObject(null);
+}
+
+
+var showingDocs = false,
+  docsClosePadding = 8,
+  desiredDocsHeight = 300;
+
+function resize(showDocs) {
+  var docsHeight = 0,
+    graphHeight = 0,
+    $docs = $('#docs-container'),
+    $graph = $('#graph-container'),
+    $close = $('#docs-close');
+
+  if (typeof showDocs == 'boolean') {
+    showingDocs = showDocs;
+    $docs[showDocs ? 'show' : 'hide']();
+  }
+
+  if (showingDocs) {
+    docsHeight = desiredDocsHeight;
+    $docs.css('height', docsHeight + 'px');
+  }
+
+  graphHeight = window.innerHeight - docsHeight;
+  $graph.css('height', graphHeight + 'px');
+
+  $close.css({
+    top: graphHeight + docsClosePadding + 'px',
+    right: window.innerWidth - $docs[0].clientWidth + docsClosePadding + 'px'
+  });
+}
