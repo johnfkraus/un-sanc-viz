@@ -223,20 +223,30 @@ var fixData = function () {
         console.log("\n ", __filename, "line", __line, "; typeof data = ", typeof data);
       }
 
+// SET
+      // https://www.npmjs.org/package/backpack-node
+      counter = 0;
       var setOfNodes = new Set();
       data.ents.forEach(function (ent) {
+        counter++;
         setOfNodes.add(ent);
       });
       data.indivs.forEach(function (indiv) {
+        counter++;
         setOfNodes.add(indiv);
       });
       missing_ents.forEach(function (missing_ent) {
+        counter++;
         setOfNodes.add(missing_ent);
       });
       missing_indivs.forEach(function (missing_indiv) {
+        counter++;
         setOfNodes.add(missing_indiv);
       });
+      console.log("\n ", __filename, "line", __line, "; counter = ", counter, "; setOfNodes.count = ", setOfNodes.count);
 
+      // nodeBag!
+// https://www.npmjs.org/package/backpack-node
       var nodeBag = new Bag();
       counter = 0;
       data.ents.forEach(function (ent) {
@@ -252,7 +262,10 @@ var fixData = function () {
         } else {
           nodeBag.add(ent.id, ent);
         }
+
+        // console.log("\n ", __filename, "line", __line, "counter = ", counter ,"; nodeBag.length = ", nodeBag.count);
       });
+
       data.indivs.forEach(function (indiv) {
         counter++;
         if (consoleLog) {
@@ -262,6 +275,7 @@ var fixData = function () {
           indiv.id = counter;
         }
         nodeBag.add(indiv.id, indiv);
+        //       console.log("\n ", __filename, "line", __line, "counter = ", counter ,"; nodeBag.length = ", nodeBag.count);
       });
       missing_ents.forEach(function (missing_ent) {
         counter++;
@@ -283,13 +297,59 @@ var fixData = function () {
         }
         nodeBag.add(missing_indiv.id, missing_indiv);
       });
-
-      console.log("nodeBag = ", nodeBag);
-
+      console.log("\n ", __filename, "line", __line, "Bag counter = ", counter);
+//      console.log("\n ", __filename, "line", __line, "; nodeBag = ", nodeBag);
+      counter = 0;
+    /*
+      nodeBag.forEach(function (item) {
+        counter++;
+        console.log(counter, "Key: " + item.key, " Value: " + item.value);
+      });
+*/
       data.nodes = ents.concat(indivs);
       data.nodes = ents.concat(indivs);
       data.nodes = data.nodes.concat(missing_ents);
       data.nodes = data.nodes.concat(missing_indivs);
+
+
+      var myBag = new Bag();
+      myBag.add(1, data.nodes[1]);
+      myBag.add(2, "b");
+      myBag.add(2, "c");
+
+      myBag.forEach(function (item)
+      {
+        console.log("Key: " + item.key);
+        console.log("Value: " + item.value);
+      });
+
+
+      var nodeBag2 = new Bag();
+      counter = 0;
+      var nodes = data.nodes;
+      nodes.forEach(function (node) {
+        counter++;
+        if (consoleLog) {
+          console.log("\n ", __filename, "line", __line, "; counter = ", counter, "; ent.id = ", ent.id);
+        }
+      //  if (!(node.id)) {
+          // node.id = counter;
+          node.id = getCleanId(node.REFERENCE_NUMBER);
+      //  }
+          //var errorMessage = "no id error " + JSON.stringify(ent);
+          //throw errorMessage;
+          nodeBag2.add(node.id, node);
+
+      });
+      console.log("\n ", __filename, "line", __line, "nodeBag2 counter = ", counter,"; nodeBag2._map.count = ", nodeBag2._map.count);
+
+      var buckets = nodeBag2._map._buckets;
+      buckets.forEach(function (item)
+      {
+        console.log("Key: " + item.key);
+        console.log("Value: " + item.value);
+      });
+
 
       concatNames(data.nodes);
       data.dateGenerated = generatedFileDateString; // data.CONSOLIDATED_LIST.$.dateGenerated;
@@ -302,6 +362,8 @@ var fixData = function () {
           }
         }
       });
+      data.ents = null;
+      data.indivs = null;
       ents = null;
       indivs = null;
       callback();
@@ -523,6 +585,20 @@ var cleanUpIds = function (nodes) {
     }
   });
 };
+
+//  clean up indiv id for consistency;  none should have trailing period.
+var getCleanId = function (referenceNumber) {
+    // remove period from end of all reference numbers that have them; not all do.
+    var refNumRegexMatch;
+    try {
+      refNumRegexMatch = referenceNumber
+        .match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/);
+    } catch (error) {
+        console.log("\n ", __filename, "line", __line, "; Error: ", error, "; node =", node, "; counter = ", counter);
+    }
+    return refNumRegexMatch[0];
+};
+
 
 var concatNames = function (nodes) {
   counter = 0;
