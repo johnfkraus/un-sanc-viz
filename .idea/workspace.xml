@@ -4,39 +4,8 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4182aee6-13b8-4466-9993-4422af087054" name="John's change list" comment="npm install bag">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/empty_indiv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/filewalker.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/graph.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/listDirectory.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/markdown_to_js_test.js" />
-      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\archives\output\AQList-clean.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\archives\output\AQList-raw.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\archives\output\AQList.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\archives\output\data1.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\archives\output\data2.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\archives\output\data3addMissingNodes-concatNames.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\archives\output\data4cleanupids.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\archives\output\data5addconnidsarray.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\archives\output\data6addconnectionOBJECTSarray.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\output\AQList-clean.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\output\AQList-docs.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\output\AQList-raw.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\output\AQList.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\output\data1.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\output\data2.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\output\data3addMissingNodes-concatNames.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\output\data4cleanupids.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\output\data5addconnidsarray.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\output\data6addconnectionOBJECTSarray.json" afterPath="" />
-      <change type="MOVED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\output\config.json" afterPath="$PROJECT_DIR$/data/input/config.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/collect.js" afterPath="$PROJECT_DIR$/js/collect.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/docs.js" afterPath="$PROJECT_DIR$/js/docs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/setupData.js" afterPath="$PROJECT_DIR$/js/setupData.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/viz.js" afterPath="$PROJECT_DIR$/js/viz.js" />
+    <list default="true" id="4182aee6-13b8-4466-9993-4422af087054" name="John's change list" comment="fixing docs on  click circle">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="aqlist-visualization.iws" />
@@ -61,14 +30,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="viz.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="viz.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/viz.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.7549669" vertical-offset="12157" max-vertical-offset="31654">
+            <state vertical-scroll-proportion="13.68" vertical-offset="12157" max-vertical-offset="31654">
               <caret line="695" column="60" selection-start-line="695" selection-start-column="60" selection-end-line="695" selection-end-column="60" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6537678" vertical-offset="206" max-vertical-offset="697">
+              <caret line="31" column="3" selection-start-line="31" selection-start-column="3" selection-end-line="31" selection-end-column="3" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -143,7 +122,6 @@
         <option value="$PROJECT_DIR$/js/vis.js" />
         <option value="$PROJECT_DIR$/archives/index.js" />
         <option value="$PROJECT_DIR$/AQList-json.html" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/js/missing_nodes.js" />
         <option value="$PROJECT_DIR$/consolelog.txt" />
         <option value="$PROJECT_DIR$/data/al-qaida-without-targetcount.json" />
@@ -175,6 +153,7 @@
         <option value="$PROJECT_DIR$/css/graph.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/viz.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -762,7 +741,13 @@
       <option name="project" value="LOCAL" />
       <updated>1417435882189</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="fixing docs on  click circle">
+      <created>1417522452464</created>
+      <option name="number" value="00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1417522452464</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <option name="trackContextForNewChangelist" value="true" />
     <servers />
   </component>
@@ -778,6 +763,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Code Review" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24967907" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -792,7 +778,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
@@ -854,7 +839,8 @@
     <MESSAGE value="deleted some files" />
     <MESSAGE value="data structures" />
     <MESSAGE value="npm install bag" />
-    <option name="LAST_COMMIT_MESSAGE" value="npm install bag" />
+    <MESSAGE value="fixing docs on  click circle" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing docs on  click circle" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -889,13 +875,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/archives/output1/AQList.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.06276151" vertical-offset="4" max-vertical-offset="290224">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/libs/logger.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="144" max-vertical-offset="765">
@@ -1290,11 +1269,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/viz.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.7549669" vertical-offset="12157" max-vertical-offset="31654">
+        <state vertical-scroll-proportion="13.68" vertical-offset="12157" max-vertical-offset="31654">
           <caret line="695" column="60" selection-start-line="695" selection-start-column="60" selection-end-line="695" selection-end-column="60" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6537678" vertical-offset="206" max-vertical-offset="697">
+          <caret line="31" column="3" selection-start-line="31" selection-start-column="3" selection-end-line="31" selection-end-column="3" />
+          <folding />
         </state>
       </provider>
     </entry>
