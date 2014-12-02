@@ -4,20 +4,18 @@
 
 // require_once 'markdown/Markdown.inc.php';
 // use \Michelf\Markdown;
-
 root = typeof exports !== "undefined" && exports !== null ? exports : this;
-
 if (typeof define !== 'function') {
   var define = require('amdefine');
 }
-
 var markdownContent;
 var logger = require('./libs/logger.js');
 var trunc = require('./trunc.js');
 var gulp = require('gulp');
-var markdown = require('gulp-markdown');
+// var markdown = require( "markdown" ).markdown;
+// var markdown = require('gulp-markdown');
+var md = require("markdown").markdown;
 var fileExists = require('file-exists');
-
 var async = require('async'),
   re = require('request-enhanced'),
   request = require('request'),
@@ -25,83 +23,65 @@ var async = require('async'),
   util = require('util'),
   dateFormat = require('dateformat'),
   inspect = require('object-inspect');
-// jsonpatch = require('json-patch'),
-//parseString = require('xml2js')
-// .parseString;
-var truncateToNumChars = 400;
+// var truncateToNumChars = 400;
 var counter = 0;
-var numObjectsToShow = 2;
-var data;
-var generatedFileDateString;
-// var backbone =  require('backbone');
+// var numObjectsToShow = 2;
+var data = {};
+// var generatedFileDateString;
 var Set = require("backpack-node").collections.Set;
-var Bag = require("backpack-node").collections.Bag;
-//console.log("\n __dirname = ", __dirname + '\n');
-// var counter = 0;
-
+// var Bag = require("backpack-node").collections.Bag;
 var fsOptions = {
   flags: 'r+',
   encoding: 'utf-8',
   autoClose: true
 };
-
 var jsonFile = "";
-var getJsonFile = function () {
-  return jsonFile;
-};
+var html = "";
 var dateGenerated;
-// var data;
-// data.nodes = [];
 var consoleLog = true;
 
 var get_html_docs = function () {
   if (consoleLog) {
     console.log("\n ", __filename, "line", __line, "; running docs.get_html_docs()");
   }
-  var data = {};
   var config;
   var functionCount = 0;
-  // var nodes = [];
   var newData = {};
-  var aliases;
-  var comments = "";
   var links = [];
-  var connectedToId;
-  var aliasCount = 0;
-  var aliasArray = [];
-  var linkRegexMatch;
-  var connection;
-  var source;
-  var target;
-  var missing_ents;
-  var missing_indivs;
-  var ents = [];
-  var indivs = [];
 
   async.series([
     function (callback) {
       // read json file containing nodes and links
-      if (consoleLog) {
-        console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount);
-      }
       var cleanJsonFileName = __dirname + "/../data/output/AQList-clean.json";
       var buffer = fse.readFileSync(cleanJsonFileName); //, fsOptions); //, function (err, data) {
       data = JSON.parse(buffer);
+      delete data.ents;
+      delete data.indivs;
+      delete data.ENTITIES;
+      delete data.INDIVIDUALS;
+      delete data.$;
+
       if (consoleLog) {
+        console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount);
         console.log("\n ", __filename, "line", __line, "; data read from: \n", cleanJsonFileName);
         console.log("\n ", __filename, "line", __line, "; data = \n", trunc.truncn(JSON.stringify(data), 200));
       }
       callback();
     },
+
+    function (callback) {
+      // var jsonData = JSON.stringify(data);
+      saveJsonFile(JSON.stringify(data, null, " "), "./data/output/data31deleteEntsEtc.json");
+      callback();
+    },
+
     function (callback) {
       // read json file containing config
-      if (consoleLog) {
-        console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount);
-      }
-      var configJsonFileName = __dirname + "/../data/output/config.json";
+      var configJsonFileName = __dirname + "/../data/input/config.json";
       var buffer = fse.readFileSync(configJsonFileName); //, fsOptions); //, function (err, data) {
       config = JSON.parse(buffer);
       if (consoleLog) {
+        console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount);
         console.log("\n ", __filename, "line", __line, "; config data read from: \n", configJsonFileName);
         console.log("\n ", __filename, "line", __line, "; config = \n", trunc.truncn(JSON.stringify(config), 200));
       }
@@ -109,35 +89,30 @@ var get_html_docs = function () {
     },
 
     function (callback) {
+      nodes = getHTMLDocs(data.nodes, config);
+      data.nodes = nodes;
       if (consoleLog) {
         console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount);
-      }
-      newData.nodes = getHTMLDocs(data.nodes, config);
-      data = newData;
-      if (consoleLog) {
-        console.log("\n ", __filename, "line", __line, "; data + html = \n", trunc.truncn(JSON.stringify(data), 200));
-      }
-      callback();
-    },
-    function (callback) {
-      if (consoleLog) {
-        console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount);
-      }
-      var jsonWithDocsFileName = __dirname + "/../data/output/AQList-docs.json";
-      data = newData; // = getHTMLDocs(JSON.stringify(data));
-      saveJsonFile(data, jsonWithDocsFileName);
-      if (consoleLog) {
-        console.log("\n ", __filename, "line", __line, "; data + html = \n", trunc.truncn(JSON.stringify(data), 200));
+        // console.log("\n ", __filename, "line", __line, "; data + html = \n", trunc.truncn(JSON.stringify(data), 200));
       }
       callback();
     },
 
+
+    function (callback) {
+      var jsonWithDocsFileName = __dirname + "/../data/output/AQList-docs.json";
+      // data = newData; // = getHTMLDocs(JSON.stringify(data));
+      saveJsonFile(JSON.stringify(data, null, " "), jsonWithDocsFileName);
+      if (consoleLog) {
+        console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount);
+        //  console.log("\n ", __filename, "line", __line, "; data + html = \n", trunc.truncn(JSON.stringify(data), 200));
+      }
+      callback();
+    },
     function (callback) {
       var dummy = function () {
         if (consoleLog) {
           console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount);
-        }
-        if (consoleLog) {
           console.log("\n ", __filename, "line", __line, "; last function");
         }
         callback();
@@ -148,32 +123,31 @@ var get_html_docs = function () {
 // create a links array in each entity/indiv containing ids of related parties
 var getHTMLDocs = function (nodes, config) {
   nodes.forEach(function (node) {
-
     var nameId = node.id;
-    var docFileName = "data/" + name + ".mkdn";
-    var type = node.type;
+    var docFileName = "./data/" + nameId + ".mkdn";
+    var type;
+    if (node.indiv0OrEnt1 == 0) {
+
+      node.type = "Individual";
+    } else {
+      node.type = "Entity";
+    }
     if (config['types'][type]) {
       type = config['types'][type]['long'];
     }
-    var markdownContent = "## name *type*\n\n";
+    var markdownContent = "## " + node.name + "*" + type + "*\n\n";
     if (fileExists(docFileName)) {
-      // if (file_exists(docFilename)) {
       markdownContent += "### Documentation\n\n";
-      markdownContent += file_get_contents(docFileName);
-
+      markdownContent += readFileSync(docFileName); //file_get_contents(docFileName);
     } else {
       markdownContent += "<div class=\"alert alert-warning\">35 No documentation for this object</div>";
-
     }
-
     if (node) {
       // error_log("\n46 file exists,  obj = 'obj'", 3, "my-errors.log");
       markdownContent += "\n\n";
       markdownContent += get_depends_markdown('Depends on', node['depends']);
       markdownContent += get_depends_markdown('Depended on by', node['dependedOnBy']);
-
     }
-
     // Use {{object_id}} to link to an object
     var arr = explode('{{', markdownContent);
     markdownContent = arr[0];
@@ -196,8 +170,7 @@ var getHTMLDocs = function (nodes, config) {
         console.log("\n ", __filename, "line", __line, ";  markdownContent = ", markdownContent);
       }
     }
-
-    html = markdownToHTML(markdownContent);
+    html = mdToHtml(markdownContent); //   markdownToHTML(markdownContent);
     // IE can't handle <pre><code> (it eats all the line breaks)
     html = str_replace('<pre><code>', '<pre>', html);
     html = str_replace('</code></pre>', '</pre>', html);
@@ -207,165 +180,40 @@ var getHTMLDocs = function (nodes, config) {
     node.docs = html;
 //    return html;
   })
+  return nodes;
 };
-
 var get_depends_markdown = function (header, arr) {
-  // echo 'debug_view($header) = ';
-  // debug_view($header);
-  //      echo 'debug_view($arr) = ';
-  // debug_view($arr);
   markdownContent = "### $header";
   if ((arr) && ((typeof arr) === 'Array') && count(arr)) {
     markdownContent += "\n\n";
     arr.forEach(function (name) {
       markdownContent += "* {{" + name + "}}\n";
     });
-    // foreach (arr as name) {
-    //     markdownContent += "* {{"+name+  "}}\n";
-    //  }
     markdownContent += "\n";
   } else {
     markdownContent += " *(none)*\n\n";
   }
   return markdownContent;
+};
+
+function get_id_string(name) {
+  return 'obj-' + name.replace(/@[^a-z0-9]+@i/g, '-');
 }
 
-/*
- function get_id_string($name) {
- return 'obj-' . preg_replace('@[^a-z0-9]+@i', '-', $name);
- }
-
-
- function read_config() {
- global $config, $dataset, $dataset_qs;
-
- $config = json_decode(file_get_contents("data/$dataset/config.json" ), true);
- $config['jsonUrl'] = "json.php$dataset_qs";
- }
- /*
- function read_data() {
- global $config, $data, $dataset, $errors;
-
- if (!$config) read_config();
-
- $json   = json_decode(file_get_contents("data/$dataset/objects.json"), true);
- $data   = array();
- $errors = array();
-
- foreach ($json as $obj) {
- $data[$obj['name']] = $obj;
- }
-
- foreach ($data as &$obj) {
- $obj['dependedOnBy'] = array();
- }
- unset($obj);
- foreach ($data as &$obj) {
- // echo '117 debug_view($data)';
- // echo dbug('print');
- // debug_view($data);
- // debug_view("116 $data = " + $data);
- // echo '121 debug_view($obj)';
- // debug_view($obj);
-
- if (!empty($obj['depends']) && ( is_array( $obj['depends']))) {
-
- foreach ($obj['depends'] as $name) {
- if ($data[$name]) {
- $data[$name]['dependedOnBy'][] = $obj['name'];
- } else {
- $errors[] = "137 Unrecognized dependency: '$obj[name]' depends on '$name'";
- error_log("\n141 Unrecognized dependency: '$obj[name]' depends on '$name'", 3, "my-errors.log");
-
- }
- }
- } else {
- $errors[] = "148 Unrecognized dependency: '$obj[name]' depends on '$name'";
- error_log("\n149 Unrecognized dependency: '$obj[name]' depends on '$name'", 3, "my-errors.log");
- }
- }
- unset($obj);
- foreach ($data as &$obj) {
- $xx = get_html_docs($obj);
-
- $obj['docs'] = $xx;
- //get_html_docs($obj);
- // $xx = $obj['docs'];
-
- error_log("\n167 obj [ docs ] = get_html _docs ( obj ) = '$xx'", 3, "my-errors.log");
-
- }
- unset($obj);
- }
- */
-/*
- function debug_view ( $what ) {
- echo '<pre>';
- if ( is_array( $what ) )  {
- print_r ( $what );
- } else {
- var_dump ( $what );
- }
- echo '</pre>';
- }
-
-
- /**
- * dbug (mixed $expression [, mixed $expression [, $... ]])
- * Author : dcz
- * Feel free to use as you wish at your own risk ;-)
- */
-
-/*
- function dbug() {
- static $output = '', $doc_root;
- $args = func_get_args();
- if (!empty($args) && $args[0] === 'print') {
- $_output = $output;
- $output = '';
- return $_output;
- }
- // do not repeat the obvious (matter of taste)
- if (!isset($doc_root)) {
- $doc_root = str_replace('\\', '/', $_SERVER['DOCUMENT_ROOT']);
- }
- $backtrace = debug_backtrace();
- // you may want not to htmlspecialchars here
- $line = htmlspecialchars($backtrace[0]['line']);
- $file = htmlspecialchars(str_replace(array('\\', $doc_root), array('/', ''), $backtrace[0]['file']));
- $class = !empty($backtrace[1]['class']) ? htmlspecialchars($backtrace[1]['class']) . '::' : '';
- $function = !empty($backtrace[1]['function']) ? htmlspecialchars($backtrace[1]['function']) . '() ' : '';
- $output += "<b>$class$function =&gt;$file #$line</b><pre>";
- ob_start();
- foreach ($args as $arg) {
- var_dump($arg);
- }
- $output += htmlspecialchars(ob_get_contents(), ENT_COMPAT, 'UTF-8');
- ob_end_clean();
- $output += '</pre>';
- }
- */
-
 var saveJsonFile = function (jsonData, fileName) {
-/// if (consoleLog) { console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount, "; save clean json file");
-// var saveJson = function () {
   try {
     var myFile = fileName; //__dirname + "/../data/output/" + fileName;
     // var myJsonData = JSON.stringify(jsonData, null, " ");
     // if (consoleLog) { console.log("myJsonData =", myJsonData);
-    fse.writeFileSync(myFile, myJsonData, fsOptions);
+    fse.writeFileSync(myFile, jsonData, fsOptions);
     if (consoleLog) {
       console.log("\n ", __filename, "line", __line, ";  file written to: ", myFile);
+      console.log("\n ", __filename, "line", __line, ";  file contained: ", trunc.n400(util.inspect(jsonData, false, null)));
     }
-    if (consoleLog) {
-      console.log("\n ", __filename, "line", __line, ";  file contained: ", trunc.n400(util.inspect(myJsonData, false, null)));
-    }
-
   } catch (e) {
     if (consoleLog) {
       console.log("\n ", __filename, "line", __line, ";  Error: ", e);
     }
-
   }
 };
 
@@ -412,31 +260,9 @@ var explode = function (delimiter, string, limit) {
 
   s.splice(s.length + limit);
   return s;
-}
+};
 
 var str_replace = function (search, replace, subject, count) {
-  //  discuss at: http://phpjs.org/functions/str_replace/
-  // original by: Kevin van Zonneveld (http://kevin.vanzonneveld.net)
-  // improved by: Gabriel Paderni
-  // improved by: Philip Peterson
-  // improved by: Simon Willison (http://simonwillison.net)
-  // improved by: Kevin van Zonneveld (http://kevin.vanzonneveld.net)
-  // improved by: Onno Marsman
-  // improved by: Brett Zamir (http://brett-zamir.me)
-  //  revised by: Jonas Raoni Soares Silva (http://www.jsfromhell.com)
-  // bugfixed by: Anton Ongson
-  // bugfixed by: Kevin van Zonneveld (http://kevin.vanzonneveld.net)
-  // bugfixed by: Oleg Eremeev
-  //    input by: Onno Marsman
-  //    input by: Brett Zamir (http://brett-zamir.me)
-  //    input by: Oleg Eremeev
-  //        note: The count parameter must be passed as a string in order
-  //        note: to find a global variable in which the result will be given
-  //   example 1: str_replace(' ', '.', 'Kevin van Zonneveld');
-  //   returns 1: 'Kevin.van.Zonneveld'
-  //   example 2: str_replace(['{name}', 'l'], ['hello', 'm'], '{name}, lars');
-  //   returns 2: 'hemmo, mars'
-
   var i = 0,
     j = 0,
     temp = '',
@@ -469,28 +295,16 @@ var str_replace = function (search, replace, subject, count) {
     }
   }
   return sa ? s : s[0];
-}
+};
 
 function isset() {
-  //  discuss at: http://phpjs.org/functions/isset/
-  // original by: Kevin van Zonneveld (http://kevin.vanzonneveld.net)
-  // improved by: FremyCompany
-  // improved by: Onno Marsman
-  // improved by: Rafał Kukawski
-  //   example 1: isset( undefined, true);
-  //   returns 1: false
-  //   example 2: isset( 'Kevin van Zonneveld' );
-  //   returns 2: true
-
   var a = arguments,
     l = a.length,
     i = 0,
     undef;
-
   if (l === 0) {
     throw new Error('Empty isset');
   }
-
   while (i !== l) {
     if (a[i] === undef || a[i] === null) {
       return false;
@@ -501,52 +315,20 @@ function isset() {
 }
 
 var file_exists = function (url) {
-  // http://kevin.vanzonneveld.net
-  // +   original by: Enrique Gonzalez
-  // +      input by: Jani Hartikainen
-  // +   improved by: Kevin van Zonneveld (http://kevin.vanzonneveld.net)
-  // %        note 1: This function uses XmlHttpRequest and cannot retrieve resource from different domain.
-  // %        note 1: Synchronous so may lock up browser, mainly here for study purposes.
-  // *     example 1: file_exists('http://kevin.vanzonneveld.net/pj_test_supportfile_1.htm');
-  // *     returns 1: '123'
   var req = this.window.ActiveXObject ? new ActiveXObject("Microsoft.XMLHTTP") : new XMLHttpRequest();
   if (!req) {
     throw new Error('XMLHttpRequest not supported');
   }
-
   // HEAD Results are usually shorter (faster) than GET
   req.open('HEAD', url, false);
   req.send(null);
   if (req.status == 200) {
     return true;
   }
-
   return false;
-}
+};
 
 function file_get_contents(url, flags, context, offset, maxLen) {
-  //  discuss at: http://phpjs.org/functions/file_get_contents/
-  // original by: Legaev Andrey
-  //    input by: Jani Hartikainen
-  //    input by: Raphael (Ao) RUDLER
-  // improved by: Kevin van Zonneveld (http://kevin.vanzonneveld.net)
-  // improved by: Brett Zamir (http://brett-zamir.me)
-  // bugfixed by: Brett Zamir (http://brett-zamir.me)
-  //        note: This function uses XmlHttpRequest and cannot retrieve resource from different domain without modifications.
-  //        note: Synchronous by default (as in PHP) so may lock up browser. Can
-  //        note: get async by setting a custom "phpjs.async" property to true and "notification" for an
-  //        note: optional callback (both as context params, with responseText, and other JS-specific
-  //        note: request properties available via 'this'). Note that file_get_contents() will not return the text
-  //        note: in such a case (use this.responseText within the callback). Or, consider using
-  //        note: jQuery's: $('#divId').load('http://url') instead.
-  //        note: The context argument is only implemented for http, and only partially (see below for
-  //        note: "Presently unimplemented HTTP context options"); also the arguments passed to
-  //        note: notification are incomplete
-  //        test: skip
-  //   example 1: var buf file_get_contents('http://google.com');
-  //   example 1: buf.indexOf('Google') !== -1
-  //   returns 1: true
-
   var tmp, headers = [],
     newTmp = [],
     k = 0,
@@ -559,7 +341,6 @@ function file_get_contents(url, flags, context, offset, maxLen) {
   var func = function (value) {
     return value.substring(1) !== '';
   };
-
   // BEGIN REDUNDANT
   this.php_js = this.php_js || {};
   this.php_js.ini = this.php_js.ini || {};
@@ -585,40 +366,35 @@ function file_get_contents(url, flags, context, offset, maxLen) {
       }
     }
   }
-
   if (flagNames & OPTS.FILE_BINARY && (flagNames & OPTS.FILE_TEXT)) { // These flags shouldn't be together
     throw 'You cannot pass both FILE_BINARY and FILE_TEXT to file_get_contents()';
   }
-
-  if ((flagNames & OPTS.FILE_USE_INCLUDE_PATH) && ini.include_path && ini.include_path.local_value) {
-    var slash = ini.include_path.local_value.indexOf('/') !== -1 ? '/' : '\\';
-    url = ini.include_path.local_value + slash + url;
-  } else if (!/^(https?|file):/.test(url)) { // Allow references within or below the same directory (should fix to allow other relative references or root reference; could make dependent on parse_url())
-    href = this.window.location.href;
-    pathPos = url.indexOf('/') === 0 ? href.indexOf('/', 8) - 1 : href.lastIndexOf('/');
-    url = href.slice(0, pathPos + 1) + url;
-  }
-
+  /*
+   if ((flagNames & OPTS.FILE_USE_INCLUDE_PATH) && ini.include_path && ini.include_path.local_value) {
+   var slash = ini.include_path.local_value.indexOf('/') !== -1 ? '/' : '\\';
+   url = ini.include_path.local_value + slash + url;
+   } else if (!/^(https?|file):/.test(url)) { // Allow references within or below the same directory (should fix to allow other relative references or root reference; could make dependent on parse_url())
+   href = this.window.location.href;
+   pathPos = url.indexOf('/') === 0 ? href.indexOf('/', 8) - 1 : href.lastIndexOf('/');
+   url = href.slice(0, pathPos + 1) + url;
+   }
+   */
   var http_options;
   if (context) {
     http_options = context.stream_options && context.stream_options.http;
     http_stream = !!http_options;
   }
-
   if (!context || http_stream) {
     var req = this.window.ActiveXObject ? new ActiveXObject('Microsoft.XMLHTTP') : new XMLHttpRequest();
     if (!req) {
       throw new Error('XMLHttpRequest not supported');
     }
-
     var method = http_stream ? http_options.method : 'GET';
     var async = !!(context && context.stream_params && context.stream_params['phpjs.async']);
-
     if (ini['phpjs.ajaxBypassCache'] && ini['phpjs.ajaxBypassCache'].local_value) {
       url += (url.match(/\?/) == null ? '?' : '&') + (new Date())
         .getTime(); // Give optional means of forcing bypass of cache
     }
-
     req.open(method, url, async);
     if (async) {
       var notification = context.stream_params.notification;
@@ -778,7 +554,7 @@ function file_get_contents(url, flags, context, offset, maxLen) {
       for (i = 0; i < tmp.length; i++) {
         headers[i] = tmp[i];
       }
-      this.$http_response_header = headers; // see http://php.net/manual/en/reserved.variables.httpresponseheader.php
+      this.http_response_header = headers; // see http://php.net/manual/en/reserved.variables.httpresponseheader.php
     }
 
     if (offset || maxLen) {
@@ -792,12 +568,74 @@ function file_get_contents(url, flags, context, offset, maxLen) {
   return false;
 }
 
-var markdownToHTML = function (inputFileName, outputFileName) {
+// console.log( markdown.toHTML( "Hello *World*!" ) );
+
+var markdownToHTML = function (markdownContent) {
+  return markdown.toHTML(markdownContent);
+}
+
+var markdownToHTML00 = function (markdownContent, outputFileName) {
+  var result;
+  gulp.task('default', function () {
+    result = gulp.src(markdownContent)
+      .pipe(markdown())
+      .pipe(gulp.dest('./data/output/markdown.mkdn'));
+  });
+  return result;
+};
+
+var XmarkdownToHTML = function (inputFileName, outputFileName) {
   gulp.task('default', function () {
     return gulp.src('inputFileName')
       .pipe(markdown())
       .pipe(gulp.dest('dist'));
   });
+};
+
+var readFileSync = function (filePathAndName) {
+  // read "raw" unprocessed json file
+//  var rawJsonFileName = __dirname + "/../data/output/AQList-raw.json";
+  jsonFile = fse.readFileSync(filePathAndName); //, fsOptions); //, function (err, data) {
+  if (consoleLog) {
+    console.log("\n ", __filename, "line", __line, "; jsonFile = \n", trunc.truncn(JSON.stringify(jsonFile), 200));
+  }
+  return jsonFile;
+};
+
+var mdToHtml = function (markdownContent) {
+
+  var text = "[Markdown] is a simple text-based [markup language]\n" +
+    "created by [John Gruber]\n\n" +
+    "[John Gruber]: http://daringfireball.net";
+
+// parse the markdown into a tree and grab the link references
+  var tree = md.parse(markdownContent),
+    refs = tree[1].references;
+
+// iterate through the tree finding link references
+  (function find_link_refs(jsonml) {
+    if (jsonml[0] === "link_ref") {
+      var ref = jsonml[1].ref;
+
+      // if there's no reference, define a wiki link
+      if (!refs[ref]) {
+        refs[ref] = {
+          href: "http://en.wikipedia.org/wiki/" + ref.replace(/\s+/, "_")
+        };
+      }
+    }
+    else if (Array.isArray(jsonml[1])) {
+      jsonml[1].forEach(find_link_refs);
+    }
+    else if (Array.isArray(jsonml[2])) {
+      jsonml[2].forEach(find_link_refs);
+    }
+  })(tree);
+
+// convert the tree into html
+  var html = md.renderJsonML(md.toHTMLTree(tree));
+  console.log(html);
+  return html;
 }
 
 module.exports = {

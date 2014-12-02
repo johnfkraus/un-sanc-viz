@@ -15,7 +15,8 @@ var async = require('async'),
 
 var collect = require('./collect.js');
 var setupData = require('./setupData.js');
-// var docs = require('./docs.js');
+var docs = require('./docs.js');
+var filewalker = require('./filewalker.js');
 var logger = require('./libs/logger.js');
 var linenums = require('./linenums.js');
 var functionCount = 0;
@@ -55,26 +56,30 @@ var runApp = function () {
     },
     function (callback) {
       // put data in arrays for d3
-      // (function() {
       if (consoleLog) {
         console.log("\n ", __filename, __line, "; function 3#:", ++functionCount);
       }
-      //  if (consoleLog) { console.log("\n app.js function 3#:", ++functionCount);
       setupData.fixData();
       callback();
-      // })();
-    },
+     },
     function (callback) {
       // put data in arrays for d3
-      // (function() {
       if (consoleLog) {
         console.log("\n ", __filename, __line, "; function 3#:", ++functionCount);
       }
-      //  if (consoleLog) { console.log("\n app.js function 3#:", ++functionCount);
-      // docs.get_html_docs();
+      docs.get_html_docs();
       callback();
-      // })();
+    },
+    function (callback) {
+      // list files in /data/output
+      if (consoleLog) {
+        console.log("\n ", __filename, __line, "; function 3#:", ++functionCount);
+      }
+      filewalker.filewalker();
+      callback();
     }
+
+
   ], function (err) { //This function gets called after the two tasks have called their "task callbacks"
     if (err) console.log("\n app.js 32 Err: ", err);
   });
