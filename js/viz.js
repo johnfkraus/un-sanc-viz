@@ -3,6 +3,9 @@
 // window.globaldata = globaldata || {};
 var Network, RadialPlacement, activate, root;
 
+var viz = {},
+  selected = {},
+  highlighted = null;
 // var dateAqListGeneratedString;
 
 root = typeof exports !== "undefined" && exports !== null ? exports : this;
@@ -691,8 +694,27 @@ Network = function () {
       .style("stroke-width", 1.0);
 
     node.on("mouseover", showDetails)
-      .on("mouseout", hideDetails).on("click", selectObject(this,el));
+      .on("mouseout", hideDetails); //.on("click", selectObject(this,el));
 
+node.on("click", function () {
+     console.log("click",  this);
+  var aNode = this;
+ console.log(typeof aNode);
+
+ // console.log("click",  this.doc);
+
+    });
+
+/*
+    node.on('click', '.select-object', function () {
+      var obj = data[$(this)
+        .data('name')];
+      if (obj) {
+        selectObject(obj);
+      }
+      return false;
+    });
+*/
     // console.log('409 viz.js showProps(node, "node") = ');
     // console.log(showProps(node, "node"));
     //console.log(stringify(node, null, '\t'));
@@ -1093,7 +1115,7 @@ $(function () {
     $('#docs-container')
       .scrollTop(0);
     resize(true);
-
+/*
     var $graph = $('#graph-container'),
       nodeRect = {
         left: obj.x + obj.extent.left + graph.margin.left,
@@ -1116,14 +1138,16 @@ $(function () {
         scrollLeft: nodeRect.left + nodeRect.width / 2 - graphRect.width / 2,
         scrollTop: nodeRect.top + nodeRect.height / 2 - graphRect.height / 2
       }, 500);
+
     }
+  */
   }
 
   function deselectObject(doResize) {
     if(doResize || typeof doResize == 'undefined') {
       resize(false);
     }
-    graph.node.classed('selected', false);
+    viz.node.classed('selected', false);
     selected = {};
     highlightObject(null);
   }
@@ -1178,7 +1202,8 @@ function selectObject(obj, el) {
     .scrollTop(0);
   resize(true);
 
-  var $graph = $('#viz'),
+  var $viz = $('#viz');
+    /*
     nodeRect = {
       left: obj.x + obj.extent.left + graph.margin.left,
       top: obj.y + obj.extent.top + graph.margin.top,
@@ -1186,10 +1211,10 @@ function selectObject(obj, el) {
       height: obj.extent.bottom - obj.extent.top
     },
     graphRect = {
-      left: $graph.scrollLeft(),
-      top: $graph.scrollTop(),
-      width: $graph.width(),
-      height: $graph.height()
+      left: $viz.scrollLeft(),
+      top: $viz.scrollTop(),
+      width: $viz.width(),
+      height: $viz.height()
     };
   /*
   if (nodeRect.left < graphRect.left ||
@@ -1210,7 +1235,7 @@ function deselectObject(doResize) {
     resize(false);
   }
   // graph.node.classed('selected', false);
-  node.classed('selected', false);
+  viz.node.classed('selected', false);
   selected = {};
   highlightObject(null);
 }
@@ -1238,7 +1263,7 @@ function resize(showDocs) {
   }
 
   graphHeight = window.innerHeight - docsHeight;
-  $graph.css('height', graphHeight + 'px');
+  $viz.css('height', graphHeight + 'px');
 
   $close.css({
     top: graphHeight + docsClosePadding + 'px',
@@ -1251,9 +1276,7 @@ function resize(showDocs) {
 // script.js from http://nylen.tv/d3-process-map/graph.php
 // or http://canada-tonight-3000.codio.io/graph.php
 
-var graph = {},
-  selected = {},
-  highlighted = null;
+
 
 $(function() {
   resize();
