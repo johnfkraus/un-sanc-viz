@@ -32,7 +32,7 @@ html.lt-ie9 .unsupported-browser {
     margin: 50px 8px 8px 8px;
 }
 
-#docs-list .doc {
+#docs-list .docs {
     border-bottom: 1px solid #ccc;
     margin: 12px 0;
 }
@@ -53,7 +53,7 @@ html.lt-ie9 #graph-container {
     visibility: hidden;
 }
 
-#doc-container {
+#docs-container {
     width: 100%;
     height: 300px;
     position: relative;
@@ -61,7 +61,7 @@ html.lt-ie9 #graph-container {
     display: none;
     overflow-y: scroll;
 }
-#doc-close {
+#docs-close {
     display: block;
     position: fixed;
     font-size: 1.4em;
@@ -74,33 +74,33 @@ html.lt-ie9 #graph-container {
     text-align: center;
     text-decoration: none;
 }
-#doc-close:hover {
+#docs-close:hover {
     background: #ccc;
 }
-#doc-scroll {
+#docs-scroll {
     overflow-y: scroll;
 }
-#doc {
+#docs {
     padding: 8px;
 }
 
-.doc h2 {
+.docs h2 {
     font-size: 24px; /* h3 */
     margin-top: 0;
 }
-.doc h3 {
+.docs h3 {
     font-size: 18px; /* h4 */
 }
-.doc h2 em, .doc h3 em {
+.docs h2 em, .docs h3 em {
     font-size: 14px;
     color: #999;
     padding-left: 4px;
     font-style: normal;
 }
-.doc pre {
+.docs pre {
     margin: 8px;
     padding: 4px;
 }
-.doc .select-object.missing {
+.docs .select-object.missing {
     color: #c7254e;
 }

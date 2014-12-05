@@ -19,10 +19,10 @@ var linenums = require('./linenums.js');
 // var functionCount = 0;
 // var removefile = require('./removefile.js');
 // var getAqXmlFile = require('./get-aqlist-xml.js')
-var docs = require('./docs.js');
+var docs = require('./makeDocs.js');
 // collect.httpRequestXMLFile();
 // collect.convertXMLToJson();
 
 //removefile.removeAFile();
-docs.get_html_docs();
+makeDocs.get_html_docs();
 // getAqXmlFile.getXMLFile();

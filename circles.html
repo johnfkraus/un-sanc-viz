@@ -1,0 +1,412 @@
+<!doctype html>
+<!--[if lt IE 7]>
+<html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Three little circles d3 tutorial</title>
+    <meta name="description" content="U.N. Al-Qaida Sanctions List Network Visualization">
+    <meta name="author" content="John Kraus">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <!-- CSS concatenated and minified via ant build script-->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/graph.css">
+    <style>
+        button {
+            margin: 4px;
+
+        }
+
+    </style>
+    <!-- end CSS-->
+
+    <!--script src="js/libs/modernizr-2.0.6.min.js"></script-->
+    <script src="js/libs/modernizr.custom.99838.js"></script>
+    <script src="js/utilities.js"></script>
+    <!--
+    <script src="js/json-pruned.js"></script>
+    -->
+    <script src="js/libs/underscore.js"></script>
+    <!--
+    <script src="http://ajax.cdnjs.com/ajax/libs/underscore.js/1.1.6/underscore-min.js"></script>
+    -->
+    <script src="js/libs/backbone.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/objects.js"></script>
+</head>
+<body>
+<div id="container" class="container">
+    <h3><a href="http://bost.ocks.org/mike/circles/" target="_blank">http://bost.ocks.org/mike/circles/</a></h3>
+
+    <svg width="720" height="120">
+        <circle cx="40" cy="60" r="10"></circle>
+        <circle cx="80" cy="60" r="10"></circle>
+        <circle cx="120" cy="60" r="10"></circle>
+    </svg>
+
+    <div style="width:720px; height:120px">
+        <button onclick="run();">Run</button>
+        <button onclick="move();">Move</button>
+        <button onclick="bindData();">Bind data [32, 57, 112]</button>
+        <button onclick="sqr();">Square root of radius</button>
+        <button onclick="positionSequentiallyUsingIndex();">position sequentially</button>
+        <button onclick="enter();">Enter elements [32, 57, 112, 293]</button>
+        <button onclick="dataJoinChain();">data join chain</button>
+        <button onclick="exit();">exit</button>
+
+    </div>
+</div>
+<!--! end of #container -->
+
+<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> -->
+<script>
+    window.jQuery || document.write('<script src="js/libs/jquery-1.7.2.min.js"><\/script>')
+</script>
+
+
+<script defer src="js/plugins.js"></script>
+<!--
+<script defer src="js/script.js"></script>
+-->
+<!--script src="js/libs/coffee-script.js"></script-->
+<script src="js/libs/d3.v3.js"></script>
+
+<!-- script type="text/coffeescript" src="coffee/vis.coffee"></script-->
+<!--script type="text/javascript" src="js/viz.js"></script-->
+<script type="text/javascript">
+
+
+
+    var data = [{
+        "r": "32",
+        "DATAID": "3162069",
+        "VERSIONNUM": "2",
+        "FIRST_NAME": "ABDALLAH AZZAM BRIGADES (AAB)",
+        "UN_LIST_TYPE": "Al-Qaida",
+        "REFERENCE_NUMBER": "QE.A.144.14.",
+        "LISTED_ON": "2014-09-23T00:00:00",
+        "COMMENTS1": "An armed group that has carried out joint attacks with Al-Nusrah Front for the People of the Levant (QE.A.137.14. ).",
+        "LIST_TYPE": {
+            "VALUE": "UN List"
+        },
+        "ENTITY_ALIAS": [
+            {
+                "QUALITY": "a.k.a.",
+                "ALIAS_NAME": "Abdullah Azzam Brigades"
+            },
+            {
+                "QUALITY": "a.k.a.",
+                "ALIAS_NAME": "Ziyad al-Jarrah Battalions of the Abdallah Azzam Brigades"
+            },
+            {
+                "QUALITY": "a.k.a.",
+                "ALIAS_NAME": "Yusuf al-'Uyayri Battalions of the Abdallah Azzam Brigades"
+            }
+        ],
+        "ENTITY_ADDRESS": {
+            "NOTE": "Operates in Lebanon, Syria and the Arabian Peninsula"
+        },
+        "SORT_KEY": "ABDALLAHAZZAMBRIGADESAAB",
+        "SORT_KEY_LAST_MOD": "2014-09-23T00:00:00",
+        "indiv0OrEnt1": 1,
+        "id": "QE.A.144.14",
+        "name": "ABDALLAH AZZAM BRIGADES (AAB)",
+        "connectedToId": [
+            "QE.A.137.14"
+        ],
+        "linkSetArray": [
+            "QE.A.137.14"
+        ],
+        "connectionSet": {
+            "_map": {
+                "_list": [
+                    {
+                        "key": {
+                            "_obj": "QE.A.137.14",
+                            "_obj_equals": false
+                        },
+                        "value": true
+                    }
+                ],
+                "_es6Map": null,
+                "_buckets": null,
+                "_count": 1
+            }
+        },
+        "connections": [
+            {
+                "source": "QE.A.144.14",
+                "target": "QE.A.137.14"
+            }
+        ],
+        "links": [
+            "QE.A.137.14"
+        ],
+        "sourceCount": 1,
+        "targetCount": 1,
+        "linkCount": 2
+    },
+        {
+            "r": "57",
+            "DATAID": "113445",
+            "VERSIONNUM": "10",
+            "FIRST_NAME": "ABU SAYYAF GROUP",
+            "UN_LIST_TYPE": "Al-Qaida",
+            "REFERENCE_NUMBER": "QE.A.1.01.",
+            "LISTED_ON": "2001-10-06T00:00:00",
+            "COMMENTS1": "Associated with Jemaah Islamiyah (JI) (QE.J.92.02). Current leader is Radulan Sahiron (QI.S.208.05). Review pursuant to Security Council resolution 1822 (2008) was concluded on 21 Jun. 2010.",
+            "LIST_TYPE": {
+                "VALUE": "UN List"
+            },
+            "LAST_DAY_UPDATED": {
+                "VALUE": "2011-12-13T00:00:00"
+            },
+            "ENTITY_ALIAS": {
+                "QUALITY": "a.k.a.",
+                "ALIAS_NAME": "Al Harakat Al Islamiyya"
+            },
+            "ENTITY_ADDRESS": {
+                "COUNTRY": "Philippines"
+            },
+            "SORT_KEY": "ABUSAYYAFGROUP",
+            "SORT_KEY_LAST_MOD": "2011-12-13T00:00:00",
+            "indiv0OrEnt1": 1,
+            "id": "QE.A.1.01",
+            "name": "ABU SAYYAF GROUP",
+            "connectedToId": [
+                "QE.J.92.02",
+                "QI.S.208.05"
+            ],
+            "linkSetArray": [
+                "QE.J.92.02",
+                "QI.S.208.05"
+            ],
+            "connectionSet": {
+                "_map": {
+                    "_list": [
+                        {
+                            "key": {
+                                "_obj": "QE.J.92.02",
+                                "_obj_equals": false
+                            },
+                            "value": true
+                        },
+                        {
+                            "key": {
+                                "_obj": "QI.S.208.05",
+                                "_obj_equals": false
+                            },
+                            "value": true
+                        }
+                    ],
+                    "_es6Map": null,
+                    "_buckets": null,
+                    "_count": 2
+                }
+            },
+            "connections": [
+                {
+                    "source": "QE.A.1.01",
+                    "target": "QE.J.92.02"
+                },
+                {
+                    "source": "QE.A.1.01",
+                    "target": "QI.S.208.05"
+                }
+            ],
+            "links": [
+                "QE.J.92.02",
+                "QI.S.208.05"
+            ],
+            "sourceCount": 2,
+            "targetCount": 9,
+            "linkCount": 11
+        },
+        {
+            "r": "112",
+            "DATAID": "113226",
+            "VERSIONNUM": "9",
+            "FIRST_NAME": "AFGHAN SUPPORT COMMITTEE (ASC)",
+            "UN_LIST_TYPE": "Al-Qaida",
+            "REFERENCE_NUMBER": "QE.A.69.02.",
+            "LISTED_ON": "2002-01-11T00:00:00",
+            "COMMENTS1": "Associated with the Revival of Islamic Heritage Society (QE.R.70.02). Abu Bakr al-Jaziri (QI.A.58.02) served as finance chief of ASC. Review pursuant to Security Council resolution 1822 (2008) was concluded on 8 Jun. 2010.",
+            "LIST_TYPE": {
+                "VALUE": "UN List"
+            },
+            "LAST_DAY_UPDATED": {
+                "VALUE": "2011-12-13T00:00:00"
+            },
+            "ENTITY_ALIAS": [
+                {
+                    "QUALITY": "a.k.a.",
+                    "ALIAS_NAME": "Lajnat ul Masa Eidatul Afghania"
+                },
+                {
+                    "QUALITY": "a.k.a.",
+                    "ALIAS_NAME": "Jamiat Ayat-ur-Rhas al Islamiac"
+                },
+                {
+                    "QUALITY": "a.k.a.",
+                    "ALIAS_NAME": "Jamiat Ihya ul Turath al Islamia"
+                },
+                {
+                    "QUALITY": "a.k.a.",
+                    "ALIAS_NAME": "Ahya ul Turas"
+                }
+            ],
+            "ENTITY_ADDRESS": {
+                "NOTE": "a) Headquarters – G.T. Road (probably Grand Trunk Road), near Pushtoon Garhi Pabbi, Peshawar, Pakistan b) Cheprahar Hadda, Mia Omar Sabaqah School, Jalabad, Afghanistan"
+            },
+            "SORT_KEY": "AFGHANSUPPORTCOMMITTEEASC",
+            "SORT_KEY_LAST_MOD": "2011-12-13T00:00:00",
+            "indiv0OrEnt1": 1,
+            "id": "QE.A.69.02",
+            "name": "AFGHAN SUPPORT COMMITTEE (ASC)",
+            "connectedToId": [
+                "QE.R.70.02",
+                "QI.A.58.02"
+            ],
+            "linkSetArray": [
+                "QE.R.70.02",
+                "QI.A.58.02"
+            ],
+            "connectionSet": {
+                "_map": {
+                    "_list": [
+                        {
+                            "key": {
+                                "_obj": "QE.R.70.02",
+                                "_obj_equals": false
+                            },
+                            "value": true
+                        },
+                        {
+                            "key": {
+                                "_obj": "QI.A.58.02",
+                                "_obj_equals": false
+                            },
+                            "value": true
+                        }
+                    ],
+                    "_es6Map": null,
+                    "_buckets": null,
+                    "_count": 2
+                }
+            },
+            "connections": [
+                {
+                    "source": "QE.A.69.02",
+                    "target": "QE.R.70.02"
+                },
+                {
+                    "source": "QE.A.69.02",
+                    "target": "QI.A.58.02"
+                }
+            ],
+            "links": [
+                "QE.R.70.02",
+                "QI.A.58.02"
+            ],
+            "sourceCount": 2,
+            "targetCount": 3,
+            "linkCount": 5
+        }
+        ];
+
+    var circle = d3.selectAll("circle");
+    var svg = d3.select("svg");
+    var run = function () {
+
+        circle.style("fill", "steelblue");
+        circle.attr("r", 30);
+
+    };
+
+    var move = function () {
+        circle.attr("cx", function () {
+            return Math.random() * 720;
+        });
+
+    };
+
+    var bindData = function () {
+   //     circle.data([32, 57, 112]);
+        circle.data(data);
+        circle.attr("r", function (d) {
+            return Math.sqrt(d.r);
+        });
+    };
+
+    var sqr = function () {
+
+        circle.attr("r", function (d) {
+            return Math.sqrt(d);
+        });
+    };
+
+    var positionSequentiallyUsingIndex = function () {
+        circle.attr("cx", function (d, i) {
+            return i * 100 + 30;
+        });
+    };
+
+    var enter = function () {
+        svg = d3.select("svg");
+        circle = svg.selectAll("circle")
+                .data([32, 57, 112, 293]);
+        var circleEnter = circle.enter().append("circle");
+        circleEnter.attr("cy", 60);
+        circleEnter.attr("cx", function (d, i) {
+            return i * 100 + 30;
+        });
+        circleEnter.attr("r", function (d) {
+            return Math.sqrt(d);
+        });
+    };
+
+    var dataJoinChain = function () {
+        svg = d3.select("svg");
+        svg.selectAll("circle")
+                .data([32, 57, 112, 293])
+                .enter().append("circle")
+                .attr("cy", 60)
+                .attr("cx", function (d, i) {
+                    return i * 100 + 30;
+                })
+                .attr("r", function (d) {
+                    return Math.sqrt(d);
+                });
+    };
+
+    var exit = function () {
+
+        var circle = svg.selectAll("circle")
+                .data([32, 57]);
+
+        circle.exit().remove();
+    };
+
+
+</script>
+
+
+<!--[if lt IE 7 ]>
+<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+<script>window.attachEvent('onload', function () {
+    CFInstall.check({mode: 'overlay'})
+})</script>
+<![endif]-->
+</body>
+</html>
