@@ -1,29 +1,69 @@
-function Document(docId, width) {
+function Document(elementId, width) {
 
-  var consoleLogDocument = true;
-  var showingDoc = false,
+
+  var consoleLogDocument = true,
+    showingDoc = false,
     docClosePadding = 8,
-    desiredDocsHeight = 200;
+    desiredDocsHeight = 200,
+	elementId = elementId,
+	docContainer,
+    topStuffHeight = $("#top-stuff").height();
+  
+  $("#doc").append("<div class='document' id='" + elementId + "'></div>");
 
-  var docId = docId;
-  $("#doc").append("<div class='document' id='" + docId + "'></div>");
-  var docContainer;
-  /*
-   if(width){
-   $("#"+docId).css("width", width);
-   }
-   */
-  // hideTooltip();
+    console.log("Document.js topStuffHeight = ", topStuffHeight);
+
   hideDocument();
 
-  var showDocument = function (content, event) {
-    $("#" + docId).html(content);
+  var showDocument = function (content, event, d) {
+    var that = this;
+    $("#" + elementId).html(content);
 //    $("#" + docId).show();
     $("#doc-container").show();
+    $("#doc-close").show();
+    var qid = 'QI.D.232.07';
+//    var selector = "['id'='QI.D.232.07']";
+    this.d = d;
+    //   vd = myNetwork.updateSearchIdLinkClick(qid);
+    // var ddd = d3.select(selector);
+
+    function makeDocLink(d) {
+      return function () {
+        console.log("d = ", d);
+        console.log("d.id = ", d.id);
+        $("#" + d.id).html(d.docs);
+        $("#doc-container").show();
+        $("#doc-close").show();
+      }
+    }
+
+    var makeDocLink_d = makeDocLink(d);
+//    console.log(add10(2)); // 12
+
+    $('#viz-doc a').on('click', function () {
+      // var ddd = d3.select(qid);
+      return makeDocLink_d;
+//      var d = that.d;
+//      console.log('on click ' + d);
+    });
+
+    resize(true);
+  };
+
+  var clickLinkShowDocument = function (id, content, d) {
+    var content = d.docs;
+  $("#" + elementId).html(content);
+    $("#doc-container").show();
+    $("#doc-close").show();
+    $('#viz-doc a').on('click', function (event, qid) {
+      // var ddd = d3.select(qid);
+      console.log("Document.js clickLinkShowDocument, onclick, qid = ", qid, "; d = ", d);
+    });
     resize(true);
   };
 
   function hideDocument() {
+    $("#doc-close").hide();
     $("#doc-container").hide();
     resize(false);
   }
@@ -31,27 +71,34 @@ function Document(docId, width) {
   function resize(showDoc) {
     var docHeight = 0,
       svgHeight = 0,
-      docContainer = $('#doc-container');
-//      $svg = $('#svg'),
-//      $close = $('#doc-close');
+      docContainer = $('#doc-container'),
+      docClose = $('#doc-close');
 
     if (typeof showDoc == 'boolean') {
       showingDoc = showDoc;
       docContainer[showDoc ? 'show' : 'hide']();
+      docClose[showDoc ? 'show' : 'hide']();
     }
 
     if (showingDoc) {
       docHeight = desiredDocsHeight;
       $('#doc-container').css('height', docHeight + 'px');
     }
-    svgHeight = window.innerHeight - docHeight;
+//    svgHeight = window.innerHeight - docHeight;
+    svgHeight = window.innerHeight - docHeight - topStuffHeight;
+
+    console.log("; window.innerHeight = ", window.innerHeight, "; desiredDocsHeight = ", desiredDocsHeight, "; topStuffHeight = ", topStuffHeight, "; svgHeight = ", svgHeight);
+
+    console.log("; window.innerWidth = ", window.innerWidth);
     if (consoleLogDocument) {
-      console.log("\n window.innerHeight = ", window.innerHeight, "; docHeight = ",  docHeight, "; svgHeight = ", svgHeight);
+      console.log("\n window.innerHeight = ", window.innerHeight, "; docHeight = ", docHeight, "; svgHeight = ", svgHeight);
     }
-//  svgHeight = window.innerHeight - docHeight;
 
     $('#svg').css('height', svgHeight + 'px');
-
+//    $('svg').css('height', svgHeight + 'px');
+    if (window.innerWidth < 900) {
+      $('.mainTitleDiv').css('font-size', '14px');
+    }
     $('#doc-close').css({
       top: svgHeight + docClosePadding + 'px',
       right: window.innerWidth - $('#doc-container')[0].clientWidth + docClosePadding + 'px'
@@ -60,6 +107,7 @@ function Document(docId, width) {
 
   return {
     showDocument: showDocument,
+    clickLinkShowDocument: clickLinkShowDocument,
     hideDocument: hideDocument,
     resize: resize
   }

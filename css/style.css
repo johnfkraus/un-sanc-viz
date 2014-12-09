@@ -2,6 +2,11 @@ body {
     font-family: Arial, sans-serif;
 }
 
+html.lt-ie9, html.lt-ie9 body {
+    width: auto;
+    height: 100px;
+}
+
 a, a:visited {
     color: #4d4d4d;
     text-decoration: underline;
@@ -14,69 +19,74 @@ a, a:visited {
     /* padding: 5px 0 10px 0;*/
     margin: auto;
 }
-
+/*
 #main {
     display: table;
     margin: 0 auto;
-    /* clear: both;
+    clear: both;
     margin:auto;
-  */
+  
+}
+*/
+#svg {
+    max-height: 960px;
+    overflow: scroll;
 }
 
-.mainTitle {
+.mainTitleTd {
     padding: 5px;
-
 }
 
-div#mainTitle {
+.mainTitleDiv {
     display: inline;
     color: rgb(51, 51, 51);
-    font-size: 30px;
+
     font-weight: bold;
-    line-height: 36px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 0px;
+    line-height: 20px;
+    margin: 0;
     text-rendering: optimizelegibility;
+}
+
+.noPadMar {
+    padding: 0;
+    margin: 0;
+    line-height: 11px;
 }
 
 form {
     margin: 0;
 }
 
-#main-title {
-    display: in-line;
-    color: rgb(51, 51, 51);
-    font-size: 30px;
-    font-weight: bold;
-    line-height: 36px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 0px;
-    text-rendering: optimizelegibility;
+.searchIdsNames {
+    margin: 0;
+    padding: 0;
 }
 
-#controls {
-    width: 100%;
-    /*  float: left;
-    margin-bottom: 10px; */
+.searchIdsNames input {
+    margin: 0 0 2px 0;
+    padding: 0;
+}
+
+#highlightType {
+    padding-top: 5px;
+    width: 100px;
 }
 
 .control {
     float: left;
-    padding-left: 20px;
+    padding-left: 10px;
+    margin: 0;
 }
 
 .control a {
     color: black;
     font-size: 12px;
-    padding: 5px;
+    padding: 0;
     background: #E2E2E2;
     cursor: pointer;
     margin-right: 3px;
     text-decoration: none;
+
 }
 
 .control a:hover {
@@ -87,33 +97,25 @@ form {
     color: white;
     background: #555;
 }
-
+/*
 p.search_title, p.search_title2 {
     display: inline;
     text-align: left;
     font-weight: normal;
     color: #777;
 }
-
-#search_section, #search_section2 {
+*/
+#searchDiv {
     padding-top: 0;
     padding-left: 0;
 }
-
-#search_form #search {
-    margin-left: 10px;
+/*
+#searchIdsForm #searchNamesForm {
+    margin-left: 8px;
 }
-
-#search_form2 #search2 {
-    margin-left: 10px;
-}
-
-footer p {
-    text-align: center;
-    font-size: 8px;
-    line-height: 8px;
-    margin: 3px;
-    color: #666;
+*/
+footer {
+    display: none;
 }
 
 .tooltip {

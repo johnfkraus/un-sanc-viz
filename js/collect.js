@@ -41,7 +41,7 @@ dateFormat.masks.hammerTime = 'yyyy-mm-dd-HHMMss';
 dateFormat.masks.friendly_detailed = "dddd, mmmm dS, yyyy, h:MM:ss TT";
 dateFormat.masks.friendly_display = "dddd, mmmm dS, yyyy";
 // Basic usage
-var displayDateString = dateFormat(now, "friendly_display");
+// var displayDateString = dateFormat(now, "friendly_display");
 // Saturday, June 9th, 2007, 5:46:21 PM
 
 // var fileDateString = dateFormat(now, "hammerTime");
@@ -135,11 +135,7 @@ var convertXMLToJson = function () {
         // convert AQList.xml to json
         if (consoleLog) {
           console.log("\n ", __filename, "line", __line, " function #:", ++functionCount);
-        }
-        if (consoleLog) {
           console.log("\n ", __filename, "line", __line, " typeof AQList_xml = ", (typeof AQList_xml));
-        }
-        if (consoleLog) {
           console.log("\n ", __filename, "line", __line, " AQList_xml = ", trunc.n400(AQList_xml.toString()));
         }
         // var myResult;
@@ -194,43 +190,8 @@ var convertXMLToJson = function () {
   );
 };
 
-//var getOutputFileName = function() {
-//  return __dirname + "/../data/output/AQList-" + fileDateString + '.xml';
-// };
-/*
- var xmlToJson = function (data) {
- // var xml = "<root>Hello xml2js!</root>";
- parseString(data, {
- async: 'true',
- attrNameProcessors: 'nameToUpperCase'
- }, function (err, result) {
- console.dir("\n ", __filename, "line", __line, " xmlToJson = \n", JSON.stringify(result, null, " "));
- });
-
- };
- */
 var AQList_xml;
 var myJsonData;
-/*
- var getXMLFile = function() {
- descr = "collect AQList.xml from public web site, save locally under original filename";
- if (consoleLog) { console.log("\n ", __filename, "line", __line, " collect.js function 1#:", ++functionCount, descr);
- var req = httpsync.get({
- url: "http://www.un.org/sc/committees/1267/AQList.xml"
- });
- var res = req.end();
- AQList_xml = res.data;
- if (consoleLog) { console.log("\n ", __filename, "line", __line, " AQList_xml = \n", trunc.n400(AQList_xml.toString()));
- /*
- The response Object is what you get after req.end (), it has following fields:
- data A Buffer that stores data sent by server.
- headers Complete response headers, even contains those custom ones.
- ip IP address of the server.
- statusCode Status code that sent by server.
-
- return AQList_xml;
- };
- */
 
 var getXMLFileSync = function () {
   var res = request('GET', 'http://www.un.org/sc/committees/1267/AQList.xml');
@@ -242,9 +203,6 @@ var getXMLFileSync = function () {
 };
 
 var getXMLFile = function () {
-  // var descr = "collect AQList.xml from public web site, save locally under original filename";
-  // if (consoleLog) { console.log("\n ", __filename, "line", __line, " function 1#:", ++functionCount, descr);
-//          var myFile = __dirname + "/../data/output/AQList.xml";
   var fileNameToSaveTo = __dirname + "/../data/output/AQList.xml";
   re.get("http://www.un.org/sc/committees/1267/AQList.xml", fileNameToSaveTo, function (error, filename) {
     if (error) {

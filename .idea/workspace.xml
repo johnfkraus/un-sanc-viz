@@ -1,21 +1,634 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AnalysisUIOptions">
-    <option name="SCOPE_TYPE" value="3" />
+    <option name="GROUP_BY_SEVERITY" value="true" />
+    <option name="CUSTOM_SCOPE_NAME" value="dev_files" />
+    <option name="SHOW_STRUCTURE" value="true" />
     <option name="ANALYSIS_IN_BACKGROUND" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4182aee6-13b8-4466-9993-4422af087054" name="John's change list" comment="fixing docs on  click circle">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/Document.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/circles.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/d3-process-map.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/doc-style.css" />
-      <change type="MOVED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\js\docs.js" afterPath="$PROJECT_DIR$/js/makeDocs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/Tooltip.js" afterPath="$PROJECT_DIR$/js/Tooltip.js" />
+    <list default="true" id="4182aee6-13b8-4466-9993-4422af087054" name="John's change list" comment="added docs">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QE.A.1.01.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QE.A.103.04.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QE.A.104.04.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QE.A.105.04.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QE.A.106.04.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QE.A.107.04.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QE.A.109.04.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QE.A.110.04.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QE.A.111.04.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QE.A.112.04.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QE.A.113.04.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QE.A.114.04.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QE.A.116.04.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QE.A.121.05.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QE.A.129.10.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QE.A.135.13.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QE.A.137.14.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QE.A.142.14.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QE.A.143.14.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QE.A.144.14.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QE.A.2.01.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QE.A.3.01.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QE.A.4.01.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QE.A.5.01.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QE.A.6.01.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QE.A.69.02.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QE.A.7.01.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QE.A.71.02.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QE.A.72.02.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QE.A.98.03.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QE.B.138.14.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QE.B.93.02.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QE.D.102.03.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QE.E.131.11.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QE.E.88.02.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QE.G.91.02.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QE.H.130.10.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QE.H.8.01.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QE.I.10.01.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QE.I.119.05.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QE.I.9.01.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QE.I.99.03.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QE.J.115.04.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QE.J.133.12.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QE.J.19.01.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QE.J.20.01.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QE.J.92.02.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QE.L.11.01.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QE.L.118.05.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QE.L.96.03.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QE.M.12.01.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QE.M.134.12.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QE.M.136.13.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QE.M.139.14.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QE.M.140.14.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QE.M.141.14.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QE.M.89.02.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QE.R.100.03.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QE.R.128.08.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QE.R.21.01.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QE.R.70.02.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QE.S.101.03.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QE.T.108.04.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QE.T.132.11.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QE.T.14.01.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QE.T.90.02.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QE.U.68.01.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QE.W.15.01.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.101.03.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.104.03.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.109.03.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.12.01.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.130.03.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.132.03.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.138.03.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.139.03.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.14.01.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.140.03.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.149.03.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.15.01.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.151.03.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.152.03.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.154.04.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.156.04.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.157.04.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.160.04.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.161.04.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.17.01.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.170.04.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.171.04.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.172.04.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.176.04.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.177.04.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.18.01.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.184.05.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.192.05.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.193.05.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.194.05.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.198.05.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.199.05.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.2.01.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.20.01.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.200.05.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.201.05.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.202.05.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.203.05.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.21.01.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.216.06.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.224.06.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.226.06.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.228.06.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.229.07.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.23.01.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.231.07.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.233.07.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.234.07.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.236.08.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.237.08.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.238.08.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.248.08.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.253.08.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.254.08.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.255.08.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.265.08.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.273.09.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.274.10.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.275.10.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.276.10.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.277.10.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.278.10.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.282.10.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.283.10.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.285.10.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.289.11.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.291.11.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.292.11.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.295.11.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.299.11.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.304.12.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.309.12.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.313.13.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.316.13.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.317.13.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.318.13.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.320.13.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.323.14.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.324.14.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.325.14.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.326.14.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.327.14.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.328.14.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.329.14.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.330.14.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.332.14.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.334.14.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.335.14.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.336.14.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.337.14.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.338.14.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.339.14.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.54.01.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.58.02.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.59.02.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.6.01.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.60.02.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.71.02.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.74.02.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.77.02.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.86.03.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.91.03.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.92.03.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.A.93.03.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.B.136.03.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.B.143.03.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.B.188.05.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.B.217.06.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.B.266.08.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.B.279.10.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.B.293.11.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.B.305.12.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.B.307.12.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.B.311.12.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.B.333.14.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.B.55.01.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.B.62.02.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.B.63.02.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.B.68.02.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.B.80.02.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.B.81.02.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.B.9.01.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.C.141.03.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.C.300.12.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.C.301.12.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.C.312.12.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.C.70.02.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.D.111.03.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.D.164.04.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.D.167.04.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.D.232.07.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.D.243.08.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.D.245.08.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.D.246.08.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.D.249.08.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.D.252.08.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.D.331.14.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.D.342.14.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.D.42.01.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.D.95.03.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.E.142.03.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.E.169.04.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.E.19.01.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.E.262.08.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.E.64.02.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.E.65.02.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.E.82.02.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.E.83.02.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.E.96.03.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.F.27.01.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.G.218.06.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.G.251.08.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.G.259.08.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.G.28.01.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.G.341.14.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.H.10.01.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.H.144.03.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.H.195.05.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.H.204.05.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.H.221.06.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.H.250.08.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.H.268.09.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.H.29.01.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.H.3.01.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.H.88.03.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.I.308.12.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.I.321.14.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.I.67.02.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.I.87.03.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.J.114.03.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.J.180.04.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.J.99.03.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.K.135.03.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.K.302.12.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.K.306.12.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.K.340.14.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.K.72.02.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.K.73.02.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.L.155.04.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.L.190.05.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.L.247.08.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.L.264.08.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.L.319.13.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.M.119.03.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.M.120.03.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.M.129.03.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.M.147.03.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.M.196.05.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.M.205.05.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.M.206.05.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.M.272.09.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.M.286.10.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.M.296.11.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.M.31.01.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.N.280.10.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.O.298.11.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.O.314.13.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.O.315.13.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.P.242.08.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.P.294.11.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.Q.271.09.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.Q.297.11.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.R.103.03.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.R.150.03.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.R.186.05.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.R.219.06.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.R.303.12.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.R.75.02.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.S.1.01.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.S.122.03.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.S.123.03.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.S.124.03.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.S.128.03.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.S.148.03.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.S.208.05.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.S.222.06.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.S.244.08.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.S.260.08.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.S.263.08.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.S.322.14.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.T.241.08.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.T.56.01.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.T.57.02.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.T.76.02.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.U.290.11.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.Y.126.03.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.Y.261.08.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.Y.37.01.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.Z.168.04.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.Z.187.05.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/markdown/QI.Z.223.06.mkdn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/adder-returns-function-closure.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\coffee\vis.coffee" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\coffee\vis.coffee.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\css\doc-style.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QE.A.1.01.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QE.A.103.04.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QE.A.104.04.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QE.A.105.04.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QE.A.106.04.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QE.A.107.04.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QE.A.109.04.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QE.A.110.04.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QE.A.111.04.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QE.A.112.04.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QE.A.113.04.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QE.A.114.04.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QE.A.116.04.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QE.A.121.05.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QE.A.129.10.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QE.A.135.13.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QE.A.137.14.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QE.A.142.14.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QE.A.143.14.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QE.A.144.14.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QE.A.2.01.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QE.A.3.01.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QE.A.4.01.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QE.A.5.01.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QE.A.6.01.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QE.A.69.02.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QE.A.7.01.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QE.A.71.02.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QE.A.72.02.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QE.A.98.03.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QE.B.138.14.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QE.B.93.02.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QE.D.102.03.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QE.E.131.11.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QE.E.88.02.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QE.G.91.02.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QE.H.130.10.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QE.H.8.01.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QE.I.10.01.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QE.I.119.05.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QE.I.9.01.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QE.I.99.03.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QE.J.115.04.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QE.J.133.12.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QE.J.19.01.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QE.J.20.01.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QE.J.92.02.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QE.L.11.01.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QE.L.118.05.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QE.L.96.03.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QE.M.12.01.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QE.M.134.12.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QE.M.136.13.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QE.M.139.14.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QE.M.140.14.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QE.M.141.14.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QE.M.89.02.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QE.R.100.03.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QE.R.128.08.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QE.R.21.01.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QE.R.70.02.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QE.S.101.03.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QE.T.108.04.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QE.T.132.11.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QE.T.14.01.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QE.T.90.02.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QE.U.68.01.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QE.W.15.01.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.101.03.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.104.03.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.109.03.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.12.01.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.130.03.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.132.03.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.138.03.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.139.03.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.14.01.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.140.03.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.149.03.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.15.01.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.151.03.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.152.03.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.154.04.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.156.04.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.157.04.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.160.04.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.161.04.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.17.01.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.170.04.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.171.04.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.172.04.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.176.04.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.177.04.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.18.01.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.184.05.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.192.05.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.193.05.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.194.05.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.198.05.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.199.05.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.2.01.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.20.01.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.200.05.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.201.05.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.202.05.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.203.05.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.21.01.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.216.06.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.224.06.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.226.06.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.228.06.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.229.07.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.23.01.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.231.07.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.233.07.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.234.07.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.236.08.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.237.08.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.238.08.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.248.08.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.253.08.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.254.08.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.255.08.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.265.08.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.273.09.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.274.10.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.275.10.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.276.10.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.277.10.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.278.10.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.282.10.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.283.10.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.285.10.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.289.11.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.291.11.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.292.11.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.295.11.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.299.11.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.304.12.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.309.12.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.313.13.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.316.13.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.317.13.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.318.13.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.320.13.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.323.14.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.324.14.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.325.14.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.326.14.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.327.14.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.328.14.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.329.14.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.330.14.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.332.14.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.334.14.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.335.14.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.336.14.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.337.14.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.338.14.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.339.14.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.54.01.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.58.02.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.59.02.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.6.01.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.60.02.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.71.02.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.74.02.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.77.02.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.86.03.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.91.03.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.92.03.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.A.93.03.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.B.136.03.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.B.143.03.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.B.188.05.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.B.217.06.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.B.266.08.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.B.279.10.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.B.293.11.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.B.305.12.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.B.307.12.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.B.311.12.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.B.333.14.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.B.55.01.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.B.62.02.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.B.63.02.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.B.68.02.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.B.80.02.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.B.81.02.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.B.9.01.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.C.141.03.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.C.300.12.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.C.301.12.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.C.312.12.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.C.70.02.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.D.111.03.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.D.164.04.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.D.167.04.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.D.232.07.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.D.243.08.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.D.245.08.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.D.246.08.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.D.249.08.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.D.252.08.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.D.331.14.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.D.342.14.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.D.42.01.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.D.95.03.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.E.142.03.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.E.169.04.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.E.19.01.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.E.262.08.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.E.64.02.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.E.65.02.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.E.82.02.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.E.83.02.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.E.96.03.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.F.27.01.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.G.218.06.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.G.251.08.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.G.259.08.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.G.28.01.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.G.341.14.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.H.10.01.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.H.144.03.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.H.195.05.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.H.204.05.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.H.221.06.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.H.250.08.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.H.268.09.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.H.29.01.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.H.3.01.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.H.88.03.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.I.308.12.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.I.321.14.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.I.67.02.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.I.87.03.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.J.114.03.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.J.180.04.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.J.99.03.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.K.135.03.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.K.302.12.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.K.306.12.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.K.340.14.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.K.72.02.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.K.73.02.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.L.155.04.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.L.190.05.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.L.247.08.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.L.264.08.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.L.319.13.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.M.119.03.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.M.120.03.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.M.129.03.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.M.147.03.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.M.196.05.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.M.205.05.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.M.206.05.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.M.272.09.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.M.286.10.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.M.296.11.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.M.31.01.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.N.280.10.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.O.298.11.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.O.314.13.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.O.315.13.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.P.242.08.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.P.294.11.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.Q.271.09.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.Q.297.11.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.R.103.03.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.R.150.03.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.R.186.05.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.R.219.06.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.R.303.12.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.R.75.02.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.S.1.01.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.S.122.03.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.S.123.03.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.S.124.03.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.S.128.03.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.S.148.03.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.S.208.05.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.S.222.06.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.S.244.08.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.S.260.08.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.S.263.08.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.S.322.14.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.T.241.08.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.T.56.01.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.T.57.02.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.T.76.02.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.U.290.11.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.Y.126.03.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.Y.261.08.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.Y.37.01.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.Z.168.04.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.Z.187.05.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\QI.Z.223.06.mkdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\output\AQList-clean.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\output\AQList-docs.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\js\common.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\js\script2.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/Document.js" afterPath="$PROJECT_DIR$/js/Document.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/bootstrap.css" afterPath="$PROJECT_DIR$/css/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/collect.js" afterPath="$PROJECT_DIR$/js/collect.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/graph.css" afterPath="$PROJECT_DIR$/css/graph.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/makeDocs.js" afterPath="$PROJECT_DIR$/js/makeDocs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/missing_nodes.js" afterPath="$PROJECT_DIR$/js/missing_nodes.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/objects.js" afterPath="$PROJECT_DIR$/js/objects.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/setupData.js" afterPath="$PROJECT_DIR$/js/setupData.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/test.js" afterPath="$PROJECT_DIR$/js/test.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/viz.js" afterPath="$PROJECT_DIR$/js/viz.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -45,38 +658,8 @@
       <file leaf-file-name="viz.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/viz.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33333334" vertical-offset="19131" max-vertical-offset="19873">
-              <caret line="1139" column="12" selection-start-line="1139" selection-start-column="12" selection-end-line="1139" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="setupData.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/setupData.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1105" max-vertical-offset="12835">
-              <caret line="74" column="7" selection-start-line="71" selection-start-column="0" selection-end-line="74" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Tooltip.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/Tooltip.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="918">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="d3-process-map.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/d3-process-map.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.88" vertical-offset="10168" max-vertical-offset="11492">
-              <caret line="620" column="0" selection-start-line="612" selection-start-column="0" selection-end-line="620" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.49514562" vertical-offset="7344" max-vertical-offset="21148">
+              <caret line="453" column="2" selection-start-line="453" selection-start-column="2" selection-end-line="453" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -85,42 +668,78 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.5384614" vertical-offset="2858" max-vertical-offset="4301">
-              <caret line="172" column="28" selection-start-line="172" selection-start-column="28" selection-end-line="172" selection-end-column="28" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1802" max-vertical-offset="5083">
+              <caret line="107" column="0" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1417777396341" expanded="true" signature="10528:10621" placeholder="..." />
-                <marker date="1417777396341" expanded="true" signature="10570:10612" placeholder="{...}" />
+                <element signature="n#style#0;n#a#0;n#div#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#div#1;n#td#0;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#a#0;n#div#1;n#td#0;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#2;n#td#0;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#span#0;n#div#2;n#td#0;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#1;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#2;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#3;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#1;n#div#0;n#td#3;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#4;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#td#4;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#td#5;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#7;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#td#7;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#select#0;n#div#0;n#div#0;n#td#7;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#select#0;n#div#1;n#div#0;n#td#7;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#select#0;n#div#2;n#div#0;n#td#7;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1418085282020" expanded="true" signature="11936:12029" placeholder="..." />
+                <marker date="1418085282020" expanded="true" signature="11978:12020" placeholder="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="graph.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/graph.css">
+      <file leaf-file-name=".eslintrc" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/node_modules/request/.eslintrc">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.78" vertical-offset="1220" max-vertical-offset="1904">
-              <caret line="77" column="21" selection-start-line="77" selection-start-column="21" selection-end-line="77" selection-end-column="21" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="476">
+              <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Document.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/Document.js">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.8" vertical-offset="663" max-vertical-offset="1224">
-              <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-              <folding />
+            <state vertical-scroll-proportion="0.0" vertical-offset="109" max-vertical-offset="1547">
+              <caret line="27" column="19" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
+              <folding>
+                <marker date="1418121541523" expanded="true" signature="703:2513" placeholder="{...}" />
+                <marker date="1418121541523" expanded="true" signature="800:869" placeholder="{...}" />
+                <marker date="1418121541523" expanded="true" signature="886:2351" placeholder="[...]" />
+                <marker date="1418121541523" expanded="true" signature="912:1351" placeholder="{...}" />
+                <marker date="1418121541523" expanded="true" signature="920:1015" placeholder="//..." />
+                <marker date="1418121541523" expanded="true" signature="1038:1130" placeholder="{...}" />
+                <marker date="1418121541523" expanded="true" signature="1153:1222" placeholder="{...}" />
+                <marker date="1418121541523" expanded="true" signature="1229:1313" placeholder="//..." />
+                <marker date="1418121541523" expanded="true" signature="1377:1652" placeholder="{...}" />
+                <marker date="1418121541523" expanded="true" signature="1385:1436" placeholder="//..." />
+                <marker date="1418121541523" expanded="true" signature="1459:1551" placeholder="{...}" />
+                <marker date="1418121541523" expanded="true" signature="1678:1880" placeholder="{...}" />
+                <marker date="1418121541523" expanded="true" signature="1737:1829" placeholder="{...}" />
+                <marker date="1418121541523" expanded="true" signature="1906:2113" placeholder="{...}" />
+                <marker date="1418121541523" expanded="true" signature="1965:2057" placeholder="{...}" />
+                <marker date="1418121541523" expanded="true" signature="2139:2346" placeholder="{...}" />
+                <marker date="1418121541523" expanded="true" signature="2199:2291" placeholder="{...}" />
+                <marker date="1418121541523" expanded="true" signature="2368:2509" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/style.css">
+      <file leaf-file-name="AQList-docs.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/output/AQList-docs.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2122" max-vertical-offset="2856">
-              <caret line="162" column="1" selection-start-line="162" selection-start-column="1" selection-end-line="162" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="7089" max-vertical-offset="554557">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -129,11 +748,29 @@
       <file leaf-file-name="makeDocs.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/makeDocs.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1564" max-vertical-offset="11050">
-              <caret line="92" column="0" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="10607" max-vertical-offset="11084">
+              <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="setupData.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/setupData.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="833" max-vertical-offset="13600">
+              <caret line="790" column="2" selection-start-line="790" selection-start-column="2" selection-end-line="790" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="collect.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/collect.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="2142" max-vertical-offset="4063">
+              <caret line="140" column="0" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -154,20 +791,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/package.json.bak.txt" />
-        <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/archives/setupData-2014-11-23.js" />
-        <option value="$PROJECT_DIR$/js/async-waterfall.js" />
-        <option value="$PROJECT_DIR$/js/get-aqlist-xml.js" />
         <option value="$PROJECT_DIR$/js/sync-request-test.js" />
         <option value="$PROJECT_DIR$/data/output/data1.json" />
-        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/history.txt" />
         <option value="$PROJECT_DIR$/js/consolelog.txt" />
         <option value="$PROJECT_DIR$/js/vis.js" />
         <option value="$PROJECT_DIR$/archives/index.js" />
         <option value="$PROJECT_DIR$/AQList-json.html" />
-        <option value="$PROJECT_DIR$/js/missing_nodes.js" />
         <option value="$PROJECT_DIR$/consolelog.txt" />
         <option value="$PROJECT_DIR$/data/al-qaida-without-targetcount.json" />
         <option value="$PROJECT_DIR$/js/libs/logger.js" />
@@ -178,32 +808,39 @@
         <option value="$PROJECT_DIR$/data/config.json" />
         <option value="$PROJECT_DIR$/data/objects.json.js" />
         <option value="$PROJECT_DIR$/data/config.js" />
-        <option value="$PROJECT_DIR$/js/objects.js" />
         <option value="$PROJECT_DIR$/js/script.js" />
         <option value="$PROJECT_DIR$/js/common.js" />
-        <option value="$PROJECT_DIR$/js/test.js" />
         <option value="$PROJECT_DIR$/data/output/AQList-clean.json" />
         <option value="$PROJECT_DIR$/johns_notes.txt" />
         <option value="$PROJECT_DIR$/js/backpack-node.js" />
         <option value="$PROJECT_DIR$/js/empty_indiv.js" />
         <option value="$PROJECT_DIR$/js/listDirectory.js" />
         <option value="$PROJECT_DIR$/js/filewalker.js" />
-        <option value="$PROJECT_DIR$/js/collect.js" />
-        <option value="$PROJECT_DIR$/js/setupData.js" />
         <option value="$PROJECT_DIR$/data/output/data31deleteEntsEtc.json" />
         <option value="$PROJECT_DIR$/js/markdown_to_js_test.js" />
         <option value="$PROJECT_DIR$/js/docs.js" />
-        <option value="$PROJECT_DIR$/data/output/AQList-docs.json" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/js/circles.html" />
         <option value="$PROJECT_DIR$/circles.html" />
         <option value="$PROJECT_DIR$/js/d3-process-map.js" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/js/app.js" />
         <option value="$PROJECT_DIR$/js/Tooltip.js" />
-        <option value="$PROJECT_DIR$/js/Document.js" />
         <option value="$PROJECT_DIR$/css/doc-style.css" />
+        <option value="$PROJECT_DIR$/css/bootstrap.css" />
+        <option value="$PROJECT_DIR$/js/missing_nodes.js" />
+        <option value="$PROJECT_DIR$/js/objects.js" />
         <option value="$PROJECT_DIR$/css/graph.css" />
+        <option value="$PROJECT_DIR$/js/test.js" />
+        <option value="$PROJECT_DIR$/data/output/AQList-docs.json" />
+        <option value="$PROJECT_DIR$/js/Document.js" />
+        <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/coffee/viz-original.coffee" />
+        <option value="$PROJECT_DIR$/archives/d3-process-map-original.js" />
+        <option value="$PROJECT_DIR$/js/makeDocs.js" />
+        <option value="$PROJECT_DIR$/js/app.js" />
+        <option value="$PROJECT_DIR$/js/setupData.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/collect.js" />
+        <option value="$PROJECT_DIR$/js/adder.js" />
         <option value="$PROJECT_DIR$/js/viz.js" />
       </list>
     </option>
@@ -212,7 +849,7 @@
     <detection-done>true</detection-done>
   </component>
   <component name="NamedScopeManager">
-    <scope name="dev_files" pattern="file[aq-list-viz]:js/*&amp;&amp;!file[aq-list-viz]:js/node_modules//*&amp;&amp;!file[aq-list-viz]:js/libs//*||file:index.html" />
+    <scope name="dev_files" pattern="file[aq-list-viz]:js/*&amp;&amp;!file[aq-list-viz]:js/node_modules//*&amp;&amp;!file[aq-list-viz]:js/libs//*||file:index.html||file[aq-list-viz]:css//*||file:package.json" />
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
@@ -359,6 +996,56 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node_modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="aq-list-viz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="aq-list-viz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="libs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="aq-list-viz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="aq-list-viz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="doc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="aq-list-viz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="aq-list-viz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="data" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -409,6 +1096,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="aq-list-viz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="aq-list-viz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="archives" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="coffee" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -416,12 +1121,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/circles.html" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/index.html" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="LayoutCode.rearrangeEntriesHTML" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="options.lastSelected" value="reference.settings.ide.settings.web.browsers" />
+    <property name="options.lastSelected" value="preferences.editor" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="FullScreen" value="false" />
@@ -431,17 +1136,17 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User1\WebstormProjects\aq-list-viz\archives" />
+      <recent name="C:\Users\User1\WebstormProjects\aq-list-viz\data\markdown" />
       <recent name="C:\Users\User1\WebstormProjects\aq-list-viz\js" />
       <recent name="C:\Users\User1\WebstormProjects\aq-list-viz\data\input" />
-      <recent name="C:\Users\User1\WebstormProjects\aq-list-viz\archives" />
       <recent name="C:\Users\User1\WebstormProjects\aq-list-viz\data\output" />
-      <recent name="C:\Users\User1\WebstormProjects\aq-list-viz\archives\output" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User1\WebstormProjects\aq-list-viz\archives" />
       <recent name="C:\Users\User1\WebstormProjects\aq-list-viz" />
       <recent name="C:\Users\User1\WebstormProjects\aq-list-viz\archives\output" />
       <recent name="C:\Users\User1\WebstormProjects\aq-list-viz\js\experiments" />
-      <recent name="C:\Users\User1\WebstormProjects\aq-list-viz\archives" />
       <recent name="C:\Users\User1\WebstormProjects\aq-list-viz\archives\data" />
     </key>
   </component>
@@ -502,13 +1207,6 @@
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="test.js" type="NodeJSConfigurationType" factoryName="Node.js" singleton="false" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="js/test.js" working-dir="$PROJECT_DIR$" coffeescript-path="C:\Users\User1\AppData\Roaming\npm\node_modules\coffee-script\bin\coffee">
-      <RunnerSettings RunnerId="Basic" />
-      <RunnerSettings RunnerId="debuggableProgram" />
-      <ConfigurationWrapper RunnerId="Basic" />
-      <ConfigurationWrapper RunnerId="debuggableProgram" />
-      <method />
-    </configuration>
     <configuration default="false" name="collect.js" type="NodeJSConfigurationType" factoryName="Node.js" singleton="false" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="js/collect.js" working-dir="$PROJECT_DIR$" coffeescript-path="C:\Users\User1\AppData\Roaming\npm\node_modules\coffee-script\bin\coffee">
       <RunnerSettings RunnerId="Basic" />
       <RunnerSettings RunnerId="debuggableProgram" />
@@ -535,15 +1233,23 @@
       <ConfigurationWrapper RunnerId="Basic" />
       <method />
     </configuration>
+    <configuration default="false" name="test.js" type="NodeJSConfigurationType" factoryName="Node.js" singleton="false" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="js/test.js" working-dir="$PROJECT_DIR$" coffeescript-path="C:\Users\User1\AppData\Roaming\npm\node_modules\coffee-script\bin\coffee">
+      <browser name="ee957b40-49d2-4995-a146-2f1d96ccda17" start="true" url="http://localhost:63343/aq-list-viz/index.html" />
+      <RunnerSettings RunnerId="Basic" />
+      <RunnerSettings RunnerId="debuggableProgram" />
+      <ConfigurationWrapper RunnerId="Basic" />
+      <ConfigurationWrapper RunnerId="debuggableProgram" />
+      <method />
+    </configuration>
     <list size="8">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.open index.html" />
       <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.circles.html" />
       <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.app.js JavaScript" />
-      <item index="3" class="java.lang.String" itemvalue="Node.js.test.js" />
-      <item index="4" class="java.lang.String" itemvalue="Node.js.collect.js" />
-      <item index="5" class="java.lang.String" itemvalue="Node.js.docs.js" />
-      <item index="6" class="java.lang.String" itemvalue="Node.js.app.js" />
-      <item index="7" class="java.lang.String" itemvalue="Node.js.IE app.js" />
+      <item index="3" class="java.lang.String" itemvalue="Node.js.collect.js" />
+      <item index="4" class="java.lang.String" itemvalue="Node.js.docs.js" />
+      <item index="5" class="java.lang.String" itemvalue="Node.js.app.js" />
+      <item index="6" class="java.lang.String" itemvalue="Node.js.IE app.js" />
+      <item index="7" class="java.lang.String" itemvalue="Node.js.test.js" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -668,7 +1374,13 @@
       <option name="project" value="LOCAL" />
       <updated>1417528638552</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="added docs">
+      <created>1417787364110</created>
+      <option name="number" value="00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1417787364110</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <option name="trackContextForNewChangelist" value="true" />
     <servers />
   </component>
@@ -677,10 +1389,9 @@
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30870712" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31710526" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30789474" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Heroku" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39841688" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39736843" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -691,16 +1402,17 @@
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24967907" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3986842" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32189974" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32105264" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Get Gist" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31710526" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3986842" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -761,7 +1473,8 @@
     <MESSAGE value="data structures" />
     <MESSAGE value="npm install bag" />
     <MESSAGE value="fixing docs on  click circle" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixing docs on  click circle" />
+    <MESSAGE value="added docs" />
+    <option name="LAST_COMMIT_MESSAGE" value="added docs" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -769,36 +1482,26 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/makeDocs.js</url>
-          <line>581</line>
+          <line>583</line>
           <option name="timeStamp" value="112" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/makeDocs.js</url>
-          <line>583</line>
+          <line>585</line>
           <option name="timeStamp" value="114" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/viz.js</url>
-          <line>232</line>
+          <line>306</line>
           <option name="timeStamp" value="127" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/viz.js</url>
-          <line>201</line>
-          <option name="timeStamp" value="128" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/js/viz.js</url>
-          <line>210</line>
-          <option name="timeStamp" value="129" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/js/viz.js</url>
-          <line>621</line>
+          <line>736</line>
           <option name="timeStamp" value="134" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="136" />
+      <option name="time" value="144" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="NodeJSConfigurationType">
@@ -807,112 +1510,14 @@
         <watch expression="nodeBag2._map._buckets" language="JavaScript" />
         <watch expression="html" language="JavaScript" />
         <watch expression="markdownContent" language="JavaScript" />
+        <watch expression="data[name]" language="JavaScript" />
+        <watch expression="data.name" language="JavaScript" />
+        <watch expression="linkIdsArr.length" language="JavaScript" />
+        <watch expression="(typeof linkIdsArray)" language="JavaScript" />
       </configuration>
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1156">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/objects.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="27115">
-          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/screen.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17525773" vertical-offset="0" max-vertical-offset="485">
-          <caret line="5" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="727" max-vertical-offset="1156">
-          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/QI.A.202.05.mkdn">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="734">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="10846">
-          <caret line="66" column="13" selection-start-line="66" selection-start-column="13" selection-end-line="66" selection-end-column="13" />
-          <folding>
-            <element signature="n#!!block;n#selectObject#0" expanded="false" />
-            <element signature="n#!!block;n#deselectObject#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/archives/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="11543">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/markdown/MarkdownExtra.inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="732">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/markdown/Markdown.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.667594" vertical-offset="4794" max-vertical-offset="52904">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
-          <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="1173">
-          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/archives/output1/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1173">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/johns_notes.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3679" max-vertical-offset="4165">
-          <caret line="239" column="0" selection-start-line="239" selection-start-column="0" selection-end-line="239" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/archives/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/backpack-node/tests/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="500">
@@ -965,13 +1570,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2210">
           <caret line="12" column="39" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/setupData-old.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="22287">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1038,13 +1636,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/collect.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.16" vertical-offset="2753" max-vertical-offset="4777">
-          <caret line="173" column="50" selection-start-line="173" selection-start-column="41" selection-end-line="173" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/markdown-js/lib/markdown.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.12" vertical-offset="799" max-vertical-offset="21913">
@@ -1066,13 +1657,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="52.6" vertical-offset="3134" max-vertical-offset="3927">
-          <caret line="108" column="23" selection-start-line="108" selection-start-column="21" selection-end-line="108" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="206" max-vertical-offset="697">
@@ -1087,37 +1671,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/output/AQList-docs.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="7973" max-vertical-offset="554557">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/makeDocs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1434" max-vertical-offset="11050">
-          <caret line="92" column="0" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5862069" vertical-offset="1054" max-vertical-offset="1547">
-          <caret line="80" column="4" selection-start-line="80" selection-start-column="4" selection-end-line="80" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="81617">
           <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1125,74 +1682,251 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="918">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/d3-process-map.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="10168" max-vertical-offset="11492">
+          <caret line="620" column="0" selection-start-line="612" selection-start-column="0" selection-end-line="620" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/missing_nodes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7939">
+          <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/objects.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="27115">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/reset.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="371" max-vertical-offset="2210">
+          <caret line="30" column="6" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="51558" max-vertical-offset="67932">
+          <caret line="3041" column="2" selection-start-line="3041" selection-start-column="2" selection-end-line="3041" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/graph.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.4" vertical-offset="681" max-vertical-offset="1377">
+          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/require.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="16874" max-vertical-offset="35343">
+          <caret line="1005" column="24" selection-start-line="1005" selection-start-column="24" selection-end-line="1005" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="4505" max-vertical-offset="11917">
+          <caret line="274" column="14" selection-start-line="271" selection-start-column="0" selection-end-line="277" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/markdown/QE.A.1.01.mkdn">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="431">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/archives/output3/AQList.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="290224">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5489796" vertical-offset="88" max-vertical-offset="578">
+          <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/markdown/markdownfilelist.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5202">
+          <caret line="20" column="14" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/Document.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.12" vertical-offset="0" max-vertical-offset="2023">
+          <caret line="9" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/archives/coffee/viz-original.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.92111367" vertical-offset="8545" max-vertical-offset="9044">
+          <caret line="526" column="0" selection-start-line="526" selection-start-column="0" selection-end-line="526" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/archives/coffee/vis.coffee.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.039443154" vertical-offset="1683" max-vertical-offset="9316">
+          <caret line="100" column="0" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/archives/coffee/vis.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2193" max-vertical-offset="9316">
+          <caret line="130" column="0" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.52750355" vertical-offset="374" max-vertical-offset="3230">
+          <caret line="44" column="15" selection-start-line="44" selection-start-column="15" selection-end-line="44" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/archives/d3-process-map-original.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="8995" max-vertical-offset="10965">
+          <caret line="547" column="23" selection-start-line="547" selection-start-column="23" selection-end-line="547" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/makeDocs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="10607" max-vertical-offset="11084">
+          <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="109" max-vertical-offset="1547">
+          <caret line="27" column="19" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
+          <folding>
+            <marker date="1418121541523" expanded="true" signature="703:2513" placeholder="{...}" />
+            <marker date="1418121541523" expanded="true" signature="800:869" placeholder="{...}" />
+            <marker date="1418121541523" expanded="true" signature="886:2351" placeholder="[...]" />
+            <marker date="1418121541523" expanded="true" signature="912:1351" placeholder="{...}" />
+            <marker date="1418121541523" expanded="true" signature="920:1015" placeholder="//..." />
+            <marker date="1418121541523" expanded="true" signature="1038:1130" placeholder="{...}" />
+            <marker date="1418121541523" expanded="true" signature="1153:1222" placeholder="{...}" />
+            <marker date="1418121541523" expanded="true" signature="1229:1313" placeholder="//..." />
+            <marker date="1418121541523" expanded="true" signature="1377:1652" placeholder="{...}" />
+            <marker date="1418121541523" expanded="true" signature="1385:1436" placeholder="//..." />
+            <marker date="1418121541523" expanded="true" signature="1459:1551" placeholder="{...}" />
+            <marker date="1418121541523" expanded="true" signature="1678:1880" placeholder="{...}" />
+            <marker date="1418121541523" expanded="true" signature="1737:1829" placeholder="{...}" />
+            <marker date="1418121541523" expanded="true" signature="1906:2113" placeholder="{...}" />
+            <marker date="1418121541523" expanded="true" signature="1965:2057" placeholder="{...}" />
+            <marker date="1418121541523" expanded="true" signature="2139:2346" placeholder="{...}" />
+            <marker date="1418121541523" expanded="true" signature="2199:2291" placeholder="{...}" />
+            <marker date="1418121541523" expanded="true" signature="2368:2509" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/archives/AQList-docs.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37694013" vertical-offset="100521" max-vertical-offset="554557">
+          <caret line="5923" column="0" selection-start-line="5923" selection-start-column="0" selection-end-line="5923" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/output/AQList-docs.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="7089" max-vertical-offset="554557">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/setupData.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1105" max-vertical-offset="12835">
-          <caret line="74" column="7" selection-start-line="71" selection-start-column="0" selection-end-line="74" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="12879" max-vertical-offset="13600">
+          <caret line="790" column="2" selection-start-line="790" selection-start-column="2" selection-end-line="790" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/Document.js">
+    <entry file="file://$PROJECT_DIR$/js/collect.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.8" vertical-offset="663" max-vertical-offset="1224">
-          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/doc-style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1904">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2425" max-vertical-offset="2856">
-          <caret line="162" column="1" selection-start-line="162" selection-start-column="1" selection-end-line="162" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="2142" max-vertical-offset="4063">
+          <caret line="140" column="0" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.5384614" vertical-offset="2858" max-vertical-offset="4301">
-          <caret line="172" column="28" selection-start-line="172" selection-start-column="28" selection-end-line="172" selection-end-column="28" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1802" max-vertical-offset="5083">
+          <caret line="107" column="0" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1417777396341" expanded="true" signature="10528:10621" placeholder="..." />
-            <marker date="1417777396341" expanded="true" signature="10570:10612" placeholder="{...}" />
+            <element signature="n#style#0;n#a#0;n#div#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#1;n#td#0;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#a#0;n#div#1;n#td#0;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#2;n#td#0;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#span#0;n#div#2;n#td#0;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#2;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#3;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#1;n#div#0;n#td#3;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#4;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#td#4;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#td#5;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#7;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#td#7;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#select#0;n#div#0;n#div#0;n#td#7;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#select#0;n#div#1;n#div#0;n#td#7;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#select#0;n#div#2;n#div#0;n#td#7;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1418085282020" expanded="true" signature="11936:12029" placeholder="..." />
+            <marker date="1418085282020" expanded="true" signature="11978:12020" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/graph.css">
+    <entry file="file://$PROJECT_DIR$/js/node_modules/request/.eslintrc">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.78" vertical-offset="1220" max-vertical-offset="1904">
-          <caret line="77" column="21" selection-start-line="77" selection-start-column="21" selection-end-line="77" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="476">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/d3-process-map.js">
+    <entry file="file://$PROJECT_DIR$/js/adder-returns-function-closure.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.88" vertical-offset="10168" max-vertical-offset="11492">
-          <caret line="620" column="0" selection-start-line="612" selection-start-column="0" selection-end-line="620" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="431">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/viz.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334" vertical-offset="19131" max-vertical-offset="19873">
-          <caret line="1139" column="12" selection-start-line="1139" selection-start-column="12" selection-end-line="1139" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.49514562" vertical-offset="7344" max-vertical-offset="21148">
+          <caret line="453" column="2" selection-start-line="453" selection-start-column="2" selection-end-line="453" selection-end-column="2" />
           <folding />
         </state>
       </provider>

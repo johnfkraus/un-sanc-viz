@@ -33,17 +33,17 @@ var fixData = function () {
     console.log("\n ", __filename, "line", __line, "; running setupData.fixData()");
   }
   var functionCount = 0;
-  var newData = {};
-  var aliases;
-  var comments = "";
+  // var newData = {};
+  // var aliases;
+  // var comments = "";
   var links = [];
-  var connectedToId;
+  // var connectedToId;
   var aliasCount = 0;
   var aliasArray = [];
   var linkRegexMatch;
   var connection;
-  var source;
-  var target;
+  // var source;
+  // var target;
   var missing_ents;
   var missing_indivs;
   var ents = [];
@@ -330,6 +330,7 @@ var fixData = function () {
       callback();
     },
 
+    // ADD CONNECTION IDS ARRAY
     function (callback) {
       if (consoleLog) {
         console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount, "; addConnectionIdsArray(data.nodes)");
@@ -346,6 +347,7 @@ var fixData = function () {
       callback();
     },
 
+    // ADD CONNECTION OBJECTS ARRAY
     function (callback) {
       addConnectionObjectsArray(data.nodes);
       if (consoleLog) {
@@ -360,11 +362,21 @@ var fixData = function () {
       callback();
     },
 
+    // COUNT LINKS
+    function (callback) {
+      countLinks(data.nodes);
+      if (consoleLog) {
+        console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount, "; countLinks");
+        console.log("\n ", __filename, "line", __line, "; data.nodes[1] = ", data.nodes[1]);
+      }
+      callback();
+    },
+
     function (callback) {
       consolidateLinks(data);
       if (consoleLog) {
         console.log("\n 283 function #:", ++functionCount, "; consolidate links into links array");
-        console.log(data.links[1]);
+        console.log("\n ", __filename, "line", __line, "; data.nodes[1] = ", data.nodes[1]);
         console.log("\n ", __filename, "line", __line, "; data.links.length = ", data.links.length);
       }
       callback();
@@ -375,17 +387,17 @@ var fixData = function () {
       countSourceTarget(data.nodes, data.links);
       if (consoleLog) {
         console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount, "; addLinksArray(data.nodes)");
-        console.log(data.nodes[1]);
+        console.log("\n ", __filename, "line", __line, "; data.nodes[1] = ", data.nodes[1]);
       }
       callback();
-    }
+    },
 
-    , function (callback) {
+    function (callback) {
       checkTargetsExist(data.nodes, data.links);
       callback();
-    }
+    },
 
-    , function (callback) {
+    function (callback) {
       var nodeCounter = 0;
       data.nodes.forEach(function (node) {
         nodeCounter++;
@@ -394,12 +406,12 @@ var fixData = function () {
         }
       });
       callback();
-    }
+    },
 
-    , function (callback) {
+    function (callback) {
       if (consoleLog) {
         console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount);
-        console.log(data.nodes[1]);
+        console.log("\n ", __filename, "line", __line, "; data.nodes[1] = ", data.nodes[1]);
       }
       counter = 0;
       data.links.forEach(function (link) {
@@ -431,9 +443,10 @@ var fixData = function () {
         callback();
       }
       callback();
-    }
+    },
 
-    , function (callback) {
+    // stringify
+    function (callback) {
       var myJsonData = JSON.stringify(data, null, " ");
       if (consoleLog) {
         console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount, "; save clean json file");
@@ -441,18 +454,18 @@ var fixData = function () {
         console.log("\n ", __filename, "line", __line, "; data.links.length = ", data.links.length);
       }
       callback();
-    }
+    },
 
-    , function (callback) {
+    // last function; does nothing
+    function (callback) {
       var dummy = function () {
         if (consoleLog) {
           console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount);
-          console.log("\n ", __filename, "line", __line, "; last function");
+          console.log("\n ", __filename, "line", __line, "; last function; does nothing");
         }
         callback();
       }();
     }
-
   ]);
 };
 
@@ -710,7 +723,7 @@ var countSourceTarget = function (nodes, links) {
         node.targetCount++; // = node.targetCount + 1;
         tarCount++;
       }
-      node.linkCount = node.sourceCount + node.targetCount;
+//      node.linkCount = node.sourceCount + node.targetCount;
     });
     if (consoleLog) {
       console.log("\n ", __filename, "line", __line, "; node.sourceCount = ", node.sourceCount);
@@ -745,6 +758,38 @@ var inspectSomeArrayObjects = function (array, numOfObjectsToShow) {
     }
   });
 };
+
+// create a links array in each entity/indiv containing ids of related parties
+
+/*
+var makeCommentsWithLinks = function (nodes) {
+  var oldComments; // newComments1, newComments2;
+  var linkRegexMatch;
+  data.nodes.forEach(function (node) {
+    node.comments = "";
+    oldComments = node.COMMENTS1;
+    if ((typeof oldComments != 'undefined') && (typeof oldComments.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/gi) != 'undefined')) {
+      var newComments1 = oldComments.replace(/((Q[IE]\.[A-Z]\.\d{1,3}\.\d{2}).)/gi, '$2');
+      // var newComments2 = newComments1.replace(/((Q[IE]\.[A-Z]\.\d{1,3}\.\d{2}).)/gi, '$2');
+
+      linkRegexMatch = comments.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/gi);
+      // if (consoleLog) { console.log("91 linkRegexMatch = ", linkRegexMatch);
+      if ((typeof(linkRegexMatch) !== 'undefined') && (linkRegexMatch !== null)) {
+        for (var n = 0; n < linkRegexMatch.length; n++) {
+          if (node.id === linkRegexMatch[n]) {
+            if (consoleLog) {
+              console.log("node id error" + node.id + " ===  " + linkRegexMatch[n]);
+            }
+          } else {
+            node.links.push(linkRegexMatch[n]);
+          }
+        }
+      }
+    }
+  });
+};
+*/
+
 
 module.exports = {
   fixData: fixData

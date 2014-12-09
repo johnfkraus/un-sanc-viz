@@ -68,12 +68,12 @@
      "target": "QE.A.137.14"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.A.137.14"
    ],
    "sourceCount": 1,
-   "targetCount": 1,
-   "linkCount": 2
+   "targetCount": 1
   },
   {
    "DATAID": "113445",
@@ -142,13 +142,13 @@
      "target": "QI.S.208.05"
     }
    ],
+   "linkCount": 2,
    "links": [
     "QE.J.92.02",
     "QI.S.208.05"
    ],
    "sourceCount": 2,
-   "targetCount": 9,
-   "linkCount": 11
+   "targetCount": 9
   },
   {
    "DATAID": "113226",
@@ -231,13 +231,13 @@
      "target": "QI.A.58.02"
     }
    ],
+   "linkCount": 2,
    "links": [
     "QE.R.70.02",
     "QI.A.58.02"
    ],
    "sourceCount": 2,
-   "targetCount": 3,
-   "linkCount": 5
+   "targetCount": 3
   },
   {
    "DATAID": "113227",
@@ -361,6 +361,7 @@
      "target": "QE.L.118.05"
     }
    ],
+   "linkCount": 4,
    "links": [
     "QE.J.19.01",
     "QE.H.8.01",
@@ -368,8 +369,7 @@
     "QE.L.118.05"
    ],
    "sourceCount": 4,
-   "targetCount": 2,
-   "linkCount": 6
+   "targetCount": 2
   },
   {
    "DATAID": "113231",
@@ -477,10 +477,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "113453",
@@ -517,10 +517,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "113335",
@@ -556,10 +556,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "113232",
@@ -634,10 +634,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "113454",
@@ -673,10 +673,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "113233",
@@ -712,10 +712,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "113336",
@@ -754,10 +754,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "113455",
@@ -793,10 +793,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "113234",
@@ -832,10 +832,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "113456",
@@ -907,12 +907,12 @@
      "target": "QI.A.104.03"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QI.A.104.03"
    ],
    "sourceCount": 1,
-   "targetCount": 0,
-   "linkCount": 1
+   "targetCount": 0
   },
   {
    "DATAID": "244845",
@@ -965,12 +965,12 @@
      "target": "QI.A.171.04"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QI.A.171.04"
    ],
    "sourceCount": 1,
-   "targetCount": 1,
-   "linkCount": 2
+   "targetCount": 1
   },
   {
    "DATAID": "113235",
@@ -1026,12 +1026,12 @@
      "target": "QI.A.171.04"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QI.A.171.04"
    ],
    "sourceCount": 1,
-   "targetCount": 0,
-   "linkCount": 1
+   "targetCount": 0
   },
   {
    "DATAID": "113338",
@@ -1081,10 +1081,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "113339",
@@ -1120,10 +1120,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "113457",
@@ -1231,6 +1231,7 @@
      "target": "QE.A.72.02"
     }
    ],
+   "linkCount": 5,
    "links": [
     "QE.A.4.01",
     "QI.A.6.01",
@@ -1239,8 +1240,7 @@
     "QE.A.72.02"
    ],
    "sourceCount": 5,
-   "targetCount": 2,
-   "linkCount": 7
+   "targetCount": 2
   },
   {
    "DATAID": "3116299",
@@ -1317,13 +1317,13 @@
      "target": "QI.B.136.03"
     }
    ],
+   "linkCount": 2,
    "links": [
     "QE.T.14.01",
     "QI.B.136.03"
    ],
    "sourceCount": 2,
-   "targetCount": 1,
-   "linkCount": 3
+   "targetCount": 1
   },
   {
    "DATAID": "3116737",
@@ -1417,6 +1417,7 @@
      "target": "QI.B.136.03"
     }
    ],
+   "linkCount": 3,
    "links": [
     "QE.T.14.01",
     "QE.M.134.12",
@@ -1424,8 +1425,7 @@
     "QI.B.136.03"
    ],
    "sourceCount": 3,
-   "targetCount": 2,
-   "linkCount": 5
+   "targetCount": 2
   },
   {
    "DATAID": "3116738",
@@ -1524,6 +1524,7 @@
      "target": "QI.B.136.03"
     }
    ],
+   "linkCount": 4,
    "links": [
     "QE.M.140.14",
     "QE.M.134.12",
@@ -1531,8 +1532,7 @@
     "QI.B.136.03"
    ],
    "sourceCount": 4,
-   "targetCount": 2,
-   "linkCount": 6
+   "targetCount": 2
   },
   {
    "DATAID": "3039466",
@@ -1640,6 +1640,7 @@
      "target": "QE.A.7.01"
     }
    ],
+   "linkCount": 4,
    "links": [
     "QE.A.4.01",
     "QI.A.299.11",
@@ -1649,8 +1650,7 @@
     "QE.J.115.04"
    ],
    "sourceCount": 4,
-   "targetCount": 12,
-   "linkCount": 16
+   "targetCount": 12
   },
   {
    "DATAID": "113458",
@@ -1729,10 +1729,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 34,
-   "linkCount": 34
+   "targetCount": 34
   },
   {
    "DATAID": "113966",
@@ -1839,10 +1839,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 12,
-   "linkCount": 12
+   "targetCount": 12
   },
   {
    "DATAID": "2881836",
@@ -1945,14 +1945,14 @@
      "target": "QI.A.275.10"
     }
    ],
+   "linkCount": 3,
    "links": [
     "QE.A.4.01",
     "QI.A.274.10",
     "QI.A.275.10"
    ],
    "sourceCount": 3,
-   "targetCount": 7,
-   "linkCount": 10
+   "targetCount": 7
   },
   {
    "DATAID": "113459",
@@ -2114,6 +2114,7 @@
      "target": "QE.J.19.01"
     }
    ],
+   "linkCount": 3,
    "links": [
     "QE.A.73.02",
     "QE.A.73.02",
@@ -2121,8 +2122,7 @@
     "QE.J.19.01"
    ],
    "sourceCount": 3,
-   "targetCount": 4,
-   "linkCount": 7
+   "targetCount": 4
   },
   {
    "DATAID": "3165860",
@@ -2250,6 +2250,7 @@
      "target": "QE.A.145.14"
     }
    ],
+   "linkCount": 4,
    "links": [
     "QE.T.14.01",
     "QE.M.141.14",
@@ -2257,8 +2258,7 @@
     "QE.A.145.14"
    ],
    "sourceCount": 4,
-   "targetCount": 1,
-   "linkCount": 5
+   "targetCount": 1
   },
   {
    "DATAID": "3165859",
@@ -2361,14 +2361,14 @@
      "target": "QE.A.146.14"
     }
    ],
+   "linkCount": 3,
    "links": [
     "QE.T.14.01",
     "QE.A.143.14",
     "QE.A.146.14"
    ],
    "sourceCount": 3,
-   "targetCount": 1,
-   "linkCount": 4
+   "targetCount": 1
   },
   {
    "DATAID": "113460",
@@ -2484,13 +2484,13 @@
      "target": "QE.J.115.04"
     }
    ],
+   "linkCount": 2,
    "links": [
     "QI.A.226.06",
     "QE.J.115.04"
    ],
    "sourceCount": 2,
-   "targetCount": 3,
-   "linkCount": 5
+   "targetCount": 3
   },
   {
    "DATAID": "3162386",
@@ -2565,12 +2565,12 @@
      "target": "QI.B.333.14"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QI.B.333.14"
    ],
    "sourceCount": 1,
-   "targetCount": 4,
-   "linkCount": 5
+   "targetCount": 4
   },
   {
    "DATAID": "3014161",
@@ -2663,6 +2663,7 @@
      "target": "QI.D.232.07"
     }
    ],
+   "linkCount": 4,
    "links": [
     "QI.A.316.13",
     "QE.T.14.01",
@@ -2670,8 +2671,7 @@
     "QI.D.232.07"
    ],
    "sourceCount": 4,
-   "targetCount": 0,
-   "linkCount": 4
+   "targetCount": 0
   },
   {
    "DATAID": "3150933",
@@ -2777,14 +2777,14 @@
      "target": "QI.S.322.14"
     }
    ],
+   "linkCount": 3,
    "links": [
     "QE.T.14.01",
     "QE.B.138.14",
     "QI.S.322.14"
    ],
    "sourceCount": 3,
-   "targetCount": 0,
-   "linkCount": 3
+   "targetCount": 0
   },
   {
    "DATAID": "113237",
@@ -2837,10 +2837,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 1,
-   "linkCount": 1
+   "targetCount": 1
   },
   {
    "DATAID": "113461",
@@ -2898,12 +2898,12 @@
      "target": "QE.J.115.04"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.J.115.04"
    ],
    "sourceCount": 1,
-   "targetCount": 1,
-   "linkCount": 2
+   "targetCount": 1
   },
   {
    "DATAID": "113474",
@@ -3018,12 +3018,12 @@
      "target": "QE.B.94.02"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.B.94.02"
    ],
    "sourceCount": 1,
-   "targetCount": 0,
-   "linkCount": 1
+   "targetCount": 0
   },
   {
    "DATAID": "113245",
@@ -3104,13 +3104,13 @@
      "target": "QE.T.14.01"
     }
    ],
+   "linkCount": 2,
    "links": [
     "QE.A.6.01",
     "QE.T.14.01"
    ],
    "sourceCount": 2,
-   "targetCount": 0,
-   "linkCount": 2
+   "targetCount": 0
   },
   {
    "DATAID": "113356",
@@ -3164,10 +3164,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 2,
-   "linkCount": 2
+   "targetCount": 2
   },
   {
    "DATAID": "113236",
@@ -3243,12 +3243,12 @@
      "target": "QI.A.6.01"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QI.A.6.01"
    ],
    "sourceCount": 1,
-   "targetCount": 7,
-   "linkCount": 8
+   "targetCount": 7
   },
   {
    "DATAID": "2971893",
@@ -3297,12 +3297,12 @@
      "target": "QI.U.290.11"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QI.U.290.11"
    ],
    "sourceCount": 1,
-   "targetCount": 3,
-   "linkCount": 4
+   "targetCount": 3
   },
   {
    "DATAID": "113476",
@@ -3359,10 +3359,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "2921366",
@@ -3447,12 +3447,12 @@
      "target": "QE.H.8.01"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.H.8.01"
    ],
    "sourceCount": 1,
-   "targetCount": 3,
-   "linkCount": 4
+   "targetCount": 3
   },
   {
    "DATAID": "113263",
@@ -3556,14 +3556,14 @@
      "target": "QE.L.118.05"
     }
    ],
+   "linkCount": 3,
    "links": [
     "QE.J.19.01",
     "QE.L.96.03",
     "QE.L.118.05"
    ],
    "sourceCount": 3,
-   "targetCount": 3,
-   "linkCount": 6
+   "targetCount": 3
   },
   {
    "DATAID": "114074",
@@ -3594,10 +3594,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "113963",
@@ -3686,13 +3686,13 @@
      "target": "QE.S.101.03"
     }
    ],
+   "linkCount": 2,
    "links": [
     "QE.R.100.03",
     "QE.S.101.03"
    ],
    "sourceCount": 2,
-   "targetCount": 2,
-   "linkCount": 4
+   "targetCount": 2
   },
   {
    "DATAID": "113853",
@@ -3831,6 +3831,7 @@
      "target": "QE.E.131.11"
     }
    ],
+   "linkCount": 4,
    "links": [
     "QI.J.240.08",
     "QI.B.239.08",
@@ -3838,8 +3839,7 @@
     "QE.E.131.11"
    ],
    "sourceCount": 4,
-   "targetCount": 5,
-   "linkCount": 9
+   "targetCount": 5
   },
   {
    "DATAID": "113964",
@@ -3919,14 +3919,14 @@
      "target": "QE.E.131.11"
     }
    ],
+   "linkCount": 3,
    "links": [
     "QE.E.88.02",
     "QE.I.119.05",
     "QE.E.131.11"
    ],
    "sourceCount": 3,
-   "targetCount": 5,
-   "linkCount": 8
+   "targetCount": 5
   },
   {
    "DATAID": "113965",
@@ -4021,6 +4021,7 @@
      "target": "QE.H.130.10"
     }
    ],
+   "linkCount": 4,
    "links": [
     "QE.H.8.01",
     "QE.L.118.05",
@@ -4028,8 +4029,7 @@
     "QE.H.130.10"
    ],
    "sourceCount": 4,
-   "targetCount": 6,
-   "linkCount": 10
+   "targetCount": 6
   },
   {
    "DATAID": "3048562",
@@ -4113,13 +4113,13 @@
      "target": "QE.T.14.01"
     }
    ],
+   "linkCount": 2,
    "links": [
     "QE.A.4.01",
     "QE.T.14.01"
    ],
    "sourceCount": 2,
-   "targetCount": 2,
-   "linkCount": 4
+   "targetCount": 2
   },
   {
    "DATAID": "113854",
@@ -4186,12 +4186,12 @@
      "target": "QI.B.8.01"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QI.B.8.01"
    ],
    "sourceCount": 1,
-   "targetCount": 0,
-   "linkCount": 1
+   "targetCount": 0
   },
   {
    "DATAID": "113967",
@@ -4263,12 +4263,12 @@
      "target": "QE.A.1.01"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.A.1.01"
    ],
    "sourceCount": 1,
-   "targetCount": 11,
-   "linkCount": 12
+   "targetCount": 11
   },
   {
    "DATAID": "2983820",
@@ -4356,13 +4356,13 @@
      "target": "QE.J.92.02"
     }
    ],
+   "linkCount": 2,
    "links": [
     "QI.B.217.06",
     "QE.J.92.02"
    ],
    "sourceCount": 2,
-   "targetCount": 2,
-   "linkCount": 4
+   "targetCount": 2
   },
   {
    "DATAID": "114076",
@@ -4526,12 +4526,12 @@
      "target": "QI.S.263.08"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QI.S.263.08"
    ],
    "sourceCount": 1,
-   "targetCount": 11,
-   "linkCount": 12
+   "targetCount": 11
   },
   {
    "DATAID": "114089",
@@ -4565,10 +4565,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 4,
-   "linkCount": 4
+   "targetCount": 4
   },
   {
    "DATAID": "114090",
@@ -4628,12 +4628,12 @@
      "target": "QE.A.4.01"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.A.4.01"
    ],
    "sourceCount": 1,
-   "targetCount": 5,
-   "linkCount": 6
+   "targetCount": 5
   },
   {
    "DATAID": "113858",
@@ -4697,12 +4697,12 @@
      "target": "QE.A.4.01"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.A.4.01"
    ],
    "sourceCount": 1,
-   "targetCount": 0,
-   "linkCount": 1
+   "targetCount": 0
   },
   {
    "DATAID": "113977",
@@ -4765,12 +4765,12 @@
      "target": "QE.T.14.01"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.T.14.01"
    ],
    "sourceCount": 1,
-   "targetCount": 0,
-   "linkCount": 1
+   "targetCount": 0
   },
   {
    "DATAID": "3001252",
@@ -4839,13 +4839,13 @@
      "target": "QI.B.136.03"
     }
    ],
+   "linkCount": 2,
    "links": [
     "QE.T.14.01",
     "QI.B.136.03"
    ],
    "sourceCount": 2,
-   "targetCount": 7,
-   "linkCount": 9
+   "targetCount": 7
   },
   {
    "DATAID": "3026605",
@@ -4965,6 +4965,7 @@
      "target": "QE.T.14.01"
     }
    ],
+   "linkCount": 5,
    "links": [
     "QI.A.318.13",
     "QE.A.4.01",
@@ -4973,8 +4974,7 @@
     "QE.T.14.01"
    ],
    "sourceCount": 5,
-   "targetCount": 1,
-   "linkCount": 6
+   "targetCount": 1
   },
   {
    "DATAID": "113993",
@@ -5027,12 +5027,12 @@
      "target": "QI.J.79.02"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QI.J.79.02"
    ],
    "sourceCount": 1,
-   "targetCount": 0,
-   "linkCount": 1
+   "targetCount": 0
   },
   {
    "DATAID": "2812924",
@@ -5162,6 +5162,7 @@
      "target": "QI.J.180.04"
     }
    ],
+   "linkCount": 5,
    "links": [
     "QI.S.244.08",
     "QE.A.1.01",
@@ -5170,8 +5171,7 @@
     "QI.J.180.04"
    ],
    "sourceCount": 5,
-   "targetCount": 8,
-   "linkCount": 13
+   "targetCount": 8
   },
   {
    "DATAID": "113994",
@@ -5264,13 +5264,13 @@
      "target": "QE.A.69.02"
     }
    ],
+   "linkCount": 2,
    "links": [
     "QI.A.58.02",
     "QE.A.69.02"
    ],
    "sourceCount": 2,
-   "targetCount": 2,
-   "linkCount": 4
+   "targetCount": 2
   },
   {
    "DATAID": "113868",
@@ -5371,14 +5371,14 @@
      "target": "QE.E.131.11"
     }
    ],
+   "linkCount": 3,
    "links": [
     "QE.I.99.03",
     "QE.S.101.03",
     "QE.E.131.11"
    ],
    "sourceCount": 3,
-   "targetCount": 2,
-   "linkCount": 5
+   "targetCount": 2
   },
   {
    "DATAID": "114111",
@@ -5458,13 +5458,13 @@
      "target": "QE.R.100.03"
     }
    ],
+   "linkCount": 2,
    "links": [
     "QE.I.99.03",
     "QE.R.100.03"
    ],
    "sourceCount": 2,
-   "targetCount": 2,
-   "linkCount": 4
+   "targetCount": 2
   },
   {
    "DATAID": "114112",
@@ -5536,10 +5536,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "2971894",
@@ -5618,13 +5618,13 @@
      "target": "QI.U.287.10"
     }
    ],
+   "linkCount": 2,
    "links": [
     "QI.M.286.10",
     "QI.U.287.10"
    ],
    "sourceCount": 2,
-   "targetCount": 6,
-   "linkCount": 8
+   "targetCount": 6
   },
   {
    "DATAID": "113995",
@@ -5718,12 +5718,12 @@
      "target": "QI.D.232.07"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QI.D.232.07"
    ],
    "sourceCount": 1,
-   "targetCount": 30,
-   "linkCount": 31
+   "targetCount": 30
   },
   {
    "DATAID": "113997",
@@ -5794,12 +5794,12 @@
      "target": "QE.T.14.01"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.T.14.01"
    ],
    "sourceCount": 1,
-   "targetCount": 2,
-   "linkCount": 3
+   "targetCount": 2
   },
   {
    "DATAID": "113883",
@@ -5878,14 +5878,14 @@
      "target": "QI.T.56.01"
     }
    ],
+   "linkCount": 3,
    "links": [
     "QI.B.55.01",
     "QI.A.54.01",
     "QI.T.56.01"
    ],
    "sourceCount": 3,
-   "targetCount": 1,
-   "linkCount": 4
+   "targetCount": 1
   },
   {
    "DATAID": "114113",
@@ -5951,12 +5951,12 @@
      "target": "QE.A.4.01"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.A.4.01"
    ],
    "sourceCount": 1,
-   "targetCount": 0,
-   "linkCount": 1
+   "targetCount": 0
   },
   {
    "name": "International Islamic Relief Organization, Philippines, branch offices (no longer listed)",
@@ -5976,10 +5976,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 2,
-   "linkCount": 2
+   "targetCount": 2
   },
   {
    "name": "Aid Organization of the Ulema, Pakistan (no longer listed)",
@@ -6042,14 +6042,14 @@
      "target": "QE.J.19.01"
     }
    ],
+   "linkCount": 3,
    "links": [
     "QE.A.5.01",
     "QI.L.30.01",
     "QE.J.19.01"
    ],
    "sourceCount": 6,
-   "targetCount": 3,
-   "linkCount": 9
+   "targetCount": 3
   },
   {
    "name": "Benevolence International Fund  (no longer listed)",
@@ -6069,10 +6069,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 1,
-   "linkCount": 1
+   "targetCount": 1
   },
   {
    "DATAID": "111900",
@@ -6138,10 +6138,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "111513",
@@ -6215,10 +6215,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "2827788",
@@ -6311,13 +6311,13 @@
      "target": "QE.L.11.01"
     }
    ],
+   "linkCount": 2,
    "links": [
     "QE.A.4.01",
     "QE.L.11.01"
    ],
    "sourceCount": 2,
-   "targetCount": 0,
-   "linkCount": 2
+   "targetCount": 0
   },
   {
    "DATAID": "2959427",
@@ -6444,12 +6444,12 @@
      "target": "QE.A.4.01"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.A.4.01"
    ],
    "sourceCount": 1,
-   "targetCount": 0,
-   "linkCount": 1
+   "targetCount": 0
   },
   {
    "DATAID": "111533",
@@ -6532,12 +6532,12 @@
      "target": "QE.A.3.01"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.A.3.01"
    ],
    "sourceCount": 1,
-   "targetCount": 0,
-   "linkCount": 1
+   "targetCount": 0
   },
   {
    "DATAID": "111449",
@@ -6598,10 +6598,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 1,
-   "linkCount": 1
+   "targetCount": 1
   },
   {
    "DATAID": "111395",
@@ -6739,10 +6739,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "111450",
@@ -6804,10 +6804,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "111514",
@@ -6861,10 +6861,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "2972739",
@@ -7009,13 +7009,13 @@
      "target": "QI.A.86.03"
     }
    ],
+   "linkCount": 2,
    "links": [
     "QE.J.92.02",
     "QI.A.86.03"
    ],
    "sourceCount": 2,
-   "targetCount": 0,
-   "linkCount": 2
+   "targetCount": 0
   },
   {
    "DATAID": "2786469",
@@ -7100,12 +7100,12 @@
      "target": "QE.L.11.01"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.L.11.01"
    ],
    "sourceCount": 1,
-   "targetCount": 0,
-   "linkCount": 1
+   "targetCount": 0
   },
   {
    "DATAID": "111451",
@@ -7201,10 +7201,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 1,
-   "linkCount": 1
+   "targetCount": 1
   },
   {
    "DATAID": "2983651",
@@ -7335,6 +7335,7 @@
      "target": "QE.A.121.05"
     }
    ],
+   "linkCount": 4,
    "links": [
     "QE.A.4.01",
     "QE.H.130.10",
@@ -7342,8 +7343,7 @@
     "QE.A.121.05"
    ],
    "sourceCount": 4,
-   "targetCount": 0,
-   "linkCount": 4
+   "targetCount": 0
   },
   {
    "DATAID": "2922613",
@@ -7455,10 +7455,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "111640",
@@ -7583,14 +7583,14 @@
      "target": "QI.A.132.03"
     }
    ],
+   "linkCount": 3,
    "links": [
     "QI.S.128.03",
     "QI.M.129.03",
     "QI.A.132.03"
    ],
    "sourceCount": 3,
-   "targetCount": 3,
-   "linkCount": 6
+   "targetCount": 3
   },
   {
    "DATAID": "2758287",
@@ -7669,12 +7669,12 @@
      "target": "QI.A.201.05"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QI.A.201.05"
    ],
    "sourceCount": 1,
-   "targetCount": 1,
-   "linkCount": 2
+   "targetCount": 1
   },
   {
    "DATAID": "111732",
@@ -7766,12 +7766,12 @@
      "target": "QI.A.224.06"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QI.A.224.06"
    ],
    "sourceCount": 1,
-   "targetCount": 1,
-   "linkCount": 2
+   "targetCount": 1
   },
   {
    "DATAID": "2983821",
@@ -7904,6 +7904,7 @@
      "target": "QE.J.92.02"
     }
    ],
+   "linkCount": 4,
    "links": [
     "QE.J.133.12",
     "QI.B.217.06",
@@ -7911,8 +7912,7 @@
     "QE.J.92.02"
    ],
    "sourceCount": 4,
-   "targetCount": 0,
-   "linkCount": 4
+   "targetCount": 0
   },
   {
    "DATAID": "3012677",
@@ -8010,13 +8010,13 @@
      "target": "QE.M.134.12"
     }
    ],
+   "linkCount": 2,
    "links": [
     "QE.T.14.01",
     "QE.M.134.12"
    ],
    "sourceCount": 2,
-   "targetCount": 1,
-   "linkCount": 3
+   "targetCount": 1
   },
   {
    "DATAID": "111953",
@@ -8085,10 +8085,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "2762998",
@@ -8156,10 +8156,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 1,
-   "linkCount": 1
+   "targetCount": 1
   },
   {
    "DATAID": "2797952",
@@ -8260,10 +8260,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "111498",
@@ -8331,10 +8331,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "111641",
@@ -8419,12 +8419,12 @@
      "target": "QE.A.3.01"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.A.3.01"
    ],
    "sourceCount": 1,
-   "targetCount": 0,
-   "linkCount": 1
+   "targetCount": 0
   },
   {
    "DATAID": "111733",
@@ -8490,10 +8490,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "3002734",
@@ -8568,12 +8568,12 @@
      "target": "QE.T.14.01"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.T.14.01"
    ],
    "sourceCount": 1,
-   "targetCount": 0,
-   "linkCount": 1
+   "targetCount": 0
   },
   {
    "DATAID": "111500",
@@ -8646,10 +8646,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "3152553",
@@ -8795,14 +8795,14 @@
      "target": "QI.A.299.11"
     }
    ],
+   "linkCount": 3,
    "links": [
     "QE.J.115.04",
     "QI.A.317.13",
     "QI.A.299.11"
    ],
    "sourceCount": 3,
-   "targetCount": 0,
-   "linkCount": 3
+   "targetCount": 0
   },
   {
    "DATAID": "3152437",
@@ -8890,12 +8890,12 @@
      "target": "QE.A.137.14"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.A.137.14"
    ],
    "sourceCount": 1,
-   "targetCount": 0,
-   "linkCount": 1
+   "targetCount": 0
   },
   {
    "DATAID": "3162065",
@@ -8982,12 +8982,12 @@
      "target": "QE.A.137.14"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.A.137.14"
    ],
    "sourceCount": 1,
-   "targetCount": 0,
-   "linkCount": 1
+   "targetCount": 0
   },
   {
    "DATAID": "2797951",
@@ -9083,10 +9083,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "3152863",
@@ -9204,6 +9204,7 @@
      "target": "QI.A.317.13"
     }
    ],
+   "linkCount": 4,
    "links": [
     "QE.J.115.04",
     "QE.A.137.14",
@@ -9211,8 +9212,7 @@
     "QI.A.317.13"
    ],
    "sourceCount": 4,
-   "targetCount": 0,
-   "linkCount": 4
+   "targetCount": 0
   },
   {
    "DATAID": "111734",
@@ -9321,10 +9321,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "3162066",
@@ -9430,13 +9430,13 @@
      "target": "QE.J.115.04"
     }
    ],
+   "linkCount": 2,
    "links": [
     "QE.A.4.01",
     "QE.J.115.04"
    ],
    "sourceCount": 2,
-   "targetCount": 0,
-   "linkCount": 2
+   "targetCount": 0
   },
   {
    "DATAID": "111735",
@@ -9540,12 +9540,12 @@
      "target": "QE.A.143.14"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.A.143.14"
    ],
    "sourceCount": 1,
-   "targetCount": 0,
-   "linkCount": 1
+   "targetCount": 0
   },
   {
    "DATAID": "111736",
@@ -9622,10 +9622,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 2,
-   "linkCount": 2
+   "targetCount": 2
   },
   {
    "DATAID": "2962519",
@@ -9818,6 +9818,7 @@
      "target": "QI.A.283.10"
     }
    ],
+   "linkCount": 5,
    "links": [
     "QE.A.129.10",
     "QI.A.274.10",
@@ -9826,8 +9827,7 @@
     "QI.A.283.10"
    ],
    "sourceCount": 5,
-   "targetCount": 0,
-   "linkCount": 5
+   "targetCount": 0
   },
   {
    "DATAID": "2913655",
@@ -9916,10 +9916,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 1,
-   "linkCount": 1
+   "targetCount": 1
   },
   {
    "DATAID": "111834",
@@ -10013,10 +10013,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "3152650",
@@ -10102,13 +10102,13 @@
      "target": "QE.A.137.14"
     }
    ],
+   "linkCount": 2,
    "links": [
     "QE.A.4.01",
     "QE.A.137.14"
    ],
    "sourceCount": 2,
-   "targetCount": 0,
-   "linkCount": 2
+   "targetCount": 0
   },
   {
    "DATAID": "111835",
@@ -10249,10 +10249,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "2786246",
@@ -10366,13 +10366,13 @@
      "target": "QE.A.4.01"
     }
    ],
+   "linkCount": 2,
    "links": [
     "QE.L.11.01",
     "QE.A.4.01"
    ],
    "sourceCount": 2,
-   "targetCount": 0,
-   "linkCount": 2
+   "targetCount": 0
   },
   {
    "DATAID": "111836",
@@ -10473,14 +10473,14 @@
      "target": "QI.A.130.03"
     }
    ],
+   "linkCount": 3,
    "links": [
     "QI.S.128.03",
     "QI.M.129.03",
     "QI.A.130.03"
    ],
    "sourceCount": 3,
-   "targetCount": 3,
-   "linkCount": 6
+   "targetCount": 3
   },
   {
    "DATAID": "2894441",
@@ -10613,12 +10613,12 @@
      "target": "QE.J.115.04"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.J.115.04"
    ],
    "sourceCount": 1,
-   "targetCount": 0,
-   "linkCount": 1
+   "targetCount": 0
   },
   {
    "DATAID": "111837",
@@ -10695,10 +10695,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "111763",
@@ -10789,10 +10789,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "2760967",
@@ -10848,10 +10848,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "2968403",
@@ -10994,14 +10994,14 @@
      "target": "QI.A.288.10"
     }
    ],
+   "linkCount": 3,
    "links": [
     "QE.A.129.10",
     "QI.A.282.10",
     "QI.A.288.10"
    ],
    "sourceCount": 3,
-   "targetCount": 0,
-   "linkCount": 3
+   "targetCount": 0
   },
   {
    "DATAID": "3161940",
@@ -11081,12 +11081,12 @@
      "target": "QE.A.144.14"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.A.144.14"
    ],
    "sourceCount": 1,
-   "targetCount": 0,
-   "linkCount": 1
+   "targetCount": 0
   },
   {
    "DATAID": "111857",
@@ -11174,10 +11174,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "111916",
@@ -11282,10 +11282,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "2827324",
@@ -11380,12 +11380,12 @@
      "target": "QE.A.4.01"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.A.4.01"
    ],
    "sourceCount": 1,
-   "targetCount": 0,
-   "linkCount": 1
+   "targetCount": 0
   },
   {
    "DATAID": "111917",
@@ -11494,10 +11494,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "111496",
@@ -11557,10 +11557,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "2975516",
@@ -11651,12 +11651,12 @@
      "target": "QE.J.115.04"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.J.115.04"
    ],
    "sourceCount": 1,
-   "targetCount": 4,
-   "linkCount": 5
+   "targetCount": 4
   },
   {
    "DATAID": "2973988",
@@ -11788,13 +11788,13 @@
      "target": "QE.H.130.10"
     }
    ],
+   "linkCount": 2,
    "links": [
     "QE.L.96.03",
     "QE.H.130.10"
    ],
    "sourceCount": 2,
-   "targetCount": 0,
-   "linkCount": 2
+   "targetCount": 0
   },
   {
    "DATAID": "111918",
@@ -11878,12 +11878,12 @@
      "target": "QE.A.3.01"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.A.3.01"
    ],
    "sourceCount": 1,
-   "targetCount": 0,
-   "linkCount": 1
+   "targetCount": 0
   },
   {
    "DATAID": "3152864",
@@ -12024,12 +12024,12 @@
      "target": "QE.A.137.14"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.A.137.14"
    ],
    "sourceCount": 1,
-   "targetCount": 0,
-   "linkCount": 1
+   "targetCount": 0
   },
   {
    "DATAID": "111784",
@@ -12094,10 +12094,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "3020633",
@@ -12215,6 +12215,7 @@
      "target": "QI.A.6.01"
     }
    ],
+   "linkCount": 4,
    "links": [
     "QE.A.137.14",
     "QE.J.115.04",
@@ -12222,8 +12223,7 @@
     "QI.A.6.01"
    ],
    "sourceCount": 4,
-   "targetCount": 2,
-   "linkCount": 6
+   "targetCount": 2
   },
   {
    "DATAID": "111902",
@@ -12304,13 +12304,13 @@
      "target": "QE.A.4.01"
     }
    ],
+   "linkCount": 2,
    "links": [
     "QE.A.69.02",
     "QE.A.4.01"
    ],
    "sourceCount": 2,
-   "targetCount": 2,
-   "linkCount": 4
+   "targetCount": 2
   },
   {
    "DATAID": "112016",
@@ -12391,12 +12391,12 @@
      "target": "QE.T.90.02"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.T.90.02"
    ],
    "sourceCount": 1,
-   "targetCount": 0,
-   "linkCount": 1
+   "targetCount": 0
   },
   {
    "DATAID": "112017",
@@ -12473,10 +12473,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "3162146",
@@ -12580,12 +12580,12 @@
      "target": "QE.A.137.14"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.A.137.14"
    ],
    "sourceCount": 1,
-   "targetCount": 0,
-   "linkCount": 1
+   "targetCount": 0
   },
   {
    "DATAID": "3026942",
@@ -12793,6 +12793,7 @@
      "target": "QE.T.14.01"
     }
    ],
+   "linkCount": 6,
    "links": [
     "QE.A.4.01",
     "QE.A.3.01",
@@ -12802,8 +12803,7 @@
     "QE.T.14.01"
    ],
    "sourceCount": 6,
-   "targetCount": 1,
-   "linkCount": 7
+   "targetCount": 1
   },
   {
    "DATAID": "2786785",
@@ -12955,12 +12955,12 @@
      "target": "QE.A.1.01"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.A.1.01"
    ],
    "sourceCount": 1,
-   "targetCount": 0,
-   "linkCount": 1
+   "targetCount": 0
   },
   {
    "DATAID": "111925",
@@ -13034,10 +13034,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "111785",
@@ -13105,10 +13105,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "111920",
@@ -13190,10 +13190,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "3029127",
@@ -13296,10 +13296,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "3161939",
@@ -13397,12 +13397,12 @@
      "target": "QE.A.4.01"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.A.4.01"
    ],
    "sourceCount": 1,
-   "targetCount": 0,
-   "linkCount": 1
+   "targetCount": 0
   },
   {
    "DATAID": "2892251",
@@ -13482,12 +13482,12 @@
      "target": "QI.A.277.10"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QI.A.277.10"
    ],
    "sourceCount": 1,
-   "targetCount": 1,
-   "linkCount": 2
+   "targetCount": 1
   },
   {
    "DATAID": "2892252",
@@ -13571,12 +13571,12 @@
      "target": "QI.A.276.10"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QI.A.276.10"
    ],
    "sourceCount": 1,
-   "targetCount": 1,
-   "linkCount": 2
+   "targetCount": 1
   },
   {
    "DATAID": "3162145",
@@ -13697,13 +13697,13 @@
      "target": "QE.J.115.04"
     }
    ],
+   "linkCount": 2,
    "links": [
     "QE.A.4.01",
     "QE.J.115.04"
    ],
    "sourceCount": 2,
-   "targetCount": 0,
-   "linkCount": 2
+   "targetCount": 0
   },
   {
    "DATAID": "113223",
@@ -13769,10 +13769,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "2863393",
@@ -13880,12 +13880,12 @@
      "target": "QE.A.4.01"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.A.4.01"
    ],
    "sourceCount": 1,
-   "targetCount": 0,
-   "linkCount": 1
+   "targetCount": 0
   },
   {
    "DATAID": "3161941",
@@ -14018,13 +14018,13 @@
      "target": "QE.A.4.01"
     }
    ],
+   "linkCount": 2,
    "links": [
     "QE.J.115.04",
     "QE.A.4.01"
    ],
    "sourceCount": 2,
-   "targetCount": 0,
-   "linkCount": 2
+   "targetCount": 0
   },
   {
    "DATAID": "2903810",
@@ -14110,10 +14110,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 2,
-   "linkCount": 2
+   "targetCount": 2
   },
   {
    "DATAID": "111786",
@@ -14199,10 +14199,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "2881835",
@@ -14378,14 +14378,14 @@
      "target": "QE.A.4.01"
     }
    ],
+   "linkCount": 3,
    "links": [
     "QI.A.274.10",
     "QE.A.129.10",
     "QE.A.4.01"
    ],
    "sourceCount": 3,
-   "targetCount": 3,
-   "linkCount": 6
+   "targetCount": 3
   },
   {
    "DATAID": "2827659",
@@ -14483,12 +14483,12 @@
      "target": "QE.A.4.01"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.A.4.01"
    ],
    "sourceCount": 1,
-   "targetCount": 0,
-   "linkCount": 1
+   "targetCount": 0
   },
   {
    "DATAID": "2787013",
@@ -14619,12 +14619,12 @@
      "target": "QE.A.1.01"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.A.1.01"
    ],
    "sourceCount": 1,
-   "targetCount": 0,
-   "linkCount": 1
+   "targetCount": 0
   },
   {
    "DATAID": "112022",
@@ -14691,10 +14691,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "112023",
@@ -14862,10 +14862,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "112024",
@@ -14982,12 +14982,12 @@
      "target": "QE.A.2.01"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.A.2.01"
    ],
    "sourceCount": 1,
-   "targetCount": 1,
-   "linkCount": 2
+   "targetCount": 1
   },
   {
    "DATAID": "2881834",
@@ -15153,6 +15153,7 @@
      "target": "QI.B.8.01"
     }
    ],
+   "linkCount": 4,
    "links": [
     "QE.A.129.10",
     "QI.A.275.10",
@@ -15160,8 +15161,7 @@
     "QI.B.8.01"
    ],
    "sourceCount": 4,
-   "targetCount": 3,
-   "linkCount": 7
+   "targetCount": 3
   },
   {
    "DATAID": "112026",
@@ -15226,10 +15226,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "112027",
@@ -15305,10 +15305,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 1,
-   "linkCount": 1
+   "targetCount": 1
   },
   {
    "DATAID": "3162382",
@@ -15408,12 +15408,12 @@
      "target": "QE.A.4.01"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.A.4.01"
    ],
    "sourceCount": 1,
-   "targetCount": 0,
-   "linkCount": 1
+   "targetCount": 0
   },
   {
    "DATAID": "111923",
@@ -15575,13 +15575,13 @@
      "target": "QI.B.8.01"
     }
    ],
+   "linkCount": 2,
    "links": [
     "QE.A.3.01",
     "QI.B.8.01"
    ],
    "sourceCount": 2,
-   "targetCount": 5,
-   "linkCount": 7
+   "targetCount": 5
   },
   {
    "DATAID": "111924",
@@ -15658,10 +15658,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "112028",
@@ -15773,12 +15773,12 @@
      "target": "QE.T.14.01"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.T.14.01"
    ],
    "sourceCount": 1,
-   "targetCount": 0,
-   "linkCount": 1
+   "targetCount": 0
   },
   {
    "DATAID": "111790",
@@ -15841,10 +15841,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "3152862",
@@ -15937,12 +15937,12 @@
      "target": "QE.A.137.14"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.A.137.14"
    ],
    "sourceCount": 1,
-   "targetCount": 0,
-   "linkCount": 1
+   "targetCount": 0
   },
   {
    "DATAID": "111704",
@@ -16024,10 +16024,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "2832890",
@@ -16138,12 +16138,12 @@
      "target": "QE.L.118.05"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.L.118.05"
    ],
    "sourceCount": 1,
-   "targetCount": 0,
-   "linkCount": 1
+   "targetCount": 0
   },
   {
    "DATAID": "111944",
@@ -16276,12 +16276,12 @@
      "target": "QE.A.2.01"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.A.2.01"
    ],
    "sourceCount": 1,
-   "targetCount": 1,
-   "linkCount": 2
+   "targetCount": 1
   },
   {
    "DATAID": "2813253",
@@ -16382,12 +16382,12 @@
      "target": "QE.R.128.08"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.R.128.08"
    ],
    "sourceCount": 1,
-   "targetCount": 0,
-   "linkCount": 1
+   "targetCount": 0
   },
   {
    "DATAID": "2983638",
@@ -16508,6 +16508,7 @@
      "target": "QE.J.92.02"
     }
    ],
+   "linkCount": 4,
    "links": [
     "QI.B.217.06",
     "QI.B.293.11",
@@ -16515,8 +16516,7 @@
     "QE.J.92.02"
    ],
    "sourceCount": 4,
-   "targetCount": 0,
-   "linkCount": 4
+   "targetCount": 0
   },
   {
    "DATAID": "111792",
@@ -16579,10 +16579,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 4,
-   "linkCount": 4
+   "targetCount": 4
   },
   {
    "DATAID": "2971675",
@@ -16733,13 +16733,13 @@
      "target": "QI.B.217.06"
     }
    ],
+   "linkCount": 2,
    "links": [
     "QE.J.92.02",
     "QI.B.217.06"
    ],
    "sourceCount": 2,
-   "targetCount": 2,
-   "linkCount": 4
+   "targetCount": 2
   },
   {
    "DATAID": "112030",
@@ -16840,12 +16840,12 @@
      "target": "QE.A.4.01"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.A.4.01"
    ],
    "sourceCount": 1,
-   "targetCount": 0,
-   "linkCount": 1
+   "targetCount": 0
   },
   {
    "DATAID": "2832991",
@@ -16939,12 +16939,12 @@
      "target": "QE.L.118.05"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.L.118.05"
    ],
    "sourceCount": 1,
-   "targetCount": 0,
-   "linkCount": 1
+   "targetCount": 0
   },
   {
    "DATAID": "2999481",
@@ -17057,13 +17057,13 @@
      "target": "QI.R.303.12"
     }
    ],
+   "linkCount": 2,
    "links": [
     "QE.I.10.01",
     "QI.R.303.12"
    ],
    "sourceCount": 2,
-   "targetCount": 0,
-   "linkCount": 2
+   "targetCount": 0
   },
   {
    "DATAID": "112032",
@@ -17155,10 +17155,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 1,
-   "linkCount": 1
+   "targetCount": 1
   },
   {
    "DATAID": "2902221",
@@ -17236,12 +17236,12 @@
      "target": "QE.T.14.01"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.T.14.01"
    ],
    "sourceCount": 1,
-   "targetCount": 0,
-   "linkCount": 1
+   "targetCount": 0
   },
   {
    "DATAID": "111794",
@@ -17398,6 +17398,7 @@
      "target": "QE.M.141.14"
     }
    ],
+   "linkCount": 4,
    "links": [
     "QE.T.14.01",
     "QE.M.139.14",
@@ -17405,8 +17406,7 @@
     "QE.M.141.14"
    ],
    "sourceCount": 4,
-   "targetCount": 5,
-   "linkCount": 9
+   "targetCount": 5
   },
   {
    "DATAID": "3162144",
@@ -17515,13 +17515,13 @@
      "target": "QE.A.143.14"
     }
    ],
+   "linkCount": 2,
    "links": [
     "QE.T.90.02",
     "QE.A.143.14"
    ],
    "sourceCount": 2,
-   "targetCount": 1,
-   "linkCount": 3
+   "targetCount": 1
   },
   {
    "DATAID": "2983834",
@@ -17637,13 +17637,13 @@
      "target": "QI.S.263.08"
     }
    ],
+   "linkCount": 2,
    "links": [
     "QE.L.118.05",
     "QI.S.263.08"
    ],
    "sourceCount": 2,
-   "targetCount": 0,
-   "linkCount": 2
+   "targetCount": 0
   },
   {
    "DATAID": "111943",
@@ -17764,10 +17764,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "111942",
@@ -17806,10 +17806,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "112034",
@@ -17887,10 +17887,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "111798",
@@ -17955,10 +17955,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "111799",
@@ -18036,10 +18036,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "2999482",
@@ -18130,12 +18130,12 @@
      "target": "QE.T.132.11"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.T.132.11"
    ],
    "sourceCount": 1,
-   "targetCount": 0,
-   "linkCount": 1
+   "targetCount": 0
   },
   {
    "DATAID": "111800",
@@ -18201,10 +18201,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "2982105",
@@ -18313,13 +18313,13 @@
      "target": "QI.C.301.12"
     }
    ],
+   "linkCount": 2,
    "links": [
     "QE.I.10.01",
     "QI.C.301.12"
    ],
    "sourceCount": 2,
-   "targetCount": 1,
-   "linkCount": 3
+   "targetCount": 1
   },
   {
    "DATAID": "2981652",
@@ -18428,13 +18428,13 @@
      "target": "QI.C.300.12"
     }
    ],
+   "linkCount": 2,
    "links": [
     "QE.I.10.01",
     "QI.C.300.12"
    ],
    "sourceCount": 2,
-   "targetCount": 1,
-   "linkCount": 3
+   "targetCount": 1
   },
   {
    "DATAID": "112035",
@@ -18506,10 +18506,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "3162064",
@@ -18586,12 +18586,12 @@
      "target": "QE.A.129.10"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.A.129.10"
    ],
    "sourceCount": 1,
-   "targetCount": 0,
-   "linkCount": 1
+   "targetCount": 0
   },
   {
    "DATAID": "2816243",
@@ -18672,12 +18672,12 @@
      "target": "QE.T.14.01"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.T.14.01"
    ],
    "sourceCount": 1,
-   "targetCount": 0,
-   "linkCount": 1
+   "targetCount": 0
   },
   {
    "DATAID": "2813036",
@@ -18793,13 +18793,13 @@
      "target": "QE.A.1.01"
     }
    ],
+   "linkCount": 2,
    "links": [
     "QE.R.128.08",
     "QE.A.1.01"
    ],
    "sourceCount": 2,
-   "targetCount": 0,
-   "linkCount": 2
+   "targetCount": 0
   },
   {
    "DATAID": "2813147",
@@ -18880,12 +18880,12 @@
      "target": "QE.R.128.08"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.R.128.08"
    ],
    "sourceCount": 1,
-   "targetCount": 0,
-   "linkCount": 1
+   "targetCount": 0
   },
   {
    "DATAID": "111803",
@@ -18963,12 +18963,12 @@
      "target": "QI.L.155.04"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QI.L.155.04"
    ],
    "sourceCount": 1,
-   "targetCount": 1,
-   "linkCount": 2
+   "targetCount": 1
   },
   {
    "DATAID": "2813149",
@@ -19099,14 +19099,14 @@
      "target": "QE.J.92.02"
     }
    ],
+   "linkCount": 3,
    "links": [
     "QE.R.128.08",
     "QE.A.1.01",
     "QE.J.92.02"
    ],
    "sourceCount": 3,
-   "targetCount": 0,
-   "linkCount": 3
+   "targetCount": 0
   },
   {
    "DATAID": "3162262",
@@ -19180,12 +19180,12 @@
      "target": "QE.A.137.14"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.A.137.14"
    ],
    "sourceCount": 1,
-   "targetCount": 0,
-   "linkCount": 1
+   "targetCount": 0
   },
   {
    "DATAID": "112037",
@@ -19273,12 +19273,12 @@
      "target": "QE.T.14.01"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.T.14.01"
    ],
    "sourceCount": 1,
-   "targetCount": 0,
-   "linkCount": 1
+   "targetCount": 0
   },
   {
    "DATAID": "2816344",
@@ -19354,12 +19354,12 @@
      "target": "QE.T.14.01"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.T.14.01"
    ],
    "sourceCount": 1,
-   "targetCount": 0,
-   "linkCount": 1
+   "targetCount": 0
   },
   {
    "DATAID": "2785476",
@@ -19433,12 +19433,12 @@
      "target": "QE.T.14.01"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.T.14.01"
    ],
    "sourceCount": 1,
-   "targetCount": 3,
-   "linkCount": 4
+   "targetCount": 3
   },
   {
    "DATAID": "112038",
@@ -19560,10 +19560,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "112039",
@@ -19620,10 +19620,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "111804",
@@ -19679,10 +19679,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "111947",
@@ -19746,10 +19746,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "112040",
@@ -19805,10 +19805,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "2830919",
@@ -19889,10 +19889,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "111951",
@@ -19959,10 +19959,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "111805",
@@ -20025,10 +20025,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "111806",
@@ -20115,10 +20115,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "112042",
@@ -20193,10 +20193,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "112043",
@@ -20273,10 +20273,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "111807",
@@ -20397,10 +20397,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "2816345",
@@ -20495,13 +20495,13 @@
      "target": "QI.D.232.07"
     }
    ],
+   "linkCount": 2,
    "links": [
     "QE.T.14.01",
     "QI.D.232.07"
    ],
    "sourceCount": 2,
-   "targetCount": 0,
-   "linkCount": 2
+   "targetCount": 0
   },
   {
    "DATAID": "2830250",
@@ -20641,14 +20641,14 @@
      "target": "QI.Y.261.08"
     }
    ],
+   "linkCount": 3,
    "links": [
     "QE.I.119.05",
     "QI.S.260.08",
     "QI.Y.261.08"
    ],
    "sourceCount": 3,
-   "targetCount": 2,
-   "linkCount": 5
+   "targetCount": 2
   },
   {
    "DATAID": "112044",
@@ -20801,10 +20801,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "2816565",
@@ -20896,12 +20896,12 @@
      "target": "QE.T.14.01"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.T.14.01"
    ],
    "sourceCount": 1,
-   "targetCount": 0,
-   "linkCount": 1
+   "targetCount": 0
   },
   {
    "DATAID": "3162147",
@@ -20966,12 +20966,12 @@
      "target": "QE.A.137.14"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.A.137.14"
    ],
    "sourceCount": 1,
-   "targetCount": 0,
-   "linkCount": 1
+   "targetCount": 0
   },
   {
    "DATAID": "111952",
@@ -21063,12 +21063,12 @@
      "target": "QI.I.87.03"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QI.I.87.03"
    ],
    "sourceCount": 1,
-   "targetCount": 1,
-   "linkCount": 2
+   "targetCount": 1
   },
   {
    "DATAID": "111919",
@@ -21179,12 +21179,12 @@
      "target": "QI.B.8.01"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QI.B.8.01"
    ],
    "sourceCount": 1,
-   "targetCount": 0,
-   "linkCount": 1
+   "targetCount": 0
   },
   {
    "DATAID": "112033",
@@ -21267,10 +21267,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "111810",
@@ -21326,10 +21326,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "112075",
@@ -21401,10 +21401,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "2854925",
@@ -21534,12 +21534,12 @@
      "target": "QE.E.88.02"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.E.88.02"
    ],
    "sourceCount": 1,
-   "targetCount": 0,
-   "linkCount": 1
+   "targetCount": 0
   },
   {
    "DATAID": "112077",
@@ -21613,10 +21613,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "112078",
@@ -21698,10 +21698,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "2758185",
@@ -21760,10 +21760,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "112135",
@@ -21865,12 +21865,12 @@
      "target": "QI.B.8.01"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QI.B.8.01"
    ],
    "sourceCount": 1,
-   "targetCount": 0,
-   "linkCount": 1
+   "targetCount": 0
   },
   {
    "DATAID": "112079",
@@ -21993,12 +21993,12 @@
      "target": "QE.A.3.01"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.A.3.01"
    ],
    "sourceCount": 1,
-   "targetCount": 0,
-   "linkCount": 1
+   "targetCount": 0
   },
   {
    "DATAID": "112166",
@@ -22094,10 +22094,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "2983973",
@@ -22192,12 +22192,12 @@
      "target": "QE.L.118.05"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.L.118.05"
    ],
    "sourceCount": 1,
-   "targetCount": 0,
-   "linkCount": 1
+   "targetCount": 0
   },
   {
    "DATAID": "112001",
@@ -22314,13 +22314,13 @@
      "target": "QI.G.218.06"
     }
    ],
+   "linkCount": 2,
    "links": [
     "QE.J.92.02",
     "QI.G.218.06"
    ],
    "sourceCount": 2,
-   "targetCount": 1,
-   "linkCount": 3
+   "targetCount": 1
   },
   {
    "DATAID": "3035478",
@@ -22390,12 +22390,12 @@
      "target": "QE.L.96.03"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.L.96.03"
    ],
    "sourceCount": 1,
-   "targetCount": 0,
-   "linkCount": 1
+   "targetCount": 0
   },
   {
    "DATAID": "112099",
@@ -22458,10 +22458,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 2,
-   "linkCount": 2
+   "targetCount": 2
   },
   {
    "DATAID": "112100",
@@ -22564,10 +22564,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "112007",
@@ -22628,10 +22628,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "112248",
@@ -22694,10 +22694,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "2982423",
@@ -22808,12 +22808,12 @@
      "target": "QE.I.119.05"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.I.119.05"
    ],
    "sourceCount": 1,
-   "targetCount": 0,
-   "linkCount": 1
+   "targetCount": 0
   },
   {
    "DATAID": "112138",
@@ -23037,10 +23037,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "2983746",
@@ -23149,12 +23149,12 @@
      "target": "QE.A.4.01"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.A.4.01"
    ],
    "sourceCount": 1,
-   "targetCount": 0,
-   "linkCount": 1
+   "targetCount": 0
   },
   {
    "DATAID": "3161942",
@@ -23236,12 +23236,12 @@
      "target": "QE.A.137.14"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.A.137.14"
    ],
    "sourceCount": 1,
-   "targetCount": 0,
-   "linkCount": 1
+   "targetCount": 0
   },
   {
    "DATAID": "112270",
@@ -23299,10 +23299,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "3162261",
@@ -23380,13 +23380,13 @@
      "target": "QE.A.4.01"
     }
    ],
+   "linkCount": 2,
    "links": [
     "QE.J.115.04",
     "QE.A.4.01"
    ],
    "sourceCount": 2,
-   "targetCount": 0,
-   "linkCount": 2
+   "targetCount": 0
   },
   {
    "DATAID": "112483",
@@ -23452,10 +23452,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "3026710",
@@ -23532,12 +23532,12 @@
      "target": "QE.M.134.12"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.M.134.12"
    ],
    "sourceCount": 1,
-   "targetCount": 0,
-   "linkCount": 1
+   "targetCount": 0
   },
   {
    "DATAID": "111796",
@@ -23629,10 +23629,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "2832887",
@@ -23737,12 +23737,12 @@
      "target": "QE.L.118.05"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.L.118.05"
    ],
    "sourceCount": 1,
-   "targetCount": 0,
-   "linkCount": 1
+   "targetCount": 0
   },
   {
    "DATAID": "2813150",
@@ -23914,14 +23914,14 @@
      "target": "QE.I.126.06"
     }
    ],
+   "linkCount": 3,
    "links": [
     "QE.R.128.08",
     "QI.J.180.04",
     "QE.I.126.06"
    ],
    "sourceCount": 3,
-   "targetCount": 0,
-   "linkCount": 3
+   "targetCount": 0
   },
   {
    "DATAID": "112494",
@@ -23997,12 +23997,12 @@
      "target": "QI.D.164.04"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QI.D.164.04"
    ],
    "sourceCount": 1,
-   "targetCount": 1,
-   "linkCount": 2
+   "targetCount": 1
   },
   {
    "DATAID": "2936490",
@@ -24076,12 +24076,12 @@
      "target": "QE.T.132.11"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.T.132.11"
    ],
    "sourceCount": 3,
-   "targetCount": 1,
-   "linkCount": 4
+   "targetCount": 1
   },
   {
    "DATAID": "112364",
@@ -24164,10 +24164,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "111783",
@@ -24257,12 +24257,12 @@
      "target": "QE.A.98.03"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.A.98.03"
    ],
    "sourceCount": 1,
-   "targetCount": 0,
-   "linkCount": 1
+   "targetCount": 0
   },
   {
    "DATAID": "113442",
@@ -24338,10 +24338,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "112378",
@@ -24393,10 +24393,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "112379",
@@ -24614,14 +24614,14 @@
      "target": "QI.A.132.03"
     }
    ],
+   "linkCount": 3,
    "links": [
     "QI.S.128.03",
     "QI.A.130.03",
     "QI.A.132.03"
    ],
    "sourceCount": 3,
-   "targetCount": 3,
-   "linkCount": 6
+   "targetCount": 3
   },
   {
    "DATAID": "2797841",
@@ -24726,10 +24726,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "2863574",
@@ -24800,12 +24800,12 @@
      "target": "QE.L.118.05"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.L.118.05"
    ],
    "sourceCount": 1,
-   "targetCount": 0,
-   "linkCount": 1
+   "targetCount": 0
   },
   {
    "DATAID": "113211",
@@ -24858,10 +24858,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "113313",
@@ -24947,10 +24947,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "113212",
@@ -25040,13 +25040,13 @@
      "target": "QE.A.3.01"
     }
    ],
+   "linkCount": 2,
    "links": [
     "QE.A.4.01",
     "QE.A.3.01"
    ],
    "sourceCount": 2,
-   "targetCount": 0,
-   "linkCount": 2
+   "targetCount": 0
   },
   {
    "DATAID": "2901762",
@@ -25129,12 +25129,12 @@
      "target": "QE.T.14.01"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.T.14.01"
    ],
    "sourceCount": 1,
-   "targetCount": 0,
-   "linkCount": 1
+   "targetCount": 0
   },
   {
    "DATAID": "3012888",
@@ -25254,14 +25254,14 @@
      "target": "QI.B.136.03"
     }
    ],
+   "linkCount": 3,
    "links": [
     "QE.M.134.12",
     "QE.T.14.01",
     "QI.B.136.03"
    ],
    "sourceCount": 3,
-   "targetCount": 0,
-   "linkCount": 3
+   "targetCount": 0
   },
   {
    "DATAID": "3013119",
@@ -25366,13 +25366,13 @@
      "target": "QE.T.14.01"
     }
    ],
+   "linkCount": 2,
    "links": [
     "QE.M.134.12",
     "QE.T.14.01"
    ],
    "sourceCount": 2,
-   "targetCount": 0,
-   "linkCount": 2
+   "targetCount": 0
   },
   {
    "DATAID": "2974555",
@@ -25486,13 +25486,13 @@
      "target": "QE.T.14.01"
     }
    ],
+   "linkCount": 2,
    "links": [
     "QE.A.4.01",
     "QE.T.14.01"
    ],
    "sourceCount": 2,
-   "targetCount": 0,
-   "linkCount": 2
+   "targetCount": 0
   },
   {
    "DATAID": "2812923",
@@ -25587,12 +25587,12 @@
      "target": "QE.R.128.08"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.R.128.08"
    ],
    "sourceCount": 1,
-   "targetCount": 0,
-   "linkCount": 1
+   "targetCount": 0
   },
   {
    "DATAID": "2971762",
@@ -25709,13 +25709,13 @@
      "target": "QE.A.1.01"
     }
    ],
+   "linkCount": 2,
    "links": [
     "QE.J.92.02",
     "QE.A.1.01"
    ],
    "sourceCount": 2,
-   "targetCount": 0,
-   "linkCount": 2
+   "targetCount": 0
   },
   {
    "DATAID": "2863362",
@@ -25822,13 +25822,13 @@
      "target": "QE.A.4.01"
     }
    ],
+   "linkCount": 2,
    "links": [
     "QE.L.118.05",
     "QE.A.4.01"
    ],
    "sourceCount": 2,
-   "targetCount": 0,
-   "linkCount": 2
+   "targetCount": 0
   },
   {
    "DATAID": "2974860",
@@ -25971,12 +25971,12 @@
      "target": "QE.A.4.01"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.A.4.01"
    ],
    "sourceCount": 1,
-   "targetCount": 0,
-   "linkCount": 1
+   "targetCount": 0
   },
   {
    "DATAID": "2983791",
@@ -26089,13 +26089,13 @@
      "target": "QE.A.4.01"
     }
    ],
+   "linkCount": 2,
    "links": [
     "QE.I.10.01",
     "QE.A.4.01"
    ],
    "sourceCount": 2,
-   "targetCount": 1,
-   "linkCount": 3
+   "targetCount": 1
   },
   {
    "DATAID": "113214",
@@ -26166,10 +26166,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "111429",
@@ -26255,12 +26255,12 @@
      "target": "QE.A.98.03"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.A.98.03"
    ],
    "sourceCount": 1,
-   "targetCount": 0,
-   "linkCount": 1
+   "targetCount": 0
   },
   {
    "DATAID": "113322",
@@ -26328,10 +26328,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "113435",
@@ -26449,10 +26449,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "113436",
@@ -26525,10 +26525,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "113215",
@@ -26601,10 +26601,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "111497",
@@ -26688,12 +26688,12 @@
      "target": "QI.B.8.01"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QI.B.8.01"
    ],
    "sourceCount": 1,
-   "targetCount": 0,
-   "linkCount": 1
+   "targetCount": 0
   },
   {
    "DATAID": "111660",
@@ -26804,12 +26804,12 @@
      "target": "QE.A.4.01"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.A.4.01"
    ],
    "sourceCount": 1,
-   "targetCount": 0,
-   "linkCount": 1
+   "targetCount": 0
   },
   {
    "DATAID": "2833107",
@@ -26927,12 +26927,12 @@
      "target": "QE.L.118.05"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.L.118.05"
    ],
    "sourceCount": 1,
-   "targetCount": 2,
-   "linkCount": 3
+   "targetCount": 2
   },
   {
    "DATAID": "113323",
@@ -26999,10 +26999,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 1,
-   "linkCount": 1
+   "targetCount": 1
   },
   {
    "DATAID": "2758395",
@@ -27067,10 +27067,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "113317",
@@ -27171,10 +27171,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "2813148",
@@ -27302,13 +27302,13 @@
      "target": "QE.A.1.01"
     }
    ],
+   "linkCount": 2,
    "links": [
     "QE.R.128.08",
     "QE.A.1.01"
    ],
    "sourceCount": 2,
-   "targetCount": 1,
-   "linkCount": 3
+   "targetCount": 1
   },
   {
    "DATAID": "113219",
@@ -27402,12 +27402,12 @@
      "target": "QI.B.8.01"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QI.B.8.01"
    ],
    "sourceCount": 1,
-   "targetCount": 0,
-   "linkCount": 1
+   "targetCount": 0
   },
   {
    "DATAID": "2830001",
@@ -27528,14 +27528,14 @@
      "target": "QI.Y.261.08"
     }
    ],
+   "linkCount": 3,
    "links": [
     "QE.I.119.05",
     "QI.G.259.08",
     "QI.Y.261.08"
    ],
    "sourceCount": 3,
-   "targetCount": 2,
-   "linkCount": 5
+   "targetCount": 2
   },
   {
    "DATAID": "113324",
@@ -27650,14 +27650,14 @@
      "target": "QI.A.132.03"
     }
    ],
+   "linkCount": 3,
    "links": [
     "QI.M.129.03",
     "QI.A.130.03",
     "QI.A.132.03"
    ],
    "sourceCount": 3,
-   "targetCount": 3,
-   "linkCount": 6
+   "targetCount": 3
   },
   {
    "DATAID": "3150494",
@@ -27760,12 +27760,12 @@
      "target": "QE.B.138.14"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.B.138.14"
    ],
    "sourceCount": 1,
-   "targetCount": 1,
-   "linkCount": 2
+   "targetCount": 1
   },
   {
    "DATAID": "111782",
@@ -27834,10 +27834,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "113220",
@@ -27896,10 +27896,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "113439",
@@ -27973,10 +27973,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "113222",
@@ -28051,10 +28051,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "111639",
@@ -28193,14 +28193,14 @@
      "target": "QE.L.11.01"
     }
    ],
+   "linkCount": 3,
    "links": [
     "QE.A.69.02",
     "QE.R.70.02",
     "QE.L.11.01"
    ],
    "sourceCount": 3,
-   "targetCount": 0,
-   "linkCount": 3
+   "targetCount": 0
   },
   {
    "DATAID": "2813362",
@@ -28319,14 +28319,14 @@
      "target": "QE.J.92.02"
     }
    ],
+   "linkCount": 3,
    "links": [
     "QE.R.128.08",
     "QE.A.1.01",
     "QE.J.92.02"
    ],
    "sourceCount": 3,
-   "targetCount": 0,
-   "linkCount": 3
+   "targetCount": 0
   },
   {
    "DATAID": "113440",
@@ -28397,12 +28397,12 @@
      "target": "QE.U.68.01"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.U.68.01"
    ],
    "sourceCount": 1,
-   "targetCount": 1,
-   "linkCount": 2
+   "targetCount": 1
   },
   {
    "DATAID": "2960872",
@@ -28454,10 +28454,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 1,
-   "linkCount": 1
+   "targetCount": 1
   },
   {
    "DATAID": "112283",
@@ -28552,10 +28552,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "113328",
@@ -28633,10 +28633,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "2830354",
@@ -28742,14 +28742,14 @@
      "target": "QI.S.260.08"
     }
    ],
+   "linkCount": 3,
    "links": [
     "QE.I.119.05",
     "QI.G.259.08",
     "QI.S.260.08"
    ],
    "sourceCount": 3,
-   "targetCount": 2,
-   "linkCount": 5
+   "targetCount": 2
   },
   {
    "DATAID": "112285",
@@ -28827,12 +28827,12 @@
      "target": "QE.A.98.03"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.A.98.03"
    ],
    "sourceCount": 1,
-   "targetCount": 0,
-   "linkCount": 1
+   "targetCount": 0
   },
   {
    "DATAID": "112021",
@@ -28953,10 +28953,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "111922",
@@ -29047,10 +29047,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "DATAID": "113330",
@@ -29145,12 +29145,12 @@
      "target": "QE.T.14.01"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.T.14.01"
    ],
    "sourceCount": 1,
-   "targetCount": 0,
-   "linkCount": 1
+   "targetCount": 0
   },
   {
    "DATAID": "2758288",
@@ -29278,12 +29278,12 @@
      "target": "QE.L.11.01"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.L.11.01"
    ],
    "sourceCount": 1,
-   "targetCount": 0,
-   "linkCount": 1
+   "targetCount": 0
   },
   {
    "DATAID": "113444",
@@ -29359,10 +29359,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 0,
-   "linkCount": 0
+   "targetCount": 0
   },
   {
    "name": "Fahd Mohammed Ahmed al-Quso (no longer listed)",
@@ -29420,10 +29420,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 1,
-   "linkCount": 1
+   "targetCount": 1
   },
   {
    "name": "Usama Bin Laden (no longer listed)",
@@ -29481,10 +29481,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 7,
-   "linkCount": 7
+   "targetCount": 7
   },
   {
    "name": "Wa&apos;el Hamza Abd al-Fatah Julaidan (no longer listed)",
@@ -29542,10 +29542,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 1,
-   "linkCount": 1
+   "targetCount": 1
   },
   {
    "DATAID": "empty004",
@@ -29620,12 +29620,12 @@
      "target": "QE.T.132.11"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.T.132.11"
    ],
    "sourceCount": 2,
-   "targetCount": 1,
-   "linkCount": 3
+   "targetCount": 1
   },
   {
    "DATAID": "empty005",
@@ -29700,12 +29700,12 @@
      "target": "QE.T.132.11"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.T.132.11"
    ],
    "sourceCount": 3,
-   "targetCount": 1,
-   "linkCount": 4
+   "targetCount": 1
   },
   {
    "DATAID": "empty006",
@@ -29793,13 +29793,13 @@
      "target": "QE.A.73.02"
     }
    ],
+   "linkCount": 2,
    "links": [
     "QE.A.5.01",
     "QE.A.73.02"
    ],
    "sourceCount": 4,
-   "targetCount": 3,
-   "linkCount": 7
+   "targetCount": 3
   },
   {
    "DATAID": "empty007",
@@ -29857,10 +29857,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 1,
-   "linkCount": 1
+   "targetCount": 1
   },
   {
    "DATAID": "empty008",
@@ -29918,10 +29918,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 1,
-   "linkCount": 1
+   "targetCount": 1
   },
   {
    "name": "International Islamic Relief Organization, Philippines, branch offices (no longer listed)",
@@ -29941,10 +29941,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 2,
-   "linkCount": 2
+   "targetCount": 2
   },
   {
    "name": "Aid Organization of the Ulema, Pakistan (no longer listed)",
@@ -30007,14 +30007,14 @@
      "target": "QE.J.19.01"
     }
    ],
+   "linkCount": 3,
    "links": [
     "QE.A.5.01",
     "QI.L.30.01",
     "QE.J.19.01"
    ],
    "sourceCount": 6,
-   "targetCount": 3,
-   "linkCount": 9
+   "targetCount": 3
   },
   {
    "name": "Benevolence International Fund  (no longer listed)",
@@ -30034,10 +30034,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 1,
-   "linkCount": 1
+   "targetCount": 1
   },
   {
    "name": "Fahd Mohammed Ahmed al-Quso (no longer listed)",
@@ -30095,10 +30095,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 1,
-   "linkCount": 1
+   "targetCount": 1
   },
   {
    "name": "Usama Bin Laden (no longer listed)",
@@ -30156,10 +30156,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 7,
-   "linkCount": 7
+   "targetCount": 7
   },
   {
    "name": "Wa&apos;el Hamza Abd al-Fatah Julaidan (no longer listed)",
@@ -30217,10 +30217,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 1,
-   "linkCount": 1
+   "targetCount": 1
   },
   {
    "DATAID": "empty004",
@@ -30295,12 +30295,12 @@
      "target": "QE.T.132.11"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.T.132.11"
    ],
    "sourceCount": 2,
-   "targetCount": 1,
-   "linkCount": 3
+   "targetCount": 1
   },
   {
    "DATAID": "empty005",
@@ -30375,12 +30375,12 @@
      "target": "QE.T.132.11"
     }
    ],
+   "linkCount": 1,
    "links": [
     "QE.T.132.11"
    ],
    "sourceCount": 3,
-   "targetCount": 1,
-   "linkCount": 4
+   "targetCount": 1
   },
   {
    "DATAID": "empty006",
@@ -30468,13 +30468,13 @@
      "target": "QE.A.73.02"
     }
    ],
+   "linkCount": 2,
    "links": [
     "QE.A.5.01",
     "QE.A.73.02"
    ],
    "sourceCount": 4,
-   "targetCount": 3,
-   "linkCount": 7
+   "targetCount": 3
   },
   {
    "DATAID": "empty007",
@@ -30532,10 +30532,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 1,
-   "linkCount": 1
+   "targetCount": 1
   },
   {
    "DATAID": "empty008",
@@ -30593,10 +30593,10 @@
     }
    },
    "connections": [],
+   "linkCount": 0,
    "links": [],
    "sourceCount": 0,
-   "targetCount": 1,
-   "linkCount": 1
+   "targetCount": 1
   }
  ],
  "dateGenerated": "Sunday, November 23, 2014",

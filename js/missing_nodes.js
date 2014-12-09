@@ -4,10 +4,10 @@
 
 var getMissingEnts = function() {
   return missing_ents;
-}
+};
 var getMissingIndivs = function() {
   return missing_indivs;
-}
+};
 
 
 var missing_nodes = [{

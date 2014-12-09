@@ -1,4 +1,4 @@
-// docs.js
+// makeDocs.js
 // add html to nodes
 //==========================
 
@@ -27,6 +27,7 @@ var async = require('async'),
 var counter = 0;
 // var numObjectsToShow = 2;
 var data = {};
+var nodes;
 // var generatedFileDateString;
 var Set = require("backpack-node").collections.Set;
 // var Bag = require("backpack-node").collections.Bag;
@@ -124,52 +125,54 @@ var get_html_docs = function () {
 var getHTMLDocs = function (nodes, config) {
   nodes.forEach(function (node) {
     var nameId = node.id;
-    var docFileName = "./data/" + nameId + ".mkdn";
+    var markdownFileName = "./data/markdown/" + nameId + ".mkdn";
     var type;
     if (node.indiv0OrEnt1 == 0) {
-
       node.type = "Individual";
     } else {
       node.type = "Entity";
     }
-    if (config['types'][type]) {
-      type = config['types'][type]['long'];
-    }
-    var markdownContent = "## " + node.name + "*" + type + "*\n\n";
-    if (fileExists(docFileName)) {
+  //  if (config['types'][type]) {
+  //    type = config['types'][type]['long'];
+  //  }
+    var markdownContent = "## " + node.name + "* node.id = " + node.id + "* node.type = " + node.type + "*\n\n";
+    if (fileExists(markdownFileName)) {
       markdownContent += "### Documentation\n\n";
-      markdownContent += readFileSync(docFileName); //file_get_contents(docFileName);
+      markdownContent += readFileSync(markdownFileName); //file_get_contents(docFileName);
     } else {
-      markdownContent += "<div class=\"alert alert-warning\">35 No documentation for this object</div>";
+      markdownContent += "<div class=\"alert alert-warning\">No documentation for this object.</div>";
     }
     if (node) {
       // error_log("\n46 file exists,  obj = 'obj'", 3, "my-errors.log");
       markdownContent += "\n\n";
-      markdownContent += get_depends_markdown('Depends on', node['depends']);
-      markdownContent += get_depends_markdown('Depended on by', node['dependedOnBy']);
+      markdownContent += get_depends_markdown('Linked to', node.links);
+      // markdownContent += get_depends_markdown('Depended on by', node['dependedOnBy']);
     }
     // Use {{object_id}} to link to an object
+/*
     var arr = explode('{{', markdownContent);
     markdownContent = arr[0];
     var i, pieces, name, id_string, name_esc, clazz, errors = [];
+
     for (i = 1; i < arr.length; i++) {
       pieces = explode('}}', arr[i], 2);
       name = pieces[0];
       id_string = get_id_string(name);
       name_esc = str_replace('_', '\_', name);
       clazz = 'select-object';
-      if (!(isset(data[name]))) {
+      if (!(data.name)) {
         clazz += ' missing';
         if (consoleLog) {
           console.log("\n ", __filename, "line", __line, "; ", arr.name, " links to unrecognized object ", name);
         }
       }
-      markdownContent += "<a href=\"#id_string\" class=\"class\" data-name=\"name\">name_esc</a>";
+      markdownContent += "<a href='#id_string' class='class' data-name='name'>name_esc</a>";
       markdownContent += pieces[1];
       if (consoleLog) {
         console.log("\n ", __filename, "line", __line, ";  markdownContent = ", markdownContent);
       }
     }
+    */
     html = mdToHtml(markdownContent); //   markdownToHTML(markdownContent);
     // IE can't handle <pre><code> (it eats all the line breaks)
     html = str_replace('<pre><code>', '<pre>', html);
@@ -179,15 +182,15 @@ var getHTMLDocs = function (nodes, config) {
     }
     node.docs = html;
 //    return html;
-  })
+  });
   return nodes;
 };
-var get_depends_markdown = function (header, arr) {
-  markdownContent = "### $header";
-  if ((arr) && ((typeof arr) === 'Array') && count(arr)) {
+var get_depends_markdown = function (header, linkIdsArr) {
+  markdownContent = "### " + header;
+  if ((linkIdsArr) && (linkIdsArr.length > 0)) {
     markdownContent += "\n\n";
-    arr.forEach(function (name) {
-      markdownContent += "* {{" + name + "}}\n";
+    linkIdsArr.forEach(function (linkId) {
+      markdownContent += "* " + linkId + "\n";
     });
     markdownContent += "\n";
   } else {
@@ -569,10 +572,9 @@ function file_get_contents(url, flags, context, offset, maxLen) {
 }
 
 // console.log( markdown.toHTML( "Hello *World*!" ) );
-
 var markdownToHTML = function (markdownContent) {
   return markdown.toHTML(markdownContent);
-}
+};
 
 var markdownToHTML00 = function (markdownContent, outputFileName) {
   var result;
@@ -636,7 +638,7 @@ var mdToHtml = function (markdownContent) {
   var html = md.renderJsonML(md.toHTMLTree(tree));
   console.log(html);
   return html;
-}
+};
 
 module.exports = {
   get_html_docs: get_html_docs

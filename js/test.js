@@ -24,5 +24,5 @@ var docs = require('./makeDocs.js');
 // collect.convertXMLToJson();
 
 //removefile.removeAFile();
-makeDocs.get_html_docs();
+docs.get_html_docs();
 // getAqXmlFile.getXMLFile();
