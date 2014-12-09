@@ -18,7 +18,7 @@ var setupData = require('./setupData.js');
 var makeDocs = require('./makeDocs.js');
 var filewalker = require('./filewalker.js');
 var logger = require('./libs/logger.js');
-// var linenums = require('./linenums.js');
+var linenums = require('./linenums.js');
 var functionCount = 0;
 
 var consoleLog = false;

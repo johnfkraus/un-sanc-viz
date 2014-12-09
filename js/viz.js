@@ -479,11 +479,11 @@ Network = function () {
       // console.log('showProps(d, "nodes") = ');
       // console.log(showProps(d, "nodes"));
       //result = parseInt(d.linkCount, 10);
-      result = parseInt(d.linkCount, 10);
-      d.radius = d.linkCount;
+      result = parseInt(d.linkSetCount, 10);
+      d.radius = d.linkSetCount;
       // console.log("viz.js 197 parseInt(d.linkCount, 10) = ");
       // console.log(result);
-      return parseInt(d.linkCount, 10);
+      return parseInt(d.linkSetCount, 10);
     });
     // console.log("countExtent = ");
     // console.log(countExtent);
@@ -512,10 +512,10 @@ Network = function () {
         // console.log(showProps(n, "n"));
       });
 
-      //return n.radius = circleRadius(n.linkCount);
-      // return n.radius = (n.linkCount);
+      //return n.radius = circleRadius(n.linkSetCount);
+      // return n.radius = (n.linkSetCount);
       // determine radius of each node circle
-      return n.radius = circleRadius(Math.pow(n.linkCount * 3, 0.9));
+      return n.radius = circleRadius(Math.pow(n.linkSetCount * 3, 0.9));
     });
     nodesMap = mapNodes(data.nodes);
     count = 0;
@@ -563,12 +563,12 @@ Network = function () {
     countExtent = d3.extent(data.nodes, function (d) {
       // console.log('showProps(d, "nodes") = ');
       // console.log(showProps(d, "nodes"));
-      //result = parseInt(d.linkCount, 10);
-      result = parseInt(d.linkCount, 10);
-      d.radius = d.linkCount;
-      // console.log("viz.js 197 parseInt(d.linkCount, 10) = ");
+      //result = parseInt(d.linkSetCount, 10);
+      result = parseInt(d.linkSetCount, 10);
+      d.radius = d.linkSetCount;
+      // console.log("viz.js 197 parseInt(d.linkSetCount, 10) = ");
       // console.log(result);
-      return parseInt(d.linkCount, 10);
+      return parseInt(d.linkSetCount, 10);
     });
     // console.log("countExtent = ");
     // console.log(countExtent);
@@ -582,8 +582,8 @@ Network = function () {
 //      var randomnumber;
       //     n.x = randomnumber = Math.floor(Math.random() * width);
       //     n.y = randomnumber = Math.floor(Math.random() * height);
-      // console.log("243 circleRadius(n.linkCount) = ");
-      // console.log(circleRadius(n.linkCount));
+      // console.log("243 circleRadius(n.linkSetCount) = ");
+      // console.log(circleRadius(n.linkSetCount));
       // console.log("245 n.weight = ");
       // console.log(n.weight);
       // console.log("245 data.nodes = ");
@@ -592,10 +592,10 @@ Network = function () {
       // console.log(data.nodes.weight);
 
       // console.log('250 data.nodes.forEach(function (n  = ');
-      //return n.radius = circleRadius(n.linkCount);
-      // return n.radius = (n.linkCount);
+      //return n.radius = circleRadius(n.linkSetCount);
+      // return n.radius = (n.linkSetCount);
       // determine radius of each node circle
-      return n.radius = circleRadius(Math.pow(n.linkCount * 3, 0.9));
+      return n.radius = circleRadius(Math.pow(n.linkSetCount * 3, 0.9));
     });
     nodesMap = mapNodes(data.nodes);
     count = 0;
@@ -667,19 +667,19 @@ Network = function () {
 //  based on current filter setting.
 //  Returns array of nodes
   filterNodes = function (allNodes) {
-    var cutoff, filteredNodes, linkCounts;
+    var cutoff, filteredNodes, linkSetCounts;
     filteredNodes = allNodes;
     if (filter === "popular" || filter === "obscure") {
-      linkCounts = allNodes.map(function (d) {
-        return d.linkCount;
+      linkSetCounts = allNodes.map(function (d) {
+        return d.linkSetCount;
       })
         .sort(d3.ascending);
-      cutoff = d3.quantile(linkCounts, 0.5);
+      cutoff = d3.quantile(linkSetCounts, 0.5);
       filteredNodes = allNodes.filter(function (n) {
         if (filter === "popular") {
-          return n.linkCount > cutoff;
+          return n.linkSetCount > cutoff;
         } else if (filter === "obscure") {
-          return n.linkCount <= cutoff;
+          return n.linkSetCount <= cutoff;
         }
       });
     }
@@ -973,7 +973,7 @@ Network = function () {
 //  particular node.
 
   strokeFor = function (d) {
-    return d3.rgb(nodeColors(d.linkCount))
+    return d3.rgb(nodeColors(d.linkSetCount))
       .darker()
       .toString();
   };
@@ -982,7 +982,7 @@ Network = function () {
     var content;
     content = '<p class="main"><span>' + d.name + '</span></p>';
     content += '<hr class="tooltip-hr">';
-    content += '<p class="main"><span>ID: ' + d.id + '&nbsp;&nbsp; Links: ' + d.linkCount + '</span></p>';
+    content += '<p class="main"><span>ID: ' + d.id + '&nbsp;&nbsp; Links: ' + d.linkSetCount + '</span></p>';
     if (d.natnlty) {
       content += '<hr class="tooltip-hr">';
       content += '<p class="main"><span>Nationality: ' + d.natnlty;

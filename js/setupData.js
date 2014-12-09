@@ -74,7 +74,9 @@ var fixData = function () {
         console.log("\n ", __filename, "line", "line", __line, "; missing_indivs = ", missing_indivs);
       }
       callback();
-    }, function (callback) {
+    },
+    // comment
+    function (callback) {
       // rearrange the data into arrays for d3
       if (consoleLog) {
         console.log("\n ", __filename, "line", __line, "; function 2#:", ++functionCount, "; re-arrange data");
@@ -100,7 +102,7 @@ var fixData = function () {
       generatedFileDateString = dateFormat(dateAqListGenerated, "fullDate");
       var message = "Collected AQList.xml labeled as generated on: " + dateAqListGeneratedString + " [" + dateAqListGenerated + "]";
       logger.log_message(message);
-      if (true) {
+      if (consoleLog) {
         // <!-- date generated -->
         console.log("\n ", __filename, "line", __line, "; typeof conList = ", (typeof conList), "; dateAqListGeneratedString = ", dateAqListGeneratedString, "; dateAqListGenerated = ", dateAqListGenerated);
       }
@@ -177,93 +179,93 @@ var fixData = function () {
       callback();
     },
 
+    // entities and indivs were in separate arrays; the two arrays are merged into a single array of 'nodes'
     function (callback) {
-      // entities and indivs were in separate arrays; the two arrays are merged into a single array of 'nodes'
       if (consoleLog) {
         console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount, "; put ents and indivs into nodes array");
         console.log("\n ", __filename, "line", __line, "; typeof data = ", typeof data);
       }
-// SET
-      // https://www.npmjs.org/package/backpack-node
-      counter = 0;
-      var setOfNodes = new Set();
-      data.ents.forEach(function (ent) {
-        counter++;
-        setOfNodes.add(ent);
-      });
-      data.indivs.forEach(function (indiv) {
-        counter++;
-        setOfNodes.add(indiv);
-      });
-      missing_ents.forEach(function (missing_ent) {
-        counter++;
-        setOfNodes.add(missing_ent);
-      });
-      missing_indivs.forEach(function (missing_indiv) {
-        counter++;
-        setOfNodes.add(missing_indiv);
-      });
-      console.log("\n ", __filename, "line", __line, "; counter = ", counter, "; setOfNodes.count = ", setOfNodes.count);
-
-      // nodeBag!
-// https://www.npmjs.org/package/backpack-node
-      var nodeBag = new Bag();
-      counter = 0;
-      data.ents.forEach(function (ent) {
-        counter++;
-        if (consoleLog) {
-          console.log("\n ", __filename, "line", __line, "; counter = ", counter, "; ent.id = ", ent.id);
-        }
-        if (!(ent.id)) {
-          ent.id = counter;
-          //var errorMessage = "no id error " + JSON.stringify(ent);
-          //throw errorMessage;
-          nodeBag.add(ent.id, ent);
-        } else {
-          nodeBag.add(ent.id, ent);
-        }
-        // console.log("\n ", __filename, "line", __line, "counter = ", counter ,"; nodeBag.length = ", nodeBag.count);
-      });
-
-      data.indivs.forEach(function (indiv) {
-        counter++;
-        if (consoleLog) {
-          console.log("\n ", __filename, "line", __line, "; counter = ", counter, "; indiv.id = ", indiv.id);
-        }
-        if (!(indiv.id)) {
-          indiv.id = counter;
-        }
-        nodeBag.add(indiv.id, indiv);
-        //       console.log("\n ", __filename, "line", __line, "counter = ", counter ,"; nodeBag.length = ", nodeBag.count);
-      });
-      missing_ents.forEach(function (missing_ent) {
-        counter++;
-        if (consoleLog) {
-          console.log("\n ", __filename, "line", __line, "; counter = ", counter, "; missing_ent.id = ", missing_ent.id);
-        }
-        if (!(missing_ent.id)) {
-          missing_ent.id = counter;
-        }
-        nodeBag.add(missing_ent.id, missing_ent);
-      });
-      missing_indivs.forEach(function (missing_indiv) {
-        counter++;
-        if (consoleLog) {
-          console.log("\n ", __filename, "line", __line, "; counter = ", counter, "; missing_indiv.id = ", missing_indiv.id);
-        }
-        if (!(missing_indiv.id)) {
-          missing_indiv.id = counter;
-        }
-        nodeBag.add(missing_indiv.id, missing_indiv);
-      });
-      console.log("\n ", __filename, "line", __line, "Bag counter = ", counter);
-//      console.log("\n ", __filename, "line", __line, "; nodeBag = ", nodeBag);
-      counter = 0;
       data.nodes = ents.concat(indivs);
       data.nodes = ents.concat(indivs);
       data.nodes = data.nodes.concat(missing_ents);
       data.nodes = data.nodes.concat(missing_indivs);
+      cleanUpRefNums(data.nodes);
+      cleanUpIds(data.nodes);
 
+      var nodes = data.nodes;
+      nodes.forEach(function (node) {
+        counter++;
+        if (consoleLog) {
+          console.log("\n ", __filename, "line", __line, "; counter = ", counter, "; ent.id = ", ent.id);
+        }
+        node.id = getCleanId(node.REFERENCE_NUMBER);
+
+      });
+      concatNames(data.nodes);
+      data.dateGenerated = generatedFileDateString; // data.CONSOLIDATED_LIST.$.dateGenerated;
+      counter = 0;
+//      data.ents = null;
+//      data.indivs = null;
+//      ents = null;
+//      indivs = null;
+      callback();
+    },
+    // save intermediate data file for debugging
+    function (callback) {
+      saveJsonFile(data, "data03consolidateNodesIntoOneArray.json");
+      callback();
+    },
+
+    // put nodes into a set
+    function (callback) {
+      if (consoleLog) {
+        console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount, "; put ents and indivs into nodes array");
+        console.log("\n ", __filename, "line", __line, "; typeof data = ", typeof data);
+      }
+      // SET
+      // https://www.npmjs.org/package/backpack-node
+      counter = 0;
+      var setOfNodes = new Set();
+      data.nodes.forEach(function (node) {
+        counter++;
+        setOfNodes.add(node);
+      });
+      console.log("\n ", __filename, "line", __line, "; counter = ", counter, "; setOfNodes.count = ", setOfNodes.count);
+      callback();
+    },
+
+    // put entities and indivs into a bag
+    // https://www.npmjs.org/package/backpack-node
+    function (callback) {
+      var nodeBag = new Bag();
+      counter = 0;
+      data.nodes.forEach(function (node) {
+        counter++;
+        if (consoleLog) {
+          console.log("\n ", __filename, "line", __line, "; counter = ", counter, "; node.id = ", node.id);
+        }
+        if (!(node.id)) {
+          node.id = "NODE" + counter;
+
+        }
+
+        nodeBag.add(node.id, node);
+        // console.log("\n ", __filename, "line", __line, "counter = ", counter ,"; nodeBag.length = ", nodeBag.count);
+      });
+
+      console.log("\n ", __filename, "line", __line, "Bag counter = ", counter);
+//      console.log("\n ", __filename, "line", __line, "; nodeBag = ", nodeBag);
+      callback();
+    },
+
+    // save intermediate data file for debugging
+    function (callback) {
+      saveJsonFile(data, "data05nodeBag.json");
+      callback();
+    },
+
+    function (callback) {
+      counter = 0;
       var myBag = new Bag();
       myBag.add(1, data.nodes[1]);
       myBag.add(2, "b");
@@ -273,11 +275,19 @@ var fixData = function () {
         console.log("Key: " + item.key);
         console.log("Value: " + item.value);
       });
+      callback();
+    },
 
+    // save intermediate data file for debugging
+    function (callback) {
+      saveJsonFile(data, "data06myBag.json");
+      callback();
+    },
+
+    function (callback) {
       var nodeBag2 = new Bag();
       counter = 0;
-      var nodes = data.nodes;
-      nodes.forEach(function (node) {
+      data.nodes.forEach(function (node) {
         counter++;
         if (consoleLog) {
           console.log("\n ", __filename, "line", __line, "; counter = ", counter, "; ent.id = ", ent.id);
@@ -288,24 +298,11 @@ var fixData = function () {
       if (consoleLog) {
         console.log("\n ", __filename, "line", __line, "nodeBag2 counter = ", counter, "; nodeBag2._map.count = ", nodeBag2._map.count);
       }
-      concatNames(data.nodes);
-      data.dateGenerated = generatedFileDateString; // data.CONSOLIDATED_LIST.$.dateGenerated;
-      counter = 0;
-      data.nodes.forEach(function (node) {
-        counter++;
-        if (counter <= numObjectsToShow) {
-          if (consoleLog) {
-            console.log("\n ", __filename, "line", __line, "; counter = ", counter, "; node = ", node);
-          }
-        }
-      });
-      data.ents = null;
-      data.indivs = null;
-      ents = null;
-      indivs = null;
       callback();
-    }, function (callback) {
-      saveJsonFile(data, "data3addMissingNodes-concatNames.json");
+    },
+    // save intermediate data file for debugging
+    function (callback) {
+      saveJsonFile(data, "data04nodebagset.json");
       callback();
     },
 
@@ -362,16 +359,6 @@ var fixData = function () {
       callback();
     },
 
-    // COUNT LINKS
-    function (callback) {
-      countLinks(data.nodes);
-      if (consoleLog) {
-        console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount, "; countLinks");
-        console.log("\n ", __filename, "line", __line, "; data.nodes[1] = ", data.nodes[1]);
-      }
-      callback();
-    },
-
     function (callback) {
       consolidateLinks(data);
       if (consoleLog) {
@@ -388,6 +375,24 @@ var fixData = function () {
       if (consoleLog) {
         console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount, "; addLinksArray(data.nodes)");
         console.log("\n ", __filename, "line", __line, "; data.nodes[1] = ", data.nodes[1]);
+      }
+      callback();
+    },
+
+    // COUNT LINKS
+    function (callback) {
+      countLinks(data.nodes);
+      if (consoleLog) {
+        console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount, "; countLinks2");
+        console.log("\n ", __filename, "line", __line, "; data.nodes[1] = ", data.nodes[1]);
+      }
+      callback();
+    },
+
+    function (callback) {
+      addLinksSet(data);
+      if (consoleLog) {
+        console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount, "; addLinkSet");
       }
       callback();
     },
@@ -423,9 +428,9 @@ var fixData = function () {
         }
       });
       callback();
-    }
-
-    , function (callback) {
+    },
+    // comment
+    function (callback) {
       if (consoleLog) {
         console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount, "; save clean json file");
       }
@@ -484,10 +489,39 @@ var cleanUpIds = function (nodes) {
       }
     }
     //  clean up indiv id for consistency;  none should have trailing period.
-    node.id = refNumRegexMatch[0];
-    if ((node.REFERENCE_NUMBER).match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/)[0] !== node.id) {
+    node.id = refNumRegexMatch[1].trim();
+    if ((node.REFERENCE_NUMBER).match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/)[1].trim() !== node.id) {
       throw "id error";
     }
+    // remove period from end of all reference numbers that have them; not all do.
+    if (counter <= numObjectsToShow) {
+      if (consoleLog) {
+        console.log("\n ", __filename, "line", __line, "; node with ids", node);
+      }
+    }
+  });
+};
+
+// some REFERENCE_NUMBERs in the source xml (including those in comments) have periods at the end; some don't; we remove all trailing periods for consistency.
+var cleanUpRefNums = function (nodes) {
+  counter = 0;
+  nodes.forEach(function (node) {
+    counter++;
+    var rawRefNum = node.REFERENCE_NUMBER.trim();
+    // remove period from end of all reference numbers that have them; not all do.
+    var refNumRegexMatch;
+    try {
+      refNumRegexMatch = (node.REFERENCE_NUMBER).match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/);
+    } catch (error) {
+
+      console.log("\n ", __filename, "line", __line, "; Error: ", error, "; node =", node, "; counter = ", counter);
+
+    }
+    //  clean up indiv id for consistency;  none should have trailing period.
+    node.REFERENCE_NUMBER = refNumRegexMatch[0].trim();
+//    if ((node.REFERENCE_NUMBER).match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/)[0] !== node.id) {
+//      throw "id error";
+//     }
     // remove period from end of all reference numbers that have them; not all do.
     if (counter <= numObjectsToShow) {
       if (consoleLog) {
@@ -505,7 +539,7 @@ var getCleanId = function (referenceNumber) {
   } catch (error) {
     console.log("\n ", __filename, "line", __line, "; Error: ", error, "; node =", node, "; counter = ", counter);
   }
-  return refNumRegexMatch[0];
+  return refNumRegexMatch[0].trim();
 };
 
 var concatNames = function (nodes) {
@@ -518,16 +552,16 @@ var concatNames = function (nodes) {
     var thirdName = node.THIRD_NAME;
     var fourthName = node.FOURTH_NAME;
     if (firstName) {
-      name = name.concat(firstName);
+      name = name.concat(firstName.trim());
     }
     if (secondName) {
-      name = name.concat(" ", secondName);
+      name = name.concat(" ", secondName.trim());
     }
     if (thirdName) {
-      name = name.concat(" ", thirdName);
+      name = name.concat(" ", thirdName.trim());
     }
     if (fourthName) {
-      name = name.concat(" ", fourthName);
+      name = name.concat(" ", fourthName.trim());
     }
     node.name = name.trim();
     if (counter <= 10) {
@@ -550,24 +584,27 @@ var createNationality = function (nodes) {
     }
   });
 };
-// create a links array in each entity/indiv containing ids of related parties
+// create an array of links within each entity/indiv containing ids of related parties
 var addLinksArray = function (nodes) {
   var comments;
   var linkRegexMatch;
   data.nodes.forEach(function (node) {
-    node.links = [];
+
+    node.linkedIds = [];
     comments = node.COMMENTS1;
     if ((typeof comments != 'undefined') && (typeof comments.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/gi) != 'undefined')) {
       linkRegexMatch = comments.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/gi);
       // if (consoleLog) { console.log("91 linkRegexMatch = ", linkRegexMatch);
       if ((typeof(linkRegexMatch) !== 'undefined') && (linkRegexMatch !== null)) {
         for (var n = 0; n < linkRegexMatch.length; n++) {
-          if (node.id === linkRegexMatch[n]) {
+          if (node.id === linkRegexMatch[n].trim()) {
+            // don't include a link from a node to itself
             if (consoleLog) {
-              console.log("node id error" + node.id + " ===  " + linkRegexMatch[n]);
+              console.log("node id error" + node.id + " ===  " + linkRegexMatch[n].trim());
+              throw "node links to itself error";
             }
           } else {
-            node.links.push(linkRegexMatch[n]);
+            node.linkedIds.push(linkRegexMatch[n].trim());
           }
         }
       }
@@ -584,9 +621,9 @@ var addConnectionIdsArray = function (nodes) {
     var connectionIds = new Set();
     node.connectedToId = [];
     comments = node.COMMENTS1;
-    if ((typeof comments != 'undefined') && (typeof comments.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/gi) != 'undefined')) {
+    if ((typeof comments !== 'undefined') && (typeof comments.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/gi) !== 'undefined')) {
       linkRegexMatch = comments.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/gi);
-      if ((typeof(linkRegexMatch) !== 'undefined') && (linkRegexMatch !== null)) {
+      if (linkRegexMatch !== null) {
         //linkRegexMatch.forEach(function(match) {
 // LOOP THROUGH EACH REGEX MATCH
         if (consoleLog) {
@@ -622,25 +659,20 @@ var addConnectionIdsArray = function (nodes) {
   });
 };
 
-// create array of connection objects with source and target
+// within each node, create array of connection objects with source and target
 var addConnectionObjectsArray = function (nodes) {
 // for each node
   var connection;
   nodes.forEach(function (node) {
     node.connections = [];
-    var id = node.id;
+    // var id = node.id;
     node.connectedToId.forEach(function (connId) {
-      if (id !== connId) {
+      if (node.id !== connId) {
         connection = {};
-        connection.source = id;
+        connection.source = node.id;
         connection.target = connId;
+        node.connections.push(connection);
       }
-      for (var c = 0; c < node.connections.length; c++) {
-        if (connId === node.connections[c]) {
-          return
-        }
-      }
-      node.connections.push(connection);
       if (consoleLog) {
         console.log("\n ", __filename, "line", __line, "; id = ", id, "; connection = ", connection);
       }
@@ -649,7 +681,7 @@ var addConnectionObjectsArray = function (nodes) {
 };
 
 // consolidate links; remove duplicates, BUT DOES IT REALLY?
-// create array of connection objects with source and target
+// create a top-level array of links containing a source and target
 var consolidateLinks = function (data) {
   // if (consoleLog) { console.log("\n ", __filename, "line",__line, "; data = ", data);
   if (consoleLog) {
@@ -658,6 +690,7 @@ var consolidateLinks = function (data) {
   }
   data.links = [];
   (data.nodes).forEach(function (node) {
+    // data.links = [];
     if ((typeof node.connections != 'undefined') && (typeof node.connections.length != 'undefined') && (node.connections.length > 0)) {
       node.connections.forEach(function (conn) {
         data.links.push(conn);
@@ -665,12 +698,43 @@ var consolidateLinks = function (data) {
     }
   });
 };
+
+// count the links
+/*
+ var countLinks2 = function (nodes) {
+ nodes.forEach(function (outerNode) {
+
+ outerNode.linkCount2 = 0;
+ var outerLoopNodeId = outerNode.id;
+
+ nodes.forEach(function (innerNode) {
+ var innerLoopNodeId = innerNode.id;
+ var innerNodeLinksIdsArray = innerNode.linkedIds;
+ if (outerLoopNodeId != innerLoopNodeId) {
+ innerNodeLinksIdsArray.forEach(function (innerNodeLinkId) {
+ if (innerNodeLinkId === outerLoopNodeId) {
+ outerNode.linkCount2++;
+ }
+ });
+ }
+ });
+
+ // if ((typeof node.connections != 'undefined') && (typeof node.connections.length != 'undefined')) {
+ // node.linkCount = node.connections.length;
+ if (consoleLog) {
+ console.log("\n ", __filename, "line", __line, "; outerNode.id = ", outerNode.id, "; outerNode.linkCount2 =  ", outerNode.linkCount2);
+ }
+
+ });
+ };
+ */
 // count the links
 var countLinks = function (nodes) {
   nodes.forEach(function (node) {
-    if ((typeof node.connections != 'undefined') && (typeof node.connections.length != 'undefined')) {
-      node.linkCount = node.connections.length;
-    }
+    node.linkCount = node.linkedIds.length;
+//    if ((typeof node.connections != 'undefined') && (typeof node.connections.length != 'undefined')) {
+//      node.linkCount = node.connections.length;
+//    }
   });
 };
 var checkTargetsExist = function (nodes, links) {
@@ -694,6 +758,45 @@ var checkTargetsExist = function (nodes, links) {
       }
       throw "missing target error";
     }
+  });
+};
+
+// put links into a set
+// https://www.npmjs.org/package/backpack-node
+
+// create an array of links within each entity/indiv containing ids of related parties
+var addLinksSet = function (data) {
+  var comments;
+  var linkRegexMatch;
+  var setOfLinks;
+var count;
+  data.nodes.forEach(function (node) {
+    node.linkSet = null;
+    // var node.linkSet;
+
+    setOfLinks = new Set();
+    data.links.forEach(function (link) {
+      if (link.source === node.id) {
+        if (link.target !== node.id) {
+          setOfLinks.add(link.target);
+        }
+      }
+      if (link.target === node.id) {
+        if (link.source !== node.id) {
+          setOfLinks.add(link.source);
+        }
+      }
+    });
+
+    if (true) {
+      console.log("\n ", __filename, "line", __line, ";  setOfLinks.count = ", setOfLinks.count);
+
+    }
+
+    node.linkSet = setOfLinks;
+    node.linkSetCount = setOfLinks.count;
+    //count = setOfLinks.count();
+
   });
 };
 
@@ -758,38 +861,6 @@ var inspectSomeArrayObjects = function (array, numOfObjectsToShow) {
     }
   });
 };
-
-// create a links array in each entity/indiv containing ids of related parties
-
-/*
-var makeCommentsWithLinks = function (nodes) {
-  var oldComments; // newComments1, newComments2;
-  var linkRegexMatch;
-  data.nodes.forEach(function (node) {
-    node.comments = "";
-    oldComments = node.COMMENTS1;
-    if ((typeof oldComments != 'undefined') && (typeof oldComments.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/gi) != 'undefined')) {
-      var newComments1 = oldComments.replace(/((Q[IE]\.[A-Z]\.\d{1,3}\.\d{2}).)/gi, '$2');
-      // var newComments2 = newComments1.replace(/((Q[IE]\.[A-Z]\.\d{1,3}\.\d{2}).)/gi, '$2');
-
-      linkRegexMatch = comments.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/gi);
-      // if (consoleLog) { console.log("91 linkRegexMatch = ", linkRegexMatch);
-      if ((typeof(linkRegexMatch) !== 'undefined') && (linkRegexMatch !== null)) {
-        for (var n = 0; n < linkRegexMatch.length; n++) {
-          if (node.id === linkRegexMatch[n]) {
-            if (consoleLog) {
-              console.log("node id error" + node.id + " ===  " + linkRegexMatch[n]);
-            }
-          } else {
-            node.links.push(linkRegexMatch[n]);
-          }
-        }
-      }
-    }
-  });
-};
-*/
-
 
 module.exports = {
   fixData: fixData

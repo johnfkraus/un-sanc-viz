@@ -39,7 +39,7 @@ var fsOptions = {
 var jsonFile = "";
 var html = "";
 var dateGenerated;
-var consoleLog = true;
+var consoleLog = false;
 
 var get_html_docs = function () {
   if (consoleLog) {
