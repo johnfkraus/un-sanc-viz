@@ -46,30 +46,29 @@
                 <div class="mainTitleDiv"><a
                         href="http://www.un.org/sc/committees/1267/AQList.xml" id="AQList.xml" target="_blank"
                         style="text-decoration: none;">U.N. Al-Qaida Sanctions List</a>
-                    <br/>Network Visualization</div>
-                <div class="noPadMar"><a href="http://www.un.org/sc/committees/1267/AQList.xml" id="AQList.xml" target="_blank"
-                        style="text-decoration: none;"><span style="font-size: 10px; line-height: 9px;" id="dateGeneratedByUN"></span></a></div>
+                    <br/>Network Visualization
+                </div>
+                <div class="noPadMar"><a href="http://www.un.org/sc/committees/1267/AQList.xml" id="AQList.xml"
+                                         target="_blank"
+                                         style="text-decoration: none;"><span style="font-size: 10px; line-height: 9px;"
+                                                                              id="dateGeneratedByUN"></span></a></div>
                 <div class="noPadMar">
                     <span style="font-size: 10px; line-height: 9px; padding-left: 2px;">A Thing by <a
                             href="mailto:john@johnfkraus.com?Subject=Cowabunga!" id="johnkraus" target="_blank"
                             style="text-decoration: none;">John Kraus</a></span>
                 </div>
-                </td>
-            <td align="center" style="padding: 4px 8px 4px 0;">
+            </td>
+            <td align="center" style="padding: 4px 8px 4px 0; display: none;">
 
-                    <a href="#" id="QE.T.14.01">QE.T.14.01</a>
-<br />
-                    <a href="#" id='QE.A.2.01'>QE.A.2.01</a>
-<br />
-                    <a href="#" id='QE.E.88.02'>QE.E.88.02</a>
-
-
-
-
+                <a href="#" id="QE.T.14.01">QE.T.14.01</a>
+                <br/>
+                <a href="#" id='QE.A.2.01'>QE.A.2.01</a>
+                <br/>
+                <a href="#" id='QE.E.88.02'>QE.E.88.02</a>
 
             </td>
             <td align="center" style="display: none;">
-                <div id="list_selection" class="control" >
+                <div id="list_selection" class="control">
                     <h3>Name</h3>
                     <select id="list_select">
                         <option value="al-qaida.json">Al-Qaida List</option>
@@ -78,7 +77,7 @@
                 </div>
             </td>
             <td align="center" style="display: none;">
-               
+
                 <div id="layouts" class="control">
                     <h3>Layout</h3>
                     <a id="force" class="active">Force Directed</a>
@@ -87,7 +86,7 @@
 
             </td>
             <td align="right" style="display: none;">
-                <div id="filters" class="control" >
+                <div id="filters" class="control">
                     <h3>Filter</h3>
                     <a id="all" class="active">All</a>
                     <a id="popular">Well-known</a>
@@ -98,29 +97,31 @@
                     <a id="songs" class="active">Names</a>
                     <a id="links">Links</a>
                 </div>
-                </td>
+            </td>
             <td>
                 <div id="searchDiv" class="control" style="padding-top: 4px;">
                     <form id="searchIdsForm" action="" method="post">
-                        <p class="searchIdsNames">Search IDs
+<div class="tableRow">
+                        <div class="searchIdsNames">Search IDs</div>
                             <input type="text" class="text-input" id="searchInputId" value=""/>
-                        </p>
+</div>
                     </form>
                     <form id="searchNamesForm" action="" method="post">
-                        <p class="searchIdsNames">Search names
+                        <div class="tableRow">
+                        <div class="searchIdsNames">Search names</div>
                             <input type="text" class="text-input" id="searchInputName" value=""/>
-                        </p>
+</div>
                     </form>
                 </div>
             </td>
 
-            <td id="highlightType" >
-                <div>Highlight Type
+            <td id="highlightType">
+                <div>Highlight Subset
                     <form id="highlight"> <!--  action="highlight"  -->
                         <input type="radio" checked name="noneEntIndiv" value="">&nbsp;None<br>
                         <input type="radio" name="noneEntIndiv" value="QE.">&nbsp;Entities<br>
-                        <input type="radio" name="noneEntIndiv" value="QI.">&nbsp;Individuals
-                        <input type="radio" name="noneEntIndiv" value="xx">&nbsp;No longer listed
+                        <input type="radio" name="noneEntIndiv" value="QI.">&nbsp;Individuals<br />
+                        <input type="radio" name="noneEntIndiv" value="xx"><span style="color: #ddd;">&nbsp;No longer listed</span>
                     </form>
                 </div>
             </td>
@@ -129,7 +130,7 @@
                     <h4>Visualization parameters</h4>
 
                     <div id="node_color" class="control" style="float: left; color: #ddd;">
-                        <h5>Node color</h5>
+                        <h5>Node<br> color</h5>
                         <select id="node_color_select" style="width: 120px; color: #ddd;">
                             <option selected="selected" value="name">Name (random)</option>
                             <option value="natnlty">Nationality</option>
@@ -189,12 +190,12 @@
         </tr>
     </table>
     <!--div id="main" role="main"-->
-        <div id="svg"></div>
-        <div id="doc-container">
-            <div id="doc" class="doc">
-                <a id="doc-close" href="#">&times;</a>
-            </div>
+    <div id="svg"></div>
+    <div id="doc-container">
+        <div id="doc" class="doc">
+            <a id="doc-close" href="#">&times;</a>
         </div>
+    </div>
     <!--/div-->
     <!-- end of #main -->
     <footer>
@@ -216,44 +217,38 @@
 
 
 <script defer src="js/plugins.js"></script>
-<!--
-<script defer src="js/script.js"></script>
--->
-<!--script src="js/libs/coffee-script.js"></script-->
 <script src="js/libs/d3.v2.js"></script>
 <script src="js/Tooltip.js"></script>
 <script src="js/Document.js"></script>
-<!-- script type="text/coffeescript" src="coffee/vis.coffee"></script-->
 <script type="text/javascript" src="js/viz.js"></script>
-
 
 <script>
 
-    $(document).ready(function(){
-    if (window.innerWidth < 1000) {
-        $('.mainTitleDiv').css('font-size', '14px');
-    } else {
-        $('.mainTitleDiv').css('font-size', '18px');
-    }
+    $(document).ready(function () {
+        if (window.innerWidth < 1000) {
+            $('.mainTitleDiv').css('font-size', '14px');
+        } else {
+            $('.mainTitleDiv').css('font-size', '18px');
+        }
 
-/*
-        var object = $("a");
+        /*
+         var object = $("a");
 
-        $.each(object, function( index, value ) {
-            console.log( index + ": " + value  );
-        });
-        var qid = "QE.E.88.02";
-        var selector = "a#"+ qid;
-        var elementId = "viz-doc";
-        var markdownUrl = "data/markdown/" + qid + ".mkdn";
-        console.log("markdownUrl = ", markdownUrl);
-        $(selector).click(function(){
-            console.log("clicked!!");
-            $.ajax({url: markdownUrl,success:function(result){
-                $("div#viz-doc").html(result);
-            }});
-        });
-        */
+         $.each(object, function( index, value ) {
+         console.log( index + ": " + value  );
+         });
+         var qid = "QE.E.88.02";
+         var selector = "a#"+ qid;
+         var elementId = "viz-doc";
+         var markdownUrl = "data/markdown/" + qid + ".mkdn";
+         console.log("markdownUrl = ", markdownUrl);
+         $(selector).click(function(){
+         console.log("clicked!!");
+         $.ajax({url: markdownUrl,success:function(result){
+         $("div#viz-doc").html(result);
+         }});
+         });
+         */
 
     });
 

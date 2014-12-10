@@ -20,7 +20,8 @@ var filewalker = require('./filewalker.js');
 var logger = require('./libs/logger.js');
 var linenums = require('./linenums.js');
 var functionCount = 0;
-
+var __filename = __filename || {};
+var __line = __line || {};
 var consoleLog = false;
 var runApp = function () {
 

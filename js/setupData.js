@@ -9,14 +9,19 @@ var missingNodes = require('./missing_nodes.js');
 var logger = require('./libs/logger.js');
 var trunc = require('./trunc.js');
 
-var async = require('async'), re = require('request-enhanced'), request = require('request'), fse = require('fs-extra'), util = require('util'), dateFormat = require('dateformat'), inspect = require('object-inspect');
+var async = require('async'),
+  re = require('request-enhanced'),
+  request = require('request'),
+  fse = require('fs-extra'),
+  util = require('util'),
+  dateFormat = require('dateformat'),
+  inspect = require('object-inspect');
 // jsonpatch = require('json-patch'),
 //parseString = require('xml2js')
 // .parseString;
-// var truncateToNumChars = 400;
 var counter = 0;
 var numObjectsToShow = 2;
-var data;
+var data = {};
 var generatedFileDateString;
 // var backbone =  require('backbone');
 var Set = require("backpack-node").collections.Set;
@@ -33,27 +38,52 @@ var fixData = function () {
     console.log("\n ", __filename, "line", __line, "; running setupData.fixData()");
   }
   var functionCount = 0;
-  // var newData = {};
-  // var aliases;
-  // var comments = "";
   var links = [];
-  // var connectedToId;
   var aliasCount = 0;
   var aliasArray = [];
   var linkRegexMatch;
   var connection;
-  // var source;
-  // var target;
   var missing_ents;
   var missing_indivs;
   var ents = [];
   var indivs = [];
+  var __filename = __filename || {};
+  var __line = __line || {};
+  var consolidatedList;
   async.series([
-
     function (callback) {
       // read "raw" unprocessed json file
       var rawJsonFileName = __dirname + "/../data/output/AQList-raw.json";
-      jsonFile = fse.readFileSync(rawJsonFileName); //, fsOptions); //, function (err, data) {
+      consolidatedList = JSON.parse(fse.readFileSync(rawJsonFileName));
+      callback();
+    },
+    function (callback) {
+      saveJsonFile(consolidatedList, "data01-loadedRaw.json");
+      callback();
+    },
+
+    function (callback) {
+      data.entities = consolidatedList.CONSOLIDATED_LIST.ENTITIES.ENTITY;
+      data.indivs = consolidatedList.CONSOLIDATED_LIST.INDIVIDUALS.INDIVIDUAL;
+      data.entities = data.entities.concat(missingNodes.getMissingEnts());
+      data.indivs = data.indivs.concat(missingNodes.getMissingIndivs());
+      // indiv0OrEnt1 1 = entity; 0 = individual
+      data.entities.forEach(function (entity) {
+        entity.indiv0OrEnt1 = 1;
+      });
+      data.indivs.forEach(function (indiv) {
+        indiv.indiv0OrEnt1 = 0;
+      });
+      data.nodes = data.indivs.concat(data.entities);
+      data.dateGenerated = consolidatedList.CONSOLIDATED_LIST.$.dateGenerated;
+      createDateGeneratedMessage();
+        delete data.entities;
+      delete data.indivs;
+      consolidatedList = null;
+      cleanUpRefNums(data.nodes);
+      cleanUpIds(data.nodes);
+//       node.id = getCleanId(node.REFERENCE_NUMBER);
+      concatNames(data.nodes);
       if (consoleLog) {
         console.log("\n ", __filename, "line", __line, "; jsonFile = \n", trunc.truncn(JSON.stringify(jsonFile), 200));
       }
@@ -61,158 +91,12 @@ var fixData = function () {
     },
 
     function (callback) {
-      saveJsonFile(JSON.parse(jsonFile), "data01-loadedRaw.json");
-      callback();
-    },
-
-    function (callback) {
-      // get missing nodes from missing_nodes.js file
-      missing_ents = missingNodes.getMissingEnts();
-      missing_indivs = missingNodes.getMissingIndivs();
-      if (consoleLog) {
-        console.log("\n ", __filename, "line", "line", __line, "; missing_ents = ", missing_ents);
-        console.log("\n ", __filename, "line", "line", __line, "; missing_indivs = ", missing_indivs);
-      }
-      callback();
-    },
-    // comment
-    function (callback) {
-      // rearrange the data into arrays for d3
-      if (consoleLog) {
-        console.log("\n ", __filename, "line", __line, "; function 2#:", ++functionCount, "; re-arrange data");
-        console.log("\n ", __filename, "line", __line, "; jsonFile = \n", trunc.n400(JSON.stringify(jsonFile)));
-        console.log("\n ", __filename, "line", __line, "; typeof jsonFile = \n", (typeof jsonFile));
-      }
-      var aliases;
-      var comments = "";
-      var connectedToId;
-      var aliasCount = 0;
-      var aliasArray = [];
-      if (consoleLog) {
-        console.log("\n ", __filename, "line", __line, "; typeof data= ", (typeof jsonFile));
-        console.log("\n ", __filename, "line", __line, ";  data.length = ", (jsonFile.length));
-      }
-      var conList = JSON.parse(jsonFile).CONSOLIDATED_LIST;
-      if (consoleLog) {
-        console.log("\n ", __filename, "line", __line, "; typeof conList = ", (typeof conList));
-      }
-      var dateAqListGeneratedString = JSON.parse(jsonFile).CONSOLIDATED_LIST.$.dateGenerated;
-      var dateAqListGenerated = new Date(dateAqListGeneratedString);
-      dateFormat.masks.friendly_display = "dddd, mmmm dS, yyyy";
-      generatedFileDateString = dateFormat(dateAqListGenerated, "fullDate");
-      var message = "Collected AQList.xml labeled as generated on: " + dateAqListGeneratedString + " [" + dateAqListGenerated + "]";
-      logger.log_message(message);
-      if (consoleLog) {
-        // <!-- date generated -->
-        console.log("\n ", __filename, "line", __line, "; typeof conList = ", (typeof conList), "; dateAqListGeneratedString = ", dateAqListGeneratedString, "; dateAqListGenerated = ", dateAqListGenerated);
-      }
-      // PROCESS ENTITIES
-      // put entities in data.ents array
-      counter = 0;
-      if (consoleLog) {
-        console.log("\n ", __filename, "line", __line, "; conList.ENTITIES.ENTITY.length = ", conList.ENTITIES.ENTITY.length);
-        console.log("\n ", __filename, "line", __line, "; conList.INDIVIDUALS.INDIVIDUAL.length = ", conList.INDIVIDUALS.INDIVIDUAL.length);
-      }
-      missing_ents.forEach(function (ent) {
-        if (consoleLog) {
-          console.log("\n ", __filename, "line", __line, "; missing_ents ent = ", ent);
-          console.log("\n ", __filename, "line", __line, "; missing_ents ent = ", ent);
-        }
-        conList.ENTITIES.ENTITY.push(ent);
-      });
-      conList.ENTITIES.ENTITY.forEach(function (ent) {
-        counter++;
-        if (counter <= numObjectsToShow) {
-          if (consoleLog) {
-            console.log("\n ", __filename, "line", __line, "; counter = ", counter, "; util.inspect(ent, false, null) = ", util.inspect(ent, false, null));
-          }
-        }
-        ents.push(ent);
-      });
-      conList.ents = ents;
-      conList.ENTITIES = null; // .ENTITY.forEach(function (ent) {
-      if (consoleLog) {
-        console.log("\n ", __filename, "line", __line, "; typeof ents = ", typeof ents);
-        console.log("\n ", __filename, "line", __line, "; ents.length = ", ents.length);
-      }
-      // put indivs in data.indivs array
-      missing_indivs.forEach(function (indiv) {
-        if (consoleLog) {
-          console.log("\n ", __filename, "line", __line, "; missing_indiv indiv = ", indiv);
-        }
-        conList.INDIVIDUALS.INDIVIDUAL.push(indiv);
-      });
-      counter = 0;
-
-      inspectSomeArrayObjects(conList.INDIVIDUALS.INDIVIDUAL, 4);
-
-      conList.INDIVIDUALS.INDIVIDUAL.forEach(function (indiv) {
-        indivs.push(indiv);
-      });
-      conList.indivs = indivs;
-      conList.INDIVIDUALS = null; //.INDIVIDUAL.forEach(function (indiv)
-      if (consoleLog) {
-        console.log("\n ", __filename, "line", __line, "; indivs.length = ", indivs.length);
-      }
-      // entities and indivs in separate arrays each go into a single array of 'nodes'
-      // create an identifier to distinguish indivs from entities
-      ents.forEach(function (ent) {
-        // 1 = entity; 0 = individual
-        ent.indiv0OrEnt1 = 1;
-      });
-      indivs.forEach(function (indiv) {
-        // 1 = entity; 0 = individual
-        indiv.indiv0OrEnt1 = 0;
-      });
-      data = conList;
-
-      if (consoleLog) {
-        console.log("\n ", __filename, "line", __line, "; ents.length = ", ents.length);
-        console.log("\n ", __filename, "line", __line, "; indivs.length = ", indivs.length);
-        console.log("\n ", __filename, "line", __line, "; typeof data = ", typeof data);
-      }
-      callback();
-    },
-
-    function (callback) {
-      saveJsonFile(data, "data2.json");
-      callback();
-    },
-
-    // entities and indivs were in separate arrays; the two arrays are merged into a single array of 'nodes'
-    function (callback) {
-      if (consoleLog) {
-        console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount, "; put ents and indivs into nodes array");
-        console.log("\n ", __filename, "line", __line, "; typeof data = ", typeof data);
-      }
-      data.nodes = ents.concat(indivs);
-      data.nodes = ents.concat(indivs);
-      data.nodes = data.nodes.concat(missing_ents);
-      data.nodes = data.nodes.concat(missing_indivs);
-      cleanUpRefNums(data.nodes);
-      cleanUpIds(data.nodes);
-
-      var nodes = data.nodes;
-      nodes.forEach(function (node) {
-        counter++;
-        if (consoleLog) {
-          console.log("\n ", __filename, "line", __line, "; counter = ", counter, "; ent.id = ", ent.id);
-        }
-        node.id = getCleanId(node.REFERENCE_NUMBER);
-
-      });
-      concatNames(data.nodes);
-      data.dateGenerated = generatedFileDateString; // data.CONSOLIDATED_LIST.$.dateGenerated;
-      counter = 0;
-//      data.ents = null;
-//      data.indivs = null;
-//      ents = null;
-//      indivs = null;
+      saveJsonFile(data, "data02-flattened.json");
       callback();
     },
     // save intermediate data file for debugging
     function (callback) {
-      saveJsonFile(data, "data03consolidateNodesIntoOneArray.json");
+      saveJsonFile(data, "data2.json");
       callback();
     },
 
@@ -222,8 +106,7 @@ var fixData = function () {
         console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount, "; put ents and indivs into nodes array");
         console.log("\n ", __filename, "line", __line, "; typeof data = ", typeof data);
       }
-      // SET
-      // https://www.npmjs.org/package/backpack-node
+      // SET https://www.npmjs.org/package/backpack-node
       counter = 0;
       var setOfNodes = new Set();
       data.nodes.forEach(function (node) {
@@ -370,11 +253,11 @@ var fixData = function () {
     },
 
     function (callback) {
-      addLinksArray(data.nodes);
-      countSourceTarget(data.nodes, data.links);
+      //  addLinksArray(data.nodes);
+      // countSourceTarget(data.nodes, data.links);
       if (consoleLog) {
-        console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount, "; addLinksArray(data.nodes)");
-        console.log("\n ", __filename, "line", __line, "; data.nodes[1] = ", data.nodes[1]);
+        //  console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount, "; addLinksArray(data.nodes)");
+        //  console.log("\n ", __filename, "line", __line, "; data.nodes[1] = ", data.nodes[1]);
       }
       callback();
     },
@@ -390,9 +273,9 @@ var fixData = function () {
     },
 
     function (callback) {
-      addLinksSet(data);
+//      addLinksSet(data);
       if (consoleLog) {
-        console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount, "; addLinkSet");
+        //      console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount, "; addLinkSet");
       }
       callback();
     },
@@ -612,7 +495,7 @@ var addLinksArray = function (nodes) {
   });
 };
 
-// create an array of connection ids in each indiv/entity  
+// create an array of ids in each indiv/entity
 var addConnectionIdsArray = function (nodes) {
   var loopStop;
   var comments;
@@ -649,13 +532,13 @@ var addConnectionIdsArray = function (nodes) {
         console.log("\n ", __filename, "line", __line, "; node.id = ", node.id, "; node.name = ", node.name, "; has connectionIds set: ", connectionIds);
       }
     }
-    node.linkSetArray = [];
-    connectionIds.forEach(function (linkId) {
-      node.linkSetArray.push(linkId);
-    });
+//    node.linkSetArray = [];
+    //   connectionIds.forEach(function (linkId) {
+    //     node.linkSetArray.push(linkId);
+    //   });
 
-    node.connectionSet = connectionIds;
-    node.connectedToId = node.linkSetArray;
+    //   node.connectionSet = connectionIds;
+//    node.connectedToId = node.linkSetArray;
   });
 };
 
@@ -700,38 +583,9 @@ var consolidateLinks = function (data) {
 };
 
 // count the links
-/*
- var countLinks2 = function (nodes) {
- nodes.forEach(function (outerNode) {
-
- outerNode.linkCount2 = 0;
- var outerLoopNodeId = outerNode.id;
-
- nodes.forEach(function (innerNode) {
- var innerLoopNodeId = innerNode.id;
- var innerNodeLinksIdsArray = innerNode.linkedIds;
- if (outerLoopNodeId != innerLoopNodeId) {
- innerNodeLinksIdsArray.forEach(function (innerNodeLinkId) {
- if (innerNodeLinkId === outerLoopNodeId) {
- outerNode.linkCount2++;
- }
- });
- }
- });
-
- // if ((typeof node.connections != 'undefined') && (typeof node.connections.length != 'undefined')) {
- // node.linkCount = node.connections.length;
- if (consoleLog) {
- console.log("\n ", __filename, "line", __line, "; outerNode.id = ", outerNode.id, "; outerNode.linkCount2 =  ", outerNode.linkCount2);
- }
-
- });
- };
- */
-// count the links
 var countLinks = function (nodes) {
   nodes.forEach(function (node) {
-    node.linkCount = node.linkedIds.length;
+//    node.linkCount = node.linkedIds.length;
 //    if ((typeof node.connections != 'undefined') && (typeof node.connections.length != 'undefined')) {
 //      node.linkCount = node.connections.length;
 //    }
@@ -764,39 +618,31 @@ var checkTargetsExist = function (nodes, links) {
 // put links into a set
 // https://www.npmjs.org/package/backpack-node
 
-// create an array of links within each entity/indiv containing ids of related parties
-var addLinksSet = function (data) {
+// within each node create a Set() of ids of related/linked parties
+var addSourceTargetArray = function (data) {
   var comments;
   var linkRegexMatch;
-  var setOfLinks;
-var count;
+  var sourceTarget;
+  var count;
   data.nodes.forEach(function (node) {
-    node.linkSet = null;
-    // var node.linkSet;
+    node.sourceTargetArray = [];
 
-    setOfLinks = new Set();
-    data.links.forEach(function (link) {
-      if (link.source === node.id) {
-        if (link.target !== node.id) {
-          setOfLinks.add(link.target);
+    comments = node.COMMENTS1;
+    if ((typeof comments !== 'undefined') && (typeof comments.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/gi) !== 'undefined')) {
+      linkRegexMatch = comments.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/gi);
+      // if (consoleLog) { console.log("91 linkRegexMatch = ", linkRegexMatch);
+      if ((typeof(linkRegexMatch) !== 'undefined') && (linkRegexMatch !== null)) {
+        for (var n = 0; n < linkRegexMatch.length; n++) {
+          if (node.id !== linkRegexMatch[n].trim()) {
+            // don't include a link from a node to itself
+            sourceTarget = {};
+            sourceTarget.source = node.id;
+            sourceTarget.target = linkRegexMatch[n].trim();
+            data.links.push(sourceTarget);
+          }
         }
       }
-      if (link.target === node.id) {
-        if (link.source !== node.id) {
-          setOfLinks.add(link.source);
-        }
-      }
-    });
-
-    if (true) {
-      console.log("\n ", __filename, "line", __line, ";  setOfLinks.count = ", setOfLinks.count);
-
     }
-
-    node.linkSet = setOfLinks;
-    node.linkSetCount = setOfLinks.count;
-    //count = setOfLinks.count();
-
   });
 };
 
@@ -861,6 +707,19 @@ var inspectSomeArrayObjects = function (array, numOfObjectsToShow) {
     }
   });
 };
+
+var createDateGeneratedMessage = function () {
+  var dateAqListGeneratedString = data.dateGenerated;
+  var dateAqListGenerated = new Date(dateAqListGeneratedString);
+  dateFormat.masks.friendly_display = "dddd, mmmm dS, yyyy";
+  generatedFileDateString = dateFormat(dateAqListGenerated, "fullDate");
+  var message = "Collected AQList.xml labeled as generated on: " + dateAqListGeneratedString + " [" + dateAqListGenerated + "]";
+data.message = message;
+  logger.log_message(message);
+};
+
+
+
 
 module.exports = {
   fixData: fixData

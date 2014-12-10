@@ -135,7 +135,7 @@ var getHTMLDocs = function (nodes, config) {
   //  if (config['types'][type]) {
   //    type = config['types'][type]['long'];
   //  }
-    var markdownContent = "## " + node.name + "* node.id = " + node.id + "* node.type = " + node.type + "*\n\n";
+    var markdownContent = "## " + node.name + "* ID: " + node.id + "* Type: " + node.type + "\n\n";
     if (fileExists(markdownFileName)) {
       markdownContent += "### Documentation\n\n";
       markdownContent += readFileSync(markdownFileName); //file_get_contents(docFileName);
@@ -145,7 +145,7 @@ var getHTMLDocs = function (nodes, config) {
     if (node) {
       // error_log("\n46 file exists,  obj = 'obj'", 3, "my-errors.log");
       markdownContent += "\n\n";
-      markdownContent += get_depends_markdown('Linked to', node.links);
+      markdownContent += get_depends_markdown('Linked to', node.linkSetArray);
       // markdownContent += get_depends_markdown('Depended on by', node['dependedOnBy']);
     }
     // Use {{object_id}} to link to an object
@@ -185,11 +185,11 @@ var getHTMLDocs = function (nodes, config) {
   });
   return nodes;
 };
-var get_depends_markdown = function (header, linkIdsArr) {
+var get_depends_markdown = function (header, linkSetArr) {
   markdownContent = "### " + header;
-  if ((linkIdsArr) && (linkIdsArr.length > 0)) {
+  if ((linkSetArr) && (linkSetArr.length > 0)) {
     markdownContent += "\n\n";
-    linkIdsArr.forEach(function (linkId) {
+    linkSetArr.forEach(function (linkId) {
       markdownContent += "* " + linkId + "\n";
     });
     markdownContent += "\n";

@@ -1,22 +1,26 @@
-function Document(elementId, width) {
-
+function Document(elementId) { // }, width) {
 
   var consoleLogDocument = true,
+    that = this,
     showingDoc = false,
     docClosePadding = 8,
     desiredDocsHeight = 200,
-	elementId = elementId,
-	docContainer,
+    elementId,
+    docContainer,
     topStuffHeight = $("#top-stuff").height();
-  
-  $("#doc").append("<div class='document' id='" + elementId + "'></div>");
 
-    console.log("Document.js topStuffHeight = ", topStuffHeight);
+  this.elementId = elementId;
+
+  // elementId is "viz-doc";
+  $("#doc-container").append("<div class='document' id='" + elementId + "'></div>");
+
+  console.log("Document.js topStuffHeight = ", topStuffHeight);
 
   hideDocument();
 
   var showDocument = function (content, event, d) {
     var that = this;
+    // elementId is "viz-doc"
     $("#" + elementId).html(content);
 //    $("#" + docId).show();
     $("#doc-container").show();
@@ -40,6 +44,7 @@ function Document(elementId, width) {
     var makeDocLink_d = makeDocLink(d);
 //    console.log(add10(2)); // 12
 
+
     $('#viz-doc a').on('click', function () {
       // var ddd = d3.select(qid);
       return makeDocLink_d;
@@ -52,7 +57,8 @@ function Document(elementId, width) {
 
   var clickLinkShowDocument = function (id, content, d) {
     var content = d.docs;
-  $("#" + elementId).html(content);
+    // elementId = "viz-doc"
+    $("#" + elementId).html(content);
     $("#doc-container").show();
     $("#doc-close").show();
     $('#viz-doc a').on('click', function (event, qid) {

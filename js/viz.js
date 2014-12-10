@@ -134,10 +134,11 @@ RadialPlacement = function () {
   return placement;
 };
 
+
 Network = function () {
   //  variables we want to access in multiple places of Network
 
-  var allData, charge, charge2, curLinksData, curNodesData, doc, filter, filterLinks, filterNodes, force, forceTick, groupCenters, height, hideDetails, layout, link, linkedByIndex, linksG, mapNodes, moveToRadialLayout, neighboring, network, node, nodeColors, nodeCounts, nodesG, radialTick, setFilter, setLayout, setSort, setupData, showDetails, showDoc, sort, sortedTargets, strokeFor, tooltip, update, updateCenters, updateLinks, updateNodes, width;
+  var allData, charge, charge2, curLinksData, curNodesData, doc, filter, filterLinks, filterNodes, force, forceTick, groupCenters, height, hideDetails, layout, link, linkedByIndex, linksG, mapNodes, moveToRadialLayout, neighboring, network, node, nodeColors, nodeCounts, nodesG, radialTick, setFilter, setLayout, setSort, setupData, showDetails, showTheDoc, sort, sortedTargets, strokeFor, tooltip, update, updateCenters, updateLinks, updateNodes, width;
   var setupData2;
   var forceChargeParam;
   var w = window.innerWidth;
@@ -176,7 +177,8 @@ Network = function () {
   nodeColors = d3.scale.category20();
   //  tooltip used to display details
   tooltip = Tooltip("viz-tooltip", 230);
-  doc = Document("viz-doc", 630);
+  var doc = Document("viz-doc"); // , 630);
+
   //  charge used in artist layout
   charge = function (node) {
     return -Math.pow(node.radius, 2.0) / 2;
@@ -797,7 +799,7 @@ Network = function () {
        node.on("mouseover", showDetails)
         .on("mouseout", hideDetails); //.on("click", selectObject(this,el));
 
-    node.on("click", showDoc);
+    node.on("click", showTheDoc);
 
     function selectObject(obj, el) {
       var node;
@@ -1009,8 +1011,8 @@ Network = function () {
     }
   };
 //  click node for doc function
-  showDoc = function (d, i) {
-    console.log("viz 963, showDoc(d, i), this = ", this);
+  showTheDoc = function (d, i) {
+    console.log("viz 963, showTheDoc(d, i), this = ", this);
     var aNode = this;
     console.log("typeof aNode = ", typeof aNode);
     var content;
@@ -1047,6 +1049,7 @@ Network = function () {
 //  Final act of Network() function is to return the inner 'network()' function.
   return network;
 };
+
 //  Activate selector button
 
 activate = function (group, link) {
@@ -1115,9 +1118,54 @@ $(function () {
 
     $('#doc-close')
       .on('click', function () {
-        deselectObject();
+       // deselectObject();
+        resize(false);
         return false;
       });
+
+
+    function resize(showDoc) {
+      var docHeight = 0,
+        svgHeight = 0,
+        docContainer = $('#doc-container'),
+        docClose = $('#doc-close');
+
+
+      if (typeof showDoc == 'boolean') {
+        showingDoc = showDoc;
+        docContainer[showDoc ? 'show' : 'hide']();
+        docClose[showDoc ? 'show' : 'hide']();
+      }
+
+      if (showingDoc) {
+        docHeight = desiredDocsHeight;
+        $('#doc-container').css('height', docHeight + 'px');
+        $('#doc-container').css('height', docHeight + 'px');
+      } else {
+        $('#doc-container').css('height', docHeight + 'px');
+      }
+//    svgHeight = window.innerHeight - docHeight;
+      svgHeight = window.innerHeight - docHeight - $("#top-stuff").height();
+
+      console.log("; window.innerHeight = ", window.innerHeight, "; desiredDocsHeight = ", desiredDocsHeight, "; topStuffHeight = ", topStuffHeight, "; svgHeight = ", svgHeight);
+
+      console.log("; window.innerWidth = ", window.innerWidth);
+      if (consoleLogDocument) {
+        console.log("\n window.innerHeight = ", window.innerHeight, "; docHeight = ", docHeight, "; svgHeight = ", svgHeight);
+      }
+
+      $('#svg').css('height', svgHeight + 'px');
+//    $('svg').css('height', svgHeight + 'px');
+      if (window.innerWidth < 900) {
+        $('.mainTitleDiv').css('font-size', '14px');
+      }
+      $('#doc-close').css({
+        top: svgHeight + docClosePadding + 'px',
+        right: window.innerWidth - $('#doc-container')[0].clientWidth + docClosePadding + 'px'
+      });
+    }
+
+
 
     $("#searchInputId")
       .keyup(function () {
@@ -1188,13 +1236,24 @@ $(function () {
     };
 
     function deselectObject(doResize) {
-      if (doResize || typeof doResize == 'undefined') {
-        doc.resize(false);
+      if(doResize || typeof doResize == 'undefined') {
+        resize(false);
       }
       graph.node.classed('selected', false);
       selected = {};
-//      highlightObject(null);
+      highlightObject(null);
     }
+
+
+    // function deselectObject(doResize) {
+   //   var myDoc = $('#viz-doc');
+   //   if (doResize || typeof doResize == 'undefined') {
+   //     myDoc.resize(false);
+   //   }
+//       data.node.classed('selected', false);
+  //    selected = {};
+//      highlightObject(null);
+   // }
 
     var clickLinkShowDoc = function (id) { //d, i) {
       console.log("click, id = ", id);
@@ -1202,6 +1261,7 @@ $(function () {
       // content = d.docs;
       var d = myNetwork.updateSearchIdLinkClick(searchTerm);
       content = d.docs;
+
       doc.clickLinkShowDocument(id, content, d); //content, d3.event);
       console.log("content =  ", content, "\nd3.event = ", d3.event);
       //  highlight neighboring nodes

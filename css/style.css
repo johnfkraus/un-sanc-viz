@@ -56,20 +56,25 @@ a, a:visited {
 form {
     margin: 0;
 }
-
+.tableRow {
+    display: table-row;
+}
 .searchIdsNames {
     margin: 0;
     padding: 0;
+    width: 100px;
+    display: table-cell;
+}
+.searchIdsNames input {
+    margin: 0;
+    padding: 0;
+    display: table-cell;
 }
 
-.searchIdsNames input {
-    margin: 0 0 2px 0;
-    padding: 0;
-}
 
 #highlightType {
     padding-top: 5px;
-    width: 100px;
+    width: 130px;
 }
 
 .control {
