@@ -168,3 +168,8 @@ line.link {
     fill: none;
     stroke-width: 1.5px;
 }
+
+.document {
+
+    padding: 0 0 0 12px;
+}

@@ -135,9 +135,9 @@ var getHTMLDocs = function (nodes, config) {
   //  if (config['types'][type]) {
   //    type = config['types'][type]['long'];
   //  }
-    var markdownContent = "## " + node.name + "* ID: " + node.id + "* Type: " + node.type + "\n\n";
+    var markdownContent = "## " + node.name + " " + node.NAME_ORIGINAL_SCRIPT  + "##\n### ID: " + node.id + "###\n#### Type: " + node.type + "####\n\n";
     if (fileExists(markdownFileName)) {
-      markdownContent += "### Documentation\n\n";
+      // markdownContent += "### Documentation\n\n";
       markdownContent += readFileSync(markdownFileName); //file_get_contents(docFileName);
     } else {
       markdownContent += "<div class=\"alert alert-warning\">No documentation for this object.</div>";
@@ -145,7 +145,7 @@ var getHTMLDocs = function (nodes, config) {
     if (node) {
       // error_log("\n46 file exists,  obj = 'obj'", 3, "my-errors.log");
       markdownContent += "\n\n";
-      markdownContent += get_depends_markdown('Linked to', node.linkSetArray);
+//      markdownContent += get_depends_markdown('Linked to', node.linkSetArray);
       // markdownContent += get_depends_markdown('Depended on by', node['dependedOnBy']);
     }
     // Use {{object_id}} to link to an object
@@ -636,7 +636,9 @@ var mdToHtml = function (markdownContent) {
 
 // convert the tree into html
   var html = md.renderJsonML(md.toHTMLTree(tree));
-  console.log(html);
+  if (consoleLog) {
+    console.log(html);
+  }
   return html;
 };
 

@@ -11,8 +11,7 @@ function Document(elementId) { // }, width) {
 
   this.elementId = elementId;
 
-  // elementId is "viz-doc";
-  $("#doc-container").append("<div class='document' id='" + elementId + "'></div>");
+  $("#doc-container").append("<div class='document'></div>");
 
   console.log("Document.js topStuffHeight = ", topStuffHeight);
 
@@ -21,7 +20,7 @@ function Document(elementId) { // }, width) {
   var showDocument = function (content, event, d) {
     var that = this;
     // elementId is "viz-doc"
-    $("#" + elementId).html(content);
+    $(".document").html(content);
 //    $("#" + docId).show();
     $("#doc-container").show();
     $("#doc-close").show();
@@ -45,7 +44,7 @@ function Document(elementId) { // }, width) {
 //    console.log(add10(2)); // 12
 
 
-    $('#viz-doc a').on('click', function () {
+    $('.document a').on('click', function () {
       // var ddd = d3.select(qid);
       return makeDocLink_d;
 //      var d = that.d;
@@ -61,7 +60,7 @@ function Document(elementId) { // }, width) {
     $("#" + elementId).html(content);
     $("#doc-container").show();
     $("#doc-close").show();
-    $('#viz-doc a').on('click', function (event, qid) {
+    $('.document a').on('click', function (event, qid) {
       // var ddd = d3.select(qid);
       console.log("Document.js clickLinkShowDocument, onclick, qid = ", qid, "; d = ", d);
     });
@@ -93,10 +92,9 @@ function Document(elementId) { // }, width) {
 //    svgHeight = window.innerHeight - docHeight;
     svgHeight = window.innerHeight - docHeight - topStuffHeight;
 
-    console.log("; window.innerHeight = ", window.innerHeight, "; desiredDocsHeight = ", desiredDocsHeight, "; topStuffHeight = ", topStuffHeight, "; svgHeight = ", svgHeight);
-
-    console.log("; window.innerWidth = ", window.innerWidth);
     if (consoleLogDocument) {
+      console.log("; window.innerHeight = ", window.innerHeight, "; desiredDocsHeight = ", desiredDocsHeight, "; topStuffHeight = ", topStuffHeight, "; svgHeight = ", svgHeight);
+      console.log("; window.innerWidth = ", window.innerWidth);
       console.log("\n window.innerHeight = ", window.innerHeight, "; docHeight = ", docHeight, "; svgHeight = ", svgHeight);
     }
 
@@ -106,7 +104,7 @@ function Document(elementId) { // }, width) {
       $('.mainTitleDiv').css('font-size', '14px');
     }
     $('#doc-close').css({
-      top: svgHeight + docClosePadding + 'px',
+    //  top: svgHeight + docClosePadding + 'px',
       right: window.innerWidth - $('#doc-container')[0].clientWidth + docClosePadding + 'px'
     });
   }

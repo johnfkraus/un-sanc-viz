@@ -228,47 +228,12 @@ var missing_indivs = [{
   "SORT_KEY": "__AAAxxx",
   "SORT_KEY_LAST_MOD": "2007-07-27T00:00:00"
 
-}, {
-  "DATAID": "empty005",
-  "VERSIONNUM": "10",
-  "FIRST_NAME": "Wali Ur Rehman",
-  "SECOND_NAME": "",
-  "THIRD_NAME": "(no longer listed)",
-  "UN_LIST_TYPE": "Al-Qaida",
-  "REFERENCE_NUMBER": "QI.M.286.10",
-  "LISTED_ON": "2016-10-06T00:00:00",
-  "NAME_ORIGINAL_SCRIPT": "نشوان عبد الرزاق عبد الباقي",
-  "COMMENTS1": "Tehrik-e Taliban (TTP) (QE.T.132.11) is based in the tribal areas along the Afghanistan/Pakistan border. Formed in 2007, its leader is Hakimullah Mehsud.",
-  "NATIONALITY": {
-    "VALUE": ""
-  },
-  "LIST_TYPE": {
-    "VALUE": "UN List"
-  },
-  "LAST_DAY_UPDATED": {
-    "VALUE": [
-      "2007-05-14T00:00:00",
-      "2007-07-27T00:00:00"
-    ]
-  },
-  "INDIVIDUAL_ALIAS": [{
-    "QUALITY": "poor",
-    "ALIAS_NAME": "Ugly Haki"
-  }],
-  "INDIVIDUAL_ADDRESS": "",
-  "INDIVIDUAL_DATE_OF_BIRTH": {
-    "TYPE_OF_DATE": "type of date",
-    "YEAR": "year of birth"
-  },
-  "INDIVIDUAL_PLACE_OF_BIRTH": {
-    "CITY": "city name",
-    "STATE_PROVINCE": "state province"
-  },
-  "INDIVIDUAL_DOCUMENT": "",
-  "SORT_KEY": "__AAAxxx",
-  "SORT_KEY_LAST_MOD": "2007-07-27T00:00:00"
-}
-  , {
+},
+
+
+
+
+   {
     "DATAID": "empty006",
     "VERSIONNUM": "10",
     "FIRST_NAME": "Mufti Rashid Ahmad Ledahyanoy",
@@ -389,6 +354,61 @@ var missing_indivs = [{
   }];
 
 /*
+
+
+
+
+
+ {
+ "DATAID": "empty005",
+ "VERSIONNUM": "10",
+ "FIRST_NAME": "Wali Ur Rehman",
+ "SECOND_NAME": "",
+ "THIRD_NAME": "(no longer listed)",
+ "UN_LIST_TYPE": "Al-Qaida",
+ "REFERENCE_NUMBER": "QI.M.286.10",
+ "LISTED_ON": "2016-10-06T00:00:00",
+ "NAME_ORIGINAL_SCRIPT": "نشوان عبد الرزاق عبد الباقي",
+ "COMMENTS1": "Tehrik-e Taliban (TTP) (QE.T.132.11) is based in the tribal areas along the Afghanistan/Pakistan border. Formed in 2007, its leader is Hakimullah Mehsud.",
+ "NATIONALITY": {
+ "VALUE": ""
+ },
+ "LIST_TYPE": {
+ "VALUE": "UN List"
+ },
+ "LAST_DAY_UPDATED": {
+ "VALUE": [
+ "2007-05-14T00:00:00",
+ "2007-07-27T00:00:00"
+ ]
+ },
+ "INDIVIDUAL_ALIAS": [{
+ "QUALITY": "poor",
+ "ALIAS_NAME": "Ugly Haki"
+ }],
+ "INDIVIDUAL_ADDRESS": "",
+ "INDIVIDUAL_DATE_OF_BIRTH": {
+ "TYPE_OF_DATE": "type of date",
+ "YEAR": "year of birth"
+ },
+ "INDIVIDUAL_PLACE_OF_BIRTH": {
+ "CITY": "city name",
+ "STATE_PROVINCE": "state province"
+ },
+ "INDIVIDUAL_DOCUMENT": "",
+ "SORT_KEY": "__AAAxxx",
+ "SORT_KEY_LAST_MOD": "2007-07-27T00:00:00"
+ }
+
+
+
+
+
+
+
+
+
+
 
  var empty_indiv = [{
  "DATAID": "empty000",

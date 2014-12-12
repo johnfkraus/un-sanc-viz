@@ -26,6 +26,7 @@ var generatedFileDateString;
 // var backbone =  require('backbone');
 var Set = require("backpack-node").collections.Set;
 var Bag = require("backpack-node").collections.Bag;
+var Map = require("backpack-node").collections.Map;
 
 var fsOptions = {
   flags: 'r+', encoding: 'utf-8', autoClose: true
@@ -47,314 +48,298 @@ var fixData = function () {
   var missing_indivs;
   var ents = [];
   var indivs = [];
-  var __filename = __filename || {};
-  var __line = __line || {};
+//  var __filename = __filename || {};
+//  var __line = __line || {};
   var consolidatedList;
+
   async.series([
-    function (callback) {
-      // read "raw" unprocessed json file
-      var rawJsonFileName = __dirname + "/../data/output/AQList-raw.json";
-      consolidatedList = JSON.parse(fse.readFileSync(rawJsonFileName));
-      callback();
-    },
-    function (callback) {
-      saveJsonFile(consolidatedList, "data01-loadedRaw.json");
-      callback();
-    },
-
-    function (callback) {
-      data.entities = consolidatedList.CONSOLIDATED_LIST.ENTITIES.ENTITY;
-      data.indivs = consolidatedList.CONSOLIDATED_LIST.INDIVIDUALS.INDIVIDUAL;
-      data.entities = data.entities.concat(missingNodes.getMissingEnts());
-      data.indivs = data.indivs.concat(missingNodes.getMissingIndivs());
-      // indiv0OrEnt1 1 = entity; 0 = individual
-      data.entities.forEach(function (entity) {
-        entity.indiv0OrEnt1 = 1;
-      });
-      data.indivs.forEach(function (indiv) {
-        indiv.indiv0OrEnt1 = 0;
-      });
-      data.nodes = data.indivs.concat(data.entities);
-      data.dateGenerated = consolidatedList.CONSOLIDATED_LIST.$.dateGenerated;
-      createDateGeneratedMessage();
-        delete data.entities;
-      delete data.indivs;
-      consolidatedList = null;
-      cleanUpRefNums(data.nodes);
-      cleanUpIds(data.nodes);
-//       node.id = getCleanId(node.REFERENCE_NUMBER);
-      concatNames(data.nodes);
-      if (consoleLog) {
-        console.log("\n ", __filename, "line", __line, "; jsonFile = \n", trunc.truncn(JSON.stringify(jsonFile), 200));
-      }
-      callback();
-    },
-
-    function (callback) {
-      saveJsonFile(data, "data02-flattened.json");
-      callback();
-    },
-    // save intermediate data file for debugging
-    function (callback) {
-      saveJsonFile(data, "data2.json");
-      callback();
-    },
-
-    // put nodes into a set
-    function (callback) {
-      if (consoleLog) {
-        console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount, "; put ents and indivs into nodes array");
-        console.log("\n ", __filename, "line", __line, "; typeof data = ", typeof data);
-      }
-      // SET https://www.npmjs.org/package/backpack-node
-      counter = 0;
-      var setOfNodes = new Set();
-      data.nodes.forEach(function (node) {
-        counter++;
-        setOfNodes.add(node);
-      });
-      console.log("\n ", __filename, "line", __line, "; counter = ", counter, "; setOfNodes.count = ", setOfNodes.count);
-      callback();
-    },
-
-    // put entities and indivs into a bag
-    // https://www.npmjs.org/package/backpack-node
-    function (callback) {
-      var nodeBag = new Bag();
-      counter = 0;
-      data.nodes.forEach(function (node) {
-        counter++;
-        if (consoleLog) {
-          console.log("\n ", __filename, "line", __line, "; counter = ", counter, "; node.id = ", node.id);
+      function (callback) {
+        // read "raw" unprocessed json file
+        var rawJsonFileName = __dirname + "/../data/output/AQList-raw.json";
+        consolidatedList = JSON.parse(fse.readFileSync(rawJsonFileName));
+        if (true) {
+          console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount, "; read the raw json data file");
         }
-        if (!(node.id)) {
-          node.id = "NODE" + counter;
-
-        }
-
-        nodeBag.add(node.id, node);
-        // console.log("\n ", __filename, "line", __line, "counter = ", counter ,"; nodeBag.length = ", nodeBag.count);
-      });
-
-      console.log("\n ", __filename, "line", __line, "Bag counter = ", counter);
-//      console.log("\n ", __filename, "line", __line, "; nodeBag = ", nodeBag);
-      callback();
-    },
-
-    // save intermediate data file for debugging
-    function (callback) {
-      saveJsonFile(data, "data05nodeBag.json");
-      callback();
-    },
-
-    function (callback) {
-      counter = 0;
-      var myBag = new Bag();
-      myBag.add(1, data.nodes[1]);
-      myBag.add(2, "b");
-      myBag.add(2, "c");
-
-      myBag.forEach(function (item) {
-        console.log("Key: " + item.key);
-        console.log("Value: " + item.value);
-      });
-      callback();
-    },
-
-    // save intermediate data file for debugging
-    function (callback) {
-      saveJsonFile(data, "data06myBag.json");
-      callback();
-    },
-
-    function (callback) {
-      var nodeBag2 = new Bag();
-      counter = 0;
-      data.nodes.forEach(function (node) {
-        counter++;
-        if (consoleLog) {
-          console.log("\n ", __filename, "line", __line, "; counter = ", counter, "; ent.id = ", ent.id);
-        }
-        node.id = getCleanId(node.REFERENCE_NUMBER);
-        nodeBag2.add(node.id, node);
-      });
-      if (consoleLog) {
-        console.log("\n ", __filename, "line", __line, "nodeBag2 counter = ", counter, "; nodeBag2._map.count = ", nodeBag2._map.count);
-      }
-      callback();
-    },
-    // save intermediate data file for debugging
-    function (callback) {
-      saveJsonFile(data, "data04nodebagset.json");
-      callback();
-    },
-
-    function (callback) {
-      if (consoleLog) {
-        console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount, "; clean up Ids");
-      }
-      cleanUpIds(data.nodes);
-      callback();
-    },
-
-    function (callback) {
-      if (consoleLog) {
-        console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount, "; create nationality");
-      }
-      createNationality(data.nodes);
-      callback();
-    },
-
-    function (callback) {
-      saveJsonFile(data, "data4cleanupids.json");
-      callback();
-    },
-
-    // ADD CONNECTION IDS ARRAY
-    function (callback) {
-      if (consoleLog) {
-        console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount, "; addConnectionIdsArray(data.nodes)");
-      }
-      addConnectionIdsArray(data.nodes);
-      if (consoleLog) {
-        console.log(data.nodes[1]);
-      }
-      callback();
-    },
-
-    function (callback) {
-      saveJsonFile(data, "data5addconnidsarray.json");
-      callback();
-    },
-
-    // ADD CONNECTION OBJECTS ARRAY
-    function (callback) {
-      addConnectionObjectsArray(data.nodes);
-      if (consoleLog) {
-        console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount, "; addConnectionObjectsArray");
-        console.log(data.nodes[1]);
-      }
-      callback();
-    },
-
-    function (callback) {
-      saveJsonFile(data, "data6addconnectionOBJECTSarray.json");
-      callback();
-    },
-
-    function (callback) {
-      consolidateLinks(data);
-      if (consoleLog) {
-        console.log("\n 283 function #:", ++functionCount, "; consolidate links into links array");
-        console.log("\n ", __filename, "line", __line, "; data.nodes[1] = ", data.nodes[1]);
-        console.log("\n ", __filename, "line", __line, "; data.links.length = ", data.links.length);
-      }
-      callback();
-    },
-
-    function (callback) {
-      //  addLinksArray(data.nodes);
-      // countSourceTarget(data.nodes, data.links);
-      if (consoleLog) {
-        //  console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount, "; addLinksArray(data.nodes)");
-        //  console.log("\n ", __filename, "line", __line, "; data.nodes[1] = ", data.nodes[1]);
-      }
-      callback();
-    },
-
-    // COUNT LINKS
-    function (callback) {
-      countLinks(data.nodes);
-      if (consoleLog) {
-        console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount, "; countLinks2");
-        console.log("\n ", __filename, "line", __line, "; data.nodes[1] = ", data.nodes[1]);
-      }
-      callback();
-    },
-
-    function (callback) {
-//      addLinksSet(data);
-      if (consoleLog) {
-        //      console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount, "; addLinkSet");
-      }
-      callback();
-    },
-
-    function (callback) {
-      checkTargetsExist(data.nodes, data.links);
-      callback();
-    },
-
-    function (callback) {
-      var nodeCounter = 0;
-      data.nodes.forEach(function (node) {
-        nodeCounter++;
-        if (consoleLog) {
-          console.log(__filename, "line", __line, "; node #", nodeCounter, "node.id = ", node.id);
-        }
-      });
-      callback();
-    },
-
-    function (callback) {
-      if (consoleLog) {
-        console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount);
-        console.log("\n ", __filename, "line", __line, "; data.nodes[1] = ", data.nodes[1]);
-      }
-      counter = 0;
-      data.links.forEach(function (link) {
-        counter++;
-        if (counter <= numObjectsToShow) {
-          if (consoleLog) {
-            console.log("\n ", __filename, "line", __line, "; 296 counter = ", counter, "; link = ", link);
-          }
-        }
-      });
-      callback();
-    },
-    // comment
-    function (callback) {
-      if (consoleLog) {
-        console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount, "; save clean json file");
-      }
-      // var saveJson = function () {
-      try {
-        var myFile = __dirname + "/../data/output/AQList-clean.json";
-        var myJsonData = JSON.stringify(data, null, " ");
-        // if (consoleLog) { console.log("myJsonData =", myJsonData);
-        fse.writeFileSync(myFile, myJsonData, fsOptions);
-        if (consoleLog) {
-          console.log("\n ", __filename, "line", __line, ";  file written to: ", myFile, ";  file contained: ", trunc.n400(util.inspect(myJsonData, false, null)));
-        }
-      } catch (e) {
-        console.log("\n ", __filename, "line", __line, ";  Error: ", e);
         callback();
-      }
-      callback();
-    },
+      },
+      // save the file for debugging
+      function (callback) {
+        saveJsonFile(consolidatedList, "data01-loadedRaw.json");
+        callback();
+      },
+      // put all the nodes in a single array
+      function (callback) {
+        data.entities = consolidatedList.CONSOLIDATED_LIST.ENTITIES.ENTITY;
+        data.indivs = consolidatedList.CONSOLIDATED_LIST.INDIVIDUALS.INDIVIDUAL;
+        data.entities = data.entities.concat(missingNodes.getMissingEnts());
+        data.indivs = data.indivs.concat(missingNodes.getMissingIndivs());
+        // indiv0OrEnt1 1 = entity; 0 = individual
+        data.entities.forEach(function (entity) {
+          entity.indiv0OrEnt1 = 1;
+        });
+        data.indivs.forEach(function (indiv) {
+          indiv.indiv0OrEnt1 = 0;
+        });
+        data.nodes = data.indivs.concat(data.entities);
+        data.dateGenerated = consolidatedList.CONSOLIDATED_LIST.$.dateGenerated;
+        createDateGeneratedMessage();
+        delete data.entities;
+        delete data.indivs;
+        consolidatedList = null;
+        cleanUpRefNums(data.nodes);
+        cleanUpIds(data.nodes);
+        // node.id = getCleanId(node.REFERENCE_NUMBER);
+        concatNames(data.nodes);
+        createNationality(data.nodes);
+        if (consoleLog) {
+          console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount, "; put data into nodes array for d3");
+          console.log("\n ", __filename, "line", __line, "; jsonFile = \n", trunc.truncn(JSON.stringify(jsonFile), 200));
+        }
+        callback();
+      },
+      // save intermediate data file for debugging
+      function (callback) {
+        saveJsonFile(data, "data02-flattened.json");
+        callback();
+      },
 
-    // stringify
-    function (callback) {
-      var myJsonData = JSON.stringify(data, null, " ");
-      if (consoleLog) {
-        console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount, "; save clean json file");
-        console.log("\n ", __filename, "line", __line, "; data.nodes.length = ", data.nodes.length);
-        console.log("\n ", __filename, "line", __line, "; data.links.length = ", data.links.length);
-      }
-      callback();
-    },
+      // put nodes and node ids into a set
+      function (callback) {
+        // SET: https://www.npmjs.org/package/backpack-node
+        counter = 0;
+        var setOfNodes = new Set();
+        var setOfNodeIds = new Set();
+        data.nodes.forEach(function (node) {
+          counter++;
+          setOfNodes.add(node);
+          setOfNodeIds.add(node.id);
+          if (counter !== setOfNodeIds.count) {
+            console.log("\n ", __filename, "line", __line, "; node.id = ", node.id, "; counter = ", counter, "; setOfNodeIds.count = ", setOfNodeIds.count, "; \n(counter === setOfNodeIds.count) = ", counter === setOfNodeIds.count, "; node.id ", node.id, " is a duplicate.");
+            counter = counter - 1;
+          }
+        });
+        if (true) {
+          console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount, "; put nodes into a set");
+          console.log("\n ", __filename, "line", __line, "; typeof data = ", typeof data);
+          console.log("\n ", __filename, "line", __line, "; started with ", data.nodes.length, " nodes in data.nodes array");
+          console.log("\n ", __filename, "line", __line, "; counter = ", counter, "; setOfNodes.count = ", setOfNodes.count);
+          console.log("\n ", __filename, "line", __line, "; counter = ", counter, "; setOfNodeIds.count = ", setOfNodeIds.count);
+        }
+        callback();
+      },
+      // put entities and indivs into a bag
+      // https://www.npmjs.org/package/backpack-node
+      function (callback) {
+        var nodeBag = new Bag();
+        counter = 0;
+        data.nodes.forEach(function (node) {
+          counter++;
+          if (consoleLog) {
+            console.log("\n ", __filename, "line", __line, "; counter = ", counter, "; node.id = ", node.id);
+          }
+          if (!(node.id)) {
+            node.id = "NODE" + counter;
+          }
+          nodeBag.add(node.id, node);
+          // console.log("\n ", __filename, "line", __line, "counter = ", counter ,"; nodeBag.length = ", nodeBag.count);
+        });
+        console.log("\n ", __filename, "line", __line, "Bag counter = ", counter);
+//      console.log("\n ", __filename, "line", __line, "; nodeBag = ", nodeBag);
+        callback();
+      },
+      // save intermediate data file for debugging
+      function (callback) {
+        saveJsonFile(data, "data05nodeBag.json");
+        callback();
+      },
 
-    // last function; does nothing
-    function (callback) {
-      var dummy = function () {
+      function (callback) {
+        counter = 0;
+        var myBag = new Bag();
+        myBag.add(1, data.nodes[1]);
+        myBag.add(2, "b");
+        myBag.add(2, "c");
+        myBag.forEach(function (item) {
+          console.log("Key: " + item.key);
+          console.log("Value: " + item.value);
+        });
+        callback();
+      },
+      // save intermediate data file for debugging
+      function (callback) {
+        saveJsonFile(data, "data06myBag.json");
+        callback();
+      },
+
+      function (callback) {
+        var nodeBag2 = new Bag();
+        counter = 0;
+        data.nodes.forEach(function (node) {
+          counter++;
+          if (consoleLog) {
+            console.log("\n ", __filename, "line", __line, "; counter = ", counter, "; ent.id = ", ent.id);
+          }
+          node.id = getCleanId(node.REFERENCE_NUMBER);
+          nodeBag2.add(node.id, node);
+        });
+        if (consoleLog) {
+          console.log("\n ", __filename, "line", __line, "nodeBag2 counter = ", counter, "; nodeBag2._map.count = ", nodeBag2._map.count);
+        }
+        callback();
+      },
+      // save intermediate data file for debugging
+      function (callback) {
+        saveJsonFile(data, "data06nodebagset.json");
+        callback();
+      },
+
+      // ADD CONNECTION IDS ARRAY
+      function (callback) {
+        if (consoleLog) {
+          console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount, "; addConnectionIdsArray(data.nodes)");
+        }
+        addConnectionIdsArray(data.nodes);
+        if (consoleLog) {
+          console.log(data.nodes[1]);
+        }
+        callback();
+      },
+
+      function (callback) {
+        saveJsonFile(data, "data5addconnidsarray.json");
+        callback();
+      },
+
+      // ADD CONNECTION OBJECTS ARRAY
+      function (callback) {
+
+        addConnectionObjectsArray(data.nodes);
+        if (consoleLog) {
+          console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount, "; addConnectionObjectsArray");
+          console.log(data.nodes[1]);
+        }
+        callback();
+      },
+
+      function (callback) {
+        saveJsonFile(data, "data6addconnectionOBJECTSarray.json");
+        callback();
+      },
+
+      function (callback) {
+        consolidateLinks(data);
+        if (consoleLog) {
+          console.log("\n 283 function #:", ++functionCount, "; consolidate links into links array");
+          console.log("\n ", __filename, "line", __line, "; data.nodes[1] = ", data.nodes[1]);
+          console.log("\n ", __filename, "line", __line, "; data.links.length = ", data.links.length);
+        }
+        callback();
+      },
+
+      function (callback) {
+        //  addLinksArray(data.nodes);
+        // countSourceTarget(data.nodes, data.links);
+        if (consoleLog) {
+          //  console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount, "; addLinksArray(data.nodes)");
+          //  console.log("\n ", __filename, "line", __line, "; data.nodes[1] = ", data.nodes[1]);
+        }
+        callback();
+      },
+
+      // COUNT LINKS
+      function (callback) {
+        countLinks(data);
+        if (consoleLog) {
+          console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount, "; countLinks2");
+          console.log("\n ", __filename, "line", __line, "; data.nodes[1] = ", data.nodes[1]);
+        }
+        callback();
+      },
+
+      function (callback) {
+//      addLinksSet(data);
+        if (consoleLog) {
+          //      console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount, "; addLinkSet");
+        }
+        callback();
+      },
+
+      function (callback) {
+        checkTargetsExist(data.nodes, data.links);
+        callback();
+      },
+
+      function (callback) {
+        var nodeCounter = 0;
+        data.nodes.forEach(function (node) {
+          nodeCounter++;
+          if (consoleLog) {
+            console.log(__filename, "line", __line, "; node #", nodeCounter, "node.id = ", node.id);
+          }
+        });
+        callback();
+      },
+
+      function (callback) {
         if (consoleLog) {
           console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount);
-          console.log("\n ", __filename, "line", __line, "; last function; does nothing");
+          console.log("\n ", __filename, "line", __line, "; data.nodes[1] = ", data.nodes[1]);
+        }
+        counter = 0;
+        data.links.forEach(function (link) {
+          counter++;
+          if (counter <= numObjectsToShow) {
+            if (consoleLog) {
+              console.log("\n ", __filename, "line", __line, "; 296 counter = ", counter, "; link = ", link);
+            }
+          }
+        });
+        callback();
+      },
+      // comment
+      function (callback) {
+        if (consoleLog) {
+          console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount, "; save clean json file");
+        }
+        // var saveJson = function () {
+        try {
+          var myFile = __dirname + "/../data/output/AQList-clean.json";
+          var myJsonData = JSON.stringify(data, null, " ");
+          // if (consoleLog) { console.log("myJsonData =", myJsonData);
+          fse.writeFileSync(myFile, myJsonData, fsOptions);
+          if (consoleLog) {
+            console.log("\n ", __filename, "line", __line, ";  file written to: ", myFile, ";  file contained: ", trunc.n400(util.inspect(myJsonData, false, null)));
+          }
+        } catch (e) {
+          console.log("\n ", __filename, "line", __line, ";  Error: ", e);
+          callback();
         }
         callback();
-      }();
-    }
-  ]);
+      },
+
+      // stringify
+      function (callback) {
+        var myJsonData = JSON.stringify(data, null, " ");
+        if (consoleLog) {
+          console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount, "; save clean json file");
+          console.log("\n ", __filename, "line", __line, "; data.nodes.length = ", data.nodes.length);
+          console.log("\n ", __filename, "line", __line, "; data.links.length = ", data.links.length);
+        }
+        callback();
+      },
+
+      // last function; does nothing
+      function (callback) {
+        var dummy = function () {
+          if (consoleLog) {
+            console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount);
+            console.log("\n ", __filename, "line", __line, "; last function; does nothing");
+          }
+          callback();
+        }();
+      }]
+  )
+  ;
 };
 
 var cleanUpIds = function (nodes) {
@@ -501,8 +486,10 @@ var addConnectionIdsArray = function (nodes) {
   var comments;
   var linkRegexMatch;
   nodes.forEach(function (node) {
-    var connectionIds = new Set();
+    node.connectionIdsSet = new Set();
     node.connectedToId = [];
+    node.links = [];
+    node.linkSet = new Set();
     comments = node.COMMENTS1;
     if ((typeof comments !== 'undefined') && (typeof comments.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/gi) !== 'undefined')) {
       linkRegexMatch = comments.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/gi);
@@ -512,33 +499,23 @@ var addConnectionIdsArray = function (nodes) {
         if (consoleLog) {
           console.log("\n ", __filename, "line", __line, "; node.id = ", node.id, "; node.name = ", node.name, "; has ", linkRegexMatch.length, "link regex matches");
         }
-        for (var l = 0; l < linkRegexMatch.length; l++) {
-          if (linkRegexMatch[l] !== node.id) {
+        for (var link = 0; link < linkRegexMatch.length; link++) {
+          if (linkRegexMatch[link] !== node.id) {
             loopStop = false;
-            connectionIds.add(linkRegexMatch[l]);
-            while (loopStop = false) {
-              for (var m = 0; m < node.connectedToId.length; m++) {
-                if (linkRegexMatch[l] === node.connectedToId[m]) {
-                  loopStop = true;
-                }
-              }
-              node.connectedToId.push(linkRegexMatch[l]);
-              node.links.push(linkRegexMatch[l]);
-            }
+            node.connectionIdsSet.add(linkRegexMatch[link]);
           }
         }
+        node.connectionIdsSet.forEach(function (uniqueConnectionId) {
+          node.connectedToId.push(uniqueConnectionId);
+          node.links.push(uniqueConnectionId);
+
+        });
       }
       if (consoleLog) {
-        console.log("\n ", __filename, "line", __line, "; node.id = ", node.id, "; node.name = ", node.name, "; has connectionIds set: ", connectionIds);
+        console.log("\n ", __filename, "line", __line, "; node.id = ", node.id, "; node.name = ", node.name, "; has connectionIdsSet set: ", connectionIds);
       }
     }
-//    node.linkSetArray = [];
-    //   connectionIds.forEach(function (linkId) {
-    //     node.linkSetArray.push(linkId);
-    //   });
 
-    //   node.connectionSet = connectionIds;
-//    node.connectedToId = node.linkSetArray;
   });
 };
 
@@ -572,23 +549,59 @@ var consolidateLinks = function (data) {
     console.log("\n ", __filename, "line", "line", "line", __line, "; data.nodes[1] = ", data.nodes[1]);
   }
   data.links = [];
+  var linkSet = new Set();
+  // var linksMap = new Map();
+  // var mapCounter = 1;
+  var connectionsCount = 0;
   (data.nodes).forEach(function (node) {
-    // data.links = [];
+
     if ((typeof node.connections != 'undefined') && (typeof node.connections.length != 'undefined') && (node.connections.length > 0)) {
+      connectionsCount = connectionsCount + node.connections.length;
       node.connections.forEach(function (conn) {
-        data.links.push(conn);
+
+        if (linkSet.add(conn) === true) {
+          data.links.push(conn);
+        }
+        // mapCounter++;
       });
     }
   });
+  console.log("connectionsCount = ", connectionsCount);
+  console.log("linkSet.count = ", linkSet.count);
+
+  // for (var i = 1, i <= linksMap.count, i++) {
+  //linksMap.forEachValue(function (uniqueSourceAndTarget) {
+  //  data.links.push(uniqueSourceAndTarget);
+  // });
+  linkSet = null;
 };
 
 // count the links
-var countLinks = function (nodes) {
-  nodes.forEach(function (node) {
-//    node.linkCount = node.linkedIds.length;
-//    if ((typeof node.connections != 'undefined') && (typeof node.connections.length != 'undefined')) {
-//      node.linkCount = node.connections.length;
-//    }
+var countLinks = function (data) {
+  data.nodes.forEach(function (node) {
+    var linkCounter = 0;
+    var keySet = new Set();
+    var keyAdded1, keyAdded2;
+    var linkConcatKey1, linkConcatKey2;
+    data.links.forEach(function (link) {
+      if (link.source === link.target) {
+        delete data.link;
+console.log("deleted ", data.link);
+      } else {
+
+        if (node.id === link.source || node.id === link.target) {
+          linkConcatKey1 = link.source + link.target;
+          linkConcatKey2 = link.target + link.source;
+          keyAdded1 = keySet.add(linkConcatKey1);
+        keyAdded2 = keySet.add(linkConcatKey2);
+          console.log(keyAdded1, keyAdded2);
+          if (keyAdded1 && keyAdded2) {
+            linkCounter++;
+          }
+        }
+      }
+    });
+    node.linkCount = linkCounter;
   });
 };
 var checkTargetsExist = function (nodes, links) {
@@ -714,12 +727,9 @@ var createDateGeneratedMessage = function () {
   dateFormat.masks.friendly_display = "dddd, mmmm dS, yyyy";
   generatedFileDateString = dateFormat(dateAqListGenerated, "fullDate");
   var message = "Collected AQList.xml labeled as generated on: " + dateAqListGeneratedString + " [" + dateAqListGenerated + "]";
-data.message = message;
+  data.message = message;
   logger.log_message(message);
 };
-
-
-
 
 module.exports = {
   fixData: fixData

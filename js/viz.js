@@ -263,7 +263,7 @@ Network = function () {
       $('.mainTitleDiv').css('font-size', '14px');
     }
     $('#doc-close').css({
-      top: svgHeight + docClosePadding + 'px',
+    //  top: svgHeight + docClosePadding + 'px',
       right: window.innerWidth - $('#doc-container')[0].clientWidth + docClosePadding + 'px'
     });
   }
@@ -481,11 +481,11 @@ Network = function () {
       // console.log('showProps(d, "nodes") = ');
       // console.log(showProps(d, "nodes"));
       //result = parseInt(d.linkCount, 10);
-      result = parseInt(d.linkSetCount, 10);
-      d.radius = d.linkSetCount;
+      result = parseInt(d.linkCount, 10);
+      d.radius = d.linkCount;
       // console.log("viz.js 197 parseInt(d.linkCount, 10) = ");
       // console.log(result);
-      return parseInt(d.linkSetCount, 10);
+      return parseInt(d.linkCount, 10);
     });
     // console.log("countExtent = ");
     // console.log(countExtent);
@@ -514,10 +514,10 @@ Network = function () {
         // console.log(showProps(n, "n"));
       });
 
-      //return n.radius = circleRadius(n.linkSetCount);
-      // return n.radius = (n.linkSetCount);
+      //return n.radius = circleRadius(n.linkCount);
+      // return n.radius = (n.linkCount);
       // determine radius of each node circle
-      return n.radius = circleRadius(Math.pow(n.linkSetCount * 3, 0.9));
+      return n.radius = circleRadius(Math.pow(n.linkCount * 3, 0.9));
     });
     nodesMap = mapNodes(data.nodes);
     count = 0;
@@ -565,12 +565,12 @@ Network = function () {
     countExtent = d3.extent(data.nodes, function (d) {
       // console.log('showProps(d, "nodes") = ');
       // console.log(showProps(d, "nodes"));
-      //result = parseInt(d.linkSetCount, 10);
-      result = parseInt(d.linkSetCount, 10);
-      d.radius = d.linkSetCount;
-      // console.log("viz.js 197 parseInt(d.linkSetCount, 10) = ");
+      //result = parseInt(d.linkCount, 10);
+      result = parseInt(d.linkCount, 10);
+      d.radius = d.linkCount;
+      // console.log("viz.js 197 parseInt(d.linkCount, 10) = ");
       // console.log(result);
-      return parseInt(d.linkSetCount, 10);
+      return parseInt(d.linkCount, 10);
     });
     // console.log("countExtent = ");
     // console.log(countExtent);
@@ -584,8 +584,8 @@ Network = function () {
 //      var randomnumber;
       //     n.x = randomnumber = Math.floor(Math.random() * width);
       //     n.y = randomnumber = Math.floor(Math.random() * height);
-      // console.log("243 circleRadius(n.linkSetCount) = ");
-      // console.log(circleRadius(n.linkSetCount));
+      // console.log("243 circleRadius(n.linkCount) = ");
+      // console.log(circleRadius(n.linkCount));
       // console.log("245 n.weight = ");
       // console.log(n.weight);
       // console.log("245 data.nodes = ");
@@ -594,10 +594,10 @@ Network = function () {
       // console.log(data.nodes.weight);
 
       // console.log('250 data.nodes.forEach(function (n  = ');
-      //return n.radius = circleRadius(n.linkSetCount);
-      // return n.radius = (n.linkSetCount);
+      //return n.radius = circleRadius(n.linkCount);
+      // return n.radius = (n.linkCount);
       // determine radius of each node circle
-      return n.radius = circleRadius(Math.pow(n.linkSetCount * 3, 0.9));
+      return n.radius = circleRadius(Math.pow(n.linkCount * 3, 0.9));
     });
     nodesMap = mapNodes(data.nodes);
     count = 0;
@@ -669,19 +669,19 @@ Network = function () {
 //  based on current filter setting.
 //  Returns array of nodes
   filterNodes = function (allNodes) {
-    var cutoff, filteredNodes, linkSetCounts;
+    var cutoff, filteredNodes, linkCounts;
     filteredNodes = allNodes;
     if (filter === "popular" || filter === "obscure") {
-      linkSetCounts = allNodes.map(function (d) {
-        return d.linkSetCount;
+      linkCounts = allNodes.map(function (d) {
+        return d.linkCount;
       })
         .sort(d3.ascending);
-      cutoff = d3.quantile(linkSetCounts, 0.5);
+      cutoff = d3.quantile(linkCounts, 0.5);
       filteredNodes = allNodes.filter(function (n) {
         if (filter === "popular") {
-          return n.linkSetCount > cutoff;
+          return n.linkCount > cutoff;
         } else if (filter === "obscure") {
-          return n.linkSetCount <= cutoff;
+          return n.linkCount <= cutoff;
         }
       });
     }
@@ -975,7 +975,7 @@ Network = function () {
 //  particular node.
 
   strokeFor = function (d) {
-    return d3.rgb(nodeColors(d.linkSetCount))
+    return d3.rgb(nodeColors(d.linkCount))
       .darker()
       .toString();
   };
@@ -984,7 +984,7 @@ Network = function () {
     var content;
     content = '<p class="main"><span>' + d.name + '</span></p>';
     content += '<hr class="tooltip-hr">';
-    content += '<p class="main"><span>ID: ' + d.id + '&nbsp;&nbsp; Links: ' + d.linkSetCount + '</span></p>';
+    content += '<p class="main"><span>ID: ' + d.id + '&nbsp;&nbsp; Links: ' + d.linkCount + '</span></p>';
     if (d.natnlty) {
       content += '<hr class="tooltip-hr">';
       content += '<p class="main"><span>Nationality: ' + d.natnlty;
@@ -1140,19 +1140,16 @@ $(function () {
       if (showingDoc) {
         docHeight = desiredDocsHeight;
         $('#doc-container').css('height', docHeight + 'px');
-        $('#doc-container').css('height', docHeight + 'px');
+      //  $('#doc-container').css('height', docHeight + 'px');
       } else {
-        $('#doc-container').css('height', docHeight + 'px');
+        $('#doc-container').css('height', 0 + 'px');
       }
 //    svgHeight = window.innerHeight - docHeight;
       svgHeight = window.innerHeight - docHeight - $("#top-stuff").height();
 
-      console.log("; window.innerHeight = ", window.innerHeight, "; desiredDocsHeight = ", desiredDocsHeight, "; topStuffHeight = ", topStuffHeight, "; svgHeight = ", svgHeight);
+      console.log("; window.innerHeight = ", window.innerHeight, "; svgHeight = ", svgHeight);
 
       console.log("; window.innerWidth = ", window.innerWidth);
-      if (consoleLogDocument) {
-        console.log("\n window.innerHeight = ", window.innerHeight, "; docHeight = ", docHeight, "; svgHeight = ", svgHeight);
-      }
 
       $('#svg').css('height', svgHeight + 'px');
 //    $('svg').css('height', svgHeight + 'px');
@@ -1160,7 +1157,7 @@ $(function () {
         $('.mainTitleDiv').css('font-size', '14px');
       }
       $('#doc-close').css({
-        top: svgHeight + docClosePadding + 'px',
+       // top: svgHeight + docClosePadding + 'px',
         right: window.innerWidth - $('#doc-container')[0].clientWidth + docClosePadding + 'px'
       });
     }
@@ -1244,17 +1241,6 @@ $(function () {
       highlightObject(null);
     }
 
-
-    // function deselectObject(doResize) {
-   //   var myDoc = $('#viz-doc');
-   //   if (doResize || typeof doResize == 'undefined') {
-   //     myDoc.resize(false);
-   //   }
-//       data.node.classed('selected', false);
-  //    selected = {};
-//      highlightObject(null);
-   // }
-
     var clickLinkShowDoc = function (id) { //d, i) {
       console.log("click, id = ", id);
       var content;
@@ -1271,7 +1257,7 @@ $(function () {
 
 //  .on('click', '.select-object', function () {
     var gid = "QI.D.232.07";
-    $('#viz-doc a').on('click', '#QI.D.232.07', function (qid) {
+    $('.document a').on('click', '#QI.D.232.07', function (qid) {
       console.log('on click ' + qid);
     });
 
