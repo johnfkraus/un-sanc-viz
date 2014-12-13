@@ -1,7 +1,7 @@
 {
  "CONSOLIDATED_LIST": {
   "$": {
-   "dateGenerated": "2014-11-24T00:00:00"
+   "dateGenerated": "2014-12-12T00:00:00"
   },
   "INDIVIDUALS": {
    "INDIVIDUAL": [
@@ -12347,33 +12347,37 @@
     },
     {
      "DATAID": "113211",
-     "VERSIONNUM": "6",
+     "VERSIONNUM": "7",
      "FIRST_NAME": "ARIS",
      "SECOND_NAME": "MUNANDAR",
      "UN_LIST_TYPE": "Al-Qaida",
      "REFERENCE_NUMBER": "QI.M.119.03.",
      "LISTED_ON": "2003-09-09T00:00:00",
-     "COMMENTS1": "Review pursuant to Security Council resolution 1822 (2008) was concluded on 25 May 2010.",
+     "COMMENTS1": "At large as at Dec. 2003. Nationality as at Dec. 2003. Review pursuant to Security Council resolution 1822 (2008) was concluded on 25 May 2010.",
+     "NATIONALITY": {
+      "VALUE": "Indonesian"
+     },
      "LIST_TYPE": {
       "VALUE": "UN List"
      },
      "LAST_DAY_UPDATED": {
       "VALUE": [
        "2005-09-09T00:00:00",
-       "2006-10-04T00:00:00"
+       "2006-10-04T00:00:00",
+       "2014-12-12T00:00:00"
       ]
      },
      "INDIVIDUAL_ALIAS": "",
      "INDIVIDUAL_ADDRESS": "",
      "INDIVIDUAL_DATE_OF_BIRTH": [
       {
-       "TYPE_OF_DATE": "Exact",
-       "DATE": "1971-01-01T00:00:00"
-      },
-      {
        "TYPE_OF_DATE": "Between",
        "FROM_YEAR": "1962",
        "TO_YEAR": "1968"
+      },
+      {
+       "TYPE_OF_DATE": "Exact",
+       "DATE": "1971-01-01T00:00:00"
       }
      ],
      "INDIVIDUAL_PLACE_OF_BIRTH": {
@@ -12381,7 +12385,7 @@
      },
      "INDIVIDUAL_DOCUMENT": "",
      "SORT_KEY": "MUNANDAR ARIS",
-     "SORT_KEY_LAST_MOD": "2006-10-04T00:00:00"
+     "SORT_KEY_LAST_MOD": "2014-12-12T00:00:00"
     },
     {
      "DATAID": "113313",
@@ -13425,7 +13429,7 @@
     },
     {
      "DATAID": "113215",
-     "VERSIONNUM": "6",
+     "VERSIONNUM": "7",
      "FIRST_NAME": "ABU",
      "SECOND_NAME": "RUSDAN",
      "UN_LIST_TYPE": "Al-Qaida",
@@ -13435,37 +13439,40 @@
      "LIST_TYPE": {
       "VALUE": "UN List"
      },
+     "LAST_DAY_UPDATED": {
+      "VALUE": "2014-12-12T00:00:00"
+     },
      "INDIVIDUAL_ALIAS": [
       {
-       "QUALITY": "Good",
+       "QUALITY": "Low",
        "ALIAS_NAME": "Abu Thoriq"
       },
       {
-       "QUALITY": "Good",
+       "QUALITY": "Low",
        "ALIAS_NAME": "Rusdjan"
       },
       {
-       "QUALITY": "Good",
+       "QUALITY": "Low",
        "ALIAS_NAME": "Rusjan"
       },
       {
-       "QUALITY": "Good",
+       "QUALITY": "Low",
        "ALIAS_NAME": "Rusydan"
       },
       {
-       "QUALITY": "Good",
+       "QUALITY": "Low",
        "ALIAS_NAME": "Thoriquddin"
       },
       {
-       "QUALITY": "Good",
+       "QUALITY": "Low",
        "ALIAS_NAME": "Thoriquiddin"
       },
       {
-       "QUALITY": "Good",
+       "QUALITY": "Low",
        "ALIAS_NAME": "Thoriquidin"
       },
       {
-       "QUALITY": "Good",
+       "QUALITY": "Low",
        "ALIAS_NAME": "Toriquddin"
       }
      ],
@@ -13479,7 +13486,7 @@
      },
      "INDIVIDUAL_DOCUMENT": "",
      "SORT_KEY": "RUSDAN ABU",
-     "SORT_KEY_LAST_MOD": "2005-05-16T00:00:00"
+     "SORT_KEY_LAST_MOD": "2014-12-12T00:00:00"
     },
     {
      "DATAID": "111497",
@@ -14370,18 +14377,21 @@
     },
     {
      "DATAID": "113222",
-     "VERSIONNUM": "7",
+     "VERSIONNUM": "8",
      "FIRST_NAME": "YASSIN",
-     "SECOND_NAME": "SYWAL",
+     "SECOND_NAME": "SYAWAL",
      "UN_LIST_TYPE": "Al-Qaida",
      "REFERENCE_NUMBER": "QI.S.123.03.",
      "LISTED_ON": "2003-09-09T00:00:00",
-     "COMMENTS1": "Review pursuant to Security Council resolution 1822 (2008) was concluded on 25 May 2010.",
+     "COMMENTS1": "At large as at Dec. 2003. Review pursuant to Security Council resolution 1822 (2008) was concluded on 25 May 2010.",
      "NATIONALITY": {
       "VALUE": "Indonesian"
      },
      "LIST_TYPE": {
       "VALUE": "UN List"
+     },
+     "LAST_DAY_UPDATED": {
+      "VALUE": "2014-12-12T00:00:00"
      },
      "INDIVIDUAL_ALIAS": [
       {
@@ -14390,7 +14400,7 @@
       },
       {
        "QUALITY": "Good",
-       "ALIAS_NAME": "Mochtar Yasin Mahmud"
+       "ALIAS_NAME": "Yasin Mahmud Mochtar"
       },
       {
        "QUALITY": "Good",
@@ -14415,6 +14425,14 @@
       {
        "QUALITY": "Low",
        "ALIAS_NAME": "Abu Muamar"
+      },
+      {
+       "QUALITY": "Good",
+       "ALIAS_NAME": "Yassin Sywal (formerly listed as)"
+      },
+      {
+       "QUALITY": "Low",
+       "ALIAS_NAME": "Mubarok"
       }
      ],
      "INDIVIDUAL_ADDRESS": "",
@@ -14424,8 +14442,8 @@
      },
      "INDIVIDUAL_PLACE_OF_BIRTH": "",
      "INDIVIDUAL_DOCUMENT": "",
-     "SORT_KEY": "SYWAL YASSIN",
-     "SORT_KEY_LAST_MOD": "2003-09-09T00:00:00"
+     "SORT_KEY": "SYAWAL YASSIN",
+     "SORT_KEY_LAST_MOD": "2014-12-12T00:00:00"
     },
     {
      "DATAID": "111639",

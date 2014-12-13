@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<CONSOLIDATED_LIST dateGenerated="2014-11-24T00:00:00">
+<CONSOLIDATED_LIST dateGenerated="2014-12-12T00:00:00">
    <INDIVIDUALS>
       <INDIVIDUAL>
          <DATAID>111900</DATAID>
@@ -11635,37 +11635,41 @@
       </INDIVIDUAL>
       <INDIVIDUAL>
          <DATAID>113211</DATAID>
-         <VERSIONNUM>6</VERSIONNUM>
+         <VERSIONNUM>7</VERSIONNUM>
          <FIRST_NAME>ARIS</FIRST_NAME>
          <SECOND_NAME>MUNANDAR</SECOND_NAME>
          <UN_LIST_TYPE>Al-Qaida</UN_LIST_TYPE>
          <REFERENCE_NUMBER>QI.M.119.03.</REFERENCE_NUMBER>
          <LISTED_ON>2003-09-09T00:00:00</LISTED_ON>
-         <COMMENTS1>Review pursuant to Security Council resolution 1822 (2008) was concluded on 25 May 2010.</COMMENTS1>
+         <COMMENTS1>At large as at Dec. 2003. Nationality as at Dec. 2003. Review pursuant to Security Council resolution 1822 (2008) was concluded on 25 May 2010.</COMMENTS1>
+         <NATIONALITY>
+            <VALUE>Indonesian</VALUE>
+         </NATIONALITY>
          <LIST_TYPE>
             <VALUE>UN List</VALUE>
          </LIST_TYPE>
          <LAST_DAY_UPDATED>
             <VALUE>2005-09-09T00:00:00</VALUE>
             <VALUE>2006-10-04T00:00:00</VALUE>
+            <VALUE>2014-12-12T00:00:00</VALUE>
          </LAST_DAY_UPDATED>
          <INDIVIDUAL_ALIAS/>
          <INDIVIDUAL_ADDRESS/>
          <INDIVIDUAL_DATE_OF_BIRTH>
-            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
-            <DATE>1971-01-01T00:00:00</DATE>
-         </INDIVIDUAL_DATE_OF_BIRTH>
-         <INDIVIDUAL_DATE_OF_BIRTH>
             <TYPE_OF_DATE>Between</TYPE_OF_DATE>
             <FROM_YEAR>1962</FROM_YEAR>
             <TO_YEAR>1968</TO_YEAR>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1971-01-01T00:00:00</DATE>
          </INDIVIDUAL_DATE_OF_BIRTH>
          <INDIVIDUAL_PLACE_OF_BIRTH>
             <NOTE>Sambi, Boyolali, Java, Indonesia</NOTE>
          </INDIVIDUAL_PLACE_OF_BIRTH>
          <INDIVIDUAL_DOCUMENT/>
          <SORT_KEY>MUNANDAR ARIS</SORT_KEY>
-         <SORT_KEY_LAST_MOD>2006-10-04T00:00:00</SORT_KEY_LAST_MOD>
+         <SORT_KEY_LAST_MOD>2014-12-12T00:00:00</SORT_KEY_LAST_MOD>
       </INDIVIDUAL>
       <INDIVIDUAL>
          <DATAID>113313</DATAID>
@@ -12653,7 +12657,7 @@
       </INDIVIDUAL>
       <INDIVIDUAL>
          <DATAID>113215</DATAID>
-         <VERSIONNUM>6</VERSIONNUM>
+         <VERSIONNUM>7</VERSIONNUM>
          <FIRST_NAME>ABU</FIRST_NAME>
          <SECOND_NAME>RUSDAN</SECOND_NAME>
          <UN_LIST_TYPE>Al-Qaida</UN_LIST_TYPE>
@@ -12663,36 +12667,39 @@
          <LIST_TYPE>
             <VALUE>UN List</VALUE>
          </LIST_TYPE>
+         <LAST_DAY_UPDATED>
+            <VALUE>2014-12-12T00:00:00</VALUE>
+         </LAST_DAY_UPDATED>
          <INDIVIDUAL_ALIAS>
-            <QUALITY>Good</QUALITY>
+            <QUALITY>Low</QUALITY>
             <ALIAS_NAME>Abu Thoriq</ALIAS_NAME>
          </INDIVIDUAL_ALIAS>
          <INDIVIDUAL_ALIAS>
-            <QUALITY>Good</QUALITY>
+            <QUALITY>Low</QUALITY>
             <ALIAS_NAME>Rusdjan</ALIAS_NAME>
          </INDIVIDUAL_ALIAS>
          <INDIVIDUAL_ALIAS>
-            <QUALITY>Good</QUALITY>
+            <QUALITY>Low</QUALITY>
             <ALIAS_NAME>Rusjan</ALIAS_NAME>
          </INDIVIDUAL_ALIAS>
          <INDIVIDUAL_ALIAS>
-            <QUALITY>Good</QUALITY>
+            <QUALITY>Low</QUALITY>
             <ALIAS_NAME>Rusydan</ALIAS_NAME>
          </INDIVIDUAL_ALIAS>
          <INDIVIDUAL_ALIAS>
-            <QUALITY>Good</QUALITY>
+            <QUALITY>Low</QUALITY>
             <ALIAS_NAME>Thoriquddin</ALIAS_NAME>
          </INDIVIDUAL_ALIAS>
          <INDIVIDUAL_ALIAS>
-            <QUALITY>Good</QUALITY>
+            <QUALITY>Low</QUALITY>
             <ALIAS_NAME>Thoriquiddin</ALIAS_NAME>
          </INDIVIDUAL_ALIAS>
          <INDIVIDUAL_ALIAS>
-            <QUALITY>Good</QUALITY>
+            <QUALITY>Low</QUALITY>
             <ALIAS_NAME>Thoriquidin</ALIAS_NAME>
          </INDIVIDUAL_ALIAS>
          <INDIVIDUAL_ALIAS>
-            <QUALITY>Good</QUALITY>
+            <QUALITY>Low</QUALITY>
             <ALIAS_NAME>Toriquddin</ALIAS_NAME>
          </INDIVIDUAL_ALIAS>
          <INDIVIDUAL_ADDRESS/>
@@ -12705,7 +12712,7 @@
          </INDIVIDUAL_PLACE_OF_BIRTH>
          <INDIVIDUAL_DOCUMENT/>
          <SORT_KEY>RUSDAN ABU</SORT_KEY>
-         <SORT_KEY_LAST_MOD>2005-05-16T00:00:00</SORT_KEY_LAST_MOD>
+         <SORT_KEY_LAST_MOD>2014-12-12T00:00:00</SORT_KEY_LAST_MOD>
       </INDIVIDUAL>
       <INDIVIDUAL>
          <DATAID>111497</DATAID>
@@ -13538,26 +13545,29 @@
       </INDIVIDUAL>
       <INDIVIDUAL>
          <DATAID>113222</DATAID>
-         <VERSIONNUM>7</VERSIONNUM>
+         <VERSIONNUM>8</VERSIONNUM>
          <FIRST_NAME>YASSIN</FIRST_NAME>
-         <SECOND_NAME>SYWAL</SECOND_NAME>
+         <SECOND_NAME>SYAWAL</SECOND_NAME>
          <UN_LIST_TYPE>Al-Qaida</UN_LIST_TYPE>
          <REFERENCE_NUMBER>QI.S.123.03.</REFERENCE_NUMBER>
          <LISTED_ON>2003-09-09T00:00:00</LISTED_ON>
-         <COMMENTS1>Review pursuant to Security Council resolution 1822 (2008) was concluded on 25 May 2010.</COMMENTS1>
+         <COMMENTS1>At large as at Dec. 2003. Review pursuant to Security Council resolution 1822 (2008) was concluded on 25 May 2010.</COMMENTS1>
          <NATIONALITY>
             <VALUE>Indonesian</VALUE>
          </NATIONALITY>
          <LIST_TYPE>
             <VALUE>UN List</VALUE>
          </LIST_TYPE>
+         <LAST_DAY_UPDATED>
+            <VALUE>2014-12-12T00:00:00</VALUE>
+         </LAST_DAY_UPDATED>
          <INDIVIDUAL_ALIAS>
             <QUALITY>Good</QUALITY>
             <ALIAS_NAME>Salim Yasin</ALIAS_NAME>
          </INDIVIDUAL_ALIAS>
          <INDIVIDUAL_ALIAS>
             <QUALITY>Good</QUALITY>
-            <ALIAS_NAME>Mochtar Yasin Mahmud</ALIAS_NAME>
+            <ALIAS_NAME>Yasin Mahmud Mochtar</ALIAS_NAME>
          </INDIVIDUAL_ALIAS>
          <INDIVIDUAL_ALIAS>
             <QUALITY>Good</QUALITY>
@@ -13583,6 +13593,14 @@
             <QUALITY>Low</QUALITY>
             <ALIAS_NAME>Abu Muamar</ALIAS_NAME>
          </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Yassin Sywal (formerly listed as)</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Low</QUALITY>
+            <ALIAS_NAME>Mubarok</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
          <INDIVIDUAL_ADDRESS/>
          <INDIVIDUAL_DATE_OF_BIRTH>
             <TYPE_OF_DATE>Approximately</TYPE_OF_DATE>
@@ -13590,8 +13608,8 @@
          </INDIVIDUAL_DATE_OF_BIRTH>
          <INDIVIDUAL_PLACE_OF_BIRTH/>
          <INDIVIDUAL_DOCUMENT/>
-         <SORT_KEY>SYWAL YASSIN</SORT_KEY>
-         <SORT_KEY_LAST_MOD>2003-09-09T00:00:00</SORT_KEY_LAST_MOD>
+         <SORT_KEY>SYAWAL YASSIN</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-12-12T00:00:00</SORT_KEY_LAST_MOD>
       </INDIVIDUAL>
       <INDIVIDUAL>
          <DATAID>111639</DATAID>

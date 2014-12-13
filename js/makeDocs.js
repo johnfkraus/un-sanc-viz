@@ -69,7 +69,7 @@ var get_html_docs = function () {
       }
       callback();
     },
-
+    // save intermediate data file for debugging
     function (callback) {
       // var jsonData = JSON.stringify(data);
       saveJsonFile(JSON.stringify(data, null, " "), "./data/output/data31deleteEntsEtc.json");
@@ -90,7 +90,7 @@ var get_html_docs = function () {
     },
 
     function (callback) {
-      nodes = getHTMLDocs(data.nodes, config);
+      nodes = makeHTMLDocs(data.nodes, config);
       data.nodes = nodes;
       if (consoleLog) {
         console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount);
@@ -99,10 +99,9 @@ var get_html_docs = function () {
       callback();
     },
 
-
     function (callback) {
       var jsonWithDocsFileName = __dirname + "/../data/output/AQList-docs.json";
-      // data = newData; // = getHTMLDocs(JSON.stringify(data));
+      // data = newData; // = makeHTMLDocs(JSON.stringify(data));
       saveJsonFile(JSON.stringify(data, null, " "), jsonWithDocsFileName);
       if (consoleLog) {
         console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount);
@@ -122,7 +121,7 @@ var get_html_docs = function () {
 };
 
 // create a links array in each entity/indiv containing ids of related parties
-var getHTMLDocs = function (nodes, config) {
+var makeHTMLDocs = function (nodes, config) {
   nodes.forEach(function (node) {
     var nameId = node.id;
     var markdownFileName = "./data/markdown/" + nameId + ".mkdn";
@@ -132,48 +131,21 @@ var getHTMLDocs = function (nodes, config) {
     } else {
       node.type = "Entity";
     }
-  //  if (config['types'][type]) {
-  //    type = config['types'][type]['long'];
-  //  }
-    var markdownContent = "## " + node.name + " " + node.NAME_ORIGINAL_SCRIPT  + "##\n### ID: " + node.id + "###\n#### Type: " + node.type + "####\n\n";
+    var markdownContent = "## " + node.name + " ## &nbsp; ## " + node.NAME_ORIGINAL_SCRIPT + "##\n### ID: " + node.id + "###\n#### Type: " + node.type + "####\n\n";
+    var htmlContent = "&lt;h2> " + node.name + "&lt;/h2>&nbsp;&lt;span id='name-original-script'>" + node.NAME_ORIGINAL_SCRIPT + "&lt;/span>\n&lt;h3>ID: " + node.id + "&lt;/h3>\n&lt;h4>Type: " + node.type + "&lt;/h4>\n\n";
     if (fileExists(markdownFileName)) {
       // markdownContent += "### Documentation\n\n";
-      markdownContent += readFileSync(markdownFileName); //file_get_contents(docFileName);
+      markdownContent += readFileSync(markdownFileName);
     } else {
-      markdownContent += "<div class=\"alert alert-warning\">No documentation for this object.</div>";
+      markdownContent += "&lt;div class=\"alert alert-warning\">No documentation for this object.&lt;/div>";
     }
     if (node) {
-      // error_log("\n46 file exists,  obj = 'obj'", 3, "my-errors.log");
+
       markdownContent += "\n\n";
-//      markdownContent += get_depends_markdown('Linked to', node.linkSetArray);
+      // markdownContent += get_depends_markdown('Linked to', node.linkSetArray);
       // markdownContent += get_depends_markdown('Depended on by', node['dependedOnBy']);
     }
-    // Use {{object_id}} to link to an object
-/*
-    var arr = explode('{{', markdownContent);
-    markdownContent = arr[0];
-    var i, pieces, name, id_string, name_esc, clazz, errors = [];
-
-    for (i = 1; i < arr.length; i++) {
-      pieces = explode('}}', arr[i], 2);
-      name = pieces[0];
-      id_string = get_id_string(name);
-      name_esc = str_replace('_', '\_', name);
-      clazz = 'select-object';
-      if (!(data.name)) {
-        clazz += ' missing';
-        if (consoleLog) {
-          console.log("\n ", __filename, "line", __line, "; ", arr.name, " links to unrecognized object ", name);
-        }
-      }
-      markdownContent += "<a href='#id_string' class='class' data-name='name'>name_esc</a>";
-      markdownContent += pieces[1];
-      if (consoleLog) {
-        console.log("\n ", __filename, "line", __line, ";  markdownContent = ", markdownContent);
-      }
-    }
-    */
-    html = mdToHtml(markdownContent); //   markdownToHTML(markdownContent);
+    html = mdToHtml(markdownContent) + htmlContent; //   markdownToHTML(markdownContent);
     // IE can't handle <pre><code> (it eats all the line breaks)
     html = str_replace('<pre><code>', '<pre>', html);
     html = str_replace('</code></pre>', '</pre>', html);
@@ -181,7 +153,6 @@ var getHTMLDocs = function (nodes, config) {
       console.log("\n ", __filename, "line", __line, "; html = ", html);
     }
     node.docs = html;
-//    return html;
   });
   return nodes;
 };
@@ -206,8 +177,6 @@ function get_id_string(name) {
 var saveJsonFile = function (jsonData, fileName) {
   try {
     var myFile = fileName; //__dirname + "/../data/output/" + fileName;
-    // var myJsonData = JSON.stringify(jsonData, null, " ");
-    // if (consoleLog) { console.log("myJsonData =", myJsonData);
     fse.writeFileSync(myFile, jsonData, fsOptions);
     if (consoleLog) {
       console.log("\n ", __filename, "line", __line, ";  file written to: ", myFile);
@@ -221,13 +190,11 @@ var saveJsonFile = function (jsonData, fileName) {
 };
 
 // equivalent javascript functions for php functions
-
 var explode = function (delimiter, string, limit) {
   //  discuss at: http://phpjs.org/functions/explode/
   // original by: Kevin van Zonneveld (http://kevin.vanzonneveld.net)
   //   example 1: explode(' ', 'Kevin van Zonneveld');
   //   returns 1: {0: 'Kevin', 1: 'van', 2: 'Zonneveld'}
-
   if (arguments.length < 2 || typeof delimiter === 'undefined' || typeof string === 'undefined') return null;
   if (delimiter === '' || delimiter === false || delimiter === null) return false;
   if (typeof delimiter === 'function' || typeof delimiter === 'object' || typeof string === 'function' || typeof string ===

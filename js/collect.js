@@ -1,25 +1,31 @@
 // collect.js
-// collect AQList.xml from internet, convert to json
+// collect AQList.xml from Internet, convert to json
 // =========================
 
 if (typeof define !== 'function') {
   var define = require('amdefine');
 }
-
 var async = require('async'),
   re = require('request-enhanced'),
   fse = require('fs-extra'),
   util = require('util'),
   dateFormat = require('dateformat'),
   inspect = require('object-inspect'),
+  trunc = require('./trunc.js'),
+  request = require('sync-request'),
+  truncateToNumChars = 400,
+  AQList_xml,
+  myJsonData,
+// xmlStandardFileName = __dirname + '/../data/xml/AQList.xml',
   parseString = require('xml2js')
     .parseString;
 
-var trunc = require('./trunc.js');
+// var trunc = require('./trunc.js');
 // var linenums = require('./linenums.js');
+
 var consoleLog = false;
 
-var request = require('sync-request');
+// var request = require('sync-request');
 // require('console-stamp')(console, '\n[HH:MM:ss.l]');
 
 var fsOptions = {
@@ -28,7 +34,7 @@ var fsOptions = {
   autoClose: true
 };
 
-var truncateToNumChars = 400;
+// var truncateToNumChars = 400;
 
 String.prototype.trunc = String.prototype.trunc ||
 function (n) {
@@ -40,19 +46,20 @@ var now = new Date();
 dateFormat.masks.hammerTime = 'yyyy-mm-dd-HHMMss';
 dateFormat.masks.friendly_detailed = "dddd, mmmm dS, yyyy, h:MM:ss TT";
 dateFormat.masks.friendly_display = "dddd, mmmm dS, yyyy";
+dateFormat.masks.file_generated_date = "yyyy-mm-dd";
 // Basic usage
 // var displayDateString = dateFormat(now, "friendly_display");
 // Saturday, June 9th, 2007, 5:46:21 PM
 
 // var fileDateString = dateFormat(now, "hammerTime");
 
-xmlStandardFileName = __dirname + '/../data/xml/AQList.xml';
+// xmlStandardFileName = __dirname + '/../data/xml/AQList.xml';
 
 var convertXMLToJson = function () {
   var functionCount = 0;
-  var savedXMLData = "";
+  // var savedXMLData = "";
   var myResult;
-  var descr;
+  // var descr;
   async.series([
       function (callback) {
         // remove old AQList.xml and other old files
@@ -63,10 +70,10 @@ var convertXMLToJson = function () {
         if (consoleLog) {
           console.log("\n ", __filename, "line", "line", __line, "; newPath = ", newPath)
         }
-        // delete old files
+        // delete all files in newPath
         fse.unlink(newPath, function (err) {
           if (err) {
-            console.log("\n ", __filename, "line", "line", __line, "; File to be deleted could not be found");
+            console.log("\n ", __filename, "line", "line", __line, "; Error: ", err, " File to be deleted could not be found:");
             callback();
           }
           //throw err;
@@ -78,32 +85,21 @@ var convertXMLToJson = function () {
       },
       function (callback) {
         var res = request('GET', 'http://www.un.org/sc/committees/1267/AQList.xml');
-        // if (consoleLog) { console.log(res);
-        // if (consoleLog) { console.log(res.body.toString());
         if (consoleLog) {
-          console.log("Reponse Body Length: ", res.getBody().length)
+          console.log(res);
+          console.log(res.body.toString());
+          console.log("Reponse Body Length: ", res.getBody().length);
         }
         AQList_xml = res.body.toString();
         callback();
       },
 
       function (callback) {
-        writeAQListXML();
-//        if (consoleLog) { console.log("\n ", __filename, "line", __line, " function #:", ++functionCount);
-        // var descr = "collect AQList.xml from public web site, save locally under original filename";
-        // if (consoleLog) { console.log("\n ", __filename, "line", __line, " function 1#:", ++functionCount, descr);
-//          var myFile = __dirname + "/../data/output/AQList.xml";
-        //       var fileNameToSaveTo = __dirname + "/../data/output/AQList.xml";
+        var fileNameAndPathForProcessing = __dirname + "/../data/output/AQList.xml";
+        writeAQListXML(fileNameAndPathForProcessing);
+        var fileNameAndPathForArchive = __dirname + "/../data/archive/AQList.xml";
+        writeAQListXML(fileNameAndPathForArchive);
 
-        /*
-         re.get("http://www.un.org/sc/committees/1267/AQList.xml", fileNameToSaveTo, function (error, filename) {
-         if (error) {
-         if (consoleLog) { console.log("\n ", __filename, "line", __line, "; Error \n" + error);
-         }
-         if (consoleLog) { console.log("\n ", __filename, "line", __line, "; Saved content to: \n", filename);
-         });
-         // if (consoleLog) { console.log("\n ", __filename, __line, " AQList_xml = ", trunc.truncn(AQList_xml.toString(),222));
-         */
         callback();
       },
       function (callback) {
@@ -121,16 +117,6 @@ var convertXMLToJson = function () {
         }
         callback();
       },
-      /*
-       function(callback) {
-       //write XMLFile
-       if (consoleLog) { console.log("\n ", __filename, "line", __line, " function #:", ++functionCount);
-       writeAQListXML();
-       // if (consoleLog) { console.log("\n ", __filename, "line", __line, " AQList_xml = ", AQList_xml.toString());
-
-       callback();
-       },*/
-
       function (callback) {
         // convert AQList.xml to json
         if (consoleLog) {
@@ -152,10 +138,8 @@ var convertXMLToJson = function () {
               .trunc(truncateToNumChars));
           }
         });
-
         callback();
       },
-
       function (callback) {
         // save raw json
         if (consoleLog) {
@@ -178,30 +162,27 @@ var convertXMLToJson = function () {
             console.log("\n ", __filename, "line", __line, " Error: ", e);
           }
         }
-        //  if (consoleLog) { console.log("14 arg1 = ", arg1);
         callback();
       }
     ],
-
     function (err) {
       // if (consoleLog) { console.log("\n ", __filename, "line", __line, " savedJson = ", trunc.n400(myResult));
-
+      if (err) {
+        console.log("\n ", __filename, "line", __line, " Error: " + err);
+      }
     }
   );
 };
-
-var AQList_xml;
-var myJsonData;
-
-var getXMLFileSync = function () {
-  var res = request('GET', 'http://www.un.org/sc/committees/1267/AQList.xml');
-  if (consoleLog) {
-    console.log("\n ", __filename, "line", __line, "; res.body.toString() = ", res.body.toString());
-    console.log("\n ", __filename, "line", __line, "; Reponse Body Length: ", res.getBody().length);
-  }
-  return res.body.toString();
-};
-
+/*
+ var getXMLFileSync = function () {
+ var res = request('GET', 'http://www.un.org/sc/committees/1267/AQList.xml');
+ if (consoleLog) {
+ console.log("\n ", __filename, "line", __line, "; res.body.toString() = ", res.body.toString());
+ console.log("\n ", __filename, "line", __line, "; Response Body Length: ", res.getBody().length);
+ }
+ return res.body.toString();
+ };
+ */
 var getXMLFile = function () {
   var fileNameToSaveTo = __dirname + "/../data/output/AQList.xml";
   re.get("http://www.un.org/sc/committees/1267/AQList.xml", fileNameToSaveTo, function (error, filename) {
@@ -214,16 +195,16 @@ var getXMLFile = function () {
   });
 };
 
-var writeAQListXML = function () {
-  var myFile = __dirname + "/../data/output/AQList.xml";
+var writeAQListXML = function (localFileNameAndPath) {
+//  var myFile = __dirname + "/../data/output/AQList.xml";
   try {
-    fse.writeFileSync(myFile, AQList_xml, fsOptions);
+    fse.writeFileSync(localFileNameAndPath, AQList_xml, fsOptions);
     if (consoleLog) {
-      console.log("\n ", __filename, "line", __line, " file written to: ", myFile);
+      console.log("\n ", __filename, "line", __line, " file written to: ", localFileNameAndPath);
       console.log("\n ", __filename, "line", __line, "  file contained: ", util.inspect(AQList_xml.toString(), false, null).trunc(truncateToNumChars));
     }
-  } catch (e) {
-    console.log('\n ', __filename, "line", __line, ' Error: ', e);
+  } catch (err) {
+    console.log('\n ', __filename, "line", __line, ' Error: ', err);
   }
   if (consoleLog) {
     console.log("\n ", __filename, "line", __line, " AQList_xml = \n", trunc.n400(AQList_xml.toString()));
@@ -232,5 +213,6 @@ var writeAQListXML = function () {
 
 module.exports = {
   getXMLFile: getXMLFile,
-  convertXMLToJson: convertXMLToJson
+  convertXMLToJson: convertXMLToJson,
+  writeAQListXML: writeAQListXML
 };
