@@ -131,7 +131,7 @@ var makeHTMLDocs = function (nodes, config) {
     } else {
       node.type = "Entity";
     }
-    var markdownContent = "## " + node.name + " ## &nbsp; ## " + node.NAME_ORIGINAL_SCRIPT + "##\n### ID: " + node.id + "###\n#### Type: " + node.type + "####\n\n";
+    var markdownContent = "## " + node.name + " &nbsp; " + node.NAME_ORIGINAL_SCRIPT + "##\n### ID: " + node.id + "###\n#### Type: " + node.type + "####\n\n";
     var htmlContent = "&lt;h2> " + node.name + "&lt;/h2>&nbsp;&lt;span id='name-original-script'>" + node.NAME_ORIGINAL_SCRIPT + "&lt;/span>\n&lt;h3>ID: " + node.id + "&lt;/h3>\n&lt;h4>Type: " + node.type + "&lt;/h4>\n\n";
     if (fileExists(markdownFileName)) {
       // markdownContent += "### Documentation\n\n";
