@@ -1,2 +1,2 @@
- Provides support to Al-Qaida ({{QE.A.4.01}}) and Islamic State in Iraq and the 
-Levant, listed as Al-Qaida in Iraq (AQI) ({{QE.J.115.04}}), in Syria and Iraq. 
+ Provides support to Al-Qaida (QE.A.4.01) and Islamic State in Iraq and the
+Levant, listed as Al-Qaida in Iraq (AQI) (QE.J.115.04), in Syria and Iraq.
