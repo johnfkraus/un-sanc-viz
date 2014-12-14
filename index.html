@@ -101,16 +101,16 @@
             <td>
                 <div id="searchDiv" class="control" style="padding-top: 4px;">
                     <form id="searchIdsForm" action="" method="post">
-<div class="tableRow">
-                        <div class="searchIdsNames">Search IDs</div>
+                        <div class="tableRow">
+                            <div class="searchIdsNames">Search IDs</div>
                             <input type="text" class="text-input" id="searchInputId" value=""/>
-</div>
+                        </div>
                     </form>
                     <form id="searchNamesForm" action="" method="post">
                         <div class="tableRow">
-                        <div class="searchIdsNames">Search names</div>
+                            <div class="searchIdsNames">Search names</div>
                             <input type="text" class="text-input" id="searchInputName" value=""/>
-</div>
+                        </div>
                     </form>
                 </div>
             </td>
@@ -120,7 +120,7 @@
                     <form id="highlight"> <!--  action="highlight"  -->
                         <input type="radio" checked name="noneEntIndiv" value="">&nbsp;None<br>
                         <input type="radio" name="noneEntIndiv" value="QE.">&nbsp;Entities<br>
-                        <input type="radio" name="noneEntIndiv" value="QI.">&nbsp;Individuals<br />
+                        <input type="radio" name="noneEntIndiv" value="QI.">&nbsp;Individuals<br/>
                         <input type="radio" name="noneEntIndiv" value="xx"><span style="color: #ddd;">&nbsp;No longer listed</span>
                     </form>
                 </div>
@@ -192,9 +192,26 @@
     <!--div id="main" role="main"-->
     <div id="svg"></div>
     <div id="doc-container">
-        <div id="doc" class="doc">
+        <!--div id="doc" class="doc"-->
             <a id="doc-close" href="#">&times;</a>
+
+        <div id="doc" class="doc">
+            <div id="line1">
+                <span id="name">
+                </span><span>&nbsp;</span>
+               <span id="nameOriginalScript">
+               </span>
+
+            </div>
+            <div id="line2">
+                 <span id="id">
+                </span>
+
+                <span id="narrative"></span>
+            </div>
         </div>
+
+
     </div>
     <!--/div-->
     <!-- end of #main -->
@@ -230,7 +247,6 @@
         } else {
             $('.mainTitleDiv').css('font-size', '18px');
         }
-
 
     });
 

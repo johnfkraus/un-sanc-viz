@@ -131,8 +131,9 @@ var makeHTMLDocs = function (nodes, config) {
     } else {
       node.type = "Entity";
     }
-    var markdownContent = "## " + node.name + " &nbsp; " + node.NAME_ORIGINAL_SCRIPT + "##\n### ID: " + node.id + "###\n#### Type: " + node.type + "####\n\n";
-    var htmlContent = "&lt;h2> " + node.name + "&lt;/h2>&nbsp;&lt;span id='name-original-script'>" + node.NAME_ORIGINAL_SCRIPT + "&lt;/span>\n&lt;h3>ID: " + node.id + "&lt;/h3>\n&lt;h4>Type: " + node.type + "&lt;/h4>\n\n";
+    var markdownContent = "&lt;div>&lt;span>" + node.name + "&lt;/span>&lt;span class=\'nameOriginalScript\'>&nbsp; " + node.NAME_ORIGINAL_SCRIPT + "&lt;/span> &lt;/div>\n### ID: " + node.id + "###\n#### Type: " + node.type + "####\n\n";
+   // var htmlContent = "&lt;h2> " + node.name + "&lt;/h2>&nbsp;&lt;span id='name-original-script'>" + node.NAME_ORIGINAL_SCRIPT + "&lt;/span>\n&lt;h3>ID: " + node.id + "&lt;/h3>\n&lt;h4>Type: " + node.type + "&lt;/h4>\n\n";
+    var htmlContent = "&lt;div>&lt;span>" + node.name + "&lt;/span>&lt;span class=\'nameOriginalScript\'>&nbsp; " + node.NAME_ORIGINAL_SCRIPT + "&lt;/span> &lt;/div>\n### ID: " + node.id + "###\n#### Type: " + node.type + "####\n\n";
     if (fileExists(markdownFileName)) {
       // markdownContent += "### Documentation\n\n";
       markdownContent += readFileSync(markdownFileName);
@@ -152,7 +153,7 @@ var makeHTMLDocs = function (nodes, config) {
     if (consoleLog) {
       console.log("\n ", __filename, "line", __line, "; html = ", html);
     }
-    node.docs = html;
+    node.docs = htmlContent;
   });
   return nodes;
 };

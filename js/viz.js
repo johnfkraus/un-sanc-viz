@@ -146,7 +146,7 @@ Network = function () {
   width = w - 20; // 1152;
   var svgHeight = 0;
   setSize(false);
-
+var docClosePadding = 8;
   height = svgHeight;
 
   //  allData will store the unfiltered data
@@ -228,11 +228,10 @@ Network = function () {
       docContainer = $('#doc-container'),
       docClose = $('#doc-close'),
       showingDoc = false,
-      docClosePadding = 8,
       desiredDocsHeight = 200,
       topStuffHeight = $("#top-stuff").height();
     console.log("viz.js setSize(), topStuffHeight = ", topStuffHeight);
-    console.log("viz.js setSize(), topStuffHeight = ", topStuffHeight);
+  //  console.log("viz.js setSize(), topStuffHeight = ", topStuffHeight);
 
 
 
@@ -1017,7 +1016,7 @@ Network = function () {
     console.log("typeof aNode = ", typeof aNode);
     var content;
     content = d.docs;
-    doc.showDocument(content, d3.event);
+    doc.showDocument(d, content, d3.event);
     console.log("content =  ", content, "\nd3.event = ", d3.event + "\n\n");
     //  highlight neighboring nodes
     //  watch out - don't mess with node if search is currently matching

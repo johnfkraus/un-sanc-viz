@@ -169,7 +169,28 @@ line.link {
     stroke-width: 1.5px;
 }
 
-.document {
+#document {
+    padding-left: 12px;
+    font-size: 12px;
+}
+span#name {
+  font-size: 30px;
 
-    padding: 0 0 0 12px;
+}
+span#id {
+    font-weight: bold;
+}
+
+span#nameOriginalScript {
+    color: green;
+    line-height: 40px;
+    font-size: 33px;
+    white-space: nowrap;
+}
+span#narrative {
+    font-size: 12px;
+
+}
+div#line2 {
+    margin-top: 4px;
 }

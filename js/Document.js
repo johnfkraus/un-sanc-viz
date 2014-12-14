@@ -17,10 +17,16 @@ function Document(elementId) { // }, width) {
 
   hideDocument();
 
-  var showDocument = function (content, event, d) {
+  var showDocument = function (d, content, event) {
+//  var showDocument = function (content, event, d) {
     var that = this;
     // elementId is "viz-doc"
-    $(".document").html(content);
+    $("span#name").html(d.name);
+    $("span#id").html(d.id);
+    $("span#nameOriginalScript").html(d.NAME_ORIGINAL_SCRIPT);
+    $("span#narrative").html(d.COMMENTS1);
+//    $(".document").html(content);
+    // $(".document").innerHTML = content
 //    $("#" + docId).show();
     $("#doc-container").show();
     $("#doc-close").show();
