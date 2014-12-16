@@ -1,19 +1,16 @@
-function Document(elementId) { // }, width) {
+function Document() { // }, width) {
 
   var consoleLogDocument = true,
     that = this,
     showingDoc = false,
     docClosePadding = 8,
     desiredDocsHeight = 200,
-    elementId,
+    topStuffNegativeMargin = 10,
     docContainer,
     topStuffHeight = $("#top-stuff").height();
 
-  this.elementId = elementId;
-
-  $("#doc-container").append("<div class='document'></div>");
-
-  console.log("Document.js topStuffHeight = ", topStuffHeight);
+//  this.elementId = elementId;
+//  console.log("Document.js topStuffHeight = ", topStuffHeight);
 
   hideDocument();
 
@@ -25,51 +22,9 @@ function Document(elementId) { // }, width) {
     $("span#id").html(d.id);
     $("span#nameOriginalScript").html(d.NAME_ORIGINAL_SCRIPT);
     $("span#narrative").html(d.COMMENTS1);
-//    $(".document").html(content);
-    // $(".document").innerHTML = content
-//    $("#" + docId).show();
     $("#doc-container").show();
     $("#doc-close").show();
-    var qid = 'QI.D.232.07';
-//    var selector = "['id'='QI.D.232.07']";
     this.d = d;
-    //   vd = myNetwork.updateSearchIdLinkClick(qid);
-    // var ddd = d3.select(selector);
-
-    function makeDocLink(d) {
-      return function () {
-        console.log("d = ", d);
-        console.log("d.id = ", d.id);
-        $("#" + d.id).html(d.docs);
-        $("#doc-container").show();
-        $("#doc-close").show();
-      }
-    }
-
-    var makeDocLink_d = makeDocLink(d);
-//    console.log(add10(2)); // 12
-
-
-    $('.document a').on('click', function () {
-      // var ddd = d3.select(qid);
-      return makeDocLink_d;
-//      var d = that.d;
-//      console.log('on click ' + d);
-    });
-
-    resize(true);
-  };
-
-  var clickLinkShowDocument = function (id, content, d) {
-    var content = d.docs;
-    // elementId = "viz-doc"
-    $("#" + elementId).html(content);
-    $("#doc-container").show();
-    $("#doc-close").show();
-    $('.document a').on('click', function (event, qid) {
-      // var ddd = d3.select(qid);
-      console.log("Document.js clickLinkShowDocument, onclick, qid = ", qid, "; d = ", d);
-    });
     resize(true);
   };
 
@@ -80,6 +35,7 @@ function Document(elementId) { // }, width) {
   }
 
   function resize(showDoc) {
+    console.log("Document.js 51 resize(showDoc = ", showDoc, ")");
     var docHeight = 0,
       svgHeight = 0,
       docContainer = $('#doc-container'),
@@ -90,34 +46,25 @@ function Document(elementId) { // }, width) {
       docContainer[showDoc ? 'show' : 'hide']();
       docClose[showDoc ? 'show' : 'hide']();
     }
-
     if (showingDoc) {
       docHeight = desiredDocsHeight;
       $('#doc-container').css('height', docHeight + 'px');
     }
-//    svgHeight = window.innerHeight - docHeight;
-    svgHeight = window.innerHeight - docHeight - topStuffHeight;
-
-    if (consoleLogDocument) {
-      console.log("; window.innerHeight = ", window.innerHeight, "; desiredDocsHeight = ", desiredDocsHeight, "; topStuffHeight = ", topStuffHeight, "; svgHeight = ", svgHeight);
-      console.log("; window.innerWidth = ", window.innerWidth);
-      console.log("\n window.innerHeight = ", window.innerHeight, "; docHeight = ", docHeight, "; svgHeight = ", svgHeight);
-    }
-
+    svgHeight = window.innerHeight - docHeight - $("#top-stuff").height() + topStuffNegativeMargin;
     $('#svg').css('height', svgHeight + 'px');
-//    $('svg').css('height', svgHeight + 'px');
     if (window.innerWidth < 900) {
       $('.mainTitleDiv').css('font-size', '14px');
     }
     $('#doc-close').css({
-    //  top: svgHeight + docClosePadding + 'px',
       right: window.innerWidth - $('#doc-container')[0].clientWidth + docClosePadding + 'px'
     });
+    if (consoleLogDocument) {
+      console.log("Document.js window.innerHeight = ", window.innerHeight, "; desiredDocsHeight = ", desiredDocsHeight, "; topStuffHeight = ", $("#top-stuff").height(), "; svgHeight = ", svgHeight,"\nwindow.innerWidth = ", window.innerWidth, "; docHeight = ", docHeight);
+    }
   }
 
   return {
     showDocument: showDocument,
-    clickLinkShowDocument: clickLinkShowDocument,
     hideDocument: hideDocument,
     resize: resize
   }

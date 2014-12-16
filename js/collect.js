@@ -16,25 +16,18 @@ var async = require('async'),
   truncateToNumChars = 400,
   AQList_xml,
   myJsonData,
-// xmlStandardFileName = __dirname + '/../data/xml/AQList.xml',
   parseString = require('xml2js')
     .parseString;
 
-// var trunc = require('./trunc.js');
 // var linenums = require('./linenums.js');
 
 var consoleLog = false;
-
-// var request = require('sync-request');
-// require('console-stamp')(console, '\n[HH:MM:ss.l]');
 
 var fsOptions = {
   flags: 'r+',
   encoding: 'utf-8',
   autoClose: true
 };
-
-// var truncateToNumChars = 400;
 
 String.prototype.trunc = String.prototype.trunc ||
 function (n) {
@@ -43,54 +36,47 @@ function (n) {
 require('console-stamp')(console, '[HH:MM:ss.l]');
 
 var now = new Date();
-dateFormat.masks.hammerTime = 'yyyy-mm-dd-HHMMss';
+
 dateFormat.masks.friendly_detailed = "dddd, mmmm dS, yyyy, h:MM:ss TT";
 dateFormat.masks.friendly_display = "dddd, mmmm dS, yyyy";
 dateFormat.masks.file_generated_date = "yyyy-mm-dd";
 // Basic usage
+// dateFormat.masks.hammerTime = 'yyyy-mm-dd-HHMMss';
 // var displayDateString = dateFormat(now, "friendly_display");
 // Saturday, June 9th, 2007, 5:46:21 PM
-
 // var fileDateString = dateFormat(now, "hammerTime");
-
-// xmlStandardFileName = __dirname + '/../data/xml/AQList.xml';
 
 var convertXMLToJson = function () {
   var functionCount = 0;
-  // var savedXMLData = "";
   var myResult;
-  // var descr;
   async.series([
       function (callback) {
-        // remove old AQList.xml and other old files
-        //var newPath = (__dirname + "/../data/output/AQList.xml")
-        //  .toString();
+        // remove old AQList.xml and other old files; dated AQList.xml is stored in data/archive
         var newPath = (__dirname + "/../data/output/*")
           .toString();
-        if (consoleLog) {
-          console.log("\n ", __filename, "line", "line", __line, "; newPath = ", newPath)
-        }
         // delete all files in newPath
-        fse.unlink(newPath, function (err) {
+        var result = fse.unlink(newPath, function (err) {
           if (err) {
             console.log("\n ", __filename, "line", "line", __line, "; Error: ", err, " File to be deleted could not be found:");
-            callback();
-          }
-          //throw err;
-          if (consoleLog) {
-            console.log("\n ", __filename, "line", "line", __line, "; successfully deleted ", newPath)
+          } else {
+            if (consoleLog) {
+              console.log("\n ", __filename, "line", "line", __line, "; successfully deleted ", newPath)
+            }
           }
         });
+        if (true) {
+          console.log("\n ", __filename, "line", "line", __line, "; newPath = ", newPath, "; fse.unlink returned: ", result);
+        }
         callback();
       },
       function (callback) {
         var res = request('GET', 'http://www.un.org/sc/committees/1267/AQList.xml');
-        if (consoleLog) {
-          console.log(res);
-          console.log(res.body.toString());
-          console.log("Reponse Body Length: ", res.getBody().length);
-        }
         AQList_xml = res.body.toString();
+        if (consoleLog) {
+          console.log("res = ", res);
+          console.log("AQList_xml res.body.toString() = ", AQList_xml);
+          console.log("AQList_xml Response Body Length: ", res.getBody().length);
+        }
         callback();
       },
 
@@ -99,20 +85,17 @@ var convertXMLToJson = function () {
         writeAQListXML(fileNameAndPathForProcessing);
         var fileNameAndPathForArchive = __dirname + "/../data/archive/AQList.xml";
         writeAQListXML(fileNameAndPathForArchive);
-
         callback();
       },
       function (callback) {
-        // read xml file
+        // read local copy of XML file
         var rawXmlFileName = __dirname + "/../data/output/AQList.xml";
         var descr = "; reading raw XML file: " + rawXmlFileName;
         if (consoleLog) {
           console.log("\n ", __filename, "line", __line, "; function 1#:", ++functionCount, descr, fsOptions);
         }
-
         AQList_xml = fse.readFileSync(rawXmlFileName, fsOptions); //, function (err, data) {
-        // if (consoleLog) { console.log("\n ", __filename, "line", __line, "; xmlFile = \n", trunc.truncn(xmlFile,200));
-        if (consoleLog) {
+         if (consoleLog) {
           console.log("\n ", __filename, "line", __line, " AQList_xml = ", trunc.n400(AQList_xml.toString()));
         }
         callback();
@@ -173,16 +156,7 @@ var convertXMLToJson = function () {
     }
   );
 };
-/*
- var getXMLFileSync = function () {
- var res = request('GET', 'http://www.un.org/sc/committees/1267/AQList.xml');
- if (consoleLog) {
- console.log("\n ", __filename, "line", __line, "; res.body.toString() = ", res.body.toString());
- console.log("\n ", __filename, "line", __line, "; Response Body Length: ", res.getBody().length);
- }
- return res.body.toString();
- };
- */
+
 var getXMLFile = function () {
   var fileNameToSaveTo = __dirname + "/../data/output/AQList.xml";
   re.get("http://www.un.org/sc/committees/1267/AQList.xml", fileNameToSaveTo, function (error, filename) {

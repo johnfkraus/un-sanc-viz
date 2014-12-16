@@ -6,7 +6,7 @@ html.lt-ie9, html.lt-ie9 body {
     width: auto;
     height: 100px;
 }
-
+html { overflow-y: hidden; }
 a, a:visited {
     color: #4d4d4d;
     text-decoration: underline;
@@ -15,19 +15,9 @@ a, a:visited {
 /* 940px;  match value in js */
 #container {
     width: 100%;
-    /* 1152px; */
-    /* padding: 5px 0 10px 0;*/
     margin: auto;
 }
-/*
-#main {
-    display: table;
-    margin: 0 auto;
-    clear: both;
-    margin:auto;
-  
-}
-*/
+
 #svg {
     max-height: 960px;
     overflow: scroll;
@@ -102,23 +92,12 @@ form {
     color: white;
     background: #555;
 }
-/*
-p.search_title, p.search_title2 {
-    display: inline;
-    text-align: left;
-    font-weight: normal;
-    color: #777;
-}
-*/
+
 #searchDiv {
     padding-top: 0;
     padding-left: 0;
 }
-/*
-#searchIdsForm #searchNamesForm {
-    margin-left: 8px;
-}
-*/
+
 footer {
     display: none;
 }
@@ -193,4 +172,16 @@ span#narrative {
 }
 div#line2 {
     margin-top: 4px;
+}
+
+td#unLogo {
+    width: 103px;
+}
+
+#top-stuff {
+    z-index: 10;
+    padding: 5px;
+    width: 100%;
+    margin-bottom: 0;
+    background-color: transparent;
 }

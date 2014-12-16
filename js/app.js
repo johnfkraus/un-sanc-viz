@@ -23,37 +23,21 @@ var functionCount = 0;
 var __filename = __filename || {};
 var __line = __line || {};
 var consoleLog = false;
-var runApp = function () {
 
+var runApp = function () {
 //  if (consoleLog) { console.log("\n ", __filename, __line, ", runApp\n");
   if (consoleLog) {
-    console.log("\n ", __filename, "line", __line, new Date());
+    console.log("\n ", __filename, "line", __line, "; running app.js; ",new Date());
   }
 
   async.series([
     function (callback) {
-      // collect AQList.xml from public web site, convert to json, save locally
-      //(function() {
-      if (consoleLog) {
-        console.log("\n ", __filename, __line, "  function 1#:", ++functionCount);
-      }
-      if (consoleLog) {
-        console.log("\n ", __filename, __line, new Date());
-      }
-      // collect.getXMLFile();
-//      document.getElementById("demo").innerHTML = Date();
-      callback();
-      //})();
-    },
-    function (callback) {
-      // put data in arrays for d3
-      // (function() {
+      // collect raw data
       if (consoleLog) {
         console.log("\n ", __filename, __line, "; function 2#:", ++functionCount);
       }
       collect.convertXMLToJson(); //     setupData.fixData();
       callback();
-      // })();
     },
     function (callback) {
       // put data in arrays for d3
@@ -66,7 +50,7 @@ var runApp = function () {
     function (callback) {
       // put data in arrays for d3
       if (consoleLog) {
-        console.log("\n ", __filename, __line, "; function 3#:", ++functionCount);
+        console.log("\n ", __filename, __line, "; function 4#:", ++functionCount);
       }
       makeDocs.get_html_docs();
       callback();
@@ -74,8 +58,9 @@ var runApp = function () {
     function (callback) {
       // list files in /data/output
       if (consoleLog) {
-        console.log("\n ", __filename, __line, "; function 3#:", ++functionCount);
+        console.log("\n ", __filename, __line, "; function 5#:", ++functionCount);
       }
+      console.log("\n ", __filename, "line", __line, "; running filewalker.filewalker()");
       filewalker.filewalker();
       callback();
     }

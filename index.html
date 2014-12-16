@@ -23,7 +23,6 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/graph.css">
     <!-- end CSS-->
-
     <!--script src="js/libs/modernizr-2.0.6.min.js"></script-->
     <script src="js/libs/modernizr.custom.99838.js"></script>
     <script src="js/utilities.js"></script>
@@ -31,17 +30,18 @@
     <script src="js/json-pruned.js"></script>
     -->
     <script src="js/libs/underscore.js"></script>
-    <!--
-    <script src="http://ajax.cdnjs.com/ajax/libs/underscore.js/1.1.6/underscore-min.js"></script>
-    -->
     <script src="js/libs/backbone.js"></script>
     <script src="js/config.js"></script>
     <script src="js/objects.js"></script>
 </head>
 <body>
 <div id="container" class="container">
-    <table id="top-stuff" style="padding: 5px; width: 100%;">
+    <table id="top-stuff"
+           style="z-index: 10; padding: 5px; width: 100%; margin-bottom: 0px;    background-color: transparent;">
         <tr>
+            <td id="unLogo">
+                <img src="images/image001-103x89.gif"/>
+            </td>
             <td class="mainTitleTd">
                 <div class="mainTitleDiv"><a
                         href="http://www.un.org/sc/committees/1267/AQList.xml" id="AQList.xml" target="_blank"
@@ -50,22 +50,14 @@
                 </div>
                 <div class="noPadMar"><a href="http://www.un.org/sc/committees/1267/AQList.xml" id="AQList.xml"
                                          target="_blank"
-                                         style="text-decoration: none;"><span style="font-size: 10px; line-height: 9px;"
-                                                                              id="dateGeneratedByUN"></span></a></div>
+                                         style="text-decoration: none;"><span
+                        style="font-size: 10px; line-height: 120%;"
+                        id="dateGeneratedByUN"></span></a></div>
                 <div class="noPadMar">
-                    <span style="font-size: 10px; line-height: 9px; padding-left: 2px;">A Thing by <a
+                    <span style="line-height: 120%; font-size: 10px; padding-left: 2px;">A Thing by <a
                             href="mailto:john@johnfkraus.com?Subject=Cowabunga!" id="johnkraus" target="_blank"
                             style="text-decoration: none;">John Kraus</a></span>
                 </div>
-            </td>
-            <td align="center" style="padding: 4px 8px 4px 0; display: none;">
-
-                <a href="#" id="QE.T.14.01">QE.T.14.01</a>
-                <br/>
-                <a href="#" id='QE.A.2.01'>QE.A.2.01</a>
-                <br/>
-                <a href="#" id='QE.E.88.02'>QE.E.88.02</a>
-
             </td>
             <td align="center" style="display: none;">
                 <div id="list_selection" class="control">
@@ -73,17 +65,14 @@
                     <select id="list_select">
                         <option value="al-qaida.json">Al-Qaida List</option>
                     </select>
-
                 </div>
             </td>
             <td align="center" style="display: none;">
-
                 <div id="layouts" class="control">
                     <h3>Layout</h3>
                     <a id="force" class="active">Force Directed</a>
                     <a id="radial" style="color: #ddd; background-color: #aaa;">Radial</a>
                 </div>
-
             </td>
             <td align="right" style="display: none;">
                 <div id="filters" class="control">
@@ -135,12 +124,10 @@
                             <option selected="selected" value="name">Name (random)</option>
                             <option value="natnlty">Nationality</option>
                             <option value="other">Other</option>
-
-
                         </select>
                     </div>
                     <div class="force_selection control">
-                        <h5>Force charge</h5>
+                        <h5>Force<br> charge</h5>
                         <select id="force_charge_select" style="width: 60px;">
                             <option value="0">0</option>
                             <option value="-25">-25</option>
@@ -161,28 +148,28 @@
                         </select>
                     </div>
                     <div class="force_selection control" style="">
-                        <h5>Link distance</h5>
+                        <h5>Link<br> distance</h5>
                         <select id="link_distance_select" style="width: 75px;">
-                            <option value="0">0 px</option>
-                            <option value="5">5 px</option>
-                            <option value="10">10 px</option>
-                            <option value="15">15 px</option>
-                            <option value="20">20 px</option>
-                            <option value="25">25 px</option>
-                            <option value="30">30 px</option>
-                            <option value="35">35 px</option>
-                            <option selected="selected" value="40">40 px</option>
-                            <option value="45">45 px</option>
-                            <option value="50">50 px</option>
-                            <option value="55">55 px</option>
-                            <option value="60">60 px</option>
-                            <option value="70">70 px</option>
-                            <option value="80">80 px</option>
-                            <option value="90">90 px</option>
-                            <option value="100">100 px</option>
-                            <option value="125">125 px</option>
-                            <option value="150">150 px</option>
-                            <option value="200">200 px</option>
+                            <option value="0">0px</option>
+                            <option value="5">5px</option>
+                            <option value="10">10px</option>
+                            <option value="15">15px</option>
+                            <option value="20">20px</option>
+                            <option value="25">25px</option>
+                            <option value="30">30px</option>
+                            <option value="35">35px</option>
+                            <option selected="selected" value="40">40px</option>
+                            <option value="45">45px</option>
+                            <option value="50">50px</option>
+                            <option value="55">55px</option>
+                            <option value="60">60px</option>
+                            <option value="70">70px</option>
+                            <option value="80">80px</option>
+                            <option value="90">90px</option>
+                            <option value="100">100px</option>
+                            <option value="125">125px</option>
+                            <option value="150">150px</option>
+                            <option value="200">200px</option>
                         </select>
                     </div>
                 </div>
@@ -193,15 +180,14 @@
     <div id="svg"></div>
     <div id="doc-container">
         <!--div id="doc" class="doc"-->
-            <a id="doc-close" href="#">&times;</a>
+        <a id="doc-close" href="#">&times;</a>
 
         <div id="doc" class="doc">
             <div id="line1">
                 <span id="name">
-                </span><span>&nbsp;</span>
+                </span><span>&nbsp;&nbsp;</span>
                <span id="nameOriginalScript">
                </span>
-
             </div>
             <div id="line2">
                  <span id="id">
@@ -210,8 +196,6 @@
                 <span id="narrative"></span>
             </div>
         </div>
-
-
     </div>
     <!--/div-->
     <!-- end of #main -->

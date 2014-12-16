@@ -134,21 +134,23 @@ RadialPlacement = function () {
   return placement;
 };
 
-
 Network = function () {
   //  variables we want to access in multiple places of Network
 
-  var allData, charge, charge2, curLinksData, curNodesData, doc, filter, filterLinks, filterNodes, force, forceTick, groupCenters, height, hideDetails, layout, link, linkedByIndex, linksG, mapNodes, moveToRadialLayout, neighboring, network, node, nodeColors, nodeCounts, nodesG, radialTick, setFilter, setLayout, setSort, setupData, showDetails, showTheDoc, sort, sortedTargets, strokeFor, tooltip, update, updateCenters, updateLinks, updateNodes, width;
-  var setupData2;
-  var forceChargeParam;
+  var allData, charge, charge2, curLinksData, curNodesData, doc, filter, filterLinks, filterNodes, force,
+    forceChargeParam, forceTick, groupCenters, svgHeight, hideDetails, layout, link, linkedByIndex, linksG, mapNodes,
+    moveToRadialLayout, neighboring, network, node, nodeColors, nodeCounts, nodesG, radialTick,
+    setFilter, setLayout, setSort, setupData, setupData2, showDetails, showingDoc, showTheDoc, sort, sortedTargets,
+    strokeFor, tooltip, update, updateCenters, updateLinks, updateNodes, width;
+
   var w = window.innerWidth;
   var h = window.innerHeight;
   width = w - 20; // 1152;
-  var svgHeight = 0;
+  var svgHeight = 0,
+    docClosePadding = 8,
+    consoleLog = true;
+  // svgHeight = 0;
   setSize(false);
-var docClosePadding = 8;
-  height = svgHeight;
-
   //  allData will store the unfiltered data
   allData = [];
   curLinksData = [];
@@ -156,6 +158,8 @@ var docClosePadding = 8;
   linkedByIndex = {};
   nodesG = null;
   linksG = null;
+  showingDoc = false;
+
   //  these will point to the circles and lines
   //  of the nodes and links
 
@@ -200,6 +204,7 @@ var docClosePadding = 8;
       document.getElementById("dateGeneratedByUN").innerHTML = result;
     }(data);
     // genDate(data);
+    console.log("docClosePadding = ", docClosePadding)
     //  format our data
     allData = setupData(data);
     //  create our svg and groups
@@ -207,14 +212,14 @@ var docClosePadding = 8;
     viz = d3.select(selection)
       .append("svg")
       .attr("width", width)
-      .attr("height", height);
+      .attr("height", svgHeight);
     linksG = viz.append("g")
       .attr("id", "links");
     nodesG = viz.append("g")
       .attr("id", "nodes");
     //  setup the size of the force environment
 
-    force.size([width, height]);
+    force.size([width, svgHeight]);
     setLayout("force");
     setFilter("all");
     //  perform rendering and start force layout
@@ -230,14 +235,9 @@ var docClosePadding = 8;
       showingDoc = false,
       desiredDocsHeight = 200,
       topStuffHeight = $("#top-stuff").height();
+    topStuffNegativeMargin = 10;
     console.log("viz.js setSize(), topStuffHeight = ", topStuffHeight);
-  //  console.log("viz.js setSize(), topStuffHeight = ", topStuffHeight);
-
-
-
-
-
-
+    //  console.log("viz.js setSize(), topStuffHeight = ", topStuffHeight);
 
     if (typeof showDoc == 'boolean') {
       showingDoc = showDoc;
@@ -256,32 +256,30 @@ var docClosePadding = 8;
 //      console.log("\n window.innerHeight = ", window.innerHeight, "; docHeight = ", docHeight, "; svgHeight = ", svgHeight);
 //    }
 
-    $('svg').css('height', svgHeight + 'px');
-//    $('svg').css('height', svgHeight + 'px');
+    $('svg').css('height', (svgHeight + topStuffNegativeMargin) + 'px');
     if (window.innerWidth < 900) {
       $('.mainTitleDiv').css('font-size', '14px');
     }
     $('#doc-close').css({
-    //  top: svgHeight + docClosePadding + 'px',
+      //  top: svgHeight + docClosePadding + 'px',
       right: window.innerWidth - $('#doc-container')[0].clientWidth + docClosePadding + 'px'
     });
   }
 
-  
-  var repositionSvg = function(obj) {
+  var repositionSvg = function (obj) {
     var svg = $('svg');
-       var nodeRect = {
-        left: obj.x + obj.extent.left + svg.margin.left,
-        top: obj.y + obj.extent.top + svg.margin.top,
-        width: obj.extent.right - obj.extent.left,
-        height: obj.extent.bottom - obj.extent.top
-      };
-      var svgRect = {
-        left: svg.scrollLeft(),
-        top: svg.scrollTop(),
-        width: svg.width(),
-        height: svg.height()
-      };
+    var nodeRect = {
+      left: obj.x + obj.extent.left + svg.margin.left,
+      top: obj.y + obj.extent.top + svg.margin.top,
+      width: obj.extent.right - obj.extent.left,
+      height: obj.extent.bottom - obj.extent.top
+    };
+    var svgRect = {
+      left: svg.scrollLeft(),
+      top: svg.scrollTop(),
+      width: svg.width(),
+      height: svg.height()
+    };
     if (nodeRect.left < svgRect.left ||
       nodeRect.top < svgRect.top ||
       nodeRect.left + nodeRect.width > svgRect.left + svgRect.width ||
@@ -302,7 +300,6 @@ var docClosePadding = 8;
 //  and the network needs to be reset.
 
   update = function () {
-
     // forceChargeParam = $("#force_charge_select").val();
     var targets;
     //  filter data to show based on current filter settings.
@@ -319,7 +316,7 @@ var docClosePadding = 8;
     force.nodes(curNodesData);
     //  enter / exit for nodes
 
-    updateNodes();
+    network.updateNodes();
     //  always show links in force layout
     if (layout === "force") {
       force.links(curLinksData);
@@ -340,6 +337,7 @@ var docClosePadding = 8;
     //  start me up!
     return force.start();
   };
+  // end of update()
 //  Public function to switch between layouts
 
   network.toggleLayout = function (newLayout, changeInt) {
@@ -386,6 +384,63 @@ var docClosePadding = 8;
 
     });
 
+  };
+
+
+  network.updateColor3 = function (searchTermName) {
+    var searchRegEx;
+    searchRegEx = new RegExp(searchTermName, "i"); // .toLowerCase());
+    return node.each(function (d) {
+      var element, match;
+      element = d3.select(this);
+      match = d.name
+        .search(searchRegEx);
+      if (searchTermName.length > 0 && match >= 0) {
+        element.style("fill", "#F38630")
+          .style("stroke-width", 2.0)
+          .style("stroke", "#555");
+        return d.searched = true;
+      } else {
+        d.searched = false;
+        return element.style("fill", function (d) {
+          // return nodeColors(d.target);
+          return nodeColors(d[$('#node_color_select').val()]);
+        })
+          .style("stroke-width", 1.0);
+      }
+    });
+  };
+
+
+  network.updateColor2 = function (nodeColorSelect) {
+    return node.each(function (d) {
+      if (false) {
+        element.style("fill", "#F38630")
+          .style("stroke-width", 2.0)
+          .style("stroke", "#555");
+        return d.searched = true;
+
+      } else {
+
+        element = d3.select(d);
+        return element.style("fill", function (d) {
+          return nodeColors(d[nodeColorSelect]);
+        });
+
+      }
+    });
+  };
+
+  network.updateColor = function () {
+    console.log("node_color_select = ", $('#node_color_select').val());
+    node.each(function (d) {
+
+      return element.style("fill", function (d) {
+        return nodeColors(d[$('#node_color_select').val()]);
+      })
+      return nodeColors(d[$('#node_color_select').val()]);
+    })
+      .style("stroke-width", 1.0);
   };
 
   network.updateSearchId = function (searchTermId) {
@@ -497,7 +552,7 @@ var docClosePadding = 8;
       // console.log(n);
       var randomnumber;
       n.x = randomnumber = Math.floor(Math.random() * width);
-      n.y = randomnumber = Math.floor(Math.random() * height);
+      n.y = randomnumber = Math.floor(Math.random() * svgHeight);
       // console.log("243 circleRadius(n.linkCount) = ");
       // console.log(circleRadius(n.linkCount));
       // console.log("245 n.weight = ");
@@ -739,7 +794,7 @@ var docClosePadding = 8;
       return groupCenters = RadialPlacement()
         .center({
           "x": width / 2,
-          "y": height / 2 - 100
+          "y": svgHeight / 2 - 100
         })
         .radius(300)
         .increment(18)
@@ -769,7 +824,7 @@ var docClosePadding = 8;
     });
   };
 //  enter/exit display for nodes
-  updateNodes = function () {
+  network.updateNodes = function () {
     node = nodesG.selectAll("circle.node")
       .data(curNodesData, function (d) {
         return d.id;
@@ -795,8 +850,8 @@ var docClosePadding = 8;
       })
       .style("stroke-width", 1.0);
 
-       node.on("mouseover", showDetails)
-        .on("mouseout", hideDetails); //.on("click", selectObject(this,el));
+    node.on("mouseover", showDetails)
+      .on("mouseout", hideDetails); //.on("click", selectObject(this,el));
 
     node.on("click", showTheDoc);
 
@@ -1011,13 +1066,13 @@ var docClosePadding = 8;
   };
 //  click node for doc function
   showTheDoc = function (d, i) {
-    console.log("viz 963, showTheDoc(d, i), this = ", this);
+    console.log("viz.js 1006, showTheDoc(d, i), this = ", this, "; d.id = ", d.id, "; i = ", i);
     var aNode = this;
     console.log("typeof aNode = ", typeof aNode);
     var content;
     content = d.docs;
     doc.showDocument(d, content, d3.event);
-    console.log("content =  ", content, "\nd3.event = ", d3.event + "\n\n");
+//     console.log("content =  ", content, "\nd3.event = ", d3.event + "\n\n");
     //  highlight neighboring nodes
     //  watch out - don't mess with node if search is currently matching
     return d3.select(this);
@@ -1047,7 +1102,9 @@ var docClosePadding = 8;
   };
 //  Final act of Network() function is to return the inner 'network()' function.
   return network;
-};
+}
+;
+// END OF Network()
 
 //  Activate selector button
 
@@ -1057,6 +1114,7 @@ activate = function (group, link) {
   return d3.select("#" + group + " #" + link)
     .classed("active", true);
 };
+// end of activate()
 
 $(function () {
     var myNetwork;
@@ -1112,56 +1170,108 @@ $(function () {
     $("#node_color_select")
       .on("change", function (e) {
         activate("layouts", "force");
-        return document.updateNodes(); //   .toggleLayout("force");
+        var nodeColorSelect = $("#node_color_select").val();
+        return myNetwork.updateColor3("");
       });
 
+    /*
+
+     $("#node_color_select")
+     .on("change", function (e) {
+     console.log("viz.js #node_color_select selected");
+     activate("layouts", "force");
+     //  return document.updateNodes(); //   .toggleLayout("force");
+     return network.updateNodes();
+     });
+     */
     $('#doc-close')
       .on('click', function () {
-       // deselectObject();
+        // deselectObject();
+        console.log("viz.js 1114 #doc-close clicked");
         resize(false);
         return false;
       });
 
-
     function resize(showDoc) {
+      console.log("viz.js 1120 resize(showDoc = ", showDoc, ")");
       var docHeight = 0,
         svgHeight = 0,
         docContainer = $('#doc-container'),
         docClose = $('#doc-close');
 
+      if (typeof showDoc == 'boolean') {
+        myNetwork.showingDoc = showDoc;
+        docContainer[showDoc ? 'show' : 'hide']();
+        docClose[showDoc ? 'show' : 'hide']();
+      }
+
+      if (myNetwork.showingDoc) {
+        docHeight = desiredDocsHeight;
+        $('#doc-container').css('height', docHeight + 'px');
+      } else {
+        docHeight = 0;
+        $('#doc-container').css('height', 0 + 'px');
+      }
+      svgHeight = window.innerHeight - docHeight - $("#top-stuff").height() + topStuffNegativeMargin;
+      if (myNetwork.consoleLog) {
+        console.log("viz.js 1143 window.innerHeight = ", window.innerHeight, "; svgHeight = ", svgHeight, "; window.innerWidth = ", window.innerWidth);
+      }
+      $('#svg').css('height', svgHeight + 'px');
+
+      if (window.innerWidth < 900) {
+        $('.mainTitleDiv').css('font-size', '14px');
+      }
+      $('#doc-close').css({
+        right: window.innerWidth - $('#doc-container')[0].clientWidth + myNetwork.docClosePadding + 'px'
+      });
+    }
+
+    function docResize(showDoc) {
+      console.log("Document.js 51 resize(showDoc = ", showDoc, ")");
+      var docHeight = 0,
+        svgHeight = 0,
+        docContainer = $('#doc-container'),
+        docClose = $('#doc-close');
 
       if (typeof showDoc == 'boolean') {
         showingDoc = showDoc;
         docContainer[showDoc ? 'show' : 'hide']();
         docClose[showDoc ? 'show' : 'hide']();
       }
-
       if (showingDoc) {
         docHeight = desiredDocsHeight;
         $('#doc-container').css('height', docHeight + 'px');
-      //  $('#doc-container').css('height', docHeight + 'px');
-      } else {
-        $('#doc-container').css('height', 0 + 'px');
       }
-//    svgHeight = window.innerHeight - docHeight;
-      svgHeight = window.innerHeight - docHeight - $("#top-stuff").height();
-
-      console.log("; window.innerHeight = ", window.innerHeight, "; svgHeight = ", svgHeight);
-
-      console.log("; window.innerWidth = ", window.innerWidth);
-
+      svgHeight = window.innerHeight - docHeight - $("#top-stuff").height() + topStuffNegativeMargin;
       $('#svg').css('height', svgHeight + 'px');
-//    $('svg').css('height', svgHeight + 'px');
       if (window.innerWidth < 900) {
         $('.mainTitleDiv').css('font-size', '14px');
       }
       $('#doc-close').css({
-       // top: svgHeight + docClosePadding + 'px',
-        right: window.innerWidth - $('#doc-container')[0].clientWidth + docClosePadding + 'px'
+        right: window.innerWidth - $('#doc-container')[0].clientWidth + myNetwork.docClosePadding + 'px'
       });
+      if (consoleLogDocument) {
+        console.log("Document.js window.innerHeight = ", window.innerHeight, "; desiredDocsHeight = ", desiredDocsHeight, "; topStuffHeight = ", $("#top-stuff").height(), "; svgHeight = ", svgHeight, "\nwindow.innerWidth = ", window.innerWidth, "; docHeight = ", docHeight);
+      }
     }
 
+    var showDocument = function (d, content, event) {
+      this.d = d;
+      var that = this;
+      $("span#name").html(d.name);
+      $("span#id").html(d.id);
+      $("span#nameOriginalScript").html(d.NAME_ORIGINAL_SCRIPT);
+      $("span#narrative").html(d.COMMENTS1);
+      $("#doc-container").show();
+      $("#doc-close").show();
+      resize(true);
+    };
 
+    function hideDocument() {
+      $("#doc-close").hide();
+      $("#doc-container").hide();
+      resize(false);
+    }
 
     $("#searchInputId")
       .keyup(function () {
@@ -1177,6 +1287,11 @@ $(function () {
           .val();
         return myNetwork.updateSearchName(searchTermName);
       });
+
+    $(window).resize(function () {
+      console.log('viz.js 1175 window was resized');
+      resize();
+    });
 
     // get list of radio buttons with name 'noneEntIndiv'
     var radioNEI = document.forms['highlight'].elements['noneEntIndiv'];
@@ -1204,7 +1319,10 @@ $(function () {
       });
 
     $(window)
-      .on('resize', doc.resize);
+      .on('resize', function () {
+        console.log("vis.js 1208 window resized");
+        doc.resize;
+      });
 
     function selectObject(obj, el) {
       var node;
@@ -1229,10 +1347,10 @@ $(function () {
         obj: obj,
         el: el
       };
-    };
+    }
 
     function deselectObject(doResize) {
-      if(doResize || typeof doResize == 'undefined') {
+      if (doResize || typeof doResize == 'undefined') {
         resize(false);
       }
       graph.node.classed('selected', false);
@@ -1260,13 +1378,13 @@ $(function () {
       console.log('on click ' + qid);
     });
 
-	/*
-    $('#svg')
-      .on('scroll', function () {
-        graph.legend.attr('transform', 'translate(0,' + $(this)
-          .scrollTop() + ')');
-      });
-*/
+    /*
+     $('#svg')
+     .on('scroll', function () {
+     graph.legend.attr('transform', 'translate(0,' + $(this)
+     .scrollTop() + ')');
+     });
+     */
 //    highlightObject(obj);
 
     // LOAD THE JSON DATA FILE HERE
@@ -1277,7 +1395,4 @@ $(function () {
     });
   }
 );
-
-
-
-
+// end of function()

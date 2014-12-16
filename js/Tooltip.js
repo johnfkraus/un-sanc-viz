@@ -1,5 +1,6 @@
 function Tooltip(tooltipId, width){
-  var tooltipId = tooltipId;
+
+  // var tooltipId = tooltipId;
   $("body").append("<div class='tooltip' id='"+tooltipId+"'></div>");
 
   if(width){
