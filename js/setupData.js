@@ -1,5 +1,5 @@
 // setupData.js
-// put data in arrays for d3
+// put data in arrays for d3, normalize
 //==========================
 
 if (typeof define !== 'function') {
@@ -72,14 +72,25 @@ var fixData = function () {
       function (callback) {
         data.entities = consolidatedList.CONSOLIDATED_LIST.ENTITIES.ENTITY;
         data.indivs = consolidatedList.CONSOLIDATED_LIST.INDIVIDUALS.INDIVIDUAL;
-        data.entities = data.entities.concat(missingNodes.getMissingEnts());
+
+        data.entities.forEach(function (entity) {
+          entity.noLongerListed = 0;
+        });
+        data.indivs.forEach(function (indiv) {
+          indiv.noLongerListed = 0;
+        });
         data.indivs = data.indivs.concat(missingNodes.getMissingIndivs());
+        data.indivs.forEach(function (indiv) {
+          indiv.indiv0OrEnt1 = 0;
+          indiv.indivDobString = createIndivDobString(indiv);
+          indiv.indivPlaceOfBirthString = processPlaceOfBirthArray(indiv);
+
+          // console.log("indiv.indivDobString = ", indiv.indivDobString);
+        });
+        data.entities = data.entities.concat(missingNodes.getMissingEnts());
         // indiv0OrEnt1 1 = entity; 0 = individual
         data.entities.forEach(function (entity) {
           entity.indiv0OrEnt1 = 1;
-        });
-        data.indivs.forEach(function (indiv) {
-          indiv.indiv0OrEnt1 = 0;
         });
         data.nodes = data.indivs.concat(data.entities);
         data.dateGenerated = consolidatedList.CONSOLIDATED_LIST.$.dateGenerated;
@@ -713,16 +724,10 @@ var inspectSomeArrayObjects = function (array, numOfObjectsToShow) {
   });
 };
 
-//var getDateGenerated = function (data) {
-//  var dateFormat=masks.date_generated = "yyyy-mm-dd";
-//  var generatedFileDateString = dateFormat(data.dateGenerated, "fullDate");
-//  return generatedFileDateString;
-// };
-
 var archiveRawSource = function (fileNameAndPath) {
   collect.writeAQListXML(fileNameAndPath);
   return true;
- };
+};
 
 var createDateGeneratedMessage = function () {
   var dateAqListGeneratedString = data.dateGenerated;
@@ -732,6 +737,71 @@ var createDateGeneratedMessage = function () {
   var message = "Collected AQList.xml labeled as generated on: " + dateAqListGeneratedString + " [" + dateAqListGenerated + "]";
   data.message = message;
   logger.log_message(__filename + " line " + __line + "; " + message);
+};
+
+var processPlaceOfBirthArray = function (d) {
+  var pobArrayString = "";
+  if (Object.prototype.toString.call(d["INDIVIDUAL_PLACE_OF_BIRTH"]) === '[object Array]') {
+    console.log("\n ", __filename, "line", __line, ";  Array!", d["INDIVIDUAL_PLACE_OF_BIRTH"]);
+    var pobArray = d["INDIVIDUAL_PLACE_OF_BIRTH"];
+    // var pobArrayString;
+    for (var i = 0; i < pobArray.length; i++) {
+      pobArrayString += createIndivPlaceOfBirthString(pobArray[i]);
+      pobArrayString += "; ";
+    }
+  } else {
+    pobArrayString += createIndivPlaceOfBirthString(d["INDIVIDUAL_PLACE_OF_BIRTH"]);
+  }
+  return pobArrayString;
+};
+
+var createIndivPlaceOfBirthString = function (singlePob) {
+  var pobString = "";
+  var keys = getKeys(singlePob);
+  keys.forEach(function (key) {
+      pobString += singlePob[key];
+      pobString += ", ";
+    }
+  );
+  return pobString;
+};
+
+var getKeys = function (pob) {
+  var keys = [];
+  for (var key in pob) {
+    keys.push(key);
+//    console.log("pob[key] = ", pob[key]); //, "; pob[value]", pob.valueOf(key));
+  }
+  return keys;
+};
+
+var createIndivDobString = function (d) {
+  var dateString = "";
+  // console.log("750 ", d["INDIVIDUAL_DATE_OF_BIRTH"]["DATE"]);
+  if (typeof d["INDIVIDUAL_DATE_OF_BIRTH"]["DATE"] !== 'undefined') {
+    dateString += formatDate(d["INDIVIDUAL_DATE_OF_BIRTH"]["DATE"]);
+  } else if (typeof d["INDIVIDUAL_DATE_OF_BIRTH"]["YEAR"] !== 'undefined') {
+    dateString += d["INDIVIDUAL_DATE_OF_BIRTH"]["YEAR"];
+  }
+  if (typeof d["INDIVIDUAL_DATE_OF_BIRTH"]["TYPE_OF_DATE"] !== 'undefined') {
+    dateString += " (" + d["INDIVIDUAL_DATE_OF_BIRTH"]["TYPE_OF_DATE"] + ")";
+  }
+  return dateString;
+};
+
+// for DOB, etc.
+var formatDate = function (intlDateString) {
+  var dateResultString;
+  var date = new Date(intlDateString);
+  dateFormat.masks.shortDate = "mm-dd-yyyy";
+  try {
+    dateResultString = dateFormat(date, "shortDate");
+  } catch (err) {
+    console.log("769 Error: ", err, "; intlDateString = ", intlDateString);
+
+  }
+  // logger.log_message(__filename + " line " + __line + "; " + dateResultString);
+  return dateResultString;
 };
 
 module.exports = {

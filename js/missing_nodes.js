@@ -2,40 +2,12 @@
 // removed from sanctions list but linked to
 //==========================
 
-var getMissingEnts = function() {
+var getMissingEnts = function () {
   return missing_ents;
 };
-var getMissingIndivs = function() {
+var getMissingIndivs = function () {
   return missing_indivs;
 };
-
-
-var missing_nodes = [{
-  "name": "Fahd Mohammed Ahmed al-Quso (no longer listed)",
-  "id": "QI.A.288.10",
-  "REFERENCE_NUMBER": "QI.A.288.10",
-  "COMMENTS1": "",
-  "indiv0OrEnt1": 0
-
-}, {
-  "name": "Usama Bin Laden (no longer listed)",
-  "id": "QI.B.8.01",
-  "REFERENCE_NUMBER": "QI.B.8.01",
-  "COMMENTS1": "",
-  "indiv0OrEnt1": 0
-}, {
-  "name": "International Islamic Relief Organization, Philippines, branch offices (no longer listed)",
-  "id": "QE.I.126.06",
-  "REFERENCE_NUMBER": "QE.I.126.06",
-  "COMMENTS1": "",
-  "indiv0OrEnt1": 1
-}, {
-  "name": "Wa&apos;el Hamza Abd al-Fatah Julaidan (no longer listed)",
-  "id": "QI.J.79.02",
-  "REFERENCE_NUMBER": "QI.J.79.02",
-  "COMMENTS1": "",
-  "indiv0OrEnt1": 0
-}];
 
 var missing_ents = [{
   "name": "International Islamic Relief Organization, Philippines, branch offices (no longer listed)",
@@ -43,21 +15,24 @@ var missing_ents = [{
   "id": "QE.I.126.06",
   "REFERENCE_NUMBER": "QE.I.126.06",
   "COMMENTS1": "",
-  "indiv0OrEnt1": 1
+  "indiv0OrEnt1": 1,
+  "noLongerListed": 1
 }, {
   "name": "Aid Organization of the Ulema, Pakistan (no longer listed)",
   "FIRST_NAME": "Aid Organization of the Ulema, Pakistan (no longer listed)",
   "id": "QE.A.73.02",
   "REFERENCE_NUMBER": "QE.A.73.02",
   "COMMENTS1": "Until 21 Oct. 2008, this entity appeared also as &quot;Aid Organization of the Ulema, Pakistan&quot; (QE.A.73.02.), listed on 24 Apr. 2002 and amended on 25 Jul. 2006. The two entries Al Rashid Trust (QE.A.5.01.) and Aid Organization of the Ulema, Pakistan (QE.A.73.02.) were consolidated into this entity on 21 Oct. 2008. Founded by Mufti Rashid Ahmad Ledahyanoy (QI.L.30.01). Associated with Jaish-i-Mohammed (QE.J.19.01). Banned in Pakistan since Oct. 2001. Despite the closure of its offices in Pakistan in February 2007 it has continued its activities. Review pursuant to Security Council resolution 1822 (2008) was concluded on 6 May 2010.",
-  "indiv0OrEnt1": 1
+  "indiv0OrEnt1": 1,
+  "noLongerListed": 1
 }, {
   "name": "Benevolence International Fund  (no longer listed)",
   "FIRST_NAME": "Benevolence International Fund  (no longer listed)",
   "id": "QE.B.94.02",
   "REFERENCE_NUMBER": "QE.B.94.02",
   "COMMENTS1": "",
-  "indiv0OrEnt1": 1
+  "indiv0OrEnt1": 1,
+  "noLongerListed": 1
 }];
 
 // MISSING INDIVIDUALS
@@ -67,6 +42,7 @@ var missing_indivs = [{
   "id": "QI.A.288.10",
   "REFERENCE_NUMBER": "QI.A.288.10",
   "indiv0OrEnt1": 0,
+  "noLongerListed": 1,
   "DATAID": "empty001",
   "VERSIONNUM": "10",
   "FIRST_NAME": "Fahd Mohammed Ahmed al-Quso",
@@ -109,6 +85,7 @@ var missing_indivs = [{
   "id": "QI.B.8.01",
   "REFERENCE_NUMBER": "QI.B.8.01",
   "indiv0OrEnt1": 0,
+  "noLongerListed": 1,
   "DATAID": "empty002",
   "VERSIONNUM": "10",
   "FIRST_NAME": "Usama Bin Laden",
@@ -151,6 +128,7 @@ var missing_indivs = [{
   "id": "QI.J.79.02",
   "REFERENCE_NUMBER": "QI.J.79.02",
   "indiv0OrEnt1": 0,
+  "noLongerListed": 1,
   "DATAID": "empty003",
   "VERSIONNUM": "10",
   "FIRST_NAME": "Wa&apos;el Hamza Abd al-Fatah Julaidan",
@@ -230,10 +208,7 @@ var missing_indivs = [{
 
 },
 
-
-
-
-   {
+  {
     "DATAID": "empty006",
     "VERSIONNUM": "10",
     "FIRST_NAME": "Mufti Rashid Ahmad Ledahyanoy",
@@ -353,10 +328,37 @@ var missing_indivs = [{
     "SORT_KEY_LAST_MOD": "2007-07-27T00:00:00"
   }];
 
+var missing_nodes = [{
+  "name": "Fahd Mohammed Ahmed al-Quso (no longer listed)",
+  "id": "QI.A.288.10",
+  "REFERENCE_NUMBER": "QI.A.288.10",
+  "COMMENTS1": "",
+  "indiv0OrEnt1": 0,
+  "noLongerListed": 1
+}, {
+  "name": "Usama Bin Laden (no longer listed)",
+  "id": "QI.B.8.01",
+  "REFERENCE_NUMBER": "QI.B.8.01",
+  "COMMENTS1": "",
+  "indiv0OrEnt1": 0,
+  "noLongerListed": 1
+}, {
+  "name": "International Islamic Relief Organization, Philippines, branch offices (no longer listed)",
+  "id": "QE.I.126.06",
+  "REFERENCE_NUMBER": "QE.I.126.06",
+  "COMMENTS1": "",
+  "indiv0OrEnt1": 1,
+  "noLongerListed": 1
+}, {
+  "name": "Wa&apos;el Hamza Abd al-Fatah Julaidan (no longer listed)",
+  "id": "QI.J.79.02",
+  "REFERENCE_NUMBER": "QI.J.79.02",
+  "COMMENTS1": "",
+  "indiv0OrEnt1": 0,
+  "noLongerListed": 1
+}];
+
 /*
-
-
-
 
 
  {
@@ -455,30 +457,7 @@ var missing_indivs = [{
 module.exports = {
   getMissingEnts: getMissingEnts,
   getMissingIndivs: getMissingIndivs
-
 //  missing_nodes: missing_nodes
 };
 
 
-/*
- var missing_nodes = [{
- "match": 1,
- "name": "Fahd Mohammed Ahmed al-Quso (no longer listed)",
- "artist": "QI.A.288.10",
- "id": "QI.A.288.10",
- "playcount": 100
- }, {
- "match": 1,
- "name": "Usama Bin Laden (no longer listed)",
- "artist": "QI.B.8.01",
- "id": "QI.B.8.01",
- "playcount": 100
- }, {
- "match": 1,
- "name": "International Islamic Relief Organization, Philippines, branch offices (no longer listed)",
- "artist": "QE.I.126.06",
- "id": "QE.I.126.06",
- "playcount": 100
- }
- ];
- */

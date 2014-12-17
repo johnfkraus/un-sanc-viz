@@ -18,10 +18,17 @@ function Document() { // }, width) {
 //  var showDocument = function (content, event, d) {
     var that = this;
     // elementId is "viz-doc"
-    $("span#name").html(d.name);
+    $("span#name").html("Document.js"+d.name);
     $("span#id").html(d.id);
     $("span#nameOriginalScript").html(d.NAME_ORIGINAL_SCRIPT);
     $("span#narrative").html(d.COMMENTS1);
+    if (d.indiv0OrEnt1 == 0 && d.INDIVIDUAL_DATE_OF_BIRTH !== 'undefined') {
+      $("span#indivDob").html(d.INDIVIDUAL_DATE_OF_BIRTH);
+
+    } else {
+//   $("div#dateOfBirthDiv").css("display", "none");
+    }
+
     $("#doc-container").show();
     $("#doc-close").show();
     this.d = d;

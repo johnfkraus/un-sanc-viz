@@ -110,8 +110,12 @@
                         <input type="radio" checked name="noneEntIndiv" value="">&nbsp;None<br>
                         <input type="radio" name="noneEntIndiv" value="QE.">&nbsp;Entities<br>
                         <input type="radio" name="noneEntIndiv" value="QI.">&nbsp;Individuals<br/>
-                        <input type="radio" name="noneEntIndiv" value="xx"><span style="color: #ddd;">&nbsp;No longer listed</span>
+                        <!--input type="radio" name="noneEntIndiv" value="1"><span style="color: #ddd;">&nbsp;No longer listed</span-->
                     </form>
+                    <form id="checkHighlight">
+                        <input type="checkbox" name="noLongerListed" value="1">&nbsp;No longer listed<br>
+                    </form>
+
                 </div>
             </td>
             <td align="center" style="width: 350px;">
@@ -123,7 +127,7 @@
                         <select id="node_color_select" style="width: 120px; color: #ddd;">
                             <option selected="selected" value="name">Name (random)</option>
                             <option value="natnlty">Nationality</option>
-                            <option value="other">Other</option>
+                            <!--option value="noLongerListed">No Longer Listed</option-->
                         </select>
                     </div>
                     <div class="force_selection control">
@@ -192,8 +196,17 @@
             <div id="line2">
                  <span id="id">
                 </span>
-
                 <span id="narrative"></span>
+            </div>
+            <div id="dateOfBirthDiv">
+                <span style="font-weight: bold;">Individual date of birth: </span>
+                 <span id="indivDateOfBirth">Not available
+                </span>
+            </div>
+            <div id="placeOfBirthDiv">
+                <span style="font-weight: bold;">Individual place of birth: </span>
+                 <span id="indivPlaceOfBirth">Not available
+                </span>
             </div>
         </div>
     </div>

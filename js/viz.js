@@ -137,9 +137,9 @@ RadialPlacement = function () {
 Network = function () {
   //  variables we want to access in multiple places of Network
 
-  var allData, charge, charge2, curLinksData, curNodesData, doc, filter, filterLinks, filterNodes, force,
+  var allData, charge, charge2, curLinksData, curNodesData, desiredDocsHeight, doc, filter, filterLinks, filterNodes, force,
     forceChargeParam, forceTick, groupCenters, svgHeight, hideDetails, layout, link, linkedByIndex, linksG, mapNodes,
-    moveToRadialLayout, neighboring, network, node, nodeColors, nodeCounts, nodesG, radialTick,
+    moveToRadialLayout, neighboring, network, node, nodeColors, nodeColors2, nodeCounts, nodesG, radialTick,
     setFilter, setLayout, setSort, setupData, setupData2, showDetails, showingDoc, showTheDoc, sort, sortedTargets,
     strokeFor, tooltip, update, updateCenters, updateLinks, updateNodes, width;
 
@@ -148,6 +148,7 @@ Network = function () {
   width = w - 20; // 1152;
   var svgHeight = 0,
     docClosePadding = 8,
+    desiredDocsHeight = 200,
     consoleLog = true;
   // svgHeight = 0;
   setSize(false);
@@ -179,6 +180,7 @@ Network = function () {
   force = d3.layout.force();
   //  color function used to color nodes
   nodeColors = d3.scale.category20();
+  nodeColorsForNoLongerListed = d3.scale.ordinal().domain([0, 1]).range(['#dddddd', '#111111']);
   //  tooltip used to display details
   tooltip = Tooltip("viz-tooltip", 230);
   var doc = Document("viz-doc"); // , 630);
@@ -233,7 +235,6 @@ Network = function () {
       docContainer = $('#doc-container'),
       docClose = $('#doc-close'),
       showingDoc = false,
-      desiredDocsHeight = 200,
       topStuffHeight = $("#top-stuff").height();
     topStuffNegativeMargin = 10;
     console.log("viz.js setSize(), topStuffHeight = ", topStuffHeight);
@@ -386,8 +387,11 @@ Network = function () {
 
   };
 
-
   network.updateColor3 = function (searchTermName) {
+
+    $('input[name="noneEntIndiv"][value=""]').prop('checked', true);
+
+    console.log("viz.js updateColor() searchTermName = ", searchTermName, "; node_color_select = ", $('#node_color_select').val());
     var searchRegEx;
     searchRegEx = new RegExp(searchTermName, "i"); // .toLowerCase());
     return node.each(function (d) {
@@ -404,44 +408,61 @@ Network = function () {
         d.searched = false;
         return element.style("fill", function (d) {
           // return nodeColors(d.target);
-          return nodeColors(d[$('#node_color_select').val()]);
+          if (d[searchTermName] === undefined) {
+            d[searchTermName] = "0";
+          }
+
+          console.log("viz.js updateColor() 408 d.id = ", d.id, "; d[searchTermName] = ", d[searchTermName], "; nodeColors(d[searchTermName]) = ", nodeColors(d[searchTermName]));
+          if (searchTermName === "noLongerListed") {
+            return nodeColorsForNoLongerListed(d[searchTermName]);
+          } else {
+
+            return nodeColors(d[searchTermName]);
+          }
         })
           .style("stroke-width", 1.0);
       }
     });
   };
 
+  /*
 
-  network.updateColor2 = function (nodeColorSelect) {
-    return node.each(function (d) {
-      if (false) {
-        element.style("fill", "#F38630")
-          .style("stroke-width", 2.0)
-          .style("stroke", "#555");
-        return d.searched = true;
+   network.updateColor3 = function (searchTermName) {
 
-      } else {
+   $('input[name="noneEntIndiv"][value=""]').prop('checked', true);
+   console.log("viz.js updateColor() searchTermName = ", searchTermName, "; node_color_select = ", $('#node_color_select').val());
+   var searchRegEx;
+   searchRegEx = new RegExp(searchTermName, "i"); // .toLowerCase());
+   return node.each(function (d) {
+   var element, match;
+   element = d3.select(this);
+   match = d.name
+   .search(searchRegEx);
+   if (searchTermName.length > 0 && match >= 0) {
+   element.style("fill", "#F38630")
+   .style("stroke-width", 2.0)
+   .style("stroke", "#555");
+   return d.searched = true;
+   } else {
+   d.searched = false;
+   return element.style("fill", function (d) {
+   // return nodeColors(d.target);
+   if (d[$('#node_color_select').val()] === undefined) {
+   d[$('#node_color_select').val()] = "0";
+   }
+   if (d[$('#node_color_select').val()] == 1) {
+   d[$('#node_color_select').val()] = "ZZZZ";
+   }
+   console.log("viz.js updateColor() 408 d.id = ", d.id, "; (d[$('#node_color_select').val()] = ", d[$('#node_color_select').val()]);
+   return nodeColors(d[$('#node_color_select').val()]);
+   })
+   .style("stroke-width", 1.0);
+   }
+   });
+   };
 
-        element = d3.select(d);
-        return element.style("fill", function (d) {
-          return nodeColors(d[nodeColorSelect]);
-        });
 
-      }
-    });
-  };
-
-  network.updateColor = function () {
-    console.log("node_color_select = ", $('#node_color_select').val());
-    node.each(function (d) {
-
-      return element.style("fill", function (d) {
-        return nodeColors(d[$('#node_color_select').val()]);
-      })
-      return nodeColors(d[$('#node_color_select').val()]);
-    })
-      .style("stroke-width", 1.0);
-  };
+   */
 
   network.updateSearchId = function (searchTermId) {
     var searchRegEx;
@@ -1071,37 +1092,100 @@ Network = function () {
     console.log("typeof aNode = ", typeof aNode);
     var content;
     content = d.docs;
-    doc.showDocument(d, content, d3.event);
+    showDocument(d, content, d3.event);
 //     console.log("content =  ", content, "\nd3.event = ", d3.event + "\n\n");
     //  highlight neighboring nodes
     //  watch out - don't mess with node if search is currently matching
     return d3.select(this);
   };
 
-  hideDetails = function (d, i) {
-    tooltip.hideTooltip();
-    //  watch out - don't mess with node if search is currently matching
-    node.style("stroke", function (n) {
-      if (!n.searched) {
-        return strokeFor(n);
-      } else {
-        return "#555";
-      }
-    })
-      .style("stroke-width", function (n) {
-        if (!n.searched) {
-          return 1.0;
-        } else {
-          return 2.0;
-        }
-      });
-    if (link) {
-      return link.attr("stroke", "#ddd")
-        .attr("stroke-opacity", 0.8);
+  var showDocument = function (d, content, event) {
+    this.d = d;
+    var that = this;
+
+
+    $("span#name").html(d.name);
+    $("span#id").html(d.id);
+    $("span#nameOriginalScript").html(d.NAME_ORIGINAL_SCRIPT);
+    $("span#narrative").html(d.COMMENTS1);
+    if (d.indiv0OrEnt1 == 0 && (typeof d.indivDobString !== 'undefined')) {
+      $("span#indivDateOfBirth").html(d.indivDobString);
+      $("div#dateOfBirthDiv").css("display", "block");
+    } else {
+      $("div#dateOfBirthDiv").css("display", "none");
     }
-  };
+    if (d.indiv0OrEnt1 == 0 && (typeof d.indivPlaceOfBirthString !== 'undefined')) {
+      $("div#placeOfBirthDiv").css("display", "block");
+      $("span#indivPlaceOfBirth").html(d.indivPlaceOfBirthString);
+    } else {
+      $("div#placeOfBirthDiv").css("display", "none");
+    }
+
+    $("#doc-container").show();
+    $("#doc-close").show();
+    this.d = d;
+    resize(true);
+
+};
+
+function resize(showDoc) {
+  console.log("viz.js 1120 resize(showDoc = ", showDoc, ")");
+  var docHeight = 0,
+    svgHeight = 0,
+    docContainer = $('#doc-container'),
+    docClose = $('#doc-close');
+
+  if (typeof showDoc == 'boolean') {
+    showingDoc = showDoc;
+    docContainer[showDoc ? 'show' : 'hide']();
+    docClose[showDoc ? 'show' : 'hide']();
+  }
+
+  if (showingDoc) {
+    docHeight = desiredDocsHeight;
+    $('#doc-container').css('height', docHeight + 'px');
+  } else {
+    docHeight = 0;
+    $('#doc-container').css('height', 0 + 'px');
+  }
+  svgHeight = window.innerHeight - docHeight - $("#top-stuff").height() + topStuffNegativeMargin;
+  if (consoleLog) {
+    console.log("viz.js 1143 window.innerHeight = ", window.innerHeight, "; svgHeight = ", svgHeight, "; window.innerWidth = ", window.innerWidth);
+  }
+  $('#svg').css('height', svgHeight + 'px');
+
+  if (window.innerWidth < 900) {
+    $('.mainTitleDiv').css('font-size', '14px');
+  }
+  $('#doc-close').css({
+    right: window.innerWidth - $('#doc-container')[0].clientWidth + docClosePadding + 'px'
+  });
+}
+
+hideDetails = function (d, i) {
+  tooltip.hideTooltip();
+  //  watch out - don't mess with node if search is currently matching
+  node.style("stroke", function (n) {
+    if (!n.searched) {
+      return strokeFor(n);
+    } else {
+      return "#555";
+    }
+  })
+    .style("stroke-width", function (n) {
+      if (!n.searched) {
+        return 1.0;
+      } else {
+        return 2.0;
+      }
+    });
+  if (link) {
+    return link.attr("stroke", "#ddd")
+      .attr("stroke-opacity", 0.8);
+  }
+};
 //  Final act of Network() function is to return the inner 'network()' function.
-  return network;
+return network;
 }
 ;
 // END OF Network()
@@ -1169,9 +1253,11 @@ $(function () {
 
     $("#node_color_select")
       .on("change", function (e) {
+        $('input[name="noLongerListed"][value="1"]').prop('checked', false);
+        // $('input[name="noLongerListed"]).prop('checked', false);
         activate("layouts", "force");
         var nodeColorSelect = $("#node_color_select").val();
-        return myNetwork.updateColor3("");
+        return myNetwork.updateColor3(nodeColorSelect);
       });
 
     /*
@@ -1255,18 +1341,19 @@ $(function () {
       }
     }
 
-    var showDocument = function (d, content, event) {
-      this.d = d;
-      var that = this;
-      $("span#name").html(d.name);
-      $("span#id").html(d.id);
-      $("span#nameOriginalScript").html(d.NAME_ORIGINAL_SCRIPT);
-      $("span#narrative").html(d.COMMENTS1);
-      $("#doc-container").show();
-      $("#doc-close").show();
-      resize(true);
-    };
-
+    /*
+     var showDocument = function (d, content, event) {
+     this.d = d;
+     var that = this;
+     $("span#name").html(d.name);
+     $("span#id").html(d.id);
+     $("span#nameOriginalScript").html(d.NAME_ORIGINAL_SCRIPT);
+     $("span#narrative").html(d.COMMENTS1);
+     $("#doc-container").show();
+     $("#doc-close").show();
+     resize(true);
+     };
+     */
     function hideDocument() {
       $("#doc-close").hide();
       $("#doc-container").hide();
@@ -1288,6 +1375,17 @@ $(function () {
         return myNetwork.updateSearchName(searchTermName);
       });
 
+    $("input[name='noLongerListed']").change(function (e) {
+      if (this.checked) {
+        activate("layouts", "force");
+        return myNetwork.updateColor3("noLongerListed");
+      } else {
+        activate("layouts", "force");
+        return myNetwork.updateColor3("");
+      }
+      console.log("checkbox clicked = ", this.checked);
+    });
+
     $(window).resize(function () {
       console.log('viz.js 1175 window was resized');
       resize();
@@ -1295,13 +1393,13 @@ $(function () {
 
     // get list of radio buttons with name 'noneEntIndiv'
     var radioNEI = document.forms['highlight'].elements['noneEntIndiv'];
-
 // loop through list
     for (var i = 0, len = radioNEI.length; i < len; i++) {
       radioNEI[i].onclick = function () { // assign onclick handler function to each
         // put clicked radio button's value in total field
         // this.form.elements.value = this.value;
         // console.log(this.value);
+        $('input[name="noLongerListed"][value="1"]').prop('checked', false);
         searchTerm = $(this)
           .val();
         return myNetwork.updateSearchId(searchTerm);
