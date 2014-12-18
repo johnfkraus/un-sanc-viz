@@ -30,13 +30,14 @@ function Document() { // }, width) {
     }
 
     $("#doc-container").show();
-    $("#doc-close").show();
+    $("#doc-close").css('display', 'inline');
     this.d = d;
     resize(true);
   };
 
   function hideDocument() {
-    $("#doc-close").hide();
+    $("#doc-close").css('display', 'none');
+//    $("#doc-close").hide();
     $("#doc-container").hide();
     resize(false);
   }
@@ -63,7 +64,7 @@ function Document() { // }, width) {
       $('.mainTitleDiv').css('font-size', '14px');
     }
     $('#doc-close').css({
-      right: window.innerWidth - $('#doc-container')[0].clientWidth + docClosePadding + 'px'
+     //  right: window.innerWidth - $('#doc-container')[0].clientWidth + docClosePadding + 'px'
     });
     if (consoleLogDocument) {
       console.log("Document.js window.innerHeight = ", window.innerHeight, "; desiredDocsHeight = ", desiredDocsHeight, "; topStuffHeight = ", $("#top-stuff").height(), "; svgHeight = ", svgHeight,"\nwindow.innerWidth = ", window.innerWidth, "; docHeight = ", docHeight);

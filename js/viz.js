@@ -2,153 +2,25 @@ var Network, RadialPlacement, activate, root;
 
 //var svg = {},
 var selected = {},
-// highlighted = null;
-
   root = typeof exports !== "undefined" && exports !== null ? exports : this;
 
-//  Help with the placement of nodes
-RadialPlacement = function () {
-  var center, current, increment, place, placement, radialLocation, radius, setKeys, start, values;
-  // stores the key -> location values
-  values = d3.map();
-  // how much to separate each location by
-  increment = 5;
-  // how large to make the layout
-  radius = 50;
-  //  where the center of the layout should be
-
-  center = {
-    "x": 0,
-    "y": 0
-  };
-  //  what angle to start at
-
-  start = -120;
-  current = start;
-
-  //  Given an center point, angle, and radius length,
-  //  return a radial position for that angle
-
-  radialLocation = function (center, angle, radius) {
-    var x, y;
-    x = center.x + radius * Math.cos(angle * Math.PI / 180);
-    y = center.y + radius * Math.sin(angle * Math.PI / 180);
-    return {
-      "x": x,
-      "y": y
-    };
-  };
-  //  Main entry point for RadialPlacement
-  //  Returns location for a particular key,
-  //  creating a new location if necessary.
-
-  placement = function (key) {
-    var value;
-    value = values.get(key);
-    if (!values.has(key)) {
-      value = place(key);
-    }
-    return value;
-  };
-  //  Gets a new location for input key
-
-  place = function (key) {
-
-    var value;
-    value = radialLocation(center, current, radius);
-    values.set(key, value);
-    current += increment;
-    return value;
-  };
-  //  Given a set of keys, perform some
-  //  magic to create a two ringed radial layout.
-  //  Expects radius, increment, and center to be set.
-  //  If there are a small number of keys, just make
-  //  one circle.
-
-  setKeys = function (keys) {
-
-    var firstCircleCount, firstCircleKeys, secondCircleKeys;
-    //  start with an empty values
-    values = d3.map();
-    //  number of keys to go in first circle
-    firstCircleCount = 360 / increment;
-    //  if we don't have enough keys, modify increment
-    //  so that they all fit in one circle
-
-    if (keys.length < firstCircleCount) {
-      increment = 360 / keys.length;
-    }
-    //  set locations for inner circle
-
-    firstCircleKeys = keys.slice(0, firstCircleCount);
-    firstCircleKeys.forEach(function (k) {
-      return place(k);
-    });
-    //  set locations for outer circle
-
-    secondCircleKeys = keys.slice(firstCircleCount);
-    //  setup outer circle
-    radius = radius + radius / 1.8;
-    increment = 360 / secondCircleKeys.length;
-    return secondCircleKeys.forEach(function (k) {
-      return place(k);
-    });
-  };
-  placement.keys = function (_) {
-    if (!arguments.length) {
-      return d3.keys(values);
-    }
-    setKeys(_);
-    return placement;
-  };
-  placement.center = function (_) {
-    if (!arguments.length) {
-      return center;
-    }
-    center = _;
-    return placement;
-  };
-  placement.radius = function (_) {
-    if (!arguments.length) {
-      return radius;
-    }
-    radius = _;
-    return placement;
-  };
-  placement.start = function (_) {
-    if (!arguments.length) {
-      return start;
-    }
-    start = _;
-    current = start;
-    return placement;
-  };
-  placement.increment = function (_) {
-    if (!arguments.length) {
-      return increment;
-    }
-    increment = _;
-    return placement;
-  };
-  return placement;
-};
-
 Network = function () {
-  //  variables we want to access in multiple places of Network
 
-  var allData, charge, charge2, consoleLog, curLinksData, curNodesData, desiredDocsHeight, doc, docClosePadding, filter, filterLinks, filterNodes, force,
+  //  variables we want to access in multiple places of Network
+  var allData, charge, charge2, consoleLog, curLinksData, curNodesData, desiredDocsHeight, doc, filter, filterLinks, filterNodes, force,
     forceChargeParam, forceTick, groupCenters, svgHeight, hideDetails, layout, link, linkedByIndex, linksG, mapNodes,
     moveToRadialLayout, neighboring, network, node, nodeColors, nodeColors2, nodeColorsForNoLongerListed, nodeCounts, nodesG, radialTick,
     setFilter, setLayout, setSort, setupData, setupData2, showDetails, showingDoc, showTheDoc, sort, sortedTargets,
     strokeFor, tooltip, update, updateCenters, updateLinks, updateNodes, width;
+
+  var docClosePadding = 8;
+  var topStuffNegativeMargin = 10;
 
   var w = window.innerWidth;
   var h = window.innerHeight;
   width = w - 20; // 1152;
   svgHeight = 0;
   desiredDocsHeight = 200;
-  docClosePadding = 8;
 
   setSize(false);
   //  allData will store the unfiltered data
@@ -162,12 +34,11 @@ Network = function () {
 
   //  these will point to the circles and lines
   //  of the nodes and links
-
   node = null;
   link = null;
+
   //  variables to reflect the current settings
   //  of the visualization
-
   layout = "force";
   filter = "all";
   sort = "arts";
@@ -189,7 +60,6 @@ Network = function () {
     return -Math.pow(node.radius, 2.0) / 2;
   };
   // forceChargeParam = $("#force_charge_select").val();
-  // console.log("viz 138 forceChargeParam = ", forceChargeParam);
   charge2 = function (node) {
     return -Math.pow(node.radius, 4.0) / 15;
   };
@@ -202,11 +72,14 @@ Network = function () {
     // var consoleLog = true;
     var dateStringHardSpaces = genDateString.replace(/\s/g, "&nbsp;");
     var result = "List generated by the United Nations on " + dateStringHardSpaces;
+
     var genDate = function (data) {
       document.getElementById("dateGeneratedByUN").innerHTML = result;
     }(data);
     // genDate(data);
-    console.log("docClosePadding = ", docClosePadding);
+    if (consoleLog) {
+      console.log("docClosePadding = ", docClosePadding);
+    }
     //  format our data
     allData = setupData(data);
     //  create our svg and groups
@@ -219,13 +92,12 @@ Network = function () {
       .attr("id", "links");
     nodesG = viz.append("g")
       .attr("id", "nodes");
-    //  setup the size of the force environment
 
+    //  setup the size of the force environment
     force.size([width, svgHeight]);
     setLayout("force");
     setFilter("all");
     //  perform rendering and start force layout
-    // console.log(genDate(data));
 
     return update();
   };
@@ -236,8 +108,10 @@ Network = function () {
       docClose = $('#doc-close'),
       showingDoc = false,
       topStuffHeight = $("#top-stuff").height();
-    topStuffNegativeMargin = 10;
-    console.log("viz.js setSize(), topStuffHeight = ", topStuffHeight);
+
+    if (consoleLog) {
+      console.log("viz.js setSize(), topStuffHeight = ", topStuffHeight);
+    }
     //  console.log("viz.js setSize(), topStuffHeight = ", topStuffHeight);
 
     if (typeof showDoc == 'boolean') {
@@ -251,8 +125,10 @@ Network = function () {
       $('#doc-container').css('height', docHeight + 'px');
     }
     svgHeight = 960; //= window.innerHeight - docHeight - topStuffHeight;
-    console.log("; window.innerHeight = ", window.innerHeight, "; desiredDocsHeight = ", desiredDocsHeight, "; topStuffHeight = ", topStuffHeight, "; svgHeight = ", svgHeight);
-    console.log("; window.innerWidth = ", window.innerWidth);
+    if (consoleLog) {
+      console.log("; window.innerHeight = ", window.innerHeight, "; desiredDocsHeight = ", desiredDocsHeight, "; topStuffHeight = ", topStuffHeight, "; svgHeight = ", svgHeight);
+      console.log("; window.innerWidth = ", window.innerWidth);
+    }
 //    if (consoleLogDocument) {
 //      console.log("\n window.innerHeight = ", window.innerHeight, "; docHeight = ", docHeight, "; svgHeight = ", svgHeight);
 //    }
@@ -261,9 +137,11 @@ Network = function () {
     if (window.innerWidth < 900) {
       $('.mainTitleDiv').css('font-size', '14px');
     }
+    console.log("right: window.innerWidth (", window.innerWidth, ") - $('#doc-container')[0].clientWidth (", $('#doc-container')[0].clientWidth, ") + docClosePadding (", docClosePadding, " ) + px");
+    console.log("right: ", window.innerWidth - $('#doc-container')[0].clientWidth + docClosePadding);
     $('#doc-close').css({
       //  top: svgHeight + docClosePadding + 'px',
-      right: window.innerWidth - $('#doc-container')[0].clientWidth + docClosePadding + 'px'
+    //  right: window.innerWidth - $('#doc-container')[0].clientWidth - docClosePadding + 'px'
     });
   }
 
@@ -369,9 +247,8 @@ Network = function () {
     setSort(newSort);
     return update();
   };
-//  Public function to update highlighted nodes
-//  from search
-
+//  Public function to update highlighted nodes from search
+  // Public function to update highlighted nodes from search
   network.updateSearchIdLinkClick = function (id) {
     var searchRegEx;
     searchRegEx = new RegExp(id, "i"); // .toLowerCase());
@@ -389,10 +266,55 @@ Network = function () {
 
   };
 
+  network.resize = function (showDoc) {
+//  function resize(showDoc) {
+    console.log("viz.js 1120 resize(showDoc = ", showDoc, ")");
+    var docHeight = 0,
+      svgHeight = 0,
+      docContainer = $('#doc-container'),
+      docClose = $('#doc-close');
+
+    if (typeof showDoc == 'boolean') {
+      showingDoc = showDoc;
+      docContainer[showDoc ? 'show' : 'hide']();
+      // docClose[showDoc ? 'show' : 'hide']();
+      if (showDoc) {
+        docClose.css('display', 'inline'); //[showDoc ? 'show' : 'hide']();
+      } else {
+        docClose.css('display', 'none'); //[showDoc ? 'show' : 'hide']();
+      }
+      // docClose.css('display', [showDoc ? 'show' : 'hide']();
+    }
+
+    if (showingDoc) {
+      docHeight = desiredDocsHeight;
+      $('#doc-container').css('height', docHeight + 'px');
+    } else {
+      docHeight = 0;
+      $('#doc-container').css('height', 0 + 'px');
+    }
+    svgHeight = window.innerHeight - docHeight - $("#top-stuff").height() + topStuffNegativeMargin;
+    if (consoleLog) {
+      console.log("viz.js 1143 window.innerHeight = ", window.innerHeight, "; svgHeight = ", svgHeight, "; window.innerWidth = ", window.innerWidth);
+    }
+    $('#svg').css('height', svgHeight + 'px');
+
+    if (window.innerWidth < 900) {
+      $('.mainTitleDiv').css('font-size', '14px');
+    }
+    $('#doc-close').css({
+     // right: window.innerWidth - $('#doc-container')[0].clientWidth + docClosePadding + 'px'
+    });
+  }
+
+
+  // Public function to update highlighted nodes from search
   network.updateColor3 = function (searchTermName) {
     // reset the none/entities/individuals radio buttons to "none"
     $('input[name="noneEntIndiv"][value=""]').prop('checked', true);
-    console.log("viz.js updateColor() searchTermName = ", searchTermName, "; node_color_select = ", $('#node_color_select').val());
+    if (consoleLog) {
+      console.log("viz.js updateColor() searchTermName = ", searchTermName, "; node_color_select = ", $('#node_color_select').val());
+    }
     var searchRegEx;
     searchRegEx = new RegExp(searchTermName, "i"); // .toLowerCase());
     return node.each(function (d) {
@@ -418,7 +340,9 @@ Network = function () {
           if (searchTermName === "noLongerListed") {
             return nodeColorsForNoLongerListed(d[searchTermName]);
           } else {
-console.log("nodeColors(d[searchTermName]) = ", nodeColors(d[searchTermName]));
+            if (consoleLog) {
+              console.log("nodeColors(d[searchTermName]) = ", nodeColors(d[searchTermName]));
+            }
             return nodeColors(d[searchTermName]);
           }
         })
@@ -426,7 +350,7 @@ console.log("nodeColors(d[searchTermName]) = ", nodeColors(d[searchTermName]));
       }
     });
   };
-
+  // Public function to update highlighted nodes from search
   network.updateSearchId = function (searchTermId) {
     var searchRegEx;
     searchRegEx = new RegExp(searchTermId, "i"); // .toLowerCase());
@@ -449,7 +373,7 @@ console.log("nodeColors(d[searchTermName]) = ", nodeColors(d[searchTermName]));
       }
     });
   };
-
+  // Public function to update highlighted nodes from search
   network.updateSearchListedOrNot = function (searchTermListedOrNot) {
     var searchRegEx;
     searchRegEx = new RegExp(searchTermListedOrNot, "i"); // .toLowerCase());
@@ -473,9 +397,7 @@ console.log("nodeColors(d[searchTermName]) = ", nodeColors(d[searchTermName]));
     });
   };
 
-//  Public function to update highlighted nodes
-//  from search
-
+//  Public function to update highlighted nodes from search
   network.updateSearchName = function (searchTermName) {
     var searchRegEx;
     searchRegEx = new RegExp(searchTermName, "i"); // .toLowerCase());
@@ -507,10 +429,11 @@ console.log("nodeColors(d[searchTermName]) = ", nodeColors(d[searchTermName]));
     return update();
   };
 
-//  called once to clean up raw data and switch links to
-//  point to node instances
-//  Returns modified data
+//  called once to clean up raw data and switch links to point to node instances.  Returns modified data
   setupData = function (data) {
+    // initialize circle radius scale
+    // parseInt( stringToParse, 10 );
+    // countExtent = d3.extent(data.nodes, (d) -> d.playcount)
     var circleRadius, count, countExtent, nodesMap;
     // console.log("data = ");
     // console.log(data);
@@ -532,6 +455,8 @@ console.log("nodeColors(d[searchTermName]) = ", nodeColors(d[searchTermName]));
       .domain(countExtent);
 //      .domain(countExtent);
     data.nodes.forEach(function (n) {
+      // set initial x/y to values within the width/height
+      // of the visualization
       // console.log("n = ");
       // console.log(n);
       var randomnumber;
@@ -557,7 +482,9 @@ console.log("nodeColors(d[searchTermName]) = ", nodeColors(d[searchTermName]));
       // determine radius of each node circle
       return n.radius = circleRadius(Math.pow(n.linkCount * 3, 0.9));
     });
+    // id's -> node objects
     nodesMap = mapNodes(data.nodes);
+    // switch links to point to node objects instead of id's
     count = 0;
     data.nodes.forEach(function (n) {
       // console.log("n = ")
@@ -584,7 +511,7 @@ console.log("nodeColors(d[searchTermName]) = ", nodeColors(d[searchTermName]));
     // console.log(data);
     return data;
   };
-
+//  called once to clean up raw data and switch links to point to node instances.  Returns modified data
   network.updateData2 = function (data) {
     allData = setupData2(data);
     link.remove();
@@ -744,7 +671,7 @@ console.log("nodeColors(d[searchTermName]) = ", nodeColors(d[searchTermName]));
         }
         return counts[l.target.target] += 1;
       });
-      //  add any missing targets that dont have any links
+      //  add any missing targets that don't have any links
 
       nodes.forEach(function (n) {
         var _name;
@@ -1084,7 +1011,7 @@ console.log("nodeColors(d[searchTermName]) = ", nodeColors(d[searchTermName]));
     }
 
     $("#doc-container").show();
-    $("#doc-close").show();
+    $("#doc-close").css('display', 'inline');
     this.d = d;
     resize(true);
 
@@ -1100,7 +1027,12 @@ console.log("nodeColors(d[searchTermName]) = ", nodeColors(d[searchTermName]));
     if (typeof showDoc == 'boolean') {
       showingDoc = showDoc;
       docContainer[showDoc ? 'show' : 'hide']();
-      docClose[showDoc ? 'show' : 'hide']();
+      // docClose[showDoc ? 'show' : 'hide']();
+      if (showDoc) {
+        docClose.css('display', 'inline'); //[showDoc ? 'show' : 'hide']();
+      } else {
+        docClose.css('display', 'none'); //[showDoc ? 'show' : 'hide']();
+      }
     }
 
     if (showingDoc) {
@@ -1120,10 +1052,11 @@ console.log("nodeColors(d[searchTermName]) = ", nodeColors(d[searchTermName]));
       $('.mainTitleDiv').css('font-size', '14px');
     }
     $('#doc-close').css({
-      right: window.innerWidth - $('#doc-container')[0].clientWidth + docClosePadding + 'px'
+  //    right: window.innerWidth - $('#doc-container')[0].clientWidth + network.docClosePadding + 'px'
     });
   }
 
+  // mouseout function
   hideDetails = function (d, i) {
     tooltip.hideTooltip();
     //  watch out - don't mess with node if search is currently matching
@@ -1152,7 +1085,6 @@ console.log("nodeColors(d[searchTermName]) = ", nodeColors(d[searchTermName]));
 // END OF Network()
 
 //  Activate selector button
-
 activate = function (group, link) {
   d3.selectAll("#" + group + " a")
     .classed("active", false);
@@ -1164,6 +1096,7 @@ activate = function (group, link) {
 $(function () {
     var myNetwork;
     myNetwork = Network();
+
     // var consoleLog = myNetwork.
     d3.selectAll("#layouts a")
       .on("click", function (d) {
@@ -1226,10 +1159,10 @@ $(function () {
       .on('click', function () {
         // deselectObject();
         console.log("viz.js 1114 #doc-close clicked");
-        resize(false);
-        return false;
+        return myNetwork.resize(false);
+        // return false;
       });
-
+/*
     function resize(showDoc) {
       console.log("viz.js 1120 resize(showDoc = ", showDoc, ")");
       var docHeight = 0,
@@ -1251,7 +1184,7 @@ $(function () {
         $('#doc-container').css('height', 0 + 'px');
       }
       svgHeight = window.innerHeight - docHeight - $("#top-stuff").height() + topStuffNegativeMargin;
-      if (consoleLog) {
+      if (myNetwork.consoleLog) {
         console.log("viz.js 1143 window.innerHeight = ", window.innerHeight, "; svgHeight = ", svgHeight, "; window.innerWidth = ", window.innerWidth);
       }
       $('#svg').css('height', svgHeight + 'px');
@@ -1265,7 +1198,9 @@ $(function () {
     }
 
     function docResize(showDoc) {
-      console.log("Document.js 51 resize(showDoc = ", showDoc, ")");
+      if (myNetwork.consoleLog) {
+        console.log("Document.js 51 resize(showDoc = ", showDoc, ")");
+      }
       var docHeight = 0,
         svgHeight = 0,
         docContainer = $('#doc-container'),
@@ -1292,11 +1227,13 @@ $(function () {
         console.log("Document.js window.innerHeight = ", window.innerHeight, "; desiredDocsHeight = ", desiredDocsHeight, "; topStuffHeight = ", $("#top-stuff").height(), "; svgHeight = ", svgHeight, "\nwindow.innerWidth = ", window.innerWidth, "; docHeight = ", docHeight);
       }
     }
-
+*/
     function hideDocument() {
-      $("#doc-close").hide();
-      $("#doc-container").hide();
-      resize(false);
+      $("#doc-close").css('display', 'none');
+      // $("#doc-close").hide();
+      $("#doc-container").css('display', 'none');
+      // $("#doc-container").hide();
+      myNetwork.resize(false);
     }
 
     $("#searchInputId")
@@ -1317,7 +1254,9 @@ $(function () {
     // "No Longer Listed" checkbox
     $("input[name='noLongerListed']").change(function (e) {
       // e = jQuery.Event
-      console.log("checkbox clicked = ", this.checked);
+      if (myNetwork.consoleLog) {
+        console.log("checkbox clicked = ", this.checked);
+      }
       if (this.checked) {
         activate("layouts", "force");
         return myNetwork.updateColor3("noLongerListed");
@@ -1328,8 +1267,10 @@ $(function () {
     });
 
     $(window).resize(function () {
-      console.log('viz.js 1175 window was resized');
-      resize();
+      if (myNetwork.consoleLog) {
+        console.log('viz.js 1175 window was resized');
+      }
+      myNetwork.resize();
     });
 
     // get list of radio buttons with name 'noneEntIndiv'
@@ -1359,8 +1300,11 @@ $(function () {
 
     $(window)
       .on('resize', function () {
-        console.log("vis.js 1208 window resized");
-        doc.resize;
+        if (myNetwork.consoleLog) {
+          console.log("vis.js 1208 window resized");
+        }
+        // doc.resize;
+        myNetwork.resize;
       });
 
     function selectObject(obj, el) {
@@ -1390,36 +1334,12 @@ $(function () {
 
     function deselectObject(doResize) {
       if (doResize || typeof doResize == 'undefined') {
-        resize(false);
+        myNetwork.resize(false);
       }
       graph.node.classed('selected', false);
       selected = {};
       highlightObject(null);
     }
-
-    /*
-     var clickLinkShowDoc = function (id) { //d, i) {
-     console.log("click, id = ", id);
-     var content;
-     // content = d.docs;
-     var d = myNetwork.updateSearchIdLinkClick(searchTerm);
-     content = d.docs;
-
-     doc.clickLinkShowDocument(id, content, d); //content, d3.event);
-     console.log("content =  ", content, "\nd3.event = ", d3.event);
-     //  highlight neighboring nodes
-     //  watch out - don't mess with node if search is currently matching
-     return d3.select(this);
-     };
-     */
-    /*
-     $('#svg')
-     .on('scroll', function () {
-     graph.legend.attr('transform', 'translate(0,' + $(this)
-     .scrollTop() + ')');
-     });
-     */
-//    highlightObject(obj);
 
     // LOAD THE JSON DATA FILE HERE
     // return d3.json("data/al-qaida.json", function(json) {
@@ -1430,3 +1350,132 @@ $(function () {
   }
 );
 // end of function()
+
+/*
+
+//  Help with the placement of nodes
+RadialPlacement = function () {
+  var center, current, increment, place, placement, radialLocation, radius, setKeys, start, values;
+  // stores the key -> location values
+  values = d3.map();
+  // how much to separate each location by
+  increment = 5;
+  // how large to make the layout
+  radius = 50;
+  //  where the center of the layout should be
+
+  center = {
+    "x": 0,
+    "y": 0
+  };
+  //  what angle to start at
+
+  start = -120;
+  current = start;
+
+  //  Given an center point, angle, and radius length,
+  //  return a radial position for that angle
+
+  radialLocation = function (center, angle, radius) {
+    var x, y;
+    x = center.x + radius * Math.cos(angle * Math.PI / 180);
+    y = center.y + radius * Math.sin(angle * Math.PI / 180);
+    return {
+      "x": x,
+      "y": y
+    };
+  };
+  //  Main entry point for RadialPlacement
+  //  Returns location for a particular key,
+  //  creating a new location if necessary.
+
+  placement = function (key) {
+    var value;
+    value = values.get(key);
+    if (!values.has(key)) {
+      value = place(key);
+    }
+    return value;
+  };
+  //  Gets a new location for input key
+
+  place = function (key) {
+
+    var value;
+    value = radialLocation(center, current, radius);
+    values.set(key, value);
+    current += increment;
+    return value;
+  };
+  //  Given a set of keys, perform some magic to create a two ringed radial layout.
+  //  Expects radius, increment, and center to be set.
+  //  If there are a small number of keys, just make one circle.
+
+  setKeys = function (keys) {
+
+    var firstCircleCount, firstCircleKeys, secondCircleKeys;
+    //  start with an empty values
+    values = d3.map();
+    //  number of keys to go in first circle
+    firstCircleCount = 360 / increment;
+    //  if we don't have enough keys, modify increment
+    //  so that they all fit in one circle
+
+    if (keys.length < firstCircleCount) {
+      increment = 360 / keys.length;
+    }
+    //  set locations for inner circle
+
+    firstCircleKeys = keys.slice(0, firstCircleCount);
+    firstCircleKeys.forEach(function (k) {
+      return place(k);
+    });
+    //  set locations for outer circle
+
+    secondCircleKeys = keys.slice(firstCircleCount);
+    //  setup outer circle
+    radius = radius + radius / 1.8;
+    increment = 360 / secondCircleKeys.length;
+    return secondCircleKeys.forEach(function (k) {
+      return place(k);
+    });
+  };
+  placement.keys = function (_) {
+    if (!arguments.length) {
+      return d3.keys(values);
+    }
+    setKeys(_);
+    return placement;
+  };
+  placement.center = function (_) {
+    if (!arguments.length) {
+      return center;
+    }
+    center = _;
+    return placement;
+  };
+  placement.radius = function (_) {
+    if (!arguments.length) {
+      return radius;
+    }
+    radius = _;
+    return placement;
+  };
+  placement.start = function (_) {
+    if (!arguments.length) {
+      return start;
+    }
+    start = _;
+    current = start;
+    return placement;
+  };
+  placement.increment = function (_) {
+    if (!arguments.length) {
+      return increment;
+    }
+    increment = _;
+    return placement;
+  };
+  return placement;
+};
+*/

@@ -185,3 +185,8 @@ td#unLogo {
     margin-bottom: 0;
     background-color: transparent;
 }
+#doc-close {
+    z-index: 10;
+    display: inline;
+    float: right;
+}
