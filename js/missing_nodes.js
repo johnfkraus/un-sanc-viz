@@ -65,8 +65,8 @@ var missing_indivs = [{
     ]
   },
   "INDIVIDUAL_ALIAS": [{
-    "QUALITY": "poor",
-    "ALIAS_NAME": "Good Time Charlie"
+    "QUALITY": "very poor",
+    "ALIAS_NAME": "Stinky Fahd"
   }],
   "INDIVIDUAL_ADDRESS": "",
   "INDIVIDUAL_DATE_OF_BIRTH": {
@@ -108,8 +108,8 @@ var missing_indivs = [{
     ]
   },
   "INDIVIDUAL_ALIAS": [{
-    "QUALITY": "poor",
-    "ALIAS_NAME": "Good Time Charlie"
+    "QUALITY": "very poor",
+    "ALIAS_NAME": "Osama Yo Mama"
   }],
   "INDIVIDUAL_ADDRESS": "",
   "INDIVIDUAL_DATE_OF_BIRTH": {
@@ -151,8 +151,8 @@ var missing_indivs = [{
     ]
   },
   "INDIVIDUAL_ALIAS": [{
-    "QUALITY": "poor",
-    "ALIAS_NAME": "Good Time Charlie"
+    "QUALITY": "very poor",
+    "ALIAS_NAME": "Big Fart Wa&apos;el"
   }],
   "INDIVIDUAL_ADDRESS": "",
   "INDIVIDUAL_DATE_OF_BIRTH": {
@@ -190,8 +190,8 @@ var missing_indivs = [{
     ]
   },
   "INDIVIDUAL_ALIAS": [{
-    "QUALITY": "poor",
-    "ALIAS_NAME": "Ugly Wali"
+    "QUALITY": "very poor",
+    "ALIAS_NAME": "Poop Your Pants Wali"
   }],
   "INDIVIDUAL_ADDRESS": "",
   "INDIVIDUAL_DATE_OF_BIRTH": {

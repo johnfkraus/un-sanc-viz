@@ -2,7 +2,7 @@
 //================
 var fs = require('fs');
 
-var filename = 'aq-list-viz.log';
+var filename = 'log/aq-list-viz.log';
 var last_message = {
   date: null,
   msg: null,

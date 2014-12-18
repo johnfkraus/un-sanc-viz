@@ -84,7 +84,7 @@ var fixData = function () {
           indiv.indiv0OrEnt1 = 0;
           indiv.indivDobString = createIndivDobString(indiv);
           indiv.indivPlaceOfBirthString = processPlaceOfBirthArray(indiv);
-
+          indiv.indivAliasString = processAliasArray(indiv);
           // console.log("indiv.indivDobString = ", indiv.indivDobString);
         });
         data.entities = data.entities.concat(missingNodes.getMissingEnts());
@@ -774,6 +774,36 @@ var getKeys = function (pob) {
   }
   return keys;
 };
+
+var processAliasArray = function (d) {
+  var aliasArrayString = "";
+  if (!(d["INDIVIDUAL_ALIAS"])) {
+    d.aliasCount = 0;
+    return "";
+  }
+  if (Object.prototype.toString.call(d["INDIVIDUAL_ALIAS"]) === '[object Array]') {
+    console.log("\n ", __filename, "line", __line, "; processAliasArray() found  Array!", d["INDIVIDUAL_PLACE_OF_BIRTH"]);
+    var aliasArray = d["INDIVIDUAL_ALIAS"];
+    d.aliasCount = aliasArray.length;
+    for (var i = 0; i < aliasArray.length; i++) {
+      aliasArrayString += createIndivAliasString(aliasArray[i]);
+      aliasArrayString += "; ";
+    }
+  } else {
+    d.aliasCount = 1;
+    aliasArrayString += createIndivAliasString(d["INDIVIDUAL_ALIAS"]);
+  }
+  return aliasArrayString;
+};
+
+var createIndivAliasString = function (singleAlias) {
+  var aliasString, aliasName, aliasQuality; // = "";
+  aliasName = singleAlias.ALIAS_NAME;
+  aliasQuality = singleAlias.QUALITY;
+  aliasString = aliasName + " (" + aliasQuality + ")";
+  return aliasString;
+};
+
 
 var createIndivDobString = function (d) {
   var dateString = "";
