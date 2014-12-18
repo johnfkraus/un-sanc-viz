@@ -911,6 +911,12 @@ Network = function () {
     } else {
       $("div#aliasDiv").css("display", "none");
     }
+    if (typeof d.dateUpdatedString !== 'undefined') {
+      $("div#dateUpdatedDiv").css("display", "block");
+      $("span#dateUpdated").html(d.dateUpdatedString);
+    } else {
+      $("div#dateUpdatedDiv").css("display", "none");
+    }
 
     $("#doc-container").show();
     $("#doc-close").css('display', 'inline');

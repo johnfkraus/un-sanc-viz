@@ -94,6 +94,10 @@ var fixData = function () {
         });
         data.nodes = data.indivs.concat(data.entities);
         data.dateGenerated = consolidatedList.CONSOLIDATED_LIST.$.dateGenerated;
+        data.nodes.forEach(function (node) {
+
+          node.dateUpdatedString = processDateUpdatedArray(node);
+        });
 
         var generatedFileDateString = dateFormat(data.dateGenerated, "yyyy-mm-dd");
         var archiveFileNameAndPath = __dirname + "/../data/archive/AQList-" + generatedFileDateString + ".xml";
@@ -774,6 +778,37 @@ var getKeys = function (pob) {
   }
   return keys;
 };
+
+
+var processDateUpdatedArray = function (d) {
+  var dateUpdatedArrayString = "";
+  if (typeof d["LAST_DAY_UPDATED"] === 'undefined') {
+    d.lastDateUpdatedCount = 0;
+    return "";
+  }
+  if (Object.prototype.toString.call(d["LAST_DAY_UPDATED"]["VALUE"]) === '[object Array]') {
+    console.log("\n ", __filename, "line", __line, "; processDateUpdatedArray() found  Array!", d["LAST_DAY_UPDATED"]);
+    var lastDateUpdatedArray = d["LAST_DAY_UPDATED"]["VALUE"];
+    d.lastDateUpdatedCount = lastDateUpdatedArray.length;
+    for (var i = 0; i < lastDateUpdatedArray.length; i++) {
+      dateUpdatedArrayString += lastDateUpdatedArray[i];
+      dateUpdatedArrayString += "; ";
+    }
+  } else {
+    d.lastDateUpdatedCount = 1;
+    dateUpdatedArrayString += d["LAST_DAY_UPDATED"]["VALUE"];
+  }
+  return dateUpdatedArrayString;
+};
+
+var createDateUpdatedString = function (singleAlias) {
+  var aliasString, aliasName, aliasQuality; // = "";
+  aliasName = singleAlias.ALIAS_NAME;
+  aliasQuality = singleAlias.QUALITY;
+  aliasString = aliasName + " (" + aliasQuality + ")";
+  return aliasString;
+};
+
 
 var processAliasArray = function (d) {
   var aliasArrayString = "";

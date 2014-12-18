@@ -7,16 +7,7 @@
     <option name="ANALYSIS_IN_BACKGROUND" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4182aee6-13b8-4466-9993-4422af087054" name="John's change list" comment="delete pdf">
-      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\Gemfile" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\Gemfile.lock" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\PHP2js.php.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\config.ru" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data31deleteEntsEtc.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\lastfm.rb" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\markdown.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\package.json.bak.txt" afterPath="" />
-      <change type="MOVED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\consolelog.txt" afterPath="$PROJECT_DIR$/log/consolelog.txt" />
+    <list default="true" id="4182aee6-13b8-4466-9993-4422af087054" name="John's change list" comment="displays aliases">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/AQList-clean.json" afterPath="$PROJECT_DIR$/data/output/AQList-clean.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/AQList-docs.json" afterPath="$PROJECT_DIR$/data/output/AQList-docs.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/data02-flattened.json" afterPath="$PROJECT_DIR$/data/output/data02-flattened.json" />
@@ -27,10 +18,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/data5addconnidsarray.json" afterPath="$PROJECT_DIR$/data/output/data5addconnidsarray.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/data6addconnectionOBJECTSarray.json" afterPath="$PROJECT_DIR$/data/output/data6addconnectionOBJECTSarray.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/libs/logger.js" afterPath="$PROJECT_DIR$/js/libs/logger.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/missing_nodes.js" afterPath="$PROJECT_DIR$/js/missing_nodes.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/setupData.js" afterPath="$PROJECT_DIR$/js/setupData.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/viz.js" afterPath="$PROJECT_DIR$/js/viz.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -56,11 +44,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="viz.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="viz.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/viz.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="15189" max-vertical-offset="23494">
-              <caret line="908" column="43" selection-start-line="908" selection-start-column="43" selection-end-line="908" selection-end-column="43" />
+            <state vertical-scroll-proportion="0.8148148" vertical-offset="15249" max-vertical-offset="23596">
+              <caret line="919" column="0" selection-start-line="919" selection-start-column="0" selection-end-line="919" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -76,11 +64,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AQList-docs.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AQList-docs.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/output/AQList-docs.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33256352" vertical-offset="304989" max-vertical-offset="580108">
-              <caret line="17949" column="20" selection-start-line="17949" selection-start-column="20" selection-end-line="17949" selection-end-column="20" />
+            <state vertical-scroll-proportion="189.13461" vertical-offset="383087" max-vertical-offset="590682">
+              <caret line="21956" column="12" selection-start-line="21956" selection-start-column="12" selection-end-line="21956" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -89,8 +77,8 @@
       <file leaf-file-name="setupData.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/setupData.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.807693" vertical-offset="13192" max-vertical-offset="14331">
-              <caret line="793" column="0" selection-start-line="793" selection-start-column="0" selection-end-line="793" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1122" max-vertical-offset="14926">
+              <caret line="800" column="0" selection-start-line="800" selection-start-column="0" selection-end-line="800" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -99,8 +87,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.8461537" vertical-offset="2992" max-vertical-offset="4998">
-              <caret line="188" column="48" selection-start-line="188" selection-start-column="48" selection-end-line="188" selection-end-column="48" />
+            <state vertical-scroll-proportion="-14.384615" vertical-offset="3315" max-vertical-offset="5100">
+              <caret line="217" column="40" selection-start-line="217" selection-start-column="40" selection-end-line="217" selection-end-column="40" />
               <folding>
                 <element signature="n#style#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#a#0;n#div#1;n#td#1;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -115,8 +103,9 @@
                 <element signature="n#style#0;n#span#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#div#3;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#div#4;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1418925352392" expanded="true" signature="12632:12725" placeholder="..." />
-                <marker date="1418925352392" expanded="true" signature="12674:12716" placeholder="{...}" />
+                <element signature="n#style#0;n#span#0;n#div#5;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1418934377016" expanded="true" signature="12830:12923" placeholder="..." />
+                <marker date="1418934377016" expanded="true" signature="12872:12914" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -195,10 +184,10 @@
         <option value="$PROJECT_DIR$/js/Document.js" />
         <option value="$PROJECT_DIR$/js/libs/logger.js" />
         <option value="$PROJECT_DIR$/css/style.css" />
-        <option value="$PROJECT_DIR$/js/viz.js" />
         <option value="$PROJECT_DIR$/js/missing_nodes.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/setupData.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/viz.js" />
       </list>
     </option>
   </component>
@@ -714,7 +703,13 @@
       <option name="project" value="LOCAL" />
       <updated>1418921369461</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="displays aliases">
+      <created>1418926999626</created>
+      <option name="number" value="00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1418926999626</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <option name="trackContextForNewChangelist" value="true" />
     <servers />
   </component>
@@ -839,7 +834,8 @@
     <MESSAGE value="unclick no longer list now returns you to &quot;name&quot; based colors" />
     <MESSAGE value="doc-close button works, is positioned correctly" />
     <MESSAGE value="delete pdf" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete pdf" />
+    <MESSAGE value="displays aliases" />
+    <option name="LAST_COMMIT_MESSAGE" value="displays aliases" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -862,7 +858,7 @@
         </line-breakpoint>
         <line-breakpoint type="javascript">
           <url>file://$PROJECT_DIR$/js/viz.js</url>
-          <line>1234</line>
+          <line>1240</line>
           <option name="timeStamp" value="164" />
         </line-breakpoint>
         <line-breakpoint type="javascript">
@@ -897,92 +893,87 @@
         </line-breakpoint>
         <line-breakpoint type="javascript">
           <url>file://$PROJECT_DIR$/js/setupData.js</url>
-          <line>774</line>
-          <option name="timeStamp" value="339" />
-        </line-breakpoint>
-        <line-breakpoint type="javascript">
-          <url>file://$PROJECT_DIR$/js/setupData.js</url>
-          <line>761</line>
+          <line>765</line>
           <option name="timeStamp" value="345" />
         </line-breakpoint>
         <line-breakpoint type="javascript">
           <url>file://$PROJECT_DIR$/js/setupData.js</url>
-          <line>745</line>
+          <line>749</line>
           <option name="timeStamp" value="346" />
         </line-breakpoint>
         <line-breakpoint type="javascript">
           <url>file://$PROJECT_DIR$/js/setupData.js</url>
-          <line>762</line>
+          <line>766</line>
           <option name="timeStamp" value="347" />
         </line-breakpoint>
         <line-breakpoint type="javascript">
           <url>file://$PROJECT_DIR$/js/setupData.js</url>
-          <line>754</line>
+          <line>758</line>
           <option name="timeStamp" value="348" />
         </line-breakpoint>
         <line-breakpoint type="javascript">
           <url>file://$PROJECT_DIR$/js/setupData.js</url>
-          <line>748</line>
+          <line>752</line>
           <option name="timeStamp" value="349" />
         </line-breakpoint>
         <line-breakpoint type="javascript">
           <url>file://$PROJECT_DIR$/js/setupData.js</url>
-          <line>752</line>
+          <line>756</line>
           <option name="timeStamp" value="350" />
         </line-breakpoint>
         <line-breakpoint type="javascript">
           <url>file://$PROJECT_DIR$/js/viz.js</url>
-          <line>1055</line>
+          <line>1061</line>
           <option name="timeStamp" value="363" />
         </line-breakpoint>
         <line-breakpoint type="javascript">
           <url>file://$PROJECT_DIR$/js/viz.js</url>
-          <line>1054</line>
+          <line>1060</line>
           <option name="timeStamp" value="364" />
         </line-breakpoint>
         <line-breakpoint type="javascript">
           <url>file://$PROJECT_DIR$/js/viz.js</url>
-          <line>990</line>
+          <line>996</line>
           <option name="timeStamp" value="365" />
         </line-breakpoint>
         <line-breakpoint type="javascript">
           <url>file://$PROJECT_DIR$/js/viz.js</url>
-          <line>1101</line>
+          <line>1107</line>
           <option name="timeStamp" value="367" />
         </line-breakpoint>
         <line-breakpoint type="javascript">
           <url>file://$PROJECT_DIR$/js/viz.js</url>
-          <line>947</line>
+          <line>953</line>
           <option name="timeStamp" value="371" />
         </line-breakpoint>
         <line-breakpoint type="javascript">
           <url>file://$PROJECT_DIR$/js/viz.js</url>
-          <line>1088</line>
+          <line>1094</line>
           <option name="timeStamp" value="372" />
         </line-breakpoint>
         <line-breakpoint type="javascript">
           <url>file://$PROJECT_DIR$/js/viz.js</url>
-          <line>1120</line>
+          <line>1126</line>
           <option name="timeStamp" value="373" />
         </line-breakpoint>
         <line-breakpoint type="javascript">
           <url>file://$PROJECT_DIR$/js/viz.js</url>
-          <line>957</line>
+          <line>963</line>
           <option name="timeStamp" value="374" />
         </line-breakpoint>
         <line-breakpoint type="javascript">
           <url>file://$PROJECT_DIR$/js/viz.js</url>
-          <line>1098</line>
+          <line>1104</line>
           <option name="timeStamp" value="375" />
         </line-breakpoint>
         <line-breakpoint type="javascript">
           <url>file://$PROJECT_DIR$/js/viz.js</url>
-          <line>1097</line>
+          <line>1103</line>
           <option name="timeStamp" value="376" />
         </line-breakpoint>
         <line-breakpoint type="javascript">
           <url>file://$PROJECT_DIR$/js/viz.js</url>
-          <line>1127</line>
+          <line>1133</line>
           <option name="timeStamp" value="377" />
         </line-breakpoint>
         <line-breakpoint type="javascript">
@@ -992,59 +983,64 @@
         </line-breakpoint>
         <line-breakpoint type="javascript">
           <url>file://$PROJECT_DIR$/js/viz.js</url>
-          <line>956</line>
+          <line>962</line>
           <option name="timeStamp" value="380" />
         </line-breakpoint>
         <line-breakpoint type="javascript">
           <url>file://$PROJECT_DIR$/js/viz.js</url>
-          <line>1068</line>
+          <line>1074</line>
           <option name="timeStamp" value="384" />
         </line-breakpoint>
         <line-breakpoint type="javascript">
           <url>file://$PROJECT_DIR$/js/viz.js</url>
-          <line>1069</line>
+          <line>1075</line>
           <option name="timeStamp" value="385" />
         </line-breakpoint>
         <line-breakpoint type="javascript">
           <url>file://$PROJECT_DIR$/js/viz.js</url>
-          <line>931</line>
+          <line>937</line>
           <option name="timeStamp" value="386" />
         </line-breakpoint>
         <line-breakpoint type="javascript">
           <url>file://$PROJECT_DIR$/js/viz.js</url>
-          <line>1063</line>
+          <line>1069</line>
           <option name="timeStamp" value="387" />
         </line-breakpoint>
         <line-breakpoint type="javascript">
           <url>file://$PROJECT_DIR$/js/viz.js</url>
-          <line>1064</line>
+          <line>1070</line>
           <option name="timeStamp" value="389" />
         </line-breakpoint>
         <line-breakpoint type="javascript">
           <url>file://$PROJECT_DIR$/js/viz.js</url>
-          <line>929</line>
+          <line>935</line>
           <option name="timeStamp" value="390" />
         </line-breakpoint>
         <line-breakpoint type="javascript">
           <url>file://$PROJECT_DIR$/js/viz.js</url>
-          <line>928</line>
+          <line>934</line>
           <option name="timeStamp" value="391" />
         </line-breakpoint>
         <line-breakpoint type="javascript">
           <url>file://$PROJECT_DIR$/js/viz.js</url>
-          <line>958</line>
+          <line>964</line>
           <option name="timeStamp" value="392" />
         </line-breakpoint>
         <line-breakpoint type="javascript">
           <url>file://$PROJECT_DIR$/js/viz.js</url>
-          <line>950</line>
+          <line>956</line>
           <option name="timeStamp" value="393" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/js/setupData.js</url>
+          <line>782</line>
+          <option name="timeStamp" value="396" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="395" />
+      <option name="time" value="401" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JavascriptDebugType">
@@ -1053,9 +1049,7 @@
         <watch expression="network.docClosepadding" language="JavaScript" />
       </configuration>
       <configuration name="NodeJSConfigurationType">
-        <watch expression="d.noLongerListed" language="JavaScript" />
-        <watch expression="d[searchTermName]" language="JavaScript" />
-        <watch expression="pob[0]" language="JavaScript" />
+        <watch expression="d[&quot;LAST_DAY_UPDATED&quot;][&quot;VALUE&quot;]" language="JavaScript" />
       </configuration>
     </watches-manager>
   </component>
@@ -1416,10 +1410,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/data/output/AQList-docs.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="189.13461" vertical-offset="383087" max-vertical-offset="590682">
+          <caret line="21956" column="12" selection-start-line="21956" selection-start-column="12" selection-end-line="21956" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.8461537" vertical-offset="2992" max-vertical-offset="4998">
-          <caret line="188" column="48" selection-start-line="188" selection-start-column="48" selection-end-line="188" selection-end-column="48" />
+        <state vertical-scroll-proportion="-14.384615" vertical-offset="3315" max-vertical-offset="5100">
+          <caret line="217" column="40" selection-start-line="217" selection-start-column="40" selection-end-line="217" selection-end-column="40" />
           <folding>
             <element signature="n#style#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#a#0;n#div#1;n#td#1;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1434,32 +1436,25 @@
             <element signature="n#style#0;n#span#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#div#3;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#div#4;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1418925352392" expanded="true" signature="12632:12725" placeholder="..." />
-            <marker date="1418925352392" expanded="true" signature="12674:12716" placeholder="{...}" />
+            <element signature="n#style#0;n#span#0;n#div#5;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1418934377016" expanded="true" signature="12830:12923" placeholder="..." />
+            <marker date="1418934377016" expanded="true" signature="12872:12914" placeholder="{...}" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/viz.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="15036" max-vertical-offset="23494">
-          <caret line="908" column="43" selection-start-line="908" selection-start-column="43" selection-end-line="908" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/setupData.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.807693" vertical-offset="13192" max-vertical-offset="14331">
-          <caret line="793" column="0" selection-start-line="793" selection-start-column="0" selection-end-line="793" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="13201" max-vertical-offset="14926">
+          <caret line="800" column="0" selection-start-line="800" selection-start-column="0" selection-end-line="800" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/output/AQList-docs.json">
+    <entry file="file://$PROJECT_DIR$/js/viz.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33256352" vertical-offset="304989" max-vertical-offset="580108">
-          <caret line="17949" column="20" selection-start-line="17949" selection-start-column="20" selection-end-line="17949" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.8148148" vertical-offset="15249" max-vertical-offset="23596">
+          <caret line="919" column="0" selection-start-line="919" selection-start-column="0" selection-end-line="919" selection-end-column="0" />
           <folding />
         </state>
       </provider>

@@ -55,6 +55,8 @@
    "indivPlaceOfBirthString": "Mosul, Iraq, ",
    "aliasCount": 3,
    "indivAliasString": "Abdal Al-Hadi Al-Iraqi (Good); Abd Al-Hadi Al-Iraqi (Good); Abu Abdallah (Low); ",
+   "lastDateUpdatedCount": 2,
+   "dateUpdatedString": "2007-05-14T00:00:00; 2007-07-27T00:00:00; ",
    "id": "QI.A.12.01",
    "name": "NASHWAN ABD AL-RAZZAQ ABD AL-BAQI",
    "natnlty": "Iraqi"
@@ -123,6 +125,8 @@
    "indivPlaceOfBirthString": "Algiers, Algeria, ",
    "aliasCount": 5,
    "indivAliasString": "Ferdjani Mouloud (Good); Rabah Di Roma (Good); Mourad (Low); Said (Low); Abdel Wahab Abdelhafid (Good); ",
+   "lastDateUpdatedCount": 5,
+   "dateUpdatedString": "2004-11-26T00:00:00; 2005-09-09T00:00:00; 2007-12-21T00:00:00; 2010-01-25T00:00:00; 2011-05-16T00:00:00; ",
    "id": "QI.A.157.04",
    "name": "ABD AL WAHAB ABD AL HAFIZ"
   },
@@ -178,6 +182,8 @@
    "indivPlaceOfBirthString": "Bahrain, ",
    "aliasCount": 2,
    "indivAliasString": "Adel Mohamed Mahmoud Abdul Khaliq (Good); Adel Mohamed Mahmood Abdul Khaled (Good); ",
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2013-07-24T00:00:00",
    "id": "QI.A.255.08",
    "name": "ADIL MUHAMMAD MAHMUD ABD AL-KHALIQ",
    "natnlty": "Bahraini"
@@ -281,6 +287,8 @@
    "indivPlaceOfBirthString": "function (n) {\n  return this.length > n ? this.substr(0, n - 1) + '&hellip,' : this;\n}, ",
    "aliasCount": 10,
    "indivAliasString": "Sa'id Jan 'Abd-al-Salam (Good); Dilawar Khan Zain Khan (Good); Qazi 'Abdallah (Low); Qazi Abdullah (Low); Ibrahim Walid (Low); Qasi Sa'id Jan (Low); Said Jhan (Low); Farhan Khan (Low); Aziz Cairo (Low); Nangiali (Low); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QI.A.289.11",
    "name": "SAID JAN ‘ABD AL-SALAM",
    "natnlty": "Afghan"
@@ -340,6 +348,8 @@
    "indivPlaceOfBirthString": "Kafr Al-Shaykh, Egypt, ",
    "aliasCount": 3,
    "indivAliasString": "Abu Al-Khayr (Good); Ahmad Hasan (Good); Abu Jihad (Good); ",
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2011-12-13T00:00:00",
    "id": "QI.A.192.05",
    "name": "ABD ALLAH MOHAMED RAGAB ABDEL RAHMAN",
    "natnlty": "Egyptian"
@@ -394,6 +404,8 @@
    "indivPlaceOfBirthString": "function (n) {\n  return this.length > n ? this.substr(0, n - 1) + '&hellip,' : this;\n}, ",
    "aliasCount": 3,
    "indivAliasString": "Majeed, Abdul (Good); Majeed Chaudhry Abdul (Good); Majid, Abdul (Good); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QI.A.54.01",
    "name": "MAJEED ABDUL CHAUDHRY",
    "natnlty": "Pakistani"
@@ -525,6 +537,8 @@
    "indivPlaceOfBirthString": "Muar Johor, Malaysia, ",
    "aliasCount": 17,
    "indivAliasString": "Musa Abdul Hir (Good); Muslimin Abdulmotalib (Good); Salim Alombra (Good); Armand Escalante (Good); Normina Hashim (Good); Henri Lawi (Good); Hendri Lawi (Good); Norhana Mohamad (Good); Omar Salem (Good); Ahmad Shobirin (Good); Bin Abdul Hir Zulkifli (Good); Abdulhir Bin Hir (Low); Hassan (Low); Hogalu (Low); Hugalu (Low); Lagu (Low); Marwan (Low); ",
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2010-01-25T00:00:00",
    "id": "QI.A.109.03",
    "name": "ZULKIFLI ABDUL HIR",
    "natnlty": "Malaysian"
@@ -580,6 +594,8 @@
    "indivPlaceOfBirthString": "Kirkuk, Iraq, ",
    "aliasCount": 1,
    "indivAliasString": "Deiman Alhasenben Ali Aljabbari (Good)",
+   "lastDateUpdatedCount": 3,
+   "dateUpdatedString": "2010-01-25T00:00:00; 2011-12-13T00:00:00; 2012-11-15T00:00:00; ",
    "id": "QI.A.200.05",
    "name": "DIEMAN ABDULKADIR IZZAT",
    "natnlty": "Iraqi"
@@ -628,6 +644,8 @@
    "indivPlaceOfBirthString": "function (n) {\n  return this.length > n ? this.substr(0, n - 1) + '&hellip,' : this;\n}, ",
    "aliasCount": 3,
    "indivAliasString": "Abdul Manan (Good); Abdul Man’am Saiyid (Low); Saiyid Abd al-Man (formerly listed as) (Low); ",
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2013-06-26T00:00:00",
    "id": "QI.A.18.01",
    "name": "ABDUL MANAN AGHA"
   },
@@ -735,6 +753,8 @@
    "indivPlaceOfBirthString": "East Lombok, West Nusa Tenggara, Indonesia, ",
    "aliasCount": 8,
    "indivAliasString": "Mohammad Jibril Abdurrahman (Good); Muhammad Jibriel Abdul Rahman (Good); Mohammad Jibriel Abdurrahman (Good); Muhamad Ricky Ardhan (Good); Muhammad Ricky Ardhan bin Muhammad Iqbal (Good); Muhammad Ricky Ardhan bin Abu Jibril (Good); Muhammad Yunus (Low); Heris Syah (Low); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QI.A.295.11",
    "name": "MUHAMMAD JIBRIL ABDUL RAHMAN",
    "natnlty": "Indonesian"
@@ -797,6 +817,8 @@
    "indivPlaceOfBirthString": "Tripoli, Libyan Arab Jamahiriya, ",
    "aliasCount": 3,
    "indivAliasString": "Adam (Low); Ibn El Qaim (Good); Mohamed Osman (Good); ",
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2011-12-13T00:00:00",
    "id": "QI.A.229.07",
    "name": "ALY SOLIMAN MASSOUD ABDUL SAYED"
   },
@@ -885,6 +907,8 @@
    "indivPlaceOfBirthString": "Korleko-Lombok Timur, Indonesia, ; Tirpas-Selong Village, East Lombok, Indonesia, ; ",
    "aliasCount": 6,
    "indivAliasString": "Rahman, Mohamad Iqbal (Good); A Rahman, Mohamad Iqbal (Good); Abu Jibril Abdurrahman (Good); Fikiruddin Muqti (Good); Fihiruddin Muqti (Good); Abdul Rahman, Mohamad Iqbal (Good); ",
+   "lastDateUpdatedCount": 3,
+   "dateUpdatedString": "2004-11-26T00:00:00; 2011-05-16T00:00:00; 2011-06-10T00:00:00; ",
    "id": "QI.A.86.03",
    "name": "MOHAMAD IQBAL ABDURRAHMAN",
    "natnlty": "Indonesian"
@@ -953,6 +977,8 @@
    "indivPlaceOfBirthString": "Mirpur Khas, Pakistan, ",
    "aliasCount": 4,
    "indivAliasString": "Abdul Rehman; Abd Ur-Rehman; Abdur Rahman (Good); عبد الرحمن السيندي (Good); عبدالله السندي (Abdullah Sindhi) (Good); Abdur Rehman Muhammad Yamin (Low); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QI.A.309.12",
    "name": "ABDUR REHMAN",
    "natnlty": "Pakistani"
@@ -1058,6 +1084,8 @@
    "indivPlaceOfBirthString": "Al-Madinah al-Munawwarah, Saudi Arabia, ",
    "aliasCount": 11,
    "indivAliasString": "Mohammed Abdullah Hassan Abul-Khair (Good); Muhammad Abdallah Hasan Abu-al-Khayr (Good); Muhammad Bin- 'Abdullah Bin-Hamd Abu-al-Khayr (Good); Abdallah al-Halabi (Good); 'Abdallah al-Halabi al-Madani (Good); Abdallah al-Makki (Good); Abdallah el-Halabi (Good); Abdullah al-Halabi (Good); Abu 'Abdallah al-Halabi (Good); Abu Abdallah al-Madani (Low); Muhannad al-Jaddawi (Low); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QI.A.285.10",
    "name": "MUHAMMAD ABDALLAH HASAN ABU-AL-KHAYR",
    "natnlty": "Saudi Arabian"
@@ -1133,6 +1161,8 @@
    "indivPlaceOfBirthString": "Irbid, Jordan, ",
    "aliasCount": 3,
    "indivAliasString": "Yaser Hassan (Good); Abu Ali Abu Mohamed Dhees (Good); Mohamed Abu Dhess (Good); ",
+   "lastDateUpdatedCount": 3,
+   "dateUpdatedString": "2008-12-23T00:00:00; 2010-03-11T00:00:00; 2011-06-10T00:00:00; ",
    "id": "QI.A.130.03",
    "name": "MOHAMED GHASSAN ALI ABU DHESS",
    "natnlty": "Jordanian"
@@ -1189,6 +1219,8 @@
    "indivPlaceOfBirthString": "Benghazi, Libyan Arab Jamahiriya, ",
    "aliasCount": 0,
    "indivAliasString": "",
+   "lastDateUpdatedCount": 2,
+   "dateUpdatedString": "2010-03-11T00:00:00; 2011-12-13T00:00:00; ",
    "id": "QI.A.224.06",
    "name": "ISMAIL MOHAMED ISMAIL ABU SHAWEESH"
   },
@@ -1257,6 +1289,8 @@
    "indivPlaceOfBirthString": "Benghazi, Libyan Arab Jamahiriya, ",
    "aliasCount": 1,
    "indivAliasString": "Yasser Mohamed Abou Shaweesh (Good)",
+   "lastDateUpdatedCount": 4,
+   "dateUpdatedString": "2007-09-07T00:00:00; 2010-03-11T00:00:00; 2010-09-28T00:00:00; 2011-12-13T00:00:00; ",
    "id": "QI.A.201.05",
    "name": "YASSER MOHAMED ISMAIL ABU SHAWEESH"
   },
@@ -1326,6 +1360,8 @@
    "indivPlaceOfBirthString": "Tulungagung, Indonesia, ",
    "aliasCount": 5,
    "indivAliasString": "Muhammad Achwan (Good); Muhammad Akhwan (Good); Mochtar Achwan (Good); Mochtar Akhwan (Good); Mochtar Akwan (Good); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QI.A.304.12",
    "name": "MOCHAMMAD ACHWAN",
    "natnlty": "Indonesian"
@@ -1387,6 +1423,8 @@
    "indivPlaceOfBirthString": "Abeibara, Kidal Region, Mali, ",
    "aliasCount": 1,
    "indivAliasString": "Sidi Mohamed Arhali (Good)",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QI.A.316.13",
    "name": "IYAD AG GHALI",
    "natnlty": "Malian"
@@ -1449,6 +1487,8 @@
    "indivPlaceOfBirthString": "Arbil, Iraq, ",
    "aliasCount": 2,
    "indivAliasString": "Kaua Omar Achmed (Good); Kawa Hamawandi (previously listed as) (Good); ",
+   "lastDateUpdatedCount": 4,
+   "dateUpdatedString": "2006-07-31T00:00:00; 2010-01-25T00:00:00; 2011-12-13T00:00:00; 2012-11-15T00:00:00; ",
    "id": "QI.A.203.05",
    "name": "FARHAD KANABI AHMAD",
    "natnlty": "Iraqi"
@@ -1510,6 +1550,8 @@
    "indivPlaceOfBirthString": "Olaqloo Sharbajer, Al-Sulaymaniyah Governorate, Iraq, ",
    "aliasCount": 3,
    "indivAliasString": "Mullah Krekar (Good); Fateh Najm Eddine Farraj (Good); Faraj Ahmad Najmuddin (Good); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QI.A.226.06",
    "name": "NAJMUDDIN FARAJ AHMAD",
    "natnlty": "Iraqi"
@@ -1604,6 +1646,8 @@
    "indivPlaceOfBirthString": "Al-Khitan area, Kuwait, ",
    "aliasCount": 7,
    "indivAliasString": "Jaber Al-Jalamah (Good); Abu Muhammad Al-Jalahmah (Good); Jabir Abdallah Jabir Ahmad Jalahmah (Good); Jabir 'Abdallah Jabir Ahmad Al-Jalamah (Good); Jabir Al-Jalhami (Good); Abdul-Ghani (Low); Abu Muhammad (Low); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QI.A.237.08",
    "name": "JABER ABDALLAH JABER AHMAD AL-JALAHMAH",
    "natnlty": "Kuwaiti"
@@ -1665,6 +1709,8 @@
    "indivPlaceOfBirthString": "Alexandria, Egypt, ",
    "aliasCount": 3,
    "indivAliasString": "Hamdi Ahmad Farag (Good); Amr Al-Fatih Fathi (Good); Tarek Anwar El Sayed Ahmad (Good); ",
+   "lastDateUpdatedCount": 3,
+   "dateUpdatedString": "2004-11-26T00:00:00; 2007-07-18T00:00:00; 2011-05-16T00:00:00; ",
    "id": "QI.A.14.01",
    "name": "TARIQ ANWAR EL SAYED AHMED",
    "natnlty": "Egyptian"
@@ -1726,6 +1772,8 @@
    "indivPlaceOfBirthString": "Sharqiyah, Egypt, ; Zaqaziq, Egypt, ; ",
    "aliasCount": 2,
    "indivAliasString": "Rif'at Salim (Good); Abu Usama (Good); ",
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2011-12-13T00:00:00",
    "id": "QI.A.193.05",
    "name": "ZAKI EZAT ZAKI AHMED",
    "natnlty": "Egyptian"
@@ -1785,6 +1833,8 @@
    "indivPlaceOfBirthString": "Algiers, Algeria, ",
    "aliasCount": 3,
    "indivAliasString": "Achour Ali (Good); Terfi Farid (Good); Abdallah (Low); ",
+   "lastDateUpdatedCount": 3,
+   "dateUpdatedString": "2004-11-26T00:00:00; 2010-01-25T00:00:00; 2011-05-16T00:00:00; ",
    "id": "QI.A.161.04",
    "name": "FARID AIDER",
    "natnlty": "Algerian"
@@ -1836,6 +1886,8 @@
    "indivPlaceOfBirthString": "Rouiba, Algiers, Algeria, ",
    "aliasCount": 2,
    "indivAliasString": "Yahia Abou el Hoummam (Good); Yahia Abou el Hammam (Good); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QI.A.313.13",
    "name": "DJAMEL AKKACHA",
    "natnlty": "Algerian"
@@ -1902,6 +1954,8 @@
    "indivPlaceOfBirthString": "Bordj el Kiffane, Algeria, ",
    "aliasCount": 4,
    "indivAliasString": "Akli Amine Mohamed (Good); Killech Shamir (Good); Kali Sami (Good); Elias (Low); ",
+   "lastDateUpdatedCount": 3,
+   "dateUpdatedString": "2006-04-12T00:00:00; 2007-10-17T00:00:00; 2011-05-16T00:00:00; ",
    "id": "QI.A.91.03",
    "name": "MOHAMED AMINE AKLI",
    "natnlty": "Algerian"
@@ -1998,6 +2052,8 @@
    "indivPlaceOfBirthString": "Binnish, Syrian Arab Republic, ",
    "aliasCount": 14,
    "indivAliasString": "Yaser Khalaf Nazzal Alrawi (Good); Jaber Taha Falah (Good); Abou Khattab (Good); Abou Sadeq Alrawi (Good); Tah al Binchi (Good); Abu Mohammed al-Adnani (Good); Taha Sobhi Falaha (Good); Yasser Khalaf Hussein Nazal al-Rawi (Good); Abu Baker al-Khatab (Good); Abu Sadek al-Rawi (Good); Taha al-Banshi (Good); Abu Mohamed al-Adnani (Good); Abu-Mohammad al-Adnani al-Shami (Good); Hajj Ibrahim (Good); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QI.A.325.14",
    "name": "ABOU MOHAMED AL ADNANI",
    "natnlty": "Iraqi"
@@ -2062,6 +2118,8 @@
    "indivPlaceOfBirthString": "Kuwait, ",
    "aliasCount": 6,
    "indivAliasString": "Hijaj Fahid Hijaj Muhammad Sahib al-Ajmi (Good); Hicac Fehid Hicac Muhammed Sebib al-Acmi (Good); Hajjaj bin-Fahad al-Ajmi (Good); Sheikh Hajaj al-Ajami (Good); Hajaj al-Ajami (Good); Ajaj Ajami (Good); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QI.A.328.14",
    "name": "HAJJAJ BIN FAHD AL AJMI",
    "natnlty": "Kuwaiti"
@@ -2125,6 +2183,8 @@
    "indivPlaceOfBirthString": "Warah, Kuwait, ",
    "aliasCount": 3,
    "indivAliasString": "Shafi al-Ajmi (Good); Sheikh Shafi al-Ajmi (Good); Shaykh Abu-Sultan (Low); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QI.A.338.14",
    "name": "SHAFI SULTAN MOHAMMED AL-AJMI",
    "natnlty": "Kuwaiti"
@@ -2214,6 +2274,8 @@
    "indivPlaceOfBirthString": "Kuwait, ",
    "aliasCount": 8,
    "indivAliasString": "Dr. Hamed Abdullah Al-Ali (Good); Hamed Al-'Ali (Good); Hamed bin 'Abdallah Al-'Ali (Good); Hamid 'Abdallah Al-'Ali (Good); Hamid 'Abdallah Ahmad Al-'Ali (Good); Hamid bin Abdallah Ahmed Al-Ali (Good); Hamid Abdallah Ahmed Al-Ali (Good); Abu Salim (Low); ",
+   "lastDateUpdatedCount": 3,
+   "dateUpdatedString": "2008-07-01T00:00:00; 2008-07-23T00:00:00; 2010-01-25T00:00:00; ",
    "id": "QI.A.236.08",
    "name": "HAMID ABDALLAH AHMAD AL-ALI",
    "natnlty": "Kuwaiti"
@@ -2269,6 +2331,8 @@
    "indivPlaceOfBirthString": "Kuwait, ; Qatar, ; ",
    "aliasCount": 0,
    "indivAliasString": "",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QI.A.326.14",
    "name": "HAMID HAMAD HAMID AL-‘ALI",
    "natnlty": "Kuwaiti"
@@ -2371,6 +2435,8 @@
    "indivPlaceOfBirthString": "Asima-Tunis, Tunisia, ",
    "aliasCount": 8,
    "indivAliasString": "Fabio Fusco (Good); Fabio Fusco (Good); Fabio Fusco (Good); Mohamed Hassan (Good); Meherez Hamdouni (Good); Amdouni Mehrez ben Tah (Good); Meherez ben Ahdoud ben Amdouni (Good); Abu Thale (Low); ",
+   "lastDateUpdatedCount": 7,
+   "dateUpdatedString": "2004-11-26T00:00:00; 2005-12-20T00:00:00; 2007-10-17T00:00:00; 2008-09-16T00:00:00; 2009-03-24T00:00:00; 2010-07-12T00:00:00; 2011-05-16T00:00:00; ",
    "id": "QI.A.92.03",
    "name": "MEHREZ BEN MAHMOUD BEN SASSI AL-AMDOUNI",
    "natnlty": "Tunisian"
@@ -2440,6 +2506,8 @@
    "indivPlaceOfBirthString": "function (n) {\n  return this.length > n ? this.substr(0, n - 1) + '&hellip,' : this;\n}, ",
    "aliasCount": 7,
    "indivAliasString": "‘Abd al-Rahman Khalaf al-Anizi (Good); ‘Abd al-Rahman Khalaf al-‘Anzi (Good); Abu Usamah al-Rahman (Low); Abu Shaima’ Kuwaiti (Low); Abu Usamah al-Kuwaiti (Low); Abu Usama (Low); Yusuf (Low); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QI.A.335.14",
    "name": "‘ABD AL-RAHMAN KHALAF ‘UBAYD JUDAY’ AL-‘ANIZI",
    "natnlty": "Kuwaiti"
@@ -2520,6 +2588,8 @@
    "indivPlaceOfBirthString": "Tunis, Tunisia, ",
    "aliasCount": 2,
    "indivAliasString": "Mohamed Ben Belkacem Aouadi (Good); Fathi Hannachi (Good); ",
+   "lastDateUpdatedCount": 8,
+   "dateUpdatedString": "2003-04-10T00:00:00; 2004-11-26T00:00:00; 2005-09-09T00:00:00; 2005-12-20T00:00:00; 2006-07-31T00:00:00; 2007-06-07T00:00:00; 2010-12-23T00:00:00; 2014-11-24T00:00:00; ",
    "id": "QI.A.60.02",
    "name": "MOHAMED BEN BELGACEM BEN ABDALLAH AL-AOUADI",
    "natnlty": "Tunisian"
@@ -2590,6 +2660,8 @@
    "indivPlaceOfBirthString": "Uneizah, Saudi Arabia, ",
    "aliasCount": 2,
    "indivAliasString": "Aqeel Abdulaziz Al-Aqil (Good); Ageel Abdulaziz A. Alageel (Good); ",
+   "lastDateUpdatedCount": 3,
+   "dateUpdatedString": "2007-04-23T00:00:00; 2009-07-17T00:00:00; 2011-12-13T00:00:00; ",
    "id": "QI.A.171.04",
    "name": "AQEEL ABDULAZIZ AQEEL AL-AQEEL",
    "natnlty": "Saudi Arabian"
@@ -2707,6 +2779,8 @@
    "indivPlaceOfBirthString": "Riyadh, Saudi Arabia, ",
    "aliasCount": 12,
    "indivAliasString": "Ibrahim Hassan Tali Asiri (إبراهيم حسن طالع عسيري) (Good); Ibrahim Hasan Talea Aseeri (Good); Ibrahim Hassan al-Asiri (Good); Ibrahim Hasan Tali Asiri (Good); Ibrahim Hassan Tali Assiri (Good); Ibrahim Hasan Tali'A 'Asiri (Good); Ibrahim Hasan Tali al-'Asiri (Good); Ibrahim al-'Asiri (Good); Ibrahim Hassan Al Asiri (Good); Abu Saleh (Low); Abosslah (Low); Abu-Salaah (Low); ",
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2014-04-15T00:00:00",
    "id": "QI.A.291.11",
    "name": "IBRAHIM HASSAN TALI AL-ASIRI",
    "natnlty": "Saudi Arabian"
@@ -2786,6 +2860,8 @@
    "indivPlaceOfBirthString": "Las Cruces, New Mexico, United States of America, ",
    "aliasCount": 6,
    "indivAliasString": "Anwar al-Aulaqi (Good); Anwar al-Awlaki (Good); Anwar al-Awlaqi (Good); Anwar Nasser Aulaqi (Good); Anwar Nasser Abdullah Aulaqi (Good); Anwar Nasser Abdulla Aulaqi (Good); ",
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2011-11-30T00:00:00",
    "id": "QI.A.283.10",
    "name": "ANWAR NASSER ABDULLA AL-AULAQI",
    "natnlty": [
@@ -2876,6 +2952,8 @@
    "indivPlaceOfBirthString": "Tunis, Tunisia, ",
    "aliasCount": 7,
    "indivAliasString": "Hichem Abu Hchem (Good); Ayari Chihbe (Good); Ayari Chied (Good); Adam Hussainy (Good); Hichem (Low); Abu Hichem (Low); Moktar (Low); ",
+   "lastDateUpdatedCount": 4,
+   "dateUpdatedString": "2005-12-20T00:00:00; 2007-10-17T00:00:00; 2009-08-10T00:00:00; 2011-05-16T00:00:00; ",
    "id": "QI.A.93.03",
    "name": "CHIHEB BEN MOHAMED BEN MOKHTAR AL-AYARI",
    "natnlty": "Tunisian"
@@ -2925,6 +3003,8 @@
    "indivPlaceOfBirthString": "Saqra, Saudi Arabia, ",
    "aliasCount": 2,
    "indivAliasString": "Abdul Mohsen Abdullah Ibrahim Al-Sharikh (Good); Sanafi al Nasr (Good); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QI.A.324.14",
    "name": "ABDUL MOHSEN ABDALLAH IBRAHIM AL CHAREKH",
    "natnlty": "Saudi Arabian"
@@ -3059,6 +3139,8 @@
    "indivPlaceOfBirthString": "Manzil Tmim, Tunisia, ",
    "aliasCount": 13,
    "indivAliasString": "Cherif Said (Good); Binhamoda Hokri (Good); Hcrif Ataf (Good); Bin Homoda Chokri (Good); Atef Cherif (Good); Sherif Ataf (Good); Ataf Cherif Said (Good); Cherif Said (Good); Cherif Said (Good); Djallal (Low); Youcef (Low); Abou Salman (Low); Said Tmimi (Low); ",
+   "lastDateUpdatedCount": 4,
+   "dateUpdatedString": "2005-12-20T00:00:00; 2007-12-21T00:00:00; 2009-01-30T00:00:00; 2011-05-16T00:00:00; ",
    "id": "QI.A.138.03",
    "name": "SAID BEN ABDELHAKIM BEN OMAR AL-CHERIF",
    "natnlty": "Tunisian"
@@ -3137,6 +3219,8 @@
    "indivPlaceOfBirthString": "Tripoli, Libyan Arab Jamahiriya, ",
    "aliasCount": 4,
    "indivAliasString": "Abu Al-Ward (Good); Abdullah Ragab (Good); Abu Naim (Low); Abdallah al- Masri (Low); ",
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2011-12-13T00:00:00",
    "id": "QI.A.231.07",
    "name": "SALEM NOR ELDIN AMOHAMED AL-DABSKI"
   },
@@ -3188,6 +3272,8 @@
    "indivPlaceOfBirthString": "Abasan, Gaza Strip, Palestinian Territories, ",
    "aliasCount": 1,
    "indivAliasString": "Aschraf Al-Dagma (Good)",
+   "lastDateUpdatedCount": 3,
+   "dateUpdatedString": "2008-12-23T00:00:00; 2010-03-11T00:00:00; 2011-06-10T00:00:00; ",
    "id": "QI.A.132.03",
    "name": "ASCHRAF AL-DAGMA"
   },
@@ -3296,6 +3382,8 @@
    "indivPlaceOfBirthString": "Iraq, ",
    "aliasCount": 13,
    "indivAliasString": "Dr. Muthanna Al Dari (Good); Muthana Harith Al Dari (Good); Muthanna Harith Sulayman Al-Dari (Good); Muthanna Harith Sulayman Al-Dhari (Good); Muthanna Hareth Al-Dhari (Good); Muthana Haris Al-Dhari (Good); Doctor Muthanna Harith Sulayman Al Dari Al-Zawba' (Good); Muthanna Harith Sulayman Al-Dari Al-Zobai (Good); Muthanna Harith Sulayman Al-Dari al-Zawba'i (Good); Muthanna Hareth al-Dari (Good); Muthana Haris al-Dari (Good); Doctor Muthanna al-Dari (Good); Dr. Muthanna Harith al-Dari al-Zowbai (Good); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QI.A.278.10",
    "name": "MUTHANNA HARITH AL-DARI",
    "natnlty": "Iraqi"
@@ -3366,6 +3454,8 @@
    "indivPlaceOfBirthString": "Tunis, Tunisia, ",
    "aliasCount": 3,
    "indivAliasString": "Drissi Noureddine (Good); Abou Ali (Low); Faycal (Low); ",
+   "lastDateUpdatedCount": 4,
+   "dateUpdatedString": "2005-12-20T00:00:00; 2006-07-31T00:00:00; 2007-12-21T00:00:00; 2011-05-16T00:00:00; ",
    "id": "QI.A.149.03",
    "name": "NOUREDDINE BEN ALI BEN BELKASSEM AL-DRISSI",
    "natnlty": "Tunisian"
@@ -3450,6 +3540,8 @@
    "indivPlaceOfBirthString": "Kuwait, ",
    "aliasCount": 7,
    "indivAliasString": "Khaled Al-Fauwaz (Good); Khaled A. Al-Fauwaz (Good); Khalid Al-Fawwaz (Good); Khalik Al Fawwaz (Good); Khaled Al-Fawwaz (Good); Khaled Al Fawwaz (Good); Khalid Abdulrahman H. Al Fawaz (Good); ",
+   "lastDateUpdatedCount": 4,
+   "dateUpdatedString": "2004-11-26T00:00:00; 2007-04-23T00:00:00; 2010-10-21T00:00:00; 2014-08-04T00:00:00; ",
    "id": "QI.A.59.02",
    "name": "KHALID ABD AL-RAHMAN HAMD AL-FAWAZ",
    "natnlty": "Saudi Arabian"
@@ -3499,6 +3591,8 @@
    "indivPlaceOfBirthString": "Damascus, Syrian Arab Republic, ",
    "aliasCount": 0,
    "indivAliasString": "",
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2011-12-13T00:00:00",
    "id": "QI.A.228.06",
    "name": "MOHAMMED AL GHABRA",
    "natnlty": "British"
@@ -3592,6 +3686,8 @@
    "indivPlaceOfBirthString": "Saudi Arabia, ",
    "aliasCount": 9,
    "indivAliasString": "Othman al-Ghamdi (Good); Uthman al-Ghamdi (Good); Uthman al-Ghamidi (Good); Othman bin Ahmed bin Othman Alghamdi (Good); Othman Ahmed Othman Al Omairah (Good); Uthman Ahmad Uthman al-Ghamdi (Good); Othman Ahmed Othman al-Omirah (Good); Al Umairah al-Ghamdi (Low); Othman Bin Ahmed Bin Othman (Low); ",
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2014-04-15T00:00:00",
    "id": "QI.A.292.11",
    "name": "OTHMAN AHMED OTHMAN AL-GHAMDI",
    "natnlty": "Saudi Arabian"
@@ -3648,6 +3744,8 @@
    "indivPlaceOfBirthString": "Buraidah, Saudi Arabia, ",
    "aliasCount": 3,
    "indivAliasString": "Barahim Suliman H. al Hblian (Good); Abu Jabal (Low); Abu-Jabal (Low); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QI.A.332.14",
    "name": "IBRAHIM SULEIMAN HAMAD AL-HABLAIN",
    "natnlty": "Saudi Arabian"
@@ -3729,6 +3827,8 @@
    "indivPlaceOfBirthString": "Tataouene, Tunisia, ",
    "aliasCount": 2,
    "indivAliasString": "Fethi ben Assen Haddad (Good); Fathy Hassan al Haddad (Good); ",
+   "lastDateUpdatedCount": 5,
+   "dateUpdatedString": "2004-11-26T00:00:00; 2005-12-20T00:00:00; 2007-12-21T00:00:00; 2010-01-25T00:00:00; 2011-05-16T00:00:00; ",
    "id": "QI.A.160.04",
    "name": "FETHI BEN HASSEN BEN SALEM AL-HADDAD",
    "natnlty": "Tunisian"
@@ -3827,6 +3927,8 @@
    "indivPlaceOfBirthString": "Beja, Tunisia, ",
    "aliasCount": 6,
    "indivAliasString": "Hamroui Kamel ben Mouldi (Good); Hamraoui Kamel (Good); Hamraoui Kamel (Good); Hamraoui Kamel (Good); Kamel (Low); Kimo (Low); ",
+   "lastDateUpdatedCount": 4,
+   "dateUpdatedString": "2005-12-20T00:00:00; 2006-07-31T00:00:00; 2007-12-21T00:00:00; 2011-05-16T00:00:00; ",
    "id": "QI.A.140.03",
    "name": "KAMAL BEN MAOELDI BEN HASSAN AL-HAMRAOUI",
    "natnlty": "Tunisian"
@@ -3898,6 +4000,8 @@
    "indivPlaceOfBirthString": "Muharraq, Bahrain, ",
    "aliasCount": 7,
    "indivAliasString": "Abd al-Rahman Muhammad Jaffir (Good); Abd al-Rahman Muhammad Jafir ‘Ali (Good); Abd al-Rahman Jaffir Ali (Good); Abdul Rahman Mohamed Jaffer Ali (Good); Abdulrahman Mohammad Jaffar (Good); ‘Ali Al-Khal (Low); Abu Muhammad Al-Khal (Low); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QI.A.254.08",
    "name": "ABD AL-RAHMAN MUHAMMAD JAFFAR ‘ALI",
    "natnlty": "Bahraini"
@@ -4001,6 +4105,8 @@
    "indivPlaceOfBirthString": "Badari, Asyout, Egypt, ",
    "aliasCount": 14,
    "indivAliasString": "Abdurehman, Ahmed Mohammed (Good); Ahmed Hamed (Good); Ali, Ahmed Mohammed (Good); Ali, Hamed (Good); Hemed, Ahmed (Good); Shieb, Ahmed (Good); Abu Fatima (Low); Abu Islam (Low); Abu Khadiijah (Low); Ahmed The Egyptian (Low); Ahmed, Ahmed (Low); Al-Masri, Ahmad (Low); Al-Surir, Abu Islam (Low); Shuaib (Low); ",
+   "lastDateUpdatedCount": 2,
+   "dateUpdatedString": "2007-07-02T00:00:00; 2010-12-16T00:00:00; ",
    "id": "QI.A.21.01",
    "name": "AHMED MOHAMMED HAMED ALI"
   },
@@ -4054,6 +4160,8 @@
    "indivPlaceOfBirthString": "Kuwait, ",
    "aliasCount": 1,
    "indivAliasString": "Abo Ghaith (Low)",
+   "lastDateUpdatedCount": 2,
+   "dateUpdatedString": "2008-07-23T00:00:00; 2011-06-10T00:00:00; ",
    "id": "QI.A.154.04",
    "name": "SULAIMAN JASSEM SULAIMAN ALI ABO GHAITH"
   },
@@ -4120,6 +4228,8 @@
    "indivPlaceOfBirthString": "Iraq, ",
    "aliasCount": 4,
    "indivAliasString": "Dr. Ibrahim ‘Awwad Ibrahim ’Ali al-Badri al-Samarrai’ (Good); أبو دعاء (Abu Du’a; Abu Duaa’) (Low); Dr. Ibrahim (Low); أبو بكر البغدادي الحسيني القريشي (Abu Bakr al-Baghdadi al-Husayni al-Quraishi; Abu Bakr al-Baghdadi (Low); ",
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2012-07-20T00:00:00",
    "id": "QI.A.299.11",
    "name": "IBRAHIM AWWAD IBRAHIM ALI AL-BADRI AL-SAMARRAI",
    "natnlty": "Iraqi"
@@ -4215,6 +4325,8 @@
    "indivPlaceOfBirthString": "Chak number 36/DNB, Rajkan, Madina Colony, Bahawalpur District, Punjab Province, Pakistan, ",
    "aliasCount": 12,
    "indivAliasString": "Mati-ur Rehman (Good); Mati ur Rehman (Good); Matiur Rahman (Good); Matiur Rehman (Good); Matti al-Rehman (Good); Abdul Samad (Good); Samad Sial (Good); Abdul Samad Sial (Good); Ustad Talha (Good); Qari Mushtaq (Good); Tariq (Low); Hussain (Low); ",
+   "lastDateUpdatedCount": 2,
+   "dateUpdatedString": "2012-05-10T00:00:00; 2013-10-17T00:00:00; ",
    "id": "QI.M.296.11",
    "name": "MATI UR-REHMAN ALI MUHAMMAD",
    "natnlty": "Pakistani"
@@ -4275,6 +4387,8 @@
    "indivPlaceOfBirthString": "El-Minya, Qena, Egypt, ",
    "aliasCount": 3,
    "indivAliasString": "Abu Khalid (Good); Abu Ja'far (Good); Mohamed El Islambouli (Good); ",
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2011-12-13T00:00:00",
    "id": "QI.A.194.05",
    "name": "MOHAMMED AHMED SHAWKI AL ISLAMBOLLY",
    "natnlty": "Egyptian"
@@ -4392,6 +4506,8 @@
    "indivPlaceOfBirthString": "Kharj, Saudi Arabia, ",
    "aliasCount": 15,
    "indivAliasString": "Abd Al-Rahman Muhammad Zafir Al-Dubaysi Al-Juhni (Good); Abd Al-Rahman Muhammad Zafir al-Dubaysi al-Jahni (Good); Abd Al-Rahman Muhammad Zafir al-Dubaysi al-Jahani (Good); Abd Al-Rahman Muhammad Zafir al-Dubaysi al-Juhani (Good); Abdulrhman Mohammed D. Aljahani (Good); Abu al-Wafa’ (Good); Abu Anas (Good); Abd al-Rahman Muhammad Zafir al-Dabisi al-Jahani (Good); Abu Wafa al-Saudi (Good); Abu al-Wafa (Good); Abd al-Rahman Muhammad Thafir al-Jahni (Good); Abd al-Rahman Muhammad al-Juhani (Good); Abdelrahman Mouhamad Zafir al Dabissi Juhan (Good); Abdelrahman Mouhamad Zafir al Dabissi Juhani (Good); Abou Wafa al Saoudi (Low); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QI.A.327.14",
    "name": "ABDELRAHMAN MOUHAMAD ZAFIR AL DABIDI AL JAHANI",
    "natnlty": "Saudi Arabian"
@@ -4450,6 +4566,8 @@
    "indivPlaceOfBirthString": "Manzal Tmim, Nabul, Tunisia, ",
    "aliasCount": 0,
    "indivAliasString": "",
+   "lastDateUpdatedCount": 4,
+   "dateUpdatedString": "2005-12-20T00:00:00; 2006-07-31T00:00:00; 2007-10-17T00:00:00; 2011-12-13T00:00:00; ",
    "id": "QI.A.176.04",
    "name": "IMAD BEN BECHIR BEN HAMDA AL-JAMMALI",
    "natnlty": "Tunisian"
@@ -4505,6 +4623,8 @@
    "indivPlaceOfBirthString": "Syria, ",
    "aliasCount": 2,
    "indivAliasString": "Abu Mohamed al-Jawlani (Good); شيخ الفاتح ، الفاتح (Low); ",
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2014-06-02T00:00:00",
    "id": "QI.A.317.13",
    "name": "ABU MOHAMMED AL-JAWLANI",
    "natnlty": "Syrian"
@@ -4549,6 +4669,8 @@
    "indivPlaceOfBirthString": "function (n) {\n  return this.length > n ? this.substr(0, n - 1) + '&hellip,' : this;\n}, ",
    "aliasCount": 1,
    "indivAliasString": "Yasir Al-Jazari (Good)",
+   "lastDateUpdatedCount": 3,
+   "dateUpdatedString": "2007-07-18T00:00:00; 2008-02-01T00:00:00; 2011-05-16T00:00:00; ",
    "id": "QI.A.58.02",
    "name": "ABU BAKR AL-JAZIRI",
    "natnlty": "Algerian"
@@ -4606,6 +4728,8 @@
    "indivPlaceOfBirthString": "Al-Mohamedia, Tunisia, ",
    "aliasCount": 0,
    "indivAliasString": "",
+   "lastDateUpdatedCount": 4,
+   "dateUpdatedString": "2005-12-20T00:00:00; 2006-07-31T00:00:00; 2009-08-10T00:00:00; 2010-12-23T00:00:00; ",
    "id": "QI.A.71.02",
    "name": "RIADH BEN BELKASSEM BEN MOHAMED AL-JELASSI",
    "natnlty": "Tunisian"
@@ -4676,6 +4800,8 @@
    "indivPlaceOfBirthString": "Tunis, Tunisia, ",
    "aliasCount": 3,
    "indivAliasString": "Jendoubi Faouzi (Good); Said (Low); Samir (Low); ",
+   "lastDateUpdatedCount": 4,
+   "dateUpdatedString": "2005-12-20T00:00:00; 2006-07-31T00:00:00; 2007-10-17T00:00:00; 2011-05-16T00:00:00; ",
    "id": "QI.A.101.03",
    "name": "FAOUZI BEN MOHAMED BEN AHMED AL-JENDOUBI",
    "natnlty": "Tunisian"
@@ -4756,6 +4882,8 @@
    "indivPlaceOfBirthString": "Harara, Ninawa Province, Iraq, ; Al-Shura, Mosul, Iraq, ; ",
    "aliasCount": 7,
    "indivAliasString": "Muyassir al-Jiburi (Good); Muyassir Harara (Good); Muyassir al-Shammari (Good); Muhammad Khalid Hassan (Good); Al-Shammari (Low); Mus'ab al-Qahtani (Low); Abu Maria al-Qatani (Low); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QI.A.337.14",
    "name": "MAYSAR ALI MUSA ABDALLAH AL-JUBURI",
    "natnlty": "Iraqi"
@@ -4875,6 +5003,8 @@
    "indivPlaceOfBirthString": "Cairo, Egypt, ",
    "aliasCount": 14,
    "indivAliasString": "Muhammad Jamal Abdo Al-Kashif (Good); Muhammad Jamal Abdo Al Kashef (Good); Muhammad Jamal Abd-Al Rahim Ahmad Al-Kashif (Good); Muhammad Jamal Abd-Al Rahim Al-Kashif (Good); Muhammad Jamal Abdu (Good); Muhammad Jamal (Good); Muhammad Jamal Abu Ahmad (nom de guerre) (Low); Abu Ahmad (nom de guerre) (Low); Abu Jamal (nom de guerre) (Low); Muhammad Gamal Abu Ahmed (Low); Mohammad Jamal Abdo Ahmed (nom de guerre) (Low); Muhammad Jamal Abduh (nom de guerre) (Low); Muhammad Jamal Ahmad Abdu (nom de guerre) (Low); Riyadh (nom de guerre) (Low); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QI.A.318.13",
    "name": "MUHAMMAD JAMAL ABD-AL RAHIM AHMAD AL-KASHIF",
    "natnlty": "Egyptian"
@@ -5003,6 +5133,8 @@
    "indivPlaceOfBirthString": "Oneiza, Saudi Arabia, ",
    "aliasCount": 18,
    "indivAliasString": "Fahad H. A. Khashayban (Good); Shaykh Abu Thabit (Low); Fahad H. A. Kheshaiban (Good); Fahad Mohammad Abdulaziz Alkhoshiban (Good); Fahad H. A. al-Khashiban (Good); Fahad H. A. Kheshayban (Good); Fahad H. A. al-Khosiban (Good); Fahad H. A. Khasiban (Good); Fahd Muhammad ‘Abd Al-‘Aziz al-Khashayban (Good); Fahd Muhammad’Abd al-‘Aziz al-Khushayban (Good); Fahad al-Khashiban (Good); Fahd Khushaiban (Good); Fahad Muhammad A. al-Khoshiban (Good); Fahad Mohammad A. al-Khoshiban (Good); Abu Thabit (Low); Shaykh Thabet (Low); Abdur Abu Rahman (Low); Abu Abdur Rahman (Low); ",
+   "lastDateUpdatedCount": 2,
+   "dateUpdatedString": "2008-02-20T00:00:00; 2011-12-13T00:00:00; ",
    "id": "QI.A.233.07",
    "name": "FAHD MUHAMMAD 'ABD AL-'AZIZ AL-KHASHIBAN",
    "natnlty": "Saudi Arabian"
@@ -5070,6 +5202,8 @@
    "indivPlaceOfBirthString": "Médéa, Algeria, ",
    "aliasCount": 5,
    "indivAliasString": "Hassan the Old (Good); Al Sheikh Abdelhay (Good); Boulahia (Good); Abu al-Foutouh (Good); Cheib Ahcéne (Good); ",
+   "lastDateUpdatedCount": 3,
+   "dateUpdatedString": "2006-04-12T00:00:00; 2008-04-07T00:00:00; 2011-12-13T00:00:00; ",
    "id": "QI.A.170.04",
    "name": "HACENE ALLANE",
    "natnlty": "Algerian"
@@ -5131,6 +5265,8 @@
    "indivPlaceOfBirthString": "Manzal Tmim, Nabul, Tunisia, ",
    "aliasCount": 1,
    "indivAliasString": "Al-Habib ben Ahmad ben al-Tayib al-Lubiri (Good)",
+   "lastDateUpdatedCount": 4,
+   "dateUpdatedString": "2005-12-20T00:00:00; 2007-10-17T00:00:00; 2009-08-10T00:00:00; 2011-12-13T00:00:00; ",
    "id": "QI.A.177.04",
    "name": "HABIB BEN AHMED AL-LOUBIRI",
    "natnlty": "Tunisian"
@@ -5206,6 +5342,8 @@
    "indivPlaceOfBirthString": "Ghardimaou, Tunisia, ",
    "aliasCount": 3,
    "indivAliasString": "Abu Ismail (Good); Abou Ismail el Jendoubi (Good); Abou Ismail Al Djoundoubi (Good); ",
+   "lastDateUpdatedCount": 7,
+   "dateUpdatedString": "2004-11-26T00:00:00; 2005-12-20T00:00:00; 2006-07-31T00:00:00; 2007-07-03T00:00:00; 2009-08-10T00:00:00; 2010-01-25T00:00:00; 2010-12-23T00:00:00; ",
    "id": "QI.A.74.02",
    "name": "TAREK BEN HABIB BEN AL-TOUMI AL-MAAROUFI",
    "natnlty": "Tunisian"
@@ -5302,6 +5440,8 @@
    "indivPlaceOfBirthString": "Darnah, Libya, ; Danar, Libya, ; ",
    "aliasCount": 12,
    "indivAliasString": "Abd-al-Hamid Muhammad Abd-al-Hamid Al-Masli (Good); Abd-al-Hamid Musalli (Good); Hamid Masli (Good); Hamza al-Darnawi (Low); Hamzah al-Darnawi (Low); Hamza Darnawi (Low); Hamzah Darnawi (Low); Hamzah Dirnawi (Low); Hamza Darnavi (Low); Hamza al-Darnavi (Low); Abdullah Darnawi (Low); Abu-Hamzah al-Darnawi (Low); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QI.A.320.13",
    "name": "ABD-AL-HAMID AL-MASLI",
    "natnlty": "Libyan"
@@ -5376,6 +5516,8 @@
    "indivPlaceOfBirthString": "Al Baraka, Saudi Arabia, ",
    "aliasCount": 7,
    "indivAliasString": "Mansur al-Harbi (Good); Azzam al-Subhi (Good); Azam Abdallah Razeeq al Mouled Alsbhua (Good); Abu Muslem al-Maky (Good); Abu Suliman al-Harbi (Good); Abu Abdalla al-Harbi (Good); Azam A.R. Alsbhua (Good); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QI.A.330.14",
    "name": "AZZAM ABDULLAH ZUREIK AL-MAULID AL-SUBHI",
    "natnlty": "Saudi Arabian"
@@ -5433,6 +5575,8 @@
    "indivPlaceOfBirthString": "function (n) {\n  return this.length > n ? this.substr(0, n - 1) + '&hellip,' : this;\n}, ",
    "aliasCount": 3,
    "indivAliasString": "Akram Turki Al-Hishan (Good); Abu Jarrah (Low); Abu Akram (Low); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QI.A.276.10",
    "name": "AKRAM TURKI HISHAN AL-MAZIDIH"
   },
@@ -5493,6 +5637,8 @@
    "indivPlaceOfBirthString": "function (n) {\n  return this.length > n ? this.substr(0, n - 1) + '&hellip,' : this;\n}, ",
    "aliasCount": 4,
    "indivAliasString": "Ghazy Fezzaa Hishan (Good); Mushari Abd Aziz Saleh Shlash (Good); Abu Faysal (Low); Abu Ghazzy (Low); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QI.A.277.10",
    "name": "GHAZY FEZZA HISHAN AL-MAZIDIH"
   },
@@ -5577,6 +5723,8 @@
    "indivPlaceOfBirthString": "function (n) {\n  return this.length > n ? this.substr(0, n - 1) + '&hellip,' : this;\n}, ",
    "aliasCount": 10,
    "indivAliasString": "Abd al-Rahman bin 'Amir al-Na'imi (Good); 'Abd al-Rahman al-Nu'aimi (Good); 'Abd al-Rahman bin 'Amir al-Nu'imi (Good); 'Abd al-Rahman bin 'Amir al-Nu'aymi (Good); 'Abdallah Muhammad al-Nu'aymi (Good); 'Abd al-Rahman al-Nua'ymi (Good); A. Rahman al-Naimi (Good); Abdelrahman Imer al Jaber al Naimeh (Good); A. Rahman Omair J Alnaimi (Good); Abdulrahman Omair al Neaimi (Good); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QI.A.334.14",
    "name": "‘ABD AL-RAHMAN BIN ‘UMAYR AL-NU’AYMI"
   },
@@ -5635,6 +5783,8 @@
    "indivPlaceOfBirthString": "Baghdad, Iraq, ",
    "aliasCount": 1,
    "indivAliasString": "Mansour Thaer (Good)",
+   "lastDateUpdatedCount": 2,
+   "dateUpdatedString": "2006-08-18T00:00:00; 2009-01-30T00:00:00; ",
    "id": "QI.T.76.02",
    "name": "ISAM ALI MOHAMED ALOUCHE",
    "natnlty": "Jordanian"
@@ -5719,6 +5869,8 @@
    "indivPlaceOfBirthString": "Shunkrai village, Sarkani District, Konar Province, Afghanistan, ",
    "aliasCount": 7,
    "indivAliasString": "Shaykh Aminullah (Good); Sheik Aminullah (Good); Abu Mohammad Aminullah Peshawari (Good); Abu Mohammad Amin Bishawri (Good); Abu Mohammad Shaykh Aminullah Al-Bishauri (Good); Shaykh Abu Mohammed Ameen al-Peshawari (Good); Shaykh Aminullah Al-Peshawari (Good); ",
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2013-07-24T00:00:00",
    "id": "QI.A.273.09",
    "name": "FAZEEL-A-TUL SHAYKH ABU MOHAMMED AMEEN AL-PESHAWARI",
    "natnlty": "Afghan"
@@ -5815,6 +5967,8 @@
    "indivPlaceOfBirthString": "Mosul, Ninawa Province, Iraq, ",
    "aliasCount": 12,
    "indivAliasString": "‘Abd al-Rahman Muhammad Mustafa Shaykhlari (Good); Umar Muhammad Khalil Mustafa (Good); Abdul Rahman Muhammad al-Bayati (Good); Tahir Muhammad Khalil Mustafa al-Bayati (Good); Aliazra Ra’ad Ahmad (Good); Abu-Shuayb (Low); Hajji Iman (Low); Abu Iman (Low); Abu Ala (Low); Abu Hasan (Low); Abu Muhammad (Low); Abu Zayna (Low); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QI.A.339.14",
    "name": "‘ABD AL-RAHMAN MUHAMMAD MUSTAFA AL-QADULI",
    "natnlty": "Iraqi"
@@ -5894,6 +6048,8 @@
    "indivPlaceOfBirthString": "Sanaa, Yemen, ",
    "aliasCount": 7,
    "indivAliasString": "Qasim Al-Rimi (Good); Qasim al-Raymi (Good); Qassim al-Raymi (Good); Qasim al-Rami (Good); Qasim Yahya Mahdi 'Abd al-Rimi (Low); Abu Hurayah al-Sana'ai (Low); Abu 'Ammar (Low); ",
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2014-04-15T00:00:00",
    "id": "QI.A.282.10",
    "name": "QASIM YAHYA MAHDI AL-RIMI",
    "natnlty": "Yemeni"
@@ -5973,6 +6129,8 @@
    "indivPlaceOfBirthString": "Tripoli, Libyan Arab Jamahiriya, ",
    "aliasCount": 3,
    "indivAliasString": "Anas Al-Liby (Good); Anas Al-Sibai (Good); Nazih Abdul Hamed Al-Raghie (Good); ",
+   "lastDateUpdatedCount": 2,
+   "dateUpdatedString": "2006-07-31T00:00:00; 2010-12-16T00:00:00; ",
    "id": "QI.A.23.01",
    "name": "NAZIH ABDUL HAMED NABIH AL-RUQAI’I",
    "natnlty": "Libyan"
@@ -6099,6 +6257,8 @@
    "indivPlaceOfBirthString": "Riyadh, Saudi Arabia, ",
    "aliasCount": 18,
    "indivAliasString": "Sa’id Ali Jabir al-Kathim al-Shihri (Good); Said Ali Al Shahri (Good); Said Ali Jaber Al Khasaam Al Shahri (Good); Said Ali Jaber Al Khassam (Good); Abu-Sayyaf (Low); Abu-Sufyan al-Azidi (Low); Abu-Sayyaf al-Shihri (Low); Abu Sufian Kadhdhaab Matrook (Low); Salah (Low); Salah Abu Sufyan (Low); Salah al-Din (Low); Abu Osama (Low); Abu Sulaiman (Low); Nur al-Din Afghani Azibk (Low); Alahhaddm (Low); Akhdam (Low); Abu Sufian Al Azadi (Low); Abu Asmaa (Low); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QI.A.275.10",
    "name": "SAID ALI AL-SHIHRI",
    "natnlty": "Saudi Arabian"
@@ -6174,6 +6334,8 @@
    "indivPlaceOfBirthString": "Doha, Qatar, ",
    "aliasCount": 4,
    "indivAliasString": "Khalifa Mohd Turki Alsubaie (Good); Khalifa Mohd Turki al-Subaie (Good); Khalifa Al-Subayi (Good); Khalifa Turki bin Muhammad bin al-Suaiy (Good); ",
+   "lastDateUpdatedCount": 2,
+   "dateUpdatedString": "2010-01-25T00:00:00; 2012-11-15T00:00:00; ",
    "id": "QI.A.253.08",
    "name": "KHALIFA MUHAMMAD TURKI AL-SUBAIY"
   },
@@ -6280,6 +6442,8 @@
    "indivPlaceOfBirthString": "Al-Shefa, Al-Taif, Saudi Arabia, ",
    "aliasCount": 13,
    "indivAliasString": "‘Abdul-Rahim Hammad al-Talhi (Good); Abd’ Al-Rahim Hamad al-Tahi (Good); Abdulrheem Hammad A Altalhi (Good); Abe Al-Rahim al-Talahi (Good); Abd Al-Rahim Al Tahli (Good); ‘Abd al-Rahim al-Talhi (Good); Abdulrahim Al Tahi (Good); Abdulrahim al-Talji (Good); ‘Abd-Al-Rahim al Talji (Good); Abdul Rahim Hammad Ahmad Al-Talhi (Good); Abdul Rahim (Low); Abu Al Bara’a Al Naji (Low); Shuwayb Junayd (Low); ",
+   "lastDateUpdatedCount": 2,
+   "dateUpdatedString": "2008-02-20T00:00:00; 2011-12-13T00:00:00; ",
    "id": "QI.A.234.07",
    "name": "ABDUL RAHIM AL-TALHI",
    "natnlty": "Saudi Arabian"
@@ -6340,6 +6504,8 @@
    "indivPlaceOfBirthString": "Feriana, Al-Kasrain, Tunisia, ",
    "aliasCount": 1,
    "indivAliasString": "Lazar Ben Mohammed Tlili (Good)",
+   "lastDateUpdatedCount": 5,
+   "dateUpdatedString": "2005-12-20T00:00:00; 2006-07-31T00:00:00; 2007-06-07T00:00:00; 2008-07-28T00:00:00; 2010-12-23T00:00:00; ",
    "id": "QI.A.77.02",
    "name": "AL-AZHAR BEN MOHAMMED BEN EL-ABED AL-TLILI",
    "natnlty": "Tunisian"
@@ -6501,6 +6667,8 @@
    "indivPlaceOfBirthString": "Manzil Tmim, Tunisia, ",
    "aliasCount": 18,
    "indivAliasString": "Abou Djarrah (Low); Aboue Chiba Brahim (Good); Arouri Taoufik (Good); Ben Salah Adnan (Good); Sassi Adel (Good); Salam Kamel (Good); Salah Adnan (Good); Arouri Faisel (Good); Bentaib Amour (Good); Adnan Salah (Good); Hasnaoui Mellit (Good); Arouri Taoufik ben Taieb (Good); Abouechiba Brahim (Good); Farid Arouri (Good); Ben Magid (Good); Maci Ssassi (Good); Salah ben Anan (Good); Hasnaui Mellit (Good); ",
+   "lastDateUpdatedCount": 3,
+   "dateUpdatedString": "2005-12-20T00:00:00; 2009-08-10T00:00:00; 2011-05-16T00:00:00; ",
    "id": "QI.A.151.03",
    "name": "MOURAD BEN ALI BEN AL-BASHEER AL-TRABELSI",
    "natnlty": "Tunisian"
@@ -6594,6 +6762,8 @@
    "indivPlaceOfBirthString": "Region V, Ethiopia, (the Ogaden Region in eastern Ethiopia), ",
    "aliasCount": 8,
    "indivAliasString": "Hassan Turki (Good); Hassen Abdelle Fihiye (Good); Sheikh Hassan Abdullah Fahaih (Good); Hassan Al-Turki (Good); Hassan Abdillahi Hersi Turki (Good); Sheikh Hassan Turki (Good); Xasan Cabdilaahi Xirsi (Good); Xasan Cabdulle Xirsi (Good); ",
+   "lastDateUpdatedCount": 6,
+   "dateUpdatedString": "2006-07-25T00:00:00; 2007-12-21T00:00:00; 2010-04-12T00:00:00; 2010-05-11T00:00:00; 2011-12-13T00:00:00; 2013-03-18T00:00:00; ",
    "id": "QI.A.172.04",
    "name": "HASSAN ABDULLAH HERSI AL-TURKI",
    "natnlty": "Somali"
@@ -6697,6 +6867,8 @@
    "indivPlaceOfBirthString": "Yemen, ",
    "aliasCount": 12,
    "indivAliasString": "Nasir al-Wahishi (Good); Abu Basir Nasir al-Wahishi (Good); Naser Abdel Karim al-Wahishi (Good); Nasir Abd al-Karim al-Wuhayshi (Good); Abu Basir Nasir Al-Wuhayshi (Good); Nasser Abdul-karim Abdullah al-Wouhichi (Good); Abu Baseer al-Wehaishi (Good); Abu Basir Nasser al-Wuhishi (Good); Abdul Kareem Abdullah Al-Woohaishi (Good); Nasser Abdelkarim Saleh Al Wahichi (Good); Abu Basir (Low); Abu Bashir (Low); ",
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2014-04-15T00:00:00",
    "id": "QI.A.274.10",
    "name": "NASIR 'ABD-AL-KARIM 'ABDULLAH AL-WAHISHI",
    "natnlty": "Yemeni"
@@ -6755,6 +6927,8 @@
    "indivPlaceOfBirthString": "Mauritania, ",
    "aliasCount": 3,
    "indivAliasString": "Abu Hafs the Mauritanian (Good); Khalid Al-Shanqiti (Good); Mafouz Walad Al-Walid (Good); ",
+   "lastDateUpdatedCount": 2,
+   "dateUpdatedString": "2007-06-01T00:00:00; 2011-06-10T00:00:00; ",
    "id": "QI.A.15.01",
    "name": "MAHFOUZ OULD AL-WALID",
    "natnlty": "Mauritanian"
@@ -6824,6 +6998,8 @@
    "indivPlaceOfBirthString": "Al Haka'imah, Governorate of Mahdia, Tunisia, ",
    "aliasCount": 2,
    "indivAliasString": "Ouaz Najib (Good); Ouaz Nagib (Good); ",
+   "lastDateUpdatedCount": 4,
+   "dateUpdatedString": "2005-12-20T00:00:00; 2007-10-17T00:00:00; 2008-09-16T00:00:00; 2011-05-16T00:00:00; ",
    "id": "QI.A.104.03",
    "name": "NAJIB BEN MOHAMED BEN SALEM AL-WAZ",
    "natnlty": "Tunisian"
@@ -6900,6 +7076,8 @@
    "indivPlaceOfBirthString": "Dammam, Saudi Arabia, ",
    "aliasCount": 7,
    "indivAliasString": "Abu Maryam al-Zahrani (Good); Abu Maryam al-Saudi (Good); Ahmed Abdullah S al-Zahrani (Good); Ahmad Abdullah Salih al-Zahrani (Good); Abu Maryam al-Azadi (Good); Ahmed bin Abdullah Saleh bin al-Zahrani (Good); Ahmed Abdullah Saleh al-Zahrani al-Khozmri (Good); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QI.A.329.14",
    "name": "AHMED ABDULLAH SALEH AL-KHAZMARI AL-ZAHRANI",
    "natnlty": "Saudi Arabian"
@@ -7025,6 +7203,8 @@
    "indivPlaceOfBirthString": "Giza, Egypt, ",
    "aliasCount": 15,
    "indivAliasString": "Ayman Al-Zawahari (Good); Ahmed Fuad Salim (Good); Al Zawahry Aiman Mohamed Rabi Abdel Muaz (Good); Al Zawahiri Ayman (Good); Abdul Qader Abdul Aziz Abdul Moez Al Doctor (Good); Al Zawahry Aiman Mohamed Rabi (Good); Al Zawahry Aiman Mohamed Rabie (Good); Al Zawahry Aiman Mohamed Robi (Good); Dhawahri Ayman (Good); Eddaouahiri Ayman (Good); Nur Al Deen Abu Mohammed (Good); Ayman Al Zawahari (Good); Ahmad Fuad Salim (Good); Abu Fatma (Low); Abu Mohammed (Low); ",
+   "lastDateUpdatedCount": 4,
+   "dateUpdatedString": "2007-07-02T00:00:00; 2007-07-18T00:00:00; 2007-08-13T00:00:00; 2010-12-16T00:00:00; ",
    "id": "QI.A.6.01",
    "name": "AIMAN MUHAMMED RABI AL-ZAWAHIRI",
    "natnlty": "Egyptian"
@@ -7095,6 +7275,8 @@
    "indivPlaceOfBirthString": "Yemen, ",
    "aliasCount": 3,
    "indivAliasString": "Abdelmajid Al-Zindani (Good); Shaykh 'Abd Al-Majid Al-Zindani (Good); Sheikh Abd Al-Meguid Al-Zandani (Good); ",
+   "lastDateUpdatedCount": 2,
+   "dateUpdatedString": "2006-07-25T00:00:00; 2011-06-10T00:00:00; ",
    "id": "QI.A.156.04",
    "name": "ABD-AL-MAJID AZIZ AL-ZINDANI",
    "natnlty": "Yemeni"
@@ -7183,6 +7365,8 @@
    "indivPlaceOfBirthString": "Kef Rih, Algeria, ; Guelma, Algeria, ; ",
    "aliasCount": 7,
    "indivAliasString": "Abdalarak (Good); El Para (combat name) (Good); Abderrezak Le Para (Good); Abou Haidara (Good); El Ourassi (Good); Abderrezak Zaimeche (Good); Abdul Rasak ammane Abu Haidra (Good); ",
+   "lastDateUpdatedCount": 2,
+   "dateUpdatedString": "2008-04-07T00:00:00; 2011-05-16T00:00:00; ",
    "id": "QI.A.152.03",
    "name": "SAIFI AMMARI",
    "natnlty": "Algerian"
@@ -7239,6 +7423,8 @@
    "indivPlaceOfBirthString": "Pacitan, East Java, Indonesia, ",
    "aliasCount": 4,
    "indivAliasString": "Abu Fatih (Good); Thoyib, Ibnu (Good); Toyib, Ibnu (Good); Abu Fathi (Good); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QI.A.216.06",
    "name": "ABDULLAH ANSHORI",
    "natnlty": "Indonesian"
@@ -7308,6 +7494,8 @@
    "indivPlaceOfBirthString": "Oran, Algeria, ",
    "aliasCount": 6,
    "indivAliasString": "Said Mohamed Arif (Good); Omar Gharib (Good); Abderahmane (Good); Abdallah al-Jazairi (Good); Slimane Chabani (Good); Souleiman (Good); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QI.A.323.14",
    "name": "SAID ARIF",
    "natnlty": "Algerian"
@@ -7383,6 +7571,8 @@
    "indivPlaceOfBirthString": "Kuwait, ",
    "aliasCount": 4,
    "indivAliasString": "Muhsin Fadhil ‘Ayyid al Fadhli (Good); Muhsin Fadil Ayid Ashur al Fadhli (Good); Abu Majid Samiyah (Good); Abu Samia (Good); ",
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2008-07-23T00:00:00",
    "id": "QI.A.184.05",
    "name": "MUHSIN FADHIL AYED ASHOUR AL-FADHLI",
    "natnlty": "Kuwaiti"
@@ -7470,6 +7660,8 @@
    "indivPlaceOfBirthString": "Faisalabad, Pakistan, ",
    "aliasCount": 3,
    "indivAliasString": "Haji M. Ashraf (Good); Muhammad Ashraf Manshah (Good); Muhammad Ashraf Munsha (Good); ",
+   "lastDateUpdatedCount": 2,
+   "dateUpdatedString": "2009-07-17T00:00:00; 2013-07-24T00:00:00; ",
    "id": "QI.A.265.08",
    "name": "HAJI MUHAMMAD ASHRAF",
    "natnlty": "Pakistani"
@@ -7579,6 +7771,8 @@
    "indivPlaceOfBirthString": "Somalia, ",
    "aliasCount": 12,
    "indivAliasString": "Ali, Sheikh Hassan Dahir Aweys (Good); Awes, Shaykh Hassan Dahir (Good); Hassen Dahir Aweyes (Good); Ahmed Dahir Aweys (Good); Mohammed Hassan Ibrahim (Good); Aweys Hassan Dahir (Good); Hassan Tahir Oais (Good); Hassan Tahir Uways (Good); Hassan Dahir Awes (Good); Sheikh Aweys (Low); Sheikh Hassan (Low); Sheikh Hassan Dahir Aweys (Low); ",
+   "lastDateUpdatedCount": 4,
+   "dateUpdatedString": "2007-12-21T00:00:00; 2010-05-11T00:00:00; 2011-05-16T00:00:00; 2013-03-18T00:00:00; ",
    "id": "QI.D.42.01",
    "name": "HASSAN DAHIR AWEYS",
    "natnlty": "Somali"
@@ -7657,6 +7851,8 @@
    "indivPlaceOfBirthString": "24 Paraiso Street, Barangay Poblacion, Mandaluyong City, Philippines, ",
    "aliasCount": 6,
    "indivAliasString": "Abdul Kareem Ayeras (Good); Abdul Karim Ayeras (Good); Ricky Ayeras (Low); Jimboy (Low); Isaac Jay Galang Perez (Low); Abdul Mujib (Low); ",
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2011-12-13T00:00:00",
    "id": "QI.A.248.08",
    "name": "RICARDO PEREZ AYERAS"
   },
@@ -7714,6 +7910,8 @@
    "indivPlaceOfBirthString": "Sukoharjo, Indonesia, ",
    "aliasCount": 3,
    "indivAliasString": "Abdul Rosyid Ridho Bashir (Good); Rashid Rida Ba’aysir (Good); Rashid Rida Bashir (Good); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QI.B.305.12",
    "name": "ABDUL ROSYID RIDHO BA’ASYIR",
    "natnlty": "Indonesian"
@@ -7770,6 +7968,8 @@
    "indivPlaceOfBirthString": "Jombang, East Java, Indonesia, ",
    "aliasCount": 4,
    "indivAliasString": "Baasyir, Abu Bakar (Good); Bashir, Abu Bakar (Good); Abdus Samad (Good); Abdus Somad (Good); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QI.B.217.06",
    "name": "ABU BAKAR BA'ASYIR",
    "natnlty": "Indonesian"
@@ -7884,6 +8084,8 @@
    "indivPlaceOfBirthString": "Solo, Indonesia, ; Sukoharjo, Central Java, Indonesia, ; ",
    "aliasCount": 15,
    "indivAliasString": "Abdul Rahim Bashir (Good); 'Abd Al-Rahim Ba'asyir (Good); 'Abd Al-Rahim Bashir (Good); Abdurrahim Ba'asyir (Good); Abdurrahim Bashir (Good); Abdul Rachim Ba'asyir (Good); Abdul Rachim Bashir (Good); Abdul Rochim Ba'asyir (Good); Abdul Rochim Bashir (Good); Abdurochim Ba'asyir (Good); Abdurochim Bashir (Good); Abdurrochim Ba'asyir (Good); Abdurrochim Bashir (Good); Abdurrahman Ba'asyir (Good); Abdurrahman Bashir (Good); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QI.B.293.11",
    "name": "ABDUL RAHIM BA'AYSIR",
    "natnlty": "Indonesian"
@@ -7961,6 +8163,8 @@
    "indivPlaceOfBirthString": "Haselünne, Lower Saxony, Germany, ",
    "aliasCount": 3,
    "indivAliasString": "Zouheir Al Maghribi (Good); Mohamed Abbattay (Low); Abderrahmane Al Maghribi (Low); ",
+   "lastDateUpdatedCount": 4,
+   "dateUpdatedString": "2004-11-26T00:00:00; 2005-09-09T00:00:00; 2007-07-02T00:00:00; 2010-12-23T00:00:00; ",
    "id": "QI.B.80.02",
    "name": "SAID BAHAJI",
    "natnlty": "German"
@@ -8031,6 +8235,8 @@
    "indivPlaceOfBirthString": "India, ",
    "aliasCount": 4,
    "indivAliasString": "Bahaziq Mahmoud (Good); Abu Abd al-‘Aziz (Good); Abu Abdul Aziz (Good); Shaykh Sahib (Good); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QI.B.266.08",
    "name": "MAHMOUD MOHAMMAD AHMED BAHAZIQ",
    "natnlty": "Saudi Arabian"
@@ -8104,6 +8310,8 @@
    "indivPlaceOfBirthString": "function (n) {\n  return this.length > n ? this.substr(0, n - 1) + '&hellip,' : this;\n}, ",
    "aliasCount": 2,
    "indivAliasString": "Alhaj Qari Ayub Bashar (Good); Qari Muhammad Ayub (Good); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QI.B.311.12",
    "name": "AYYUB BASHIR",
    "natnlty": [
@@ -8192,6 +8400,8 @@
    "indivPlaceOfBirthString": "function (n) {\n  return this.length > n ? this.substr(0, n - 1) + '&hellip,' : this;\n}, ",
    "aliasCount": 3,
    "indivAliasString": "Mahmood, Sultan Bashiruddin (Good); Mehmood, Dr. Bashir Uddin (Good); Mekmud, Sultan Baishiruddin (Good); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QI.B.55.01",
    "name": "MAHMOOD SULTAN BASHIR-UD-DIN",
    "natnlty": "Pakistani"
@@ -8246,6 +8456,8 @@
    "indivPlaceOfBirthString": "Hussein Dey, Algiers, Algeria, ",
    "aliasCount": 2,
    "indivAliasString": "Abdelali Abou Dher (عبد العالي ابو ذر) (Low); El Harrachi (الحراشي) (Low); ",
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2014-04-15T00:00:00",
    "id": "QI.B.279.10",
    "name": "MOHAMED BELKALEM",
    "natnlty": "Algerian"
@@ -8340,6 +8552,8 @@
    "indivPlaceOfBirthString": "Ghardaia, Algeria, ",
    "aliasCount": 11,
    "indivAliasString": "Abou Abbes Khaled (Good); Belaouar Khaled Abou El Abass (Good); Belaouer Khaled Abou El Abass (Good); Belmokhtar Khaled Abou El Abes (Good); Khaled Abou El Abass (Good); Khaled Abou El Abbes (Good); Khaled Abou El Abes (Good); Khaled Abulabbas Na Oor (Good); Mukhtar Belmukhtar (Good); Belaoua (Low); Belaour (Low); ",
+   "lastDateUpdatedCount": 6,
+   "dateUpdatedString": "2006-04-12T00:00:00; 2007-07-02T00:00:00; 2008-04-07T00:00:00; 2010-01-25T00:00:00; 2011-05-16T00:00:00; 2014-09-09T00:00:00; ",
    "id": "QI.B.136.03",
    "name": "MOKHTAR BELMOKHTAR",
    "natnlty": "Algerian"
@@ -8412,6 +8626,8 @@
    "indivPlaceOfBirthString": "function (n) {\n  return this.length > n ? this.substr(0, n - 1) + '&hellip,' : this;\n}, ",
    "aliasCount": 9,
    "indivAliasString": "Abou Aayadh (Low); Abou Iyadh (Low); Abu Ayyad al-Tunisi (Low); Seif Allah ben Hocine (Good); Saifallah ben Hassine (Good); Sayf Allah ‘Umar bin Hassayn (Good); Sayf Allah bin Hussayn (Good); Abu Iyyadh al-Tunisi (Low); Abou Iyadh el-Tounsi (Low); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QI.B.333.14",
    "name": "SEIFALLAH BEN HASSINE",
    "natnlty": "Tunisian"
@@ -8491,6 +8707,8 @@
    "indivPlaceOfBirthString": "Gujranwala, Punjab Province, Pakistan, ",
    "aliasCount": 8,
    "indivAliasString": "Hafiz Abdul Salam Bhattvi (Good); Hafiz Abdusalam Budvi (Good); Hafiz Abdussalaam Bhutvi (Good); Abdul Salam Budvi (Good); Abdul Salam Bhattwi (Good); Abdul Salam Bhutvi (Good); Mullah Abdul Salaam Bhattvi (Good); Molvi Abdursalam Bhattvi (Good); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QI.B.307.12",
    "name": "HAFIZ ABDUL SALAM BHUTTAVI",
    "natnlty": "Pakistani"
@@ -8605,6 +8823,8 @@
    "indivPlaceOfBirthString": "Gheil Bawazir, Hadramawt, Yemen, ; Khartoum, Sudan, ; ",
    "aliasCount": 11,
    "indivAliasString": "Binalsheidah, Ramzi Mohamed Abdullah (Good); Bin Al Shibh, Ramzi (Good); Omar, Ramzi Mohamed Abdellah (Good); Mohamed Ali Abdullah Bawazir (Good); Binalshibh Ramzi Mohammed Abdullah (Good); Ramzi Binalshib (Good); Ramzi Mohamed Abdellah Omar Hassan Alassiri (Good); Binalshibh Ramsi Mohamed Abdullah (Good); Abu Ubaydah (Good); 'Umar Muhammad 'Abdallah Ba' Amar (Good); Ramzi Omar (Low); ",
+   "lastDateUpdatedCount": 5,
+   "dateUpdatedString": "2004-11-26T00:00:00; 2006-07-25T00:00:00; 2007-07-02T00:00:00; 2007-07-27T00:00:00; 2010-12-23T00:00:00; ",
    "id": "QI.B.81.02",
    "name": "RAMZI MOHAMED ABDULLAH BINALSHIBH",
    "natnlty": "Yemeni"
@@ -8638,6 +8858,8 @@
    "indivPlaceOfBirthString": "function (n) {\n  return this.length > n ? this.substr(0, n - 1) + '&hellip,' : this;\n}, ",
    "aliasCount": 0,
    "indivAliasString": "",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QI.B.9.01",
    "name": "BILAL BIN MARWAN"
   },
@@ -8708,6 +8930,8 @@
    "indivPlaceOfBirthString": "Tunis, Tunisia, ",
    "aliasCount": 1,
    "indivAliasString": "Bushusha, Mokhtar (Good)",
+   "lastDateUpdatedCount": 5,
+   "dateUpdatedString": "2003-04-10T00:00:00; 2004-11-26T00:00:00; 2005-12-20T00:00:00; 2007-06-07T00:00:00; 2010-12-23T00:00:00; ",
    "id": "QI.B.63.02",
    "name": "AL-MOKHTAR BEN MOHAMED BEN AL-MOKHTAR BOUCHOUCHA",
    "natnlty": "Tunisian"
@@ -8766,6 +8990,8 @@
    "indivPlaceOfBirthString": "Tunis, Tunisia, ",
    "aliasCount": 2,
    "indivAliasString": "Faical Boughanmi (Good); Faysal al-Bughanimi (Good); ",
+   "lastDateUpdatedCount": 4,
+   "dateUpdatedString": "2007-06-07T00:00:00; 2009-08-10T00:00:00; 2009-09-01T00:00:00; 2011-12-13T00:00:00; ",
    "id": "QI.B.188.05",
    "name": "FAYCAL BOUGHANEMI",
    "natnlty": "Tunisian"
@@ -8837,6 +9063,8 @@
    "indivPlaceOfBirthString": "Tunis, Tunisia, ",
    "aliasCount": 3,
    "indivAliasString": "Gamel Mohamed (Good); Abd el Wanis Abd Gawwad Abd el Latif Bahaa (Good); Mahmoud Hamid (Low); ",
+   "lastDateUpdatedCount": 4,
+   "dateUpdatedString": "2005-12-20T00:00:00; 2006-07-31T00:00:00; 2009-01-30T00:00:00; 2011-05-16T00:00:00; ",
    "id": "QI.B.143.03",
    "name": "HAMADI BEN ABDUL AZIZ BEN ALI BOUYEHIA",
    "natnlty": "Tunisian"
@@ -8904,6 +9132,8 @@
    "indivPlaceOfBirthString": "function (n) {\n  return this.length > n ? this.substr(0, n - 1) + '&hellip,' : this;\n}, ",
    "aliasCount": 4,
    "indivAliasString": "Aamir Ali Chaudary (Good); Aamir Ali Choudry (Good); Amir Ali Chaudry (Good); Huzaifa (Low); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QI.C.312.12",
    "name": "AAMIR ALI CHAUDHRY",
    "natnlty": "Pakistani"
@@ -8963,6 +9193,8 @@
    "indivPlaceOfBirthString": "Safi, Morocco, ",
    "aliasCount": 0,
    "indivAliasString": "",
+   "lastDateUpdatedCount": 2,
+   "dateUpdatedString": "2007-06-07T00:00:00; 2010-12-23T00:00:00; ",
    "id": "QI.C.70.02",
    "name": "YASSINE CHEKKOURI",
    "natnlty": "Moroccan"
@@ -9032,6 +9264,8 @@
    "indivPlaceOfBirthString": "Bonn, Germany, ",
    "aliasCount": 1,
    "indivAliasString": "Abu Adam (Low)",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QI.C.300.12",
    "name": "MONIR CHOUKA",
    "natnlty": [
@@ -9104,6 +9338,8 @@
    "indivPlaceOfBirthString": "Bonn, Germany, ",
    "aliasCount": 1,
    "indivAliasString": "Abu Ibraheem (Low)",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QI.C.301.12",
    "name": "YASSIN CHOUKA",
    "natnlty": [
@@ -9172,6 +9408,8 @@
    "indivPlaceOfBirthString": "Kismaayo, Somalia, ",
    "aliasCount": 3,
    "indivAliasString": "Maxamed Cabdullaahi Ciise (Good); Maxammed Cabdullaahi (Good); Cabdullah Mayamed Ciise (Good); ",
+   "lastDateUpdatedCount": 4,
+   "dateUpdatedString": "2005-09-09T00:00:00; 2009-01-30T00:00:00; 2009-04-20T00:00:00; 2010-10-21T00:00:00; ",
    "id": "QI.C.141.03",
    "name": "MAXAMED CABDULLAAH CIISE",
    "natnlty": "Somali"
@@ -9225,6 +9463,8 @@
    "indivPlaceOfBirthString": "Oslo, Norway, ",
    "aliasCount": 3,
    "indivAliasString": "Muslim Abu Abdurrahman (Low); Abu Abdurrahman the Norwegian (Low); Abu Abdurrahman the Moroccan (Low); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QI.D.331.14",
    "name": "ANDERS CAMEROON OSTENSVIG DALE",
    "natnlty": "Norwegian"
@@ -9282,6 +9522,8 @@
    "indivPlaceOfBirthString": "Anser, Wilaya (province) of Jijel, Algeria, ",
    "aliasCount": 2,
    "indivAliasString": "Abd El Illah (Good); Abdellillah dit Abdellah Ahmed dit Said (Good); ",
+   "lastDateUpdatedCount": 2,
+   "dateUpdatedString": "2009-03-24T00:00:00; 2012-11-15T00:00:00; ",
    "id": "QI.D.252.08",
    "name": "AHMED DEGHDEGH",
    "natnlty": "Algerian"
@@ -9362,6 +9604,8 @@
    "indivPlaceOfBirthString": "Punta, Santa Ana, Manila, Philippines, ",
    "aliasCount": 8,
    "indivAliasString": "Dodong (Low); Troy (Low); Abu Ilonggo (Good); Brandon Berusa (Good); Abu Muadz (Good); Arnulfo Alvarado (Good); Habil Ahmad Dellosa (Good); Uthman (Low); ",
+   "lastDateUpdatedCount": 2,
+   "dateUpdatedString": "2009-06-03T00:00:00; 2011-12-13T00:00:00; ",
    "id": "QI.D.246.08",
    "name": "REDENDO CAIN DELLOSA"
   },
@@ -9419,6 +9663,8 @@
    "indivPlaceOfBirthString": "Arco, Lamitan, Basilan, Philippines, ",
    "aliasCount": 2,
    "indivAliasString": "Abubakar Abdillah (Good); Abdul Abdillah (Good); ",
+   "lastDateUpdatedCount": 2,
+   "dateUpdatedString": "2009-06-03T00:00:00; 2011-12-13T00:00:00; ",
    "id": "QI.D.243.08",
    "name": "FELICIANO SEMBORIO DELOS REYES JR."
   },
@@ -9472,6 +9718,8 @@
    "indivPlaceOfBirthString": "Tighennif, Algeria, ",
    "aliasCount": 1,
    "indivAliasString": "Abou Youssef (Low)",
+   "lastDateUpdatedCount": 6,
+   "dateUpdatedString": "2004-11-26T00:00:00; 2007-12-21T00:00:00; 2008-12-02T00:00:00; 2009-06-03T00:00:00; 2010-01-25T00:00:00; 2011-05-16T00:00:00; ",
    "id": "QI.D.164.04",
    "name": "OTHMAN DERAMCHI",
    "natnlty": "Algerian"
@@ -9554,6 +9802,8 @@
    "indivPlaceOfBirthString": "Bagac, Bagamanok, Catanduanes, Philippines, ",
    "aliasCount": 8,
    "indivAliasString": "Ismael De Vera (Good); Khalid (Low); Ismael (Low); Ismail (Low); Manex (Low); Tito Art (Low); Dave (Low); Leo (Low); ",
+   "lastDateUpdatedCount": 2,
+   "dateUpdatedString": "2009-06-03T00:00:00; 2011-12-13T00:00:00; ",
    "id": "QI.D.245.08",
    "name": "PIO ABOGNE DE VERA"
   },
@@ -9603,6 +9853,8 @@
    "indivPlaceOfBirthString": "Dakar, Senegal, ",
    "aliasCount": 2,
    "indivAliasString": "Omsen (Low); Oumar Omsen (Low); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QI.D.342.14",
    "name": "OUMAR DIABY",
    "natnlty": "Senegalese"
@@ -9667,6 +9919,8 @@
    "indivPlaceOfBirthString": "Oum el Bouaghi, Algeria, ",
    "aliasCount": 4,
    "indivAliasString": "Bilal (Good); Adel (Good); Fodhil (Good); Abou Abdeljalil (Good); ",
+   "lastDateUpdatedCount": 2,
+   "dateUpdatedString": "2008-04-07T00:00:00; 2011-12-13T00:00:00; ",
    "id": "QI.D.167.04",
    "name": "KAMEL DJERMANE",
    "natnlty": "Algerian"
@@ -9719,6 +9973,8 @@
    "indivPlaceOfBirthString": "M’Hamid, Wilaya (province) of Sidi Bel Abbes, Algeria, ",
    "aliasCount": 2,
    "indivAliasString": "Yahia Abou Ammar (Good); Abou Ala (Good); ",
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2012-11-15T00:00:00",
    "id": "QI.D.249.08",
    "name": "YAHIA DJOUADI",
    "natnlty": "Algerian"
@@ -9769,6 +10025,8 @@
    "indivPlaceOfBirthString": "Meftah, Wilaya of Blida, Algeria, ",
    "aliasCount": 1,
    "indivAliasString": "Abou Mossaab Abdelouadoud (Good)",
+   "lastDateUpdatedCount": 2,
+   "dateUpdatedString": "2008-04-07T00:00:00; 2011-12-13T00:00:00; ",
    "id": "QI.D.232.07",
    "name": "ABDELMALEK DROUKDEL",
    "natnlty": "Algerian"
@@ -9884,6 +10142,8 @@
    "indivPlaceOfBirthString": "Roubaix, France, ",
    "aliasCount": 16,
    "indivAliasString": "Jacques Brougere (Good); Abu Hamza (Good); Di Karlo Antonio (Good); Merlin Oliver Christian Rene (Good); Arfauni Imad Ben Yousset Hamza (Good); Imam Ben Yussuf Arfaj (Good); Abou Hamza (Good); Arfauni Imad (Good); Bilal (Low); Hamza (Low); Koumkal (Low); Kumkal (Low); Merlin (Low); Tinet (Low); Brugere (Low); Dimon (Low); ",
+   "lastDateUpdatedCount": 6,
+   "dateUpdatedString": "2004-11-22T00:00:00; 2004-11-26T00:00:00; 2007-07-02T00:00:00; 2007-10-17T00:00:00; 2009-03-24T00:00:00; 2010-08-06T00:00:00; ",
    "id": "QI.D.95.03",
    "name": "LIONEL DUMONT",
    "natnlty": "French"
@@ -9934,6 +10194,8 @@
    "indivPlaceOfBirthString": "Makassar, South Sulawesi, Indonesia, ",
    "aliasCount": 0,
    "indivAliasString": "",
+   "lastDateUpdatedCount": 2,
+   "dateUpdatedString": "2004-11-26T00:00:00; 2014-05-14T00:00:00; ",
    "id": "QI.D.111.03",
    "name": "AGUS DWIKARNA",
    "natnlty": "Indonesian"
@@ -9983,6 +10245,8 @@
    "indivPlaceOfBirthString": "Blida, Algeria, ",
    "aliasCount": 1,
    "indivAliasString": "Abdel Hak (Good)",
+   "lastDateUpdatedCount": 3,
+   "dateUpdatedString": "2006-04-12T00:00:00; 2008-04-07T00:00:00; 2011-12-13T00:00:00; ",
    "id": "QI.E.169.04",
    "name": "DHOU EL-AICH",
    "natnlty": "Algerian"
@@ -10040,6 +10304,8 @@
    "indivPlaceOfBirthString": "Gharbia, Egypt, ",
    "aliasCount": 3,
    "indivAliasString": "Abu Mariam (Low); Al-Masri, Abu Mohamed (Low); Saleh (Low); ",
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2004-11-26T00:00:00",
    "id": "QI.E.19.01",
    "name": "ABDULLAH AHMED ABDULLAH EL ALFI",
    "natnlty": "Egyptian"
@@ -10090,6 +10356,8 @@
    "indivPlaceOfBirthString": "El Gharbia, Egypt, ",
    "aliasCount": 1,
    "indivAliasString": "Mera’i (Low)",
+   "lastDateUpdatedCount": 3,
+   "dateUpdatedString": "2005-09-09T00:00:00; 2007-12-21T00:00:00; 2011-05-16T00:00:00; ",
    "id": "QI.E.142.03",
    "name": "RADI ABD EL SAMIE ABOU EL YAZID EL AYASHI"
   },
@@ -10160,6 +10428,8 @@
    "indivPlaceOfBirthString": "Casablanca, Morocco, ",
    "aliasCount": 1,
    "indivAliasString": "Abdelrahman (Good)",
+   "lastDateUpdatedCount": 3,
+   "dateUpdatedString": "2009-01-30T00:00:00; 2009-03-24T00:00:00; 2012-11-15T00:00:00; ",
    "id": "QI.E.262.08",
    "name": "REDOUANE EL HABHAB",
    "natnlty": [
@@ -10223,6 +10493,8 @@
    "indivPlaceOfBirthString": "Marrakesh, Morocco, ",
    "aliasCount": 1,
    "indivAliasString": "Mounir el Moutassadeq (Good)",
+   "lastDateUpdatedCount": 3,
+   "dateUpdatedString": "2004-11-26T00:00:00; 2007-09-07T00:00:00; 2010-12-23T00:00:00; ",
    "id": "QI.E.82.02",
    "name": "MOUNIR EL MOTASSADEQ",
    "natnlty": "Moroccan"
@@ -10279,6 +10551,8 @@
    "indivPlaceOfBirthString": "Egypt, ",
    "aliasCount": 2,
    "indivAliasString": "Es Sayed, Kader (Good); Abdel Khader Mahmoud Mohamed el Sayed (Good); ",
+   "lastDateUpdatedCount": 3,
+   "dateUpdatedString": "2004-11-26T00:00:00; 2007-06-07T00:00:00; 2011-05-16T00:00:00; ",
    "id": "QI.E.65.02",
    "name": "ABD EL KADER MAHMOUD MOHAMED EL SAYED",
    "natnlty": "Egyptian"
@@ -10359,6 +10633,8 @@
    "indivPlaceOfBirthString": "Menzel Jemil, Bizerte, Tunisia, ",
    "aliasCount": 2,
    "indivAliasString": "Omar El Mouhajer (Good); Saber (Low); ",
+   "lastDateUpdatedCount": 9,
+   "dateUpdatedString": "2003-04-10T00:00:00; 2004-11-26T00:00:00; 2005-09-09T00:00:00; 2005-12-20T00:00:00; 2007-06-07T00:00:00; 2007-12-21T00:00:00; 2009-08-10T00:00:00; 2010-12-23T00:00:00; 2014-11-24T00:00:00; ",
    "id": "QI.E.64.02",
    "name": "SAMI BEN KHAMIS BEN SALEH ELSSEID",
    "natnlty": "Tunisian"
@@ -10427,6 +10703,8 @@
    "indivPlaceOfBirthString": "Tabarka, Tunisia, ",
    "aliasCount": 3,
    "indivAliasString": "Dah Dah (Low); Abdelrahmman (Low); Bechir (Low); ",
+   "lastDateUpdatedCount": 5,
+   "dateUpdatedString": "2005-12-20T00:00:00; 2007-10-17T00:00:00; 2009-08-10T00:00:00; 2011-05-16T00:00:00; 2012-07-20T00:00:00; ",
    "id": "QI.E.96.03",
    "name": "MOUSSA BEN OMAR BEN ALI ESSAADI",
    "natnlty": "Tunisian"
@@ -10497,6 +10775,8 @@
    "indivPlaceOfBirthString": "Essaouria, Morocco, ",
    "aliasCount": 1,
    "indivAliasString": "Zakariya Essabar (Good)",
+   "lastDateUpdatedCount": 2,
+   "dateUpdatedString": "2004-11-26T00:00:00; 2011-06-10T00:00:00; ",
    "id": "QI.E.83.02",
    "name": "ZAKARYA ESSABAR",
    "natnlty": "Moroccan"
@@ -10611,6 +10891,8 @@
    "indivPlaceOfBirthString": "Cairo, Egypt, ",
    "aliasCount": 14,
    "indivAliasString": "Hussein (Low); Jihad, Abu (Low); Khalid (Low); Man, Nu (Low); Yussrr, Abu (Low); Al Masri, Abd Al Wakil (Good); Ali, Hassan (Good); Anis, Abu; (Good); Elbishy, Moustafa Ali (Good); Fadil, Mustafa Muhamad (Good); Fazul, Mustafa (Good); Mohammed, Mustafa (Good); Mustafa Ali Elbishy (Good); Al-Nubi, Abu (Low); ",
+   "lastDateUpdatedCount": 2,
+   "dateUpdatedString": "2007-07-02T00:00:00; 2010-12-16T00:00:00; ",
    "id": "QI.F.27.01",
    "name": "MUSTAFA MOHAMED FADHIL",
    "natnlty": "Kenyan"
@@ -10669,6 +10951,8 @@
    "indivPlaceOfBirthString": "Zeribet El Oued, Wilaya (province) of Biskra, Algeria, ",
    "aliasCount": 2,
    "indivAliasString": "Abou Mohamed Salah (Good); Bounouadher (Low); ",
+   "lastDateUpdatedCount": 3,
+   "dateUpdatedString": "2009-03-24T00:00:00; 2012-11-15T00:00:00; 2013-03-14T00:00:00; ",
    "id": "QI.G.251.08",
    "name": "SALAH EDDINE GASMI",
    "natnlty": "Algerian"
@@ -10759,6 +11043,8 @@
    "indivPlaceOfBirthString": "Munich, Germany, ",
    "aliasCount": 5,
    "indivAliasString": "Robert Konars (Good); Markus Gebert (Good); Malik (Low); Benzl (Low); Bentley (Low); ",
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2011-12-13T00:00:00",
    "id": "QI.G.259.08",
    "name": "FRITZ MARTIN GELOWICZ",
    "natnlty": "German"
@@ -10905,6 +11191,8 @@
    "indivPlaceOfBirthString": "Zanzibar, Tanzania, ",
    "aliasCount": 21,
    "indivAliasString": "Ahmad, Abu Bakr (Good); Ahmed, Abubakar (Good); Ahmed, Abubakar K. (Good); Ahmed, Abubakar Khalfan (Good); Ahmed, Abubakary K. (Good); Ahmed, Ahmed Khalfan (Good); Ali, Ahmed Khalfan (Good); Ghailani, Abubakary Khalfan Ahmed (Good); Ghailani, Ahmed (Good); Ghilani, Ahmad Khalafan (Good); Hussein, Mahafudh Abubakar Ahmed Abdallah (Good); Khalfan, Ahmed (Good); Mohammed, Shariff Omar (Good); Haythem al-Kini (Good); Ahmed The Tanzanian (Low); Foopie (Low); Fupi (Low); Ahmed, A (Low); Al Tanzani, Ahmad (Low); Bakr, Abu (Low); Khabar, Abu (Low); ",
+   "lastDateUpdatedCount": 2,
+   "dateUpdatedString": "2007-07-27T00:00:00; 2010-10-21T00:00:00; ",
    "id": "QI.G.28.01",
    "name": "AHMED KHALFAN GHAILANI",
    "natnlty": "Tanzanian"
@@ -10973,6 +11261,8 @@
    "indivPlaceOfBirthString": "Deb-Deb, Amenas, Wilaya (province) of Illizi, Algeria, ",
    "aliasCount": 4,
    "indivAliasString": "Abdelhamid Abou Zeid (Good); Youcef Adel (Good); Abou Abdellah (Good); Abid Hammadou (Good); ",
+   "lastDateUpdatedCount": 2,
+   "dateUpdatedString": "2012-05-10T00:00:00; 2012-11-15T00:00:00; ",
    "id": "QI.H.250.08",
    "name": "AMOR MOHAMED GHEDEIR",
    "natnlty": "Algerian"
@@ -11014,6 +11304,8 @@
    "indivPlaceOfBirthString": "Paris, France, ",
    "aliasCount": 0,
    "indivAliasString": "",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QI.G.341.14",
    "name": "KEVIN GUIAVARCH",
    "natnlty": "French"
@@ -11082,6 +11374,8 @@
    "indivPlaceOfBirthString": "Cianjur, West Java, Indonesia, ",
    "aliasCount": 6,
    "indivAliasString": "Gunawan, Rusman (Good); Abd Al-Hadi (Good); Abdul Hadi (Good); Abdul Karim (Good); Bukhori (Good); Bukhory (Good); ",
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2011-12-13T00:00:00",
    "id": "QI.G.218.06",
    "name": "GUN GUN RUSMAN GUNAWAN",
    "natnlty": "Indonesian"
@@ -11169,6 +11463,8 @@
    "indivPlaceOfBirthString": "Al-Mukalla, Yemen, ; AI-Mukala, Yemen, ; ",
    "aliasCount": 4,
    "indivAliasString": "Saqr Al-Jaddawi (الكنية صقر الجداوي) (Good); Saqar Al Jadawi (Good); Saqar Aljawadi (Good); Salem Ahmed Salem Hamdan (Good); ",
+   "lastDateUpdatedCount": 5,
+   "dateUpdatedString": "2006-07-25T00:00:00; 2007-04-23T00:00:00; 2009-01-30T00:00:00; 2009-07-17T00:00:00; 2010-01-25T00:00:00; ",
    "id": "QI.H.3.01",
    "name": "SALIM AHMAD SALIM HAMDAN",
    "natnlty": "Yemeni"
@@ -11245,6 +11541,8 @@
    "indivPlaceOfBirthString": "Tunis, Tunisia, ",
    "aliasCount": 2,
    "indivAliasString": "Zakariya (Low); Adel ben al-Azhar ben Youssef ben Soltane (formerly listed as) (Good); ",
+   "lastDateUpdatedCount": 4,
+   "dateUpdatedString": "2005-12-20T00:00:00; 2007-06-07T00:00:00; 2010-12-23T00:00:00; 2014-11-24T00:00:00; ",
    "id": "QI.B.68.02",
    "name": "ADEL BEN AL-AZHAR BEN YOUSSEF HAMDI",
    "natnlty": "Tunisian"
@@ -11295,6 +11593,8 @@
    "indivPlaceOfBirthString": "Poshok, Iraq, ",
    "aliasCount": 1,
    "indivAliasString": "Abdelhamid Al Kurdi (Good)",
+   "lastDateUpdatedCount": 3,
+   "dateUpdatedString": "2005-09-09T00:00:00; 2007-12-21T00:00:00; 2011-05-16T00:00:00; ",
    "id": "QI.H.144.03",
    "name": "MOHAMMAD TAHIR HAMMID"
   },
@@ -11359,6 +11659,8 @@
    "indivPlaceOfBirthString": "Bulanza, Lantawan, Basilan, the Philippines, ",
    "aliasCount": 5,
    "indivAliasString": "Isnilon Hapilun (Good); Isnilun Hapilun (Good); Abu Musab (Good); Salahudin (Good); Tuan Isnilon (Good); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QI.H.204.05",
    "name": "ISNILON TOTONI HAPILON",
    "natnlty": "Filipino"
@@ -11465,6 +11767,8 @@
    "indivPlaceOfBirthString": "Chele County, Khuttan Area, Xinjiang Uighur Autonomous Region, China, ",
    "aliasCount": 15,
    "indivAliasString": "Maimaitiming Maimaiti (Good); Abdul Heq (Good); Abuduhake (Good); Abdulheq Jundullah (Good); 'Abd Al-Haq (Good); Memetiming Memeti (Good); Memetiming Aximu (Good); Memetiming Qekeman (Good); Maiumaitimin Maimaiti (Good); Abdul Saimaiti (Good); Muhammad Ahmed Khaliq (Good); Maimaiti Iman (Low); Muhelisi (Low); Qerman (Low); Saifuding (Low); ",
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2011-12-13T00:00:00",
    "id": "QI.H.268.09",
    "name": "ABDUL HAQ",
    "natnlty": "Chinese"
@@ -11532,6 +11836,8 @@
    "indivPlaceOfBirthString": "Kunduz Province, Afghanistan, ",
    "aliasCount": 6,
    "indivAliasString": "Gulabudin Hekmatyar (Good); Golboddin Hikmetyar (Good); Gulbuddin Khekmatiyar (Good); Gulbuddin Hekmatiar (Good); Gulbuddin Hekhmartyar (Good); Gulbudin Hekmetyar (Good); ",
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2011-05-16T00:00:00",
    "id": "QI.H.88.03",
    "name": "GULBUDDIN HEKMATYAR",
    "natnlty": "Afghan"
@@ -11607,6 +11913,8 @@
    "indivPlaceOfBirthString": "California, United States of America, ",
    "aliasCount": 6,
    "indivAliasString": "Hijazi, Raed M. (Good); Al-Hawen, Abu-Ahmad (Good); Al-Shahid, Abu-Ahmad (Good); Raed Muhammad Hasan Muhammad Hijazi (Good); Al-Maghribi, Rashid (The Moroccan) (Low); Al-Amriki, Abu-Ahmad (The American) (Low); ",
+   "lastDateUpdatedCount": 2,
+   "dateUpdatedString": "2003-04-10T00:00:00; 2011-05-16T00:00:00; ",
    "id": "QI.H.29.01",
    "name": "RI’AD MUHAMMAD HASAN MUHAMMAD HIJAZI",
    "natnlty": "Jordanian"
@@ -11660,6 +11968,8 @@
    "indivPlaceOfBirthString": "Morocco, ",
    "aliasCount": 3,
    "indivAliasString": "Djamel Il marocchino (Good); Jamal Al Maghrebi (Good); Hicham (Good); ",
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2009-09-01T00:00:00",
    "id": "QI.H.221.06",
    "name": "JAMAL HOUSNI"
   },
@@ -11738,6 +12048,8 @@
    "indivPlaceOfBirthString": "Riyadh, Saudi Arabia, ",
    "aliasCount": 7,
    "indivAliasString": "Abd Al-Hadi Al-Wahab (Good); Zain Al-Abidin Muhammad Husain (Good); Zayn Al-Abidin Muhammad Husayn (Good); Zeinulabideen Muhammed Husein Abu Zubeidah (Good); Abu Zubaydah (Low); Abu Zubaida (Low); Tariq Hani (Low); ",
+   "lastDateUpdatedCount": 7,
+   "dateUpdatedString": "2003-04-10T00:00:00; 2006-07-25T00:00:00; 2007-04-23T00:00:00; 2007-07-18T00:00:00; 2007-07-27T00:00:00; 2009-07-17T00:00:00; 2010-12-16T00:00:00; ",
    "id": "QI.H.10.01",
    "name": "ZAYN AL-ABIDIN MUHAMMAD HUSSEIN"
   },
@@ -11836,6 +12148,8 @@
    "indivPlaceOfBirthString": "Suez, Egypt, ",
    "aliasCount": 10,
    "indivAliasString": "Al Sayyid Ahmed Fathi Hussein Eliwa (Good); Al Sayyid Ahmed Fathi Hussein Alaiwah (Good); Al Sayyid Ahmed Fathi Hussein Elaiwa (Good); Al Sayyid Ahmed Fathi Hussein Ilewah (Good); Al Sayyid Ahmed Fathi Hussein Alaywah (Good); El Sayed Ahmad Fathi Hussein Elaiwa (Good); Hatim (Good); Hisham (Good); Abu Umar (Good); El-Sayed Ilawah born on 3 Jul.1954 (Good); ",
+   "lastDateUpdatedCount": 3,
+   "dateUpdatedString": "2005-10-06T00:00:00; 2006-08-18T00:00:00; 2011-12-13T00:00:00; ",
    "id": "QI.H.195.05",
    "name": "AL SAYYID AHMED FATHI HUSSEIN ELIWAH",
    "natnlty": "Egyptian"
@@ -11925,6 +12239,8 @@
    "indivPlaceOfBirthString": "Alexandria, Egypt, ",
    "aliasCount": 9,
    "indivAliasString": "Mustafa Kamel Mustafa (Good); Adam Ramsey Eaman (Good); Kamel Mustapha Mustapha (Good); Mustapha Kamel Mustapha (Good); Abu Hamza (Good); Mostafa Kamel Mostafa (Good); Abu Hamza Al-Masri (Low); Abu Hamza (Low); Abu Hamza Al-Misri (Low); ",
+   "lastDateUpdatedCount": 5,
+   "dateUpdatedString": "2004-11-26T00:00:00; 2006-07-25T00:00:00; 2008-03-14T00:00:00; 2010-10-21T00:00:00; 2014-08-04T00:00:00; ",
    "id": "QI.I.67.02",
    "name": "MOSTAFA KAMEL MOSTAFA IBRAHIM",
    "natnlty": "British"
@@ -11996,6 +12312,8 @@
    "indivPlaceOfBirthString": "function (n) {\n  return this.length > n ? this.substr(0, n - 1) + '&hellip,' : this;\n}, ",
    "aliasCount": 6,
    "indivAliasString": "Zaffer Iqbal (Good); Malik Zafar Iqbal Shehbaz (Good); Malik Zafar Iqbal Shahbaz (Good); Malik Zafar Iqbal (Good); Zafar Iqbal Chaudhry (Low); Muhammad Zafar Iqbal (Low); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QI.I.308.12",
    "name": "ZAFAR IQBAL",
    "natnlty": "Pakistani"
@@ -12076,6 +12394,8 @@
    "indivPlaceOfBirthString": "Cianjur, West Java, Indonesia, ",
    "aliasCount": 8,
    "indivAliasString": "Hambali (Good); Nurjaman (Good); Isomuddin, Nurjaman Riduan (Good); Hambali Bin Ending (Good); Encep Nurjaman (birth name) (Good); Hambali Ending Hambali (Good); Isamuddin Riduan (Good); Isamudin Ridwan (Good); ",
+   "lastDateUpdatedCount": 3,
+   "dateUpdatedString": "2007-07-02T00:00:00; 2007-07-27T00:00:00; 2011-05-16T00:00:00; ",
    "id": "QI.I.87.03",
    "name": "NURJAMAN RIDUAN ISAMUDDIN",
    "natnlty": "Indonesian"
@@ -12122,6 +12442,8 @@
    "indivPlaceOfBirthString": "Rahim Yar Khan, Punjab Province, Pakistan, ",
    "aliasCount": 1,
    "indivAliasString": "Malik Ishaq (Good)",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QI.I.321.14",
    "name": "MALIK MUHAMMAD ISHAQ",
    "natnlty": "Pakistani"
@@ -12178,6 +12500,8 @@
    "indivPlaceOfBirthString": "Isabela, Basilan, Philippines, ",
    "aliasCount": 3,
    "indivAliasString": "Khadafy Janjalani (Good); Khaddafy Abubakar Janjalani (Good); Abu Muktar (Good); ",
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2009-02-23T00:00:00",
    "id": "QI.J.180.04",
    "name": "KHADAFI ABUBAKAR JANJALANI",
    "natnlty": "Filipino"
@@ -12274,6 +12598,8 @@
    "indivPlaceOfBirthString": "Sfax, Tunisia, ",
    "aliasCount": 7,
    "indivAliasString": "Khalil Yarraya (Good); Ben Narvan Abdel Aziz (Good); Abdel Aziz Ben Narvan (Good); Amro (Low); Omar (Low); Amrou (Low); Amr (Low); ",
+   "lastDateUpdatedCount": 7,
+   "dateUpdatedString": "2004-11-26T00:00:00; 2005-12-20T00:00:00; 2007-10-17T00:00:00; 2008-09-16T00:00:00; 2009-03-24T00:00:00; 2009-08-10T00:00:00; 2010-08-06T00:00:00; ",
    "id": "QI.J.99.03",
    "name": "KHALIL BEN AHMED BEN MOHAMED JARRAYA",
    "natnlty": "Tunisian"
@@ -12328,6 +12654,8 @@
    "indivPlaceOfBirthString": "Tulay, Jolo Sulu, Philippines, ",
    "aliasCount": 2,
    "indivAliasString": "Kipli Sali (Good); Julkipli Salim (Good); ",
+   "lastDateUpdatedCount": 2,
+   "dateUpdatedString": "2009-02-23T00:00:00; 2011-12-13T00:00:00; ",
    "id": "QI.J.114.03",
    "name": "SALIM Y SALAMUDDIN JULKIPLI",
    "natnlty": "Filipino"
@@ -12384,6 +12712,8 @@
    "indivPlaceOfBirthString": "Tunis, Tunisia, ",
    "aliasCount": 1,
    "indivAliasString": "Salmane (Low)",
+   "lastDateUpdatedCount": 3,
+   "dateUpdatedString": "2005-12-20T00:00:00; 2007-06-07T00:00:00; 2010-12-23T00:00:00; ",
    "id": "QI.K.72.02",
    "name": "MEHDI BEN MOHAMED BEN MOHAMED KAMMOUN",
    "natnlty": "Tunisian"
@@ -12471,6 +12801,8 @@
    "indivPlaceOfBirthString": "Ludwigshafen, Germany, ",
    "aliasCount": 9,
    "indivAliasString": "Abu Obaidah (Low); Obeidah Al Turki (Low); Al-Turki (Low); Al Turki Kyosev (Low); Yanal Yusov (Low); Abu Udejf el-Turki (Low); Abu Obejd el-Turki (Low); Abdurrahman Almanci (Low); Mevluet Kar (Good); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QI.K.302.12",
    "name": "MEVLÜT KAR",
    "natnlty": "Turkish"
@@ -12688,6 +13020,8 @@
    "indivPlaceOfBirthString": "Bombai, ; Ratnagiri, India, ; ",
    "aliasCount": 16,
    "indivAliasString": "Dawood Ebrahim (Good); Sheikh Dawood Hassan (Good); Abdul Hamid Abdul Aziz (Good); Anis Ibrahim (Good); Aziz Dilip (Good); Daud Hasan Shaikh Ibrahim Kaskar (Good); Daud Ibrahim Memon Kaskar (Good); Dawood Hasan Ibrahim Kaskar (Good); Dawood Ibrahim Memon (Good); Dawood Sabri (Good); Kaskar Dawood Hasan (Good); Shaikh Mohd Ismail Abdul Rehman (Good); Dowood Hassan Shaikh Ibrahim (Good); Ibrahim Shaikh Mohd Anis (Low); Shaikh Ismail Abdul (Low); Hizrat (Low); ",
+   "lastDateUpdatedCount": 4,
+   "dateUpdatedString": "2006-03-21T00:00:00; 2006-07-25T00:00:00; 2007-07-02T00:00:00; 2010-03-11T00:00:00; ",
    "id": "QI.K.135.03",
    "name": "DAWOOD IBRAHIM KASKAR",
    "natnlty": "Indian"
@@ -12770,6 +13104,8 @@
    "indivPlaceOfBirthString": "Al-Madinah, Saudi Arabia, ; Sangrar, Sindh Province, Pakistan, ; ",
    "aliasCount": 6,
    "indivAliasString": "حسن غول (Hassan Ghul; Hassan Gul; Hasan Gul) (Good); Khalid Mahmud (Good); Ahmad Shahji (Low); Mustafa Muhammad (Low); Abu Gharib al-Madani (Low); أبو شيماء (Abu-Shaima; Abu- Shayma) (Low); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QI.K.306.12",
    "name": "MUSTAFA HAJJI MUHAMMAD KHAN",
    "natnlty": [
@@ -12832,6 +13168,8 @@
    "indivPlaceOfBirthString": "Damascus, Syrian Arab Republic, ",
    "aliasCount": 4,
    "indivAliasString": "Samir Ahmed al-Khayat (Good); Hani (Low); Abu Hamzah (Low); Abu-Ahmad Hadud (Low); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QI.A.336.14",
    "name": "ANAS HASAN KHATTAB"
   },
@@ -12882,6 +13220,8 @@
    "indivPlaceOfBirthString": "Gharbia, Egypt, ",
    "aliasCount": 1,
    "indivAliasString": "Samir Abdellatif el Sayed Keshk (Good)",
+   "lastDateUpdatedCount": 3,
+   "dateUpdatedString": "2004-11-26T00:00:00; 2007-06-07T00:00:00; 2011-05-16T00:00:00; ",
    "id": "QI.K.73.02",
    "name": "SAMIR ABD EL LATIF EL SAYED KISHK",
    "natnlty": "Egyptian"
@@ -12923,6 +13263,8 @@
    "indivPlaceOfBirthString": "Ploemeur, France, ",
    "aliasCount": 0,
    "indivAliasString": "",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QI.K.340.14",
    "name": "EMILIE KONIG",
    "natnlty": "French"
@@ -12982,6 +13324,8 @@
    "indivPlaceOfBirthString": "Casablanca, Morocco, ",
    "aliasCount": 1,
    "indivAliasString": "Rachid (Low)",
+   "lastDateUpdatedCount": 2,
+   "dateUpdatedString": "2007-12-21T00:00:00; 2011-12-13T00:00:00; ",
    "id": "QI.L.190.05",
    "name": "ABDELKADER LAAGOUB",
    "natnlty": "Moroccan"
@@ -13035,6 +13379,8 @@
    "indivPlaceOfBirthString": "Mali, ",
    "aliasCount": 3,
    "indivAliasString": "Mohamed Ennouini (Good); Hassan (Good); Hocine (Good); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QI.L.319.13",
    "name": "MOHAMED LAHBOUS",
    "natnlty": "Malian"
@@ -13120,6 +13466,8 @@
    "indivPlaceOfBirthString": "Tunis, Tunisia, ",
    "aliasCount": 6,
    "indivAliasString": "Lased Ben Heni (Good); Al-As'ad Ben Hani (Good); Mohamed Ben Belgacem Awani (Good); Mohamed Abu Abda (Low); Abu Obeida (Low); Mohamed Aouani (formerly listed as) (Good); ",
+   "lastDateUpdatedCount": 5,
+   "dateUpdatedString": "2004-11-26T00:00:00; 2005-09-09T00:00:00; 2006-07-31T00:00:00; 2010-12-23T00:00:00; 2014-11-24T00:00:00; ",
    "id": "QI.B.62.02",
    "name": "MOHAMED LAKHAL",
    "natnlty": "Tunisian"
@@ -13201,6 +13549,8 @@
    "indivPlaceOfBirthString": "Okara, Pakistan, ",
    "aliasCount": 6,
    "indivAliasString": "Zakir Rehman Lakvi (Good); Zaki Ur-Rehman Lakvi (Good); Kaki Ur-Rehman (Good); Zakir Rehman (Good); Abu Waheed Irshad Ahmad Arshad (Good); Chachajee (Low); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QI.L.264.08",
    "name": "ZAKI-UR-REHMAN LAKHVI",
    "natnlty": "Pakistani"
@@ -13324,6 +13674,8 @@
    "indivPlaceOfBirthString": "Sitio Banga Maiti, Barangay Tranghawan, Lambunao, Iloilo, Philippines, ",
    "aliasCount": 13,
    "indivAliasString": "Reuben Lavilla (Good); Sheik Omar (Good); Mile D Lavilla (Good); Reymund Lavilla (Good); Ramo Lavilla (Good); Mike de Lavilla (Good); Abdullah Muddaris (Good); Ali Omar (Good); Omar Lavilla (Good); Omar Labella (Good); So (Low); Eso (Low); Junjun (Low); ",
+   "lastDateUpdatedCount": 2,
+   "dateUpdatedString": "2008-09-16T00:00:00; 2011-12-13T00:00:00; ",
    "id": "QI.L.247.08",
    "name": "RUBEN PESTANO LAVILLA, JR"
   },
@@ -13375,6 +13727,8 @@
    "indivPlaceOfBirthString": "Algiers, Algeria, ",
    "aliasCount": 1,
    "indivAliasString": "Jamal Lounici (Good)",
+   "lastDateUpdatedCount": 4,
+   "dateUpdatedString": "2008-04-07T00:00:00; 2008-12-02T00:00:00; 2009-01-30T00:00:00; 2011-05-16T00:00:00; ",
    "id": "QI.L.155.04",
    "name": "DJAMEL LOUNICI",
    "natnlty": "Algerian"
@@ -13425,6 +13779,8 @@
    "indivPlaceOfBirthString": "Pakistan, ",
    "aliasCount": 2,
    "indivAliasString": "Hakeemullah Mehsud (Good); Zulfiqar (Low); ",
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2011-07-29T00:00:00",
    "id": "QI.M.286.10",
    "name": "HAKIMULLAH MEHSUD",
    "natnlty": "Pakistani"
@@ -13501,6 +13857,8 @@
    "indivPlaceOfBirthString": "Day Az-Zawr, Syria, ",
    "aliasCount": 4,
    "indivAliasString": "Khalil Ibrahim Jassem (Good); Khalil Ibrahim Mohammad (Good); Khalil Ibrahim Al Zafiri (Good); Khalil (Good); ",
+   "lastDateUpdatedCount": 3,
+   "dateUpdatedString": "2010-01-25T00:00:00; 2011-12-13T00:00:00; 2013-08-06T00:00:00; ",
    "id": "QI.M.206.05",
    "name": "IBRAHIM MOHAMED KHALIL",
    "natnlty": "Syrian"
@@ -13567,6 +13925,8 @@
    "indivPlaceOfBirthString": "Arbil, Iraq, ",
    "aliasCount": 2,
    "indivAliasString": "Mazen Ali Hussein (Good); Issa Salah Muhamad (Good); ",
+   "lastDateUpdatedCount": 3,
+   "dateUpdatedString": "2008-10-21T00:00:00; 2011-12-13T00:00:00; 2012-11-15T00:00:00; ",
    "id": "QI.A.202.05",
    "name": "MAZEN SALAH MOHAMMED",
    "natnlty": "Iraqi"
@@ -13636,6 +13996,8 @@
    "indivPlaceOfBirthString": "Lanao del Sur, Philippines, ",
    "aliasCount": 5,
    "indivAliasString": "Muklis Yunos (Good); Mukhlis Yunos (previously listed as) (Good); Saifullah Mukhlis Yunos (Good); Saifulla Moklis Yunos (Good); Hadji Onos (Low); ",
+   "lastDateUpdatedCount": 4,
+   "dateUpdatedString": "2005-09-09T00:00:00; 2009-02-23T00:00:00; 2009-06-03T00:00:00; 2011-05-16T00:00:00; ",
    "id": "QI.Y.126.03",
    "name": "YUNOS UMPARA MOKLIS",
    "natnlty": "Filipino"
@@ -13682,6 +14044,8 @@
    "indivPlaceOfBirthString": "Kirkuk, Iraq, ",
    "aliasCount": 0,
    "indivAliasString": "",
+   "lastDateUpdatedCount": 3,
+   "dateUpdatedString": "2005-09-09T00:00:00; 2007-06-07T00:00:00; 2011-05-16T00:00:00; ",
    "id": "QI.M.147.03",
    "name": "MOHAMED AMIN MOSTAFA"
   },
@@ -13849,6 +14213,8 @@
    "indivPlaceOfBirthString": "Tiaret, Algeria, ",
    "aliasCount": 17,
    "indivAliasString": "Ali Barkani (Good); Kalad Belkasam (Good); Mostafa Djamel (Good); Mostefa Djamel (Good); Mustafa Djamel (Good); Balkasam Kalad (Good); Bekasam Kalad (Good); Belkasam Kalad (Good); Damel Mostafa (Good); Djamal Mostafa (Good); Djamal Mostafa (Good); Djamel Mostafa (Good); Djamel Mostafa (Good); Fjamel Moustfa (Good); Djamel Mustafa (Good); Djamel Mustafa (Good); Mustafa (Low); ",
+   "lastDateUpdatedCount": 4,
+   "dateUpdatedString": "2007-09-07T00:00:00; 2008-04-07T00:00:00; 2010-01-25T00:00:00; 2011-05-16T00:00:00; ",
    "id": "QI.M.129.03",
    "name": "DJAMEL MOUSTFA",
    "natnlty": "Algerian"
@@ -13947,6 +14313,8 @@
    "indivPlaceOfBirthString": "Kuwait, ",
    "aliasCount": 7,
    "indivAliasString": "Mubarak Mishkhis Sanad Al-Bathali (Good); Mubarak Mishkhis Sanad Al-Badhali (Good); Mubarak Al-Bathali (Good); Mubarak Mishkhas Sanad Al-Bathali (Good); Mubarak Mishkhas Sanad Al-Bazali (Good); Mobarak Meshkhas Sanad Al-Bthaly (Good); Abu Abdulrahman (Low); ",
+   "lastDateUpdatedCount": 3,
+   "dateUpdatedString": "2008-07-01T00:00:00; 2008-07-23T00:00:00; 2010-01-25T00:00:00; ",
    "id": "QI.A.238.08",
    "name": "MUBARAK MUSHAKHAS SANAD MUBARAK AL-BATHALI",
    "natnlty": "Kuwaiti"
@@ -13994,6 +14362,8 @@
    "indivPlaceOfBirthString": "Lahore, Punjab Province, Pakistan, ",
    "aliasCount": 1,
    "indivAliasString": "Mohammad Yahya Aziz (Good)",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QI.M.272.09",
    "name": "MOHAMMED YAHYA MUJAHID",
    "natnlty": "Pakistani"
@@ -14045,6 +14415,8 @@
    "indivPlaceOfBirthString": "Sambi, Boyolali, Java, Indonesia, ",
    "aliasCount": 0,
    "indivAliasString": "",
+   "lastDateUpdatedCount": 3,
+   "dateUpdatedString": "2005-09-09T00:00:00; 2006-10-04T00:00:00; 2014-12-12T00:00:00; ",
    "id": "QI.M.119.03",
    "name": "ARIS MUNANDAR",
    "natnlty": "Indonesian"
@@ -14124,6 +14496,8 @@
    "indivPlaceOfBirthString": "Kuwait, ",
    "aliasCount": 6,
    "indivAliasString": "Murad, Abdul Hakim Hasim (Good); Murad, Abdul Hakim Ali Hashim (Good); Murad, Abdul Hakim al Hashim (Good); Saeed Akman (Good); Saeed Ahmed (Good); Abdul Hakim Ali al-Hashem Murad (Good); ",
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2011-05-16T00:00:00",
    "id": "QI.M.120.03",
    "name": "ABDUL HAKIM MURAD",
    "natnlty": "Pakistani"
@@ -14177,6 +14551,8 @@
    "indivPlaceOfBirthString": "Beni-Suef, Egypt, ",
    "aliasCount": 2,
    "indivAliasString": "Ali Salim (Good); Abd Al-Aziz al-Masri (Good); ",
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2011-12-13T00:00:00",
    "id": "QI.M.196.05",
    "name": "ALI SAYYID MUHAMED MUSTAFA BAKRI",
    "natnlty": "Egyptian"
@@ -14236,6 +14612,8 @@
    "indivPlaceOfBirthString": "Faidh El Batma, Djelfa, Algeria, ",
    "aliasCount": 3,
    "indivAliasString": "Djaafar Abou Mohamed (جعفر ابو محمد) (Good); Abou Mouhadjir (ابو مهاجر) (Good); Mohamed Ould Ahmed Ould Ali (Good); ",
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2014-04-15T00:00:00",
    "id": "QI.N.280.10",
    "name": "TAYEB NAIL",
    "natnlty": "Algerian"
@@ -14306,6 +14684,8 @@
    "indivPlaceOfBirthString": "Tabankort, Mali, ",
    "aliasCount": 3,
    "indivAliasString": "Ahmed el Tilemsi (Good); Abderrahmane Ould el Amar Ould Sidahmed Loukbeiti (Good); Ahmad Ould Amar (Good); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QI.O.314.13",
    "name": "ABDERRAHMANE OULD EL AMAR",
    "natnlty": "Malian"
@@ -14371,6 +14751,8 @@
    "indivPlaceOfBirthString": "Nouakchott, Mauritania, ",
    "aliasCount": 4,
    "indivAliasString": "Hamada Ould Mohamed Lemine Ould Mohamed el Khairy (Good); Ould Kheirou (Good); Abou QumQum (Low); Hamad el Khairy (Good); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QI.O.315.13",
    "name": "HAMADA OULD MOHAMED EL KHAIRY",
    "natnlty": [
@@ -14451,6 +14833,8 @@
    "indivPlaceOfBirthString": "Saudi Arabia, ",
    "aliasCount": 9,
    "indivAliasString": "Abdarrahmane ould Mohamed el Houcein ould Mohamed Salem (Good); شيخ يونس الموريتاني (Good); Salih the Mauritanian (Low); Mohamed Salem (Low); Youssef Ould Abdel Jelil (Low); El Hadj Ould Abdel Ghader (Low); Abdel Khader (Low); Abou Souleimane (Low); Chingheity (Low); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QI.O.298.11",
    "name": "ABD AL-RAHMAN OULD MUHAMMAD AL-HUSAYN OULD MUHAMMAD SALIM",
    "natnlty": "Mauritanian"
@@ -14523,6 +14907,8 @@
    "indivPlaceOfBirthString": "Cebu City, Philippines, ",
    "aliasCount": 6,
    "indivAliasString": "Johnny Pareja (Good); Khalil Pareja (Good); Mohammad (Low); Akmad (Low); Mighty (Low); Rash (Low); ",
+   "lastDateUpdatedCount": 2,
+   "dateUpdatedString": "2009-06-03T00:00:00; 2011-12-13T00:00:00; ",
    "id": "QI.P.242.08",
    "name": "DINNO AMOR ROSALEJOS PAREJA"
   },
@@ -14602,6 +14988,8 @@
    "indivPlaceOfBirthString": "Central Java, Indonesia, ",
    "aliasCount": 9,
    "indivAliasString": "Omar Patek (Good); Mike Arsalan (Good); Hisyam Bin Zein (Good); Anis Alawi Jafar (Good); Pa'tek (Low); Pak Taek (Low); Umar Kecil (Low); Al Abu Syekh Al Zacky (Low); Umangis Mike (Low); ",
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2012-02-23T00:00:00",
    "id": "QI.P.294.11",
    "name": "UMAR PATEK",
    "natnlty": "Indonesian"
@@ -14672,6 +15060,8 @@
    "indivPlaceOfBirthString": "Pakistan, ",
    "aliasCount": 7,
    "indivAliasString": "Muhammad Arif Qasmani (Good); Muhammad ‘Arif Qasmani (Good); Mohammad Arif Qasmani (Good); Arif Umer (Good); Qasmani Baba (Good); Memon Baba (Good); Baba Ji (Good); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QI.Q.271.09",
    "name": "ARIF QASMANI",
    "natnlty": "Pakistani"
@@ -14791,6 +15181,8 @@
    "indivPlaceOfBirthString": "Marzaq, Libyan Arab Jamahiriya, ",
    "aliasCount": 14,
    "indivAliasString": "Hasan Muhammad Abu Bakr Qa'id (Good); الحسين محمد أبو بكر قايد (Al-Husain Muhammad Abu Bakr Qayid) (Good); Muhammad Hassan Qayed (Good); Mohammad Hassan Abu Bakar (Good); Hasan Qa'id (Good); Muhammad Hasan al-Libi (Good); Abu Yahya al-Libi (أبو يحيى الليبي) (prominently known by this nom de guerre) (Low); Abu Yahya (Low); Sheikh Yahya (Low); Abu Yahya Yunis al Sahrawi (Low); Abu Yunus Rashid (Low); al-Rashid (Low); Abu al-Widdan (Low); يونس الصحراوي (Younes Al-Sahrawi; Younes Al-Sahraoui) (Low); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QI.Q.297.11",
    "name": "HASSAN MUHAMMAD ABU BAKR QAYED",
    "natnlty": "Libyan"
@@ -14867,6 +15259,8 @@
    "indivPlaceOfBirthString": "Kabul, Afghanistan, ",
    "aliasCount": 2,
    "indivAliasString": "Fazel Rahim; Fazil Rahim (Good); Fazil Rahman (Good); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QI.R.303.12",
    "name": "FAZAL RAHIM",
    "natnlty": "Afghan"
@@ -14931,6 +15325,8 @@
    "indivPlaceOfBirthString": "Bologhine, Algeria, ",
    "aliasCount": 3,
    "indivAliasString": "Rarrbo Abdallah (Good); Rarrbo Abdullah (Good); Rarrbo Ahmed Hosni (Good); ",
+   "lastDateUpdatedCount": 3,
+   "dateUpdatedString": "2007-10-17T00:00:00; 2008-04-07T00:00:00; 2010-10-21T00:00:00; ",
    "id": "QI.R.103.03",
    "name": "AHMED HOSNI RARRBO",
    "natnlty": "Algerian"
@@ -14993,6 +15389,8 @@
    "indivPlaceOfBirthString": "Sulaimaniya, Iraq, ",
    "aliasCount": 2,
    "indivAliasString": "Abdoulaziz Ata Rashid (Good); Ata Abdoul Aziz Barzingy (Good); ",
+   "lastDateUpdatedCount": 3,
+   "dateUpdatedString": "2008-10-21T00:00:00; 2011-12-13T00:00:00; 2013-08-06T00:00:00; ",
    "id": "QI.A.199.05",
    "name": "ATA ABDOULAZIZ RASHID",
    "natnlty": "Iraqi"
@@ -15054,6 +15452,8 @@
    "indivPlaceOfBirthString": "Biskra, Algeria, ",
    "aliasCount": 2,
    "indivAliasString": "Abdelhalim Remadna (Good); Jalloul (Low); ",
+   "lastDateUpdatedCount": 5,
+   "dateUpdatedString": "2006-04-12T00:00:00; 2008-04-07T00:00:00; 2009-06-03T00:00:00; 2010-01-25T00:00:00; 2010-12-23T00:00:00; ",
    "id": "QI.R.75.02",
    "name": "ABDELHALIM HAFED ABDELFATTAH REMADNA",
    "natnlty": "Algerian"
@@ -15165,6 +15565,8 @@
    "indivPlaceOfBirthString": "Dacusuman Surakarta, Central Java, Indonesia, ",
    "aliasCount": 17,
    "indivAliasString": "Refke, Taufek (Good); Rifqi, Taufik (Good); Rifqi, Tawfiq (Good); Ami Iraq (Good); Ami Irza (Good); Amy Erja (Good); Ammy Erza (Good); Ammy Izza (Good); Ami Kusoman (Good); Abu Obaida (Good); Abu Obaidah (Good); Abu Obeida (Good); Abu Ubaidah (Good); Obaidah (Good); Abu Obayda (Good); Izza Kusoman (Good); Yacub, Eric (Good); ",
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2011-12-13T00:00:00",
    "id": "QI.R.219.06",
    "name": "TAUFIK RIFKI",
    "natnlty": "Indonesian"
@@ -15231,6 +15633,8 @@
    "indivPlaceOfBirthString": "Sfax, Tunisia, ",
    "aliasCount": 2,
    "indivAliasString": "Salmane (Low); Lazhar (Low); ",
+   "lastDateUpdatedCount": 4,
+   "dateUpdatedString": "2005-12-20T00:00:00; 2007-12-21T00:00:00; 2009-01-30T00:00:00; 2011-05-16T00:00:00; ",
    "id": "QI.R.150.03",
    "name": "AL-AZHAR BEN KHALIFA BEN AHMED ROUINE",
    "natnlty": "Tunisian"
@@ -15301,6 +15705,8 @@
    "indivPlaceOfBirthString": "Kudus, Central Java, Indonesia, ",
    "aliasCount": 8,
    "indivAliasString": "Abu Thoriq (Low); Rusdjan (Low); Rusjan (Low); Rusydan (Low); Thoriquddin (Low); Thoriquiddin (Low); Thoriquidin (Low); Toriquddin (Low); ",
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2014-12-12T00:00:00",
    "id": "QI.R.186.05",
    "name": "ABU RUSDAN"
   },
@@ -15361,6 +15767,8 @@
    "indivPlaceOfBirthString": "Nangarhar Province, Afghanistan, ",
    "aliasCount": 4,
    "indivAliasString": "Al-Haq, Amin (Good); Amin, Muhammad (Good); Dr. Amin (Low); Ul-Haq, Dr. Amin (Low); ",
+   "lastDateUpdatedCount": 2,
+   "dateUpdatedString": "2007-07-18T00:00:00; 2010-12-16T00:00:00; ",
    "id": "QI.A.2.01",
    "name": "AMIN MUHAMMAD UL HAQ SAAM KHAN"
   },
@@ -15447,6 +15855,8 @@
    "indivPlaceOfBirthString": "Medina, Saudi Arabia, ",
    "aliasCount": 5,
    "indivAliasString": "Al-Hamati, Muhammad (Good); Muhammad Muhammad Abdullah Al-Ahdal (Good); Mohamed Mohamed Abdullah Al-Ahdal (Good); Abu Asim Al-Makki (Low); Ahmed (Low); ",
+   "lastDateUpdatedCount": 2,
+   "dateUpdatedString": "2009-01-30T00:00:00; 2010-01-25T00:00:00; ",
    "id": "QI.A.20.01",
    "name": "MOHAMMAD HAMDI MOHAMMAD SADIQ AL-AHDAL",
    "natnlty": "Yemeni"
@@ -15541,6 +15951,8 @@
    "indivPlaceOfBirthString": "Sargodha, Punjab, Pakistan, ",
    "aliasCount": 10,
    "indivAliasString": "Hafiz Mohammad Sahib (Good); Hafiz Mohammad Sayid (Good); Hafiz Muhammad (Good); Hafiz Saeed (Good); Hafez Mohammad Saeed (Good); Hafiz Mohammad Sayeed (Good); Tata Mohammad Syeed (Good); Mohammad Sayed (Good); Muhammad Saeed (Good); Hafiz Ji (Low); ",
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2009-07-17T00:00:00",
    "id": "QI.S.263.08",
    "name": "HAFIZ MUHAMMAD SAEED",
    "natnlty": "Pakistani"
@@ -15601,6 +16013,8 @@
    "indivPlaceOfBirthString": "Kaunayan, Patikul, Jolo Island, the Philippines, ",
    "aliasCount": 4,
    "indivAliasString": "Radullan Sahiron (Good); Radulan Sahirun (Good); Radulan Sajirun (Good); Commander Putol (Good); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QI.S.208.05",
    "name": "RADULAN SAHIRON",
    "natnlty": "Filipino"
@@ -15659,6 +16073,8 @@
    "indivPlaceOfBirthString": "Bizerta, Tunisia, ",
    "aliasCount": 2,
    "indivAliasString": "Dass (Good); Nasim al-Sahrawi (Good); ",
+   "lastDateUpdatedCount": 3,
+   "dateUpdatedString": "2009-09-01T00:00:00; 2010-01-25T00:00:00; 2011-12-13T00:00:00; ",
    "id": "QI.S.222.06",
    "name": "NESSIM BEN ROMDHANE SAHRAOUI",
    "natnlty": "Tunisian"
@@ -15753,6 +16169,8 @@
    "indivPlaceOfBirthString": "Haidra Al-Qasreen, Tunisia, ",
    "aliasCount": 6,
    "indivAliasString": "Nassim Saadi (Good); Dia el Haak George (Good); Diael Haak George (Good); El Dia Haak George (Good); Abou Anis (Low); Abu Anis (Low); ",
+   "lastDateUpdatedCount": 5,
+   "dateUpdatedString": "2005-12-20T00:00:00; 2006-07-31T00:00:00; 2007-12-21T00:00:00; 2009-06-03T00:00:00; 2011-05-16T00:00:00; ",
    "id": "QI.S.148.03",
    "name": "NESSIM BEN MOHAMED AL-CHERIF BEN MOHAMED SALEH AL-SAADI",
    "natnlty": "Tunisian"
@@ -15845,6 +16263,8 @@
    "indivPlaceOfBirthString": "686 A. Mabini Street, Sangandaan, Caloocan City, Philippines, ",
    "aliasCount": 10,
    "indivAliasString": "Akmad Santos (Good); Ahmed Islam (Good); Ahmad Islam Santos (Good); Abu Hamsa (Good); Hilarion Santos III (Good); Abu Abdullah Santos (Good); Faisal Santos (Good); Lakay (Low); Aki (Low); Aqi (Low); ",
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2011-12-13T00:00:00",
    "id": "QI.S.244.08",
    "name": "HILARION DEL ROSARIO SANTOS III"
   },
@@ -15914,6 +16334,8 @@
    "indivPlaceOfBirthString": "Egypt, ",
    "aliasCount": 4,
    "indivAliasString": "Saif Al-'Adil (Good); Seif al Adel (Good); Muhamad Ibrahim Makkawi (Good); Ibrahim al-Madani (Low); ",
+   "lastDateUpdatedCount": 2,
+   "dateUpdatedString": "2010-12-16T00:00:00; 2013-07-24T00:00:00; ",
    "id": "QI.S.1.01",
    "name": "SAYF-AL ADL",
    "natnlty": "Egyptian"
@@ -15985,6 +16407,8 @@
    "indivPlaceOfBirthString": "Neunkirchen (Saar), Germany, ",
    "aliasCount": 1,
    "indivAliasString": "Abdullah (Low)",
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2011-12-13T00:00:00",
    "id": "QI.S.260.08",
    "name": "DANIEL MARTIN SCHNEIDER",
    "natnlty": "German"
@@ -16051,6 +16475,8 @@
    "indivPlaceOfBirthString": "Beckum, Germany, ",
    "aliasCount": 2,
    "indivAliasString": "Ismain Shalabe (Good); Ismail Abdallah Sbaitan Shalabi (Good); ",
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2011-06-10T00:00:00",
    "id": "QI.S.128.03",
    "name": "ISMAIL ABDALLAH SBAITAN SHALABI"
   },
@@ -16129,6 +16555,8 @@
    "indivPlaceOfBirthString": "Shekau Village, Yobe State, Nigeria, ",
    "aliasCount": 8,
    "indivAliasString": "Abubakar Shekau (Good); Abu Mohammed Abubakar bin Mohammed (Low); Abu Muhammed Abubakar bi Mohammed (Low); Shekau (Low); Shehu (Low); Shayku (Low); Imam Darul Tauhid (Low); Imam Darul Tawheed (Low); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QI.S.322.14",
    "name": "ABUBAKAR MOHAMMED SHEKAU",
    "natnlty": "Nigerian"
@@ -16191,6 +16619,8 @@
    "indivPlaceOfBirthString": "Egypt, ",
    "aliasCount": 4,
    "indivAliasString": "Tarwat Salah Abdallah (Good); Salah Shihata Thirwat (Good); Shahata Thirwat (Good); Tharwat Salah Shihata Ali (previously listed as) (Good); ",
+   "lastDateUpdatedCount": 2,
+   "dateUpdatedString": "2004-11-26T00:00:00; 2010-12-16T00:00:00; ",
    "id": "QI.A.17.01",
    "name": "THARWAT SALAH SHIHATA",
    "natnlty": "Egyptian"
@@ -16243,6 +16673,8 @@
    "indivPlaceOfBirthString": "Indonesia, ",
    "aliasCount": 2,
    "indivAliasString": "Siregar, Parlin (Good); Siregar, Saleh Parlindungan (Good); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QI.S.122.03",
    "name": "PARLINDUNGAN SIREGAR",
    "natnlty": "Indonesian"
@@ -16310,6 +16742,8 @@
    "indivPlaceOfBirthString": "Johor, Malaysia, ",
    "aliasCount": 2,
    "indivAliasString": "Joe (Low); Abu Zufar (Low); ",
+   "lastDateUpdatedCount": 5,
+   "dateUpdatedString": "2004-05-03T00:00:00; 2008-02-01T00:00:00; 2009-08-10T00:00:00; 2010-01-25T00:00:00; 2011-05-16T00:00:00; ",
    "id": "QI.S.124.03",
    "name": "YAZID SUFAAT",
    "natnlty": "Malaysian"
@@ -16389,6 +16823,8 @@
    "indivPlaceOfBirthString": "function (n) {\n  return this.length > n ? this.substr(0, n - 1) + '&hellip,' : this;\n}, ",
    "aliasCount": 10,
    "indivAliasString": "Salim Yasin (Good); Yasin Mahmud Mochtar (Good); Abdul Hadi Yasin (Good); Muhamad Mubarok (Good); Muhammad Syawal (Good); Abu Seta (Low); Mahmud (Low); Abu Muamar (Low); Yassin Sywal (formerly listed as) (Good); Mubarok (Low); ",
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2014-12-12T00:00:00",
    "id": "QI.S.123.03",
    "name": "YASSIN SYAWAL",
    "natnlty": "Indonesian"
@@ -16479,6 +16915,8 @@
    "indivPlaceOfBirthString": "al Aziziyya, Libyan Arab Jamahiriya, ",
    "aliasCount": 9,
    "indivAliasString": "Abd al-Muhsin (Good); Ibrahim Ali Muhammad Abu Bakr (Good); Abdul Rahman (Good); Abu Anas (Good); Ibrahim Abubaker Tantouche (Good); Ibrahim Abubaker Tantoush (Good); ‘Abd al-Muhsi (Good); ‘Abd al-Rahman (Good); Al-Libi (Low); ",
+   "lastDateUpdatedCount": 3,
+   "dateUpdatedString": "2006-07-31T00:00:00; 2006-10-04T00:00:00; 2011-05-16T00:00:00; ",
    "id": "QI.T.57.02",
    "name": "IBRAHIM ALI ABU BAKR TANTOUSH"
   },
@@ -16548,6 +16986,8 @@
    "indivPlaceOfBirthString": "Gattaran, Cagayan Province, Philippines, ",
    "aliasCount": 6,
    "indivAliasString": "Abdul Khalil (Low); Abdukahlil (Low); Calib Trinidad (Good); Kalib Trinidad (Good); Abu Khalil (Low); Anis (Low); ",
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2011-12-13T00:00:00",
    "id": "QI.T.241.08",
    "name": "ANGELO RAMIREZ TRINIDAD"
   },
@@ -16594,6 +17034,8 @@
    "indivPlaceOfBirthString": "function (n) {\n  return this.length > n ? this.substr(0, n - 1) + '&hellip,' : this;\n}, ",
    "aliasCount": 2,
    "indivAliasString": "Tufail, S.M. (Good); Tuffail, Sheik Mohammed (Good); ",
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2011-01-19T00:00:00",
    "id": "QI.T.56.01",
    "name": "MOHAMMED TUFAIL",
    "natnlty": "Pakistani"
@@ -16639,6 +17081,8 @@
    "indivPlaceOfBirthString": "Kharsenoy Village, Shatoyskiy (Sovetskiy) District, Chechenskaya Respublika, Russian Federation, ",
    "aliasCount": 0,
    "indivAliasString": "",
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2014-06-02T00:00:00",
    "id": "QI.U.290.11",
    "name": "DOKU KHAMATOVICH UMAROV",
    "natnlty": "Russian"
@@ -16727,6 +17171,8 @@
    "indivPlaceOfBirthString": "Bethlehem, West Bank, Palestinian Territories, ",
    "aliasCount": 8,
    "indivAliasString": "Al-Samman Uthman (Good); Umar Uthman (Good); Omar Mohammed Othman (Good); Abu Qatada Al-Filistini (Low); Abu Umr Takfiri (Low); Abu Omar Abu Umar (Low); Abu Umar Umar (Low); Abu Ismail (Low); ",
+   "lastDateUpdatedCount": 4,
+   "dateUpdatedString": "2008-03-14T00:00:00; 2009-03-24T00:00:00; 2010-01-25T00:00:00; 2013-07-22T00:00:00; ",
    "id": "QI.M.31.01",
    "name": "OMAR MAHMOUD UTHMAN",
    "natnlty": "Jordanian"
@@ -16799,6 +17245,8 @@
    "indivPlaceOfBirthString": "Bloomington, Indiana, United States of America, ",
    "aliasCount": 4,
    "indivAliasString": "Taha, Abdul Rahman S. (Good); Taher, Abdul Rahman S. (Good); Yasin, Abdul Rahman Said (Good); Yasin, Aboud (Good); ",
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2003-04-10T00:00:00",
    "id": "QI.Y.37.01",
    "name": "ABDUL RAHMAN YASIN"
   },
@@ -16854,6 +17302,8 @@
    "indivPlaceOfBirthString": "Bayburt, Turkey, ",
    "aliasCount": 1,
    "indivAliasString": "Talha (Low)",
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2011-12-13T00:00:00",
    "id": "QI.Y.261.08",
    "name": "ADEM YILMAZ",
    "natnlty": "Turkish"
@@ -16908,6 +17358,8 @@
    "indivPlaceOfBirthString": "Baghdad, Iraq, ",
    "aliasCount": 1,
    "indivAliasString": "Mohamad Raific Kairadin (Good)",
+   "lastDateUpdatedCount": 2,
+   "dateUpdatedString": "2008-10-21T00:00:00; 2011-12-13T00:00:00; ",
    "id": "QI.M.205.05",
    "name": "RAFIK MOHAMAD YOUSEF",
    "natnlty": "Iraqi"
@@ -17022,6 +17474,8 @@
    "indivPlaceOfBirthString": "Qaylubiyah, Egypt, ",
    "aliasCount": 14,
    "indivAliasString": "Hani Yousef Al-Sebai (Good); Hani Youssef (Good); Hany Youseff (Good); Hani Yusef (Good); Hani al-Sayyid Al-Sabai (Good); Hani al-Sayyid El Sebai (Good); Hani al-Sayyid Al Siba'i (Good); Hani al-Sayyid El Sabaay (Good); El-Sababt (Good); Abu Tusnin (Good); Abu Akram (Good); Hani El Sayyed Elsebai Yusef (Good); Abu Karim (Good); Hany Elsayed Youssef (Good); ",
+   "lastDateUpdatedCount": 3,
+   "dateUpdatedString": "2005-10-06T00:00:00; 2006-08-18T00:00:00; 2012-01-25T00:00:00; ",
    "id": "QI.A.198.05",
    "name": "HANI AL-SAYYID AL-SEBAI YUSIF",
    "natnlty": "Egyptian"
@@ -17106,6 +17560,8 @@
    "indivPlaceOfBirthString": "Tunis, Tunisia, ",
    "aliasCount": 6,
    "indivAliasString": "Dour Nadre (Good); Dour Nadre (Good); Daour Nadre (Good); Imad ben al-Mekki ben al-Akhdar al-Zarkaoui (previously listed as) (Good); Zarga (Low); Nadra (Low); ",
+   "lastDateUpdatedCount": 4,
+   "dateUpdatedString": "2005-12-20T00:00:00; 2006-07-31T00:00:00; 2009-08-10T00:00:00; 2011-05-16T00:00:00; ",
    "id": "QI.A.139.03",
    "name": "IMED BEN MEKKI ZARKAOUI",
    "natnlty": "Tunisian"
@@ -17177,6 +17633,8 @@
    "indivPlaceOfBirthString": "Chréa, Algeria, ",
    "aliasCount": 6,
    "indivAliasString": "Abdullah (Good); Abdalla (Good); Smail (Good); Abu Khaoula (Good); Abu Cholder (Good); Nuhr (Good); ",
+   "lastDateUpdatedCount": 3,
+   "dateUpdatedString": "2006-04-12T00:00:00; 2008-04-07T00:00:00; 2011-12-13T00:00:00; ",
    "id": "QI.Z.168.04",
    "name": "AHMAD ZERFAOUI",
    "natnlty": "Algerian"
@@ -17282,6 +17740,8 @@
    "indivPlaceOfBirthString": "Bengasi, Libyan Arab Jamahiriya, ",
    "aliasCount": 10,
    "indivAliasString": "F’raji di Singapore (Low); F’raji il Libico (Low); Mohamed Lebachir (Good); Meri Albdelfattah Zgbye (Good); Zoghbai Merai Abdul Fattah (Good); Lazrag Faraj (Good); Larzg Ben Ila (Good); Farag (Low); Fredj (Low); Muhammed El Besir (Good); ",
+   "lastDateUpdatedCount": 3,
+   "dateUpdatedString": "2009-06-03T00:00:00; 2009-09-01T00:00:00; 2011-12-13T00:00:00; ",
    "id": "QI.Z.223.06",
    "name": "MERAI ZOGHBAI"
   },
@@ -17350,6 +17810,8 @@
    "indivPlaceOfBirthString": "Gebang village, Masaran, Sragen, Central Java, Indonesia, ",
    "aliasCount": 8,
    "indivAliasString": "Zulkarnan (Good); Zulkarnain (Good); Zulkarnin (Good); Arif Sunarso (Good); Aris Sumarsono (Good); Aris Sunarso (Good); Ustad Daud Zulkarnaen (Good); Murshid (Good); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QI.Z.187.05",
    "name": "ZULKARNAEN",
    "natnlty": "Indonesian"
@@ -17403,6 +17865,8 @@
    "indivPlaceOfBirthString": "city name, state province, ",
    "aliasCount": 1,
    "indivAliasString": "Stinky Fahd (very poor); ",
+   "lastDateUpdatedCount": 2,
+   "dateUpdatedString": "2007-05-14T00:00:00; 2007-07-27T00:00:00; ",
    "natnlty": ""
   },
   {
@@ -17454,6 +17918,8 @@
    "indivPlaceOfBirthString": "city name, state province, ",
    "aliasCount": 1,
    "indivAliasString": "Osama Yo Mama (very poor); ",
+   "lastDateUpdatedCount": 2,
+   "dateUpdatedString": "2007-05-14T00:00:00; 2007-07-27T00:00:00; ",
    "natnlty": ""
   },
   {
@@ -17505,6 +17971,8 @@
    "indivPlaceOfBirthString": "city name, state province, ",
    "aliasCount": 1,
    "indivAliasString": "Big Fart Wa&apos;el (very poor); ",
+   "lastDateUpdatedCount": 2,
+   "dateUpdatedString": "2007-05-14T00:00:00; 2007-07-27T00:00:00; ",
    "natnlty": ""
   },
   {
@@ -17553,6 +18021,8 @@
    "indivPlaceOfBirthString": "city name, state province, ",
    "aliasCount": 1,
    "indivAliasString": "Poop Your Pants Wali (very poor); ",
+   "lastDateUpdatedCount": 2,
+   "dateUpdatedString": "2007-05-14T00:00:00; 2007-07-27T00:00:00; ",
    "id": "QI.U.287.10",
    "name": "Wali Ur Rehman (no longer listed)",
    "natnlty": ""
@@ -17603,6 +18073,8 @@
    "indivPlaceOfBirthString": "city name, state province, ",
    "aliasCount": 1,
    "indivAliasString": "Good Time Rashid (poor); ",
+   "lastDateUpdatedCount": 2,
+   "dateUpdatedString": "1900-05-14T00:00:00; 1900-07-27T00:00:00; ",
    "id": "QI.L.30.01",
    "name": "Mufti Rashid Ahmad Ledahyanoy (no longer listed)",
    "natnlty": ""
@@ -17653,6 +18125,8 @@
    "indivPlaceOfBirthString": "city name, state province, ",
    "aliasCount": 1,
    "indivAliasString": "Good Time .... (poor); ",
+   "lastDateUpdatedCount": 2,
+   "dateUpdatedString": "2007-05-14T00:00:00; 2007-07-27T00:00:00; ",
    "id": "QI.J.240.08",
    "name": "Najmiddin Kamolitdinovich Jalolov (no longer listed)",
    "natnlty": ""
@@ -17703,6 +18177,8 @@
    "indivPlaceOfBirthString": "city name, state province, ",
    "aliasCount": 1,
    "indivAliasString": "Good Time .... (poor); ",
+   "lastDateUpdatedCount": 2,
+   "dateUpdatedString": "1900-05-14T00:00:00; 1900-07-27T00:00:00; ",
    "id": "QI.B.239.08",
    "name": "Suhayl Fatilloevich Buranov (no longer listed)",
    "natnlty": ""
@@ -17739,6 +18215,8 @@
    "SORT_KEY_LAST_MOD": "2014-09-23T00:00:00",
    "noLongerListed": 0,
    "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QE.A.144.14",
    "name": "ABDALLAH AZZAM BRIGADES (AAB)"
   },
@@ -17767,6 +18245,8 @@
    "SORT_KEY_LAST_MOD": "2011-12-13T00:00:00",
    "noLongerListed": 0,
    "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2011-12-13T00:00:00",
    "id": "QE.A.1.01",
    "name": "ABU SAYYAF GROUP"
   },
@@ -17809,6 +18289,8 @@
    "SORT_KEY_LAST_MOD": "2011-12-13T00:00:00",
    "noLongerListed": 0,
    "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2011-12-13T00:00:00",
    "id": "QE.A.69.02",
    "name": "AFGHAN SUPPORT COMMITTEE (ASC)"
   },
@@ -17866,6 +18348,8 @@
    "SORT_KEY_LAST_MOD": "2011-12-13T00:00:00",
    "noLongerListed": 0,
    "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 2,
+   "dateUpdatedString": "2008-12-10T00:00:00; 2011-12-13T00:00:00; ",
    "id": "QE.A.121.05",
    "name": "AL-AKHTAR TRUST INTERNATIONAL"
   },
@@ -17963,6 +18447,8 @@
    "SORT_KEY_LAST_MOD": "2009-03-24T00:00:00",
    "noLongerListed": 0,
    "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 2,
+   "dateUpdatedString": "2004-11-26T00:00:00; 2009-03-24T00:00:00; ",
    "id": "QE.A.107.04",
    "name": "AL FURQAN"
   },
@@ -17989,6 +18475,8 @@
    "SORT_KEY_LAST_MOD": "2012-03-21T00:00:00",
    "noLongerListed": 0,
    "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2012-03-21T00:00:00",
    "id": "QE.A.110.04",
    "name": "AL-HARAMAIN: AFGHANISTAN BRANCH"
   },
@@ -18014,6 +18502,8 @@
    "SORT_KEY_LAST_MOD": "2012-03-21T00:00:00",
    "noLongerListed": 0,
    "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2012-03-21T00:00:00",
    "id": "QE.A.111.04",
    "name": "AL-HARAMAIN: ALBANIA BRANCH"
   },
@@ -18078,6 +18568,8 @@
    "SORT_KEY_LAST_MOD": "2009-03-24T00:00:00",
    "noLongerListed": 0,
    "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 3,
+   "dateUpdatedString": "2004-11-26T00:00:00; 2008-09-16T00:00:00; 2009-03-24T00:00:00; ",
    "id": "QE.A.109.04",
    "name": "AL-HARAMAIN & AL MASJED AL-AQSA CHARITY FOUNDATION"
   },
@@ -18103,6 +18595,8 @@
    "SORT_KEY_LAST_MOD": "2012-03-21T00:00:00",
    "noLongerListed": 0,
    "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2012-03-21T00:00:00",
    "id": "QE.A.112.04",
    "name": "AL-HARAMAIN: BANGLADESH BRANCH"
   },
@@ -18128,6 +18622,8 @@
    "SORT_KEY_LAST_MOD": "2012-03-21T00:00:00",
    "noLongerListed": 0,
    "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2012-03-21T00:00:00",
    "id": "QE.A.113.04",
    "name": "AL-HARAMAIN: ETHIOPIA BRANCH"
   },
@@ -18156,6 +18652,8 @@
    "SORT_KEY_LAST_MOD": "2012-03-21T00:00:00",
    "noLongerListed": 0,
    "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2012-03-21T00:00:00",
    "id": "QE.A.103.04",
    "name": "AL-HARAMAIN FOUNDATION (INDONESIA)"
   },
@@ -18181,6 +18679,8 @@
    "SORT_KEY_LAST_MOD": "2012-03-21T00:00:00",
    "noLongerListed": 0,
    "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2012-03-21T00:00:00",
    "id": "QE.A.104.04",
    "name": "AL-HARAMAIN FOUNDATION (PAKISTAN)"
   },
@@ -18206,6 +18706,8 @@
    "SORT_KEY_LAST_MOD": "2012-03-21T00:00:00",
    "noLongerListed": 0,
    "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2012-03-21T00:00:00",
    "id": "QE.A.116.04",
    "name": "AL-HARAMAIN FOUNDATION (UNION OF THE COMOROS)"
   },
@@ -18250,6 +18752,8 @@
    "SORT_KEY_LAST_MOD": "2011-06-16T00:00:00",
    "noLongerListed": 0,
    "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 3,
+   "dateUpdatedString": "2003-12-26T00:00:00; 2008-09-16T00:00:00; 2011-06-16T00:00:00; ",
    "id": "QE.A.71.02",
    "name": "AL-HARAMAIN ISLAMIC FOUNDATION"
   },
@@ -18275,6 +18779,8 @@
    "SORT_KEY_LAST_MOD": "2011-12-13T00:00:00",
    "noLongerListed": 0,
    "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2011-12-13T00:00:00",
    "id": "QE.A.72.02",
    "name": "AL-HARAMAIN ISLAMIC FOUNDATION (SOMALIA)"
   },
@@ -18303,6 +18809,8 @@
    "SORT_KEY_LAST_MOD": "2012-04-13T00:00:00",
    "noLongerListed": 0,
    "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2012-04-13T00:00:00",
    "id": "QE.A.114.04",
    "name": "AL-HARAMAIN: THE NETHERLANDS BRANCH"
   },
@@ -18342,6 +18850,8 @@
    "SORT_KEY_LAST_MOD": "2012-03-21T00:00:00",
    "noLongerListed": 0,
    "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2012-03-21T00:00:00",
    "id": "QE.A.105.04",
    "name": "AL-HARAMAYN FOUNDATION (KENYA)"
   },
@@ -18367,6 +18877,8 @@
    "SORT_KEY_LAST_MOD": "2012-03-21T00:00:00",
    "noLongerListed": 0,
    "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2012-03-21T00:00:00",
    "id": "QE.A.106.04",
    "name": "AL-HARAMAYN FOUNDATION (TANZANIA)"
   },
@@ -18395,6 +18907,8 @@
    "SORT_KEY_LAST_MOD": "2013-03-18T00:00:00",
    "noLongerListed": 0,
    "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 3,
+   "dateUpdatedString": "2007-12-21T00:00:00; 2011-12-13T00:00:00; 2013-03-18T00:00:00; ",
    "id": "QE.A.2.01",
    "name": "AL-ITIHAAD AL-ISLAMIYA / AIAI"
   },
@@ -18431,6 +18945,8 @@
    "SORT_KEY_LAST_MOD": "2014-06-02T00:00:00",
    "noLongerListed": 0,
    "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QE.M.139.14",
    "name": "AL MOUAKAOUNE BIDDAM"
   },
@@ -18471,6 +18987,8 @@
    "SORT_KEY_LAST_MOD": "2014-06-02T00:00:00",
    "noLongerListed": 0,
    "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QE.M.140.14",
    "name": "AL MOULATHAMOUN"
   },
@@ -18503,6 +19021,8 @@
    "SORT_KEY_LAST_MOD": "2014-06-02T00:00:00",
    "noLongerListed": 0,
    "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QE.M.141.14",
    "name": "AL MOURABITOUN"
   },
@@ -18544,6 +19064,8 @@
    "SORT_KEY_LAST_MOD": "2014-05-14T00:00:00",
    "noLongerListed": 0,
    "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QE.A.137.14",
    "name": "AL-NUSRAH FRONT FOR THE PEOPLE OF THE LEVANT"
   },
@@ -18612,6 +19134,8 @@
    "SORT_KEY_LAST_MOD": "2012-03-21T00:00:00",
    "noLongerListed": 0,
    "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 2,
+   "dateUpdatedString": "2009-03-05T00:00:00; 2012-03-21T00:00:00; ",
    "id": "QE.A.4.01",
    "name": "AL-QAIDA"
   },
@@ -18708,6 +19232,8 @@
    "SORT_KEY_LAST_MOD": "2014-06-02T00:00:00",
    "noLongerListed": 0,
    "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 6,
+   "dateUpdatedString": "2004-12-02T00:00:00; 2009-03-05T00:00:00; 2011-12-13T00:00:00; 2013-05-30T00:00:00; 2014-05-13T00:00:00; 2014-06-02T00:00:00; ",
    "id": "QE.J.115.04",
    "name": "AL-QAIDA IN IRAQ"
   },
@@ -18757,6 +19283,8 @@
    "SORT_KEY_LAST_MOD": "2012-10-04T00:00:00",
    "noLongerListed": 0,
    "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2012-10-04T00:00:00",
    "id": "QE.A.129.10",
    "name": "AL-QAIDA IN THE ARABIAN PENINSULA (AQAP)"
   },
@@ -18865,6 +19393,8 @@
    "SORT_KEY_LAST_MOD": "2011-12-13T00:00:00",
    "noLongerListed": 0,
    "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 3,
+   "dateUpdatedString": "2008-10-21T00:00:00; 2008-12-10T00:00:00; 2011-12-13T00:00:00; ",
    "id": "QE.A.5.01",
    "name": "AL RASHID TRUST"
   },
@@ -18926,6 +19456,8 @@
    "SORT_KEY_LAST_MOD": "2014-11-19T00:00:00",
    "noLongerListed": 0,
    "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QE.A.146.14",
    "name": "ANSAR AL CHARIA BENGHAZI"
   },
@@ -18975,6 +19507,8 @@
    "SORT_KEY_LAST_MOD": "2014-11-19T00:00:00",
    "noLongerListed": 0,
    "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QE.A.145.14",
    "name": "ANSAR AL CHARIA DERNA"
   },
@@ -19050,6 +19584,8 @@
    "SORT_KEY_LAST_MOD": "2011-12-13T00:00:00",
    "noLongerListed": 0,
    "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 5,
+   "dateUpdatedString": "2004-03-31T00:00:00; 2009-03-05T00:00:00; 2009-03-18T00:00:00; 2010-10-21T00:00:00; 2011-12-13T00:00:00; ",
    "id": "QE.A.98.03",
    "name": "ANSAR AL-ISLAM"
   },
@@ -19097,6 +19633,8 @@
    "SORT_KEY_LAST_MOD": "2014-09-23T00:00:00",
    "noLongerListed": 0,
    "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QE.A.143.14",
    "name": "ANSAR AL-SHARI’A IN TUNISIA (AAS-T)"
   },
@@ -19123,6 +19661,8 @@
    "SORT_KEY_LAST_MOD": "2013-03-20T00:00:00",
    "noLongerListed": 0,
    "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QE.A.135.13",
    "name": "ANSAR EDDINE"
   },
@@ -19175,6 +19715,8 @@
    "SORT_KEY_LAST_MOD": "2014-06-26T00:00:00",
    "noLongerListed": 0,
    "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QE.A.142.14",
    "name": "ANSARUL MUSLIMINA FI BILADIS SUDAN"
   },
@@ -19217,6 +19759,8 @@
    "SORT_KEY_LAST_MOD": "2011-12-13T00:00:00",
    "noLongerListed": 0,
    "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 2,
+   "dateUpdatedString": "2008-04-07T00:00:00; 2011-12-13T00:00:00; ",
    "id": "QE.A.6.01",
    "name": "ARMED ISLAMIC GROUP"
   },
@@ -19247,6 +19791,8 @@
    "SORT_KEY_LAST_MOD": "2011-12-13T00:00:00",
    "noLongerListed": 0,
    "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 2,
+   "dateUpdatedString": "2009-01-30T00:00:00; 2011-12-13T00:00:00; ",
    "id": "QE.A.7.01",
    "name": "ASBAT AL-ANSAR"
   },
@@ -19334,6 +19880,8 @@
    "SORT_KEY_LAST_MOD": "2012-05-18T00:00:00",
    "noLongerListed": 0,
    "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 3,
+   "dateUpdatedString": "2003-01-24T00:00:00; 2011-04-28T00:00:00; 2012-05-18T00:00:00; ",
    "id": "QE.B.93.02",
    "name": "BENEVOLENCE INTERNATIONAL FOUNDATION"
   },
@@ -19374,6 +19922,8 @@
    "SORT_KEY_LAST_MOD": "2011-12-13T00:00:00",
    "noLongerListed": 0,
    "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 4,
+   "dateUpdatedString": "2004-11-26T00:00:00; 2008-04-07T00:00:00; 2010-01-25T00:00:00; 2011-12-13T00:00:00; ",
    "id": "QE.D.102.03",
    "name": "DJAMAT HOUMAT DAAWA SALAFIA (DHDS)"
   },
@@ -19417,6 +19967,8 @@
    "SORT_KEY_LAST_MOD": "2011-12-13T00:00:00",
    "noLongerListed": 0,
    "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 2,
+   "dateUpdatedString": "2008-10-03T00:00:00; 2011-12-13T00:00:00; ",
    "id": "QE.E.88.02",
    "name": "EASTERN TURKISTAN ISLAMIC MOVEMENT (ETIM)"
   },
@@ -19465,6 +20017,8 @@
    "SORT_KEY_LAST_MOD": "2011-12-13T00:00:00",
    "noLongerListed": 0,
    "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 2,
+   "dateUpdatedString": "2009-03-05T00:00:00; 2011-12-13T00:00:00; ",
    "id": "QE.A.3.01",
    "name": "EGYPTIAN ISLAMIC JIHAD"
   },
@@ -19486,6 +20040,8 @@
    "SORT_KEY_LAST_MOD": "2011-07-29T00:00:00",
    "noLongerListed": 0,
    "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QE.E.131.11",
    "name": "EMARAT KAVKAZ"
   },
@@ -19532,6 +20088,8 @@
    "SORT_KEY_LAST_MOD": "2014-02-14T00:00:00",
    "noLongerListed": 0,
    "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 9,
+   "dateUpdatedString": "2004-11-26T00:00:00; 2005-12-20T00:00:00; 2006-07-25T00:00:00; 2009-03-24T00:00:00; 2010-03-11T00:00:00; 2010-03-25T00:00:00; 2011-04-28T00:00:00; 2012-02-21T00:00:00; 2014-02-14T00:00:00; ",
    "id": "QE.G.91.02",
    "name": "GLOBAL RELIEF FOUNDATION (GRF)"
   },
@@ -19589,6 +20147,8 @@
    "SORT_KEY_LAST_MOD": "2011-12-13T00:00:00",
    "noLongerListed": 0,
    "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2011-12-13T00:00:00",
    "id": "QE.H.130.10",
    "name": "HARAKAT-UL JIHAD ISLAMI"
   },
@@ -19639,6 +20199,8 @@
    "SORT_KEY_LAST_MOD": "2011-12-13T00:00:00",
    "noLongerListed": 0,
    "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2011-12-13T00:00:00",
    "id": "QE.H.8.01",
    "name": "HARAKAT UL-MUJAHIDIN / HUM"
   },
@@ -19659,6 +20221,8 @@
    "SORT_KEY_LAST_MOD": "2001-10-06T00:00:00",
    "noLongerListed": 0,
    "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QE.I.9.01",
    "name": "ISLAMIC ARMY OF ADEN"
   },
@@ -19707,6 +20271,8 @@
    "SORT_KEY_LAST_MOD": "2011-12-13T00:00:00",
    "noLongerListed": 0,
    "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2011-12-13T00:00:00",
    "id": "QE.I.99.03",
    "name": "ISLAMIC INTERNATIONAL BRIGADE (IIB)"
   },
@@ -19779,6 +20345,8 @@
    "SORT_KEY_LAST_MOD": "2011-12-13T00:00:00",
    "noLongerListed": 0,
    "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 3,
+   "dateUpdatedString": "2006-04-19T00:00:00; 2008-02-20T00:00:00; 2011-12-13T00:00:00; ",
    "id": "QE.I.119.05",
    "name": "ISLAMIC JIHAD GROUP"
   },
@@ -19805,6 +20373,8 @@
    "SORT_KEY_LAST_MOD": "2011-12-13T00:00:00",
    "noLongerListed": 0,
    "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2011-12-13T00:00:00",
    "id": "QE.I.10.01",
    "name": "ISLAMIC MOVEMENT OF UZBEKISTAN"
   },
@@ -19833,6 +20403,8 @@
    "SORT_KEY_LAST_MOD": "2011-12-13T00:00:00",
    "noLongerListed": 0,
    "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2011-12-13T00:00:00",
    "id": "QE.J.19.01",
    "name": "JAISH-I-MOHAMMED"
   },
@@ -19876,6 +20448,8 @@
    "SORT_KEY_LAST_MOD": "2014-05-22T00:00:00",
    "noLongerListed": 0,
    "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QE.B.138.14",
    "name": "JAMA'ATU AHLIS SUNNA LIDDA'AWATI WAL-JIHAD"
   },
@@ -19915,6 +20489,8 @@
    "SORT_KEY_LAST_MOD": "2011-12-13T00:00:00",
    "noLongerListed": 0,
    "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2011-12-13T00:00:00",
    "id": "QE.J.20.01",
    "name": "JAM'YAH TA'AWUN AL-ISLAMIA"
   },
@@ -19959,6 +20535,8 @@
    "SORT_KEY_LAST_MOD": "2011-12-13T00:00:00",
    "noLongerListed": 0,
    "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2011-12-13T00:00:00",
    "id": "QE.J.92.02",
    "name": "JEMAAH ISLAMIYAH"
   },
@@ -20006,6 +20584,8 @@
    "SORT_KEY_LAST_MOD": "2012-03-12T00:00:00",
    "noLongerListed": 0,
    "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QE.J.133.12",
    "name": "JEMMAH ANSHORUT TAUHID (JAT)"
   },
@@ -20142,6 +20722,8 @@
    "SORT_KEY_LAST_MOD": "2012-03-14T00:00:00",
    "noLongerListed": 0,
    "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 3,
+   "dateUpdatedString": "2005-11-03T00:00:00; 2008-12-10T00:00:00; 2012-03-14T00:00:00; ",
    "id": "QE.L.118.05",
    "name": "LASHKAR-E-TAYYIBA"
   },
@@ -20165,6 +20747,8 @@
    "SORT_KEY_LAST_MOD": "2011-12-13T00:00:00",
    "noLongerListed": 0,
    "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2011-12-13T00:00:00",
    "id": "QE.L.96.03",
    "name": "LASHKAR I JHANGVI (LJ)"
   },
@@ -20197,6 +20781,8 @@
    "SORT_KEY_LAST_MOD": "2011-12-13T00:00:00",
    "noLongerListed": 0,
    "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 2,
+   "dateUpdatedString": "2009-03-05T00:00:00; 2011-12-13T00:00:00; ",
    "id": "QE.L.11.01",
    "name": "LIBYAN ISLAMIC FIGHTING GROUP"
   },
@@ -20233,6 +20819,8 @@
    "SORT_KEY_LAST_MOD": "2011-12-13T00:00:00",
    "noLongerListed": 0,
    "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 2,
+   "dateUpdatedString": "2009-03-05T00:00:00; 2011-12-13T00:00:00; ",
    "id": "QE.M.12.01",
    "name": "MAKHTAB AL-KHIDAMAT"
   },
@@ -20268,6 +20856,8 @@
    "SORT_KEY_LAST_MOD": "2009-03-05T00:00:00",
    "noLongerListed": 0,
    "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2009-03-05T00:00:00",
    "id": "QE.M.89.02",
    "name": "MOROCCAN ISLAMIC COMBATANT GROUP"
   },
@@ -20296,6 +20886,8 @@
    "SORT_KEY_LAST_MOD": "2012-12-05T00:00:00",
    "noLongerListed": 0,
    "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QE.M.134.12",
    "name": "MOUVEMENT POUR L’UNIFICATION ET LE JIHAD EN AFRIQUE DE L’OUEST (MUJAO)"
   },
@@ -20336,6 +20928,8 @@
    "SORT_KEY_LAST_MOD": "2013-10-21T00:00:00",
    "noLongerListed": 0,
    "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QE.M.136.13",
    "name": "MUHAMMAD JAMAL NETWORK (MJN)"
   },
@@ -20361,6 +20955,8 @@
    "SORT_KEY_LAST_MOD": "2012-03-21T00:00:00",
    "noLongerListed": 0,
    "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2012-03-21T00:00:00",
    "id": "QE.R.21.01",
    "name": "RABITA TRUST"
   },
@@ -20411,6 +21007,8 @@
    "SORT_KEY_LAST_MOD": "2011-12-13T00:00:00",
    "noLongerListed": 0,
    "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2011-12-13T00:00:00",
    "id": "QE.R.128.08",
    "name": "RAJAH SOLAIMAN MOVEMENT"
   },
@@ -20463,6 +21061,8 @@
    "SORT_KEY_LAST_MOD": "2011-12-13T00:00:00",
    "noLongerListed": 0,
    "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 3,
+   "dateUpdatedString": "2006-07-25T00:00:00; 2009-03-05T00:00:00; 2011-12-13T00:00:00; ",
    "id": "QE.R.70.02",
    "name": "REVIVAL OF ISLAMIC HERITAGE SOCIETY"
   },
@@ -20510,6 +21110,8 @@
    "SORT_KEY_LAST_MOD": "2011-12-13T00:00:00",
    "noLongerListed": 0,
    "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 2,
+   "dateUpdatedString": "2006-07-25T00:00:00; 2011-12-13T00:00:00; ",
    "id": "QE.R.100.03",
    "name": "RIYADUS-SALIKHIN RECONNAISSANCE AND SABOTAGE BATTALION OF CHECHEN MARTYRS (RSRSBCM)"
   },
@@ -20549,6 +21151,8 @@
    "SORT_KEY_LAST_MOD": "2011-12-13T00:00:00",
    "noLongerListed": 0,
    "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 2,
+   "dateUpdatedString": "2006-07-25T00:00:00; 2011-12-13T00:00:00; ",
    "id": "QE.S.101.03",
    "name": "SPECIAL PURPOSE ISLAMIC REGIMENT (SPIR)"
   },
@@ -20610,6 +21214,8 @@
    "SORT_KEY_LAST_MOD": "2009-03-24T00:00:00",
    "noLongerListed": 0,
    "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2009-03-24T00:00:00",
    "id": "QE.T.108.04",
    "name": "TAIBAH INTERNATIONAL-BOSNIA OFFICES"
   },
@@ -20648,6 +21254,8 @@
    "SORT_KEY_LAST_MOD": "2011-07-29T00:00:00",
    "noLongerListed": 0,
    "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
    "id": "QE.T.132.11",
    "name": "TEHRIK-E TALIBAN PAKISTAN (TTP)"
   },
@@ -20714,6 +21322,8 @@
    "SORT_KEY_LAST_MOD": "2011-12-13T00:00:00",
    "noLongerListed": 0,
    "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 4,
+   "dateUpdatedString": "2007-04-26T00:00:00; 2008-04-07T00:00:00; 2009-07-17T00:00:00; 2011-12-13T00:00:00; ",
    "id": "QE.T.14.01",
    "name": "THE ORGANIZATION OF AL-QAIDA IN THE ISLAMIC MAGHREB"
   },
@@ -20757,6 +21367,8 @@
    "SORT_KEY_LAST_MOD": "2011-12-13T00:00:00",
    "noLongerListed": 0,
    "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 3,
+   "dateUpdatedString": "2004-11-26T00:00:00; 2009-03-05T00:00:00; 2011-12-13T00:00:00; ",
    "id": "QE.T.90.02",
    "name": "TUNISIAN COMBATANT GROUP"
   },
@@ -20782,6 +21394,8 @@
    "SORT_KEY_LAST_MOD": "2011-12-13T00:00:00",
    "noLongerListed": 0,
    "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2011-12-13T00:00:00",
    "id": "QE.U.68.01",
    "name": "UMMAH TAMEER E-NAU (UTN)"
   },
@@ -20820,6 +21434,8 @@
    "SORT_KEY_LAST_MOD": "2012-03-21T00:00:00",
    "noLongerListed": 0,
    "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 1,
+   "dateUpdatedString": "2012-03-21T00:00:00",
    "id": "QE.W.15.01",
    "name": "WAFA HUMANITARIAN ORGANIZATION"
   },
@@ -20830,7 +21446,9 @@
    "REFERENCE_NUMBER": "QE.I.126.06",
    "COMMENTS1": "",
    "indiv0OrEnt1": 1,
-   "noLongerListed": 1
+   "noLongerListed": 1,
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": ""
   },
   {
    "name": "Aid Organization of the Ulema, Pakistan (no longer listed)",
@@ -20839,7 +21457,9 @@
    "REFERENCE_NUMBER": "QE.A.73.02",
    "COMMENTS1": "Until 21 Oct. 2008, this entity appeared also as &quot;Aid Organization of the Ulema, Pakistan&quot; (QE.A.73.02.), listed on 24 Apr. 2002 and amended on 25 Jul. 2006. The two entries Al Rashid Trust (QE.A.5.01.) and Aid Organization of the Ulema, Pakistan (QE.A.73.02.) were consolidated into this entity on 21 Oct. 2008. Founded by Mufti Rashid Ahmad Ledahyanoy (QI.L.30.01). Associated with Jaish-i-Mohammed (QE.J.19.01). Banned in Pakistan since Oct. 2001. Despite the closure of its offices in Pakistan in February 2007 it has continued its activities. Review pursuant to Security Council resolution 1822 (2008) was concluded on 6 May 2010.",
    "indiv0OrEnt1": 1,
-   "noLongerListed": 1
+   "noLongerListed": 1,
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": ""
   },
   {
    "name": "Benevolence International Fund  (no longer listed)",
@@ -20848,7 +21468,9 @@
    "REFERENCE_NUMBER": "QE.B.94.02",
    "COMMENTS1": "",
    "indiv0OrEnt1": 1,
-   "noLongerListed": 1
+   "noLongerListed": 1,
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": ""
   }
  ],
  "dateGenerated": "2014-12-12T00:00:00",
