@@ -615,7 +615,7 @@ var countLinks = function (data) {
       // delete a link if source and target are the same
       if (link.source === link.target) {
         delete data.link;
-        console.log(__filename, "line", __line, "deleted ", data.link);
+        console.log(__filename, "line", __line, "deleted ", data.link, " because link.source === link.target");
       } else {
         if (node.id === link.source || node.id === link.target) {
           linkConcatKey1 = link.source + link.target;
@@ -648,7 +648,7 @@ var checkTargetsExist = function (nodes, links) {
       }
     } else {
       // if (consoleLog) {
-      console.log("\n ", __filename, "line", __line, "; ", link.target, " DOES NOT EXIST.");
+      console.log("\n ", __filename, "line", __line, ", link.target: ", link.target, " DOES NOT EXIST.");
       // }
       throw "missing target error";
     }
@@ -767,7 +767,7 @@ var processPlaceOfBirthArray = function (d) {
   var pobArrayString = "";
   if (typeof d["INDIVIDUAL_PLACE_OF_BIRTH"] !== 'undefined') {
     if (Object.prototype.toString.call(d["INDIVIDUAL_PLACE_OF_BIRTH"]) === '[object Array]') {
-      console.log("\n ", __filename, "line", __line, ";  Array!", d["INDIVIDUAL_PLACE_OF_BIRTH"]);
+      // console.log("\n ", __filename, "line", __line, ";  Array!", d["INDIVIDUAL_PLACE_OF_BIRTH"]);
       var pobArray = d["INDIVIDUAL_PLACE_OF_BIRTH"];
       // var pobArrayString;
       for (var i = 0; i < pobArray.length; i++) {
@@ -786,11 +786,11 @@ var createIndivPlaceOfBirthString = function (singlePob) {
   if (typeof singlePob !== 'undefined' && singlePob !== "") {
     var keys = getKeys(singlePob);
     keys.forEach(function (key) {
-        if (typeof singlePob[key] !== 'undefined' && singlePob[key] !== "" ) {
+        if (typeof singlePob[key] !== 'undefined' && singlePob[key] !== "") {
           pobString += singlePob[key];
           pobString += ", ";
         }
-        }
+      }
     );
   }
   return pobString;
@@ -809,9 +809,9 @@ var processDateUpdatedArray = function (d) {
   var dateUpdatedArrayString = "";
   if (typeof d["LAST_DAY_UPDATED"] === 'undefined') {
     d.lastDateUpdatedCount = 0;
-   //  return "";
+    //  return "";
   } else if (Object.prototype.toString.call(d["LAST_DAY_UPDATED"]["VALUE"]) === '[object Array]') {
-    console.log("\n ", __filename, "line", __line, "; processDateUpdatedArray() found  Array!", d["LAST_DAY_UPDATED"]);
+    // console.log("\n ", __filename, "line", __line, "; processDateUpdatedArray() found  Array!", d["LAST_DAY_UPDATED"]);
     var lastDateUpdatedArray = d["LAST_DAY_UPDATED"]["VALUE"];
     d.lastDateUpdatedCount = lastDateUpdatedArray.length;
     for (var i = 0; i < lastDateUpdatedArray.length; i++) {
@@ -834,7 +834,7 @@ var processAliasArray = function (d) {
     return "";
   }
   if (Object.prototype.toString.call(d["INDIVIDUAL_ALIAS"]) === '[object Array]') {
-    console.log("\n ", __filename, "line", __line, "; processAliasArray() found  Array!", d["INDIVIDUAL_PLACE_OF_BIRTH"]);
+    // console.log("\n ", __filename, "line", __line, "; processAliasArray() found  Array!", d["INDIVIDUAL_PLACE_OF_BIRTH"]);
     var aliasArray = d["INDIVIDUAL_ALIAS"];
     d.aliasCount = aliasArray.length;
     for (var i = 0; i < aliasArray.length; i++) {
@@ -859,7 +859,6 @@ var createIndivAliasString = function (singleAlias) {
 var createIndivDateOfBirthString = function (d) {
   var dateString = "",
     rawDateString;
-  // console.log("750 ", d["INDIVIDUAL_DATE_OF_BIRTH"]["DATE"]);
   if (typeof d["INDIVIDUAL_DATE_OF_BIRTH"]["DATE"] !== 'undefined' && d["INDIVIDUAL_DATE_OF_BIRTH"]["DATE"] !== "") {
     rawDateString = formatDate(d["INDIVIDUAL_DATE_OF_BIRTH"]["DATE"]);
     dateString += vizFormatDateSetup(rawDateString);
@@ -881,7 +880,6 @@ var formatDate = function (intlDateString) {
     dateResultString = dateFormat(date, "shortDate");
   } catch (err) {
     console.log("769 Error: ", err, "; intlDateString = ", intlDateString);
-
   }
   // logger.log_message(__filename + " line " + __line + "; " + dateResultString);
   return dateResultString;
@@ -899,7 +897,7 @@ var vizFormatDateSetup = function (dateString) {
 
   var dateString = curr_date + " " + m_names[curr_month]
     + " " + curr_year;
-  console.log("viz.js 947 vizFormatDate() dateString = ", dateString);
+  // console.log("viz.js 947 vizFormatDate() dateString = ", dateString);
   return dateString;
 };
 

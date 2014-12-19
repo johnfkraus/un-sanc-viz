@@ -60,7 +60,7 @@ var runApp = function () {
       if (consoleLog) {
         console.log("\n ", __filename, __line, "; function 5#:", ++functionCount);
       }
-      console.log("\n ", __filename, "line", __line, "; running filewalker.filewalker()");
+      // console.log("\n ", __filename, "line", __line, "; running filewalker.filewalker()");
       filewalker.filewalker();
       callback();
     }

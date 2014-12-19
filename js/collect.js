@@ -64,7 +64,7 @@ var convertXMLToJson = function () {
             }
           }
         });
-        if (true) {
+        if (consoleLog) {
           console.log("\n ", __filename, "line", "line", __line, "; newPath = ", newPath, "; fse.unlink returned: ", result);
         }
         callback();
