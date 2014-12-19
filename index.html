@@ -36,8 +36,7 @@
 </head>
 <body>
 <div id="container" class="container">
-    <table id="top-stuff"
-           style="z-index: 10; padding: 5px; width: 100%; margin-bottom: 0px;    background-color: transparent;">
+    <table id="top-stuff">
         <tr>
             <td id="unLogo">
                 <img src="images/image001-103x89.gif"/>
@@ -104,7 +103,7 @@
                 </div>
             </td>
             <td id="highlightType">
-                <div>Highlight Subset
+                <div>Subset Highlighting
                     <form id="highlight"> <!--  action="highlight"  -->
                         <input type="radio" checked name="noneEntIndiv" value="">&nbsp;None<br>
                         <input type="radio" name="noneEntIndiv" value="QE.">&nbsp;Entities<br>
@@ -119,6 +118,7 @@
             <td align="center" style="width: 350px;">
                 <div>
                     <h4>Visualization parameters</h4>
+
                     <div id="node_color" class="control" style="float: left;">
                         <h5>Node<br> color</h5>
                         <select id="node_color_select" style="width: 120px;">
@@ -177,10 +177,8 @@
             </td>
         </tr>
     </table>
-    <!--div id="main" role="main"-->
     <div id="svg"></div>
     <div id="doc-container">
-        <!--div id="doc" class="doc"-->
         <a id="doc-close" style="display: inline; margin-right: 20px; margin-top: 5px;" href="#">&times;</a>
 
         <div id="doc" class="doc">
@@ -207,12 +205,18 @@
             </div>
             <div id="aliasDiv">
                 <span class="boldListing" style="font-weight: bold;">
-                    Aliases (Quality)&nbsp;</span>
+                    Aliases (quality)&nbsp;</span>
                 <span class="boldListing" id="aliasCount"></span>
                 <span class="boldListing">:&nbsp;</span>
                  <span id="aliasString">
                 </span>
             </div>
+            <div id="dateListedDiv">
+                <span style="font-weight: bold;">Date listed: </span>
+                 <span id="dateListed">
+                </span>
+            </div>
+
             <div id="datesUpdatedDiv">
                 <span style="font-weight: bold;">Date(s) updated: </span>
                  <span id="dateUpdated">

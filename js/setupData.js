@@ -79,23 +79,33 @@ var fixData = function () {
         data.indivs.forEach(function (indiv) {
           indiv.noLongerListed = 0;
         });
-        data.indivs = data.indivs.concat(missingNodes.getMissingIndivs());
+        var missingIndivs = missingNodes.getMissingIndivs();
+        missingIndivs.forEach(function (missing_indiv) {
+          missing_indiv.noLongerListed = 1;
+        });
+        var missingEnts = missingNodes.getMissingEnts();
+        missingEnts.forEach(function (missing_ent) {
+          missing_ent.noLongerListed = 1;
+        });
+        data.indivs = data.indivs.concat(missingIndivs);
+        // data.indivs = data.indivs.concat(missingNodes.getMissingIndivs());
         data.indivs.forEach(function (indiv) {
           indiv.indiv0OrEnt1 = 0;
-          indiv.indivDobString = createIndivDobString(indiv);
+          indiv.indivDobString = createIndivDateOfBirthString(indiv);
           indiv.indivPlaceOfBirthString = processPlaceOfBirthArray(indiv);
           indiv.indivAliasString = processAliasArray(indiv);
           // console.log("indiv.indivDobString = ", indiv.indivDobString);
         });
-        data.entities = data.entities.concat(missingNodes.getMissingEnts());
+        data.entities = data.entities.concat(missingEnts);
+        // data.entities = data.entities.concat(missingNodes.getMissingEnts());
         // indiv0OrEnt1 1 = entity; 0 = individual
         data.entities.forEach(function (entity) {
           entity.indiv0OrEnt1 = 1;
         });
         data.nodes = data.indivs.concat(data.entities);
-        data.dateGenerated = consolidatedList.CONSOLIDATED_LIST.$.dateGenerated;
+        data.dateGenerated = formatMyDate(consolidatedList.CONSOLIDATED_LIST.$.dateGenerated);
+        data.dateCollected = formatMyDate(new Date());
         data.nodes.forEach(function (node) {
-
           node.dateUpdatedString = processDateUpdatedArray(node);
         });
 
@@ -175,21 +185,6 @@ var fixData = function () {
         saveJsonFile(data, "data05nodeBag.json");
         callback();
       },
-      /*
-       function (callback) {
-       counter = 0;
-       var myBag = new Bag();
-       myBag.add(1, data.nodes[1]);
-       myBag.add(2, "b");
-       myBag.add(2, "c");
-       myBag.forEach(function (item) {
-       console.log("Key: " + item.key);
-       console.log("Value: " + item.value);
-       });
-       callback();
-       },
-       */
-      // save intermediate data file for debugging
       function (callback) {
         saveJsonFile(data, "data06myBag.json");
         callback();
@@ -362,8 +357,31 @@ var fixData = function () {
           callback();
         }();
       }]
-  )
-  ;
+  );
+};
+
+// END OF ASYNC ARRAY
+// END OF ASYNC ARRAY
+
+var formatMyDate = function (dateString) {
+  var now = new Date();
+  dateFormat.masks.friendly_detailed = "dddd, mmmm dS, yyyy, h:MM:ss TT";
+  dateFormat.masks.friendly_display = "dddd, mmmm dS, yyyy";
+  dateFormat.masks.file_generated_date = "yyyy-mm-dd";
+  dateFormat.masks.common = "mm-dd-yyyy";
+// Basic usage
+// dateFormat.masks.hammerTime = 'yyyy-mm-dd-HHMMss';
+// var displayDateString = dateFormat(now, "friendly_display");
+// Saturday, June 9th, 2007, 5:46:21 PM
+// var fileDateString = dateFormat(now, "hammerTime");
+//    var dateAqListGeneratedString = data.dateGenerated;
+  var date = new Date(dateString);
+//    dateFormat.masks.friendly_display = "dddd, mmmm dS, yyyy";
+  var formattedDate = dateFormat(date, "common");
+//    var message = "Collected AQList.xml labeled as generated on: " + dateAqListGeneratedString + " [" + dateAqListGenerated + "]";
+//    data.message = message;
+  logger.log_message(__filename + " line " + __line + "; formattedDate = " + formattedDate);
+  return formattedDate;
 };
 
 var cleanUpIds = function (nodes) {
@@ -407,7 +425,11 @@ var cleanUpRefNums = function (nodes) {
     } catch (error) {
       console.log("\n ", __filename, "line", __line, "; Error: ", error, "; node =", node, "; counter = ", counter);
     }
-    node.REFERENCE_NUMBER = refNumRegexMatch[0].trim();
+    try {
+      node.REFERENCE_NUMBER = refNumRegexMatch[0].trim();
+    } catch (err) {
+
+    }
     if (counter <= numObjectsToShow) {
       if (consoleLog) {
         console.log("\n ", __filename, "line", __line, "; node with ids", node);
@@ -600,7 +622,6 @@ var countLinks = function (data) {
           linkConcatKey2 = link.target + link.source;
           keyAdded1 = keySet.add(linkConcatKey1);
           keyAdded2 = keySet.add(linkConcatKey2);
-          // console.log(keyAdded1, keyAdded2);
           if (keyAdded1 && keyAdded2) {
             linkCounter++;
           }
@@ -636,7 +657,6 @@ var checkTargetsExist = function (nodes, links) {
 
 // put links into a set
 // https://www.npmjs.org/package/backpack-node
-
 // within each node create a Set() of ids of related/linked parties
 var addSourceTargetArray = function (data) {
   var comments;
@@ -645,7 +665,6 @@ var addSourceTargetArray = function (data) {
   var count;
   data.nodes.forEach(function (node) {
     node.sourceTargetArray = [];
-
     comments = node.COMMENTS1;
     if ((typeof comments !== 'undefined') && (typeof comments.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/gi) !== 'undefined')) {
       linkRegexMatch = comments.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/gi);
@@ -736,8 +755,9 @@ var archiveRawSource = function (fileNameAndPath) {
 var createDateGeneratedMessage = function () {
   var dateAqListGeneratedString = data.dateGenerated;
   var dateAqListGenerated = new Date(dateAqListGeneratedString);
+  dateFormat.masks.shortDate = "mm-dd-yyyy";
   dateFormat.masks.friendly_display = "dddd, mmmm dS, yyyy";
-  generatedFileDateString = dateFormat(dateAqListGenerated, "fullDate");
+  generatedFileDateString = vizFormatDateSetup(dateAqListGenerated);
   var message = "Collected AQList.xml labeled as generated on: " + dateAqListGeneratedString + " [" + dateAqListGenerated + "]";
   data.message = message;
   logger.log_message(__filename + " line " + __line + "; " + message);
@@ -745,28 +765,34 @@ var createDateGeneratedMessage = function () {
 
 var processPlaceOfBirthArray = function (d) {
   var pobArrayString = "";
-  if (Object.prototype.toString.call(d["INDIVIDUAL_PLACE_OF_BIRTH"]) === '[object Array]') {
-    console.log("\n ", __filename, "line", __line, ";  Array!", d["INDIVIDUAL_PLACE_OF_BIRTH"]);
-    var pobArray = d["INDIVIDUAL_PLACE_OF_BIRTH"];
-    // var pobArrayString;
-    for (var i = 0; i < pobArray.length; i++) {
-      pobArrayString += createIndivPlaceOfBirthString(pobArray[i]);
-      pobArrayString += "; ";
+  if (typeof d["INDIVIDUAL_PLACE_OF_BIRTH"] !== 'undefined') {
+    if (Object.prototype.toString.call(d["INDIVIDUAL_PLACE_OF_BIRTH"]) === '[object Array]') {
+      console.log("\n ", __filename, "line", __line, ";  Array!", d["INDIVIDUAL_PLACE_OF_BIRTH"]);
+      var pobArray = d["INDIVIDUAL_PLACE_OF_BIRTH"];
+      // var pobArrayString;
+      for (var i = 0; i < pobArray.length; i++) {
+        pobArrayString += createIndivPlaceOfBirthString(pobArray[i]);
+        pobArrayString += "; ";
+      }
+    } else {
+      pobArrayString += createIndivPlaceOfBirthString(d["INDIVIDUAL_PLACE_OF_BIRTH"]);
     }
-  } else {
-    pobArrayString += createIndivPlaceOfBirthString(d["INDIVIDUAL_PLACE_OF_BIRTH"]);
   }
   return pobArrayString;
 };
 
 var createIndivPlaceOfBirthString = function (singlePob) {
   var pobString = "";
-  var keys = getKeys(singlePob);
-  keys.forEach(function (key) {
-      pobString += singlePob[key];
-      pobString += ", ";
-    }
-  );
+  if (typeof singlePob !== 'undefined' && singlePob !== "") {
+    var keys = getKeys(singlePob);
+    keys.forEach(function (key) {
+        if (typeof singlePob[key] !== 'undefined' && singlePob[key] !== "" ) {
+          pobString += singlePob[key];
+          pobString += ", ";
+        }
+        }
+    );
+  }
   return pobString;
 };
 
@@ -779,36 +805,27 @@ var getKeys = function (pob) {
   return keys;
 };
 
-
 var processDateUpdatedArray = function (d) {
   var dateUpdatedArrayString = "";
   if (typeof d["LAST_DAY_UPDATED"] === 'undefined') {
     d.lastDateUpdatedCount = 0;
-    return "";
-  }
-  if (Object.prototype.toString.call(d["LAST_DAY_UPDATED"]["VALUE"]) === '[object Array]') {
+   //  return "";
+  } else if (Object.prototype.toString.call(d["LAST_DAY_UPDATED"]["VALUE"]) === '[object Array]') {
     console.log("\n ", __filename, "line", __line, "; processDateUpdatedArray() found  Array!", d["LAST_DAY_UPDATED"]);
     var lastDateUpdatedArray = d["LAST_DAY_UPDATED"]["VALUE"];
     d.lastDateUpdatedCount = lastDateUpdatedArray.length;
     for (var i = 0; i < lastDateUpdatedArray.length; i++) {
-      dateUpdatedArrayString += lastDateUpdatedArray[i];
-      dateUpdatedArrayString += "; ";
+      dateUpdatedArrayString += vizFormatDateSetup(lastDateUpdatedArray[i]);
+      if (i < (lastDateUpdatedArray.length - 1)) {
+        dateUpdatedArrayString += ", ";
+      }
     }
   } else {
     d.lastDateUpdatedCount = 1;
-    dateUpdatedArrayString += d["LAST_DAY_UPDATED"]["VALUE"];
+    dateUpdatedArrayString += vizFormatDateSetup(d["LAST_DAY_UPDATED"]["VALUE"]);
   }
   return dateUpdatedArrayString;
 };
-
-var createDateUpdatedString = function (singleAlias) {
-  var aliasString, aliasName, aliasQuality; // = "";
-  aliasName = singleAlias.ALIAS_NAME;
-  aliasQuality = singleAlias.QUALITY;
-  aliasString = aliasName + " (" + aliasQuality + ")";
-  return aliasString;
-};
-
 
 var processAliasArray = function (d) {
   var aliasArrayString = "";
@@ -839,16 +856,17 @@ var createIndivAliasString = function (singleAlias) {
   return aliasString;
 };
 
-
-var createIndivDobString = function (d) {
-  var dateString = "";
+var createIndivDateOfBirthString = function (d) {
+  var dateString = "",
+    rawDateString;
   // console.log("750 ", d["INDIVIDUAL_DATE_OF_BIRTH"]["DATE"]);
-  if (typeof d["INDIVIDUAL_DATE_OF_BIRTH"]["DATE"] !== 'undefined') {
-    dateString += formatDate(d["INDIVIDUAL_DATE_OF_BIRTH"]["DATE"]);
+  if (typeof d["INDIVIDUAL_DATE_OF_BIRTH"]["DATE"] !== 'undefined' && d["INDIVIDUAL_DATE_OF_BIRTH"]["DATE"] !== "") {
+    rawDateString = formatDate(d["INDIVIDUAL_DATE_OF_BIRTH"]["DATE"]);
+    dateString += vizFormatDateSetup(rawDateString);
   } else if (typeof d["INDIVIDUAL_DATE_OF_BIRTH"]["YEAR"] !== 'undefined') {
     dateString += d["INDIVIDUAL_DATE_OF_BIRTH"]["YEAR"];
   }
-  if (typeof d["INDIVIDUAL_DATE_OF_BIRTH"]["TYPE_OF_DATE"] !== 'undefined') {
+  if (typeof d["INDIVIDUAL_DATE_OF_BIRTH"]["TYPE_OF_DATE"] !== 'undefined' && d["INDIVIDUAL_DATE_OF_BIRTH"]["TYPE_OF_DATE"] !== "") {
     dateString += " (" + d["INDIVIDUAL_DATE_OF_BIRTH"]["TYPE_OF_DATE"] + ")";
   }
   return dateString;
@@ -867,6 +885,22 @@ var formatDate = function (intlDateString) {
   }
   // logger.log_message(__filename + " line " + __line + "; " + dateResultString);
   return dateResultString;
+};
+
+var vizFormatDateSetup = function (dateString) {
+  var m_names = new Array("January", "February", "March",
+    "April", "May", "June", "July", "August", "September",
+    "October", "November", "December");
+
+  var d = new Date(dateString);
+  var curr_date = d.getDate();
+  var curr_month = d.getMonth();
+  var curr_year = d.getFullYear();
+
+  var dateString = curr_date + " " + m_names[curr_month]
+    + " " + curr_year;
+  console.log("viz.js 947 vizFormatDate() dateString = ", dateString);
+  return dateString;
 };
 
 module.exports = {

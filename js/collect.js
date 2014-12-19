@@ -36,10 +36,10 @@ function (n) {
 require('console-stamp')(console, '[HH:MM:ss.l]');
 
 var now = new Date();
-
 dateFormat.masks.friendly_detailed = "dddd, mmmm dS, yyyy, h:MM:ss TT";
 dateFormat.masks.friendly_display = "dddd, mmmm dS, yyyy";
 dateFormat.masks.file_generated_date = "yyyy-mm-dd";
+dateFormat.masks.common = "mm-dd-yyyy";
 // Basic usage
 // dateFormat.masks.hammerTime = 'yyyy-mm-dd-HHMMss';
 // var displayDateString = dateFormat(now, "friendly_display");
@@ -70,8 +70,14 @@ var convertXMLToJson = function () {
         callback();
       },
       function (callback) {
-        var res = request('GET', 'http://www.un.org/sc/committees/1267/AQList.xml');
-        AQList_xml = res.body.toString();
+        try {
+          var res = request('GET', 'http://www.un.org/sc/committees/1267/AQList.xml');
+          AQList_xml = res.body.toString();
+        } catch (err) {
+          console.log("\n ", __filename, "line", __line, "; Error: ", err, "; reading stored backup file");
+          var backupRawXmlFileName = __dirname + "/../data/backup/AQList.xml";
+          AQList_xml = fse.readFileSync(backupRawXmlFileName, fsOptions); //, function (err, data) {
+        }
         if (consoleLog) {
           console.log("res = ", res);
           console.log("AQList_xml res.body.toString() = ", AQList_xml);
@@ -79,7 +85,6 @@ var convertXMLToJson = function () {
         }
         callback();
       },
-
       function (callback) {
         var fileNameAndPathForProcessing = __dirname + "/../data/output/AQList.xml";
         writeAQListXML(fileNameAndPathForProcessing);
@@ -95,7 +100,7 @@ var convertXMLToJson = function () {
           console.log("\n ", __filename, "line", __line, "; function 1#:", ++functionCount, descr, fsOptions);
         }
         AQList_xml = fse.readFileSync(rawXmlFileName, fsOptions); //, function (err, data) {
-         if (consoleLog) {
+        if (consoleLog) {
           console.log("\n ", __filename, "line", __line, " AQList_xml = ", trunc.n400(AQList_xml.toString()));
         }
         callback();

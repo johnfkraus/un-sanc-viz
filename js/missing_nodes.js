@@ -51,7 +51,7 @@ var missing_indivs = [{
   "UN_LIST_TYPE": "Al-Qaida",
   "LISTED_ON": "2016-10-06T00:00:00",
   "NAME_ORIGINAL_SCRIPT": "نشوان عبد الرزاق عبد الباقي",
-  "COMMENTS1": "comments",
+  "COMMENTS1": "",
   "NATIONALITY": {
     "VALUE": ""
   },
@@ -70,12 +70,12 @@ var missing_indivs = [{
   }],
   "INDIVIDUAL_ADDRESS": "",
   "INDIVIDUAL_DATE_OF_BIRTH": {
-    "TYPE_OF_DATE": "type of date",
-    "YEAR": "year of birth"
+    "TYPE_OF_DATE": "",
+    "YEAR": ""
   },
   "INDIVIDUAL_PLACE_OF_BIRTH": {
-    "CITY": "city name",
-    "STATE_PROVINCE": "state province"
+    "CITY": "",
+    "STATE_PROVINCE": ""
   },
   "INDIVIDUAL_DOCUMENT": "",
   "SORT_KEY": "__AAA",
@@ -94,7 +94,7 @@ var missing_indivs = [{
   "UN_LIST_TYPE": "Al-Qaida",
   "LISTED_ON": "2016-10-06T00:00:00",
   "NAME_ORIGINAL_SCRIPT": "نشوان عبد الرزاق عبد الباقي",
-  "COMMENTS1": "comments",
+  "COMMENTS1": "",
   "NATIONALITY": {
     "VALUE": ""
   },
@@ -113,12 +113,12 @@ var missing_indivs = [{
   }],
   "INDIVIDUAL_ADDRESS": "",
   "INDIVIDUAL_DATE_OF_BIRTH": {
-    "TYPE_OF_DATE": "type of date",
-    "YEAR": "year of birth"
+    "TYPE_OF_DATE": "",
+    "YEAR": ""
   },
   "INDIVIDUAL_PLACE_OF_BIRTH": {
-    "CITY": "city name",
-    "STATE_PROVINCE": "state province"
+    "CITY": "",
+    "STATE_PROVINCE": ""
   },
   "INDIVIDUAL_DOCUMENT": "",
   "SORT_KEY": "__AAA",
@@ -137,7 +137,7 @@ var missing_indivs = [{
   "UN_LIST_TYPE": "Al-Qaida",
   "LISTED_ON": "2016-10-06T00:00:00",
   "NAME_ORIGINAL_SCRIPT": "نشوان عبد الرزاق عبد الباقي",
-  "COMMENTS1": "comments",
+  "COMMENTS1": "",
   "NATIONALITY": {
     "VALUE": ""
   },
@@ -156,12 +156,12 @@ var missing_indivs = [{
   }],
   "INDIVIDUAL_ADDRESS": "",
   "INDIVIDUAL_DATE_OF_BIRTH": {
-    "TYPE_OF_DATE": "type of date",
-    "YEAR": "year of birth"
+    "TYPE_OF_DATE": "",
+    "YEAR": ""
   },
   "INDIVIDUAL_PLACE_OF_BIRTH": {
-    "CITY": "city name",
-    "STATE_PROVINCE": "state province"
+    "CITY": "",
+    "STATE_PROVINCE": ""
   },
   "INDIVIDUAL_DOCUMENT": "",
   "SORT_KEY": "__AAA",
@@ -195,12 +195,12 @@ var missing_indivs = [{
   }],
   "INDIVIDUAL_ADDRESS": "",
   "INDIVIDUAL_DATE_OF_BIRTH": {
-    "TYPE_OF_DATE": "type of date",
-    "YEAR": "year of birth"
+    "TYPE_OF_DATE": "",
+    "YEAR": ""
   },
   "INDIVIDUAL_PLACE_OF_BIRTH": {
-    "CITY": "city name",
-    "STATE_PROVINCE": "state province"
+    "CITY": "",
+    "STATE_PROVINCE": ""
   },
   "INDIVIDUAL_DOCUMENT": "",
   "SORT_KEY": "__AAAxxx",
@@ -237,12 +237,12 @@ var missing_indivs = [{
     }],
     "INDIVIDUAL_ADDRESS": "",
     "INDIVIDUAL_DATE_OF_BIRTH": {
-      "TYPE_OF_DATE": "type of date",
-      "YEAR": "year of birth"
+      "TYPE_OF_DATE": "",
+      "YEAR": ""
     },
     "INDIVIDUAL_PLACE_OF_BIRTH": {
-      "CITY": "city name",
-      "STATE_PROVINCE": "state province"
+      "CITY": "",
+      "STATE_PROVINCE": ""
     },
     "INDIVIDUAL_DOCUMENT": "",
     "SORT_KEY": "RashidAhmadLedahyanoy",
@@ -258,7 +258,7 @@ var missing_indivs = [{
     "REFERENCE_NUMBER": "QI.J.240.08",
     "LISTED_ON": "2016-10-06T00:00:00",
     "NAME_ORIGINAL_SCRIPT": "",
-    "COMMENTS1": "Leader of ",
+    "COMMENTS1": "",
     "NATIONALITY": {
       "VALUE": ""
     },
@@ -277,12 +277,12 @@ var missing_indivs = [{
     }],
     "INDIVIDUAL_ADDRESS": "",
     "INDIVIDUAL_DATE_OF_BIRTH": {
-      "TYPE_OF_DATE": "type of date",
-      "YEAR": "year of birth"
+      "TYPE_OF_DATE": "",
+      "YEAR": ""
     },
     "INDIVIDUAL_PLACE_OF_BIRTH": {
-      "CITY": "city name",
-      "STATE_PROVINCE": "state province"
+      "CITY": "",
+      "STATE_PROVINCE": ""
     },
     "INDIVIDUAL_DOCUMENT": "",
     "SORT_KEY": "__AAA",
@@ -297,7 +297,7 @@ var missing_indivs = [{
     "REFERENCE_NUMBER": "QI.B.239.08",
     "LISTED_ON": "2016-10-06T00:00:00",
     "NAME_ORIGINAL_SCRIPT": "",
-    "COMMENTS1": "Leader of ...",
+    "COMMENTS1": "",
     "NATIONALITY": {
       "VALUE": ""
     },
@@ -311,17 +311,61 @@ var missing_indivs = [{
       ]
     },
     "INDIVIDUAL_ALIAS": [{
-      "QUALITY": "poor",
-      "ALIAS_NAME": "Good Time ...."
+      "QUALITY": "",
+      "ALIAS_NAME": ""
     }],
     "INDIVIDUAL_ADDRESS": "",
     "INDIVIDUAL_DATE_OF_BIRTH": {
-      "TYPE_OF_DATE": "type of date",
-      "YEAR": "year of birth"
+      "TYPE_OF_DATE": "",
+      "YEAR": ""
     },
     "INDIVIDUAL_PLACE_OF_BIRTH": {
-      "CITY": "city name",
-      "STATE_PROVINCE": "state province"
+      "CITY": "",
+      "STATE_PROVINCE": ""
+    },
+    "INDIVIDUAL_DOCUMENT": "",
+    "SORT_KEY": "__AAA",
+    "SORT_KEY_LAST_MOD": "2007-07-27T00:00:00"
+  }, {
+    "DATAID": "emptyStl",
+    "VERSIONNUM": "10",
+    "FIRST_NAME": "Stephen Lane Taylor",
+    "SECOND_NAME": "",
+    "THIRD_NAME": "(no longer listed)",
+    "UN_LIST_TYPE": "Al-Qaida",
+    "REFERENCE_NUMBER": "QI.T.0.00",
+    "LISTED_ON": "2016-10-06T00:00:00",
+    "NAME_ORIGINAL_SCRIPT": "daehttub",
+    "COMMENTS1": "Deserving of sanctions for general stupidity. Has a personality kind of like Usama bin-Laden (QI.B.8.01)",
+    "NATIONALITY": {
+      "VALUE": "United States, nominally"
+    },
+    "LIST_TYPE": {
+      "VALUE": "UN List"
+    },
+    "LAST_DAY_UPDATED": {
+      "VALUE": [
+        "1900-05-14T00:00:00"
+      ]
+    },
+    "INDIVIDUAL_ALIAS": [
+      {
+        "QUALITY": "very, very poor",
+        "ALIAS_NAME": "Stinky Steve"
+      },
+      {
+        "QUALITY": "extremely, poor",
+        "ALIAS_NAME": "Stephen Taint Laylor"
+      }
+    ],
+    "INDIVIDUAL_ADDRESS": "Aspergum, ND",
+    "INDIVIDUAL_DATE_OF_BIRTH": {
+      "TYPE_OF_DATE": "",
+      "YEAR": ""
+    },
+    "INDIVIDUAL_PLACE_OF_BIRTH": {
+      "CITY": "",
+      "STATE_PROVINCE": ""
     },
     "INDIVIDUAL_DOCUMENT": "",
     "SORT_KEY": "__AAA",
@@ -391,7 +435,7 @@ var missing_nodes = [{
  "INDIVIDUAL_ADDRESS": "",
  "INDIVIDUAL_DATE_OF_BIRTH": {
  "TYPE_OF_DATE": "type of date",
- "YEAR": "year of birth"
+ "YEAR": ""
  },
  "INDIVIDUAL_PLACE_OF_BIRTH": {
  "CITY": "city name",
@@ -422,7 +466,7 @@ var missing_nodes = [{
  "REFERENCE_NUMBER": "QI.TBD",
  "LISTED_ON": "2016-10-06T00:00:00",
  "NAME_ORIGINAL_SCRIPT": "",
- "COMMENTS1": "comments",
+ "COMMENTS1": "",
  "NATIONALITY": {
  "VALUE": ""
  },
@@ -442,7 +486,7 @@ var missing_nodes = [{
  "INDIVIDUAL_ADDRESS": "",
  "INDIVIDUAL_DATE_OF_BIRTH": {
  "TYPE_OF_DATE": "type of date",
- "YEAR": "year of birth"
+ "YEAR": ""
  },
  "INDIVIDUAL_PLACE_OF_BIRTH": {
  "CITY": "city name",
