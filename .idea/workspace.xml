@@ -7,18 +7,11 @@
     <option name="ANALYSIS_IN_BACKGROUND" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4182aee6-13b8-4466-9993-4422af087054" name="John's change list" comment="clean up console.log statements">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/narrative_summaries/commented_out.json.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/getNarratives.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/narrative_summaries/individuals_associated_with_Al-Qaida.shtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/parseHTML.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/parseHTML0.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soupselectAq.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soupselect_example.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/collect.js" afterPath="$PROJECT_DIR$/js/collect.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+    <list default="true" id="4182aee6-13b8-4466-9993-4422af087054" name="John's change list" comment="collecting indivs links to narratives">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/getNarrativeList.js" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\js\getNarratives.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\js\soupselectAq.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/individuals_associated_with_Al-Qaida.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/individuals_associated_with_Al-Qaida.shtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="aqlist-visualization.iws" />
@@ -43,21 +36,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="parseHTML0.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/parseHTML0.js">
+      <file leaf-file-name="getNarrativeList.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/getNarrativeList.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="161" max-vertical-offset="2091">
-              <caret line="23" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="soupselectAq.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/soupselectAq.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4705036" vertical-offset="2172" max-vertical-offset="3145">
-              <caret line="147" column="17" selection-start-line="147" selection-start-column="17" selection-end-line="147" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.30532786" vertical-offset="2962" max-vertical-offset="6222">
+              <caret line="183" column="98" selection-start-line="183" selection-start-column="98" selection-end-line="183" selection-end-column="98" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -65,11 +48,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dns.js" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.WebStorm8/system/extLibs/nodejs-v0.10.32-src/core-modules-sources/lib/dns.js">
+      <file leaf-file-name="entities_other_groups_undertakings_associated_with_Al-Qaida.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/narrative_summaries/entities_other_groups_undertakings_associated_with_Al-Qaida.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1428" max-vertical-offset="3502">
-              <caret line="109" column="0" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
+            <state vertical-scroll-proportion="-115.03846" vertical-offset="4149" max-vertical-offset="7259">
+              <caret line="420" column="2" selection-start-line="420" selection-start-column="2" selection-end-line="420" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -78,72 +61,18 @@
       <file leaf-file-name="individuals_associated_with_Al-Qaida.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/narrative_summaries/individuals_associated_with_Al-Qaida.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.153846" vertical-offset="13617" max-vertical-offset="23681">
-              <caret line="815" column="2" selection-start-line="815" selection-start-column="2" selection-end-line="815" selection-end-column="2" />
+            <state vertical-scroll-proportion="14.134615" vertical-offset="21492" max-vertical-offset="30821">
+              <caret line="1221" column="29" selection-start-line="1221" selection-start-column="24" selection-end-line="1221" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NSQI00101E.shtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/narrative_summaries/NSQI00101E.shtml">
+      <file leaf-file-name="htmlparser.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/htmlparser/lib/htmlparser.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="6290">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="individuals_associated_with_Al-Qaida.shtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/narrative_summaries/individuals_associated_with_Al-Qaida.shtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.769231" vertical-offset="17498" max-vertical-offset="30838">
-              <caret line="1050" column="6" selection-start-line="1050" selection-start-column="6" selection-end-line="1050" selection-end-column="6" />
-              <folding>
-                <element signature="n#style#0;n#iframe#0;n#noscript#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="commented_out.json.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/narrative_summaries/commented_out.json.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="collect.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/collect.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.307693" vertical-offset="1814" max-vertical-offset="3434">
-              <caret line="124" column="112" selection-start-line="124" selection-start-column="2" selection-end-line="124" selection-end-column="112" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="setupData.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/setupData.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.230769" vertical-offset="7326" max-vertical-offset="15470">
-              <caret line="444" column="22" selection-start-line="441" selection-start-column="0" selection-end-line="449" selection-end-column="2" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="soupselect_example.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/soupselect_example.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="799">
-              <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="6480" max-vertical-offset="13770">
+              <caret line="410" column="0" selection-start-line="410" selection-start-column="0" selection-end-line="410" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -165,7 +94,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/js/backpack-node.js" />
         <option value="$PROJECT_DIR$/js/empty_indiv.js" />
         <option value="$PROJECT_DIR$/js/listDirectory.js" />
         <option value="$PROJECT_DIR$/js/filewalker.js" />
@@ -216,6 +144,7 @@
         <option value="$PROJECT_DIR$/data/narrative_summaries/individuals_associated_with_Al-Qaida.shtml" />
         <option value="$PROJECT_DIR$/data/narrative_summaries/commented_out.json.js" />
         <option value="$PROJECT_DIR$/js/soupselectAq.js" />
+        <option value="$PROJECT_DIR$/js/getNarrativeList.js" />
       </list>
     </option>
   </component>
@@ -332,10 +261,6 @@
               <option name="myItemId" value="aq-list-viz" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -400,7 +325,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/js/soupselectAq.js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/js/getNarrativeList.js" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="LayoutCode.rearrangeEntriesHTML" value="false" />
     <property name="recentsLimit" value="5" />
@@ -423,14 +348,14 @@
       <recent name="C:\Users\User1\WebstormProjects\aq-list-viz\data\archive" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User1\WebstormProjects\aq-list-viz\archives" />
       <recent name="C:\Users\User1\WebstormProjects\aq-list-viz\js" />
       <recent name="C:\Users\User1\WebstormProjects\aq-list-viz\log" />
-      <recent name="C:\Users\User1\WebstormProjects\aq-list-viz\archives" />
       <recent name="C:\Users\User1\WebstormProjects\aq-list-viz\doc" />
       <recent name="C:\Users\User1\WebstormProjects\aq-list-viz" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.soupselectAq.js">
+  <component name="RunManager" selected="Node.js.getNarratives">
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <method />
     </configuration>
@@ -507,13 +432,7 @@
       <ConfigurationWrapper RunnerId="debuggableProgram" />
       <method />
     </configuration>
-    <configuration default="false" name="getNarratives" type="NodeJSConfigurationType" factoryName="Node.js" singleton="false" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="js/getNarratives.js" working-dir="$PROJECT_DIR$" coffeescript-path="C:\Users\User1\AppData\Roaming\npm\node_modules\coffee-script\bin\coffee">
-      <browser name="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" url="http://localhost:63342/aq-list-viz/index.html" />
-      <RunnerSettings RunnerId="debuggableProgram" />
-      <ConfigurationWrapper RunnerId="debuggableProgram" />
-      <method />
-    </configuration>
-    <configuration default="false" name="soupselectAq.js" type="NodeJSConfigurationType" factoryName="Node.js" singleton="false" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="js/soupselectAq.js" working-dir="$PROJECT_DIR$" coffeescript-path="C:\Users\User1\AppData\Roaming\npm\node_modules\coffee-script\bin\coffee">
+    <configuration default="false" name="soupselectAq.js" type="NodeJSConfigurationType" factoryName="Node.js" singleton="false" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="js/getNarrativeList.js" working-dir="$PROJECT_DIR$" coffeescript-path="C:\Users\User1\AppData\Roaming\npm\node_modules\coffee-script\bin\coffee">
       <browser name="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" url="http://localhost:63342/aq-list-viz/index.html" />
       <RunnerSettings RunnerId="Basic" />
       <RunnerSettings RunnerId="debuggableProgram" />
@@ -535,6 +454,14 @@
       <ConfigurationWrapper RunnerId="debuggableProgram" />
       <method />
     </configuration>
+    <configuration default="false" name="getNarratives" type="NodeJSConfigurationType" factoryName="Node.js" singleton="false" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="js/getNarrativeList.js" working-dir="$PROJECT_DIR$" coffeescript-path="C:\Users\User1\AppData\Roaming\npm\node_modules\coffee-script\bin\coffee">
+      <browser name="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" url="http://localhost:63342/aq-list-viz/index.html" />
+      <RunnerSettings RunnerId="Basic" />
+      <RunnerSettings RunnerId="debuggableProgram" />
+      <ConfigurationWrapper RunnerId="Basic" />
+      <ConfigurationWrapper RunnerId="debuggableProgram" />
+      <method />
+    </configuration>
     <list size="10">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.open index.html" />
       <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.circles.html" />
@@ -542,10 +469,10 @@
       <item index="3" class="java.lang.String" itemvalue="Node.js.collect.js" />
       <item index="4" class="java.lang.String" itemvalue="Node.js.docs.js" />
       <item index="5" class="java.lang.String" itemvalue="Node.js.app.js" />
-      <item index="6" class="java.lang.String" itemvalue="Node.js.getNarratives" />
-      <item index="7" class="java.lang.String" itemvalue="Node.js.soupselectAq.js" />
-      <item index="8" class="java.lang.String" itemvalue="Node.js.IE app.js" />
-      <item index="9" class="java.lang.String" itemvalue="Node.js.test.js" />
+      <item index="6" class="java.lang.String" itemvalue="Node.js.soupselectAq.js" />
+      <item index="7" class="java.lang.String" itemvalue="Node.js.IE app.js" />
+      <item index="8" class="java.lang.String" itemvalue="Node.js.test.js" />
+      <item index="9" class="java.lang.String" itemvalue="Node.js.getNarratives" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -757,7 +684,13 @@
       <option name="project" value="LOCAL" />
       <updated>1419004578874</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="collecting indivs links to narratives">
+      <created>1419164923221</created>
+      <option name="number" value="00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1419164923221</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <option name="trackContextForNewChangelist" value="true" />
     <servers />
   </component>
@@ -789,25 +722,25 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30789474" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30921054" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Heroku" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32717678" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5605263" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.55936676" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39342105" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Code Review" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24967907" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18806162" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3106547" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39605263" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30526316" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39577836" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30474934" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Get Gist" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
@@ -859,7 +792,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="clean up missing ents indivs" />
     <MESSAGE value="revision for heroku" />
     <MESSAGE value="added underscore.js dev annotated version" />
     <MESSAGE value="cleaned up, renamed files, archived" />
@@ -884,246 +816,34 @@
     <MESSAGE value="added dates updated" />
     <MESSAGE value="cleaned up doc output" />
     <MESSAGE value="clean up console.log statements" />
-    <option name="LAST_COMMIT_MESSAGE" value="clean up console.log statements" />
+    <MESSAGE value="collecting indivs links to narratives" />
+    <option name="LAST_COMMIT_MESSAGE" value="collecting indivs links to narratives" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint type="javascript">
-          <url>file://$PROJECT_DIR$/js/makeDocs.js</url>
-          <line>551</line>
-          <option name="timeStamp" value="112" />
-        </line-breakpoint>
-        <line-breakpoint type="javascript">
-          <url>file://$PROJECT_DIR$/js/makeDocs.js</url>
-          <line>553</line>
-          <option name="timeStamp" value="114" />
-        </line-breakpoint>
-        <line-breakpoint type="javascript">
-          <url>file://$PROJECT_DIR$/js/viz.js</url>
-          <line>615</line>
-          <option name="timeStamp" value="134" />
-        </line-breakpoint>
-        <line-breakpoint type="javascript">
-          <url>file://$PROJECT_DIR$/js/viz.js</url>
-          <line>1263</line>
-          <option name="timeStamp" value="164" />
-        </line-breakpoint>
-        <line-breakpoint type="javascript">
-          <url>file://$PROJECT_DIR$/js/Document.js</url>
-          <line>19</line>
-          <option name="timeStamp" value="251" />
-        </line-breakpoint>
-        <line-breakpoint type="javascript">
-          <url>file://$PROJECT_DIR$/js/viz.js</url>
-          <line>394</line>
-          <option name="timeStamp" value="274" />
-        </line-breakpoint>
-        <line-breakpoint type="javascript">
-          <url>file://$PROJECT_DIR$/js/Document.js</url>
-          <line>33</line>
-          <option name="timeStamp" value="302" />
-        </line-breakpoint>
-        <line-breakpoint type="javascript">
-          <url>file://$PROJECT_DIR$/js/Document.js</url>
-          <line>25</line>
-          <option name="timeStamp" value="303" />
-        </line-breakpoint>
-        <line-breakpoint type="javascript">
-          <url>file://$PROJECT_DIR$/js/Document.js</url>
-          <line>21</line>
-          <option name="timeStamp" value="304" />
-        </line-breakpoint>
-        <line-breakpoint type="javascript">
-          <url>file://$PROJECT_DIR$/js/setupData.js</url>
-          <line>789</line>
-          <option name="timeStamp" value="345" />
-        </line-breakpoint>
-        <line-breakpoint type="javascript">
-          <url>file://$PROJECT_DIR$/js/setupData.js</url>
-          <line>790</line>
-          <option name="timeStamp" value="347" />
-        </line-breakpoint>
-        <line-breakpoint type="javascript">
-          <url>file://$PROJECT_DIR$/js/viz.js</url>
-          <line>1084</line>
-          <option name="timeStamp" value="363" />
-        </line-breakpoint>
-        <line-breakpoint type="javascript">
-          <url>file://$PROJECT_DIR$/js/viz.js</url>
-          <line>1083</line>
-          <option name="timeStamp" value="364" />
-        </line-breakpoint>
-        <line-breakpoint type="javascript">
-          <url>file://$PROJECT_DIR$/js/viz.js</url>
-          <line>1019</line>
-          <option name="timeStamp" value="365" />
-        </line-breakpoint>
-        <line-breakpoint type="javascript">
-          <url>file://$PROJECT_DIR$/js/viz.js</url>
-          <line>1130</line>
-          <option name="timeStamp" value="367" />
-        </line-breakpoint>
-        <line-breakpoint type="javascript">
-          <url>file://$PROJECT_DIR$/js/viz.js</url>
-          <line>976</line>
-          <option name="timeStamp" value="371" />
-        </line-breakpoint>
-        <line-breakpoint type="javascript">
-          <url>file://$PROJECT_DIR$/js/viz.js</url>
-          <line>1117</line>
-          <option name="timeStamp" value="372" />
-        </line-breakpoint>
-        <line-breakpoint type="javascript">
-          <url>file://$PROJECT_DIR$/js/viz.js</url>
-          <line>1149</line>
-          <option name="timeStamp" value="373" />
-        </line-breakpoint>
-        <line-breakpoint type="javascript">
-          <url>file://$PROJECT_DIR$/js/viz.js</url>
-          <line>986</line>
-          <option name="timeStamp" value="374" />
-        </line-breakpoint>
-        <line-breakpoint type="javascript">
-          <url>file://$PROJECT_DIR$/js/viz.js</url>
-          <line>1127</line>
-          <option name="timeStamp" value="375" />
-        </line-breakpoint>
-        <line-breakpoint type="javascript">
-          <url>file://$PROJECT_DIR$/js/viz.js</url>
-          <line>1126</line>
-          <option name="timeStamp" value="376" />
-        </line-breakpoint>
-        <line-breakpoint type="javascript">
-          <url>file://$PROJECT_DIR$/js/viz.js</url>
-          <line>1156</line>
-          <option name="timeStamp" value="377" />
-        </line-breakpoint>
-        <line-breakpoint type="javascript">
-          <url>file://$PROJECT_DIR$/js/viz.js</url>
-          <line>134</line>
-          <option name="timeStamp" value="379" />
-        </line-breakpoint>
-        <line-breakpoint type="javascript">
-          <url>file://$PROJECT_DIR$/js/viz.js</url>
-          <line>985</line>
-          <option name="timeStamp" value="380" />
-        </line-breakpoint>
-        <line-breakpoint type="javascript">
-          <url>file://$PROJECT_DIR$/js/viz.js</url>
-          <line>1097</line>
-          <option name="timeStamp" value="384" />
-        </line-breakpoint>
-        <line-breakpoint type="javascript">
-          <url>file://$PROJECT_DIR$/js/viz.js</url>
-          <line>1098</line>
-          <option name="timeStamp" value="385" />
-        </line-breakpoint>
-        <line-breakpoint type="javascript">
-          <url>file://$PROJECT_DIR$/js/viz.js</url>
-          <line>960</line>
-          <option name="timeStamp" value="386" />
-        </line-breakpoint>
-        <line-breakpoint type="javascript">
-          <url>file://$PROJECT_DIR$/js/viz.js</url>
-          <line>1092</line>
-          <option name="timeStamp" value="387" />
-        </line-breakpoint>
-        <line-breakpoint type="javascript">
-          <url>file://$PROJECT_DIR$/js/viz.js</url>
-          <line>1093</line>
-          <option name="timeStamp" value="389" />
-        </line-breakpoint>
-        <line-breakpoint type="javascript">
-          <url>file://$PROJECT_DIR$/js/viz.js</url>
-          <line>958</line>
-          <option name="timeStamp" value="390" />
-        </line-breakpoint>
-        <line-breakpoint type="javascript">
-          <url>file://$PROJECT_DIR$/js/viz.js</url>
-          <line>957</line>
-          <option name="timeStamp" value="391" />
-        </line-breakpoint>
-        <line-breakpoint type="javascript">
-          <url>file://$PROJECT_DIR$/js/viz.js</url>
-          <line>987</line>
-          <option name="timeStamp" value="392" />
-        </line-breakpoint>
-        <line-breakpoint type="javascript">
-          <url>file://$PROJECT_DIR$/js/viz.js</url>
-          <line>979</line>
-          <option name="timeStamp" value="393" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/js/getNarratives.js</url>
-          <line>23</line>
-          <option name="timeStamp" value="406" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/js/getNarratives.js</url>
-          <line>20</line>
-          <option name="timeStamp" value="407" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/js/getNarratives.js</url>
-          <line>25</line>
-          <option name="timeStamp" value="408" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$USER_HOME$/.WebStorm8/system/extLibs/nodejs-v0.10.32-src/core-modules-sources/lib/dns.js</url>
-          <line>36</line>
-          <option name="timeStamp" value="409" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$USER_HOME$/.WebStorm8/system/extLibs/nodejs-v0.10.32-src/core-modules-sources/lib/dns.js</url>
-          <line>123</line>
-          <option name="timeStamp" value="410" />
+          <url>file://$PROJECT_DIR$/js/getNarrativeList.js</url>
+          <line>156</line>
+          <option name="timeStamp" value="454" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="443" />
+      <option name="time" value="457" />
     </breakpoint-manager>
     <watches-manager>
-      <configuration name="JavascriptDebugType">
-        <watch expression="topStuffNegativeMargin" language="JavaScript" />
-        <watch expression="docClosePadding" language="JavaScript" />
-        <watch expression="network.docClosepadding" language="JavaScript" />
-      </configuration>
       <configuration name="NodeJSConfigurationType">
-        <watch expression="paragraph.children[0]" language="JavaScript" />
         <watch expression="paragraph[0]" language="JavaScript" />
-        <watch expression="(paragraph[0])[0]" language="JavaScript" />
+        <watch expression="anchor" language="JavaScript" />
+        <watch expression="anchor[0]" language="JavaScript" />
+        <watch expression="anchor[0].attribs.href" language="JavaScript" />
       </configuration>
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/archives/coffee/viz-original.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8534">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/archives/coffee/viz-original.js.map">
-      <provider editor-type-id="sourcemapFileViewerProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="395">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/archives/coffee/vis.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.800459" vertical-offset="8863" max-vertical-offset="9299">
-          <caret line="270" column="59" selection-start-line="270" selection-start-column="0" selection-end-line="270" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/libs/jquery-1.7.2.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="17879" max-vertical-offset="159732">
@@ -1329,26 +1049,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/getNarratives.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
-          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/parseHTML.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1088">
           <caret line="1" column="26" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1309">
-          <caret line="20" column="40" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="40" />
           <folding />
         </state>
       </provider>
@@ -1467,7 +1171,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/soupselect_example.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="799">
+        <state vertical-scroll-proportion="0.3732535" vertical-offset="0" max-vertical-offset="799">
           <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
           <folding />
         </state>
@@ -1483,7 +1187,7 @@
     </entry>
     <entry file="file://$USER_HOME$/.WebStorm8/system/extLibs/nodejs-v0.10.32-src/core-modules-sources/lib/dns.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1428" max-vertical-offset="3502">
+        <state vertical-scroll-proportion="0.2035928" vertical-offset="1428" max-vertical-offset="3502">
           <caret line="109" column="0" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
           <folding />
         </state>
@@ -1499,7 +1203,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/collect.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.307693" vertical-offset="1814" max-vertical-offset="3434">
+        <state vertical-scroll-proportion="0.6189474" vertical-offset="1814" max-vertical-offset="3434">
           <caret line="124" column="112" selection-start-line="124" selection-start-column="2" selection-end-line="124" selection-end-column="112" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
@@ -1509,7 +1213,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data/narrative_summaries/commented_out.json.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
+        <state vertical-scroll-proportion="0.23752496" vertical-offset="0" max-vertical-offset="501">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
@@ -1517,7 +1221,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data/narrative_summaries/individuals_associated_with_Al-Qaida.shtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.769231" vertical-offset="17498" max-vertical-offset="30838">
+        <state vertical-scroll-proportion="0.80733943" vertical-offset="17498" max-vertical-offset="30838">
           <caret line="1050" column="6" selection-start-line="1050" selection-start-column="6" selection-end-line="1050" selection-end-column="6" />
           <folding>
             <element signature="n#style#0;n#iframe#0;n#noscript#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1525,26 +1229,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/narrative_summaries/individuals_associated_with_Al-Qaida.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.153846" vertical-offset="13617" max-vertical-offset="23681">
-          <caret line="815" column="2" selection-start-line="815" selection-start-column="2" selection-end-line="815" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/setupData.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.230769" vertical-offset="7326" max-vertical-offset="15470">
+        <state vertical-scroll-proportion="0.4069264" vertical-offset="7326" max-vertical-offset="15470">
           <caret line="444" column="22" selection-start-line="441" selection-start-column="0" selection-end-line="449" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/soupselectAq.js">
+    <entry file="file://$PROJECT_DIR$/archives/getNarratives.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4705036" vertical-offset="2172" max-vertical-offset="3145">
-          <caret line="147" column="17" selection-start-line="147" selection-start-column="17" selection-end-line="147" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.8483034" vertical-offset="0" max-vertical-offset="527">
+          <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/htmlparser/lib/htmlparser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="6480" max-vertical-offset="13770">
+          <caret line="410" column="0" selection-start-line="410" selection-start-column="0" selection-end-line="410" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="933" max-vertical-offset="1309">
+          <caret line="72" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/narrative_summaries/entities_other_groups_undertakings_associated_with_Al-Qaida.shtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="392.84616" vertical-offset="10214" max-vertical-offset="10965">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/narrative_summaries/entities_other_groups_undertakings_associated_with_Al-Qaida.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-115.03846" vertical-offset="4149" max-vertical-offset="7259">
+          <caret line="420" column="2" selection-start-line="420" selection-start-column="2" selection-end-line="420" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/narrative_summaries/individuals_associated_with_Al-Qaida.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="14.134615" vertical-offset="21492" max-vertical-offset="30821">
+          <caret line="1221" column="29" selection-start-line="1221" selection-start-column="24" selection-end-line="1221" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/getNarrativeList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30532786" vertical-offset="2962" max-vertical-offset="6222">
+          <caret line="183" column="98" selection-start-line="183" selection-start-column="98" selection-end-line="183" selection-end-column="98" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
