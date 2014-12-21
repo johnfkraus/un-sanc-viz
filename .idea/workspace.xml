@@ -7,10 +7,18 @@
     <option name="ANALYSIS_IN_BACKGROUND" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4182aee6-13b8-4466-9993-4422af087054" name="John's change list" comment="cleaned up doc output">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/js/app.js" />
+    <list default="true" id="4182aee6-13b8-4466-9993-4422af087054" name="John's change list" comment="clean up console.log statements">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/narrative_summaries/commented_out.json.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/getNarratives.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/narrative_summaries/individuals_associated_with_Al-Qaida.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/parseHTML.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/parseHTML0.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soupselectAq.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/soupselect_example.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/collect.js" afterPath="$PROJECT_DIR$/js/collect.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/setupData.js" afterPath="$PROJECT_DIR$/js/setupData.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="aqlist-visualization.iws" />
@@ -35,51 +43,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="viz.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/viz.js">
+      <file leaf-file-name="parseHTML0.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/parseHTML0.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.3846154" vertical-offset="15339" max-vertical-offset="23987">
-              <caret line="909" column="48" selection-start-line="909" selection-start-column="48" selection-end-line="909" selection-end-column="48" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="161" max-vertical-offset="2091">
+              <caret line="23" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AQList-docs.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/output/AQList-docs.json">
+      <file leaf-file-name="soupselectAq.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/soupselectAq.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.6346154" vertical-offset="502010" max-vertical-offset="592450">
-              <caret line="29535" column="28" selection-start-line="29535" selection-start-column="28" selection-end-line="29535" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="collect.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/collect.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.46723044" vertical-offset="833" max-vertical-offset="3400">
-              <caret line="64" column="11" selection-start-line="64" selection-start-column="11" selection-end-line="64" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="makeDocs.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/makeDocs.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.4230769" vertical-offset="6252" max-vertical-offset="10540">
-              <caret line="375" column="50" selection-start-line="375" selection-start-column="46" selection-end-line="375" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="setupData.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/setupData.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.1923075" vertical-offset="10897" max-vertical-offset="15504">
-              <caret line="652" column="0" selection-start-line="652" selection-start-column="0" selection-end-line="652" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.4705036" vertical-offset="2172" max-vertical-offset="3145">
+              <caret line="147" column="17" selection-start-line="147" selection-start-column="17" selection-end-line="147" selection-end-column="17" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -87,58 +65,85 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/app.js">
+      <file leaf-file-name="dns.js" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/.WebStorm8/system/extLibs/nodejs-v0.10.32-src/core-modules-sources/lib/dns.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="810" max-vertical-offset="1309">
-              <caret line="63" column="9" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1428" max-vertical-offset="3502">
+              <caret line="109" column="0" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
+      <file leaf-file-name="individuals_associated_with_Al-Qaida.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/narrative_summaries/individuals_associated_with_Al-Qaida.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.076923" vertical-offset="1445" max-vertical-offset="5168">
-              <caret line="105" column="21" selection-start-line="105" selection-start-column="21" selection-end-line="105" selection-end-column="21" />
+            <state vertical-scroll-proportion="-9.153846" vertical-offset="13617" max-vertical-offset="23681">
+              <caret line="815" column="2" selection-start-line="815" selection-start-column="2" selection-end-line="815" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NSQI00101E.shtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/narrative_summaries/NSQI00101E.shtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="6290">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="individuals_associated_with_Al-Qaida.shtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/narrative_summaries/individuals_associated_with_Al-Qaida.shtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.769231" vertical-offset="17498" max-vertical-offset="30838">
+              <caret line="1050" column="6" selection-start-line="1050" selection-start-column="6" selection-end-line="1050" selection-end-column="6" />
               <folding>
-                <element signature="n#style#0;n#span#0;n#a#0;n#div#1;n#td#1;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#2;n#td#1;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#1;n#div#0;n#td#3;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#7;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#td#7;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#select#0;n#div#0;n#div#0;n#td#7;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#select#0;n#div#1;n#div#0;n#td#7;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#select#0;n#div#2;n#div#0;n#td#7;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#3;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#4;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#5;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#6;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1418998173765" expanded="true" signature="12835:12928" placeholder="..." />
-                <marker date="1418998173765" expanded="true" signature="12877:12919" placeholder="{...}" />
+                <element signature="n#style#0;n#iframe#0;n#noscript#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="missing_nodes.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/missing_nodes.js">
+      <file leaf-file-name="commented_out.json.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/narrative_summaries/commented_out.json.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="5134" max-vertical-offset="8687">
-              <caret line="378" column="18" selection-start-line="378" selection-start-column="18" selection-end-line="378" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/style.css">
+      <file leaf-file-name="collect.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/collect.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.269231" vertical-offset="717" max-vertical-offset="3536">
-              <caret line="64" column="22" selection-start-line="64" selection-start-column="22" selection-end-line="64" selection-end-column="22" />
+            <state vertical-scroll-proportion="-11.307693" vertical-offset="1814" max-vertical-offset="3434">
+              <caret line="124" column="112" selection-start-line="124" selection-start-column="2" selection-end-line="124" selection-end-column="112" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="setupData.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/setupData.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.230769" vertical-offset="7326" max-vertical-offset="15470">
+              <caret line="444" column="22" selection-start-line="441" selection-start-column="0" selection-end-line="449" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="soupselect_example.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/soupselect_example.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="799">
+              <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -160,15 +165,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/js/screen.js" />
-        <option value="$PROJECT_DIR$/screen.html" />
-        <option value="$PROJECT_DIR$/js/script2.js" />
-        <option value="$PROJECT_DIR$/data/config.json" />
-        <option value="$PROJECT_DIR$/data/objects.json.js" />
-        <option value="$PROJECT_DIR$/data/config.js" />
-        <option value="$PROJECT_DIR$/js/script.js" />
-        <option value="$PROJECT_DIR$/js/common.js" />
-        <option value="$PROJECT_DIR$/johns_notes.txt" />
         <option value="$PROJECT_DIR$/js/backpack-node.js" />
         <option value="$PROJECT_DIR$/js/empty_indiv.js" />
         <option value="$PROJECT_DIR$/js/listDirectory.js" />
@@ -198,19 +194,28 @@
         <option value="$PROJECT_DIR$/css/graph.css" />
         <option value="$PROJECT_DIR$/js/testXML.js" />
         <option value="$PROJECT_DIR$/package.json.bak.txt" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/test/test.js" />
         <option value="$PROJECT_DIR$/archives/coffee/vis.coffee" />
         <option value="$PROJECT_DIR$/js/Document.js" />
         <option value="$PROJECT_DIR$/js/libs/logger.js" />
         <option value="$PROJECT_DIR$/data/output/AQList-docs.json" />
         <option value="$PROJECT_DIR$/css/style.css" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/missing_nodes.js" />
         <option value="$PROJECT_DIR$/js/viz.js" />
         <option value="$PROJECT_DIR$/js/setupData.js" />
         <option value="$PROJECT_DIR$/js/app.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/getNarratives.js" />
+        <option value="$PROJECT_DIR$/js/parseHTML.js" />
+        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/js/collect.js" />
+        <option value="$PROJECT_DIR$/data/narrative_summaries/The Al-Qaida Sanctions Committee.json" />
+        <option value="$PROJECT_DIR$/js/parseHTML0.js" />
+        <option value="$PROJECT_DIR$/node_modules/domutils/test/fixture.js" />
+        <option value="$PROJECT_DIR$/node_modules/soupselect_example.js" />
+        <option value="$PROJECT_DIR$/data/narrative_summaries/individuals_associated_with_Al-Qaida.shtml" />
+        <option value="$PROJECT_DIR$/data/narrative_summaries/commented_out.json.js" />
+        <option value="$PROJECT_DIR$/js/soupselectAq.js" />
       </list>
     </option>
   </component>
@@ -218,7 +223,7 @@
     <detection-done>true</detection-done>
   </component>
   <component name="NamedScopeManager">
-    <scope name="dev_files" pattern="file[aq-list-viz]:js/*&amp;&amp;!file[aq-list-viz]:js/node_modules//*&amp;&amp;!file[aq-list-viz]:js/libs//*||file:index.html||file[aq-list-viz]:css//*||file:package.json" />
+    <scope name="dev_files" pattern="(file[aq-list-viz]:js/*||file:index.html||file[aq-list-viz]:css//*||file:package.json)&amp;&amp;!file[aq-list-viz]:js/node_modules//*&amp;&amp;!file[aq-list-viz]:js/libs//*&amp;&amp;!file[aq-list-viz]:archives//*&amp;&amp;!file[aq-list-viz]:data//*&amp;&amp;!file[aq-list-viz]:images//*&amp;&amp;!file[aq-list-viz]:node_modules//*&amp;&amp;!file[aq-list-viz]:test//*&amp;&amp;!file[aq-list-viz]:markdown//*&amp;&amp;!file[aq-list-viz]:.idea//*" />
     <scope name="dev_files3" pattern="((file:js/Tooltip.js||file:js/trunc.js||file:css/graph.css||file:css/style.css||file:data/output/AQList-docs.json)&amp;&amp;!file[aq-list-viz]:data/*&amp;&amp;!file[aq-list-viz]:.idea//*&amp;&amp;!file[aq-list-viz]:archives//*&amp;&amp;!file:css/bootstrap.css&amp;&amp;!file:css/bootstrap.min.css&amp;&amp;!file:css/reset.css||file:js/app.js||file:js/collect.js||file:js/config.js||file:js/Document.js||file:js/filewalker.js||file:js/linenums.js||file:js/listDirectory.js||file:js/makeDocs.js||file:js/missing_nodes.js||file:js/setupData.js||file:index.html||file:js/viz.js)&amp;&amp;!file[aq-list-viz]:node_modules//*||file:js/test.js||file:js/libs/logger.js" />
   </component>
   <component name="ProjectFrameBounds">
@@ -384,57 +389,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="output" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aq-list-viz" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aq-list-viz" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="input" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aq-list-viz" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aq-list-viz" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backup" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aq-list-viz" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aq-list-viz" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="narrative_summaries" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -445,12 +400,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/index.html" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/js/soupselectAq.js" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="LayoutCode.rearrangeEntriesHTML" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="options.lastSelected" value="preferences.pluginManager" />
+    <property name="options.lastSelected" value="terminal" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="FullScreen" value="false" />
@@ -461,25 +416,29 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries" />
+      <recent name="C:\Users\User1\WebstormProjects\aq-list-viz\js" />
       <recent name="C:\Users\User1\WebstormProjects\aq-list-viz\data\backup" />
       <recent name="C:\Users\User1\WebstormProjects\aq-list-viz\test" />
       <recent name="C:\Users\User1\WebstormProjects\aq-list-viz\data\archive" />
-      <recent name="C:\Users\User1\WebstormProjects\aq-list-viz\archives" />
-      <recent name="C:\Users\User1\WebstormProjects\aq-list-viz\data\markdown" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User1\WebstormProjects\aq-list-viz\js" />
       <recent name="C:\Users\User1\WebstormProjects\aq-list-viz\log" />
       <recent name="C:\Users\User1\WebstormProjects\aq-list-viz\archives" />
       <recent name="C:\Users\User1\WebstormProjects\aq-list-viz\doc" />
       <recent name="C:\Users\User1\WebstormProjects\aq-list-viz" />
-      <recent name="C:\Users\User1\WebstormProjects\aq-list-viz\archives\output" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.app.js">
+  <component name="RunManager" selected="Node.js.soupselectAq.js">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <method />
     </configuration>
-    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
@@ -487,10 +446,6 @@
       <setting name="settingsFile" value="" />
       <setting name="serverType" value="INTERNAL" />
       <setting name="preferredDebugBrowser" value="Chrome" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="ChromiumRemoteDebugType" factoryName="Chromium Remote">
@@ -552,6 +507,20 @@
       <ConfigurationWrapper RunnerId="debuggableProgram" />
       <method />
     </configuration>
+    <configuration default="false" name="getNarratives" type="NodeJSConfigurationType" factoryName="Node.js" singleton="false" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="js/getNarratives.js" working-dir="$PROJECT_DIR$" coffeescript-path="C:\Users\User1\AppData\Roaming\npm\node_modules\coffee-script\bin\coffee">
+      <browser name="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" url="http://localhost:63342/aq-list-viz/index.html" />
+      <RunnerSettings RunnerId="debuggableProgram" />
+      <ConfigurationWrapper RunnerId="debuggableProgram" />
+      <method />
+    </configuration>
+    <configuration default="false" name="soupselectAq.js" type="NodeJSConfigurationType" factoryName="Node.js" singleton="false" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="js/soupselectAq.js" working-dir="$PROJECT_DIR$" coffeescript-path="C:\Users\User1\AppData\Roaming\npm\node_modules\coffee-script\bin\coffee">
+      <browser name="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" url="http://localhost:63342/aq-list-viz/index.html" />
+      <RunnerSettings RunnerId="Basic" />
+      <RunnerSettings RunnerId="debuggableProgram" />
+      <ConfigurationWrapper RunnerId="Basic" />
+      <ConfigurationWrapper RunnerId="debuggableProgram" />
+      <method />
+    </configuration>
     <configuration default="false" name="IE app.js" type="NodeJSConfigurationType" factoryName="Node.js" singleton="false" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="js/app.js" working-dir="$PROJECT_DIR$" coffeescript-path="C:\Users\User1\AppData\Roaming\npm\node_modules\coffee-script\bin\coffee">
       <browser name="e1df8d06-f4d5-45b5-b5f5-d90815b754db" start="true" url="http://localhost:63343/aq-list-viz/index.html" />
       <RunnerSettings RunnerId="Basic" />
@@ -566,15 +535,17 @@
       <ConfigurationWrapper RunnerId="debuggableProgram" />
       <method />
     </configuration>
-    <list size="8">
+    <list size="10">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.open index.html" />
       <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.circles.html" />
       <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.app.js JavaScript" />
       <item index="3" class="java.lang.String" itemvalue="Node.js.collect.js" />
       <item index="4" class="java.lang.String" itemvalue="Node.js.docs.js" />
       <item index="5" class="java.lang.String" itemvalue="Node.js.app.js" />
-      <item index="6" class="java.lang.String" itemvalue="Node.js.IE app.js" />
-      <item index="7" class="java.lang.String" itemvalue="Node.js.test.js" />
+      <item index="6" class="java.lang.String" itemvalue="Node.js.getNarratives" />
+      <item index="7" class="java.lang.String" itemvalue="Node.js.soupselectAq.js" />
+      <item index="8" class="java.lang.String" itemvalue="Node.js.IE app.js" />
+      <item index="9" class="java.lang.String" itemvalue="Node.js.test.js" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -780,7 +751,13 @@
       <option name="project" value="LOCAL" />
       <updated>1419001683570</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="clean up console.log statements">
+      <created>1419004578874</created>
+      <option name="number" value="00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1419004578874</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <option name="trackContextForNewChangelist" value="true" />
     <servers />
   </component>
@@ -810,13 +787,12 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30789474" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31002638" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30921054" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Heroku" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32717678" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5620053" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5605263" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39342105" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Code Review" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24967907" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -824,15 +800,16 @@
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18806162" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30738786" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39605263" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30526316" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Get Gist" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39605263" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -851,14 +828,14 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24967907" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15532735" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30870712" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39709762" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30870712" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Get Gist" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -882,7 +859,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="push changes, colors working" />
     <MESSAGE value="clean up missing ents indivs" />
     <MESSAGE value="revision for heroku" />
     <MESSAGE value="added underscore.js dev annotated version" />
@@ -907,7 +883,8 @@
     <MESSAGE value="displays aliases" />
     <MESSAGE value="added dates updated" />
     <MESSAGE value="cleaned up doc output" />
-    <option name="LAST_COMMIT_MESSAGE" value="cleaned up doc output" />
+    <MESSAGE value="clean up console.log statements" />
+    <option name="LAST_COMMIT_MESSAGE" value="clean up console.log statements" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1078,11 +1055,36 @@
           <line>979</line>
           <option name="timeStamp" value="393" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/js/getNarratives.js</url>
+          <line>23</line>
+          <option name="timeStamp" value="406" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/js/getNarratives.js</url>
+          <line>20</line>
+          <option name="timeStamp" value="407" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/js/getNarratives.js</url>
+          <line>25</line>
+          <option name="timeStamp" value="408" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$USER_HOME$/.WebStorm8/system/extLibs/nodejs-v0.10.32-src/core-modules-sources/lib/dns.js</url>
+          <line>36</line>
+          <option name="timeStamp" value="409" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$USER_HOME$/.WebStorm8/system/extLibs/nodejs-v0.10.32-src/core-modules-sources/lib/dns.js</url>
+          <line>123</line>
+          <option name="timeStamp" value="410" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="406" />
+      <option name="time" value="443" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JavascriptDebugType">
@@ -1091,200 +1093,13 @@
         <watch expression="network.docClosepadding" language="JavaScript" />
       </configuration>
       <configuration name="NodeJSConfigurationType">
-        <watch expression="d[&quot;LAST_DAY_UPDATED&quot;][&quot;VALUE&quot;]" language="JavaScript" />
+        <watch expression="paragraph.children[0]" language="JavaScript" />
+        <watch expression="paragraph[0]" language="JavaScript" />
+        <watch expression="(paragraph[0])[0]" language="JavaScript" />
       </configuration>
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/data/markdown/QI.A.132.03.mkdn">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="153">
-          <caret line="2" column="65" selection-start-line="2" selection-start-column="65" selection-end-line="2" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/markdown/QE.A.114.04.mkdn">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="496">
-          <caret line="0" column="66" selection-start-line="0" selection-start-column="66" selection-end-line="0" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/markdown/QE.A.121.05.mkdn">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.06952965" vertical-offset="0" max-vertical-offset="489">
-          <caret line="2" column="56" selection-start-line="2" selection-start-column="56" selection-end-line="2" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/markdown/QE.A.1.01.mkdn">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.10429448" vertical-offset="0" max-vertical-offset="489">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/secret">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2420" max-vertical-offset="2873">
-          <caret line="115" column="0" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/archive/AQList-docs.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="558705">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/image001-103x89.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/Tooltip.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="935">
-          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/reset.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1335" max-vertical-offset="2210">
-          <caret line="87" column="0" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/sync-request/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="164" max-vertical-offset="663">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.WebStorm8/system/extLibs/nodejs-v0.10.32-src/core-modules-sources/lib/assert.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.0551724" vertical-offset="459" max-vertical-offset="5627">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/output/AQList-raw.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="102">
-          <caret line="0" column="7" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/archives/package.json.bak.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.714" vertical-offset="340" max-vertical-offset="850">
-          <caret line="41" column="57" selection-start-line="28" selection-start-column="0" selection-end-line="41" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/graph.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1411">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test.js.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="500">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/testXML.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1173">
-          <caret line="5" column="37" selection-start-line="0" selection-start-column="0" selection-end-line="63" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.748" vertical-offset="0" max-vertical-offset="578">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/output/AQList.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="289809" max-vertical-offset="290530">
-          <caret line="17084" column="20" selection-start-line="17084" selection-start-column="20" selection-end-line="17084" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23417722" vertical-offset="314" max-vertical-offset="1445">
-          <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/filewalker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6267281" vertical-offset="0" max-vertical-offset="459">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/node_modules/dateformat/lib/dateformat.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="973" max-vertical-offset="3009">
-          <caret line="79" column="12" selection-start-line="79" selection-start-column="12" selection-end-line="79" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.WebStorm8/system/extLibs/nodejs-v0.10.32-src/core-modules-sources/lib/module.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="6957" max-vertical-offset="8925">
-          <caret line="438" column="24" selection-start-line="438" selection-start-column="24" selection-end-line="438" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/sync-request/node_modules/spawn-sync/node_modules/rimraf/rimraf.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334" vertical-offset="2367" max-vertical-offset="4318">
-          <caret line="149" column="4" selection-start-line="149" selection-start-column="4" selection-end-line="149" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/linenums.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="28" max-vertical-offset="459">
-          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/backup/AQList.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="290530">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/object-inspect/test/values.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="93" max-vertical-offset="1054">
-          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/archives/coffee/viz-original.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9044">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/archives/coffee/viz-original.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8534">
@@ -1293,20 +1108,19 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/archives/coffee/viz-original.js.map">
+      <provider editor-type-id="sourcemapFileViewerProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="395">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider editor-type-id="sourcemapFileViewerProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/archives/coffee/vis.coffee">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.800459" vertical-offset="8863" max-vertical-offset="9299">
           <caret line="270" column="59" selection-start-line="270" selection-start-column="0" selection-end-line="270" selection-end-column="59" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1354,13 +1168,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/doc/markdown.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.36622807" vertical-offset="751" max-vertical-offset="10557">
           <caret line="54" column="3" selection-start-line="54" selection-start-column="3" selection-end-line="54" selection-end-column="3" />
         </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/archives/lastfm.rb">
@@ -1392,51 +1206,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.730769" vertical-offset="102" max-vertical-offset="1207">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.269231" vertical-offset="717" max-vertical-offset="3536">
+        <state vertical-scroll-proportion="0.78435516" vertical-offset="717" max-vertical-offset="3536">
           <caret line="64" column="22" selection-start-line="64" selection-start-column="22" selection-end-line="64" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.076923" vertical-offset="1445" max-vertical-offset="5168">
-          <caret line="105" column="21" selection-start-line="105" selection-start-column="21" selection-end-line="105" selection-end-column="21" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#a#0;n#div#1;n#td#1;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#2;n#td#1;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#1;n#div#0;n#td#3;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#7;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#td#7;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#select#0;n#div#0;n#div#0;n#td#7;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#select#0;n#div#1;n#div#0;n#td#7;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#select#0;n#div#2;n#div#0;n#td#7;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#3;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#4;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#5;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#6;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1418998173765" expanded="true" signature="12835:12928" placeholder="..." />
-            <marker date="1418998173765" expanded="true" signature="12877:12919" placeholder="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/missing_nodes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="5134" max-vertical-offset="8687">
+        <state vertical-scroll-proportion="2.5884774" vertical-offset="5134" max-vertical-offset="8687">
           <caret line="378" column="18" selection-start-line="378" selection-start-column="18" selection-end-line="378" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1444,7 +1224,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.6346154" vertical-offset="502010" max-vertical-offset="592450">
           <caret line="29535" column="28" selection-start-line="29535" selection-start-column="28" selection-end-line="29535" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1464,29 +1243,311 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/setupData.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.1923075" vertical-offset="10897" max-vertical-offset="15504">
-          <caret line="652" column="0" selection-start-line="652" selection-start-column="0" selection-end-line="652" selection-end-column="0" />
+        <state vertical-scroll-proportion="-0.8831169" vertical-offset="136" max-vertical-offset="5321">
+          <caret line="12" column="66" selection-start-line="12" selection-start-column="66" selection-end-line="12" selection-end-column="66" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#0;n#td#1;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#1;n#td#1;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#a#0;n#div#1;n#td#1;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#2;n#td#1;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#span#0;n#div#2;n#td#1;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#2;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#3;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#1;n#div#0;n#td#3;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#4;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#td#4;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#td#5;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#7;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#td#7;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#select#0;n#div#0;n#div#0;n#td#7;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#select#0;n#div#1;n#div#0;n#td#7;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#select#0;n#div#2;n#div#0;n#td#7;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#3;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#4;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#5;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#6;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1419039125349" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1419039125349" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1419039125349" expanded="true" signature="-1:-1" placeholder="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/converter/docs/quickstart.md">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/converter/docs/options.md">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="918">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/converter/docs/README.tmpl.md">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/converter/README.md">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1479">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.71308017" vertical-offset="648" max-vertical-offset="1122">
+          <caret line="58" column="41" selection-start-line="58" selection-start-column="41" selection-end-line="58" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/getNarratives.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/parseHTML.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1088">
+          <caret line="1" column="26" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="810" max-vertical-offset="1309">
-          <caret line="63" column="9" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1309">
+          <caret line="20" column="40" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/narrative_summaries/The Al-Qaida Sanctions Committee.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="235926">
+          <caret line="0" column="4" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/domutils/readme.md">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="119">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/domutils/node_modules/domelementtype/readme.md">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="119">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/domutils/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="500">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/domutils/test/tests/helpers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1615">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/domutils/test/utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+          <caret line="6" column="11" selection-start-line="2" selection-start-column="0" selection-end-line="8" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/domutils/node_modules/domelementtype/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+          <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/domutils/lib/traversal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/domutils/lib/querying.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1700">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/domutils/test/fixture.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="500">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/domutils/lib/helpers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2499">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/narrative_summaries/The Al-Qaida Sanctions Committee.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.8846154" vertical-offset="4182" max-vertical-offset="28305">
+          <caret line="255" column="83" selection-start-line="255" selection-start-column="83" selection-end-line="255" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.WebStorm8/system/extLibs/nodejs-v0.10.32-src/core-modules-sources/lib/events.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4741036" vertical-offset="646" max-vertical-offset="4845">
+          <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/soupselect_example.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="799">
+          <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/parseHTML0.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="161" max-vertical-offset="2091">
+          <caret line="23" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.WebStorm8/system/extLibs/nodejs-v0.10.32-src/core-modules-sources/lib/dns.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1428" max-vertical-offset="3502">
+          <caret line="109" column="0" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/narrative_summaries/NSQI00101E.shtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6290">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/collect.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46723044" vertical-offset="833" max-vertical-offset="3400">
-          <caret line="64" column="11" selection-start-line="64" selection-start-column="11" selection-end-line="64" selection-end-column="11" />
+        <state vertical-scroll-proportion="-11.307693" vertical-offset="1814" max-vertical-offset="3434">
+          <caret line="124" column="112" selection-start-line="124" selection-start-column="2" selection-end-line="124" selection-end-column="112" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/narrative_summaries/commented_out.json.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/narrative_summaries/individuals_associated_with_Al-Qaida.shtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.769231" vertical-offset="17498" max-vertical-offset="30838">
+          <caret line="1050" column="6" selection-start-line="1050" selection-start-column="6" selection-end-line="1050" selection-end-column="6" />
+          <folding>
+            <element signature="n#style#0;n#iframe#0;n#noscript#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/narrative_summaries/individuals_associated_with_Al-Qaida.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.153846" vertical-offset="13617" max-vertical-offset="23681">
+          <caret line="815" column="2" selection-start-line="815" selection-start-column="2" selection-end-line="815" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/setupData.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.230769" vertical-offset="7326" max-vertical-offset="15470">
+          <caret line="444" column="22" selection-start-line="441" selection-start-column="0" selection-end-line="449" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/soupselectAq.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4705036" vertical-offset="2172" max-vertical-offset="3145">
+          <caret line="147" column="17" selection-start-line="147" selection-start-column="17" selection-end-line="147" selection-end-column="17" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1495,7 +1556,7 @@
     <states>
       <state key="ScopeChooserConfigurable.UI">
         <settings>
-          <last-edited>dev_files3</last-edited>
+          <last-edited>dev_files</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

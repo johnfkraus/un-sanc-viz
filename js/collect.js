@@ -57,15 +57,15 @@ var convertXMLToJson = function () {
         // delete all files in newPath
         var result = fse.unlink(newPath, function (err) {
           if (err) {
-            console.log("\n ", __filename, "line", "line", __line, "; Error: ", err, " File to be deleted could not be found:");
+            console.log("\n ", __filename, "line",  __line, "; Error: ", err, " File to be deleted could not be found:");
           } else {
             if (consoleLog) {
-              console.log("\n ", __filename, "line", "line", __line, "; successfully deleted ", newPath)
+              console.log("\n ", __filename, "line",  __line, "; successfully deleted ", newPath)
             }
           }
         });
         if (consoleLog) {
-          console.log("\n ", __filename, "line", "line", __line, "; newPath = ", newPath, "; fse.unlink returned: ", result);
+          console.log("\n ", __filename, "line",  __line, "; newPath = ", newPath, "; fse.unlink returned: ", result);
         }
         callback();
       },
