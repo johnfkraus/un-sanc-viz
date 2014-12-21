@@ -10,30 +10,28 @@ var async = require('async'),
   fse = require('fs-extra'),
   util = require('util'),
   dateFormat = require('dateformat'),
+  host = 'www.un.org',
   inspect = require('object-inspect'),
   trunc = require('./trunc.js'),
   request = require('sync-request'),
   truncateToNumChars = 400,
+  narrCounter,
+  narrative_doc,
   myJsonData,
   parseString = require('xml2js')
     .parseString;
-
-// var linenums = require('./linenums.js');
-
+var linenums = require('./linenums.js');
 var consoleLog = false;
-
 var fsOptions = {
   flags: 'r+',
   encoding: 'utf-8',
   autoClose: true
 };
-
 String.prototype.trunc = String.prototype.trunc ||
 function (n) {
   return this.length > n ? this.substr(0, n - 1) + '&hellip,' : this;
 };
 require('console-stamp')(console, '[HH:MM:ss.l]');
-
 var now = new Date();
 dateFormat.masks.friendly_detailed = "dddd, mmmm dS, yyyy, h:MM:ss TT";
 dateFormat.masks.friendly_display = "dddd, mmmm dS, yyyy";
@@ -44,64 +42,57 @@ dateFormat.masks.common = "mm-dd-yyyy";
 // var displayDateString = dateFormat(now, "friendly_display");
 // Saturday, June 9th, 2007, 5:46:21 PM
 // var fileDateString = dateFormat(now, "hammerTime");
-var urls;
+var urls, filePaths;
+
 var getTheNarratives = function () {
   var functionCount = 0;
   var myResult;
+  var narratives;
   async.series([
       function (callback) {
-        // remove old AQList.xml and other old files; dated AQList.xml is stored in data/archive
+        // create an array of full urls pointing to the narratives
         var narrative_links = require(__dirname + "/../data/narrative_summaries/narrative_links.json");
-//        var newPath = (__dirname + "/../data/output/*")
-        //        .toString();
-        // delete all files in newPath
         urls = [];
-        var url, narratives;
+        filePaths = [];
+        var url;
+        var filePath;
         narrative_links.forEach(function (link_data_item) {
-          // console.log(link_data_item.narrativeFileName);
           url = "http://www.un.org/sc/committees/1267/" + link_data_item.narrativeFileName;
           urls.push(url);
-          //  http://www.un.org/sc/committees/1267/individuals_associated_with_Al-Qaida.shtml
-          //  http://www.un.org/sc/committees/1267/NSQI00201E.shtml
-          console.log("urls = ", urls);
+          filePath = "/sc/committees/1267/" + link_data_item.narrativeFileName;
+          filePaths.push(filePath);
+          //  console.log("\n ", __filename, "line", __line, "urls = ", urls);
         });
         callback();
       },
-
+      // collect each narrative
       function (callback) {
         narratives = [];
-        var BreakException={};
-        var narrCounter = 0;
-        urls.forEach(function (url) {
+        var BreakException = {};
+        narrCounter = 0;
+//        for (var url = 0; url < 10; url++) {
+        for (var fp = 0; fp < 10; fp++) {
+//        urls.forEach(function (url) {
+          // url = urls[url];
+          filePath = filePaths[fp];
+          // console.log("\n ", __filename, "line", __line, "narratives = ", narratives);
 
-            console.log("narratives = ", narratives);
-
+          var getFileNameAndPath = filePath.replace(/\/sc\/committees\/1267\/(NSQE00101E.shtml)/, '$1');
           try {
             narrCounter++;
-            var res = request('GET', url);
+            getNarrativesData(host, getFileNameAndPath, outputFileNameAndPath);
+//            var res = request('GET', url);
             narrative_doc = res.body.toString();
-            narratives.push(narrative_doc.toString());
-            var fileNameAndPathForProcessing = __dirname + "/../data/output/narratives.json";
-            writeAQListXML(fileNameAndPathForProcessing, narratives);
-
-            // console.log("narratives.length = ", narratives.length );
           } catch (err) {
-            console.log("\n ", __filename, "line", __line, "; Error: ", err, "; reading stored backup file");
-            //var backupRawXmlFileName = __dirname + "/../data/backup/AQList.xml";
-            // AQList_xml = fse.readFileSync(backupRawXmlFileName, fsOptions); //, function (err, data) {
+            console.log("\n ", __filename, "line", __line, "; Error: ", err);
           }
-          if(narrCounter > 10)  {
-            // console.log("narratives = ", narratives);
-            throw BreakException;
-          }
-          if (consoleLog) {
-//       console.log("res = ", res);
-//       console.log("AQList_xml res.body.toString() = ", AQList_xml);
-//       console.log("AQList_xml Response Body Length: ", res.getBody().length);
-          }
+          var fileName = filePath.replace(/\/sc\/committees\/1267\/(NSQE00101E.shtml)/, '$1');
+          var fileNameAndPathForProcessing = __dirname + "/../data/narrative_summaries/" + fileName;
 
-        });
-        console.log("narratives = ", narratives);
+          writeAQListXML(fileNameAndPathForProcessing, narrative_doc);
+        }
+        ;
+        //console.log("\n ", __filename, "line", __line, "narratives = ", narratives);
         callback();
       }
       /*
@@ -209,6 +200,129 @@ var writeAQListXML = function (localFileNameAndPath, narratives) {
   if (consoleLog) {
     console.log("\n ", __filename, "line", __line, " AQList_xml = \n", trunc.n400(AQList_xml.toString()));
   }
+};
+
+var getNarrativesData = function (host, getFilePath, outputFileNameAndPath, entityOrIndivString) {
+  var client = http.createClient(80, host);
+  var request = client.request('GET', getFilePath, {'host': host});
+
+  request.on('response', function (response) {
+    response.setEncoding('utf8');
+
+    var body = "";
+    response.on('data', function (chunk) {
+      body = body + chunk;
+    });
+
+    response.on('end', function () {
+
+      // now we have the whole body, parse it and select the nodes we want...
+      var handler = new htmlparser.DefaultHandler(function (err, dom) {
+        if (err) {
+          console.log("\n ", __filename, "line", __line, "Error: " + err);
+          //       sys.debug("Error: " + err);
+        } else {
+
+          // soupselect happening here...
+          // var titles = select(dom, 'a.title');
+          rows = select(dom, 'table tr');
+          var rownum;
+          // sys.puts("Links from narrative list page");
+          // loop through each table row
+          for (var i = 0; i < rows.length; i++) {
+            // skip the header row
+            if (i === 0) {
+              continue;
+            }
+            rownum = i;
+            row = rows[i];
+            // sys.puts("row[" + i + "] = " + sys.inspect(JSON.stringify(row)));
+            narrLink = {};
+            tds = select(row, 'td');
+            // loop through each td in the row
+            for (var j = 0; j < tds.length; j++) {
+              td = tds[j];
+              // get the id from the first td
+              if (j === 0) {
+                paragraph = select(td, 'p');
+                if (typeof paragraph !== 'undefined') {
+                  try {
+                    if (typeof paragraph[0] !== 'undefined') {
+                      narrLink.id = getCleanId(paragraph[0].children[0].data);
+                    }
+                  } catch (err) {
+                    console.log("\n ", __filename, "line", __line, " Error parsing id: ", err);
+                  }
+                }
+              }
+              // if we are in the second td in the row...
+              else if (j === 1) {
+                paragraph = select(td, 'p');
+                anchor = select(td, 'a');
+
+                if (typeof paragraph !== 'undefined' && typeof paragraph[0] !== 'undefined') {
+                  //console.log("\n ", __filename, "line", __line, "paragraph = ", JSON.stringify(paragraph));
+                  if (typeof paragraph[0].children[0].attribs !== 'undefined') {
+                    try {
+                      narrativeFileName = paragraph[0].children[0].attribs.href;
+                      narrativeFileName = normalizeNarrativeFileName(narrativeFileName); //.replace(/\/sc\/committees\/1267\/(NSQ.*\.shtml)/, '$1');
+                      // narrativeFileName = narrativeFileName.replace(/http:\/\/dev.un.org\/sc\/committees\/1267\/(NSQ.*\.shtml)/, '$1');
+                      // http://dev.un.org/sc/committees/1267/
+                      narrLink.narrativeFileName = narrativeFileName;
+                    } catch (err) {
+                      console.log("\n ", __filename, "line", __line, "; paragraph[0].children[0] = ", paragraph[0].children[0]);
+                      console.log("\n ", __filename, "line", __line, "; Error: paragraph[0].children[0].attribs is undefined; tr = ", i, "; td = ", j, err);
+                    }
+                  } else if (typeof anchor[0].attribs.href !== 'undefined') {
+                    narrLink.narrativeFileName = normalizeNarrativeFileName(narrativeFileName);
+                    narrLink.targetName = JSON.stringify(anchor[0].children[0].data);
+                  } else {
+                    narrLink.narrativeFileName = "PLACEHOLDER0";
+                    console.log("\n ", __filename, "line", __line, "; Error: narrativeFileName for tr = ", i, "; td = ", j, "is PLACEHOLDER0");
+                  }
+                  // if anchor inside of paragraph
+                  if (anchor[0].children[0].data !== "u") {
+                    targetName = anchor[0].children[0].data;
+                  } else if (anchor[0].children[0].data === "u") {
+                    underscore = select(td, 'u');
+                    targetName = JSON.stringify(underscore[0].children[0].data);
+                  } else {
+                    targetName = "PLACEHOLDER1";
+                  }
+                  targetName = targetName.replace(/[\n\f\r\t]/gm, "");
+                  targetName = targetName.replace(/\s\s+/gm, " ");
+                  targetName = targetName.trim();
+                  if (targetName === "") {
+                    narrLink.targetName = "PLACEHOLDER2";
+                  } else {
+                    narrLink.targetName = targetName;
+                  }
+                  // end of if (typeof paragraph !== 'undefined' && typeof paragraph[0] !== 'undefined')
+                } else if (typeof anchor[0].attribs.href !== 'undefined' && anchor[0].attribs.href !== "") {
+                  narrativeFileName = normalizeNarrativeFileName(anchor[0].attribs.href);
+                  narrLink.narrativeFileName = narrativeFileName;
+                  if (typeof anchor[0].children[0] !== 'undefined' && anchor[0].children[0].data !== "") {
+                    targetName = anchor[0].children[0].data;
+                    narrLink.targetName = targetName;
+                  }
+                }
+              }
+            }
+            narrLink[entityOrIndivString + "RowNum"] = i;
+            narrativeLinks.push(narrLink);
+          }
+        }
+      });
+
+      var parser = new htmlparser.Parser(handler);
+      parser.parseComplete(body);
+      var jsonNarrList = JSON.stringify(narrativeLinks, null, " ");
+      // sys.puts(JSON.stringify(narrativeLinks, null, " "));
+      writeMyFile(outputFileNameAndPath, jsonNarrList, fsOptions);
+    });
+  });
+  request.end();
+  return narrativeLinks;
 };
 
 getTheNarratives();
