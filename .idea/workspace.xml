@@ -7,11 +7,11 @@
     <option name="ANALYSIS_IN_BACKGROUND" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4182aee6-13b8-4466-9993-4422af087054" name="John's change list" comment="collecting indivs links to narratives">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/getNarrativeList.js" />
-      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\js\getNarratives.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\js\soupselectAq.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/individuals_associated_with_Al-Qaida.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/individuals_associated_with_Al-Qaida.shtml" />
+    <list default="true" id="4182aee6-13b8-4466-9993-4422af087054" name="John's change list" comment="cleaned up narrative lists collection">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/collectNarratives.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/entities_other_groups_undertakings_associated_with_Al-Qaida.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/individuals_associated_with_Al-Qaida.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/getNarrativeList.js" afterPath="$PROJECT_DIR$/js/getNarrativeList.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="aqlist-visualization.iws" />
@@ -36,11 +36,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="getNarrativeList.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="getNarrativeList.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/getNarrativeList.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.30532786" vertical-offset="2962" max-vertical-offset="6222">
-              <caret line="183" column="98" selection-start-line="183" selection-start-column="98" selection-end-line="183" selection-end-column="98" />
+            <state vertical-scroll-proportion="-15.692307" vertical-offset="1598" max-vertical-offset="4369">
+              <caret line="118" column="0" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -48,11 +48,55 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="entities_other_groups_undertakings_associated_with_Al-Qaida.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/narrative_summaries/entities_other_groups_undertakings_associated_with_Al-Qaida.json">
+      <file leaf-file-name="collectNarratives.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/collectNarratives.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-115.03846" vertical-offset="4149" max-vertical-offset="7259">
-              <caret line="420" column="2" selection-start-line="420" selection-start-column="2" selection-end-line="420" selection-end-column="2" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1139" max-vertical-offset="3825">
+              <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="narratives.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/data/output/narratives.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.9545455" vertical-offset="3383" max-vertical-offset="65688">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="collect.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/collect.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="3434">
+              <caret line="10" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="entities_other_groups_undertakings_associated_with_Al-Qaida.shtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/narrative_summaries/entities_other_groups_undertakings_associated_with_Al-Qaida.shtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.076923" vertical-offset="9307" max-vertical-offset="10965">
+              <caret line="563" column="10" selection-start-line="563" selection-start-column="10" selection-end-line="563" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="narrative_links.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/narrative_summaries/narrative_links.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.8461537" vertical-offset="36823" max-vertical-offset="37961">
+              <caret line="2175" column="41" selection-start-line="2175" selection-start-column="41" selection-end-line="2175" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -61,18 +105,18 @@
       <file leaf-file-name="individuals_associated_with_Al-Qaida.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/narrative_summaries/individuals_associated_with_Al-Qaida.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="14.134615" vertical-offset="21492" max-vertical-offset="30821">
-              <caret line="1221" column="29" selection-start-line="1221" selection-start-column="24" selection-end-line="1221" selection-end-column="29" />
+            <state vertical-scroll-proportion="1151.4615" vertical-offset="29938" max-vertical-offset="30821">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="htmlparser.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/htmlparser/lib/htmlparser.js">
+      <file leaf-file-name="entities_other_groups_undertakings_associated_with_Al-Qaida.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/narrative_summaries/entities_other_groups_undertakings_associated_with_Al-Qaida.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="6480" max-vertical-offset="13770">
-              <caret line="410" column="0" selection-start-line="410" selection-start-column="0" selection-end-line="410" selection-end-column="0" />
+            <state vertical-scroll-proportion="-14.346154" vertical-offset="6784" max-vertical-offset="7259">
+              <caret line="421" column="1" selection-start-line="421" selection-start-column="1" selection-end-line="421" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -94,9 +138,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/js/empty_indiv.js" />
-        <option value="$PROJECT_DIR$/js/listDirectory.js" />
-        <option value="$PROJECT_DIR$/js/filewalker.js" />
         <option value="$PROJECT_DIR$/data/output/data31deleteEntsEtc.json" />
         <option value="$PROJECT_DIR$/js/markdown_to_js_test.js" />
         <option value="$PROJECT_DIR$/js/docs.js" />
@@ -144,6 +185,9 @@
         <option value="$PROJECT_DIR$/data/narrative_summaries/individuals_associated_with_Al-Qaida.shtml" />
         <option value="$PROJECT_DIR$/data/narrative_summaries/commented_out.json.js" />
         <option value="$PROJECT_DIR$/js/soupselectAq.js" />
+        <option value="$PROJECT_DIR$/data/narrative_summaries/narrative_links.json" />
+        <option value="$PROJECT_DIR$/js/collectNarratives.js" />
+        <option value="$PROJECT_DIR$/data/output/narratives.json" />
         <option value="$PROJECT_DIR$/js/getNarrativeList.js" />
       </list>
     </option>
@@ -314,7 +358,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="narrative_summaries" />
+              <option name="myItemId" value="output" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -325,7 +369,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/js/getNarrativeList.js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/js/collectNarratives.js" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="LayoutCode.rearrangeEntriesHTML" value="false" />
     <property name="recentsLimit" value="5" />
@@ -341,11 +385,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries" />
       <recent name="C:\Users\User1\WebstormProjects\aq-list-viz\js" />
+      <recent name="C:\Users\User1\WebstormProjects\aq-list-viz\data\archive" />
+      <recent name="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries" />
       <recent name="C:\Users\User1\WebstormProjects\aq-list-viz\data\backup" />
       <recent name="C:\Users\User1\WebstormProjects\aq-list-viz\test" />
-      <recent name="C:\Users\User1\WebstormProjects\aq-list-viz\data\archive" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\User1\WebstormProjects\aq-list-viz\archives" />
@@ -355,7 +399,7 @@
       <recent name="C:\Users\User1\WebstormProjects\aq-list-viz" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.getNarratives">
+  <component name="RunManager" selected="Node.js.collectNarratives">
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <method />
     </configuration>
@@ -432,14 +476,6 @@
       <ConfigurationWrapper RunnerId="debuggableProgram" />
       <method />
     </configuration>
-    <configuration default="false" name="soupselectAq.js" type="NodeJSConfigurationType" factoryName="Node.js" singleton="false" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="js/getNarrativeList.js" working-dir="$PROJECT_DIR$" coffeescript-path="C:\Users\User1\AppData\Roaming\npm\node_modules\coffee-script\bin\coffee">
-      <browser name="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" url="http://localhost:63342/aq-list-viz/index.html" />
-      <RunnerSettings RunnerId="Basic" />
-      <RunnerSettings RunnerId="debuggableProgram" />
-      <ConfigurationWrapper RunnerId="Basic" />
-      <ConfigurationWrapper RunnerId="debuggableProgram" />
-      <method />
-    </configuration>
     <configuration default="false" name="IE app.js" type="NodeJSConfigurationType" factoryName="Node.js" singleton="false" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="js/app.js" working-dir="$PROJECT_DIR$" coffeescript-path="C:\Users\User1\AppData\Roaming\npm\node_modules\coffee-script\bin\coffee">
       <browser name="e1df8d06-f4d5-45b5-b5f5-d90815b754db" start="true" url="http://localhost:63343/aq-list-viz/index.html" />
       <RunnerSettings RunnerId="Basic" />
@@ -454,7 +490,15 @@
       <ConfigurationWrapper RunnerId="debuggableProgram" />
       <method />
     </configuration>
-    <configuration default="false" name="getNarratives" type="NodeJSConfigurationType" factoryName="Node.js" singleton="false" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="js/getNarrativeList.js" working-dir="$PROJECT_DIR$" coffeescript-path="C:\Users\User1\AppData\Roaming\npm\node_modules\coffee-script\bin\coffee">
+    <configuration default="false" name="getNarrativeList" type="NodeJSConfigurationType" factoryName="Node.js" singleton="false" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="js/getNarrativeList.js" working-dir="$PROJECT_DIR$" coffeescript-path="C:\Users\User1\AppData\Roaming\npm\node_modules\coffee-script\bin\coffee">
+      <browser name="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" url="http://localhost:63342/aq-list-viz/index.html" />
+      <RunnerSettings RunnerId="Basic" />
+      <RunnerSettings RunnerId="debuggableProgram" />
+      <ConfigurationWrapper RunnerId="Basic" />
+      <ConfigurationWrapper RunnerId="debuggableProgram" />
+      <method />
+    </configuration>
+    <configuration default="false" name="collectNarratives" type="NodeJSConfigurationType" factoryName="Node.js" singleton="false" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="js/collectNarratives.js" working-dir="$PROJECT_DIR$" coffeescript-path="C:\Users\User1\AppData\Roaming\npm\node_modules\coffee-script\bin\coffee">
       <browser name="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" url="http://localhost:63342/aq-list-viz/index.html" />
       <RunnerSettings RunnerId="Basic" />
       <RunnerSettings RunnerId="debuggableProgram" />
@@ -469,10 +513,10 @@
       <item index="3" class="java.lang.String" itemvalue="Node.js.collect.js" />
       <item index="4" class="java.lang.String" itemvalue="Node.js.docs.js" />
       <item index="5" class="java.lang.String" itemvalue="Node.js.app.js" />
-      <item index="6" class="java.lang.String" itemvalue="Node.js.soupselectAq.js" />
-      <item index="7" class="java.lang.String" itemvalue="Node.js.IE app.js" />
-      <item index="8" class="java.lang.String" itemvalue="Node.js.test.js" />
-      <item index="9" class="java.lang.String" itemvalue="Node.js.getNarratives" />
+      <item index="6" class="java.lang.String" itemvalue="Node.js.IE app.js" />
+      <item index="7" class="java.lang.String" itemvalue="Node.js.test.js" />
+      <item index="8" class="java.lang.String" itemvalue="Node.js.getNarrativeList" />
+      <item index="9" class="java.lang.String" itemvalue="Node.js.collectNarratives" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -690,7 +734,13 @@
       <option name="project" value="LOCAL" />
       <updated>1419164923221</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="cleaned up narrative lists collection">
+      <created>1419173634540</created>
+      <option name="number" value="00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1419173634540</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <option name="trackContextForNewChangelist" value="true" />
     <servers />
   </component>
@@ -735,7 +785,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3106547" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39577836" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30474934" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30474934" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Get Gist" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -792,7 +842,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="revision for heroku" />
     <MESSAGE value="added underscore.js dev annotated version" />
     <MESSAGE value="cleaned up, renamed files, archived" />
     <MESSAGE value="update gitignore" />
@@ -817,76 +866,31 @@
     <MESSAGE value="cleaned up doc output" />
     <MESSAGE value="clean up console.log statements" />
     <MESSAGE value="collecting indivs links to narratives" />
-    <option name="LAST_COMMIT_MESSAGE" value="collecting indivs links to narratives" />
+    <MESSAGE value="cleaned up narrative lists collection" />
+    <option name="LAST_COMMIT_MESSAGE" value="cleaned up narrative lists collection" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/js/getNarrativeList.js</url>
-          <line>156</line>
-          <option name="timeStamp" value="454" />
+          <url>file://$PROJECT_DIR$/js/collectNarratives.js</url>
+          <line>86</line>
+          <option name="timeStamp" value="473" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="457" />
+      <option name="time" value="474" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="NodeJSConfigurationType">
-        <watch expression="paragraph[0]" language="JavaScript" />
-        <watch expression="anchor" language="JavaScript" />
-        <watch expression="anchor[0]" language="JavaScript" />
-        <watch expression="anchor[0].attribs.href" language="JavaScript" />
+        <watch expression="narratives" language="JavaScript" />
       </configuration>
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/libs/jquery-1.7.2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="17879" max-vertical-offset="159732">
-          <caret line="1074" column="0" selection-start-line="1074" selection-start-column="0" selection-end-line="1074" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/libs/d3.v2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.076923" vertical-offset="12737" max-vertical-offset="159613">
-          <caret line="757" column="7" selection-start-line="757" selection-start-column="5" selection-end-line="757" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/Document.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.4230769" vertical-offset="1016" max-vertical-offset="1445">
-          <caret line="65" column="17" selection-start-line="65" selection-start-column="8" selection-end-line="65" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log/aq-list-viz.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-25.863482" vertical-offset="7578" max-vertical-offset="7871">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="325" max-vertical-offset="697">
-          <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/archives/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="497">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/doc/markdown.md">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.36622807" vertical-offset="751" max-vertical-offset="10557">
@@ -1201,16 +1205,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/collect.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6189474" vertical-offset="1814" max-vertical-offset="3434">
-          <caret line="124" column="112" selection-start-line="124" selection-start-column="2" selection-end-line="124" selection-end-column="112" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/narrative_summaries/commented_out.json.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.23752496" vertical-offset="0" max-vertical-offset="501">
@@ -1226,14 +1220,6 @@
           <folding>
             <element signature="n#style#0;n#iframe#0;n#noscript#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/setupData.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4069264" vertical-offset="7326" max-vertical-offset="15470">
-          <caret line="444" column="22" selection-start-line="441" selection-start-column="0" selection-end-line="449" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1261,9 +1247,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/narrative_summaries/entities_other_groups_undertakings_associated_with_Al-Qaida.shtml">
+    <entry file="file://$PROJECT_DIR$/js/node_modules/async/lib/async.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="392.84616" vertical-offset="10214" max-vertical-offset="10965">
+        <state vertical-scroll-proportion="4.0844154" vertical-offset="9265" max-vertical-offset="19091">
+          <caret line="625" column="30" selection-start-line="625" selection-start-column="30" selection-end-line="625" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/archive/individuals_associated_with_Al-Qaida.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="30821">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/archive/entities_other_groups_undertakings_associated_with_Al-Qaida.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7259">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/narrative_summaries/individuals_associated_with_Al-Qaida.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1151.4615" vertical-offset="29938" max-vertical-offset="30821">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -1271,27 +1281,71 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data/narrative_summaries/entities_other_groups_undertakings_associated_with_Al-Qaida.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-115.03846" vertical-offset="4149" max-vertical-offset="7259">
-          <caret line="420" column="2" selection-start-line="420" selection-start-column="2" selection-end-line="420" selection-end-column="2" />
+        <state vertical-scroll-proportion="-14.346154" vertical-offset="6784" max-vertical-offset="7259">
+          <caret line="421" column="1" selection-start-line="421" selection-start-column="1" selection-end-line="421" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/narrative_summaries/individuals_associated_with_Al-Qaida.json">
+    <entry file="file://$PROJECT_DIR$/js/setupData.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="14.134615" vertical-offset="21492" max-vertical-offset="30821">
-          <caret line="1221" column="29" selection-start-line="1221" selection-start-column="24" selection-end-line="1221" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.26406926" vertical-offset="15008" max-vertical-offset="15470">
+          <caret line="892" column="31" selection-start-line="892" selection-start-column="31" selection-end-line="892" selection-end-column="31" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/narrative_summaries/narrative_links.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.8461537" vertical-offset="36823" max-vertical-offset="37961">
+          <caret line="2175" column="41" selection-start-line="2175" selection-start-column="41" selection-end-line="2175" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/collect.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="3434">
+          <caret line="10" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/narrative_summaries/entities_other_groups_undertakings_associated_with_Al-Qaida.shtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.076923" vertical-offset="9307" max-vertical-offset="10965">
+          <caret line="563" column="10" selection-start-line="563" selection-start-column="10" selection-end-line="563" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/collectNarratives.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1139" max-vertical-offset="3825">
+          <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/getNarrativeList.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30532786" vertical-offset="2962" max-vertical-offset="6222">
-          <caret line="183" column="98" selection-start-line="183" selection-start-column="98" selection-end-line="183" selection-end-column="98" />
+        <state vertical-scroll-proportion="-15.692307" vertical-offset="1598" max-vertical-offset="4369">
+          <caret line="118" column="0" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/output/narratives.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.9545455" vertical-offset="3383" max-vertical-offset="65688">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
