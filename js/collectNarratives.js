@@ -5,7 +5,13 @@
 if (typeof define !== 'function') {
   var define = require('amdefine');
 }
+// var tika = require('tika');
 var async = require('async'),
+  select = require('soupselect').select,
+  http = require('http'),
+  htmlparser = require("htmlparser"),
+  sys = require('sys'),
+  async = require('async'),
   re = require('request-enhanced'),
   fse = require('fs-extra'),
   util = require('util'),
@@ -16,12 +22,13 @@ var async = require('async'),
   request = require('sync-request'),
   truncateToNumChars = 400,
   narrCounter,
-  narrative_doc,
+  narrativeData,
   myJsonData,
   parseString = require('xml2js')
     .parseString;
 var linenums = require('./linenums.js');
 var consoleLog = false;
+var narrativeLinks = [];
 var fsOptions = {
   flags: 'r+',
   encoding: 'utf-8',
@@ -48,54 +55,68 @@ var getTheNarratives = function () {
   var functionCount = 0;
   var myResult;
   var narratives;
+  var narrative_links;
   async.series([
       function (callback) {
         // create an array of full urls pointing to the narratives
-        var narrative_links = require(__dirname + "/../data/narrative_summaries/narrative_links.json");
-        urls = [];
-        filePaths = [];
-        var url;
-        var filePath;
-        narrative_links.forEach(function (link_data_item) {
-          url = "http://www.un.org/sc/committees/1267/" + link_data_item.narrativeFileName;
-          urls.push(url);
-          filePath = "/sc/committees/1267/" + link_data_item.narrativeFileName;
-          filePaths.push(filePath);
-          //  console.log("\n ", __filename, "line", __line, "urls = ", urls);
-        });
-        callback();
-      },
-      // collect each narrative
-      function (callback) {
-        narratives = [];
-        var BreakException = {};
-        narrCounter = 0;
-//        for (var url = 0; url < 10; url++) {
-        for (var fp = 0; fp < 10; fp++) {
-//        urls.forEach(function (url) {
-          // url = urls[url];
-          filePath = filePaths[fp];
-          // console.log("\n ", __filename, "line", __line, "narratives = ", narratives);
-
-          var getFileNameAndPath = filePath.replace(/\/sc\/committees\/1267\/(NSQE00101E.shtml)/, '$1');
+        narrative_links = require(__dirname + "/../data/narrative_summaries/narrative_links.json");
+        //      urls = [];
+        //      filePaths = [];
+        //      var url;
+        var collectFilePath, link_data_item, saveFilePath;
+        for (var ldi = 0; ldi < 10; ldi++) {
+          link_data_item = narrative_links[ldi];
+          collectFilePath = "/sc/committees/1267/" + link_data_item.narrativeFileName;
+          saveFilePath = __dirname + "/../data/narrative_summaries/" + link_data_item.narrativeFileName;
           try {
             narrCounter++;
-            getNarrativesData(host, getFileNameAndPath, outputFileNameAndPath);
+            link_data_item.narr = getNarrativesData(host, collectFilePath, saveFilePath);
+            console.log("\n ", __filename, "line", __line, "; link_data_item = ", link_data_item);
+            // getNarrativesData(host, getFileNameAndPath, outputFileNameAndPath);
 //            var res = request('GET', url);
-            narrative_doc = res.body.toString();
+            // narrativeData = res.body.toString();
           } catch (err) {
             console.log("\n ", __filename, "line", __line, "; Error: ", err);
           }
-          var fileName = filePath.replace(/\/sc\/committees\/1267\/(NSQE00101E.shtml)/, '$1');
-          var fileNameAndPathForProcessing = __dirname + "/../data/narrative_summaries/" + fileName;
-
-          writeAQListXML(fileNameAndPathForProcessing, narrative_doc);
+          var linkDataSaveFilePath = __dirname + "/../data/narrative_summaries/narrative_links_2.json";
+          writeMyFile(linkDataSaveFilePath, JSON.stringify(narrative_links, null, " "), fsOptions);
+          // writeAQListXML(fileNameAndPathForProcessing, narrativeData);
+          //  console.log("\n ", __filename, "line", __line, "urls = ", urls);
         }
         ;
-        //console.log("\n ", __filename, "line", __line, "narratives = ", narratives);
         callback();
       }
       /*
+       // collect each narrative
+       function (callback) {
+       narratives = [];
+       var BreakException = {};
+       narrCounter = 0;
+       //        for (var url = 0; url < 10; url++) {
+       for (var fp = 0; fp < 10; fp++) {
+       //        urls.forEach(function (url) {
+       // url = urls[url];
+       filePath = filePaths[fp];
+       // console.log("\n ", __filename, "line", __line, "narratives = ", narratives);
+       var getFileNameAndPath = filePath.replace(/\/sc\/committees\/1267\/(NSQ.*.shtml)/, '$1');
+       try {
+       narrCounter++;
+       getNarrativesData (host, getFilePath, outputFileNameAndPath, entityOrIndivString)
+       // getNarrativesData(host, getFileNameAndPath, outputFileNameAndPath);
+       //            var res = request('GET', url);
+       narrativeData = res.body.toString();
+       } catch (err) {
+       console.log("\n ", __filename, "line", __line, "; Error: ", err);
+       }
+       var fileName = filePath.replace(/\/sc\/committees\/1267\/(NSQE00101E.shtml)/, '$1');
+       var fileNameAndPathForProcessing = __dirname + "/../data/narrative_summaries/" + fileName;
+       writeAQListXML(fileNameAndPathForProcessing, narrativeData);
+       }
+       ;
+       //console.log("\n ", __filename, "line", __line, "narratives = ", narratives);
+       callback();
+       }
+       /*
        ,
        function (callback) {
        var fileNameAndPathForProcessing = __dirname + "/../data/output/AQList.xml";
@@ -203,113 +224,122 @@ var writeAQListXML = function (localFileNameAndPath, narratives) {
 };
 
 var getNarrativesData = function (host, getFilePath, outputFileNameAndPath, entityOrIndivString) {
+  console.log("\n ", __filename, "line", __line, "; host = ", host, "; getFilePath = ", getFilePath, "; outputFileNameAndPath = ", outputFileNameAndPath, "; entityOrIndivString = ", entityOrIndivString)
+  var body;
+  var paragraphArray = [];
+  var paragraphs, paragraph, maincontent;
   var client = http.createClient(80, host);
-  var request = client.request('GET', getFilePath, {'host': host});
-
+  var request = client.request('GET', getFilePath, {'host': host})
   request.on('response', function (response) {
     response.setEncoding('utf8');
-
     var body = "";
     response.on('data', function (chunk) {
       body = body + chunk;
     });
-
+//    var body = document.getElementsByTagName('body')[0];
+var x;
     response.on('end', function () {
-
       // now we have the whole body, parse it and select the nodes we want...
       var handler = new htmlparser.DefaultHandler(function (err, dom) {
         if (err) {
           console.log("\n ", __filename, "line", __line, "Error: " + err);
-          //       sys.debug("Error: " + err);
         } else {
 
-          // soupselect happening here...
-          // var titles = select(dom, 'a.title');
-          rows = select(dom, 'table tr');
-          var rownum;
-          // sys.puts("Links from narrative list page");
-          // loop through each table row
-          for (var i = 0; i < rows.length; i++) {
-            // skip the header row
-            if (i === 0) {
-              continue;
-            }
-            rownum = i;
-            row = rows[i];
-            // sys.puts("row[" + i + "] = " + sys.inspect(JSON.stringify(row)));
-            narrLink = {};
-            tds = select(row, 'td');
-            // loop through each td in the row
-            for (var j = 0; j < tds.length; j++) {
-              td = tds[j];
-              // get the id from the first td
-              if (j === 0) {
-                paragraph = select(td, 'p');
-                if (typeof paragraph !== 'undefined') {
-                  try {
-                    if (typeof paragraph[0] !== 'undefined') {
-                      narrLink.id = getCleanId(paragraph[0].children[0].data);
-                    }
-                  } catch (err) {
-                    console.log("\n ", __filename, "line", __line, " Error parsing id: ", err);
-                  }
-                }
-              }
-              // if we are in the second td in the row...
-              else if (j === 1) {
-                paragraph = select(td, 'p');
-                anchor = select(td, 'a');
+          // xmlDoc=loadXMLDoc("books.xml");
+          //x=body.getElementsByTagName("p");
 
-                if (typeof paragraph !== 'undefined' && typeof paragraph[0] !== 'undefined') {
-                  //console.log("\n ", __filename, "line", __line, "paragraph = ", JSON.stringify(paragraph));
-                  if (typeof paragraph[0].children[0].attribs !== 'undefined') {
-                    try {
-                      narrativeFileName = paragraph[0].children[0].attribs.href;
-                      narrativeFileName = normalizeNarrativeFileName(narrativeFileName); //.replace(/\/sc\/committees\/1267\/(NSQ.*\.shtml)/, '$1');
-                      // narrativeFileName = narrativeFileName.replace(/http:\/\/dev.un.org\/sc\/committees\/1267\/(NSQ.*\.shtml)/, '$1');
-                      // http://dev.un.org/sc/committees/1267/
-                      narrLink.narrativeFileName = narrativeFileName;
-                    } catch (err) {
-                      console.log("\n ", __filename, "line", __line, "; paragraph[0].children[0] = ", paragraph[0].children[0]);
-                      console.log("\n ", __filename, "line", __line, "; Error: paragraph[0].children[0].attribs is undefined; tr = ", i, "; td = ", j, err);
-                    }
-                  } else if (typeof anchor[0].attribs.href !== 'undefined') {
-                    narrLink.narrativeFileName = normalizeNarrativeFileName(narrativeFileName);
-                    narrLink.targetName = JSON.stringify(anchor[0].children[0].data);
-                  } else {
-                    narrLink.narrativeFileName = "PLACEHOLDER0";
-                    console.log("\n ", __filename, "line", __line, "; Error: narrativeFileName for tr = ", i, "; td = ", j, "is PLACEHOLDER0");
-                  }
-                  // if anchor inside of paragraph
-                  if (anchor[0].children[0].data !== "u") {
-                    targetName = anchor[0].children[0].data;
-                  } else if (anchor[0].children[0].data === "u") {
-                    underscore = select(td, 'u');
-                    targetName = JSON.stringify(underscore[0].children[0].data);
-                  } else {
-                    targetName = "PLACEHOLDER1";
-                  }
-                  targetName = targetName.replace(/[\n\f\r\t]/gm, "");
-                  targetName = targetName.replace(/\s\s+/gm, " ");
-                  targetName = targetName.trim();
-                  if (targetName === "") {
-                    narrLink.targetName = "PLACEHOLDER2";
-                  } else {
-                    narrLink.targetName = targetName;
-                  }
-                  // end of if (typeof paragraph !== 'undefined' && typeof paragraph[0] !== 'undefined')
-                } else if (typeof anchor[0].attribs.href !== 'undefined' && anchor[0].attribs.href !== "") {
-                  narrativeFileName = normalizeNarrativeFileName(anchor[0].attribs.href);
-                  narrLink.narrativeFileName = narrativeFileName;
-                  if (typeof anchor[0].children[0] !== 'undefined' && anchor[0].children[0].data !== "") {
-                    targetName = anchor[0].children[0].data;
-                    narrLink.targetName = targetName;
-                  }
-                }
-              }
-            }
-            narrLink[entityOrIndivString + "RowNum"] = i;
-            narrativeLinks.push(narrLink);
+          // console.log("Text Nodes: ");
+          // console.log(x.textContent);
+
+
+
+          console.log("\n ", __filename, "line", __line, "; body = ", body, "; body.textContent = ", body.textContent);
+          var bodyText = body.textContent;
+          console.log("\n ", __filename, "line", __line, "; bodyText = ", bodyText);
+          maincontent = select(dom, 'div#maincontent');
+          console.log("\n ", __filename, "line", __line, "; maincontent = ", JSON.stringify(maincontent, null, " "));
+          // soupselect happening here.., var titles = select(dom, 'a.title');
+          paragraphs = select(maincontent, 'p');
+          var rownum;
+          for (var i = 0; i < paragraphs.length; i++) {
+            pnum = i;
+            paragraph = paragraphs[i];
+            // sys.puts("row[" + i + "] = " + sys.inspect(JSON.stringify(row)));
+//             paragraphsArray = [];
+            paragraphArray.push(paragraphs);
+            /*
+
+             //            tds = select(row, 'td');
+             // loop through each td in the row
+             for (var j = 0; j < tds.length; j++) {
+             td = tds[j];
+             // get the id from the first td
+             if (j === 0) {
+             paragraph = select(td, 'p');
+             if (typeof paragraph !== 'undefined') {
+             try {
+             if (typeof paragraph[0] !== 'undefined') {
+             narrLink.id = getCleanId(paragraph[0].children[0].data);
+             }
+             } catch (err) {
+             console.log("\n ", __filename, "line", __line, " Error parsing id: ", err);
+             }
+             }
+             }
+             // if we are in the second td in the row...
+             else if (j === 1) {
+             paragraph = select(td, 'p');
+             anchor = select(td, 'a');
+
+             if (typeof paragraph !== 'undefined' && typeof paragraph[0] !== 'undefined') {
+             //console.log("\n ", __filename, "line", __line, "paragraph = ", JSON.stringify(paragraph));
+             if (typeof paragraph[0].children[0].attribs !== 'undefined') {
+             try {
+             narrativeFileName = paragraph[0].children[0].attribs.href;
+             narrativeFileName = normalizeNarrativeFileName(narrativeFileName); //.replace(/\/sc\/committees\/1267\/(NSQ.*\.shtml)/, '$1');
+             // narrativeFileName = narrativeFileName.replace(/http:\/\/dev.un.org\/sc\/committees\/1267\/(NSQ.*\.shtml)/, '$1');
+             // http://dev.un.org/sc/committees/1267/
+             narrLink.narrativeFileName = narrativeFileName;
+             } catch (err) {
+             console.log("\n ", __filename, "line", __line, "; paragraph[0].children[0] = ", paragraph[0].children[0]);
+             console.log("\n ", __filename, "line", __line, "; Error: paragraph[0].children[0].attribs is undefined; tr = ", i, "; td = ", j, err);
+             }
+             } else if (typeof anchor[0].attribs.href !== 'undefined') {
+             narrLink.narrativeFileName = normalizeNarrativeFileName(narrativeFileName);
+             narrLink.targetName = JSON.stringify(anchor[0].children[0].data);
+             } else {
+             narrLink.narrativeFileName = "PLACEHOLDER0";
+             console.log("\n ", __filename, "line", __line, "; Error: narrativeFileName for tr = ", i, "; td = ", j, "is PLACEHOLDER0");
+             }
+             // if anchor inside of paragraph
+             if (anchor[0].children[0].data !== "u") {
+             targetName = anchor[0].children[0].data;
+             } else if (anchor[0].children[0].data === "u") {
+             underscore = select(td, 'u');
+             targetName = JSON.stringify(underscore[0].children[0].data);
+             } else {
+             targetName = "PLACEHOLDER1";
+             }
+             targetName = targetName.replace(/[\n\f\r\t]/gm, "");
+             targetName = targetName.replace(/\s\s+/gm, " ");
+             targetName = targetName.trim();
+             if (targetName === "") {
+             narrLink.targetName = "PLACEHOLDER2";
+             } else {
+             narrLink.targetName = targetName;
+             }
+             // end of if (typeof paragraph !== 'undefined' && typeof paragraph[0] !== 'undefined')
+             } else if (typeof anchor[0].attribs.href !== 'undefined' && anchor[0].attribs.href !== "") {
+             narrativeFileName = normalizeNarrativeFileName(anchor[0].attribs.href);
+             narrLink.narrativeFileName = narrativeFileName;
+             if (typeof anchor[0].children[0] !== 'undefined' && anchor[0].children[0].data !== "") {
+             targetName = anchor[0].children[0].data;
+             narrLink.targetName = targetName;
+             }
+             }
+             }
+             */
+
           }
         }
       });
@@ -318,11 +348,41 @@ var getNarrativesData = function (host, getFilePath, outputFileNameAndPath, enti
       parser.parseComplete(body);
       var jsonNarrList = JSON.stringify(narrativeLinks, null, " ");
       // sys.puts(JSON.stringify(narrativeLinks, null, " "));
-      writeMyFile(outputFileNameAndPath, jsonNarrList, fsOptions);
+      console.log("\n ", __filename, "line", __line, "; outputFileNameAndPath = ", outputFileNameAndPath, "; JSON.stringify(paragraphArray, null, \" \") = ", JSON.stringify(paragraphArray, null, " "), "; fsOptions = ", fsOptions);
+      writeMyFile(outputFileNameAndPath, JSON.stringify(paragraphArray, null, " "), fsOptions);
+      // getFile(outurl, fileNameToSaveTo) {
+
+      return paragraphArray;
     });
+    console.log("\n ", __filename, "line", __line, "; JSON.stringify(paragraphArray, null, \" \") = ", JSON.stringify(paragraphArray, null, " "));
+    return paragraphArray;
   });
   request.end();
-  return narrativeLinks;
+  console.log("\n ", __filename, "line", __line, "; JSON.stringify(paragraphArray, null, \" \") = ", JSON.stringify(paragraphArray, null, " "));
+  return paragraphArray;
+};
+
+var writeMyFile = function (localFileNameAndPath, data, fsOptions) {
+  try {
+    fse.writeFileSync(localFileNameAndPath, data, fsOptions);
+  } catch (err) {
+    console.log('\n ', __filename, "line", __line, ' Error: ', err);
+  }
+};
+
+var getFile = function (url, fileNameToSaveTo) {
+  // example: url = "http://www.un.org/sc/committees/1267/AQList.xml"
+  // example: fileNameToSaveTo = __dirname + "/../data/output/AQList.xml";
+
+//   fileNameToSaveTo = __dirname + "/../data/output/AQList.xml";
+ //  re.get("http://www.un.org/sc/committees/1267/AQList.xml", fileNameToSaveTo, function (error, filename) {
+    re.get(url, fileNameToSaveTo, function (error, filename) {
+    if (err) {
+      console.log("\n ", __filename, "line", __line, "; Error \n" + err);
+    } else    if (consoleLog) {
+      console.log("\n ", __filename, "line", __line, "; Saved content to: \n", filename);
+    }
+  });
 };
 
 getTheNarratives();
