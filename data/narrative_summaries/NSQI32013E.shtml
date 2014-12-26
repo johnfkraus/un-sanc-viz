@@ -1,0 +1,162 @@
+[
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "u",
+    "data": "u",
+    "type": "tag",
+    "name": "u",
+    "children": [
+     {
+      "raw": "strong",
+      "data": "strong",
+      "type": "tag",
+      "name": "strong",
+      "children": [
+       {
+        "raw": "QI.A.320.13.  ABD-AL-HAMID AL-MASLI",
+        "data": "QI.A.320.13.  ABD-AL-HAMID AL-MASLI",
+        "type": "text"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "em",
+    "data": "em",
+    "type": "tag",
+    "name": "em",
+    "children": [
+     {
+      "raw": "Date on which the narrative summary became available  on the Committee&rsquo;s website",
+      "data": "Date on which the narrative summary became available  on the Committee&rsquo;s website",
+      "type": "text"
+     }
+    ]
+   },
+   {
+    "raw": ": 26.11.2013            ",
+    "data": ": 26.11.2013            ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Abd-al-Hamid al-Masli was listed on 26 November 2013 pursuant  to paragraphs 2 and 3 of resolution",
+    "data": "Abd-al-Hamid al-Masli was listed on 26 November 2013 pursuant  to paragraphs 2 and 3 of resolution",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n2083 (2012) as being associated with Al-Qaida for  &ldquo;participating in the financing, planning, facilitating, preparing, or  perpetrating of acts or activities by, in conjunction with, under the name of,  on behalf of, or in support of&rdquo; and &ldquo;Supplying, selling or transferring arms  and related materiel to&rdquo; Al-Qaida (QE.A.4.01).",
+    "data": "\r\n2083 (2012) as being associated with Al-Qaida for  &ldquo;participating in the financing, planning, facilitating, preparing, or  perpetrating of acts or activities by, in conjunction with, under the name of,  on behalf of, or in support of&rdquo; and &ldquo;Supplying, selling or transferring arms  and related materiel to&rdquo; Al-Qaida (QE.A.4.01).",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "em",
+    "data": "em",
+    "type": "tag",
+    "name": "em",
+    "children": [
+     {
+      "raw": "Additional information:",
+      "data": "Additional information:",
+      "type": "text"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Abd-al-Hamid al-Masli is the leader of an Al-Qaida  (QE.A.4.01) electronics and explosives workshop in Pakistan, which is  responsible for producing improvised explosive device (IED) components on  behalf of Al-Qaida&rsquo;s senior leadership. As of early 2012, and since at least  2011, Al-Masli&rsquo;s workshop provided Al-Qaida paramilitary brigades in  Afghanistan with timers, circuits, mines, and remote detonation devices for use  in IEDs. Al-Masli has also instructed Al-Qaida recruits on how to build  detonators and, as of 2009, was personally in charge of IED component construction  at the workshop.",
+    "data": "Abd-al-Hamid al-Masli is the leader of an Al-Qaida  (QE.A.4.01) electronics and explosives workshop in Pakistan, which is  responsible for producing improvised explosive device (IED) components on  behalf of Al-Qaida&rsquo;s senior leadership. As of early 2012, and since at least  2011, Al-Masli&rsquo;s workshop provided Al-Qaida paramilitary brigades in  Afghanistan with timers, circuits, mines, and remote detonation devices for use  in IEDs. Al-Masli has also instructed Al-Qaida recruits on how to build  detonators and, as of 2009, was personally in charge of IED component construction  at the workshop.",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Al-Masli has performed other duties for Al-Qaida in  addition to his IED facilitation activities. As of mid-2011, Al-Masli was part  of Al-Qaida's military committee and temporarily led the committee in 2010.  Al-Masli was also an Al-Qaida leader in Pakistan as of late 2010.",
+    "data": "Al-Masli has performed other duties for Al-Qaida in  addition to his IED facilitation activities. As of mid-2011, Al-Masli was part  of Al-Qaida's military committee and temporarily led the committee in 2010.  Al-Masli was also an Al-Qaida leader in Pakistan as of late 2010.",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "em",
+    "data": "em",
+    "type": "tag",
+    "name": "em",
+    "children": [
+     {
+      "raw": "Related listed individuals and entities:",
+      "data": "Related listed individuals and entities:",
+      "type": "text"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Al-Qaida (QE.A.4.01), listed on 6 October 2001",
+    "data": "Al-Qaida (QE.A.4.01), listed on 6 October 2001",
+    "type": "text"
+   }
+  ]
+ }
+]

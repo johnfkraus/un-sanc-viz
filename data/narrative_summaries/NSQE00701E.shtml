@@ -1,0 +1,321 @@
+[
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "strong",
+    "data": "strong",
+    "type": "tag",
+    "name": "strong",
+    "children": [
+     {
+      "raw": "u",
+      "data": "u",
+      "type": "tag",
+      "name": "u",
+      "children": [
+       {
+        "raw": "QE.A.7.01. ASBAT AL-ANSAR",
+        "data": "QE.A.7.01. ASBAT AL-ANSAR",
+        "type": "text"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "em",
+    "data": "em",
+    "type": "tag",
+    "name": "em",
+    "children": [
+     {
+      "raw": "Date on which the  narrative summary became available on",
+      "data": "Date on which the  narrative summary became available on",
+      "type": "text"
+     }
+    ]
+   },
+   {
+    "raw": " ",
+    "data": " ",
+    "type": "text"
+   },
+   {
+    "raw": "em",
+    "data": "em",
+    "type": "tag",
+    "name": "em",
+    "children": [
+     {
+      "raw": "the  Committee’s website",
+      "data": "the  Committee’s website",
+      "type": "text"
+     }
+    ]
+   },
+   {
+    "raw": ": 7 April 2011",
+    "data": ": 7 April 2011",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n            ",
+    "data": "\r\n            ",
+    "type": "text"
+   },
+   {
+    "raw": "em",
+    "data": "em",
+    "type": "tag",
+    "name": "em",
+    "children": [
+     {
+      "raw": "Date on which the narrative summary was updated",
+      "data": "Date on which the narrative summary was updated",
+      "type": "text"
+     }
+    ]
+   },
+   {
+    "raw": ": 3 June 2014 ",
+    "data": ": 3 June 2014 ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Asbat  al-Ansar was listed ",
+    "data": "Asbat  al-Ansar was listed ",
+    "type": "text"
+   },
+   {
+    "raw": "strong",
+    "data": "strong",
+    "type": "tag",
+    "name": "strong",
+    "children": [
+     {
+      "raw": "on",
+      "data": "on",
+      "type": "text"
+     }
+    ]
+   },
+   {
+    "raw": "strong",
+    "data": "strong",
+    "type": "tag",
+    "name": "strong",
+    "children": [
+     {
+      "raw": " 6 October 2001",
+      "data": " 6 October 2001",
+      "type": "text"
+     }
+    ]
+   },
+   {
+    "raw": " pursuant to paragraph 8(c) of resolution 1333  (2000) as being associated with Al-Qaida, Usama bin Laden or the Taliban  for “participating in the financing, planning, facilitating, preparing or  perpetrating of acts or activities by, in conjunction with, under the name of,  on behalf or in support of” Al-Qaida (QE.A.4.01).",
+    "data": " pursuant to paragraph 8(c) of resolution 1333  (2000) as being associated with Al-Qaida, Usama bin Laden or the Taliban  for “participating in the financing, planning, facilitating, preparing or  perpetrating of acts or activities by, in conjunction with, under the name of,  on behalf or in support of” Al-Qaida (QE.A.4.01).",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "em",
+    "data": "em",
+    "type": "tag",
+    "name": "em",
+    "children": [
+     {
+      "raw": "Additional information",
+      "data": "Additional information",
+      "type": "text"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Asbat al-Ansar is a group based in Lebanon composed  primarily of Palestinians with links to Al-Qaida (QE.A.4.01). The group has  engaged in violence to achieve political ends.",
+    "data": "Asbat al-Ansar is a group based in Lebanon composed  primarily of Palestinians with links to Al-Qaida (QE.A.4.01). The group has  engaged in violence to achieve political ends.",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Asbat al-Ansar has secretly pledged allegiance to  Al-Qaida and maintained close ties with the Al-Qaida network, including the  provision of fighters and financial assistance. Asbat al-Ansar has its base of  operations in the Ain al-Hilweh Palestinian refugee camp near Sidon, Lebanon,  with more than 290 armed members. Lebanese authorities detained a cell of  Al-Qaida in Iraq (QE.J.115.04) extremists in June 2007 in the Bekaa  Valley that had been training with  Asbat al-Ansar and was possibly planning terrorist attacks throughout Lebanon  against the United Nations Interim Forces in Lebanon (UNIFIL) or other targets. ",
+    "data": "Asbat al-Ansar has secretly pledged allegiance to  Al-Qaida and maintained close ties with the Al-Qaida network, including the  provision of fighters and financial assistance. Asbat al-Ansar has its base of  operations in the Ain al-Hilweh Palestinian refugee camp near Sidon, Lebanon,  with more than 290 armed members. Lebanese authorities detained a cell of  Al-Qaida in Iraq (QE.J.115.04) extremists in June 2007 in the Bekaa  Valley that had been training with  Asbat al-Ansar and was possibly planning terrorist attacks throughout Lebanon  against the United Nations Interim Forces in Lebanon (UNIFIL) or other targets. ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Asbat al-Ansar first emerged in the early 1990s. In  the mid-1990s the group assassinated Lebanese religious leaders and bombed  nightclubs, theaters and liquor stores. It was involved in clashes in northern Lebanon in December 1999 and carried out a  rocket-propelled grenade attack on the Russian Embassy in Beirut in January 2000. In September 2004,  operatives with links to the group were involved in planning terrorist  operations against the Italian Embassy, the Ukrainian Consulate General and  Lebanese government offices. In October 2004, Mahir al-Sa’di, a member of Asbat  al-Ansar, was sentenced in absentia to life imprisonment for plotting to assassinate  the then Ambassador of the United States  to Lebanon,  in 2000.",
+    "data": "Asbat al-Ansar first emerged in the early 1990s. In  the mid-1990s the group assassinated Lebanese religious leaders and bombed  nightclubs, theaters and liquor stores. It was involved in clashes in northern Lebanon in December 1999 and carried out a  rocket-propelled grenade attack on the Russian Embassy in Beirut in January 2000. In September 2004,  operatives with links to the group were involved in planning terrorist  operations against the Italian Embassy, the Ukrainian Consulate General and  Lebanese government offices. In October 2004, Mahir al-Sa’di, a member of Asbat  al-Ansar, was sentenced in absentia to life imprisonment for plotting to assassinate  the then Ambassador of the United States  to Lebanon,  in 2000.",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Asbat al-Ansar operatives have been involved in  fighting against the ",
+    "data": "Asbat al-Ansar operatives have been involved in  fighting against the ",
+    "type": "text"
+   },
+   {
+    "raw": "em",
+    "data": "em",
+    "type": "tag",
+    "name": "em",
+    "children": [
+     {
+      "raw": "Multi",
+      "data": "Multi",
+      "type": "text"
+     }
+    ]
+   },
+   {
+    "raw": "strong",
+    "data": "strong",
+    "type": "tag",
+    "name": "strong",
+    "children": [
+     {
+      "raw": "-",
+      "data": "-",
+      "type": "text"
+     }
+    ]
+   },
+   {
+    "raw": "em",
+    "data": "em",
+    "type": "tag",
+    "name": "em",
+    "children": [
+     {
+      "raw": "National Forces",
+      "data": "National Forces",
+      "type": "text"
+     }
+    ]
+   },
+   {
+    "raw": " in Iraq  since at least 2005 and several members of the group have been killed there. In  2007, Asbat al-Ansar remained focused on supporting fighting in Iraq  and planning attacks against, among others, UNIFIL and the Lebanese security  forces. ",
+    "data": " in Iraq  since at least 2005 and several members of the group have been killed there. In  2007, Asbat al-Ansar remained focused on supporting fighting in Iraq  and planning attacks against, among others, UNIFIL and the Lebanese security  forces. ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "em",
+    "data": "em",
+    "type": "tag",
+    "name": "em",
+    "children": [
+     {
+      "raw": "Related listed individuals and entities:",
+      "data": "Related listed individuals and entities:",
+      "type": "text"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Al-Qaida (QE.A.4.01), listed on 6 October 2001",
+    "data": "Al-Qaida (QE.A.4.01), listed on 6 October 2001",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n            Al-Qaida in Iraq (QE.J.115.04), listed on 18 October 2004",
+    "data": "\r\n            Al-Qaida in Iraq (QE.J.115.04), listed on 18 October 2004",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n            Al-Nusrah Front for the People of the Levant (QE.A.137.14), listed on 14 May 2014            ",
+    "data": "\r\n            Al-Nusrah Front for the People of the Levant (QE.A.137.14), listed on 14 May 2014            ",
+    "type": "text"
+   }
+  ]
+ }
+]

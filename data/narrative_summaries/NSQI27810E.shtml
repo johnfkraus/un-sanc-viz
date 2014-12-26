@@ -1,0 +1,136 @@
+[
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "em",
+    "data": "em",
+    "type": "tag",
+    "name": "em",
+    "children": [
+     {
+      "raw": "Date on which the narrative summary became available on the Committee’s website:",
+      "data": "Date on which the narrative summary became available on the Committee’s website:",
+      "type": "text"
+     }
+    ]
+   },
+   {
+    "raw": " 25 March 2010",
+    "data": " 25 March 2010",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Muthanna Harith al-Dari was listed on ",
+    "data": "Muthanna Harith al-Dari was listed on ",
+    "type": "text"
+   },
+   {
+    "raw": "strong",
+    "data": "strong",
+    "type": "tag",
+    "name": "strong",
+    "children": [
+     {
+      "raw": "25 March 2010",
+      "data": "25 March 2010",
+      "type": "text"
+     }
+    ]
+   },
+   {
+    "raw": " pursuant to paragraphs 1 and 2 of resolution 1904 (2009) as being associated with Al-Qaida, Usama bin Laden or the Taliban for “participating in the financing, planning, facilitating, preparing or perpetrating of acts or activities by, in conjunction with, under the name of, on behalf or in support of”, “supplying, selling or transferring arms and related materiel to”, “recruiting for” and “otherwise supporting acts or activities of” Al-Qaida in Iraq (QE.J.115.04).",
+    "data": " pursuant to paragraphs 1 and 2 of resolution 1904 (2009) as being associated with Al-Qaida, Usama bin Laden or the Taliban for “participating in the financing, planning, facilitating, preparing or perpetrating of acts or activities by, in conjunction with, under the name of, on behalf or in support of”, “supplying, selling or transferring arms and related materiel to”, “recruiting for” and “otherwise supporting acts or activities of” Al-Qaida in Iraq (QE.J.115.04).",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "em",
+    "data": "em",
+    "type": "tag",
+    "name": "em",
+    "children": [
+     {
+      "raw": "Additional information:",
+      "data": "Additional information:",
+      "type": "text"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Muthanna Harith al-Dari has provided financial  support and other services to or in support of Al-Qaida in Iraq (AQI)  (QE.J.115.04). In one instance, in October 2008, Al-Dari provided $1 million to  an AQI member who recruited Iraqis in Syria  and Al-Anbar province, Iraq.  Al-Dari told the AQI member to tell new AQI recruits that they would be paid up  to $10,000 upon completion of their training. Additionally, as of 2008, Al-Dari  financed an AQI cell targeting the Iraqi Army and the Multi-National Force - Iraq.",
+    "data": "Muthanna Harith al-Dari has provided financial  support and other services to or in support of Al-Qaida in Iraq (AQI)  (QE.J.115.04). In one instance, in October 2008, Al-Dari provided $1 million to  an AQI member who recruited Iraqis in Syria  and Al-Anbar province, Iraq.  Al-Dari told the AQI member to tell new AQI recruits that they would be paid up  to $10,000 upon completion of their training. Additionally, as of 2008, Al-Dari  financed an AQI cell targeting the Iraqi Army and the Multi-National Force - Iraq.",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "em",
+    "data": "em",
+    "type": "tag",
+    "name": "em",
+    "children": [
+     {
+      "raw": "Related listed individuals and  entities:",
+      "data": "Related listed individuals and  entities:",
+      "type": "text"
+     },
+     {
+      "raw": "br",
+      "data": "br",
+      "type": "tag",
+      "name": "br"
+     },
+     {
+      "raw": "\r\n    ",
+      "data": "\r\n    ",
+      "type": "text"
+     }
+    ]
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n        Al-Qaida in Iraq (QE.J.115.04), listed on 18 October 2004",
+    "data": "\r\n        Al-Qaida in Iraq (QE.J.115.04), listed on 18 October 2004",
+    "type": "text"
+   }
+  ]
+ }
+]

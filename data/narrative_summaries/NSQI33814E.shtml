@@ -1,0 +1,299 @@
+[
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "strong",
+    "data": "strong",
+    "type": "tag",
+    "name": "strong",
+    "children": [
+     {
+      "raw": "u",
+      "data": "u",
+      "type": "tag",
+      "name": "u",
+      "children": [
+       {
+        "raw": "QI.A.338.14",
+        "data": "QI.A.338.14",
+        "type": "text"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "raw": "strong",
+    "data": "strong",
+    "type": "tag",
+    "name": "strong",
+    "children": [
+     {
+      "raw": "u",
+      "data": "u",
+      "type": "tag",
+      "name": "u",
+      "children": [
+       {
+        "raw": ". ",
+        "data": ". ",
+        "type": "text"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "raw": "strong",
+    "data": "strong",
+    "type": "tag",
+    "name": "strong",
+    "children": [
+     {
+      "raw": "u",
+      "data": "u",
+      "type": "tag",
+      "name": "u",
+      "children": [
+       {
+        "raw": "Shafi  Sultan Mohammed al-Ajmi",
+        "data": "Shafi  Sultan Mohammed al-Ajmi",
+        "type": "text"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "raw": "strong",
+    "data": "strong",
+    "type": "tag",
+    "name": "strong",
+    "children": [
+     {
+      "raw": "u",
+      "data": "u",
+      "type": "tag",
+      "name": "u",
+      "children": [
+       {
+        "raw": " ",
+        "data": " ",
+        "type": "text"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n    ",
+    "data": "\r\n    ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "em",
+    "data": "em",
+    "type": "tag",
+    "name": "em",
+    "children": [
+     {
+      "raw": "Date on which the narrative summary became available  on the Committee&rsquo;s website: ",
+      "data": "Date on which the narrative summary became available  on the Committee&rsquo;s website: ",
+      "type": "text"
+     }
+    ]
+   },
+   {
+    "raw": "23 September 2014",
+    "data": "23 September 2014",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n      ",
+    "data": "\r\n      ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Shafi Sultan  Mohammed al-Ajmi was listed on 23 September 2014  pursuant to paragraphs 2 and 4 of resolution 2161 (2014) as being associated  with Al-Qaida for &ldquo;participating in the financing, planning, facilitating,  preparing, or perpetrating of acts or activities by, in conjunction with, under  the name of, on behalf of, or in support of&rdquo;, &ldquo;supplying, selling or  transferring arms and related materiel to&rdquo;, and &ldquo;otherwise supporting acts or  activities of&rdquo; Al-Nusrah Front for the People of the Levant  (QE.A.137.14). ",
+    "data": "Shafi Sultan  Mohammed al-Ajmi was listed on 23 September 2014  pursuant to paragraphs 2 and 4 of resolution 2161 (2014) as being associated  with Al-Qaida for &ldquo;participating in the financing, planning, facilitating,  preparing, or perpetrating of acts or activities by, in conjunction with, under  the name of, on behalf of, or in support of&rdquo;, &ldquo;supplying, selling or  transferring arms and related materiel to&rdquo;, and &ldquo;otherwise supporting acts or  activities of&rdquo; Al-Nusrah Front for the People of the Levant  (QE.A.137.14). ",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n      ",
+    "data": "\r\n      ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "em",
+    "data": "em",
+    "type": "tag",
+    "name": "em",
+    "children": [
+     {
+      "raw": "Additional information:",
+      "data": "Additional information:",
+      "type": "text"
+     }
+    ]
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n      ",
+    "data": "\r\n      ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Shafi Sultan Mohammed al-Ajmi is  one of the most active Kuwaiti fundraisers for Al-Nusrah Front for  the People of the Levant (QE.A.137.14) and  operates regular social media campaigns seeking donations for Syrian fighters. ",
+    "data": "Shafi Sultan Mohammed al-Ajmi is  one of the most active Kuwaiti fundraisers for Al-Nusrah Front for  the People of the Levant (QE.A.137.14) and  operates regular social media campaigns seeking donations for Syrian fighters. ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "In  July 2014, he publicly admitted that he and his associates collected money  under the auspices of charity and delivered the funds in person to groups  including Al-Nusrah Front. Al-Ajmi also acknowledged purchasing and smuggling  arms, apparently to the same groups.",
+    "data": "In  July 2014, he publicly admitted that he and his associates collected money  under the auspices of charity and delivered the funds in person to groups  including Al-Nusrah Front. Al-Ajmi also acknowledged purchasing and smuggling  arms, apparently to the same groups.",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "em",
+    "data": "em",
+    "type": "tag",
+    "name": "em",
+    "children": [
+     {
+      "raw": "Related listed individuals and entities:",
+      "data": "Related listed individuals and entities:",
+      "type": "text"
+     }
+    ]
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n      ",
+    "data": "\r\n      ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Al-Qaida (QE.A.4.01), listed on  6 October 2001",
+    "data": "Al-Qaida (QE.A.4.01), listed on  6 October 2001",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n      Al-Nusrah Front for the People of the Levant  (QE.A.137.14), listed on 14 May 2014",
+    "data": "\r\n      Al-Nusrah Front for the People of the Levant  (QE.A.137.14), listed on 14 May 2014",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n",
+    "data": "\r\n",
+    "type": "text"
+   }
+  ]
+ }
+]

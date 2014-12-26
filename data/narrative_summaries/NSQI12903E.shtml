@@ -1,0 +1,441 @@
+[
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "strong",
+    "data": "strong",
+    "type": "tag",
+    "name": "strong",
+    "children": [
+     {
+      "raw": "u",
+      "data": "u",
+      "type": "tag",
+      "name": "u",
+      "children": [
+       {
+        "raw": "QI.M.129.03. DJAMEL  MOUSTFA",
+        "data": "QI.M.129.03. DJAMEL  MOUSTFA",
+        "type": "text"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "raw": " ",
+    "data": " ",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n              ",
+    "data": "\r\n              ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "em",
+    "data": "em",
+    "type": "tag",
+    "name": "em",
+    "children": [
+     {
+      "raw": "Date on which the narrative  summary became available on",
+      "data": "Date on which the narrative  summary became available on",
+      "type": "text"
+     }
+    ]
+   },
+   {
+    "raw": " ",
+    "data": " ",
+    "type": "text"
+   },
+   {
+    "raw": "em",
+    "data": "em",
+    "type": "tag",
+    "name": "em",
+    "children": [
+     {
+      "raw": "the Committee’s website",
+      "data": "the Committee’s website",
+      "type": "text"
+     }
+    ]
+   },
+   {
+    "raw": ": 14 December 2009",
+    "data": ": 14 December 2009",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n              ",
+    "data": "\r\n              ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Djamel Moustfa was listed on ",
+    "data": "Djamel Moustfa was listed on ",
+    "type": "text"
+   },
+   {
+    "raw": "strong",
+    "data": "strong",
+    "type": "tag",
+    "name": "strong",
+    "children": [
+     {
+      "raw": "23  September 2003",
+      "data": "23  September 2003",
+      "type": "text"
+     }
+    ]
+   },
+   {
+    "raw": " pursuant to paragraphs 1 and 2 of resolution 1390  (2002), as being associated with Al-Qaida, Usama bin Laden or the Taliban for  “financing, planning, facilitating, preparing or perpetrating of acts or  activities by, in conjunction with, under the name of, on behalf or in support  of” or “supplying, selling or transferring arms and related materiel to”  Al-Qaida in Iraq (QE.J.115.04).",
+    "data": " pursuant to paragraphs 1 and 2 of resolution 1390  (2002), as being associated with Al-Qaida, Usama bin Laden or the Taliban for  “financing, planning, facilitating, preparing or perpetrating of acts or  activities by, in conjunction with, under the name of, on behalf or in support  of” or “supplying, selling or transferring arms and related materiel to”  Al-Qaida in Iraq (QE.J.115.04).",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n              ",
+    "data": "\r\n              ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "em",
+    "data": "em",
+    "type": "tag",
+    "name": "em",
+    "children": [
+     {
+      "raw": "Additional information:",
+      "data": "Additional information:",
+      "type": "text"
+     }
+    ]
+   },
+   {
+    "raw": " ",
+    "data": " ",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n              Djamel Moustfa supported the  German cell of the &quot;Al-Tawhid&quot; movement, listed as Al-Qaida in Iraq  (QE.J.115.04), based in Düsseldorf, Hamburg and other locations in Germany, from at least the summer  of 2001 to 23 April 2002.              The “Al-Tawhid” organization had  close personal and organizational links to the Al-Qaida (QE.A.4.01)  network. Ahmad Fadil  Nazal al-Khalayleh (deceased), a.k.a. Abu Musab al-Zarqawi, was the operational  leader of the organization. Its main goals included securing a base of  operations in Iraq  from which it could launch terrorist attacks. The organization was responsible  for the kidnapping and subsequent murder of civilians and the bombing of civilian  targets, including the United Nations headquarters in Baghdad in August 2003.",
+    "data": "\r\n              Djamel Moustfa supported the  German cell of the &quot;Al-Tawhid&quot; movement, listed as Al-Qaida in Iraq  (QE.J.115.04), based in Düsseldorf, Hamburg and other locations in Germany, from at least the summer  of 2001 to 23 April 2002.              The “Al-Tawhid” organization had  close personal and organizational links to the Al-Qaida (QE.A.4.01)  network. Ahmad Fadil  Nazal al-Khalayleh (deceased), a.k.a. Abu Musab al-Zarqawi, was the operational  leader of the organization. Its main goals included securing a base of  operations in Iraq  from which it could launch terrorist attacks. The organization was responsible  for the kidnapping and subsequent murder of civilians and the bombing of civilian  targets, including the United Nations headquarters in Baghdad in August 2003.",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n              ",
+    "data": "\r\n              ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "By September 2001, an independent  “Al-Tawhid” cell had formed in Germany  around Mohamed  Ghassan Ali Abu Dhess (QI.A.130.03). The cell worked in an insular and  clandestine manner, mostly operating independently within the scope of  directives from leaders abroad. It was an integral part of an international  network which, among other things, ensured that Al-Qaida in Iraq received  logistical and financial support.",
+    "data": "By September 2001, an independent  “Al-Tawhid” cell had formed in Germany  around Mohamed  Ghassan Ali Abu Dhess (QI.A.130.03). The cell worked in an insular and  clandestine manner, mostly operating independently within the scope of  directives from leaders abroad. It was an integral part of an international  network which, among other things, ensured that Al-Qaida in Iraq received  logistical and financial support.",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n              ",
+    "data": "\r\n              ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Apart from Mohamed  Ghassan Ali Abu Dhess,  members of the cell in Germany  included Aschraf al-Dagma (QI.A.132.03) and Ismail Shalabi (QI.S.128.03). ",
+    "data": "Apart from Mohamed  Ghassan Ali Abu Dhess,  members of the cell in Germany  included Aschraf al-Dagma (QI.A.132.03) and Ismail Shalabi (QI.S.128.03). ",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n              ",
+    "data": "\r\n              ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "The cell’s activities in Germany  consisted mainly of forging passports, collecting donations and facilitating  the illegal cross-border travel of persons linked to the “Al-Tawhid”  organization. However, there were also strong indications that, under the  direction of Al-Zarqawi, the cell was planning to commit attacks in Germany. The  plan was to use a pistol fitted with a silencer and a crate of hand grenades to  carry out an attack on a busy square in a German town or city and to detonate  hand grenades in another German town in the immediate vicinity of Israeli or  Jewish property with the aim of killing as many people as possible. The attacks  were supposed to be carried out by Ismail Shalabi together with other members  of the cell, including Al-Dagma. The perpetrators targeted a Jewish community  building in Berlin  which they erroneously took to be a Jewish museum, and a bar and a discothèque  in Düsseldorf which they deemed, also by mistake, to be run or frequented by  Jewish people. ",
+    "data": "The cell’s activities in Germany  consisted mainly of forging passports, collecting donations and facilitating  the illegal cross-border travel of persons linked to the “Al-Tawhid”  organization. However, there were also strong indications that, under the  direction of Al-Zarqawi, the cell was planning to commit attacks in Germany. The  plan was to use a pistol fitted with a silencer and a crate of hand grenades to  carry out an attack on a busy square in a German town or city and to detonate  hand grenades in another German town in the immediate vicinity of Israeli or  Jewish property with the aim of killing as many people as possible. The attacks  were supposed to be carried out by Ismail Shalabi together with other members  of the cell, including Al-Dagma. The perpetrators targeted a Jewish community  building in Berlin  which they erroneously took to be a Jewish museum, and a bar and a discothèque  in Düsseldorf which they deemed, also by mistake, to be run or frequented by  Jewish people. ",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n              ",
+    "data": "\r\n              ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Djamel Moustfa, who used the name  “Mustafa” when he communicated with the organization and was known in the group  as a passport forger and gun runner, was a close friend of Mohamed  Ghassan Ali Abu Dhess.  He not only knew about the terrorist objectives of the group but supported  them. ",
+    "data": "Djamel Moustfa, who used the name  “Mustafa” when he communicated with the organization and was known in the group  as a passport forger and gun runner, was a close friend of Mohamed  Ghassan Ali Abu Dhess.  He not only knew about the terrorist objectives of the group but supported  them. ",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n              ",
+    "data": "\r\n              ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "From autumn 2001 until his arrest  on 23 April 2002, Moustfa had an important role in the passport forgery and  procurement activities of the group. Abu Dhess used him to gain access to  presumably forged passports in return for payment. Unidentified couriers were  supposed to transport the passports to members of the organization still in Iran so that  they could travel to safe third countries. A member of the group used his  contacts with Moustfa to procure telephone cards for clandestine purposes.",
+    "data": "From autumn 2001 until his arrest  on 23 April 2002, Moustfa had an important role in the passport forgery and  procurement activities of the group. Abu Dhess used him to gain access to  presumably forged passports in return for payment. Unidentified couriers were  supposed to transport the passports to members of the organization still in Iran so that  they could travel to safe third countries. A member of the group used his  contacts with Moustfa to procure telephone cards for clandestine purposes.",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n              ",
+    "data": "\r\n              ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "In March and April 2002, Djamel  Moustfa, acting on instructions, tried to procure at least one handgun with a  silencer for the group through contacts in Essen  and Hamburg.  In addition, he declared his willingness to obtain suitable ammunition and  numerous hand grenades. These weapons were to be used in a possible future  attack. He knew these weapons were intended for a possible future attack  by the group in Germany. ",
+    "data": "In March and April 2002, Djamel  Moustfa, acting on instructions, tried to procure at least one handgun with a  silencer for the group through contacts in Essen  and Hamburg.  In addition, he declared his willingness to obtain suitable ammunition and  numerous hand grenades. These weapons were to be used in a possible future  attack. He knew these weapons were intended for a possible future attack  by the group in Germany. ",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n              ",
+    "data": "\r\n              ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "On 26 October 2005, Djamel  Moustfa was convicted in Germany of supporting a terrorist group and was sentenced to five years in jail.  Mohamed  Ghassan Ali Abu Dhess, Aschraf al-Dagma and Ismail Shalabi were convicted of  plotting attacks and belonging to a terrorist organization. They were sentenced  to up to eight years of imprisonment.",
+    "data": "On 26 October 2005, Djamel  Moustfa was convicted in Germany of supporting a terrorist group and was sentenced to five years in jail.  Mohamed  Ghassan Ali Abu Dhess, Aschraf al-Dagma and Ismail Shalabi were convicted of  plotting attacks and belonging to a terrorist organization. They were sentenced  to up to eight years of imprisonment.",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n              ",
+    "data": "\r\n              ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "em",
+    "data": "em",
+    "type": "tag",
+    "name": "em",
+    "children": [
+     {
+      "raw": "Related listed individuals  and entities:",
+      "data": "Related listed individuals  and entities:",
+      "type": "text"
+     }
+    ]
+   },
+   {
+    "raw": " ",
+    "data": " ",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n              Al-Qaida (QE.A.4.01), listed on 6  October 2001 ",
+    "data": "\r\n              Al-Qaida (QE.A.4.01), listed on 6  October 2001 ",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n              Al-Qaida in Iraq (QE.J.115.04), listed on 18 October 2004",
+    "data": "\r\n              Al-Qaida in Iraq (QE.J.115.04), listed on 18 October 2004",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n              Ismail Abdallah Sbaitan Shalabi (QI.S.128.03), listed on 23 September 2003",
+    "data": "\r\n              Ismail Abdallah Sbaitan Shalabi (QI.S.128.03), listed on 23 September 2003",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n              Mohamed  Ghassan Ali Abu Dhess (QI.A.130.03), listed on 23 September 2003 ",
+    "data": "\r\n              Mohamed  Ghassan Ali Abu Dhess (QI.A.130.03), listed on 23 September 2003 ",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n              Aschraf al-Dagma (QI.A.132.03), listed on 23 September 2003",
+    "data": "\r\n              Aschraf al-Dagma (QI.A.132.03), listed on 23 September 2003",
+    "type": "text"
+   }
+  ]
+ }
+]

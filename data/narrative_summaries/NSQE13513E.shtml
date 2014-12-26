@@ -1,0 +1,404 @@
+[
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "strong",
+    "data": "strong",
+    "type": "tag",
+    "name": "strong",
+    "children": [
+     {
+      "raw": "u",
+      "data": "u",
+      "type": "tag",
+      "name": "u",
+      "children": [
+       {
+        "raw": "QE.A.135.13. ANSAR EDDINE ",
+        "data": "QE.A.135.13. ANSAR EDDINE ",
+        "type": "text"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "em",
+    "data": "em",
+    "type": "tag",
+    "name": "em",
+    "children": [
+     {
+      "raw": "Date on which the  narrative summary became available on",
+      "data": "Date on which the  narrative summary became available on",
+      "type": "text"
+     }
+    ]
+   },
+   {
+    "raw": " ",
+    "data": " ",
+    "type": "text"
+   },
+   {
+    "raw": "em",
+    "data": "em",
+    "type": "tag",
+    "name": "em",
+    "children": [
+     {
+      "raw": "the  Committee’s website",
+      "data": "the  Committee’s website",
+      "type": "text"
+     }
+    ]
+   },
+   {
+    "raw": ": 20 March  2013",
+    "data": ": 20 March  2013",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Ansar Eddine was listed on 20 March 2013 pursuant to paragraphs 2 and 3 of resolution 2083  (2012) as being associated with Al-Qaida for &ldquo;participating in the financing,  planning, facilitating, preparing, or perpetrating of acts or activities by, in  conjunction with, under the name of, on behalf of, or in support of&rdquo;, &ldquo;supplying,  selling or transferring arms and related materiel to&rdquo;, and &ldquo;recruiting for; or  otherwise supporting acts or activities of&rdquo; the Organization of Al-Qaida in the  Islamic Maghreb (QE.T.14.01.) and the  Movement for Unity and Jihad in West Africa (MUJAO) (QE.M.134.12.). ",
+    "data": "Ansar Eddine was listed on 20 March 2013 pursuant to paragraphs 2 and 3 of resolution 2083  (2012) as being associated with Al-Qaida for &ldquo;participating in the financing,  planning, facilitating, preparing, or perpetrating of acts or activities by, in  conjunction with, under the name of, on behalf of, or in support of&rdquo;, &ldquo;supplying,  selling or transferring arms and related materiel to&rdquo;, and &ldquo;recruiting for; or  otherwise supporting acts or activities of&rdquo; the Organization of Al-Qaida in the  Islamic Maghreb (QE.T.14.01.) and the  Movement for Unity and Jihad in West Africa (MUJAO) (QE.M.134.12.). ",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n        ",
+    "data": "\r\n        ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "em",
+    "data": "em",
+    "type": "tag",
+    "name": "em",
+    "children": [
+     {
+      "raw": "Additional information: ",
+      "data": "Additional information: ",
+      "type": "text"
+     }
+    ]
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n            ",
+    "data": "\r\n            ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Ansar Eddine (&ldquo;defenders of the faith&rdquo;) was founded in  December 2011 by Iyad ag Ghali (QI.A.316.13.). Ansar Eddine is linked to the  Organization of Al-Qaida in the Islamic Maghreb (AQIM) (QE.T.14.01.).",
+    "data": "Ansar Eddine (&ldquo;defenders of the faith&rdquo;) was founded in  December 2011 by Iyad ag Ghali (QI.A.316.13.). Ansar Eddine is linked to the  Organization of Al-Qaida in the Islamic Maghreb (AQIM) (QE.T.14.01.).",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "In October 2011, AQIM&rsquo;s leader, Abdelmalek Droukdel  (QI.D.232.07.), wanted to use an organization to expand the agenda of his  terrorist organization into the Sahel and increase its territorial control over  northern Mali.",
+    "data": "In October 2011, AQIM&rsquo;s leader, Abdelmalek Droukdel  (QI.D.232.07.), wanted to use an organization to expand the agenda of his  terrorist organization into the Sahel and increase its territorial control over  northern Mali.",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "AQIM wanted to create an ostensibly independent movement  that would hide its true roots by abandoning the name &ldquo;Al-Qaida&rdquo;. AQIM  suggested that the new group be led by Iyad ag Ghali.",
+    "data": "AQIM wanted to create an ostensibly independent movement  that would hide its true roots by abandoning the name &ldquo;Al-Qaida&rdquo;. AQIM  suggested that the new group be led by Iyad ag Ghali.",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Since its establishment, Ansar Eddine and its leader, Iyad  ag Ghali, have enjoyed AQIM&rsquo;s continual support:",
+    "data": "Since its establishment, Ansar Eddine and its leader, Iyad  ag Ghali, have enjoyed AQIM&rsquo;s continual support:",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "- Military support: from the battle at Aguelhok on 24 January  2012 to the offensive in early January 2013 against southern Mali, Ansar Eddine  received backing from AQIM in its fight against the Malian Armed Forces, notably  in the capture of the towns of Aguelhok on 24 January 2012; Tessalit on 10 March  2012; Kidal on 30 March 2012; Gao on 30 March 2012; and Timbuktu on 1 April  2012.",
+    "data": "- Military support: from the battle at Aguelhok on 24 January  2012 to the offensive in early January 2013 against southern Mali, Ansar Eddine  received backing from AQIM in its fight against the Malian Armed Forces, notably  in the capture of the towns of Aguelhok on 24 January 2012; Tessalit on 10 March  2012; Kidal on 30 March 2012; Gao on 30 March 2012; and Timbuktu on 1 April  2012.",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "- Financial support: Iyad ag Ghali received a payment of  400,000 euros from one of the leaders of an AQIM brigade in the Sahel, the Tariq ibn Ziyad Brigade.",
+    "data": "- Financial support: Iyad ag Ghali received a payment of  400,000 euros from one of the leaders of an AQIM brigade in the Sahel, the Tariq ibn Ziyad Brigade.",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "- Logistical support: originally comprising some 50 men  close to Iyad ag Ghali, Ansar Eddine has welcomed numerous AQIM fighters.",
+    "data": "- Logistical support: originally comprising some 50 men  close to Iyad ag Ghali, Ansar Eddine has welcomed numerous AQIM fighters.",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "The ties between Ansar Eddine and AQIM have grown stronger  since November 2012.",
+    "data": "The ties between Ansar Eddine and AQIM have grown stronger  since November 2012.",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "- November 2012: offices were established north of Gao by a  mission combining Ansar Eddine, the  Movement for Unity and Jihad in West Africa (MUJAO) (QE.M.134.12.), and the  Organization of Al-Qaida in the Islamic Maghreb (QE.T.14.01.).",
+    "data": "- November 2012: offices were established north of Gao by a  mission combining Ansar Eddine, the  Movement for Unity and Jihad in West Africa (MUJAO) (QE.M.134.12.), and the  Organization of Al-Qaida in the Islamic Maghreb (QE.T.14.01.).",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "- November 2012: an alliance was concluded between Ansar Eddine,  MUJAO and AQIM and a common strategy was defined.",
+    "data": "- November 2012: an alliance was concluded between Ansar Eddine,  MUJAO and AQIM and a common strategy was defined.",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "- 25 November 2012: Iyad ag Ghali expressed his support for  AQIM&rsquo;s ideology.",
+    "data": "- 25 November 2012: Iyad ag Ghali expressed his support for  AQIM&rsquo;s ideology.",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Since the start of Operation Serval, Iyad ag Ghali has  aligned himself with AQIM and MUJAO brigades that are fighting the French and  Malian armed forces. ",
+    "data": "Since the start of Operation Serval, Iyad ag Ghali has  aligned himself with AQIM and MUJAO brigades that are fighting the French and  Malian armed forces. ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "em",
+    "data": "em",
+    "type": "tag",
+    "name": "em",
+    "children": [
+     {
+      "raw": "Related listed individuals and  entities:",
+      "data": "Related listed individuals and  entities:",
+      "type": "text"
+     }
+    ]
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n              ",
+    "data": "\r\n              ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "The Organization of Al-Qaida in the Islamic Maghreb (QE.T.14.01.), listed  on 6 October 2001 ",
+    "data": "The Organization of Al-Qaida in the Islamic Maghreb (QE.T.14.01.), listed  on 6 October 2001 ",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n        ",
+    "data": "\r\n        ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "The Movement for Unity and Jihad in West  Africa (MUJAO) (QE.M.134.12.),&nbsp;listed on 5 December 2012 ",
+    "data": "The Movement for Unity and Jihad in West  Africa (MUJAO) (QE.M.134.12.),&nbsp;listed on 5 December 2012 ",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n              ",
+    "data": "\r\n              ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Abdelmalek Droukdel (QI.D.232.07.), listed  on 27 August 2007",
+    "data": "Abdelmalek Droukdel (QI.D.232.07.), listed  on 27 August 2007",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n              ",
+    "data": "\r\n              ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Iyad  ag Ghali (QI.A.316.13.), listed on 25 February 2013 ",
+    "data": "Iyad  ag Ghali (QI.A.316.13.), listed on 25 February 2013 ",
+    "type": "text"
+   }
+  ]
+ }
+]

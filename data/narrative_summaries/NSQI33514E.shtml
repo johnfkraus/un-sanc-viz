@@ -1,0 +1,302 @@
+[
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "strong",
+    "data": "strong",
+    "type": "tag",
+    "name": "strong",
+    "children": [
+     {
+      "raw": "u",
+      "data": "u",
+      "type": "tag",
+      "name": "u",
+      "children": [
+       {
+        "raw": "QI.A.335.14",
+        "data": "QI.A.335.14",
+        "type": "text"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "raw": "strong",
+    "data": "strong",
+    "type": "tag",
+    "name": "strong",
+    "children": [
+     {
+      "raw": "u",
+      "data": "u",
+      "type": "tag",
+      "name": "u",
+      "children": [
+       {
+        "raw": ". ",
+        "data": ". ",
+        "type": "text"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "raw": "strong",
+    "data": "strong",
+    "type": "tag",
+    "name": "strong",
+    "children": [
+     {
+      "raw": "u",
+      "data": "u",
+      "type": "tag",
+      "name": "u",
+      "children": [
+       {
+        "raw": "&lsquo;Abd  al-Rahman Khalaf &lsquo;Ubayd Juday&rsquo; al-&lsquo;Anizi",
+        "data": "&lsquo;Abd  al-Rahman Khalaf &lsquo;Ubayd Juday&rsquo; al-&lsquo;Anizi",
+        "type": "text"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n    ",
+    "data": "\r\n    ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "em",
+    "data": "em",
+    "type": "tag",
+    "name": "em",
+    "children": [
+     {
+      "raw": "Date on which the narrative summary became available  on the Committee&rsquo;s website: ",
+      "data": "Date on which the narrative summary became available  on the Committee&rsquo;s website: ",
+      "type": "text"
+     }
+    ]
+   },
+   {
+    "raw": "23 September 2014",
+    "data": "23 September 2014",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n  ",
+    "data": "\r\n  ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "&lsquo;Abd al-Rahman Khalaf &lsquo;Ubayd Juday&rsquo;  al-&lsquo;Anizi was listed on 23 September 2014  pursuant to paragraphs 2 and 4 of resolution 2161 (2014) as being associated  with Al-Qaida for &ldquo;participating in the financing, planning, facilitating,  preparing, or perpetrating of acts or activities by, in conjunction with, under  the name of, on behalf of, or in support of&rdquo; and &ldquo;otherwise supporting acts or  activities of&rdquo; Al-Qaida  (QE.A.4.01), Al-Nusrah Front for the  People of the Levant (QE.A.137.14) and Islamic State in Iraq and the Levant,  listed as Al-Qaida in Iraq (AQI) (QE.J.115.04). ",
+    "data": "&lsquo;Abd al-Rahman Khalaf &lsquo;Ubayd Juday&rsquo;  al-&lsquo;Anizi was listed on 23 September 2014  pursuant to paragraphs 2 and 4 of resolution 2161 (2014) as being associated  with Al-Qaida for &ldquo;participating in the financing, planning, facilitating,  preparing, or perpetrating of acts or activities by, in conjunction with, under  the name of, on behalf of, or in support of&rdquo; and &ldquo;otherwise supporting acts or  activities of&rdquo; Al-Qaida  (QE.A.4.01), Al-Nusrah Front for the  People of the Levant (QE.A.137.14) and Islamic State in Iraq and the Levant,  listed as Al-Qaida in Iraq (AQI) (QE.J.115.04). ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "em",
+    "data": "em",
+    "type": "tag",
+    "name": "em",
+    "children": [
+     {
+      "raw": "Additional information:",
+      "data": "Additional information:",
+      "type": "text"
+     }
+    ]
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n    ",
+    "data": "\r\n    ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Since at least 2008, &lsquo;Abd al-Rahman  Khalaf &lsquo;Ubayd Juday&rsquo; al-&lsquo;Anizi worked with a senior Al-Qaida  in Iraq (AQI) (QE.J.115.04) facilitator and AQI financial  official to transfer funds from Kuwait to Syria.&nbsp;He also worked with an  AQI facilitator to pay for the travel of foreign terrorist fighters moving from  Syria to Iraq.&nbsp;Al-&lsquo;Anizi worked to smuggle several foreign terrorist fighters  from Kuwait to Afghanistan, likely to join Al-Qaida (QE.A.4.01)  and was involved in facilitation activities with Iran-based Al-Qaida  facilitators, including the movement of foreign terrorist fighters to  Afghanistan via Iran. ",
+    "data": "Since at least 2008, &lsquo;Abd al-Rahman  Khalaf &lsquo;Ubayd Juday&rsquo; al-&lsquo;Anizi worked with a senior Al-Qaida  in Iraq (AQI) (QE.J.115.04) facilitator and AQI financial  official to transfer funds from Kuwait to Syria.&nbsp;He also worked with an  AQI facilitator to pay for the travel of foreign terrorist fighters moving from  Syria to Iraq.&nbsp;Al-&lsquo;Anizi worked to smuggle several foreign terrorist fighters  from Kuwait to Afghanistan, likely to join Al-Qaida (QE.A.4.01)  and was involved in facilitation activities with Iran-based Al-Qaida  facilitators, including the movement of foreign terrorist fighters to  Afghanistan via Iran. ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Since 2013, Al-&lsquo;Anizi has been in  Syria. He is a well-known facilitator for Al-Nusrah Front for the  People of the Levant (QE.A.137.14) and  helps in sending operatives and logistics to Syria from the Gulf region. ",
+    "data": "Since 2013, Al-&lsquo;Anizi has been in  Syria. He is a well-known facilitator for Al-Nusrah Front for the  People of the Levant (QE.A.137.14) and  helps in sending operatives and logistics to Syria from the Gulf region. ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Since early 2014, he has been providing a wide range of support to  the Islamic State in Iraq and the Levant, listed as AQI, in Syria and Iraq. ",
+    "data": "Since early 2014, he has been providing a wide range of support to  the Islamic State in Iraq and the Levant, listed as AQI, in Syria and Iraq. ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "em",
+    "data": "em",
+    "type": "tag",
+    "name": "em",
+    "children": [
+     {
+      "raw": "Related listed individuals and entities:",
+      "data": "Related listed individuals and entities:",
+      "type": "text"
+     }
+    ]
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n      ",
+    "data": "\r\n      ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Al-Qaida (QE.A.4.01), listed on  6 October 2001",
+    "data": "Al-Qaida (QE.A.4.01), listed on  6 October 2001",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n      Al-Qaida in Iraq (QE.J.115.04), listed on 18 October 2004",
+    "data": "\r\n      Al-Qaida in Iraq (QE.J.115.04), listed on 18 October 2004",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n      Al-Nusrah Front for the People of the Levant  (QE.A.137.14), listed on 14 May 2014",
+    "data": "\r\n      Al-Nusrah Front for the People of the Levant  (QE.A.137.14), listed on 14 May 2014",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n",
+    "data": "\r\n",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n",
+    "data": "\r\n",
+    "type": "text"
+   }
+  ]
+ }
+]

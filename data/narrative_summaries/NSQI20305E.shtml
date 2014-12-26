@@ -1,0 +1,403 @@
+[
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "strong",
+    "data": "strong",
+    "type": "tag",
+    "name": "strong",
+    "children": [
+     {
+      "raw": "u",
+      "data": "u",
+      "type": "tag",
+      "name": "u",
+      "children": [
+       {
+        "raw": "QI.A.203.05",
+        "data": "QI.A.203.05",
+        "type": "text"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "raw": "strong",
+    "data": "strong",
+    "type": "tag",
+    "name": "strong",
+    "children": [
+     {
+      "raw": "u",
+      "data": "u",
+      "type": "tag",
+      "name": "u",
+      "children": [
+       {
+        "raw": ". ",
+        "data": ". ",
+        "type": "text"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "raw": "strong",
+    "data": "strong",
+    "type": "tag",
+    "name": "strong",
+    "children": [
+     {
+      "raw": "u",
+      "data": "u",
+      "type": "tag",
+      "name": "u",
+      "children": [
+       {
+        "raw": "F",
+        "data": "F",
+        "type": "text"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "raw": "strong",
+    "data": "strong",
+    "type": "tag",
+    "name": "strong",
+    "children": [
+     {
+      "raw": "u",
+      "data": "u",
+      "type": "tag",
+      "name": "u",
+      "children": [
+       {
+        "raw": "ARHAD",
+        "data": "ARHAD",
+        "type": "text"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "raw": "strong",
+    "data": "strong",
+    "type": "tag",
+    "name": "strong",
+    "children": [
+     {
+      "raw": "u",
+      "data": "u",
+      "type": "tag",
+      "name": "u",
+      "children": [
+       {
+        "raw": " K",
+        "data": " K",
+        "type": "text"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "raw": "strong",
+    "data": "strong",
+    "type": "tag",
+    "name": "strong",
+    "children": [
+     {
+      "raw": "u",
+      "data": "u",
+      "type": "tag",
+      "name": "u",
+      "children": [
+       {
+        "raw": "ANABI",
+        "data": "ANABI",
+        "type": "text"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "raw": "strong",
+    "data": "strong",
+    "type": "tag",
+    "name": "strong",
+    "children": [
+     {
+      "raw": "u",
+      "data": "u",
+      "type": "tag",
+      "name": "u",
+      "children": [
+       {
+        "raw": " A",
+        "data": " A",
+        "type": "text"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "raw": "strong",
+    "data": "strong",
+    "type": "tag",
+    "name": "strong",
+    "children": [
+     {
+      "raw": "u",
+      "data": "u",
+      "type": "tag",
+      "name": "u",
+      "children": [
+       {
+        "raw": "HMAD",
+        "data": "HMAD",
+        "type": "text"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "raw": "strong",
+    "data": "strong",
+    "type": "tag",
+    "name": "strong",
+    "children": [
+     {
+      "raw": "u",
+      "data": "u",
+      "type": "tag",
+      "name": "u",
+      "children": [
+       {
+        "raw": " ",
+        "data": " ",
+        "type": "text"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "em",
+    "data": "em",
+    "type": "tag",
+    "name": "em",
+    "children": [
+     {
+      "raw": "Date on which the  narrative summary became available on",
+      "data": "Date on which the  narrative summary became available on",
+      "type": "text"
+     }
+    ]
+   },
+   {
+    "raw": " ",
+    "data": " ",
+    "type": "text"
+   },
+   {
+    "raw": "em",
+    "data": "em",
+    "type": "tag",
+    "name": "em",
+    "children": [
+     {
+      "raw": "the  Committee’s website",
+      "data": "the  Committee’s website",
+      "type": "text"
+     }
+    ]
+   },
+   {
+    "raw": ": 16.09.2009",
+    "data": ": 16.09.2009",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Farhad Kanabi Ahmad was listed on ",
+    "data": "Farhad Kanabi Ahmad was listed on ",
+    "type": "text"
+   },
+   {
+    "raw": "strong",
+    "data": "strong",
+    "type": "tag",
+    "name": "strong",
+    "children": [
+     {
+      "raw": "6 December 2005",
+      "data": "6 December 2005",
+      "type": "text"
+     }
+    ]
+   },
+   {
+    "raw": " pursuant to paragraphs 1 and 2 of resolution 1617 (2005)  as being associated with Al-Qaida, Usama bin Laden or the Taliban for “participating in the financing, planning, facilitating,  preparing or perpetrating of acts or activities by, in conjunction with, under  the name of, on behalf or in support of” Ansar al-Islam (QE.A.98.03). ",
+    "data": " pursuant to paragraphs 1 and 2 of resolution 1617 (2005)  as being associated with Al-Qaida, Usama bin Laden or the Taliban for “participating in the financing, planning, facilitating,  preparing or perpetrating of acts or activities by, in conjunction with, under  the name of, on behalf or in support of” Ansar al-Islam (QE.A.98.03). ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "em",
+    "data": "em",
+    "type": "tag",
+    "name": "em",
+    "children": [
+     {
+      "raw": "Additional information:",
+      "data": "Additional information:",
+      "type": "text"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Farhad Kanabi Ahmad, also known  as Kawa Hamawandi, provided support to Ansar al-Islam (QE.A.98.03) by fund-raising in southern Germany. Farhad Kanabi Ahmad  regularly raised money for this organization in Munich  which he handed over to Ata Abdoulaziz Rashid (QI.A.199.05), who then  transferred the money to Iraq  using various methods and in some cases with Farhad Kanabi Ahmad’s help.",
+    "data": "Farhad Kanabi Ahmad, also known  as Kawa Hamawandi, provided support to Ansar al-Islam (QE.A.98.03) by fund-raising in southern Germany. Farhad Kanabi Ahmad  regularly raised money for this organization in Munich  which he handed over to Ata Abdoulaziz Rashid (QI.A.199.05), who then  transferred the money to Iraq  using various methods and in some cases with Farhad Kanabi Ahmad’s help.",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Farhad Kanabi Ahmad, who from  January 2004 until his arrest in December 2004 was in close contact with Ata  Abdoulaziz Rashid and his designated successor in case of arrest, Mazen Salah  Mohammed (QI.A.202.05) also known as Mazen Ali Hussein, was tasked with  transferring funds to Ata Abdoulaziz Rashid at least once a month.",
+    "data": "Farhad Kanabi Ahmad, who from  January 2004 until his arrest in December 2004 was in close contact with Ata  Abdoulaziz Rashid and his designated successor in case of arrest, Mazen Salah  Mohammed (QI.A.202.05) also known as Mazen Ali Hussein, was tasked with  transferring funds to Ata Abdoulaziz Rashid at least once a month.",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "The funds raised and transferred  by Farhad Kanabi Ahmad were used to finance attacks by Ansar al-Islam in Iraq and to finance  the reorganization of the group’s logistical infrastructure and organization. Farhad  Kanabi Ahmad was aware of these aims through his close personal contact with  Ata Abdoulaziz Rashid and Mazen Salah Mohammed, who themselves were in close  contact with the leaders of Ansar al-Islam in Iraq.",
+    "data": "The funds raised and transferred  by Farhad Kanabi Ahmad were used to finance attacks by Ansar al-Islam in Iraq and to finance  the reorganization of the group’s logistical infrastructure and organization. Farhad  Kanabi Ahmad was aware of these aims through his close personal contact with  Ata Abdoulaziz Rashid and Mazen Salah Mohammed, who themselves were in close  contact with the leaders of Ansar al-Islam in Iraq.",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Farhad Kanabi Ahmad was found guilty of supporting a foreign  terrorist organization and other offences, and was sentenced on 9 July 2007 to  five years and six months of imprisonment in Germany.",
+    "data": "Farhad Kanabi Ahmad was found guilty of supporting a foreign  terrorist organization and other offences, and was sentenced on 9 July 2007 to  five years and six months of imprisonment in Germany.",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "em",
+    "data": "em",
+    "type": "tag",
+    "name": "em",
+    "children": [
+     {
+      "raw": "Related listed individuals and entities:",
+      "data": "Related listed individuals and entities:",
+      "type": "text"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Ansar al-Islam (QE.A.98.03), listed on 24 February 2003",
+    "data": "Ansar al-Islam (QE.A.98.03), listed on 24 February 2003",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n              Ata Abdoulaziz Rashid  (QI.A.199.05), listed on 6 December 2005",
+    "data": "\r\n              Ata Abdoulaziz Rashid  (QI.A.199.05), listed on 6 December 2005",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n              Mazen Salah Mohammed  (QI.A.202.05), listed on 6 December 2005",
+    "data": "\r\n              Mazen Salah Mohammed  (QI.A.202.05), listed on 6 December 2005",
+    "type": "text"
+   }
+  ]
+ }
+]

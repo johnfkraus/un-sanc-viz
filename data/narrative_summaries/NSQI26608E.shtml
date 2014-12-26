@@ -1,0 +1,189 @@
+[
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Mahmoud Mohammad Ahmed Bahaziq was  listed on ",
+    "data": "Mahmoud Mohammad Ahmed Bahaziq was  listed on ",
+    "type": "text"
+   },
+   {
+    "raw": "strong",
+    "data": "strong",
+    "type": "tag",
+    "name": "strong",
+    "children": [
+     {
+      "raw": "10 December 2008",
+      "data": "10 December 2008",
+      "type": "text"
+     }
+    ]
+   },
+   {
+    "raw": " pursuant  to paragraphs 1 and 2 of resolution 1822 (2008) as being associated with  Lashkar-e-Tayyiba (QE.L.118.05) and Al-Qaida (QE.A.4.01) for  “participating in the financing, planning, facilitating, preparing or  perpetrating of acts of activities by, in conjunction with, under the name of,  on behalf or in support of” both entities. ",
+    "data": " pursuant  to paragraphs 1 and 2 of resolution 1822 (2008) as being associated with  Lashkar-e-Tayyiba (QE.L.118.05) and Al-Qaida (QE.A.4.01) for  “participating in the financing, planning, facilitating, preparing or  perpetrating of acts of activities by, in conjunction with, under the name of,  on behalf or in support of” both entities. ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "em",
+    "data": "em",
+    "type": "tag",
+    "name": "em",
+    "children": [
+     {
+      "raw": "Additional information",
+      "data": "Additional information",
+      "type": "text"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Mahmoud Mohammad Ahmed Bahaziq is  a Lashkar-e-Tayyiba (LeT) (QE.L.118.05) financier. He is credited with being  the main financier behind the establishment of the LeT and its activities in  the 1980s and the 1990s. He has also served as a leader of LeT in Saudi Arabia.  In 2003, Bahaziq coordinated LeT’s fundraising activities with non-governmental  organizations and businessmen in Saudi Arabia, and encouraged LeT  operatives to continue and accelerate fundraising and organizing activities. As  of mid-2005, Bahaziq played a key role in LeT’s propaganda and media  operations.",
+    "data": "Mahmoud Mohammad Ahmed Bahaziq is  a Lashkar-e-Tayyiba (LeT) (QE.L.118.05) financier. He is credited with being  the main financier behind the establishment of the LeT and its activities in  the 1980s and the 1990s. He has also served as a leader of LeT in Saudi Arabia.  In 2003, Bahaziq coordinated LeT’s fundraising activities with non-governmental  organizations and businessmen in Saudi Arabia, and encouraged LeT  operatives to continue and accelerate fundraising and organizing activities. As  of mid-2005, Bahaziq played a key role in LeT’s propaganda and media  operations.",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "em",
+    "data": "em",
+    "type": "tag",
+    "name": "em",
+    "children": [
+     {
+      "raw": "Related listed individuals and entities",
+      "data": "Related listed individuals and entities",
+      "type": "text"
+     }
+    ]
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n              Lashkar-e-Tayyiba (QE.L.118.05),  listed on 2 May 2005.",
+    "data": "\r\n              Lashkar-e-Tayyiba (QE.L.118.05),  listed on 2 May 2005.",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n              Al-Qaida  (QE.A.4.01), listed on 6 October 2001",
+    "data": "\r\n              Al-Qaida  (QE.A.4.01), listed on 6 October 2001",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Hafiz Muhammad Saeed (QI.S.263.08), listed on 10  December 2008",
+    "data": "Hafiz Muhammad Saeed (QI.S.263.08), listed on 10  December 2008",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n              Zaki-ur-Rehman Lakhvi (QI.L.264.08), listed on 10 December 2008",
+    "data": "\r\n              Zaki-ur-Rehman Lakhvi (QI.L.264.08), listed on 10 December 2008",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n              Haji Muhammad Ashraf (QI.A.265.08), listed on  10 December 2008",
+    "data": "\r\n              Haji Muhammad Ashraf (QI.A.265.08), listed on  10 December 2008",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n              Arif Qasmani (QI.Q.271.09), listed on 29 June 2009",
+    "data": "\r\n              Arif Qasmani (QI.Q.271.09), listed on 29 June 2009",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n              Mohammed Yahya Mujahid (QI.M.272.09), listed on 29 June 2009",
+    "data": "\r\n              Mohammed Yahya Mujahid (QI.M.272.09), listed on 29 June 2009",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n              Hafiz Abdul Salam Bhuttavi (QI.B.307.12), listed on 14 March 2012",
+    "data": "\r\n              Hafiz Abdul Salam Bhuttavi (QI.B.307.12), listed on 14 March 2012",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n            Zafar Iqbal (QI.I.308.12), listed on 14 March 2012",
+    "data": "\r\n            Zafar Iqbal (QI.I.308.12), listed on 14 March 2012",
+    "type": "text"
+   }
+  ]
+ }
+]

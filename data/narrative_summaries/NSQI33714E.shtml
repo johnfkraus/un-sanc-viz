@@ -1,0 +1,345 @@
+[
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "strong",
+    "data": "strong",
+    "type": "tag",
+    "name": "strong",
+    "children": [
+     {
+      "raw": "u",
+      "data": "u",
+      "type": "tag",
+      "name": "u",
+      "children": [
+       {
+        "raw": "QI.A.337.14",
+        "data": "QI.A.337.14",
+        "type": "text"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "raw": "strong",
+    "data": "strong",
+    "type": "tag",
+    "name": "strong",
+    "children": [
+     {
+      "raw": "u",
+      "data": "u",
+      "type": "tag",
+      "name": "u",
+      "children": [
+       {
+        "raw": ".",
+        "data": ".",
+        "type": "text"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "raw": "strong",
+    "data": "strong",
+    "type": "tag",
+    "name": "strong",
+    "children": [
+     {
+      "raw": "u",
+      "data": "u",
+      "type": "tag",
+      "name": "u",
+      "children": [
+       {
+        "raw": " ",
+        "data": " ",
+        "type": "text"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "raw": "strong",
+    "data": "strong",
+    "type": "tag",
+    "name": "strong",
+    "children": [
+     {
+      "raw": "u",
+      "data": "u",
+      "type": "tag",
+      "name": "u",
+      "children": [
+       {
+        "raw": "Maysar  Ali Musa Abdallah al-Juburi",
+        "data": "Maysar  Ali Musa Abdallah al-Juburi",
+        "type": "text"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n    ",
+    "data": "\r\n    ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "em",
+    "data": "em",
+    "type": "tag",
+    "name": "em",
+    "children": [
+     {
+      "raw": "Date on  which the narrative summary became available on the Committee&rsquo;s website: ",
+      "data": "Date on  which the narrative summary became available on the Committee&rsquo;s website: ",
+      "type": "text"
+     }
+    ]
+   },
+   {
+    "raw": "23 September 2014",
+    "data": "23 September 2014",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n      ",
+    "data": "\r\n      ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Maysar Ali Musa Abdallah al-Juburi was listed on 23 September 2014 pursuant to paragraphs 2  and 4 of resolution 2161 (2014) as being associated with Al-Qaida for  &ldquo;participating in the financing, planning, facilitating, preparing, or  perpetrating of acts or activities by, in conjunction with, under the name of,  on behalf of, or in support of&rdquo; and &ldquo;otherwise supporting acts or activities of&rdquo;  Al-Nusrah Front for the People of the Levant (QE.A.137.14).",
+    "data": "Maysar Ali Musa Abdallah al-Juburi was listed on 23 September 2014 pursuant to paragraphs 2  and 4 of resolution 2161 (2014) as being associated with Al-Qaida for  &ldquo;participating in the financing, planning, facilitating, preparing, or  perpetrating of acts or activities by, in conjunction with, under the name of,  on behalf of, or in support of&rdquo; and &ldquo;otherwise supporting acts or activities of&rdquo;  Al-Nusrah Front for the People of the Levant (QE.A.137.14).",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n      ",
+    "data": "\r\n      ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "em",
+    "data": "em",
+    "type": "tag",
+    "name": "em",
+    "children": [
+     {
+      "raw": "Additional  information:",
+      "data": "Additional  information:",
+      "type": "text"
+     }
+    ]
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n      ",
+    "data": "\r\n      ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Maysar Ali Musa Abdallah al-Juburi was the sharia amir of Al-Nusrah Front  for the People of the Levant (QE.A.137.14) as of early 2014. Earlier in 2013, Al-Juburi  travelled to an Al-Nusrah Front training camp in northern Syria to provide religious  lectures for fighters being trained at the camp. Al-Juburi was a member of Al-Nusrah  Front&rsquo;s shura council as of mid-2013. As of late December 2013, Al-Juburi  continued to serve as a senior official in Al-Nusrah Front.",
+    "data": "Maysar Ali Musa Abdallah al-Juburi was the sharia amir of Al-Nusrah Front  for the People of the Levant (QE.A.137.14) as of early 2014. Earlier in 2013, Al-Juburi  travelled to an Al-Nusrah Front training camp in northern Syria to provide religious  lectures for fighters being trained at the camp. Al-Juburi was a member of Al-Nusrah  Front&rsquo;s shura council as of mid-2013. As of late December 2013, Al-Juburi  continued to serve as a senior official in Al-Nusrah Front.",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n      ",
+    "data": "\r\n      ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Al-Juburi moved from Mosul, Iraq, to Syria in late 2011 to exploit  Syria's more permissive security environment with the objectives of  transferring Al-Qaida&rsquo;s (QE.A.4.01) ideology to Syria and forming likeminded  terrorist groups. As of mid-2012, Al-Juburi became the main religious and  military commander for Al-Nusrah Front in eastern Syria and also operated a  training camp for the network.  ",
+    "data": "Al-Juburi moved from Mosul, Iraq, to Syria in late 2011 to exploit  Syria's more permissive security environment with the objectives of  transferring Al-Qaida&rsquo;s (QE.A.4.01) ideology to Syria and forming likeminded  terrorist groups. As of mid-2012, Al-Juburi became the main religious and  military commander for Al-Nusrah Front in eastern Syria and also operated a  training camp for the network.  ",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n      ",
+    "data": "\r\n      ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "em",
+    "data": "em",
+    "type": "tag",
+    "name": "em",
+    "children": [
+     {
+      "raw": "Related  listed individuals and entities:",
+      "data": "Related  listed individuals and entities:",
+      "type": "text"
+     }
+    ]
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n      ",
+    "data": "\r\n      ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Al-Qaida (QE.A.4.01), listed on 6 October 2001",
+    "data": "Al-Qaida (QE.A.4.01), listed on 6 October 2001",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n      Al-Nusrah Front for the People of the Levant (QE.A.137.14), listed on 14  May 2014",
+    "data": "\r\n      Al-Nusrah Front for the People of the Levant (QE.A.137.14), listed on 14  May 2014",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Abu Mohammed al-Jawlani (QI.A.317.13), listed on 24 July 2013",
+    "data": "Abu Mohammed al-Jawlani (QI.A.317.13), listed on 24 July 2013",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n",
+    "data": "\r\n",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n",
+    "data": "\r\n",
+    "type": "text"
+   }
+  ]
+ }
+]

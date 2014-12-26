@@ -1,0 +1,712 @@
+[
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "strong",
+    "data": "strong",
+    "type": "tag",
+    "name": "strong",
+    "children": [
+     {
+      "raw": "QE.J.115.04. AL-QAIDA IN IRAQ",
+      "data": "QE.J.115.04. AL-QAIDA IN IRAQ",
+      "type": "text"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "em",
+    "data": "em",
+    "type": "tag",
+    "name": "em",
+    "children": [
+     {
+      "raw": "Date on which the narrative summary became  available on the Committee&rsquo;s website",
+      "data": "Date on which the narrative summary became  available on the Committee&rsquo;s website",
+      "type": "text"
+     }
+    ]
+   },
+   {
+    "raw": ": 28 March 2011",
+    "data": ": 28 March 2011",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n        ",
+    "data": "\r\n        ",
+    "type": "text"
+   },
+   {
+    "raw": "em",
+    "data": "em",
+    "type": "tag",
+    "name": "em",
+    "children": [
+     {
+      "raw": "Date on which the narrative summary was updated:",
+      "data": "Date on which the narrative summary was updated:",
+      "type": "text"
+     }
+    ]
+   },
+   {
+    "raw": " 3 June 2014",
+    "data": " 3 June 2014",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Al-Qaida  in Iraq  was listed on ",
+    "data": "Al-Qaida  in Iraq  was listed on ",
+    "type": "text"
+   },
+   {
+    "raw": "strong",
+    "data": "strong",
+    "type": "tag",
+    "name": "strong",
+    "children": [
+     {
+      "raw": "18  October 2004 ",
+      "data": "18  October 2004 ",
+      "type": "text"
+     }
+    ]
+   },
+   {
+    "raw": "pursuant to paragraphs 1 and 16 of  resolution 1526",
+    "data": "pursuant to paragraphs 1 and 16 of  resolution 1526",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n          (2004)  as being associated with Al-Qaida, Usama bin Laden or the Taliban for  &ldquo;participating in the",
+    "data": "\r\n          (2004)  as being associated with Al-Qaida, Usama bin Laden or the Taliban for  &ldquo;participating in the",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n          financing,  planning, facilitating, preparing or perpetrating of acts or activities by, in  conjunction with,",
+    "data": "\r\n          financing,  planning, facilitating, preparing or perpetrating of acts or activities by, in  conjunction with,",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n          under  the name of, on behalf or in support of&rdquo;, &ldquo;supplying, selling or transferring  arms and related",
+    "data": "\r\n          under  the name of, on behalf or in support of&rdquo;, &ldquo;supplying, selling or transferring  arms and related",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n          materiel  to&rdquo; or &ldquo;otherwise supporting acts or activities of&rdquo; Usama bin Laden and  Al-Qaida (QE.A.4.01).",
+    "data": "\r\n          materiel  to&rdquo; or &ldquo;otherwise supporting acts or activities of&rdquo; Usama bin Laden and  Al-Qaida (QE.A.4.01).",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "em",
+    "data": "em",
+    "type": "tag",
+    "name": "em",
+    "children": [
+     {
+      "raw": "Additional information:",
+      "data": "Additional information:",
+      "type": "text"
+     }
+    ]
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n          Al-Qaida  in Iraq (AQI) is an extremist group operating in Iraq. It was led by extremist Abu  Musab al-",
+    "data": "\r\n          Al-Qaida  in Iraq (AQI) is an extremist group operating in Iraq. It was led by extremist Abu  Musab al-",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n          Zarqawi,  also known as Ahmad Fadil Nazal al-Khalayleh (deceased), who was killed in June  2006. Al-",
+    "data": "\r\n          Zarqawi,  also known as Ahmad Fadil Nazal al-Khalayleh (deceased), who was killed in June  2006. Al-",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n          Zarqawi  had been operating independently in Iraq since mid-2003 using the name  Jama&rsquo;at al-Tawhid",
+    "data": "\r\n          Zarqawi  had been operating independently in Iraq since mid-2003 using the name  Jama&rsquo;at al-Tawhid",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n          Wa&rsquo;al-Jihad  (JTJ). Al-Zarqawi&rsquo;s group was responsible for the August 2003 bombing of the  United",
+    "data": "\r\n          Wa&rsquo;al-Jihad  (JTJ). Al-Zarqawi&rsquo;s group was responsible for the August 2003 bombing of the  United",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n          Nations  Headquarters in Baghdad  that killed at least 23 people, including United Nations Special",
+    "data": "\r\n          Nations  Headquarters in Baghdad  that killed at least 23 people, including United Nations Special",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n          Envoy Sergio Vieira de Mello.",
+    "data": "\r\n          Envoy Sergio Vieira de Mello.",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "JTJ,  under Al-Zarqawi, established links to Al-Qaida (QE.A.4.01). Al-Zarqawi had a  long-standing",
+    "data": "JTJ,  under Al-Zarqawi, established links to Al-Qaida (QE.A.4.01). Al-Zarqawi had a  long-standing",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n          connection  with the senior Al-Qaida leadership, appeared to be well regarded by them and  was a",
+    "data": "\r\n          connection  with the senior Al-Qaida leadership, appeared to be well regarded by them and  was a",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n          close  associate of Usama bin Laden (deceased). He arranged for his followers to be  trained in Al-",
+    "data": "\r\n          close  associate of Usama bin Laden (deceased). He arranged for his followers to be  trained in Al-",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n          Qaida  camps.",
+    "data": "\r\n          Qaida  camps.",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Since  his designation by the 1267 Committee, Al-Zarqawi moved the center of his  operations to Iraq",
+    "data": "Since  his designation by the 1267 Committee, Al-Zarqawi moved the center of his  operations to Iraq",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n          and  consolidated his group of operatives under JTJ. As the leader of JTJ, his ties  to Al-Qaida,",
+    "data": "\r\n          and  consolidated his group of operatives under JTJ. As the leader of JTJ, his ties  to Al-Qaida,",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n          however,  remained, as evidenced by a letter intercepted in February 2004 that Al-Zarqawi  wrote to Al-",
+    "data": "\r\n          however,  remained, as evidenced by a letter intercepted in February 2004 that Al-Zarqawi  wrote to Al-",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n          Qaida/Usama  bin Laden in Afghanistan,  taking credit for various terrorist attacks.",
+    "data": "\r\n          Qaida/Usama  bin Laden in Afghanistan,  taking credit for various terrorist attacks.",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "In  October 2004 JTJ issued a statement pledging allegiance to Usama bin Laden, and  undertook to",
+    "data": "In  October 2004 JTJ issued a statement pledging allegiance to Usama bin Laden, and  undertook to",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n          follow  Bin Laden&rsquo;s orders. At this time the group also changed its name to Tanzim  Qa&rsquo;idat al-Jihad fi",
+    "data": "\r\n          follow  Bin Laden&rsquo;s orders. At this time the group also changed its name to Tanzim  Qa&rsquo;idat al-Jihad fi",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n          Bilad  al-Rafidayn (the Al-Qaida Group in the Land of the Two Rivers, AQI). The  group&rsquo;s stated aim is",
+    "data": "\r\n          Bilad  al-Rafidayn (the Al-Qaida Group in the Land of the Two Rivers, AQI). The  group&rsquo;s stated aim is",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n          the  creation of a state in Iraq  based on extremist ideology.",
+    "data": "\r\n          the  creation of a state in Iraq  based on extremist ideology.",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Following  Al-Zarqawi&rsquo;s death in 2006, Abu Ayyub al-Masri assumed leadership of AQI until  his own",
+    "data": "Following  Al-Zarqawi&rsquo;s death in 2006, Abu Ayyub al-Masri assumed leadership of AQI until  his own",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n          death  in April 2010. The group continues to attack Iraqi civilians, the Iraqi  Security Forces, and Iraqi",
+    "data": "\r\n          death  in April 2010. The group continues to attack Iraqi civilians, the Iraqi  Security Forces, and Iraqi",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n          governmental  institutions. It has claimed many terrorist attacks inside Iraq including the high-profile",
+    "data": "\r\n          governmental  institutions. It has claimed many terrorist attacks inside Iraq including the high-profile",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n          attacks  in Baghdad in  August, October and December 2009, which, combined, killed over 480 people.",
+    "data": "\r\n          attacks  in Baghdad in  August, October and December 2009, which, combined, killed over 480 people.",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n          The  group also claimed responsibility for the 2005 attack on three hotels in Amman, Jordan,  which",
+    "data": "\r\n          The  group also claimed responsibility for the 2005 attack on three hotels in Amman, Jordan,  which",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n          killed  at least 60 people.",
+    "data": "\r\n          killed  at least 60 people.",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n      ",
+    "data": "\r\n      ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Members  of JTJ&rsquo;s precursor cell operating in Germany include Aschraf al-Dagma  (QI.A.132.03),",
+    "data": "Members  of JTJ&rsquo;s precursor cell operating in Germany include Aschraf al-Dagma  (QI.A.132.03),",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n          Ismail  Abdallah Sbaitan Shalabi (QI.S.128.03), Djamel Moustfa (QI.M.129.03) and  Mohamed",
+    "data": "\r\n          Ismail  Abdallah Sbaitan Shalabi (QI.S.128.03), Djamel Moustfa (QI.M.129.03) and  Mohamed",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n          Ghassan  Ali Abu Dhess (QI.A.130.03).",
+    "data": "\r\n          Ghassan  Ali Abu Dhess (QI.A.130.03).",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Al-Nusrah Front for the People of the Levant (QE.A.137.14) a.k.a Jabhat  al Nusrah emerged publicly on 24 January 2012. The group was created by members  of Al-Qaida  in Iraq  including, in particular, Ibrahim Awwad Ibrahim Ali Al-Badri Al Samarrai, also  known as      Abu  Bakr al-Baghdadi (QI.A.299.11). It operates in Syria where it has carried out a number of      terrorist attacks. The leader of Jabhat al Nusrah is Al-Fatih Abu  Muhammad al-Jawlani (QI.A.317.13).The group was part of Al Qaida in Iraq and was listed between 30 May 2013 and 13 May 2014      as an alias of Al-Qaida in Iraq.",
+    "data": "Al-Nusrah Front for the People of the Levant (QE.A.137.14) a.k.a Jabhat  al Nusrah emerged publicly on 24 January 2012. The group was created by members  of Al-Qaida  in Iraq  including, in particular, Ibrahim Awwad Ibrahim Ali Al-Badri Al Samarrai, also  known as      Abu  Bakr al-Baghdadi (QI.A.299.11). It operates in Syria where it has carried out a number of      terrorist attacks. The leader of Jabhat al Nusrah is Al-Fatih Abu  Muhammad al-Jawlani (QI.A.317.13).The group was part of Al Qaida in Iraq and was listed between 30 May 2013 and 13 May 2014      as an alias of Al-Qaida in Iraq.",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "em",
+    "data": "em",
+    "type": "tag",
+    "name": "em",
+    "children": [
+     {
+      "raw": "Related listed individuals and entities:",
+      "data": "Related listed individuals and entities:",
+      "type": "text"
+     }
+    ]
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Al-Qaida (QE.A.4.01), listed on 6 October 2001",
+    "data": "Al-Qaida (QE.A.4.01), listed on 6 October 2001",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n      Al-Nusrah Front for the People of the Levant (QE.A.137.14), listed on 14 May 2014",
+    "data": "\r\n      Al-Nusrah Front for the People of the Levant (QE.A.137.14), listed on 14 May 2014",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": " Omar Mahmoud Uthman (QI.M.31.01), listed on 17  October 2001",
+    "data": " Omar Mahmoud Uthman (QI.M.31.01), listed on 17  October 2001",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n      Ismail Abdallah Sbaitan Shalabi (QI.S.128.03),  listed on 23 September 2003",
+    "data": "\r\n      Ismail Abdallah Sbaitan Shalabi (QI.S.128.03),  listed on 23 September 2003",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n      Djamel Moustfa (QI.M.129.03), listed on 23  September 2003",
+    "data": "\r\n      Djamel Moustfa (QI.M.129.03), listed on 23  September 2003",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n      Mohamed Ghassan Ali Abu Dhess (QI.A.130.03),  listed on 23 September 2003",
+    "data": "\r\n      Mohamed Ghassan Ali Abu Dhess (QI.A.130.03),  listed on 23 September 2003",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n      Aschraf al-Dagma (QI.A.132.03), listed on 23  September 2003",
+    "data": "\r\n      Aschraf al-Dagma (QI.A.132.03), listed on 23  September 2003",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n      Hamid Abdallah Ahmed al-Ali (QI.A.236.08),  listed on 16 January 2008",
+    "data": "\r\n      Hamid Abdallah Ahmed al-Ali (QI.A.236.08),  listed on 16 January 2008",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n      Jaber Abdallah Jaber Ahmad al-Jalahmah  (QI.A.237.08), listed on 16 January 2008",
+    "data": "\r\n      Jaber Abdallah Jaber Ahmad al-Jalahmah  (QI.A.237.08), listed on 16 January 2008",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n      Mubarak Mushakhas Sanad Mubarak al-Bathali  (QI.A.238.08), listed on 16 January 2008",
+    "data": "\r\n      Mubarak Mushakhas Sanad Mubarak al-Bathali  (QI.A.238.08), listed on 16 January 2008",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n      Redouane el Habhab (QI.E.262.08), listed on 12  November 2008",
+    "data": "\r\n      Redouane el Habhab (QI.E.262.08), listed on 12  November 2008",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n      Akram Turki Hishan al-Mazidih (QI.A.276.10),  listed on 11 March 2010",
+    "data": "\r\n      Akram Turki Hishan al-Mazidih (QI.A.276.10),  listed on 11 March 2010",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n      Ghazy Fezza Hishan al-Mazidih (QI.A.277.10),  listed on 11 March 2010",
+    "data": "\r\n      Ghazy Fezza Hishan al-Mazidih (QI.A.277.10),  listed on 11 March 2010",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n      Muthanna Harith al-Dari (QI.A.278.10), listed  on 25 March 2010",
+    "data": "\r\n      Muthanna Harith al-Dari (QI.A.278.10), listed  on 25 March 2010",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n      Ibrahim Awwad Ibrahim Ali al-Badri al-Samarrai  (QI.A.299.11), listed on 5 October 2011",
+    "data": "\r\n      Ibrahim Awwad Ibrahim Ali al-Badri al-Samarrai  (QI.A.299.11), listed on 5 October 2011",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": " \r\n      Abu Mohammed al-Jawlani (QI.A.317.13), listed  on 24 July 2013",
+    "data": " \r\n      Abu Mohammed al-Jawlani (QI.A.317.13), listed  on 24 July 2013",
+    "type": "text"
+   }
+  ]
+ }
+]

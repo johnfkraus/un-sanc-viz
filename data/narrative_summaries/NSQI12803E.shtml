@@ -1,0 +1,416 @@
+[
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "strong",
+    "data": "strong",
+    "type": "tag",
+    "name": "strong",
+    "children": [
+     {
+      "raw": "u",
+      "data": "u",
+      "type": "tag",
+      "name": "u",
+      "children": [
+       {
+        "raw": "QI.S.128.03",
+        "data": "QI.S.128.03",
+        "type": "text"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "raw": "strong",
+    "data": "strong",
+    "type": "tag",
+    "name": "strong",
+    "children": [
+     {
+      "raw": "u",
+      "data": "u",
+      "type": "tag",
+      "name": "u",
+      "children": [
+       {
+        "raw": ". I",
+        "data": ". I",
+        "type": "text"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "raw": "strong",
+    "data": "strong",
+    "type": "tag",
+    "name": "strong",
+    "children": [
+     {
+      "raw": "u",
+      "data": "u",
+      "type": "tag",
+      "name": "u",
+      "children": [
+       {
+        "raw": "SMAIL A",
+        "data": "SMAIL A",
+        "type": "text"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "raw": "strong",
+    "data": "strong",
+    "type": "tag",
+    "name": "strong",
+    "children": [
+     {
+      "raw": "u",
+      "data": "u",
+      "type": "tag",
+      "name": "u",
+      "children": [
+       {
+        "raw": "BDALLAH S",
+        "data": "BDALLAH S",
+        "type": "text"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "raw": "strong",
+    "data": "strong",
+    "type": "tag",
+    "name": "strong",
+    "children": [
+     {
+      "raw": "u",
+      "data": "u",
+      "type": "tag",
+      "name": "u",
+      "children": [
+       {
+        "raw": "BAITAN S",
+        "data": "BAITAN S",
+        "type": "text"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "raw": "strong",
+    "data": "strong",
+    "type": "tag",
+    "name": "strong",
+    "children": [
+     {
+      "raw": "u",
+      "data": "u",
+      "type": "tag",
+      "name": "u",
+      "children": [
+       {
+        "raw": "HALABI",
+        "data": "HALABI",
+        "type": "text"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "em",
+    "data": "em",
+    "type": "tag",
+    "name": "em",
+    "children": [
+     {
+      "raw": "Date on which the  narrative summary became available on",
+      "data": "Date on which the  narrative summary became available on",
+      "type": "text"
+     }
+    ]
+   },
+   {
+    "raw": " ",
+    "data": " ",
+    "type": "text"
+   },
+   {
+    "raw": "em",
+    "data": "em",
+    "type": "tag",
+    "name": "em",
+    "children": [
+     {
+      "raw": "the  Committee’s website",
+      "data": "the  Committee’s website",
+      "type": "text"
+     }
+    ]
+   },
+   {
+    "raw": ": 16.09.2009",
+    "data": ": 16.09.2009",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n              ",
+    "data": "\r\n              ",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n              Ismail Abdallah Sbaitan Shalabi was listed on ",
+    "data": "\r\n              Ismail Abdallah Sbaitan Shalabi was listed on ",
+    "type": "text"
+   },
+   {
+    "raw": "strong",
+    "data": "strong",
+    "type": "tag",
+    "name": "strong",
+    "children": [
+     {
+      "raw": "23 September 2003",
+      "data": "23 September 2003",
+      "type": "text"
+     }
+    ]
+   },
+   {
+    "raw": " pursuant to paragraphs 1 and 2 of resolution 1390  (2002) as being associated with Al-Qaida,  Usama bin Laden or the Taliban for “participating in  the financing, planning, facilitating, preparing or perpetrating of acts or activities  by, in conjunction with, under the name of, on behalf or in support of” or  “otherwise supporting acts or activities of” Al-Qaida in Iraq (QE.J.115.04).",
+    "data": " pursuant to paragraphs 1 and 2 of resolution 1390  (2002) as being associated with Al-Qaida,  Usama bin Laden or the Taliban for “participating in  the financing, planning, facilitating, preparing or perpetrating of acts or activities  by, in conjunction with, under the name of, on behalf or in support of” or  “otherwise supporting acts or activities of” Al-Qaida in Iraq (QE.J.115.04).",
+    "type": "text"
+   },
+   {
+    "raw": "u",
+    "data": "u",
+    "type": "tag",
+    "name": "u"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "em",
+    "data": "em",
+    "type": "tag",
+    "name": "em",
+    "children": [
+     {
+      "raw": "Additional information:",
+      "data": "Additional information:",
+      "type": "text"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Ismail Abdallah Sbaitan Shalabi acted jointly with other persons  in Germany  from at least the summer of 2001 to 23 April 2002 as a member of a German cell  of Al-Qaida in Iraq (QE.J.115.04), also known as &quot;Al-Tawhid&quot;  movement. This organization had close personal and organizational links to the  Al-Qaida (QE.A.4.01) network. Ahmad Fadil  Nazal al-Khalayleh (deceased),  a.k.a. Abu Musab al-Zarqawi, was the operational leader of Al-Tawhid. ",
+    "data": "Ismail Abdallah Sbaitan Shalabi acted jointly with other persons  in Germany  from at least the summer of 2001 to 23 April 2002 as a member of a German cell  of Al-Qaida in Iraq (QE.J.115.04), also known as &quot;Al-Tawhid&quot;  movement. This organization had close personal and organizational links to the  Al-Qaida (QE.A.4.01) network. Ahmad Fadil  Nazal al-Khalayleh (deceased),  a.k.a. Abu Musab al-Zarqawi, was the operational leader of Al-Tawhid. ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "By September 2001, an independent  “Al-Tawhid” cell was formed in Germany  around Mohamed  Ghassan Ali Abu Dhess  (QI.A.130.03). The cell worked in an insular and clandestine manner,  mostly operating independently within the scope of directives from operational  and religious leaders abroad. It was an integral part of an international  network which, among other things, ensured that the organization received  logistic and financial support.",
+    "data": "By September 2001, an independent  “Al-Tawhid” cell was formed in Germany  around Mohamed  Ghassan Ali Abu Dhess  (QI.A.130.03). The cell worked in an insular and clandestine manner,  mostly operating independently within the scope of directives from operational  and religious leaders abroad. It was an integral part of an international  network which, among other things, ensured that the organization received  logistic and financial support.",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Shalabi was an important contact  for Abu Dhess in North and West    Germany. He held a leadership position  within the cell and was aware of and approved its violent objectives both in Germany and  abroad. Shalabi was also involved in  transfers of funds by the group.",
+    "data": "Shalabi was an important contact  for Abu Dhess in North and West    Germany. He held a leadership position  within the cell and was aware of and approved its violent objectives both in Germany and  abroad. Shalabi was also involved in  transfers of funds by the group.",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Apart from Shalabi and Mohamed  Ghassan Ali Abu Dhess, other members of the cell in Germany included Aschraf al-Dagma (QI.A.132.03). ",
+    "data": "Apart from Shalabi and Mohamed  Ghassan Ali Abu Dhess, other members of the cell in Germany included Aschraf al-Dagma (QI.A.132.03). ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "The cell’s activities in Germany  consisted mainly of forging passports, collecting donations and facilitating  the illegal cross-border travel of persons linked to the “Al-Tawhid”  organization. However, in  early September 2001, Al-Zarqawi met Mohamed  Ghassan Ali Abu Dhess  in Iran and instructed him to commit terrorist  attacks in Germany.  The plan was to use a pistol fitted with a silencer and a crate of hand  grenades to carry out an attack on a busy square in a German town or city and  to let off hand grenades in another German town in the immediate vicinity of an  Israeli or Jewish property with the aim of killing as many people as possible.  The attacks were supposed to be carried out by Ismail Shalabi together with other  member of the cell, including Al-Dagma. However, before the weapons could be  delivered, Ismail Shalabi was arrested on 23 April 2002, together with other  members of the cell, including Mohamed  Ghassan Ali Abu Dhess, Aschraf al-Dagma, and Djamel  Moustfa (QI.M.129.03). ",
+    "data": "The cell’s activities in Germany  consisted mainly of forging passports, collecting donations and facilitating  the illegal cross-border travel of persons linked to the “Al-Tawhid”  organization. However, in  early September 2001, Al-Zarqawi met Mohamed  Ghassan Ali Abu Dhess  in Iran and instructed him to commit terrorist  attacks in Germany.  The plan was to use a pistol fitted with a silencer and a crate of hand  grenades to carry out an attack on a busy square in a German town or city and  to let off hand grenades in another German town in the immediate vicinity of an  Israeli or Jewish property with the aim of killing as many people as possible.  The attacks were supposed to be carried out by Ismail Shalabi together with other  member of the cell, including Al-Dagma. However, before the weapons could be  delivered, Ismail Shalabi was arrested on 23 April 2002, together with other  members of the cell, including Mohamed  Ghassan Ali Abu Dhess, Aschraf al-Dagma, and Djamel  Moustfa (QI.M.129.03). ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "On 26 October 2005, Ismail  Shalabi, together with Mohamed  Ghassan Ali Abu Dhess  and Aschraf al-Dagma, was convicted in Germany of plotting attacks and belonging  to a terrorist organization. Ismail Shalabi was  sentenced to eight years of imprisonment. ",
+    "data": "On 26 October 2005, Ismail  Shalabi, together with Mohamed  Ghassan Ali Abu Dhess  and Aschraf al-Dagma, was convicted in Germany of plotting attacks and belonging  to a terrorist organization. Ismail Shalabi was  sentenced to eight years of imprisonment. ",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n            ",
+    "data": "\r\n            ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "em",
+    "data": "em",
+    "type": "tag",
+    "name": "em",
+    "children": [
+     {
+      "raw": "Related listed individuals and entities:",
+      "data": "Related listed individuals and entities:",
+      "type": "text"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Al-Qaida (QE.A.4.01), listed on 6  October 2001 ",
+    "data": "Al-Qaida (QE.A.4.01), listed on 6  October 2001 ",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n              Al-Qaida in Iraq (QE.J.115.04), listed on 18 October  2004",
+    "data": "\r\n              Al-Qaida in Iraq (QE.J.115.04), listed on 18 October  2004",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "              Djamel Moustfa (QI.M.129.03), listed on 23 September 2003",
+    "data": "              Djamel Moustfa (QI.M.129.03), listed on 23 September 2003",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n              Mohamed  Ghassan Ali Abu Dhess  (QI.A.130.03), listed on 23 September 2003 ",
+    "data": "\r\n              Mohamed  Ghassan Ali Abu Dhess  (QI.A.130.03), listed on 23 September 2003 ",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n              Aschraf al-Dagma (QI.A.132.03), listed on 23 September 2003",
+    "data": "\r\n              Aschraf al-Dagma (QI.A.132.03), listed on 23 September 2003",
+    "type": "text"
+   }
+  ]
+ }
+]

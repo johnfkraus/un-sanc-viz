@@ -1,0 +1,367 @@
+[
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "strong",
+    "data": "strong",
+    "type": "tag",
+    "name": "strong",
+    "children": [
+     {
+      "raw": "u",
+      "data": "u",
+      "type": "tag",
+      "name": "u",
+      "children": [
+       {
+        "raw": "QI.A.336.14",
+        "data": "QI.A.336.14",
+        "type": "text"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "raw": "strong",
+    "data": "strong",
+    "type": "tag",
+    "name": "strong",
+    "children": [
+     {
+      "raw": "u",
+      "data": "u",
+      "type": "tag",
+      "name": "u",
+      "children": [
+       {
+        "raw": ".",
+        "data": ".",
+        "type": "text"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "raw": "strong",
+    "data": "strong",
+    "type": "tag",
+    "name": "strong",
+    "children": [
+     {
+      "raw": "u",
+      "data": "u",
+      "type": "tag",
+      "name": "u",
+      "children": [
+       {
+        "raw": " ",
+        "data": " ",
+        "type": "text"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "raw": "strong",
+    "data": "strong",
+    "type": "tag",
+    "name": "strong",
+    "children": [
+     {
+      "raw": "u",
+      "data": "u",
+      "type": "tag",
+      "name": "u",
+      "children": [
+       {
+        "raw": "Anas  Hasan Khattab",
+        "data": "Anas  Hasan Khattab",
+        "type": "text"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n    ",
+    "data": "\r\n    ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "em",
+    "data": "em",
+    "type": "tag",
+    "name": "em",
+    "children": [
+     {
+      "raw": "Date on  which the narrative summary became available on the Committee&rsquo;s website: ",
+      "data": "Date on  which the narrative summary became available on the Committee&rsquo;s website: ",
+      "type": "text"
+     }
+    ]
+   },
+   {
+    "raw": "23 September 2014",
+    "data": "23 September 2014",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n      ",
+    "data": "\r\n      ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Anas Hasan Khattab was listed on 23 September 2014 pursuant to paragraphs 2 and 4  of resolution 2161 (2014) as being associated with Al-Qaida for &ldquo;participating  in the financing, planning, facilitating, preparing, or perpetrating of acts or  activities by, in conjunction with, under the name of, on behalf of, or in  support of&rdquo; and &ldquo;otherwise supporting acts or activities of&rdquo; Al-Nusrah Front  for the People of the Levant (QE.A.137.14).",
+    "data": "Anas Hasan Khattab was listed on 23 September 2014 pursuant to paragraphs 2 and 4  of resolution 2161 (2014) as being associated with Al-Qaida for &ldquo;participating  in the financing, planning, facilitating, preparing, or perpetrating of acts or  activities by, in conjunction with, under the name of, on behalf of, or in  support of&rdquo; and &ldquo;otherwise supporting acts or activities of&rdquo; Al-Nusrah Front  for the People of the Levant (QE.A.137.14).",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n      ",
+    "data": "\r\n      ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "em",
+    "data": "em",
+    "type": "tag",
+    "name": "em",
+    "children": [
+     {
+      "raw": "Additional  information:",
+      "data": "Additional  information:",
+      "type": "text"
+     }
+    ]
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n      ",
+    "data": "\r\n      ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Anas Hasan Khattab was the administrative amir of Al-Nusrah Front for the  People of the Levant (QE.A.137.14) as of early 2014. In late 2013, Khattab was  a leader in Al-Nusrah Front and was the group&rsquo;s overall administrative amir. ",
+    "data": "Anas Hasan Khattab was the administrative amir of Al-Nusrah Front for the  People of the Levant (QE.A.137.14) as of early 2014. In late 2013, Khattab was  a leader in Al-Nusrah Front and was the group&rsquo;s overall administrative amir. ",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n      ",
+    "data": "\r\n      ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Khattab was also a member of Al-Nusrah Front&rsquo;s shura council as of  mid-2013.  Also in mid-2013, Khattab  chose three new bodyguards for Al-Nusrah Front overall leader Abu Mohammed  al-Jawlani (QI.A.317.13). ",
+    "data": "Khattab was also a member of Al-Nusrah Front&rsquo;s shura council as of  mid-2013.  Also in mid-2013, Khattab  chose three new bodyguards for Al-Nusrah Front overall leader Abu Mohammed  al-Jawlani (QI.A.317.13). ",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n      As of mid-2012, Khattab was involved in the formation of Al-Nusrah Front.  He communicated periodically with Al-Qaida in Iraq (QE.J.115.04) leadership to  receive financial and material assistance and helped facilitate funding and  weapons for Al-Nusrah Front.  ",
+    "data": "\r\n      As of mid-2012, Khattab was involved in the formation of Al-Nusrah Front.  He communicated periodically with Al-Qaida in Iraq (QE.J.115.04) leadership to  receive financial and material assistance and helped facilitate funding and  weapons for Al-Nusrah Front.  ",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n      ",
+    "data": "\r\n      ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "em",
+    "data": "em",
+    "type": "tag",
+    "name": "em",
+    "children": [
+     {
+      "raw": "Related  listed individuals and entities:",
+      "data": "Related  listed individuals and entities:",
+      "type": "text"
+     }
+    ]
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n      ",
+    "data": "\r\n      ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Al-Qaida (QE.A.4.01), listed on 6 October 2001",
+    "data": "Al-Qaida (QE.A.4.01), listed on 6 October 2001",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n      Al-Qaida in Iraq (QE.J.115.04), listed on 18 October 2004",
+    "data": "\r\n      Al-Qaida in Iraq (QE.J.115.04), listed on 18 October 2004",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n      Al-Nusrah Front for the People of the Levant (QE.A.137.14), listed on 14  May 2014",
+    "data": "\r\n      Al-Nusrah Front for the People of the Levant (QE.A.137.14), listed on 14  May 2014",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Abu Mohammed al-Jawlani (QI.A.317.13), listed on 24 July 2013",
+    "data": "Abu Mohammed al-Jawlani (QI.A.317.13), listed on 24 July 2013",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n",
+    "data": "\r\n",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n",
+    "data": "\r\n",
+    "type": "text"
+   }
+  ]
+ }
+]

@@ -1,0 +1,340 @@
+[
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "strong",
+    "data": "strong",
+    "type": "tag",
+    "name": "strong",
+    "children": [
+     {
+      "raw": "u",
+      "data": "u",
+      "type": "tag",
+      "name": "u",
+      "children": [
+       {
+        "raw": "QE.A.143.14",
+        "data": "QE.A.143.14",
+        "type": "text"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "raw": "strong",
+    "data": "strong",
+    "type": "tag",
+    "name": "strong",
+    "children": [
+     {
+      "raw": "u",
+      "data": "u",
+      "type": "tag",
+      "name": "u",
+      "children": [
+       {
+        "raw": ". Ansar al-Shari&rsquo;a in Tunisia ",
+        "data": ". Ansar al-Shari&rsquo;a in Tunisia ",
+        "type": "text"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "raw": "strong",
+    "data": "strong",
+    "type": "tag",
+    "name": "strong",
+    "children": [
+     {
+      "raw": "u",
+      "data": "u",
+      "type": "tag",
+      "name": "u",
+      "children": [
+       {
+        "raw": "(AAS-T)",
+        "data": "(AAS-T)",
+        "type": "text"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n        ",
+    "data": "\r\n        ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "em",
+    "data": "em",
+    "type": "tag",
+    "name": "em",
+    "children": [
+     {
+      "raw": "Date on  which the narrative summary became available on the Committee&rsquo;s website: ",
+      "data": "Date on  which the narrative summary became available on the Committee&rsquo;s website: ",
+      "type": "text"
+     }
+    ]
+   },
+   {
+    "raw": "23 September 2014",
+    "data": "23 September 2014",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n        ",
+    "data": "\r\n        ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Ansar al-Shari&rsquo;a in Tunisia was listed on 23 September 2014 pursuant to paragraphs 2 and 4  of resolution 2161 (2014) as being associated with Al-Qaida for &ldquo;participating  in the financing, planning, facilitating, preparing, or perpetrating of acts or  activities by, in conjunction with, under the name of, on behalf of, or in  support of&rdquo; the Organization of Al-Qaida in the Islamic Maghreb (QE.T.14.01).",
+    "data": "Ansar al-Shari&rsquo;a in Tunisia was listed on 23 September 2014 pursuant to paragraphs 2 and 4  of resolution 2161 (2014) as being associated with Al-Qaida for &ldquo;participating  in the financing, planning, facilitating, preparing, or perpetrating of acts or  activities by, in conjunction with, under the name of, on behalf of, or in  support of&rdquo; the Organization of Al-Qaida in the Islamic Maghreb (QE.T.14.01).",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n          ",
+    "data": "\r\n          ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "em",
+    "data": "em",
+    "type": "tag",
+    "name": "em",
+    "children": [
+     {
+      "raw": "Additional  information:",
+      "data": "Additional  information:",
+      "type": "text"
+     }
+    ]
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n          ",
+    "data": "\r\n          ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Ansar al-Shari&rsquo;a in Tunisia (AAS-T) is a Tunisian armed group founded by  Seifallah ben Hassine (QI.B.333.14)  in early 2011. It has links to the Organization of Al-Qaida in the Islamic Maghreb  (QE.T.14.01) and has been implicated in attacks against Tunisian security  forces, assassinations of Tunisian political figures, and an attempted bombing  of a tourist hotel.",
+    "data": "Ansar al-Shari&rsquo;a in Tunisia (AAS-T) is a Tunisian armed group founded by  Seifallah ben Hassine (QI.B.333.14)  in early 2011. It has links to the Organization of Al-Qaida in the Islamic Maghreb  (QE.T.14.01) and has been implicated in attacks against Tunisian security  forces, assassinations of Tunisian political figures, and an attempted bombing  of a tourist hotel.",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n          ",
+    "data": "\r\n          ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "In September 2012, AAS-T was involved in an attack against the United States  Embassy and the American Community School in Tunis City, Tunisia. In 2013,  AAS-T was implicated in the assassination of two Tunisian politicians.  In February 2013, Chokri Belaid was  assassinated in front of his home by members of AAS-T, and in July 2013,  Mohamed Brahmi was assassinated outside his home by members of AAS-T. ",
+    "data": "In September 2012, AAS-T was involved in an attack against the United States  Embassy and the American Community School in Tunis City, Tunisia. In 2013,  AAS-T was implicated in the assassination of two Tunisian politicians.  In February 2013, Chokri Belaid was  assassinated in front of his home by members of AAS-T, and in July 2013,  Mohamed Brahmi was assassinated outside his home by members of AAS-T. ",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n          ",
+    "data": "\r\n          ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "On 30 October 2013, AAS-T attempted to carry out suicide attacks against  two tourist sites in Tunisia.  The first  attack took place when a bomber blew himself up outside a hotel in Sousse, Tunisia,  resulting in no other fatalities.  That  same day, police prevented a suicide bombing in Monastir, Tunisia, when they  arrested a would-be bomber at the Tomb of Habib Bourguiba.",
+    "data": "On 30 October 2013, AAS-T attempted to carry out suicide attacks against  two tourist sites in Tunisia.  The first  attack took place when a bomber blew himself up outside a hotel in Sousse, Tunisia,  resulting in no other fatalities.  That  same day, police prevented a suicide bombing in Monastir, Tunisia, when they  arrested a would-be bomber at the Tomb of Habib Bourguiba.",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n          ",
+    "data": "\r\n          ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "AAS-T has also been involved in recruiting youth in Tunisia for fighting  in Syria.     ",
+    "data": "AAS-T has also been involved in recruiting youth in Tunisia for fighting  in Syria.     ",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n          ",
+    "data": "\r\n          ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "em",
+    "data": "em",
+    "type": "tag",
+    "name": "em",
+    "children": [
+     {
+      "raw": "Related  listed individuals and entities:",
+      "data": "Related  listed individuals and entities:",
+      "type": "text"
+     }
+    ]
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n          ",
+    "data": "\r\n          ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Al-Qaida (QE.A.4.01), listed on 6 October 2001",
+    "data": "Al-Qaida (QE.A.4.01), listed on 6 October 2001",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n          The Organization of Al-Qaida in the Islamic Maghreb (QE.T.14.01), listed  on 6 October 2001",
+    "data": "\r\n          The Organization of Al-Qaida in the Islamic Maghreb (QE.T.14.01), listed  on 6 October 2001",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n          Seifallah ben Hassine  (QI.B.333.14), listed on 23 September 2014 ",
+    "data": "\r\n          Seifallah ben Hassine  (QI.B.333.14), listed on 23 September 2014 ",
+    "type": "text"
+   }
+  ]
+ }
+]

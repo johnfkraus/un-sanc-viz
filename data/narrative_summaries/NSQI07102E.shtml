@@ -1,0 +1,432 @@
+[
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "strong",
+    "data": "strong",
+    "type": "tag",
+    "name": "strong",
+    "children": [
+     {
+      "raw": "u",
+      "data": "u",
+      "type": "tag",
+      "name": "u",
+      "children": [
+       {
+        "raw": "QI.A.71.02.",
+        "data": "QI.A.71.02.",
+        "type": "text"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "raw": "strong",
+    "data": "strong",
+    "type": "tag",
+    "name": "strong",
+    "children": [
+     {
+      "raw": "u",
+      "data": "u",
+      "type": "tag",
+      "name": "u",
+      "children": [
+       {
+        "raw": " RIADH BEN BELKASSEM BEN MOHAMED AL-JELASSI",
+        "data": " RIADH BEN BELKASSEM BEN MOHAMED AL-JELASSI",
+        "type": "text"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "em",
+    "data": "em",
+    "type": "tag",
+    "name": "em",
+    "children": [
+     {
+      "raw": "Date on which the  narrative summary became available on",
+      "data": "Date on which the  narrative summary became available on",
+      "type": "text"
+     }
+    ]
+   },
+   {
+    "raw": " ",
+    "data": " ",
+    "type": "text"
+   },
+   {
+    "raw": "em",
+    "data": "em",
+    "type": "tag",
+    "name": "em",
+    "children": [
+     {
+      "raw": "the  Committee’s website",
+      "data": "the  Committee’s website",
+      "type": "text"
+     }
+    ]
+   },
+   {
+    "raw": ": 5 October 2010",
+    "data": ": 5 October 2010",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Riadh ben Belkassem ben Mohamed  al-Jelassi was listed on ",
+    "data": "Riadh ben Belkassem ben Mohamed  al-Jelassi was listed on ",
+    "type": "text"
+   },
+   {
+    "raw": "strong",
+    "data": "strong",
+    "type": "tag",
+    "name": "strong",
+    "children": [
+     {
+      "raw": "3 September 2002",
+      "data": "3 September 2002",
+      "type": "text"
+     }
+    ]
+   },
+   {
+    "raw": " pursuant to paragraphs 1 and 2  of resolution 1390 (2002) as being associated with Al-Qaida, Usama bin Laden or  the Taliban for “participating in the financing,  planning, facilitating, preparing or perpetrating of acts or activities by, in  conjunction with, under the name of, on behalf or in support of”, “supplying,  selling or transferring arms and related materiel to” or “otherwise supporting  acts or activities of” the Organization of Al-Qaida in the Islamic  Maghreb (QE.T.14.01.) and  Tunisian Combatant Group  (QE.T.90.02.). ",
+    "data": " pursuant to paragraphs 1 and 2  of resolution 1390 (2002) as being associated with Al-Qaida, Usama bin Laden or  the Taliban for “participating in the financing,  planning, facilitating, preparing or perpetrating of acts or activities by, in  conjunction with, under the name of, on behalf or in support of”, “supplying,  selling or transferring arms and related materiel to” or “otherwise supporting  acts or activities of” the Organization of Al-Qaida in the Islamic  Maghreb (QE.T.14.01.) and  Tunisian Combatant Group  (QE.T.90.02.). ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "em",
+    "data": "em",
+    "type": "tag",
+    "name": "em",
+    "children": [
+     {
+      "raw": "Additional information:",
+      "data": "Additional information:",
+      "type": "text"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Riadh ben Belkassem ben Mohamed al-Jelassi has been a  member of the Salafist Group for Call and Combat (GSPC), listed as the  Organization of Al-Qaida in the Islamic Maghreb (QE.T.14.01.).  He has also been a member of Tunisian Combatant Group (QE.T.90.02.).  ",
+    "data": "Riadh ben Belkassem ben Mohamed al-Jelassi has been a  member of the Salafist Group for Call and Combat (GSPC), listed as the  Organization of Al-Qaida in the Islamic Maghreb (QE.T.14.01.).  He has also been a member of Tunisian Combatant Group (QE.T.90.02.).  ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Al-Jelassi was charged by the  Italian authorities with conspiracy and involvement with a criminal association  as a member of GSPC. On 17 May 2002, he was sentenced by an Italian court to  four years and six months in prison for criminal conspiracy to traffic arms,  and for receiving stolen goods, making and using false documents, and  facilitating the entry of illegal immigrants into Italy. On 23 April 2003 the  sentence was reduced to three years and six months imprisonment by Milan’s  Appeal Court.",
+    "data": "Al-Jelassi was charged by the  Italian authorities with conspiracy and involvement with a criminal association  as a member of GSPC. On 17 May 2002, he was sentenced by an Italian court to  four years and six months in prison for criminal conspiracy to traffic arms,  and for receiving stolen goods, making and using false documents, and  facilitating the entry of illegal immigrants into Italy. On 23 April 2003 the  sentence was reduced to three years and six months imprisonment by Milan’s  Appeal Court.",
+    "type": "text"
+   },
+   {
+    "raw": "u",
+    "data": "u",
+    "type": "tag",
+    "name": "u",
+    "children": [
+     {
+      "raw": " ",
+      "data": " ",
+      "type": "text"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Al-Jelassi  planned to give false passports to young militants passing through Italy to be trained in Al-Qaida (QE.A.4.01.)   camps in Afghanistan.",
+    "data": "Al-Jelassi  planned to give false passports to young militants passing through Italy to be trained in Al-Qaida (QE.A.4.01.)   camps in Afghanistan.",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "em",
+    "data": "em",
+    "type": "tag",
+    "name": "em",
+    "children": [
+     {
+      "raw": "Related listed  individuals and entities:",
+      "data": "Related listed  individuals and entities:",
+      "type": "text"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Al-Qaida  (QE.A.4.01), listed on 6 October 2001",
+    "data": "Al-Qaida  (QE.A.4.01), listed on 6 October 2001",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n\t\t      The Organization of Al-Qaida in the Islamic Maghreb (QE.T.14.01), listed on  6 October 2001",
+    "data": "\r\n\t\t      The Organization of Al-Qaida in the Islamic Maghreb (QE.T.14.01), listed on  6 October 2001",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n\t\t      Tunisian Combatant Group (QE.T.90.02), listed on  10 October 2002",
+    "data": "\r\n\t\t      Tunisian Combatant Group (QE.T.90.02), listed on  10 October 2002",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n\t\t      ",
+    "data": "\r\n\t\t      ",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n\t\t      Sami ben Khamis  ben Saleh Elsseid (QI.E.64.02), listed on 24 April 2002",
+    "data": "\r\n\t\t      Sami ben Khamis  ben Saleh Elsseid (QI.E.64.02), listed on 24 April 2002",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n\t\t      Abd el Kader Mahmoud Mohamed el Sayed (QI.E.65.02), listed on 24 April 2002",
+    "data": "\r\n\t\t      Abd el Kader Mahmoud Mohamed el Sayed (QI.E.65.02), listed on 24 April 2002",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n\t\t      Adel  ben al-Azhar ben Youssef ben Soltane (QI.B.68.02), listed on 3 September 2002",
+    "data": "\r\n\t\t      Adel  ben al-Azhar ben Youssef ben Soltane (QI.B.68.02), listed on 3 September 2002",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n\t\t      Nabil ben Mohamed ben Ali ben Attia (QI.B.69.02), listed on 3 September 2002",
+    "data": "\r\n\t\t      Nabil ben Mohamed ben Ali ben Attia (QI.B.69.02), listed on 3 September 2002",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n\t\t      Yassine Chekkouri (QI.C.70.02), listed on 3 September 2002",
+    "data": "\r\n\t\t      Yassine Chekkouri (QI.C.70.02), listed on 3 September 2002",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n\t\t      Mehdi ben Mohamed ben Mohamed Kammoun (QI.K.72.02), listed on 3 September 2002",
+    "data": "\r\n\t\t      Mehdi ben Mohamed ben Mohamed Kammoun (QI.K.72.02), listed on 3 September 2002",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n\t\t      Samir Abd el Latif el Sayed Kishk (QI.K.73.02), listed on 3 September 2002",
+    "data": "\r\n\t\t      Samir Abd el Latif el Sayed Kishk (QI.K.73.02), listed on 3 September 2002",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n\t\t      Tarek ben Habib ben al-Toumi al-Maaroufi (QI.A.74.02), listed on 3  September 2002",
+    "data": "\r\n\t\t      Tarek ben Habib ben al-Toumi al-Maaroufi (QI.A.74.02), listed on 3  September 2002",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n\t\t      Abdelhalim Hafed Abdelfattah Remadna (QI.R.75.02), listed on 3 September 2002",
+    "data": "\r\n\t\t      Abdelhalim Hafed Abdelfattah Remadna (QI.R.75.02), listed on 3 September 2002",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n\t\t      Isam Ali Mohamed Alouche (QI.T.76.02), listed on 3 September 2002",
+    "data": "\r\n\t\t      Isam Ali Mohamed Alouche (QI.T.76.02), listed on 3 September 2002",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n\t\t      Al-Azhar ben Mohammed ben el-Abed al-Tlili (QI.A.77.02), listed on 3 September  2002",
+    "data": "\r\n\t\t      Al-Azhar ben Mohammed ben el-Abed al-Tlili (QI.A.77.02), listed on 3 September  2002",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n\t\t      Imad ben Bechir ben Hamda  al-Jammali (QI.A.176.04), listed on 23 June 2004",
+    "data": "\r\n\t\t      Imad ben Bechir ben Hamda  al-Jammali (QI.A.176.04), listed on 23 June 2004",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n\t\t      Habib ben Ahmed al-Loubiri (QI.A.177.04), listed on 23 June 2004",
+    "data": "\r\n\t\t      Habib ben Ahmed al-Loubiri (QI.A.177.04), listed on 23 June 2004",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n\t\t      Nessim ben Romdhane Sahraoui (QI.S.222.06), listed on 2 August 2006 ",
+    "data": "\r\n\t\t      Nessim ben Romdhane Sahraoui (QI.S.222.06), listed on 2 August 2006 ",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n\t        Merai Zoghbai (QI.Z.223.06), listed on 2 August 2006",
+    "data": "\r\n\t        Merai Zoghbai (QI.Z.223.06), listed on 2 August 2006",
+    "type": "text"
+   }
+  ]
+ }
+]

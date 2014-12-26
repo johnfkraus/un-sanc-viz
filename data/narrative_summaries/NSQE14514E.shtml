@@ -1,0 +1,489 @@
+[
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "strong",
+    "data": "strong",
+    "type": "tag",
+    "name": "strong",
+    "children": [
+     {
+      "raw": "u",
+      "data": "u",
+      "type": "tag",
+      "name": "u",
+      "children": [
+       {
+        "raw": "QE.A.145.14",
+        "data": "QE.A.145.14",
+        "type": "text"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "raw": "strong",
+    "data": "strong",
+    "type": "tag",
+    "name": "strong",
+    "children": [
+     {
+      "raw": "u",
+      "data": "u",
+      "type": "tag",
+      "name": "u",
+      "children": [
+       {
+        "raw": ".",
+        "data": ".",
+        "type": "text"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "raw": "strong",
+    "data": "strong",
+    "type": "tag",
+    "name": "strong",
+    "children": [
+     {
+      "raw": "u",
+      "data": "u",
+      "type": "tag",
+      "name": "u",
+      "children": [
+       {
+        "raw": " Ansar al Charia Derna",
+        "data": " Ansar al Charia Derna",
+        "type": "text"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "raw": "strong",
+    "data": "strong",
+    "type": "tag",
+    "name": "strong",
+    "children": [
+     {
+      "raw": "&nbsp;",
+      "data": "&nbsp;",
+      "type": "text"
+     }
+    ]
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n      ",
+    "data": "\r\n      ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "em",
+    "data": "em",
+    "type": "tag",
+    "name": "em",
+    "children": [
+     {
+      "raw": "Date on which the narrative  summary became available on the Committee&rsquo;s website:",
+      "data": "Date on which the narrative  summary became available on the Committee&rsquo;s website:",
+      "type": "text"
+     }
+    ]
+   },
+   {
+    "raw": "em",
+    "data": "em",
+    "type": "tag",
+    "name": "em",
+    "children": [
+     {
+      "raw": "&nbsp;",
+      "data": "&nbsp;",
+      "type": "text"
+     }
+    ]
+   },
+   {
+    "raw": "19 November 2014 ",
+    "data": "19 November 2014 ",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n",
+    "data": "\r\n",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Ansar al Charia Derna was listed on 19 November 2014&nbsp;pursuant to paragraphs 2  and 4 of resolution 2161 (2014) as being associated with Al-Qaida for  &ldquo;participating in the financing, planning, facilitating, preparing, or  perpetrating of acts or activities by, in conjunction with, under the name of,  on behalf of, or in support of&rdquo;, &ldquo;supplying,  selling or transferring arms and related materiel&rdquo; &ldquo;recruiting for&rdquo; and &ldquo;otherwise supporting acts or  activities of&rdquo; the Organization of Al-Qaida in the  Islamic Maghreb (QE.T.14.01), Ansar al-Shari&rsquo;a  in Tunisia&nbsp;(AAS-T) (QE.A.143.14) and Ansar al Charia Benghazi  (QE.A.146.14).",
+    "data": "Ansar al Charia Derna was listed on 19 November 2014&nbsp;pursuant to paragraphs 2  and 4 of resolution 2161 (2014) as being associated with Al-Qaida for  &ldquo;participating in the financing, planning, facilitating, preparing, or  perpetrating of acts or activities by, in conjunction with, under the name of,  on behalf of, or in support of&rdquo;, &ldquo;supplying,  selling or transferring arms and related materiel&rdquo; &ldquo;recruiting for&rdquo; and &ldquo;otherwise supporting acts or  activities of&rdquo; the Organization of Al-Qaida in the  Islamic Maghreb (QE.T.14.01), Ansar al-Shari&rsquo;a  in Tunisia&nbsp;(AAS-T) (QE.A.143.14) and Ansar al Charia Benghazi  (QE.A.146.14).",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n        ",
+    "data": "\r\n        ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "em",
+    "data": "em",
+    "type": "tag",
+    "name": "em",
+    "children": [
+     {
+      "raw": "Additional information:",
+      "data": "Additional information:",
+      "type": "text"
+     }
+    ]
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n          ",
+    "data": "\r\n          ",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n          Ansar al Charia Derna was formed in early 2012. This group is linked to the  Organization of Al-Qaida in the Islamic Maghreb (AQIM) (QE.T.14.01), and to Ansar al-Shari&rsquo;a in Tunisia&nbsp;(AAS-T) (QE.A.143.14), with which it has worked closely. It also operates  in close cooperation with Ansar al Charia Benghazi (QE.A.146.14).",
+    "data": "\r\n          Ansar al Charia Derna was formed in early 2012. This group is linked to the  Organization of Al-Qaida in the Islamic Maghreb (AQIM) (QE.T.14.01), and to Ansar al-Shari&rsquo;a in Tunisia&nbsp;(AAS-T) (QE.A.143.14), with which it has worked closely. It also operates  in close cooperation with Ansar al Charia Benghazi (QE.A.146.14).",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n          ",
+    "data": "\r\n          ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Ansar al Charia Derna is led by Sofiane Ben Goumo (not listed), an  Afghanistan veteran who trained in a camp operated by Usama bin Laden  (deceased), and is associated with the Libyan Islamic Fighting Group  (QE.L.11.01).",
+    "data": "Ansar al Charia Derna is led by Sofiane Ben Goumo (not listed), an  Afghanistan veteran who trained in a camp operated by Usama bin Laden  (deceased), and is associated with the Libyan Islamic Fighting Group  (QE.L.11.01).",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n          ",
+    "data": "\r\n          ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Ansar al Charia Derna took part, alongside Ansar al Charia Benghazi, in the attack against the Consulate of the  United States in Benghazi, causing the death of four American  citizens, including the Ambassador of the United States to Libya, J. Christopher  Stevens.",
+    "data": "Ansar al Charia Derna took part, alongside Ansar al Charia Benghazi, in the attack against the Consulate of the  United States in Benghazi, causing the death of four American  citizens, including the Ambassador of the United States to Libya, J. Christopher  Stevens.",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n          ",
+    "data": "\r\n          ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Ansar al Charia Derna maintains several terrorist training camps in  Derna, Libya, and in the region of Jebel Akhdar, Libya, mainly for the benefit  of Al-Qaida (QE.A.4.01) associated groups in Syria and in Iraq.",
+    "data": "Ansar al Charia Derna maintains several terrorist training camps in  Derna, Libya, and in the region of Jebel Akhdar, Libya, mainly for the benefit  of Al-Qaida (QE.A.4.01) associated groups in Syria and in Iraq.",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n          ",
+    "data": "\r\n          ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Between 2011 and  2014, Ansar al Charia Derna has undertaken many attacks against security forces  in the region of Derna. However, Ansar al  Charia Derna has never  claimed responsibility for those attacks.",
+    "data": "Between 2011 and  2014, Ansar al Charia Derna has undertaken many attacks against security forces  in the region of Derna. However, Ansar al  Charia Derna has never  claimed responsibility for those attacks.",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n          ",
+    "data": "\r\n          ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Ansar al Charia Derna is believed to have cooperated with Ansar al Charia Benghazi in the preparation of the first suicide attacks in Libya on 22  December 2013 in Barsis, near Benghazi. Since July 2014, members of Ansar al Charia Derna have been launching attacks, alongside Ansar al Charia Benghazi, against Libyan security forces. AQIM has supported  these attacks. ",
+    "data": "Ansar al Charia Derna is believed to have cooperated with Ansar al Charia Benghazi in the preparation of the first suicide attacks in Libya on 22  December 2013 in Barsis, near Benghazi. Since July 2014, members of Ansar al Charia Derna have been launching attacks, alongside Ansar al Charia Benghazi, against Libyan security forces. AQIM has supported  these attacks. ",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n          ",
+    "data": "\r\n          ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "In October 2014 Ansar al Charia Derna publicly pledged allegiance to the Islamic State of Iraq and the  Levant, listed as Al-Qaida in Iraq (QE.J.115.04).",
+    "data": "In October 2014 Ansar al Charia Derna publicly pledged allegiance to the Islamic State of Iraq and the  Levant, listed as Al-Qaida in Iraq (QE.J.115.04).",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "em",
+    "data": "em",
+    "type": "tag",
+    "name": "em",
+    "children": [
+     {
+      "raw": "Related listed individuals and  entities:",
+      "data": "Related listed individuals and  entities:",
+      "type": "text"
+     }
+    ]
+   },
+   {
+    "raw": " ",
+    "data": " ",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n        Al-Qaida (QE.A.4.01), listed on 6 October 2001",
+    "data": "\r\n        Al-Qaida (QE.A.4.01), listed on 6 October 2001",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n        The Organization of Al-Qaida in the Islamic  Maghreb (QE.T.14.01), listed on 6 October 2001 ",
+    "data": "\r\n        The Organization of Al-Qaida in the Islamic  Maghreb (QE.T.14.01), listed on 6 October 2001 ",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n        Al-Qaida in Iraq (QE.J.115.04), listed on 18 October 2004 ",
+    "data": "\r\n        Al-Qaida in Iraq (QE.J.115.04), listed on 18 October 2004 ",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n        Ansar  al-Shari&rsquo;a in Tunisia&nbsp;(AAS-T)  (QE.A.143.14), listed on 23 September 2014 ",
+    "data": "\r\n        Ansar  al-Shari&rsquo;a in Tunisia&nbsp;(AAS-T)  (QE.A.143.14), listed on 23 September 2014 ",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n      Ansar al Charia Benghazi (QE.A.146.14), listed on 19 November 2014 ",
+    "data": "\r\n      Ansar al Charia Benghazi (QE.A.146.14), listed on 19 November 2014 ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Mokhtar Belmokhtar (QI.B.136.03), listed on 11  November 2003",
+    "data": "Mokhtar Belmokhtar (QI.B.136.03), listed on 11  November 2003",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n        Seifallah ben Hassine (QI.B.333.14), listed on 23 September 2014 ",
+    "data": "\r\n        Seifallah ben Hassine (QI.B.333.14), listed on 23 September 2014 ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "&nbsp;",
+    "data": "&nbsp;",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "&nbsp; ",
+    "data": "&nbsp; ",
+    "type": "text"
+   }
+  ]
+ }
+]

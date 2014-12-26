@@ -1,0 +1,394 @@
+[
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "strong",
+    "data": "strong",
+    "type": "tag",
+    "name": "strong",
+    "children": [
+     {
+      "raw": "u",
+      "data": "u",
+      "type": "tag",
+      "name": "u",
+      "children": [
+       {
+        "raw": "QI.A.330.14.",
+        "data": "QI.A.330.14.",
+        "type": "text"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "raw": "strong",
+    "data": "strong",
+    "type": "tag",
+    "name": "strong",
+    "children": [
+     {
+      "raw": "u",
+      "data": "u",
+      "type": "tag",
+      "name": "u",
+      "children": [
+       {
+        "raw": " Azzam Abdullah Zureik al-Maulid al-Subhi",
+        "data": " Azzam Abdullah Zureik al-Maulid al-Subhi",
+        "type": "text"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n    ",
+    "data": "\r\n    ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "em",
+    "data": "em",
+    "type": "tag",
+    "name": "em",
+    "children": [
+     {
+      "raw": "Date  on which the narrative summary became available on the Committee&rsquo;s website: ",
+      "data": "Date  on which the narrative summary became available on the Committee&rsquo;s website: ",
+      "type": "text"
+     }
+    ]
+   },
+   {
+    "raw": "23 September 2014",
+    "data": "23 September 2014",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n    ",
+    "data": "\r\n    ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Azzam Abdullah Zureik al-Maulid al-Subhi was  listed on 23 September  2014",
+    "data": "Azzam Abdullah Zureik al-Maulid al-Subhi was  listed on 23 September  2014",
+    "type": "text"
+   },
+   {
+    "raw": "strong",
+    "data": "strong",
+    "type": "tag",
+    "name": "strong",
+    "children": [
+     {
+      "raw": " ",
+      "data": " ",
+      "type": "text"
+     }
+    ]
+   },
+   {
+    "raw": "pursuant to paragraphs 2  and 4 of resolution 2161 (2014) as being associated with Al-Qaida for &ldquo;participating  in the financing, planning, facilitating, preparing, or perpetrating of acts or  activities by, in conjunction with, under the name of, on behalf of, or in  support of&rdquo;, &ldquo;recruiting for&rdquo; and &ldquo;otherwise supporting acts or activities of&rdquo; Al-Qaida  (QE.A.4.01).",
+    "data": "pursuant to paragraphs 2  and 4 of resolution 2161 (2014) as being associated with Al-Qaida for &ldquo;participating  in the financing, planning, facilitating, preparing, or perpetrating of acts or  activities by, in conjunction with, under the name of, on behalf of, or in  support of&rdquo;, &ldquo;recruiting for&rdquo; and &ldquo;otherwise supporting acts or activities of&rdquo; Al-Qaida  (QE.A.4.01).",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n      ",
+    "data": "\r\n      ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "em",
+    "data": "em",
+    "type": "tag",
+    "name": "em",
+    "children": [
+     {
+      "raw": "Additional information:                                           ",
+      "data": "Additional information:                                           ",
+      "type": "text"
+     }
+    ]
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n      ",
+    "data": "\r\n      ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Azzam Abdullah Zureik al-Maulid al-Subhi  is a Saudi Arabian citizen and member of Al-Qaida (QE.A.4.01). ",
+    "data": "Azzam Abdullah Zureik al-Maulid al-Subhi  is a Saudi Arabian citizen and member of Al-Qaida (QE.A.4.01). ",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n      Al-Maulid al-Subhi is wanted by the  Government of Saudi Arabia for terrorism. He is the subject of a law  enforcement document published in 2009 that references his ties to Al-Qaida and  terrorism, as well as his links with other members of Al-Qaida.     ",
+    "data": "\r\n      Al-Maulid al-Subhi is wanted by the  Government of Saudi Arabia for terrorism. He is the subject of a law  enforcement document published in 2009 that references his ties to Al-Qaida and  terrorism, as well as his links with other members of Al-Qaida.     ",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n      ",
+    "data": "\r\n      ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Al-Maulid al-Subhi travelled to  Afghanistan in the 1990s to join Al-Qaida and is responsible for the physical  training of militants and for the coordination of foreign fighters who travel  to Afghanistan to fight against  the International Security Assistance Force  and other international forces in Afghanistan.  He specializes in mountain warfare and  tactics. ",
+    "data": "Al-Maulid al-Subhi travelled to  Afghanistan in the 1990s to join Al-Qaida and is responsible for the physical  training of militants and for the coordination of foreign fighters who travel  to Afghanistan to fight against  the International Security Assistance Force  and other international forces in Afghanistan.  He specializes in mountain warfare and  tactics. ",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n      ",
+    "data": "\r\n      ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Al-Maulid al-Subhi is tied to numerous  senior Al-Qaida leaders including Sayf-al Adl (QI.S.1.01).  Sayf-al Adl was Al-Qaida&rsquo;s second in command  and top military strategist, and served as interim leader after Usama bin Laden&rsquo;s  death. ",
+    "data": "Al-Maulid al-Subhi is tied to numerous  senior Al-Qaida leaders including Sayf-al Adl (QI.S.1.01).  Sayf-al Adl was Al-Qaida&rsquo;s second in command  and top military strategist, and served as interim leader after Usama bin Laden&rsquo;s  death. ",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n      ",
+    "data": "\r\n      ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Al-Maulid al-Subhi is believed to be  involved in indoctrinating leaders of Al-Qaida associated terrorist groups.",
+    "data": "Al-Maulid al-Subhi is believed to be  involved in indoctrinating leaders of Al-Qaida associated terrorist groups.",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n      ",
+    "data": "\r\n      ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "em",
+    "data": "em",
+    "type": "tag",
+    "name": "em",
+    "children": [
+     {
+      "raw": "Related  listed individuals and entities:",
+      "data": "Related  listed individuals and entities:",
+      "type": "text"
+     }
+    ]
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n      ",
+    "data": "\r\n      ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "Al-Qaida (QE.A.4.01), listed  on 6 October 2001",
+    "data": "Al-Qaida (QE.A.4.01), listed  on 6 October 2001",
+    "type": "text"
+   },
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n      Sayf-al Adl (QI.S.1.01),  listed on 25 January 2001",
+    "data": "\r\n      Sayf-al Adl (QI.S.1.01),  listed on 25 January 2001",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n",
+    "data": "\r\n",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n    ",
+    "data": "\r\n    ",
+    "type": "text"
+   }
+  ]
+ },
+ {
+  "raw": "p",
+  "data": "p",
+  "type": "tag",
+  "name": "p",
+  "children": [
+   {
+    "raw": "br",
+    "data": "br",
+    "type": "tag",
+    "name": "br"
+   },
+   {
+    "raw": "\r\n    ",
+    "data": "\r\n    ",
+    "type": "text"
+   }
+  ]
+ }
+]

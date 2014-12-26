@@ -209,16 +209,19 @@ C:\PROGRA~1\INTERN~1\iexplore.exe
 
 
 
-    2  heroku login
-   10  git clone https://github.com/heroku/node-js-getting-started.git
-   11  cd node-js-getting-started/
-   16  heroku create --http-git
-   18  git push heroku master
-   19  heroku ps:scale web=1
-   20  heroku open
-   21  heroku logs --tail
-   28  cd .ssh
-   32  clip < ~/.ssh/id_rsa.pub
+
+HEROKU
+
+heroku login
+git clone https://github.com/heroku/node-js-getting-started.git
+cd node-js-getting-started/
+heroku create --http-git
+git push heroku master
+heroku ps:scale web=1
+heroku open
+heroku logs --tail
+cd .ssh
+clip < ~/.ssh/id_rsa.pub
 
 heroku auth:token
 
@@ -228,12 +231,13 @@ heroku keys:remove adam@workstation.local
 
 heroku keys
 
-Validate the connection
 
+Validate the connection
+========================
 You can check to see whether your keys are working by trying the following command:
 
 ssh -v git@heroku.com
 
 
-Data structures, set and bag from
+Data structures, set and bag were from
 https://www.npmjs.org/package/backpack-node
