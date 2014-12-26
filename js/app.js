@@ -61,7 +61,9 @@ var runApp = function () {
         console.log("\n ", __filename, __line, "; function 5#:", ++functionCount);
       }
       // console.log("\n ", __filename, "line", __line, "; running filewalker.filewalker()");
-      filewalker.filewalker();
+      var fwPath = "./data/output";
+      filewalker.filewalker(fwPath);
+
       callback();
     }
 

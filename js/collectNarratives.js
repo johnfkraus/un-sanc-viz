@@ -27,7 +27,10 @@ var async = require('async'),
   parseString = require('xml2js')
     .parseString;
 var linenums = require('./linenums.js');
-var consoleLog = false;
+var jsonPath = require('JSONPath');
+var filewalker = require('filewalker');
+// var filewalker = require('./filewalker.js');
+var consoleLog = true;
 var narrativeLinks = [];
 var fsOptions = {
   flags: 'r+',
@@ -50,42 +53,109 @@ dateFormat.masks.common = "mm-dd-yyyy";
 // Saturday, June 9th, 2007, 5:46:21 PM
 // var fileDateString = dateFormat(now, "hammerTime");
 var urls, filePaths;
+var collectFilePath, link_data_item, saveFilePath;
 
 var getTheNarratives = function () {
   var functionCount = 0;
-  var myResult;
+  var myResult, text, saveTextFilePath;
   var narratives;
   var narrative_links;
   async.series([
       function (callback) {
-        // create an array of full urls pointing to the narratives
+        // collect and save the narratives
         narrative_links = require(__dirname + "/../data/narrative_summaries/narrative_links.json");
-        //      urls = [];
-        //      filePaths = [];
-        //      var url;
-        var collectFilePath, link_data_item, saveFilePath;
-        for (var ldi = 0; ldi < 10; ldi++) {
+        for (var ldi = 0; ldi < narrative_links.length; ldi++) {
           link_data_item = narrative_links[ldi];
           collectFilePath = "/sc/committees/1267/" + link_data_item.narrativeFileName;
           saveFilePath = __dirname + "/../data/narrative_summaries/" + link_data_item.narrativeFileName;
+          saveTextFilePath = __dirname + "/../data/narrative_summaries/" + link_data_item.narrativeFileName + ".txt";
           try {
             narrCounter++;
             link_data_item.narr = getNarrativesData(host, collectFilePath, saveFilePath);
-            console.log("\n ", __filename, "line", __line, "; link_data_item = ", link_data_item);
+            // console.log("\n ", __filename, "line", __line, "; link_data_item = ", link_data_item);
             // getNarrativesData(host, getFileNameAndPath, outputFileNameAndPath);
 //            var res = request('GET', url);
             // narrativeData = res.body.toString();
           } catch (err) {
             console.log("\n ", __filename, "line", __line, "; Error: ", err);
           }
+
+          text = jsonPath.eval(link_data_item.narr, '$..[?(@.type=text)]');
+          link_data_item.text = text;
+          console.log("\n ", __filename, "line", __line, "; text = ", text);
           var linkDataSaveFilePath = __dirname + "/../data/narrative_summaries/narrative_links_2.json";
-          writeMyFile(linkDataSaveFilePath, JSON.stringify(narrative_links, null, " "), fsOptions);
+//          writeMyFile(linkDataSaveFilePath, JSON.stringify(narrative_links, null, " "), fsOptions);
+          writeMyFile(saveTextFilePath, text, fsOptions);
           // writeAQListXML(fileNameAndPathForProcessing, narrativeData);
           //  console.log("\n ", __filename, "line", __line, "urls = ", urls);
         }
         ;
         callback();
+      },
+      function (callback) {
+        // read "raw" unprocessed json file
+        var rawJsonFileName = __dirname + "/../data/output/AQList-raw.json";
+        consolidatedList = JSON.parse(fse.readFileSync(rawJsonFileName));
+        if (consoleLog) {
+          console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount, "; read the raw json data file");
+        }
+        callback();
+      },
+      function (callback) {
+        // collect and save the narratives
+        narrative_links = require(__dirname + "/../data/narrative_summaries/narrative_links.json");
+        for (var ldi = 0; ldi < narrative_links.length; ldi++) {
+          link_data_item = narrative_links[ldi];
+          collectFilePath = "/sc/committees/1267/" + link_data_item.narrativeFileName;
+          saveFilePath = __dirname + "/../data/narrative_summaries/" + link_data_item.narrativeFileName;
+          saveTextFilePath = __dirname + "/../data/narrative_summaries/" + link_data_item.narrativeFileName + ".txt";
+          try {
+            narrCounter++;
+            link_data_item.narr = getNarrativesData(host, collectFilePath, saveFilePath);
+            // console.log("\n ", __filename, "line", __line, "; link_data_item = ", link_data_item);
+            // getNarrativesData(host, getFileNameAndPath, outputFileNameAndPath);
+//            var res = request('GET', url);
+            // narrativeData = res.body.toString();
+          } catch (err) {
+            console.log("\n ", __filename, "line", __line, "; Error: ", err);
+          }
+
+          text = jsonPath.eval(link_data_item.narr, '$..[?(@.type=text)]');
+          link_data_item.text = text;
+          console.log("\n ", __filename, "line", __line, "; text = ", text);
+          var linkDataSaveFilePath = __dirname + "/../data/narrative_summaries/narrative_links_2.json";
+//          writeMyFile(linkDataSaveFilePath, JSON.stringify(narrative_links, null, " "), fsOptions);
+          writeMyFile(saveTextFilePath, text, fsOptions);
+          // writeAQListXML(fileNameAndPathForProcessing, narrativeData);
+          //  console.log("\n ", __filename, "line", __line, "urls = ", urls);
+        }
+        ;
+        callback();
+      },
+
+      function (callback) {
+        // list files in /data/output
+        if (consoleLog) {
+          console.log("\n ", __filename, __line, "; function 5#:", ++functionCount);
+        }
+        console.log("\n ", __filename, "line", __line, "; running filewalker.filewalker()");
+        var path = "./data/narrative_summaries";
+        fw(path);
+
+        callback();
+      },
+      function (callback) {
+        // list files in /data/output
+        if (consoleLog) {
+          console.log("\n ", __filename, __line, "; function 5#:", ++functionCount);
+        }
+        console.log("\n ", __filename, "line", __line, "; running filewalker.filewalker()");
+        var path = "./data/narrative_summaries";
+        fw(path);
+
+        callback();
       }
+
       /*
        // collect each narrative
        function (callback) {
@@ -237,7 +307,7 @@ var getNarrativesData = function (host, getFilePath, outputFileNameAndPath, enti
       body = body + chunk;
     });
 //    var body = document.getElementsByTagName('body')[0];
-var x;
+    var x;
     response.on('end', function () {
       // now we have the whole body, parse it and select the nodes we want...
       var handler = new htmlparser.DefaultHandler(function (err, dom) {
@@ -251,94 +321,20 @@ var x;
           // console.log("Text Nodes: ");
           // console.log(x.textContent);
 
-
-
-          console.log("\n ", __filename, "line", __line, "; body = ", body, "; body.textContent = ", body.textContent);
+          // console.log("\n ", __filename, "line", __line, "; body = ", body, "; body.textContent = ", body.textContent);
           var bodyText = body.textContent;
           console.log("\n ", __filename, "line", __line, "; bodyText = ", bodyText);
           maincontent = select(dom, 'div#maincontent');
-          console.log("\n ", __filename, "line", __line, "; maincontent = ", JSON.stringify(maincontent, null, " "));
+          //  console.log("\n ", __filename, "line", __line, "; maincontent = ", JSON.stringify(maincontent, null, " "));
           // soupselect happening here.., var titles = select(dom, 'a.title');
           paragraphs = select(maincontent, 'p');
           var rownum;
           for (var i = 0; i < paragraphs.length; i++) {
             pnum = i;
             paragraph = paragraphs[i];
-            // sys.puts("row[" + i + "] = " + sys.inspect(JSON.stringify(row)));
-//             paragraphsArray = [];
-            paragraphArray.push(paragraphs);
-            /*
+            // paragraph = paragraph.textContent;
 
-             //            tds = select(row, 'td');
-             // loop through each td in the row
-             for (var j = 0; j < tds.length; j++) {
-             td = tds[j];
-             // get the id from the first td
-             if (j === 0) {
-             paragraph = select(td, 'p');
-             if (typeof paragraph !== 'undefined') {
-             try {
-             if (typeof paragraph[0] !== 'undefined') {
-             narrLink.id = getCleanId(paragraph[0].children[0].data);
-             }
-             } catch (err) {
-             console.log("\n ", __filename, "line", __line, " Error parsing id: ", err);
-             }
-             }
-             }
-             // if we are in the second td in the row...
-             else if (j === 1) {
-             paragraph = select(td, 'p');
-             anchor = select(td, 'a');
-
-             if (typeof paragraph !== 'undefined' && typeof paragraph[0] !== 'undefined') {
-             //console.log("\n ", __filename, "line", __line, "paragraph = ", JSON.stringify(paragraph));
-             if (typeof paragraph[0].children[0].attribs !== 'undefined') {
-             try {
-             narrativeFileName = paragraph[0].children[0].attribs.href;
-             narrativeFileName = normalizeNarrativeFileName(narrativeFileName); //.replace(/\/sc\/committees\/1267\/(NSQ.*\.shtml)/, '$1');
-             // narrativeFileName = narrativeFileName.replace(/http:\/\/dev.un.org\/sc\/committees\/1267\/(NSQ.*\.shtml)/, '$1');
-             // http://dev.un.org/sc/committees/1267/
-             narrLink.narrativeFileName = narrativeFileName;
-             } catch (err) {
-             console.log("\n ", __filename, "line", __line, "; paragraph[0].children[0] = ", paragraph[0].children[0]);
-             console.log("\n ", __filename, "line", __line, "; Error: paragraph[0].children[0].attribs is undefined; tr = ", i, "; td = ", j, err);
-             }
-             } else if (typeof anchor[0].attribs.href !== 'undefined') {
-             narrLink.narrativeFileName = normalizeNarrativeFileName(narrativeFileName);
-             narrLink.targetName = JSON.stringify(anchor[0].children[0].data);
-             } else {
-             narrLink.narrativeFileName = "PLACEHOLDER0";
-             console.log("\n ", __filename, "line", __line, "; Error: narrativeFileName for tr = ", i, "; td = ", j, "is PLACEHOLDER0");
-             }
-             // if anchor inside of paragraph
-             if (anchor[0].children[0].data !== "u") {
-             targetName = anchor[0].children[0].data;
-             } else if (anchor[0].children[0].data === "u") {
-             underscore = select(td, 'u');
-             targetName = JSON.stringify(underscore[0].children[0].data);
-             } else {
-             targetName = "PLACEHOLDER1";
-             }
-             targetName = targetName.replace(/[\n\f\r\t]/gm, "");
-             targetName = targetName.replace(/\s\s+/gm, " ");
-             targetName = targetName.trim();
-             if (targetName === "") {
-             narrLink.targetName = "PLACEHOLDER2";
-             } else {
-             narrLink.targetName = targetName;
-             }
-             // end of if (typeof paragraph !== 'undefined' && typeof paragraph[0] !== 'undefined')
-             } else if (typeof anchor[0].attribs.href !== 'undefined' && anchor[0].attribs.href !== "") {
-             narrativeFileName = normalizeNarrativeFileName(anchor[0].attribs.href);
-             narrLink.narrativeFileName = narrativeFileName;
-             if (typeof anchor[0].children[0] !== 'undefined' && anchor[0].children[0].data !== "") {
-             targetName = anchor[0].children[0].data;
-             narrLink.targetName = targetName;
-             }
-             }
-             }
-             */
+            paragraphArray.push(paragraph);
 
           }
         }
@@ -375,15 +371,35 @@ var getFile = function (url, fileNameToSaveTo) {
   // example: fileNameToSaveTo = __dirname + "/../data/output/AQList.xml";
 
 //   fileNameToSaveTo = __dirname + "/../data/output/AQList.xml";
- //  re.get("http://www.un.org/sc/committees/1267/AQList.xml", fileNameToSaveTo, function (error, filename) {
-    re.get(url, fileNameToSaveTo, function (error, filename) {
+  //  re.get("http://www.un.org/sc/committees/1267/AQList.xml", fileNameToSaveTo, function (error, filename) {
+  re.get(url, fileNameToSaveTo, function (error, filename) {
     if (err) {
       console.log("\n ", __filename, "line", __line, "; Error \n" + err);
-    } else    if (consoleLog) {
+    } else if (consoleLog) {
       console.log("\n ", __filename, "line", __line, "; Saved content to: \n", filename);
     }
   });
 };
+
+var fw = function (path) {
+
+  // var defaultPath = "./data/output";
+  filewalker(path)
+    .on('dir', function (p) {
+      console.log('dir:  %s', p);
+    })
+    .on('file', function (p, s) {
+      console.log('file: %s, %d bytes', p, s.size);
+    })
+    .on('error', function (err) {
+      console.error(err);
+    })
+    .on('done', function () {
+      console.log('%d dirs, %d files, %d bytes', this.dirs, this.files, this.bytes);
+    })
+    .walk();
+
+}
 
 getTheNarratives();
 
