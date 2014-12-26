@@ -56,6 +56,9 @@ Define: If you want to declare a module other parts of your application will dep
 Require: If you just want to load and use stuff.
 …or create a new repository on the command line
 
+
+GIT
+====
 touch README.md
 git init
 git add README.md
@@ -68,14 +71,10 @@ git remote add origin git@github.com:johnfkraus/aq-list-viz.git
 git push -u origin master
 …or import code from another repository
 
-You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
-
-
 SSH / Generating SSH keys
 
 Generating SSH keys
 
-Skip this guide. Download our native app instead.Download GitHub for Windows
 SSH keys are a way to identify trusted computers, without involving passwords.
 The steps below will walk you through generating an SSH key and then adding the public key to your GitHub account.
 
@@ -86,6 +85,7 @@ Step 1: Check for SSH keys
 First, we need to check for existing SSH keys on your computer. Open up your Git Bash and type:
 
 ls -al ~/.ssh
+
 # Lists the files in your .ssh directory, if they exist
 Check the directory listing to see if you already have a public SSH key. The default public key file names are:
 
@@ -135,7 +135,8 @@ $ ssh-add .ssh/id_rsa
 Could not open a connection to your authentication agent.
 
 User1@LENOVO-PC ~
-$ eval `ssh-agent -s`
+$
+eval `ssh-agent -s`
 Agent pid 3556
 
 User1@LENOVO-PC ~
@@ -155,6 +156,11 @@ Run the following command to copy the key to your clipboard. Keep in mind that y
 named id_dsa.pub, id_ecdsa.pub or id_ed25519.pub.
 
 clip < ~/.ssh/id_rsa.pub
+
+
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDL+32kJRdWgDQBzSXbVakur0lnup3wUQXn5OL0hCDNLkTsHRVtvFCvopOaFCYr0EGWDuhNKOlR0oWFTkZI1jJrrvAMtz7VXhS+OR5tntEB7EIiug2miU3b6Kg2OojoChuk2iW28BWjGrlZhvSCeUxE8PSj+5szSPSCdyWkRsRw47WnS8rqZzijumIaDFB5qaPsVjWCWRuKrlWQVoS5BA/597rXNjcd9XfAcEp1znDglM+SBsxE/sfu32mYpGudjDfav4QxfzWAp6P8sqF4fJJ5CeKtUWx8Xe11saW32xbn8B+lgpzg7jcF1eV9VJiBvt53YckLJte7MjAp/L5/BaNX johnkraus3@gmail.com
+
+
 
 # Copies the contents of the id_rsa.pub file to your clipboard
 Alternatively, using your favorite text editor, you can open the public key file and copy the contents of the file manually.
@@ -223,13 +229,42 @@ heroku logs --tail
 cd .ssh
 clip < ~/.ssh/id_rsa.pub
 
-heroku auth:token
+heroku auth:token    // display the authorization token; also found in ~/_netrc
+
+curl -H "Accept: application/json" -n https://api.heroku.com/apps
 
 heroku keys:add
 
 heroku keys:remove adam@workstation.local
 
 heroku keys
+
+
+Authenticating with the API token
+
+Having logged in, you can use curl to access the Heroku API:
+$ curl -H "Accept: application/json" -n https://api.heroku.com/apps
+
+You can also create a file ~/.curlrc, containing extra command-line options for curl:
+
+~/.curlrc
+
+--netrc
+--header "Accept: application/json"
+
+With this file, the command is simply:
+$ curl https://api.heroku.com/apps
+
+File format
+The file contains a list of free-form records and comments. Comments start with a # (hash) symbol and continue
+to the end of the line. Each record is of the form:
+
+machine api.heroku.com
+  login me@example.com
+  password ABC123
+
+One other type of record, macdef, can appear in .netrc files, but it is not commonly used and is ignored by the heroku command.
+Keep reading
 
 
 Validate the connection

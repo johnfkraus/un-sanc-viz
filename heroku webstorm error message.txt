@@ -1,0 +1,3 @@
+Heroku webstorm error message
+
+Argument for @NotNull parameter 'e' of com/intellij/openapi/actionSystem/AnAction.update must not be null
