@@ -26,9 +26,19 @@
       <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\lastfm\response.rb" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\lastfm\util.rb" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/AQList-clean.json" afterPath="$PROJECT_DIR$/data/output/AQList-clean.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/AQList-docs.json" afterPath="$PROJECT_DIR$/data/output/AQList-docs.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.textile" afterPath="$PROJECT_DIR$/README.textile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/data02-flattened.json" afterPath="$PROJECT_DIR$/data/output/data02-flattened.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/data05nodeBag.json" afterPath="$PROJECT_DIR$/data/output/data05nodeBag.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/data06myBag.json" afterPath="$PROJECT_DIR$/data/output/data06myBag.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/data06nodebagset.json" afterPath="$PROJECT_DIR$/data/output/data06nodebagset.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/data31deleteEntsEtc.json" afterPath="$PROJECT_DIR$/data/output/data31deleteEntsEtc.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/data5addconnidsarray.json" afterPath="$PROJECT_DIR$/data/output/data5addconnidsarray.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/data6addconnectionOBJECTSarray.json" afterPath="$PROJECT_DIR$/data/output/data6addconnectionOBJECTSarray.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/filewalker.js" afterPath="$PROJECT_DIR$/js/filewalker.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/johns_notes.secret.txt" afterPath="$PROJECT_DIR$/johns_notes.secret.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="aqlist-visualization.iws" />
@@ -75,11 +85,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="filewalker.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="filewalker.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/filewalker.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.06759443" vertical-offset="0" max-vertical-offset="503">
-              <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
+              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="johns_notes.secret.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/johns_notes.secret.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.23673469" vertical-offset="7483" max-vertical-offset="9877">
+              <caret line="431" column="0" selection-start-line="431" selection-start-column="0" selection-end-line="431" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -148,10 +168,10 @@
         <option value="$PROJECT_DIR$/js/collectNarratives.js" />
         <option value="$PROJECT_DIR$/johns_notes.txt" />
         <option value="$PROJECT_DIR$/README.textile" />
-        <option value="$PROJECT_DIR$/johns_notes.secret.txt" />
         <option value="$PROJECT_DIR$/archives2/coffee/vis.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/js/filewalker.js" />
+        <option value="$PROJECT_DIR$/johns_notes.secret.txt" />
       </list>
     </option>
   </component>
@@ -1260,14 +1280,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/johns_notes.secret.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="6931" max-vertical-offset="11492">
-          <caret line="397" column="0" selection-start-line="397" selection-start-column="0" selection-end-line="397" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/archives2/coffee/vis.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8653">
@@ -1312,8 +1324,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/filewalker.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.06759443" vertical-offset="0" max-vertical-offset="503">
-          <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/johns_notes.secret.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23673469" vertical-offset="7483" max-vertical-offset="9877">
+          <caret line="431" column="0" selection-start-line="431" selection-start-column="0" selection-end-line="431" selection-end-column="0" />
           <folding />
         </state>
       </provider>
