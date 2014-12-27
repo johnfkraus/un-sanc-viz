@@ -44,11 +44,13 @@
         <item url="file://$PROJECT_DIR$/node_modules/converter/node_modules/csv/test/trim.js" />
         <item url="file://$PROJECT_DIR$/node_modules/converter/node_modules/csv/test/fromto.js" />
         <item url="file://$PROJECT_DIR$/node_modules/converter/node_modules/csv/test/from.js" />
+        <item url="file://$PROJECT_DIR$/archives2/coffee/vis.js" />
         <item url="file://$PROJECT_DIR$/node_modules/converter/node_modules/csv/test/parser.js" />
         <item url="file://$PROJECT_DIR$/node_modules/converter/node_modules/csv/test/transform.js" />
         <item url="file://$PROJECT_DIR$/node_modules/converter/node_modules/csv/test/header.js" />
         <item url="file://$PROJECT_DIR$/node_modules/converter/node_modules/csv/test/eof.js" />
         <item url="file://$PROJECT_DIR$/js/node_modules/nodeQuery/node_modules/browserify/test/coffee_bin/main.js" />
+        <item url="file://$PROJECT_DIR$/archives2/coffee/viz-original.js" />
         <item url="file://$PROJECT_DIR$/js/node_modules/nodeQuery/node_modules/browserify/test/coffee_bin/x.js" />
         <item url="file://$PROJECT_DIR$/js/node_modules/request-enhanced/src/request-enhanced.js" />
         <item url="file://$PROJECT_DIR$/js/node_modules/nodeQuery/node_modules/browserify/node_modules/resolve/test/resolver/mug.js" />
@@ -154,11 +156,13 @@
       <root url="file://$PROJECT_DIR$/node_modules/converter/node_modules/csv/test/fromto.js" />
       <root url="file://$PROJECT_DIR$/node_modules/converter/node_modules/csv/test/from.js" />
       <root url="file://$PROJECT_DIR$/node_modules/converter/node_modules/csv/test/parser.js" />
+      <root url="file://$PROJECT_DIR$/archives2/coffee/vis.js" />
       <root url="file://$PROJECT_DIR$/node_modules/converter/node_modules/csv/test/transform.js" />
       <root url="file://$PROJECT_DIR$/node_modules/converter/node_modules/csv/test/header.js" />
       <root url="file://$PROJECT_DIR$/node_modules/converter/node_modules/csv/test/eof.js" />
       <root url="file://$PROJECT_DIR$/js/node_modules/nodeQuery/node_modules/browserify/test/coffee_bin/main.js" />
       <root url="file://$PROJECT_DIR$/js/node_modules/nodeQuery/node_modules/browserify/test/coffee_bin/x.js" />
+      <root url="file://$PROJECT_DIR$/archives2/coffee/viz-original.js" />
       <root url="file://$PROJECT_DIR$/js/node_modules/nodeQuery/node_modules/browserify/node_modules/resolve/test/resolver/mug.js" />
       <root url="file://$PROJECT_DIR$/js/node_modules/request-enhanced/src/request-enhanced.js" />
       <root url="file://$PROJECT_DIR$/js/node_modules/nodeQuery/node_modules/browserify/node_modules/resolve/test/resolver/cup.js" />

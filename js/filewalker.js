@@ -1,6 +1,6 @@
 var filewalker = require('filewalker');
 
-var defaultPath = "./data/output";
+var path = "./data/output";
 filewalker(path)
   .on('dir', function(p) {
     console.log('dir:  %s', p);
