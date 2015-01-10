@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<CONSOLIDATED_LIST dateGenerated="2014-12-12T00:00:00">
+<CONSOLIDATED_LIST dateGenerated="2015-01-02T00:00:00">
    <INDIVIDUALS>
       <INDIVIDUAL>
          <DATAID>111900</DATAID>
@@ -939,49 +939,6 @@
          </INDIVIDUAL_DOCUMENT>
          <SORT_KEY>ABUDHESS MOHAMED GHASSAN ALI</SORT_KEY>
          <SORT_KEY_LAST_MOD>2011-06-10T00:00:00</SORT_KEY_LAST_MOD>
-      </INDIVIDUAL>
-      <INDIVIDUAL>
-         <DATAID>2758287</DATAID>
-         <VERSIONNUM>7</VERSIONNUM>
-         <FIRST_NAME>ISMAIL</FIRST_NAME>
-         <SECOND_NAME>MOHAMED</SECOND_NAME>
-         <THIRD_NAME>ISMAIL</THIRD_NAME>
-         <FOURTH_NAME>ABU SHAWEESH</FOURTH_NAME>
-         <UN_LIST_TYPE>Al-Qaida</UN_LIST_TYPE>
-         <REFERENCE_NUMBER>QI.A.224.06.</REFERENCE_NUMBER>
-         <LISTED_ON>2006-08-02T00:00:00</LISTED_ON>
-         <NAME_ORIGINAL_SCRIPT>اسماعيل محمد اسماعيل أبو شاويش</NAME_ORIGINAL_SCRIPT>
-         <COMMENTS1>In detention since 22 May 2005. His brother is Yasser Mohamed Ismail Abu Shaweesh (QI.A.201.05). Review pursuant to Security Council resolution 1822 (2008) was concluded on 24 Nov. 2009.</COMMENTS1>
-         <NATIONALITY2>Stateless Palestinian</NATIONALITY2>
-         <LIST_TYPE>
-            <VALUE>UN List</VALUE>
-         </LIST_TYPE>
-         <LAST_DAY_UPDATED>
-            <VALUE>2010-03-11T00:00:00</VALUE>
-            <VALUE>2011-12-13T00:00:00</VALUE>
-         </LAST_DAY_UPDATED>
-         <INDIVIDUAL_ALIAS/>
-         <INDIVIDUAL_ADDRESS>
-            <COUNTRY>Germany</COUNTRY>
-         </INDIVIDUAL_ADDRESS>
-         <INDIVIDUAL_DATE_OF_BIRTH>
-            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
-            <DATE>1977-03-10T00:00:00</DATE>
-         </INDIVIDUAL_DATE_OF_BIRTH>
-         <INDIVIDUAL_PLACE_OF_BIRTH>
-            <CITY>Benghazi</CITY>
-            <COUNTRY>Libyan Arab Jamahiriya</COUNTRY>
-         </INDIVIDUAL_PLACE_OF_BIRTH>
-         <INDIVIDUAL_DOCUMENT>
-            <TYPE_OF_DOCUMENT>Passport</TYPE_OF_DOCUMENT>
-            <NOTE>Egyptian travel document, passport number 0003684</NOTE>
-         </INDIVIDUAL_DOCUMENT>
-         <INDIVIDUAL_DOCUMENT>
-            <TYPE_OF_DOCUMENT>Passport</TYPE_OF_DOCUMENT>
-            <NOTE>Egyptian passport number 981354</NOTE>
-         </INDIVIDUAL_DOCUMENT>
-         <SORT_KEY>ABUSHAWEESH ISMAIL MOHAMED ISMAIL</SORT_KEY>
-         <SORT_KEY_LAST_MOD>2011-12-13T00:00:00</SORT_KEY_LAST_MOD>
       </INDIVIDUAL>
       <INDIVIDUAL>
          <DATAID>111732</DATAID>
@@ -2078,61 +2035,6 @@
          </INDIVIDUAL_DOCUMENT>
          <SORT_KEY>ALAOUADI MOHAMED BENBELGACEM BENABDALLAH</SORT_KEY>
          <SORT_KEY_LAST_MOD>2014-11-24T00:00:00</SORT_KEY_LAST_MOD>
-      </INDIVIDUAL>
-      <INDIVIDUAL>
-         <DATAID>111736</DATAID>
-         <VERSIONNUM>16</VERSIONNUM>
-         <FIRST_NAME>AQEEL</FIRST_NAME>
-         <SECOND_NAME>ABDULAZIZ</SECOND_NAME>
-         <THIRD_NAME>AQEEL</THIRD_NAME>
-         <FOURTH_NAME>AL-AQEEL</FOURTH_NAME>
-         <UN_LIST_TYPE>Al-Qaida</UN_LIST_TYPE>
-         <REFERENCE_NUMBER>QI.A.171.04.</REFERENCE_NUMBER>
-         <LISTED_ON>2004-07-06T00:00:00</LISTED_ON>
-         <NAME_ORIGINAL_SCRIPT>عقيل عبد العزيزعقيل العقيل</NAME_ORIGINAL_SCRIPT>
-         <COMMENTS1>In detention in Saudi Arabia as at Nov. 2010. Review pursuant to Security Council resolution 1822 (2008) was concluded on 19 Oct. 2009.</COMMENTS1>
-         <NATIONALITY>
-            <VALUE>Saudi Arabian</VALUE>
-         </NATIONALITY>
-         <LIST_TYPE>
-            <VALUE>UN List</VALUE>
-         </LIST_TYPE>
-         <LAST_DAY_UPDATED>
-            <VALUE>2007-04-23T00:00:00</VALUE>
-            <VALUE>2009-07-17T00:00:00</VALUE>
-            <VALUE>2011-12-13T00:00:00</VALUE>
-         </LAST_DAY_UPDATED>
-         <INDIVIDUAL_ALIAS>
-            <QUALITY>Good</QUALITY>
-            <ALIAS_NAME>Aqeel Abdulaziz Al-Aqil</ALIAS_NAME>
-         </INDIVIDUAL_ALIAS>
-         <INDIVIDUAL_ALIAS>
-            <QUALITY>Good</QUALITY>
-            <ALIAS_NAME>Ageel Abdulaziz A. Alageel</ALIAS_NAME>
-         </INDIVIDUAL_ALIAS>
-         <INDIVIDUAL_ADDRESS>
-            <NOTE>Saudi Arabia (as at Apr. 2009)</NOTE>
-         </INDIVIDUAL_ADDRESS>
-         <INDIVIDUAL_DATE_OF_BIRTH>
-            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
-            <DATE>1949-04-29T00:00:00</DATE>
-         </INDIVIDUAL_DATE_OF_BIRTH>
-         <INDIVIDUAL_PLACE_OF_BIRTH>
-            <CITY>Uneizah</CITY>
-            <COUNTRY>Saudi Arabia</COUNTRY>
-         </INDIVIDUAL_PLACE_OF_BIRTH>
-         <INDIVIDUAL_DOCUMENT>
-            <TYPE_OF_DOCUMENT>Passport</TYPE_OF_DOCUMENT>
-            <NOTE>Passport number C 1415363 - issued on 21 May 2000 (16/2/1421H)</NOTE>
-         </INDIVIDUAL_DOCUMENT>
-         <INDIVIDUAL_DOCUMENT>
-            <TYPE_OF_DOCUMENT>Passport</TYPE_OF_DOCUMENT>
-            <NUMBER>Passport number E 839024</NUMBER>
-            <DATE_OF_ISSUE>2004-01-03 00:00:00.0</DATE_OF_ISSUE>
-            <NOTE>, expired on 8 Nov. 2008</NOTE>
-         </INDIVIDUAL_DOCUMENT>
-         <SORT_KEY>ALAQEEL AQEEL ABDULAZIZ AQEEL</SORT_KEY>
-         <SORT_KEY_LAST_MOD>2011-12-13T00:00:00</SORT_KEY_LAST_MOD>
       </INDIVIDUAL>
       <INDIVIDUAL>
          <DATAID>2962519</DATAID>
@@ -6595,14 +6497,14 @@
       </INDIVIDUAL>
       <INDIVIDUAL>
          <DATAID>112030</DATAID>
-         <VERSIONNUM>11</VERSIONNUM>
+         <VERSIONNUM>12</VERSIONNUM>
          <FIRST_NAME>SAID</FIRST_NAME>
          <SECOND_NAME>BAHAJI</SECOND_NAME>
          <UN_LIST_TYPE>Al-Qaida</UN_LIST_TYPE>
          <REFERENCE_NUMBER>QI.B.80.02.</REFERENCE_NUMBER>
          <LISTED_ON>2002-09-30T00:00:00</LISTED_ON>
          <NAME_ORIGINAL_SCRIPT>سعيد باهاجى</NAME_ORIGINAL_SCRIPT>
-         <COMMENTS1>Deputy Head of the Media Committee of Al-Qaida (QE.A.4.01) as at Apr. 2010. German authorities issued an arrest warrant for him on 21 Sep. 2001. Believed to be in the Afghanistan/Pakistan border area. Review pursuant to Security Council resolution 1822 (2008) was concluded on 20 May 2010.</COMMENTS1>
+         <COMMENTS1>Deputy head of the media committee of Al-Qaida (QE.A.4.01) as at Apr. 2010. German authorities issued an arrest warrant for him on 21 Sep. 2001. Review pursuant to Security Council resolution 1822 (2008) was concluded on 20 May 2010. Reportedly deceased in September 2013 in the Afghanistan/Pakistan border area.</COMMENTS1>
          <NATIONALITY2>Moroccan</NATIONALITY2>
          <NATIONALITY>
             <VALUE>German</VALUE>
@@ -6615,6 +6517,7 @@
             <VALUE>2005-09-09T00:00:00</VALUE>
             <VALUE>2007-07-02T00:00:00</VALUE>
             <VALUE>2010-12-23T00:00:00</VALUE>
+            <VALUE>2014-09-09T00:00:00</VALUE>
          </LAST_DAY_UPDATED>
          <INDIVIDUAL_ALIAS>
             <QUALITY>Good</QUALITY>
@@ -6629,7 +6532,7 @@
             <ALIAS_NAME>Abderrahmane Al Maghribi</ALIAS_NAME>
          </INDIVIDUAL_ALIAS>
          <INDIVIDUAL_ADDRESS>
-            <NOTE>Formerly resident at: Bunatwiete 23, 21073 Hamburg, Germany</NOTE>
+            <NOTE>Bunatwiete 23, 21073 Hamburg, Germany (formerly resident at)</NOTE>
          </INDIVIDUAL_ADDRESS>
          <INDIVIDUAL_DATE_OF_BIRTH>
             <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
@@ -6642,7 +6545,7 @@
          </INDIVIDUAL_PLACE_OF_BIRTH>
          <INDIVIDUAL_DOCUMENT>
             <TYPE_OF_DOCUMENT>Passport</TYPE_OF_DOCUMENT>
-            <NOTE>Provisional German Passport No.: 28642163 (issued by the city of Hamburg)</NOTE>
+            <NOTE>Provisional German passport No.: 28642163 (issued by the city of Hamburg)</NOTE>
          </INDIVIDUAL_DOCUMENT>
          <INDIVIDUAL_DOCUMENT>
             <TYPE_OF_DOCUMENT>Passport</TYPE_OF_DOCUMENT>
@@ -6650,10 +6553,10 @@
          </INDIVIDUAL_DOCUMENT>
          <INDIVIDUAL_DOCUMENT>
             <TYPE_OF_DOCUMENT>National Identification Number</TYPE_OF_DOCUMENT>
-            <NOTE>BPA Nr. 1336597587</NOTE>
+            <NOTE>German identity document ("Bundespersonalausweis") No. 1336597587</NOTE>
          </INDIVIDUAL_DOCUMENT>
          <SORT_KEY>BAHAJI SAID</SORT_KEY>
-         <SORT_KEY_LAST_MOD>2010-12-23T00:00:00</SORT_KEY_LAST_MOD>
+         <SORT_KEY_LAST_MOD>2014-09-09T00:00:00</SORT_KEY_LAST_MOD>
       </INDIVIDUAL>
       <INDIVIDUAL>
          <DATAID>2832991</DATAID>
@@ -13785,7 +13688,7 @@
       </INDIVIDUAL>
       <INDIVIDUAL>
          <DATAID>2960872</DATAID>
-         <VERSIONNUM>3</VERSIONNUM>
+         <VERSIONNUM>5</VERSIONNUM>
          <FIRST_NAME>DOKU</FIRST_NAME>
          <SECOND_NAME>KHAMATOVICH</SECOND_NAME>
          <THIRD_NAME>UMAROV</THIRD_NAME>
@@ -13793,7 +13696,7 @@
          <REFERENCE_NUMBER>QI.U.290.11.</REFERENCE_NUMBER>
          <LISTED_ON>2011-03-10T00:00:00</LISTED_ON>
          <NAME_ORIGINAL_SCRIPT>Умаров Доку Хаматович</NAME_ORIGINAL_SCRIPT>
-         <COMMENTS1>Resides in the Russian Federation as at Nov. 2010. International arrest warrant issued in the year 2000. Reportedly deceased as of April 2014.</COMMENTS1>
+         <COMMENTS1>Physical description: 180 cm tall, dark hair, 7-9 cm. long scar on the face, part of the tongue is missing, has a speech defect Resides in the Russian Federation as at Nov. 2010. International arrest warrant issued in the year 2000. INTERPOL Special Notice contains biometric information. Reportedly deceased as of April 2014.</COMMENTS1>
          <NATIONALITY2>USSR (until 1991)</NATIONALITY2>
          <NATIONALITY>
             <VALUE>Russian</VALUE>
@@ -13803,21 +13706,50 @@
          </LIST_TYPE>
          <LAST_DAY_UPDATED>
             <VALUE>2014-06-02T00:00:00</VALUE>
+            <VALUE>2014-12-30T00:00:00</VALUE>
          </LAST_DAY_UPDATED>
-         <INDIVIDUAL_ALIAS/>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Lom-ali Butayev (Butaev), born in 1955</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Dokka Umarov, born on 13 April 1964</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Dokka Umarov, born on 13 April 1965</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
          <INDIVIDUAL_ADDRESS/>
          <INDIVIDUAL_DATE_OF_BIRTH>
             <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1964-04-13T00:00:00</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1965-04-13T00:00:00</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
             <DATE>1964-05-12T00:00:00</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <YEAR>1955</YEAR>
          </INDIVIDUAL_DATE_OF_BIRTH>
          <INDIVIDUAL_PLACE_OF_BIRTH>
             <CITY>Kharsenoy Village</CITY>
             <STATE_PROVINCE>Shatoyskiy (Sovetskiy) District, Chechenskaya Respublika</STATE_PROVINCE>
             <COUNTRY>Russian Federation</COUNTRY>
          </INDIVIDUAL_PLACE_OF_BIRTH>
-         <INDIVIDUAL_DOCUMENT/>
+         <INDIVIDUAL_DOCUMENT>
+            <TYPE_OF_DOCUMENT>Passport</TYPE_OF_DOCUMENT>
+            <NUMBER>96 03 464086</NUMBER>
+            <ISSUING_COUNTRY>Russian</ISSUING_COUNTRY>
+            <DATE_OF_ISSUE>2003-06-01 00:00:00.0</DATE_OF_ISSUE>
+         </INDIVIDUAL_DOCUMENT>
          <SORT_KEY>UMAROV DOKU KHAMATOVICH</SORT_KEY>
-         <SORT_KEY_LAST_MOD>2014-06-02T00:00:00</SORT_KEY_LAST_MOD>
+         <SORT_KEY_LAST_MOD>2014-12-30T00:00:00</SORT_KEY_LAST_MOD>
       </INDIVIDUAL>
       <INDIVIDUAL>
          <DATAID>112283</DATAID>

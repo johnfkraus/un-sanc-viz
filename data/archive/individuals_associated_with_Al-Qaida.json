@@ -3,1806 +3,1790 @@
   "id": "QE.A.1.01",
   "narrativeFileName": "NSQE00101E.shtml",
   "targetName": "Abu Sayyaf Group",
-  "rowNum": 1
+  "entityRowNum": 1
  },
  {
   "id": "QE.A.2.01",
   "narrativeFileName": "NSQE00201E.shtml",
   "targetName": "Al-Itihaad Al-Islamiya / AIAI",
-  "rowNum": 2
+  "entityRowNum": 2
  },
  {
   "id": "QE.A.3.01",
   "narrativeFileName": "NSQE00301E.shtml",
   "targetName": "Egyptian Islamic Jihad",
-  "rowNum": 3
+  "entityRowNum": 3
  },
  {
   "id": "QE.A.4.01",
   "narrativeFileName": "NSQE00401E.shtml",
   "targetName": "Al-Qaida",
-  "rowNum": 4
+  "entityRowNum": 4
  },
  {
   "id": "QE.A.5.01",
   "narrativeFileName": "NSQE00501E.shtml",
   "targetName": "Al Rashid Trust",
-  "rowNum": 5
+  "entityRowNum": 5
  },
  {
   "id": "QE.A.6.01",
   "narrativeFileName": "NSQE00601E.shtml",
   "targetName": "Armed Islamic Group",
-  "rowNum": 6
+  "entityRowNum": 6
  },
  {
   "id": "QE.A.7.01",
   "narrativeFileName": "NSQE00701E.shtml",
   "targetName": "Asbat Al-Ansar",
-  "rowNum": 7
+  "entityRowNum": 7
  },
  {
   "id": "QE.H.8.01",
   "narrativeFileName": "NSQE00801E.shtml",
   "targetName": "Harakat Ul-Mujahidin / HUM",
-  "rowNum": 8
+  "entityRowNum": 8
  },
  {
   "id": "QE.I.9.01",
   "narrativeFileName": "NSQE00901E.shtml",
   "targetName": "Islamic Army of Aden",
-  "rowNum": 9
+  "entityRowNum": 9
  },
  {
   "id": "QE.I.10.01",
   "narrativeFileName": "NSQE01001E.shtml",
   "targetName": "Islamic Movement Of Uzbekistan",
-  "rowNum": 10
+  "entityRowNum": 10
  },
  {
   "id": "QE.L.11.01",
   "narrativeFileName": "NSQE01101E.shtml",
   "targetName": "Libyan Islamic Fighting Group",
-  "rowNum": 11
+  "entityRowNum": 11
  },
  {
   "id": "QE.M.12.01",
   "narrativeFileName": "NSQE01201E.shtml",
   "targetName": "Makhtab al-Khidamat",
-  "rowNum": 12
+  "entityRowNum": 12
  },
  {
   "id": "QE.T.14.01",
   "narrativeFileName": "NSQE01401E.shtml",
   "targetName": "The Organization of Al-Qaida in the Islamic Maghreb",
-  "rowNum": 13
+  "entityRowNum": 13
  },
  {
   "id": "QE.W.15.01",
   "narrativeFileName": "NSQE01501E.shtml",
   "targetName": "Wafa Humanitarian Organization",
-  "rowNum": 14
+  "entityRowNum": 14
  },
  {
   "id": "QE.J.19.01",
   "narrativeFileName": "NSQE01901E.shtml",
   "targetName": "Jaish-i-Mohammed",
-  "rowNum": 15
+  "entityRowNum": 15
  },
  {
   "id": "QE.J.20.01",
   "narrativeFileName": "NSQE02001E.shtml",
   "targetName": "Jam’yah Ta’awun Al-Islamia",
-  "rowNum": 16
+  "entityRowNum": 16
  },
  {
   "id": "QE.R.21.01",
   "narrativeFileName": "NSQE02101E.shtml",
   "targetName": "Rabita Trust",
-  "rowNum": 17
+  "entityRowNum": 17
  },
  {
   "id": "QE.U.68.01",
   "narrativeFileName": "NSQE06801E.shtml",
   "targetName": "Ummah Tameer E-Nau (UTN)",
-  "rowNum": 18
+  "entityRowNum": 18
  },
  {
   "id": "QE.A.69.02",
   "narrativeFileName": "NSQE06902E.shtml",
   "targetName": "Afghan Support Committee (ASC)",
-  "rowNum": 19
+  "entityRowNum": 19
  },
  {
   "id": "QE.R.70.02",
   "narrativeFileName": "NSQE07002E.shtml",
   "targetName": "Revival of Islamic Heritage Society",
-  "rowNum": 20
+  "entityRowNum": 20
  },
  {
   "id": "QE.A.71.02",
   "narrativeFileName": "NSQE07102E.shtml",
   "targetName": "Al-Haramain Islamic Foundation (Bosnia and Herzegovina)",
-  "rowNum": 21
+  "entityRowNum": 21
  },
  {
   "id": "QE.A.72.02",
   "narrativeFileName": "NSQE07202E.shtml",
   "targetName": "Al-Haramain Islamic Foundation (Somalia)",
-  "rowNum": 22
+  "entityRowNum": 22
  },
  {
   "id": "QE.E.88.02",
   "narrativeFileName": "NSQE08802E.shtml",
   "targetName": "Eastern Turkistan Islamic Movement",
-  "rowNum": 23
+  "entityRowNum": 23
  },
  {
   "id": "QE.M.89.02",
   "narrativeFileName": "NSQE08902E.shtml",
   "targetName": "Moroccan Islamic Combatant Group",
-  "rowNum": 24
+  "entityRowNum": 24
  },
  {
   "id": "QE.T.90.02",
   "narrativeFileName": "NSQE09002E.shtml",
   "targetName": "Tunisian Combatant Group",
-  "rowNum": 25
+  "entityRowNum": 25
  },
  {
   "id": "QE.G.91.02",
   "narrativeFileName": "NSQE09102E.shtml",
   "targetName": "Global Relief Foundation (GRF)",
-  "rowNum": 26
+  "entityRowNum": 26
  },
  {
   "id": "QE.J.92.02",
   "narrativeFileName": "NSQE09202E.shtml",
   "targetName": "Jemaah Islamiyah",
-  "rowNum": 27
+  "entityRowNum": 27
  },
  {
   "id": "QE.B.93.02",
   "narrativeFileName": "NSQE09302E.shtml",
   "targetName": "Benevolence International Foundation",
-  "rowNum": 28
+  "entityRowNum": 28
  },
  {
   "id": "QE.L.96.03",
   "narrativeFileName": "NSQE09603E.shtml",
   "targetName": "Lashkar i Jhangvi (LJ)",
-  "rowNum": 29
+  "entityRowNum": 29
  },
  {
   "id": "QE.A.98.03",
   "narrativeFileName": "NSQE09803E.shtml",
   "targetName": "Ansar al-Islam",
-  "rowNum": 30
+  "entityRowNum": 30
  },
  {
   "id": "QE.I.99.03",
   "narrativeFileName": "NSQE09903E.shtml",
   "targetName": "Islamic International Brigade (IIB)",
-  "rowNum": 31
+  "entityRowNum": 31
  },
  {
   "id": "QE.R.100.03",
   "narrativeFileName": "NSQE10003E.shtml",
   "targetName": "Riyadus-Salikhin Reconnaissance and Sabotage Battalion of Chechen Martyrs (RSRSBCM)",
-  "rowNum": 32
+  "entityRowNum": 32
  },
  {
   "id": "QE.S.101.03",
   "narrativeFileName": "NSQE10103E.shtml",
   "targetName": "Special Purpose Islamic Regiment (SPIR)",
-  "rowNum": 33
+  "entityRowNum": 33
  },
  {
   "id": "QE.D.102.03",
   "narrativeFileName": "NSQE10203E.shtml",
   "targetName": "\"Djamat Houmat Daawa Salafia (DHDS)\"",
-  "rowNum": 34
+  "entityRowNum": 34
  },
  {
   "id": "QE.A.103.04",
   "narrativeFileName": "NSQE10304E.shtml",
   "targetName": "Al-Haramain Foundation (Indonesia)",
-  "rowNum": 35
+  "entityRowNum": 35
  },
  {
   "id": "QE.A.104.04",
   "narrativeFileName": "NSQE10404E.shtml",
   "targetName": "Al-Haramain Foundation (Pakistan)",
-  "rowNum": 36
+  "entityRowNum": 36
  },
  {
   "id": "QE.A.105.04",
   "narrativeFileName": "NSQE10504E.shtml",
   "targetName": "Al-Haramayn Foundation (Kenya)",
-  "rowNum": 37
+  "entityRowNum": 37
  },
  {
   "id": "QE.A.106.04",
   "narrativeFileName": "NSQE10604E.shtml",
   "targetName": "Al-Haramayn Foundation (Tanzania)",
-  "rowNum": 38
+  "entityRowNum": 38
  },
  {
   "id": "QE.A.107.04",
   "narrativeFileName": "NSQE10704E.shtml",
   "targetName": "Al Furqan",
-  "rowNum": 39
+  "entityRowNum": 39
  },
  {
   "id": "QE.T.108.04",
   "narrativeFileName": "NSQE10804E.shtml",
   "targetName": "Taibah International-Bosnia Offices",
-  "rowNum": 40
+  "entityRowNum": 40
  },
  {
   "id": "QE.A.109.04",
   "narrativeFileName": "NSQE10904E.shtml",
   "targetName": "Al-Haramain &amp; Al Masjed Al-Aqsa Charity Foundation",
-  "rowNum": 41
+  "entityRowNum": 41
  },
  {
   "id": "QE.A.110.04",
   "narrativeFileName": "NSQE11004E.shtml",
   "targetName": "Al-Haramain: Afghanistan Branch",
-  "rowNum": 42
+  "entityRowNum": 42
  },
  {
   "id": "QE.A.111.04",
   "narrativeFileName": "NSQE11104E.shtml",
   "targetName": "Al-Haramain: Albania Branch",
-  "rowNum": 43
+  "entityRowNum": 43
  },
  {
   "id": "QE.A.112.04",
   "narrativeFileName": "NSQE11204E.shtml",
   "targetName": "Al-Haramain: Bangladesh Branch",
-  "rowNum": 44
+  "entityRowNum": 44
  },
  {
   "id": "QE.A.113.04",
   "narrativeFileName": "NSQE11304E.shtml",
   "targetName": "Al-Haramain: Ethiopia Branch",
-  "rowNum": 45
+  "entityRowNum": 45
  },
  {
   "id": "QE.A.114.04",
   "narrativeFileName": "NSQE11404E.shtml",
   "targetName": "Al-Haramain: The Netherlands Branch",
-  "rowNum": 46
+  "entityRowNum": 46
  },
  {
   "id": "QE.J.115.04",
   "narrativeFileName": "NSQE11504E.shtml",
   "targetName": "Al-Qaida in Iraq",
-  "rowNum": 47
+  "entityRowNum": 47
  },
  {
   "id": "QE.A.116.04",
   "narrativeFileName": "NSQE11604E.shtml",
   "targetName": "Al-Haramain Foundation (Union of the Comoros)",
-  "rowNum": 48
+  "entityRowNum": 48
  },
  {
   "id": "QE.L.118.05",
   "narrativeFileName": "NSQE11805E.shtml",
   "targetName": "Lashkar-E-Tayyiba",
-  "rowNum": 49
+  "entityRowNum": 49
  },
  {
   "id": "QE.I.119.05",
   "narrativeFileName": "NSQE11905E.shtml",
   "targetName": "Islamic Jihad Group",
-  "rowNum": 50
+  "entityRowNum": 50
  },
  {
   "id": "QE.A.121.05",
   "narrativeFileName": "NSQE12105E.shtml",
   "targetName": "Al-Akhtar Trust International",
-  "rowNum": 51
+  "entityRowNum": 51
  },
  {
   "id": "QE.R.128.08",
   "narrativeFileName": "NSQE12808E.shtml",
   "targetName": "Rajah Solaiman Movement",
-  "rowNum": 52
+  "entityRowNum": 52
  },
  {
   "id": "QE.A.129.10",
-  "narrativeFileName": "/sc/committees/1267/NSQE12910E.shtml",
+  "narrativeFileName": "NSQE12910E.shtml",
   "targetName": "Al-Qaida in the Arabian Peninsula",
-  "rowNum": 53
+  "entityRowNum": 53
  },
  {
   "id": "QE.H.130.10",
   "narrativeFileName": "NSQE13010E.shtml",
   "targetName": "Harakat-ul Jihad Islami",
-  "rowNum": 54
+  "entityRowNum": 54
  },
  {
   "id": "QE.E.131.11",
   "narrativeFileName": "NSQE13111E.shtml",
   "targetName": "Emarat Kavkaz",
-  "rowNum": 55
+  "entityRowNum": 55
  },
  {
   "id": "QE.T.132.11",
   "narrativeFileName": "NSQE13211E.shtml",
   "targetName": "Tehrik-e Taliban Pakistan (TTP)",
-  "rowNum": 56
+  "entityRowNum": 56
  },
  {
   "id": "QE.J.133.12",
   "narrativeFileName": "NSQE13312E.shtml",
   "targetName": "Jemmad Anshorut Tauhid",
-  "rowNum": 57
+  "entityRowNum": 57
  },
  {
   "id": "QE.M.134.12",
   "narrativeFileName": "NSQE13412E.shtml",
   "targetName": "Mouvement pour l’Unification et le Jihad en Afrique de l’Ouest (MUJAO)",
-  "rowNum": 58
+  "entityRowNum": 58
  },
  {
   "id": "QE.A.135.13",
   "narrativeFileName": "NSQE13513E.shtml",
   "targetName": "Ansar Eddine",
-  "rowNum": 59
+  "entityRowNum": 59
  },
  {
   "id": "QE.M.136.13",
   "narrativeFileName": "NSQE13613E.shtml",
   "targetName": "Muhammad Jamal Network (MJN)",
-  "rowNum": 60
+  "entityRowNum": 60
  },
  {
   "id": "QE.A.137.14",
   "narrativeFileName": "NSQE13714E.shtml",
   "targetName": "Al-Nusrah Front for the People of the Levant",
-  "rowNum": 61
+  "entityRowNum": 61
  },
  {
   "id": "QE.B.138.14",
-  "narrativeFileName": "http://dev.un.org/sc/committees/1267/NSQE13814E.shtml",
+  "narrativeFileName": "NSQE13814E.shtml",
   "targetName": "Jama'atu Ahlus-Sunna Lidda'Awati Wal Jihad (Boko Haram)",
-  "rowNum": 62
+  "entityRowNum": 62
  },
  {
   "id": "QE.M.139.14",
   "narrativeFileName": "NSQE13914E.shtml",
   "targetName": "Al Mouakaoune Biddam",
-  "rowNum": 63
+  "entityRowNum": 63
  },
  {
   "id": "QE.M.140.14",
   "narrativeFileName": "NSQE14014E.shtml",
   "targetName": "Al Moulathamoun",
-  "rowNum": 64
+  "entityRowNum": 64
  },
  {
   "id": "QE.M.141.14",
   "narrativeFileName": "NSQE14114E.shtml",
   "targetName": "Al Mourabitoun",
-  "rowNum": 65
+  "entityRowNum": 65
  },
  {
   "id": "QE.A.142.14",
   "narrativeFileName": "NSQE14214E.shtml",
   "targetName": "Ansarul Muslimina Fi Biladis-Sudan",
-  "rowNum": 66
+  "entityRowNum": 66
  },
  {
   "id": "QE.A.143.14",
   "narrativeFileName": "NSQE14314E.shtml",
   "targetName": "Ansar al-Shari’a in Tunisia (AAS-T)",
-  "rowNum": 67
+  "entityRowNum": 67
  },
  {
   "id": "QE.A.144.14",
   "narrativeFileName": "NSQE14414E.shtml",
   "targetName": "Abdallah Azzam Brigades (AAB)",
-  "rowNum": 68
+  "entityRowNum": 68
  },
  {
   "id": "QE.A.145.14",
   "narrativeFileName": "NSQE14514E.shtml",
   "targetName": "Ansar Al Charia Derna",
-  "rowNum": 69
+  "entityRowNum": 69
  },
  {
   "id": "QE.A.146.14",
   "narrativeFileName": "NSQE14614E.shtml",
   "targetName": "Ansar al Charia Benghazi",
-  "rowNum": 70
+  "entityRowNum": 70
  },
  {
   "id": "QI.S.1.01",
   "narrativeFileName": "NSQI00101E.shtml",
   "targetName": "Sayf-al Adl",
-  "rowNum": 1
+  "indivRowNum": 1
  },
  {
   "id": "QI.A.2.01",
   "narrativeFileName": "NSQI00201E.shtml",
   "targetName": "Amin Muhammad Ul Haq Saam Khan",
-  "rowNum": 2
+  "indivRowNum": 2
  },
  {
   "id": "QI.H.3.01",
   "narrativeFileName": "NSQI00301E.shtml",
   "targetName": "Salim Ahmad Salim Hamdan",
-  "rowNum": 3
+  "indivRowNum": 3
  },
  {
   "id": "QI.A.6.01",
   "narrativeFileName": "NSQI00601E.shtml",
   "targetName": "Aiman Muhammed Rabi al-Zawahiri",
-  "rowNum": 4
+  "indivRowNum": 4
  },
  {
   "id": "QI.B.9.01",
   "narrativeFileName": "NSQI00901E.shtml",
   "targetName": "Bilal Bin Marwan",
-  "rowNum": 5
+  "indivRowNum": 5
  },
  {
   "id": "QI.H.10.01",
   "narrativeFileName": "NSQI01001E.shtml",
   "targetName": "Zayn al-Abidin Muhammad Hussein",
-  "rowNum": 6
+  "indivRowNum": 6
  },
  {
   "id": "QI.A.12.01",
   "narrativeFileName": "NSQI01201E.shtml",
   "targetName": "Nashwan Abd al-Razzaq Abd al-Baqi",
-  "rowNum": 7
+  "indivRowNum": 7
  },
  {
   "id": "QI.A.14.01",
   "narrativeFileName": "NSQI01401E.shtml",
   "targetName": "Tariq Anwar El Sayed Ahmed",
-  "rowNum": 8
+  "indivRowNum": 8
  },
  {
   "id": "QI.A.15.01",
   "narrativeFileName": "NSQI01501E.shtml",
   "targetName": "Mahfouz Ould al-Walid",
-  "rowNum": 9
+  "indivRowNum": 9
  },
  {
   "id": "QI.A.17.01",
   "narrativeFileName": "NSQI01701E.shtml",
   "targetName": "Tharwat Salah Shihata",
-  "rowNum": 10
+  "indivRowNum": 10
  },
  {
   "id": "QI.A.18.01",
   "narrativeFileName": "NSQI01801E.shtml",
   "targetName": "Abdul Manan Agha",
-  "rowNum": 11
+  "indivRowNum": 11
  },
  {
   "id": "QI.E.19.01",
   "narrativeFileName": "NSQI01901E.shtml",
   "targetName": "Abdullah Ahmed Abdullah el Alfi",
-  "rowNum": 12
+  "indivRowNum": 12
  },
  {
   "id": "QI.A.20.01",
   "narrativeFileName": "NSQI02001E.shtml",
   "targetName": "Mohammad Hamdi Mohammad Sadiq al-Ahdal",
-  "rowNum": 13
+  "indivRowNum": 13
  },
  {
   "id": "QI.A.21.01",
   "narrativeFileName": "NSQI02101E.shtml",
   "targetName": "Ahmed Mohammed Hamed Ali",
-  "rowNum": 14
+  "indivRowNum": 14
  },
  {
   "id": "QI.A.23.01",
   "narrativeFileName": "NSQI02301E.shtml",
   "targetName": "Nazih Abdul Hamed Nabih al-Ruqai'i",
-  "rowNum": 15
+  "indivRowNum": 15
  },
  {
   "id": "QI.F.27.01",
   "narrativeFileName": "NSQI02701E.shtml",
   "targetName": "Mustafa Mohamed Fadhil",
-  "rowNum": 16
+  "indivRowNum": 16
  },
  {
   "id": "QI.G.28.01",
   "narrativeFileName": "NSQI02801E.shtml",
   "targetName": "Ahmed Khalfan Ghailani",
-  "rowNum": 17
+  "indivRowNum": 17
  },
  {
   "id": "QI.H.29.01",
   "narrativeFileName": "NSQI02901E.shtml",
-  "targetName": "Ri’ad (Raed) Muhammad Hasan Muhammad Hijazi",
-  "rowNum": 18
+  "targetName": "Ri&rsquo;ad (Raed) Muhammad Hasan Muhammad Hijazi",
+  "indivRowNum": 18
  },
  {
   "id": "QI.M.31.01",
   "narrativeFileName": "NSQI03101E.shtml",
   "targetName": "Omar Mahmoud Uthman",
-  "rowNum": 19
+  "indivRowNum": 19
  },
  {
   "id": "QI.Y.37.01",
   "narrativeFileName": "NSQI03701E.shtml",
   "targetName": "Abdul Rahman Yasin",
-  "rowNum": 20
+  "indivRowNum": 20
  },
  {
   "id": "QI.D.42.01",
   "narrativeFileName": "NSQI04201E.shtml",
   "targetName": "Hassan Dahir Aweys",
-  "rowNum": 21
+  "indivRowNum": 21
  },
  {
   "id": "QI.A.54.01",
   "narrativeFileName": "NSQI05401E.shtml",
   "targetName": "Majeed Abdul Chaudhry",
-  "rowNum": 22
+  "indivRowNum": 22
  },
  {
   "id": "QI.B.55.01",
   "narrativeFileName": "NSQI05501E.shtml",
   "targetName": "Mahmood Sultan Bashir-Ud-Din",
-  "rowNum": 23
+  "indivRowNum": 23
  },
  {
   "id": "QI.T.56.01",
   "narrativeFileName": "NSQI05601E.shtml",
   "targetName": "Mohammed Tufail",
-  "rowNum": 24
+  "indivRowNum": 24
  },
  {
   "id": "QI.T.57.02",
   "narrativeFileName": "NSQI05702E.shtml",
   "targetName": "Ibrahim Ali Abu Bakr Tantoush",
-  "rowNum": 25
+  "indivRowNum": 25
  },
  {
   "id": "QI.A.58.02",
   "narrativeFileName": "NSQI05802E.shtml",
   "targetName": "Abu Bakr al-Jaziri",
-  "rowNum": 26
+  "indivRowNum": 26
  },
  {
   "id": "QI.A.59.02",
   "narrativeFileName": "NSQI05902E.shtml",
   "targetName": "Khalid Abd al-Rahman Hamd al-Fawaz",
-  "rowNum": 27
+  "indivRowNum": 27
  },
  {
   "id": "QI.A.60.02",
   "narrativeFileName": "NSQI06002E.shtml",
   "targetName": "Mohamed ben Belgacem ben Abdallah al-Aouadi",
-  "rowNum": 28
+  "indivRowNum": 28
  },
  {
   "id": "QI.B.62.02",
   "narrativeFileName": "NSQI06202E.shtml",
   "targetName": "Mohamed Lakhal",
-  "rowNum": 29
+  "indivRowNum": 29
  },
  {
   "id": "QI.B.63.02",
   "narrativeFileName": "NSQI06302E.shtml",
   "targetName": "Al-Mokhtar ben Mohamed ben al-Mokhtar Bouchoucha",
-  "rowNum": 30
+  "indivRowNum": 30
  },
  {
   "id": "QI.E.64.02",
   "narrativeFileName": "NSQI06402E.shtml",
   "targetName": "Sami ben Khamis ben Saleh Elsseid",
-  "rowNum": 31
+  "indivRowNum": 31
  },
  {
   "id": "QI.E.65.02",
   "narrativeFileName": "NSQI06502E.shtml",
   "targetName": "Abd El Kader Mahmoud Mohamed El Sayed",
-  "rowNum": 32
+  "indivRowNum": 32
  },
  {
   "id": "QI.I.67.02",
   "narrativeFileName": "NSQI06702E.shtml",
   "targetName": "Mostafa Kamel Mostafa Ibrahim",
-  "rowNum": 33
+  "indivRowNum": 33
  },
  {
   "id": "QI.B.68.02",
   "narrativeFileName": "NSQI06802E.shtml",
   "targetName": "Adel ben al-Azhar ben Youssef Hamdi",
-  "rowNum": 34
+  "indivRowNum": 34
  },
  {
   "id": "QI.C.70.02",
   "narrativeFileName": "NSQI07002E.shtml",
   "targetName": "Yassine Chekkouri",
-  "rowNum": 35
+  "indivRowNum": 35
  },
  {
   "id": "QI.A.71.02",
   "narrativeFileName": "NSQI07102E.shtml",
   "targetName": "Riadh ben Belkassem ben Mohamed al-Jelassi",
-  "rowNum": 36
+  "indivRowNum": 36
  },
  {
   "id": "QI.K.72.02",
   "narrativeFileName": "NSQI07202E.shtml",
   "targetName": "Mehdi ben Mohamed ben Mohamed Kammoun",
-  "rowNum": 37
+  "indivRowNum": 37
  },
  {
   "id": "QI.K.73.02",
   "narrativeFileName": "NSQI07302E.shtml",
   "targetName": "Samir Abd el Latif el Sayed Kishk",
-  "rowNum": 38
+  "indivRowNum": 38
  },
  {
   "id": "QI.A.74.02",
   "narrativeFileName": "NSQI07402E.shtml",
   "targetName": "Tarek ben Habib ben al-Toumi al-Maaroufi",
-  "rowNum": 39
+  "indivRowNum": 39
  },
  {
   "id": "QI.R.75.02",
   "narrativeFileName": "NSQI07502E.shtml",
   "targetName": "Abdelhalim Hafed Abdelfattah Remadna",
-  "rowNum": 40
+  "indivRowNum": 40
  },
  {
   "id": "QI.T.76.02",
   "narrativeFileName": "NSQI07602E.shtml",
   "targetName": "Isam Ali Mohamed Alouche",
-  "rowNum": 41
+  "indivRowNum": 41
  },
  {
   "id": "QI.A.77.02",
   "narrativeFileName": "NSQI07702E.shtml",
   "targetName": "Al-Azhar ben Mohammed ben el-Abed al-Tlili",
-  "rowNum": 42
+  "indivRowNum": 42
  },
  {
   "id": "QI.B.80.02",
   "narrativeFileName": "NSQI08002E.shtml",
   "targetName": "Said Bahaji",
-  "rowNum": 43
+  "indivRowNum": 43
  },
  {
   "id": "QI.B.81.02",
   "narrativeFileName": "NSQI08102E.shtml",
   "targetName": "Ramzi Mohamed Abdullah Binalshibh",
-  "rowNum": 44
+  "indivRowNum": 44
  },
  {
   "id": "QI.E.82.02",
   "narrativeFileName": "NSQI08202E.shtml",
   "targetName": "Mounir el Motassadeq",
-  "rowNum": 45
+  "indivRowNum": 45
  },
  {
   "id": "QI.E.83.02",
   "narrativeFileName": "NSQI08302E.shtml",
   "targetName": "Zakarya Essabar",
-  "rowNum": 46
+  "indivRowNum": 46
  },
  {
   "id": "QI.A.86.03",
   "narrativeFileName": "NSQI08603E.shtml",
   "targetName": "Mohamad Iqbal Abdurrahman",
-  "rowNum": 47
+  "indivRowNum": 47
  },
  {
   "id": "QI.I.87.03",
   "narrativeFileName": "NSQI08703E.shtml",
   "targetName": "Nurjaman Riduan Isamuddin",
-  "rowNum": 48
+  "indivRowNum": 48
  },
  {
   "id": "QI.H.88.03",
   "narrativeFileName": "NSQI08803E.shtml",
   "targetName": "Gulbuddin Hekmatyar",
-  "rowNum": 49
+  "indivRowNum": 49
  },
  {
   "id": "QI.A.91.03",
   "narrativeFileName": "NSQI09103E.shtml",
   "targetName": "Mohamed Amine Akli",
-  "rowNum": 50
+  "indivRowNum": 50
  },
  {
   "id": "QI.A.92.03",
   "narrativeFileName": "NSQI09203E.shtml",
   "targetName": "Mehrez ben Mahmoud ben Sassi al-Amdouni",
-  "rowNum": 51
+  "indivRowNum": 51
  },
  {
   "id": "QI.A.93.03",
   "narrativeFileName": "NSQI09303E.shtml",
   "targetName": "Chiheb ben Mohamed ben Mokhtar al-Ayari",
-  "rowNum": 52
+  "indivRowNum": 52
  },
  {
   "id": "QI.D.95.03",
   "narrativeFileName": "NSQI09503E.shtml",
   "targetName": "Lionel Dumont",
-  "rowNum": 53
+  "indivRowNum": 53
  },
  {
   "id": "QI.E.96.03",
   "narrativeFileName": "NSQI09603E.shtml",
   "targetName": "Moussa Ben Omar Ben Ali Essaadi",
-  "rowNum": 54
+  "indivRowNum": 54
  },
  {
   "id": "QI.J.99.03",
   "narrativeFileName": "NSQI09903E.shtml",
   "targetName": "Khalil Ben Ahmed Ben Mohamed Jarraya",
-  "rowNum": 55
+  "indivRowNum": 55
  },
  {
-  "id": "QI.A.101.03",
   "narrativeFileName": "NSQI10103E.shtml",
   "targetName": "Faouzi ben Mohamed ben Ahmed al-Jendoubi",
-  "rowNum": 56
+  "indivRowNum": 56
  },
  {
   "id": "QI.R.103.03",
   "narrativeFileName": "NSQI10303E.shtml",
   "targetName": "Ahmed Hosni Rarrbo",
-  "rowNum": 57
+  "indivRowNum": 57
  },
  {
-  "id": "QI.A.104.03",
   "narrativeFileName": "NSQI10403E.shtml",
   "targetName": "Najib ben Mohamed ben Salem al-Waz",
-  "rowNum": 58
+  "indivRowNum": 58
  },
  {
   "id": "QI.A.109.03",
   "narrativeFileName": "NSQI10903E.shtml",
   "targetName": "Zulkifli Abdul Hir",
-  "rowNum": 59
+  "indivRowNum": 59
  },
  {
   "id": "QI.D.111.03",
   "narrativeFileName": "NSQI11103E.shtml",
   "targetName": "Agus Dwikarna",
-  "rowNum": 60
+  "indivRowNum": 60
  },
  {
   "id": "QI.J.114.03",
   "narrativeFileName": "NSQI11403E.shtml",
   "targetName": "Salim Y Salamuddin Julkipli",
-  "rowNum": 61
+  "indivRowNum": 61
  },
  {
   "id": "QI.M.119.03",
   "narrativeFileName": "NSQI11903E.shtml",
   "targetName": "Aris Munandar",
-  "rowNum": 62
+  "indivRowNum": 62
  },
  {
   "id": "QI.M.120.03",
   "narrativeFileName": "NSQI12003E.shtml",
   "targetName": "Abdul Hakim Murad",
-  "rowNum": 63
+  "indivRowNum": 63
  },
  {
   "id": "QI.S.122.03",
   "narrativeFileName": "NSQI12203E.shtml",
   "targetName": "Parlindungan Siregar",
-  "rowNum": 64
+  "indivRowNum": 64
  },
  {
   "id": "QI.S.123.03",
   "narrativeFileName": "NSQI12303E.shtml",
   "targetName": "Yassin Syawal",
-  "rowNum": 65
+  "indivRowNum": 65
  },
  {
   "id": "QI.S.124.03",
   "narrativeFileName": "NSQI12403E.shtml",
   "targetName": "Yazid Sufaat",
-  "rowNum": 66
+  "indivRowNum": 66
  },
  {
   "id": "QI.Y.126.03",
   "narrativeFileName": "NSQI12603E.shtml",
   "targetName": "Yunos Umpara Moklis",
-  "rowNum": 67
+  "indivRowNum": 67
  },
  {
   "id": "QI.S.128.03",
   "narrativeFileName": "NSQI12803E.shtml",
   "targetName": "Ismail Abdallah Sbaitan Shalabi",
-  "rowNum": 68
+  "indivRowNum": 68
  },
  {
   "id": "QI.M.129.03",
   "narrativeFileName": "NSQI12903E.shtml",
   "targetName": "Djamel Moustfa",
-  "rowNum": 69
+  "indivRowNum": 69
  },
  {
   "id": "QI.A.130.03",
   "narrativeFileName": "NSQI13003E.shtml",
   "targetName": "Mohamed Abu Dhess",
-  "rowNum": 70
+  "indivRowNum": 70
  },
  {
   "id": "QI.A.132.03",
   "narrativeFileName": "NSQI13203E.shtml",
   "targetName": "Aschraf al-Dagma",
-  "rowNum": 71
+  "indivRowNum": 71
  },
  {
   "id": "QI.K.135.03",
   "narrativeFileName": "NSQI13503E.shtml",
   "targetName": "Dawood Ibrahim Kaskar",
-  "rowNum": 72
+  "indivRowNum": 72
  },
  {
   "id": "QI.B.136.03",
   "narrativeFileName": "NSQI13603E.shtml",
   "targetName": "Mokhtar Belmokhtar",
-  "rowNum": 73
+  "indivRowNum": 73
  },
  {
   "id": "QI.A.138.03",
   "narrativeFileName": "NSQI13803E.shtml",
   "targetName": "Said Ben Abdelhakim Ben Omar Al-Cherif",
-  "rowNum": 74
+  "indivRowNum": 74
  },
  {
   "id": "QI.A.139.03",
   "narrativeFileName": "NSQI13903E.shtml",
-  "targetName": "Imad Ben Al-Mekki Ben Al-Akhdar Al-Zarkaoui",
-  "rowNum": 75
+  "targetName": "Imed Ben Mekki Zarkaoui",
+  "indivRowNum": 75
  },
  {
   "id": "QI.A.140.03",
   "narrativeFileName": "NSQI14003E.shtml",
   "targetName": "Kamal Ben Maoeldi Ben Hassan Al-Hamraoui",
-  "rowNum": 76
+  "indivRowNum": 76
  },
  {
   "id": "QI.C.141.03",
   "narrativeFileName": "NSQI14103E.shtml",
   "targetName": "Maxamed Cabdullaah Ciise",
-  "rowNum": 77
+  "indivRowNum": 77
  },
  {
   "id": "QI.E.142.03",
   "narrativeFileName": "NSQI14203E.shtml",
   "targetName": "Radi Abd el Samie Abou el Yazid el Ayashi",
-  "rowNum": 78
+  "indivRowNum": 78
  },
  {
   "id": "QI.B.143.03",
   "narrativeFileName": "NSQI14303E.shtml",
   "targetName": "Hamadi Ben Abdul Aziz Ben Ali Bouyehia",
-  "rowNum": 79
+  "indivRowNum": 79
  },
  {
   "id": "QI.H.144.03",
   "narrativeFileName": "NSQI14403E.shtml",
   "targetName": "Mohammad Tahir Hammid",
-  "rowNum": 80
+  "indivRowNum": 80
  },
  {
   "id": "QI.M.147.03",
   "narrativeFileName": "NSQI14703E.shtml",
   "targetName": "Mohamed Amin Mostafa",
-  "rowNum": 81
+  "indivRowNum": 81
  },
  {
   "id": "QI.S.148.03",
   "narrativeFileName": "NSQI14803E.shtml",
   "targetName": "Nessim Ben Mohamed Al-Cherif Ben Mohamed Saleh Al-Saadi",
-  "rowNum": 82
+  "indivRowNum": 82
  },
  {
   "id": "QI.A.149.03",
   "narrativeFileName": "NSQI14903E.shtml",
   "targetName": "Noureddine ben Ali ben Belkassem al-Drissi",
-  "rowNum": 83
+  "indivRowNum": 83
  },
  {
   "id": "QI.R.150.03",
   "narrativeFileName": "NSQI15003E.shtml",
   "targetName": "Al-Azhar Ben Khalifa Ben Ahmed Rouine",
-  "rowNum": 84
+  "indivRowNum": 84
  },
  {
-  "id": "QI.A.151.03",
   "narrativeFileName": "NSQI15103E.shtml",
   "targetName": "Mourad ben Ali ben al-Basheer al-Trabelsi",
-  "rowNum": 85
+  "indivRowNum": 85
  },
  {
   "id": "QI.A.152.03",
   "narrativeFileName": "NSQI15203E.shtml",
   "targetName": "Saifi Ammari",
-  "rowNum": 86
+  "indivRowNum": 86
  },
  {
-  "id": "QI.A.154.04",
+  "id": "QI.A.154.03",
   "narrativeFileName": "NSQI15404E.shtml",
   "targetName": "Sulaiman Jassem Sulaiman Ali Abo Ghaith",
-  "rowNum": 87
+  "indivRowNum": 87
  },
  {
   "id": "QI.L.155.04",
   "narrativeFileName": "NSQI15504E.shtml",
   "targetName": "Djamel Lounici",
-  "rowNum": 88
+  "indivRowNum": 88
  },
  {
   "id": "QI.A.156.04",
   "narrativeFileName": "NSQI15604E.shtml",
   "targetName": "Abd-Al-Majid Aziz Al-Zindani",
-  "rowNum": 89
+  "indivRowNum": 89
  },
  {
   "id": "QI.A.157.04",
   "narrativeFileName": "NSQI15704E.shtml",
   "targetName": "Abd Al Wahab Abd Al Hafiz",
-  "rowNum": 90
+  "indivRowNum": 90
  },
  {
   "id": "QI.A.160.04",
   "narrativeFileName": "NSQI16004E.shtml",
   "targetName": "Fethi Ben Hassen Ben Salem Al-Haddad",
-  "rowNum": 91
+  "indivRowNum": 91
  },
  {
   "id": "QI.A.161.04",
   "narrativeFileName": "NSQI16104E.shtml",
   "targetName": "Farid Aider",
-  "rowNum": 92
+  "indivRowNum": 92
  },
  {
   "id": "QI.D.164.04",
   "narrativeFileName": "NSQI16404E.shtml",
   "targetName": "Othman Deramchi",
-  "rowNum": 93
+  "indivRowNum": 93
  },
  {
   "id": "QI.D.167.04",
   "narrativeFileName": "NSQI16704E.shtml",
   "targetName": "Kamel Djermane",
-  "rowNum": 94
+  "indivRowNum": 94
  },
  {
   "id": "QI.Z.168.04",
   "narrativeFileName": "NSQI16804E.shtml",
   "targetName": "Ahmad Zerfaoui",
-  "rowNum": 95
+  "indivRowNum": 95
  },
  {
   "id": "QI.E.169.04",
   "narrativeFileName": "NSQI16904E.shtml",
   "targetName": "Dhou El-Aich",
-  "rowNum": 96
+  "indivRowNum": 96
  },
  {
   "id": "QI.A.170.04",
   "narrativeFileName": "NSQI17004E.shtml",
   "targetName": "Hacene Allane",
-  "rowNum": 97
- },
- {
-  "id": "QI.A.171.04",
-  "narrativeFileName": "NSQI17104E.shtml",
-  "targetName": "Aqeel Abdulaziz Aqeel Al-Aqeel",
-  "rowNum": 98
+  "indivRowNum": 97
  },
  {
   "id": "QI.A.172.04",
   "narrativeFileName": "NSQI17204E.shtml",
   "targetName": "Hassan Abdullah Hersi al-Turki",
-  "rowNum": 99
+  "indivRowNum": 98
  },
  {
   "id": "QI.A.176.04",
   "narrativeFileName": "NSQI17604E.shtml",
   "targetName": "Imad ben Bechir ben Hamda al-Jammali",
-  "rowNum": 100
+  "indivRowNum": 99
  },
  {
   "id": "QI.A.177.04",
   "narrativeFileName": "NSQI17704E.shtml",
   "targetName": "Habib ben Ahmed al-Loubiri",
-  "rowNum": 101
+  "indivRowNum": 100
  },
  {
   "id": "QI.J.180.04",
   "narrativeFileName": "NSQI18004E.shtml",
   "targetName": "Khadafi Abubakar Janjalani",
-  "rowNum": 102
+  "indivRowNum": 101
  },
  {
-  "id": "QI.A.184.05",
+  "id": "QI.A.184.04",
   "narrativeFileName": "NSQI18405E.shtml",
   "targetName": "Muhsin Fadhil Ayed Ashour Al-Fadhli",
-  "rowNum": 103
+  "indivRowNum": 102
  },
  {
   "id": "QI.R.186.05",
   "narrativeFileName": "NSQI18605E.shtml",
   "targetName": "Abu Rusdan",
-  "rowNum": 104
+  "indivRowNum": 103
  },
  {
   "id": "QI.Z.187.05",
   "narrativeFileName": "NSQI18705E.shtml",
   "targetName": "Zulkarnaen",
-  "rowNum": 105
+  "indivRowNum": 104
  },
  {
   "id": "QI.B.188.05",
   "narrativeFileName": "NSQI18805E.shtml",
   "targetName": "Faycal Boughanemi",
-  "rowNum": 106
+  "indivRowNum": 105
  },
  {
   "id": "QI.L.190.05",
   "narrativeFileName": "NSQI19005E.shtml",
   "targetName": "Abdelkader Laagoub",
-  "rowNum": 107
+  "indivRowNum": 106
  },
  {
   "id": "QI.A.192.05",
   "narrativeFileName": "NSQI19205E.shtml",
   "targetName": "Abd Allah Mohamed Ragab Abdel Rahman",
-  "rowNum": 108
+  "indivRowNum": 107
  },
  {
   "id": "QI.A.193.05",
   "narrativeFileName": "NSQI19305E.shtml",
   "targetName": "Zaki Ezat Zaki Ahmed",
-  "rowNum": 109
+  "indivRowNum": 108
  },
  {
   "id": "QI.A.194.05",
   "narrativeFileName": "NSQI19405E.shtml",
   "targetName": "Mohammed Ahmed Shawki Al Islambolly",
-  "rowNum": 110
+  "indivRowNum": 109
  },
  {
   "id": "QI.H.195.05",
   "narrativeFileName": "NSQI19505E.shtml",
   "targetName": "Al Sayyid Ahmed Fathi Hussein Eliwah",
-  "rowNum": 111
+  "indivRowNum": 110
  },
  {
   "id": "QI.M.196.05",
   "narrativeFileName": "NSQI19605E.shtml",
   "targetName": "Ali Sayyid Muhamed Mustafa Bakri",
-  "rowNum": 112
+  "indivRowNum": 111
  },
  {
   "id": "QI.A.198.05",
   "narrativeFileName": "NSQI19805E.shtml",
   "targetName": "Hani al-Sayyid al-Sebai Yusif",
-  "rowNum": 113
+  "indivRowNum": 112
  },
  {
   "id": "QI.A.199.05",
   "narrativeFileName": "NSQI19905E.shtml",
   "targetName": "Ata Abdoulaziz Rashid",
-  "rowNum": 114
+  "indivRowNum": 113
  },
  {
   "id": "QI.A.200.05",
   "narrativeFileName": "NSQI20005E.shtml",
   "targetName": "Dieman Abdulkadir Izzat",
-  "rowNum": 115
+  "indivRowNum": 114
  },
  {
   "id": "QI.A.201.05",
   "narrativeFileName": "NSQI20105E.shtml",
   "targetName": "Yasser Mohamed Ismail Abu Shaweesh",
-  "rowNum": 116
+  "indivRowNum": 115
  },
  {
   "id": "QI.A.202.05",
   "narrativeFileName": "NSQI20205E.shtml",
   "targetName": "Mazen Salah Mohammed",
-  "rowNum": 117
+  "indivRowNum": 116
  },
  {
   "id": "QI.A.203.05",
   "narrativeFileName": "NSQI20305E.shtml",
   "targetName": "Farhad Kanabi Ahmad",
-  "rowNum": 118
+  "indivRowNum": 117
  },
  {
   "id": "QI.H.204.05",
   "narrativeFileName": "NSQI20405E.shtml",
   "targetName": "Isnilon Totoni Hapilon",
-  "rowNum": 119
+  "indivRowNum": 118
  },
  {
   "id": "QI.M.205.05",
   "narrativeFileName": "NSQI20505E.shtml",
   "targetName": "Rafik Mohamad Yousef",
-  "rowNum": 120
+  "indivRowNum": 119
  },
  {
   "id": "QI.M.206.05",
   "narrativeFileName": "NSQI20605E.shtml",
   "targetName": "Ibrahim Mohamed Khalil",
-  "rowNum": 121
+  "indivRowNum": 120
  },
  {
   "id": "QI.S.208.05",
   "narrativeFileName": "NSQI20805E.shtml",
   "targetName": "Radulan Sahiron",
-  "rowNum": 122
+  "indivRowNum": 121
  },
  {
   "id": "QI.A.216.06",
   "narrativeFileName": "NSQI21606E.shtml",
   "targetName": "Abdullah Anshori",
-  "rowNum": 123
+  "indivRowNum": 122
  },
  {
   "id": "QI.B.217.06",
   "narrativeFileName": "NSQI21706E.shtml",
   "targetName": "Abu Bakar Ba'asyir",
-  "rowNum": 124
+  "indivRowNum": 123
  },
  {
   "id": "QI.G.218.06",
   "narrativeFileName": "NSQI21806E.shtml",
   "targetName": "Gun Gun Rusman Gunawan",
-  "rowNum": 125
+  "indivRowNum": 124
  },
  {
   "id": "QI.R.219.06",
   "narrativeFileName": "NSQI21906E.shtml",
   "targetName": "Taufik Rifki",
-  "rowNum": 126
+  "indivRowNum": 125
  },
  {
   "id": "QI.H.221.06",
   "narrativeFileName": "NSQI22106E.shtml",
   "targetName": "Jamal Housni",
-  "rowNum": 127
+  "indivRowNum": 126
  },
  {
   "id": "QI.S.222.06",
   "narrativeFileName": "NSQI22206E.shtml",
   "targetName": "Nessim ben Romdhane Sahraoui",
-  "rowNum": 128
+  "indivRowNum": 127
  },
  {
   "id": "QI.Z.223.06",
   "narrativeFileName": "NSQI22306E.shtml",
   "targetName": "Merai Zoghbai",
-  "rowNum": 129
- },
- {
-  "id": "QI.A.224.06",
-  "narrativeFileName": "NSQI22406E.shtml",
-  "targetName": "Ismail Mohamed Ismail Abu Shaweesh",
-  "rowNum": 130
+  "indivRowNum": 128
  },
  {
   "id": "QI.A.226.06",
   "narrativeFileName": "NSQI22606E.shtml",
   "targetName": "Najmuddin Faraj Ahmad",
-  "rowNum": 131
+  "indivRowNum": 129
  },
  {
   "id": "QI.A.228.06",
   "narrativeFileName": "NSQI22806E.shtml",
   "targetName": "Mohammed Al Ghabra",
-  "rowNum": 132
+  "indivRowNum": 130
  },
  {
   "id": "QI.A.229.07",
   "narrativeFileName": "NSQI22907E.shtml",
   "targetName": "Aly Soliman Massoud Abdul Sayed",
-  "rowNum": 133
+  "indivRowNum": 131
  },
  {
   "id": "QI.A.231.07",
-  "narrativeFileName": "PLACEHOLDER0",
+  "narrativeFileName": "NSQI22907E.shtml",
   "targetName": "Salem",
-  "rowNum": 134
+  "indivRowNum": 132
  },
  {
   "id": "QI.D.232.07",
   "narrativeFileName": "NSQI23207E.shtml",
   "targetName": "Abdelmalek Droukdel",
-  "rowNum": 135
+  "indivRowNum": 133
  },
  {
   "id": "QI.A.233.07",
   "narrativeFileName": "NSQI23307E.shtml",
   "targetName": "Fahd Muhammad 'Abd Al-'Aziz Al-Khashiban",
-  "rowNum": 136
+  "indivRowNum": 134
  },
  {
   "id": "QI.A.234.07",
   "narrativeFileName": "NSQI23407E.shtml",
   "targetName": "Abdul Rahim Al-Talhi",
-  "rowNum": 137
+  "indivRowNum": 135
  },
  {
   "id": "QI.A.236.08",
   "narrativeFileName": "NSQI23608E.shtml",
   "targetName": "Hamid Abdallah Ahmad Al-Ali",
-  "rowNum": 138
+  "indivRowNum": 136
  },
  {
   "id": "QI.A.237.08",
   "narrativeFileName": "NSQI23708E.shtml",
   "targetName": "Jaber Abdallah Jaber Ahmad Al-Jalahmah",
-  "rowNum": 139
+  "indivRowNum": 137
  },
  {
   "id": "QI.A.238.08",
   "narrativeFileName": "NSQI23808E.shtml",
   "targetName": "Mubarak Mushakhas Sanad Mubarak Al-Bathali",
-  "rowNum": 140
+  "indivRowNum": 138
  },
  {
   "id": "QI.T.241.08",
   "narrativeFileName": "NSQI24108E.shtml",
   "targetName": "Angelo Ramirez Trinidad",
-  "rowNum": 141
+  "indivRowNum": 139
  },
  {
   "id": "QI.P.242.08",
   "narrativeFileName": "NSQI24208E.shtml",
   "targetName": "Dinno Amor Rosalejos Pareja",
-  "rowNum": 142
+  "indivRowNum": 140
  },
  {
   "id": "QI.D.243.08",
   "narrativeFileName": "NSQI24308E.shtml",
   "targetName": "Feliciano Semborio Delos Reyes Jr.",
-  "rowNum": 143
+  "indivRowNum": 141
  },
  {
   "id": "QI.S.244.08",
   "narrativeFileName": "NSQI24408E.shtml",
   "targetName": "Hilarion Del Rosario Santos III",
-  "rowNum": 144
+  "indivRowNum": 142
  },
  {
   "id": "QI.D.245.08",
   "narrativeFileName": "NSQI24508E.shtml",
   "targetName": "Pio Abogne De Vera",
-  "rowNum": 145
+  "indivRowNum": 143
  },
  {
   "id": "QI.D.246.08",
   "narrativeFileName": "NSQI24608E.shtml",
   "targetName": "Redendo Cain Dellosa",
-  "rowNum": 146
+  "indivRowNum": 144
  },
  {
   "id": "QI.L.247.08",
   "narrativeFileName": "NSQI24708E.shtml",
   "targetName": "Ruben Pestano Lavilla, Jr.",
-  "rowNum": 147
+  "indivRowNum": 145
  },
  {
   "id": "QI.A.248.08",
   "narrativeFileName": "NSQI24808E.shtml",
   "targetName": "Ricardo Perez Ayeras",
-  "rowNum": 148
+  "indivRowNum": 146
  },
  {
   "id": "QI.D.249.08",
   "narrativeFileName": "NSQI24908E.shtml",
   "targetName": "Yahia Djoudi",
-  "rowNum": 149
+  "indivRowNum": 147
  },
  {
   "id": "QI.H.250.08",
   "narrativeFileName": "NSQI25008E.shtml",
   "targetName": "Amor Mohamed Ghedeir",
-  "rowNum": 150
+  "indivRowNum": 148
  },
  {
   "id": "QI.G.251.08",
   "narrativeFileName": "NSQI25108E.shtml",
   "targetName": "Salah Eddine Gasmi",
-  "rowNum": 151
+  "indivRowNum": 149
  },
  {
   "id": "QI.D.252.08",
   "narrativeFileName": "NSQI25208E.shtml",
-  "targetName": "Ahmed&nbsp;Deghdegh",
-  "rowNum": 152
+  "targetName": "Ahmed Deghdegh",
+  "indivRowNum": 150
  },
  {
   "id": "QI.A.253.08",
   "narrativeFileName": "NSQI25308E.shtml",
-  "targetName": "Khalifa&nbsp; Muhammad Turki&nbsp;Al-Subaiy",
-  "rowNum": 153
+  "targetName": "Khalifa Muhammad Turki Al-Subaiy",
+  "indivRowNum": 151
  },
  {
   "id": "QI.A.254.08",
   "narrativeFileName": "NSQI25408E.shtml",
-  "targetName": "Abd Al-Rahman&nbsp;Muhammad Jaffar ‘Ali",
-  "rowNum": 154
+  "targetName": "Abd Al-Rahman Muhammad Jaffar &lsquo;Ali",
+  "indivRowNum": 152
  },
  {
   "id": "QI.A.255.08",
   "narrativeFileName": "NSQI25508E.shtml",
   "targetName": "Adil Muhammad Mahmud Abd Al-Khaliq",
-  "rowNum": 155
+  "indivRowNum": 153
  },
  {
   "id": "QI.G.259.08",
   "narrativeFileName": "NSQI25908E.shtml",
   "targetName": "Fritz Martin Gelowicz",
-  "rowNum": 156
+  "indivRowNum": 154
  },
  {
   "id": "QI.S.260.08",
   "narrativeFileName": "NSQI26008E.shtml",
   "targetName": "Daniel Martin Schneider",
-  "rowNum": 157
+  "indivRowNum": 155
  },
  {
   "id": "QI.Y.261.08",
   "narrativeFileName": "NSQI26108E.shtml",
   "targetName": "Adem Yilmaz",
-  "rowNum": 158
+  "indivRowNum": 156
  },
  {
-  "id": "QI.E.262.08",
   "narrativeFileName": "NSQI26208E.shtml",
   "targetName": "Redouane El Habhab",
-  "rowNum": 159
+  "indivRowNum": 157
  },
  {
   "id": "QI.S.263.08",
   "narrativeFileName": "NSQI26308E.shtml",
   "targetName": "Muhammad Saeed",
-  "rowNum": 160
+  "indivRowNum": 158
  },
  {
   "id": "QI.L.264.08",
   "narrativeFileName": "NSQI26408E.shtml",
   "targetName": "Zaki-Ur-Rehman Lakhvi",
-  "rowNum": 161
+  "indivRowNum": 159
  },
  {
   "id": "QI.A.265.08",
   "narrativeFileName": "NSQI26508E.shtml",
   "targetName": "Haji Muhammad Ashraf",
-  "rowNum": 162
+  "indivRowNum": 160
  },
  {
   "id": "QI.B.266.08",
   "narrativeFileName": "NSQI26608E.shtml",
   "targetName": "Mahmoud Mohammad Ahmed Bahaziq",
-  "rowNum": 163
+  "indivRowNum": 161
  },
  {
   "id": "QI.H.268.09",
   "narrativeFileName": "NSQI26809E.shtml",
   "targetName": "Abdul Haq",
-  "rowNum": 164
+  "indivRowNum": 162
  },
  {
   "id": "QI.Q.271.09",
   "narrativeFileName": "NSQI27109E.shtml",
   "targetName": "Arif Qasmani",
-  "rowNum": 165
+  "indivRowNum": 163
  },
  {
   "id": "QI.M.272.09",
   "narrativeFileName": "NSQI27209E.shtml",
   "targetName": "Mohammed Yahya Mujahid",
-  "rowNum": 166
+  "indivRowNum": 164
  },
  {
   "id": "QI.A.273.09",
   "narrativeFileName": "NSQI27309E.shtml",
   "targetName": "Fazeel-A-Tul Shaykh Abu Mohammed Ameen al-Peshawari",
-  "rowNum": 167
+  "indivRowNum": 165
  },
  {
   "id": "QI.A.274.10",
   "narrativeFileName": "NSQI27410E.shtml",
-  "targetName": "Nasir ‘abd-al-Karim ‘Abdullah al-Wahishi",
-  "rowNum": 168
+  "targetName": "Nasir &lsquo;abd-al-Karim &lsquo;Abdullah al-Wahishi",
+  "indivRowNum": 166
  },
  {
   "id": "QI.A.275.10",
   "narrativeFileName": "NSQI27510E.shtml",
   "targetName": "Said Ali al-Shihri",
-  "rowNum": 169
+  "indivRowNum": 167
  },
  {
   "id": "QI.A.276.10",
   "narrativeFileName": "NSQI27610E.shtml",
   "targetName": "Akram Turki Hishan al-Mazidih",
-  "rowNum": 170
+  "indivRowNum": 168
  },
  {
   "id": "QI.A.277.10",
   "narrativeFileName": "NSQI27710E.shtml",
   "targetName": "Ghazy Fezza Hishan al-Mazidih",
-  "rowNum": 171
+  "indivRowNum": 169
  },
  {
   "id": "QI.A.278.10",
   "narrativeFileName": "NSQI27810E.shtml",
   "targetName": "Muthanna Harith al-Dari",
-  "rowNum": 172
+  "indivRowNum": 170
  },
  {
   "id": "QI.B.279.10",
   "narrativeFileName": "NSQI27910E.shtml",
   "targetName": "Mohamed Belkalem",
-  "rowNum": 173
+  "indivRowNum": 171
  },
  {
   "id": "QI.N.280.10",
   "narrativeFileName": "NSQI28010E.shtml",
   "targetName": "Tayeb Nail",
-  "rowNum": 174
+  "indivRowNum": 172
  },
  {
   "id": "QI.A.282.10",
   "narrativeFileName": "NSQI28210E.shtml",
   "targetName": "Qasim Yahya Mahdi al-Rimi",
-  "rowNum": 175
+  "indivRowNum": 173
  },
  {
   "id": "QI.A.283.10",
   "narrativeFileName": "NSQI28310E.shtml",
   "targetName": "Anwar Nasser Abdulla Al-Aulaqi",
-  "rowNum": 176
+  "indivRowNum": 174
  },
  {
   "id": "QI.A.285.10",
   "narrativeFileName": "NSQI28510E.shtml",
   "targetName": "Muhammad Abdallah Hasan Abu-al-Khayr",
-  "rowNum": 177
+  "indivRowNum": 175
  },
  {
   "id": "QI.M.286.10",
   "narrativeFileName": "NSQI28610E.shtml",
   "targetName": "Hakimullah Mehsud",
-  "rowNum": 178
+  "indivRowNum": 176
  },
  {
   "id": "QI.A.289.11",
   "narrativeFileName": "NSQI28911E.shtml",
-  "targetName": "Said Jan ‘Abd al-Salam",
-  "rowNum": 179
+  "targetName": "Said Jan &lsquo;Abd al-Salam",
+  "indivRowNum": 177
  },
  {
   "id": "QI.U.290.11",
   "narrativeFileName": "NSQI29011E.shtml",
   "targetName": "Doku Khamatovich Umarov",
-  "rowNum": 180
+  "indivRowNum": 178
  },
  {
   "id": "QI.A.291.11",
   "narrativeFileName": "NSQI29111E.shtml",
   "targetName": "Ibrahim Hassan Tali al-Asiri",
-  "rowNum": 181
+  "indivRowNum": 179
  },
  {
   "id": "QI.A.292.11",
   "narrativeFileName": "NSQI29211E.shtml",
   "targetName": "Othman Ahmed Othman al-Ghamdi",
-  "rowNum": 182
+  "indivRowNum": 180
  },
  {
   "id": "QI.B.293.11",
   "narrativeFileName": "NSQI29311E.shtml",
-  "targetName": "Abdul Rahim Ba’asyir",
-  "rowNum": 183
+  "targetName": "Abdul Rahim Ba&rsquo;asyir",
+  "indivRowNum": 181
  },
  {
   "id": "QI.P.294.11",
   "narrativeFileName": "NSQI29411E.shtml",
   "targetName": "Umar Patek",
-  "rowNum": 184
+  "indivRowNum": 182
  },
  {
   "id": "QI.A.295.11",
   "narrativeFileName": "NSQI29511E.shtml",
   "targetName": "Muhammad Jibril Abdul Rahman",
-  "rowNum": 185
+  "indivRowNum": 183
  },
  {
   "id": "QI.M.296.11",
   "narrativeFileName": "NSQI29611E.shtml",
   "targetName": "Mati ur-Rehman",
-  "rowNum": 186
+  "indivRowNum": 184
  },
  {
-  "id": "QI.M.297.11",
+  "id": "QI.Q.297.11",
   "narrativeFileName": "NSQI29711E.shtml",
   "targetName": "Hassan Muhammad Abu Bakr Qayed",
-  "rowNum": 187
+  "indivRowNum": 185
  },
  {
-  "id": "QI.M.298.11",
+  "id": "QI.O.298.11",
   "narrativeFileName": "NSQI29811E.shtml",
   "targetName": "Abd al-Rahman Ould Muhammad al-Husayn Ould Muhammad Salim",
-  "rowNum": 188
+  "indivRowNum": 186
  },
  {
   "id": "QI.A.299.11",
   "narrativeFileName": "NSQI29911E.shtml",
   "targetName": "Ibrahim Awwad Ibrahim Ali al-Badri al-Samarrai",
-  "rowNum": 189
+  "indivRowNum": 187
  },
  {
   "id": "QI.C.300.12",
   "narrativeFileName": "NSQI30012E.shtml",
   "targetName": "Monir Chouka",
-  "rowNum": 190
+  "indivRowNum": 188
  },
  {
   "id": "QI.C.301.12",
   "narrativeFileName": "NSQI30112E.shtml",
   "targetName": "Yassin Chouka",
-  "rowNum": 191
+  "indivRowNum": 189
  },
  {
   "id": "QI.K.302.12",
   "narrativeFileName": "NSQI30212E.shtml",
   "targetName": "Mevlüt Kar",
-  "rowNum": 192
+  "indivRowNum": 190
  },
  {
   "id": "QI.R.303.12",
   "narrativeFileName": "NSQI30312E.shtml",
   "targetName": "Fazal Rahim",
-  "rowNum": 193
+  "indivRowNum": 191
  },
  {
   "id": "QI.A.304.12",
   "narrativeFileName": "NSQI30412E.shtml",
   "targetName": "Mochammad Achwan",
-  "rowNum": 194
+  "indivRowNum": 192
  },
  {
   "id": "QI.B.305.12",
   "narrativeFileName": "NSQI30512E.shtml",
   "targetName": "Abdul Rosyid Ridho Ba'asyir",
-  "rowNum": 195
+  "indivRowNum": 193
  },
  {
   "id": "QI.K.306.12",
   "narrativeFileName": "NSQI30612E.shtml",
   "targetName": "Mustafa Hajji Muhammad Khan",
-  "rowNum": 196
+  "indivRowNum": 194
  },
  {
   "id": "QI.B.307.12",
   "narrativeFileName": "NSQI30712E.shtml",
   "targetName": "Hafiz Abdul Salam Bhuttavi",
-  "rowNum": 197
+  "indivRowNum": 195
  },
  {
   "id": "QI.I.308.12",
   "narrativeFileName": "NSQI30812E.shtml",
   "targetName": "Zafar Iqbal",
-  "rowNum": 198
+  "indivRowNum": 196
  },
  {
   "id": "QI.A.309.12",
   "narrativeFileName": "NSQI30912E.shtml",
   "targetName": "Abdur Rehman",
-  "rowNum": 199
+  "indivRowNum": 197
  },
  {
   "id": "QI.B.311.12",
   "narrativeFileName": "NSQI31112E.shtml",
   "targetName": "Ayyub Bashir",
-  "rowNum": 200
+  "indivRowNum": 198
  },
  {
   "id": "QI.C.312.12",
   "narrativeFileName": "NSQI31212E.shtml",
   "targetName": "Aamir Ali Chaudhry",
-  "rowNum": 201
+  "indivRowNum": 199
  },
  {
   "id": "QI.A.313.13",
   "narrativeFileName": "NSQI31313E.shtml",
   "targetName": "Djamel Akkacha",
-  "rowNum": 202
+  "indivRowNum": 200
  },
  {
   "id": "QI.O.314.13",
   "narrativeFileName": "NSQI31413E.shtml",
   "targetName": "Abderrahmane Ould el Amar",
-  "rowNum": 203
+  "indivRowNum": 201
  },
  {
   "id": "QI.O.315.13",
   "narrativeFileName": "NSQI31513E.shtml",
   "targetName": "Hamada Ould Mohamed el Khairy",
-  "rowNum": 204
+  "indivRowNum": 202
  },
  {
   "id": "QI.A.316.13",
   "narrativeFileName": "NSQI31613E.shtml",
   "targetName": "Iyad ag Ghali",
-  "rowNum": 205
+  "indivRowNum": 203
  },
  {
   "id": "QI.A.317.13",
   "narrativeFileName": "NSQI31713E.shtml",
-  "targetName": "\"Abu Mohammed al-Jawlani\"",
-  "rowNum": 206
+  "targetName": "Abu Mohammed al-Jawlani",
+  "indivRowNum": 204
  },
  {
   "id": "QI.A.318.13",
   "narrativeFileName": "NSQI31813E.shtml",
   "targetName": "Muhammad Jamal Abd-Al Rahim Ahmad Al-Kashif",
-  "rowNum": 207
+  "indivRowNum": 205
  },
  {
-  "id": "QI.A.319.13",
+  "id": "QI.L.319.13",
   "narrativeFileName": "NSQI31913E.shtml",
   "targetName": "Mohamed Lahbous",
-  "rowNum": 208
+  "indivRowNum": 206
  },
  {
   "id": "QI.A.320.13",
   "narrativeFileName": "NSQI32013E.shtml",
   "targetName": "Abd-al-Hamid al-Masli",
-  "rowNum": 209
+  "indivRowNum": 207
  },
  {
   "id": "QI.I.321.14",
   "narrativeFileName": "NSQI32114E.shtml",
   "targetName": "Malik Mukammad Ishaq",
-  "rowNum": 210
+  "indivRowNum": 208
  },
  {
   "id": "QI.S.322.14",
   "narrativeFileName": "NSQI32214E.shtml",
   "targetName": "Abubakar Mohammed Shekau",
-  "rowNum": 211
+  "indivRowNum": 209
  },
  {
   "id": "QI.A.323.14",
   "narrativeFileName": "NSQI32314E.shtml",
-  "targetName": "\"Said Arif\"",
-  "rowNum": 212
+  "targetName": "Said Arif",
+  "indivRowNum": 210
  },
  {
   "id": "QI.A.324.14",
   "narrativeFileName": "NSQI32414E.shtml",
-  "targetName": "\"Abdul Mohsen Abdallah Ibrahim Al Charekh\"",
-  "rowNum": 213
+  "targetName": "Abdul Mohsen Abdallah Ibrahim Al Charekh",
+  "indivRowNum": 211
  },
  {
   "id": "QI.A.325.14",
   "narrativeFileName": "NSQI32514E.shtml",
-  "targetName": "\"Abou Mohamed Al Adnani\"",
-  "rowNum": 214
+  "targetName": "Abou Mohamed Al Adnani",
+  "indivRowNum": 212
  },
  {
   "id": "QI.A.326.14",
   "narrativeFileName": "NSQI32614E.shtml",
-  "targetName": "\"Hamid Hamad Hamid al-&lsquo;Ali\"",
-  "rowNum": 215
+  "targetName": "Hamid Hamad Hamid al-&lsquo;Ali",
+  "indivRowNum": 213
  },
  {
   "id": "QI.A.327.14",
   "narrativeFileName": "NSQI32714E.shtml",
-  "targetName": "\"Abdelrahman Mouhamad Zafir Al Dabidi Al Jahani\"",
-  "rowNum": 216
+  "targetName": "Abdelrahman Mouhamad Zafir Al Dabidi Al Jahani",
+  "indivRowNum": 214
  },
  {
   "id": "QI.A.328.14",
   "narrativeFileName": "NSQI32814E.shtml",
-  "targetName": "\"Hajjaj Bin Fahd Al Ajmi\"",
-  "rowNum": 217
+  "targetName": "Hajjaj Bin Fahd Al Ajmi",
+  "indivRowNum": 215
  },
  {
   "id": "QI.A.329.14",
   "narrativeFileName": "NSQI32914E.shtml",
   "targetName": "Ahmed Abdullah Saleh al-Khazmari al-Zahrani",
-  "rowNum": 218
+  "indivRowNum": 216
  },
  {
   "id": "QI.A.330.14",
   "narrativeFileName": "NSQI33014E.shtml",
   "targetName": "Azzam Abdullah Zureik al-Maulid al-Subhi",
-  "rowNum": 219
+  "indivRowNum": 217
  },
  {
   "id": "QI.D.331.14",
   "narrativeFileName": "NSQI33114E.shtml",
   "targetName": "Anders Cameroon Ostensvig Dale",
-  "rowNum": 220
+  "indivRowNum": 218
  },
  {
   "id": "QI.A.332.14",
   "narrativeFileName": "NSQI33214E.shtml",
   "targetName": "Ibrahim Suleiman Hamad al-Hablain",
-  "rowNum": 221
+  "indivRowNum": 219
  },
  {
   "id": "QI.B.333.14",
   "narrativeFileName": "NSQI33314E.shtml",
   "targetName": "Seifallah ben Hassine",
-  "rowNum": 222
+  "indivRowNum": 220
  },
  {
   "id": "QI.A.334.14",
   "narrativeFileName": "NSQI33414E.shtml",
   "targetName": "'Abd al-Rahman bin 'Umayr al-Nu'aymi",
-  "rowNum": 223
+  "indivRowNum": 221
  },
  {
   "id": "QI.A.335.14",
   "narrativeFileName": "NSQI33514E.shtml",
-  "targetName": "‘Abd al-Rahman Khalaf ‘Ubayd Juday’ al-‘Anizi",
-  "rowNum": 224
+  "targetName": "&lsquo;Abd al-Rahman Khalaf &lsquo;Ubayd Juday&rsquo; al-&lsquo;Anizi",
+  "indivRowNum": 222
  },
  {
   "id": "QI.A.336.14",
   "narrativeFileName": "NSQI33614E.shtml",
   "targetName": "Anas Hasan Khattab",
-  "rowNum": 225
+  "indivRowNum": 223
  },
  {
   "id": "QI.A.337.14",
   "narrativeFileName": "NSQI33714E.shtml",
   "targetName": "Maysar Ali Musa Abdallah al-Juburi",
-  "rowNum": 226
+  "indivRowNum": 224
  },
  {
   "id": "QI.A.338.14",
   "narrativeFileName": "NSQI33814E.shtml",
   "targetName": "Shafi Sultan Mohammed al-Ajmi",
-  "rowNum": 227
+  "indivRowNum": 225
  },
  {
   "id": "QI.A.339.14",
   "narrativeFileName": "NSQI33914E.shtml",
-  "targetName": "‘Abd al-Rahman Muhammad Mustafa al-Qaduli",
-  "rowNum": 228
+  "targetName": "&lsquo;Abd al-Rahman Muhammad Mustafa al-Qaduli",
+  "indivRowNum": 226
  },
  {
   "id": "QI.K.340.14",
   "narrativeFileName": "NSQI34014E.shtml",
   "targetName": "Emilie Konig",
-  "rowNum": 229
+  "indivRowNum": 227
  },
  {
   "id": "QI.G.341.14",
   "narrativeFileName": "NSQI34114E.shtml",
   "targetName": "Kevin Guiavarch",
-  "rowNum": 230
+  "indivRowNum": 228
  },
  {
   "id": "QI.D.342.14",
   "narrativeFileName": "NSQI34214E.shtml",
   "targetName": "Oumar Diaby",
-  "rowNum": 231
+  "indivRowNum": 229
  }
 ]

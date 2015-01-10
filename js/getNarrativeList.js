@@ -68,8 +68,8 @@ var runApp = function () {
         if (consoleLog) {
           console.log("\n ", __filename, __line, "; function 3#:", ++functionCount);
         }
-        var indivs = require(__dirname + "/../data/narrative_summaries/individuals_associated_with_Al-Qaida.json");
-        var ents = require(__dirname + "/../data/narrative_summaries/entities_other_groups_undertakings_associated_with_Al-Qaida.json");
+        var indivs = require(__dirname + "/../data/narrative_lists/individuals_associated_with_Al-Qaida.json");
+        var ents = require(__dirname + "/../data/narrative_lists/entities_other_groups_undertakings_associated_with_Al-Qaida.json");
         var narrative_links = indivs.concat(ents);
         outputFileNameAndPath = (__dirname + "/../data/narrative_summaries/narrative_links.json");
         var dataStringified = JSON.stringify(narrative_links, null, " ");

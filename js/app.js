@@ -15,6 +15,7 @@ var async = require('async'),
 
 var collect = require('./collect.js');
 var setupData = require('./setupData.js');
+var collectNarratives= require('./collectNarratives.js');
 var makeDocs = require('./makeDocs.js');
 var filewalker = require('./filewalker.js');
 var logger = require('./libs/logger.js');
@@ -47,6 +48,16 @@ var runApp = function () {
       setupData.fixData();
       callback();
     },
+
+    function (callback) {
+      // put data in arrays for d3
+      if (consoleLog) {
+        console.log("\n ", __filename, __line, "; function 3#:", ++functionCount);
+      }
+      collectNarratives.getTheNarratives();
+      callback();
+    },
+
     function (callback) {
       // put data in arrays for d3
       if (consoleLog) {
