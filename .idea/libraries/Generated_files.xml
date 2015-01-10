@@ -30,6 +30,8 @@
         <item url="file://$PROJECT_DIR$/node_modules/xml2js/83.js" />
         <item url="file://$PROJECT_DIR$/node_modules/gulp/node_modules/liftoff/node_modules/resolve/test/resolver/mug.js" />
         <item url="file://$PROJECT_DIR$/js/node_modules/nodeQuery/node_modules/browserify/node_modules/module-deps/node_modules/detective/node_modules/escodegen/node_modules/esutils/test/keyword.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/express/node_modules/proxy-addr/node_modules/ipaddr.js/src/ipaddr.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/express/node_modules/proxy-addr/node_modules/ipaddr.js/test/ipaddr.test.js" />
         <item url="file://$PROJECT_DIR$/node_modules/converter/node_modules/csv/test/escape.js" />
         <item url="file://$PROJECT_DIR$/node_modules/converter/node_modules/csv/test/write.js" />
         <item url="file://$PROJECT_DIR$/node_modules/converter/node_modules/csv/test/quotes.js" />
@@ -112,6 +114,10 @@
       <root url="file://$PROJECT_DIR$/node_modules/jquery-contextify/node_modules/grunt-contrib-qunit/node_modules/grunt-lib-phantomjs/node_modules/phantomjs/lib/phantom/examples/rasterize.js" />
       <root url="file://$PROJECT_DIR$/node_modules/jquery-contextify/node_modules/grunt-contrib-qunit/node_modules/grunt-lib-phantomjs/node_modules/phantomjs/lib/phantom/examples/run-qunit.js" />
       <root url="file://$PROJECT_DIR$/node_modules/jquery-contextify/node_modules/grunt-contrib-jshint/node_modules/jshint/node_modules/cli/examples/static.js" />
+      <root url="file://$PROJECT_DIR$/archives/coffee/viz-original.js" />
+      <root url="file://$PROJECT_DIR$/archives/coffee/vis.js" />
+      <root url="file://$PROJECT_DIR$/archives2/coffee/vis.js" />
+      <root url="file://$PROJECT_DIR$/archives2/coffee/viz-original.js" />
       <root url="file://$PROJECT_DIR$/node_modules/soupselect/node_modules/nodeunit/test/fixtures/coffee/mock_coffee_module.js" />
       <root url="file://$PROJECT_DIR$/node_modules/converter/node_modules/csv/src/to.js" />
       <root url="file://$PROJECT_DIR$/node_modules/converter/node_modules/csv/src/doc.js" />
@@ -141,6 +147,8 @@
       <root url="file://$PROJECT_DIR$/node_modules/xml2js/83.js" />
       <root url="file://$PROJECT_DIR$/node_modules/gulp/node_modules/liftoff/node_modules/resolve/test/resolver/mug.js" />
       <root url="file://$PROJECT_DIR$/js/node_modules/nodeQuery/node_modules/browserify/node_modules/module-deps/node_modules/detective/node_modules/escodegen/node_modules/esutils/test/keyword.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/express/node_modules/proxy-addr/node_modules/ipaddr.js/src/ipaddr.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/express/node_modules/proxy-addr/node_modules/ipaddr.js/test/ipaddr.test.js" />
       <root url="file://$PROJECT_DIR$/node_modules/converter/node_modules/csv/test/escape.js" />
       <root url="file://$PROJECT_DIR$/node_modules/converter/node_modules/csv/test/write.js" />
       <root url="file://$PROJECT_DIR$/node_modules/converter/node_modules/csv/test/quotes.js" />

@@ -8,10 +8,940 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4182aee6-13b8-4466-9993-4422af087054" name="John's change list" comment="collecting narratives, update for heroku">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Procfile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/changeRubyGemsTo.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQE00101E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQE00201E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQE00301E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQE00401E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQE00501E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQE00601E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQE00701E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQE00801E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQE00901E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQE01001E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQE01101E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQE01201E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQE01401E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQE01501E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQE01901E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQE02001E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQE02101E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQE06801E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQE06902E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQE07002E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQE07102E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQE07202E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQE08802E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQE08902E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQE09002E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQE09102E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQE09202E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQE09302E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQE09603E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQE09803E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQE09903E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQE10003E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQE10103E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQE10203E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQE10304E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQE10404E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQE10504E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQE10604E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQE10704E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQE10804E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQE10904E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQE11004E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQE11104E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQE11204E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQE11304E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQE11404E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQE11504E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQE11604E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQE11805E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQE11905E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQE12105E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQE12808E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQE12910E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQE13010E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQE13111E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQE13211E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQE13312E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQE13412E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQE13513E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQE13613E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQE13714E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQE13814E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQE13914E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQE14014E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQE14114E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQE14214E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQE14314E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQE14414E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQE14514E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQE14614E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI00101E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI00201E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI00301E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI00601E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI01001E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI01201E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI01401E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI01501E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI01701E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI01801E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI01901E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI02001E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI02101E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI02301E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI02701E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI02801E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI02901E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI03101E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI03701E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI04201E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI05401E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI05501E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI05601E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI05702E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI05802E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI05902E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI06002E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI06202E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI06302E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI06402E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI06502E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI06702E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI06802E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI07002E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI07102E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI07202E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI07302E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI07402E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI07502E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI07602E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI07702E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI08002E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI08102E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI08202E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI08302E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI08603E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI08703E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI08803E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI09103E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI09203E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI09303E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI09503E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI09603E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI09903E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI10103E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI10303E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI10403E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI10903E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI11103E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI11403E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI11903E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI12003E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI12203E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI12303E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI12403E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI12603E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI12803E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI12903E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI13003E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI13203E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI13503E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI13603E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI13803E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI13903E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI14003E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI14103E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI14203E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI14303E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI14403E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI14703E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI14803E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI14903E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI15003E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI15103E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI15203E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI15404E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI15504E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI15604E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI15704E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI16004E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI16104E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI16404E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI16704E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI16804E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI16904E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI17004E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI17104E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI17204E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI17604E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI17704E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI18004E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI18405E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI18605E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI18705E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI18805E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI19005E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI19205E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI19305E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI19405E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI19505E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI19605E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI19805E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI19905E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI20005E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI20105E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI20205E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI20305E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI20405E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI20505E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI20605E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI20805E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI21606E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI21706E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI21806E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI21906E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI22106E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI22206E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI22306E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI22406E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI22606E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI22806E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI22907E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI23207E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI23307E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI23407E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI23608E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI23708E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI23808E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI24108E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI24208E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI24308E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI24408E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI24508E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI24608E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI24708E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI24808E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI24908E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI25008E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI25108E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI25208E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI25308E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI25408E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI25508E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI25908E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI26008E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI26108E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI26208E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI26308E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI26408E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI26508E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI26608E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI26809E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI27109E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI27209E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI27309E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI27410E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI27510E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI27610E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI27710E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI27810E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI27910E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI28010E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI28210E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI28310E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI28510E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI28610E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI28911E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI29011E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI29111E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI29211E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI29311E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI29411E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI29511E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI29611E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI29711E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI29811E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI29911E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI30012E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI30112E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI30212E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI30312E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI30412E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI30512E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI30612E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI30712E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI30812E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI30912E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI31112E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI31212E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI31313E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI31413E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI31513E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI31613E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI31713E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI31813E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI31913E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI32013E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI32114E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI32214E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI32314E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI32414E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI32514E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI32614E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI32714E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI32814E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI32914E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI33014E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI33114E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI33214E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI33314E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI33414E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI33514E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI33614E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI33714E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI33814E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI33914E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI34014E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI34114E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI34214E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/narrative_lists/NSQtest.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/The Al-Qaida Sanctions Committee.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/narrative_lists/The Al-Qaida Sanctions Committee.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/The Al-Qaida Sanctions Committee.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/narrative_lists/The Al-Qaida Sanctions Committee.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/commented_out.json.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/narrative_lists/commented_out.json.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/entities_other_groups_undertakings_associated_with_Al-Qaida.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/narrative_lists/entities_other_groups_undertakings_associated_with_Al-Qaida.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/entities_other_groups_undertakings_associated_with_Al-Qaida.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/narrative_lists/entities_other_groups_undertakings_associated_with_Al-Qaida.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/individuals_associated_with_Al-Qaida.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/narrative_lists/individuals_associated_with_Al-Qaida.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/individuals_associated_with_Al-Qaida.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/narrative_lists/individuals_associated_with_Al-Qaida.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/narrative_links.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/narrative_lists/narrative_links.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/narrative_links_2.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/narrative_lists/narrative_links_2.json" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE00101E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE00101E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE00201E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE00201E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE00301E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE00301E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE00401E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE00401E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE00501E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE00501E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE00601E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE00701E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE00701E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE00801E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE00801E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE00901E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE00901E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE01001E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE01001E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE01101E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE01101E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE01201E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE01201E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE01401E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE01401E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE01501E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE01501E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE01901E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE01901E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE02001E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE02001E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE02101E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE02101E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE06801E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE06801E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE06902E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE06902E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE07002E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE07002E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE07102E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE07102E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE07202E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE07202E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE08802E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE08802E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE08902E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE08902E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE09002E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE09002E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE09102E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE09102E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE09202E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE09202E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE09302E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE09302E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE09603E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE09603E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE09803E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE09803E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE09903E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE09903E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE10003E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE10003E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE10103E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE10103E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE10203E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE10203E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE10304E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE10304E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE10404E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE10404E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE10504E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE10504E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE10604E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE10604E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE10704E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE10704E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE10804E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE10804E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE10904E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE10904E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE11004E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE11004E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE11104E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE11104E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE11204E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE11204E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE11304E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE11304E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE11404E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE11404E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE11504E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE11504E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE11604E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE11604E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE11805E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE11805E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE11905E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE11905E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE12105E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE12105E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE12808E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE12808E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE12910E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE12910E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE13010E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE13010E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE13111E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE13111E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE13211E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE13211E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE13312E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE13312E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE13412E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE13412E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE13513E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE13513E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE13613E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE13613E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE13714E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE13714E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE13814E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE13814E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE13914E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE13914E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE14014E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE14014E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE14114E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE14114E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE14214E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE14214E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE14314E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE14314E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE14414E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE14414E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE14514E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE14514E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE14614E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE14614E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI00101E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI00101E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI00201E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI00201E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI00301E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI00301E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI00601E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI00601E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI00901E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI00901E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI01001E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI01001E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI01201E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI01201E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI01401E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI01401E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI01501E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI01501E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI01701E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI01701E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI01801E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI01801E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI01901E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI01901E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI02001E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI02001E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI02101E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI02101E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI02301E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI02301E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI02701E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI02701E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI02801E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI02801E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI02901E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI02901E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI03101E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI03101E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI03701E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI03701E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI04201E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI04201E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI05401E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI05401E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI05501E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI05501E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI05601E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI05601E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI05702E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI05702E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI05802E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI05802E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI05902E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI05902E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI06002E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI06002E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI06202E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI06202E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI06302E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI06302E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI06402E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI06402E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI06502E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI06502E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI06702E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI06702E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI06802E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI06802E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI07002E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI07002E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI07102E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI07102E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI07202E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI07202E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI07302E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI07302E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI07402E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI07402E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI07502E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI07502E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI07602E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI07602E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI07702E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI07702E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI08002E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI08002E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI08102E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI08102E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI08202E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI08202E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI08302E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI08302E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI08603E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI08603E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI08703E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI08703E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI08803E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI08803E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI09103E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI09103E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI09203E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI09203E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI09303E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI09303E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI09503E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI09503E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI09603E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI09603E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI09903E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI09903E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI10103E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI10103E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI10303E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI10303E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI10403E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI10403E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI10903E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI10903E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI11103E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI11103E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI11403E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI11403E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI11903E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI11903E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI12003E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI12003E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI12203E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI12203E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI12303E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI12303E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI12403E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI12403E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI12603E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI12603E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI12803E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI12803E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI12903E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI12903E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI13003E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI13003E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI13203E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI13203E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI13503E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI13503E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI13603E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI13603E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI13803E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI13803E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI13903E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI13903E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI14003E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI14003E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI14103E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI14103E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI14203E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI14203E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI14303E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI14303E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI14403E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI14403E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI14703E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI14703E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI14803E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI14803E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI14903E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI14903E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI15003E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI15003E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI15103E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI15103E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI15203E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI15203E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI15404E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI15404E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI15504E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI15504E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI15604E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI15604E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI15704E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI15704E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI16004E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI16004E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI16104E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI16104E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI16404E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI16404E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI16704E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI16704E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI16804E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI16804E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI16904E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI16904E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI17004E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI17004E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI17104E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI17104E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI17204E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI17204E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI17604E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI17604E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI17704E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI17704E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI18004E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI18004E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI18405E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI18405E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI18605E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI18605E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI18705E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI18705E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI18805E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI18805E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI19005E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI19005E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI19205E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI19205E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI19305E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI19305E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI19405E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI19405E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI19505E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI19505E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI19605E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI19605E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI19805E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI19805E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI19905E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI19905E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI20005E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI20005E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI20105E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI20105E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI20205E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI20205E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI20305E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI20305E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI20405E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI20405E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI20505E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI20505E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI20605E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI20605E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI20805E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI20805E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI21606E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI21606E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI21706E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI21706E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI21806E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI21806E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI21906E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI21906E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI22106E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI22106E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI22206E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI22206E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI22306E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI22306E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI22406E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI22406E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI22606E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI22606E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI22806E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI22806E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI22907E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI22907E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI23207E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI23207E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI23307E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI23307E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI23407E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI23407E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI23608E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI23608E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI23708E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI23708E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI23808E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI23808E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI24108E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI24108E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI24208E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI24208E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI24308E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI24308E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI24408E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI24408E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI24508E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI24508E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI24608E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI24608E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI24708E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI24708E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI24808E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI24808E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI24908E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI24908E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI25008E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI25008E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI25108E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI25108E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI25208E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI25208E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI25308E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI25308E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI25408E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI25408E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI25508E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI25508E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI25908E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI25908E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI26008E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI26008E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI26108E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI26108E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI26208E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI26208E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI26308E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI26308E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI26408E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI26408E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI26508E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI26508E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI26608E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI26608E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI26809E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI26809E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI27109E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI27109E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI27209E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI27209E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI27309E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI27309E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI27410E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI27410E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI27510E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI27510E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI27610E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI27610E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI27710E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI27710E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI27810E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI27810E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI27910E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI27910E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI28010E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI28010E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI28210E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI28210E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI28310E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI28310E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI28510E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI28510E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI28610E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI28610E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI28911E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI28911E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI29011E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI29011E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI29111E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI29111E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI29211E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI29211E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI29311E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI29311E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI29411E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI29411E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI29511E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI29511E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI29611E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI29611E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI29711E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI29711E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI29811E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI29811E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI29911E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI29911E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI30012E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI30012E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI30112E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI30112E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI30212E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI30212E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI30312E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI30312E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI30412E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI30412E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI30512E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI30512E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI30612E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI30612E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI30712E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI30712E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI30812E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI30812E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI30912E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI30912E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI31112E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI31112E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI31212E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI31212E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI31313E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI31313E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI31413E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI31413E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI31513E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI31513E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI31613E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI31613E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI31713E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI31713E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI31813E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI31813E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI31913E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI31913E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI32013E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI32013E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI32114E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI32114E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI32214E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI32214E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI32314E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI32314E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI32414E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI32414E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI32514E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI32514E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI32614E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI32614E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI32714E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI32714E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI32814E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI32814E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI32914E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI32914E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI33014E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI33014E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI33114E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI33114E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI33214E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI33214E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI33314E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI33314E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI33414E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI33414E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI33514E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI33514E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI33614E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI33614E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI33714E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI33714E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI33814E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI33814E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI33914E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI33914E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI34014E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI34014E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI34114E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI34114E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI34214E.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI34214E.shtml.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQtest.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\The Al-Qaida Sanctions Committee.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\The Al-Qaida Sanctions Committee.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\commented_out.json.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\entities_other_groups_undertakings_associated_with_Al-Qaida.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\entities_other_groups_undertakings_associated_with_Al-Qaida.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\individuals_associated_with_Al-Qaida.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\individuals_associated_with_Al-Qaida.shtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\narrative_links.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\narrative_links_2.json" afterPath="" />
+      <change type="MOVED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQE00601E.shtml" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQtest.shtml" />
+      <change type="MOVED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries\NSQI00901E.html" afterPath="$PROJECT_DIR$/data/archive/narrative_summaries/NSQI00901E.shtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/Thumbs.db" afterPath="$PROJECT_DIR$/images/Thumbs.db" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/collectNarratives.js" afterPath="$PROJECT_DIR$/js/collectNarratives.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/getNarrativeList.js" afterPath="$PROJECT_DIR$/js/getNarrativeList.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/heroku webstorm error message.txt" afterPath="$PROJECT_DIR$/heroku webstorm error message.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="aqlist-visualization.iws" />
@@ -36,21 +966,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="setupData.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/setupData.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="867" max-vertical-offset="15470">
-              <caret line="60" column="21" selection-start-line="56" selection-start-column="4" selection-end-line="64" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="collectNarratives.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="collectNarratives.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/collectNarratives.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1462" max-vertical-offset="7055">
-              <caret line="96" column="8" selection-start-line="96" selection-start-column="8" selection-end-line="96" selection-end-column="8" />
+            <state vertical-scroll-proportion="0.4857143" vertical-offset="1955" max-vertical-offset="5066">
+              <caret line="129" column="72" selection-start-line="129" selection-start-column="72" selection-end-line="129" selection-end-column="72" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -58,84 +978,84 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="filewalker.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/filewalker.js">
+      <file leaf-file-name="setupData.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/setupData.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
-              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="782" max-vertical-offset="15470">
+              <caret line="59" column="73" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="73" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="johns_notes.secret.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/johns_notes.secret.txt">
+      <file leaf-file-name="NSQE00601E.shtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/narrative_summaries/NSQE00601E.shtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="11.038462" vertical-offset="9892" max-vertical-offset="12359">
-              <caret line="565" column="56" selection-start-line="565" selection-start-column="0" selection-end-line="565" selection-end-column="56" />
+            <state vertical-scroll-proportion="-15.692307" vertical-offset="4947" max-vertical-offset="6137">
+              <caret line="409" column="18" selection-start-line="409" selection-start-column="3" selection-end-line="409" selection-end-column="21" />
+              <folding>
+                <element signature="n#style#0;n#iframe#0;n#noscript#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#6;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="entities_other_groups_undertakings_associated_with_Al-Qaida.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/archive/entities_other_groups_undertakings_associated_with_Al-Qaida.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="7259">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
+      <file leaf-file-name="async.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/node_modules/async/lib/async.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="1139">
-              <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="19091">
+              <caret line="231" column="0" selection-start-line="231" selection-start-column="0" selection-end-line="231" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.js">
+      <file leaf-file-name="NSQtest.shtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/archive/narrative_summaries/NSQtest.shtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="503">
-              <caret line="0" column="59" selection-start-line="0" selection-start-column="59" selection-end-line="0" selection-end-column="59" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9758">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/gulp/node_modules/semver/README.md">
-          <provider editor-type-id="MarkdownPreviewEditor">
-            <state />
-          </provider>
+      <file leaf-file-name="commented_out.json.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/narrative_lists/commented_out.json.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-98.96429" vertical-offset="0" max-vertical-offset="4777">
-              <caret line="163" column="47" selection-start-line="163" selection-start-column="47" selection-end-line="163" selection-end-column="47" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="changeRubyGemsTo.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/changeRubyGemsTo.rb">
+      <file leaf-file-name="NSQtest.shtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/narrative_lists/NSQtest.shtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
-              <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9758">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="herokulogs2000.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/herokulogs2000.txt">
+      <file leaf-file-name="collect.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/collect.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="3876" max-vertical-offset="4369">
-              <caret line="187" column="0" selection-start-line="187" selection-start-column="0" selection-end-line="187" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Procfile" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Procfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
-              <caret line="0" column="18" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="833" max-vertical-offset="3400">
+              <caret line="55" column="22" selection-start-line="54" selection-start-column="0" selection-end-line="55" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -157,9 +1077,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/coffee/viz-original.coffee" />
-        <option value="$PROJECT_DIR$/archives/d3-process-map-original.js" />
-        <option value="$PROJECT_DIR$/js/adder.js" />
         <option value="$PROJECT_DIR$/data/output/AQList.xml" />
         <option value="$PROJECT_DIR$/data/output/AQList-clean.json" />
         <option value="$PROJECT_DIR$/data/markdown/QE.A.114.04.mkdn" />
@@ -193,11 +1110,9 @@
         <option value="$PROJECT_DIR$/js/soupselectAq.js" />
         <option value="$PROJECT_DIR$/data/narrative_summaries/narrative_links.json" />
         <option value="$PROJECT_DIR$/data/output/narratives.json" />
-        <option value="$PROJECT_DIR$/js/getNarrativeList.js" />
         <option value="$PROJECT_DIR$/data/narrative_summaries/NSQE00201E.shtml" />
         <option value="$PROJECT_DIR$/js/parseDoc.js" />
         <option value="$PROJECT_DIR$/js/app.js" />
-        <option value="$PROJECT_DIR$/js/collectNarratives.js" />
         <option value="$PROJECT_DIR$/johns_notes.txt" />
         <option value="$PROJECT_DIR$/README.textile" />
         <option value="$PROJECT_DIR$/archives2/coffee/vis.js" />
@@ -205,9 +1120,14 @@
         <option value="$PROJECT_DIR$/js/filewalker.js" />
         <option value="$PROJECT_DIR$/changeRubyGemsTo.rb" />
         <option value="$PROJECT_DIR$/Procfile" />
-        <option value="$PROJECT_DIR$/johns_notes.secret.txt" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/index.js" />
+        <option value="$PROJECT_DIR$/johns_notes.secret.txt" />
+        <option value="$PROJECT_DIR$/terminal-2014-12-27.txt" />
+        <option value="$PROJECT_DIR$/js/getNarrativeList.js" />
+        <option value="$PROJECT_DIR$/data/archive/collectNarratives.js" />
+        <option value="$PROJECT_DIR$/data/narrative_summaries/NSQE00601E.shtml" />
+        <option value="$PROJECT_DIR$/js/collectNarratives.js" />
       </list>
     </option>
   </component>
@@ -317,7 +1237,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -340,8 +1259,91 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="aq-list-viz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="aq-list-viz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="aq-list-viz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="aq-list-viz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="aq-list-viz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="aq-list-viz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="output" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="aq-list-viz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="aq-list-viz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="narrative_summaries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="aq-list-viz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="aq-list-viz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="archive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -362,11 +1364,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_lists" />
+      <recent name="C:\Users\User1\WebstormProjects\aq-list-viz\data\archive" />
       <recent name="C:\Users\User1\WebstormProjects\aq-list-viz" />
       <recent name="C:\Users\User1\WebstormProjects\aq-list-viz\images" />
       <recent name="C:\Users\User1\WebstormProjects\aq-list-viz\js" />
-      <recent name="C:\Users\User1\WebstormProjects\aq-list-viz\data\archive" />
-      <recent name="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_summaries" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\User1\WebstormProjects\aq-list-viz\archives" />
@@ -376,15 +1378,11 @@
       <recent name="C:\Users\User1\WebstormProjects\aq-list-viz" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.index.js">
-    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Node.js.collectNarratives">
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <method />
     </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
-      <envs />
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <method />
     </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
@@ -392,6 +1390,10 @@
       <setting name="settingsFile" value="" />
       <setting name="serverType" value="INTERNAL" />
       <setting name="preferredDebugBrowser" value="Chrome" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="ChromiumRemoteDebugType" factoryName="Chromium Remote">
@@ -456,7 +1458,9 @@
     <configuration default="false" name="index.js" type="NodeJSConfigurationType" factoryName="Node.js" singleton="false" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="index.js" working-dir="$PROJECT_DIR$" coffeescript-path="C:\Users\User1\AppData\Roaming\npm\node_modules\coffee-script\bin\coffee">
       <browser name="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" start="true" url="http://localhost:63342/aq-list-viz/index.html" />
       <RunnerSettings RunnerId="Basic" />
+      <RunnerSettings RunnerId="debuggableProgram" />
       <ConfigurationWrapper RunnerId="Basic" />
+      <ConfigurationWrapper RunnerId="debuggableProgram" />
       <method />
     </configuration>
     <configuration default="false" name="IE app.js" type="NodeJSConfigurationType" factoryName="Node.js" singleton="false" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="js/app.js" working-dir="$PROJECT_DIR$" coffeescript-path="C:\Users\User1\AppData\Roaming\npm\node_modules\coffee-script\bin\coffee">
@@ -789,7 +1793,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30526316" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30789474" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Heroku" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3263158" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46701846" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46578947" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39342105" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -800,7 +1804,8 @@
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3106547" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30394736" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39473686" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30394736" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Get Gist" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -808,7 +1813,6 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39577836" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
     <layout-to-restore>
@@ -828,14 +1832,14 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24967907" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15532735" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39709762" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30870712" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30870712" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39709762" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Get Gist" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -893,42 +1897,17 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/collectNarratives.js</url>
-          <line>171</line>
-          <option name="timeStamp" value="477" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/js/collectNarratives.js</url>
-          <line>176</line>
-          <option name="timeStamp" value="478" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/js/collectNarratives.js</url>
-          <line>178</line>
-          <option name="timeStamp" value="479" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/js/collectNarratives.js</url>
-          <line>170</line>
-          <option name="timeStamp" value="480" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/js/collectNarratives.js</url>
-          <line>330</line>
+          <line>192</line>
           <option name="timeStamp" value="481" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/collectNarratives.js</url>
-          <line>92</line>
-          <option name="timeStamp" value="487" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/js/collectNarratives.js</url>
-          <line>329</line>
+          <line>191</line>
           <option name="timeStamp" value="494" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/collectNarratives.js</url>
-          <line>347</line>
+          <line>209</line>
           <option name="timeStamp" value="498" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
@@ -937,15 +1916,40 @@
           <option name="timeStamp" value="502" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
+          <url>file://$USER_HOME$/.WebStorm8/system/extLibs/nodejs-v0.10.32-src/core-modules-sources/lib/events.js</url>
+          <line>71</line>
+          <option name="timeStamp" value="504" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$USER_HOME$/.WebStorm8/system/extLibs/nodejs-v0.10.32-src/core-modules-sources/lib/events.js</url>
+          <line>52</line>
+          <option name="timeStamp" value="505" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$USER_HOME$/.WebStorm8/system/extLibs/nodejs-v0.10.32-src/core-modules-sources/lib/events.js</url>
+          <line>53</line>
+          <option name="timeStamp" value="506" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/collectNarratives.js</url>
-          <line>84</line>
-          <option name="timeStamp" value="503" />
+          <line>178</line>
+          <option name="timeStamp" value="508" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/js/collectNarratives.js</url>
+          <line>257</line>
+          <option name="timeStamp" value="514" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/js/collectNarratives.js</url>
+          <line>83</line>
+          <option name="timeStamp" value="516" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="504" />
+      <option name="time" value="517" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="NodeJSConfigurationType">
@@ -953,62 +1957,38 @@
         <watch expression="link_data_item.narr" language="JavaScript" />
         <watch expression="paragraphArray" language="JavaScript" />
         <watch expression="body" language="JavaScript" />
+        <watch expression="narrative" language="JavaScript" />
       </configuration>
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/data/archive/entities_other_groups_undertakings_associated_with_Al-Qaida.json">
+    <entry file="file://$PROJECT_DIR$/data/narrative_lists/commented_out.json.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7259">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/narrative_summaries/individuals_associated_with_Al-Qaida.json">
+    <entry file="file://$PROJECT_DIR$/data/narrative_lists/NSQtest.shtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="29938" max-vertical-offset="30821">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9758">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/narrative_summaries/entities_other_groups_undertakings_associated_with_Al-Qaida.json">
+    <entry file="file://$PROJECT_DIR$/js/collect.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="6784" max-vertical-offset="7259">
-          <caret line="421" column="1" selection-start-line="421" selection-start-column="1" selection-end-line="421" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/narrative_summaries/entities_other_groups_undertakings_associated_with_Al-Qaida.shtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="9307" max-vertical-offset="10965">
-          <caret line="563" column="10" selection-start-line="563" selection-start-column="10" selection-end-line="563" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/narrative_summaries/NSQI00901E.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="200.07692" vertical-offset="5202" max-vertical-offset="6222">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/getNarrativeList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.576923" vertical-offset="1922" max-vertical-offset="2754">
-          <caret line="238" column="3" selection-start-line="238" selection-start-column="3" selection-end-line="238" selection-end-column="3" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="731" max-vertical-offset="3400">
+          <caret line="55" column="22" selection-start-line="55" selection-start-column="22" selection-end-line="55" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/output/narratives.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="462">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/narrative_summaries/NSQE00401E.shtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="501">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
@@ -1020,21 +2000,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/narrative_summaries/NSQE00201E.shtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="5763">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/soupselect/README.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="26.678572" vertical-offset="747" max-vertical-offset="1207">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/soupselect/nodelint.js">
@@ -1061,27 +2034,6 @@
     <entry file="file://$PROJECT_DIR$/node_modules/soupselect/benchmark.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="969">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/narrative_summaries/NSQE00101E.shtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="150.26923" vertical-offset="3907" max-vertical-offset="5916">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.WebStorm8/system/extLibs/nodejs-v0.10.32-src/core-modules-sources/lib/events.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7744511" vertical-offset="496" max-vertical-offset="4845">
-          <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/narrative_summaries/NSQtest.shtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9758">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
@@ -1132,13 +2084,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/filewalker/README.md">
-      <provider selected="true" editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2907">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
+      </provider>
+      <provider selected="true" editor-type-id="MarkdownPreviewEditor">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/filewalker/examples/du.js">
@@ -1176,56 +2128,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/narrative_summaries/NSQI14803E.shtml.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="501">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/narrative_summaries/narrative_links.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="13.115385" vertical-offset="37316" max-vertical-offset="37961">
-          <caret line="2175" column="41" selection-start-line="2175" selection-start-column="41" selection-end-line="2175" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/narrative_summaries/narrative_links_2.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="50.346153" vertical-offset="1309" max-vertical-offset="50575">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/narrative_summaries/NSQI14803E.shtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6171">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/narrative_summaries/NSQI33614E.shtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.2943723" vertical-offset="136" max-vertical-offset="6324">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/setupData.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="867" max-vertical-offset="15470">
-          <caret line="60" column="21" selection-start-line="56" selection-start-column="4" selection-end-line="64" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/collect.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.2878999" vertical-offset="1080" max-vertical-offset="3400">
-          <caret line="120" column="78" selection-start-line="120" selection-start-column="78" selection-end-line="120" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/error creating heroku tool window 12-13-2014 8-08-14 AM.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1235,7 +2137,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2873">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1243,7 +2144,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="19.70021" vertical-offset="23566" max-vertical-offset="68612">
           <caret line="1939" column="7" selection-start-line="1939" selection-start-column="7" selection-end-line="1939" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1251,7 +2151,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.9522863" vertical-offset="48" max-vertical-offset="782">
           <caret line="31" column="6" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1259,17 +2158,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.15506959" vertical-offset="789" max-vertical-offset="1292">
           <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/collectNarratives.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1462" max-vertical-offset="7055">
-          <caret line="96" column="8" selection-start-line="96" selection-start-column="8" selection-end-line="96" selection-end-column="8" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1281,54 +2169,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/gulp/node_modules/semver/README.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/node_modules/express/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-98.96429" vertical-offset="0" max-vertical-offset="4777">
-          <caret line="163" column="47" selection-start-line="163" selection-start-column="47" selection-end-line="163" selection-end-column="47" />
-          <folding />
+        <state vertical-scroll-proportion="-1.5387931" vertical-offset="714" max-vertical-offset="2686">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/changeRubyGemsTo.rb">
+    <entry file="file://$USER_HOME$/.WebStorm8/system/extLibs/nodejs-v0.10.32-src/core-modules-sources/lib/events.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
-          <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/herokulogs2000.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3876" max-vertical-offset="4369">
-          <caret line="187" column="0" selection-start-line="187" selection-start-column="0" selection-end-line="187" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Procfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="500">
-          <caret line="0" column="18" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="1139">
-          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.250497" vertical-offset="452" max-vertical-offset="4845">
+          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/johns_notes.secret.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="11.038462" vertical-offset="9892" max-vertical-offset="12359">
-          <caret line="565" column="56" selection-start-line="565" selection-start-column="0" selection-end-line="565" selection-end-column="56" />
-          <folding />
+        <state vertical-scroll-proportion="0.79183674" vertical-offset="11240" max-vertical-offset="11730">
+          <caret line="684" column="0" selection-start-line="684" selection-start-column="0" selection-end-line="684" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="1139">
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -1336,7 +2202,154 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="503">
           <caret line="0" column="59" selection-start-line="0" selection-start-column="59" selection-end-line="0" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/gulp/node_modules/semver/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2771" max-vertical-offset="4777">
+          <caret line="163" column="47" selection-start-line="163" selection-start-column="47" selection-end-line="163" selection-end-column="47" />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/changeRubyGemsTo.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4055666" vertical-offset="0" max-vertical-offset="503">
+          <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/herokulogs2000.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.79183674" vertical-offset="2791" max-vertical-offset="3281">
+          <caret line="187" column="0" selection-start-line="187" selection-start-column="0" selection-end-line="187" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="500">
+          <caret line="0" column="18" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terminal-2014-12-27.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.332653" vertical-offset="169313" max-vertical-offset="170068">
+          <caret line="9998" column="97" selection-start-line="9998" selection-start-column="97" selection-end-line="9998" selection-end-column="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/getNarrativeList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1537" max-vertical-offset="4131">
+          <caret line="56" column="54" selection-start-line="56" selection-start-column="54" selection-end-line="56" selection-end-column="54" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.WebStorm8/system/extLibs/nodejs-v0.10.32-src/core-modules-sources/lib/fs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4394737" vertical-offset="4406" max-vertical-offset="29988">
+          <caret line="288" column="14" selection-start-line="288" selection-start-column="14" selection-end-line="288" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/archive/narrative_summaries/NSQtest.shtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9758">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/narrative_lists/commented_out.json.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="503">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/narrative_lists/NSQtest.shtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9758">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/collect.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="833" max-vertical-offset="3400">
+          <caret line="55" column="22" selection-start-line="54" selection-start-column="0" selection-end-line="55" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/node_modules/async/lib/async.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="19091">
+          <caret line="231" column="0" selection-start-line="231" selection-start-column="0" selection-end-line="231" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/archive/entities_other_groups_undertakings_associated_with_Al-Qaida.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7259">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/narrative_summaries/NSQI27109E.shtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6324">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/setupData.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="782" max-vertical-offset="15470">
+          <caret line="59" column="73" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/archive/collectNarratives.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1003" max-vertical-offset="7514">
+          <caret line="67" column="64" selection-start-line="67" selection-start-column="64" selection-end-line="67" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/narrative_summaries/NSQE00601E.shtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.692307" vertical-offset="4947" max-vertical-offset="6137">
+          <caret line="409" column="18" selection-start-line="409" selection-start-column="3" selection-end-line="409" selection-end-column="21" />
+          <folding>
+            <element signature="n#style#0;n#iframe#0;n#noscript#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#6;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/collectNarratives.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4857143" vertical-offset="1955" max-vertical-offset="5066">
+          <caret line="129" column="72" selection-start-line="129" selection-start-column="72" selection-end-line="129" selection-end-column="72" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

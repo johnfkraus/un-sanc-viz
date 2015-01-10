@@ -1,5 +1,4 @@
-// collect.js
-// collect AQList.xml from Internet, convert to json
+// collectNarratives.js
 // =========================
 
 if (typeof define !== 'function') {
@@ -11,7 +10,6 @@ var async = require('async'),
   http = require('http'),
   htmlparser = require("htmlparser"),
   sys = require('sys'),
-  async = require('async'),
   re = require('request-enhanced'),
   fse = require('fs-extra'),
   util = require('util'),
@@ -61,211 +59,96 @@ var getTheNarratives = function () {
   var narratives;
   var narrative_links;
   async.series([
+      /*
+       function (callback) {
+       // list files in ./data/narrative_summaries
+       if (consoleLog) {
+       console.log("\n ", __filename, __line, "; function 1#:", ++functionCount);
+       }
+       console.log("\n ", __filename, "line", __line, "; running filewalker.filewalker()");
+       var path = "./data/narrative_summaries/";
+       fw(path);
+
+       callback();
+       },
+       */
+      /*
+       function (callback) {
+       // remove old narratives and other old files
+       if (consoleLog) {
+       console.log("\n ", __filename, __line, "; function #:", ++functionCount);
+       }
+       var newPath = "./data/narrative_summaries";
+       console.log(newPath);
+       // delete narrative_summaries directory and contents
+       fse.removeSync(newPath);
+       // re-create narrative_summaries directory
+       fse.mkdirs(newPath);
+
+       callback();
+       },
+
+       function (callback) {
+       // using links from narrative_links.json, collect and save the narratives
+       console.log("\n ", __filename, "line", __line, "; function #2:", ++functionCount, "; ");
+       narrative_links = require(__dirname + "/../data/narrative_lists/narrative_links.json");
+       // var narrativeFileData;
+       for (var ldi = 0; ldi < narrative_links.length; ldi++) {
+       narrCounter++;
+       link_data_item = narrative_links[ldi];
+       collectFilePath = "http://www.un.org/sc/committees/1267/" + link_data_item.narrativeFileName;
+       saveFilePath = __dirname + "/../data/narrative_summaries/" + link_data_item.narrativeFileName;
+       //          saveTextFilePath = __dirname + "/../data/narrative_summaries/" + link_data_item.narrativeFileName + ".txt";
+       getFile(collectFilePath, saveFilePath);
+
+       if (narrCounter < 10) {
+       //      console.log("\n ", __filename, "line", __line, "; text = ", text);
+       }
+       var linkDataSaveFilePath = __dirname + "/../data/narrative_summaries/narrative_links_2.json";
+
+       }
+       callback();
+       },
+       */
       function (callback) {
-        // collect and save the narratives
-        narrative_links = require(__dirname + "/../data/narrative_summaries/narrative_links.json");
+        // using links from narrative_links.json, collect and save the narratives
+        console.log("\n ", __filename, "line", __line, "; function #2:", ++functionCount, "; ");
+        narrative_links = require(__dirname + "/../data/narrative_lists/narrative_links.json");
+        // var narrativeFileData;
+        narrCounter = 0;
+        var narrativeFile;
+        var mainContent;
         for (var ldi = 0; ldi < narrative_links.length; ldi++) {
+          narrCounter++;
           link_data_item = narrative_links[ldi];
-          collectFilePath = "/sc/committees/1267/" + link_data_item.narrativeFileName;
-          saveFilePath = __dirname + "/../data/narrative_summaries/" + link_data_item.narrativeFileName;
-          saveTextFilePath = __dirname + "/../data/narrative_summaries/" + link_data_item.narrativeFileName + ".txt";
-          try {
-            narrCounter++;
-            link_data_item.narr = getNarrativesData(host, collectFilePath, saveFilePath);
-            // console.log("\n ", __filename, "line", __line, "; link_data_item = ", link_data_item);
-            // getNarrativesData(host, getFileNameAndPath, outputFileNameAndPath);
-//            var res = request('GET', url);
-            // narrativeData = res.body.toString();
-          } catch (err) {
-            console.log("\n ", __filename, "line", __line, "; Error: ", err);
+          collectFilePath = "./data/narrative_summaries/" + link_data_item.narrativeFileName;
+//          saveFilePath = __dirname + "/../data/narrative_summaries/" + link_data_item.narrativeFileName;
+          //          saveTextFilePath = __dirname + "/../data/narrative_summaries/" + link_data_item.narrativeFileName + ".txt";
+          // getFile(collectFilePath, saveFilePath);
+          // narrativeFile= JSON.parse(fse.readFileSync(collectFilePath));
+          narrativeFile= (fse.readFileSync(collectFilePath).toString());
+          mainContent = narrativeFile.match(/<div id=\"maincontent\".*/mg); //div id=\"maincontent\".*)<div id="footer">/);
+          if (narrCounter < 10) {
+            console.log("\n ", __filename, "line", __line, "; narrativeFile = ", narrativeFile);
+            console.log("\n ", __filename, "line", __line, "; mainContent = ", mainContent);
           }
+//          var linkDataSaveFilePath = __dirname + "/../data/narrative_summaries/narrative_links_2.json";
 
-          text = jsonPath.eval(link_data_item.narr, '$..[?(@.type=text)]');
-          link_data_item.text = text;
-          console.log("\n ", __filename, "line", __line, "; text = ", text);
-          var linkDataSaveFilePath = __dirname + "/../data/narrative_summaries/narrative_links_2.json";
-//          writeMyFile(linkDataSaveFilePath, JSON.stringify(narrative_links, null, " "), fsOptions);
-          writeMyFile(saveTextFilePath, text, fsOptions);
-          // writeAQListXML(fileNameAndPathForProcessing, narrativeData);
-          //  console.log("\n ", __filename, "line", __line, "urls = ", urls);
         }
-        ;
-        callback();
-      },
-      function (callback) {
-        // read "raw" unprocessed json file
-        var rawJsonFileName = __dirname + "/../data/output/AQList-raw.json";
-        consolidatedList = JSON.parse(fse.readFileSync(rawJsonFileName));
-        if (consoleLog) {
-          console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount, "; read the raw json data file");
-        }
-        callback();
-      },
-      function (callback) {
-        // collect and save the narratives
-        narrative_links = require(__dirname + "/../data/narrative_summaries/narrative_links.json");
-        for (var ldi = 0; ldi < narrative_links.length; ldi++) {
-          link_data_item = narrative_links[ldi];
-          collectFilePath = "/sc/committees/1267/" + link_data_item.narrativeFileName;
-          saveFilePath = __dirname + "/../data/narrative_summaries/" + link_data_item.narrativeFileName;
-          saveTextFilePath = __dirname + "/../data/narrative_summaries/" + link_data_item.narrativeFileName + ".txt";
-          try {
-            narrCounter++;
-            link_data_item.narr = getNarrativesData(host, collectFilePath, saveFilePath);
-            // console.log("\n ", __filename, "line", __line, "; link_data_item = ", link_data_item);
-            // getNarrativesData(host, getFileNameAndPath, outputFileNameAndPath);
-//            var res = request('GET', url);
-            // narrativeData = res.body.toString();
-          } catch (err) {
-            console.log("\n ", __filename, "line", __line, "; Error: ", err);
-          }
-
-          text = jsonPath.eval(link_data_item.narr, '$..[?(@.type=text)]');
-          link_data_item.text = text;
-          console.log("\n ", __filename, "line", __line, "; text = ", text);
-          var linkDataSaveFilePath = __dirname + "/../data/narrative_summaries/narrative_links_2.json";
-//          writeMyFile(linkDataSaveFilePath, JSON.stringify(narrative_links, null, " "), fsOptions);
-          writeMyFile(saveTextFilePath, text, fsOptions);
-          // writeAQListXML(fileNameAndPathForProcessing, narrativeData);
-          //  console.log("\n ", __filename, "line", __line, "urls = ", urls);
-        }
-        ;
-        callback();
-      },
-
-      function (callback) {
-        // list files in /data/output
-        if (consoleLog) {
-          console.log("\n ", __filename, __line, "; function 5#:", ++functionCount);
-        }
-        console.log("\n ", __filename, "line", __line, "; running filewalker.filewalker()");
-        var path = "./data/narrative_summaries";
-        fw(path);
-
-        callback();
-      },
-      function (callback) {
-        // list files in /data/output
-        if (consoleLog) {
-          console.log("\n ", __filename, __line, "; function 5#:", ++functionCount);
-        }
-        console.log("\n ", __filename, "line", __line, "; running filewalker.filewalker()");
-        var path = "./data/narrative_summaries";
-        fw(path);
-
         callback();
       }
 
-      /*
-       // collect each narrative
-       function (callback) {
-       narratives = [];
-       var BreakException = {};
-       narrCounter = 0;
-       //        for (var url = 0; url < 10; url++) {
-       for (var fp = 0; fp < 10; fp++) {
-       //        urls.forEach(function (url) {
-       // url = urls[url];
-       filePath = filePaths[fp];
-       // console.log("\n ", __filename, "line", __line, "narratives = ", narratives);
-       var getFileNameAndPath = filePath.replace(/\/sc\/committees\/1267\/(NSQ.*.shtml)/, '$1');
-       try {
-       narrCounter++;
-       getNarrativesData (host, getFilePath, outputFileNameAndPath, entityOrIndivString)
-       // getNarrativesData(host, getFileNameAndPath, outputFileNameAndPath);
-       //            var res = request('GET', url);
-       narrativeData = res.body.toString();
-       } catch (err) {
-       console.log("\n ", __filename, "line", __line, "; Error: ", err);
-       }
-       var fileName = filePath.replace(/\/sc\/committees\/1267\/(NSQE00101E.shtml)/, '$1');
-       var fileNameAndPathForProcessing = __dirname + "/../data/narrative_summaries/" + fileName;
-       writeAQListXML(fileNameAndPathForProcessing, narrativeData);
-       }
-       ;
-       //console.log("\n ", __filename, "line", __line, "narratives = ", narratives);
-       callback();
-       }
-       /*
-       ,
-       function (callback) {
-       var fileNameAndPathForProcessing = __dirname + "/../data/output/AQList.xml";
-       writeAQListXML(fileNameAndPathForProcessing);
-       var fileNameAndPathForArchive = __dirname + "/../data/archive/AQList.xml";
-       writeAQListXML(fileNameAndPathForArchive);
-       callback();
-       },
-       function (callback) {
-       // read local copy of XML file
-       var rawXmlFileName = __dirname + "/../data/output/AQList.xml";
-       var descr = "; reading raw XML file: " + rawXmlFileName;
-       if (consoleLog) {
-       console.log("\n ", __filename, "line", __line, "; function 1#:", ++functionCount, descr, fsOptions);
-       }
-       AQList_xml = fse.readFileSync(rawXmlFileName, fsOptions); //, function (err, data) {
-       if (consoleLog) {
-       console.log("\n ", __filename, "line", __line, " AQList_xml = ", trunc.n400(AQList_xml.toString()));
-       }
-       callback();
-       },
-       function (callback) {
-       // convert AQList.xml to json
-       if (consoleLog) {
-       console.log("\n ", __filename, "line", __line, " function #:", ++functionCount);
-       console.log("\n ", __filename, "line", __line, " typeof AQList_xml = ", (typeof AQList_xml));
-       console.log("\n ", __filename, "line", __line, " AQList_xml = ", trunc.n400(AQList_xml.toString()));
-       }
-       // var myResult;
-       parseString(AQList_xml, {
-       explicitArray: false,
-       trim: true
-       }, function (err, result) {
-       if (err) {
-       console.log("\n ", __filename, "line", __line, " error attempting parseString: " + err, '\n');
-       }
-       myJsonData = result;
-       if (consoleLog) {
-       console.log("\n ", __filename, "line", __line, " result = \n", util.inspect(myJsonData, false, null)
-       .trunc(truncateToNumChars));
-       }
-       });
-       callback();
-       },
-       function (callback) {
-       // save raw json
-       if (consoleLog) {
-       console.log("\n ", __filename, "line", __line, "function 4#:", ++functionCount);
-       }
-       var myFile = __dirname + "/../data/output/AQList-raw.json";
-       // var myJsonData = savedJson;
-       if (consoleLog) {
-       console.log("\n ", __filename, "line", __line, " myResult = trunc.n400(", myJsonData);
-       }
-       try {
-       fse.writeFileSync(myFile, JSON.stringify(myJsonData, null, " "), fsOptions);
-       if (consoleLog) {
-       console.log("\n ", __filename, "line", __line, " file written to: ", myFile);
-       }
-       // if (consoleLog) { console.log("\n ", __filename, "line", __line, " file contained: ", trunc.n400(util.inspect(myResult, false, null))
-       // .trunc(truncateToNumChars));
-       } catch (e) {
-       if (consoleLog) {
-       console.log("\n ", __filename, "line", __line, " Error: ", e);
-       }
-       }
-       callback();
-       }*/
     ],
     function (err) {
       // if (consoleLog) { console.log("\n ", __filename, "line", __line, " savedJson = ", trunc.n400(myResult));
       if (err) {
-        console.log("\n ", __filename, "line", __line, " Error: " + err);
+        console.log("\n ", __filename, "line", __line, " Error: \n" + err);
       }
     }
   );
 };
 
-var getXMLFile = function () {
+var getMyFile = function () {
   var fileNameToSaveTo = __dirname + "/../data/output/AQList.xml";
   re.get("http://www.un.org/sc/committees/1267/AQList.xml", fileNameToSaveTo, function (error, filename) {
     if (error) {
@@ -294,12 +177,12 @@ var writeAQListXML = function (localFileNameAndPath, narratives) {
 };
 
 var getNarrativesData = function (host, getFilePath, outputFileNameAndPath, entityOrIndivString) {
-  console.log("\n ", __filename, "line", __line, "; host = ", host, "; getFilePath = ", getFilePath, "; outputFileNameAndPath = ", outputFileNameAndPath, "; entityOrIndivString = ", entityOrIndivString)
+  console.log("\n ", __filename, "line", __line, "; host = ", host, "; getFilePath = ", getFilePath, "; outputFileNameAndPath = ", outputFileNameAndPath, "; entityOrIndivString = ", entityOrIndivString);
   var body;
   var paragraphArray = [];
   var paragraphs, paragraph, maincontent;
   var client = http.createClient(80, host);
-  var request = client.request('GET', getFilePath, {'host': host})
+  var request = client.request('GET', getFilePath, {'host': host});
   request.on('response', function (response) {
     response.setEncoding('utf8');
     var body = "";
@@ -372,7 +255,7 @@ var getFile = function (url, fileNameToSaveTo) {
 
 //   fileNameToSaveTo = __dirname + "/../data/output/AQList.xml";
   //  re.get("http://www.un.org/sc/committees/1267/AQList.xml", fileNameToSaveTo, function (error, filename) {
-  re.get(url, fileNameToSaveTo, function (error, filename) {
+  re.get(url, fileNameToSaveTo, function (err, filename) {
     if (err) {
       console.log("\n ", __filename, "line", __line, "; Error \n" + err);
     } else if (consoleLog) {
@@ -399,7 +282,7 @@ var fw = function (path) {
     })
     .walk();
 
-}
+};
 
 getTheNarratives();
 

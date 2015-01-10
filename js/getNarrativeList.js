@@ -1,4 +1,4 @@
-// soupselectAq.js
+// getNarrativeList.js
 // get the narrative names and links
 
 var select = require('soupselect').select,
@@ -46,10 +46,11 @@ var runApp = function () {
         if (consoleLog) {
           console.log("\n ", __filename, __line, "; function 1#:", ++functionCount);
         }
-//        narrativeLinks = [];
         outputFileNameAndPath = (__dirname + "/../data/narrative_summaries/individuals_associated_with_Al-Qaida.json");
         var indivOrEntityString = "indiv";
+        var fileNameAndPathForUrl = '/sc/committees/1267/individuals_associated_with_Al-Qaida.shtml';
         getData(host, '/sc/committees/1267/individuals_associated_with_Al-Qaida.shtml', outputFileNameAndPath, indivOrEntityString);
+        console.log("\n ", __filename, __line, "; collected data from: ", fileNameAndPathForUrl , " and saved it to ", outputFileNameAndPath);
         callback();
       },
       function (callback) {
@@ -73,19 +74,8 @@ var runApp = function () {
         outputFileNameAndPath = (__dirname + "/../data/narrative_summaries/narrative_links.json");
         var dataStringified = JSON.stringify(narrative_links, null, " ");
         writeMyFile(outputFileNameAndPath, dataStringified, fsOptions);
+        console.log("\n ", __filename, __line, "; saved file: ", outputFileNameAndPath);
         callback(null, dataStringified );
-      },
-      function (callback) {
-        // put data in arrays for d3
-        //  var indivs = require(__dirname + "/../data/narrative_summaries/individuals_associated_with_Al-Qaida.json");
-        // var ents = require(__dirname + "/../data/narrative_summaries/entities_other_groups_undertakings_associated_with_Al-Qaida.json");
-//        if (consoleLog) {
-          //  console.log("\n ", __filename, __line, "; function #:", ++functionCount, indivs, ents);
- //       }
-        // sys.puts("JSON.stringify(narrativeLinks, null, \'\') = " + JSON.stringify(narrativeLinks, null, " "));
-        //outputFileNameAndPath = (__dirname + "/../data/narrative_summaries/narrative_links.json");
-        //writeMyFile(outputFileNameAndPath, narrativeLinks, fsOptions);
-        callback();
       }
     ],
     function (err, results) { //This function gets called after the foregoing tasks have called their "task callbacks"
@@ -101,17 +91,13 @@ var getData = function (host, filePath, outputFileNameAndPath, entityOrIndivStri
   // var host = 'www.un.org';
   var client = http.createClient(80, host);
   var request = client.request('GET', filePath, {'host': host});
-
   request.on('response', function (response) {
     response.setEncoding('utf8');
-
     var body = "";
     response.on('data', function (chunk) {
       body = body + chunk;
     });
-
     response.on('end', function () {
-
       // now we have the whole body, parse it and select the nodes we want...
       var handler = new htmlparser.DefaultHandler(function (err, dom) {
         if (err) {
