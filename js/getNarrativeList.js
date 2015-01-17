@@ -1,12 +1,11 @@
 // getNarrativeList.js
-// get the narrative names and links
+// get the narrative names and file names/links
 
 var select = require('soupselect').select,
   htmlparser = require("htmlparser"),
   http = require('http'),
   sys = require('sys'),
   async = require('async');
-
 var consoleLog = true;
 var fse = require('fs-extra');
 var util = require('util');
@@ -20,7 +19,6 @@ var targetName = "";
 var anchor,
   host,
   narrativeFileName,
-  narrativeLinks,
   outputFileNameAndPath,
   paragraph,
   rows,
@@ -30,64 +28,78 @@ var anchor,
   underscore,
   url;
 var functionCount = 0;
-narrativeLinks = [];
-// fetch some HTML...
+var indivLinks = [];
+var entLinks = [];
+var narrativeLinks = [];
+var individualsLocalOutputFileNameAndPath = __dirname + "/../data/narrative_lists/individuals_associated_with_Al-Qaida.json";
+var entitiesLocalOutputFileNameAndPath = __dirname + "/../data/narrative_lists/entities_other_groups_undertakings_associated_with_Al-Qaida.json";
+var narrativeLinksLocalFileNameAndPath = __dirname + "/../data/narrative_lists/narrative_links.json";
+var indivOrEntityString;
 
-var runApp = function () {
+var getListOfNarratives = function () {
+  // collecting from: www.un.org/sc/committees/1267/individuals_associated_with_Al-Qaida.shtml
+  var individualsFileNameAndPathForUrl = '/sc/committees/1267/individuals_associated_with_Al-Qaida.shtml';
+  var entitiesFileNameAndPathForUrl = '/sc/committees/1267/entities_other_groups_undertakings_associated_with_Al-Qaida.shtml';
   host = 'www.un.org';
-//  if (consoleLog) { console.log("\n ", __filename, __line, ", runApp\n");
   if (consoleLog) {
     console.log("\n ", __filename, "line", __line, "; running getNarrativeList.js; ", new Date());
   }
-
   async.series([
       function (callback) {
-        // collect individuals list of links to narratives - raw data
+        // collect raw html page listing individuals' file names/links to narratives from www.un.org/sc/committees/1267/individuals_associated_with_Al-Qaida.shtml
+        // parse the html file, extract ids, file names etc. and put into narrativeLinks json array
         if (consoleLog) {
           console.log("\n ", __filename, __line, "; function 1#:", ++functionCount);
         }
-        outputFileNameAndPath = (__dirname + "/../data/narrative_summaries/individuals_associated_with_Al-Qaida.json");
-        var indivOrEntityString = "indiv";
-        var fileNameAndPathForUrl = '/sc/committees/1267/individuals_associated_with_Al-Qaida.shtml';
-        getData(host, '/sc/committees/1267/individuals_associated_with_Al-Qaida.shtml', outputFileNameAndPath, indivOrEntityString);
-        console.log("\n ", __filename, __line, "; collected data from: ", fileNameAndPathForUrl , " and saved it to ", outputFileNameAndPath);
-        callback();
-      },
-      function (callback) {
-        // collect entities list of links to narratives - raw data
-        if (consoleLog) {
-          console.log("\n ", __filename, __line, "; function 2#:", ++functionCount);
+        indivOrEntityString = "indiv";
+        try {
+          getData(host, individualsFileNameAndPathForUrl, individualsLocalOutputFileNameAndPath, indivOrEntityString);
+        } catch (err) {
+          console.log("\n ", __filename, "line", __line, "; Error: ", err);
         }
-        var indivOrEntityString = "entity";
-        outputFileNameAndPath = (__dirname + "/../data/narrative_summaries/entities_other_groups_undertakings_associated_with_Al-Qaida.json");
-        getData(host, '/sc/committees/1267/entities_other_groups_undertakings_associated_with_Al-Qaida.shtml', outputFileNameAndPath, indivOrEntityString);
+        console.log("\n ", __filename, __line, "; collected data from: ", individualsFileNameAndPathForUrl, " and saved it to ", individualsLocalOutputFileNameAndPath);
         callback();
       },
+
       function (callback) {
-        // combine indivs and ents into one file
+        // collect entities list of links to narratives - raw data, from www.un.org/sc/committees/1267/entities_associated_with_Al-Qaida.shtml;
+        // save as local file data/narrative_lists/entities_associated_with_Al-Qaida.json
+        if (consoleLog) {
+          console.log("\n ", __filename, __line, "; function 1#:", ++functionCount);
+        }
+        indivOrEntityString = "entity";
+        try {
+          getData(host, entitiesFileNameAndPathForUrl, entitiesLocalOutputFileNameAndPath, indivOrEntityString);
+        } catch (err) {
+          console.log("\n ", __filename, "line", __line, "; Error: ", err);
+        }
+        console.log("\n ", __filename, __line, "; collected data from: ", entitiesFileNameAndPathForUrl, " and saved it to ", entitiesLocalOutputFileNameAndPath);
+        callback();
+      },
+
+      function (callback) {
         if (consoleLog) {
           console.log("\n ", __filename, __line, "; function 3#:", ++functionCount);
         }
-        var indivs = require(__dirname + "/../data/narrative_lists/individuals_associated_with_Al-Qaida.json");
-        var ents = require(__dirname + "/../data/narrative_lists/entities_other_groups_undertakings_associated_with_Al-Qaida.json");
-        var narrative_links = indivs.concat(ents);
-        outputFileNameAndPath = (__dirname + "/../data/narrative_summaries/narrative_links.json");
-        var dataStringified = JSON.stringify(narrative_links, null, " ");
-        writeMyFile(outputFileNameAndPath, dataStringified, fsOptions);
-        console.log("\n ", __filename, __line, "; saved file: ", outputFileNameAndPath);
-        callback(null, dataStringified );
+//        var narrativeLinksStringified = JSON.stringify(narrativeLinks, null, " ");
+  //      writeMyFile(narrativeLinksLocalFileNameAndPath, JSON.stringify(narrativeLinks, null, " "), fsOptions);
+        // console.log("\n ", __filename, __line, "; saved file: ", narrativeLinksLocalFileNameAndPath);
+        callback(null, JSON.stringify(narrativeLinks, null, " "));
       }
+
     ],
+
     function (err, results) { //This function gets called after the foregoing tasks have called their "task callbacks"
       if (err) {
         console.log("\n ", __filename, "line: ", __line, "Error: ", err);
       } else {
-        console.log("\n ", __filename, "line: ", __line, "; function:", ++functionCount, "results.length = ", results.length);
+        console.log("\n ", __filename, "line: ", __line, "; function:", ++functionCount, "results.length = ", results.length, "; results.toString() = ", results.toString());
       }
     });
 };
 
-var getData = function (host, filePath, outputFileNameAndPath, entityOrIndivString) {
+// collect a named file from an Internet host and save it locally; specify indivOrEntityString equals a string either "entity" or "indiv"
+var getData = function (host, filePath, outputFileNameAndPath, indivOrEntityString) {
   // var host = 'www.un.org';
   var client = http.createClient(80, host);
   var request = client.request('GET', filePath, {'host': host});
@@ -121,7 +133,7 @@ var getData = function (host, filePath, outputFileNameAndPath, entityOrIndivStri
             // sys.puts("row[" + i + "] = " + sys.inspect(JSON.stringify(row)));
             narrLink = {};
             tds = select(row, 'td');
-            // loop through each td in the row
+            // loop through each td/column in the row
             for (var j = 0; j < tds.length; j++) {
               td = tds[j];
               // get the id from the first td
@@ -190,7 +202,14 @@ var getData = function (host, filePath, outputFileNameAndPath, entityOrIndivStri
                 }
               }
             }
-            narrLink[entityOrIndivString + "RowNum"] = i;
+            narrLink.entityOrIndiv = indivOrEntityString;
+            narrLink.rowNum = i;
+            if (indivOrEntityString == "indiv") {
+              indivLinks.push(narrLink);
+            }
+            if (indivOrEntityString == "entity") {
+              entLinks.push(narrLink);
+            }
             narrativeLinks.push(narrLink);
           }
         }
@@ -198,13 +217,25 @@ var getData = function (host, filePath, outputFileNameAndPath, entityOrIndivStri
 
       var parser = new htmlparser.Parser(handler);
       parser.parseComplete(body);
-      var jsonNarrList = JSON.stringify(narrativeLinks, null, " ");
+      if (indivOrEntityString == "indiv") {
+        // var jsonIndivNarrList = JSON.stringify(indivLinks, null, " ");
+        writeMyFile(individualsLocalOutputFileNameAndPath, JSON.stringify(indivLinks, null, " "), fsOptions);
+      }
+      if (indivOrEntityString == "entity") {
+        // entLinks.push(narrLink);
+        // var jsonEntNarrList = JSON.stringify(entLinks, null, " ");
+        writeMyFile(entitiesLocalOutputFileNameAndPath, JSON.stringify(entLinks, null, " "), fsOptions);
+      }
+      // narrativeLinks.push(narrLink);
+
+//      var jsonNarrList = JSON.stringify(narrativeLinks, null, " ");
       // sys.puts(JSON.stringify(narrativeLinks, null, " "));
-      writeMyFile(outputFileNameAndPath, jsonNarrList, fsOptions);
+      writeMyFile(narrativeLinksLocalFileNameAndPath, JSON.stringify(narrativeLinks, null, " "), fsOptions);
+
     });
   });
   request.end();
-  return narrativeLinks;
+  // return narrativeLinks;
 };
 
 var normalizeNarrativeFileName = function (narrativeFileNameString) {
@@ -234,4 +265,6 @@ var writeMyFile = function (localFileNameAndPath, data, fsOptions) {
   }
 };
 
-runApp();
+module.exports = {
+  getListOfNarratives: getListOfNarratives
+};

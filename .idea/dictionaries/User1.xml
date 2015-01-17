@@ -3,13 +3,17 @@
     <words>
       <w>amdefine</w>
       <w>dateformat</w>
+      <w>dirname</w>
+      <w>httpresponseheader</w>
       <w>indiv</w>
+      <w>linenums</w>
       <w>mouseout</w>
       <w>mouseover</w>
       <w>qaida</w>
       <w>randomnumber</w>
       <w>resized</w>
       <w>trunc</w>
+      <w>truncn</w>
     </words>
   </dictionary>
 </component>

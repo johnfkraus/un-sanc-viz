@@ -8,13 +8,14 @@ root = typeof exports !== "undefined" && exports !== null ? exports : this;
 if (typeof define !== 'function') {
   var define = require('amdefine');
 }
-var markdownContent;
+// var markdownContent;
 var logger = require('./libs/logger.js');
 var trunc = require('./trunc.js');
 var gulp = require('gulp');
+var linenums = linenums || require('./linenums.js');
 // var markdown = require( "markdown" ).markdown;
 // var markdown = require('gulp-markdown');
-var md = require("markdown").markdown;
+// var md = require("markdown").markdown;
 var fileExists = require('file-exists');
 var async = require('async'),
   re = require('request-enhanced'),
@@ -39,7 +40,8 @@ var fsOptions = {
 var jsonFile = "";
 var html = "";
 var dateGenerated;
-var consoleLog = false;
+// consoleLog = true if debugging console log messages are desired
+var consoleLog = true;
 
 var get_html_docs = function () {
   if (consoleLog) {
@@ -54,14 +56,12 @@ var get_html_docs = function () {
     function (callback) {
       // read json file containing nodes and links
       var cleanJsonFileName = __dirname + "/../data/output/AQList-clean.json";
-      var buffer = fse.readFileSync(cleanJsonFileName); //, fsOptions); //, function (err, data) {
-      data = JSON.parse(buffer);
-      delete data.ents;
-      delete data.indivs;
-      delete data.ENTITIES;
-      delete data.INDIVIDUALS;
-      delete data.$;
-
+      try {
+        var buffer = fse.readFileSync(cleanJsonFileName); //, fsOptions); //, function (err, data) {
+        data = JSON.parse(buffer);
+      } catch (err) {
+        console.log("\n ", __filename, "line", __line, "; Error: ", err);
+      }
       if (consoleLog) {
         console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount);
         console.log("\n ", __filename, "line", __line, "; data read from: \n", cleanJsonFileName);
@@ -72,7 +72,13 @@ var get_html_docs = function () {
     // save intermediate data file for debugging
     function (callback) {
       // var jsonData = JSON.stringify(data);
-      saveJsonFile(JSON.stringify(data, null, " "), "./data/output/data31deleteEntsEtc.json");
+      var intermediateFile = "./data/output/data21.json";
+      saveJsonFile(JSON.stringify(data, null, " "), intermediateFile);
+      if (consoleLog) {
+        console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount);
+        console.log("\n ", __filename, "line", __line, "; saved file: ", intermediateFile);
+        console.log("\n ", __filename, "line", __line, "; data = \n", trunc.truncn(JSON.stringify(data), 200));
+      }
       callback();
     },
 
@@ -90,8 +96,10 @@ var get_html_docs = function () {
     },
 
     function (callback) {
-      nodes = makeHTMLDocs(data.nodes, config);
-      data.nodes = nodes;
+      // LOOP THROUGH NODE IDS, READ NARRATIVES FILES AND INSERT INTO DATA FILE
+
+//       nodes = makeHTMLDocs(data.nodes, config);
+      // data.nodes = nodes;
       if (consoleLog) {
         console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount);
         // console.log("\n ", __filename, "line", __line, "; data + html = \n", trunc.truncn(JSON.stringify(data), 200));
@@ -121,56 +129,57 @@ var get_html_docs = function () {
 };
 
 // create a links array in each entity/indiv containing ids of related parties
-var makeHTMLDocs = function (nodes, config) {
-  nodes.forEach(function (node) {
-    var nameId = node.id;
-    var markdownFileName = "./data/markdown/" + nameId + ".mkdn";
-    var type;
-    if (node.indiv0OrEnt1 == 0) {
-      node.type = "Individual";
-    } else {
-      node.type = "Entity";
-    }
-    var markdownContent = "&lt;div>&lt;span>" + node.name + "&lt;/span>&lt;span class=\'nameOriginalScript\'>&nbsp; " + node.NAME_ORIGINAL_SCRIPT + "&lt;/span> &lt;/div>\n### ID: " + node.id + "###\n#### Type: " + node.type + "####\n\n";
-   // var htmlContent = "&lt;h2> " + node.name + "&lt;/h2>&nbsp;&lt;span id='name-original-script'>" + node.NAME_ORIGINAL_SCRIPT + "&lt;/span>\n&lt;h3>ID: " + node.id + "&lt;/h3>\n&lt;h4>Type: " + node.type + "&lt;/h4>\n\n";
-    var htmlContent = "&lt;div>&lt;span>" + node.name + "&lt;/span>&lt;span class=\'nameOriginalScript\'>&nbsp; " + node.NAME_ORIGINAL_SCRIPT + "&lt;/span> &lt;/div>\n### ID: " + node.id + "###\n#### Type: " + node.type + "####\n\n";
-    if (fileExists(markdownFileName)) {
-      // markdownContent += "### Documentation\n\n";
-      markdownContent += readFileSync(markdownFileName);
-    } else {
-      markdownContent += "&lt;div class=\"alert alert-warning\">No documentation for this object.&lt;/div>";
-    }
-    if (node) {
+/*
+ var makeHTMLDocs = function (nodes, config) {
+ nodes.forEach(function (node) {
+ var nameId = node.id;
+ var markdownFileName = "./data/markdown/" + nameId + ".mkdn";
+ var type;
+ if (node.indiv0OrEnt1 == 0) {
+ node.type = "Individual";
+ } else {
+ node.type = "Entity";
+ }
+ var markdownContent = "&lt;div>&lt;span>" + node.name + "&lt;/span>&lt;span class=\'nameOriginalScript\'>&nbsp; " + node.NAME_ORIGINAL_SCRIPT + "&lt;/span> &lt;/div>\n### ID: " + node.id + "###\n#### Type: " + node.type + "####\n\n";
+ // var htmlContent = "&lt;h2> " + node.name + "&lt;/h2>&nbsp;&lt;span id='name-original-script'>" + node.NAME_ORIGINAL_SCRIPT + "&lt;/span>\n&lt;h3>ID: " + node.id + "&lt;/h3>\n&lt;h4>Type: " + node.type + "&lt;/h4>\n\n";
+ var htmlContent = "&lt;div>&lt;span>" + node.name + "&lt;/span>&lt;span class=\'nameOriginalScript\'>&nbsp; " + node.NAME_ORIGINAL_SCRIPT + "&lt;/span> &lt;/div>\n### ID: " + node.id + "###\n#### Type: " + node.type + "####\n\n";
+ if (fileExists(markdownFileName)) {
+ // markdownContent += "### Documentation\n\n";
+ markdownContent += readFileSync(markdownFileName);
+ } else {
+ markdownContent += "&lt;div class=\"alert alert-warning\">No documentation for this object.&lt;/div>";
+ }
+ if (node) {
 
-      markdownContent += "\n\n";
-      // markdownContent += get_depends_markdown('Linked to', node.linkSetArray);
-      // markdownContent += get_depends_markdown('Depended on by', node['dependedOnBy']);
-    }
-    html = mdToHtml(markdownContent) + htmlContent; //   markdownToHTML(markdownContent);
-    // IE can't handle <pre><code> (it eats all the line breaks)
-    html = str_replace('<pre><code>', '<pre>', html);
-    html = str_replace('</code></pre>', '</pre>', html);
-    if (consoleLog) {
-      console.log("\n ", __filename, "line", __line, "; html = ", html);
-    }
-    node.docs = htmlContent;
-  });
-  return nodes;
-};
-var get_depends_markdown = function (header, linkSetArr) {
-  markdownContent = "### " + header;
-  if ((linkSetArr) && (linkSetArr.length > 0)) {
-    markdownContent += "\n\n";
-    linkSetArr.forEach(function (linkId) {
-      markdownContent += "* " + linkId + "\n";
-    });
-    markdownContent += "\n";
-  } else {
-    markdownContent += " *(none)*\n\n";
-  }
-  return markdownContent;
-};
-
+ markdownContent += "\n\n";
+ // markdownContent += get_depends_markdown('Linked to', node.linkSetArray);
+ // markdownContent += get_depends_markdown('Depended on by', node['dependedOnBy']);
+ }
+ html = mdToHtml(markdownContent) + htmlContent; //   markdownToHTML(markdownContent);
+ // IE can't handle <pre><code> (it eats all the line breaks)
+ html = str_replace('<pre><code>', '<pre>', html);
+ html = str_replace('</code></pre>', '</pre>', html);
+ if (consoleLog) {
+ console.log("\n ", __filename, "line", __line, "; html = ", html);
+ }
+ node.docs = htmlContent;
+ });
+ return nodes;
+ };
+ var get_depends_markdown = function (header, linkSetArr) {
+ markdownContent = "### " + header;
+ if ((linkSetArr) && (linkSetArr.length > 0)) {
+ markdownContent += "\n\n";
+ linkSetArr.forEach(function (linkId) {
+ markdownContent += "* " + linkId + "\n";
+ });
+ markdownContent += "\n";
+ } else {
+ markdownContent += " *(none)*\n\n";
+ }
+ return markdownContent;
+ };
+ */
 function get_id_string(name) {
   return 'obj-' + name.replace(/@[^a-z0-9]+@i/g, '-');
 }
@@ -543,7 +552,7 @@ function file_get_contents(url, flags, context, offset, maxLen) {
 var markdownToHTML = function (markdownContent) {
   return markdown.toHTML(markdownContent);
 };
-
+/*
 var markdownToHTML00 = function (markdownContent, outputFileName) {
   var result;
   gulp.task('default', function () {
@@ -561,7 +570,7 @@ var XmarkdownToHTML = function (inputFileName, outputFileName) {
       .pipe(gulp.dest('dist'));
   });
 };
-
+*/
 var readFileSync = function (filePathAndName) {
   // read "raw" unprocessed json file
 //  var rawJsonFileName = __dirname + "/../data/output/AQList-raw.json";
@@ -571,46 +580,47 @@ var readFileSync = function (filePathAndName) {
   }
   return jsonFile;
 };
+/*
+ var mdToHtml = function (markdownContent) {
 
-var mdToHtml = function (markdownContent) {
+ var text = "[Markdown] is a simple text-based [markup language]\n" +
+ "created by [John Gruber]\n\n" +
+ "[John Gruber]: http://daringfireball.net";
 
-  var text = "[Markdown] is a simple text-based [markup language]\n" +
-    "created by [John Gruber]\n\n" +
-    "[John Gruber]: http://daringfireball.net";
+ // parse the markdown into a tree and grab the link references
+ var tree = md.parse(markdownContent),
+ refs = tree[1].references;
 
-// parse the markdown into a tree and grab the link references
-  var tree = md.parse(markdownContent),
-    refs = tree[1].references;
+ // iterate through the tree finding link references
+ (function find_link_refs(jsonml) {
+ if (jsonml[0] === "link_ref") {
+ var ref = jsonml[1].ref;
 
-// iterate through the tree finding link references
-  (function find_link_refs(jsonml) {
-    if (jsonml[0] === "link_ref") {
-      var ref = jsonml[1].ref;
+ // if there's no reference, define a wiki link
+ if (!refs[ref]) {
+ refs[ref] = {
+ href: "http://en.wikipedia.org/wiki/" + ref.replace(/\s+/, "_")
+ };
+ }
+ }
+ else if (Array.isArray(jsonml[1])) {
+ jsonml[1].forEach(find_link_refs);
+ }
+ else if (Array.isArray(jsonml[2])) {
+ jsonml[2].forEach(find_link_refs);
+ }
+ })(tree);
 
-      // if there's no reference, define a wiki link
-      if (!refs[ref]) {
-        refs[ref] = {
-          href: "http://en.wikipedia.org/wiki/" + ref.replace(/\s+/, "_")
-        };
-      }
-    }
-    else if (Array.isArray(jsonml[1])) {
-      jsonml[1].forEach(find_link_refs);
-    }
-    else if (Array.isArray(jsonml[2])) {
-      jsonml[2].forEach(find_link_refs);
-    }
-  })(tree);
+ // convert the tree into html
+ var html = md.renderJsonML(md.toHTMLTree(tree));
+ if (consoleLog) {
+ console.log(html);
+ }
+ return html;
+ };
 
-// convert the tree into html
-  var html = md.renderJsonML(md.toHTMLTree(tree));
-  if (consoleLog) {
-    console.log(html);
-  }
-  return html;
-};
+ */
 
 module.exports = {
   get_html_docs: get_html_docs
 };
-

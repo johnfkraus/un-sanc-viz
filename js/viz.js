@@ -638,9 +638,10 @@ Network = function () {
           console.log("\n ", __filename, "line", __line, "; Error null target id where l.source.id = ", l.source.id, "; l.source = ", JSON.stringify(l.source));
         }
       } catch (error) {
-        console.log("\n ", __filename, "line", __line, "; Error: ", error, "; null target id where l.source.id = ", l.source.id, "; l.source = ", JSON.stringify(l.source));
+        // console.log("\n ", __filename, "line", __line, "; Error: ", error, "; null target id where l.source.id = ", l.source.id, "; l.source = ", JSON.stringify(l.source));
+        console.log("Error: ", error, "; null target id where l.source.id = ", l.source.id, "; l.source = ", JSON.stringify(l.source));
       }
-      if ((typeof curNodes.get(l.target.id) !== 'undefined') && (curNodes.get(l.target.id) !== null)) {
+      if ((typeof curNodes.get(l.target) !== 'undefined') &&  (typeof curNodes.get(l.target.id) !== 'undefined') && (curNodes.get(l.target.id) !== null)) {
         return curNodes.get(l.source.id) && curNodes.get(l.target.id);
       }
     });

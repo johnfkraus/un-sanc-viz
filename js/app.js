@@ -16,6 +16,7 @@ var async = require('async'),
 var collect = require('./collect.js');
 var setupData = require('./setupData.js');
 var collectNarratives= require('./collectNarratives.js');
+var getNarrativeList = require('./getNarrativeList.js');
 var makeDocs = require('./makeDocs.js');
 var filewalker = require('./filewalker.js');
 var logger = require('./libs/logger.js');
@@ -33,13 +34,25 @@ var runApp = function () {
 
   async.series([
     function (callback) {
-      // collect raw data
+      // collect raw data from the Internet
       if (consoleLog) {
         console.log("\n ", __filename, __line, "; function 2#:", ++functionCount);
       }
       collect.convertXMLToJson(); //     setupData.fixData();
       callback();
     },
+
+    function (callback) {
+      // get the lists of narratives, consolidate in one json file
+      if (consoleLog) {
+        console.log("\n ", __filename, __line, "; function 3#:", ++functionCount);
+      }
+      getNarrativeList.getListOfNarratives();
+      callback();
+    },
+
+
+
     function (callback) {
       // put data in arrays for d3
       if (consoleLog) {
@@ -50,7 +63,7 @@ var runApp = function () {
     },
 
     function (callback) {
-      // put data in arrays for d3
+      // collect the narrative files from the Internet
       if (consoleLog) {
         console.log("\n ", __filename, __line, "; function 3#:", ++functionCount);
       }
@@ -59,7 +72,7 @@ var runApp = function () {
     },
 
     function (callback) {
-      // put data in arrays for d3
+      // put the narrative in the data structure
       if (consoleLog) {
         console.log("\n ", __filename, __line, "; function 4#:", ++functionCount);
       }

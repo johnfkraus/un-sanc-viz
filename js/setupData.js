@@ -35,6 +35,7 @@ var fsOptions = {
 var jsonFile = "";
 var dateGenerated;
 var consoleLog = false;
+
 var fixData = function () {
   if (consoleLog) {
     console.log("\n ", __filename, "line", __line, "; running setupData.fixData()");
@@ -182,11 +183,12 @@ var fixData = function () {
       },
       // save intermediate data file for debugging
       function (callback) {
-        saveJsonFile(data, "data05nodeBag.json");
+        saveJsonFile(data, "data03nodeBag.json");
         callback();
       },
+      // save intermediate data file for debugging
       function (callback) {
-        saveJsonFile(data, "data06myBag.json");
+        saveJsonFile(data, "data04myBag.json");
         callback();
       },
 
@@ -208,7 +210,7 @@ var fixData = function () {
       },
       // save intermediate data file for debugging
       function (callback) {
-        saveJsonFile(data, "data06nodebagset.json");
+        saveJsonFile(data, "data05nodebagset.json");
         callback();
       },
 
@@ -223,15 +225,14 @@ var fixData = function () {
         }
         callback();
       },
-
+      // save intermediate file for debugging
       function (callback) {
-        saveJsonFile(data, "data5addconnidsarray.json");
+        saveJsonFile(data, "data06addConnectionIdsArray.json");
         callback();
       },
 
       // ADD CONNECTION OBJECTS ARRAY
       function (callback) {
-
         addConnectionObjectsArray(data.nodes);
         if (consoleLog) {
           console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount, "; addConnectionObjectsArray");
@@ -241,10 +242,10 @@ var fixData = function () {
       },
 
       function (callback) {
-        saveJsonFile(data, "data6addconnectionOBJECTSarray.json");
+        saveJsonFile(data, "data07addConnectionOBJECTSarray.json");
         callback();
       },
-
+      // CONSOLIDATE LINKS INTO LINKS ARRAY
       function (callback) {
         consolidateLinks(data);
         if (consoleLog) {
@@ -255,7 +256,106 @@ var fixData = function () {
         callback();
       },
 
+      // stringify and save json data
       function (callback) {
+        if (consoleLog) {
+          console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount, "; save clean json file");
+        }
+        // var saveJson = function () {
+        try {
+          var myFile = __dirname + "/../data/output/AQList-clean.json";
+          var myJsonData = JSON.stringify(data, null, " ");
+          // if (consoleLog) { console.log("myJsonData =", myJsonData);
+          fse.writeFileSync(myFile, myJsonData, fsOptions);
+          if (consoleLog) {
+            console.log("\n ", __filename, "line", __line, ";  file written to: ", myFile, ";  file contained: ", trunc.n400(util.inspect(myJsonData, false, null)));
+          }
+        } catch (e) {
+          console.log("\n ", __filename, "line", __line, ";  Error: ", e);
+          callback();
+        }
+        callback();
+      },
+      function (callback) {
+        // read json file containing nodes and links
+        var cleanJsonFileName = __dirname + "/../data/output/AQList-clean.json";
+        try {
+          var buffer = fse.readFileSync(cleanJsonFileName); //, fsOptions); //, function (err, data) {
+          data = JSON.parse(buffer);
+        } catch (err) {
+          console.log("\n ", __filename, "line", __line, "; Error: ", err);
+        }
+        if (consoleLog) {
+          console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount);
+          console.log("\n ", __filename, "line", __line, "; data read from: \n", cleanJsonFileName);
+          console.log("\n ", __filename, "line", __line, "; data = \n", trunc.truncn(JSON.stringify(data), 200));
+        }
+        callback();
+      },
+
+      function (callback) {
+        // read json file containing config
+        var configJsonFileName = __dirname + "/../data/input/config.json";
+        var buffer = fse.readFileSync(configJsonFileName); //, fsOptions); //, function (err, data) {
+        config = JSON.parse(buffer);
+        if (consoleLog) {
+          console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount);
+          console.log("\n ", __filename, "line", __line, "; config data read from: \n", configJsonFileName);
+          console.log("\n ", __filename, "line", __line, "; config = \n", trunc.truncn(JSON.stringify(config), 200));
+        }
+        callback();
+      },
+
+
+      function (callback) {
+        var narrative;
+        var narrCounter = 0;
+        var responseString;
+        var readFilePath;
+        var node;
+        // using links from narrative_links.json, collect and save the narratives
+        console.log("\n ", __filename, "line", __line, "; function #2:", ++functionCount, "; ");
+        narrative_links = require(__dirname + "/../data/narrative_lists/narrative_links.json");
+        // var narrativeFileData;
+
+        for (var ldi = 0; ldi < data.nodes.length; ldi++) {
+          narrCounter++;
+          node = data.nodes[ldi];
+
+          // link_data_item = narrative_links[ldi];
+          // collectFilePath = "http://www.un.org/sc/committees/1267/" + link_data_item.narrativeFileName;
+          readFilePath = __dirname + "/../data/narrative_summaries/" + node.narrativeFileName;
+          //          saveTextFilePath = __dirname + "/../data/narrative_summaries/" + link_data_item.narrativeFileName + ".txt";
+          if (narrCounter < 10) {
+            try {
+              narrative = fse.readFileSync(readFilePath, fsOptions); //, function (err, data) {
+              console.log("\n ", __filename, "line", __line, "; getting file: ", ldi, readFilePath, "\n content = ", narrative);
+            } catch (err) {
+              console.log("\n ", __filename, "line", __line, "; Error: ", err);
+//            console.log("\n ", __filename, "line", __line, "; Error: ", err, "; reading stored backup file");
+              //           var backupFileName = collectFilePath; // __dirname + "/../data/backup/AQList.xml";
+//            AQList_xml = fse.readFileSync(backupFileName, fsOptions); //, function (err, data) {
+            }
+          }
+        }
+
+        callback();
+      },
+
+      function (callback) {
+
+
+
+
+
+
+
+
+
+
+
+
+
         //  addLinksArray(data.nodes);
         // countSourceTarget(data.nodes, data.links);
         if (consoleLog) {
@@ -282,12 +382,12 @@ var fixData = function () {
         }
         callback();
       },
-
+      // CHECK TARGETS EXIST
       function (callback) {
         checkTargetsExist(data.nodes, data.links);
         callback();
       },
-
+// COUNT NODES, PRINT NODE IDS
       function (callback) {
         var nodeCounter = 0;
         data.nodes.forEach(function (node) {
@@ -309,13 +409,13 @@ var fixData = function () {
           counter++;
           if (counter <= numObjectsToShow) {
             if (consoleLog) {
-              console.log("\n ", __filename, "line", __line, "; 296 counter = ", counter, "; link = ", link);
+              console.log("\n ", __filename, "line", __line, "; counter = ", counter, "; link/varlink = ", link);
             }
           }
         });
         callback();
       },
-      // comment
+      // stringify and save json data
       function (callback) {
         if (consoleLog) {
           console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount, "; save clean json file");
@@ -336,11 +436,11 @@ var fixData = function () {
         callback();
       },
 
-      // stringify
+      // placeholder 
       function (callback) {
-        var myJsonData = JSON.stringify(data, null, " ");
+        // var myJsonData = JSON.stringify(data, null, " ");
         if (consoleLog) {
-          console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount, "; save clean json file");
+          console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount, "; STRINGIFY json");
           console.log("\n ", __filename, "line", __line, "; data.nodes.length = ", data.nodes.length);
           console.log("\n ", __filename, "line", __line, "; data.links.length = ", data.links.length);
         }
@@ -406,7 +506,7 @@ var cleanUpIds = function (nodes) {
     // remove period from end of all reference numbers that have them; not all do.
     if (counter <= numObjectsToShow) {
       if (consoleLog) {
-        console.log("\n ", __filename, "line", __line, "; node with ids", node);
+        console.log("\n ", __filename, "line", __line, "; counter = ", counter, "; node with ids", node);
       }
     }
   });
@@ -432,7 +532,7 @@ var cleanUpRefNums = function (nodes) {
     }
     if (counter <= numObjectsToShow) {
       if (consoleLog) {
-        console.log("\n ", __filename, "line", __line, "; node with ids", node);
+        console.log("\n ", __filename, "line", __line, "; counter = ", counter, "; node with ids", node);
       }
     }
   });
