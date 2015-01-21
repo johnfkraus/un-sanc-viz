@@ -46,7 +46,7 @@ var runAppTest = function () {
       /*
 
        },
-       */
+
       function (callback) {
         // get the lists of narratives, consolidate in one json file
         if (consoleLog) {
@@ -60,7 +60,8 @@ var runAppTest = function () {
         getNarrativeList.getListOfNarratives();
         callback();
       },
-
+*/
+      /*
       function (callback) {
         // collect the narrative files from the Internet
         if (consoleLog) {
@@ -69,12 +70,15 @@ var runAppTest = function () {
         // read the file: /data/narrative_lists/narrative_links.json
         // loop through the list of ids and filenames/links and get the narrative files from the Internet and save each to a local file
         // using links from narrative_links.json, collect and save the narratives
-        // as /data/narrative_summaries/ + link_data_item.narrativeFileName
+        // as /data/narrative_summaries/ + link_data_array_item.narrativeFileName
         // using file names/links from /data/narrative_lists/narrative_links.json, collect and save the narratives
 
         collectNarratives.getTheNarratives();
         callback();
       },
+*/
+
+
 
       /*
        function (callback) {
@@ -86,15 +90,6 @@ var runAppTest = function () {
        callback();
        },
 
-       /*
-       function (callback) {
-       // put the narrative in the data structure
-       if (consoleLog) {
-       console.log("\n ", __filename, __line, "; function #:", ++functionCount);
-       }
-       makeDocs.get_html_docs();
-       callback();
-       },
 
        */
       function (callback) {

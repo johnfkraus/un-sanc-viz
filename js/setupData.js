@@ -322,10 +322,10 @@ var fixData = function () {
           narrCounter++;
           node = data.nodes[ldi];
 
-          // link_data_item = narrative_links[ldi];
-          // collectFilePath = "http://www.un.org/sc/committees/1267/" + link_data_item.narrativeFileName;
+          // link_data_array_item = narrative_links[ldi];
+          // collectFilePath = "http://www.un.org/sc/committees/1267/" + link_data_array_item.narrativeFileName;
           readFilePath = __dirname + "/../data/narrative_summaries/" + node.narrativeFileName;
-          //          saveTextFilePath = __dirname + "/../data/narrative_summaries/" + link_data_item.narrativeFileName + ".txt";
+          //          saveTextFilePath = __dirname + "/../data/narrative_summaries/" + link_data_array_item.narrativeFileName + ".txt";
           if (narrCounter < 10) {
             try {
               narrative = fse.readFileSync(readFilePath, fsOptions); //, function (err, data) {

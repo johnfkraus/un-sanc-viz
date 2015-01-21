@@ -70,7 +70,7 @@ var getTheNarratives = function () {
           link_data_item = narrative_links[ldi];
           collectFilePath = "http://www.un.org/sc/committees/1267/" + link_data_item.narrativeFileName;
           saveFilePath = __dirname + "/../data/narrative_summaries/" + link_data_item.narrativeFileName;
-//          saveTextFilePath = __dirname + "/../data/narrative_summaries/" + link_data_item.narrativeFileName + ".txt";
+//          saveTextFilePath = __dirname + "/../data/narrative_summaries/" + link_data_array_item.narrativeFileName + ".txt";
          getFile(collectFilePath, saveFilePath);
 
           if (narrCounter < 10) {
@@ -89,18 +89,18 @@ var getTheNarratives = function () {
         for (var ldi = 0; ldi < narrative_links.length; ldi++) {
           // narrCounter++;
           link_data_item = narrative_links[ldi];
-          //      collectFilePath = "http://www.un.org/sc/committees/1267/" + link_data_item.narrativeFileName;
+          //      collectFilePath = "http://www.un.org/sc/committees/1267/" + link_data_array_item.narrativeFileName;
           saveFilePath = __dirname + "/../data/narrative_summaries/" + link_data_item.narrativeFileName;
-          //    saveTextFilePath = __dirname + "/../data/narrative_summaries/" + link_data_item.narrativeFileName + ".txt";
+          //    saveTextFilePath = __dirname + "/../data/narrative_summaries/" + link_data_array_item.narrativeFileName + ".txt";
 //          getFile(collectFilePath, saveFilePath);
 
          // narrative = fse.readFileSync(saveFilePath).toString();
-         // link_data_item.narr = narrative;
+         // link_data_array_item.narr = narrative;
 
 //          $..book[?(@.isbn)]
 
           // text = jsonPath.eval(myJsonData, '$..[?(@.type=text)]');
-          // link_data_item.text = text;
+          // link_data_array_item.text = text;
           //if (narrCounter < 10) {
           //  console.log("\n ", __filename, "line", __line, "; text = ", text);
           //}
@@ -124,15 +124,15 @@ var getTheNarratives = function () {
        console.log("\n ", __filename, "line", __line, "; function #3:", ++functionCount, "; ");
        narrative_links = require(__dirname + "/../data/narrative_summaries/narrative_links.json");
        for (var ldi = 0; ldi < narrative_links.length; ldi++) {
-       link_data_item = narrative_links[ldi];
-       collectFilePath = "/sc/committees/1267/" + link_data_item.narrativeFileName;
-       saveFilePath = __dirname + "/../data/narrative_summaries/" + link_data_item.narrativeFileName;
-       saveTextFilePath = __dirname + "/../data/narrative_summaries/" + link_data_item.narrativeFileName + ".txt";
+       link_data_array_item = narrative_links[ldi];
+       collectFilePath = "/sc/committees/1267/" + link_data_array_item.narrativeFileName;
+       saveFilePath = __dirname + "/../data/narrative_summaries/" + link_data_array_item.narrativeFileName;
+       saveTextFilePath = __dirname + "/../data/narrative_summaries/" + link_data_array_item.narrativeFileName + ".txt";
        try {
        narrCounter++;
-       link_data_item.narr = getNarrativesData(host, collectFilePath, saveFilePath, narrCounter);
+       link_data_array_item.narr = getNarrativesData(host, collectFilePath, saveFilePath, narrCounter);
        if (narrCounter < 10) {
-       console.log("\n ", __filename, "line", __line, "; link_data_item = ", link_data_item);
+       console.log("\n ", __filename, "line", __line, "; link_data_array_item = ", link_data_array_item);
        }
        // getNarrativesData(host, getFileNameAndPath, outputFileNameAndPath);
        //            var res = request('GET', url);
@@ -141,8 +141,8 @@ var getTheNarratives = function () {
        console.log("\n ", __filename, "line", __line, "; Error: ", err);
        }
 
-       text = jsonPath.eval(link_data_item.narr, '$..[?(@.type=text)]');
-       link_data_item.text = text;
+       text = jsonPath.eval(link_data_array_item.narr, '$..[?(@.type=text)]');
+       link_data_array_item.text = text;
        if (narrCounter < 10) {
        console.log("\n ", __filename, "line", __line, "; text = ", text);
        }
