@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<CONSOLIDATED_LIST dateGenerated="2015-01-02T00:00:00">
+<CONSOLIDATED_LIST dateGenerated="2015-01-23T00:00:00">
    <INDIVIDUALS>
       <INDIVIDUAL>
          <DATAID>111900</DATAID>
@@ -2275,6 +2275,68 @@
          </INDIVIDUAL_DOCUMENT>
          <SORT_KEY>ALAYARI CHIHEB BENMOHAMED BENMOKHTAR</SORT_KEY>
          <SORT_KEY_LAST_MOD>2011-05-16T00:00:00</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL>
+         <DATAID>3169877</DATAID>
+         <VERSIONNUM>2</VERSIONNUM>
+         <FIRST_NAME>IBRAHIM</FIRST_NAME>
+         <SECOND_NAME>'ISA HAJJI</SECOND_NAME>
+         <THIRD_NAME>MUHAMMAD</THIRD_NAME>
+         <FOURTH_NAME>AL-BAKR</FOURTH_NAME>
+         <UN_LIST_TYPE>Al-Qaida</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>QI.A.344.15.</REFERENCE_NUMBER>
+         <LISTED_ON>2015-01-23T00:00:00</LISTED_ON>
+         <NAME_ORIGINAL_SCRIPT>ابراهیم عیسی حاجي محمد البکر</NAME_ORIGINAL_SCRIPT>
+         <COMMENTS1>Facilitator who provides financial support for and financial services to and in support of Al-Qaida (QE.A.4.01).</COMMENTS1>
+         <NATIONALITY>
+            <VALUE>of Qatar</VALUE>
+         </NATIONALITY>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Ibrahim 'Issa Haji Muhammad al-Bakar</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Ibrahim 'Isa Haji al-Bakr</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Ibrahim Issa Hijji Mohd Albaker</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Ibrahim Issa Hijji Muhammad al-Baker</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Ibrahim 'Issa al-Bakar</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Ibrahim al-Bakr</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Low</QUALITY>
+            <ALIAS_NAME>Abu-Khalil</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1977-07-12T00:00:00</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <COUNTRY>Qatar</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_DOCUMENT>
+            <TYPE_OF_DOCUMENT>Passport</TYPE_OF_DOCUMENT>
+            <NUMBER>01016646</NUMBER>
+            <ISSUING_COUNTRY>of Qatar</ISSUING_COUNTRY>
+         </INDIVIDUAL_DOCUMENT>
+         <SORT_KEY>ALBAKR IBRAHIM ISAHAJJI MUHAMMAD</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2015-01-23T00:00:00</SORT_KEY_LAST_MOD>
       </INDIVIDUAL>
       <INDIVIDUAL>
          <DATAID>3152650</DATAID>
@@ -6742,6 +6804,100 @@
          <INDIVIDUAL_DOCUMENT/>
          <SORT_KEY>BASHIRUDDIN MAHMOOD SULTAN</SORT_KEY>
          <SORT_KEY_LAST_MOD>2001-12-24T00:00:00</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL>
+         <DATAID>3169878</DATAID>
+         <VERSIONNUM>2</VERSIONNUM>
+         <FIRST_NAME>TARKHAN</FIRST_NAME>
+         <SECOND_NAME>TAYUMURAZOVICH</SECOND_NAME>
+         <THIRD_NAME>BATIRASHVILI</THIRD_NAME>
+         <UN_LIST_TYPE>Al-Qaida</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>QI.B.345.15.</REFERENCE_NUMBER>
+         <LISTED_ON>2015-01-23T00:00:00</LISTED_ON>
+         <COMMENTS1>As of mid-2014, Syria-based senior military commander and shura council member of Islamic State in Iraq and the Levant, listed as Al-Qaida in Iraq (AQI) (QE.J.115.04). Led approximately 1,000 foreign fighters for ISIL and committed a number of attacks in northern Syria.</COMMENTS1>
+         <NATIONALITY>
+            <VALUE>Georgian</VALUE>
+         </NATIONALITY>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Tarkhan Tayumurazovich Batyrashvili</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Tarkhan Batirashvili</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Low</QUALITY>
+            <ALIAS_NAME>Omar Shishani</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Low</QUALITY>
+            <ALIAS_NAME>Umar Shishani</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Low</QUALITY>
+            <ALIAS_NAME>Abu Umar al-Shishani</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Low</QUALITY>
+            <ALIAS_NAME>Omar al-Shishani</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Low</QUALITY>
+            <ALIAS_NAME>Chechen Omar</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Low</QUALITY>
+            <ALIAS_NAME>Omar the Chechen</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Low</QUALITY>
+            <ALIAS_NAME>Omer the Chechen</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Low</QUALITY>
+            <ALIAS_NAME>Umar the Chechen</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Low</QUALITY>
+            <ALIAS_NAME>Abu Umar</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Low</QUALITY>
+            <ALIAS_NAME>Abu Hudhayfah</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS>
+            <COUNTRY>Syrian Arab Republic</COUNTRY>
+            <NOTE>(located in as at Dec. 2014)</NOTE>
+         </INDIVIDUAL_ADDRESS>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1986-01-11T00:00:00</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <YEAR>1982</YEAR>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Akhmeta, Village Birkiani</CITY>
+            <COUNTRY>Georgia</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_DOCUMENT>
+            <TYPE_OF_DOCUMENT>Passport</TYPE_OF_DOCUMENT>
+            <NUMBER>09AL14455</NUMBER>
+            <ISSUING_COUNTRY>Georgian</ISSUING_COUNTRY>
+            <NOTE>expires on 26 Jun. 2019</NOTE>
+         </INDIVIDUAL_DOCUMENT>
+         <INDIVIDUAL_DOCUMENT>
+            <TYPE_OF_DOCUMENT>National Identification Number</TYPE_OF_DOCUMENT>
+            <NUMBER>08001007864</NUMBER>
+            <ISSUING_COUNTRY>Georgian</ISSUING_COUNTRY>
+         </INDIVIDUAL_DOCUMENT>
+         <SORT_KEY>BATIRASHVILI TARKHAN TAYUMURAZOVICH</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2015-01-23T00:00:00</SORT_KEY_LAST_MOD>
       </INDIVIDUAL>
       <INDIVIDUAL>
          <DATAID>2902221</DATAID>
@@ -13823,6 +13979,123 @@
          <INDIVIDUAL_DOCUMENT/>
          <SORT_KEY>UTHMAN OMAR MAHMOUD</SORT_KEY>
          <SORT_KEY_LAST_MOD>2013-07-22T00:00:00</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL>
+         <DATAID>3169774</DATAID>
+         <VERSIONNUM>2</VERSIONNUM>
+         <FIRST_NAME>'ABD AL-MALIK</FIRST_NAME>
+         <SECOND_NAME>MUHAMMAD</SECOND_NAME>
+         <THIRD_NAME>YUSUF</THIRD_NAME>
+         <FOURTH_NAME>'UTHMAN 'ABD AL-SALAM</FOURTH_NAME>
+         <UN_LIST_TYPE>Al-Qaida</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>QI.U.346.15.</REFERENCE_NUMBER>
+         <LISTED_ON>2015-01-23T00:00:00</LISTED_ON>
+         <NAME_ORIGINAL_SCRIPT>عبدالملك محمد يوسف عثمان عبد السلام</NAME_ORIGINAL_SCRIPT>
+         <COMMENTS1>Facilitator who provides financial, material, and technological support for Al-Qaida (QE.A.4.01) and Al-Nusrah Front for the People of the Levant (QE.A.137.14).</COMMENTS1>
+         <NATIONALITY>
+            <VALUE>Jordanian</VALUE>
+         </NATIONALITY>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>'Abd al-Malik Muhammad Yusif 'Abd-al-Salam</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Low</QUALITY>
+            <ALIAS_NAME>'Umar al-Qatari</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Low</QUALITY>
+            <ALIAS_NAME>'Umar al-Tayyar</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1989-07-13T00:00:00</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH/>
+         <INDIVIDUAL_DOCUMENT>
+            <TYPE_OF_DOCUMENT>Passport</TYPE_OF_DOCUMENT>
+            <NUMBER>K475336</NUMBER>
+            <ISSUING_COUNTRY>Jordanian</ISSUING_COUNTRY>
+            <DATE_OF_ISSUE>2009-08-31 00:00:00.0</DATE_OF_ISSUE>
+            <NOTE>and expired on 30 Aug. 2014</NOTE>
+         </INDIVIDUAL_DOCUMENT>
+         <INDIVIDUAL_DOCUMENT>
+            <TYPE_OF_DOCUMENT>National Identification Number</TYPE_OF_DOCUMENT>
+            <NUMBER>28940000602</NUMBER>
+            <ISSUING_COUNTRY>of Qatar</ISSUING_COUNTRY>
+         </INDIVIDUAL_DOCUMENT>
+         <SORT_KEY>UTHMANABDALSALAM ABDALMALIK MUHAMMAD YUSUF</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2015-01-23T00:00:00</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL>
+         <DATAID>3169548</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>ASHRAF</FIRST_NAME>
+         <SECOND_NAME>MUHAMMAD</SECOND_NAME>
+         <THIRD_NAME>YUSUF</THIRD_NAME>
+         <FOURTH_NAME>'UTHMAN 'ABD AL-SALAM</FOURTH_NAME>
+         <UN_LIST_TYPE>Al-Qaida</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>QI.U.343.15.</REFERENCE_NUMBER>
+         <LISTED_ON>2015-01-23T00:00:00</LISTED_ON>
+         <NAME_ORIGINAL_SCRIPT>اشرف محمد يوسف عثمان عبد السلام</NAME_ORIGINAL_SCRIPT>
+         <COMMENTS1>A member of Al-Qaida (QE.A.4.01) as of 2012 and a fighter in the Syrian Arab Republic since early 2014. Provided financial, material, and technological support for Al-Qaida, Al-Nusrah Front for the People of the Levant (QE.A.137.14) and Al-Qaida in Iraq (AQI) (QE.J.115.04).</COMMENTS1>
+         <NATIONALITY>
+            <VALUE>Jordanian</VALUE>
+         </NATIONALITY>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Ashraf Muhammad Yusif 'Uthman 'Abd-al-Salam</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Ashraf Muhammad Yusuf 'Abd-al-Salam</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Ashraf Muhammad Yusif 'Abd al-Salam</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Low</QUALITY>
+            <ALIAS_NAME>Khattab</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Low</QUALITY>
+            <ALIAS_NAME>Ibn al-Khattab</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS>
+            <STREET>Syrian Arab Republic (located in as at Dec. 2014)</STREET>
+         </INDIVIDUAL_ADDRESS>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <YEAR>1984</YEAR>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <COUNTRY>Iraq</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_DOCUMENT>
+            <TYPE_OF_DOCUMENT>Passport</TYPE_OF_DOCUMENT>
+            <NUMBER>K048787</NUMBER>
+            <ISSUING_COUNTRY>Jordanian</ISSUING_COUNTRY>
+         </INDIVIDUAL_DOCUMENT>
+         <INDIVIDUAL_DOCUMENT>
+            <TYPE_OF_DOCUMENT>Passport</TYPE_OF_DOCUMENT>
+            <NUMBER>486298</NUMBER>
+            <ISSUING_COUNTRY>Jordanian</ISSUING_COUNTRY>
+         </INDIVIDUAL_DOCUMENT>
+         <INDIVIDUAL_DOCUMENT>
+            <TYPE_OF_DOCUMENT>National Identification Number</TYPE_OF_DOCUMENT>
+            <NUMBER>28440000526</NUMBER>
+            <ISSUING_COUNTRY>of Qatar</ISSUING_COUNTRY>
+         </INDIVIDUAL_DOCUMENT>
+         <SORT_KEY>UTHMANABDALSALAM ASHRAF MUHAMMAD YUSUF</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2015-01-23T00:00:00</SORT_KEY_LAST_MOD>
       </INDIVIDUAL>
       <INDIVIDUAL>
          <DATAID>113328</DATAID>

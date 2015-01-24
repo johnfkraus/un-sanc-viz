@@ -1,18 +1,14 @@
 var Network, RadialPlacement, activate, root;
-
-//var svg = {},
 var selected = {},
   root = typeof exports !== "undefined" && exports !== null ? exports : this;
 
 Network = function () {
-
   //  variables we want to access in multiple places of Network
   var allData, charge, charge2, consoleLog, curLinksData, curNodesData, desiredDocsHeight, doc, filter, filterLinks, filterNodes, force,
     forceChargeParam, forceTick, groupCenters, svgHeight, hideDetails, layout, link, linkedByIndex, linksG, mapNodes,
     moveToRadialLayout, neighboring, network, node, nodeColors, nodeColors2, nodeColorsForNoLongerListed, nodeCounts, nodesG, radialTick,
     setFilter, setLayout, setSort, setupData, setupData2, showDetails, showingDoc, showTheDoc, sort, sortedTargets,
     strokeFor, tooltip, update, updateCenters, updateLinks, updateNodes, width;
-
   var docClosePadding = 8;
   var topStuffNegativeMargin = 10;
 
@@ -73,7 +69,6 @@ Network = function () {
     var genDate = function (data) {
       document.getElementById("dateGeneratedByUN").innerHTML = result;
     }(data);
-    // genDate(data);
     if (consoleLog) {
       console.log("docClosePadding = ", docClosePadding);
     }
@@ -120,20 +115,10 @@ Network = function () {
       console.log("; window.innerHeight = ", window.innerHeight, "; desiredDocsHeight = ", desiredDocsHeight, "; topStuffHeight = ", topStuffHeight, "; svgHeight = ", svgHeight);
       console.log("; window.innerWidth = ", window.innerWidth);
     }
-//    if (consoleLogDocument) {
-//      console.log("\n window.innerHeight = ", window.innerHeight, "; docHeight = ", docHeight, "; svgHeight = ", svgHeight);
-//    }
-
     $('svg').css('height', (svgHeight + topStuffNegativeMargin) + 'px');
     if (window.innerWidth < 900) {
       $('.mainTitleDiv').css('font-size', '14px');
     }
-//    console.log("right: window.innerWidth (", window.innerWidth, ") - $('#doc-container')[0].clientWidth (", $('#doc-container')[0].clientWidth, ") + docClosePadding (", docClosePadding, " ) + px");
-//    console.log("right: ", window.innerWidth - $('#doc-container')[0].clientWidth + docClosePadding);
-    //   $('#doc-close').css({
-    //  top: svgHeight + docClosePadding + 'px',
-    //  right: window.innerWidth - $('#doc-container')[0].clientWidth - docClosePadding + 'px'
-//    });
   }
 
   var repositionSvg = function (obj) {
@@ -249,7 +234,6 @@ Network = function () {
   };
 
   network.resize = function (showDoc) {
-//  function resize(showDoc) {
     console.log("viz.js 1120 resize(showDoc = ", showDoc, ")");
     var docHeight = 0,
       svgHeight = 0,
@@ -280,9 +264,6 @@ Network = function () {
     if (window.innerWidth < 900) {
       $('.mainTitleDiv').css('font-size', '14px');
     }
-//    $('#doc-close').css({
-    // right: window.innerWidth - $('#doc-container')[0].clientWidth + docClosePadding + 'px'
-//    });
   }
 
   // Public function to update highlighted nodes from search
@@ -522,8 +503,6 @@ Network = function () {
 //  attr is value stored in node, like 'target'
 
   nodeCounts = function (nodes, attr) {
-    // console.log("296 attr = ");
-    // console.log(attr);
     var counts;
     counts = {};
     nodes.forEach(function (d) {
@@ -638,10 +617,9 @@ Network = function () {
           console.log("\n ", __filename, "line", __line, "; Error null target id where l.source.id = ", l.source.id, "; l.source = ", JSON.stringify(l.source));
         }
       } catch (error) {
-        // console.log("\n ", __filename, "line", __line, "; Error: ", error, "; null target id where l.source.id = ", l.source.id, "; l.source = ", JSON.stringify(l.source));
         console.log("Error: ", error, "; null target id where l.source.id = ", l.source.id, "; l.source = ", JSON.stringify(l.source));
       }
-      if ((typeof curNodes.get(l.target) !== 'undefined') &&  (typeof curNodes.get(l.target.id) !== 'undefined') && (curNodes.get(l.target.id) !== null)) {
+      if ((typeof curNodes.get(l.target) !== 'undefined') && (typeof curNodes.get(l.target.id) !== 'undefined') && (curNodes.get(l.target.id) !== null)) {
         return curNodes.get(l.source.id) && curNodes.get(l.target.id);
       }
     });
@@ -714,8 +692,6 @@ Network = function () {
       // console.log('646 viz.js node.forEach(function (n) { showProps(n, "n")');
       // console.log(showProps(n, "n"));
       n.forEach(function (circle) {
-        // console.log(" JSON.pruned(circle, 4, 10)\n");
-        //   console.log(JSON.pruned(circle, 4, 4));
         countN++;
         if (countN < 5) {
           //  console.log("825 showProps(circle.r, 'circle.r'), # = ", countN);
@@ -833,8 +809,8 @@ Network = function () {
       return d.y += (centerNode.y - d.y) * k;
     };
   };
-//  Helper function that returns stroke color for particular node.
 
+//  Helper function that returns stroke color for particular node.
   strokeFor = function (d) {
     return d3.rgb(nodeColors(d.linkCount))
       .darker()
@@ -937,12 +913,10 @@ Network = function () {
     var m_names = new Array("January", "February", "March",
       "April", "May", "June", "July", "August", "September",
       "October", "November", "December");
-
     var d = new Date(dateString);
     var curr_date = d.getDate();
     var curr_month = d.getMonth();
     var curr_year = d.getFullYear();
-
     var dateString = curr_date + " " + m_names[curr_month]
       + " " + curr_year;
     console.log("viz.js 947 vizFormatDate() dateString = ", dateString);
@@ -955,7 +929,6 @@ Network = function () {
       svgHeight = 0,
       docContainer = $('#doc-container'),
       docClose = $('#doc-close');
-
     if (typeof showDoc == 'boolean') {
       showingDoc = showDoc;
       docContainer[showDoc ? 'show' : 'hide']();
@@ -983,9 +956,6 @@ Network = function () {
     if (window.innerWidth < 900) {
       $('.mainTitleDiv').css('font-size', '14px');
     }
-//    $('#doc-close').css({
-    //    right: window.innerWidth - $('#doc-container')[0].clientWidth + network.docClosePadding + 'px'
-//    });
   }
 
   // mouseout function
@@ -1094,72 +1064,7 @@ $(function () {
         return myNetwork.resize(false);
         // return false;
       });
-    /*
-     function resize(showDoc) {
-     console.log("viz.js 1120 resize(showDoc = ", showDoc, ")");
-     var docHeight = 0,
-     svgHeight = 0,
-     docContainer = $('#doc-container'),
-     docClose = $('#doc-close');
 
-     if (typeof showDoc == 'boolean') {
-     myNetwork.showingDoc = showDoc;
-     docContainer[showDoc ? 'show' : 'hide']();
-     docClose[showDoc ? 'show' : 'hide']();
-     }
-
-     if (myNetwork.showingDoc) {
-     docHeight = desiredDocsHeight;
-     $('#doc-container').css('height', docHeight + 'px');
-     } else {
-     docHeight = 0;
-     $('#doc-container').css('height', 0 + 'px');
-     }
-     svgHeight = window.innerHeight - docHeight - $("#top-stuff").height() + topStuffNegativeMargin;
-     if (myNetwork.consoleLog) {
-     console.log("viz.js 1143 window.innerHeight = ", window.innerHeight, "; svgHeight = ", svgHeight, "; window.innerWidth = ", window.innerWidth);
-     }
-     $('#svg').css('height', svgHeight + 'px');
-
-     if (window.innerWidth < 900) {
-     $('.mainTitleDiv').css('font-size', '14px');
-     }
-     $('#doc-close').css({
-     right: window.innerWidth - $('#doc-container')[0].clientWidth + docClosePadding + 'px'
-     });
-     }
-
-     function docResize(showDoc) {
-     if (myNetwork.consoleLog) {
-     console.log("Document.js 51 resize(showDoc = ", showDoc, ")");
-     }
-     var docHeight = 0,
-     svgHeight = 0,
-     docContainer = $('#doc-container'),
-     docClose = $('#doc-close');
-
-     if (typeof showDoc == 'boolean') {
-     showingDoc = showDoc;
-     docContainer[showDoc ? 'show' : 'hide']();
-     docClose[showDoc ? 'show' : 'hide']();
-     }
-     if (showingDoc) {
-     docHeight = desiredDocsHeight;
-     $('#doc-container').css('height', docHeight + 'px');
-     }
-     svgHeight = window.innerHeight - docHeight - $("#top-stuff").height() + topStuffNegativeMargin;
-     $('#svg').css('height', svgHeight + 'px');
-     if (window.innerWidth < 900) {
-     $('.mainTitleDiv').css('font-size', '14px');
-     }
-     $('#doc-close').css({
-     right: window.innerWidth - $('#doc-container')[0].clientWidth + myNetwork.docClosePadding + 'px'
-     });
-     if (consoleLog) {
-     console.log("Document.js window.innerHeight = ", window.innerHeight, "; desiredDocsHeight = ", desiredDocsHeight, "; topStuffHeight = ", $("#top-stuff").height(), "; svgHeight = ", svgHeight, "\nwindow.innerWidth = ", window.innerWidth, "; docHeight = ", docHeight);
-     }
-     }
-     */
     function hideDocument() {
       $("#doc-close").css('display', 'none');
       $("#doc-container").css('display', 'none');
@@ -1205,7 +1110,7 @@ $(function () {
 
     // get list of radio buttons with name 'noneEntIndiv'
     var radioNEI = document.forms['highlight'].elements['noneEntIndiv'];
-// loop through list
+    // loop through list
     for (var i = 0, len = radioNEI.length; i < len; i++) {
       radioNEI[i].onclick = function () { // assign onclick handler function to each
         // put clicked radio button's value in total field
@@ -1270,138 +1175,9 @@ $(function () {
     }
 
     // LOAD THE JSON DATA FILE HERE
-    return d3.json("data/output/AQList-docs.json", function (json) {
+    return d3.json("data/output/AQList-clean-docs.json", function (json) {
       return myNetwork("#svg", json);
     });
   }
 );
 // end of function()
-
-/*
-
- //  Help with the placement of nodes
- RadialPlacement = function () {
- var center, current, increment, place, placement, radialLocation, radius, setKeys, start, values;
- // stores the key -> location values
- values = d3.map();
- // how much to separate each location by
- increment = 5;
- // how large to make the layout
- radius = 50;
- //  where the center of the layout should be
-
- center = {
- "x": 0,
- "y": 0
- };
- //  what angle to start at
-
- start = -120;
- current = start;
-
- //  Given an center point, angle, and radius length,
- //  return a radial position for that angle
-
- radialLocation = function (center, angle, radius) {
- var x, y;
- x = center.x + radius * Math.cos(angle * Math.PI / 180);
- y = center.y + radius * Math.sin(angle * Math.PI / 180);
- return {
- "x": x,
- "y": y
- };
- };
- //  Main entry point for RadialPlacement
- //  Returns location for a particular key,
- //  creating a new location if necessary.
-
- placement = function (key) {
- var value;
- value = values.get(key);
- if (!values.has(key)) {
- value = place(key);
- }
- return value;
- };
- //  Gets a new location for input key
-
- place = function (key) {
-
- var value;
- value = radialLocation(center, current, radius);
- values.set(key, value);
- current += increment;
- return value;
- };
- //  Given a set of keys, perform some magic to create a two ringed radial layout.
- //  Expects radius, increment, and center to be set.
- //  If there are a small number of keys, just make one circle.
-
- setKeys = function (keys) {
-
- var firstCircleCount, firstCircleKeys, secondCircleKeys;
- //  start with an empty values
- values = d3.map();
- //  number of keys to go in first circle
- firstCircleCount = 360 / increment;
- //  if we don't have enough keys, modify increment
- //  so that they all fit in one circle
-
- if (keys.length < firstCircleCount) {
- increment = 360 / keys.length;
- }
- //  set locations for inner circle
-
- firstCircleKeys = keys.slice(0, firstCircleCount);
- firstCircleKeys.forEach(function (k) {
- return place(k);
- });
- //  set locations for outer circle
-
- secondCircleKeys = keys.slice(firstCircleCount);
- //  setup outer circle
- radius = radius + radius / 1.8;
- increment = 360 / secondCircleKeys.length;
- return secondCircleKeys.forEach(function (k) {
- return place(k);
- });
- };
- placement.keys = function (_) {
- if (!arguments.length) {
- return d3.keys(values);
- }
- setKeys(_);
- return placement;
- };
- placement.center = function (_) {
- if (!arguments.length) {
- return center;
- }
- center = _;
- return placement;
- };
- placement.radius = function (_) {
- if (!arguments.length) {
- return radius;
- }
- radius = _;
- return placement;
- };
- placement.start = function (_) {
- if (!arguments.length) {
- return start;
- }
- start = _;
- current = start;
- return placement;
- };
- placement.increment = function (_) {
- if (!arguments.length) {
- return increment;
- }
- increment = _;
- return placement;
- };
- return placement;
- };
- */

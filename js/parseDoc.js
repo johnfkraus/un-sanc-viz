@@ -921,5 +921,5 @@ var vizFormatDateSetup = function (dateString) {
 };
 
 module.exports = {
-  // fixData: fixData
+  parseDoc: parseDoc
 };

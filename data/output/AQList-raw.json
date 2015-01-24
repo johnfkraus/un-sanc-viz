@@ -1,7 +1,7 @@
 {
  "CONSOLIDATED_LIST": {
   "$": {
-   "dateGenerated": "2015-01-02T00:00:00"
+   "dateGenerated": "2015-01-23T00:00:00"
   },
   "INDIVIDUALS": {
    "INDIVIDUAL": [
@@ -2427,6 +2427,70 @@
      },
      "SORT_KEY": "ALAYARI CHIHEB BENMOHAMED BENMOKHTAR",
      "SORT_KEY_LAST_MOD": "2011-05-16T00:00:00"
+    },
+    {
+     "DATAID": "3169877",
+     "VERSIONNUM": "2",
+     "FIRST_NAME": "IBRAHIM",
+     "SECOND_NAME": "'ISA HAJJI",
+     "THIRD_NAME": "MUHAMMAD",
+     "FOURTH_NAME": "AL-BAKR",
+     "UN_LIST_TYPE": "Al-Qaida",
+     "REFERENCE_NUMBER": "QI.A.344.15.",
+     "LISTED_ON": "2015-01-23T00:00:00",
+     "NAME_ORIGINAL_SCRIPT": "ابراهیم عیسی حاجي محمد البکر",
+     "COMMENTS1": "Facilitator who provides financial support for and financial services to and in support of Al-Qaida (QE.A.4.01).",
+     "NATIONALITY": {
+      "VALUE": "of Qatar"
+     },
+     "LIST_TYPE": {
+      "VALUE": "UN List"
+     },
+     "INDIVIDUAL_ALIAS": [
+      {
+       "QUALITY": "Good",
+       "ALIAS_NAME": "Ibrahim 'Issa Haji Muhammad al-Bakar"
+      },
+      {
+       "QUALITY": "Good",
+       "ALIAS_NAME": "Ibrahim 'Isa Haji al-Bakr"
+      },
+      {
+       "QUALITY": "Good",
+       "ALIAS_NAME": "Ibrahim Issa Hijji Mohd Albaker"
+      },
+      {
+       "QUALITY": "Good",
+       "ALIAS_NAME": "Ibrahim Issa Hijji Muhammad al-Baker"
+      },
+      {
+       "QUALITY": "Good",
+       "ALIAS_NAME": "Ibrahim 'Issa al-Bakar"
+      },
+      {
+       "QUALITY": "Good",
+       "ALIAS_NAME": "Ibrahim al-Bakr"
+      },
+      {
+       "QUALITY": "Low",
+       "ALIAS_NAME": "Abu-Khalil"
+      }
+     ],
+     "INDIVIDUAL_ADDRESS": "",
+     "INDIVIDUAL_DATE_OF_BIRTH": {
+      "TYPE_OF_DATE": "Exact",
+      "DATE": "1977-07-12T00:00:00"
+     },
+     "INDIVIDUAL_PLACE_OF_BIRTH": {
+      "COUNTRY": "Qatar"
+     },
+     "INDIVIDUAL_DOCUMENT": {
+      "TYPE_OF_DOCUMENT": "Passport",
+      "NUMBER": "01016646",
+      "ISSUING_COUNTRY": "of Qatar"
+     },
+     "SORT_KEY": "ALBAKR IBRAHIM ISAHAJJI MUHAMMAD",
+     "SORT_KEY_LAST_MOD": "2015-01-23T00:00:00"
     },
     {
      "DATAID": "3152650",
@@ -7156,6 +7220,106 @@
      "INDIVIDUAL_DOCUMENT": "",
      "SORT_KEY": "BASHIRUDDIN MAHMOOD SULTAN",
      "SORT_KEY_LAST_MOD": "2001-12-24T00:00:00"
+    },
+    {
+     "DATAID": "3169878",
+     "VERSIONNUM": "2",
+     "FIRST_NAME": "TARKHAN",
+     "SECOND_NAME": "TAYUMURAZOVICH",
+     "THIRD_NAME": "BATIRASHVILI",
+     "UN_LIST_TYPE": "Al-Qaida",
+     "REFERENCE_NUMBER": "QI.B.345.15.",
+     "LISTED_ON": "2015-01-23T00:00:00",
+     "COMMENTS1": "As of mid-2014, Syria-based senior military commander and shura council member of Islamic State in Iraq and the Levant, listed as Al-Qaida in Iraq (AQI) (QE.J.115.04). Led approximately 1,000 foreign fighters for ISIL and committed a number of attacks in northern Syria.",
+     "NATIONALITY": {
+      "VALUE": "Georgian"
+     },
+     "LIST_TYPE": {
+      "VALUE": "UN List"
+     },
+     "INDIVIDUAL_ALIAS": [
+      {
+       "QUALITY": "Good",
+       "ALIAS_NAME": "Tarkhan Tayumurazovich Batyrashvili"
+      },
+      {
+       "QUALITY": "Good",
+       "ALIAS_NAME": "Tarkhan Batirashvili"
+      },
+      {
+       "QUALITY": "Low",
+       "ALIAS_NAME": "Omar Shishani"
+      },
+      {
+       "QUALITY": "Low",
+       "ALIAS_NAME": "Umar Shishani"
+      },
+      {
+       "QUALITY": "Low",
+       "ALIAS_NAME": "Abu Umar al-Shishani"
+      },
+      {
+       "QUALITY": "Low",
+       "ALIAS_NAME": "Omar al-Shishani"
+      },
+      {
+       "QUALITY": "Low",
+       "ALIAS_NAME": "Chechen Omar"
+      },
+      {
+       "QUALITY": "Low",
+       "ALIAS_NAME": "Omar the Chechen"
+      },
+      {
+       "QUALITY": "Low",
+       "ALIAS_NAME": "Omer the Chechen"
+      },
+      {
+       "QUALITY": "Low",
+       "ALIAS_NAME": "Umar the Chechen"
+      },
+      {
+       "QUALITY": "Low",
+       "ALIAS_NAME": "Abu Umar"
+      },
+      {
+       "QUALITY": "Low",
+       "ALIAS_NAME": "Abu Hudhayfah"
+      }
+     ],
+     "INDIVIDUAL_ADDRESS": {
+      "COUNTRY": "Syrian Arab Republic",
+      "NOTE": "(located in as at Dec. 2014)"
+     },
+     "INDIVIDUAL_DATE_OF_BIRTH": [
+      {
+       "TYPE_OF_DATE": "Exact",
+       "DATE": "1986-01-11T00:00:00"
+      },
+      {
+       "TYPE_OF_DATE": "Exact",
+       "YEAR": "1982"
+      }
+     ],
+     "INDIVIDUAL_PLACE_OF_BIRTH": {
+      "CITY": "Akhmeta, Village Birkiani",
+      "COUNTRY": "Georgia"
+     },
+     "INDIVIDUAL_DOCUMENT": [
+      {
+       "TYPE_OF_DOCUMENT": "Passport",
+       "NUMBER": "09AL14455",
+       "ISSUING_COUNTRY": "Georgian",
+       "NOTE": "expires on 26 Jun. 2019"
+      },
+      {
+       "TYPE_OF_DOCUMENT": "National Identification Number",
+       "NUMBER": "08001007864",
+       "ISSUING_COUNTRY": "Georgian"
+      }
+     ],
+     "SORT_KEY": "BATIRASHVILI TARKHAN TAYUMURAZOVICH",
+     "SORT_KEY_LAST_MOD": "2015-01-23T00:00:00"
     },
     {
      "DATAID": "2902221",
@@ -14667,6 +14831,131 @@
      "INDIVIDUAL_DOCUMENT": "",
      "SORT_KEY": "UTHMAN OMAR MAHMOUD",
      "SORT_KEY_LAST_MOD": "2013-07-22T00:00:00"
+    },
+    {
+     "DATAID": "3169774",
+     "VERSIONNUM": "2",
+     "FIRST_NAME": "'ABD AL-MALIK",
+     "SECOND_NAME": "MUHAMMAD",
+     "THIRD_NAME": "YUSUF",
+     "FOURTH_NAME": "'UTHMAN 'ABD AL-SALAM",
+     "UN_LIST_TYPE": "Al-Qaida",
+     "REFERENCE_NUMBER": "QI.U.346.15.",
+     "LISTED_ON": "2015-01-23T00:00:00",
+     "NAME_ORIGINAL_SCRIPT": "عبدالملك محمد يوسف عثمان عبد السلام",
+     "COMMENTS1": "Facilitator who provides financial, material, and technological support for Al-Qaida (QE.A.4.01) and Al-Nusrah Front for the People of the Levant (QE.A.137.14).",
+     "NATIONALITY": {
+      "VALUE": "Jordanian"
+     },
+     "LIST_TYPE": {
+      "VALUE": "UN List"
+     },
+     "INDIVIDUAL_ALIAS": [
+      {
+       "QUALITY": "Good",
+       "ALIAS_NAME": "'Abd al-Malik Muhammad Yusif 'Abd-al-Salam"
+      },
+      {
+       "QUALITY": "Low",
+       "ALIAS_NAME": "'Umar al-Qatari"
+      },
+      {
+       "QUALITY": "Low",
+       "ALIAS_NAME": "'Umar al-Tayyar"
+      }
+     ],
+     "INDIVIDUAL_ADDRESS": "",
+     "INDIVIDUAL_DATE_OF_BIRTH": {
+      "TYPE_OF_DATE": "Exact",
+      "DATE": "1989-07-13T00:00:00"
+     },
+     "INDIVIDUAL_PLACE_OF_BIRTH": "",
+     "INDIVIDUAL_DOCUMENT": [
+      {
+       "TYPE_OF_DOCUMENT": "Passport",
+       "NUMBER": "K475336",
+       "ISSUING_COUNTRY": "Jordanian",
+       "DATE_OF_ISSUE": "2009-08-31 00:00:00.0",
+       "NOTE": "and expired on 30 Aug. 2014"
+      },
+      {
+       "TYPE_OF_DOCUMENT": "National Identification Number",
+       "NUMBER": "28940000602",
+       "ISSUING_COUNTRY": "of Qatar"
+      }
+     ],
+     "SORT_KEY": "UTHMANABDALSALAM ABDALMALIK MUHAMMAD YUSUF",
+     "SORT_KEY_LAST_MOD": "2015-01-23T00:00:00"
+    },
+    {
+     "DATAID": "3169548",
+     "VERSIONNUM": "1",
+     "FIRST_NAME": "ASHRAF",
+     "SECOND_NAME": "MUHAMMAD",
+     "THIRD_NAME": "YUSUF",
+     "FOURTH_NAME": "'UTHMAN 'ABD AL-SALAM",
+     "UN_LIST_TYPE": "Al-Qaida",
+     "REFERENCE_NUMBER": "QI.U.343.15.",
+     "LISTED_ON": "2015-01-23T00:00:00",
+     "NAME_ORIGINAL_SCRIPT": "اشرف محمد يوسف عثمان عبد السلام",
+     "COMMENTS1": "A member of Al-Qaida (QE.A.4.01) as of 2012 and a fighter in the Syrian Arab Republic since early 2014. Provided financial, material, and technological support for Al-Qaida, Al-Nusrah Front for the People of the Levant (QE.A.137.14) and Al-Qaida in Iraq (AQI) (QE.J.115.04).",
+     "NATIONALITY": {
+      "VALUE": "Jordanian"
+     },
+     "LIST_TYPE": {
+      "VALUE": "UN List"
+     },
+     "INDIVIDUAL_ALIAS": [
+      {
+       "QUALITY": "Good",
+       "ALIAS_NAME": "Ashraf Muhammad Yusif 'Uthman 'Abd-al-Salam"
+      },
+      {
+       "QUALITY": "Good",
+       "ALIAS_NAME": "Ashraf Muhammad Yusuf 'Abd-al-Salam"
+      },
+      {
+       "QUALITY": "Good",
+       "ALIAS_NAME": "Ashraf Muhammad Yusif 'Abd al-Salam"
+      },
+      {
+       "QUALITY": "Low",
+       "ALIAS_NAME": "Khattab"
+      },
+      {
+       "QUALITY": "Low",
+       "ALIAS_NAME": "Ibn al-Khattab"
+      }
+     ],
+     "INDIVIDUAL_ADDRESS": {
+      "STREET": "Syrian Arab Republic (located in as at Dec. 2014)"
+     },
+     "INDIVIDUAL_DATE_OF_BIRTH": {
+      "TYPE_OF_DATE": "Exact",
+      "YEAR": "1984"
+     },
+     "INDIVIDUAL_PLACE_OF_BIRTH": {
+      "COUNTRY": "Iraq"
+     },
+     "INDIVIDUAL_DOCUMENT": [
+      {
+       "TYPE_OF_DOCUMENT": "Passport",
+       "NUMBER": "K048787",
+       "ISSUING_COUNTRY": "Jordanian"
+      },
+      {
+       "TYPE_OF_DOCUMENT": "Passport",
+       "NUMBER": "486298",
+       "ISSUING_COUNTRY": "Jordanian"
+      },
+      {
+       "TYPE_OF_DOCUMENT": "National Identification Number",
+       "NUMBER": "28440000526",
+       "ISSUING_COUNTRY": "of Qatar"
+      }
+     ],
+     "SORT_KEY": "UTHMANABDALSALAM ASHRAF MUHAMMAD YUSUF",
+     "SORT_KEY_LAST_MOD": "2015-01-23T00:00:00"
     },
     {
      "DATAID": "113328",

@@ -1597,5 +1597,33 @@
   "targetName": "Oumar Diaby",
   "entityOrIndiv": "indiv",
   "rowNum": 229
+ },
+ {
+  "id": "QI.U.343.15",
+  "narrativeFileName": "NSQI34315E.shtml",
+  "targetName": "Ashraf Muhammad Yusuf 'Uthman 'Abd al-Salam",
+  "entityOrIndiv": "indiv",
+  "rowNum": 230
+ },
+ {
+  "id": "QI.A.344.15",
+  "narrativeFileName": "NSQI34415E.shtml",
+  "targetName": "Ibrahim ‘Isa Hajji Muhammad al-Bakr",
+  "entityOrIndiv": "indiv",
+  "rowNum": 231
+ },
+ {
+  "id": "QI.B.345.15",
+  "narrativeFileName": "NSQI34515E.shtml",
+  "targetName": "Tarkhan Tayumurazovich Batirashvili",
+  "entityOrIndiv": "indiv",
+  "rowNum": 232
+ },
+ {
+  "id": "QI.U.346.15",
+  "narrativeFileName": "NSQI34615E.shtml",
+  "targetName": "'Abd al-Malik Muhammad Yusuf 'Uthman 'Abd al-Salam",
+  "entityOrIndiv": "indiv",
+  "rowNum": 233
  }
 ]

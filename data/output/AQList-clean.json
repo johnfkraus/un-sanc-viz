@@ -4166,6 +4166,118 @@
    "linkCount": 0
   },
   {
+   "DATAID": "3169877",
+   "VERSIONNUM": "2",
+   "FIRST_NAME": "IBRAHIM",
+   "SECOND_NAME": "'ISA HAJJI",
+   "THIRD_NAME": "MUHAMMAD",
+   "FOURTH_NAME": "AL-BAKR",
+   "UN_LIST_TYPE": "Al-Qaida",
+   "REFERENCE_NUMBER": "QI.A.344.15",
+   "LISTED_ON": "2015-01-23T00:00:00",
+   "NAME_ORIGINAL_SCRIPT": "ابراهیم عیسی حاجي محمد البکر",
+   "COMMENTS1": "Facilitator who provides financial support for and financial services to and in support of Al-Qaida (QE.A.4.01).",
+   "NATIONALITY": {
+    "VALUE": "of Qatar"
+   },
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ALIAS": [
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Ibrahim 'Issa Haji Muhammad al-Bakar"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Ibrahim 'Isa Haji al-Bakr"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Ibrahim Issa Hijji Mohd Albaker"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Ibrahim Issa Hijji Muhammad al-Baker"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Ibrahim 'Issa al-Bakar"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Ibrahim al-Bakr"
+    },
+    {
+     "QUALITY": "Low",
+     "ALIAS_NAME": "Abu-Khalil"
+    }
+   ],
+   "INDIVIDUAL_ADDRESS": "",
+   "INDIVIDUAL_DATE_OF_BIRTH": {
+    "TYPE_OF_DATE": "Exact",
+    "DATE": "1977-07-12T00:00:00"
+   },
+   "INDIVIDUAL_PLACE_OF_BIRTH": {
+    "COUNTRY": "Qatar"
+   },
+   "INDIVIDUAL_DOCUMENT": {
+    "TYPE_OF_DOCUMENT": "Passport",
+    "NUMBER": "01016646",
+    "ISSUING_COUNTRY": "of Qatar"
+   },
+   "SORT_KEY": "ALBAKR IBRAHIM ISAHAJJI MUHAMMAD",
+   "SORT_KEY_LAST_MOD": "2015-01-23T00:00:00",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "11 July 1977 (Exact)",
+   "indivPlaceOfBirthString": "Qatar, ",
+   "aliasCount": 7,
+   "indivAliasString": "Ibrahim 'Issa Haji Muhammad al-Bakar (Good); Ibrahim 'Isa Haji al-Bakr (Good); Ibrahim Issa Hijji Mohd Albaker (Good); Ibrahim Issa Hijji Muhammad al-Baker (Good); Ibrahim 'Issa al-Bakar (Good); Ibrahim al-Bakr (Good); Abu-Khalil (Low); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "id": "QI.A.344.15",
+   "name": "IBRAHIM 'ISA HAJJI MUHAMMAD AL-BAKR",
+   "natnlty": "of Qatar",
+   "connectionIdsSet": {
+    "_map": {
+     "_list": [
+      {
+       "key": {
+        "_obj": "QE.A.4.01",
+        "_obj_equals": false
+       },
+       "value": true
+      }
+     ],
+     "_es6Map": null,
+     "_buckets": null,
+     "_count": 1
+    }
+   },
+   "connectedToId": [
+    "QE.A.4.01"
+   ],
+   "links": [
+    "QE.A.4.01"
+   ],
+   "linkSet": {
+    "_map": {
+     "_list": [],
+     "_es6Map": null,
+     "_buckets": null,
+     "_count": 0
+    }
+   },
+   "connections": [
+    {
+     "source": "QI.A.344.15",
+     "target": "QE.A.4.01"
+    }
+   ],
+   "linkCount": 1
+  },
+  {
    "DATAID": "3152650",
    "VERSIONNUM": "3",
    "FIRST_NAME": "ABDUL MOHSEN",
@@ -11989,6 +12101,154 @@
     }
    },
    "connections": [],
+   "linkCount": 1
+  },
+  {
+   "DATAID": "3169878",
+   "VERSIONNUM": "2",
+   "FIRST_NAME": "TARKHAN",
+   "SECOND_NAME": "TAYUMURAZOVICH",
+   "THIRD_NAME": "BATIRASHVILI",
+   "UN_LIST_TYPE": "Al-Qaida",
+   "REFERENCE_NUMBER": "QI.B.345.15",
+   "LISTED_ON": "2015-01-23T00:00:00",
+   "COMMENTS1": "As of mid-2014, Syria-based senior military commander and shura council member of Islamic State in Iraq and the Levant, listed as Al-Qaida in Iraq (AQI) (QE.J.115.04). Led approximately 1,000 foreign fighters for ISIL and committed a number of attacks in northern Syria.",
+   "NATIONALITY": {
+    "VALUE": "Georgian"
+   },
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ALIAS": [
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Tarkhan Tayumurazovich Batyrashvili"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Tarkhan Batirashvili"
+    },
+    {
+     "QUALITY": "Low",
+     "ALIAS_NAME": "Omar Shishani"
+    },
+    {
+     "QUALITY": "Low",
+     "ALIAS_NAME": "Umar Shishani"
+    },
+    {
+     "QUALITY": "Low",
+     "ALIAS_NAME": "Abu Umar al-Shishani"
+    },
+    {
+     "QUALITY": "Low",
+     "ALIAS_NAME": "Omar al-Shishani"
+    },
+    {
+     "QUALITY": "Low",
+     "ALIAS_NAME": "Chechen Omar"
+    },
+    {
+     "QUALITY": "Low",
+     "ALIAS_NAME": "Omar the Chechen"
+    },
+    {
+     "QUALITY": "Low",
+     "ALIAS_NAME": "Omer the Chechen"
+    },
+    {
+     "QUALITY": "Low",
+     "ALIAS_NAME": "Umar the Chechen"
+    },
+    {
+     "QUALITY": "Low",
+     "ALIAS_NAME": "Abu Umar"
+    },
+    {
+     "QUALITY": "Low",
+     "ALIAS_NAME": "Abu Hudhayfah"
+    }
+   ],
+   "INDIVIDUAL_ADDRESS": {
+    "COUNTRY": "Syrian Arab Republic",
+    "NOTE": "(located in as at Dec. 2014)"
+   },
+   "INDIVIDUAL_DATE_OF_BIRTH": [
+    {
+     "TYPE_OF_DATE": "Exact",
+     "DATE": "1986-01-11T00:00:00"
+    },
+    {
+     "TYPE_OF_DATE": "Exact",
+     "YEAR": "1982"
+    }
+   ],
+   "INDIVIDUAL_PLACE_OF_BIRTH": {
+    "CITY": "Akhmeta, Village Birkiani",
+    "COUNTRY": "Georgia"
+   },
+   "INDIVIDUAL_DOCUMENT": [
+    {
+     "TYPE_OF_DOCUMENT": "Passport",
+     "NUMBER": "09AL14455",
+     "ISSUING_COUNTRY": "Georgian",
+     "NOTE": "expires on 26 Jun. 2019"
+    },
+    {
+     "TYPE_OF_DOCUMENT": "National Identification Number",
+     "NUMBER": "08001007864",
+     "ISSUING_COUNTRY": "Georgian"
+    }
+   ],
+   "SORT_KEY": "BATIRASHVILI TARKHAN TAYUMURAZOVICH",
+   "SORT_KEY_LAST_MOD": "2015-01-23T00:00:00",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "",
+   "indivPlaceOfBirthString": "Akhmeta, Village Birkiani, Georgia, ",
+   "aliasCount": 12,
+   "indivAliasString": "Tarkhan Tayumurazovich Batyrashvili (Good); Tarkhan Batirashvili (Good); Omar Shishani (Low); Umar Shishani (Low); Abu Umar al-Shishani (Low); Omar al-Shishani (Low); Chechen Omar (Low); Omar the Chechen (Low); Omer the Chechen (Low); Umar the Chechen (Low); Abu Umar (Low); Abu Hudhayfah (Low); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "id": "QI.B.345.15",
+   "name": "TARKHAN TAYUMURAZOVICH BATIRASHVILI",
+   "natnlty": "Georgian",
+   "connectionIdsSet": {
+    "_map": {
+     "_list": [
+      {
+       "key": {
+        "_obj": "QE.J.115.04",
+        "_obj_equals": false
+       },
+       "value": true
+      }
+     ],
+     "_es6Map": null,
+     "_buckets": null,
+     "_count": 1
+    }
+   },
+   "connectedToId": [
+    "QE.J.115.04"
+   ],
+   "links": [
+    "QE.J.115.04"
+   ],
+   "linkSet": {
+    "_map": {
+     "_list": [],
+     "_es6Map": null,
+     "_buckets": null,
+     "_count": 0
+    }
+   },
+   "connections": [
+    {
+     "source": "QI.B.345.15",
+     "target": "QE.J.115.04"
+    }
+   ],
    "linkCount": 1
   },
   {
@@ -24697,6 +24957,266 @@
    "linkCount": 0
   },
   {
+   "DATAID": "3169774",
+   "VERSIONNUM": "2",
+   "FIRST_NAME": "'ABD AL-MALIK",
+   "SECOND_NAME": "MUHAMMAD",
+   "THIRD_NAME": "YUSUF",
+   "FOURTH_NAME": "'UTHMAN 'ABD AL-SALAM",
+   "UN_LIST_TYPE": "Al-Qaida",
+   "REFERENCE_NUMBER": "QI.U.346.15",
+   "LISTED_ON": "2015-01-23T00:00:00",
+   "NAME_ORIGINAL_SCRIPT": "عبدالملك محمد يوسف عثمان عبد السلام",
+   "COMMENTS1": "Facilitator who provides financial, material, and technological support for Al-Qaida (QE.A.4.01) and Al-Nusrah Front for the People of the Levant (QE.A.137.14).",
+   "NATIONALITY": {
+    "VALUE": "Jordanian"
+   },
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ALIAS": [
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "'Abd al-Malik Muhammad Yusif 'Abd-al-Salam"
+    },
+    {
+     "QUALITY": "Low",
+     "ALIAS_NAME": "'Umar al-Qatari"
+    },
+    {
+     "QUALITY": "Low",
+     "ALIAS_NAME": "'Umar al-Tayyar"
+    }
+   ],
+   "INDIVIDUAL_ADDRESS": "",
+   "INDIVIDUAL_DATE_OF_BIRTH": {
+    "TYPE_OF_DATE": "Exact",
+    "DATE": "1989-07-13T00:00:00"
+   },
+   "INDIVIDUAL_PLACE_OF_BIRTH": "",
+   "INDIVIDUAL_DOCUMENT": [
+    {
+     "TYPE_OF_DOCUMENT": "Passport",
+     "NUMBER": "K475336",
+     "ISSUING_COUNTRY": "Jordanian",
+     "DATE_OF_ISSUE": "2009-08-31 00:00:00.0",
+     "NOTE": "and expired on 30 Aug. 2014"
+    },
+    {
+     "TYPE_OF_DOCUMENT": "National Identification Number",
+     "NUMBER": "28940000602",
+     "ISSUING_COUNTRY": "of Qatar"
+    }
+   ],
+   "SORT_KEY": "UTHMANABDALSALAM ABDALMALIK MUHAMMAD YUSUF",
+   "SORT_KEY_LAST_MOD": "2015-01-23T00:00:00",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "12 July 1989 (Exact)",
+   "indivPlaceOfBirthString": "",
+   "aliasCount": 3,
+   "indivAliasString": "'Abd al-Malik Muhammad Yusif 'Abd-al-Salam (Good); 'Umar al-Qatari (Low); 'Umar al-Tayyar (Low); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "id": "QI.U.346.15",
+   "name": "'ABD AL-MALIK MUHAMMAD YUSUF 'UTHMAN 'ABD AL-SALAM",
+   "natnlty": "Jordanian",
+   "connectionIdsSet": {
+    "_map": {
+     "_list": [
+      {
+       "key": {
+        "_obj": "QE.A.4.01",
+        "_obj_equals": false
+       },
+       "value": true
+      },
+      {
+       "key": {
+        "_obj": "QE.A.137.14",
+        "_obj_equals": false
+       },
+       "value": true
+      }
+     ],
+     "_es6Map": null,
+     "_buckets": null,
+     "_count": 2
+    }
+   },
+   "connectedToId": [
+    "QE.A.4.01",
+    "QE.A.137.14"
+   ],
+   "links": [
+    "QE.A.4.01",
+    "QE.A.137.14"
+   ],
+   "linkSet": {
+    "_map": {
+     "_list": [],
+     "_es6Map": null,
+     "_buckets": null,
+     "_count": 0
+    }
+   },
+   "connections": [
+    {
+     "source": "QI.U.346.15",
+     "target": "QE.A.4.01"
+    },
+    {
+     "source": "QI.U.346.15",
+     "target": "QE.A.137.14"
+    }
+   ],
+   "linkCount": 2
+  },
+  {
+   "DATAID": "3169548",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "ASHRAF",
+   "SECOND_NAME": "MUHAMMAD",
+   "THIRD_NAME": "YUSUF",
+   "FOURTH_NAME": "'UTHMAN 'ABD AL-SALAM",
+   "UN_LIST_TYPE": "Al-Qaida",
+   "REFERENCE_NUMBER": "QI.U.343.15",
+   "LISTED_ON": "2015-01-23T00:00:00",
+   "NAME_ORIGINAL_SCRIPT": "اشرف محمد يوسف عثمان عبد السلام",
+   "COMMENTS1": "A member of Al-Qaida (QE.A.4.01) as of 2012 and a fighter in the Syrian Arab Republic since early 2014. Provided financial, material, and technological support for Al-Qaida, Al-Nusrah Front for the People of the Levant (QE.A.137.14) and Al-Qaida in Iraq (AQI) (QE.J.115.04).",
+   "NATIONALITY": {
+    "VALUE": "Jordanian"
+   },
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ALIAS": [
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Ashraf Muhammad Yusif 'Uthman 'Abd-al-Salam"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Ashraf Muhammad Yusuf 'Abd-al-Salam"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Ashraf Muhammad Yusif 'Abd al-Salam"
+    },
+    {
+     "QUALITY": "Low",
+     "ALIAS_NAME": "Khattab"
+    },
+    {
+     "QUALITY": "Low",
+     "ALIAS_NAME": "Ibn al-Khattab"
+    }
+   ],
+   "INDIVIDUAL_ADDRESS": {
+    "STREET": "Syrian Arab Republic (located in as at Dec. 2014)"
+   },
+   "INDIVIDUAL_DATE_OF_BIRTH": {
+    "TYPE_OF_DATE": "Exact",
+    "YEAR": "1984"
+   },
+   "INDIVIDUAL_PLACE_OF_BIRTH": {
+    "COUNTRY": "Iraq"
+   },
+   "INDIVIDUAL_DOCUMENT": [
+    {
+     "TYPE_OF_DOCUMENT": "Passport",
+     "NUMBER": "K048787",
+     "ISSUING_COUNTRY": "Jordanian"
+    },
+    {
+     "TYPE_OF_DOCUMENT": "Passport",
+     "NUMBER": "486298",
+     "ISSUING_COUNTRY": "Jordanian"
+    },
+    {
+     "TYPE_OF_DOCUMENT": "National Identification Number",
+     "NUMBER": "28440000526",
+     "ISSUING_COUNTRY": "of Qatar"
+    }
+   ],
+   "SORT_KEY": "UTHMANABDALSALAM ASHRAF MUHAMMAD YUSUF",
+   "SORT_KEY_LAST_MOD": "2015-01-23T00:00:00",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "1984 (Exact)",
+   "indivPlaceOfBirthString": "Iraq, ",
+   "aliasCount": 5,
+   "indivAliasString": "Ashraf Muhammad Yusif 'Uthman 'Abd-al-Salam (Good); Ashraf Muhammad Yusuf 'Abd-al-Salam (Good); Ashraf Muhammad Yusif 'Abd al-Salam (Good); Khattab (Low); Ibn al-Khattab (Low); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "id": "QI.U.343.15",
+   "name": "ASHRAF MUHAMMAD YUSUF 'UTHMAN 'ABD AL-SALAM",
+   "natnlty": "Jordanian",
+   "connectionIdsSet": {
+    "_map": {
+     "_list": [
+      {
+       "key": {
+        "_obj": "QE.A.4.01",
+        "_obj_equals": false
+       },
+       "value": true
+      },
+      {
+       "key": {
+        "_obj": "QE.A.137.14",
+        "_obj_equals": false
+       },
+       "value": true
+      },
+      {
+       "key": {
+        "_obj": "QE.J.115.04",
+        "_obj_equals": false
+       },
+       "value": true
+      }
+     ],
+     "_es6Map": null,
+     "_buckets": null,
+     "_count": 3
+    }
+   },
+   "connectedToId": [
+    "QE.A.4.01",
+    "QE.A.137.14",
+    "QE.J.115.04"
+   ],
+   "links": [
+    "QE.A.4.01",
+    "QE.A.137.14",
+    "QE.J.115.04"
+   ],
+   "linkSet": {
+    "_map": {
+     "_list": [],
+     "_es6Map": null,
+     "_buckets": null,
+     "_count": 0
+    }
+   },
+   "connections": [
+    {
+     "source": "QI.U.343.15",
+     "target": "QE.A.4.01"
+    },
+    {
+     "source": "QI.U.343.15",
+     "target": "QE.A.137.14"
+    },
+    {
+     "source": "QI.U.343.15",
+     "target": "QE.J.115.04"
+    }
+   ],
+   "linkCount": 3
+  },
+  {
    "DATAID": "113328",
    "VERSIONNUM": "12",
    "FIRST_NAME": "ABDUL RAHMAN",
@@ -28022,7 +28542,7 @@
      "target": "QE.A.7.01"
     }
    ],
-   "linkCount": 16
+   "linkCount": 18
   },
   {
    "DATAID": "113458",
@@ -28112,7 +28632,7 @@
     }
    },
    "connections": [],
-   "linkCount": 34
+   "linkCount": 37
   },
   {
    "DATAID": "113966",
@@ -28230,7 +28750,7 @@
     }
    },
    "connections": [],
-   "linkCount": 12
+   "linkCount": 14
   },
   {
    "DATAID": "2881836",
@@ -32719,9 +33239,9 @@
    "linkCount": 1
   }
  ],
- "dateGenerated": "01-01-2015",
- "dateCollected": "01-13-2015",
- "message": "Collected AQList.xml labeled as generated on: 01-01-2015 [Thu Jan 01 2015 00:00:00 GMT-0500 (Eastern Standard Time)]",
+ "dateGenerated": "01-22-2015",
+ "dateCollected": "01-24-2015",
+ "message": "Collected AQList.xml labeled as generated on: 01-22-2015 [Thu Jan 22 2015 00:00:00 GMT-0500 (Eastern Standard Time)]",
  "links": [
   {
    "source": "QI.A.255.08",
@@ -32882,6 +33402,10 @@
   {
    "source": "QI.A.291.11",
    "target": "QI.A.283.10"
+  },
+  {
+   "source": "QI.A.344.15",
+   "target": "QE.A.4.01"
   },
   {
    "source": "QI.A.324.14",
@@ -33158,6 +33682,10 @@
   {
    "source": "QI.B.311.12",
    "target": "QI.R.303.12"
+  },
+  {
+   "source": "QI.B.345.15",
+   "target": "QE.J.115.04"
   },
   {
    "source": "QI.B.279.10",
@@ -33554,6 +34082,26 @@
   {
    "source": "QI.T.56.01",
    "target": "QE.U.68.01"
+  },
+  {
+   "source": "QI.U.346.15",
+   "target": "QE.A.4.01"
+  },
+  {
+   "source": "QI.U.346.15",
+   "target": "QE.A.137.14"
+  },
+  {
+   "source": "QI.U.343.15",
+   "target": "QE.A.4.01"
+  },
+  {
+   "source": "QI.U.343.15",
+   "target": "QE.A.137.14"
+  },
+  {
+   "source": "QI.U.343.15",
+   "target": "QE.J.115.04"
   },
   {
    "source": "QI.Y.261.08",

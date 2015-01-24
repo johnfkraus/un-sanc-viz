@@ -67,7 +67,7 @@ var getTheNarratives = function () {
             console.log("\n ", __filename, __line, "; function #:", ++functionCount);
           }
           var narrativeSummariesLocalDirectory = "./data/narrative_summaries";
-          console.log(narrativeSummariesLocalDirectory);
+          console.log("\n ", __filename, "line", __line, "; ", narrativeSummariesLocalDirectory);
           // delete narrative_summaries directory and contents
           fse.removeSync(narrativeSummariesLocalDirectory);
           fse.removeSync("./data/narrative_lists/narrative_links_docs.json");
@@ -89,67 +89,66 @@ var getTheNarratives = function () {
         callback();
       },
 
-      /*
-       function (callback) {
-       // using links from narrative_links.json, collect and save the narratives as json
-       console.log("\n ", __filename, "line", __line, "; function #2:", ++functionCount, "; ");
+      function (callback) {
+        // using links from narrative_links.json, collect and save the narratives as json
+        console.log("\n ", __filename, "line", __line, "; function #2:", ++functionCount, "; ");
 
-       try {
-       var buffer = fse.readFileSync(narrativeLinksLocalFileNameAndPath); //, fsOptions); //, function (err, data) {
-       narrative_links = JSON.parse(buffer);
-       } catch (err) {
-       console.log("\n ", __filename, "line", __line, "; Error: ", err);
-       }
-       narrCounter = 0;
-       var narrativeFile;
-       var mainContent;
-       var jsonFileName;
-       for (var ldi = 0; ldi < narrative_links.length; ldi++) {
-       // for (var ldi = 0; ldi < 10; ldi++) {
-       narrCounter++;
-       link_data_array_item = narrative_links[ldi];
-       collectFilePath = "http://www.un.org/sc/committees/1267/" + link_data_array_item.narrativeFileName;
-       jsonFileName = makeJsonNarrativeFileName(link_data_array_item.narrativeFileName);
-       saveFilePath = __dirname + "/../data/narrative_summaries/" + jsonFileName;
+        try {
+          // var narrativeLinksLocalFileNameAndPath = __dirname + "/../data/narrative_lists/narrative_links.json";
+          var buffer = fse.readFileSync(narrativeLinksLocalFileNameAndPath); //, fsOptions); //, function (err, data) {
+          narrative_links = JSON.parse(buffer);
+        } catch (err) {
+          console.log("\n ", __filename, "line", __line, "; Error: ", err);
+        }
+        narrCounter = 0;
+        var narrativeFile;
+        var mainContent;
+        var jsonFileName;
+        for (var ldi = 0; ldi < narrative_links.length; ldi++) {
+          // for (var ldi = 0; ldi < 10; ldi++) {
+          narrCounter++;
+          link_data_array_item = narrative_links[ldi];
+          collectFilePath = "http://www.un.org/sc/committees/1267/" + link_data_array_item.narrativeFileName;
+          jsonFileName = makeJsonNarrativeFileName(link_data_array_item.narrativeFileName);
+          saveFilePath = __dirname + "/../data/narrative_summaries/" + jsonFileName;
 
-       getNarrativesData(host, collectFilePath, saveFilePath);
-       //   mainContent = narrativeFile.match(/<div id=\"maincontent\".*  /mg); //div id=\"maincontent\".*)<div id="footer">/);
-       if (narrCounter < 10) {
-       console.log("\n ", __filename, "line", __line, "; narrativeFile = ", narrativeFile);
-       console.log("\n ", __filename, "line", __line, "; mainContent = ", mainContent);
-       }
-       }
-       callback();
-       },
+          getNarrativesData(host, collectFilePath, saveFilePath);
+          //   mainContent = narrativeFile.match(/<div id=\"maincontent\".*  /mg); //div id=\"maincontent\".*)<div id="footer">/);
+          if (narrCounter < 10) {
+            console.log("\n ", __filename, "line", __line, "; narrativeFile = ", narrativeFile);
+            console.log("\n ", __filename, "line", __line, "; mainContent = ", mainContent);
+          }
+        }
+        callback();
+      },
 
-       function (callback) {
-       var narrative;
-       var narrCounter = 0;
-       var responseString;
-       var readFilePath;
-       // using links from narrative_links.json, collect and save the narratives
-       console.log("\n ", __filename, "line", __line, "; function #2:", ++functionCount, "; ");
-       // narrative_links = require(__dirname + "/../data/narrative_lists/narrative_links.json");
-       // var narrativeFileData;
+      function (callback) {
+        var narrative;
+        var narrCounter = 0;
+        var responseString;
+        var readFilePath;
+        // using links from narrative_links.json, collect and save the narratives
+        console.log("\n ", __filename, "line", __line, "; function #2:", ++functionCount, "; ");
+        // narrative_links = require(__dirname + "/../data/narrative_lists/narrative_links.json");
+        // var narrativeFileData;
 
-       for (var ldi = 0; ldi < narrative_links.length; ldi++) {
-       narrCounter++;
-       link_data_array_item = narrative_links[ldi];
-       // collectFilePath = "http://www.un.org/sc/committees/1267/" + link_data_array_item.narrativeFileName;
-       readFilePath = __dirname + "/../data/narrative_summaries/" + link_data_array_item.narrativeFileName;
-       try {
-       narrative = fse.readFileSync(readFilePath, fsOptions); //, function (err, data) {
-       console.log("\n ", __filename, "line", __line, "; getting file: ", ldi, readFilePath, "\n content = ", narrative);
-       } catch (err) {
-       console.log("\n ", __filename, "line", __line, "; Error: ", err);
+        for (var ldi = 0; ldi < narrative_links.length; ldi++) {
+          narrCounter++;
+          link_data_array_item = narrative_links[ldi];
+          // collectFilePath = "http://www.un.org/sc/committees/1267/" + link_data_array_item.narrativeFileName;
+          readFilePath = __dirname + "/../data/narrative_summaries/" + link_data_array_item.narrativeFileName;
+          try {
+            narrative = fse.readFileSync(readFilePath, fsOptions); //, function (err, data) {
+           // console.log("\n ", __filename, "line", __line, "; getting file: ", ldi, readFilePath, "\n content = ", narrative);
+          } catch (err) {
+            console.log("\n ", __filename, "line", __line, "; Error: ", err);
 
-       }
+          }
 
-       }
+        }
 
-       callback();
-       },
-       */
+        callback();
+      },
 
 // collect the narrative files from the Internet
       function (callback) {
@@ -257,12 +256,13 @@ var getTheNarratives = function () {
         var AQListCleanJsonPath = __dirname + "/../data/output/AQList-clean.json";
         var data;
         try {
-          var buffer = fse.readFileSync(AQListCleanJsonPath); //, fsOptions); //, function (err, data) {
+          var buffer = fse.readFileSync(AQListCleanJsonPath);
           data = JSON.parse(buffer);
         } catch (err) {
           console.log("\n ", __filename, "line", __line, "; Error: ", err);
         }
         var node;
+        var nodes = data.nodes;
         var linksId, dataId;
         for (var ldi = 0; ldi < narrative_links.length; ldi++) {
           narrCounter++;
@@ -273,7 +273,7 @@ var getTheNarratives = function () {
             node = data.nodes[j];
             // console.log("\n ", __filename, "line", __line, "; node.id = ", node.id);
             if (link_data_array_item.id === node.id) {
-              console.log("\n ", __filename, "line", __line, "; link_data_array_item.id = ", link_data_array_item.id, " === node.id = ",node.id," = ", link_data_array_item.id === node.id);
+              console.log("\n ", __filename, "line", __line, "; link_data_array_item.id = ", link_data_array_item.id, " === node.id = ", node.id, " = ", link_data_array_item.id === node.id);
               node.longNarrative = link_data_array_item.longNarrative;
             }
           }
@@ -374,7 +374,7 @@ var getNarrativesData = function (host, getFilePath, outputFileNameAndPath) {
       parser.parseComplete(body);
       var jsonNarrList = JSON.stringify(narrativeLinks, null, " ");
       // sys.puts(JSON.stringify(narrativeLinks, null, " "));
-      console.log("\n ", __filename, "line", __line, "; outputFileNameAndPath = ", outputFileNameAndPath, "; JSON.stringify(paragraphArray, null, \" \") = ", JSON.stringify(paragraphArray, null, " "), "; fsOptions = ", fsOptions);
+   //   console.log("\n ", __filename, "line", __line, "; outputFileNameAndPath = ", outputFileNameAndPath, "; JSON.stringify(paragraphArray, null, \" \") = ", JSON.stringify(paragraphArray, null, " "), "; fsOptions = ", fsOptions);
       writeMyFile(outputFileNameAndPath, JSON.stringify(paragraphArray, null, " "), fsOptions);
       // getFile(outurl, fileNameToSaveTo) {
 
