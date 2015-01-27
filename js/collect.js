@@ -12,7 +12,7 @@ var async = require('async'),
   dateFormat = require('dateformat'),
   inspect = require('object-inspect'),
   trunc = require('./trunc.js'),
-  request = require('sync-request'),
+  requestSync = require('sync-request'),
   truncateToNumChars = 400,
   AQList_xml,
   myJsonData,
@@ -64,24 +64,39 @@ var convertXMLToJson = function () {
             }
           }
         });
+        newPath = (__dirname + "/../data/output")
+          .toString();
+        // var narrativeSummariesLocalDirectory = "./data/narrative_summaries";
+        console.log("\n ", __filename, "line", __line, "; Deleting directory: ", newPath);
+        // delete narrative_summaries directory and contents
+        fse.removeSync(newPath);
+
+        console.log("\n ", __filename, "line", __line, "; Deleting file: /data/narrative_lists/narrative_links_docs.json");
+        fse.removeSync("./data/narrative_lists/narrative_links_docs.json");
+        fse.removeSync("./data/narrative_lists/narrative_links.json");
+        // fse.removeSync("./data/narrative_lists/narrative_links.json");
+        // re-create narrative_summaries directory
+        fse.mkdirs(newPath);
         if (consoleLog) {
           console.log("\n ", __filename, "line",  __line, "; newPath = ", newPath, "; fse.unlink returned: ", result);
         }
         callback();
       },
+      // get the raw xml file from the Internet
       function (callback) {
+        var backupRawXmlFileName = __dirname + "/../data/backup/AQList.xml";
         try {
-          var res = request('GET', 'http://www.un.org/sc/committees/1267/AQList.xml');
+          var res = requestSync('GET', 'http://www.un.org/sc/committees/1267/AQList.xml');
           AQList_xml = res.body.toString();
         } catch (err) {
-          console.log("\n ", __filename, "line", __line, "; Error: ", err, "; reading stored backup file");
-          var backupRawXmlFileName = __dirname + "/../data/backup/AQList.xml";
+          console.log("\n ", __filename, "line", __line, "; Error: ", err, "; reading stored backup file:", backupRawXmlFileName);
+
           AQList_xml = fse.readFileSync(backupRawXmlFileName, fsOptions); //, function (err, data) {
         }
         if (consoleLog) {
-          console.log("res = ", res);
-          console.log("AQList_xml res.body.toString() = ", AQList_xml);
-          console.log("AQList_xml Response Body Length: ", res.getBody().length);
+          console.log("res.substring(0, 300) = ", res.substring(0, 300));
+          console.log("AQList_xml res.body.toString() = ", AQList_xml.substring(0,300));
+          console.log("AQList_xml Response body length: ", res.getBody().length);
         }
         callback();
       },

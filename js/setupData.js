@@ -315,7 +315,15 @@ var fixData = function () {
         var node;
         // using links from narrative_links.json, collect and save the narratives
         console.log("\n ", __filename, "line", __line, "; function #2:", ++functionCount, "; ");
-        narrative_links = require(__dirname + "/../data/narrative_lists/narrative_links.json");
+
+        try {
+          var buffer = fse.readFileSync(__dirname + "/../data/narrative_lists/narrative_links.json");
+          narrative_links = JSON.parse(buffer);
+        } catch (err) {
+          console.log("\n ", __filename, "line", __line, "; Error: ", err);
+        }
+
+        // narrative_links = require(__dirname + "/../data/narrative_lists/narrative_links.json");
         // var narrativeFileData;
 
         for (var ldi = 0; ldi < data.nodes.length; ldi++) {

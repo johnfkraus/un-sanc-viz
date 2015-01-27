@@ -7,28 +7,33 @@
     <option name="ANALYSIS_IN_BACKGROUND" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4182aee6-13b8-4466-9993-4422af087054" name="John's change list" comment="narratives added to data structure in collectNarratives.js">
-      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_lists\entities_other_groups_undertakings_associated_with_Al-Qaida.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_lists\individuals_associated_with_Al-Qaida.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_lists\narrative_links.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\output\AQList-docs.json" afterPath="" />
-      <change type="MOVED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\output\AQList-clean.json" afterPath="$PROJECT_DIR$/data/archive/AQList-clean.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/archive/AQList-docs.json" afterPath="$PROJECT_DIR$/data/archive/AQList-docs.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/AQList-raw.json" afterPath="$PROJECT_DIR$/data/output/AQList-raw.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/archive/AQList.xml" afterPath="$PROJECT_DIR$/data/archive/AQList.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/AQList.xml" afterPath="$PROJECT_DIR$/data/output/AQList.xml" />
+    <list default="true" id="4182aee6-13b8-4466-9993-4422af087054" name="John's change list" comment="assembling all stages of etl&#10;trying to restore links between nodes&#10;">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/d3-process-map-legend-script.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/mongoSettings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mongoStartup.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/uploads-data-youtube.json.js" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_lists\narrative_links_docs.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\output\AQList-clean.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\output\data01-loadedRaw.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\output\data02-flattened.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\output\data03nodeBag.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\output\data04myBag.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\output\data05nodeBag.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\output\data05nodebagset.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\output\data06addConnectionIdsArray.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\output\data06myBag.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\output\data06nodebagset.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\output\data07addConnectionOBJECTSarray.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\output\data31deleteEntsEtc.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\output\data5addconnidsarray.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\output\data6addconnectionOBJECTSarray.json" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app-test.js" afterPath="$PROJECT_DIR$/js/app-test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/collect.js" afterPath="$PROJECT_DIR$/js/collect.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/collectNarratives.js" afterPath="$PROJECT_DIR$/js/collectNarratives.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/data01-loadedRaw.json" afterPath="$PROJECT_DIR$/data/output/data01-loadedRaw.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/data02-flattened.json" afterPath="$PROJECT_DIR$/data/output/data02-flattened.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/data03nodeBag.json" afterPath="$PROJECT_DIR$/data/output/data03nodeBag.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/data04myBag.json" afterPath="$PROJECT_DIR$/data/output/data04myBag.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/data05nodebagset.json" afterPath="$PROJECT_DIR$/data/output/data05nodebagset.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/data06addConnectionIdsArray.json" afterPath="$PROJECT_DIR$/data/output/data06addConnectionIdsArray.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/data07addConnectionOBJECTSarray.json" afterPath="$PROJECT_DIR$/data/output/data07addConnectionOBJECTSarray.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/getNarrativeList.js" afterPath="$PROJECT_DIR$/js/getNarrativeList.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_lists/narrative_links_docs.json" afterPath="$PROJECT_DIR$/data/narrative_lists/narrative_links_docs.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/parseDoc.js" afterPath="$PROJECT_DIR$/js/parseDoc.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/setupData.js" afterPath="$PROJECT_DIR$/js/setupData.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/viz.js" afterPath="$PROJECT_DIR$/js/viz.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -54,35 +59,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="app-test.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/app-test.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.63833994" vertical-offset="1649" max-vertical-offset="2193">
-              <caret line="116" column="6" selection-start-line="116" selection-start-column="6" selection-end-line="116" selection-end-column="6" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="parseDoc.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/parseDoc.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="629" max-vertical-offset="15861">
-              <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="collectNarratives.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/collectNarratives.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7650">
-              <caret line="264" column="0" selection-start-line="264" selection-start-column="0" selection-end-line="264" selection-end-column="0" />
+            <state vertical-scroll-proportion="-83.69231" vertical-offset="1190" max-vertical-offset="7208">
+              <caret line="198" column="25" selection-start-line="198" selection-start-column="25" selection-end-line="198" selection-end-column="25" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -93,53 +74,48 @@
       <file leaf-file-name="getNarrativeList.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/getNarrativeList.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.3461537" vertical-offset="7427" max-vertical-offset="7769">
-              <caret line="442" column="0" selection-start-line="442" selection-start-column="0" selection-end-line="442" selection-end-column="0" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="collect.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/collect.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="986" max-vertical-offset="3400">
-              <caret line="74" column="43" selection-start-line="74" selection-start-column="43" selection-end-line="74" selection-end-column="43" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1616" max-vertical-offset="8585">
+              <caret line="97" column="0" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
+      <file leaf-file-name="narrative_links.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/data/narrative_lists/narrative_links.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="986" max-vertical-offset="5321">
-              <caret line="58" column="106" selection-start-line="58" selection-start-column="100" selection-end-line="58" selection-end-column="106" />
-              <folding>
-                <marker date="1419039125349" expanded="true" signature="13767:13860" placeholder="..." />
-                <marker date="1419039125349" expanded="true" signature="13809:13851" placeholder="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="viz.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/viz.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-30.038462" vertical-offset="6852" max-vertical-offset="20247">
-              <caret line="449" column="32" selection-start-line="449" selection-start-column="32" selection-end-line="449" selection-end-column="32" />
+            <state vertical-scroll-proportion="-3.0973084" vertical-offset="1496" max-vertical-offset="36108">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AQList-clean.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/archive/AQList-clean.json">
+      <file leaf-file-name="setupData.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/setupData.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="22544.96" vertical-offset="586186" max-vertical-offset="586653">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <state vertical-scroll-proportion="-0.0" vertical-offset="5644" max-vertical-offset="17748">
+              <caret line="334" column="0" selection-start-line="334" selection-start-column="0" selection-end-line="334" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app-test.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/app-test.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="731" max-vertical-offset="2329">
+              <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="johns_notes.secret.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/johns_notes.secret.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="8875" max-vertical-offset="12750">
+              <caret line="693" column="0" selection-start-line="693" selection-start-column="0" selection-end-line="693" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -161,10 +137,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/secret" />
-        <option value="$PROJECT_DIR$/js/Tooltip.js" />
-        <option value="$PROJECT_DIR$/css/graph.css" />
-        <option value="$PROJECT_DIR$/js/testXML.js" />
         <option value="$PROJECT_DIR$/package.json.bak.txt" />
         <option value="$PROJECT_DIR$/test/test.js" />
         <option value="$PROJECT_DIR$/archives/coffee/vis.coffee" />
@@ -176,7 +148,6 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/getNarratives.js" />
         <option value="$PROJECT_DIR$/js/parseHTML.js" />
-        <option value="$PROJECT_DIR$/js/collect.js" />
         <option value="$PROJECT_DIR$/data/narrative_summaries/The Al-Qaida Sanctions Committee.json" />
         <option value="$PROJECT_DIR$/js/parseHTML0.js" />
         <option value="$PROJECT_DIR$/node_modules/domutils/test/fixture.js" />
@@ -194,24 +165,29 @@
         <option value="$PROJECT_DIR$/js/filewalker.js" />
         <option value="$PROJECT_DIR$/changeRubyGemsTo.rb" />
         <option value="$PROJECT_DIR$/Procfile" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/index.js" />
-        <option value="$PROJECT_DIR$/johns_notes.secret.txt" />
         <option value="$PROJECT_DIR$/terminal-2014-12-27.txt" />
         <option value="$PROJECT_DIR$/data/archive/collectNarratives.js" />
         <option value="$PROJECT_DIR$/data/narrative_summaries/NSQE00601E.shtml" />
         <option value="$PROJECT_DIR$/js/app.js" />
         <option value="$PROJECT_DIR$/js/makeDocs.js" />
-        <option value="$PROJECT_DIR$/js/setupData.js" />
         <option value="$PROJECT_DIR$/data/narrative_lists/narrative_links.json" />
         <option value="$PROJECT_DIR$/data/narrative_lists/narrative_links_docs.json" />
         <option value="$PROJECT_DIR$/data/output/AQList-cleanDocs.json" />
         <option value="$PROJECT_DIR$/data/output/AQList-clean-docs.json" />
-        <option value="$PROJECT_DIR$/js/viz.js" />
-        <option value="$PROJECT_DIR$/js/getNarrativeList.js" />
-        <option value="$PROJECT_DIR$/js/collectNarratives.js" />
         <option value="$PROJECT_DIR$/js/parseDoc.js" />
+        <option value="$PROJECT_DIR$/js/collect.js" />
         <option value="$PROJECT_DIR$/js/app-test.js" />
+        <option value="$PROJECT_DIR$/mongoStartup.js" />
+        <option value="al-qaida-viz.herokuapp.com/js/viz.js" />
+        <option value="$PROJECT_DIR$/js/d3-process-map-legend-script.js" />
+        <option value="$PROJECT_DIR$/data/uploads-data-youtube.json.js" />
+        <option value="$PROJECT_DIR$/johns_notes.secret.txt" />
+        <option value="$PROJECT_DIR$/js/viz.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/js/setupData.js" />
+        <option value="$PROJECT_DIR$/js/collectNarratives.js" />
+        <option value="$PROJECT_DIR$/js/getNarrativeList.js" />
       </list>
     </option>
   </component>
@@ -421,7 +397,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="archive" />
+              <option name="myItemId" value="input" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -432,12 +408,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/js/makeDocs.js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../book-node-mongodb-backbone" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="LayoutCode.rearrangeEntriesHTML" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="options.lastSelected" value="preferences.editor" />
+    <property name="options.lastSelected" value="org.codinjutsu.tools.mongo.view.MongoConfigurable" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="FullScreen" value="false" />
@@ -462,11 +438,20 @@
       <recent name="C:\Users\User1\WebstormProjects\aq-list-viz\js" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.app-test.js debug">
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+  <component name="RunManager" selected="Node.js.app-test.js run">
+    <configuration default="false" name="mongoStartup.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="mongoStartup.js" working-dir="$PROJECT_DIR$" coffeescript-path="C:\Users\User1\AppData\Roaming\npm\node_modules\coffee-script\bin\coffee">
+      <RunnerSettings RunnerId="Basic" />
+      <ConfigurationWrapper RunnerId="Basic" />
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
@@ -474,10 +459,6 @@
       <setting name="settingsFile" value="" />
       <setting name="serverType" value="INTERNAL" />
       <setting name="preferredDebugBrowser" value="Chrome" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="ChromiumRemoteDebugType" factoryName="Chromium Remote">
@@ -606,7 +587,7 @@
       <ConfigurationWrapper RunnerId="debuggableProgram" />
       <method />
     </configuration>
-    <list size="15">
+    <list size="16">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.open index.html" />
       <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.circles.html" />
       <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.app.js JavaScript" />
@@ -622,7 +603,13 @@
       <item index="12" class="java.lang.String" itemvalue="Node.js.getNarrativeList" />
       <item index="13" class="java.lang.String" itemvalue="Node.js.collectNarratives" />
       <item index="14" class="java.lang.String" itemvalue="Node.js.parseDoc" />
+      <item index="15" class="java.lang.String" itemvalue="Node.js.mongoStartup.js" />
     </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Node.js.mongoStartup.js" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration">
@@ -887,7 +874,13 @@
       <option name="project" value="LOCAL" />
       <updated>1421843653015</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="assembling all stages of etl&#10;trying to restore links between nodes&#10;">
+      <created>1422111980811</created>
+      <option name="number" value="00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1422111980811</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <option name="trackContextForNewChangelist" value="true" />
     <servers />
   </component>
@@ -913,13 +906,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="916" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30526316" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30738786" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30394736" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30657893" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Heroku" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3263158" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46306068" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46184212" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39342105" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -927,10 +920,11 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24967907" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20346598" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18934532" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20346598" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29815304" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39342105" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29605263" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Get Gist" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -939,7 +933,6 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3944591" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -958,14 +951,14 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24967907" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15532735" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30870712" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39709762" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30870712" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Get Gist" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -990,7 +983,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="npm install bag" />
     <MESSAGE value="fixing docs on  click circle" />
     <MESSAGE value="added docs" />
     <MESSAGE value="working; restore mouseover" />
@@ -1015,7 +1007,8 @@
     <MESSAGE value="collecting narratives, update for heroku" />
     <MESSAGE value="added collect narratives before make docs" />
     <MESSAGE value="narratives added to data structure in collectNarratives.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="narratives added to data structure in collectNarratives.js" />
+    <MESSAGE value="assembling all stages of etl&#10;trying to restore links between nodes&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="assembling all stages of etl&#10;trying to restore links between nodes&#10;" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1048,7 +1041,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/getNarrativeList.js</url>
-          <line>413</line>
+          <line>439</line>
           <option name="timeStamp" value="567" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
@@ -1063,59 +1056,39 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/viz.js</url>
-          <line>1167</line>
-          <option name="timeStamp" value="599" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/js/viz.js</url>
-          <line>390</line>
-          <option name="timeStamp" value="608" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/js/viz.js</url>
           <line>452</line>
           <option name="timeStamp" value="610" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/js/viz.js</url>
-          <line>68</line>
-          <option name="timeStamp" value="612" />
+          <url>file://$PROJECT_DIR$/data/uploads-data-youtube.json.js</url>
+          <line>348</line>
+          <option name="timeStamp" value="624" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/js/viz.js</url>
-          <line>71</line>
-          <option name="timeStamp" value="613" />
+          <url>file://$PROJECT_DIR$/data/uploads-data-youtube.json.js</url>
+          <line>445</line>
+          <option name="timeStamp" value="625" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/js/viz.js</url>
-          <line>75</line>
-          <option name="timeStamp" value="614" />
+          <url>file://$PROJECT_DIR$/js/setupData.js</url>
+          <line>338</line>
+          <option name="timeStamp" value="634" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/js/viz.js</url>
-          <line>77</line>
-          <option name="timeStamp" value="615" />
+          <url>file://$PROJECT_DIR$/js/setupData.js</url>
+          <line>334</line>
+          <option name="timeStamp" value="635" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/js/collectNarratives.js</url>
-          <line>265</line>
-          <option name="timeStamp" value="617" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/js/collectNarratives.js</url>
-          <line>263</line>
-          <option name="timeStamp" value="618" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/js/collectNarratives.js</url>
-          <line>258</line>
-          <option name="timeStamp" value="619" />
+          <url>file://$PROJECT_DIR$/js/setupData.js</url>
+          <line>330</line>
+          <option name="timeStamp" value="636" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="620" />
+      <option name="time" value="637" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JavascriptDebugType">
@@ -1137,56 +1110,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/filewalker/README.md">
-      <provider selected="true" editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2907">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/filewalker/examples/du.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/filewalker/test/basic-test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6426">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/filewalker/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1020">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/filewalker/examples/fw.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2907">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/error creating heroku tool window 12-13-2014 8-08-14 AM.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/secret">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2873">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/node_modules/nodeQuery/node_modules/browserify/node_modules/JSONStream/test/fixtures/all_npm.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="19.70021" vertical-offset="23566" max-vertical-offset="68612">
@@ -1222,20 +1145,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/johns_notes.secret.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.79183674" vertical-offset="11240" max-vertical-offset="11730">
-          <caret line="684" column="0" selection-start-line="684" selection-start-column="0" selection-end-line="684" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="1139">
-          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="503">
@@ -1244,13 +1153,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/gulp/node_modules/semver/README.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2771" max-vertical-offset="4777">
           <caret line="163" column="47" selection-start-line="163" selection-start-column="47" selection-end-line="163" selection-end-column="47" />
         </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/changeRubyGemsTo.rb">
@@ -1330,20 +1239,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/output/data31deleteEntsEtc.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="552007" max-vertical-offset="579224">
-          <caret line="32486" column="1" selection-start-line="32486" selection-start-column="1" selection-end-line="32486" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1751">
-          <caret line="18" column="56" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/downloads/individuals_associated_with_Al-Qaida_files/userData.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="807.2308" vertical-offset="20988" max-vertical-offset="21454">
@@ -1369,14 +1264,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.14592275" vertical-offset="969" max-vertical-offset="24004">
           <caret line="61" column="23" selection-start-line="61" selection-start-column="23" selection-end-line="61" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/setupData.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="16678" max-vertical-offset="17170">
-          <caret line="1006" column="0" selection-start-line="1006" selection-start-column="0" selection-end-line="1006" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1408,15 +1295,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="505">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/node_modules/async/lib/async.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2543" max-vertical-offset="19091">
-          <caret line="163" column="0" selection-start-line="163" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1424,52 +1302,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="986" max-vertical-offset="5321">
           <caret line="58" column="106" selection-start-line="58" selection-start-column="100" selection-end-line="58" selection-end-column="106" />
-          <folding>
-            <marker date="1419039125349" expanded="true" signature="13767:13860" placeholder="..." />
-            <marker date="1419039125349" expanded="true" signature="13809:13851" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/narrative_lists/narrative_links_docs.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="40715">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/collect.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="986" max-vertical-offset="3400">
-          <caret line="74" column="43" selection-start-line="74" selection-start-column="43" selection-end-line="74" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/narrative_lists/narrative_links.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="933.03845" vertical-offset="24259" max-vertical-offset="36108">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/viz.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-30.038462" vertical-offset="6852" max-vertical-offset="20247">
-          <caret line="449" column="32" selection-start-line="449" selection-start-column="32" selection-end-line="449" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/getNarrativeList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.3461537" vertical-offset="7427" max-vertical-offset="7769">
-          <caret line="442" column="0" selection-start-line="442" selection-start-column="0" selection-end-line="442" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1478,36 +1310,548 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="629" max-vertical-offset="15861">
           <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="1751">
+          <caret line="35" column="25" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/archive/AQList-clean-docs.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.1916995" vertical-offset="2975" max-vertical-offset="1099458">
+          <caret line="79" column="5" selection-start-line="79" selection-start-column="5" selection-end-line="79" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/archive/AQList-clean.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="22544.96" vertical-offset="586186" max-vertical-offset="586653">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        <state vertical-scroll-proportion="-8.1" vertical-offset="194424" max-vertical-offset="586653">
+          <caret line="11046" column="23" selection-start-line="11046" selection-start-column="20" selection-end-line="11046" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/mongodb/lib/mongodb/collection/core.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1090" max-vertical-offset="14178">
+          <caret line="73" column="10" selection-start-line="73" selection-start-column="10" selection-end-line="73" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="http://al-qaida-viz.herokuapp.com/js/viz.js">
+      <provider selected="true" editor-type-id="httpFileEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/d3-process-map.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="11492">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/d3-process-map-legend-script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.5384617" vertical-offset="3775" max-vertical-offset="11186">
+          <caret line="229" column="25" selection-start-line="229" selection-start-column="19" selection-end-line="229" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/node_modules/async/lib/async.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.9160105" vertical-offset="4514" max-vertical-offset="19091">
+          <caret line="251" column="0" selection-start-line="251" selection-start-column="0" selection-end-line="251" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/collect.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33152175" vertical-offset="1612" max-vertical-offset="3740">
+          <caret line="101" column="0" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/uploads-data-youtube.json.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.07608695" vertical-offset="2199" max-vertical-offset="3281">
+          <caret line="1276" column="15" selection-start-line="1276" selection-start-column="15" selection-end-line="1276" selection-end-column="15" />
+          <folding>
+            <element signature="e#531#657#0" expanded="false" />
+            <element signature="e#532#656#0" expanded="false" />
+            <element signature="e#800#1626#0" expanded="false" />
+            <element signature="e#801#934#0" expanded="false" />
+            <element signature="e#936#1075#0" expanded="false" />
+            <element signature="e#1077#1248#0" expanded="false" />
+            <element signature="e#1250#1428#0" expanded="false" />
+            <element signature="e#1430#1625#0" expanded="false" />
+            <element signature="e#2181#2424#0" expanded="false" />
+            <element signature="e#2182#2312#0" expanded="false" />
+            <element signature="e#2556#6178#0" expanded="false" />
+            <element signature="e#6194#6866#0" expanded="false" />
+            <element signature="e#6195#6344#0" expanded="false" />
+            <element signature="e#6346#6541#0" expanded="false" />
+            <element signature="e#6543#6705#0" expanded="false" />
+            <element signature="e#6707#6865#0" expanded="false" />
+            <element signature="e#7005#7221#0" expanded="false" />
+            <element signature="e#7030#7213#0" expanded="false" />
+            <element signature="e#7244#9392#0" expanded="false" />
+            <element signature="e#7272#7421#0" expanded="false" />
+            <element signature="e#7273#7420#0" expanded="false" />
+            <element signature="e#7448#8334#0" expanded="false" />
+            <element signature="e#7449#7755#0" expanded="false" />
+            <element signature="e#7757#8044#0" expanded="false" />
+            <element signature="e#8046#8333#0" expanded="false" />
+            <element signature="e#8622#9189#0" expanded="false" />
+            <element signature="e#8623#8776#0" expanded="false" />
+            <element signature="e#8778#8930#0" expanded="false" />
+            <element signature="e#8932#9084#0" expanded="false" />
+            <element signature="e#9214#9341#0" expanded="false" />
+            <element signature="e#9666#9909#0" expanded="false" />
+            <element signature="e#9667#9797#0" expanded="false" />
+            <element signature="e#13665#14337#0" expanded="false" />
+            <element signature="e#13666#13815#0" expanded="false" />
+            <element signature="e#13817#14012#0" expanded="false" />
+            <element signature="e#14014#14176#0" expanded="false" />
+            <element signature="e#14178#14336#0" expanded="false" />
+            <element signature="e#14476#14692#0" expanded="false" />
+            <element signature="e#14501#14684#0" expanded="false" />
+            <element signature="e#14715#16886#0" expanded="false" />
+            <element signature="e#14743#14892#0" expanded="false" />
+            <element signature="e#14744#14891#0" expanded="false" />
+            <element signature="e#14919#15808#0" expanded="false" />
+            <element signature="e#14920#15227#0" expanded="false" />
+            <element signature="e#15229#15517#0" expanded="false" />
+            <element signature="e#15519#15807#0" expanded="false" />
+            <element signature="e#15839#16026#0" expanded="false" />
+            <element signature="e#16195#16754#0" expanded="false" />
+            <element signature="e#16196#16345#0" expanded="false" />
+            <element signature="e#16347#16499#0" expanded="false" />
+            <element signature="e#16501#16649#0" expanded="false" />
+            <element signature="e#17161#17404#0" expanded="false" />
+            <element signature="e#17162#17292#0" expanded="false" />
+            <element signature="e#17519#21232#0" expanded="false" />
+            <element signature="e#21248#21920#0" expanded="false" />
+            <element signature="e#21249#21398#0" expanded="false" />
+            <element signature="e#21400#21595#0" expanded="false" />
+            <element signature="e#21597#21759#0" expanded="false" />
+            <element signature="e#21761#21919#0" expanded="false" />
+            <element signature="e#22059#22275#0" expanded="false" />
+            <element signature="e#22084#22267#0" expanded="false" />
+            <element signature="e#22298#24520#0" expanded="false" />
+            <element signature="e#22326#22475#0" expanded="false" />
+            <element signature="e#22327#22474#0" expanded="false" />
+            <element signature="e#22502#23388#0" expanded="false" />
+            <element signature="e#22503#22809#0" expanded="false" />
+            <element signature="e#22811#23098#0" expanded="false" />
+            <element signature="e#23100#23387#0" expanded="false" />
+            <element signature="e#23419#23636#0" expanded="false" />
+            <element signature="e#23805#24364#0" expanded="false" />
+            <element signature="e#23806#23955#0" expanded="false" />
+            <element signature="e#23957#24109#0" expanded="false" />
+            <element signature="e#24111#24259#0" expanded="false" />
+            <element signature="e#24795#25038#0" expanded="false" />
+            <element signature="e#24796#24926#0" expanded="false" />
+            <element signature="e#25133#28822#0" expanded="false" />
+            <element signature="e#28838#29510#0" expanded="false" />
+            <element signature="e#28839#28988#0" expanded="false" />
+            <element signature="e#28990#29185#0" expanded="false" />
+            <element signature="e#29187#29349#0" expanded="false" />
+            <element signature="e#29351#29509#0" expanded="false" />
+            <element signature="e#29649#29865#0" expanded="false" />
+            <element signature="e#29674#29857#0" expanded="false" />
+            <element signature="e#29888#32103#0" expanded="false" />
+            <element signature="e#29916#30065#0" expanded="false" />
+            <element signature="e#29917#30064#0" expanded="false" />
+            <element signature="e#30092#30981#0" expanded="false" />
+            <element signature="e#30093#30400#0" expanded="false" />
+            <element signature="e#30402#30690#0" expanded="false" />
+            <element signature="e#30692#30980#0" expanded="false" />
+            <element signature="e#31012#31230#0" expanded="false" />
+            <element signature="e#31399#31966#0" expanded="false" />
+            <element signature="e#31400#31553#0" expanded="false" />
+            <element signature="e#31555#31707#0" expanded="false" />
+            <element signature="e#31709#31861#0" expanded="false" />
+            <element signature="e#32377#32620#0" expanded="false" />
+            <element signature="e#32378#32508#0" expanded="false" />
+            <element signature="e#32714#36237#0" expanded="false" />
+            <element signature="e#36253#36925#0" expanded="false" />
+            <element signature="e#36254#36403#0" expanded="false" />
+            <element signature="e#36405#36600#0" expanded="false" />
+            <element signature="e#36602#36764#0" expanded="false" />
+            <element signature="e#36766#36924#0" expanded="false" />
+            <element signature="e#37064#37280#0" expanded="false" />
+            <element signature="e#37089#37272#0" expanded="false" />
+            <element signature="e#37303#39306#0" expanded="false" />
+            <element signature="e#37331#37480#0" expanded="false" />
+            <element signature="e#37332#37479#0" expanded="false" />
+            <element signature="e#37507#38393#0" expanded="false" />
+            <element signature="e#37508#37814#0" expanded="false" />
+            <element signature="e#37816#38103#0" expanded="false" />
+            <element signature="e#38105#38392#0" expanded="false" />
+            <element signature="e#38620#39171#0" expanded="false" />
+            <element signature="e#38621#38770#0" expanded="false" />
+            <element signature="e#38772#38920#0" expanded="false" />
+            <element signature="e#38922#39070#0" expanded="false" />
+            <element signature="e#39379#46933#0" expanded="false" />
+            <element signature="e#39580#39823#0" expanded="false" />
+            <element signature="e#39581#39711#0" expanded="false" />
+            <element signature="e#39918#43602#0" expanded="false" />
+            <element signature="e#43618#44290#0" expanded="false" />
+            <element signature="e#43619#43768#0" expanded="false" />
+            <element signature="e#43770#43965#0" expanded="false" />
+            <element signature="e#43967#44129#0" expanded="false" />
+            <element signature="e#44131#44289#0" expanded="false" />
+            <element signature="e#44429#44645#0" expanded="false" />
+            <element signature="e#44454#44637#0" expanded="false" />
+            <element signature="e#44668#46862#0" expanded="false" />
+            <element signature="e#44696#44845#0" expanded="false" />
+            <element signature="e#44697#44844#0" expanded="false" />
+            <element signature="e#44872#45758#0" expanded="false" />
+            <element signature="e#44873#45179#0" expanded="false" />
+            <element signature="e#45181#45468#0" expanded="false" />
+            <element signature="e#45470#45757#0" expanded="false" />
+            <element signature="e#45789#46006#0" expanded="false" />
+            <element signature="e#46175#46726#0" expanded="false" />
+            <element signature="e#46176#46325#0" expanded="false" />
+            <element signature="e#46327#46475#0" expanded="false" />
+            <element signature="e#46477#46625#0" expanded="false" />
+            <element signature="e#46935#54255#0" expanded="false" />
+            <element signature="e#47136#47379#0" expanded="false" />
+            <element signature="e#47137#47267#0" expanded="false" />
+            <element signature="e#47470#51052#0" expanded="false" />
+            <element signature="e#51068#51740#0" expanded="false" />
+            <element signature="e#51069#51218#0" expanded="false" />
+            <element signature="e#51220#51415#0" expanded="false" />
+            <element signature="e#51417#51579#0" expanded="false" />
+            <element signature="e#51581#51739#0" expanded="false" />
+            <element signature="e#51879#52095#0" expanded="false" />
+            <element signature="e#51904#52087#0" expanded="false" />
+            <element signature="e#52118#54183#0" expanded="false" />
+            <element signature="e#52146#52295#0" expanded="false" />
+            <element signature="e#52147#52294#0" expanded="false" />
+            <element signature="e#52322#53205#0" expanded="false" />
+            <element signature="e#52323#52628#0" expanded="false" />
+            <element signature="e#52630#52916#0" expanded="false" />
+            <element signature="e#52918#53204#0" expanded="false" />
+            <element signature="e#53493#54052#0" expanded="false" />
+            <element signature="e#53494#53643#0" expanded="false" />
+            <element signature="e#53645#53797#0" expanded="false" />
+            <element signature="e#53799#53947#0" expanded="false" />
+            <element signature="e#54257#61907#0" expanded="false" />
+            <element signature="e#54458#54701#0" expanded="false" />
+            <element signature="e#54459#54589#0" expanded="false" />
+            <element signature="e#54826#58541#0" expanded="false" />
+            <element signature="e#58557#59229#0" expanded="false" />
+            <element signature="e#58558#58707#0" expanded="false" />
+            <element signature="e#58709#58904#0" expanded="false" />
+            <element signature="e#58906#59068#0" expanded="false" />
+            <element signature="e#59070#59228#0" expanded="false" />
+            <element signature="e#59368#59584#0" expanded="false" />
+            <element signature="e#59393#59576#0" expanded="false" />
+            <element signature="e#59607#61835#0" expanded="false" />
+            <element signature="e#59635#59784#0" expanded="false" />
+            <element signature="e#59636#59783#0" expanded="false" />
+            <element signature="e#59811#60697#0" expanded="false" />
+            <element signature="e#59812#60118#0" expanded="false" />
+            <element signature="e#60120#60407#0" expanded="false" />
+            <element signature="e#60409#60696#0" expanded="false" />
+            <element signature="e#60728#60933#0" expanded="false" />
+            <element signature="e#61102#61669#0" expanded="false" />
+            <element signature="e#61103#61256#0" expanded="false" />
+            <element signature="e#61258#61410#0" expanded="false" />
+            <element signature="e#61412#61564#0" expanded="false" />
+            <element signature="e#61909#69584#0" expanded="false" />
+            <element signature="e#62110#62353#0" expanded="false" />
+            <element signature="e#62111#62241#0" expanded="false" />
+            <element signature="e#62466#66111#0" expanded="false" />
+            <element signature="e#66127#66799#0" expanded="false" />
+            <element signature="e#66128#66277#0" expanded="false" />
+            <element signature="e#66279#66474#0" expanded="false" />
+            <element signature="e#66476#66638#0" expanded="false" />
+            <element signature="e#66640#66798#0" expanded="false" />
+            <element signature="e#66938#67154#0" expanded="false" />
+            <element signature="e#66963#67146#0" expanded="false" />
+            <element signature="e#67177#69340#0" expanded="false" />
+            <element signature="e#67205#67354#0" expanded="false" />
+            <element signature="e#67206#67353#0" expanded="false" />
+            <element signature="e#67381#68267#0" expanded="false" />
+            <element signature="e#67382#67688#0" expanded="false" />
+            <element signature="e#67690#67977#0" expanded="false" />
+            <element signature="e#67979#68266#0" expanded="false" />
+            <element signature="e#68298#68458#0" expanded="false" />
+            <element signature="e#68627#69186#0" expanded="false" />
+            <element signature="e#68628#68777#0" expanded="false" />
+            <element signature="e#68779#68931#0" expanded="false" />
+            <element signature="e#68933#69081#0" expanded="false" />
+            <element signature="e#69361#69512#0" expanded="false" />
+            <element signature="e#69586#77312#0" expanded="false" />
+            <element signature="e#69787#70063#0" expanded="false" />
+            <element signature="e#69788#69918#0" expanded="false" />
+            <element signature="e#69920#70062#0" expanded="false" />
+            <element signature="e#70186#73816#0" expanded="false" />
+            <element signature="e#73832#74504#0" expanded="false" />
+            <element signature="e#73833#73982#0" expanded="false" />
+            <element signature="e#73984#74179#0" expanded="false" />
+            <element signature="e#74181#74343#0" expanded="false" />
+            <element signature="e#74345#74503#0" expanded="false" />
+            <element signature="e#74643#74859#0" expanded="false" />
+            <element signature="e#74668#74851#0" expanded="false" />
+            <element signature="e#74882#77025#0" expanded="false" />
+            <element signature="e#74910#75060#0" expanded="false" />
+            <element signature="e#74911#75059#0" expanded="false" />
+            <element signature="e#75087#75973#0" expanded="false" />
+            <element signature="e#75088#75394#0" expanded="false" />
+            <element signature="e#75396#75683#0" expanded="false" />
+            <element signature="e#75685#75972#0" expanded="false" />
+            <element signature="e#76004#76133#0" expanded="false" />
+            <element signature="e#76302#76861#0" expanded="false" />
+            <element signature="e#76303#76452#0" expanded="false" />
+            <element signature="e#76454#76606#0" expanded="false" />
+            <element signature="e#76608#76756#0" expanded="false" />
+            <element signature="e#77046#77197#0" expanded="false" />
+            <element signature="e#77314#84784#0" expanded="false" />
+            <element signature="e#77515#77758#0" expanded="false" />
+            <element signature="e#77516#77646#0" expanded="false" />
+            <element signature="e#77845#81487#0" expanded="false" />
+            <element signature="e#81503#82175#0" expanded="false" />
+            <element signature="e#81504#81653#0" expanded="false" />
+            <element signature="e#81655#81850#0" expanded="false" />
+            <element signature="e#81852#82014#0" expanded="false" />
+            <element signature="e#82016#82174#0" expanded="false" />
+            <element signature="e#82314#82530#0" expanded="false" />
+            <element signature="e#82339#82522#0" expanded="false" />
+            <element signature="e#82553#84713#0" expanded="false" />
+            <element signature="e#82581#82730#0" expanded="false" />
+            <element signature="e#82582#82729#0" expanded="false" />
+            <element signature="e#82757#83643#0" expanded="false" />
+            <element signature="e#82758#83064#0" expanded="false" />
+            <element signature="e#83066#83353#0" expanded="false" />
+            <element signature="e#83355#83642#0" expanded="false" />
+            <element signature="e#83674#83849#0" expanded="false" />
+            <element signature="e#84018#84585#0" expanded="false" />
+            <element signature="e#84019#84172#0" expanded="false" />
+            <element signature="e#84174#84326#0" expanded="false" />
+            <element signature="e#84328#84480#0" expanded="false" />
+            <element signature="e#84786#92172#0" expanded="false" />
+            <element signature="e#84987#85230#0" expanded="false" />
+            <element signature="e#84988#85118#0" expanded="false" />
+            <element signature="e#85309#88909#0" expanded="false" />
+            <element signature="e#88925#89597#0" expanded="false" />
+            <element signature="e#88926#89075#0" expanded="false" />
+            <element signature="e#89077#89272#0" expanded="false" />
+            <element signature="e#89274#89436#0" expanded="false" />
+            <element signature="e#89438#89596#0" expanded="false" />
+            <element signature="e#89736#89952#0" expanded="false" />
+            <element signature="e#89761#89944#0" expanded="false" />
+            <element signature="e#89975#92100#0" expanded="false" />
+            <element signature="e#90003#90152#0" expanded="false" />
+            <element signature="e#90004#90151#0" expanded="false" />
+            <element signature="e#90179#91065#0" expanded="false" />
+            <element signature="e#90180#90486#0" expanded="false" />
+            <element signature="e#90488#90775#0" expanded="false" />
+            <element signature="e#90777#91064#0" expanded="false" />
+            <element signature="e#91096#91244#0" expanded="false" />
+            <element signature="e#91413#91980#0" expanded="false" />
+            <element signature="e#91414#91567#0" expanded="false" />
+            <element signature="e#91569#91721#0" expanded="false" />
+            <element signature="e#91723#91875#0" expanded="false" />
+            <element signature="e#92174#99851#0" expanded="false" />
+            <element signature="e#92375#92618#0" expanded="false" />
+            <element signature="e#92376#92506#0" expanded="false" />
+            <element signature="e#92746#96469#0" expanded="false" />
+            <element signature="e#96485#97157#0" expanded="false" />
+            <element signature="e#96486#96635#0" expanded="false" />
+            <element signature="e#96637#96832#0" expanded="false" />
+            <element signature="e#96834#96996#0" expanded="false" />
+            <element signature="e#96998#97156#0" expanded="false" />
+            <element signature="e#97296#97512#0" expanded="false" />
+            <element signature="e#97321#97504#0" expanded="false" />
+            <element signature="e#97535#99778#0" expanded="false" />
+            <element signature="e#97563#97712#0" expanded="false" />
+            <element signature="e#97564#97711#0" expanded="false" />
+            <element signature="e#97739#98625#0" expanded="false" />
+            <element signature="e#97740#98046#0" expanded="false" />
+            <element signature="e#98048#98335#0" expanded="false" />
+            <element signature="e#98337#98624#0" expanded="false" />
+            <element signature="e#98656#98873#0" expanded="false" />
+            <element signature="e#99042#99609#0" expanded="false" />
+            <element signature="e#99043#99196#0" expanded="false" />
+            <element signature="e#99198#99350#0" expanded="false" />
+            <element signature="e#99352#99504#0" expanded="false" />
+            <element signature="e#100054#100297#0" expanded="false" />
+            <element signature="e#100055#100185#0" expanded="false" />
+            <element signature="e#104004#104676#0" expanded="false" />
+            <element signature="e#104005#104154#0" expanded="false" />
+            <element signature="e#104156#104351#0" expanded="false" />
+            <element signature="e#104353#104515#0" expanded="false" />
+            <element signature="e#104517#104675#0" expanded="false" />
+            <element signature="e#104815#105031#0" expanded="false" />
+            <element signature="e#104840#105023#0" expanded="false" />
+            <element signature="e#105258#106144#0" expanded="false" />
+            <element signature="e#105259#105565#0" expanded="false" />
+            <element signature="e#105567#105854#0" expanded="false" />
+            <element signature="e#105856#106143#0" expanded="false" />
+            <element signature="e#106175#106314#0" expanded="false" />
+            <element signature="e#106483#107050#0" expanded="false" />
+            <element signature="e#106484#106637#0" expanded="false" />
+            <element signature="e#106639#106791#0" expanded="false" />
+            <element signature="e#106793#106945#0" expanded="false" />
+            <element signature="e#107255#114973#0" expanded="false" />
+            <element signature="e#107456#107699#0" expanded="false" />
+            <element signature="e#107457#107587#0" expanded="false" />
+            <element signature="e#107832#111560#0" expanded="false" />
+            <element signature="e#111576#112248#0" expanded="false" />
+            <element signature="e#111577#111726#0" expanded="false" />
+            <element signature="e#111728#111923#0" expanded="false" />
+            <element signature="e#111925#112087#0" expanded="false" />
+            <element signature="e#112089#112247#0" expanded="false" />
+            <element signature="e#112387#112603#0" expanded="false" />
+            <element signature="e#112412#112595#0" expanded="false" />
+            <element signature="e#112626#114900#0" expanded="false" />
+            <element signature="e#112654#112803#0" expanded="false" />
+            <element signature="e#112655#112802#0" expanded="false" />
+            <element signature="e#112830#113713#0" expanded="false" />
+            <element signature="e#112831#113136#0" expanded="false" />
+            <element signature="e#113138#113424#0" expanded="false" />
+            <element signature="e#113426#113712#0" expanded="false" />
+            <element signature="e#113744#113961#0" expanded="false" />
+            <element signature="e#114130#114697#0" expanded="false" />
+            <element signature="e#114131#114284#0" expanded="false" />
+            <element signature="e#114286#114438#0" expanded="false" />
+            <element signature="e#114440#114592#0" expanded="false" />
+            <element signature="e#114722#114850#0" expanded="false" />
+            <element signature="e#114975#122407#0" expanded="false" />
+            <element signature="e#115176#115419#0" expanded="false" />
+            <element signature="e#115177#115307#0" expanded="false" />
+            <element signature="e#115533#119073#0" expanded="false" />
+            <element signature="e#119089#119761#0" expanded="false" />
+            <element signature="e#119090#119239#0" expanded="false" />
+            <element signature="e#119241#119436#0" expanded="false" />
+            <element signature="e#119438#119600#0" expanded="false" />
+            <element signature="e#119602#119760#0" expanded="false" />
+            <element signature="e#119900#120116#0" expanded="false" />
+            <element signature="e#119925#120108#0" expanded="false" />
+            <element signature="e#120139#122162#0" expanded="false" />
+            <element signature="e#120167#120316#0" expanded="false" />
+            <element signature="e#120168#120315#0" expanded="false" />
+            <element signature="e#120343#121229#0" expanded="false" />
+            <element signature="e#120344#120650#0" expanded="false" />
+            <element signature="e#120652#120939#0" expanded="false" />
+            <element signature="e#120941#121228#0" expanded="false" />
+            <element signature="e#121456#122007#0" expanded="false" />
+            <element signature="e#121457#121606#0" expanded="false" />
+            <element signature="e#121608#121756#0" expanded="false" />
+            <element signature="e#121758#121906#0" expanded="false" />
+            <element signature="e#122183#122334#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/narrative_lists/narr-cleaned.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.109344" vertical-offset="0" max-vertical-offset="1819">
+          <caret line="6" column="13512" selection-start-line="6" selection-start-column="13512" selection-end-line="6" selection-end-column="13512" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/viz.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="39.610336" vertical-offset="0" max-vertical-offset="20298">
+          <caret line="1167" column="0" selection-start-line="1167" selection-start-column="0" selection-end-line="1167" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.076923" vertical-offset="214" max-vertical-offset="1173">
+          <caret line="28" column="19" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/mongodb/lib/mongodb/mongo_client.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="6941" max-vertical-offset="8483">
+          <caret line="408" column="0" selection-start-line="408" selection-start-column="0" selection-end-line="408" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mongoStartup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="106" max-vertical-offset="731">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/mongodb/lib/mongodb/connection/base.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3681" max-vertical-offset="8874">
+          <caret line="239" column="0" selection-start-line="239" selection-start-column="0" selection-end-line="239" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/setupData.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="5644" max-vertical-offset="17748">
+          <caret line="334" column="0" selection-start-line="334" selection-start-column="0" selection-end-line="334" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app-test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="731" max-vertical-offset="2329">
+          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/johns_notes.secret.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="8875" max-vertical-offset="12750">
+          <caret line="693" column="0" selection-start-line="693" selection-start-column="0" selection-end-line="693" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/collectNarratives.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="4324" max-vertical-offset="7684">
-          <caret line="264" column="0" selection-start-line="264" selection-start-column="0" selection-end-line="264" selection-end-column="0" />
+        <state vertical-scroll-proportion="-83.69231" vertical-offset="1190" max-vertical-offset="7208">
+          <caret line="198" column="25" selection-start-line="198" selection-start-column="25" selection-end-line="198" selection-end-column="25" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/app-test.js">
+    <entry file="file://$PROJECT_DIR$/js/getNarrativeList.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.63833994" vertical-offset="1649" max-vertical-offset="2193">
-          <caret line="116" column="6" selection-start-line="116" selection-start-column="6" selection-end-line="116" selection-end-column="6" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="1616" max-vertical-offset="8585">
+          <caret line="97" column="0" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/narrative_lists/narrative_links.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.0973084" vertical-offset="1496" max-vertical-offset="36108">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

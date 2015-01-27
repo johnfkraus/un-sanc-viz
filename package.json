@@ -25,6 +25,8 @@
     "json-patch": "^0.5.0",
     "markdown": "^0.5.0",
     "markdown-js": "^0.0.3",
+    "mongodb": "*",
+    "mongojs": "*",
     "object-inspect": "^1.0.0",
     "request-enhanced": "^0.1.1",
     "request-sync": "^1.0.0",
