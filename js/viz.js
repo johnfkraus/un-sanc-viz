@@ -610,14 +610,14 @@ Network = function () {
     curNodes = mapNodes(curNodes);
     return allLinks.filter(function (l) {
       if ((typeof l.target === 'undefined') && (l.target) === null) {
-        console.log("\n ", " viz.js ", "line", " 600 or so ", "; Error null target where l.source.id = ", l.source.id, "; l.source = ", JSON.stringify(l.source, null, " "));
+        console.log("\n ", " viz.js ", "line", " 613 or so ", "; Error null target where l.source.id = ", l.source.id, "; l.source = ", JSON.stringify(l.source, null, " "));
       }
       try {
         if ((typeof l.target.id === 'undefined') && (l.target.id) === null) {
-          console.log("\n ", " viz.js ", "line", " 600 or so ", "; Error null target id where l.source.id = ", l.source.id, "; l.source = ", JSON.stringify(l.source, null, " "));
+          console.log("\n ", " viz.js ", "line", " 617 or so ", "; Error null target id where l.source.id = ", l.source.id, "; l.source = ", JSON.stringify(l.source, null, " "));
         }
       } catch (error) {
-        console.log("\n ", " viz.js ", "line", " 600 or so ", "; Error: ", error, "; null target id where l.source.id = ", l.source.id, ";\nl.source = ", JSON.stringify(l.source, null, " "));
+        console.log("\n ", " viz.js ", "line", " 620 or so ", "; Error: ", error, "; null target id where l.source.id = ", l.source.id, ";\nl.source = ", JSON.stringify(l.source, null, " "));
       }
       if ((typeof curNodes.get(l.target) !== 'undefined') && (typeof curNodes.get(l.target.id) !== 'undefined') && (curNodes.get(l.target.id) !== null)) {
         return curNodes.get(l.source.id) && curNodes.get(l.target.id);

@@ -12,6 +12,9 @@ var consoleLog = true;
 var fse = require('fs-extra');
 var util = require('util');
 var linenums = require('./linenums.js');
+var MongoClient = require('mongodb').MongoClient;
+var assert = require('assert');
+
 var fsOptions = {
   flags: 'r+',
   encoding: 'utf-8',
@@ -30,6 +33,7 @@ var anchor,
   underscore,
   url;
 var functionCount = 0;
+var narrListSubstringLength = 300;
 var indivLinks = [];
 var entLinks = [];
 var narrativeLinks = [];
@@ -47,8 +51,11 @@ var getListOfNarratives = function () {
     console.log("\n ", __filename, "line", __line, "; running getNarrativeList.js; ", new Date());
   }
   async.series([
-      // collect from the Internet (specifically, from www.un.org/sc/committees/1267/individuals_associated_with_Al-Qaida.shtml) the raw html page which lists individuals' file names/links to narratives
-      // parse the html file, extract ids, file names etc. and put into narrativeLinks json array
+      // re: sanctioned individuals
+      // collect from the Internet (specifically, from www.un.org/sc/committees/1267/individuals_associated_with_Al-Qaida.shtml)
+      // the raw html page that lists the names of html files containing narratives regarding sanctioned individuals
+      // parse the list file, extract ids, file names etc. and put into narrativeLinks json array
+      // save as local file: individualsLocalOutputFileNameAndPath = __dirname + "/../data/narrative_lists/individuals_associated_with_Al-Qaida.json";
       function (callback) {
         if (consoleLog) {
           console.log("\n ", __filename, __line, "; function 1#:", ++functionCount);
@@ -62,18 +69,20 @@ var getListOfNarratives = function () {
         console.log("\n ", __filename, __line, "; collected data from: ", individualsFileNameAndPathForUrl, " and saved it to ", individualsLocalOutputFileNameAndPath);
         callback();
       },
-      // collect from the Internet (specifically, from www.un.org/sc/committees/1267/entities_associated_with_Al-Qaida.shtml) the raw html page which lists the urls for online narratives regarding such entities
-      // parse the html file, extract ids, file names etc. and put into narrativeLinks json array
-// asyncronous version of following function
+      // re: sanctioned entities
+      // collect from the Internet (specifically, from www.un.org/sc/committees/1267/entities_associated_with_Al-Qaida.shtml)
+      // the raw html page which lists the urls for online narratives regarding sanctioned entities
+      // parse the html file, extract ids, file names etc. and put into narrativeLinks json array and save as local file
+      // save as local file: entitiesLocalOutputFileNameAndPath = __dirname +
+      // "/../data/narrative_lists/entities_other_groups_undertakings_associated_with_Al-Qaida.json";
+      // save local file: narrativeLinksLocalFileNameAndPath = __dirname + "/../data/narrative_lists/narrative_links.json";
+      // asyncronous version of following previously-used function
       function (callback) {
-        // collect entities list of links to narratives - raw data, from www.un.org/sc/committees/1267/entities_associated_with_Al-Qaida.shtml;
-        // save as local file data/narrative_lists/entities_associated_with_Al-Qaida.json
         if (consoleLog) {
           console.log("\n ", __filename, __line, "; function 1#:", ++functionCount);
         }
         indivOrEntityString = "entity";
         try {
-          // getData() saves narrative links to narrativeLinksLocalFileNameAndPath
           asyncGetRawHtmlPagesWithNarrativeLinks(host, entitiesFileNameAndPathForUrl, entitiesLocalOutputFileNameAndPath, indivOrEntityString);
         } catch (err) {
           console.log("\n ", __filename, "line", __line, "; Error: ", err);
@@ -82,53 +91,77 @@ var getListOfNarratives = function () {
         callback();
       },
 
-
       // We have the narrative links in the variable 'narrative_links'
       // Loop through the narrative_links.json array, use it to open each downloaded narrative file
-      // Add narrative to longNarrative attribute of each narrative link
       // Add the Internet file name as a property in each node of data
       function (callback) {
+        var nodeCounter;
+        var AQListCleanJsonPath = __dirname + "/../data/output/AQList-clean.json";
+        var data;
+        try {
+          var buffer = fse.readFileSync(AQListCleanJsonPath);
+          data = JSON.parse(buffer);
+        } catch (err) {
+          console.log("\n ", __filename, "line", __line, "; Error: ", err);
+        }
+        var node;
+        var nodes = data.nodes;
+        var linksId, dataId;
         var narrCounter = 0;
         console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount, "; ");
         var readNarrativeFilePath;
         var narrative;
         // Connection URL
-        var url = "mongodb://localhost:27017/aq-list";
+        // var url = "mongodb://localhost:27017/aq-list";
         // Use connect method to connect to the Server
-        MongoClient.connect(url, function (err, db) {
-          console.log("Connected correctly to server");
-          assert.equal(null, err);
-          console.log("\n ", __filename, "line", __line, "; err = ", err);
-          for (var ldi = 0; ldi < narrative_links.length; ldi++) {
-            narrCounter++;
-            console.log("\n ", __filename, "line", __line, "; narrCounter = ", narrCounter);
-            link_data_array_item = narrative_links[ldi];
-            readNarrativeFilePath = __dirname + "/../data/narrative_summaries/" + link_data_array_item.narrativeFileName;
-            try {
-              var buffer = fse.readFileSync(readNarrativeFilePath);
-            } catch (err) {
-              console.log("\n ", __filename, "line", __line, "; Error: ", err);
+        //MongoClient.connect(url, function (err, db) {
+        //console.log("Connected correctly to server");
+        //assert.equal(null, err);
+        //console.log("\n ", __filename, "line", __line, "; err = ", err);
+        for (var ldi = 0; ldi < narrativeLinks.length; ldi++) {
+          narrCounter++;
+          console.log(__filename, "line", __line, "; narrCounter = ", narrCounter);
+          link_data_array_item = narrativeLinks[ldi];
+          readNarrativeFilePath = __dirname + "/../data/narrative_summaries/" + link_data_array_item.narrativeFileName;
+          try {
+            var buffer = fse.readFileSync(readNarrativeFilePath);
+          } catch (err) {
+            console.log("\n ", __filename, "line", __line, "; Error: ", err);
+          }
+          console.log("\n ", __filename, "line", __line, "; buffer.length = ", buffer.length);
+          var narrWebPageString = forceUnicodeEncoding(buffer.toString());
+          narrative = trimNarrative(narrWebPageString);
+          link_data_array_item.longNarrative = narrative;
+          for (var j = 0; j < data.nodes.length; j++) {
+            nodeCounter++;
+            node = data.nodes[j];
+            // console.log("\n ", __filename, "line", __line, "; node.id = ", node.id);
+            if (link_data_array_item.id === node.id) {
+              if (nodeCounter < 5) {
+                console.log("\n ", __filename, "line", __line, "; link_data_array_item.id = ", link_data_array_item.id, " === node.id = ", node.id, " = ", link_data_array_item.id === node.id);
+              }
+              // node.longNarrative = link_data_array_item.longNarrative;
+              node.narrativeFileName = link_data_array_item.narrativeFileName;
             }
-            console.log("\n ", __filename, "line", __line, "; buffer.length = ", buffer.length);
-            var narrWebPageString = forceUnicodeEncoding(buffer.toString());
-            narrative = trimNarrative(narrWebPageString);
-            link_data_array_item.longNarrative = narrative;
-            // Insert a single document
-            db.collection('narratives').insert(narrative, function (err, r) {
-              assert.equal(null, err);
-              assert.equal(1, r.insertedCount);
-            });
           }
 
-          var narrativeLinksDocsPath = __dirname + "/../data/narrative_lists/narrative_links_docs.json";
-          writeMyFile(narrativeLinksDocsPath, JSON.stringify(narrative_links, null, " "), fsOptions);
-          db.close();
-        });
+          // Insert a single document
+          /*
+           db.collection('narratives').insert(narrative, function (err, r) {
+           assert.equal(null, err);
+           assert.equal(1, r.insertedCount);
+           });
+           */
+        }
+
+        var narrativeLinksDocsPath = __dirname + "/../data/narrative_lists/narrative_links_docs.json";
+        writeMyFile(narrativeLinksDocsPath, JSON.stringify(narrativeLinks, null, " "), fsOptions);
+        var dataLocalFileNameAndPath = __dirname + "/../data/output/AQList-clean-docs.json";
+        writeMyFile(dataLocalFileNameAndPath, JSON.stringify(data, null, " "), fsOptions);
+        //        db.close();
+        // });
         callback();
       },
-
-
-
 
       function (callback) {
         if (consoleLog) {
@@ -145,7 +178,7 @@ var getListOfNarratives = function () {
       if (err) {
         console.log("\n ", __filename, "line: ", __line, " Error: ", err);
       } else {
-        console.log("\n ", __filename, "line: ", __line, "; function:", ++functionCount, "results.length = ", results.length, "; results.toString().substring(0,??) = ", results.toString().substring(0,600));
+        console.log("\n ", __filename, "line: ", __line, "; function:", ++functionCount, "results.length = ", results.length, "; results.toString().substring(0,", narrListSubstringLength, ") = ", results.toString().substring(0, narrListSubstringLength), "[FILE LOG OUTPUT INTENTIONALLY TRUNCATED]");
       }
     });
 };
@@ -162,29 +195,13 @@ var asyncGetRawHtmlPagesWithNarrativeLinks = function (host, filePath, outputFil
     // console.log("\n ", __filename, "line: ", __line, "; res.body.toString() = ", res.body.toString());
   } catch (err) {
     console.log("\n ", __filename, "line", __line, "; Error: ", err, "; reading stored backup file");
-    // var backupRawXmlFileName = __dirname + "/../data/backup/AQList.xml";
-    // AQList_xml = fse.readFileSync(backupRawXmlFileName, fsOptions); //, function (err, data) {
   }
   var responseBody = res.body.toString();
-
-//  var client = http.createClient(80, host);
-//  var request = client.request('GET', filePath, {'host': host});
-  // request.on('response', function (response) {
-
-//    response.setEncoding('utf8');
-  // var body = "";
-
-//    response.on('data', function (chunk) {
-  //     body = body + chunk;
-  //   });
-  //   response.on('end', function () {
-  // now we have the whole body, parse it and select the nodes we want...
   var handler = new htmlparser.DefaultHandler(function (err, dom) {
     if (err) {
       console.log("\n ", __filename, "line", __line, "Error: " + err);
       //       sys.debug("Error: " + err);
     } else {
-
       // soupselect happening here...
       // var titles = select(dom, 'a.title');
       rows = select(dom, 'table tr');
@@ -282,26 +299,15 @@ var asyncGetRawHtmlPagesWithNarrativeLinks = function (host, filePath, outputFil
       }
     }
   });
-
   var parser = new htmlparser.Parser(handler);
   parser.parseComplete(responseBody);
   if (indivOrEntityString == "indiv") {
-    // var jsonIndivNarrList = JSON.stringify(indivLinks, null, " ");
     writeMyFile(individualsLocalOutputFileNameAndPath, JSON.stringify(indivLinks, null, " "), fsOptions);
   }
   if (indivOrEntityString == "entity") {
-    // entLinks.push(narrLink);
-    // var jsonEntNarrList = JSON.stringify(entLinks, null, " ");
     writeMyFile(entitiesLocalOutputFileNameAndPath, JSON.stringify(entLinks, null, " "), fsOptions);
   }
-  // narrativeLinks.push(narrLink);
-
-//      var jsonNarrList = JSON.stringify(narrativeLinks, null, " ");
-  // sys.puts(JSON.stringify(narrativeLinks, null, " "));
-  writeMyFile(narrativeLinksLocalFileNameAndPath, JSON.stringify(narrativeLinks, null, " "), fsOptions);
-
-  // request.end();
-  // return narrativeLinks;
+  writeMyFileriteMyFile(narrativeLinksLocalFileNameAndPath, JSON.stringify(narrativeLinks, null, " "), fsOptions);
 };
 
 // collect a named file from an Internet host and save it locally; specify indivOrEntityString equals a string either "entity" or "indiv"
@@ -323,7 +329,6 @@ var getRawHtmlPagesWithNarrativeLinks = function (host, filePath, outputFileName
           console.log("\n ", __filename, "line", __line, "Error: " + err);
           //       sys.debug("Error: " + err);
         } else {
-
           // soupselect happening here...
           // var titles = select(dom, 'a.title');
           rows = select(dom, 'table tr');
@@ -360,7 +365,6 @@ var getRawHtmlPagesWithNarrativeLinks = function (host, filePath, outputFileName
               else if (j === 1) {
                 paragraph = select(td, 'p');
                 anchor = select(td, 'a');
-
                 if (typeof paragraph !== 'undefined' && typeof paragraph[0] !== 'undefined') {
                   //console.log("\n ", __filename, "line", __line, "paragraph = ", JSON.stringify(paragraph));
                   if (typeof paragraph[0].children[0].attribs !== 'undefined') {
@@ -444,6 +448,17 @@ var getRawHtmlPagesWithNarrativeLinks = function (host, filePath, outputFileName
   requestAsync.end();
   // return narrativeLinks;
 };
+
+function forceUnicodeEncoding(string) {
+  return unescape(encodeURIComponent(string));
+}
+
+function trimNarrative(narrWebPageString) {
+  var narrative1 = narrWebPageString.replace(/([\r\n\t])/gm, ' ');
+  var narrative2 = narrative1.replace(/(\s{2,})/gm, ' ');
+  narrative = narrative2.replace(/<!DOCTYPE HTML PUBLIC.*MAIN CONTENT BEGINS(.*?)TemplateEndEditable.*<\/html>/mi, '$1');
+  return narrative;
+}
 
 var normalizeNarrativeFileName = function (narrativeFileNameString) {
   // console.log("\n ", __filename, __line, "; narrativeFileNameString = ", narrativeFileNameString);
