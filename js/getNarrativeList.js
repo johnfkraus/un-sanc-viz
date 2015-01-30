@@ -6,14 +6,14 @@ var select = require('soupselect').select,
   htmlparser = require("htmlparser"),
   http = require('http'),
   sys = require('sys'),
+  consoleLog = true,
+  fse = require('fs-extra'),
+  util = require('util'),
+  linenums = require('./linenums.js'),
+  MongoClient = require('mongodb').MongoClient,
+  assert = require('assert'),
   async = require('async'),
   request = require('sync-request');
-var consoleLog = true;
-var fse = require('fs-extra');
-var util = require('util');
-var linenums = require('./linenums.js');
-var MongoClient = require('mongodb').MongoClient;
-var assert = require('assert');
 
 var fsOptions = {
   flags: 'r+',
@@ -168,7 +168,7 @@ var getListOfNarratives = function () {
           console.log("\n ", __filename, __line, "; function 3#:", ++functionCount);
         }
 //        var narrativeLinksStringified = JSON.stringify(narrativeLinks, null, " ");
-        //      writeMyFile(narrativeLinksLocalFileNameAndPath, JSON.stringify(narrativeLinks, null, " "), fsOptions);
+        writeMyFile(narrativeLinksLocalFileNameAndPath, JSON.stringify(narrativeLinks, null, " "), fsOptions);
         // console.log("\n ", __filename, __line, "; saved file: ", narrativeLinksLocalFileNameAndPath);
         callback(null, JSON.stringify(narrativeLinks, null, " "));
       }

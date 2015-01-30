@@ -45,7 +45,7 @@ var runAppTest = function () {
         collect.convertXMLToJson(); //     setupData.fixData();
         callback();
       },
-*/
+
       function (callback) {
         // collect raw data from the Internet
         if (consoleLog) {
@@ -67,7 +67,7 @@ var runAppTest = function () {
         getNarrativeList.getListOfNarratives();
         callback();
       },
-
+*/
       // read the narrative links from file: /data/narrative_lists/narrative_links.json
       // loop through the list of ids and filenames/links and get the narrative files from the Internet and save each to a local file
       // using links from narrative_links.json, collect and save the narratives
