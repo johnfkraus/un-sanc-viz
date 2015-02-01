@@ -5,7 +5,7 @@ if (typeof define !== 'function') {
   var define = require('amdefine');
 }
 // var tika = require('tika');
-// var MongoClient = require('mongodb').MongoClient;
+ var MongoClient = require('mongodb').MongoClient;
 var assert = require('assert');
 
 var async = require('async'),
@@ -21,14 +21,15 @@ var async = require('async'),
   trunc = require('./trunc.js'),
   requestSync = require('sync-request'),
   narrCounter,
-  parseString = require('xml2js')
-    .parseString;
+  errors
+parseString = require('xml2js')
+  .parseString;
 
 var mongojs = require("mongojs");
 var db;
 var linenums = require('./linenums.js');
 var jsonPath = require('JSONPath');
-var filewalker = require('filewalker');
+// var filewalker = require('filewalker');
 var consoleLog = true;
 
 var fsOptions = {
@@ -111,24 +112,100 @@ var getTheNarratives = function () {
         var jsonFileName;
         var nodes = data.nodes;
         var node;
+        errors = 0;
         for (var ldi = 0; ldi < nodes.length; ldi++) {
           narrCounter++;
           node = nodes[ldi];
           collectFilePath = "http://www.un.org/sc/committees/1267/" + node.narrativeFileName;
           saveFilePath = __dirname + "/../data/narrative_summaries/" + node.narrativeFileName;
+
+
           try {
             syncGetRawHtmlNarrativePages(collectFilePath, saveFilePath);
           } catch (err) {
-            console.log("\n ", __filename, "line", __line, "; Error: ", err, "; collectFilePath = ", collectFilePath, "; saveFilePath = ", saveFilePath);
+            errors++;
+            console.log("\n ", __filename, "line", __line, "; error number: ", errors, "; Error: ", err, "; collectFilePath = ", collectFilePath, "; saveFilePath = ", saveFilePath);
           }
           if (narrCounter < 5) {
             console.log("\n ", __filename, "line", __line, "; narrativeFile = ", narrativeFile);
             console.log("\n ", __filename, "line", __line, "; mainContent = ", mainContent);
           }
         }
-        console.log("\n ", __filename, "line", __line, "; narrCounter = ", narrCounter);
+        console.log("\n ", __filename, "line", __line, "; errors = ", errors, "; nodes.length = ", nodes.length, "; narrCounter = ", narrCounter);
         callback();
       }
+
+/*
+      // save the local files to mongodb
+      function (callback) {
+        console.log("\n ", __filename, "line", __line, "; function #2:", ++functionCount, "; ");
+        narrCounter = 0;
+        var narrativeFile = "";
+        var mainContent = "";
+        var jsonFileName;
+        var nodes = data.nodes;
+        var node;
+        errors = 0;
+        for (var ldi = 0; ldi < nodes.length; ldi++) {
+          narrCounter++;
+          node = nodes[ldi];
+          readFilePath = __dirname + "/../data/narrative_summaries/" + node.narrativeFileName;
+
+          // Connection URL
+          var url = "mongodb://localhost:27017/aq-list";
+          // Use connect method to connect to the Server
+
+
+
+
+
+          MongoClient.connect(url, function (err, db) {
+            console.log("Connected correctly to server");
+            assert.equal(null, err);
+            console.log("\n ", __filename, "line", __line, "; err = ", err);
+
+            var document = {name:"David", title:"About MongoDB"};
+            collection.insert(document, {w: 1}, function(err, records){
+              console.log("Record added as "+records[0]._id);
+            });
+//            If trying to insert a record with an existing _id value, then the operation yields in error.
+
+              collection.insert({_id:1}, {w:1}, function(err, doc){
+                // no error, inserted new document, with _id=1
+                collection.insert({_id:1}, {w:1}, function(err, doc){
+                  // error occured since _id=1 already existed
+                });
+              });
+            // Shorthand for insert/update is save - if _id value set, the record is updated if it exists or inserted if it does not; if the _id value is not set, then the record is inserted as a new one.
+
+              collection.save({_id:"abc", user:"David"},{w:1}, callback)
+           // callback gets two parameters - an error object (if an error occured) and the record if it was inserted or 1 if the record was updated.
+
+          }
+          db.collection('narratives').insert(narrative, function (err, r) {
+            assert.equal(null, err);
+            assert.equal(1, r.insertedCount);
+          });
+
+
+          try {
+            var narrativeFile = fse.readFileSync(__dirname + "/../data/narrative_lists/" + node.narrativeFileName);
+            // narrative_links = JSON.parse(buffer);
+          } catch (err) {
+            console.log("\n ", __filename, "line", __line, "; Error: ", err);
+          }
+
+          if (narrCounter < 5) {
+            console.log("\n ", __filename, "line", __line, "; narrativeFile = ", narrativeFile);
+            console.log("\n ", __filename, "line", __line, "; mainContent = ", mainContent);
+          }
+        }
+        //        db.close();
+        // });
+        console.log("\n ", __filename, "line", __line, "; errors = ", errors, "; nodes.length = ", nodes.length, "; narrCounter = ", narrCounter);
+        callback();
+      }
+*/
 
     ],
     function (err) {
@@ -142,6 +219,19 @@ var getTheNarratives = function () {
 // collect a named file from an Internet host and save it locally; specify indivOrEntityString equals a string either "entity" or "indiv"
 // save to json file: narrativeLinksLocalFileNameAndPath
 var syncGetRawHtmlNarrativePages = function (collectFilePath, saveFilePath) {
+  var res;
+  // console.log("\n ", __filename, "line: ", __line, "; getPath = ", getPath);
+
+  res = requestSync('GET', collectFilePath);
+  var responseBody = res.body.toString();
+  var narrWebPageString = forceUnicodeEncoding(responseBody);
+  var narrative = trimNarrative(narrWebPageString);
+  writeMyFile(saveFilePath, narrative, fsOptions);
+};
+
+// collect a named file from an Internet host and save it locally; specify indivOrEntityString equals a string either "entity" or "indiv"
+// save to json file: narrativeLinksLocalFileNameAndPath
+var syncGetRawHtmlNarrativePages1 = function (collectFilePath, saveFilePath) {
   var res;
   // console.log("\n ", __filename, "line: ", __line, "; getPath = ", getPath);
   try {
@@ -159,7 +249,7 @@ var syncGetRawHtmlNarrativePages = function (collectFilePath, saveFilePath) {
   var narrWebPageString = forceUnicodeEncoding(responseBody);
   var narrative = trimNarrative(narrWebPageString);
   try {
-    writeMyFile(saveFilePath, responseBody, fsOptions);
+    writeMyFile(saveFilePath, narrative, fsOptions);
     // console.log("\n ", __filename, "line: ", __line, "; res.body.toString() = ", res.body.toString());
   } catch (err) {
     console.log("\n ", __filename, "line", __line, "; Error: ", err, "; writing file collected from: ", collectFilePath, " to: ", saveFilePath);
@@ -173,8 +263,8 @@ function forceUnicodeEncoding(string) {
 function trimNarrative(narrWebPageString) {
   var narrative1 = narrWebPageString.replace(/([\r\n\t])/gm, ' ');
   var narrative2 = narrative1.replace(/(\s{2,})/gm, ' ');
-  return narrative2.replace(/<!DOCTYPE HTML PUBLIC.*MAIN CONTENT BEGINS(.*?)TemplateEndEditable.*<\/html>/mi, '$1');
-
+  var narrative3 = narrative2.replace(/<!DOCTYPE HTML PUBLIC.*MAIN CONTENT BEGINS(.*?)TemplateEndEditable.*<\/html>/mi, '$1');
+  return narrative3.replace(/ =================================== --> <h3 align="center">(.*)/mi, '$1');
 }
 
 var writeMyFile = function (localFileNameAndPath, data, fsOptions) {
@@ -184,15 +274,6 @@ var writeMyFile = function (localFileNameAndPath, data, fsOptions) {
     console.log('\n ', __filename, "line", __line, '; Error: ', err);
   }
 };
-
-//var makeJsonNarrativeFileName = function (narrativeFileNameString) {
-// console.log("\n ", __filename, __line, "; narrativeFileNameString = ", narrativeFileNameString);
-// return narrativeFileNameString.replace(/(NSQ.*\.)shtml/, '$1json');
-// var narrativeFileName1 = narrativeFileNameString.replace(/http:\/\/dev.un.org(\/sc\/committees\/1267\/NSQ.*\.shtml)/, '$1');
-// console.log("\n ", __filename, __line, "; narrativeFileName1 = ", narrativeFileName1);
-//  var narrativeFileName2 = narrativeFileName1.replace(/\/sc\/committees\/1267\/(NSQ.*\.shtml)/, '$1');
-//}
-//;
 
 module.exports = {
   getTheNarratives: getTheNarratives

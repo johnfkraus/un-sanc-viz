@@ -12,5 +12,6 @@
     <orderEntry type="library" name="Node.js v0.10.32 Core Modules" level="application" />
     <orderEntry type="library" name="Dojo-1.8.3" level="application" />
     <orderEntry type="library" name="aq-list-viz node_modules" level="project" />
+    <orderEntry type="library" name="linenums.js" level="project" />
   </component>
 </module>

@@ -19,3 +19,4 @@ Object.defineProperty(global, '__line', {
     return __stack[1].getLineNumber();
   }
 });
+
