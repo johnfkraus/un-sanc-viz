@@ -111,13 +111,7 @@ var getListOfNarratives = function () {
         console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount, "; ");
         var readNarrativeFilePath;
         var narrative;
-        // Connection URL
-        // var url = "mongodb://localhost:27017/aq-list";
-        // Use connect method to connect to the Server
-        //MongoClient.connect(url, function (err, db) {
-        //console.log("Connected correctly to server");
-        //assert.equal(null, err);
-        //console.log("\n ", __filename, "line", __line, "; err = ", err);
+
         for (var ldi = 0; ldi < narrativeLinks.length; ldi++) {
           narrCounter++;
           console.log(__filename, "line", __line, "; narrCounter = ", narrCounter);
