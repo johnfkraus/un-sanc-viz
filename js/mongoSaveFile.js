@@ -73,11 +73,11 @@ var run = function () {
           if (err) throw err;
 
           var collection = db.collection('test_insert');
-          collection.insert({a: 2}, function (err, docs) {
+          collection.insert({a: 2}, function (err, r) {
             if (err) throw err;
-            console.log(format("\n ", __filename, "line", __line, "; docs = ", docs));
+            console.log(format("\n ", __filename, "line", __line, "; r = ", r));
             collection.count(function (err, count) {
-              console.log(format("\n ", __filename, "line", __line, "; count = %s", count));
+              console.log(format("\n ", __filename, "line", __line, "; collection.namespace = ", collection.namespace, "; count = ", count));
             });
 
             // Locate all the entries using find
