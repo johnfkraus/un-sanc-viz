@@ -1,3 +1,5 @@
+// http://mongodb.github.io/node-mongodb-native/1.4/api-generated/collection.html
+
 var Db = require('mongodb').Db,
   MongoClient = require('mongodb').MongoClient,
   Server = require('mongodb').Server,
@@ -7,7 +9,7 @@ var Db = require('mongodb').Db,
   GridStore = require('mongodb').GridStore,
   Grid = require('mongodb').Grid,
   Code = require('mongodb').Code,
-  BSON = require('mongodb').pure().BSON,
+//  BSON = require('mongodb').pure().BSON,
   assert = require('assert');
 
 var db = new Db('test', new Server('localhost', 27017));
@@ -47,3 +49,4 @@ db.open(function(err, db) {
     db.close();
   });
 });
+

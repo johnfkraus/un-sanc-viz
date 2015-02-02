@@ -8,7 +8,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4182aee6-13b8-4466-9993-4422af087054" name="John's change list" comment="mongodb code added for narrative sample2">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/mongoScripts/mongoCollection14.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/mongoScripts/mongoConnectDriver.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/mongoScripts/mongoInsertDriver14.js" />
+      <change type="MOVED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\js\findMongo.js" afterPath="$PROJECT_DIR$/js/mongoScripts/findMongo.js" />
+      <change type="MOVED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\js\mDriverInsert.js" afterPath="$PROJECT_DIR$/js/mongoScripts/mDriverInsert.js" />
+      <change type="MOVED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\js\mongoSaveFile.js" afterPath="$PROJECT_DIR$/js/mongoScripts/mongoSaveFile.js" />
+      <change type="MOVED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\js\mongoScript.js" afterPath="$PROJECT_DIR$/js/mongoScripts/mongoScript.js" />
+      <change type="MOVED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\js\updateMongo.js" afterPath="$PROJECT_DIR$/js/mongoScripts/updateMongo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app-test2.js" afterPath="$PROJECT_DIR$/js/app-test2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/collectNarratives.js" afterPath="$PROJECT_DIR$/js/collectNarratives.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/mongoSaveFile.js" afterPath="$PROJECT_DIR$/js/mongoSaveFile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/mongoSettings.xml" afterPath="$PROJECT_DIR$/.idea/mongoSettings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="aqlist-visualization.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,78 +48,40 @@
       <file leaf-file-name="mongoSaveFile.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/mongoSaveFile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.58502024" vertical-offset="476" max-vertical-offset="3876">
-              <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.7199211" vertical-offset="1012" max-vertical-offset="2278">
+              <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="getNarrativeList.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/getNarrativeList.js">
+      <file leaf-file-name="collectNarratives.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/collectNarratives.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8381">
-              <caret line="11" column="38" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="38" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="2831" max-vertical-offset="3995">
+              <caret line="174" column="25" selection-start-line="174" selection-start-column="25" selection-end-line="174" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/app.js">
+      <file leaf-file-name="NSQE00201E.shtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/narrative_summaries/NSQE00201E.shtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1251" max-vertical-offset="1751">
-              <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
-              <folding />
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="102">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="n#style#0;n#iframe#0;n#noscript#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="linenums.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/linenums.js">
+      <file leaf-file-name="app-test2.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/app-test2.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
-              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="updateMongo.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/updateMongo.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="918">
-              <caret line="48" column="3" selection-start-line="48" selection-start-column="3" selection-end-line="48" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mDriverInsert.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/mDriverInsert.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
-              <caret line="20" column="2" selection-start-line="0" selection-start-column="0" selection-end-line="20" selection-end-column="2" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="utils.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/mongodb/lib/utils.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="978" max-vertical-offset="4029">
-              <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="collection.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/mongodb/lib/collection.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="825" max-vertical-offset="34714">
-              <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1140" max-vertical-offset="2414">
+              <caret line="57" column="8" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -128,12 +103,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/data/narrative_summaries/The Al-Qaida Sanctions Committee.json" />
-        <option value="$PROJECT_DIR$/js/parseHTML0.js" />
-        <option value="$PROJECT_DIR$/node_modules/domutils/test/fixture.js" />
-        <option value="$PROJECT_DIR$/node_modules/soupselect_example.js" />
-        <option value="$PROJECT_DIR$/data/narrative_summaries/individuals_associated_with_Al-Qaida.shtml" />
-        <option value="$PROJECT_DIR$/data/narrative_summaries/commented_out.json.js" />
         <option value="$PROJECT_DIR$/js/soupselectAq.js" />
         <option value="$PROJECT_DIR$/data/narrative_summaries/narrative_links.json" />
         <option value="$PROJECT_DIR$/data/output/narratives.json" />
@@ -164,9 +133,7 @@
         <option value="$PROJECT_DIR$/data/uploads-data-youtube.json.js" />
         <option value="$PROJECT_DIR$/js/viz.js" />
         <option value="$PROJECT_DIR$/js/setupData.js" />
-        <option value="$PROJECT_DIR$/js/app-test2.js" />
         <option value="$PROJECT_DIR$/js/getNarrativeList.js" />
-        <option value="$PROJECT_DIR$/js/collectNarratives.js" />
         <option value="$PROJECT_DIR$/js/mongoScript.js" />
         <option value="$PROJECT_DIR$/johns_notes.secret.txt" />
         <option value="$PROJECT_DIR$/data/archive/mongoSaveFile.js" />
@@ -175,9 +142,17 @@
         <option value="$PROJECT_DIR$/findMongo.js" />
         <option value="$PROJECT_DIR$/js/findMongo.js" />
         <option value="$PROJECT_DIR$/js/findOneAndUpdate.js" />
-        <option value="$PROJECT_DIR$/js/updateMongo.js" />
         <option value="$PROJECT_DIR$/js/mDriverInsert.js" />
         <option value="$PROJECT_DIR$/js/linenums.js" />
+        <option value="$PROJECT_DIR$/js/mongoInsertDriver14.js" />
+        <option value="$PROJECT_DIR$/js/updateMongo.js" />
+        <option value="$PROJECT_DIR$/js/mongoCollection14.js" />
+        <option value="$PROJECT_DIR$/js/mongoScripts/updateMongo.js" />
+        <option value="$PROJECT_DIR$/js/mongoScripts/mongoScript.js" />
+        <option value="$PROJECT_DIR$/js/mongoScripts/mongoConnectDriver.js" />
+        <option value="$PROJECT_DIR$/js/mongoScripts/mongoSaveFile.js" />
+        <option value="$PROJECT_DIR$/js/app-test2.js" />
+        <option value="$PROJECT_DIR$/js/collectNarratives.js" />
         <option value="$PROJECT_DIR$/js/mongoSaveFile.js" />
       </list>
     </option>
@@ -340,7 +315,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="express" />
+              <option name="myItemId" value="mongodb" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -358,11 +333,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="express" />
+              <option name="myItemId" value="mongodb" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="node_modules" />
+              <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -376,19 +351,57 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="node_modules" />
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="aq-list-viz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="aq-list-viz" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="express" />
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="node_modules" />
+              <option name="myItemId" value="mongoScripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="aq-list-viz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="aq-list-viz" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="methods" />
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="aq-list-viz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="aq-list-viz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="narrative_summaries" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -398,12 +411,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/js/linenums.js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../book-node-mongodb-backbone" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="LayoutCode.rearrangeEntriesHTML" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="options.lastSelected" value="JavaScript.Libraries" />
+    <property name="options.lastSelected" value="org.codinjutsu.tools.mongo.view.MongoConfigurable" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="FullScreen" value="false" />
@@ -414,21 +427,21 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\User1\WebstormProjects\aq-list-viz\data\archive" />
       <recent name="C:\Users\User1\WebstormProjects\aq-list-viz\js" />
+      <recent name="C:\Users\User1\WebstormProjects\aq-list-viz\data\archive" />
       <recent name="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_lists" />
       <recent name="C:\Users\User1\WebstormProjects\aq-list-viz" />
       <recent name="C:\Users\User1\WebstormProjects\aq-list-viz\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User1\WebstormProjects\aq-list-viz\js\mongoScripts" />
       <recent name="C:\Users\User1\WebstormProjects\aq-list-viz\js" />
       <recent name="C:\Users\User1\WebstormProjects\aq-list-viz\data\archive" />
       <recent name="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_lists" />
       <recent name="C:\Users\User1\WebstormProjects\aq-list-viz\data\archive\narrative_summaries" />
-      <recent name="C:\Users\User1\WebstormProjects\aq-list-viz\archives" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.mongoSaveFile">
+  <component name="RunManager" selected="Node.js.app-test2.js">
     <configuration default="false" name="mongoStartup.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="mongoStartup.js" working-dir="$PROJECT_DIR$" coffeescript-path="C:\Users\User1\AppData\Roaming\npm\node_modules\coffee-script\bin\coffee">
       <RunnerSettings RunnerId="Basic" />
       <ConfigurationWrapper RunnerId="Basic" />
@@ -538,15 +551,7 @@
       <ConfigurationWrapper RunnerId="debuggableProgram" />
       <method />
     </configuration>
-    <configuration default="false" name="app-test2.js debug" type="NodeJSConfigurationType" factoryName="Node.js" singleton="false" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="js/app-test2.js" working-dir="$PROJECT_DIR$" coffeescript-path="C:\Users\User1\AppData\Roaming\npm\node_modules\coffee-script\bin\coffee">
-      <browser name="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" url="http://localhost:63343/aq-list-viz/index.html" />
-      <RunnerSettings RunnerId="Basic" />
-      <RunnerSettings RunnerId="debuggableProgram" />
-      <ConfigurationWrapper RunnerId="Basic" />
-      <ConfigurationWrapper RunnerId="debuggableProgram" />
-      <method />
-    </configuration>
-    <configuration default="false" name="mongoSaveFile" type="NodeJSConfigurationType" factoryName="Node.js" singleton="false" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="js/mongoSaveFile.js" working-dir="$PROJECT_DIR$" coffeescript-path="C:\Users\User1\AppData\Roaming\npm\node_modules\coffee-script\bin\coffee">
+    <configuration default="false" name="app-test2.js" type="NodeJSConfigurationType" factoryName="Node.js" singleton="false" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="js/app-test2.js" working-dir="$PROJECT_DIR$" coffeescript-path="C:\Users\User1\AppData\Roaming\npm\node_modules\coffee-script\bin\coffee">
       <browser name="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" url="http://localhost:63343/aq-list-viz/index.html" />
       <RunnerSettings RunnerId="Basic" />
       <RunnerSettings RunnerId="debuggableProgram" />
@@ -620,7 +625,23 @@
       <ConfigurationWrapper RunnerId="debuggableProgram" />
       <method />
     </configuration>
-    <list size="22">
+    <configuration default="false" name="mongoSaveFile" type="NodeJSConfigurationType" factoryName="Node.js" singleton="false" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="js/mongoSaveFile.js" working-dir="$PROJECT_DIR$" coffeescript-path="C:\Users\User1\AppData\Roaming\npm\node_modules\coffee-script\bin\coffee">
+      <browser name="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" url="http://localhost:63343/aq-list-viz/index.html" />
+      <RunnerSettings RunnerId="Basic" />
+      <RunnerSettings RunnerId="debuggableProgram" />
+      <ConfigurationWrapper RunnerId="Basic" />
+      <ConfigurationWrapper RunnerId="debuggableProgram" />
+      <method />
+    </configuration>
+    <configuration default="false" name="mongoConnectDriver" type="NodeJSConfigurationType" factoryName="Node.js" singleton="false" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="js/mongoScripts/mongoConnectDriver.js" working-dir="$PROJECT_DIR$" coffeescript-path="C:\Users\User1\AppData\Roaming\npm\node_modules\coffee-script\bin\coffee">
+      <browser name="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" url="http://localhost:63343/aq-list-viz/index.html" />
+      <RunnerSettings RunnerId="Basic" />
+      <RunnerSettings RunnerId="debuggableProgram" />
+      <ConfigurationWrapper RunnerId="Basic" />
+      <ConfigurationWrapper RunnerId="debuggableProgram" />
+      <method />
+    </configuration>
+    <list size="23">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.open index.html" />
       <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.circles.html" />
       <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.app.js JavaScript" />
@@ -631,18 +652,19 @@
       <item index="7" class="java.lang.String" itemvalue="Node.js.index.js" />
       <item index="8" class="java.lang.String" itemvalue="Node.js.IE app.js" />
       <item index="9" class="java.lang.String" itemvalue="Node.js.app-test.js debug" />
-      <item index="10" class="java.lang.String" itemvalue="Node.js.app-test2.js debug" />
-      <item index="11" class="java.lang.String" itemvalue="Node.js.mongoSaveFile" />
-      <item index="12" class="java.lang.String" itemvalue="Node.js.updateMongo.js" />
-      <item index="13" class="java.lang.String" itemvalue="Node.js.findOneAndUpdate.js" />
-      <item index="14" class="java.lang.String" itemvalue="Node.js.scriptMongo" />
-      <item index="15" class="java.lang.String" itemvalue="Node.js.findMongo" />
-      <item index="16" class="java.lang.String" itemvalue="Node.js.app-test.js run" />
-      <item index="17" class="java.lang.String" itemvalue="Node.js.test.js" />
-      <item index="18" class="java.lang.String" itemvalue="Node.js.getNarrativeList" />
-      <item index="19" class="java.lang.String" itemvalue="Node.js.collectNarratives" />
-      <item index="20" class="java.lang.String" itemvalue="Node.js.parseDoc" />
+      <item index="10" class="java.lang.String" itemvalue="Node.js.app-test2.js" />
+      <item index="11" class="java.lang.String" itemvalue="Node.js.updateMongo.js" />
+      <item index="12" class="java.lang.String" itemvalue="Node.js.findOneAndUpdate.js" />
+      <item index="13" class="java.lang.String" itemvalue="Node.js.scriptMongo" />
+      <item index="14" class="java.lang.String" itemvalue="Node.js.findMongo" />
+      <item index="15" class="java.lang.String" itemvalue="Node.js.app-test.js run" />
+      <item index="16" class="java.lang.String" itemvalue="Node.js.test.js" />
+      <item index="17" class="java.lang.String" itemvalue="Node.js.getNarrativeList" />
+      <item index="18" class="java.lang.String" itemvalue="Node.js.collectNarratives" />
+      <item index="19" class="java.lang.String" itemvalue="Node.js.parseDoc" />
+      <item index="20" class="java.lang.String" itemvalue="Node.js.mongoSaveFile" />
       <item index="21" class="java.lang.String" itemvalue="Node.js.mongoStartup.js" />
+      <item index="22" class="java.lang.String" itemvalue="Node.js.mongoConnectDriver" />
     </list>
     <recent_temporary>
       <list size="1">
@@ -972,28 +994,28 @@
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30211082" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30131578" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3060686" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Heroku" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3263158" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46042216" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45921052" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39342105" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Code Review" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24967907" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18806162" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18677792" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20346598" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39313984" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29683378" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29683378" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Get Gist" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
@@ -1138,20 +1160,35 @@
           <option name="timeStamp" value="677" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/js/mongoSaveFile.js</url>
-          <line>150</line>
-          <option name="timeStamp" value="680" />
+          <url>file://$PROJECT_DIR$/js/mongoScripts/mongoSaveFile.js</url>
+          <line>92</line>
+          <option name="timeStamp" value="687" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/js/mongoSaveFile.js</url>
-          <line>187</line>
-          <option name="timeStamp" value="684" />
+          <url>file://$PROJECT_DIR$/js/mongoScripts/mongoConnectDriver.js</url>
+          <line>21</line>
+          <option name="timeStamp" value="689" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/js/mongoScripts/mongoSaveFile.js</url>
+          <line>75</line>
+          <option name="timeStamp" value="691" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/js/mongoScripts/mongoSaveFile.js</url>
+          <line>107</line>
+          <option name="timeStamp" value="692" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/js/mongoScripts/mongoSaveFile.js</url>
+          <line>85</line>
+          <option name="timeStamp" value="693" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="685" />
+      <option name="time" value="694" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JavascriptDebugType">
@@ -1170,55 +1207,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/data/narrative_lists/NSQtest.shtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9758">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/archive/narrative_summaries/NSQI27109E.shtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6324">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/archive/collectNarratives.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1003" max-vertical-offset="7514">
-          <caret line="67" column="64" selection-start-line="67" selection-start-column="64" selection-end-line="67" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/archive/narrative_summaries/NSQE00601E.shtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="4947" max-vertical-offset="6137">
-          <caret line="409" column="18" selection-start-line="409" selection-start-column="3" selection-end-line="409" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/downloads/individuals_associated_with_Al-Qaida_files/userData.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="807.2308" vertical-offset="20988" max-vertical-offset="21454">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/downloads/individuals_associated_with_Al-Qaida_files/register_server_layer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1326">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/downloads/individuals_associated_with_Al-Qaida_files/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="10149">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/downloads/individuals_associated_with_Al-Qaida.shtml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.14592275" vertical-offset="969" max-vertical-offset="24004">
@@ -1762,31 +1750,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/app-test2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="2397">
-          <caret line="78" column="127" selection-start-line="78" selection-start-column="127" selection-end-line="78" selection-end-column="127" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/mongoScript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.12" vertical-offset="0" max-vertical-offset="1785">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/collectNarratives.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1479" max-vertical-offset="4879">
-          <caret line="100" column="75" selection-start-line="100" selection-start-column="2" selection-end-line="100" selection-end-column="75" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/johns_notes.secret.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="19700" max-vertical-offset="20264">
@@ -1815,15 +1778,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="461" max-vertical-offset="1190">
-          <caret line="29" column="19" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/findMongo.js">
+    <entry file="file://$PROJECT_DIR$/js/mongoScripts/findMongo.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="3" max-vertical-offset="578">
           <caret line="18" column="20" selection-start-line="16" selection-start-column="0" selection-end-line="26" selection-end-column="7" />
@@ -1847,39 +1802,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/mongodb/lib/collection.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="825" max-vertical-offset="35615">
-          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/mongodb/lib/utils.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="978" max-vertical-offset="4029">
-          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/mongodb/lib/db.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33243242" vertical-offset="5283" max-vertical-offset="23409">
-          <caret line="313" column="0" selection-start-line="313" selection-start-column="0" selection-end-line="313" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/updateMongo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="918">
-          <caret line="48" column="3" selection-start-line="48" selection-start-column="3" selection-end-line="48" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/mDriverInsert.js">
+    <entry file="file://$PROJECT_DIR$/js/mongoScripts/mDriverInsert.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
           <caret line="20" column="2" selection-start-line="0" selection-start-column="0" selection-end-line="20" selection-end-column="2" />
@@ -1895,26 +1818,147 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/getNarrativeList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8381">
-          <caret line="11" column="38" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/linenums.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
           <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/getNarrativeList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1819" max-vertical-offset="8772">
+          <caret line="110" column="95" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="95" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.8076925" vertical-offset="342" max-vertical-offset="1190">
+          <caret line="29" column="19" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/mongodb/README.md">
+      <provider selected="true" editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2567" max-vertical-offset="5610">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mongod.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.033663366" vertical-offset="0" max-vertical-offset="505">
+          <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/mongoScripts/mongoCollection14.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33663365" vertical-offset="0" max-vertical-offset="612">
+          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/mongoScripts/mongoInsertDriver14.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5366337" vertical-offset="766" max-vertical-offset="4420">
+          <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/mongodb/lib/db.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="5282" max-vertical-offset="23409">
+          <caret line="313" column="0" selection-start-line="313" selection-start-column="0" selection-end-line="313" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/mongoScripts/updateMongo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.066797644" vertical-offset="0" max-vertical-offset="986">
+          <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/mongoScripts/mongoScript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23379175" vertical-offset="0" max-vertical-offset="1887">
+          <caret line="6" column="143" selection-start-line="6" selection-start-column="143" selection-end-line="6" selection-end-column="143" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/mongoScripts/mongoSaveFile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="541" max-vertical-offset="2261">
+          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/mongodb/lib/collection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2580645" vertical-offset="824" max-vertical-offset="34714">
+          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/mongodb/lib/utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3608871" vertical-offset="977" max-vertical-offset="4029">
+          <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/mongoScripts/mongoConnectDriver.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3654224" vertical-offset="222" max-vertical-offset="1105">
+          <caret line="24" column="75" selection-start-line="24" selection-start-column="75" selection-end-line="24" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app-test2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1140" max-vertical-offset="2414">
+          <caret line="57" column="8" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/narrative_summaries/NSQE00201E.shtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1445">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#iframe#0;n#noscript#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/collectNarratives.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2831" max-vertical-offset="3995">
+          <caret line="174" column="25" selection-start-line="174" selection-start-column="25" selection-end-line="174" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/mongoSaveFile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.58502024" vertical-offset="476" max-vertical-offset="3876">
-          <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+        <state vertical-scroll-proportion="0.7199211" vertical-offset="1012" max-vertical-offset="2278">
+          <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
           <folding />
         </state>
       </provider>

@@ -1,8 +1,8 @@
 
 
-new Mongo()
-new Mongo(<host>)
-new Mongo(<host:port>)
+// new Mongo()
+// new Mongo(<host>)
+//  new Mongo(<host:port>)
 
 // Consider the following example that instantiates a new connection to the MongoDB instance running on localhost on the default port and sets the global db variable to myDatabase using the getDB() method:
 

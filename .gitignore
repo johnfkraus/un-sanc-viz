@@ -32,6 +32,8 @@ doc
 secret
 johns_notes.txt
 johns_notes.secret.txt
+*.secret.txt
+terminal*.txt
 
 ###
 

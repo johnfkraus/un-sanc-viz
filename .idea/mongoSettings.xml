@@ -5,16 +5,15 @@
       <list>
         <ServerConfiguration>
           <option name="connectOnIdeStartup" value="true" />
-          <option name="label" value="c-mongodb-bin-mongod-aq-list" />
+          <option name="label" value="mongodb-2.4.12" />
           <option name="serverUrls">
             <list>
               <option value="localhost:27017" />
             </list>
           </option>
-          <option name="userDatabase" value="aq-list" />
         </ServerConfiguration>
       </list>
     </option>
-    <option name="shellPath" value="C:\mongodb\bin\mongod.exe" />
+    <option name="shellPath" value="C:\mongodb\mongodb-2.4.12\bin\mongod.exe" />
   </component>
 </project>

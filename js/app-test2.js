@@ -54,7 +54,8 @@ var runAppTest = function () {
         setupData1.fixData();
         callback();
       },
-
+*/
+      /*
       function (callback) {
         // get the lists of narratives, consolidate in one json file
         if (consoleLog) {
