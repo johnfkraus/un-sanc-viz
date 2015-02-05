@@ -852,9 +852,34 @@ Network = function () {
     console.log("viz.js 1006, showTheDoc(d, i), this = ", this, "; d.id = ", d.id, "; i = ", i);
     var aNode = this;
     console.log("typeof aNode = ", typeof aNode);
-    var content;
-    content = d.docs;
-    showDocument(d, content, d3.event);
+
+    var longNarrative;
+    //  $("button#getNarrative").click(function () {
+    var fileName = d.narrativeFileName;
+    // var fileName = "NSQE01101E.shtml";
+    var path = "data/narrative_summaries/";
+    var url = path + fileName;
+    $.ajax({
+      url: url, success: function (result) {
+        longNarrative = result;
+      //  $("#div1").html(result);
+      //  console.log("longNarrative = \n\n", longNarrative);
+
+
+        var content;
+        if (typeof(longNarrative) !== null && typeof(longNarrative) !== undefined ) {
+          content = longNarrative;
+        } else {
+          content = d.docs;
+        }
+        showDocument(d, content, d3.event);
+
+      }
+      //    });
+
+    });
+
+
 //     console.log("content =  ", content, "\nd3.event = ", d3.event + "\n\n");
     //  highlight neighboring nodes
     //  watch out - don't mess with node if search is currently matching
@@ -864,7 +889,8 @@ Network = function () {
   var showDocument = function (d, content, event) {
     this.d = d;
     var that = this;
-    $("span#name").html(d.name);
+    //$("span#name").html(d.name);
+    $("span#name").html(content);
     $("span#id").html(d.id);
     $("span#nameOriginalScript").html(d.NAME_ORIGINAL_SCRIPT);
     $("span#narrative").html(d.COMMENTS1);
