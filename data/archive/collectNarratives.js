@@ -147,7 +147,7 @@ var getTheNarratives = function () {
        console.log("\n ", __filename, "line", __line, "; text = ", text);
        }
        var linkDataSaveFilePath = __dirname + "/../data/narrative_summaries/narrative_links_2.json";
-       writeMyFile(saveTextFilePath, text, fsOptions);
+       syncWriteMyFile(saveTextFilePath, text, fsOptions);
        }
        callback();
        },
