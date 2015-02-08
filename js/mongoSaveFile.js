@@ -35,6 +35,7 @@ var narrativeBuffer;
 var narratives;
 var narrative;
 var functionCount = 0;
+var mongodbUrl = 'mongodb://localhost:27017/aqlist';
 
 var mongodbUpsert = function (narrFileName) {
   var url = 'mongodb://localhost:27017/aqlist';

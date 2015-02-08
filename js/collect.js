@@ -36,15 +36,15 @@ function (n) {
 require('console-stamp')(console, '[HH:MM:ss.l]');
 
 var now = new Date();
-dateFormat.masks.friendly_detailed = "dddd, mmmm dS, yyyy, h:MM:ss TT";
-dateFormat.masks.friendly_display = "dddd, mmmm dS, yyyy";
-dateFormat.masks.file_generated_date = "yyyy-mm-dd";
-dateFormat.masks.common = "mm-dd-yyyy";
+dateFormat.masks.friendly_detailed = 'dddd, mmmm dS, yyyy, h:MM:ss TT';
+dateFormat.masks.friendly_display = 'dddd, mmmm dS, yyyy';
+dateFormat.masks.file_generated_date = 'yyyy-mm-dd';
+dateFormat.masks.common = 'mm-dd-yyyy';
 // Basic usage
 // dateFormat.masks.hammerTime = 'yyyy-mm-dd-HHMMss';
-// var displayDateString = dateFormat(now, "friendly_display");
+// var displayDateString = dateFormat(now, 'friendly_display');
 // Saturday, June 9th, 2007, 5:46:21 PM
-// var fileDateString = dateFormat(now, "hammerTime");
+// var fileDateString = dateFormat(now, 'hammerTime');
 
 var convertXMLToJson = function () {
   var functionCount = 0;
@@ -52,80 +52,80 @@ var convertXMLToJson = function () {
   async.series([
       function (callback) {
         // remove old AQList.xml and other old files; dated AQList.xml is stored in data/archive
-        var newPath = (__dirname + "/../data/output/*")
+        var newPath = (__dirname + '/../data/output/*')
           .toString();
         // delete all files in newPath
         var result = fse.unlink(newPath, function (err) {
           if (err) {
-            console.log("\n ", __filename, "line",  __line, "; Error: ", err, " File to be deleted could not be found:");
+            console.log('\n ', __filename, 'line', __line, '; Error: ', err, ' File to be deleted could not be found:');
           } else {
             if (consoleLog) {
-              console.log("\n ", __filename, "line",  __line, "; successfully deleted ", newPath)
+              console.log('\n ', __filename, 'line', __line, '; successfully deleted ', newPath)
             }
           }
         });
-        newPath = (__dirname + "/../data/output")
+        newPath = (__dirname + '/../data/output')
           .toString();
-        // var narrativeSummariesLocalDirectory = "./data/narrative_summaries";
-        console.log("\n ", __filename, "line", __line, "; Deleting directory: ", newPath);
+        // var narrativeSummariesLocalDirectory = './data/narrative_summaries';
+        console.log('\n ', __filename, 'line', __line, '; Deleting directory: ', newPath);
         // delete narrative_summaries directory and contents
         fse.removeSync(newPath);
 
-        console.log("\n ", __filename, "line", __line, "; Deleting file: /data/narrative_lists/narrative_links_docs.json");
-        fse.removeSync("./data/narrative_lists/narrative_links_docs.json");
-        fse.removeSync("./data/narrative_lists/narrative_links.json");
-        // fse.removeSync("./data/narrative_lists/narrative_links.json");
+        console.log('\n ', __filename, 'line', __line, '; Deleting file: /data/narrative_lists/narrative_links_docs.json');
+        fse.removeSync('./data/narrative_lists/narrative_links_docs.json');
+        fse.removeSync('./data/narrative_lists/narrative_links.json');
+        // fse.removeSync('./data/narrative_lists/narrative_links.json');
         // re-create narrative_summaries directory
         fse.mkdirs(newPath);
         if (consoleLog) {
-          console.log("\n ", __filename, "line",  __line, "; newPath = ", newPath, "; fse.unlink returned: ", result);
+          console.log('\n ', __filename, 'line', __line, '; newPath = ', newPath, '; fse.unlink returned: ', result);
         }
         callback();
       },
       // get the raw xml file from the Internet
       function (callback) {
-        var backupRawXmlFileName = __dirname + "/../data/backup/AQList.xml";
+        var backupRawXmlFileName = __dirname + '/../data/backup/AQList.xml';
         try {
           var res = requestSync('GET', 'http://www.un.org/sc/committees/1267/AQList.xml');
           AQList_xml = res.body.toString();
         } catch (err) {
-          console.log("\n ", __filename, "line", __line, "; Error: ", err, "; reading stored backup file:", backupRawXmlFileName);
+          console.log('\n ', __filename, 'line', __line, '; Error: ', err, '; reading stored backup file:', backupRawXmlFileName);
 
           AQList_xml = fse.readFileSync(backupRawXmlFileName, fsOptions); //, function (err, data) {
         }
         if (consoleLog) {
-          console.log("res.substring(0, 300) = ", res.substring(0, 300));
-          console.log("AQList_xml res.body.toString() = ", AQList_xml.substring(0,300));
-          console.log("AQList_xml Response body length: ", res.getBody().length);
+          console.log('res.substring(0, 300) = ', res.substring(0, 300));
+          console.log('AQList_xml res.body.toString() = ', AQList_xml.substring(0, 300));
+          console.log('AQList_xml Response body length: ', res.getBody().length);
         }
         callback();
       },
       function (callback) {
-        var fileNameAndPathForProcessing = __dirname + "/../data/output/AQList.xml";
+        var fileNameAndPathForProcessing = __dirname + '/../data/output/AQList.xml';
         writeAQListXML(fileNameAndPathForProcessing);
-        var fileNameAndPathForArchive = __dirname + "/../data/archive/AQList.xml";
+        var fileNameAndPathForArchive = __dirname + '/../data/archive/AQList.xml';
         writeAQListXML(fileNameAndPathForArchive);
         callback();
       },
       function (callback) {
         // read local copy of XML file
-        var rawXmlFileName = __dirname + "/../data/output/AQList.xml";
-        var descr = "; reading raw XML file: " + rawXmlFileName;
+        var rawXmlFileName = __dirname + '/../data/output/AQList.xml';
+        var descr = '; reading raw XML file: ' + rawXmlFileName;
         if (consoleLog) {
-          console.log("\n ", __filename, "line", __line, "; function 1#:", ++functionCount, descr, fsOptions);
+          console.log('\n ', __filename, 'line', __line, '; function 1#:', ++functionCount, descr, fsOptions);
         }
         AQList_xml = fse.readFileSync(rawXmlFileName, fsOptions); //, function (err, data) {
         if (consoleLog) {
-          console.log("\n ", __filename, "line", __line, " AQList_xml = ", trunc.n400(AQList_xml.toString()));
+          console.log('\n ', __filename, 'line', __line, ' AQList_xml = ', AQList_xml.toString().substring(0, 400));
         }
         callback();
       },
       function (callback) {
         // convert AQList.xml to json
         if (consoleLog) {
-          console.log("\n ", __filename, "line", __line, " function #:", ++functionCount);
-          console.log("\n ", __filename, "line", __line, " typeof AQList_xml = ", (typeof AQList_xml));
-          console.log("\n ", __filename, "line", __line, " AQList_xml = ", trunc.n400(AQList_xml.toString()));
+          console.log('\n ', __filename, 'line', __line, ' function #:', ++functionCount);
+          console.log('\n ', __filename, 'line', __line, ' typeof AQList_xml = ', (typeof AQList_xml));
+          console.log('\n ', __filename, 'line', __line, ' AQList_xml = ', AQList_xml.toString().substring(0, 400));
         }
         // var myResult;
         parseString(AQList_xml, {
@@ -133,12 +133,11 @@ var convertXMLToJson = function () {
           trim: true
         }, function (err, result) {
           if (err) {
-            console.log("\n ", __filename, "line", __line, " error attempting parseString: " + err, '\n');
+            console.log('\n ', __filename, 'line', __line, ' error attempting parseString: ' + err, '\n');
           }
           myJsonData = result;
           if (consoleLog) {
-            console.log("\n ", __filename, "line", __line, " result = \n", util.inspect(myJsonData, false, null)
-              .trunc(truncateToNumChars));
+            console.log('\n ', __filename, 'line', __line, ' result = \n', myJsonData.substring(0, 400));
           }
         });
         callback();
@@ -146,62 +145,60 @@ var convertXMLToJson = function () {
       function (callback) {
         // save raw json
         if (consoleLog) {
-          console.log("\n ", __filename, "line", __line, "function 4#:", ++functionCount);
+          console.log('\n ', __filename, 'line', __line, 'function 4#:', ++functionCount);
         }
-        var myFile = __dirname + "/../data/output/AQList-raw.json";
+        var myFileNameAndPath = __dirname + '/../data/output/AQList-raw.json';
         // var myJsonData = savedJson;
         if (consoleLog) {
-          console.log("\n ", __filename, "line", __line, " myResult = trunc.n400(", myJsonData);
+          console.log('\n ', __filename, 'line', __line, '; myJsonData.substring(0,400) = ', myJsonData.substring(0, 400));
         }
         try {
-          fse.writeFileSync(myFile, JSON.stringify(myJsonData, null, " "), fsOptions);
+          fse.writeFileSync(myFileNameAndPath, JSON.stringify(myJsonData, null, ' '), fsOptions);
           if (consoleLog) {
-            console.log("\n ", __filename, "line", __line, " file written to: ", myFile);
+            console.log('\n ', __filename, 'line', __line, ' file written to: ', myFileNameAndPath);
           }
-          // if (consoleLog) { console.log("\n ", __filename, "line", __line, " file contained: ", trunc.n400(util.inspect(myResult, false, null))
-          // .trunc(truncateToNumChars));
         } catch (e) {
           if (consoleLog) {
-            console.log("\n ", __filename, "line", __line, " Error: ", e);
+            console.log('\n ', __filename, 'line', __line, ' Error: ', e);
           }
         }
         callback();
       }
     ],
     function (err) {
-      // if (consoleLog) { console.log("\n ", __filename, "line", __line, " savedJson = ", trunc.n400(myResult));
+      // if (consoleLog) { console.log('\n ', __filename, 'line', __line, ' savedJson = ', trunc.n400(myResult));
       if (err) {
-        console.log("\n ", __filename, "line", __line, " Error: " + err);
+        console.log('\n ', __filename, 'line', __line, ' Error: ' + err);
       }
     }
   );
 };
 
 var getXMLFile = function () {
-  var fileNameToSaveTo = __dirname + "/../data/output/AQList.xml";
-  re.get("http://www.un.org/sc/committees/1267/AQList.xml", fileNameToSaveTo, function (error, filename) {
+  var fileNameToSaveTo = __dirname + '/../data/output/AQList.xml';
+  re.get('http://www.un.org/sc/committees/1267/AQList.xml', fileNameToSaveTo, function (error, filename) {
     if (error) {
-      console.log("\n ", __filename, "line", __line, "; Error \n" + error);
+      console.log('\n ', __filename, 'line', __line, '; Error \n' + error);
     }
     if (consoleLog) {
-      console.log("\n ", __filename, "line", __line, "; Saved content to: \n", filename);
+      console.log('\n ', __filename, 'line', __line, '; Saved content to: \n', filename);
     }
   });
 };
 
 var writeAQListXML = function (localFileNameAndPath) {
-//  var myFile = __dirname + "/../data/output/AQList.xml";
+//  var myFile = __dirname + '/../data/output/AQList.xml';
   try {
     fse.writeFileSync(localFileNameAndPath, AQList_xml, fsOptions);
     if (consoleLog) {
-      console.log("\n ", __filename, "line", __line, " file written to: ", localFileNameAndPath);
-      console.log("\n ", __filename, "line", __line, "  file contained: ", util.inspect(AQList_xml.toString(), false, null).trunc(truncateToNumChars));
+      console.log('\n ', __filename, 'line', __line, ' file written to: ', localFileNameAndPath);
+      console.log('\n ', __filename, 'line', __line, '  file contained: ', util.inspect(AQList_xml.toString(), false, null).trunc(truncateToNumChars));
     }
   } catch (err) {
-    console.log('\n ', __filename, "line", __line, ' Error: ', err);
+    console.log('\n ', __filename, 'line', __line, ' Error: ', err);
   }
   if (consoleLog) {
-    console.log("\n ", __filename, "line", __line, " AQList_xml = \n", trunc.n400(AQList_xml.toString()));
+    console.log('\n ', __filename, 'line', __line, ' AQList_xml = \n', trunc.n400(AQList_xml.toString()));
   }
 };
 

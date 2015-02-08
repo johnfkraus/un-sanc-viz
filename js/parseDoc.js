@@ -247,9 +247,9 @@ parseDoc();
  // ADD CONNECTION IDS ARRAY
  function (callback) {
  if (consoleLog) {
- console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount, "; addConnectionIdsArray(data.nodes)");
+ console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount, "; addConnectionIdsArrayFromComments(data.nodes)");
  }
- addConnectionIdsArray(data.nodes);
+ addConnectionIdsArrayFromComments(data.nodes);
  if (consoleLog) {
  console.log(data.nodes[1]);
  }

@@ -1,11 +1,16 @@
 // setupData.js
 // put data in arrays for d3, normalize
+// each node in the main json data file (represented by the 'data' variable) contains data on a single individual or
+// entity listed in the AQList.xml sanctions data file collected from the U.N. site located at http://www.un.org/sc/committees/1267/.
 //==========================
 
+// do we want lots of console.log messages for debugging (if so, set consoleLog = true)
+var consoleLog = true;
 if (typeof define !== 'function') {
   var define = require('amdefine');
 }
-
+var linenums = require('./linenums.js');
+//var narrFileName;
 var collect = require('./collect.js'),
   missingNodes = require('./missing_nodes.js'),
   async = require('async'),
@@ -17,6 +22,7 @@ var collect = require('./collect.js'),
   util = require('util'),
   dateFormat = require('dateformat'),
   inspect = require('object-inspect');
+var narrative_links;
 // jsonpatch = require('json-patch'),
 //parseString = require('xml2js')
 // .parseString;
@@ -25,20 +31,19 @@ var numObjectsToShow = 2;
 var data = {};
 var generatedFileDateString;
 // var backbone =  require('backbone');
-var Set = require("backpack-node").collections.Set;
-var Bag = require("backpack-node").collections.Bag;
-var Map = require("backpack-node").collections.Map;
+var Set = require('backpack-node').collections.Set;
+var Bag = require('backpack-node').collections.Bag;
+var Map = require('backpack-node').collections.Map;
 
 var fsOptions = {
   flags: 'r+', encoding: 'utf-8', autoClose: true
 };
-var jsonFile = "";
+var jsonFile = '';
 var dateGenerated;
-var consoleLog = false;
 
 var fixData = function () {
   if (consoleLog) {
-    console.log("\n ", __filename, "line", __line, "; running setupData.fixData()");
+    console.log('\n ', __filename, 'line', __line, '; running setupData.fixData()');
   }
   var functionCount = 0;
   var links = [];
@@ -50,23 +55,24 @@ var fixData = function () {
   var missing_indivs;
   var ents = [];
   var indivs = [];
+  var config;
 //  var __filename = __filename || {};
 //  var __line = __line || {};
   var consolidatedList;
 
   async.series([
       function (callback) {
-        // read "raw" unprocessed json file
-        var rawJsonFileName = __dirname + "/../data/output/AQList-raw.json";
+        // read 'raw' unprocessed json file created from XML file
+        var rawJsonFileName = __dirname + '/../data/output/AQList-raw.json';
         consolidatedList = JSON.parse(fse.readFileSync(rawJsonFileName));
         if (consoleLog) {
-          console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount, "; read the raw json data file");
+          console.log('\n ', __filename, 'line', __line, '; function #:', ++functionCount, '; read the raw json data file');
         }
         callback();
       },
       // save the file for debugging
       function (callback) {
-        saveJsonFile(consolidatedList, "data01-loadedRaw.json");
+        saveJsonFile(consolidatedList, 'data01-loadedRaw.json');
         callback();
       },
       // put all the nodes in a single array
@@ -95,7 +101,7 @@ var fixData = function () {
           indiv.indivDobString = createIndivDateOfBirthString(indiv);
           indiv.indivPlaceOfBirthString = processPlaceOfBirthArray(indiv);
           indiv.indivAliasString = processAliasArray(indiv);
-          // console.log("indiv.indivDobString = ", indiv.indivDobString);
+          // console.log('indiv.indivDobString = ', indiv.indivDobString);
         });
         data.entities = data.entities.concat(missingEnts);
         // data.entities = data.entities.concat(missingNodes.getMissingEnts());
@@ -108,10 +114,11 @@ var fixData = function () {
         data.dateCollected = formatMyDate(new Date());
         data.nodes.forEach(function (node) {
           node.dateUpdatedString = processDateUpdatedArray(node);
+          node.narrativeFileName = '';
         });
 
-        var generatedFileDateString = dateFormat(data.dateGenerated, "yyyy-mm-dd");
-        var archiveFileNameAndPath = __dirname + "/../data/archive/AQList-" + generatedFileDateString + ".xml";
+        var generatedFileDateString = dateFormat(data.dateGenerated, 'yyyy-mm-dd');
+        var archiveFileNameAndPath = __dirname + '/../data/archive/AQList-' + generatedFileDateString + '.xml';
 //       archiveRawSource(archiveFile);
         collect.writeAQListXML(archiveFileNameAndPath);
         createDateGeneratedMessage();
@@ -124,20 +131,20 @@ var fixData = function () {
         concatNames(data.nodes);
         createNationality(data.nodes);
         if (consoleLog) {
-          console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount, "; put data into nodes array for d3");
-          console.log("\n ", __filename, "line", __line, "; jsonFile = \n", trunc.truncn(JSON.stringify(jsonFile), 200));
+          console.log('\n ', __filename, 'line', __line, '; function #:', ++functionCount, '; put data into nodes array for d3');
+          console.log('\n ', __filename, 'line', __line, '; jsonFile = \n', trunc.truncn(JSON.stringify(jsonFile), 200));
         }
         callback();
       },
       // save intermediate data file for debugging
       function (callback) {
-        saveJsonFile(data, "data02-flattened.json");
+        saveJsonFile(data, 'data02-flattened.json');
         callback();
       },
 
       // put nodes and node ids into a set
+      // SET: https://www.npmjs.org/package/backpack-node
       function (callback) {
-        // SET: https://www.npmjs.org/package/backpack-node
         counter = 0;
         var setOfNodes = new Set();
         var setOfNodeIds = new Set();
@@ -146,16 +153,16 @@ var fixData = function () {
           setOfNodes.add(node);
           setOfNodeIds.add(node.id);
           if (counter !== setOfNodeIds.count) {
-            console.log("\n ", __filename, "line", __line, "; node.id = ", node.id, "; counter = ", counter, "; setOfNodeIds.count = ", setOfNodeIds.count, "; \n(counter === setOfNodeIds.count) = ", counter === setOfNodeIds.count, "; node.id ", node.id, " is a duplicate.");
+            console.log('\n ', __filename, 'line', __line, '; node.id = ', node.id, '; counter = ', counter, '; setOfNodeIds.count = ', setOfNodeIds.count, '; \n(counter === setOfNodeIds.count) = ', counter === setOfNodeIds.count, '; node.id ', node.id, ' is a duplicate.');
             counter = counter - 1;
           }
         });
         if (consoleLog) {
-          console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount, "; put nodes into a set");
-          console.log("\n ", __filename, "line", __line, "; typeof data = ", typeof data);
-          console.log("\n ", __filename, "line", __line, "; started with ", data.nodes.length, " nodes in data.nodes array");
-          console.log("\n ", __filename, "line", __line, "; counter = ", counter, "; setOfNodes.count = ", setOfNodes.count);
-          console.log("\n ", __filename, "line", __line, "; counter = ", counter, "; setOfNodeIds.count = ", setOfNodeIds.count);
+          console.log('\n ', __filename, 'line', __line, '; function #:', ++functionCount, '; put nodes into a set');
+          console.log('\n ', __filename, 'line', __line, '; typeof data = ', typeof data);
+          console.log('\n ', __filename, 'line', __line, '; started with ', data.nodes.length, ' nodes in data.nodes array');
+          console.log('\n ', __filename, 'line', __line, '; counter = ', counter, '; setOfNodes.count = ', setOfNodes.count);
+          console.log('\n ', __filename, 'line', __line, '; counter = ', counter, '; setOfNodeIds.count = ', setOfNodeIds.count);
         }
         callback();
       },
@@ -167,28 +174,23 @@ var fixData = function () {
         data.nodes.forEach(function (node) {
           counter++;
           if (consoleLog) {
-            console.log("\n ", __filename, "line", __line, "; counter = ", counter, "; node.id = ", node.id);
+            console.log('\n ', __filename, 'line', __line, '; counter = ', counter, '; node.id = ', node.id);
           }
           if (!(node.id)) {
-            node.id = "NODE" + counter;
+            node.id = 'NODE' + counter;
           }
           nodeBag.add(node.id, node);
-          // console.log("\n ", __filename, "line", __line, "counter = ", counter ,"; nodeBag.length = ", nodeBag.count);
+          // console.log('\n ', __filename, 'line', __line, 'counter = ', counter ,'; nodeBag.length = ', nodeBag.count);
         });
         if (consoleLog) {
-          console.log("\n ", __filename, "line", __line, "Bag counter = ", counter);
-//      console.log("\n ", __filename, "line", __line, "; nodeBag = ", nodeBag);
+          console.log('\n ', __filename, 'line', __line, 'Bag counter = ', counter);
+//      console.log('\n ', __filename, 'line', __line, '; nodeBag = ', nodeBag);
         }
         callback();
       },
       // save intermediate data file for debugging
       function (callback) {
-        saveJsonFile(data, "data03nodeBag.json");
-        callback();
-      },
-      // save intermediate data file for debugging
-      function (callback) {
-        saveJsonFile(data, "data04myBag.json");
+        saveJsonFile(data, 'data03nodeBag.json');
         callback();
       },
 
@@ -198,28 +200,28 @@ var fixData = function () {
         data.nodes.forEach(function (node) {
           counter++;
           if (consoleLog) {
-            console.log("\n ", __filename, "line", __line, "; counter = ", counter, "; ent.id = ", ent.id);
+            // console.log('\n ', __filename, 'line', __line, '; counter = ', counter, '; ent.id = ', ent.id);
           }
           node.id = getCleanId(node.REFERENCE_NUMBER);
           nodeBag2.add(node.id, node);
         });
         if (consoleLog) {
-          console.log("\n ", __filename, "line", __line, "nodeBag2 counter = ", counter, "; nodeBag2._map.count = ", nodeBag2._map.count);
+          console.log('\n ', __filename, 'line', __line, 'nodeBag2 counter = ', counter, '; nodeBag2._map.count = ', nodeBag2._map.count);
         }
         callback();
       },
       // save intermediate data file for debugging
       function (callback) {
-        saveJsonFile(data, "data05nodebagset.json");
+        saveJsonFile(data, 'data05nodebagset.json');
         callback();
       },
 
       // ADD CONNECTION IDS ARRAY
       function (callback) {
         if (consoleLog) {
-          console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount, "; addConnectionIdsArray(data.nodes)");
+          console.log('\n ', __filename, 'line', __line, '; function #:', ++functionCount, '; addConnectionIdsArrayFromComments(data.nodes)');
         }
-        addConnectionIdsArray(data.nodes);
+        addConnectionIdsArrayFromComments(data.nodes);
         if (consoleLog) {
           console.log(data.nodes[1]);
         }
@@ -227,7 +229,7 @@ var fixData = function () {
       },
       // save intermediate file for debugging
       function (callback) {
-        saveJsonFile(data, "data06addConnectionIdsArray.json");
+        saveJsonFile(data, 'data06addConnectionIdsArray.json');
         callback();
       },
 
@@ -235,119 +237,130 @@ var fixData = function () {
       function (callback) {
         addConnectionObjectsArray(data.nodes);
         if (consoleLog) {
-          console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount, "; addConnectionObjectsArray");
+          console.log('\n ', __filename, 'line', __line, '; function #:', ++functionCount, '; addConnectionObjectsArray');
           console.log(data.nodes[1]);
         }
         callback();
       },
 
       function (callback) {
-        saveJsonFile(data, "data07addConnectionOBJECTSarray.json");
+        saveJsonFile(data, 'data07addConnectionOBJECTSarray.json');
         callback();
       },
+
       // CONSOLIDATE LINKS INTO LINKS ARRAY
       function (callback) {
         consolidateLinks(data);
         if (consoleLog) {
-          console.log("\n 283 function #:", ++functionCount, "; consolidate links into links array");
-          console.log("\n ", __filename, "line", __line, "; data.nodes[1] = ", data.nodes[1]);
-          console.log("\n ", __filename, "line", __line, "; data.links.length = ", data.links.length);
+          console.log('\n 283 function #:', ++functionCount, '; consolidate links into links array');
+          console.log('\n ', __filename, 'line', __line, '; data.nodes[1] = ', data.nodes[1]);
+          console.log('\n ', __filename, 'line', __line, '; data.links.length = ', data.links.length);
         }
+        callback();
+      },
+      // save intermediate data file for debugging
+      function (callback) {
+        saveJsonFile(data, 'data08aconsolidateLinks.json');
         callback();
       },
 
       // stringify and save json data
       function (callback) {
         if (consoleLog) {
-          console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount, "; save clean json file");
+          console.log('\n ', __filename, 'line', __line, '; function #:', ++functionCount, '; save clean json file');
         }
         // var saveJson = function () {
         try {
-          var myFile = __dirname + "/../data/output/AQList-clean.json";
-          var myJsonData = JSON.stringify(data, null, " ");
-          // if (consoleLog) { console.log("myJsonData =", myJsonData);
+          var myFile = __dirname + '/../data/output/AQList-clean.json';
+          var myJsonData = JSON.stringify(data, null, ' ');
+          // if (consoleLog) { console.log('myJsonData =', myJsonData);
           fse.writeFileSync(myFile, myJsonData, fsOptions);
           if (consoleLog) {
-            console.log("\n ", __filename, "line", __line, ";  file written to: ", myFile, ";  file contained: ", trunc.n400(util.inspect(myJsonData, false, null)));
+            console.log('\n ', __filename, 'line', __line, ';  file written to: ', myFile, ';  file contained: ', trunc.n400(util.inspect(myJsonData, false, null)));
           }
         } catch (e) {
-          console.log("\n ", __filename, "line", __line, ";  Error: ", e);
+          console.log('\n ', __filename, 'line', __line, ';  Error: ', e);
           callback();
         }
         callback();
       },
+
+      // read the main json file containing nodes and links
       function (callback) {
-        // read json file containing nodes and links
-        var cleanJsonFileName = __dirname + "/../data/output/AQList-clean.json";
+        var cleanJsonFileName = __dirname + '/../data/output/AQList-clean.json';
         try {
           var buffer = fse.readFileSync(cleanJsonFileName); //, fsOptions); //, function (err, data) {
           data = JSON.parse(buffer);
         } catch (err) {
-          console.log("\n ", __filename, "line", __line, "; Error: ", err);
+          console.log('\n ', __filename, 'line', __line, '; Error: ', err);
         }
         if (consoleLog) {
-          console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount);
-          console.log("\n ", __filename, "line", __line, "; data read from: \n", cleanJsonFileName);
-          console.log("\n ", __filename, "line", __line, "; data = \n", trunc.truncn(JSON.stringify(data), 200));
+          console.log('\n ', __filename, 'line', __line, '; function #:', ++functionCount);
+          console.log('\n ', __filename, 'line', __line, '; data read from: \n', cleanJsonFileName);
+          console.log('\n ', __filename, 'line', __line, '; data = \n', trunc.truncn(JSON.stringify(data), 200));
         }
         callback();
       },
 
+      // read json file containing config
       function (callback) {
-        // read json file containing config
-        var configJsonFileName = __dirname + "/../data/input/config.json";
+        var configJsonFileName = __dirname + '/../data/input/config.json';
         var buffer = fse.readFileSync(configJsonFileName); //, fsOptions); //, function (err, data) {
         config = JSON.parse(buffer);
         if (consoleLog) {
-          console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount);
-          console.log("\n ", __filename, "line", __line, "; config data read from: \n", configJsonFileName);
-          console.log("\n ", __filename, "line", __line, "; config = \n", trunc.truncn(JSON.stringify(config), 200));
+          console.log('\n ', __filename, 'line', __line, '; function #:', ++functionCount);
+          console.log('\n ', __filename, 'line', __line, '; config data read from: \n', configJsonFileName);
+          console.log('\n ', __filename, 'line', __line, '; config = \n', trunc.truncn(JSON.stringify(config), 200));
         }
         callback();
       },
 
-
+      // using links from data file, parse the narratives
       function (callback) {
+        var longNarrativeFileNameMissing;
         var narrative;
         var narrCounter = 0;
         var responseString;
         var readFilePath;
         var node;
-        // using links from narrative_links.json, collect and save the narratives
-        console.log("\n ", __filename, "line", __line, "; function #2:", ++functionCount, "; ");
-
+        var nodeNarrFileName;
+        console.log('\n ', __filename, 'line', __line, '; function #2:', ++functionCount, '; ');
+        // read the data file
         try {
-          var buffer = fse.readFileSync(__dirname + "/../data/narrative_lists/narrative_links.json");
-          narrative_links = JSON.parse(buffer);
+          // var buffer = fse.readFileSync(__dirname + '/../data/output/AQList-clean-docs.json');
+          // data = JSON.parse(buffer);
+          data = JSON.parse(fse.readFileSync(__dirname + '/../data/output/AQList-clean-docs.json'));
         } catch (err) {
-          console.log("\n ", __filename, "line", __line, "; Error: ", err);
+          console.log('\n ', __filename, 'line', __line, '; Error: ', err);
         }
-
-        // narrative_links = require(__dirname + "/../data/narrative_lists/narrative_links.json");
-        // var narrativeFileData;
-
         for (var ldi = 0; ldi < data.nodes.length; ldi++) {
-          narrCounter++;
+          // narrCounter++;
           node = data.nodes[ldi];
-
-          // link_data_array_item = narrative_links[ldi];
-          // collectFilePath = "http://www.un.org/sc/committees/1267/" + link_data_array_item.narrativeFileName;
-          narrFileName = node.narrativeFileName;
-          readFilePath = __dirname + "/../data/narrative_summaries/" + node.narrativeFileName;
-          //          saveTextFilePath = __dirname + "/../data/narrative_summaries/" + link_data_array_item.narrativeFileName + ".txt";
-          if (narrCounter < 10) {
+          longNarrativeFileNameMissing = (typeof(node.narrativeFileName) === 'null' || typeof(node.narrativeFileName) === 'undefined');
+          if (longNarrativeFileNameMissing) {
+            console.log('\n ', __filename, 'line', __line, '; ldi = ', ldi,'; longNarrativeMissing = ', longNarrativeFileNameMissing, '\n node.narrativeFileName = ', node.narrativeFileName, '; node = ', node, "\n\n");
+            node.narrativeFileName = generateNarrFileName(node);
+          }
+          nodeNarrFileName = node.narrativeFileName;
+          readFilePath = __dirname + '/../data/narrative_summaries/' + nodeNarrFileName;
+          if (lci < 5) {
             try {
-              narrative = fse.readFileSync(readFilePath, fsOptions); //, function (err, data) {
-              console.log("\n ", __filename, "line", __line, "; getting file: ", ldi, readFilePath, "\n content = ", narrative);
+              narrative = fse.readFileSync(readFilePath, fsOptions);
+              console.log('\n ', __filename, 'line', __line, '; getting file ldi = ', ldi,'; readFilePath = ', readFilePath, '\n narrative.substring(0, 300) = ', narrative.substring(0, 300), " [INTENTIONALLY TRUNCATED TO FIRST 300 CHARACTERS]");
             } catch (err) {
-              console.log("\n ", __filename, "line", __line, "; Error: ", err);
-//            console.log("\n ", __filename, "line", __line, "; Error: ", err, "; reading stored backup file");
-              //           var backupFileName = collectFilePath; // __dirname + "/../data/backup/AQList.xml";
+              console.log('\n ', __filename, 'line', __line, '; Error: ', err);
+//            console.log('\n ', __filename, 'line', __line, '; Error: ', err, '; reading stored backup file');
+              //           var backupFileName = collectFilePath; // __dirname + '/../data/backup/AQList.xml';
 //            AQList_xml = fse.readFileSync(backupFileName, fsOptions); //, function (err, data) {
             }
+
+            // do something with the long narrative file
+
+
+
+
           }
         }
-
         callback();
       },
 
@@ -368,8 +381,8 @@ var fixData = function () {
         //  addLinksArray(data.nodes);
         // countSourceTarget(data.nodes, data.links);
         if (consoleLog) {
-          //  console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount, "; addLinksArray(data.nodes)");
-          //  console.log("\n ", __filename, "line", __line, "; data.nodes[1] = ", data.nodes[1]);
+          //  console.log('\n ', __filename, 'line', __line, '; function #:', ++functionCount, '; addLinksArray(data.nodes)');
+          //  console.log('\n ', __filename, 'line', __line, '; data.nodes[1] = ', data.nodes[1]);
         }
         callback();
       },
@@ -378,8 +391,8 @@ var fixData = function () {
       function (callback) {
         countLinks(data);
         if (consoleLog) {
-          console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount, "; countLinks2");
-          console.log("\n ", __filename, "line", __line, "; data.nodes[1] = ", data.nodes[1]);
+          console.log('\n ', __filename, 'line', __line, '; function #:', ++functionCount, '; countLinks2');
+          console.log('\n ', __filename, 'line', __line, '; data.nodes[1] = ', data.nodes[1]);
         }
         callback();
       },
@@ -387,7 +400,7 @@ var fixData = function () {
       function (callback) {
 //      addLinksSet(data);
         if (consoleLog) {
-          //      console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount, "; addLinkSet");
+          //      console.log('\n ', __filename, 'line', __line, '; function #:', ++functionCount, '; addLinkSet');
         }
         callback();
       },
@@ -396,13 +409,13 @@ var fixData = function () {
         checkTargetsExist(data.nodes, data.links);
         callback();
       },
-// COUNT NODES, PRINT NODE IDS
+      // COUNT NODES, PRINT NODE IDS
       function (callback) {
         var nodeCounter = 0;
         data.nodes.forEach(function (node) {
           nodeCounter++;
           if (consoleLog) {
-            console.log(__filename, "line", __line, "; node #", nodeCounter, "node.id = ", node.id);
+            console.log(__filename, 'line', __line, '; node #', nodeCounter, 'node.id = ', node.id);
           }
         });
         callback();
@@ -410,15 +423,33 @@ var fixData = function () {
 
       function (callback) {
         if (consoleLog) {
-          console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount);
-          console.log("\n ", __filename, "line", __line, "; data.nodes[1] = ", data.nodes[1]);
+          console.log('\n ', __filename, 'line', __line, '; function #:', ++functionCount);
+          console.log('\n ', __filename, 'line', __line, '; data.nodes[155] = ', data.nodes[155]);
         }
+        counter = 0;
+        var maxLinkCount = 0;
+        var maxLinkId = '';
+        data.nodes.forEach(function (node) {
+          counter++;
+          if (node.linkCount > maxLinkCount) {
+            maxLinkCount = node.linkCount;
+            maxLinkId = node.id;
+          }
+
+          /*  if (counter <= numObjectsToShow) {
+           if (consoleLog) {
+           console.log('\n ', __filename, 'line', __line, '; counter = ', counter, '; link/varlink = ', link);
+           }
+           }
+           */
+        });
+        console.log('\n ', __filename, 'line', __line, '; counter = ', counter, '; maxLinkId = ', maxLinkId, '; maxLinkCount = ', maxLinkCount);
         counter = 0;
         data.links.forEach(function (link) {
           counter++;
           if (counter <= numObjectsToShow) {
             if (consoleLog) {
-              console.log("\n ", __filename, "line", __line, "; counter = ", counter, "; link/varlink = ", link);
+              console.log('\n ', __filename, 'line', __line, '; counter = ', counter, '; link/varlink = ', link);
             }
           }
         });
@@ -427,31 +458,31 @@ var fixData = function () {
       // stringify and save json data
       function (callback) {
         if (consoleLog) {
-          console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount, "; save clean json file");
+          console.log('\n ', __filename, 'line', __line, '; function #:', ++functionCount, '; save clean json file');
         }
         // var saveJson = function () {
         try {
-          var myFile = __dirname + "/../data/output/AQList-clean.json";
-          var myJsonData = JSON.stringify(data, null, " ");
-          // if (consoleLog) { console.log("myJsonData =", myJsonData);
-          fse.writeFileSync(myFile, myJsonData, fsOptions);
+          var myFileNameAndPath = __dirname + '/../data/output/AQList-clean.json';
+          var myJsonData = JSON.stringify(data, null, ' ');
+          // if (consoleLog) { console.log('myJsonData =', myJsonData);
+          fse.writeFileSync(myFileNameAndPath, myJsonData, fsOptions);
           if (consoleLog) {
-            console.log("\n ", __filename, "line", __line, ";  file written to: ", myFile, ";  file contained: ", trunc.n400(util.inspect(myJsonData, false, null)));
+            console.log('\n ', __filename, 'line', __line, ';  file written to: ', myFileNameAndPath, ';  file contained myJsonData = ', myJsonData);
           }
         } catch (e) {
-          console.log("\n ", __filename, "line", __line, ";  Error: ", e);
+          console.log('\n ', __filename, 'line', __line, ';  Error: ', e);
           callback();
         }
         callback();
       },
 
-      // placeholder 
+      // placeholder
       function (callback) {
-        // var myJsonData = JSON.stringify(data, null, " ");
+        // var myJsonData = JSON.stringify(data, null, ' ');
         if (consoleLog) {
-          console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount, "; STRINGIFY json");
-          console.log("\n ", __filename, "line", __line, "; data.nodes.length = ", data.nodes.length);
-          console.log("\n ", __filename, "line", __line, "; data.links.length = ", data.links.length);
+          console.log('\n ', __filename, 'line', __line, '; function #:', ++functionCount, '; STRINGIFY json');
+          console.log('\n ', __filename, 'line', __line, '; data.nodes.length = ', data.nodes.length);
+          console.log('\n ', __filename, 'line', __line, '; data.links.length = ', data.links.length);
         }
         callback();
       },
@@ -460,8 +491,8 @@ var fixData = function () {
       function (callback) {
         var dummy = function () {
           if (consoleLog) {
-            console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount);
-            console.log("\n ", __filename, "line", __line, "; last function; does nothing");
+            console.log('\n ', __filename, 'line', __line, '; function #:', ++functionCount);
+            console.log('\n ', __filename, 'line', __line, '; last function; does nothing');
           }
           callback();
         }();
@@ -474,22 +505,22 @@ var fixData = function () {
 
 var formatMyDate = function (dateString) {
   var now = new Date();
-  dateFormat.masks.friendly_detailed = "dddd, mmmm dS, yyyy, h:MM:ss TT";
-  dateFormat.masks.friendly_display = "dddd, mmmm dS, yyyy";
-  dateFormat.masks.file_generated_date = "yyyy-mm-dd";
-  dateFormat.masks.common = "mm-dd-yyyy";
+  dateFormat.masks.friendly_detailed = 'dddd, mmmm dS, yyyy, h:MM:ss TT';
+  dateFormat.masks.friendly_display = 'dddd, mmmm dS, yyyy';
+  dateFormat.masks.file_generated_date = 'yyyy-mm-dd';
+  dateFormat.masks.common = 'mm-dd-yyyy';
 // Basic usage
 // dateFormat.masks.hammerTime = 'yyyy-mm-dd-HHMMss';
-// var displayDateString = dateFormat(now, "friendly_display");
+// var displayDateString = dateFormat(now, 'friendly_display');
 // Saturday, June 9th, 2007, 5:46:21 PM
-// var fileDateString = dateFormat(now, "hammerTime");
+// var fileDateString = dateFormat(now, 'hammerTime');
 //    var dateAqListGeneratedString = data.dateGenerated;
   var date = new Date(dateString);
-//    dateFormat.masks.friendly_display = "dddd, mmmm dS, yyyy";
-  var formattedDate = dateFormat(date, "common");
-//    var message = "Collected AQList.xml labeled as generated on: " + dateAqListGeneratedString + " [" + dateAqListGenerated + "]";
+//    dateFormat.masks.friendly_display = 'dddd, mmmm dS, yyyy';
+  var formattedDate = dateFormat(date, 'common');
+//    var message = 'Collected AQList.xml labeled as generated on: ' + dateAqListGeneratedString + ' [' + dateAqListGenerated + ']';
 //    data.message = message;
-  logger.log_message(__filename + " line " + __line + "; formattedDate = " + formattedDate);
+  logger.log_message(__filename + ' line ' + __line + '; formattedDate = ' + formattedDate);
   return formattedDate;
 };
 
@@ -504,18 +535,18 @@ var cleanUpIds = function (nodes) {
       refNumRegexMatch = (node.REFERENCE_NUMBER).match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/);
     } catch (error) {
       if (consoleLog) {
-        console.log("\n ", __filename, "line", __line, "; Error: ", error, "; node =", node, "; counter = ", counter);
+        console.log('\n ', __filename, 'line', __line, '; Error: ', error, '; node =', node, '; counter = ', counter);
       }
     }
     //  clean up indiv id for consistency;  none should have trailing period.
     node.id = refNumRegexMatch[1].trim();
     if ((node.REFERENCE_NUMBER).match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/)[1].trim() !== node.id) {
-      throw "id error";
+      throw 'id error';
     }
     // remove period from end of all reference numbers that have them; not all do.
     if (counter <= numObjectsToShow) {
       if (consoleLog) {
-        console.log("\n ", __filename, "line", __line, "; counter = ", counter, "; node with ids", node);
+        console.log('\n ', __filename, 'line', __line, '; counter = ', counter, '; node with ids', node);
       }
     }
   });
@@ -532,7 +563,7 @@ var cleanUpRefNums = function (nodes) {
     try {
       refNumRegexMatch = (node.REFERENCE_NUMBER).match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/);
     } catch (error) {
-      console.log("\n ", __filename, "line", __line, "; Error: ", error, "; node =", node, "; counter = ", counter);
+      console.log('\n ', __filename, 'line', __line, '; Error: ', error, '; node =', node, '; counter = ', counter);
     }
     try {
       node.REFERENCE_NUMBER = refNumRegexMatch[0].trim();
@@ -541,7 +572,7 @@ var cleanUpRefNums = function (nodes) {
     }
     if (counter <= numObjectsToShow) {
       if (consoleLog) {
-        console.log("\n ", __filename, "line", __line, "; counter = ", counter, "; node with ids", node);
+        console.log('\n ', __filename, 'line', __line, '; counter = ', counter, '; node with ids', node);
       }
     }
   });
@@ -553,7 +584,7 @@ var getCleanId = function (referenceNumber) {
   try {
     refNumRegexMatch = referenceNumber.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/);
   } catch (error) {
-    console.log("\n ", __filename, "line", __line, "; Error: ", error, "; node =", node, "; counter = ", counter);
+    console.log('\n ', __filename, 'line', __line, '; Error: ', error, '; node =', node, '; counter = ', counter);
   }
   return refNumRegexMatch[0].trim();
 };
@@ -562,7 +593,7 @@ var concatNames = function (nodes) {
   counter = 0;
   nodes.forEach(function (node) {
     counter++;
-    var name = "";
+    var name = '';
     var firstName = node.FIRST_NAME;
     var secondName = node.SECOND_NAME;
     var thirdName = node.THIRD_NAME;
@@ -571,18 +602,18 @@ var concatNames = function (nodes) {
       name = name.concat(firstName.trim());
     }
     if (secondName) {
-      name = name.concat(" ", secondName.trim());
+      name = name.concat(' ', secondName.trim());
     }
     if (thirdName) {
-      name = name.concat(" ", thirdName.trim());
+      name = name.concat(' ', thirdName.trim());
     }
     if (fourthName) {
-      name = name.concat(" ", fourthName.trim());
+      name = name.concat(' ', fourthName.trim());
     }
     node.name = name.trim();
     if (counter <= 10) {
       if (consoleLog) {
-        console.log("\n ", __filename, "line", __line, "; node with name", node);
+        console.log('\n ', __filename, 'line', __line, '; node with name', node);
       }
     }
   });
@@ -600,39 +631,43 @@ var createNationality = function (nodes) {
     }
   });
 };
-// create an array of links within each entity/indiv containing ids of related parties
-var addLinksArray = function (nodes) {
-  var comments;
-  var linkRegexMatch;
-  data.nodes.forEach(function (node) {
+/*
+ // create an array of links within each entity/indiv containing ids of related parties
+ var addLinksArray = function (nodes) {
+ var comments;
+ var linkRegexMatch;
+ data.nodes.forEach(function (node) {
 
-    node.linkedIds = [];
-    comments = node.COMMENTS1;
-    if ((typeof comments != 'undefined') && (typeof comments.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/gi) != 'undefined')) {
-      linkRegexMatch = comments.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/gi);
-      // if (consoleLog) { console.log("91 linkRegexMatch = ", linkRegexMatch);
-      if ((typeof(linkRegexMatch) !== 'undefined') && (linkRegexMatch !== null)) {
-        for (var n = 0; n < linkRegexMatch.length; n++) {
-          if (node.id === linkRegexMatch[n].trim()) {
-            // don't include a link from a node to itself
-            if (consoleLog) {
-              console.log("node id error" + node.id + " ===  " + linkRegexMatch[n].trim());
-              throw "node links to itself error";
-            }
-          } else {
-            node.linkedIds.push(linkRegexMatch[n].trim());
-          }
-        }
-      }
-    }
-  });
-};
-
-// create an array of ids in each indiv/entity
-var addConnectionIdsArray = function (nodes) {
+ node.linkedIds = [];
+ comments = node.COMMENTS1;
+ if ((typeof comments != 'undefined') && (typeof comments.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/gi) != 'undefined')) {
+ linkRegexMatch = comments.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/gi);
+ // if (consoleLog) { console.log('91 linkRegexMatch = ', linkRegexMatch);
+ if ((typeof(linkRegexMatch) !== 'undefined') && (linkRegexMatch !== null)) {
+ for (var n = 0; n < linkRegexMatch.length; n++) {
+ if (node.id === linkRegexMatch[n].trim()) {
+ // don't include a link from a node to itself
+ if (consoleLog) {
+ console.log('node id error' + node.id + ' ===  ' + linkRegexMatch[n].trim());
+ throw 'node links to itself error';
+ }
+ } else {
+ node.linkedIds.push(linkRegexMatch[n].trim());
+ }
+ }
+ }
+ }
+ });
+ };
+ */
+// legacy method
+// create an array, connectedToId[], of linked-to ids in each node;
+// create link objects for each link (source and target ids) and insert in each node
+var addConnectionIdsArrayFromComments = function (nodes) {
   var loopStop;
   var comments;
   var linkRegexMatch;
+  counter = 0;
   nodes.forEach(function (node) {
     node.connectionIdsSet = new Set();
     node.connectedToId = [];
@@ -643,7 +678,7 @@ var addConnectionIdsArray = function (nodes) {
       linkRegexMatch = comments.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/gi);
       if (linkRegexMatch !== null) {
         if (consoleLog) {
-          console.log("\n ", __filename, "line", __line, "; node.id = ", node.id, "; node.name = ", node.name, "; has ", linkRegexMatch.length, "link regex matches");
+          console.log('\n ', __filename, 'line', __line, '; counter = ', counter, '; node.id = ', node.id, '; node.name = ', node.name, '; has ', linkRegexMatch.length, 'link regex matches');
         }
         // LOOP THROUGH EACH REGEX MATCH
         for (var link = 0; link < linkRegexMatch.length; link++) {
@@ -658,7 +693,54 @@ var addConnectionIdsArray = function (nodes) {
         });
       }
       if (consoleLog) {
-        console.log("\n ", __filename, "line", __line, "; node.id = ", node.id, "; node.name = ", node.name, "; has connectionIdsSet set: ", connectionIds);
+        if (counter % 17 === 0) {
+          console.log('\n ', __filename, 'line', __line, '; counter = ', counter, '; node.id = ', node.id, '; node.name = ', node.name, '; has node.connectionIdsSet set: ', node.connectionIdsSet);
+        }
+      }
+      counter++;
+    }
+  });
+};
+
+// for each node, collect and save ids of all other nodes linked to said node
+// collect the ids from the long narrative stored in separate shtml documents on the U.N. site.
+// if the long narrative associated with a node cannot be found, look in the COMMENTS1 field from the AQList.xml file
+// create an array of linked node ids in each indiv/entity node
+// create link object for each linked node containing source and target fields, each such field containing the id of the two linked nodes.
+var addConnectionIdsArrayFromLongNarratives = function (nodes) {
+  var loopStop;
+  var comments;
+  var linkRegexMatch;
+  var nodeNarrFileName;
+  nodes.forEach(function (node) {
+    node.connectionIdsSet = new Set();
+    node.connectedToId = [];
+    node.links = [];
+    node.linkSet = new Set();
+    comments = node.COMMENTS1;
+    nodeNarrFileName = node.narrativeFileName;
+
+    if ((typeof nodeNarrFileName !== 'null') && (typeof nodeNarrFileName !== 'undefined') && (typeof nodeNarrFileName.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/gi) !== 'undefined')) {
+      //  if ((typeof comments !== 'undefined') && (typeof comments.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/gi) !== 'undefined')) {
+      linkRegexMatch = comments.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/gi);
+      if (linkRegexMatch !== null) {
+        if (consoleLog) {
+          console.log('\n ', __filename, 'line', __line, '; node.id = ', node.id, '; node.name = ', node.name, '; has ', linkRegexMatch.length, 'link regex matches');
+        }
+        // LOOP THROUGH EACH REGEX MATCH
+        for (var link = 0; link < linkRegexMatch.length; link++) {
+          if (linkRegexMatch[link] !== node.id) {
+            loopStop = false;
+            node.connectionIdsSet.add(linkRegexMatch[link]);
+          }
+        }
+        node.connectionIdsSet.forEach(function (uniqueConnectionId) {
+          node.connectedToId.push(uniqueConnectionId);
+          node.links.push(uniqueConnectionId);
+        });
+      }
+      if (consoleLog) {
+        console.log('\n ', __filename, 'line', __line, '; node.id = ', node.id, '; node.name = ', node.name, '; has connectionIdsSet set: ', connectionIds);
       }
     }
   });
@@ -668,7 +750,9 @@ var addConnectionIdsArray = function (nodes) {
 var addConnectionObjectsArray = function (nodes) {
 // for each node
   var connection;
+  counter = 0;
   nodes.forEach(function (node) {
+    // counter ++;
     node.connections = [];
     node.connectedToId.forEach(function (connId) {
       if (node.id !== connId) {
@@ -678,7 +762,9 @@ var addConnectionObjectsArray = function (nodes) {
         node.connections.push(connection);
       }
       if (consoleLog) {
-        console.log("\n ", __filename, "line", __line, "; id = ", id, "; connection = ", connection);
+        if (counter < 10) {
+          console.log('\n ', __filename, 'line', __line, '; counter++ = ', counter++, '; node.id = ', node.id, '; connection = ', connection);
+        }
       }
     })
   })
@@ -687,10 +773,10 @@ var addConnectionObjectsArray = function (nodes) {
 // consolidate links; remove duplicates, BUT DOES IT REALLY?
 // create a top-level array of links containing a source and target
 var consolidateLinks = function (data) {
-  // if (consoleLog) { console.log("\n ", __filename, "line",__line, "; data = ", data);
+  // if (consoleLog) { console.log('\n ', __filename, 'line',__line, '; data = ', data);
   if (consoleLog) {
-    console.log("\n ", __filename, "line", __line, "; data.nodes[0] = ", data.nodes[0]);
-    console.log("\n ", __filename, "line", __line, "; data.nodes[1] = ", data.nodes[1]);
+    console.log('\n ', __filename, 'line', __line, '; data.nodes[0] = ', data.nodes[0]);
+    console.log('\n ', __filename, 'line', __line, '; data.nodes[1] = ', data.nodes[1]);
   }
   data.links = [];
   var linkSet = new Set();
@@ -708,7 +794,7 @@ var consolidateLinks = function (data) {
     }
   });
   if (consoleLog) {
-    console.log(__filename, "line", __line, "; connectionsCount = ", connectionsCount, "; linkSet.count = ", linkSet.count);
+    console.log(__filename, 'line', __line, '; connectionsCount = ', connectionsCount, '; linkSet.count = ', linkSet.count);
   }
   linkSet = null;
 };
@@ -724,7 +810,7 @@ var countLinks = function (data) {
       // delete a link if source and target are the same
       if (link.source === link.target) {
         delete data.link;
-        console.log(__filename, "line", __line, "deleted ", data.link, " because link.source === link.target");
+        console.log(__filename, 'line', __line, 'deleted ', data.link, ' because link.source === link.target');
       } else {
         if (node.id === link.source || node.id === link.target) {
           linkConcatKey1 = link.source + link.target;
@@ -748,156 +834,160 @@ var checkTargetsExist = function (nodes, links) {
     })
   });
   if (consoleLog) {
-    console.log("\n ", __filename, "line", __line, "; the number of unique target / link nodes is ", nodeTargetIdsSet.count);
+    console.log('\n ', __filename, 'line', __line, '; the number of unique target / link nodes is ', nodeTargetIdsSet.count);
   }
   links.forEach(function (link) {
     if (nodeTargetIdsSet.exists(link.target)) {
       if (consoleLog) {
-        console.log("\n ", __filename, "line", __line, "; ", link.target, " exists.");
+        console.log('\n ', __filename, 'line', __line, '; ', link.target, ' exists.');
       }
     } else {
       // if (consoleLog) {
-      console.log("\n ", __filename, "line", __line, ", link.target: ", link.target, " DOES NOT EXIST.");
+      console.log('\n ', __filename, 'line', __line, ', link.target: ', link.target, ' DOES NOT EXIST.');
       // }
-      throw "missing target error";
+      throw 'missing target error';
     }
   });
 };
 
-// put links into a set
-// https://www.npmjs.org/package/backpack-node
-// within each node create a Set() of ids of related/linked parties
-var addSourceTargetArray = function (data) {
-  var comments;
-  var linkRegexMatch;
-  var sourceTarget;
-  var count;
-  data.nodes.forEach(function (node) {
-    node.sourceTargetArray = [];
-    comments = node.COMMENTS1;
-    if ((typeof comments !== 'undefined') && (typeof comments.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/gi) !== 'undefined')) {
-      linkRegexMatch = comments.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/gi);
-      // if (consoleLog) { console.log("91 linkRegexMatch = ", linkRegexMatch);
-      if ((typeof(linkRegexMatch) !== 'undefined') && (linkRegexMatch !== null)) {
-        for (var n = 0; n < linkRegexMatch.length; n++) {
-          if (node.id !== linkRegexMatch[n].trim()) {
-            // don't include a link from a node to itself
-            sourceTarget = {};
-            sourceTarget.source = node.id;
-            sourceTarget.target = linkRegexMatch[n].trim();
-            data.links.push(sourceTarget);
-          }
-        }
-      }
-    }
-  });
-};
-
-var countSourceTarget = function (nodes, links) {
-  var tarCount = 0;
-  var souCount = 0;
-  nodes.forEach(function (node) {
-    // for(var n in nodes) {
-    if (consoleLog) {
-      console.log("\n ", __filename, "line", __line, ";  node = ", node);
-      console.log("\n ", __filename, "line", __line, ";  node.id = ", node.id);
-    }
-    node['sourceCount'] = 0;
-    node['targetCount'] = 0;
-    links.forEach(function (link) {
-      if (link.source == node.id) {
-        if (consoleLog) {
-          console.log("\n ", __filename, "line", __line, "; ", link.source, " == ", node.id, " TRUE");
-        }
-        node.sourceCount++; // = nodes[n].sourceCount + 1;
-        souCount++;
-      }
-      if (link.target == node.id) {
-        if (consoleLog) {
-          console.log("\n ", __filename, "line", __line, "; ", link.target, " == ", node.id, " TRUE");
-        }
-        node.targetCount++; // = node.targetCount + 1;
-        tarCount++;
-      }
-//      node.linkCount = node.sourceCount + node.targetCount;
-    });
-    if (consoleLog) {
-      console.log("\n ", __filename, "line", __line, "; node.sourceCount = ", node.sourceCount);
-      console.log("\n ", __filename, "line", __line, "; node.targetCount = ", node.targetCount);
-      console.log("\n ", __filename, "line", __line, "; tarCount = ", tarCount);
-      console.log("\n ", __filename, "line", __line, "; souCount = ", souCount);
-    }
-  })
-};
-
+/*
+ // put links into a set
+ // https://www.npmjs.org/package/backpack-node
+ // within each node create a Set() of ids of related/linked parties
+ var addSourceTargetArray = function (data) {
+ var comments;
+ var linkRegexMatch;
+ var sourceTarget;
+ var count;
+ data.nodes.forEach(function (node) {
+ node.sourceTargetArray = [];
+ comments = node.COMMENTS1;
+ if ((typeof comments !== 'undefined') && (typeof comments.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/gi) !== 'undefined')) {
+ linkRegexMatch = comments.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/gi);
+ // if (consoleLog) { console.log('91 linkRegexMatch = ', linkRegexMatch);
+ if ((typeof(linkRegexMatch) !== 'undefined') && (linkRegexMatch !== null)) {
+ for (var n = 0; n < linkRegexMatch.length; n++) {
+ if (node.id !== linkRegexMatch[n].trim()) {
+ // don't include a link from a node to itself
+ sourceTarget = {};
+ sourceTarget.source = node.id;
+ sourceTarget.target = linkRegexMatch[n].trim();
+ data.links.push(sourceTarget);
+ }
+ }
+ }
+ }
+ });
+ };
+ */
+/*
+ var countSourceTarget = function (nodes, links) {
+ var tarCount = 0;
+ var souCount = 0;
+ nodes.forEach(function (node) {
+ // for(var n in nodes) {
+ if (consoleLog) {
+ console.log('\n ', __filename, 'line', __line, ';  node = ', node);
+ console.log('\n ', __filename, 'line', __line, ';  node.id = ', node.id);
+ }
+ node['sourceCount'] = 0;
+ node['targetCount'] = 0;
+ links.forEach(function (link) {
+ if (link.source == node.id) {
+ if (consoleLog) {
+ console.log('\n ', __filename, 'line', __line, '; ', link.source, ' == ', node.id, ' TRUE');
+ }
+ node.sourceCount++; // = nodes[n].sourceCount + 1;
+ souCount++;
+ }
+ if (link.target == node.id) {
+ if (consoleLog) {
+ console.log('\n ', __filename, 'line', __line, '; ', link.target, ' == ', node.id, ' TRUE');
+ }
+ node.targetCount++; // = node.targetCount + 1;
+ tarCount++;
+ }
+ //      node.linkCount = node.sourceCount + node.targetCount;
+ });
+ if (consoleLog) {
+ console.log('\n ', __filename, 'line', __line, '; node.sourceCount = ', node.sourceCount);
+ console.log('\n ', __filename, 'line', __line, '; node.targetCount = ', node.targetCount);
+ console.log('\n ', __filename, 'line', __line, '; tarCount = ', tarCount);
+ console.log('\n ', __filename, 'line', __line, '; souCount = ', souCount);
+ }
+ })
+ };
+ */
 var saveJsonFile = function (jsonData, fileName) {
   try {
-    var myFile = __dirname + "/../data/output/" + fileName;
-    var myJsonData = JSON.stringify(jsonData, null, " ");
+    var myFile = __dirname + '/../data/output/' + fileName;
+    var myJsonData = JSON.stringify(jsonData, null, ' ');
     fse.writeFileSync(myFile, myJsonData, fsOptions);
     if (consoleLog) {
-      console.log("\n ", __filename, "line", __line, ";  file written to: ", myFile);
-      console.log("\n ", __filename, "line", __line, ";  file contained: ", trunc.n400(util.inspect(myJsonData, false, null)));
+      console.log('\n ', __filename, 'line', __line, ';  file written to: ', myFile);
+//      console.log('\n ', __filename, 'line', __line, ';  file contained: ', trunc.n400(util.inspect(myJsonData, false, null)));
+      console.log('\n ', __filename, 'line', __line, ';  file contained: ', myJsonData.substring(0, 2400), ' ... [INTENTIONALLY TRUNCATED]');
     }
   } catch (e) {
     if (consoleLog) {
-      console.log("\n ", __filename, "line", __line, ";  Error: ", e);
+      console.log('\n ', __filename, 'line', __line, ';  Error: ', e);
     }
   }
 };
-
-// inspect some array objects, but not too many
-var inspectSomeArrayObjects = function (array, numOfObjectsToShow) {
-  array.forEach(function (object) {
-    counter++;
-    if (counter <= numOfObjectsToShow) {
-      console.log("\n ", __filename, "line", __line, "; counter = ", counter, "; object = \n", util.inspect(object, false, null));
-    }
-  });
-};
-
-var archiveRawSource = function (fileNameAndPath) {
-  collect.writeAQListXML(fileNameAndPath);
-  return true;
-};
-
+/*
+ // inspect some array objects, but not too many
+ var inspectSomeArrayObjects = function (array, numOfObjectsToShow) {
+ array.forEach(function (object) {
+ counter++;
+ if (counter <= numOfObjectsToShow) {
+ console.log('\n ', __filename, 'line', __line, '; counter = ', counter, '; object = \n', util.inspect(object, false, null));
+ }
+ });
+ };
+ */
+/*
+ var archiveRawSource = function (fileNameAndPath) {
+ collect.writeAQListXML(fileNameAndPath);
+ return true;
+ };
+ */
 var createDateGeneratedMessage = function () {
   var dateAqListGeneratedString = data.dateGenerated;
   var dateAqListGenerated = new Date(dateAqListGeneratedString);
-  dateFormat.masks.shortDate = "mm-dd-yyyy";
-  dateFormat.masks.friendly_display = "dddd, mmmm dS, yyyy";
+  dateFormat.masks.shortDate = 'mm-dd-yyyy';
+  dateFormat.masks.friendly_display = 'dddd, mmmm dS, yyyy';
   generatedFileDateString = vizFormatDateSetup(dateAqListGenerated);
-  var message = "Collected AQList.xml labeled as generated on: " + dateAqListGeneratedString + " [" + dateAqListGenerated + "]";
+  var message = 'Collected AQList.xml labeled as generated on: ' + dateAqListGeneratedString + ' [' + dateAqListGenerated + ']';
   data.message = message;
-  logger.log_message(__filename + " line " + __line + "; " + message);
+  logger.log_message(__filename + ' line ' + __line + '; ' + message);
 };
 
 var processPlaceOfBirthArray = function (d) {
-  var pobArrayString = "";
-  if (typeof d["INDIVIDUAL_PLACE_OF_BIRTH"] !== 'undefined') {
-    if (Object.prototype.toString.call(d["INDIVIDUAL_PLACE_OF_BIRTH"]) === '[object Array]') {
-      // console.log("\n ", __filename, "line", __line, ";  Array!", d["INDIVIDUAL_PLACE_OF_BIRTH"]);
-      var pobArray = d["INDIVIDUAL_PLACE_OF_BIRTH"];
+  var pobArrayString = '';
+  if (typeof d['INDIVIDUAL_PLACE_OF_BIRTH'] !== 'undefined') {
+    if (Object.prototype.toString.call(d['INDIVIDUAL_PLACE_OF_BIRTH']) === '[object Array]') {
+      // console.log('\n ', __filename, 'line', __line, ';  Array!', d['INDIVIDUAL_PLACE_OF_BIRTH']);
+      var pobArray = d['INDIVIDUAL_PLACE_OF_BIRTH'];
       // var pobArrayString;
       for (var i = 0; i < pobArray.length; i++) {
         pobArrayString += createIndivPlaceOfBirthString(pobArray[i]);
-        pobArrayString += "; ";
+        pobArrayString += '; ';
       }
     } else {
-      pobArrayString += createIndivPlaceOfBirthString(d["INDIVIDUAL_PLACE_OF_BIRTH"]);
+      pobArrayString += createIndivPlaceOfBirthString(d['INDIVIDUAL_PLACE_OF_BIRTH']);
     }
   }
   return pobArrayString;
 };
 
 var createIndivPlaceOfBirthString = function (singlePob) {
-  var pobString = "";
-  if (typeof singlePob !== 'undefined' && singlePob !== "") {
+  var pobString = '';
+  if (typeof singlePob !== 'undefined' && singlePob !== '') {
     var keys = getKeys(singlePob);
     keys.forEach(function (key) {
-        if (typeof singlePob[key] !== 'undefined' && singlePob[key] !== "") {
+        if (typeof singlePob[key] !== 'undefined' && singlePob[key] !== '') {
           pobString += singlePob[key];
-          pobString += ", ";
+          pobString += ', ';
         }
       }
     );
@@ -909,73 +999,73 @@ var getKeys = function (pob) {
   var keys = [];
   for (var key in pob) {
     keys.push(key);
-//    console.log("pob[key] = ", pob[key]); //, "; pob[value]", pob.valueOf(key));
+//    console.log('pob[key] = ', pob[key]); //, '; pob[value]', pob.valueOf(key));
   }
   return keys;
 };
 
 var processDateUpdatedArray = function (d) {
-  var dateUpdatedArrayString = "";
-  if (typeof d["LAST_DAY_UPDATED"] === 'undefined') {
+  var dateUpdatedArrayString = '';
+  if (typeof d['LAST_DAY_UPDATED'] === 'undefined') {
     d.lastDateUpdatedCount = 0;
-    //  return "";
-  } else if (Object.prototype.toString.call(d["LAST_DAY_UPDATED"]["VALUE"]) === '[object Array]') {
-    // console.log("\n ", __filename, "line", __line, "; processDateUpdatedArray() found  Array!", d["LAST_DAY_UPDATED"]);
-    var lastDateUpdatedArray = d["LAST_DAY_UPDATED"]["VALUE"];
+    //  return '';
+  } else if (Object.prototype.toString.call(d['LAST_DAY_UPDATED']['VALUE']) === '[object Array]') {
+    // console.log('\n ', __filename, 'line', __line, '; processDateUpdatedArray() found  Array!', d['LAST_DAY_UPDATED']);
+    var lastDateUpdatedArray = d['LAST_DAY_UPDATED']['VALUE'];
     d.lastDateUpdatedCount = lastDateUpdatedArray.length;
     for (var i = 0; i < lastDateUpdatedArray.length; i++) {
       dateUpdatedArrayString += vizFormatDateSetup(lastDateUpdatedArray[i]);
       if (i < (lastDateUpdatedArray.length - 1)) {
-        dateUpdatedArrayString += ", ";
+        dateUpdatedArrayString += ', ';
       }
     }
   } else {
     d.lastDateUpdatedCount = 1;
-    dateUpdatedArrayString += vizFormatDateSetup(d["LAST_DAY_UPDATED"]["VALUE"]);
+    dateUpdatedArrayString += vizFormatDateSetup(d['LAST_DAY_UPDATED']['VALUE']);
   }
   return dateUpdatedArrayString;
 };
 
 var processAliasArray = function (d) {
-  var aliasArrayString = "";
-  if (!(d["INDIVIDUAL_ALIAS"])) {
+  var aliasArrayString = '';
+  if (!(d['INDIVIDUAL_ALIAS'])) {
     d.aliasCount = 0;
-    return "";
+    return '';
   }
-  if (Object.prototype.toString.call(d["INDIVIDUAL_ALIAS"]) === '[object Array]') {
-    // console.log("\n ", __filename, "line", __line, "; processAliasArray() found  Array!", d["INDIVIDUAL_PLACE_OF_BIRTH"]);
-    var aliasArray = d["INDIVIDUAL_ALIAS"];
+  if (Object.prototype.toString.call(d['INDIVIDUAL_ALIAS']) === '[object Array]') {
+    // console.log('\n ', __filename, 'line', __line, '; processAliasArray() found  Array!', d['INDIVIDUAL_PLACE_OF_BIRTH']);
+    var aliasArray = d['INDIVIDUAL_ALIAS'];
     d.aliasCount = aliasArray.length;
     for (var i = 0; i < aliasArray.length; i++) {
       aliasArrayString += createIndivAliasString(aliasArray[i]);
-      aliasArrayString += "; ";
+      aliasArrayString += '; ';
     }
   } else {
     d.aliasCount = 1;
-    aliasArrayString += createIndivAliasString(d["INDIVIDUAL_ALIAS"]);
+    aliasArrayString += createIndivAliasString(d['INDIVIDUAL_ALIAS']);
   }
   return aliasArrayString;
 };
 
 var createIndivAliasString = function (singleAlias) {
-  var aliasString, aliasName, aliasQuality; // = "";
+  var aliasString, aliasName, aliasQuality; // = '';
   aliasName = singleAlias.ALIAS_NAME;
   aliasQuality = singleAlias.QUALITY;
-  aliasString = aliasName + " (" + aliasQuality + ")";
+  aliasString = aliasName + ' (' + aliasQuality + ')';
   return aliasString;
 };
 
 var createIndivDateOfBirthString = function (d) {
-  var dateString = "",
+  var dateString = '',
     rawDateString;
-  if (typeof d["INDIVIDUAL_DATE_OF_BIRTH"]["DATE"] !== 'undefined' && d["INDIVIDUAL_DATE_OF_BIRTH"]["DATE"] !== "") {
-    rawDateString = formatDate(d["INDIVIDUAL_DATE_OF_BIRTH"]["DATE"]);
+  if (typeof d['INDIVIDUAL_DATE_OF_BIRTH']['DATE'] !== 'undefined' && d['INDIVIDUAL_DATE_OF_BIRTH']['DATE'] !== '') {
+    rawDateString = formatDate(d['INDIVIDUAL_DATE_OF_BIRTH']['DATE']);
     dateString += vizFormatDateSetup(rawDateString);
-  } else if (typeof d["INDIVIDUAL_DATE_OF_BIRTH"]["YEAR"] !== 'undefined') {
-    dateString += d["INDIVIDUAL_DATE_OF_BIRTH"]["YEAR"];
+  } else if (typeof d['INDIVIDUAL_DATE_OF_BIRTH']['YEAR'] !== 'undefined') {
+    dateString += d['INDIVIDUAL_DATE_OF_BIRTH']['YEAR'];
   }
-  if (typeof d["INDIVIDUAL_DATE_OF_BIRTH"]["TYPE_OF_DATE"] !== 'undefined' && d["INDIVIDUAL_DATE_OF_BIRTH"]["TYPE_OF_DATE"] !== "") {
-    dateString += " (" + d["INDIVIDUAL_DATE_OF_BIRTH"]["TYPE_OF_DATE"] + ")";
+  if (typeof d['INDIVIDUAL_DATE_OF_BIRTH']['TYPE_OF_DATE'] !== 'undefined' && d['INDIVIDUAL_DATE_OF_BIRTH']['TYPE_OF_DATE'] !== '') {
+    dateString += ' (' + d['INDIVIDUAL_DATE_OF_BIRTH']['TYPE_OF_DATE'] + ')';
   }
   return dateString;
 };
@@ -984,32 +1074,42 @@ var createIndivDateOfBirthString = function (d) {
 var formatDate = function (intlDateString) {
   var dateResultString;
   var date = new Date(intlDateString);
-  dateFormat.masks.shortDate = "mm-dd-yyyy";
+  dateFormat.masks.shortDate = 'mm-dd-yyyy';
   try {
-    dateResultString = dateFormat(date, "shortDate");
+    dateResultString = dateFormat(date, 'shortDate');
   } catch (err) {
-    console.log("769 Error: ", err, "; intlDateString = ", intlDateString);
+    console.log('769 Error: ', err, '; intlDateString = ', intlDateString);
   }
-  // logger.log_message(__filename + " line " + __line + "; " + dateResultString);
+  // logger.log_message(__filename + ' line ' + __line + '; ' + dateResultString);
   return dateResultString;
 };
 
 var vizFormatDateSetup = function (dateString) {
-  var m_names = new Array("January", "February", "March",
-    "April", "May", "June", "July", "August", "September",
-    "October", "November", "December");
+  var m_names = ['January', 'February', 'March',
+    'April', 'May', 'June', 'July', 'August', 'September',
+    'October', 'November', 'December'];
 
   var d = new Date(dateString);
   var curr_date = d.getDate();
   var curr_month = d.getMonth();
   var curr_year = d.getFullYear();
 
-  var dateString = curr_date + " " + m_names[curr_month]
-    + " " + curr_year;
-  // console.log("viz.js 947 vizFormatDate() dateString = ", dateString);
-  return dateString;
+  var vizDateString = curr_date + ' ' + m_names[curr_month]
+    + ' ' + curr_year;
+  // console.log('viz.js 947 vizFormatDate() dateString = ', dateString);
+  return vizDateString;
+};
+
+var generateNarrFileName = function (node) {
+  var id = node.id.trim();
+  var idSplit = id.split('.');
+  var narrFileName = 'NSQ' + idSplit[0].substring(1, 2) + idSplit[2] + idSplit[3] + '.shtml';
+  console.log('\n ', __filename, 'line', __line, '; id = ', id, '; generated narrFileName = ', narrFileName);
+  return narrFileName;
 };
 
 module.exports = {
   fixData: fixData
 };
+
+fixData();

@@ -170,9 +170,14 @@ span#nameOriginalScript {
     font-size: 33px;
     white-space: nowrap;
 }
-span#narrative {
+span#narrative, span#longNarrative{
     font-size: 12px;
 }
+
+div.line2, div.line3 {
+    margin-top: 4px;
+}
+
 div#line2 {
     margin-top: 4px;
 }

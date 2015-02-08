@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 
-var fs = require("fs"),
-  path = require("path");
+var fs = require('fs'),
+  path = require('path');
 
-var p = "./data/output";
+var p = './data/output';
 fs.readdir(p, function (err, files) {
   if (err) {
     throw err;
@@ -14,6 +14,6 @@ fs.readdir(p, function (err, files) {
   }).filter(function (file) {
     return fs.statSync(file).isFile();
   }).forEach(function (file) {
-    console.log("%s (%s)", file, path.extname(file));
+    console.log('%s (%s)', file, path.extname(file));
   });
 });

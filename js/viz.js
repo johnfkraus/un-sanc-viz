@@ -890,9 +890,11 @@ Network = function () {
     this.d = d;
     var that = this;
     //$("span#name").html(d.name);
-    $("span#name").html(content);
+    $("span#name").html(d.name);
     $("span#id").html(d.id);
     $("span#nameOriginalScript").html(d.NAME_ORIGINAL_SCRIPT);
+    $("span#longNarrative").html(content);
+
     $("span#narrative").html(d.COMMENTS1);
     if (d.indiv0OrEnt1 == 0 && (typeof d.indivDobString !== 'undefined') && d.indivDobString !== "") {
       $("span#indivDateOfBirth").html(d.indivDobString);
