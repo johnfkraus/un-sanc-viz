@@ -7,19 +7,7 @@
     <option name="ANALYSIS_IN_BACKGROUND" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4182aee6-13b8-4466-9993-4422af087054" name="John's change list" comment="setupData1.js to parse Narrative files, collect links, in progress">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/setupData2.js" />
-      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_lists\NSQtest.shtml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_lists\entities_other_groups_undertakings_associated_with_Al-Qaida.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_lists\individuals_associated_with_Al-Qaida.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\output\AQList-raw.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\output\AQList.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/archive/AQList.xml" afterPath="$PROJECT_DIR$/data/archive/AQList.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app-test2.js" afterPath="$PROJECT_DIR$/js/app-test2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/collect.js" afterPath="$PROJECT_DIR$/js/collect.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/collectNarratives.js" afterPath="$PROJECT_DIR$/js/collectNarratives.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/getNarrativeList.js" afterPath="$PROJECT_DIR$/js/getNarrativeList.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/setupData1.js" afterPath="$PROJECT_DIR$/js/setupData1.js" />
+    <list default="true" id="4182aee6-13b8-4466-9993-4422af087054" name="John's change list" comment="added setupdata2">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="aqlist-visualization.iws" />
@@ -707,12 +695,6 @@
       <option name="number" value="Default" />
       <updated>1417180880658</updated>
     </task>
-    <task id="LOCAL-00002" summary="push changes, colors working">
-      <created>1417118827312</created>
-      <option name="number" value="00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1417118827312</updated>
-    </task>
     <task id="LOCAL-00003" summary="clean up missing ents indivs">
       <created>1417135915018</created>
       <option name="number" value="00003" />
@@ -1002,7 +984,13 @@
       <option name="project" value="LOCAL" />
       <updated>1423421978508</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="added setupdata2">
+      <created>1423426468384</created>
+      <option name="number" value="00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1423426468384</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <option name="trackContextForNewChangelist" value="true" />
     <servers />
   </component>
@@ -1105,7 +1093,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="fixing indiv date of birth string" />
     <MESSAGE value="unclick no longer list now returns you to &quot;name&quot; based colors" />
     <MESSAGE value="doc-close button works, is positioned correctly" />
     <MESSAGE value="delete pdf" />
@@ -1130,7 +1117,8 @@
     <MESSAGE value="connected longer narratives to gui" />
     <MESSAGE value="fixing long narratives; generate filenames for narrative is missing from downloaded list;" />
     <MESSAGE value="setupData1.js to parse Narrative files, collect links, in progress" />
-    <option name="LAST_COMMIT_MESSAGE" value="setupData1.js to parse Narrative files, collect links, in progress" />
+    <MESSAGE value="added setupdata2" />
+    <option name="LAST_COMMIT_MESSAGE" value="added setupdata2" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="XDebuggerManager">
