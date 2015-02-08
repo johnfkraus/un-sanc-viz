@@ -1,7 +1,7 @@
-// setupData.js
-// put data in arrays for d3, normalize
-// each node in the main json data file (represented by the 'data' variable) contains data on a single individual or
-// entity listed in the AQList.xml sanctions data file collected from the U.N. site located at http://www.un.org/sc/committees/1267/.
+// setupData2.js
+// parse the links now that the narrative files have been collected
+// reads AQList-clean.json
+// produces AQ-clean-links.json
 //==========================
 
 // do we want lots of console.log messages for debugging (if so, set consoleLog = true)
@@ -28,7 +28,7 @@ var narrative_links;
 // .parseString;
 var counter = 0;
 var numObjectsToShow = 2;
-var data = {};
+var data;
 var generatedFileDateString;
 // var backbone =  require('backbone');
 var Set = require('backpack-node').collections.Set;
@@ -53,181 +53,35 @@ var fixData = function () {
   var connection;
   var missing_ents;
   var missing_indivs;
-  var ents = [];
-  var indivs = [];
   var config;
 //  var __filename = __filename || {};
 //  var __line = __line || {};
-  var consolidatedList;
+  // var consolidatedList;
 
   async.series([
       function (callback) {
         // read 'raw' unprocessed json file created from XML file
-        var rawJsonFileName = __dirname + '/../data/output/AQList-raw.json';
-        consolidatedList = JSON.parse(fse.readFileSync(rawJsonFileName));
+        var rawJsonFileName = __dirname + '/../data/output/AQList-clean.json';
+        data = JSON.parse(fse.readFileSync(rawJsonFileName));
         if (consoleLog) {
           console.log('\n ', __filename, 'line', __line, '; function #:', ++functionCount, '; read the raw json data file');
         }
         callback();
       },
-      // save the file for debugging
-      function (callback) {
-        saveJsonFile(consolidatedList, 'data01-loadedRaw.json');
-        callback();
-      },
-      // put all the nodes in a single array
-      function (callback) {
-        data.entities = consolidatedList.CONSOLIDATED_LIST.ENTITIES.ENTITY;
-        data.indivs = consolidatedList.CONSOLIDATED_LIST.INDIVIDUALS.INDIVIDUAL;
 
-        data.entities.forEach(function (entity) {
-          entity.noLongerListed = 0;
-        });
-        data.indivs.forEach(function (indiv) {
-          indiv.noLongerListed = 0;
-        });
-        var missingIndivs = missingNodes.getMissingIndivs();
-        missingIndivs.forEach(function (missing_indiv) {
-          missing_indiv.noLongerListed = 1;
-        });
-        var missingEnts = missingNodes.getMissingEnts();
-        missingEnts.forEach(function (missing_ent) {
-          missing_ent.noLongerListed = 1;
-        });
-        data.indivs = data.indivs.concat(missingIndivs);
-        // data.indivs = data.indivs.concat(missingNodes.getMissingIndivs());
-        data.indivs.forEach(function (indiv) {
-          indiv.indiv0OrEnt1 = 0;
-          indiv.indivDobString = createIndivDateOfBirthString(indiv);
-          indiv.indivPlaceOfBirthString = processPlaceOfBirthArray(indiv);
-          indiv.indivAliasString = processAliasArray(indiv);
-          // console.log('indiv.indivDobString = ', indiv.indivDobString);
-        });
-        data.entities = data.entities.concat(missingEnts);
-        // data.entities = data.entities.concat(missingNodes.getMissingEnts());
-        // indiv0OrEnt1 1 = entity; 0 = individual
-        data.entities.forEach(function (entity) {
-          entity.indiv0OrEnt1 = 1;
-        });
-        data.nodes = data.indivs.concat(data.entities);
-        data.dateGenerated = formatMyDate(consolidatedList.CONSOLIDATED_LIST.$.dateGenerated);
-        data.dateCollected = formatMyDate(new Date());
-        data.nodes.forEach(function (node) {
-          node.dateUpdatedString = processDateUpdatedArray(node);
-          node.narrativeFileName = '';
-        });
-
-        var generatedFileDateString = dateFormat(data.dateGenerated, 'yyyy-mm-dd');
-        var archiveFileNameAndPath = __dirname + '/../data/archive/AQList-' + generatedFileDateString + '.xml';
-//       archiveRawSource(archiveFile);
-        collect.writeAQListXML(archiveFileNameAndPath);
-        createDateGeneratedMessage();
-        delete data.entities;
-        delete data.indivs;
-        consolidatedList = null;
-        cleanUpRefNums(data.nodes);
-        cleanUpIds(data.nodes);
-        // node.id = getCleanId(node.REFERENCE_NUMBER);
-        concatNames(data.nodes);
-        createNationality(data.nodes);
+ /*
+      // ADD CONNECTION IDS ARRAY
+      function (callback) {
         if (consoleLog) {
-          console.log('\n ', __filename, 'line', __line, '; function #:', ++functionCount, '; put data into nodes array for d3');
-          console.log('\n ', __filename, 'line', __line, '; jsonFile = \n', JSON.stringify(jsonFile).substring(0,800));
+          console.log('\n ', __filename, 'line', __line, '; function #:', ++functionCount, '; addConnectionIdsArrayFromComments(data.nodes)');
+        }
+        addConnectionIdsArrayFromComments(data.nodes);
+        if (consoleLog) {
+          console.log(data.nodes[1]);
         }
         callback();
       },
-      // save intermediate data file for debugging
-      function (callback) {
-        saveJsonFile(data, 'data02-flattened.json');
-        callback();
-      },
-
-      // put nodes and node ids into a set
-      // SET: https://www.npmjs.org/package/backpack-node
-      function (callback) {
-        counter = 0;
-        var setOfNodes = new Set();
-        var setOfNodeIds = new Set();
-        data.nodes.forEach(function (node) {
-          counter++;
-          setOfNodes.add(node);
-          setOfNodeIds.add(node.id);
-          if (counter !== setOfNodeIds.count) {
-            console.log('\n ', __filename, 'line', __line, '; node.id = ', node.id, '; counter = ', counter, '; setOfNodeIds.count = ', setOfNodeIds.count, '; \n(counter === setOfNodeIds.count) = ', counter === setOfNodeIds.count, '; node.id ', node.id, ' is a duplicate.');
-            counter = counter - 1;
-          }
-        });
-        if (consoleLog) {
-          console.log('\n ', __filename, 'line', __line, '; function #:', ++functionCount, '; put nodes into a set');
-          console.log('\n ', __filename, 'line', __line, '; typeof data = ', typeof data);
-          console.log('\n ', __filename, 'line', __line, '; started with ', data.nodes.length, ' nodes in data.nodes array');
-          console.log('\n ', __filename, 'line', __line, '; counter = ', counter, '; setOfNodes.count = ', setOfNodes.count);
-          console.log('\n ', __filename, 'line', __line, '; counter = ', counter, '; setOfNodeIds.count = ', setOfNodeIds.count);
-        }
-        callback();
-      },
-      // put entities and indivs into a bag
-      // https://www.npmjs.org/package/backpack-node
-      function (callback) {
-        var nodeBag = new Bag();
-        counter = 0;
-        data.nodes.forEach(function (node) {
-          counter++;
-          if (consoleLog) {
-            console.log('\n ', __filename, 'line', __line, '; counter = ', counter, '; node.id = ', node.id);
-          }
-          if (!(node.id)) {
-            node.id = 'NODE' + counter;
-          }
-          nodeBag.add(node.id, node);
-          // console.log('\n ', __filename, 'line', __line, 'counter = ', counter ,'; nodeBag.length = ', nodeBag.count);
-        });
-        if (consoleLog) {
-          console.log('\n ', __filename, 'line', __line, 'Bag counter = ', counter);
-//      console.log('\n ', __filename, 'line', __line, '; nodeBag = ', nodeBag);
-        }
-        callback();
-      },
-      // save intermediate data file for debugging
-      function (callback) {
-        saveJsonFile(data, 'data03nodeBag.json');
-        callback();
-      },
-
-      function (callback) {
-        var nodeBag2 = new Bag();
-        counter = 0;
-        data.nodes.forEach(function (node) {
-          counter++;
-          if (consoleLog) {
-            // console.log('\n ', __filename, 'line', __line, '; counter = ', counter, '; ent.id = ', ent.id);
-          }
-          node.id = getCleanId(node.REFERENCE_NUMBER);
-          nodeBag2.add(node.id, node);
-        });
-        if (consoleLog) {
-          console.log('\n ', __filename, 'line', __line, 'nodeBag2 counter = ', counter, '; nodeBag2._map.count = ', nodeBag2._map.count);
-        }
-        callback();
-      },
-      // save intermediate data file for debugging
-      function (callback) {
-        saveJsonFile(data, 'data05nodebagset.json');
-        callback();
-      },
-      /*
-       // ADD CONNECTION IDS ARRAY
-       function (callback) {
-       if (consoleLog) {
-       console.log('\n ', __filename, 'line', __line, '; function #:', ++functionCount, '; addConnectionIdsArrayFromComments(data.nodes)');
-       }
-       addConnectionIdsArrayFromComments(data.nodes);
-       if (consoleLog) {
-       console.log(data.nodes[1]);
-       }
-       callback();
-       },
-       */
+*/
       // ADD CONNECTION IDS ARRAY
       function (callback) {
         if (consoleLog) {
@@ -235,13 +89,13 @@ var fixData = function () {
         }
         addConnectionIdsArrayFromLongNarratives(data.nodes);
         if (consoleLog) {
-          console.log(data.nodes[1]);
+          console.log(data.nodes[314]);
         }
         callback();
       },
       // save intermediate file for debugging
       function (callback) {
-        saveJsonFile(data, 'data06addConnectionIdsArray.json');
+        saveJsonFile(data, 'data88linksStuff.json');
         callback();
       },
 
@@ -283,7 +137,7 @@ var fixData = function () {
         }
         // var saveJson = function () {
         try {
-          var myFile = __dirname + '/../data/output/AQList-clean.json';
+          var myFile = __dirname + '/../data/output/AQList-clean-links.json';
           var myJsonData = JSON.stringify(data, null, ' ');
           // if (consoleLog) { console.log('myJsonData =', myJsonData);
           fse.writeFileSync(myFile, myJsonData, fsOptions);
@@ -299,7 +153,7 @@ var fixData = function () {
 
       // read the main json file containing nodes and links
       function (callback) {
-        var cleanJsonFileName = __dirname + '/../data/output/AQList-clean.json';
+        var cleanJsonFileName = __dirname + '/../data/output/AQList-clean-links.json';
         try {
           var buffer = fse.readFileSync(cleanJsonFileName); //, fsOptions); //, function (err, data) {
           data = JSON.parse(buffer);
@@ -367,29 +221,6 @@ var fixData = function () {
         callback();
       },
 
-      function (callback) {
-
-
-
-
-
-
-
-
-
-
-
-
-
-        //  addLinksArray(data.nodes);
-        // countSourceTarget(data.nodes, data.links);
-        if (consoleLog) {
-          //  console.log('\n ', __filename, 'line', __line, '; function #:', ++functionCount, '; addLinksArray(data.nodes)');
-          //  console.log('\n ', __filename, 'line', __line, '; data.nodes[1] = ', data.nodes[1]);
-        }
-        callback();
-      },
-
       // COUNT LINKS
       function (callback) {
         countLinks(data);
@@ -438,14 +269,7 @@ var fixData = function () {
             maxLinkCount = node.linkCount;
             maxLinkId = node.id;
           }
-
-          /*  if (counter <= numObjectsToShow) {
-           if (consoleLog) {
-           console.log('\n ', __filename, 'line', __line, '; counter = ', counter, '; link/varlink = ', link);
-           }
-           }
-           */
-        });
+         });
         console.log('\n ', __filename, 'line', __line, '; counter = ', counter, '; maxLinkId = ', maxLinkId, '; maxLinkCount = ', maxLinkCount);
         counter = 0;
         data.links.forEach(function (link) {
@@ -464,7 +288,6 @@ var fixData = function () {
         if (consoleLog) {
           console.log('\n ', __filename, 'line', __line, '; function #:', ++functionCount, '; save clean json file');
         }
-        // var saveJson = function () {
         try {
           var myFileNameAndPath = __dirname + '/../data/output/AQList-clean.json';
           var myJsonData = JSON.stringify(data, null, ' ');
@@ -506,27 +329,6 @@ var fixData = function () {
 
 // END OF ASYNC ARRAY
 // END OF ASYNC ARRAY
-
-var formatMyDate = function (dateString) {
-  var now = new Date();
-  dateFormat.masks.friendly_detailed = 'dddd, mmmm dS, yyyy, h:MM:ss TT';
-  dateFormat.masks.friendly_display = 'dddd, mmmm dS, yyyy';
-  dateFormat.masks.file_generated_date = 'yyyy-mm-dd';
-  dateFormat.masks.common = 'mm-dd-yyyy';
-// Basic usage
-// dateFormat.masks.hammerTime = 'yyyy-mm-dd-HHMMss';
-// var displayDateString = dateFormat(now, 'friendly_display');
-// Saturday, June 9th, 2007, 5:46:21 PM
-// var fileDateString = dateFormat(now, 'hammerTime');
-//    var dateAqListGeneratedString = data.dateGenerated;
-  var date = new Date(dateString);
-//    dateFormat.masks.friendly_display = 'dddd, mmmm dS, yyyy';
-  var formattedDate = dateFormat(date, 'common');
-//    var message = 'Collected AQList.xml labeled as generated on: ' + dateAqListGeneratedString + ' [' + dateAqListGenerated + ']';
-//    data.message = message;
-  logger.log_message(__filename + ' line ' + __line + '; formattedDate = ' + formattedDate);
-  return formattedDate;
-};
 
 var cleanUpIds = function (nodes) {
   counter = 0;
@@ -623,18 +425,6 @@ var concatNames = function (nodes) {
   });
 };
 
-var createNationality = function (nodes) {
-  counter = 0;
-  nodes.forEach(function (node) {
-    counter++;
-    if (typeof node.NATIONALITY !== 'undefined') {
-      var nationality = node.NATIONALITY;
-      if (typeof nationality.VALUE !== 'undefined') {
-        node.natnlty = nationality.VALUE;
-      }
-    }
-  });
-};
 /*
  // create an array of links within each entity/indiv containing ids of related parties
  var addLinksArray = function (nodes) {

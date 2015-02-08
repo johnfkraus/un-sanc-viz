@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<CONSOLIDATED_LIST dateGenerated="2015-01-23T00:00:00">
+<CONSOLIDATED_LIST dateGenerated="2015-02-02T00:00:00">
    <INDIVIDUALS>
       <INDIVIDUAL>
          <DATAID>111900</DATAID>
@@ -2564,14 +2564,14 @@
       </INDIVIDUAL>
       <INDIVIDUAL>
          <DATAID>111836</DATAID>
-         <VERSIONNUM>12</VERSIONNUM>
+         <VERSIONNUM>13</VERSIONNUM>
          <FIRST_NAME>ASCHRAF</FIRST_NAME>
          <SECOND_NAME>AL-DAGMA</SECOND_NAME>
          <UN_LIST_TYPE>Al-Qaida</UN_LIST_TYPE>
          <REFERENCE_NUMBER>QI.A.132.03.</REFERENCE_NUMBER>
          <LISTED_ON>2003-09-23T00:00:00</LISTED_ON>
          <NAME_ORIGINAL_SCRIPT>اشرف الدغمة</NAME_ORIGINAL_SCRIPT>
-         <COMMENTS1>Associated with Ismail Abdallah Sbaitan Shalabi (QI.S.128.03.), Djamel Moustfa (QI.M.129.03.) and Mohamed Abu Dhess (QI.A.130.03.). Review pursuant to Security Council resolution 1822 (2008) was concluded on 19 Jan. 2010.</COMMENTS1>
+         <COMMENTS1>Associated with Ismail Abdallah Sbaitan Shalabi (QI.S.128.03), Djamel Moustfa (QI.M.129.03) and Mohamed Ghassan Ali Abu Dhess (QI.A.130.03). Review pursuant to Security Council resolution 1822 (2008) was concluded on 19 Jan. 2010.</COMMENTS1>
          <NATIONALITY2>Unresolved/Palestinian origin</NATIONALITY2>
          <LIST_TYPE>
             <VALUE>UN List</VALUE>
@@ -2869,7 +2869,7 @@
       </INDIVIDUAL>
       <INDIVIDUAL>
          <DATAID>2968403</DATAID>
-         <VERSIONNUM>3</VERSIONNUM>
+         <VERSIONNUM>4</VERSIONNUM>
          <FIRST_NAME>OTHMAN</FIRST_NAME>
          <SECOND_NAME>AHMED</SECOND_NAME>
          <THIRD_NAME>OTHMAN</THIRD_NAME>
@@ -2878,7 +2878,7 @@
          <REFERENCE_NUMBER>QI.A.292.11.</REFERENCE_NUMBER>
          <LISTED_ON>2011-06-16T00:00:00</LISTED_ON>
          <NAME_ORIGINAL_SCRIPT>عثمان أحمد عثمان الغامدي</NAME_ORIGINAL_SCRIPT>
-         <COMMENTS1>Operational commander of Al-Qaida in the Arabian Peninsula (AQAP) (QE.A.129.10.). Has been involved in raising funds and stockpiling arms for AQAP operations and activities in Yemen. Known associate of Qasim Yahya Mahdi al-Rimi (QI.A.282.10.) and Fahd Mohammed Ahmed al-Quso (QI.A.288.10.). Father’s name is Ahmed Othman Al Omirah.</COMMENTS1>
+         <COMMENTS1>Operational commander of Al-Qaida in the Arabian Peninsula (AQAP) (QE.A.129.10). Has been involved in raising funds and stockpiling arms for AQAP operations and activities in Yemen. Known associate of Qasim Yahya Mahdi al-Rimi (QI.A.282.10) and Fahd Mohammed Ahmed al-Quso (deceased). Father’s name is Ahmed Othman Al Omirah.</COMMENTS1>
          <NATIONALITY>
             <VALUE>Saudi Arabian</VALUE>
          </NATIONALITY>
@@ -5486,7 +5486,7 @@
       </INDIVIDUAL>
       <INDIVIDUAL>
          <DATAID>2881834</DATAID>
-         <VERSIONNUM>8</VERSIONNUM>
+         <VERSIONNUM>9</VERSIONNUM>
          <FIRST_NAME>NASIR</FIRST_NAME>
          <SECOND_NAME>'ABD-AL-KARIM</SECOND_NAME>
          <THIRD_NAME>'ABDULLAH</THIRD_NAME>
@@ -5495,7 +5495,7 @@
          <REFERENCE_NUMBER>QI.A.274.10.</REFERENCE_NUMBER>
          <LISTED_ON>2010-01-19T00:00:00</LISTED_ON>
          <NAME_ORIGINAL_SCRIPT>ناصر عبدالكريم عبدالله الوحيشي</NAME_ORIGINAL_SCRIPT>
-         <COMMENTS1>Since 2007, leader of Al-Qaida in Yemen (AQY). Since Jan. 2009, leader of Al-Qaida in the Arabian Peninsula (QE.A.129.10.) operating in Yemen and Saudi Arabia. His deputy is Said Ali al-Shihri (QI.A.275.10.). Associated with senior Al-Qaida (QE.A.4.01.) leadership, claims he was secretary to Usama Bin Laden (QI.B.8.01.) prior to 2003. Arrested in Iran and extradited to Yemen in 2003, where he escaped from prison in 2006 and remains fugitive as at Jan. 2010.</COMMENTS1>
+         <COMMENTS1>Since 2007, leader of Al-Qaida in Yemen (AQY). Since Jan. 2009, leader of Al-Qaida in the Arabian Peninsula (QE.A.129.10) operating in Yemen and Saudi Arabia. His deputy is Said Ali al-Shihri (QI.A.275.10). Associated with senior Al-Qaida (QE.A.4.01) leadership, claims he was secretary to Usama Bin Laden (deceased) prior to 2003. Arrested in Iran and extradited to Yemen in 2003, where he escaped from prison in 2006 and remains fugitive as at Jan. 2010.</COMMENTS1>
          <NATIONALITY>
             <VALUE>Yemeni</VALUE>
          </NATIONALITY>
@@ -5742,7 +5742,7 @@
       </INDIVIDUAL>
       <INDIVIDUAL>
          <DATAID>111923</DATAID>
-         <VERSIONNUM>18</VERSIONNUM>
+         <VERSIONNUM>19</VERSIONNUM>
          <FIRST_NAME>AIMAN</FIRST_NAME>
          <SECOND_NAME>MUHAMMED</SECOND_NAME>
          <THIRD_NAME>RABI</THIRD_NAME>
@@ -5751,7 +5751,7 @@
          <REFERENCE_NUMBER>QI.A.6.01.</REFERENCE_NUMBER>
          <LISTED_ON>2001-01-25T00:00:00</LISTED_ON>
          <NAME_ORIGINAL_SCRIPT>أيمن محمد ربيع الظواهري</NAME_ORIGINAL_SCRIPT>
-         <COMMENTS1>Former operational and military leader of Egyptian Islamic Jihad (QE.A.3.01), now a close associate of Usama Bin Laden (QI.B.8.01). Believed to be in the Afghanistan/Pakistan border area. Review pursuant to Security Council resolution 1822 (2008) was concluded on 21 Jun. 2010.</COMMENTS1>
+         <COMMENTS1>Former operational and military leader of Egyptian Islamic Jihad (QE.A.3.01), now a close associate of Usama Bin Laden (deceased). Believed to be in the Afghanistan/Pakistan border area. Review pursuant to Security Council resolution 1822 (2008) was concluded on 21 Jun. 2010.</COMMENTS1>
          <TITLE>
             <VALUE>Doctor</VALUE>
             <VALUE>Dr.</VALUE>
@@ -9259,7 +9259,7 @@
       </INDIVIDUAL>
       <INDIVIDUAL>
          <DATAID>111919</DATAID>
-         <VERSIONNUM>24</VERSIONNUM>
+         <VERSIONNUM>25</VERSIONNUM>
          <FIRST_NAME>SALIM</FIRST_NAME>
          <SECOND_NAME>AHMAD</SECOND_NAME>
          <THIRD_NAME>SALIM</THIRD_NAME>
@@ -9268,7 +9268,7 @@
          <REFERENCE_NUMBER>QI.H.3.01.</REFERENCE_NUMBER>
          <LISTED_ON>2001-01-25T00:00:00</LISTED_ON>
          <NAME_ORIGINAL_SCRIPT>سالم أحمد سالم حمدان</NAME_ORIGINAL_SCRIPT>
-         <COMMENTS1>Driver and private bodyguard to Usama bin Laden (QI.B.8.01) from 1996 until 2001. Transferred from United States custody to Yemen in Nov. 2008. Review pursuant to Security Council resolution 1822 (2008) was concluded on 8 Jul. 2010.</COMMENTS1>
+         <COMMENTS1>Driver and private bodyguard to Usama bin Laden (deceased) from 1996 until 2001. Transferred from United States custody to Yemen in Nov. 2008. Review pursuant to Security Council resolution 1822 (2008) was concluded on 8 Jul. 2010.</COMMENTS1>
          <NATIONALITY>
             <VALUE>Yemeni</VALUE>
          </NATIONALITY>
@@ -9736,7 +9736,7 @@
       </INDIVIDUAL>
       <INDIVIDUAL>
          <DATAID>112135</DATAID>
-         <VERSIONNUM>21</VERSIONNUM>
+         <VERSIONNUM>22</VERSIONNUM>
          <FIRST_NAME>ZAYN</FIRST_NAME>
          <SECOND_NAME>AL-ABIDIN</SECOND_NAME>
          <THIRD_NAME>MUHAMMAD</THIRD_NAME>
@@ -9745,7 +9745,7 @@
          <REFERENCE_NUMBER>QI.H.10.01.</REFERENCE_NUMBER>
          <LISTED_ON>2001-01-25T00:00:00</LISTED_ON>
          <NAME_ORIGINAL_SCRIPT>زين العابدين محمد حسين</NAME_ORIGINAL_SCRIPT>
-         <COMMENTS1>Close associate of Usama bin Laden (QI.B.8.01) and facilitator of terrorist travel. In custody of the United States of America as at Jul. 2007. Review pursuant to Security Council resolution 1822 (2008) was concluded on 21 Jun. 2010.</COMMENTS1>
+         <COMMENTS1>Close associate of Usama bin Laden (deceased) and facilitator of terrorist travel. In custody of the United States of America as at Jul. 2007. Review pursuant to Security Council resolution 1822 (2008) was concluded on 21 Jun. 2010.</COMMENTS1>
          <NATIONALITY2>Palestinian</NATIONALITY2>
          <LIST_TYPE>
             <VALUE>UN List</VALUE>
@@ -11025,14 +11025,14 @@
       </INDIVIDUAL>
       <INDIVIDUAL>
          <DATAID>2813150</DATAID>
-         <VERSIONNUM>13</VERSIONNUM>
+         <VERSIONNUM>14</VERSIONNUM>
          <FIRST_NAME>RUBEN</FIRST_NAME>
          <SECOND_NAME>PESTANO</SECOND_NAME>
          <THIRD_NAME>LAVILLA, JR</THIRD_NAME>
          <UN_LIST_TYPE>Al-Qaida</UN_LIST_TYPE>
          <REFERENCE_NUMBER>QI.L.247.08.</REFERENCE_NUMBER>
          <LISTED_ON>2008-06-04T00:00:00</LISTED_ON>
-         <COMMENTS1>Spiritual leader of the Rajah Solaiman Movement (QE.R.128.08.). Associated with Khadafi Abubakar Janjalani (QI.J.180.04.) and the International Islamic Relief Organization, Philippines, branch offices (QE.I.126.06.). In detention in the Philippines as of May 2011. Review pursuant to Security Council resolution 1822 (2008) was concluded on 13 May 2010.</COMMENTS1>
+         <COMMENTS1>Spiritual leader of the Rajah Solaiman Movement (QE.R.128.08). Associated with Khadafi Abubakar Janjalani (QI.J.180.04). In detention in the Philippines as of May 2011. Review pursuant to Security Council resolution 1822 (2008) was concluded on 13 May 2010.</COMMENTS1>
          <NATIONALITY2>Filipino</NATIONALITY2>
          <TITLE>
             <VALUE>Sheik</VALUE>
@@ -11420,14 +11420,14 @@
       </INDIVIDUAL>
       <INDIVIDUAL>
          <DATAID>112379</DATAID>
-         <VERSIONNUM>17</VERSIONNUM>
+         <VERSIONNUM>18</VERSIONNUM>
          <FIRST_NAME>DJAMEL</FIRST_NAME>
          <SECOND_NAME>MOUSTFA</SECOND_NAME>
          <UN_LIST_TYPE>Al-Qaida</UN_LIST_TYPE>
          <REFERENCE_NUMBER>QI.M.129.03.</REFERENCE_NUMBER>
          <LISTED_ON>2003-09-23T00:00:00</LISTED_ON>
          <NAME_ORIGINAL_SCRIPT>جمال مصطفى</NAME_ORIGINAL_SCRIPT>
-         <COMMENTS1>Father's name is Djelalli Moustfa. Mother's name is Kadeja Mansore. Associated with Ismail Abdallah Sbaitan Shalabi (QI.S.128.03), Mohamed Abu Dhess (QI.A.130.03) and Aschraf Al-Dagma (QI.A.132.03). Deported from Germany to Algeria in Sep. 2007. Review pursuant to Security Council resolution 1822 (2008) was concluded on 19 Oct. 2009.</COMMENTS1>
+         <COMMENTS1>Father's name is Djelalli Moustfa. Mother's name is Kadeja Mansore. Associated with Ismail Abdallah Sbaitan Shalabi (QI.S.128.03), Mohamed Ghassan Ali Abu Dhess (QI.A.130.03) and Aschraf Al-Dagma (QI.A.132.03). Deported from Germany to Algeria in Sep. 2007. Review pursuant to Security Council resolution 1822 (2008) was concluded on 19 Oct. 2009.</COMMENTS1>
          <NATIONALITY>
             <VALUE>Algerian</VALUE>
          </NATIONALITY>
@@ -11440,12 +11440,6 @@
             <VALUE>2010-01-25T00:00:00</VALUE>
             <VALUE>2011-05-16T00:00:00</VALUE>
          </LAST_DAY_UPDATED>
-         <INDIVIDUAL_ALIAS>
-            <QUALITY>Good</QUALITY>
-            <ALIAS_NAME>Ali Barkani</ALIAS_NAME>
-            <DATE_OF_BIRTH>1973-08-22 00:00:00.0</DATE_OF_BIRTH>
-            <COUNTRY_OF_BIRTH>Morocco</COUNTRY_OF_BIRTH>
-         </INDIVIDUAL_ALIAS>
          <INDIVIDUAL_ALIAS>
             <QUALITY>Good</QUALITY>
             <ALIAS_NAME>Kalad Belkasam</ALIAS_NAME>
@@ -11537,6 +11531,12 @@
             <QUALITY>Good</QUALITY>
             <ALIAS_NAME>Djamel Mustafa</ALIAS_NAME>
             <DATE_OF_BIRTH>1979-12-31 00:00:00.0</DATE_OF_BIRTH>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Ali Barkani</ALIAS_NAME>
+            <DATE_OF_BIRTH>1973-08-22 00:00:00.0</DATE_OF_BIRTH>
+            <COUNTRY_OF_BIRTH>Morocco</COUNTRY_OF_BIRTH>
          </INDIVIDUAL_ALIAS>
          <INDIVIDUAL_ALIAS>
             <QUALITY>Good</QUALITY>
@@ -12775,7 +12775,7 @@
       </INDIVIDUAL>
       <INDIVIDUAL>
          <DATAID>111497</DATAID>
-         <VERSIONNUM>11</VERSIONNUM>
+         <VERSIONNUM>12</VERSIONNUM>
          <FIRST_NAME>AMIN</FIRST_NAME>
          <SECOND_NAME>MUHAMMAD</SECOND_NAME>
          <THIRD_NAME>UL HAQ</THIRD_NAME>
@@ -12783,7 +12783,7 @@
          <UN_LIST_TYPE>Al-Qaida</UN_LIST_TYPE>
          <REFERENCE_NUMBER>QI.A.2.01.</REFERENCE_NUMBER>
          <LISTED_ON>2001-01-25T00:00:00</LISTED_ON>
-         <COMMENTS1>Security coordinator for Usama bin Laden (QI.B.8.01). Repatriated to Afghanistan in February 2006. Review pursuant to Security Council resolution 1822 (2008) was concluded on 15 Jun. 2010.</COMMENTS1>
+         <COMMENTS1>Security coordinator for Usama bin Laden (deceased). Repatriated to Afghanistan in February 2006. Review pursuant to Security Council resolution 1822 (2008) was concluded on 15 Jun. 2010.</COMMENTS1>
          <NATIONALITY2>Afghan</NATIONALITY2>
          <LIST_TYPE>
             <VALUE>UN List</VALUE>
@@ -13230,13 +13230,13 @@
       </INDIVIDUAL>
       <INDIVIDUAL>
          <DATAID>113219</DATAID>
-         <VERSIONNUM>9</VERSIONNUM>
+         <VERSIONNUM>10</VERSIONNUM>
          <FIRST_NAME>SAYF-AL ADL</FIRST_NAME>
          <UN_LIST_TYPE>Al-Qaida</UN_LIST_TYPE>
          <REFERENCE_NUMBER>QI.S.1.01.</REFERENCE_NUMBER>
          <LISTED_ON>2001-01-25T00:00:00</LISTED_ON>
          <NAME_ORIGINAL_SCRIPT>سيف العدل</NAME_ORIGINAL_SCRIPT>
-         <COMMENTS1>Responsible for Usama bin Laden’s (QI.B.8.01) security. Review pursuant to Security Council resolution 1822 (2008) was concluded on 15 Jun. 2010.</COMMENTS1>
+         <COMMENTS1>Responsible for Usama bin Laden’s (deceased) security. Review pursuant to Security Council resolution 1822 (2008) was concluded on 15 Jun. 2010.</COMMENTS1>
          <NATIONALITY>
             <VALUE>Egyptian</VALUE>
          </NATIONALITY>
@@ -15521,12 +15521,12 @@
       </ENTITY>
       <ENTITY>
          <DATAID>113459</DATAID>
-         <VERSIONNUM>18</VERSIONNUM>
+         <VERSIONNUM>19</VERSIONNUM>
          <FIRST_NAME>AL RASHID TRUST</FIRST_NAME>
          <UN_LIST_TYPE>Al-Qaida</UN_LIST_TYPE>
          <REFERENCE_NUMBER>QE.A.5.01.</REFERENCE_NUMBER>
          <LISTED_ON>2001-10-06T00:00:00</LISTED_ON>
-         <COMMENTS1>Headquarters are in Pakistan. Operations in Afghanistan: Herat Jalalabad, Kabul, Kandahar, Mazar Sherif. Also operations in Kosovo, Chechnya. Involved in the financing of Al-Qaida and the Taliban. Until 21 Oct. 2008, this entity appeared also as "Aid Organization of the Ulema, Pakistan" (QE.A.73.02.), listed on 24 Apr. 2002 and amended on 25 Jul. 2006. The two entries Al Rashid Trust (QE.A.5.01.) and Aid Organization of the Ulema, Pakistan (QE.A.73.02.) were consolidated into this entity on 21 Oct. 2008. Founded by Mufti Rashid Ahmad Ledahyanoy (QI.L.30.01). Associated with Jaish-i-Mohammed (QE.J.19.01). Banned in Pakistan since Oct. 2001. Despite the closure of its offices in Pakistan in February 2007 it has continued its activities. Review pursuant to Security Council resolution 1822 (2008) was concluded on 6 May 2010.</COMMENTS1>
+         <COMMENTS1>Headquarters are in Pakistan. Operations in Afghanistan: Herat Jalalabad, Kabul, Kandahar, Mazar Sherif. Also operations in Kosovo, Chechnya. Involved in the financing of Al-Qaida and the Taliban. Until 21 Oct. 2008, this entity appeared also as "Aid Organization of the Ulema, Pakistan" (QE.A.73.02), listed on 24 Apr. 2002 and amended on 25 Jul. 2006. The two entries Al Rashid Trust (QE.A.5.01) and Aid Organization of the Ulema, Pakistan (QE.A.73.02) were consolidated into this entity on 21 Oct. 2008. Founded by Mufti Rashid Ahmad Ledahyanoy (deceased). Associated with Jaish-i-Mohammed (QE.J.19.01). Banned in Pakistan since Oct. 2001. Despite the closure of its offices in Pakistan in February 2007 it has continued its activities. Review pursuant to Security Council resolution 1822 (2008) was concluded on 6 May 2010.</COMMENTS1>
          <LIST_TYPE>
             <VALUE>UN List</VALUE>
          </LIST_TYPE>
@@ -15576,6 +15576,24 @@
             <ALIAS_NAME>Al-Madina Trust</ALIAS_NAME>
          </ENTITY_ALIAS>
          <ENTITY_ADDRESS>
+            <NOTE>Office Dha’rbi-M’unin, Top Floor, Dr. Dawa Khan Dental Clinic Surgeon, Main Baxae, Mingora, Swat, Pakistan</NOTE>
+         </ENTITY_ADDRESS>
+         <ENTITY_ADDRESS>
+            <NOTE>Kitab Ghar, Darul Ifta Wal Irshad, Nazimabad No. 4, Karachi, Pakistan, Phone 6683301; Phone 0300-8209199; Fax 6623814</NOTE>
+         </ENTITY_ADDRESS>
+         <ENTITY_ADDRESS>
+            <NOTE>302b-40, Good Earth Court, Opposite Pia Planitarium, Block 13a, Gulshan -l Igbal, Karachi, Pakistan; Phone 4979263</NOTE>
+         </ENTITY_ADDRESS>
+         <ENTITY_ADDRESS>
+            <NOTE>617 Clifton Center, Block 5, 6th Floor, Clifton, Karachi, Pakistan; Phone 587-2545</NOTE>
+         </ENTITY_ADDRESS>
+         <ENTITY_ADDRESS>
+            <NOTE>j) 605 Landmark Plaza, 11 Chundrigar Road, Opposite Jang Building, Karachi, Pakistan; Phone 2623818-19</NOTE>
+         </ENTITY_ADDRESS>
+         <ENTITY_ADDRESS>
+            <NOTE>Jamia Masjid, Sulaiman Park, Begum Pura, Lahore, Pakistan; Phone 042-6812081</NOTE>
+         </ENTITY_ADDRESS>
+         <ENTITY_ADDRESS>
             <STREET>Kitas Ghar, Nazimabad 4, Dahgel-Iftah</STREET>
             <CITY>Karachi</CITY>
             <COUNTRY>Pakistan</COUNTRY>
@@ -15595,24 +15613,6 @@
          </ENTITY_ADDRESS>
          <ENTITY_ADDRESS>
             <NOTE>Office Dha’rbi-M’unin, Rm No. 3, Moti Plaza, Near Liaquat Bagh, Muree Road, Rawalpindi, Pakistan</NOTE>
-         </ENTITY_ADDRESS>
-         <ENTITY_ADDRESS>
-            <NOTE>Office Dha’rbi-M’unin, Top Floor, Dr. Dawa Khan Dental Clinic Surgeon, Main Baxae, Mingora, Swat, Pakistan</NOTE>
-         </ENTITY_ADDRESS>
-         <ENTITY_ADDRESS>
-            <NOTE>Kitab Ghar, Darul Ifta Wal Irshad, Nazimabad No. 4, Karachi, Pakistan, Phone 6683301; Phone 0300-8209199; Fax 6623814</NOTE>
-         </ENTITY_ADDRESS>
-         <ENTITY_ADDRESS>
-            <NOTE>302b-40, Good Earth Court, Opposite Pia Planitarium, Block 13a, Gulshan -l Igbal, Karachi, Pakistan; Phone 4979263</NOTE>
-         </ENTITY_ADDRESS>
-         <ENTITY_ADDRESS>
-            <NOTE>617 Clifton Center, Block 5, 6th Floor, Clifton, Karachi, Pakistan; Phone 587-2545</NOTE>
-         </ENTITY_ADDRESS>
-         <ENTITY_ADDRESS>
-            <NOTE>j) 605 Landmark Plaza, 11 Chundrigar Road, Opposite Jang Building, Karachi, Pakistan; Phone 2623818-19</NOTE>
-         </ENTITY_ADDRESS>
-         <ENTITY_ADDRESS>
-            <NOTE>Jamia Masjid, Sulaiman Park, Begum Pura, Lahore, Pakistan; Phone 042-6812081</NOTE>
          </ENTITY_ADDRESS>
          <SORT_KEY>ALRASHIDTRUST</SORT_KEY>
          <SORT_KEY_LAST_MOD>2011-12-13T00:00:00</SORT_KEY_LAST_MOD>
@@ -15947,12 +15947,12 @@
       </ENTITY>
       <ENTITY>
          <DATAID>113474</DATAID>
-         <VERSIONNUM>19</VERSIONNUM>
+         <VERSIONNUM>20</VERSIONNUM>
          <FIRST_NAME>BENEVOLENCE INTERNATIONAL FOUNDATION</FIRST_NAME>
          <UN_LIST_TYPE>Al-Qaida</UN_LIST_TYPE>
          <REFERENCE_NUMBER>QE.B.93.02.</REFERENCE_NUMBER>
          <LISTED_ON>2002-11-21T00:00:00</LISTED_ON>
-         <COMMENTS1>Employer Identification Number (United States of America): 36-3823186. Associated with Benevolence International Fund (QE.B.94.02). Review pursuant to Security Council resolution 1822 (2008) was concluded on 22 Jun. 2010.</COMMENTS1>
+         <COMMENTS1>Employer Identification Number (United States of America): 36-3823186. Review pursuant to Security Council resolution 1822 (2008) was concluded on 22 Jun. 2010.</COMMENTS1>
          <LIST_TYPE>
             <VALUE>UN List</VALUE>
          </LIST_TYPE>
@@ -16339,12 +16339,12 @@
       </ENTITY>
       <ENTITY>
          <DATAID>113853</DATAID>
-         <VERSIONNUM>8</VERSIONNUM>
+         <VERSIONNUM>10</VERSIONNUM>
          <FIRST_NAME>ISLAMIC JIHAD GROUP</FIRST_NAME>
          <UN_LIST_TYPE>Al-Qaida</UN_LIST_TYPE>
          <REFERENCE_NUMBER>QE.I.119.05.</REFERENCE_NUMBER>
          <LISTED_ON>2005-06-01T00:00:00</LISTED_ON>
-         <COMMENTS1>Founded and led by Najmiddin Kamolitdinovich Jalolov (QI.J.240.08) and Suhayl Fatilloevich Buranov (QI.B.239.08). Associated with the Islamic Movement of Uzbekistan (QE.I.10.01) and Emarat Kavkaz (QE.E.131.11). Active in the Afghanistan/Pakistan border area, Central Asia, South Asia region and some European States. Review pursuant to Security Council resolution 1822 (2008) was concluded on 20 May 2010.</COMMENTS1>
+         <COMMENTS1>Founded and led by Najmiddin Kamolitdinovich Jalolov (deceased) and Suhayl Fatilloevich Buranov (deceased). Associated with the Islamic Movement of Uzbekistan (QE.I.10.01) and Emarat Kavkaz (QE.E.131.11). Active in the Afghanistan/Pakistan border area, Central Asia, South Asia region and some European States. Review pursuant to Security Council resolution 1822 (2008) was concluded on 20 May 2010.</COMMENTS1>
          <LIST_TYPE>
             <VALUE>UN List</VALUE>
          </LIST_TYPE>
@@ -16486,12 +16486,12 @@
       </ENTITY>
       <ENTITY>
          <DATAID>113854</DATAID>
-         <VERSIONNUM>9</VERSIONNUM>
+         <VERSIONNUM>10</VERSIONNUM>
          <FIRST_NAME>JAM'YAH TA'AWUN AL-ISLAMIA</FIRST_NAME>
          <UN_LIST_TYPE>Al-Qaida</UN_LIST_TYPE>
          <REFERENCE_NUMBER>QE.J.20.01.</REFERENCE_NUMBER>
          <LISTED_ON>2001-10-17T00:00:00</LISTED_ON>
-         <COMMENTS1>Founded by Usama Mohammad Awad bin Laden (QI.B.8.01) in 2001. Review pursuant to Security Council resolution 1822 (2008) was concluded on 21 Jun. 2010.</COMMENTS1>
+         <COMMENTS1>Founded by Usama Mohammad Awad bin Laden (deceased) in 2001. Review pursuant to Security Council resolution 1822 (2008) was concluded on 21 Jun. 2010.</COMMENTS1>
          <LIST_TYPE>
             <VALUE>UN List</VALUE>
          </LIST_TYPE>
@@ -16905,12 +16905,12 @@
       </ENTITY>
       <ENTITY>
          <DATAID>2812924</DATAID>
-         <VERSIONNUM>10</VERSIONNUM>
+         <VERSIONNUM>11</VERSIONNUM>
          <FIRST_NAME>RAJAH SOLAIMAN MOVEMENT</FIRST_NAME>
          <UN_LIST_TYPE>Al-Qaida</UN_LIST_TYPE>
          <REFERENCE_NUMBER>QE.R.128.08.</REFERENCE_NUMBER>
          <LISTED_ON>2008-06-04T00:00:00</LISTED_ON>
-         <COMMENTS1>Founded and headed by Hilarion Del Rosario Santos III (QI.S.244.08). Associated with the Abu Sayyaf Group (QE.A.1.01.) and Jemaah Islamiyah (QE.J.92.02.) the International Islamic Relief Organization, Philippines, branch offices (QE.I.126.06.) and Khadafi Abubakar Janjalani (QI.J.180.04.). Review pursuant to Security Council resolution 1822 (2008) was concluded on 13 May 2010.</COMMENTS1>
+         <COMMENTS1>Founded and headed by Hilarion Del Rosario Santos III (QI.S.244.08). Associated with the Abu Sayyaf Group (QE.A.1.01), Jemaah Islamiyah (QE.J.92.02) and Khadafi Abubakar Janjalani (QI.J.180.04). Review pursuant to Security Council resolution 1822 (2008) was concluded on 13 May 2010.</COMMENTS1>
          <LIST_TYPE>
             <VALUE>UN List</VALUE>
          </LIST_TYPE>
@@ -17112,13 +17112,13 @@
       </ENTITY>
       <ENTITY>
          <DATAID>2971894</DATAID>
-         <VERSIONNUM>6</VERSIONNUM>
+         <VERSIONNUM>7</VERSIONNUM>
          <FIRST_NAME>TEHRIK-E TALIBAN PAKISTAN (TTP)</FIRST_NAME>
          <UN_LIST_TYPE>Al-Qaida</UN_LIST_TYPE>
          <REFERENCE_NUMBER>QE.T.132.11.</REFERENCE_NUMBER>
          <LISTED_ON>2011-07-29T00:00:00</LISTED_ON>
          <NAME_ORIGINAL_SCRIPT>تحریک طالبان پاکستان</NAME_ORIGINAL_SCRIPT>
-         <COMMENTS1>Tehrik-e Taliban is based in the tribal areas along the Afghanistan/Pakistan border. Formed in 2007, its leader is Hakimullah Mehsud (QI.M.286.10.). Wali Ur Rehman (QI.U.287.10.) is the Emir of TTP for South Waziristan.</COMMENTS1>
+         <COMMENTS1>Tehrik-e Taliban is based in the tribal areas along the Afghanistan/Pakistan border. Formed in 2007, its leader is Hakimullah Mehsud (QI.M.286.10).</COMMENTS1>
          <LIST_TYPE>
             <VALUE>UN List</VALUE>
          </LIST_TYPE>

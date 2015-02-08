@@ -36,7 +36,7 @@ var runAppTest = function () {
   async.series([
 
       // collect raw data (xml file) from the Internet
-      /*
+
       function (callback) {
 
         if (consoleLog) {
@@ -46,6 +46,7 @@ var runAppTest = function () {
         callback();
       },
 
+
       function (callback) {
         // collect raw data from the Internet
         if (consoleLog) {
@@ -54,7 +55,37 @@ var runAppTest = function () {
         setupData1.fixData();
         callback();
       },
-*/
+
+      function (callback) {
+        // collect raw data from the Internet
+        if (consoleLog) {
+          console.log('\n ', __filename, __line, '; function 2#:', ++functionCount, '; setupData1.fixData()');
+        }
+        getNarrativeList.getListOfNarratives();
+
+        callback();
+      },
+
+      function (callback) {
+        // collect raw data from the Internet
+        if (consoleLog) {
+          console.log('\n ', __filename, __line, '; function 2#:', ++functionCount, '; setupData1.fixData()');
+        }
+        collectNarratives.getTheNarratives();
+        callback();
+      },
+
+
+      function (callback) {
+        // collect raw data from the Internet
+        if (consoleLog) {
+          console.log('\n ', __filename, __line, '; function 2#:', ++functionCount, '; setupData1.fixData()');
+        }
+        setupData2.fixLinks();
+        callback();
+      },
+
+
       /*
       function (callback) {
         // get the lists of narratives, consolidate in one json file
@@ -69,6 +100,7 @@ var runAppTest = function () {
         callback();
       },
 */
+      /*
       // read the narrative links from file: /data/narrative_lists/narrative_links.json
       // loop through the list of ids and filenames/links and get the narrative files from the Internet and save each to a local file
       // using links from narrative_links.json, collect and save the narratives
@@ -82,7 +114,7 @@ var runAppTest = function () {
         collectNarratives.getTheNarratives();
         callback();
       },
-
+*/
 
 /*
       function (callback) {

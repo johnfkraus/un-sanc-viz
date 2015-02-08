@@ -202,7 +202,7 @@ var getTheNarratives = function () {
                 errors,
                 '; Error: ', err, '; collectFilePath = ', collectFilePath, '; saveFilePath = ', saveFilePath);
             }
-            if (narrCounter < 5) {
+            if (ldi < 5) {
               console.log(
                 '\n ',
                 __filename, 'line',
@@ -210,7 +210,7 @@ var getTheNarratives = function () {
                 '; narrativeFile = ', narrativeFile, '; mainContent = ', mainContent);
             }
           }
-          console.log('\n ', __filename, 'line', __line, '; errors = ', errors, '; nodes.length = ', nodes.length, '; narrCounter = ', narrCounter);
+          console.log('\n ', __filename, 'line', __line, '; errors = ', errors, '; nodes.length = ', nodes.length, '; ldi = ', ldi);
         }
         callback();
       }
@@ -277,4 +277,4 @@ module.exports = {
   getTheNarratives: getTheNarratives
 };
 
-getTheNarratives();
+// getTheNarratives();

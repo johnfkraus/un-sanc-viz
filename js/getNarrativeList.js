@@ -51,7 +51,7 @@ var getListOfNarratives = function () {
     console.log('\n ', __filename, 'line', __line, '; running getNarrativeList.js; ', new Date());
   }
   async.series([
-      // re: sanctioned individuals
+      // re: sanctioned *individuals*
       // collect from the Internet (specifically, from www.un.org/sc/committees/1267/individuals_associated_with_Al-Qaida.shtml)
       // the raw html page that lists the names of html files containing narratives regarding sanctioned individuals
       // parse the list file, extract ids, file names etc. and put into narrativeLinks json array
@@ -94,6 +94,7 @@ var getListOfNarratives = function () {
       // We have the narrative links in the variable 'narrative_links'
       // Loop through the narrative_links.json array, use it to open each downloaded narrative file
       // Add the Internet file name as a property in each node of data
+   /*
       function (callback) {
         var nodeCounter = 0, buffer;
         var AQListCleanJsonPath = __dirname + '/../data/output/AQList-clean.json';
@@ -139,12 +140,6 @@ var getListOfNarratives = function () {
           }
 
           // Insert a single document
-          /*
-           db.collection('narratives').insert(narrative, function (err, r) {
-           assert.equal(null, err);
-           assert.equal(1, r.insertedCount);
-           });
-           */
         }
 
         var narrativeLinksDocsPath = __dirname + '/../data/narrative_lists/narrative_links_docs.json';
@@ -155,7 +150,7 @@ var getListOfNarratives = function () {
         // });
         callback();
       },
-
+*/
       function (callback) {
         if (consoleLog) {
           console.log('\n ', __filename, __line, '; function 3#:', ++functionCount);

@@ -1,5 +1,9 @@
 // collect.js
-// collect AQList.xml from Internet, convert to json
+// collect AQList.xml from 'http://www.un.org/sc/committees/1267/AQList.xml', convert to json
+// save json file locally
+// saves the following files: in /data/output:
+// AQList-raw.json
+// AQList.xml
 // =========================
 
 if (typeof define !== 'function') {
@@ -18,8 +22,6 @@ var async = require('async'),
   myJsonData,
   parseString = require('xml2js')
     .parseString;
-
-// var linenums = require('./linenums.js');
 
 var consoleLog = false;
 
@@ -66,7 +68,6 @@ var convertXMLToJson = function () {
         });
         newPath = (__dirname + '/../data/output')
           .toString();
-        // var narrativeSummariesLocalDirectory = './data/narrative_summaries';
         console.log('\n ', __filename, 'line', __line, '; Deleting directory: ', newPath);
         // delete narrative_summaries directory and contents
         fse.removeSync(newPath);
@@ -100,6 +101,8 @@ var convertXMLToJson = function () {
         }
         callback();
       },
+
+      // save AQList.xml
       function (callback) {
         var fileNameAndPathForProcessing = __dirname + '/../data/output/AQList.xml';
         writeAQListXML(fileNameAndPathForProcessing);
@@ -120,8 +123,9 @@ var convertXMLToJson = function () {
         }
         callback();
       },
+
+      // convert AQList.xml to json
       function (callback) {
-        // convert AQList.xml to json
         if (consoleLog) {
           console.log('\n ', __filename, 'line', __line, ' function #:', ++functionCount);
           console.log('\n ', __filename, 'line', __line, ' typeof AQList_xml = ', (typeof AQList_xml));
@@ -142,6 +146,8 @@ var convertXMLToJson = function () {
         });
         callback();
       },
+
+      // save the json file created from AQList.xml
       function (callback) {
         // save raw json
         if (consoleLog) {
