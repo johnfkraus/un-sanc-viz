@@ -65,7 +65,7 @@ dateFormat.masks.common = 'mm-dd-yyyy';
 // Saturday, June 9th, 2007, 5:46:21 PM
 var urls;
 var collectFilePath, saveFilePath;
-var dataLocalFileNameAndPath = __dirname + '/../data/output/AQList-clean-docs.json';
+var dataLocalFileNameAndPath = __dirname + '/../data/output/AQList-clean.json';
 var narrative_links;
 
 var getTheNarratives = function () {

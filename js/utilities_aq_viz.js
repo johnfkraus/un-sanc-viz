@@ -2,6 +2,8 @@
 
 var fse = require('fs-extra');
 
+var __line = __line || {};
+
 function forceUnicodeEncoding(string) {
   return unescape(encodeURIComponent(string));
 }
@@ -41,4 +43,27 @@ module.exports = {
   trimNarrative: trimNarrative,
   syncWriteMyFile: syncWriteMyFile
 
+};
+
+var generateNarrFileName = function (node) {
+  var id = node.id.trim();
+  var idSplit = id.split('.');
+  var narrFileName = 'NSQ' + idSplit[0].substring(1, 2) + idSplit[2] + idSplit[3] + '.shtml';
+  console.log('\n ', __filename, 'line', __line, '; id = ', id, '; generated narrFileName = ', narrFileName);
+  return narrFileName;
+};
+
+//  clean up ids for consistency;  none should have trailing period.
+var getCleanId = function (referenceNumber) {
+  var refNumRegexMatch;
+  try {
+    refNumRegexMatch = referenceNumber.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/);
+  } catch (error) {
+    console.log('\n ', __filename, 'line', __line, '; Error: ', error, '; node =', node, '; counter = ', counter);
+  }
+  return refNumRegexMatch[0].trim();
+};
+
+module.exports = {
+  __line: __line
 };

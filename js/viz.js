@@ -1203,7 +1203,7 @@ $(function () {
     }
 
     // LOAD THE JSON DATA FILE HERE
-    return d3.json("data/output/AQList-clean-docs.json", function (json) {
+    return d3.json("data/output/AQList-clean-links.json", function (json) {
       return myNetwork("#svg", json);
     });
   }

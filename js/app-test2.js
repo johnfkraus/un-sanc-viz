@@ -12,10 +12,11 @@ var async = require('async'),
   inspect = require('object-inspect'),
   parseString = require('xml2js')
     .parseString;
-
+var utilities_aq_viz = require('./utilities_aq_viz');
 var collect = require('./collect.js');
 // var parseDoc = require('./parseDoc.js');
 var setupData1 = require('./setupData1.js');
+var setupData2 = require('./setupData2.js');
 var collectNarratives = require('./collectNarratives.js');
 var getNarrativeList = require('./getNarrativeList.js');
 // var makeDocs = require('./makeDocs.js');
@@ -34,52 +35,46 @@ var runAppTest = function () {
   }
 
   async.series([
-
       // collect raw data (xml file) from the Internet
-
       function (callback) {
-
         if (consoleLog) {
-          console.log('\n ', __filename, __line, '; function 1#:', ++functionCount);
+          console.log('\n ', __filename, __line, '; Phase 1#:', ++functionCount, '; collect.convertXMLToJson)_');
         }
         collect.convertXMLToJson(); //     setupData.fixData();
         callback();
       },
 
-
       function (callback) {
         // collect raw data from the Internet
         if (consoleLog) {
-          console.log('\n ', __filename, __line, '; function 2#:', ++functionCount, '; setupData1.fixData()');
+          console.log('\n ', __filename, __line, '; Phase 2#:', ++functionCount, '; setupData1.fixData()');
         }
         setupData1.fixData();
         callback();
       },
-
+/*
       function (callback) {
         // collect raw data from the Internet
         if (consoleLog) {
-          console.log('\n ', __filename, __line, '; function 2#:', ++functionCount, '; setupData1.fixData()');
+          console.log('\n ', __filename, __line, '; Phase 2#:', ++functionCount, '; getNarrativeList.getListOfNarratives()');
         }
         getNarrativeList.getListOfNarratives();
-
         callback();
       },
 
       function (callback) {
         // collect raw data from the Internet
         if (consoleLog) {
-          console.log('\n ', __filename, __line, '; function 2#:', ++functionCount, '; setupData1.fixData()');
+          console.log('\n ', __filename, __line, '; Phase 2#:', ++functionCount, '; collectNarratives.getTheNarratives()');
         }
         collectNarratives.getTheNarratives();
         callback();
       },
 
-
       function (callback) {
         // collect raw data from the Internet
         if (consoleLog) {
-          console.log('\n ', __filename, __line, '; function 2#:', ++functionCount, '; setupData1.fixData()');
+          console.log('\n ', __filename, __line, '; Phase 2#:', ++functionCount, '; setupData2.fixLinks()');
         }
         setupData2.fixLinks();
         callback();
@@ -90,7 +85,7 @@ var runAppTest = function () {
       function (callback) {
         // get the lists of narratives, consolidate in one json file
         if (consoleLog) {
-          console.log('\n ', __filename, __line, '; function 3#:', ++functionCount, '; getNarrativeList.getListOfNarratives()');
+          console.log('\n ', __filename, __line, '; Phase 3#:', ++functionCount, '; getNarrativeList.getListOfNarratives()');
         }
         // collect individuals list of links to narratives - raw data; save json file
         // collect entities list of links to narratives - raw data; save json file
@@ -147,7 +142,7 @@ var runAppTest = function () {
       function (callback) {
         // list files in /data/output
         if (consoleLog) {
-          console.log('\n ', __filename, __line, '; function 6#:', ++functionCount);
+          console.log('\n ', __filename, __line, '; Phase 6#:', ++functionCount, '; filewalker.filewalker()');
         }
         // console.log('\n ', __filename, 'line', __line, '; running filewalker.filewalker()');
         var fwPath = './data/output';

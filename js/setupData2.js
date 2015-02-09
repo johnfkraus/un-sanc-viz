@@ -30,18 +30,16 @@ var counter = 0;
 var numObjectsToShow = 2;
 var data;
 var generatedFileDateString;
-// var backbone =  require('backbone');
 var Set = require('backpack-node').collections.Set;
 var Bag = require('backpack-node').collections.Bag;
 var Map = require('backpack-node').collections.Map;
-
 var fsOptions = {
   flags: 'r+', encoding: 'utf-8', autoClose: true
 };
 var jsonFile = '';
 var dateGenerated;
 
-var fixData = function () {
+var fixLinks = function () {
   if (consoleLog) {
     console.log('\n ', __filename, 'line', __line, '; running setupData.fixData()');
   }
@@ -60,11 +58,49 @@ var fixData = function () {
 
   async.series([
       function (callback) {
-        // read 'raw' unprocessed json file created from XML file
-        var rawJsonFileName = __dirname + '/../data/output/AQList-clean.json';
-        data = JSON.parse(fse.readFileSync(rawJsonFileName));
+        var cleanJsonFileName = __dirname + '/../data/output/AQList-clean.json';
+        data = JSON.parse(fse.readFileSync(cleanJsonFileName));
         if (consoleLog) {
           console.log('\n ', __filename, 'line', __line, '; function #:', ++functionCount, '; read the raw json data file');
+        }
+        callback();
+      },
+      // using links from data file, parse the narratives
+      function (callback) {
+        var longNarrativeFileNameMissing;
+        var narrative;
+        var narrCounter = 0;
+        var responseString;
+        var readFilePath;
+        var node;
+        var nodeNarrFileName;
+        console.log('\n ', __filename, 'line', __line, '; function #2:', ++functionCount, '; ');
+        // read the data file
+        try {
+          data = JSON.parse(fse.readFileSync(__dirname + '/../data/output/AQList-clean.json'));
+        } catch (err) {
+          console.log('\n ', __filename, 'line', __line, '; Error: ', err);
+        }
+        nodes = data.nodes;
+        for (var ldi = 0; ldi < nodes.length; ldi++) {
+          // narrCounter++;
+          node = nodes[ldi];
+          longNarrativeFileNameMissing = (typeof(node.narrativeFileName) === 'null' || typeof(node.narrativeFileName) === 'undefined');
+          if (longNarrativeFileNameMissing) {
+            console.log('\n ', __filename, 'line', __line, '; ldi = ', ldi, '; longNarrativeMissing = ', longNarrativeFileNameMissing, '\n node.narrativeFileName = ', node.narrativeFileName, '; node = ', node, "\n\n");
+            node.narrativeFileName = generateNarrFileName(node);
+          }
+          nodeNarrFileName = node.narrativeFileName;
+          readFilePath = __dirname + '/../data/narrative_summaries/' + nodeNarrFileName;
+          try {
+            narrative = fse.readFileSync(readFilePath, fsOptions);
+            console.log('\n ', __filename, 'line', __line, '; getting file ldi = ', ldi, '; readFilePath = ', readFilePath, '\n narrative.substring(0, 300) = ', narrative.substring(0, 300), " [INTENTIONALLY TRUNCATED TO FIRST 300 CHARACTERS]");
+          } catch (err) {
+            console.log('\n ', __filename, 'line', __line, '; Error: ', err);
+          }
+
+          // do something with the long narrative file
+
         }
         callback();
       },
@@ -82,6 +118,7 @@ var fixData = function () {
         callback();
       },
 */
+
       // ADD CONNECTION IDS ARRAY
       function (callback) {
         if (consoleLog) {
@@ -93,9 +130,10 @@ var fixData = function () {
         }
         callback();
       },
+
       // save intermediate file for debugging
       function (callback) {
-        saveJsonFile(data, 'data88linksStuff.json');
+        saveJsonFile(data, 'data188linksStuff.json');
         callback();
       },
 
@@ -110,7 +148,7 @@ var fixData = function () {
       },
 
       function (callback) {
-        saveJsonFile(data, 'data07addConnectionOBJECTSarray.json');
+        saveJsonFile(data, 'data107addConnectionOBJECTSarray.json');
         callback();
       },
 
@@ -124,9 +162,10 @@ var fixData = function () {
         }
         callback();
       },
+
       // save intermediate data file for debugging
       function (callback) {
-        saveJsonFile(data, 'data08aconsolidateLinks.json');
+        saveJsonFile(data, 'data108aconsolidateLinks.json');
         callback();
       },
 
@@ -168,59 +207,6 @@ var fixData = function () {
         callback();
       },
 
-      // read json file containing config
-      function (callback) {
-        var configJsonFileName = __dirname + '/../data/input/config.json';
-        var buffer = fse.readFileSync(configJsonFileName); //, fsOptions); //, function (err, data) {
-        config = JSON.parse(buffer);
-        if (consoleLog) {
-          console.log('\n ', __filename, 'line', __line, '; function #:', ++functionCount);
-          console.log('\n ', __filename, 'line', __line, '; config data read from: \n', configJsonFileName);
-          console.log('\n ', __filename, 'line', __line, '; config = \n', trunc.truncn(JSON.stringify(config), 200));
-        }
-        callback();
-      },
-
-      // using links from data file, parse the narratives
-      function (callback) {
-        var longNarrativeFileNameMissing;
-        var narrative;
-        var narrCounter = 0;
-        var responseString;
-        var readFilePath;
-        var node;
-        var nodeNarrFileName;
-        console.log('\n ', __filename, 'line', __line, '; function #2:', ++functionCount, '; ');
-        // read the data file
-        try {
-          data = JSON.parse(fse.readFileSync(__dirname + '/../data/output/AQList-clean.json'));
-        } catch (err) {
-          console.log('\n ', __filename, 'line', __line, '; Error: ', err);
-        }
-        nodes = data.nodes;
-        for (var ldi = 0; ldi < nodes.length; ldi++) {
-          // narrCounter++;
-          node = nodes[ldi];
-          longNarrativeFileNameMissing = (typeof(node.narrativeFileName) === 'null' || typeof(node.narrativeFileName) === 'undefined');
-          if (longNarrativeFileNameMissing) {
-            console.log('\n ', __filename, 'line', __line, '; ldi = ', ldi, '; longNarrativeMissing = ', longNarrativeFileNameMissing, '\n node.narrativeFileName = ', node.narrativeFileName, '; node = ', node, "\n\n");
-            node.narrativeFileName = generateNarrFileName(node);
-          }
-          nodeNarrFileName = node.narrativeFileName;
-          readFilePath = __dirname + '/../data/narrative_summaries/' + nodeNarrFileName;
-          try {
-            narrative = fse.readFileSync(readFilePath, fsOptions);
-            console.log('\n ', __filename, 'line', __line, '; getting file ldi = ', ldi, '; readFilePath = ', readFilePath, '\n narrative.substring(0, 300) = ', narrative.substring(0, 300), " [INTENTIONALLY TRUNCATED TO FIRST 300 CHARACTERS]");
-          } catch (err) {
-            console.log('\n ', __filename, 'line', __line, '; Error: ', err);
-          }
-
-          // do something with the long narrative file
-
-        }
-        callback();
-      },
-
       // COUNT LINKS
       function (callback) {
         countLinks(data);
@@ -231,18 +217,12 @@ var fixData = function () {
         callback();
       },
 
-      function (callback) {
-//      addLinksSet(data);
-        if (consoleLog) {
-          //      console.log('\n ', __filename, 'line', __line, '; function #:', ++functionCount, '; addLinkSet');
-        }
-        callback();
-      },
       // CHECK TARGETS EXIST
       function (callback) {
         checkTargetsExist(data.nodes, data.links);
         callback();
       },
+
       // COUNT NODES, PRINT NODE IDS
       function (callback) {
         var nodeCounter = 0;
@@ -289,7 +269,7 @@ var fixData = function () {
           console.log('\n ', __filename, 'line', __line, '; function #:', ++functionCount, '; save clean json file');
         }
         try {
-          var myFileNameAndPath = __dirname + '/../data/output/AQList-clean.json';
+          var myFileNameAndPath = __dirname + '/../data/output/AQList-clean-links.json';
           var myJsonData = JSON.stringify(data, null, ' ');
           // if (consoleLog) { console.log('myJsonData =', myJsonData);
           fse.writeFileSync(myFileNameAndPath, myJsonData, fsOptions);
@@ -299,17 +279,6 @@ var fixData = function () {
         } catch (e) {
           console.log('\n ', __filename, 'line', __line, ';  Error: ', e);
           callback();
-        }
-        callback();
-      },
-
-      // placeholder
-      function (callback) {
-        // var myJsonData = JSON.stringify(data, null, ' ');
-        if (consoleLog) {
-          console.log('\n ', __filename, 'line', __line, '; function #:', ++functionCount, '; STRINGIFY json');
-          console.log('\n ', __filename, 'line', __line, '; data.nodes.length = ', data.nodes.length);
-          console.log('\n ', __filename, 'line', __line, '; data.links.length = ', data.links.length);
         }
         callback();
       },
@@ -363,18 +332,18 @@ var cleanUpRefNums = function (nodes) {
   counter = 0;
   nodes.forEach(function (node) {
     counter++;
-    var rawRefNum = node.REFERENCE_NUMBER.trim();
+    // var rawRefNum = node.REFERENCE_NUMBER.trim();
     // for consistency, remove period from end of all reference numbers that have them; not all do.
     var refNumRegexMatch;
     try {
       refNumRegexMatch = (node.REFERENCE_NUMBER).match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/);
-    } catch (error) {
-      console.log('\n ', __filename, 'line', __line, '; Error: ', error, '; node =', node, '; counter = ', counter);
+    } catch (err) {
+      console.log('\n ', __filename, 'line', __line, '; Error: ', err, '; node =', node, '; counter = ', counter);
     }
     try {
       node.REFERENCE_NUMBER = refNumRegexMatch[0].trim();
     } catch (err) {
-
+      console.log('\n ', __filename, 'line', __line, '; Error: ', err);
     }
     if (counter <= numObjectsToShow) {
       if (consoleLog) {
@@ -516,7 +485,7 @@ var addConnectionIdsArrayFromLongNarratives = function (nodes) {
     nodeNarrFileName = node.narrativeFileName;
 
     if ((typeof nodeNarrFileName !== 'null') && (typeof nodeNarrFileName !== 'undefined') && (typeof nodeNarrFileName.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/gi) !== 'undefined')) {
-      var commentsUndefined = ((typeof comments === 'undefined') || (typeof comments.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/gi) === 'undefined'))
+      var commentsUndefined = ((typeof comments === 'undefined') || (typeof comments.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/gi) === 'undefined'));
       {
         if (commentsUndefined !== true) {
           linkRegexMatch = comments.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/gi);
@@ -724,14 +693,14 @@ var checkTargetsExist = function (nodes, links) {
  })
  };
  */
+
 var saveJsonFile = function (jsonData, fileName) {
   try {
-    var myFile = __dirname + '/../data/output/' + fileName;
+    var myFileNameAndPath = __dirname + '/../data/output/' + fileName;
     var myJsonData = JSON.stringify(jsonData, null, ' ');
-    fse.writeFileSync(myFile, myJsonData, fsOptions);
+    fse.writeFileSync(myFileNameAndPath, myJsonData, fsOptions);
     if (consoleLog) {
       console.log('\n ', __filename, 'line', __line, ';  file written to: ', myFile);
-//      console.log('\n ', __filename, 'line', __line, ';  file contained: ', trunc.n400(util.inspect(myJsonData, false, null)));
       console.log('\n ', __filename, 'line', __line, ';  file contained: ', myJsonData.substring(0, 2400), ' ... [INTENTIONALLY TRUNCATED TO 2,400 CHARACHTERS]');
     }
   } catch (e) {
@@ -739,66 +708,6 @@ var saveJsonFile = function (jsonData, fileName) {
       console.log('\n ', __filename, 'line', __line, ';  Error: ', e);
     }
   }
-};
-/*
- // inspect some array objects, but not too many
- var inspectSomeArrayObjects = function (array, numOfObjectsToShow) {
- array.forEach(function (object) {
- counter++;
- if (counter <= numOfObjectsToShow) {
- console.log('\n ', __filename, 'line', __line, '; counter = ', counter, '; object = \n', util.inspect(object, false, null));
- }
- });
- };
- */
-/*
- var archiveRawSource = function (fileNameAndPath) {
- collect.writeAQListXML(fileNameAndPath);
- return true;
- };
- */
-var createDateGeneratedMessage = function () {
-  var dateAqListGeneratedString = data.dateGenerated;
-  var dateAqListGenerated = new Date(dateAqListGeneratedString);
-  dateFormat.masks.shortDate = 'mm-dd-yyyy';
-  dateFormat.masks.friendly_display = 'dddd, mmmm dS, yyyy';
-  generatedFileDateString = vizFormatDateSetup(dateAqListGenerated);
-  var message = 'Collected AQList.xml labeled as generated on: ' + dateAqListGeneratedString + ' [' + dateAqListGenerated + ']';
-  data.message = message;
-  logger.log_message(__filename + ' line ' + __line + '; ' + message);
-};
-
-var processPlaceOfBirthArray = function (d) {
-  var pobArrayString = '';
-  if (typeof d['INDIVIDUAL_PLACE_OF_BIRTH'] !== 'undefined') {
-    if (Object.prototype.toString.call(d['INDIVIDUAL_PLACE_OF_BIRTH']) === '[object Array]') {
-      // console.log('\n ', __filename, 'line', __line, ';  Array!', d['INDIVIDUAL_PLACE_OF_BIRTH']);
-      var pobArray = d['INDIVIDUAL_PLACE_OF_BIRTH'];
-      // var pobArrayString;
-      for (var i = 0; i < pobArray.length; i++) {
-        pobArrayString += createIndivPlaceOfBirthString(pobArray[i]);
-        pobArrayString += '; ';
-      }
-    } else {
-      pobArrayString += createIndivPlaceOfBirthString(d['INDIVIDUAL_PLACE_OF_BIRTH']);
-    }
-  }
-  return pobArrayString;
-};
-
-var createIndivPlaceOfBirthString = function (singlePob) {
-  var pobString = '';
-  if (typeof singlePob !== 'undefined' && singlePob !== '') {
-    var keys = getKeys(singlePob);
-    keys.forEach(function (key) {
-        if (typeof singlePob[key] !== 'undefined' && singlePob[key] !== '') {
-          pobString += singlePob[key];
-          pobString += ', ';
-        }
-      }
-    );
-  }
-  return pobString;
 };
 
 var getKeys = function (pob) {
@@ -810,102 +719,6 @@ var getKeys = function (pob) {
   return keys;
 };
 
-var processDateUpdatedArray = function (d) {
-  var dateUpdatedArrayString = '';
-  if (typeof d['LAST_DAY_UPDATED'] === 'undefined') {
-    d.lastDateUpdatedCount = 0;
-    //  return '';
-  } else if (Object.prototype.toString.call(d['LAST_DAY_UPDATED']['VALUE']) === '[object Array]') {
-    // console.log('\n ', __filename, 'line', __line, '; processDateUpdatedArray() found  Array!', d['LAST_DAY_UPDATED']);
-    var lastDateUpdatedArray = d['LAST_DAY_UPDATED']['VALUE'];
-    d.lastDateUpdatedCount = lastDateUpdatedArray.length;
-    for (var i = 0; i < lastDateUpdatedArray.length; i++) {
-      dateUpdatedArrayString += vizFormatDateSetup(lastDateUpdatedArray[i]);
-      if (i < (lastDateUpdatedArray.length - 1)) {
-        dateUpdatedArrayString += ', ';
-      }
-    }
-  } else {
-    d.lastDateUpdatedCount = 1;
-    dateUpdatedArrayString += vizFormatDateSetup(d['LAST_DAY_UPDATED']['VALUE']);
-  }
-  return dateUpdatedArrayString;
-};
-
-var processAliasArray = function (d) {
-  var aliasArrayString = '';
-  if (!(d['INDIVIDUAL_ALIAS'])) {
-    d.aliasCount = 0;
-    return '';
-  }
-  if (Object.prototype.toString.call(d['INDIVIDUAL_ALIAS']) === '[object Array]') {
-    // console.log('\n ', __filename, 'line', __line, '; processAliasArray() found  Array!', d['INDIVIDUAL_PLACE_OF_BIRTH']);
-    var aliasArray = d['INDIVIDUAL_ALIAS'];
-    d.aliasCount = aliasArray.length;
-    for (var i = 0; i < aliasArray.length; i++) {
-      aliasArrayString += createIndivAliasString(aliasArray[i]);
-      aliasArrayString += '; ';
-    }
-  } else {
-    d.aliasCount = 1;
-    aliasArrayString += createIndivAliasString(d['INDIVIDUAL_ALIAS']);
-  }
-  return aliasArrayString;
-};
-
-var createIndivAliasString = function (singleAlias) {
-  var aliasString, aliasName, aliasQuality; // = '';
-  aliasName = singleAlias.ALIAS_NAME;
-  aliasQuality = singleAlias.QUALITY;
-  aliasString = aliasName + ' (' + aliasQuality + ')';
-  return aliasString;
-};
-
-var createIndivDateOfBirthString = function (d) {
-  var dateString = '',
-    rawDateString;
-  if (typeof d['INDIVIDUAL_DATE_OF_BIRTH']['DATE'] !== 'undefined' && d['INDIVIDUAL_DATE_OF_BIRTH']['DATE'] !== '') {
-    rawDateString = formatDate(d['INDIVIDUAL_DATE_OF_BIRTH']['DATE']);
-    dateString += vizFormatDateSetup(rawDateString);
-  } else if (typeof d['INDIVIDUAL_DATE_OF_BIRTH']['YEAR'] !== 'undefined') {
-    dateString += d['INDIVIDUAL_DATE_OF_BIRTH']['YEAR'];
-  }
-  if (typeof d['INDIVIDUAL_DATE_OF_BIRTH']['TYPE_OF_DATE'] !== 'undefined' && d['INDIVIDUAL_DATE_OF_BIRTH']['TYPE_OF_DATE'] !== '') {
-    dateString += ' (' + d['INDIVIDUAL_DATE_OF_BIRTH']['TYPE_OF_DATE'] + ')';
-  }
-  return dateString;
-};
-
-// for DOB, etc.
-var formatDate = function (intlDateString) {
-  var dateResultString;
-  var date = new Date(intlDateString);
-  dateFormat.masks.shortDate = 'mm-dd-yyyy';
-  try {
-    dateResultString = dateFormat(date, 'shortDate');
-  } catch (err) {
-    console.log('769 Error: ', err, '; intlDateString = ', intlDateString);
-  }
-  // logger.log_message(__filename + ' line ' + __line + '; ' + dateResultString);
-  return dateResultString;
-};
-
-var vizFormatDateSetup = function (dateString) {
-  var m_names = ['January', 'February', 'March',
-    'April', 'May', 'June', 'July', 'August', 'September',
-    'October', 'November', 'December'];
-
-  var d = new Date(dateString);
-  var curr_date = d.getDate();
-  var curr_month = d.getMonth();
-  var curr_year = d.getFullYear();
-
-  var vizDateString = curr_date + ' ' + m_names[curr_month]
-    + ' ' + curr_year;
-  // console.log('viz.js 947 vizFormatDate() dateString = ', dateString);
-  return vizDateString;
-};
-
 var generateNarrFileName = function (node) {
   var id = node.id.trim();
   var idSplit = id.split('.');
@@ -915,7 +728,5 @@ var generateNarrFileName = function (node) {
 };
 
 module.exports = {
-  fixData: fixData
+  fixLinks: fixLinks
 };
-
-// fixData();

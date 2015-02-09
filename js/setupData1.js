@@ -1,4 +1,4 @@
-// setupData.js
+// setupData1.js
 // put data in arrays for d3, normalize
 // each node in the main json data file (represented by the 'data' variable) contains data on a single individual or
 // entity listed in the AQList.xml sanctions data file collected from the U.N. site located at http://www.un.org/sc/committees/1267/.
@@ -6,6 +6,8 @@
 
 // do we want lots of console.log messages for debugging (if so, set consoleLog = true)
 var consoleLog = true;
+// var __filename = __filename || {};
+// var __line = __line || {};
 if (typeof define !== 'function') {
   var define = require('amdefine');
 }
@@ -23,6 +25,7 @@ var collect = require('./collect.js'),
   dateFormat = require('dateformat'),
   inspect = require('object-inspect');
 var narrative_links;
+var utilities_aq_viz = require('./utilities_aq_viz');
 // jsonpatch = require('json-patch'),
 //parseString = require('xml2js')
 // .parseString;
@@ -46,23 +49,23 @@ var fixData = function () {
     console.log('\n ', __filename, 'line', __line, '; running setupData.fixData()');
   }
   var functionCount = 0;
-  var links = [];
-  var aliasCount = 0;
-  var aliasArray = [];
+  var linksFromComments = [];
+  // var aliasCount = 0;
+  // var aliasArray = [];
   var linkRegexMatch;
-  var connection;
+  //  var connection;
   var missing_ents;
   var missing_indivs;
-  var ents = [];
-  var indivs = [];
+  // var ents = [];
+  // var indivs = [];
   var config;
 //  var __filename = __filename || {};
-//  var __line = __line || {};
+  var __line = __line || {};
   var consolidatedList;
 
   async.series([
+      // read 'raw' unprocessed json file created from raw XML file data feed
       function (callback) {
-        // read 'raw' unprocessed json file created from XML file
         var rawJsonFileName = __dirname + '/../data/output/AQList-raw.json';
         consolidatedList = JSON.parse(fse.readFileSync(rawJsonFileName));
         if (consoleLog) {
@@ -70,16 +73,22 @@ var fixData = function () {
         }
         callback();
       },
-      // save the file for debugging
+
+      // save the intermediate file for debugging
       function (callback) {
         saveJsonFile(consolidatedList, 'data01-loadedRaw.json');
         callback();
       },
-      // put all the nodes in a single array
+
+      // misc normalization
+      // put all the individual and entity nodes in a single array and add a property to identify node as indiv or ent
+      // from local file, add no-longer-listed and otherwise missing ents and indivs to nodes
+      // normalize indiv.indivDobString, indiv.indivPlaceOfBirthString, indiv.indivAliasString
+      // archive a dated copy of AQList.xml for potential future time series analysis
+      // normalize reference numbers, ids, name strings, nationality.
       function (callback) {
         data.entities = consolidatedList.CONSOLIDATED_LIST.ENTITIES.ENTITY;
         data.indivs = consolidatedList.CONSOLIDATED_LIST.INDIVIDUALS.INDIVIDUAL;
-
         data.entities.forEach(function (entity) {
           entity.noLongerListed = 0;
         });
@@ -118,7 +127,7 @@ var fixData = function () {
         });
 
         var generatedFileDateString = dateFormat(data.dateGenerated, 'yyyy-mm-dd');
-        var archiveFileNameAndPath = __dirname + '/../data/archive/AQList-' + generatedFileDateString + '.xml';
+        var archiveFileNameAndPath = __dirname + '/../data/archive_historical/AQList-' + generatedFileDateString + '.xml';
 //       archiveRawSource(archiveFile);
         collect.writeAQListXML(archiveFileNameAndPath);
         createDateGeneratedMessage();
@@ -132,18 +141,18 @@ var fixData = function () {
         createNationality(data.nodes);
         if (consoleLog) {
           console.log('\n ', __filename, 'line', __line, '; function #:', ++functionCount, '; put data into nodes array for d3');
-          console.log('\n ', __filename, 'line', __line, '; jsonFile = \n', JSON.stringify(jsonFile).substring(0,800));
+          console.log('\n ', __filename, 'line', __line, '; jsonFile = \n', JSON.stringify(jsonFile).substring(0, 800));
         }
         callback();
       },
       // save intermediate data file for debugging
       function (callback) {
-        saveJsonFile(data, 'data02-flattened.json');
+        saveJsonFile(data, 'setupData1' + __line + '-flattened.json');
         callback();
       },
 
       // put nodes and node ids into a set
-      // SET: https://www.npmjs.org/package/backpack-node
+      // Re SET: https://www.npmjs.org/package/backpack-node
       function (callback) {
         counter = 0;
         var setOfNodes = new Set();
@@ -166,79 +175,83 @@ var fixData = function () {
         }
         callback();
       },
-      // put entities and indivs into a bag
+      // put nodes into nodeBag
       // https://www.npmjs.org/package/backpack-node
       function (callback) {
         var nodeBag = new Bag();
         counter = 0;
         data.nodes.forEach(function (node) {
-          counter++;
+
           if (consoleLog) {
             console.log('\n ', __filename, 'line', __line, '; counter = ', counter, '; node.id = ', node.id);
           }
+          node.id = getCleanId(node.REFERENCE_NUMBER);
           if (!(node.id)) {
             node.id = 'NODE' + counter;
           }
           nodeBag.add(node.id, node);
           // console.log('\n ', __filename, 'line', __line, 'counter = ', counter ,'; nodeBag.length = ', nodeBag.count);
+          if (consoleLog) {
+            console.log('\n ', __filename, 'line', __line, 'Bag counter = ', counter);
+          }
+          counter++;
         });
-        if (consoleLog) {
-          console.log('\n ', __filename, 'line', __line, 'Bag counter = ', counter);
-//      console.log('\n ', __filename, 'line', __line, '; nodeBag = ', nodeBag);
-        }
-        callback();
-      },
-      // save intermediate data file for debugging
-      function (callback) {
-        saveJsonFile(data, 'data03nodeBag.json');
+
         callback();
       },
 
+      // save intermediate data file for debugging
+      function (callback) {
+        saveJsonFile(data, 'setupData1-data03nodeBag.json');
+        callback();
+      },
+
+      // normalize node.id; put nodes into nodeBag2
       function (callback) {
         var nodeBag2 = new Bag();
         counter = 0;
         data.nodes.forEach(function (node) {
-          counter++;
-          if (consoleLog) {
-            // console.log('\n ', __filename, 'line', __line, '; counter = ', counter, '; ent.id = ', ent.id);
-          }
           node.id = getCleanId(node.REFERENCE_NUMBER);
           nodeBag2.add(node.id, node);
+          counter++;
         });
         if (consoleLog) {
           console.log('\n ', __filename, 'line', __line, 'nodeBag2 counter = ', counter, '; nodeBag2._map.count = ', nodeBag2._map.count);
         }
         callback();
       },
+
       // save intermediate data file for debugging
       function (callback) {
-        saveJsonFile(data, 'data05nodebagset.json');
+        saveJsonFile(data, 'setupData1-data05nodebagset.json');
+        callback();
+      },
+
+      // ADD CONNECTION IDS ARRAY from comments
+      function (callback) {
+        if (consoleLog) {
+          console.log('\n ', __filename, 'line', __line, '; function #:', ++functionCount, '; addConnectionIdsArrayFromComments(data.nodes)');
+        }
+        addConnectionIdsArrayFromComments(data.nodes);
+        if (consoleLog) {
+          console.log(data.nodes[1]);
+        }
         callback();
       },
       /*
-       // ADD CONNECTION IDS ARRAY
+       // ADD CONNECTION IDS ARRAY from narratives
        function (callback) {
        if (consoleLog) {
        console.log('\n ', __filename, 'line', __line, '; function #:', ++functionCount, '; addConnectionIdsArrayFromComments(data.nodes)');
        }
-       addConnectionIdsArrayFromComments(data.nodes);
+       addConnectionIdsArrayFromLongNarratives(data.nodes);
        if (consoleLog) {
        console.log(data.nodes[1]);
        }
        callback();
        },
        */
-      // ADD CONNECTION IDS ARRAY
-      function (callback) {
-        if (consoleLog) {
-          console.log('\n ', __filename, 'line', __line, '; function #:', ++functionCount, '; addConnectionIdsArrayFromComments(data.nodes)');
-        }
-        addConnectionIdsArrayFromLongNarratives(data.nodes);
-        if (consoleLog) {
-          console.log(data.nodes[1]);
-        }
-        callback();
-      },
+
       // save intermediate file for debugging
       function (callback) {
         saveJsonFile(data, 'data06addConnectionIdsArray.json');
@@ -247,9 +260,9 @@ var fixData = function () {
 
       // ADD CONNECTION OBJECTS ARRAY
       function (callback) {
-        addConnectionObjectsArray(data.nodes);
+        addConnectionObjectsArrayFromComments(data.nodes);
         if (consoleLog) {
-          console.log('\n ', __filename, 'line', __line, '; function #:', ++functionCount, '; addConnectionObjectsArray');
+          console.log('\n ', __filename, 'line', __line, '; function #:', ++functionCount, '; addConnectionObjectsArrayFromComments');
           console.log(data.nodes[1]);
         }
         callback();
@@ -262,21 +275,21 @@ var fixData = function () {
 
       // CONSOLIDATE LINKS INTO LINKS ARRAY
       function (callback) {
-        consolidateLinks(data);
+        consolidateLinksFromComments(data);
         if (consoleLog) {
-          console.log('\n 283 function #:', ++functionCount, '; consolidate links into links array');
+          console.log('\n 283 function #:', ++functionCount, '; consolidate linksFromComments into linksFromComments array');
           console.log('\n ', __filename, 'line', __line, '; data.nodes[1] = ', data.nodes[1]);
-          console.log('\n ', __filename, 'line', __line, '; data.links.length = ', data.links.length);
+          console.log('\n ', __filename, 'line', __line, '; data.linksFromComments.length = ', data.linksFromComments.length);
         }
         callback();
       },
       // save intermediate data file for debugging
       function (callback) {
-        saveJsonFile(data, 'data08aconsolidateLinks.json');
+        saveJsonFile(data, 'setupData1-data08aconsolidateLinksFromComments.json');
         callback();
       },
 
-      // stringify and save json data
+      // stringify and save json data for later processing
       function (callback) {
         if (consoleLog) {
           console.log('\n ', __filename, 'line', __line, '; function #:', ++functionCount, '; save clean json file');
@@ -285,7 +298,6 @@ var fixData = function () {
         try {
           var myFile = __dirname + '/../data/output/AQList-clean.json';
           var myJsonData = JSON.stringify(data, null, ' ');
-          // if (consoleLog) { console.log('myJsonData =', myJsonData);
           fse.writeFileSync(myFile, myJsonData, fsOptions);
           if (consoleLog) {
             console.log('\n ', __filename, 'line', __line, ';  file written to: ', myFile, ';  file contained: ', trunc.n400(util.inspect(myJsonData, false, null)));
@@ -326,70 +338,48 @@ var fixData = function () {
         }
         callback();
       },
+      /*
+       // using links from data file, parse the narratives
+       function (callback) {
+       var longNarrativeFileNameMissing;
+       var narrative;
+       var narrCounter = 0;
+       var responseString;
+       var readFilePath;
+       var node;
+       var nodeNarrFileName;
+       console.log('\n ', __filename, 'line', __line, '; function #2:', ++functionCount, '; ');
+       // read the data file
+       try {
+       data = JSON.parse(fse.readFileSync(__dirname + '/../data/output/AQList-clean.json'));
+       } catch (err) {
+       console.log('\n ', __filename, 'line', __line, '; Error: ', err);
+       }
+       nodes = data.nodes;
+       for (var ldi = 0; ldi < nodes.length; ldi++) {
+       // narrCounter++;
+       node = nodes[ldi];
+       longNarrativeFileNameMissing = (typeof(node.narrativeFileName) === 'null' || typeof(node.narrativeFileName) === 'undefined');
+       if (longNarrativeFileNameMissing) {
+       console.log('\n ', __filename, 'line', __line, '; ldi = ', ldi, '; longNarrativeMissing = ', longNarrativeFileNameMissing, '\n node.narrativeFileName = ', node.narrativeFileName, '; node = ', node, "\n\n");
+       node.narrativeFileName = generateNarrFileName(node);
+       }
 
-      // using links from data file, parse the narratives
-      function (callback) {
-        var longNarrativeFileNameMissing;
-        var narrative;
-        var narrCounter = 0;
-        var responseString;
-        var readFilePath;
-        var node;
-        var nodeNarrFileName;
-        console.log('\n ', __filename, 'line', __line, '; function #2:', ++functionCount, '; ');
-        // read the data file
-        try {
-          data = JSON.parse(fse.readFileSync(__dirname + '/../data/output/AQList-clean.json'));
-        } catch (err) {
-          console.log('\n ', __filename, 'line', __line, '; Error: ', err);
-        }
-        nodes = data.nodes;
-        for (var ldi = 0; ldi < nodes.length; ldi++) {
-          // narrCounter++;
-          node = nodes[ldi];
-          longNarrativeFileNameMissing = (typeof(node.narrativeFileName) === 'null' || typeof(node.narrativeFileName) === 'undefined');
-          if (longNarrativeFileNameMissing) {
-            console.log('\n ', __filename, 'line', __line, '; ldi = ', ldi, '; longNarrativeMissing = ', longNarrativeFileNameMissing, '\n node.narrativeFileName = ', node.narrativeFileName, '; node = ', node, "\n\n");
-            node.narrativeFileName = generateNarrFileName(node);
-          }
-          nodeNarrFileName = node.narrativeFileName;
-          readFilePath = __dirname + '/../data/narrative_summaries/' + nodeNarrFileName;
-          try {
-            narrative = fse.readFileSync(readFilePath, fsOptions);
-            console.log('\n ', __filename, 'line', __line, '; getting file ldi = ', ldi, '; readFilePath = ', readFilePath, '\n narrative.substring(0, 300) = ', narrative.substring(0, 300), " [INTENTIONALLY TRUNCATED TO FIRST 300 CHARACTERS]");
-          } catch (err) {
-            console.log('\n ', __filename, 'line', __line, '; Error: ', err);
-          }
+       nodeNarrFileName = node.narrativeFileName;
+       readFilePath = __dirname + '/../data/narrative_summaries/' + nodeNarrFileName;
+       try {
+       narrative = fse.readFileSync(readFilePath, fsOptions);
+       console.log('\n ', __filename, 'line', __line, '; getting file ldi = ', ldi, '; readFilePath = ', readFilePath, '\n narrative.substring(0, 300) = ', narrative.substring(0, 300), " [INTENTIONALLY TRUNCATED TO FIRST 300 CHARACTERS]");
+       } catch (err) {
+       console.log('\n ', __filename, 'line', __line, '; Error: ', err);
+       }
 
-          // do something with the long narrative file
+       // do something with the long narrative file
 
-        }
-        callback();
-      },
-
-      function (callback) {
-
-
-
-
-
-
-
-
-
-
-
-
-
-        //  addLinksArray(data.nodes);
-        // countSourceTarget(data.nodes, data.links);
-        if (consoleLog) {
-          //  console.log('\n ', __filename, 'line', __line, '; function #:', ++functionCount, '; addLinksArray(data.nodes)');
-          //  console.log('\n ', __filename, 'line', __line, '; data.nodes[1] = ', data.nodes[1]);
-        }
-        callback();
-      },
-
+       }
+       callback();
+       },
+       */
       // COUNT LINKS
       function (callback) {
         countLinks(data);
@@ -400,13 +390,6 @@ var fixData = function () {
         callback();
       },
 
-      function (callback) {
-//      addLinksSet(data);
-        if (consoleLog) {
-          //      console.log('\n ', __filename, 'line', __line, '; function #:', ++functionCount, '; addLinkSet');
-        }
-        callback();
-      },
       // CHECK TARGETS EXIST
       function (callback) {
         checkTargetsExist(data.nodes, data.links);
@@ -424,6 +407,7 @@ var fixData = function () {
         callback();
       },
 
+      // which node has the most links?
       function (callback) {
         if (consoleLog) {
           console.log('\n ', __filename, 'line', __line, '; function #:', ++functionCount);
@@ -434,25 +418,22 @@ var fixData = function () {
         var maxLinkId = '';
         data.nodes.forEach(function (node) {
           counter++;
-          if (node.linkCount > maxLinkCount) {
-            maxLinkCount = node.linkCount;
+          if (node.linksFromCommentsCount > maxLinkCount) {
+            maxLinkCount = node.linksFromCommentsCount;
             maxLinkId = node.id;
           }
-
-          /*  if (counter <= numObjectsToShow) {
-           if (consoleLog) {
-           console.log('\n ', __filename, 'line', __line, '; counter = ', counter, '; link/varlink = ', link);
-           }
-           }
-           */
         });
+        data.maxLinksFromComments = {'count': maxLinkCount, 'id': maxLinkId};
+//        data.maxLinks = null;
+//        data.maxLinks.count = maxLinkCount;
+//        data.maxLinks.id = maxLinkId;
         console.log('\n ', __filename, 'line', __line, '; counter = ', counter, '; maxLinkId = ', maxLinkId, '; maxLinkCount = ', maxLinkCount);
         counter = 0;
-        data.links.forEach(function (link) {
+        data.linksFromComments.forEach(function (linkFromComments) {
           counter++;
           if (counter <= numObjectsToShow) {
             if (consoleLog) {
-              console.log('\n ', __filename, 'line', __line, '; counter = ', counter, '; link/varlink = ', link);
+              console.log('\n ', __filename, 'line', __line, '; counter = ', counter, '; linkFromComments/varlink = ', linkFromComments);
             }
           }
         });
@@ -468,7 +449,6 @@ var fixData = function () {
         try {
           var myFileNameAndPath = __dirname + '/../data/output/AQList-clean.json';
           var myJsonData = JSON.stringify(data, null, ' ');
-          // if (consoleLog) { console.log('myJsonData =', myJsonData);
           fse.writeFileSync(myFileNameAndPath, myJsonData, fsOptions);
           if (consoleLog) {
             console.log('\n ', __filename, 'line', __line, ';  file written to: ', myFileNameAndPath, ';  file contained myJsonData = ', myJsonData);
@@ -480,17 +460,6 @@ var fixData = function () {
         callback();
       },
 
-      // placeholder
-      function (callback) {
-        // var myJsonData = JSON.stringify(data, null, ' ');
-        if (consoleLog) {
-          console.log('\n ', __filename, 'line', __line, '; function #:', ++functionCount, '; STRINGIFY json');
-          console.log('\n ', __filename, 'line', __line, '; data.nodes.length = ', data.nodes.length);
-          console.log('\n ', __filename, 'line', __line, '; data.links.length = ', data.links.length);
-        }
-        callback();
-      },
-
       // last function; does nothing
       function (callback) {
         var dummy = function () {
@@ -498,13 +467,13 @@ var fixData = function () {
             console.log('\n ', __filename, 'line', __line, '; function #:', ++functionCount);
             console.log('\n ', __filename, 'line', __line, '; last function; does nothing');
           }
-          callback();
+
         }();
+        callback();
       }]
   );
 };
 
-// END OF ASYNC ARRAY
 // END OF ASYNC ARRAY
 
 var formatMyDate = function (dateString) {
@@ -532,7 +501,7 @@ var cleanUpIds = function (nodes) {
   counter = 0;
   nodes.forEach(function (node) {
     counter++;
-    var rawRefNum = node.REFERENCE_NUMBER;
+    // var rawRefNum = node.REFERENCE_NUMBER;
     // remove period from end of all reference numbers that have them; not all do.
     var refNumRegexMatch;
     try {
@@ -547,7 +516,7 @@ var cleanUpIds = function (nodes) {
     if ((node.REFERENCE_NUMBER).match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/)[1].trim() !== node.id) {
       throw 'id error';
     }
-    // remove period from end of all reference numbers that have them; not all do.
+    // for consistency, remove period from end of all reference numbers that have them; not all do.
     if (counter <= numObjectsToShow) {
       if (consoleLog) {
         console.log('\n ', __filename, 'line', __line, '; counter = ', counter, '; node with ids', node);
@@ -561,7 +530,7 @@ var cleanUpRefNums = function (nodes) {
   counter = 0;
   nodes.forEach(function (node) {
     counter++;
-    var rawRefNum = node.REFERENCE_NUMBER.trim();
+    // var rawRefNum = node.REFERENCE_NUMBER.trim();
     // for consistency, remove period from end of all reference numbers that have them; not all do.
     var refNumRegexMatch;
     try {
@@ -587,8 +556,8 @@ var getCleanId = function (referenceNumber) {
   var refNumRegexMatch;
   try {
     refNumRegexMatch = referenceNumber.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/);
-  } catch (error) {
-    console.log('\n ', __filename, 'line', __line, '; Error: ', error, '; node =', node, '; counter = ', counter);
+  } catch (err) {
+    console.log('\n ', __filename, 'line', __line, '; Error: ', err, '; referenceNumber =', referenceNumber, '; counter = ', counter);
   }
   return refNumRegexMatch[0].trim();
 };
@@ -668,281 +637,172 @@ var createNationality = function (nodes) {
 // create an array, connectedToId[], of linked-to ids in each node;
 // create link objects for each link (source and target ids) and insert in each node
 var addConnectionIdsArrayFromComments = function (nodes) {
-  throw commenterror;
+  // throw commenterror;
   var loopStop;
   var comments;
   var linkRegexMatch;
   counter = 0;
   nodes.forEach(function (node) {
-    node.connectionIdsSet = new Set();
-    node.connectedToId = [];
-    node.links = [];
-    node.linkSet = new Set();
+    node.connectionIdsFromCommentsSet = new Set();
+    node.connectedToIdFromCommentsArray = [];
+    node.linksFromComments = [];
+    node.linksFromCommentsSet = new Set();
     comments = node.COMMENTS1;
-    if ((typeof comments !== 'undefined') && (typeof comments.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/gi) !== 'undefined')) {
+
+    var weHaveCommentsToParse = ((typeof comments !== 'null') && (typeof comments !== 'undefined') &&
+    (typeof comments.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/gi) !== 'undefined'));
+
+    // if ((typeof comments !== 'undefined') && (typeof comments.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/gi) !== 'undefined')) {
+    if (weHaveCommentsToParse === 'true') {
       linkRegexMatch = comments.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/gi);
       if (linkRegexMatch !== null) {
         if (consoleLog) {
-          console.log('\n ', __filename, 'line', __line, '; counter = ', counter, '; node.id = ', node.id, '; node.name = ', node.name, '; has ', linkRegexMatch.length, 'link regex matches');
+          console.log('\n ', __filename, 'line', __line, '; counter = ', counter, '; node.id = ', node.id,
+            '; node.name = ', node.name, '; has ', linkRegexMatch.length, 'link regex matches');
         }
         // LOOP THROUGH EACH REGEX MATCH
-        for (var link = 0; link < linkRegexMatch.length; link++) {
-          if (linkRegexMatch[link] !== node.id) {
+        for (var linkFromCommentNumber = 0; linkFromCommentNumber < linkRegexMatch.length; linkFromCommentNumber++) {
+          if (linkRegexMatch[linkFromCommentNumber] !== node.id) {
             loopStop = false;
-            node.connectionIdsSet.add(linkRegexMatch[link]);
+            node.connectionIdsFromCommentsSet.add(linkRegexMatch[linkFromCommentNumber]);
           }
         }
-        node.connectionIdsSet.forEach(function (uniqueConnectionId) {
-          node.connectedToId.push(uniqueConnectionId);
-          node.links.push(uniqueConnectionId);
+        node.connectionIdsFromCommentsSet.forEach(function (uniqueConnectionIdFromComments) {
+          node.connectedToIdFromCommments.push(uniqueConnectionIdFromComments);
+          node.linksFromComments.push(uniqueConnectionIdFromComments);
         });
       }
       if (consoleLog) {
         if (counter % 17 === 0) {
-          console.log('\n ', __filename, 'line', __line, '; counter = ', counter, '; node.id = ', node.id, '; node.name = ', node.name, '; has node.connectionIdsSet set: ', node.connectionIdsSet);
+          console.log('\n ', __filename, 'line', __line, '; counter = ', counter, '; node.id = ', node.id, '; node.name = ', node.name, '; has node.connectionIdsFromCommentsSet set: ', node.connectionIdsFromCommentsSet);
         }
       }
       counter++;
+    } else {
+      console.log('\n ', __filename, 'line', __line, '; counter = ', counter, '; node.id = ', node.id, '; node.name = ', node.name, '; has no comments to parse; node.COMMENTS1 = ', node.COMMENTS1);
     }
-  });
-};
-
-// for each node, collect and save ids of all other nodes linked to said node
-// collect the ids from the long narrative stored in separate shtml documents on the U.N. site.
-// if the long narrative associated with a node cannot be found, look in the COMMENTS1 field from the AQList.xml file
-// create an array of linked node ids in each indiv/entity node
-// create link object for each linked node containing source and target fields, each such field containing the id of the two linked nodes.
-var addConnectionIdsArrayFromLongNarratives = function (nodes) {
-  var loopStop;
-  var comments;
-  var linkRegexMatch;
-  var nodeNarrFileName;
-  nodes.forEach(function (node) {
-    node.connectionIdsSet = new Set();
-    node.connectedToId = [];
-    node.links = [];
-    node.linkSet = new Set();
-    comments = node.COMMENTS1;
-    nodeNarrFileName = node.narrativeFileName;
-
-    if ((typeof nodeNarrFileName !== 'null') && (typeof nodeNarrFileName !== 'undefined') && (typeof nodeNarrFileName.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/gi) !== 'undefined')) {
-      var commentsUndefined = ((typeof comments === 'undefined') || (typeof comments.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/gi) === 'undefined'))
-      {
-        if (commentsUndefined !== true) {
-          linkRegexMatch = comments.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/gi);
-        } else {
-          node.COMMENTS1 = '';
-        }
-        if (linkRegexMatch !== null) {
-          if (consoleLog) {
-            console.log('\n ', __filename, 'line', __line, '; node.id = ', node.id, '; node.name = ', node.name, '; has ', linkRegexMatch.length, 'link regex matches');
-          }
-          // LOOP THROUGH EACH REGEX MATCH
-          for (var link = 0; link < linkRegexMatch.length; link++) {
-            if (linkRegexMatch[link] !== node.id) {
-              loopStop = false;
-              node.connectionIdsSet.add(linkRegexMatch[link]);
-            }
-          }
-          node.connectionIdsSet.forEach(function (uniqueConnectionId) {
-            node.connectedToId.push(uniqueConnectionId);
-            node.links.push(uniqueConnectionId);
-          });
-        }
-
-        if (consoleLog) {
-          if (counter % 17 === 0) {
-            console.log('\n ', __filename, 'line', __line, '; counter = ', counter, '; node.id = ', node.id, '; node.name = ', node.name, '; has node.connectionIdsSet set: ', node.connectionIdsSet);
-          }
-        }
-        counter++;
-      }
-    }
-
   });
 };
 
 // within each NODE, create array of connection objects with source and target
-var addConnectionObjectsArray = function (nodes) {
+var addConnectionObjectsArrayFromComments = function (nodes) {
 // for each node
-  var connection;
+  var connectionFromComments;
   counter = 0;
   nodes.forEach(function (node) {
     // counter ++;
-    node.connections = [];
-    node.connectedToId.forEach(function (connId) {
-      if (node.id !== connId) {
-        connection = {};
-        connection.source = node.id;
-        connection.target = connId;
-        node.connections.push(connection);
-      }
-      if (consoleLog) {
-        if (counter < 10) {
-          console.log('\n ', __filename, 'line', __line, '; counter++ = ', counter++, '; node.id = ', node.id, '; connection = ', connection);
+    node.connectionsFromComments = [];
+    var weHaveNodeConnectedToIdFromCommentsCommentsToParse = ((typeof node.connectedToIdFromComments !== 'null') && (typeof node.connectedToIdFromComments !== 'undefined'));
+    if (weHaveDataLinksFromCommentsToParse === true) {
+      node.connectedToIdFromComments.forEach(function (connId) {
+        if (node.id !== connId) {
+          connection = {};
+          connection.source = node.id;
+          connection.target = connId;
+          node.connections.push(connection);
         }
-      }
-    })
-  })
-};
+        if (consoleLog) {
+          if (counter < 10) {
+            console.log('\n ', __filename, 'line', __line, '; counter++ = ', counter++, '; node.id = ', node.id, '; connection = ', connection);
+          }
+        }
+      });
+    }
 
+  });
+}
 // consolidate links; remove duplicates, BUT DOES IT REALLY?
 // create a top-level array of links containing a source and target
-var consolidateLinks = function (data) {
+var consolidateLinksFromComments = function (data) {
   // if (consoleLog) { console.log('\n ', __filename, 'line',__line, '; data = ', data);
   if (consoleLog) {
     console.log('\n ', __filename, 'line', __line, '; data.nodes[0] = ', data.nodes[0]);
     console.log('\n ', __filename, 'line', __line, '; data.nodes[1] = ', data.nodes[1]);
   }
-  data.links = [];
-  var linkSet = new Set();
+  data.linksFromComments = [];
+  var linksFromCommentsSet = new Set();
   // var linksMap = new Map();
   // var mapCounter = 1;
-  var connectionsCount = 0;
+  var connectionsFromCommentsCount = 0;
   (data.nodes).forEach(function (node) {
-    if ((typeof node.connections != 'undefined') && (typeof node.connections.length != 'undefined') && (node.connections.length > 0)) {
-      connectionsCount = connectionsCount + node.connections.length;
-      node.connections.forEach(function (conn) {
-        if (linkSet.add(conn) === true) {
-          data.links.push(conn);
+    if ((typeof node.connectionsFromComments != 'undefined') && (typeof node.connectionsFromComments.length != 'undefined') && (node.connectionsFromComments.length > 0)) {
+      connectionsFromCommentsCount = connectionsFromCommentsCount + node.connectionsFromComments.length;
+      node.connectionsFromComments.forEach(function (conn) {
+        if (linksFromCommentsSet.add(conn) === true) {
+          data.linksFromComments.push(conn);
         }
       });
     }
   });
   if (consoleLog) {
-    console.log(__filename, 'line', __line, '; connectionsCount = ', connectionsCount, '; linkSet.count = ', linkSet.count);
+    console.log(__filename, 'line', __line, '; connectionsFromCommentsCount = ', connectionsFromCommentsCount, '; linksFromCommentsSet.count = ', linksFromCommentsSet.count);
   }
-  linkSet = null;
+  linksFromCommentsSet = null;
 };
 
 // count the unique links for each node
-var countLinks = function (data) {
+var countLinksFromComments = function (data) {
   data.nodes.forEach(function (node) {
     var linkCounter = 0;
     var keySet = new Set();
     var keyAdded1, keyAdded2;
     var linkConcatKey1, linkConcatKey2;
-    data.links.forEach(function (link) {
-      // delete a link if source and target are the same
-      if (link.source === link.target) {
-        delete data.link;
-        console.log(__filename, 'line', __line, 'deleted ', data.link, ' because link.source === link.target');
-      } else {
-        if (node.id === link.source || node.id === link.target) {
-          linkConcatKey1 = link.source + link.target;
-          linkConcatKey2 = link.target + link.source;
-          keyAdded1 = keySet.add(linkConcatKey1);
-          keyAdded2 = keySet.add(linkConcatKey2);
-          if (keyAdded1 && keyAdded2) {
-            linkCounter++;
+
+    var weHaveDataLinksFromCommentsToParse = ((typeof data.linksFromComments !== 'null') && (typeof data.linksFromComments !== 'undefined'));
+
+    if (weHaveDataLinksFromCommentsToParse === true) {
+      data.linksFromComments.forEach(function (linkFromComment) {
+        // delete a link if source and target are the same
+        if (linkFromComment.source === linkFromComment.target) {
+          delete data.linkFromComment;
+          console.log(__filename, 'line', __line, 'deleted data.linkFromComment = ', data.linkFromComment, ' because linkFromComment.source === linkFromComment.target');
+        } else {
+          if (node.id === linkFromComment.source || node.id === linkFromComment.target) {
+            linkConcatKey1 = linkFromComment.source + linkFromComment.target;
+            linkConcatKey2 = linkFromComment.target + linkFromComment.source;
+            keyAdded1 = keySet.add(linkConcatKey1);
+            keyAdded2 = keySet.add(linkConcatKey2);
+            if (keyAdded1 && keyAdded2) {
+              linkCounter++;
+            }
           }
         }
-      }
-    });
-    node.linkCount = linkCounter;
+      });
+    }
+    node.linkFromCommentCount = linkFromCommentCounter;
   });
 };
-var checkTargetsExist = function (nodes, links) {
-  var nodeTargetIdsSet = new Set();
+var checkTargetsExist = function (nodes, linksFromComments) {
+  var nodeTargetIdsFromCommentsSet = new Set();
   nodes.forEach(function (node) {
-    node.connectedToId.forEach(function (connectionId) {
-      nodeTargetIdsSet.add(connectionId);
+    node.connectedToIdFromComments.forEach(function (connectionIdFromComments) {
+      nodeTargetIdsFromCommentsSet.add(connectionIdFromComments);
     })
   });
   if (consoleLog) {
-    console.log('\n ', __filename, 'line', __line, '; the number of unique target / link nodes is ', nodeTargetIdsSet.count);
+    console.log('\n ', __filename, 'line', __line, '; the number of unique target / link nodes is ', nodeTargetIdsFromCommentsSet.count);
   }
-  links.forEach(function (link) {
-    if (nodeTargetIdsSet.exists(link.target)) {
+  linksFromComments.forEach(function (linkFromComment) {
+    if (nodeTargetIdsSet.exists(linkFromComment.target)) {
       if (consoleLog) {
-        console.log('\n ', __filename, 'line', __line, '; ', link.target, ' exists.');
+        console.log('\n ', __filename, 'line', __line, '; ', linkFromComment.target, ' exists.');
       }
     } else {
       // if (consoleLog) {
-      console.log('\n ', __filename, 'line', __line, ', link.target: ', link.target, ' DOES NOT EXIST.');
+      console.log('\n ', __filename, 'line', __line, ', linkFromComment.target: ', linkFromComment.target, ' DOES NOT EXIST.');
       // }
       throw 'missing target error';
     }
   });
 };
 
-/*
- // put links into a set
- // https://www.npmjs.org/package/backpack-node
- // within each node create a Set() of ids of related/linked parties
- var addSourceTargetArray = function (data) {
- var comments;
- var linkRegexMatch;
- var sourceTarget;
- var count;
- data.nodes.forEach(function (node) {
- node.sourceTargetArray = [];
- comments = node.COMMENTS1;
- if ((typeof comments !== 'undefined') && (typeof comments.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/gi) !== 'undefined')) {
- linkRegexMatch = comments.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/gi);
- // if (consoleLog) { console.log('91 linkRegexMatch = ', linkRegexMatch);
- if ((typeof(linkRegexMatch) !== 'undefined') && (linkRegexMatch !== null)) {
- for (var n = 0; n < linkRegexMatch.length; n++) {
- if (node.id !== linkRegexMatch[n].trim()) {
- // don't include a link from a node to itself
- sourceTarget = {};
- sourceTarget.source = node.id;
- sourceTarget.target = linkRegexMatch[n].trim();
- data.links.push(sourceTarget);
- }
- }
- }
- }
- });
- };
- */
-/*
- var countSourceTarget = function (nodes, links) {
- var tarCount = 0;
- var souCount = 0;
- nodes.forEach(function (node) {
- // for(var n in nodes) {
- if (consoleLog) {
- console.log('\n ', __filename, 'line', __line, ';  node = ', node);
- console.log('\n ', __filename, 'line', __line, ';  node.id = ', node.id);
- }
- node['sourceCount'] = 0;
- node['targetCount'] = 0;
- links.forEach(function (link) {
- if (link.source == node.id) {
- if (consoleLog) {
- console.log('\n ', __filename, 'line', __line, '; ', link.source, ' == ', node.id, ' TRUE');
- }
- node.sourceCount++; // = nodes[n].sourceCount + 1;
- souCount++;
- }
- if (link.target == node.id) {
- if (consoleLog) {
- console.log('\n ', __filename, 'line', __line, '; ', link.target, ' == ', node.id, ' TRUE');
- }
- node.targetCount++; // = node.targetCount + 1;
- tarCount++;
- }
- //      node.linkCount = node.sourceCount + node.targetCount;
- });
- if (consoleLog) {
- console.log('\n ', __filename, 'line', __line, '; node.sourceCount = ', node.sourceCount);
- console.log('\n ', __filename, 'line', __line, '; node.targetCount = ', node.targetCount);
- console.log('\n ', __filename, 'line', __line, '; tarCount = ', tarCount);
- console.log('\n ', __filename, 'line', __line, '; souCount = ', souCount);
- }
- })
- };
- */
 var saveJsonFile = function (jsonData, fileName) {
   try {
     var myFile = __dirname + '/../data/output/' + fileName;
     var myJsonData = JSON.stringify(jsonData, null, ' ');
     fse.writeFileSync(myFile, myJsonData, fsOptions);
     if (consoleLog) {
-      console.log('\n ', __filename, 'line', __line, ';  file written to: ', myFile);
-//      console.log('\n ', __filename, 'line', __line, ';  file contained: ', trunc.n400(util.inspect(myJsonData, false, null)));
-      console.log('\n ', __filename, 'line', __line, ';  file contained: ', myJsonData.substring(0, 2400), ' ... [INTENTIONALLY TRUNCATED TO 2,400 CHARACHTERS]');
+      console.log('\n ', __filename, 'line', __line, '; saveJsonFile() wrote file to: ', myFile, ';  file contained: ', myJsonData.substring(0, 2400), ' ... [INTENTIONALLY TRUNCATED TO FIRST 2,400 CHARACTERS]\n\n');
     }
   } catch (e) {
     if (consoleLog) {
@@ -950,23 +810,7 @@ var saveJsonFile = function (jsonData, fileName) {
     }
   }
 };
-/*
- // inspect some array objects, but not too many
- var inspectSomeArrayObjects = function (array, numOfObjectsToShow) {
- array.forEach(function (object) {
- counter++;
- if (counter <= numOfObjectsToShow) {
- console.log('\n ', __filename, 'line', __line, '; counter = ', counter, '; object = \n', util.inspect(object, false, null));
- }
- });
- };
- */
-/*
- var archiveRawSource = function (fileNameAndPath) {
- collect.writeAQListXML(fileNameAndPath);
- return true;
- };
- */
+
 var createDateGeneratedMessage = function () {
   var dateAqListGeneratedString = data.dateGenerated;
   var dateAqListGenerated = new Date(dateAqListGeneratedString);
@@ -1115,15 +959,15 @@ var vizFormatDateSetup = function (dateString) {
   // console.log('viz.js 947 vizFormatDate() dateString = ', dateString);
   return vizDateString;
 };
-
-var generateNarrFileName = function (node) {
-  var id = node.id.trim();
-  var idSplit = id.split('.');
-  var narrFileName = 'NSQ' + idSplit[0].substring(1, 2) + idSplit[2] + idSplit[3] + '.shtml';
-  console.log('\n ', __filename, 'line', __line, '; id = ', id, '; generated narrFileName = ', narrFileName);
-  return narrFileName;
-};
-
+/*
+ var generateNarrFileName = function (node) {
+ var id = node.id.trim();
+ var idSplit = id.split('.');
+ var narrFileName = 'NSQ' + idSplit[0].substring(1, 2) + idSplit[2] + idSplit[3] + '.shtml';
+ console.log('\n ', __filename, 'line', __line, '; id = ', id, '; generated narrFileName = ', narrFileName);
+ return narrFileName;
+ };
+ */
 module.exports = {
   fixData: fixData
 };
