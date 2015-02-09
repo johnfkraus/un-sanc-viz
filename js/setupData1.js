@@ -7,7 +7,7 @@
 // do we want lots of console.log messages for debugging (if so, set consoleLog = true)
 var consoleLog = true;
 // var __filename = __filename || {};
-// var __line = __line || {};
+var __line = __line || {};
 if (typeof define !== 'function') {
   var define = require('amdefine');
 }
@@ -26,14 +26,10 @@ var collect = require('./collect.js'),
   inspect = require('object-inspect');
 var narrative_links;
 var utilities_aq_viz = require('./utilities_aq_viz');
-// jsonpatch = require('json-patch'),
-//parseString = require('xml2js')
-// .parseString;
 var counter = 0;
 var numObjectsToShow = 2;
 var data = {};
 var generatedFileDateString;
-// var backbone =  require('backbone');
 var Set = require('backpack-node').collections.Set;
 var Bag = require('backpack-node').collections.Bag;
 var Map = require('backpack-node').collections.Map;
@@ -382,7 +378,7 @@ var fixData = function () {
        */
       // COUNT LINKS
       function (callback) {
-        countLinks(data);
+        countLinksFromComments(data);
         if (consoleLog) {
           console.log('\n ', __filename, 'line', __line, '; function #:', ++functionCount, '; countLinks2');
           console.log('\n ', __filename, 'line', __line, '; data.nodes[1] = ', data.nodes[1]);
@@ -668,7 +664,7 @@ var addConnectionIdsArrayFromComments = function (nodes) {
           }
         }
         node.connectionIdsFromCommentsSet.forEach(function (uniqueConnectionIdFromComments) {
-          node.connectedToIdFromCommments.push(uniqueConnectionIdFromComments);
+          node.connectedToIdFromCommmentsArray.push(uniqueConnectionIdFromComments);
           node.linksFromComments.push(uniqueConnectionIdFromComments);
         });
       }
@@ -693,7 +689,7 @@ var addConnectionObjectsArrayFromComments = function (nodes) {
     // counter ++;
     node.connectionsFromComments = [];
     var weHaveNodeConnectedToIdFromCommentsCommentsToParse = ((typeof node.connectedToIdFromComments !== 'null') && (typeof node.connectedToIdFromComments !== 'undefined'));
-    if (weHaveDataLinksFromCommentsToParse === true) {
+    if (weHaveNodeConnectedToIdFromCommentsCommentsToParse === true) {
       node.connectedToIdFromComments.forEach(function (connId) {
         if (node.id !== connId) {
           connection = {};
@@ -710,7 +706,7 @@ var addConnectionObjectsArrayFromComments = function (nodes) {
     }
 
   });
-}
+};
 // consolidate links; remove duplicates, BUT DOES IT REALLY?
 // create a top-level array of links containing a source and target
 var consolidateLinksFromComments = function (data) {
@@ -743,7 +739,7 @@ var consolidateLinksFromComments = function (data) {
 // count the unique links for each node
 var countLinksFromComments = function (data) {
   data.nodes.forEach(function (node) {
-    var linkCounter = 0;
+    var linkFromCommentCounter = 0;
     var keySet = new Set();
     var keyAdded1, keyAdded2;
     var linkConcatKey1, linkConcatKey2;
@@ -754,8 +750,8 @@ var countLinksFromComments = function (data) {
       data.linksFromComments.forEach(function (linkFromComment) {
         // delete a link if source and target are the same
         if (linkFromComment.source === linkFromComment.target) {
-          delete data.linkFromComment;
-          console.log(__filename, 'line', __line, 'deleted data.linkFromComment = ', data.linkFromComment, ' because linkFromComment.source === linkFromComment.target');
+          delete linkFromComment;
+          console.log(__filename, 'line', __line, 'deleted linkFromComment = ', linkFromComment, ' because linkFromComment.source === linkFromComment.target');
         } else {
           if (node.id === linkFromComment.source || node.id === linkFromComment.target) {
             linkConcatKey1 = linkFromComment.source + linkFromComment.target;
@@ -763,13 +759,13 @@ var countLinksFromComments = function (data) {
             keyAdded1 = keySet.add(linkConcatKey1);
             keyAdded2 = keySet.add(linkConcatKey2);
             if (keyAdded1 && keyAdded2) {
-              linkCounter++;
+              linkFromCommentCounter++;
             }
           }
         }
       });
     }
-    node.linkFromCommentCount = linkFromCommentCounter;
+    node.linkFromCommentCounter = linkFromCommentCounter;
   });
 };
 var checkTargetsExist = function (nodes, linksFromComments) {
@@ -783,7 +779,7 @@ var checkTargetsExist = function (nodes, linksFromComments) {
     console.log('\n ', __filename, 'line', __line, '; the number of unique target / link nodes is ', nodeTargetIdsFromCommentsSet.count);
   }
   linksFromComments.forEach(function (linkFromComment) {
-    if (nodeTargetIdsSet.exists(linkFromComment.target)) {
+    if (nodeTargetIdsFromCommentsSet.exists(linkFromComment.target)) {
       if (consoleLog) {
         console.log('\n ', __filename, 'line', __line, '; ', linkFromComment.target, ' exists.');
       }
