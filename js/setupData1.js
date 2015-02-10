@@ -6,12 +6,13 @@
 
 // do we want lots of console.log messages for debugging (if so, set consoleLog = true)
 var consoleLog = true;
-// var __filename = __filename || {};
-var __line = __line || {};
+var __filename = __filename || {};
+var linenums = require('./linenums.js');
+// var __line = __line || {};
 if (typeof define !== 'function') {
   var define = require('amdefine');
 }
-var linenums = require('./linenums.js');
+
 //var narrFileName;
 var collect = require('./collect.js'),
   missingNodes = require('./missing_nodes.js'),
@@ -24,7 +25,7 @@ var collect = require('./collect.js'),
   util = require('util'),
   dateFormat = require('dateformat'),
   inspect = require('object-inspect');
-var narrative_links;
+// var narrative_links_from_comments;
 var utilities_aq_viz = require('./utilities_aq_viz');
 var counter = 0;
 var numObjectsToShow = 2;
@@ -56,7 +57,6 @@ var fixData = function () {
   // var indivs = [];
   var config;
 //  var __filename = __filename || {};
-  var __line = __line || {};
   var consolidatedList;
 
   async.series([
@@ -73,6 +73,7 @@ var fixData = function () {
       // save the intermediate file for debugging
       function (callback) {
         saveJsonFile(consolidatedList, 'data01-loadedRaw.json');
+
         callback();
       },
 
@@ -136,14 +137,19 @@ var fixData = function () {
         concatNames(data.nodes);
         createNationality(data.nodes);
         if (consoleLog) {
-          console.log('\n ', __filename, 'line', __line, '; function #:', ++functionCount, '; put data into nodes array for d3');
-          console.log('\n ', __filename, 'line', __line, '; jsonFile = \n', JSON.stringify(jsonFile).substring(0, 800));
+          console.log(__filename, 'line', __line, '; function #:', ++functionCount, '; put data into nodes array for d3');
+          console.log(__filename, 'line', __line, '; JSON.stringify(data).substring(0, 800) = \n', JSON.stringify(data, null, ' ').substring(0, 800));
         }
         callback();
       },
       // save intermediate data file for debugging
       function (callback) {
-        saveJsonFile(data, 'setupData1' + __line + '-flattened.json');
+        var saveJsonFileName = 'setupData1' + __line + '-flattened.json';
+        saveJsonFile(data, saveJsonFileName); // 'setupData1' + __line + '-flattened.json');
+
+        if (consoleLog) {
+          console.log('\n ', __filename, 'line', __line, '; wrote file to: ', saveJsonFileName, ';  file contained (truncated): ', JSON.stringify(data, null, ' ').substring(0, 800), ' ... [CONSOLE LOG OUTPUT INTENTIONALLY TRUNCATED TO FIRST 2,400 CHARACTERS]\n\n');
+        }
         callback();
       },
 
@@ -163,11 +169,8 @@ var fixData = function () {
           }
         });
         if (consoleLog) {
-          console.log('\n ', __filename, 'line', __line, '; function #:', ++functionCount, '; put nodes into a set');
-          console.log('\n ', __filename, 'line', __line, '; typeof data = ', typeof data);
-          console.log('\n ', __filename, 'line', __line, '; started with ', data.nodes.length, ' nodes in data.nodes array');
-          console.log('\n ', __filename, 'line', __line, '; counter = ', counter, '; setOfNodes.count = ', setOfNodes.count);
-          console.log('\n ', __filename, 'line', __line, '; counter = ', counter, '; setOfNodeIds.count = ', setOfNodeIds.count);
+          console.log(__filename, 'line', __line, '; function #:', ++functionCount, '; put nodes into a set', '; typeof data = ', typeof data,
+            '; started with ', data.nodes.length, ' nodes in data.nodes array', '; counter = ', counter, '; setOfNodes.count = ', setOfNodes.count, '; setOfNodeIds.count = ', setOfNodeIds.count);
         }
         callback();
       },
@@ -178,8 +181,8 @@ var fixData = function () {
         counter = 0;
         data.nodes.forEach(function (node) {
 
-          if (consoleLog) {
-            console.log('\n ', __filename, 'line', __line, '; counter = ', counter, '; node.id = ', node.id);
+          if (consoleLog & counter < 40) {
+            console.log(__filename, 'line', __line, '; counter = ', counter, '; node.id = ', node.id);
           }
           node.id = getCleanId(node.REFERENCE_NUMBER);
           if (!(node.id)) {
@@ -187,8 +190,8 @@ var fixData = function () {
           }
           nodeBag.add(node.id, node);
           // console.log('\n ', __filename, 'line', __line, 'counter = ', counter ,'; nodeBag.length = ', nodeBag.count);
-          if (consoleLog) {
-            console.log('\n ', __filename, 'line', __line, 'Bag counter = ', counter);
+          if (consoleLog && counter < 40) {
+            console.log(__filename, 'line', __line, 'Bag counter = ', counter);
           }
           counter++;
         });
@@ -288,7 +291,7 @@ var fixData = function () {
       // stringify and save json data for later processing
       function (callback) {
         if (consoleLog) {
-          console.log('\n ', __filename, 'line', __line, '; function #:', ++functionCount, '; save clean json file');
+          console.log( __filename, 'line', __line, '; function #:', ++functionCount, '; save clean json file');
         }
         // var saveJson = function () {
         try {
@@ -296,10 +299,10 @@ var fixData = function () {
           var myJsonData = JSON.stringify(data, null, ' ');
           fse.writeFileSync(myFile, myJsonData, fsOptions);
           if (consoleLog) {
-            console.log('\n ', __filename, 'line', __line, ';  file written to: ', myFile, ';  file contained: ', trunc.n400(util.inspect(myJsonData, false, null)));
+            console.log( __filename, 'line', __line, ';  file written to: ', myFile, ';  file contained: ', truncateString(JSON.stringify(myJsonData, null, ' '), 200));
           }
         } catch (e) {
-          console.log('\n ', __filename, 'line', __line, ';  Error: ', e);
+          console.log( __filename, 'line', __line, ';  Error: ', e);
           callback();
         }
         callback();
@@ -315,9 +318,9 @@ var fixData = function () {
           console.log('\n ', __filename, 'line', __line, '; Error: ', err);
         }
         if (consoleLog) {
-          console.log('\n ', __filename, 'line', __line, '; function #:', ++functionCount);
-          console.log('\n ', __filename, 'line', __line, '; data read from: \n', cleanJsonFileName);
-          console.log('\n ', __filename, 'line', __line, '; data = \n', trunc.truncn(JSON.stringify(data), 200));
+          console.log( __filename, 'line', __line, '; function #:', ++functionCount);
+          console.log( __filename, 'line', __line, '; data read from: \n', cleanJsonFileName);
+          console.log( __filename, 'line', __line, '; data = \n', trunc.truncn(JSON.stringify(data), 200));
         }
         callback();
       },
@@ -388,15 +391,18 @@ var fixData = function () {
 
       // CHECK TARGETS EXIST
       function (callback) {
-        checkTargetsExist(data.nodes, data.links);
+        var nodes = data.nodes;
+        var linksFromComments = data.linksFromComments;
+        checkTargetsExist(nodes, linksFromComments);
         callback();
       },
-      // COUNT NODES, PRINT NODE IDS
+      // number the nodes starting with zero; COUNT NODES, PRINT NODE IDS
       function (callback) {
+        numberTheNodes(data);
         var nodeCounter = 0;
         data.nodes.forEach(function (node) {
           nodeCounter++;
-          if (consoleLog) {
+          if (consoleLog && (nodeCounter % 17) === 1) {
             console.log(__filename, 'line', __line, '; node #', nodeCounter, 'node.id = ', node.id);
           }
         });
@@ -447,7 +453,7 @@ var fixData = function () {
           var myJsonData = JSON.stringify(data, null, ' ');
           fse.writeFileSync(myFileNameAndPath, myJsonData, fsOptions);
           if (consoleLog) {
-            console.log('\n ', __filename, 'line', __line, ';  file written to: ', myFileNameAndPath, ';  file contained myJsonData = ', myJsonData);
+            console.log( __filename, 'line', __line, ';  file written to: ', myFileNameAndPath, ';  file contained myJsonData = ', truncateString(myJsonData));
           }
         } catch (e) {
           console.log('\n ', __filename, 'line', __line, ';  Error: ', e);
@@ -515,7 +521,8 @@ var cleanUpIds = function (nodes) {
     // for consistency, remove period from end of all reference numbers that have them; not all do.
     if (counter <= numObjectsToShow) {
       if (consoleLog) {
-        console.log('\n ', __filename, 'line', __line, '; counter = ', counter, '; node with ids', node);
+        console.log(__filename, 'line', __line, '; counter = ', counter, '; node.id = ', node.id);
+//        console.log('\n ', __filename, 'line', __line, '; counter = ', counter, '; node with ids', node);
       }
     }
   });
@@ -541,7 +548,7 @@ var cleanUpRefNums = function (nodes) {
     }
     if (counter <= numObjectsToShow) {
       if (consoleLog) {
-        console.log('\n ', __filename, 'line', __line, '; counter = ', counter, '; node with ids', node);
+        console.log(__filename, 'line', __line, '; counter = ', counter, '; node.REFERENCE_NUMBER = ', node.REFERENCE_NUMBER);
       }
     }
   });
@@ -582,7 +589,7 @@ var concatNames = function (nodes) {
     node.name = name.trim();
     if (counter <= 10) {
       if (consoleLog) {
-        console.log('\n ', __filename, 'line', __line, '; node with name', node);
+        console.log(__filename, 'line', __line, '; node.name = ', node.name);
       }
     }
   });
@@ -649,33 +656,35 @@ var addConnectionIdsArrayFromComments = function (nodes) {
     (typeof comments.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/gi) !== 'undefined'));
 
     // if ((typeof comments !== 'undefined') && (typeof comments.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/gi) !== 'undefined')) {
-    if (weHaveCommentsToParse === 'true') {
+    if (weHaveCommentsToParse === true) {
       linkRegexMatch = comments.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/gi);
       if (linkRegexMatch !== null) {
-        if (consoleLog) {
-          console.log('\n ', __filename, 'line', __line, '; counter = ', counter, '; node.id = ', node.id,
+        if (consoleLog & counter < 40) {
+          console.log( __filename, 'line', __line, '; counter = ', counter, '; node.id = ', node.id,
             '; node.name = ', node.name, '; has ', linkRegexMatch.length, 'link regex matches');
         }
         // LOOP THROUGH EACH REGEX MATCH
         for (var linkFromCommentNumber = 0; linkFromCommentNumber < linkRegexMatch.length; linkFromCommentNumber++) {
           if (linkRegexMatch[linkFromCommentNumber] !== node.id) {
             loopStop = false;
+
             node.connectionIdsFromCommentsSet.add(linkRegexMatch[linkFromCommentNumber]);
           }
         }
         node.connectionIdsFromCommentsSet.forEach(function (uniqueConnectionIdFromComments) {
-          node.connectedToIdFromCommmentsArray.push(uniqueConnectionIdFromComments);
+
+          node.connectedToIdFromCommentsArray.push(uniqueConnectionIdFromComments);
           node.linksFromComments.push(uniqueConnectionIdFromComments);
         });
       }
       if (consoleLog) {
         if (counter % 17 === 0) {
-          console.log('\n ', __filename, 'line', __line, '; counter = ', counter, '; node.id = ', node.id, '; node.name = ', node.name, '; has node.connectionIdsFromCommentsSet set: ', node.connectionIdsFromCommentsSet);
+          console.log( __filename, 'line', __line, '; counter = ', counter, '; node.id = ', node.id, '; node.name = ', node.name, '; has node.connectionIdsFromCommentsSet set: ', node.connectionIdsFromCommentsSet);
         }
       }
       counter++;
     } else {
-      console.log('\n ', __filename, 'line', __line, '; counter = ', counter, '; node.id = ', node.id, '; node.name = ', node.name, '; has no comments to parse; node.COMMENTS1 = ', node.COMMENTS1);
+      console.log( __filename, 'line', __line, '; counter = ', counter, '; node.id = ', node.id, '; node.name = ', node.name, '; has no comments to parse; node.COMMENTS1 = ', node.COMMENTS1);
     }
   });
 };
@@ -768,10 +777,20 @@ var countLinksFromComments = function (data) {
     node.linkFromCommentCounter = linkFromCommentCounter;
   });
 };
+
+// number the nodes starting with zero
+var numberTheNodes = function (data) {
+  counter = 0;
+  data.nodes.forEach(function (node) {
+    node.nodeNumber = counter;
+    counter++;
+  });
+};
+
 var checkTargetsExist = function (nodes, linksFromComments) {
   var nodeTargetIdsFromCommentsSet = new Set();
   nodes.forEach(function (node) {
-    node.connectedToIdFromComments.forEach(function (connectionIdFromComments) {
+    node.connectedToIdFromCommentsArray.forEach(function (connectionIdFromComments) {
       nodeTargetIdsFromCommentsSet.add(connectionIdFromComments);
     })
   });
@@ -798,7 +817,7 @@ var saveJsonFile = function (jsonData, fileName) {
     var myJsonData = JSON.stringify(jsonData, null, ' ');
     fse.writeFileSync(myFile, myJsonData, fsOptions);
     if (consoleLog) {
-      console.log('\n ', __filename, 'line', __line, '; saveJsonFile() wrote file to: ', myFile, ';  file contained: ', myJsonData.substring(0, 2400), ' ... [INTENTIONALLY TRUNCATED TO FIRST 2,400 CHARACTERS]\n\n');
+      console.log('\n ', __filename, 'line', __line, '; saveJsonFile() wrote file to: ', myFile, ';  file contained (truncated): ', myJsonData.substring(0, 400), ' ... [CONSOLE LOG OUTPUT INTENTIONALLY TRUNCATED TO FIRST 400 CHARACTERS]\n\n');
     }
   } catch (e) {
     if (consoleLog) {
@@ -925,6 +944,12 @@ var createIndivDateOfBirthString = function (d) {
   }
   return dateString;
 };
+
+var truncateString = function(inString, numCharacters) {
+  var outString = '[TRUNCATED]' + inString.substring(0, numCharacters) + '\n ... [CONSOLE LOG OUTPUT INTENTIONALLY TRUNCATED TO FIRST' + numCharacters + '400 CHARACTERS]';
+ return outString;
+  }
+
 
 // for DOB, etc.
 var formatDate = function (intlDateString) {

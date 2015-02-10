@@ -151,6 +151,19 @@ var getListOfNarratives = function () {
         callback();
       },
 */
+      // number the narrative links
+      function (callback) {
+        if (consoleLog) {
+          console.log('\n ', __filename, __line, '; function #:', ++functionCount);
+        }
+          var counter = 0;
+          narrativeLinks.forEach(function (narrativeLink) {
+            narrativeLink.linkNumber = counter;
+            counter++;
+          });
+        callback();
+      },
+
       function (callback) {
         if (consoleLog) {
           console.log('\n ', __filename, __line, '; function 3#:', ++functionCount);

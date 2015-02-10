@@ -52,16 +52,15 @@ var runAppTest = function () {
         setupData1.fixData();
         callback();
       },
-/*
+
       function (callback) {
-        // collect raw data from the Internet
         if (consoleLog) {
           console.log('\n ', __filename, __line, '; Phase 2#:', ++functionCount, '; getNarrativeList.getListOfNarratives()');
         }
         getNarrativeList.getListOfNarratives();
         callback();
       },
-
+/*
       function (callback) {
         // collect raw data from the Internet
         if (consoleLog) {
