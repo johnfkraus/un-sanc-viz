@@ -10,6 +10,7 @@ var select = require('soupselect').select,
   fse = require('fs-extra'),
   util = require('util'),
   linenums = require('./linenums.js'),
+  utilities_aq_viz = require('./utilities_aq_viz'),
   MongoClient = require('mongodb').MongoClient,
   assert = require('assert'),
   async = require('async'),
@@ -151,6 +152,37 @@ var getListOfNarratives = function () {
         callback();
       },
 */
+
+    // The UN list files omit some of the nodes.  In some cases, this appears to be an oversight.  In others, the node
+    // is no longer on the sanctions list.  There may be other reasons for the omission as well.
+    // If no narrative file name for a node could be found in the UN list files, we generate the expected file name
+    // based an observed relationship between a given nodes id and its narrative file name.
+    function (callback) {
+      console.log('\n ', __filename, 'line', __line, '; function #:', ++functionCount, '; ');
+      var narrCounter = 0;
+      var jsonFileName = __dirname + '/../data/output/AQList-clean.json';
+      data = JSON.parse(fse.readFileSync(jsonFileName));
+      var nodes = data.nodes;
+      countUndefinedNarrativeFileNames(nodes);
+      var node = null;
+      // check if the node.narrativeFileName is defined for each node
+      for (var ldi = 0; ldi < nodes.length; ldi++) {
+        node = nodes[ldi];
+        var narrativeFileNameIsMissing = (typeof(node.narrativeFileName) === 'null' || typeof(node.narrativeFileName) === 'undefined');
+        //          if (typeof(node.narrativeFileName) === 'null' || typeof(node.narrativeFileName) === 'undefined') {
+        if (narrativeFileNameIsMissing) {
+          node.narrativeFileName = generateNarrFileName(node);
+          console.log('\n ', __filename, 'line', __line, '; Generated narrative file name for node.id = ', node.id, '; ldi = ', ldi, '; node.name = ', node.name, '; node.noLongerListed = ', node.noLongerListed);
+        }
+      }
+      utilities_aq_viz.saveJsonFile(data, 'AQList-clean-fnames.json');
+
+    },
+
+
+
+
+
       // number the narrative links
       function (callback) {
         if (consoleLog) {
@@ -310,6 +342,25 @@ var asyncGetRawHtmlPagesWithNarrativeLinks = function (host, filePath, outputFil
   }
   writeMyFile(narrativeLinksLocalFileNameAndPath, JSON.stringify(narrativeLinks, null, ' '), fsOptions);
 };
+
+
+var countUndefinedNarrativeFileNames = function (nodes) {
+  var nullCount = 0;
+  var undefinedCount = 0;
+  var node;
+  for (var ldi = 0; ldi < nodes.length; ldi++) {
+    node = nodes[ldi];
+    if (typeof(node.narrativeFileName) === 'null') {
+      nullCount++;
+      continue;
+    }
+    if (typeof(node.narrativeFileName) === 'undefined') {
+      undefinedCount++;
+    }
+  }
+  console.log('\n\n ', __filename, 'line: ', __line, '; nullCount = ', nullCount, '; undefinedCount = ', undefinedCount, '; nodes.length = ', nodes.length, '\n\n');
+};
+
 
 // collect a named file from an Internet host and save it locally; specify indivOrEntityString equals a string either 'entity' or 'indiv'
 // save to json file: narrativeLinksLocalFileNameAndPath

@@ -64,6 +64,25 @@ var getCleanId = function (referenceNumber) {
   return refNumRegexMatch[0].trim();
 };
 
+var saveJsonFile = function (jsonData, fileName) {
+  var consoleLog = true;
+  try {
+    var myFile = __dirname + '/../data/output/' + fileName;
+    var myJsonData = JSON.stringify(jsonData, null, ' ');
+    fse.writeFileSync(myFile, myJsonData, fsOptions);
+    if (consoleLog) {
+      console.log('\n ', __filename, 'line', __line, '; saveJsonFile() wrote file to: ', myFile, ';  file contained (truncated): ', myJsonData.substring(0, 400), ' ... [CONSOLE LOG OUTPUT INTENTIONALLY TRUNCATED TO FIRST 400 CHARACTERS]\n\n');
+    }
+  } catch (e) {
+    if (consoleLog) {
+      console.log('\n ', __filename, 'line', __line, ';  Error: ', e);
+    }
+  }
+};
+
+
 module.exports = {
-  __line: __line
+  __line: __line,
+  generateNarrFileName: generateNarrFileName,
+  saveJsonFile: saveJsonFile
 };
