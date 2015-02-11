@@ -8,6 +8,52 @@ function forceUnicodeEncoding(string) {
   return unescape(encodeURIComponent(string));
 }
 
+//  clean up ids for consistency;  none should have trailing period.
+var getCleanId = function (referenceNumber) {
+  var refNumRegexMatch;
+  try {
+    refNumRegexMatch = referenceNumber.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/);
+  } catch (error) {
+    console.log('\n ', __filename, 'line', __line, '; Error: ', error, '; node =', node, '; counter = ', counter);
+  }
+  return refNumRegexMatch[0].trim();
+};
+
+var generateNarrFileName = function (node) {
+  var id = node.id.trim();
+  var idSplit = id.split('.');
+  var narrFileName = 'NSQ' + idSplit[0].substring(1, 2) + idSplit[2] + idSplit[3] + '.shtml';
+  console.log('\n ', __filename, 'line', __line, '; id = ', id, '; generated narrFileName = ', narrFileName);
+  return narrFileName;
+};
+
+
+var saveJsonFile = function (jsonData, fileName) {
+  var consoleLog = true;
+  try {
+    var myFile = __dirname + '/../data/output/' + fileName;
+    var myJsonData = JSON.stringify(jsonData, null, ' ');
+    fse.writeFileSync(myFile, myJsonData, fsOptions);
+    if (consoleLog) {
+      console.log('\n ', __filename, 'line', __line, '; saveJsonFile() wrote file to: ', myFile, ';  file contained (truncated): ', myJsonData.substring(0, 400), ' ... [CONSOLE LOG OUTPUT INTENTIONALLY TRUNCATED TO FIRST 400 CHARACTERS]\n\n');
+    }
+  } catch (e) {
+    if (consoleLog) {
+      console.log('\n ', __filename, 'line', __line, ';  Error: ', e);
+    }
+  }
+};
+
+// write data to a local file
+var syncWriteMyFile = function (localFileNameAndPath, data, fsOptions) {
+  try {
+    fse.writeFileSync(localFileNameAndPath, data, fsOptions);
+  } catch (err) {
+    console.log('\n ', __filename, 'line', __line, '; Error: ', err);
+  }
+};
+
+
 // parameter 'narrFileName' only provides information for debugging
 function trimNarrative(narrWebPageString, narrFileName) {
   var narrativeTrimError;
@@ -29,60 +75,12 @@ function trimNarrative(narrWebPageString, narrFileName) {
   return narrative3;
 }
 
-// write data to a local file
-var syncWriteMyFile = function (localFileNameAndPath, data, fsOptions) {
-  try {
-    fse.writeFileSync(localFileNameAndPath, data, fsOptions);
-  } catch (err) {
-    console.log('\n ', __filename, 'line', __line, '; Error: ', err);
-  }
-};
-
-module.exports = {
-  forceUnicodeEncoding: forceUnicodeEncoding,
-  trimNarrative: trimNarrative,
-  syncWriteMyFile: syncWriteMyFile
-
-};
-
-var generateNarrFileName = function (node) {
-  var id = node.id.trim();
-  var idSplit = id.split('.');
-  var narrFileName = 'NSQ' + idSplit[0].substring(1, 2) + idSplit[2] + idSplit[3] + '.shtml';
-  console.log('\n ', __filename, 'line', __line, '; id = ', id, '; generated narrFileName = ', narrFileName);
-  return narrFileName;
-};
-
-//  clean up ids for consistency;  none should have trailing period.
-var getCleanId = function (referenceNumber) {
-  var refNumRegexMatch;
-  try {
-    refNumRegexMatch = referenceNumber.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/);
-  } catch (error) {
-    console.log('\n ', __filename, 'line', __line, '; Error: ', error, '; node =', node, '; counter = ', counter);
-  }
-  return refNumRegexMatch[0].trim();
-};
-
-var saveJsonFile = function (jsonData, fileName) {
-  var consoleLog = true;
-  try {
-    var myFile = __dirname + '/../data/output/' + fileName;
-    var myJsonData = JSON.stringify(jsonData, null, ' ');
-    fse.writeFileSync(myFile, myJsonData, fsOptions);
-    if (consoleLog) {
-      console.log('\n ', __filename, 'line', __line, '; saveJsonFile() wrote file to: ', myFile, ';  file contained (truncated): ', myJsonData.substring(0, 400), ' ... [CONSOLE LOG OUTPUT INTENTIONALLY TRUNCATED TO FIRST 400 CHARACTERS]\n\n');
-    }
-  } catch (e) {
-    if (consoleLog) {
-      console.log('\n ', __filename, 'line', __line, ';  Error: ', e);
-    }
-  }
-};
-
-
 module.exports = {
   __line: __line,
+  forceUnicodeEncoding: forceUnicodeEncoding,
   generateNarrFileName: generateNarrFileName,
-  saveJsonFile: saveJsonFile
+  getCleanId: getCleanId,
+  saveJsonFile: saveJsonFile,
+  syncWriteMyFile: syncWriteMyFile,
+  trimNarrative: trimNarrative
 };

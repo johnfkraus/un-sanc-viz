@@ -3,10 +3,12 @@
     <words>
       <w>amdefine</w>
       <w>asyncronous</w>
+      <w>attribs</w>
       <w>dateformat</w>
       <w>dddd</w>
       <w>dirname</w>
       <w>filewalker</w>
+      <w>htmlparser</w>
       <w>httpresponseheader</w>
       <w>indiv</w>
       <w>linenums</w>
@@ -22,6 +24,7 @@
       <w>resized</w>
       <w>shtml</w>
       <w>soupselect</w>
+      <w>stringified</w>
       <w>substr</w>
       <w>trunc</w>
       <w>truncn</w>

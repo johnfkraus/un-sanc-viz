@@ -23,9 +23,10 @@ var fsOptions = {
 };
 var targetName = '';
 var anchor,
+  data,
   host,
   narrativeFileName,
-  outputFileNameAndPath,
+  // outputFileNameAndPath,
   paragraph,
   rows,
   row,
@@ -92,12 +93,38 @@ var getListOfNarratives = function () {
         callback();
       },
 
-      // We have the narrative links in the variable 'narrative_links'
-      // Loop through the narrative_links.json array, use it to open each downloaded narrative file
-      // Add the Internet file name as a property in each node of data
-   /*
+
+      // The UN list files omit some of the nodes.  In some cases, this appears to be an oversight.  In others, the node
+      // is no longer on the sanctions list.  There may be other reasons for the omission as well.
+      // If no narrative file name for a node could be found in the UN list files, we generate the expected file name
+      // based an observed relationship between a given nodes id and its narrative file name.
       function (callback) {
-        var nodeCounter = 0, buffer;
+        console.log('\n ', __filename, 'line', __line, '; function #:', ++functionCount, '; ');
+        // var narrCounter = 0;
+        var jsonFileName = __dirname + '/../data/output/AQList-clean.json';
+        data = JSON.parse(fse.readFileSync(jsonFileName));
+        var nodes = data.nodes;
+        countUndefinedNarrativeFileNames(nodes);
+        var node = null;
+        // check if the node.narrativeFileName is defined for each node
+        for (var ldi = 0; ldi < nodes.length; ldi++) {
+          node = nodes[ldi];
+          var narrativeFileNameIsMissing = (typeof(node.narrativeFileName) === 'null' || typeof(node.narrativeFileName) === 'undefined');
+          //          if (typeof(node.narrativeFileName) === 'null' || typeof(node.narrativeFileName) === 'undefined') {
+          if (narrativeFileNameIsMissing) {
+            node.narrativeFileName = utilities_aq_viz.generateNarrFileName(node);
+            console.log('\n ', __filename, 'line', __line, '; Generated narrative file name for node.id = ', node.id, '; ldi = ', ldi, '; node.name = ', node.name, '; node.noLongerListed = ', node.noLongerListed);
+          }
+        }
+        utilities_aq_viz.saveJsonFile(data, 'AQList-clean-fnames.json');
+        callback();
+      },
+
+
+
+      // Add the Internet file name as a property in each node of data
+      function (callback) {
+        var buffer;
         var AQListCleanJsonPath = __dirname + '/../data/output/AQList-clean.json';
         var data;
         try {
@@ -107,15 +134,15 @@ var getListOfNarratives = function () {
           console.log('\n ', __filename, 'line', __line, '; Error: ', err);
         }
         var node;
-        var nodes = data.nodes;
-        var linksId, dataId;
+        // var nodes = data.nodes;
+        // var linksId;
         var narrCounter = 0;
         console.log('\n ', __filename, 'line', __line, '; function #:', ++functionCount, '; ');
         var readNarrativeFilePath;
         var narrative;
-
+        var link_data_array_item;
         for (var ldi = 0; ldi < narrativeLinks.length; ldi++) {
-          narrCounter++;
+
           console.log(__filename, 'line', __line, '; narrCounter = ', narrCounter);
           link_data_array_item = narrativeLinks[ldi];
           readNarrativeFilePath = __dirname + '/../data/narrative_summaries/' + link_data_array_item.narrativeFileName;
@@ -139,45 +166,19 @@ var getListOfNarratives = function () {
               node.narrativeFileName = link_data_array_item.narrativeFileName;
             }
           }
-
+          narrCounter++;
           // Insert a single document
         }
 
         var narrativeLinksDocsPath = __dirname + '/../data/narrative_lists/narrative_links_docs.json';
         writeMyFile(narrativeLinksDocsPath, JSON.stringify(narrativeLinks, null, ' '), fsOptions);
-        var dataLocalFileNameAndPath = __dirname + '/../data/output/AQList-clean-docs.json';
-        writeMyFile(dataLocalFileNameAndPath, JSON.stringify(data, null, ' '), fsOptions);
+//        var dataLocalFileNameAndPath = __dirname + '/../data/output/AQList-clean-docs.json';
+//        writeMyFile(dataLocalFileNameAndPath, JSON.stringify(data, null, ' '), fsOptions);
         //        db.close();
         // });
         callback();
       },
-*/
 
-    // The UN list files omit some of the nodes.  In some cases, this appears to be an oversight.  In others, the node
-    // is no longer on the sanctions list.  There may be other reasons for the omission as well.
-    // If no narrative file name for a node could be found in the UN list files, we generate the expected file name
-    // based an observed relationship between a given nodes id and its narrative file name.
-    function (callback) {
-      console.log('\n ', __filename, 'line', __line, '; function #:', ++functionCount, '; ');
-      var narrCounter = 0;
-      var jsonFileName = __dirname + '/../data/output/AQList-clean.json';
-      data = JSON.parse(fse.readFileSync(jsonFileName));
-      var nodes = data.nodes;
-      countUndefinedNarrativeFileNames(nodes);
-      var node = null;
-      // check if the node.narrativeFileName is defined for each node
-      for (var ldi = 0; ldi < nodes.length; ldi++) {
-        node = nodes[ldi];
-        var narrativeFileNameIsMissing = (typeof(node.narrativeFileName) === 'null' || typeof(node.narrativeFileName) === 'undefined');
-        //          if (typeof(node.narrativeFileName) === 'null' || typeof(node.narrativeFileName) === 'undefined') {
-        if (narrativeFileNameIsMissing) {
-          node.narrativeFileName = generateNarrFileName(node);
-          console.log('\n ', __filename, 'line', __line, '; Generated narrative file name for node.id = ', node.id, '; ldi = ', ldi, '; node.name = ', node.name, '; node.noLongerListed = ', node.noLongerListed);
-        }
-      }
-      utilities_aq_viz.saveJsonFile(data, 'AQList-clean-fnames.json');
-
-    },
 
 
 
@@ -238,15 +239,16 @@ var asyncGetRawHtmlPagesWithNarrativeLinks = function (host, filePath, outputFil
       // soupselect happening here...
       // var titles = select(dom, 'a.title');
       rows = select(dom, 'table tr');
-      var rownum;
+      var rowNum;
       // sys.puts('Links from narrative list page');
       // loop through each table row
+      var narrLink;
       for (var i = 0; i < rows.length; i++) {
         // skip the header row
         if (i === 0) {
           continue;
         }
-        rownum = i;
+        rowNum = i;
         row = rows[i];
         // sys.puts('row[' + i + '] = ' + sys.inspect(JSON.stringify(row)));
         narrLink = {};
@@ -361,11 +363,10 @@ var countUndefinedNarrativeFileNames = function (nodes) {
   console.log('\n\n ', __filename, 'line: ', __line, '; nullCount = ', nullCount, '; undefinedCount = ', undefinedCount, '; nodes.length = ', nodes.length, '\n\n');
 };
 
-
-// collect a named file from an Internet host and save it locally; specify indivOrEntityString equals a string either 'entity' or 'indiv'
+/*
+// collect one of two named list files from an Internet host and save it locally; specify indivOrEntityString equals a string either 'entity' or 'indiv'
 // save to json file: narrativeLinksLocalFileNameAndPath
 var getRawHtmlPagesWithNarrativeLinks = function (host, filePath, outputFileNameAndPath, indivOrEntityString) {
-  // var host = 'www.un.org';
   var client = http.createClient(80, host);
   var requestAsync = client.request('GET', filePath, {'host': host});
   requestAsync.on('response', function (response) {
@@ -379,20 +380,19 @@ var getRawHtmlPagesWithNarrativeLinks = function (host, filePath, outputFileName
       var handler = new htmlparser.DefaultHandler(function (err, dom) {
         if (err) {
           console.log('\n ', __filename, 'line', __line, 'Error: ' + err);
-          //       sys.debug('Error: ' + err);
+          // sys.debug('Error: ' + err);
         } else {
           // soupselect happening here...
           // var titles = select(dom, 'a.title');
           rows = select(dom, 'table tr');
-          var rownum;
-          // sys.puts('Links from narrative list page');
+          var rowNum;
           // loop through each table row
           for (var i = 0; i < rows.length; i++) {
             // skip the header row
             if (i === 0) {
               continue;
             }
-            rownum = i;
+            rowNum = i;
             row = rows[i];
             // sys.puts('row[' + i + '] = ' + sys.inspect(JSON.stringify(row)));
             narrLink = {};
@@ -501,14 +501,19 @@ var getRawHtmlPagesWithNarrativeLinks = function (host, filePath, outputFileName
   // return narrativeLinks;
 };
 
+*/
+
+
+
 function forceUnicodeEncoding(string) {
   return unescape(encodeURIComponent(string));
 }
 
 function trimNarrative(narrWebPageString) {
+
   var narrative1 = narrWebPageString.replace(/([\r\n\t])/gm, ' ');
   var narrative2 = narrative1.replace(/(\s{2,})/gm, ' ');
-  narrative = narrative2.replace(/<!DOCTYPE HTML PUBLIC.*MAIN CONTENT BEGINS(.*?)TemplateEndEditable.*<\/html>/mi, '$1');
+  var narrative = narrative2.replace(/<!DOCTYPE HTML PUBLIC.*MAIN CONTENT BEGINS(.*?)TemplateEndEditable.*<\/html>/mi, '$1');
   return narrative;
 }
 

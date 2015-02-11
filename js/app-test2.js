@@ -27,6 +27,13 @@ var functionCount = 0;
 var __filename = __filename || {};
 var __line = __line || {};
 var consoleLog = true;
+var fsOptions = {
+  flags: 'r+',
+  encoding: 'utf-8',
+  autoClose: true
+};
+
+
 
 var runAppTest = function () {
 //  if (consoleLog) { console.log('\n ', __filename, __line, ', runApp\n');
@@ -40,10 +47,10 @@ var runAppTest = function () {
         if (consoleLog) {
           console.log('\n ', __filename, __line, '; Phase 1#:', ++functionCount, '; collect.convertXMLToJson)_');
         }
-        collect.convertXMLToJson(); //     setupData.fixData();
+        collect.collect();
         callback();
       },
-
+/*
       function (callback) {
         // collect raw data from the Internet
         if (consoleLog) {
@@ -55,7 +62,7 @@ var runAppTest = function () {
 
       function (callback) {
         if (consoleLog) {
-          console.log('\n ', __filename, __line, '; Phase 2#:', ++functionCount, '; getNarrativeList.getListOfNarratives()');
+          console.log('\n ', __filename, __line, '; Phase 3#:', ++functionCount, '; getNarrativeList.getListOfNarratives()');
         }
         getNarrativeList.getListOfNarratives();
         callback();
@@ -64,12 +71,12 @@ var runAppTest = function () {
       function (callback) {
         // collect raw data from the Internet
         if (consoleLog) {
-          console.log('\n ', __filename, __line, '; Phase 2#:', ++functionCount, '; collectNarratives.getTheNarratives()');
+          console.log('\n ', __filename, __line, '; Phase 4#:', ++functionCount, '; collectNarratives.getTheNarratives()');
         }
         collectNarratives.getTheNarratives();
         callback();
       },
-
+/*
       function (callback) {
         // collect raw data from the Internet
         if (consoleLog) {
