@@ -14,6 +14,11 @@ Object.defineProperty(global, '__stack', {
   }
 });
 
+/**
+ * @param {{getLineNumber:string}} __stack
+ * @param {{getLineNumber:function}} __stack
+ */
+
 Object.defineProperty(global, '__line', {
   get: function() {
     return __stack[1].getLineNumber();

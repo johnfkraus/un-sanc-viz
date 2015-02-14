@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<CONSOLIDATED_LIST dateGenerated="2015-02-02T00:00:00">
+<CONSOLIDATED_LIST dateGenerated="2015-02-11T00:00:00">
    <INDIVIDUALS>
       <INDIVIDUAL>
          <DATAID>111900</DATAID>
@@ -7697,6 +7697,53 @@
          <SORT_KEY_LAST_MOD>2010-10-21T00:00:00</SORT_KEY_LAST_MOD>
       </INDIVIDUAL>
       <INDIVIDUAL>
+         <DATAID>3170021</DATAID>
+         <VERSIONNUM>2</VERSIONNUM>
+         <FIRST_NAME>DENIS</FIRST_NAME>
+         <SECOND_NAME>MAMADOU</SECOND_NAME>
+         <THIRD_NAME>GERHARD</THIRD_NAME>
+         <FOURTH_NAME>CUSPERT</FOURTH_NAME>
+         <UN_LIST_TYPE>Al-Qaida</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>QI.C.347.15</REFERENCE_NUMBER>
+         <LISTED_ON>2015-02-11T00:00:00</LISTED_ON>
+         <COMMENTS1>Physical description: eye colour: brown; hair colour: black; height: 178cm; Tattoos: BROKEN DREAMS in letters (on back) and landscape of Africa (on right upper arm). Father’s name: Richard Luc-Giffard; Mother’s name: Sigrid Cuspert. European arrest warrant issued by investigating judge at the Federal Court of Justice of Germany, dated 14 May 2014 and 5 Dec. 2014.</COMMENTS1>
+         <NATIONALITY>
+            <VALUE>German</VALUE>
+         </NATIONALITY>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Low</QUALITY>
+            <ALIAS_NAME>Abu Talha al-Almani</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS>
+            <NOTE>Syria/Turkey border area as at Jan. 2015</NOTE>
+         </INDIVIDUAL_ADDRESS>
+         <INDIVIDUAL_ADDRESS>
+            <NOTE>Karl-Marx-Str. 210, 12055 Berlin, Germany (primary address).</NOTE>
+         </INDIVIDUAL_ADDRESS>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1975-10-18T00:00:00</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Berlin</CITY>
+            <COUNTRY>Germany</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_DOCUMENT>
+            <TYPE_OF_DOCUMENT>National Identification Number</TYPE_OF_DOCUMENT>
+            <NUMBER>2550439611</NUMBER>
+            <ISSUING_COUNTRY>German</ISSUING_COUNTRY>
+            <DATE_OF_ISSUE>2010-04-22 00:00:00.0</DATE_OF_ISSUE>
+            <CITY_OF_ISSUE>District Friedrichshain-Kreuzberg of Berlin</CITY_OF_ISSUE>
+            <COUNTRY_OF_ISSUE>Germany</COUNTRY_OF_ISSUE>
+            <NOTE>expires on 21 Apr. 2020</NOTE>
+         </INDIVIDUAL_DOCUMENT>
+         <SORT_KEY>CUSPERT DENIS MAMADOU GERHARD</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2015-02-11T00:00:00</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL>
          <DATAID>3162064</DATAID>
          <VERSIONNUM>1</VERSIONNUM>
          <FIRST_NAME>ANDERS</FIRST_NAME>
@@ -15390,7 +15437,7 @@
       </ENTITY>
       <ENTITY>
          <DATAID>113966</DATAID>
-         <VERSIONNUM>26</VERSIONNUM>
+         <VERSIONNUM>27</VERSIONNUM>
          <FIRST_NAME>AL-QAIDA IN IRAQ</FIRST_NAME>
          <UN_LIST_TYPE>Al-Qaida</UN_LIST_TYPE>
          <REFERENCE_NUMBER>QE.J.115.04.</REFERENCE_NUMBER>
