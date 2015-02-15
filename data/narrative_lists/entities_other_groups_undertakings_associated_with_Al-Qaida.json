@@ -3,490 +3,560 @@
   "id": "QE.A.1.01",
   "narrativeFileName": "NSQE00101E.shtml",
   "targetName": "Abu Sayyaf Group",
-  "entityOrIndiv": "entity",
-  "rowNum": 1
+  "indivOrEntityString": "entity",
+  "rowNum": 1,
+  "urlNum": 235
  },
  {
   "id": "QE.A.2.01",
   "narrativeFileName": "NSQE00201E.shtml",
   "targetName": "Al-Itihaad Al-Islamiya / AIAI",
-  "entityOrIndiv": "entity",
-  "rowNum": 2
+  "indivOrEntityString": "entity",
+  "rowNum": 2,
+  "urlNum": 236
  },
  {
   "id": "QE.A.3.01",
   "narrativeFileName": "NSQE00301E.shtml",
   "targetName": "Egyptian Islamic Jihad",
-  "entityOrIndiv": "entity",
-  "rowNum": 3
+  "indivOrEntityString": "entity",
+  "rowNum": 3,
+  "urlNum": 237
  },
  {
   "id": "QE.A.4.01",
   "narrativeFileName": "NSQE00401E.shtml",
   "targetName": "Al-Qaida",
-  "entityOrIndiv": "entity",
-  "rowNum": 4
+  "indivOrEntityString": "entity",
+  "rowNum": 4,
+  "urlNum": 238
  },
  {
   "id": "QE.A.5.01",
   "narrativeFileName": "NSQE00501E.shtml",
   "targetName": "Al Rashid Trust",
-  "entityOrIndiv": "entity",
-  "rowNum": 5
+  "indivOrEntityString": "entity",
+  "rowNum": 5,
+  "urlNum": 239
  },
  {
   "id": "QE.A.6.01",
   "narrativeFileName": "NSQE00601E.shtml",
   "targetName": "Armed Islamic Group",
-  "entityOrIndiv": "entity",
-  "rowNum": 6
+  "indivOrEntityString": "entity",
+  "rowNum": 6,
+  "urlNum": 240
  },
  {
   "id": "QE.A.7.01",
   "narrativeFileName": "NSQE00701E.shtml",
   "targetName": "Asbat Al-Ansar",
-  "entityOrIndiv": "entity",
-  "rowNum": 7
+  "indivOrEntityString": "entity",
+  "rowNum": 7,
+  "urlNum": 241
  },
  {
   "id": "QE.H.8.01",
   "narrativeFileName": "NSQE00801E.shtml",
   "targetName": "Harakat Ul-Mujahidin / HUM",
-  "entityOrIndiv": "entity",
-  "rowNum": 8
+  "indivOrEntityString": "entity",
+  "rowNum": 8,
+  "urlNum": 242
  },
  {
   "id": "QE.I.9.01",
   "narrativeFileName": "NSQE00901E.shtml",
   "targetName": "Islamic Army of Aden",
-  "entityOrIndiv": "entity",
-  "rowNum": 9
+  "indivOrEntityString": "entity",
+  "rowNum": 9,
+  "urlNum": 243
  },
  {
   "id": "QE.I.10.01",
   "narrativeFileName": "NSQE01001E.shtml",
   "targetName": "Islamic Movement Of Uzbekistan",
-  "entityOrIndiv": "entity",
-  "rowNum": 10
+  "indivOrEntityString": "entity",
+  "rowNum": 10,
+  "urlNum": 244
  },
  {
   "id": "QE.L.11.01",
   "narrativeFileName": "NSQE01101E.shtml",
   "targetName": "Libyan Islamic Fighting Group",
-  "entityOrIndiv": "entity",
-  "rowNum": 11
+  "indivOrEntityString": "entity",
+  "rowNum": 11,
+  "urlNum": 245
  },
  {
   "id": "QE.M.12.01",
   "narrativeFileName": "NSQE01201E.shtml",
   "targetName": "Makhtab al-Khidamat",
-  "entityOrIndiv": "entity",
-  "rowNum": 12
+  "indivOrEntityString": "entity",
+  "rowNum": 12,
+  "urlNum": 246
  },
  {
   "id": "QE.T.14.01",
   "narrativeFileName": "NSQE01401E.shtml",
   "targetName": "The Organization of Al-Qaida in the Islamic Maghreb",
-  "entityOrIndiv": "entity",
-  "rowNum": 13
+  "indivOrEntityString": "entity",
+  "rowNum": 13,
+  "urlNum": 247
  },
  {
   "id": "QE.W.15.01",
   "narrativeFileName": "NSQE01501E.shtml",
   "targetName": "Wafa Humanitarian Organization",
-  "entityOrIndiv": "entity",
-  "rowNum": 14
+  "indivOrEntityString": "entity",
+  "rowNum": 14,
+  "urlNum": 248
  },
  {
   "id": "QE.J.19.01",
   "narrativeFileName": "NSQE01901E.shtml",
   "targetName": "Jaish-i-Mohammed",
-  "entityOrIndiv": "entity",
-  "rowNum": 15
+  "indivOrEntityString": "entity",
+  "rowNum": 15,
+  "urlNum": 249
  },
  {
   "id": "QE.J.20.01",
   "narrativeFileName": "NSQE02001E.shtml",
-  "targetName": "Jam’yah Ta’awun Al-Islamia",
-  "entityOrIndiv": "entity",
-  "rowNum": 16
+  "targetName": "Jamâyah Taâawun Al-Islamia",
+  "indivOrEntityString": "entity",
+  "rowNum": 16,
+  "urlNum": 250
  },
  {
   "id": "QE.R.21.01",
   "narrativeFileName": "NSQE02101E.shtml",
   "targetName": "Rabita Trust",
-  "entityOrIndiv": "entity",
-  "rowNum": 17
+  "indivOrEntityString": "entity",
+  "rowNum": 17,
+  "urlNum": 251
  },
  {
   "id": "QE.U.68.01",
   "narrativeFileName": "NSQE06801E.shtml",
   "targetName": "Ummah Tameer E-Nau (UTN)",
-  "entityOrIndiv": "entity",
-  "rowNum": 18
+  "indivOrEntityString": "entity",
+  "rowNum": 18,
+  "urlNum": 252
  },
  {
   "id": "QE.A.69.02",
   "narrativeFileName": "NSQE06902E.shtml",
   "targetName": "Afghan Support Committee (ASC)",
-  "entityOrIndiv": "entity",
-  "rowNum": 19
+  "indivOrEntityString": "entity",
+  "rowNum": 19,
+  "urlNum": 253
  },
  {
   "id": "QE.R.70.02",
   "narrativeFileName": "NSQE07002E.shtml",
   "targetName": "Revival of Islamic Heritage Society",
-  "entityOrIndiv": "entity",
-  "rowNum": 20
+  "indivOrEntityString": "entity",
+  "rowNum": 20,
+  "urlNum": 254
  },
  {
   "id": "QE.A.71.02",
   "narrativeFileName": "NSQE07102E.shtml",
   "targetName": "Al-Haramain Islamic Foundation (Bosnia and Herzegovina)",
-  "entityOrIndiv": "entity",
-  "rowNum": 21
+  "indivOrEntityString": "entity",
+  "rowNum": 21,
+  "urlNum": 255
  },
  {
   "id": "QE.A.72.02",
   "narrativeFileName": "NSQE07202E.shtml",
   "targetName": "Al-Haramain Islamic Foundation (Somalia)",
-  "entityOrIndiv": "entity",
-  "rowNum": 22
+  "indivOrEntityString": "entity",
+  "rowNum": 22,
+  "urlNum": 256
  },
  {
   "id": "QE.E.88.02",
   "narrativeFileName": "NSQE08802E.shtml",
   "targetName": "Eastern Turkistan Islamic Movement",
-  "entityOrIndiv": "entity",
-  "rowNum": 23
+  "indivOrEntityString": "entity",
+  "rowNum": 23,
+  "urlNum": 257
  },
  {
   "id": "QE.M.89.02",
   "narrativeFileName": "NSQE08902E.shtml",
   "targetName": "Moroccan Islamic Combatant Group",
-  "entityOrIndiv": "entity",
-  "rowNum": 24
+  "indivOrEntityString": "entity",
+  "rowNum": 24,
+  "urlNum": 258
  },
  {
   "id": "QE.T.90.02",
   "narrativeFileName": "NSQE09002E.shtml",
   "targetName": "Tunisian Combatant Group",
-  "entityOrIndiv": "entity",
-  "rowNum": 25
+  "indivOrEntityString": "entity",
+  "rowNum": 25,
+  "urlNum": 259
  },
  {
   "id": "QE.G.91.02",
   "narrativeFileName": "NSQE09102E.shtml",
   "targetName": "Global Relief Foundation (GRF)",
-  "entityOrIndiv": "entity",
-  "rowNum": 26
+  "indivOrEntityString": "entity",
+  "rowNum": 26,
+  "urlNum": 260
  },
  {
   "id": "QE.J.92.02",
   "narrativeFileName": "NSQE09202E.shtml",
   "targetName": "Jemaah Islamiyah",
-  "entityOrIndiv": "entity",
-  "rowNum": 27
+  "indivOrEntityString": "entity",
+  "rowNum": 27,
+  "urlNum": 261
  },
  {
   "id": "QE.B.93.02",
   "narrativeFileName": "NSQE09302E.shtml",
   "targetName": "Benevolence International Foundation",
-  "entityOrIndiv": "entity",
-  "rowNum": 28
+  "indivOrEntityString": "entity",
+  "rowNum": 28,
+  "urlNum": 262
  },
  {
   "id": "QE.L.96.03",
   "narrativeFileName": "NSQE09603E.shtml",
   "targetName": "Lashkar i Jhangvi (LJ)",
-  "entityOrIndiv": "entity",
-  "rowNum": 29
+  "indivOrEntityString": "entity",
+  "rowNum": 29,
+  "urlNum": 263
  },
  {
   "id": "QE.A.98.03",
   "narrativeFileName": "NSQE09803E.shtml",
   "targetName": "Ansar al-Islam",
-  "entityOrIndiv": "entity",
-  "rowNum": 30
+  "indivOrEntityString": "entity",
+  "rowNum": 30,
+  "urlNum": 264
  },
  {
   "id": "QE.I.99.03",
   "narrativeFileName": "NSQE09903E.shtml",
   "targetName": "Islamic International Brigade (IIB)",
-  "entityOrIndiv": "entity",
-  "rowNum": 31
+  "indivOrEntityString": "entity",
+  "rowNum": 31,
+  "urlNum": 265
  },
  {
   "id": "QE.R.100.03",
   "narrativeFileName": "NSQE10003E.shtml",
   "targetName": "Riyadus-Salikhin Reconnaissance and Sabotage Battalion of Chechen Martyrs (RSRSBCM)",
-  "entityOrIndiv": "entity",
-  "rowNum": 32
+  "indivOrEntityString": "entity",
+  "rowNum": 32,
+  "urlNum": 266
  },
  {
   "id": "QE.S.101.03",
   "narrativeFileName": "NSQE10103E.shtml",
   "targetName": "Special Purpose Islamic Regiment (SPIR)",
-  "entityOrIndiv": "entity",
-  "rowNum": 33
+  "indivOrEntityString": "entity",
+  "rowNum": 33,
+  "urlNum": 267
  },
  {
   "id": "QE.D.102.03",
   "narrativeFileName": "NSQE10203E.shtml",
   "targetName": "\"Djamat Houmat Daawa Salafia (DHDS)\"",
-  "entityOrIndiv": "entity",
-  "rowNum": 34
+  "indivOrEntityString": "entity",
+  "rowNum": 34,
+  "urlNum": 268
  },
  {
   "id": "QE.A.103.04",
   "narrativeFileName": "NSQE10304E.shtml",
   "targetName": "Al-Haramain Foundation (Indonesia)",
-  "entityOrIndiv": "entity",
-  "rowNum": 35
+  "indivOrEntityString": "entity",
+  "rowNum": 35,
+  "urlNum": 269
  },
  {
   "id": "QE.A.104.04",
   "narrativeFileName": "NSQE10404E.shtml",
   "targetName": "Al-Haramain Foundation (Pakistan)",
-  "entityOrIndiv": "entity",
-  "rowNum": 36
+  "indivOrEntityString": "entity",
+  "rowNum": 36,
+  "urlNum": 270
  },
  {
   "id": "QE.A.105.04",
   "narrativeFileName": "NSQE10504E.shtml",
   "targetName": "Al-Haramayn Foundation (Kenya)",
-  "entityOrIndiv": "entity",
-  "rowNum": 37
+  "indivOrEntityString": "entity",
+  "rowNum": 37,
+  "urlNum": 271
  },
  {
   "id": "QE.A.106.04",
   "narrativeFileName": "NSQE10604E.shtml",
   "targetName": "Al-Haramayn Foundation (Tanzania)",
-  "entityOrIndiv": "entity",
-  "rowNum": 38
+  "indivOrEntityString": "entity",
+  "rowNum": 38,
+  "urlNum": 272
  },
  {
   "id": "QE.A.107.04",
   "narrativeFileName": "NSQE10704E.shtml",
   "targetName": "Al Furqan",
-  "entityOrIndiv": "entity",
-  "rowNum": 39
+  "indivOrEntityString": "entity",
+  "rowNum": 39,
+  "urlNum": 273
  },
  {
   "id": "QE.T.108.04",
   "narrativeFileName": "NSQE10804E.shtml",
   "targetName": "Taibah International-Bosnia Offices",
-  "entityOrIndiv": "entity",
-  "rowNum": 40
+  "indivOrEntityString": "entity",
+  "rowNum": 40,
+  "urlNum": 274
  },
  {
   "id": "QE.A.109.04",
   "narrativeFileName": "NSQE10904E.shtml",
   "targetName": "Al-Haramain &amp; Al Masjed Al-Aqsa Charity Foundation",
-  "entityOrIndiv": "entity",
-  "rowNum": 41
+  "indivOrEntityString": "entity",
+  "rowNum": 41,
+  "urlNum": 275
  },
  {
   "id": "QE.A.110.04",
   "narrativeFileName": "NSQE11004E.shtml",
   "targetName": "Al-Haramain: Afghanistan Branch",
-  "entityOrIndiv": "entity",
-  "rowNum": 42
+  "indivOrEntityString": "entity",
+  "rowNum": 42,
+  "urlNum": 276
  },
  {
   "id": "QE.A.111.04",
   "narrativeFileName": "NSQE11104E.shtml",
   "targetName": "Al-Haramain: Albania Branch",
-  "entityOrIndiv": "entity",
-  "rowNum": 43
+  "indivOrEntityString": "entity",
+  "rowNum": 43,
+  "urlNum": 277
  },
  {
   "id": "QE.A.112.04",
   "narrativeFileName": "NSQE11204E.shtml",
   "targetName": "Al-Haramain: Bangladesh Branch",
-  "entityOrIndiv": "entity",
-  "rowNum": 44
+  "indivOrEntityString": "entity",
+  "rowNum": 44,
+  "urlNum": 278
  },
  {
   "id": "QE.A.113.04",
   "narrativeFileName": "NSQE11304E.shtml",
   "targetName": "Al-Haramain: Ethiopia Branch",
-  "entityOrIndiv": "entity",
-  "rowNum": 45
+  "indivOrEntityString": "entity",
+  "rowNum": 45,
+  "urlNum": 279
  },
  {
   "id": "QE.A.114.04",
   "narrativeFileName": "NSQE11404E.shtml",
   "targetName": "Al-Haramain: The Netherlands Branch",
-  "entityOrIndiv": "entity",
-  "rowNum": 46
+  "indivOrEntityString": "entity",
+  "rowNum": 46,
+  "urlNum": 280
  },
  {
   "id": "QE.J.115.04",
   "narrativeFileName": "NSQE11504E.shtml",
   "targetName": "Al-Qaida in Iraq",
-  "entityOrIndiv": "entity",
-  "rowNum": 47
+  "indivOrEntityString": "entity",
+  "rowNum": 47,
+  "urlNum": 281
  },
  {
   "id": "QE.A.116.04",
   "narrativeFileName": "NSQE11604E.shtml",
   "targetName": "Al-Haramain Foundation (Union of the Comoros)",
-  "entityOrIndiv": "entity",
-  "rowNum": 48
+  "indivOrEntityString": "entity",
+  "rowNum": 48,
+  "urlNum": 282
  },
  {
   "id": "QE.L.118.05",
   "narrativeFileName": "NSQE11805E.shtml",
   "targetName": "Lashkar-E-Tayyiba",
-  "entityOrIndiv": "entity",
-  "rowNum": 49
+  "indivOrEntityString": "entity",
+  "rowNum": 49,
+  "urlNum": 283
  },
  {
   "id": "QE.I.119.05",
   "narrativeFileName": "NSQE11905E.shtml",
   "targetName": "Islamic Jihad Group",
-  "entityOrIndiv": "entity",
-  "rowNum": 50
+  "indivOrEntityString": "entity",
+  "rowNum": 50,
+  "urlNum": 284
  },
  {
   "id": "QE.A.121.05",
   "narrativeFileName": "NSQE12105E.shtml",
   "targetName": "Al-Akhtar Trust International",
-  "entityOrIndiv": "entity",
-  "rowNum": 51
+  "indivOrEntityString": "entity",
+  "rowNum": 51,
+  "urlNum": 285
  },
  {
   "id": "QE.R.128.08",
   "narrativeFileName": "NSQE12808E.shtml",
   "targetName": "Rajah Solaiman Movement",
-  "entityOrIndiv": "entity",
-  "rowNum": 52
+  "indivOrEntityString": "entity",
+  "rowNum": 52,
+  "urlNum": 286
  },
  {
   "id": "QE.A.129.10",
   "narrativeFileName": "NSQE12910E.shtml",
   "targetName": "Al-Qaida in the Arabian Peninsula",
-  "entityOrIndiv": "entity",
-  "rowNum": 53
+  "indivOrEntityString": "entity",
+  "rowNum": 53,
+  "urlNum": 287
  },
  {
   "id": "QE.H.130.10",
   "narrativeFileName": "NSQE13010E.shtml",
   "targetName": "Harakat-ul Jihad Islami",
-  "entityOrIndiv": "entity",
-  "rowNum": 54
+  "indivOrEntityString": "entity",
+  "rowNum": 54,
+  "urlNum": 288
  },
  {
   "id": "QE.E.131.11",
   "narrativeFileName": "NSQE13111E.shtml",
   "targetName": "Emarat Kavkaz",
-  "entityOrIndiv": "entity",
-  "rowNum": 55
+  "indivOrEntityString": "entity",
+  "rowNum": 55,
+  "urlNum": 289
  },
  {
   "id": "QE.T.132.11",
   "narrativeFileName": "NSQE13211E.shtml",
   "targetName": "Tehrik-e Taliban Pakistan (TTP)",
-  "entityOrIndiv": "entity",
-  "rowNum": 56
+  "indivOrEntityString": "entity",
+  "rowNum": 56,
+  "urlNum": 290
  },
  {
   "id": "QE.J.133.12",
   "narrativeFileName": "NSQE13312E.shtml",
   "targetName": "Jemmad Anshorut Tauhid",
-  "entityOrIndiv": "entity",
-  "rowNum": 57
+  "indivOrEntityString": "entity",
+  "rowNum": 57,
+  "urlNum": 291
  },
  {
   "id": "QE.M.134.12",
   "narrativeFileName": "NSQE13412E.shtml",
-  "targetName": "Mouvement pour l’Unification et le Jihad en Afrique de l’Ouest (MUJAO)",
-  "entityOrIndiv": "entity",
-  "rowNum": 58
+  "targetName": "Mouvement pour lâUnification et le Jihad en Afrique de lâOuest (MUJAO)",
+  "indivOrEntityString": "entity",
+  "rowNum": 58,
+  "urlNum": 292
  },
  {
   "id": "QE.A.135.13",
   "narrativeFileName": "NSQE13513E.shtml",
   "targetName": "Ansar Eddine",
-  "entityOrIndiv": "entity",
-  "rowNum": 59
+  "indivOrEntityString": "entity",
+  "rowNum": 59,
+  "urlNum": 293
  },
  {
   "id": "QE.M.136.13",
   "narrativeFileName": "NSQE13613E.shtml",
   "targetName": "Muhammad Jamal Network (MJN)",
-  "entityOrIndiv": "entity",
-  "rowNum": 60
+  "indivOrEntityString": "entity",
+  "rowNum": 60,
+  "urlNum": 294
  },
  {
   "id": "QE.A.137.14",
   "narrativeFileName": "NSQE13714E.shtml",
   "targetName": "Al-Nusrah Front for the People of the Levant",
-  "entityOrIndiv": "entity",
-  "rowNum": 61
+  "indivOrEntityString": "entity",
+  "rowNum": 61,
+  "urlNum": 295
  },
  {
   "id": "QE.B.138.14",
   "narrativeFileName": "NSQE13814E.shtml",
   "targetName": "Jama'atu Ahlus-Sunna Lidda'Awati Wal Jihad (Boko Haram)",
-  "entityOrIndiv": "entity",
-  "rowNum": 62
+  "indivOrEntityString": "entity",
+  "rowNum": 62,
+  "urlNum": 296
  },
  {
   "id": "QE.M.139.14",
   "narrativeFileName": "NSQE13914E.shtml",
   "targetName": "Al Mouakaoune Biddam",
-  "entityOrIndiv": "entity",
-  "rowNum": 63
+  "indivOrEntityString": "entity",
+  "rowNum": 63,
+  "urlNum": 297
  },
  {
   "id": "QE.M.140.14",
   "narrativeFileName": "NSQE14014E.shtml",
   "targetName": "Al Moulathamoun",
-  "entityOrIndiv": "entity",
-  "rowNum": 64
+  "indivOrEntityString": "entity",
+  "rowNum": 64,
+  "urlNum": 298
  },
  {
   "id": "QE.M.141.14",
   "narrativeFileName": "NSQE14114E.shtml",
   "targetName": "Al Mourabitoun",
-  "entityOrIndiv": "entity",
-  "rowNum": 65
+  "indivOrEntityString": "entity",
+  "rowNum": 65,
+  "urlNum": 299
  },
  {
   "id": "QE.A.142.14",
   "narrativeFileName": "NSQE14214E.shtml",
   "targetName": "Ansarul Muslimina Fi Biladis-Sudan",
-  "entityOrIndiv": "entity",
-  "rowNum": 66
+  "indivOrEntityString": "entity",
+  "rowNum": 66,
+  "urlNum": 300
  },
  {
   "id": "QE.A.143.14",
   "narrativeFileName": "NSQE14314E.shtml",
-  "targetName": "Ansar al-Shari’a in Tunisia (AAS-T)",
-  "entityOrIndiv": "entity",
-  "rowNum": 67
+  "targetName": "Ansar al-Shariâa in Tunisia (AAS-T)",
+  "indivOrEntityString": "entity",
+  "rowNum": 67,
+  "urlNum": 301
  },
  {
   "id": "QE.A.144.14",
   "narrativeFileName": "NSQE14414E.shtml",
   "targetName": "Abdallah Azzam Brigades (AAB)",
-  "entityOrIndiv": "entity",
-  "rowNum": 68
+  "indivOrEntityString": "entity",
+  "rowNum": 68,
+  "urlNum": 302
  },
  {
   "id": "QE.A.145.14",
   "narrativeFileName": "NSQE14514E.shtml",
   "targetName": "Ansar al Charia Derna",
-  "entityOrIndiv": "entity",
-  "rowNum": 69
+  "indivOrEntityString": "entity",
+  "rowNum": 69,
+  "urlNum": 303
  },
  {
   "id": "QE.A.146.14",
   "narrativeFileName": "NSQE14614E.shtml",
   "targetName": "Ansar al Charia Benghazi",
-  "entityOrIndiv": "entity",
-  "rowNum": 70
+  "indivOrEntityString": "entity",
+  "rowNum": 70,
+  "urlNum": 304
  }
 ]

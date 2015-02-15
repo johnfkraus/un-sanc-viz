@@ -47,16 +47,10 @@ var fixData = function () {
   }
   var functionCount = 0;
   var linksFromComments = [];
-  // var aliasCount = 0;
-  // var aliasArray = [];
   var linkRegexMatch;
-  //  var connection;
   var missing_ents;
   var missing_indivs;
-  // var ents = [];
-  // var indivs = [];
   var config;
-//  var __filename = __filename || {};
   var consolidatedList;
 
   async.series([
