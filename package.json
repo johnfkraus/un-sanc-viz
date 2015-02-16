@@ -35,10 +35,13 @@
     "xml2js": "^0.4.4",
     "xml2json": "^0.5.1"
   },
+  "engines": {
+      "npm": "2.4.x",
+    "node": "0.10.x"
+    
+  },
   "devDependencies": {
-    "coffee-script": "^1.8.0",
-    "chai": "*",
-    "mocha": "*"
+    "coffee-script": "^1.8.0"
   },
   "scripts": {
     "test": "test"
