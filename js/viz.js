@@ -606,24 +606,35 @@ Network = function () {
 //  Removes links from allLinks whose source or target is not present in curNodes
 //  Returns array of links
 
-  filterLinks = function (allLinks, curNodes) {
-    curNodes = mapNodes(curNodes);
-    return allLinks.filter(function (l) {
-      if ((typeof l.target === 'undefined') && (l.target) === null) {
-        console.log("\n ", " viz.js ", "line", " 613 or so ", "; Error null target where l.source.id = ", l.source.id, "; l.source = ", JSON.stringify(l.source, null, " "));
-      }
-      try {
-        if ((typeof l.target.id === 'undefined') && (l.target.id) === null) {
-          console.log("\n ", " viz.js ", "line", " 617 or so ", "; Error null target id where l.source.id = ", l.source.id, "; l.source = ", JSON.stringify(l.source, null, " "));
+//  filterLinks = function (allLinks, curNodes) {
+//    curNodes = mapNodes(curNodes);
+
+    filterLinks = function (allLinks, curNodes) {
+      curNodes = mapNodes(curNodes);
+      return allLinks.filter(function (l) {
+        if ((typeof l.target === 'undefined') && (l.target) === null) {
+          console.log('filename: viz.js, line approx. 616;  Error null target where l.source.id = ', l.source.id, '; l.source = ', JSON.stringify(l.source));
         }
-      } catch (error) {
-        console.log("\n ", " viz.js ", "line", " 620 or so ", "; Error: ", error, "; null target id where l.source.id = ", l.source.id, ";\nl.source = ", JSON.stringify(l.source, null, " "));
-      }
-      if ((typeof curNodes.get(l.target) !== 'undefined') && (typeof curNodes.get(l.target.id) !== 'undefined') && (curNodes.get(l.target.id) !== null)) {
-        return curNodes.get(l.source.id) && curNodes.get(l.target.id);
-      }
-    });
-  };
+        try {
+          if ((typeof l.target.id === 'undefined') && (l.target.id) === null) {
+            console.log('filename: viz.js, line approx. 620; Error null target id where l.source.id = ', l.source.id, '; l.source = ', JSON.stringify(l.source));
+          }
+        } catch (err) {
+          console.log('filename: viz.js, line approx. 623;  Error: ', err, '; null target id where l.source.id = ', l.source.id, '; l.source = ', JSON.stringify(l.source));
+        }
+        try {
+          if ((typeof curNodes.get(l.target.id) !== 'undefined') && (curNodes.get(l.target.id) !== null)) {
+            return curNodes.get(l.source.id) && curNodes.get(l.target.id);
+          }
+        } catch (err)  {
+          console.log('filename: viz.js, line approx. 623;  Error: ', err);
+
+        }
+      });
+    };
+
+
+
 //  enter/exit display for nodes
   network.updateNodes = function () {
     node = nodesG.selectAll("circle.node")
@@ -640,7 +651,7 @@ Network = function () {
         return d.y;
       })
       .attr("r", function (d) {
-
+        console.log('d.radius = ', d.radius);
         return (d.radius);
       })
       .style("fill", function (d) {
@@ -1203,7 +1214,7 @@ $(function () {
     }
 
     // LOAD THE JSON DATA FILE HERE
-    return d3.json("data/output/AQList-clean-links.json", function (json) {
+    return d3.json("data/output/data.json", function (json) {
       return myNetwork("#svg", json);
     });
   }

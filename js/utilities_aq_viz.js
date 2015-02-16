@@ -13,24 +13,16 @@ var linenums = require('./linenums.js');
 require('console-stamp')(console, '[HH:MM:ss.l]');
 var logger = require('./libs/logger.js');
 var message;
-function forceUnicodeEncoding(string) {
-  return unescape(encodeURIComponent(string));
-}
+
+var addFileLabel = function(inString, fileName) {
+  return '<!-- http://www.un.org/sc/committees/1267/' + fileName + ' -->' + inString;
+};
+
 // var Args = require("vargs").Constructor;
 
 var countLines = function (textFile) {
   var i;
   var count = 0;
-  // require('fs').createReadStream(process.argv[2])
-
-//  fse.createReadStream(textFile) //process.argv[2])
-  /**
-   * @param {{some_unres_var:string}} data
-   */
-//  function getData(data){
-//    console.log(data.some_unres_var);
-    // }
-
   fse.createReadStream(textFile).on('data', function (chunk) {
     for (i = 0; i < chunk.length; ++i)
       if (chunk[i] == 10) count++;
@@ -40,6 +32,7 @@ var countLines = function (textFile) {
     });
   return count;
 };
+
 // return true if inString contained the string 'Error: Page Not Found', else return false
 var errorPageReturned = function (inString) {
 
@@ -55,6 +48,17 @@ var errorPageReturned = function (inString) {
     return false;
   }
 };
+
+var forceUnicodeEncoding = function (string) {
+  console.log('string = ', string);
+  var string1= string.replace(/’/gm, "'");
+  var string2= string1.replace(/“/gm, '"');
+  var string3 = string2.replace(/”/gm, '"');
+  //  attache  é
+  var result = unescape(encodeURIComponent(string3));
+  return result.trim();
+}
+
 
 var formatMyDate = function (dateString) {
 // Basic usage
@@ -91,31 +95,13 @@ var generateNarrFileName = function (node) {
   var idSplit = (node.id).trim().split('.');
   // id = id.trim();
   // var idSplit = id.split('.');
-  var narrFileName = 'NSQ' + idSplit[0].substring(1, 2) + idSplit[2] + idSplit[3] + '.shtml';
+  var narrFileName = 'NSQ' + idSplit[0].substring(1, 2) + idSplit[2] + idSplit[3] + 'E.shtml';
   if (consoleLog) {
     console.log(__filename, ' line ', __line, '; node.id = ', node.id, '; generated narrFileName = ', narrFileName);
   }
   logger.log_message([__filename, ' line ', __line, '; node.id = ', node.id, '; generated narrFileName = ', narrFileName].join(''));
   return narrFileName.trim();
 };
-
-/*
- var writeJsonFile = function (jsonData, fileName) {
- var consoleLog = true;
- try {
- var writeFileNameAndPath = __dirname + '/../data/output/' + fileName;
- var stringifiedJsonData = JSON.stringify(jsonData, null, ' ');
- fse.writeFileSync(writeFileNameAndPath, stringifiedJsonData, fsOptions);
- if (consoleLog) {
- console.log( __filename, 'line', __line, '; utilities_aq_viz.writeJsonFile() wrote file to: ', writeFileNameAndPath, ';  file contained (truncated): ', myJsonData.substring(0, 400), ' ... [CONSOLE LOG OUTPUT INTENTIONALLY TRUNCATED TO FIRST 400 CHARACTERS]\n\n');
- }
- } catch (err) {
- if (consoleLog) {
- console.log( __filename, 'line', __line, ';  Error: ', err);
- }
- }
- };
- */
 
 var stringifyAndWriteJsonDataFile = function (data, writeFileNameAndPath) {
   var truncateToNumChars = 400;
@@ -153,23 +139,28 @@ var truncateStringToFirstNumChars = function (inString, truncateToFirstNumChars)
 function trimNarrative(narrWebPageString) {
   // var narrativeTrimError;
   // remove all CR, newline and tab characters from the narrative file
+
+  var narrative0 = narrWebPageString.replace('’', "'");
+
   var narrative1 = narrWebPageString.replace(/([\r\n\t])/gm, ' ');
   // replace any occurrence of two or more space characters with one space character
   var narrative2 = narrative1.replace(/(\s{2,})/gm, ' ');
   // remove paragraphs containing non-breaking space; they mess up the rendered page by adding too many blank lines
   var narrative2a = narrative2.replace(/<p>&nbsp;<\/p>/gmi, '');
   // extract main content from web page; omit head, footer, etc.
-
   var narrative3 = narrative2a.replace(/(.*NARRATIVE SUMMARIES OF REASONS FOR LISTING<\/h3>)(.*?)(<!-- TemplateEndEditable.*)/mi, '$2');
-
 //  var narrative3 = narrative2a.replace(/(.*>=?NARRATIVE SUMMARIES OF REASONS FOR LISTING<\/h3>)(.*)(<div id='footer'>.*)/mi, '$2');
+// special regex for NSQE00401E.shtml, AL QAIDA, narrative page.
+//   (.*NARRATIVE SUMMARIES OF REASONS FOR LISTING<\/h3>)(.*?)(<\/div>\s*<div id="footer".*)
+  var narrative4 = narrative3.replace(/(.*NARRATIVE SUMMARIES OF REASONS FOR LISTING<\/h3>)(.*?)(<\/div>\s*<div id="footer".*)/mi, '$2');
   var tail = narrative3.substring(narrative3.length - 120, narrative3.length);
   var tailOmitsChars = (narrative3.length - tail.length);
   if (narrative3.length >= narrative2a.length) {
     console.log(__filename, ' line ', __line, '; tail = [FIRST', tailOmitsChars, 'CHARACTERS INTENTIONALLY OMITTED]', tail, '\nnarrative1.length = ', narrative1.length, '\nnarrative2.length = ', narrative2.length, '\nnarrative2a.length = ', narrative2a.length, '\nnarrative3.length = ', narrative3.length, '\ntail.length = ', tail.length, '\nnarrative3.substring(0,300) = ', narrative3.substring(0, 300));
     logger.log_message([__filename, ' line ', __line, '; tail = [FIRST', tailOmitsChars, 'CHARACTERS INTENTIONALLY OMITTED]', tail, '\n  narrative1.length = ', narrative1.length, '\n  narrative2.length = ', narrative2.length, '\n  narrative2a.length = ', narrative2a.length, '\n  narrative3.length = ', narrative3.length, '\n  tail.length = ', tail.length, '\n  narrative3.substring(0,300) = ', narrative3.substring(0, 300)].join(''));
   }
-  return narrative3.trim();
+//  narrative5 = addFileLabel(narrative4);
+  return narrative4.trim();
 }
 
 var validateUrl = function (url) {
@@ -184,16 +175,16 @@ var validateUrl = function (url) {
 };
 
 module.exports = {
-//  __line: __line,
+  addFileLabel: addFileLabel,
   errorPageReturned: errorPageReturned,
   forceUnicodeEncoding: forceUnicodeEncoding,
   formatMyDate: formatMyDate,
   generateNarrFileName: generateNarrFileName,
   getCleanId: getCleanId,
-//  writeJsonFile: writeJsonFile,
   stringifyAndWriteJsonDataFile: stringifyAndWriteJsonDataFile,
   syncWriteMyFile: syncWriteMyFile,
   trimNarrative: trimNarrative,
   validateUrl: validateUrl
 };
+
 

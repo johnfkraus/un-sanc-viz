@@ -2,11 +2,14 @@
 //================
 var fs = require('fs');
 var sysDate = new Date();
-var illegalLogFileName = 'log/aq-list-viz' + new Date()
-    .toDateString()+  sysDate.toTimeString()+ '.log';
-var legalLogFileName = illegalLogFileName.replace(':','-');
-
-var filename = legalLogFileName; //
+var illegalLogFileName = 'log/aq-list-viz-' + new Date()
+    .toDateString()+ '-' + sysDate.toTimeString()+ '.log';
+console.log('logger.js illegalLogFileName = ', illegalLogFileName);
+var legalLogFileName1 = illegalLogFileName.replace(':','-');
+console.log('logger.js legalLogFileName = ', legalLogFileName1);
+var legalLogFileName2 = legalLogFileName1.replace(' ','_');
+var legalLogFileName3 = legalLogFileName2 + '.log';
+var filename = legalLogFileName3; //
 // 'log/aq-list-viz' + new Date()
 //    .toDateString()+  sysDate.toTimeString()+ '.log';
 var last_message = {
