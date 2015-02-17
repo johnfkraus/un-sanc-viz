@@ -14,21 +14,21 @@ var Db = require('mongodb').Db,
 
 var db = new Db('test', new Server('localhost', 27017));
 // Establish connection to db
-db.open(function(err, db) {
+db.open(function (err, db) {
   // Get the collection
   var col = db.collection('batch_write_unordered_ops_legacy_0');
   // Initialize the unordered Batch
   var batch = col.initializeUnorderedBulkOp({useLegacyOps: true});
 
   // Add some operations to be executed in order
-  batch.insert({a:1});
-  batch.find({a:1}).updateOne({$set: {b:1}});
-  batch.find({a:2}).upsert().updateOne({$set: {b:2}});
-  batch.insert({a:3});
-  batch.find({a:3}).remove({a:3});
+  batch.insert({a: 1});
+  batch.find({a: 1}).updateOne({$set: {b: 1}});
+  batch.find({a: 2}).upsert().updateOne({$set: {b: 2}});
+  batch.insert({a: 3});
+  batch.find({a: 3}).remove({a: 3});
 
   // Execute the operations
-  batch.execute(function(err, result) {
+  batch.execute(function (err, result) {
     // Check state of result
     assert.equal(2, result.nInserted);
     assert.equal(1, result.nUpserted);

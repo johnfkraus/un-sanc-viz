@@ -86,23 +86,23 @@ var mongodbUpsert = function (narrFileName) {
         callback();
       }
 // count the documents
-/*      function (callback) {
+      /*      function (callback) {
 
-        MongoClient.connect(url, function (err, db) {
-          assert.equal(null, err);
-          console.log('Connected correctly to server');
-          db.collection('narratives').find({}).toArray(function (err, docs) {
-            assert.equal(err, null);
-            // assert.equal(2, docs.length);
-            console.log('docs.length = ', docs.length);
-            console.log('Found the following records');
-            console.dir(JSON.stringify(docs).substring(0,400));
-            db.close();
-          });
-        });
-        callback();
-      }
-  */
+       MongoClient.connect(url, function (err, db) {
+       assert.equal(null, err);
+       console.log('Connected correctly to server');
+       db.collection('narratives').find({}).toArray(function (err, docs) {
+       assert.equal(err, null);
+       // assert.equal(2, docs.length);
+       console.log('docs.length = ', docs.length);
+       console.log('Found the following records');
+       console.dir(JSON.stringify(docs).substring(0,400));
+       db.close();
+       });
+       });
+       callback();
+       }
+       */
     ],
     function (err) {
       console.log('\n ', __filename, 'line', __line, '; function #:', ++functionCount, '; ');

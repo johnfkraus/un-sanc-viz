@@ -4,7 +4,7 @@
 
 // console.log("\n ", __filename, "line", __line, ";  screenWidth = ", screenWidth);
 
-(function(w) {
+(function (w) {
   $.ajax({
     type: 'POST',
     url: '/echo/json',
@@ -12,7 +12,7 @@
       w: w.screen.width,
       h: w.screen.height
     },
-    success: function() {
+    success: function () {
       console.log(arguments);
     },
     dataType: 'json'

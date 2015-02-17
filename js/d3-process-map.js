@@ -2,14 +2,14 @@ var graph = {},
   selected = {},
   highlighted = null;
 
-$(function() {
+$(function () {
   resize();
 
   d3.json(config.jsonUrl,
-    function(data) {
-      if(data) {
+    function (data) {
+      if (data) {
 
-        if(data.errors.length) {
+        if (data.errors.length) {
           var errorString = data.errors.join('\n');
           console.log(errorString);
           alert('Data error(s):\n\n' + data.errors.join('\n'));
@@ -22,16 +22,16 @@ $(function() {
     });
 
   $('#docs-close')
-    .on('click', function() {
+    .on('click', function () {
       deselectObject();
       return false;
     });
 
   $(document)
-    .on('click', '.select-object', function() {
+    .on('click', '.select-object', function () {
       var obj = graph.data[$(this)
         .data('name')];
-      if(obj) {
+      if (obj) {
         selectObject(obj);
       }
       return false;
@@ -64,19 +64,19 @@ function drawGraph() {
   $('#graph')
     .css('display', display);
 
-  for(var name in graph.data) {
+  for (var name in graph.data) {
     var obj = graph.data[name];
     obj.positionConstraints = [];
     obj.linkStrength = 1;
 
-    config.constraints.forEach(function(c) {
-      for(var k in c.has) {
-        if(c.has[k] !== obj[k]) {
+    config.constraints.forEach(function (c) {
+      for (var k in c.has) {
+        if (c.has[k] !== obj[k]) {
           return true;
         }
       }
 
-      switch(c.type) {
+      switch (c.type) {
         case 'position':
           obj.positionConstraints.push({
             weight: c.weight,
@@ -93,9 +93,9 @@ function drawGraph() {
   }
 
   graph.links = [];
-  for(var name in graph.data) {
+  for (var name in graph.data) {
     var obj = graph.data[name];
-    for(var depIndex in obj.depends) {
+    for (var depIndex in obj.depends) {
       var link = {
         source: graph.data[obj.depends[depIndex]],
         target: obj
@@ -106,13 +106,13 @@ function drawGraph() {
   }
 
   graph.categories = {};
-  for(var name in graph.data) {
+  for (var name in graph.data) {
     var obj = graph.data[name],
       key = obj.type + ':' + (obj.group || ''),
       cat = graph.categories[key];
 
     obj.categoryKey = key;
-    if(!cat) {
+    if (!cat) {
       cat = graph.categories[key] = {
         key: key,
         type: obj.type,
@@ -130,7 +130,7 @@ function drawGraph() {
   function getColorScale(darkness) {
     return d3.scale.ordinal()
       .domain(graph.categoryKeys)
-      .range(graph.colors.map(function(c) {
+      .range(graph.colors.map(function (c) {
         return d3.hsl(c)
           .darker(darkness)
           .toString();
@@ -145,7 +145,7 @@ function drawGraph() {
   graph.force = d3.layout.force()
     .nodes(graph.nodeValues)
     .links(graph.links)
-    .linkStrength(function(d) {
+    .linkStrength(function (d) {
       return d.strength;
     })
     .size([graph.width, graph.height])
@@ -224,29 +224,29 @@ function drawGraph() {
 
   graph.legend.append('rect')
     .attr('x', graph.legendConfig.xOffset)
-    .attr('y', function(d, i) {
+    .attr('y', function (d, i) {
       return graph.legendConfig.yOffset + i * graph.legendConfig.lineHeight;
     })
     .attr('height', graph.legendConfig.rectHeight)
     .attr('width', graph.legendConfig.rectWidth)
-    .attr('fill', function(d) {
+    .attr('fill', function (d) {
       return graph.fillColor(d.key);
     })
-    .attr('stroke', function(d) {
+    .attr('stroke', function (d) {
       return graph.strokeColor(d.key);
     });
 
   graph.legend.append('text')
     .attr('x', graph.legendConfig.xOffsetText)
-    .attr('y', function(d, i) {
+    .attr('y', function (d, i) {
       return graph.legendConfig.yOffsetText + i * graph.legendConfig.lineHeight;
     })
-    .text(function(d) {
+    .text(function (d) {
       return d.typeName + (d.group ? ': ' + d.group : '');
     });
 
   $('#graph-container')
-    .on('scroll', function() {
+    .on('scroll', function () {
       graph.legend.attr('transform', 'translate(0,' + $(this)
         .scrollTop() + ')');
     });
@@ -267,41 +267,41 @@ function drawGraph() {
     var threshold = graph.draggedThreshold(graph.force.alpha()),
       dx = d.oldX - d.px,
       dy = d.oldY - d.py;
-    if(Math.abs(dx) >= threshold || Math.abs(dy) >= threshold) {
+    if (Math.abs(dx) >= threshold || Math.abs(dy) >= threshold) {
       d.dragged = true;
     }
     return d.dragged;
   }
 
   graph.drag = d3.behavior.drag()
-    .origin(function(d) {
+    .origin(function (d) {
       return d;
     })
-    .on('dragstart', function(d) {
+    .on('dragstart', function (d) {
       d.oldX = d.x;
       d.oldY = d.y;
       d.dragged = false;
       d.fixed |= 2;
     })
-    .on('drag', function(d) {
+    .on('drag', function (d) {
       d.px = d3.event.x;
       d.py = d3.event.y;
-      if(dragged(d)) {
-        if(!graph.force.alpha()) {
+      if (dragged(d)) {
+        if (!graph.force.alpha()) {
           graph.force.alpha(.025);
         }
       }
     })
-    .on('dragend', function(d) {
-      if(!dragged(d)) {
+    .on('dragend', function (d) {
+      if (!dragged(d)) {
         selectObject(d, this);
       }
       d.fixed &= ~6;
     });
 
   $('#graph-container')
-    .on('click', function(e) {
-      if(!$(e.target)
+    .on('click', function (e) {
+      if (!$(e.target)
           .closest('.node')
           .length) {
         deselectObject();
@@ -314,22 +314,22 @@ function drawGraph() {
     .append('g')
     .attr('class', 'node')
     .call(graph.drag)
-    .on('mouseover', function(d) {
-      if(!selected.obj) {
-        if(graph.mouseoutTimeout) {
+    .on('mouseover', function (d) {
+      if (!selected.obj) {
+        if (graph.mouseoutTimeout) {
           clearTimeout(graph.mouseoutTimeout);
           graph.mouseoutTimeout = null;
         }
         highlightObject(d);
       }
     })
-    .on('mouseout', function() {
-      if(!selected.obj) {
-        if(graph.mouseoutTimeout) {
+    .on('mouseout', function () {
+      if (!selected.obj) {
+        if (graph.mouseoutTimeout) {
           clearTimeout(graph.mouseoutTimeout);
           graph.mouseoutTimeout = null;
         }
-        graph.mouseoutTimeout = setTimeout(function() {
+        graph.mouseoutTimeout = setTimeout(function () {
           highlightObject(null);
         }, 300);
       }
@@ -338,23 +338,23 @@ function drawGraph() {
   graph.nodeRect = graph.node.append('rect')
     .attr('rx', 5)
     .attr('ry', 5)
-    .attr('stroke', function(d) {
+    .attr('stroke', function (d) {
       return graph.strokeColor(d.categoryKey);
     })
-    .attr('fill', function(d) {
+    .attr('fill', function (d) {
       return graph.fillColor(d.categoryKey);
     })
     .attr('width', 120)
     .attr('height', 30);
 
-  graph.node.each(function(d) {
+  graph.node.each(function (d) {
     var node = d3.select(this),
       rect = node.select('rect'),
       lines = wrap(d.name),
       ddy = 1.1,
       dy = -ddy * lines.length / 2 + .5;
 
-    lines.forEach(function(line) {
+    lines.forEach(function (line) {
       var text = node.append('text')
         .text(line)
         .attr('dy', dy + 'em');
@@ -362,25 +362,25 @@ function drawGraph() {
     });
   });
 
-  setTimeout(function() {
-    graph.node.each(function(d) {
+  setTimeout(function () {
+    graph.node.each(function (d) {
       var node = d3.select(this),
         text = node.selectAll('text'),
         bounds = {},
         first = true;
 
-      text.each(function() {
+      text.each(function () {
         var box = this.getBBox();
-        if(first || box.x < bounds.x1) {
+        if (first || box.x < bounds.x1) {
           bounds.x1 = box.x;
         }
-        if(first || box.y < bounds.y1) {
+        if (first || box.y < bounds.y1) {
           bounds.y1 = box.y;
         }
-        if(first || box.x + box.width > bounds.x2) {
+        if (first || box.x + box.width > bounds.x2) {
           bounds.x2 = box.x + box.width;
         }
-        if(first || box.y + box.height > bounds.y2) {
+        if (first || box.y + box.height > bounds.y2) {
           bounds.y2 = box.y + box.height;
         }
         first = false;
@@ -423,7 +423,7 @@ function drawGraph() {
     graph.numTicks = 0;
     graph.preventCollisions = false;
     graph.force.start();
-    for(var i = 0; i < config.graph.ticksWithoutCollisions; i++) {
+    for (var i = 0; i < config.graph.ticksWithoutCollisions; i++) {
       graph.force.tick();
     }
     graph.preventCollisions = true;
@@ -436,13 +436,13 @@ var maxLineChars = 26,
   wrapChars = ' /_-.'.split('');
 
 function wrap(text) {
-  if(text.length <= maxLineChars) {
+  if (text.length <= maxLineChars) {
     return [text];
   } else {
-    for(var k = 0; k < wrapChars.length; k++) {
+    for (var k = 0; k < wrapChars.length; k++) {
       var c = wrapChars[k];
-      for(var i = maxLineChars; i >= 0; i--) {
-        if(text.charAt(i) === c) {
+      for (var i = maxLineChars; i >= 0; i--) {
+        if (text.charAt(i) === c) {
           var line = text.substring(0, i + 1);
           return [line].concat(wrap(text.substring(i + 1)));
         }
@@ -456,15 +456,15 @@ function wrap(text) {
 function preventCollisions() {
   var quadtree = d3.geom.quadtree(graph.nodeValues);
 
-  for(var name in graph.data) {
+  for (var name in graph.data) {
     var obj = graph.data[name],
       ox1 = obj.x + obj.extent.left,
       ox2 = obj.x + obj.extent.right,
       oy1 = obj.y + obj.extent.top,
       oy2 = obj.y + obj.extent.bottom;
 
-    quadtree.visit(function(quad, x1, y1, x2, y2) {
-      if(quad.point && quad.point !== obj) {
+    quadtree.visit(function (quad, x1, y1, x2, y2) {
+      if (quad.point && quad.point !== obj) {
         // Check if the rectangles intersect
         var p = quad.point,
           px1 = p.x + p.extent.left,
@@ -472,23 +472,23 @@ function preventCollisions() {
           py1 = p.y + p.extent.top,
           py2 = p.y + p.extent.bottom,
           ix = (px1 <= ox2 && ox1 <= px2 && py1 <= oy2 && oy1 <= py2);
-        if(ix) {
+        if (ix) {
           var xa1 = ox2 - px1, // shift obj left , p right
             xa2 = px2 - ox1, // shift obj right, p left
             ya1 = oy2 - py1, // shift obj up   , p down
             ya2 = py2 - oy1, // shift obj down , p up
             adj = Math.min(xa1, xa2, ya1, ya2);
 
-          if(adj == xa1) {
+          if (adj == xa1) {
             obj.x -= adj / 2;
             p.x += adj / 2;
-          } else if(adj == xa2) {
+          } else if (adj == xa2) {
             obj.x += adj / 2;
             p.x -= adj / 2;
-          } else if(adj == ya1) {
+          } else if (adj == ya1) {
             obj.y -= adj / 2;
             p.y += adj / 2;
-          } else if(adj == ya2) {
+          } else if (adj == ya2) {
             obj.y += adj / 2;
             p.y -= adj / 2;
           }
@@ -502,39 +502,39 @@ function preventCollisions() {
 function tick(e) {
   graph.numTicks++;
 
-  for(var name in graph.data) {
+  for (var name in graph.data) {
     var obj = graph.data[name];
 
-    obj.positionConstraints.forEach(function(c) {
+    obj.positionConstraints.forEach(function (c) {
       var w = c.weight * e.alpha;
-      if(!isNaN(c.x)) {
+      if (!isNaN(c.x)) {
         obj.x = (c.x * w + obj.x * (1 - w));
       }
-      if(!isNaN(c.y)) {
+      if (!isNaN(c.y)) {
         obj.y = (c.y * w + obj.y * (1 - w));
       }
     });
   }
 
-  if(graph.preventCollisions) {
+  if (graph.preventCollisions) {
     preventCollisions();
   }
 
   graph.line
-    .attr('x1', function(d) {
+    .attr('x1', function (d) {
       return d.source.x;
     })
-    .attr('y1', function(d) {
+    .attr('y1', function (d) {
       return d.source.y;
     })
-    .each(function(d) {
+    .each(function (d) {
       var x = d.target.x,
         y = d.target.y,
         line = new geo.LineSegment(d.source.x, d.source.y, x, y);
 
-      for(var e in d.target.edge) {
+      for (var e in d.target.edge) {
         var ix = line.intersect(d.target.edge[e].offset(x, y));
-        if(ix.in1 && ix.in2) {
+        if (ix.in1 && ix.in2) {
           x = ix.x;
           y = ix.y;
           break;
@@ -547,25 +547,25 @@ function tick(e) {
     });
 
   graph.node
-    .attr('transform', function(d) {
+    .attr('transform', function (d) {
       return 'translate(' + d.x + ',' + d.y + ')';
     });
 }
 
 function selectObject(obj, el) {
   var node;
-  if(el) {
+  if (el) {
     node = d3.select(el);
   } else {
-    graph.node.each(function(d) {
-      if(d === obj) {
+    graph.node.each(function (d) {
+      if (d === obj) {
         node = d3.select(el = this);
       }
     });
   }
-  if(!node) return;
+  if (!node) return;
 
-  if(node.classed('selected')) {
+  if (node.classed('selected')) {
     deselectObject();
     return;
   }
@@ -598,7 +598,7 @@ function selectObject(obj, el) {
       width: $graph.width(),
       height: $graph.height()
     };
-  if(nodeRect.left < graphRect.left ||
+  if (nodeRect.left < graphRect.left ||
     nodeRect.top < graphRect.top ||
     nodeRect.left + nodeRect.width > graphRect.left + graphRect.width ||
     nodeRect.top + nodeRect.height > graphRect.top + graphRect.height) {
@@ -611,7 +611,7 @@ function selectObject(obj, el) {
 }
 
 function deselectObject(doResize) {
-  if(doResize || typeof doResize == 'undefined') {
+  if (doResize || typeof doResize == 'undefined') {
     resize(false);
   }
   graph.node.classed('selected', false);
@@ -620,18 +620,18 @@ function deselectObject(doResize) {
 }
 
 function highlightObject(obj) {
-  if(obj) {
-    if(obj !== highlighted) {
-      graph.node.classed('inactive', function(d) {
-        return(obj !== d && d.depends.indexOf(obj.name) == -1 && d.dependedOnBy.indexOf(obj.name) == -1);
+  if (obj) {
+    if (obj !== highlighted) {
+      graph.node.classed('inactive', function (d) {
+        return (obj !== d && d.depends.indexOf(obj.name) == -1 && d.dependedOnBy.indexOf(obj.name) == -1);
       });
-      graph.line.classed('inactive', function(d) {
-        return(obj !== d.source && obj !== d.target);
+      graph.line.classed('inactive', function (d) {
+        return (obj !== d.source && obj !== d.target);
       });
     }
     highlighted = obj;
   } else {
-    if(highlighted) {
+    if (highlighted) {
       graph.node.classed('inactive', false);
       graph.line.classed('inactive', false);
     }
@@ -650,12 +650,12 @@ function resize(showDocs) {
     $graph = $('#graph-container'),
     $close = $('#docs-close');
 
-  if(typeof showDocs == 'boolean') {
+  if (typeof showDocs == 'boolean') {
     showingDocs = showDocs;
     $docs[showDocs ? 'show' : 'hide']();
   }
 
-  if(showingDocs) {
+  if (showingDocs) {
     docsHeight = desiredDocsHeight;
     $docs.css('height', docsHeight + 'px');
   }

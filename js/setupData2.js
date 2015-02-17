@@ -105,19 +105,19 @@ var fixLinks = function () {
         callback();
       },
 
- /*
-      // ADD CONNECTION IDS ARRAY
-      function (callback) {
-        if (consoleLog) {
-          console.log('\n ', __filename, 'line', __line, '; function #:', ++functionCount, '; addConnectionIdsArrayFromComments(data.nodes)');
-        }
-        addConnectionIdsArrayFromComments(data.nodes);
-        if (consoleLog) {
-          console.log(data.nodes[1]);
-        }
-        callback();
-      },
-*/
+      /*
+       // ADD CONNECTION IDS ARRAY
+       function (callback) {
+       if (consoleLog) {
+       console.log('\n ', __filename, 'line', __line, '; function #:', ++functionCount, '; addConnectionIdsArrayFromComments(data.nodes)');
+       }
+       addConnectionIdsArrayFromComments(data.nodes);
+       if (consoleLog) {
+       console.log(data.nodes[1]);
+       }
+       callback();
+       },
+       */
 
       // ADD CONNECTION IDS ARRAY
       function (callback) {
@@ -249,7 +249,7 @@ var fixLinks = function () {
             maxLinkCount = node.linkCount;
             maxLinkId = node.id;
           }
-         });
+        });
         console.log('\n ', __filename, 'line', __line, '; counter = ', counter, '; maxLinkId = ', maxLinkId, '; maxLinkCount = ', maxLinkCount);
         counter = 0;
         data.links.forEach(function (link) {

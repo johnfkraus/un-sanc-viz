@@ -1,26 +1,26 @@
-function Tooltip(tooltipId, width){
+function Tooltip(tooltipId, width) {
 
   // var tooltipId = tooltipId;
-  $("body").append("<div class='tooltip' id='"+tooltipId+"'></div>");
+  $("body").append("<div class='tooltip' id='" + tooltipId + "'></div>");
 
-  if(width){
-    $("#"+tooltipId).css("width", width);
+  if (width) {
+    $("#" + tooltipId).css("width", width);
   }
 
   hideTooltip();
 
   function showTooltip(content, event) {
-    $("#"+tooltipId).html(content);
-    $("#"+tooltipId).show();
+    $("#" + tooltipId).html(content);
+    $("#" + tooltipId).show();
     updatePosition(event);
   }
 
-  function hideTooltip(){
-    $("#"+tooltipId).hide();
+  function hideTooltip() {
+    $("#" + tooltipId).hide();
   }
 
-  function updatePosition(event){
-    var ttid = "#"+tooltipId;
+  function updatePosition(event) {
+    var ttid = "#" + tooltipId;
     var xOffset = 20;
     var yOffset = 10;
 
@@ -30,14 +30,14 @@ function Tooltip(tooltipId, width){
     var windowX = $(window).scrollLeft();
     var curX = event.pageX;
     var curY = event.pageY;
-    var ttleft = ((curX) < $(window).width() / 2) ? curX - toolTipW - xOffset*2 : curX + xOffset;
-    if (ttleft < windowX + xOffset){
+    var ttleft = ((curX) < $(window).width() / 2) ? curX - toolTipW - xOffset * 2 : curX + xOffset;
+    if (ttleft < windowX + xOffset) {
       ttleft = windowX + xOffset;
-    } 
-    var tttop = ((curY - windowY + yOffset*2 + toolTipeH) > $(window).height()) ? curY - toolTipeH - yOffset*2 : curY + yOffset;
-    if (tttop < windowY + yOffset){
+    }
+    var tttop = ((curY - windowY + yOffset * 2 + toolTipeH) > $(window).height()) ? curY - toolTipeH - yOffset * 2 : curY + yOffset;
+    if (tttop < windowY + yOffset) {
       tttop = curY + yOffset;
-    } 
+    }
     $(ttid).css('top', tttop + 'px').css('left', ttleft + 'px');
   }
 

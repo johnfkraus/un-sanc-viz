@@ -11,16 +11,16 @@ var fsOptions = {
 var htmlparser = require("htmlparser2");
 var parser = new htmlparser.Parser({
 
-  onopentag: function(name, attribs){
-    if(name === "script" && attribs.type === "text/javascript"){
+  onopentag: function (name, attribs) {
+    if (name === "script" && attribs.type === "text/javascript") {
       console.log("JS! Hooray!");
     }
   },
-  ontext: function(text){
+  ontext: function (text) {
     console.log("-->", text);
   },
-  onclosetag: function(tagname){
-    if(tagname === "script"){
+  onclosetag: function (tagname) {
+    if (tagname === "script") {
       console.log("That's it?!");
     }
   }
@@ -30,7 +30,7 @@ var parser = new htmlparser.Parser({
 var inputFileNameAndPath = (__dirname + "/../data/narrative_summaries/The Al-Qaida Sanctions Committee.html");
 console.log("inputFileNameAndPath = ", inputFileNameAndPath);
 var reader = fs.createReadStream(inputFileNameAndPath);
-var narrativeHTML= fse.readFileSync(inputFileNameAndPath, fsOptions);
+var narrativeHTML = fse.readFileSync(inputFileNameAndPath, fsOptions);
 // console.log("reader = ", reader);
 // get a file stream writer pointing to the json file to write to
 var outputFileNameAndPath = (__dirname + "/../data/narrative_summaries/The Al-Qaida Sanctions Committee.json")

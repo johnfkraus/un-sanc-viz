@@ -39,10 +39,6 @@ var narratives;
 var narrative;
 var functionCount = 0;
 
-
-
-
-
 var run = function () {
   var url = 'mongodb://localhost:27017/aqlist';
   async.series([
@@ -106,7 +102,7 @@ var run = function () {
             // assert.equal(2, docs.length);
             console.log("docs.length = ", docs.length);
             console.log("Found the following records");
-            console.dir(JSON.stringify(docs).substring(0,400));
+            console.dir(JSON.stringify(docs).substring(0, 400));
             db.close();
           });
         });

@@ -11,16 +11,16 @@ var Db = require('mongodb').Db,
   assert = require('assert');
 
 var db = new Db('test', new Server('localhost', 27017));
-db.open(function(err, db) {
+db.open(function (err, db) {
   // Fetch a collection to insert document into
   var collection = db.collection("batch_document_insert_collection_safe");
   // Insert a single document
-  collection.insert([{hello:'world_safe1'}
-    , {hello:'world_safe2'}], configuration.writeConcernMax(), function(err, result) {
+  collection.insert([{hello: 'world_safe1'}
+    , {hello: 'world_safe2'}], configuration.writeConcernMax(), function (err, result) {
     assert.equal(null, err);
 
     // Fetch the document
-    collection.findOne({hello:'world_safe2'}, function(err, item) {
+    collection.findOne({hello: 'world_safe2'}, function (err, item) {
       assert.equal(null, err);
       assert.equal('world_safe2', item.hello);
       db.close();

@@ -9,8 +9,8 @@ var last_message = {
   level: 'debug'
 };
 
-var log_message = function(message, level) {
-  if(null == level) {
+var log_message = function (message, level) {
+  if (null == level) {
     level = 'debug';
   }
   last_message = {
@@ -21,8 +21,8 @@ var log_message = function(message, level) {
   };
   var log = '[ ' + last_message.date + ' ] [ ' + last_message.level + ' ] ' + last_message.msg;
 
-  fs.appendFile(filename, log + "\n", function(err) {
-    if(err) {
+  fs.appendFile(filename, log + "\n", function (err) {
+    if (err) {
       throw err;
     } else {
       console.log("logger.js says", log);
@@ -30,7 +30,7 @@ var log_message = function(message, level) {
   });
 };
 
-var get_last_message = function() {
+var get_last_message = function () {
   return last_message;
 };
 

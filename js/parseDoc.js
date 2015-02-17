@@ -69,12 +69,12 @@ var parseDoc = function () {
           console.log("p.children[0].length = ", p.children.length);
           //p.attribs.forEach(function (el1) {
           // p.children[].forEach(function (el1) {
-           // console.log("el1 = ", JSON.stringify(el1, null, " "));
+          // console.log("el1 = ", JSON.stringify(el1, null, " "));
           // })
 
         });
         if (consoleLog) {
-         // console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount, "; read the test json narr file; testDocFileStringified = \n", testDocFileStringified);
+          // console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount, "; read the test json narr file; testDocFileStringified = \n", testDocFileStringified);
         }
         callback();
       },

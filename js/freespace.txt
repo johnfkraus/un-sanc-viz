@@ -1,0 +1,18 @@
+Mon 02/02/2015 
+10:39 AM
+Total # of free bytes        : 26061709312
+Total # of bytes             : 248660357120
+Total # of avail free bytes  : 26061709312
+========= 
+Fri 02/06/2015 
+06:15 PM
+Total # of free bytes        : 40276295680
+Total # of bytes             : 248660357120
+Total # of avail free bytes  : 40276295680
+========= 
+Fri 02/13/2015 
+10:24 AM
+Total # of free bytes        : 42496974848
+Total # of bytes             : 248660357120
+Total # of avail free bytes  : 42496974848
+========= 

@@ -553,24 +553,24 @@ var markdownToHTML = function (markdownContent) {
   return markdown.toHTML(markdownContent);
 };
 /*
-var markdownToHTML00 = function (markdownContent, outputFileName) {
-  var result;
-  gulp.task('default', function () {
-    result = gulp.src(markdownContent)
-      .pipe(markdown())
-      .pipe(gulp.dest('./data/output/markdown.mkdn'));
-  });
-  return result;
-};
+ var markdownToHTML00 = function (markdownContent, outputFileName) {
+ var result;
+ gulp.task('default', function () {
+ result = gulp.src(markdownContent)
+ .pipe(markdown())
+ .pipe(gulp.dest('./data/output/markdown.mkdn'));
+ });
+ return result;
+ };
 
-var XmarkdownToHTML = function (inputFileName, outputFileName) {
-  gulp.task('default', function () {
-    return gulp.src('inputFileName')
-      .pipe(markdown())
-      .pipe(gulp.dest('dist'));
-  });
-};
-*/
+ var XmarkdownToHTML = function (inputFileName, outputFileName) {
+ gulp.task('default', function () {
+ return gulp.src('inputFileName')
+ .pipe(markdown())
+ .pipe(gulp.dest('dist'));
+ });
+ };
+ */
 var readFileSync = function (filePathAndName) {
   // read "raw" unprocessed json file
 //  var rawJsonFileName = __dirname + "/../data/output/AQList-raw.json";

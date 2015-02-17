@@ -57,11 +57,7 @@
     "d3",
     "force-directed graph"
   ],
-  "author": {
-    "name": "John Kraus",
-    "email": "johnkraus3@gmail.com",
-    "url": "http://al-qaida-viz.herokuapp.com/"
-  },
+  "author": "John Kraus <johnkraus3@gmail.com> (http://al-qaida-viz.herokuapp.com/)",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/johnfkraus/aq-list-viz/issues"

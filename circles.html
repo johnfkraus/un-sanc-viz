@@ -87,7 +87,6 @@
 <script type="text/javascript">
 
 
-
     var data = [{
         "r": "32",
         "DATAID": "3162069",
@@ -323,7 +322,7 @@
             "targetCount": 3,
             "linkCount": 5
         }
-        ];
+    ];
 
     var circle = d3.selectAll("circle");
     var svg = d3.select("svg");
@@ -342,7 +341,7 @@
     };
 
     var bindData = function () {
-   //     circle.data([32, 57, 112]);
+        //     circle.data([32, 57, 112]);
         circle.data(data);
         circle.attr("r", function (d) {
             return Math.sqrt(d.r);

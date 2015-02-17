@@ -26,7 +26,7 @@ var anchor,
   data,
   host,
   narrativeFileName,
-  // outputFileNameAndPath,
+// outputFileNameAndPath,
   paragraph,
   rows,
   row,
@@ -93,7 +93,6 @@ var getListOfNarratives = function () {
         callback();
       },
 
-
       // The UN list files omit some of the nodes.  In some cases, this appears to be an oversight.  In others, the node
       // is no longer on the sanctions list.  There may be other reasons for the omission as well.
       // If no narrative file name for a node could be found in the UN list files, we generate the expected file name
@@ -119,8 +118,6 @@ var getListOfNarratives = function () {
         utilities_aq_viz.saveJsonFile(data, 'AQList-clean-fnames.json');
         callback();
       },
-
-
 
       // Add the Internet file name as a property in each node of data
       function (callback) {
@@ -179,21 +176,16 @@ var getListOfNarratives = function () {
         callback();
       },
 
-
-
-
-
-
       // number the narrative links
       function (callback) {
         if (consoleLog) {
           console.log('\n ', __filename, __line, '; function #:', ++functionCount);
         }
-          var counter = 0;
-          narrativeLinks.forEach(function (narrativeLink) {
-            narrativeLink.linkNumber = counter;
-            counter++;
-          });
+        var counter = 0;
+        narrativeLinks.forEach(function (narrativeLink) {
+          narrativeLink.linkNumber = counter;
+          counter++;
+        });
         callback();
       },
 
@@ -345,7 +337,6 @@ var asyncGetRawHtmlPagesWithNarrativeLinks = function (host, filePath, outputFil
   writeMyFile(narrativeLinksLocalFileNameAndPath, JSON.stringify(narrativeLinks, null, ' '), fsOptions);
 };
 
-
 var countUndefinedNarrativeFileNames = function (nodes) {
   var nullCount = 0;
   var undefinedCount = 0;
@@ -364,146 +355,144 @@ var countUndefinedNarrativeFileNames = function (nodes) {
 };
 
 /*
-// collect one of two named list files from an Internet host and save it locally; specify indivOrEntityString equals a string either 'entity' or 'indiv'
-// save to json file: narrativeLinksLocalFileNameAndPath
-var getRawHtmlPagesWithNarrativeLinks = function (host, filePath, outputFileNameAndPath, indivOrEntityString) {
-  var client = http.createClient(80, host);
-  var requestAsync = client.request('GET', filePath, {'host': host});
-  requestAsync.on('response', function (response) {
-    response.setEncoding('utf8');
-    var body = '';
-    response.on('data', function (chunk) {
-      body = body + chunk;
-    });
-    response.on('end', function () {
-      // now we have the whole body, parse it and select the nodes we want...
-      var handler = new htmlparser.DefaultHandler(function (err, dom) {
-        if (err) {
-          console.log('\n ', __filename, 'line', __line, 'Error: ' + err);
-          // sys.debug('Error: ' + err);
-        } else {
-          // soupselect happening here...
-          // var titles = select(dom, 'a.title');
-          rows = select(dom, 'table tr');
-          var rowNum;
-          // loop through each table row
-          for (var i = 0; i < rows.length; i++) {
-            // skip the header row
-            if (i === 0) {
-              continue;
-            }
-            rowNum = i;
-            row = rows[i];
-            // sys.puts('row[' + i + '] = ' + sys.inspect(JSON.stringify(row)));
-            narrLink = {};
-            tds = select(row, 'td');
-            // loop through each td/column in the row
-            for (var j = 0; j < tds.length; j++) {
-              td = tds[j];
-              // get the id from the first td
-              if (j === 0) {
-                paragraph = select(td, 'p');
-                if (typeof paragraph !== 'undefined') {
-                  try {
-                    if (typeof paragraph[0] !== 'undefined') {
-                      narrLink.id = getCleanId(paragraph[0].children[0].data);
-                    }
-                  } catch (err) {
-                    console.log('\n ', __filename, 'line', __line, ' Error parsing id: ', err);
-                  }
-                }
-              }
-              // if we are in the second td in the row...
-              else if (j === 1) {
-                paragraph = select(td, 'p');
-                anchor = select(td, 'a');
-                if (typeof paragraph !== 'undefined' && typeof paragraph[0] !== 'undefined') {
-                  //console.log('\n ', __filename, 'line', __line, 'paragraph = ', JSON.stringify(paragraph));
-                  if (typeof paragraph[0].children[0].attribs !== 'undefined') {
-                    try {
-                      narrativeFileName = paragraph[0].children[0].attribs.href;
-                      narrativeFileName = normalizeNarrativeFileName(narrativeFileName); //.replace(/\/sc\/committees\/1267\/(NSQ.*\.shtml)/, '$1');
-                      // narrativeFileName = narrativeFileName.replace(/http:\/\/dev.un.org\/sc\/committees\/1267\/(NSQ.*\.shtml)/, '$1');
-                      // http://dev.un.org/sc/committees/1267/
-                      narrLink.narrativeFileName = narrativeFileName;
-                    } catch (err) {
-                      console.log('\n ', __filename, 'line', __line, '; paragraph[0].children[0] = ', paragraph[0].children[0]);
-                      console.log('\n ', __filename, 'line', __line, '; Error: paragraph[0].children[0].attribs is undefined; tr = ', i, '; td = ', j, err);
-                    }
-                  } else if (typeof anchor[0].attribs.href !== 'undefined') {
-                    narrLink.narrativeFileName = normalizeNarrativeFileName(narrativeFileName);
-                    narrLink.targetName = JSON.stringify(anchor[0].children[0].data);
-                  } else {
-                    narrLink.narrativeFileName = 'PLACEHOLDER0';
-                    console.log('\n ', __filename, 'line', __line, '; Error: narrativeFileName for tr = ', i, '; td = ', j, 'is PLACEHOLDER0');
-                  }
-                  // if anchor inside of paragraph
-                  if (anchor[0].children[0].data !== 'u') {
-                    targetName = anchor[0].children[0].data;
-                  } else if (anchor[0].children[0].data === 'u') {
-                    underscore = select(td, 'u');
-                    targetName = JSON.stringify(underscore[0].children[0].data);
-                  } else {
-                    targetName = 'PLACEHOLDER1';
-                  }
-                  targetName = targetName.replace(/[\n\f\r\t]/gm, '');
-                  targetName = targetName.replace(/\s\s+/gm, ' ');
-                  targetName = targetName.trim();
-                  if (targetName === '') {
-                    narrLink.targetName = 'PLACEHOLDER2';
-                  } else {
-                    narrLink.targetName = targetName;
-                  }
-                  // end of if (typeof paragraph !== 'undefined' && typeof paragraph[0] !== 'undefined')
-                } else if (typeof anchor[0].attribs.href !== 'undefined' && anchor[0].attribs.href !== '') {
-                  narrativeFileName = normalizeNarrativeFileName(anchor[0].attribs.href);
-                  narrLink.narrativeFileName = narrativeFileName;
-                  if (typeof anchor[0].children[0] !== 'undefined' && anchor[0].children[0].data !== '') {
-                    targetName = anchor[0].children[0].data;
-                    narrLink.targetName = targetName;
-                  }
-                }
-              }
-            }
-            narrLink.entityOrIndiv = indivOrEntityString;
-            narrLink.rowNum = i;
-            if (indivOrEntityString == 'indiv') {
-              indivLinks.push(narrLink);
-            }
-            if (indivOrEntityString == 'entity') {
-              entLinks.push(narrLink);
-            }
-            narrativeLinks.push(narrLink);
-          }
-        }
-      });
+ // collect one of two named list files from an Internet host and save it locally; specify indivOrEntityString equals a string either 'entity' or 'indiv'
+ // save to json file: narrativeLinksLocalFileNameAndPath
+ var getRawHtmlPagesWithNarrativeLinks = function (host, filePath, outputFileNameAndPath, indivOrEntityString) {
+ var client = http.createClient(80, host);
+ var requestAsync = client.request('GET', filePath, {'host': host});
+ requestAsync.on('response', function (response) {
+ response.setEncoding('utf8');
+ var body = '';
+ response.on('data', function (chunk) {
+ body = body + chunk;
+ });
+ response.on('end', function () {
+ // now we have the whole body, parse it and select the nodes we want...
+ var handler = new htmlparser.DefaultHandler(function (err, dom) {
+ if (err) {
+ console.log('\n ', __filename, 'line', __line, 'Error: ' + err);
+ // sys.debug('Error: ' + err);
+ } else {
+ // soupselect happening here...
+ // var titles = select(dom, 'a.title');
+ rows = select(dom, 'table tr');
+ var rowNum;
+ // loop through each table row
+ for (var i = 0; i < rows.length; i++) {
+ // skip the header row
+ if (i === 0) {
+ continue;
+ }
+ rowNum = i;
+ row = rows[i];
+ // sys.puts('row[' + i + '] = ' + sys.inspect(JSON.stringify(row)));
+ narrLink = {};
+ tds = select(row, 'td');
+ // loop through each td/column in the row
+ for (var j = 0; j < tds.length; j++) {
+ td = tds[j];
+ // get the id from the first td
+ if (j === 0) {
+ paragraph = select(td, 'p');
+ if (typeof paragraph !== 'undefined') {
+ try {
+ if (typeof paragraph[0] !== 'undefined') {
+ narrLink.id = getCleanId(paragraph[0].children[0].data);
+ }
+ } catch (err) {
+ console.log('\n ', __filename, 'line', __line, ' Error parsing id: ', err);
+ }
+ }
+ }
+ // if we are in the second td in the row...
+ else if (j === 1) {
+ paragraph = select(td, 'p');
+ anchor = select(td, 'a');
+ if (typeof paragraph !== 'undefined' && typeof paragraph[0] !== 'undefined') {
+ //console.log('\n ', __filename, 'line', __line, 'paragraph = ', JSON.stringify(paragraph));
+ if (typeof paragraph[0].children[0].attribs !== 'undefined') {
+ try {
+ narrativeFileName = paragraph[0].children[0].attribs.href;
+ narrativeFileName = normalizeNarrativeFileName(narrativeFileName); //.replace(/\/sc\/committees\/1267\/(NSQ.*\.shtml)/, '$1');
+ // narrativeFileName = narrativeFileName.replace(/http:\/\/dev.un.org\/sc\/committees\/1267\/(NSQ.*\.shtml)/, '$1');
+ // http://dev.un.org/sc/committees/1267/
+ narrLink.narrativeFileName = narrativeFileName;
+ } catch (err) {
+ console.log('\n ', __filename, 'line', __line, '; paragraph[0].children[0] = ', paragraph[0].children[0]);
+ console.log('\n ', __filename, 'line', __line, '; Error: paragraph[0].children[0].attribs is undefined; tr = ', i, '; td = ', j, err);
+ }
+ } else if (typeof anchor[0].attribs.href !== 'undefined') {
+ narrLink.narrativeFileName = normalizeNarrativeFileName(narrativeFileName);
+ narrLink.targetName = JSON.stringify(anchor[0].children[0].data);
+ } else {
+ narrLink.narrativeFileName = 'PLACEHOLDER0';
+ console.log('\n ', __filename, 'line', __line, '; Error: narrativeFileName for tr = ', i, '; td = ', j, 'is PLACEHOLDER0');
+ }
+ // if anchor inside of paragraph
+ if (anchor[0].children[0].data !== 'u') {
+ targetName = anchor[0].children[0].data;
+ } else if (anchor[0].children[0].data === 'u') {
+ underscore = select(td, 'u');
+ targetName = JSON.stringify(underscore[0].children[0].data);
+ } else {
+ targetName = 'PLACEHOLDER1';
+ }
+ targetName = targetName.replace(/[\n\f\r\t]/gm, '');
+ targetName = targetName.replace(/\s\s+/gm, ' ');
+ targetName = targetName.trim();
+ if (targetName === '') {
+ narrLink.targetName = 'PLACEHOLDER2';
+ } else {
+ narrLink.targetName = targetName;
+ }
+ // end of if (typeof paragraph !== 'undefined' && typeof paragraph[0] !== 'undefined')
+ } else if (typeof anchor[0].attribs.href !== 'undefined' && anchor[0].attribs.href !== '') {
+ narrativeFileName = normalizeNarrativeFileName(anchor[0].attribs.href);
+ narrLink.narrativeFileName = narrativeFileName;
+ if (typeof anchor[0].children[0] !== 'undefined' && anchor[0].children[0].data !== '') {
+ targetName = anchor[0].children[0].data;
+ narrLink.targetName = targetName;
+ }
+ }
+ }
+ }
+ narrLink.entityOrIndiv = indivOrEntityString;
+ narrLink.rowNum = i;
+ if (indivOrEntityString == 'indiv') {
+ indivLinks.push(narrLink);
+ }
+ if (indivOrEntityString == 'entity') {
+ entLinks.push(narrLink);
+ }
+ narrativeLinks.push(narrLink);
+ }
+ }
+ });
 
-      var parser = new htmlparser.Parser(handler);
-      parser.parseComplete(body);
-      if (indivOrEntityString == 'indiv') {
-        // var jsonIndivNarrList = JSON.stringify(indivLinks, null, ' ');
-        writeMyFile(individualsLocalOutputFileNameAndPath, JSON.stringify(indivLinks, null, ' '), fsOptions);
-      }
-      if (indivOrEntityString == 'entity') {
-        // entLinks.push(narrLink);
-        // var jsonEntNarrList = JSON.stringify(entLinks, null, ' ');
-        writeMyFile(entitiesLocalOutputFileNameAndPath, JSON.stringify(entLinks, null, ' '), fsOptions);
-      }
-      // narrativeLinks.push(narrLink);
+ var parser = new htmlparser.Parser(handler);
+ parser.parseComplete(body);
+ if (indivOrEntityString == 'indiv') {
+ // var jsonIndivNarrList = JSON.stringify(indivLinks, null, ' ');
+ writeMyFile(individualsLocalOutputFileNameAndPath, JSON.stringify(indivLinks, null, ' '), fsOptions);
+ }
+ if (indivOrEntityString == 'entity') {
+ // entLinks.push(narrLink);
+ // var jsonEntNarrList = JSON.stringify(entLinks, null, ' ');
+ writeMyFile(entitiesLocalOutputFileNameAndPath, JSON.stringify(entLinks, null, ' '), fsOptions);
+ }
+ // narrativeLinks.push(narrLink);
 
-//      var jsonNarrList = JSON.stringify(narrativeLinks, null, ' ');
-      // sys.puts(JSON.stringify(narrativeLinks, null, ' '));
-      writeMyFile(narrativeLinksLocalFileNameAndPath, JSON.stringify(narrativeLinks, null, ' '), fsOptions);
+ //      var jsonNarrList = JSON.stringify(narrativeLinks, null, ' ');
+ // sys.puts(JSON.stringify(narrativeLinks, null, ' '));
+ writeMyFile(narrativeLinksLocalFileNameAndPath, JSON.stringify(narrativeLinks, null, ' '), fsOptions);
 
-    });
-  });
-  requestAsync.end();
-  // return narrativeLinks;
-};
+ });
+ });
+ requestAsync.end();
+ // return narrativeLinks;
+ };
 
-*/
-
-
+ */
 
 function forceUnicodeEncoding(string) {
   return unescape(encodeURIComponent(string));

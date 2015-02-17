@@ -1,4 +1,4 @@
-function makeAdder(x){
+function makeAdder(x) {
   return function (y) {
     console.log(y + " this is y");
     console.log(x + " this is x");

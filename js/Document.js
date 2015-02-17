@@ -18,7 +18,7 @@ function Document() { // }, width) {
 //  var showDocument = function (content, event, d) {
     var that = this;
     // elementId is 'viz-doc'
-    $('span#name').html('Document.js'+d.name);
+    $('span#name').html('Document.js' + d.name);
     $('span#id').html(d.id);
     $('span#nameOriginalScript').html(d.NAME_ORIGINAL_SCRIPT);
     $('span#narrative').html(d.COMMENTS1);
@@ -64,10 +64,10 @@ function Document() { // }, width) {
       $('.mainTitleDiv').css('font-size', '14px');
     }
     $('#doc-close').css({
-     //  right: window.innerWidth - $('#doc-container')[0].clientWidth + docClosePadding + 'px'
+      //  right: window.innerWidth - $('#doc-container')[0].clientWidth + docClosePadding + 'px'
     });
     if (consoleLogDocument) {
-      console.log('Document.js window.innerHeight = ', window.innerHeight, '; desiredDocsHeight = ', desiredDocsHeight, '; topStuffHeight = ', $('#top-stuff').height(), '; svgHeight = ', svgHeight,'\nwindow.innerWidth = ', window.innerWidth, '; docHeight = ', docHeight);
+      console.log('Document.js window.innerHeight = ', window.innerHeight, '; desiredDocsHeight = ', desiredDocsHeight, '; topStuffHeight = ', $('#top-stuff').height(), '; svgHeight = ', svgHeight, '\nwindow.innerWidth = ', window.innerWidth, '; docHeight = ', docHeight);
     }
   }
 

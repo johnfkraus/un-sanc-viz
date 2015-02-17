@@ -34,8 +34,6 @@ var fsOptions = {
   autoClose: true
 };
 
-
-
 var runAppTest = function () {
 //  if (consoleLog) { console.log('\n ', __filename, __line, ', runApp\n');
   if (consoleLog) {

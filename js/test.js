@@ -1,5 +1,5 @@
 // test.js
-if(typeof define !== 'function') {
+if (typeof define !== 'function') {
   var define = require('amdefine');
 }
 var async = require('async'),

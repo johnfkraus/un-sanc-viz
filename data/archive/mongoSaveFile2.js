@@ -46,12 +46,11 @@ var run = function () {
         } catch (err) {
           console.log("\n ", __filename, "line", __line, "; Error: ", err);
         }
-       //  narrative = JSON.parse(narrativeBuffer);
+        //  narrative = JSON.parse(narrativeBuffer);
         jsonNarrative = {};
-        jsonNarrative._id  = narrFileName;
+        jsonNarrative._id = narrFileName;
         //jsonNarrative.content = JSON.parse(narrativeBuffer.toString(), null, " ");
         jsonNarrative.content = narrativeBuffer.toString();
-
 
         callback();
       },
@@ -63,24 +62,19 @@ var run = function () {
           assert.equal(null, err);
           console.log("Connected correctly to server");
 
-
-
 // Read file with proper encoding...
 //          var data = //...
 
-
-
 //          db = db.getSiblingDB('narratives');
 // narratives = db.getCollection('narratives');
-         // narratives = db.getSiblingDB('narratives');
+          // narratives = db.getSiblingDB('narratives');
           // records = db.getSiblingDB('records')
 
           narratives.count()
 //           users.active.findOne()
 
-   //       records.requests.count()
-     //     records.requests.findOne()
-
+          //       records.requests.count()
+          //     records.requests.findOne()
 
           // col = db.collection('narratives');
 
@@ -97,7 +91,6 @@ var run = function () {
 
           // Insert into Mongo
           mongo.insert({file: narrative});
-
 
           console.log("\n ", __filename, "line", __line, "; jsonNarrative = ", jsonNarrative);
           narratives.insert(jsonNarrative);

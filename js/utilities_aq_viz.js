@@ -14,7 +14,7 @@ require('console-stamp')(console, '[HH:MM:ss.l]');
 var logger = require('./libs/logger.js');
 var message;
 
-var addFileLabel = function(inString, fileName) {
+var addFileLabel = function (inString, fileName) {
   return '<!-- http://www.un.org/sc/committees/1267/' + fileName + ' -->' + inString;
 };
 
@@ -28,7 +28,7 @@ var countLines = function (textFile) {
       if (chunk[i] == 10) count++;
   })
     .on('end', function () {
-      console.log(count);
+      console.log(__filename, 'line', __line, '; count = ',count);
     });
   return count;
 };
@@ -50,15 +50,14 @@ var errorPageReturned = function (inString) {
 };
 
 var forceUnicodeEncoding = function (string) {
-  console.log('string = ', string);
-  var string1= string.replace(/’/gm, "'");
-  var string2= string1.replace(/“/gm, '"');
+  // console.log('string = ', string);
+  var string1 = string.replace(/’/gm, "'");
+  var string2 = string1.replace(/“/gm, '"');
   var string3 = string2.replace(/”/gm, '"');
   //  attache  é
   var result = unescape(encodeURIComponent(string3));
   return result.trim();
 }
-
 
 var formatMyDate = function (dateString) {
 // Basic usage

@@ -15,7 +15,7 @@ var async = require('async'),
 
 var collect = require('./collect.js');
 var setupData = require('./setupData.js');
-var collectNarratives= require('./collectNarratives.js');
+var collectNarratives = require('./collectNarratives.js');
 var getNarrativeList = require('./getNarrativeList.js');
 var makeDocs = require('./makeDocs.js');
 var filewalker = require('./filewalker.js');
@@ -29,7 +29,7 @@ var consoleLog = false;
 var runApp = function () {
 //  if (consoleLog) { console.log("\n ", __filename, __line, ", runApp\n");
   if (consoleLog) {
-    console.log("\n ", __filename, "line", __line, "; running app.js; ",new Date());
+    console.log("\n ", __filename, "line", __line, "; running app.js; ", new Date());
   }
 
   async.series([
@@ -50,8 +50,6 @@ var runApp = function () {
       getNarrativeList.getListOfNarratives();
       callback();
     },
-
-
 
     function (callback) {
       // put data in arrays for d3

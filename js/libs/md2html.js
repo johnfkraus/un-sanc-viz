@@ -10,17 +10,18 @@
     buffer = "";
 
   opts = nopt(
-    { "dialect": [ "Gruber", "Maruku"],
+    {
+      "dialect": ["Gruber", "Maruku"],
       "help": Boolean
     }
   );
 
   if (opts.help || process.argv.length === 2) {
     var name = process.argv[1].split("/").pop();
-    console.warn( require("util").format(
+    console.warn(require("util").format(
       "usage: %s [--dialect=DIALECT] FILE\n\nValid dialects are Gruber (the default) or Maruku",
       name
-    ) );
+    ));
     process.exit(0);
   }
 
@@ -33,16 +34,16 @@
   stream.resume();
   stream.setEncoding("utf8");
 
-  stream.on("error", function(error) {
+  stream.on("error", function (error) {
     console.error(error.toString());
     process.exit(1);
   });
 
-  stream.on("data", function(data) {
+  stream.on("data", function (data) {
     buffer += data;
   });
 
-  stream.on("end", function() {
+  stream.on("end", function () {
     var html = markdown.toHTML(buffer, opts.dialect);
     console.log(html);
   });

@@ -37,11 +37,10 @@ MongoClient.connect(url, function (err, db) {
      */
 
   });
- // col = db.collection('findAndModify');
-
+  // col = db.collection('findAndModify');
 
   // Get first two documents that match the query
-  col.find({a:1}).limit(2).toArray(function(err, docs) {
+  col.find({a: 1}).limit(2).toArray(function (err, docs) {
     assert.equal(null, err);
     assert.equal(2, docs.length);
     var doc;
@@ -51,8 +50,6 @@ MongoClient.connect(url, function (err, db) {
     }
 //    db.close();
   });
-
-
 
   //assert.equal(3, r.length);
 });

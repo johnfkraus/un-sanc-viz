@@ -17,6 +17,8 @@ void main(void) {
   gl_Position = vec4(a_position, 0.0, 1.0);
 }
 
+
+
 </script>
 <script id="fragment-shader" type="x-shader/x-fragment">
 
@@ -62,6 +64,8 @@ void main(void) {
 
   gl_FragColor = textureCube(u_image, vec3(x2, y2, z2), -0.5);
 }
+
+
 
 </script>
 <script src="http://d3js.org/queue.v1.min.js"></script>
@@ -129,7 +133,9 @@ void main(void) {
     function image(path, callback) {
         var image = new Image;
         image.src = path;
-        image.onload = function() { callback(null, image); };
+        image.onload = function () {
+            callback(null, image);
+        };
     }
 
     function texturize(error, xpos, xneg, ypos, yneg, zpos, zneg) {
@@ -148,7 +154,7 @@ void main(void) {
         context.generateMipmap(context.TEXTURE_CUBE_MAP);
 
         // Hack to ensure correct inference of window dimensions.
-        setTimeout(function() {
+        setTimeout(function () {
             resize();
             animate();
         }, 10);
@@ -186,6 +192,8 @@ void main(void) {
             || self.mozRequestAnimationFrame
             || self.msRequestAnimationFrame
             || self.oRequestAnimationFrame
-            || function(f) { setTimeout(f, 17); };
+            || function (f) {
+                setTimeout(f, 17);
+            };
 
 </script>

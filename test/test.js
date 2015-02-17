@@ -1,8 +1,8 @@
 // test/test.js
 // run this with the command 'mocha'
 
-var chai    = require('chai');
-var expect  = require('chai').expect;
+var chai = require('chai');
+var expect = require('chai').expect;
 var chaiXml = require('chai-xml');
 var assert = require("assert");
 var request = require('sync-request');
@@ -15,37 +15,35 @@ var fsOptions = {
   autoClose: true
 };
 
-
-describe('assert some xml', function(){
+describe('assert some xml', function () {
 
   var rawXmlFileName = __dirname + "/../data/output/AQList.xml";
   var someXml = fse.readFileSync(rawXmlFileName, fsOptions);
 //  var res = request('GET', 'http://www.un.org/sc/committees/1267/AQList.xml');
- // var otherXml = res.body.toString();
+  // var otherXml = res.body.toString();
   // var someXml = '<root>\n\t<child name="foo" value="bar"></child>\n</root>';
-   var brokeXml = '<root>\n\t<child name="foo" value="bar"></child>';
-   var otherXml = '<root><child value="bar" name="foo" /></root>';
+  var brokeXml = '<root>\n\t<child name="foo" value="bar"></child>';
+  var otherXml = '<root><child value="bar" name="foo" /></root>';
 
-  it("should be valid", function(){
+  it("should be valid", function () {
     expect(someXml).xml.to.be.valid();
   });
-  it("should be equal to otherXml ", function(){
+  it("should be equal to otherXml ", function () {
     assert.equal(someXml, otherXml);
   });
-  it("should be the same string as otherXml ", function(){
+  it("should be the same string as otherXml ", function () {
     expect(someXml).to.not.equal(otherXml);
   });
-  it("should be the same XML as otherXml ", function(){
+  it("should be the same XML as otherXml ", function () {
     expect(someXml).xml.to.equal(otherXml);
   });
 });
 
-
-describe('Array', function(){
-  describe('#indexOf()', function(){
-    it('should return -1 when the value is not present', function(){
-      assert.equal(-1, [1,2,3].indexOf(5));
-      assert.equal(-1, [1,2,3].indexOf(0));
+describe('Array', function () {
+  describe('#indexOf()', function () {
+    it('should return -1 when the value is not present', function () {
+      assert.equal(-1, [1, 2, 3].indexOf(5));
+      assert.equal(-1, [1, 2, 3].indexOf(0));
     })
   })
 });

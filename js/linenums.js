@@ -1,9 +1,9 @@
 // linenums.js
 
 Object.defineProperty(global, '__stack', {
-  get: function() {
+  get: function () {
     var orig = Error.prepareStackTrace;
-    Error.prepareStackTrace = function(_, stack) {
+    Error.prepareStackTrace = function (_, stack) {
       return stack;
     };
     var err = new Error();
@@ -20,7 +20,7 @@ Object.defineProperty(global, '__stack', {
  */
 
 Object.defineProperty(global, '__line', {
-  get: function() {
+  get: function () {
     return __stack[1].getLineNumber();
   }
 });

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Ajax test example</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var longNarrative;
+            $("button#getNarrative").click(function () {
+                var fileName = "NSQE01101E.shtml";
+                var path = "data/narrative_summaries/";
+                var url = path + fileName;
+                $.ajax({
+                    url: url, success: function (result) {
+                        longNarrative = result;
+                        $("#div1").html(result);
+                        console.log("longNarrative = \n\n", longNarrative);
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+
+<div id="div1"><h2>Let jQuery AJAX Change This Text</h2></div>
+
+<button id="getNarrative">Get External Content</button>
+
+</body>
+</html>

@@ -19,7 +19,8 @@ function hasOwnProperty(object, property) {
   return property in object && (!(property in (prototype = object.__proto__ || object.constructor.prototype)) || !is(object[property], prototype[property]));
 }
 
-function NewClass() {}
+function NewClass() {
+}
 NewClass.prototype = {
   a: 'there'
 };

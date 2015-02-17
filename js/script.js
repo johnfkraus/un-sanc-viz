@@ -4,28 +4,28 @@ var graph = {},
 
 $(function () {
   resize();
-/*
-  var config;
-  var json;
-  var data = [];
-  var configJsonUrl = "data/config.json";
+  /*
+   var config;
+   var json;
+   var data = [];
+   var configJsonUrl = "data/config.json";
 
-  $.getJSON("data/config.json", function (configData) {
-    config = configData;
-    console.log("config = \n" + config);
-    var obj = jQuery.parseJSON(json);
-    $.each(obj, function (key, value) {
-      console.log(value);
-    });
+   $.getJSON("data/config.json", function (configData) {
+   config = configData;
+   console.log("config = \n" + config);
+   var obj = jQuery.parseJSON(json);
+   $.each(obj, function (key, value) {
+   console.log(value);
+   });
 
-  });
+   });
 
-  $.getJSON("data/objects.json", function (objectData) {
-    json = objectData;
-    console.log("json = " + json);
-  });
+   $.getJSON("data/objects.json", function (objectData) {
+   json = objectData;
+   console.log("json = " + json);
+   });
 
-*/
+   */
 // config.jsonUrl,
   d3.json("data/objects.json",
     function (data) {
@@ -40,7 +40,7 @@ $(function () {
       }
 
       graph.data = data;
-     //  drawGraph();
+      //  drawGraph();
     });
 
   $('#docs-close')
@@ -122,7 +122,7 @@ function drawGraph() {
         source: graph.data[obj.depends[depIndex]],
         target: obj
       };
-     // link.strength = (link.source.linkStrength || 1) * (link.target.linkStrength || 1);
+      // link.strength = (link.source.linkStrength || 1) * (link.target.linkStrength || 1);
       graph.links.push(link);
     }
   }
@@ -150,15 +150,15 @@ function drawGraph() {
   // graph.colors = colorbrewer.Set3[config.graph.numColors];
 
   function getColorScale(darkness) {
-/*
-    return d3.scale.ordinal()
-      .domain(graph.categoryKeys)
-      .range(graph.colors.map(function (c) {
-        return d3.hsl(c)
-          .darker(darkness)
-          .toString();
-      }));
-  (*/
+    /*
+     return d3.scale.ordinal()
+     .domain(graph.categoryKeys)
+     .range(graph.colors.map(function (c) {
+     return d3.hsl(c)
+     .darker(darkness)
+     .toString();
+     }));
+     (*/
 
   }
 
@@ -246,21 +246,21 @@ function drawGraph() {
   };
   graph.legendConfig.xOffsetText += graph.legendConfig.xOffset;
   graph.legendConfig.yOffsetText += graph.legendConfig.yOffset;
-/*
-  graph.legend.append('rect')
-    .attr('x', graph.legendConfig.xOffset)
-    .attr('y', function (d, i) {
-      return graph.legendConfig.yOffset + i * graph.legendConfig.lineHeight;
-    })
-    .attr('height', graph.legendConfig.rectHeight)
-    .attr('width', graph.legendConfig.rectWidth)
-    .attr('fill', function (d) {
-      return graph.fillColor(d.key);
-    })
-    .attr('stroke', function (d) {
-      return graph.strokeColor(d.key);
-    });
-*/
+  /*
+   graph.legend.append('rect')
+   .attr('x', graph.legendConfig.xOffset)
+   .attr('y', function (d, i) {
+   return graph.legendConfig.yOffset + i * graph.legendConfig.lineHeight;
+   })
+   .attr('height', graph.legendConfig.rectHeight)
+   .attr('width', graph.legendConfig.rectWidth)
+   .attr('fill', function (d) {
+   return graph.fillColor(d.key);
+   })
+   .attr('stroke', function (d) {
+   return graph.strokeColor(d.key);
+   });
+   */
   graph.legend.append('text')
     .attr('x', graph.legendConfig.xOffsetText)
     .attr('y', function (d, i) {
@@ -359,19 +359,19 @@ function drawGraph() {
         }, 300);
       }
     });
-/*
-  graph.nodeRect = graph.node.append('rect')
-    .attr('rx', 5)
-    .attr('ry', 5)
-    .attr('stroke', function (d) {
-      return graph.strokeColor(d.categoryKey);
-    })
-    .attr('fill', function (d) {
-      return graph.fillColor(d.categoryKey);
-    })
-    .attr('width', 120)
-    .attr('height', 30);
-*/
+  /*
+   graph.nodeRect = graph.node.append('rect')
+   .attr('rx', 5)
+   .attr('ry', 5)
+   .attr('stroke', function (d) {
+   return graph.strokeColor(d.categoryKey);
+   })
+   .attr('fill', function (d) {
+   return graph.fillColor(d.categoryKey);
+   })
+   .attr('width', 120)
+   .attr('height', 30);
+   */
   graph.node.each(function (d) {
     var node = d3.select(this),
       rect = node.select('rect'),
@@ -436,14 +436,14 @@ function drawGraph() {
         top: bounds.y1 - margin.top,
         bottom: bounds.y2 + margin.top + margin.bottom
       };
-/*
-      d.edge = {
-        left: new geo.LineSegment(bounds.x1, bounds.y1, bounds.x1, bounds.y2),
-        right: new geo.LineSegment(bounds.x2, bounds.y1, bounds.x2, bounds.y2),
-        top: new geo.LineSegment(bounds.x1, bounds.y1, bounds.x2, bounds.y1),
-        bottom: new geo.LineSegment(bounds.x1, bounds.y2, bounds.x2, bounds.y2)
-      };
-      */
+      /*
+       d.edge = {
+       left: new geo.LineSegment(bounds.x1, bounds.y1, bounds.x1, bounds.y2),
+       right: new geo.LineSegment(bounds.x2, bounds.y1, bounds.x2, bounds.y2),
+       top: new geo.LineSegment(bounds.x1, bounds.y1, bounds.x2, bounds.y1),
+       bottom: new geo.LineSegment(bounds.x1, bounds.y2, bounds.x2, bounds.y2)
+       };
+       */
     });
 
     graph.numTicks = 0;

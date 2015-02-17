@@ -285,7 +285,7 @@ var fixData = function () {
       // stringify and save json data for later processing
       function (callback) {
         if (consoleLog) {
-          console.log( __filename, 'line', __line, '; function #:', ++functionCount, '; save clean json file');
+          console.log(__filename, 'line', __line, '; function #:', ++functionCount, '; save clean json file');
         }
         // var saveJson = function () {
         try {
@@ -293,10 +293,10 @@ var fixData = function () {
           var myJsonData = JSON.stringify(data, null, ' ');
           fse.writeFileSync(myFile, myJsonData, fsOptions);
           if (consoleLog) {
-            console.log( __filename, 'line', __line, ';  file written to: ', myFile, ';  file contained: ', truncateString(JSON.stringify(myJsonData, null, ' '), 200));
+            console.log(__filename, 'line', __line, ';  file written to: ', myFile, ';  file contained: ', truncateString(JSON.stringify(myJsonData, null, ' '), 200));
           }
         } catch (e) {
-          console.log( __filename, 'line', __line, ';  Error: ', e);
+          console.log(__filename, 'line', __line, ';  Error: ', e);
           callback();
         }
         callback();
@@ -312,9 +312,9 @@ var fixData = function () {
           console.log('\n ', __filename, 'line', __line, '; Error: ', err);
         }
         if (consoleLog) {
-          console.log( __filename, 'line', __line, '; function #:', ++functionCount);
-          console.log( __filename, 'line', __line, '; data read from: \n', cleanJsonFileName);
-          console.log( __filename, 'line', __line, '; data = \n', trunc.truncn(JSON.stringify(data), 200));
+          console.log(__filename, 'line', __line, '; function #:', ++functionCount);
+          console.log(__filename, 'line', __line, '; data read from: \n', cleanJsonFileName);
+          console.log(__filename, 'line', __line, '; data = \n', trunc.truncn(JSON.stringify(data), 200));
         }
         callback();
       },
@@ -447,7 +447,7 @@ var fixData = function () {
           var myJsonData = JSON.stringify(data, null, ' ');
           fse.writeFileSync(myFileNameAndPath, myJsonData, fsOptions);
           if (consoleLog) {
-            console.log( __filename, 'line', __line, ';  file written to: ', myFileNameAndPath, ';  file contained myJsonData = ', truncateString(myJsonData));
+            console.log(__filename, 'line', __line, ';  file written to: ', myFileNameAndPath, ';  file contained myJsonData = ', truncateString(myJsonData));
           }
         } catch (e) {
           console.log('\n ', __filename, 'line', __line, ';  Error: ', e);
@@ -654,7 +654,7 @@ var addConnectionIdsArrayFromComments = function (nodes) {
       linkRegexMatch = comments.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/gi);
       if (linkRegexMatch !== null) {
         if (consoleLog & counter < 40) {
-          console.log( __filename, 'line', __line, '; counter = ', counter, '; node.id = ', node.id,
+          console.log(__filename, 'line', __line, '; counter = ', counter, '; node.id = ', node.id,
             '; node.name = ', node.name, '; has ', linkRegexMatch.length, 'link regex matches');
         }
         // LOOP THROUGH EACH REGEX MATCH
@@ -673,12 +673,12 @@ var addConnectionIdsArrayFromComments = function (nodes) {
       }
       if (consoleLog) {
         if (counter % 17 === 0) {
-          console.log( __filename, 'line', __line, '; counter = ', counter, '; node.id = ', node.id, '; node.name = ', node.name, '; has node.connectionIdsFromCommentsSet set: ', node.connectionIdsFromCommentsSet);
+          console.log(__filename, 'line', __line, '; counter = ', counter, '; node.id = ', node.id, '; node.name = ', node.name, '; has node.connectionIdsFromCommentsSet set: ', node.connectionIdsFromCommentsSet);
         }
       }
       counter++;
     } else {
-      console.log( __filename, 'line', __line, '; counter = ', counter, '; node.id = ', node.id, '; node.name = ', node.name, '; has no comments to parse; node.COMMENTS1 = ', node.COMMENTS1);
+      console.log(__filename, 'line', __line, '; counter = ', counter, '; node.id = ', node.id, '; node.name = ', node.name, '; has no comments to parse; node.COMMENTS1 = ', node.COMMENTS1);
     }
   });
 };
@@ -940,11 +940,10 @@ var createIndivDateOfBirthString = function (d) {
   return dateString;
 };
 
-var truncateString = function(inString, numCharacters) {
+var truncateString = function (inString, numCharacters) {
   var outString = '[TRUNCATED]' + inString.substring(0, numCharacters) + '\n ... [CONSOLE LOG OUTPUT INTENTIONALLY TRUNCATED TO FIRST' + numCharacters + '400 CHARACTERS]';
- return outString;
-  }
-
+  return outString;
+}
 
 // for DOB, etc.
 var formatDate = function (intlDateString) {

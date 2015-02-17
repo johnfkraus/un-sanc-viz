@@ -1,5 +1,4 @@
 
-
 .nav-button {
     position: absolute;
     top: 8px;
@@ -15,12 +14,10 @@
     margin: 12px 0;
 }
 
-
 #split-container {
     height: 100%;
     width: 100%;
 }
-
 
 #doc-container {
     width: 100%;
@@ -30,6 +27,7 @@
     display: none;
     overflow-y: scroll;
 }
+
 #doc-close {
 
     position: fixed;
@@ -43,12 +41,15 @@
     text-align: center;
     text-decoration: none;
 }
+
 #doc-close:hover {
     background: #ccc;
 }
+
 #doc-scroll {
     overflow-y: scroll;
 }
+
 #doc {
     padding: 8px;
 }
@@ -57,19 +58,23 @@
     font-size: 24px; /* h3 */
     margin-top: 0;
 }
+
 .doc h3 {
     font-size: 18px; /* h4 */
 }
+
 .doc h2 em, .doc h3 em {
     font-size: 14px;
     color: #999;
     padding-left: 4px;
     font-style: normal;
 }
+
 .doc pre {
     margin: 8px;
     padding: 4px;
 }
+
 /*
 .doc .select-object.missing {
     color: #c7254e;

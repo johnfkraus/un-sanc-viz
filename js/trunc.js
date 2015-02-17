@@ -2,7 +2,7 @@
 // ========
 module.exports = {
   truncn: function (string, n) {
-      return string.length > n ? string.substr(0, n - 1) + '&hellip,' : string;
+    return string.length > n ? string.substr(0, n - 1) + '&hellip,' : string;
   },
   bar: function () {
     // whatever

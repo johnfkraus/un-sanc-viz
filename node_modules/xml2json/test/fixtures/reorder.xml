@@ -1,1 +1,3 @@
-<parent parent_property='bar'><child child_property='foo'></child></parent>
+<parent parent_property='bar'>
+    <child child_property='foo'></child>
+</parent>
