@@ -36,9 +36,8 @@
     "xml2json": "^0.5.1"
   },
   "engines": {
-      "npm": "2.4.x",
+    "npm": "2.4.x",
     "node": "0.10.x"
-
   },
   "devDependencies": {
     "coffee-script": "^1.8.0"
@@ -58,7 +57,11 @@
     "d3",
     "force-directed graph"
   ],
-  "author": "John Kraus <john@johnfkraus.com> (http://www.johnfkraus.com/)",
+  "author": {
+    "name": "John Kraus",
+    "email": "johnkraus3@gmail.com",
+    "url": "http://al-qaida-viz.herokuapp.com/"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/johnfkraus/aq-list-viz/issues"
