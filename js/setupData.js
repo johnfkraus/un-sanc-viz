@@ -687,6 +687,7 @@ var addConnectionIdsArrayFromComments = function (nodes) {
 var addConnectionObjectsArrayFromComments = function (nodes) {
 // for each node
   var connectionFromComments;
+  var connection;
   counter = 0;
   nodes.forEach(function (node) {
     // counter ++;

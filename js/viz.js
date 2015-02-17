@@ -7,7 +7,7 @@ Network = function () {
   var allData, charge, charge2, consoleLog, curLinksData, curNodesData, desiredDocsHeight, doc, filter, filterLinks, filterNodes, force,
     forceChargeParam, forceTick, groupCenters, svgHeight, hideDetails, layout, link, linkedByIndex, linksG, mapNodes,
     moveToRadialLayout, neighboring, network, node, nodeColors, nodeColors2, nodeColorsForNoLongerListed, nodeCounts, nodesG, radialTick,
-    setFilter, setLayout, setSort, setupData, setupData2, showDetails, showingDoc, showTheDoc, sort, sortedTargets,
+    searchTerm, setFilter, setLayout, setSort, setupData, setupData2, showDetails, showingDoc, showTheDoc, sort, sortedTargets,
     strokeFor, tooltip, update, updateCenters, updateLinks, updateNodes, width;
   var docClosePadding = 8;
   var topStuffNegativeMargin = 10;
@@ -264,7 +264,7 @@ Network = function () {
     if (window.innerWidth < 900) {
       $('.mainTitleDiv').css('font-size', '14px');
     }
-  }
+  };
 
   // Public function to update highlighted nodes from search
   network.updateColor3 = function (searchTermName) {

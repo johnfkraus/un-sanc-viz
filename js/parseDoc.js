@@ -56,7 +56,7 @@ var parseDoc = function () {
 //  var __filename = __filename || {};
 //  var __line = __line || {};
   var consolidatedList;
-
+  var testDocFileStringified;
   async.series([
       function (callback) {
         // read "raw" unprocessed json file
@@ -72,7 +72,7 @@ var parseDoc = function () {
            // console.log("el1 = ", JSON.stringify(el1, null, " "));
           // })
 
-        })
+        });
         if (consoleLog) {
          // console.log("\n ", __filename, "line", __line, "; function #:", ++functionCount, "; read the test json narr file; testDocFileStringified = \n", testDocFileStringified);
         }

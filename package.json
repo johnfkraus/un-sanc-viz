@@ -38,7 +38,7 @@
   "engines": {
       "npm": "2.4.x",
     "node": "0.10.x"
-    
+
   },
   "devDependencies": {
     "coffee-script": "^1.8.0"

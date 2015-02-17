@@ -13,7 +13,7 @@ var debugWithFewerNodesCount = 10;
 //var __filename = __filename || {};
 var linenums = require('./linenums.js');
 // var __line = __line || {};
-
+var responseBody;
 var individualsHtmlUnicodeString;
 var entitiesHtmlUnicodeString;
 
@@ -94,18 +94,14 @@ var config;
 
 var collect = function () {
   var functionCount = 0;
-  // var myResult;
-  // collecting from: www.un.org/sc/committees/1267/individuals_associated_with_Al-Qaida.shtml
-
   async.series([
 
       function (callback) {
         fse.removeSync(writeJsonOutputDebuggingDirectory);
-//        fse.removeSync('./data/narrative_lists/narrativeUrlsArray.json');
         fse.removeSync(__dirname + '/../data/narrative_summaries/');
         fse.removeSync(__dirname + '/../data/narrative_lists/');
-        fse.removeSync(dataPath);
-        // re-create narrative_summaries directory
+        fse.removeSync(dataPath);   // deletes /data/output/data.json
+        // re-create deleted directories
         fse.mkdirs(writeJsonOutputDebuggingDirectory);
         fse.mkdirs(__dirname + '/../data/narrative_summaries/');
         fse.mkdirs(__dirname + '/../data/narrative_lists/');
@@ -114,7 +110,11 @@ var collect = function () {
 
       // test logger
       function (callback) {
+        var message = [__filename, 'line', __line, '; testing logger.log_message'].join('');
+        console.log(message);
+
         logger.log_message([__filename, 'line', __line, '; testing logger.log_message'].join(''));
+        logger.log_message(message, 'debug');
         // logger.log_message(logMessageStringHead.concat('; testing logger.log_message'));
         callback();
       },
@@ -130,7 +130,6 @@ var collect = function () {
           AQList_xml = fse.readFileSync(backupRawXmlFileName, fsOptions); //, function (err, data) {
         }
         if (consoleLog) {
-          // console.log('res.substring(0, 300) = ', res.substring(0, 300));
           console.log(__filename, 'line', __line, 'AQList_xml res.body.toString() = ', AQList_xml.substring(0, 300), '\nAQList_xml Response body length: ', AQList_xml.length);
           logger.log_message([__filename, 'line', __line, 'AQList_xml res.body.toString() = ', AQList_xml.substring(0, 300), '\nAQList_xml Response body length: ', AQList_xml.length].join(''));
         }
@@ -160,15 +159,11 @@ var collect = function () {
         callback();
       },
 
-      // current data file: AQList.xml
       // convert AQList.xml to json and store in var 'data'
       function (callback) {
         if (consoleLog) {
           console.log('\n ', __filename, 'line', __line, ' function #:', ++functionCount);
-//        console.log('\n ', __filename, 'line', __line, ' typeof AQList_xml = ', (typeof AQList_xml));
-//        console.log('\n ', __filename, 'line', __line, ' AQList_xml = ', AQList_xml.toString().substring(0, 400));
         }
-        // var myResult;
         parseString(AQList_xml, {
           explicitArray: false,
           trim: true
@@ -183,11 +178,9 @@ var collect = function () {
         });
         callback();
       },
-      // save var 'data' to data.json
-      // current data file: AQList.xml  --> data.json
-      // write the json data from AQList.xml to local file /data/output/data.json
+
+      // write the json data in variable 'data' to local file /data/output/data.json
       function (callback) {
-        // write raw json
         if (consoleLog) {
           console.log(__filename, 'line', __line, 'function #:', ++functionCount);
           console.log(__filename, 'line', __line, '; JSON.stringify(data).substring(0,400) = ', JSON.stringify(data).substring(0, 400));
@@ -195,7 +188,8 @@ var collect = function () {
         // var dataPath = __dirname + '/../data/output/data.json';
         try {
           utilities_aq_viz.stringifyAndWriteJsonDataFile(data, dataPath);
-          // you need to stringify the data variable before writing it to a file; otherwise you get a file containing the string 'Object'
+          // you need to stringify the data variable before writing it to a file; otherwise you get a
+          // file containing the string 'Object', and no actual data
           if (consoleLog) {
             console.log(__filename, 'line', __line, '; data file written to: ', dataPath);
           }
@@ -420,7 +414,7 @@ var collect = function () {
       // parse the list file, extract ids, file names etc. and put into narrativeUrlsArray json array
       // write as local file: individualsLocalOutputFileNameAndPath = __dirname + '/../data/narrative_lists/individuals_associated_with_Al-Qaida.json';
       function (callback) {
-        consoleLog = true;
+        // consoleLog = true;
         indivOrEntityString = 'indiv';
         if (consoleLog) {
           console.log('\n ', __filename, __line, '; function 1#:', ++functionCount, '; collect the two list files for sanctioned individuals and entities');
@@ -552,7 +546,7 @@ var collect = function () {
 */
       // read json file containing config
       function (callback) {
-        var configJsonFileName = __dirname + '/../data/input/config.json';
+        var configJsonFileName = __dirname + '/../data/config/config.json';
         var buffer = fse.readFileSync(configJsonFileName); //, fsOptions); //, function (err, data) {
         config = JSON.parse(buffer);
         if (consoleLog) {
@@ -676,7 +670,7 @@ var collect = function () {
     function(callback) {
       var nodes = data.nodes;
       var node;
-      for (nodeCounter = 0; nodeCounter < nodes.length; nodeCounter++) {
+      for (var nodeCounter = 0; nodeCounter < nodes.length; nodeCounter++) {
         node = nodes[nodeCounter];
         delete node.connectionIdsFromCommentsSet;
         delete node.connectedToIdFromCommentsArray;
@@ -685,16 +679,7 @@ var collect = function () {
       }
         callback();
     },
-/*
-      // write intermediate data file for debugging
-      function (callback) {
-        var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'AQList-L' + __line + '-deletedUnnededLinkAttributes.json';
-        utilities_aq_viz.stringifyAndWriteJsonDataFile(data, writeJsonPathAndFileName);
-        utilities_aq_viz.stringifyAndWriteJsonDataFile(data, dataPath);
-        callback();
-      },
 
-*/
     // write intermediate data file for debugging
       function (callback) {
         var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'AQList-L' + __line + '-deletedUnnededLinkAttributes.json';
@@ -703,82 +688,6 @@ var collect = function () {
         callback();
       }
 
-
-      /*
-
-
-
-
-       function (callback) {
-       var narrativeUrlObject;
-       var url;
-       var node;
-       if (consoleLog) {
-       console.log(__filename, 'line', __line, '; function #:', ++functionCount, '; ');
-       logger.log_message([__filename, 'line', __line, '; function #:', ++functionCount, '; '].join(''));
-       }
-       var narrativeAsString;
-       // var readNarrativeFilePath;
-       var trimmedNarrative;
-       var link_data_array_item;
-       var nodes = data.nodes;
-       var readUnparsedLocalNarrativeFilePath;
-       var writeLocalNarrativeFilePath;
-       var buffer;
-       for (var nodeCounter = 0; nodeCounter < nodes.length; nodeCounter++) {
-       node = nodes[nodeCounter];
-       readUnparsedLocalNarrativeFilePath = __dirname + '/../data/narrative_summaries_parsed/' + node.narrativeFileName;
-       writeLocalNarrativeFilePath = __dirname + '/../data/narrative_summaries_parsed/' + node.narrativeFileName;
-       try {
-
-       buffer = fse.readFileSync(readUnparsedLocalNarrativeFilePath);
-       } catch (err) {
-       logger.log_message([__filename, 'line', __line, '; Error: ', err].join(''));
-       console.log(__filename, 'line', __line, '; Error: ', err);
-       }
-       console.log(__filename, 'line', __line, '; buffer.length = ', buffer.length);
-       var narrWebPageAsString = utilities_aq_viz.forceUnicodeEncoding(buffer.toString());
-       trimmedNarrative = utilities_aq_viz.trimNarrative(narrWebPageAsString);
-       syncWriteHtmlFile(trimmedNarrative, writeLocalNarrativeFilePath);
-       }
-       callback();
-       },
-
-
-       // parse each local narrative file and write result to local file
-       function (callback) {
-       var narrativeUrlObject;
-       //        var url;
-       var node;
-       if (consoleLog) {
-       console.log(__filename, 'line', __line, '; function #:', ++functionCount, '; ');
-       logger.log_message([__filename, 'line', __line, '; function #:', ++functionCount, '; '].join(''));
-       }
-       var narrativeAsString;
-       // var readNarrativeFilePath;
-       var trimmedNarrative;
-       var link_data_array_item;
-       var nodes = data.nodes;
-       var readUnparsedLocalNarrativeFilePath;
-       var writeLocalNarrativeFilePath;
-       var buffer;
-       for (var nodeCounter = 0; nodeCounter < nodes.length; nodeCounter++) {
-       node = nodes[nodeCounter];
-       readUnparsedLocalNarrativeFilePath = __dirname + '/../data/narrative_summaries_parsed/' + node.narrativeFileName;
-       writeLocalNarrativeFilePath = __dirname + '/../data/narrative_summaries_parsed/' + node.narrativeFileName;
-       try {
-       buffer = fse.readFileSync(readUnparsedLocalNarrativeFilePath);
-       } catch (err) {
-       logger.log_message([__filename, 'line', __line, '; Error: ', err].join(''));
-       console.log(__filename, 'line', __line, '; Error: ', err);
-       }
-       console.log(__filename, 'line', __line, '; buffer.length = ', buffer.length);
-       var narrWebPageAsString = utilities_aq_viz.forceUnicodeEncoding(buffer.toString());
-       trimmedNarrative = utilities_aq_viz.trimNarrative(narrWebPageAsString);
-       syncWriteHtmlFile(trimmedNarrative, writeLocalNarrativeFilePath);
-       }
-       callback();
-       }
 
 
        /*
@@ -843,226 +752,8 @@ var collect = function () {
        */
 
       /*
-       // write intermediate data file for debugging
-       function (callback) {
-       var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'AQList-L' + __line + '-collectedEachNarrativeFile.json';
-       utilities_aq_viz.stringifyAndWriteJsonDataFile(data, writeJsonPathAndFileName);
-       // var dataPath = __dirname + '/../data/output/data.json';
-       utilities_aq_viz.stringifyAndWriteJsonDataFile(data, dataPath);
-       callback();
-       }
-       /*
-       */
-      /*
-       // write intermediate data file for debugging
-       function (callback) {
-       var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'AQList-L' + __line + '-parsedNarratives.json';
-       utilities_aq_viz.stringifyAndWriteJsonDataFile(data, writeJsonPathAndFileName);
-       // var dataPath = __dirname + '/../data/output/data.json';
-       utilities_aq_viz.stringifyAndWriteJsonDataFile(data, dataPath);
-       callback();
-       },
 
-       // COUNT LINKS
-       function (callback) {
-       countLinksFromComments(data);
-       if (consoleLog) {
-       console.log('\n ', __filename, 'line', __line, '; function #:', ++functionCount, '; countLinks2');
-       console.log('\n ', __filename, 'line', __line, '; data.nodes[1] = ', data.nodes[1]);
-       }
-       callback();
-       },
-
-       // CHECK TARGETS EXIST
-       function (callback) {
-       var nodes = data.nodes;
-       var links = data.links;
-       checkTargetsExist(nodes, links);
-       callback();
-       },
-
-       // number the nodes starting with zero; COUNT NODES, PRINT NODE IDS
-       function (callback) {
-       numberTheNodes(data);
-       var nodeCounter = 0;
-       data.nodes.forEach(function (node) {
-       nodeCounter++;
-       if (consoleLog && (nodeCounter % 17) === 1) {
-       console.log(__filename, 'line', __line, '; node #', nodeCounter, 'node.id = ', node.id);
-       }
-       });
-       callback();
-       }
-       /*
-       // write intermediate data file for debugging
-       function (callback) {
-       var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'AQList-L' + __line + '-numberedDataNodes.json';
-       utilities_aq_viz.stringifyAndWriteJsonDataFile(data, writeJsonPathAndFileName);
-       utilities_aq_viz.stringifyAndWriteJsonDataFile(data, dataPath);
-       callback();
-       },
-
-       // which node has the most links?
-       function (callback) {
-       if (consoleLog) {
-       console.log('\n ', __filename, 'line', __line, '; function #:', ++functionCount);
-       console.log('\n ', __filename, 'line', __line, '; data.nodes[155] = ', data.nodes[155]);
-       }
-       counter = 0;
-       var maxLinkCount = 0;
-       var maxLinkId = '';
-       data.nodes.forEach(function (node) {
-       counter++;
-       if (node.linksCount > maxLinkCount) {
-       maxLinkCount = node.linksCount;
-       maxLinkId = node.id;
-       }
-       });
-       data.maxLinksFromComments = {'count': maxLinkCount, 'id': maxLinkId};
-       //        data.maxLinks = null;
-       //        data.maxLinks.count = maxLinkCount;
-       //        data.maxLinks.id = maxLinkId;
-       console.log('\n ', __filename, 'line', __line, '; counter = ', counter, '; maxLinkId = ', maxLinkId, '; maxLinkCount = ', maxLinkCount);
-       counter = 0;
-       data.links.forEach(function (linkFromComments) {
-       counter++;
-       if (counter <= numObjectsToShow) {
-       if (consoleLog) {
-       console.log('\n ', __filename, 'line', __line, '; counter = ', counter, '; linkFromComments/varlink = ', linkFromComments);
-       }
-       }
-       });
-       callback();
-       },
-
-       // write intermediate data file for debugging
-       function (callback) {
-       var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'AQList-L' + __line + '-whichNodeHasMostLinks.json';
-       utilities_aq_viz.stringifyAndWriteJsonDataFile(data, writeJsonPathAndFileName);
-       utilities_aq_viz.stringifyAndWriteJsonDataFile(data, dataPath);
-       callback();
-       },
-       /*
-       // stringify and write json data to local file
-       function (callback) {
-       if (consoleLog) {
-       console.log('\n ', __filename, 'line', __line, '; function #:', ++functionCount, '; write clean json file');
-       }
-       // var writeJson = function () {
-       try {
-       var myFileNameAndPath = __dirname + '/../data/output/data.json';
-       var stringifiedData = JSON.stringify(data, null, ' ');
-       fse.writeFileSync(myFileNameAndPath, stringifiedData, fsOptions);
-       if (consoleLog) {
-       console.log(__filename, 'line', __line, ';  file written to: ', myFileNameAndPath, ';  file contained data = ', truncateString(data));
-       }
-       } catch (err) {
-       console.log('\n ', __filename, 'line', __line, ';  Error: ', err);
-       callback();
-       }
-       callback();
-       }
-       */
-
-      /*
-       // The UN list files omit some of the nodes.  In some cases, this appears to be an oversight.  In others, the node
-       // is no longer on the sanctions list.  There may be other reasons for the omission as well.
-       // If no narrative file name for a node could be found in the UN list files, we generate the expected file name
-       // based an observed relationship between a given nodes id and its narrative file name.
-       function (callback) {
-       console.log('\n ', __filename, 'line', __line, '; function #:', ++functionCount, '; ');
-       // var narrCounter = 0;
-       // var dataPath = __dirname + '/../data/output/data.json';
-       data = JSON.parse(fse.readFileSync(dataPath));
-       var nodes = data.nodes;
-       countUndefinedNarrativeFileNames(nodes);
-       var node = null;
-       // check if the node.narrativeFileName is defined for each node
-       for (var nodeCounter = 0; nodeCounter < nodes.length; nodeCounter++) {
-       node = nodes[nodeCounter];
-       var narrativeFileNameIsMissing = (typeof(node.narrativeFileName) === 'null' || typeof(node.narrativeFileName) === 'undefined');
-       //          if (typeof(node.narrativeFileName) === 'null' || typeof(node.narrativeFileName) === 'undefined') {
-       if (narrativeFileNameIsMissing) {
-       node.narrativeFileName = utilities_aq_viz.generateNarrFileName(node);
-       console.log('\n ', __filename, 'line', __line, '; Generated narrative file name for node.id = ', node.id, '; nodeCounter = ', nodeCounter, '; node.name = ', node.name, '; node.noLongerListed = ', node.noLongerListed);
-       }
-       }
-       var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'AQListL-' + __line + '-addedNarrativeFileNames.json';
-       utilities_aq_viz.stringifyAndWriteJsonDataFile(data, writeJsonPathAndFileName);
-       // writeJsonPathAndFileName = writeJsonOutputFilePath + 'data.json';
-       utilities_aq_viz.stringifyAndWriteJsonDataFile(data, dataPath);
-       callback();
-       },
-       /*
-       // number the narrative links
-       function (callback) {
-       if (consoleLog) {
-       console.log(__filename, __line, '; function #:', ++functionCount);
-       }
-       var counter = 0;
-       narrativeUrlsArray.forEach(function (narrativeUrl) {
-       narrativeUrl.narrativeNumber = counter;
-       counter++;
-       });
-       callback();
-       }
-
-
-       /*
-       // collect the narrative files form the UN web site
-       // using file names from nodes array in the 'data' variable (loaded from local file AQList-clean ....json),
-       // collect the extended narratives from the Internet and save as local files.
-       // If no narrative file name listed in the list found on the U.N. site, generate the file name based the pattern that
-       // infers that the narrative file name can be deduced from the node id.
-       // using file names from nodes array in AQList-clean ....json, collect the extended narratives from the Internet and save as local files.
-       function (callback) {
-       console.log( __filename,'line', __line,'; function #4:', ++functionCount, '; ');
-       narrCounter = 0;
-       var narrativeFile = '';
-       var mainContent = '';
-       var nodes = data.nodes;
-       var node;
-       var collectNarrativeFileNameAndPath;
-       var collectAndSaveLocallyNarrativePagesErrorsCount = 0;
-       var writeNarrativeFileNameAndPath;
-       //        for (var nodeCounter = 0; nodeCounter < nodes.length; nodeCounter++) {
-       for (var nodeCounter = 0; nodeCounter < Math.min(nodes.length, debugWithFewerNodesCount); nodeCounter++) {
-       // narrCounter++;
-       node = nodes[nodeCounter];
-       collectNarrativeFileNameAndPath = 'http://www.un.org/sc/committees/1267/' + node.
-       narrativeFileName;
-       writeNarrativeFileNameAndPath = __dirname +
-       '/../data/narrative_summaries/' + node.narrativeFileName;
-       try {
-       syncGetRawHtmlNarrativePages(collectNarrativeFileNameAndPath, writeNarrativeFileNameAndPath);
-       } catch (err) {
-       console.log(__filename, 'line', __line, '; Error: ', err, '; collectAndSaveLocallyNarrativePagesErrorsCount =  ',
-       collectAndSaveLocallyNarrativePagesErrorsCount++, '; collectNarrativeFileNameAndPath  = ', collectNarrativeFileNameAndPath , '; saveFilePath = ', writeNarrativeFileNameAndPath);
-       }
-       if (nodeCounter < 5) {
-       //            console.log( __filename, 'line', __line, '; narrativeFile = ', narrativeFile);
-       //            console.log('\n ', __filename, 'line', __line,
-       //             '; mainContent = ',
-       //            mainContent);
-       }
-       }
-       //    console.log('\n ', __filename, 'line', __line, '; errors = ', errors,
-       //      '; nodes.length = ', nodes.length, '; narrCounter = ',
-       //      narrCounter);
-       callback();
-       },
-
-       function (callback) {
-       if (consoleLog) {
-       console.log(__filename, __line, '; function 3#:', ++functionCount);
-       }
-
-       var narrativeUrlsArrayStringified = JSON.stringify(narrativeUrlsArray, null, ' ');
-       writeMyFile(narrativeUrlsArrayLocalFileNameAndPath, JSON.stringify(narrativeUrlsArray, null, ' '), fsOptions);
-       // console.log( __filename, __line, '; wrote file: ', narrativeUrlsArrayLocalFileNameAndPath);
-       callback(null, JSON.stringify(narrativeUrlsArray, null, ' '));
-       }
-       */
+*/
     ],
     function (err) {
       // if (consoleLog) { console.log( __filename, 'line', __line, ' wroteJson = ', trunc.n400(myResult));
@@ -1104,20 +795,8 @@ var syncWriteFileAQListXML = function (data, localFileNameAndPath) {
   }
 };
 
-//var getListOfNarratives = function () {
-//async.series([],
-/*
- function (err, results) { //This function gets called after the foregoing tasks have called their 'task callbacks'
- if (err) {
- console.log( __filename, 'line: ', __line, ' Error: ', err);
- } else {
- console.log( __filename, 'line: ', __line, '; function:', ++functionCount, 'results.length = ', results.length, '; results.toString().substring(0,', narrListSubstringLength, ') = ', results.toString().substring(0, narrListSubstringLength), '[FILE LOG OUTPUT INTENTIONALLY TRUNCATED]');
- }
- });
- };
- */
 
-var responseBody;
+
 // parse the html narrative list files
 // put html file names in narrativeUrlsArray
 // write to json file: narrativeUrlsArrayLocalFileNameAndPath
