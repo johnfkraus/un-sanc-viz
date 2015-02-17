@@ -35,10 +35,5 @@ johns_notes.txt
 johns_notes.secret.txt
 *.secret.txt
 terminal*.txt
+*.swp
 
-###
-
-
-
-
-archives2
