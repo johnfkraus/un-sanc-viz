@@ -1,7 +1,8 @@
 /* utilities_aq_vis.js */
 
 var consoleLog = false;
-
+// var log = require('custom-logger').config({ level: 0 });
+var log = require('custom-logger').config({ format: "%event% %padding%[%timestamp%]: %message%" });
 var fsOptions = {
   flags: 'r+', encoding: 'utf-8', autoClose: true
 };
@@ -97,8 +98,8 @@ var generateNarrFileName = function (node) {
   var narrFileName = 'NSQ' + idSplit[0].substring(1, 2) + idSplit[2] + idSplit[3] + 'E.shtml';
   if (consoleLog) {
     console.log(__filename, ' line ', __line, '; node.id = ', node.id, '; generated narrFileName = ', narrFileName);
+    logger.log_message([__filename, ' line ', __line, '; node.id = ', node.id, '; generated narrFileName = ', narrFileName].join(''));
   }
-  logger.log_message([__filename, ' line ', __line, '; node.id = ', node.id, '; generated narrFileName = ', narrFileName].join(''));
   return narrFileName.trim();
 };
 

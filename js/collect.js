@@ -9,6 +9,7 @@
 
 // do we want lots of console.log messages for debugging (if so, set consoleLog = true)
 var consoleLog = false;
+var log = require('custom-logger').config({ level: 0 });
 var debugWithFewerNodesCount = 10;
 //var __filename = __filename || {};
 var linenums = require('./linenums.js');
@@ -113,8 +114,8 @@ var collect = function () {
         var message = [__filename, 'line', __line, '; testing logger.log_message'].join('');
         console.log(message);
 
-        logger.log_message([__filename, 'line', __line, '; testing logger.log_message'].join(''));
-        logger.log_message(message, 'debug');
+        log.debug([__filename, 'line', __line, '; testing logger.log_message'].join(''));
+        log.debug(message, 'debug');
         // logger.log_message(logMessageStringHead.concat('; testing logger.log_message'));
         callback();
       },
@@ -613,7 +614,9 @@ var collect = function () {
             node.narrativeFileName = utilities_aq_viz.generateNarrFileName(node);
             node.narrativeFileNameSource = 'derived from id';
             generatedNarrFileNameCounter++;
-            console.log('\n ', __filename, ' line ', __line, 'generatedNarrFileNameCounter = ', generatedNarrFileNameCounter, '; ldi = ', nodeCounter, '; longNarrativeFileNameMissing = ', longNarrativeFileNameMissing, '\n node.narrativeFileName = ', node.narrativeFileName, '; node = ', node, '\n\n');
+            if (consoleLog) {
+              console.log('\n ', __filename, ' line ', __line, 'generatedNarrFileNameCounter = ', generatedNarrFileNameCounter, '; ldi = ', nodeCounter, '; longNarrativeFileNameMissing = ', longNarrativeFileNameMissing, '\n node.narrativeFileName = ', node.narrativeFileName, '; node = ', node, '\n\n');
+            }
           }
         }
         if (consoleLog) {
@@ -637,7 +640,7 @@ var collect = function () {
         var narrative, node, nodeNarrFileName, readFilePath, responseString, trimmedNarrative, trimmedLabeledNarrative, writeNarrativesFilePath;
         console.log('\n ', __filename, 'line', __line, '; function #:', ++functionCount, '; ');
         // read the data file; each node has a narrativeFileName property
-        data = JSON.parse(fse.readFileSync(__dirname + '/../data/output/data.json',fsOptions));
+        data = JSON.parse(fse.readFileSync(__dirname + '/../data/output/data.json', fsOptions));
         var nodes = data.nodes;
         // var trimmedLabeledNarrative;
         for (var nodeCounter = 0; nodeCounter < nodes.length; nodeCounter++) {
@@ -650,13 +653,14 @@ var collect = function () {
             } catch (err) {
               console.log('\n ', __filename, 'line', __line, '; Error: ', err, '; url = ', url);
             }
-            console.log('\n ', __filename, 'line', __line, '; getting file nodeCounter = ', nodeCounter, '; readFilePath = ', readFilePath, '\n narrative.substring(0, 300) = ', narrative.substring(0, 300), ' [INTENTIONALLY TRUNCATED TO FIRST 300 CHARACTERS]');
-
-            writeNarrativesFilePath = __dirname + '/../data/narrative_summaries/' + nodeNarrFileName + '.html';
-            syncWriteHtmlFile(narrative, writeNarrativesFilePath);
+            if (consoleLog) {
+              console.log('\n ', __filename, 'line', __line, '; getting file nodeCounter = ', nodeCounter, '; readFilePath = ', readFilePath, '\n narrative.substring(0, 300) = ', narrative.substring(0, 300), ' [INTENTIONALLY TRUNCATED TO FIRST 300 CHARACTERS]');
+            }
+            // writeNarrativesFilePath = __dirname + '/../data/narrative_summaries/' + nodeNarrFileName + '.html';
+            // syncWriteHtmlFile(narrative, writeNarrativesFilePath);
             var narrWebPageAsString = utilities_aq_viz.forceUnicodeEncoding(narrative.toString());
             trimmedNarrative = utilities_aq_viz.trimNarrative2(narrWebPageAsString, url);
-            trimmedLabeledNarrative = utilities_aq_viz.addFileLabel(trimmedNarrative,url);
+            trimmedLabeledNarrative = utilities_aq_viz.addFileLabel(trimmedNarrative, url);
             writeNarrativesFilePath = __dirname + '/../data/narrative_summaries/' + nodeNarrFileName;
             syncWriteHtmlFile(trimmedLabeledNarrative, writeNarrativesFilePath);
           }
@@ -669,7 +673,7 @@ var collect = function () {
         callback();
       },
 
-      // clean up data file
+      // clean up data file; remove link data structures we don't need any more
       function (callback) {
         var nodes = data.nodes;
         var node;

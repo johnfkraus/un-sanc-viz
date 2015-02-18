@@ -9,316 +9,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4182aee6-13b8-4466-9993-4422af087054" name="John's change list" comment="cleanup before deployment attempt on heroku">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/aq-list-viz-Tue_Feb 17 2015-14-26" />
-      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\output_debugging\AQList-L685-deletedUnnededLinkAttributes.json" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQE00101E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQE00101E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQE00201E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQE00201E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQE00301E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQE00301E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQE00401E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQE00401E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQE00501E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQE00501E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQE00601E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQE00601E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQE00701E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQE00701E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQE00801E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQE00801E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQE00901E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQE00901E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQE01001E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQE01001E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQE01101E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQE01101E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQE01201E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQE01201E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQE01401E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQE01401E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQE01501E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQE01501E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQE01901E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQE01901E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQE02001E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQE02001E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQE02101E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQE02101E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQE06801E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQE06801E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQE06902E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQE06902E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQE07002E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQE07002E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQE07102E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQE07102E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQE07202E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQE07202E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQE08802E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQE08802E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQE08902E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQE08902E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQE09002E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQE09002E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQE09102E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQE09102E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQE09202E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQE09202E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQE09302E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQE09302E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQE09603E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQE09603E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQE09803E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQE09803E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQE09903E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQE09903E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQE10003E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQE10003E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQE10103E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQE10103E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQE10203E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQE10203E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQE10304E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQE10304E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQE10404E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQE10404E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQE10504E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQE10504E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQE10604E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQE10604E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQE10704E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQE10704E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQE10804E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQE10804E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQE10904E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQE10904E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQE11004E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQE11004E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQE11104E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQE11104E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQE11204E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQE11204E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQE11304E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQE11304E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQE11404E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQE11404E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQE11504E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQE11504E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQE11604E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQE11604E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQE11805E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQE11805E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQE11905E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQE11905E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQE12105E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQE12105E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQE12808E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQE12808E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQE12910E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQE12910E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQE13010E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQE13010E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQE13111E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQE13111E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQE13211E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQE13211E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQE13312E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQE13312E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQE13412E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQE13412E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQE13513E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQE13513E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQE13613E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQE13613E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQE13714E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQE13714E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQE13814E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQE13814E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQE13914E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQE13914E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQE14014E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQE14014E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQE14114E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQE14114E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQE14214E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQE14214E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQE14314E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQE14314E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQE14414E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQE14414E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQE14514E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQE14514E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQE14614E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQE14614E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI00101E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI00101E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI00201E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI00201E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI00301E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI00301E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI00601E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI00601E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI00901E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI00901E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI01001E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI01001E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI01201E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI01201E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI01401E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI01401E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI01501E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI01501E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI01701E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI01701E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI01801E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI01801E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI01901E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI01901E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI02001E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI02001E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI02101E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI02101E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI02301E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI02301E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI02701E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI02701E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI02801E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI02801E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI02901E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI02901E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI03101E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI03101E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI03701E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI03701E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI04201E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI04201E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI05401E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI05401E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI05501E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI05501E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI05601E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI05601E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI05702E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI05702E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI05802E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI05802E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI05902E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI05902E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI06002E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI06002E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI06202E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI06202E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI06302E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI06302E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI06402E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI06402E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI06502E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI06502E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI06702E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI06702E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI06802E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI06802E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI07002E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI07002E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI07102E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI07102E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI07202E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI07202E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI07302E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI07302E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI07402E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI07402E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI07502E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI07502E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI07602E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI07602E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI07702E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI07702E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI08002E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI08002E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI08102E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI08102E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI08202E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI08202E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI08302E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI08302E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI08603E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI08603E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI08703E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI08703E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI08803E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI08803E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI09103E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI09103E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI09203E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI09203E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI09303E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI09303E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI09503E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI09503E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI09603E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI09603E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI09903E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI09903E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI10103E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI10103E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI10303E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI10303E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI10403E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI10403E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI10903E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI10903E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI11103E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI11103E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI11403E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI11403E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI11903E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI11903E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI12003E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI12003E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI12203E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI12203E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI12303E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI12303E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI12403E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI12403E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI12603E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI12603E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI12803E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI12803E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI12903E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI12903E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI13003E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI13003E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI13203E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI13203E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI13503E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI13503E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI13603E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI13603E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI13803E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI13803E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI13903E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI13903E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI14003E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI14003E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI14103E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI14103E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI14203E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI14203E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI14303E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI14303E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI14403E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI14403E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI14703E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI14703E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI14803E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI14803E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI14903E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI14903E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI15003E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI15003E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI15103E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI15103E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI15203E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI15203E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI15404E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI15404E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI15504E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI15504E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI15604E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI15604E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI15704E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI15704E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI16004E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI16004E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI16104E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI16104E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI16404E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI16404E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI16704E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI16704E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI16804E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI16804E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI16904E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI16904E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI17004E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI17004E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI17204E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI17204E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI17604E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI17604E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI17704E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI17704E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI18004E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI18004E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI18405E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI18405E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI18605E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI18605E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI18705E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI18705E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI18805E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI18805E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI19005E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI19005E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI19205E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI19205E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI19305E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI19305E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI19405E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI19405E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI19505E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI19505E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI19605E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI19605E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI19805E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI19805E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI19905E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI19905E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI20005E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI20005E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI20105E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI20105E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI20205E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI20205E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI20305E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI20305E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI20405E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI20405E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI20505E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI20505E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI20605E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI20605E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI20805E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI20805E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI21606E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI21606E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI21706E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI21706E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI21806E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI21806E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI21906E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI21906E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI22106E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI22106E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI22206E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI22206E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI22306E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI22306E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI22606E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI22606E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI22806E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI22806E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI22907E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI22907E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI23207E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI23207E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI23307E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI23307E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI23407E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI23407E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI23608E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI23608E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI23708E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI23708E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI23808E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI23808E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI24108E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI24108E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI24208E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI24208E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI24308E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI24308E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI24408E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI24408E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI24508E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI24508E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI24608E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI24608E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI24708E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI24708E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI24808E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI24808E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI24908E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI24908E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI25008E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI25008E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI25108E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI25108E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI25208E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI25208E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI25308E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI25308E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI25408E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI25408E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI25508E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI25508E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI25908E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI25908E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI26008E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI26008E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI26108E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI26108E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI26208E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI26208E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI26308E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI26308E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI26408E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI26408E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI26508E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI26508E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI26608E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI26608E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI26809E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI26809E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI27109E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI27109E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI27209E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI27209E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI27309E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI27309E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI27410E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI27410E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI27510E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI27510E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI27610E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI27610E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI27710E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI27710E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI27810E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI27810E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI27910E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI27910E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI28010E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI28010E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI28210E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI28210E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI28310E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI28310E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI28510E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI28510E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI28610E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI28610E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI28911E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI28911E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI29011E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI29011E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI29111E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI29111E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI29211E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI29211E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI29311E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI29311E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI29411E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI29411E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI29511E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI29511E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI29611E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI29611E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI29711E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI29711E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI29811E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI29811E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI29911E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI29911E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI30012E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI30012E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI30112E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI30112E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI30212E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI30212E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI30312E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI30312E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI30412E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI30412E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI30512E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI30512E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI30612E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI30612E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI30712E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI30712E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI30812E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI30812E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI30912E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI30912E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI31112E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI31112E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI31212E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI31212E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI31313E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI31313E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI31413E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI31413E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI31513E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI31513E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI31613E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI31613E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI31713E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI31713E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI31813E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI31813E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI31913E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI31913E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI32013E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI32013E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI32114E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI32114E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI32214E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI32214E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI32314E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI32314E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI32414E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI32414E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI32514E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI32514E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI32614E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI32614E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI32714E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI32714E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI32814E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI32814E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI32914E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI32914E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI33014E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI33014E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI33114E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI33114E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI33214E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI33214E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI33314E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI33314E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI33414E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI33414E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI33514E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI33514E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI33614E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI33614E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI33714E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI33714E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI33814E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI33814E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI33914E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI33914E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI34014E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI34014E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI34114E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI34114E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI34214E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI34214E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI34315E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI34315E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI34415E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI34415E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI34515E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI34515E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI34615E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI34615E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI34715E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI34715E.shtml" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\output_debugging\AQList-L215-raw_data.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\output_debugging\AQList-L310-writedata.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\output_debugging\AQList-L324-normData-01-flattened.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\output_debugging\AQList-L381-bagData.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\output_debugging\AQList-L405-setupData1-nodeBagSet.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\output_debugging\AQList-L476-addConnectionIdsArrayFromComments.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\output_debugging\AQList-L494-addConnectionObjectsArray.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\output_debugging\AQList-L513-consolidatedLinksFromComments.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\output_debugging\AQList-L591-readdata.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\output_debugging\AQList-L627-generatedNarrFileNames.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\log\aq-list-viz-Tue_Feb 17 2015-13-01" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\log\aq-list-viz-Tue_Feb 17 2015-13-14" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\log\aq-list-viz-Tue_Feb 17 2015-14-26" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app-test.js" afterPath="$PROJECT_DIR$/js/app-test.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/collect.js" afterPath="$PROJECT_DIR$/js/collect.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/data.json" afterPath="$PROJECT_DIR$/data/output/data.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/libs/logger.js" afterPath="$PROJECT_DIR$/js/libs/logger.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/utilities_aq_viz.js" afterPath="$PROJECT_DIR$/js/utilities_aq_viz.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/viz.js" afterPath="$PROJECT_DIR$/js/viz.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="aqlist-visualization.iws" />
@@ -346,8 +56,8 @@
       <file leaf-file-name="collect.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/collect.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="28280" max-vertical-offset="29359">
-              <caret line="1639" column="0" selection-start-line="1639" selection-start-column="0" selection-end-line="1639" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="29427">
+              <caret line="11" column="56" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="56" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -355,51 +65,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="viz.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/viz.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.423077" vertical-offset="14501" max-vertical-offset="21012">
-              <caret line="872" column="5" selection-start-line="872" selection-start-column="5" selection-end-line="872" selection-end-column="5" />
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/tracer/README.md">
+          <provider selected="true" editor-type-id="MarkdownPreviewEditor">
+            <state />
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9486">
+              <caret line="6" column="5" selection-start-line="0" selection-start-column="0" selection-end-line="550" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="utilities_aq_viz.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/utilities_aq_viz.js">
+      <file leaf-file-name="johns_notes.secret.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/johns_notes.secret.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="3482" max-vertical-offset="4216">
-              <caret line="224" column="33" selection-start-line="224" selection-start-column="33" selection-end-line="224" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NSQI01201E.shtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/narrative_summaries/NSQI01201E.shtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="5.423077" vertical-offset="141" max-vertical-offset="510">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NSQI20005E.shtml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/data/narrative_summaries/NSQI20005E.shtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="logger.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/libs/logger.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.6923075" vertical-offset="354" max-vertical-offset="969">
-              <caret line="29" column="17" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="17" />
+            <state vertical-scroll-proportion="30.73842" vertical-offset="6950" max-vertical-offset="29631">
+              <caret line="1601" column="460" selection-start-line="1601" selection-start-column="460" selection-end-line="1601" selection-end-column="460" />
               <folding />
             </state>
           </provider>
@@ -457,21 +140,21 @@
         <option value="$PROJECT_DIR$/js/myVarArgs.js" />
         <option value="$PROJECT_DIR$/js/linenums.js" />
         <option value="$PROJECT_DIR$/js/libs/regex-weburl.js" />
-        <option value="$PROJECT_DIR$/js/app-test.js" />
         <option value="$PROJECT_DIR$/data/narrative_lists/entities_other_groups_undertakings_associated_with_Al-Qaida.shtml" />
         <option value="$PROJECT_DIR$/data/archive/collect-backup.js" />
-        <option value="$PROJECT_DIR$/js/libs/logger.js" />
         <option value="$PROJECT_DIR$/js/parseDoc.js" />
         <option value="$PROJECT_DIR$/js/setupData.js" />
         <option value="$PROJECT_DIR$/data/xml/AQ-2014-11-20-202052.xml" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/data/output/data.json" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/johns_notes.secret.txt" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/viz.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/js/libs/logger.js" />
+        <option value="$PROJECT_DIR$/js/app-test.js" />
         <option value="$PROJECT_DIR$/js/collect.js" />
         <option value="$PROJECT_DIR$/js/utilities_aq_viz.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/johns_notes.secret.txt" />
       </list>
     </option>
   </component>
@@ -621,7 +304,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
+              <option name="myItemId" value="node_modules" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -635,85 +318,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="skybox" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aq-list-viz" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aq-list-viz" />
+              <option name="myItemId" value="node_modules" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aq-list-viz" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aq-list-viz" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aq-list-viz" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aq-list-viz" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aq-list-viz" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aq-list-viz" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="output" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aq-list-viz" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aq-list-viz" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="narrative_summaries" />
+              <option name="myItemId" value="tracer" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -761,10 +370,14 @@
       <ConfigurationWrapper RunnerId="Basic" />
       <method />
     </configuration>
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <method />
     </configuration>
-    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
@@ -772,10 +385,6 @@
       <setting name="settingsFile" value="" />
       <setting name="serverType" value="INTERNAL" />
       <setting name="preferredDebugBrowser" value="Chrome" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="ChromiumRemoteDebugType" factoryName="Chromium Remote">
@@ -1009,12 +618,6 @@
       <created>1416008001889</created>
       <option name="number" value="Default" />
       <updated>1417180880658</updated>
-    </task>
-    <task id="LOCAL-00013" summary="npm install bag">
-      <created>1417435882189</created>
-      <option name="number" value="00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1417435882189</updated>
     </task>
     <task id="LOCAL-00014" summary="fixing docs on  click circle">
       <created>1417522452464</created>
@@ -1304,7 +907,13 @@
       <option name="project" value="LOCAL" />
       <updated>1424189796039</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="fixed weird characters in narratives">
+      <created>1424218858829</created>
+      <option name="number" value="00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1424218858830</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <option name="trackContextForNewChangelist" value="true" />
     <servers />
   </component>
@@ -1333,7 +942,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30079156" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Heroku" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3263158" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4473684" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39342105" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -1346,17 +955,17 @@
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1861938" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29139924" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.44605264" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44605264" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Get Gist" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39709762" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3878628" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1375,14 +984,14 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24967907" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15532735" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30870712" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39709762" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30870712" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Get Gist" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -1408,7 +1017,6 @@
       <TodoPanelSettings />
     </option>
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="busted, saving narrative files, need output filename" />
     <MESSAGE value="collecting narratives" />
     <MESSAGE value="collecting narratives, update for heroku" />
     <MESSAGE value="added collect narratives before make docs" />
@@ -1433,7 +1041,8 @@
     <MESSAGE value="collect.js working, shows narrative file text; links still derived from comments, not narratives, needs legend for nationality colors" />
     <MESSAGE value="cleanup before deployment attempt on heroku" />
     <MESSAGE value="updated package.json author" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated package.json author" />
+    <MESSAGE value="fixed weird characters in narratives" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed weird characters in narratives" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1441,12 +1050,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/collect.js</url>
-          <line>807</line>
+          <line>811</line>
           <option name="timeStamp" value="952" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/collect.js</url>
-          <line>107</line>
+          <line>108</line>
           <option name="timeStamp" value="967" />
         </line-breakpoint>
       </breakpoints>
@@ -1480,6 +1089,48 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/js/collect.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="11169" max-vertical-offset="28815">
+          <caret line="657" column="13" selection-start-line="657" selection-start-column="13" selection-end-line="657" selection-end-column="13" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="663" max-vertical-offset="765">
+          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/viz.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="14824" max-vertical-offset="20893">
+          <caret line="872" column="5" selection-start-line="872" selection-start-column="5" selection-end-line="872" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/utilities_aq_viz.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1734" max-vertical-offset="3995">
+          <caret line="102" column="2" selection-start-line="102" selection-start-column="2" selection-end-line="102" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/libs/logger.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1071">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/libs/logger.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="969">
@@ -1553,13 +1204,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/node_modules/dateformat/Readme.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.785714" vertical-offset="274" max-vertical-offset="1445">
           <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
         </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/node_modules/dateformat/lib/dateformat.js">
@@ -1637,16 +1288,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="515">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/app-test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2924">
-          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="9" selection-end-column="21" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1732,13 +1373,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.2725989" vertical-offset="0" max-vertical-offset="1292">
-          <caret line="53" column="20" selection-start-line="53" selection-start-column="20" selection-end-line="53" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/archive_historical/AQList-2014-12-12.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="303263">
@@ -1759,86 +1393,86 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/log/aq-list-viz-Tue_Feb 17 2015-13-01">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="518">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7417722" vertical-offset="370" max-vertical-offset="765">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/johns_notes.secret.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="4.2041883" vertical-offset="22466" max-vertical-offset="22848">
-          <caret line="1336" column="0" selection-start-line="1336" selection-start-column="0" selection-end-line="1336" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.5758427" vertical-offset="0" max-vertical-offset="5559">
           <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding>
-            <marker date="1424211477767" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1424211477767" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/viz.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.423077" vertical-offset="14501" max-vertical-offset="21012">
+        <state vertical-scroll-proportion="0.0" vertical-offset="14824" max-vertical-offset="20893">
           <caret line="872" column="5" selection-start-line="872" selection-start-column="5" selection-end-line="872" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="353" max-vertical-offset="765">
+          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/libs/logger.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="316" max-vertical-offset="1071">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app-test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="3009">
+          <caret line="37" column="56" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="56" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/collect.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="28280" max-vertical-offset="29359">
-          <caret line="1639" column="0" selection-start-line="1639" selection-start-column="0" selection-end-line="1639" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="29427">
+          <caret line="11" column="56" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="56" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/libs/logger.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.6923075" vertical-offset="354" max-vertical-offset="969">
-          <caret line="29" column="17" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/utilities_aq_viz.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3482" max-vertical-offset="4216">
-          <caret line="224" column="33" selection-start-line="224" selection-start-column="33" selection-end-line="224" selection-end-column="33" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4233">
+          <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/narrative_summaries/NSQI01201E.shtml">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="5.423077" vertical-offset="141" max-vertical-offset="510">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="-9.807693" vertical-offset="323" max-vertical-offset="1275">
+          <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/narrative_summaries/NSQI20005E.shtml">
+    <entry file="file://$PROJECT_DIR$/node_modules/tracer/README.md">
+      <provider selected="true" editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9486">
+          <caret line="6" column="5" selection-start-line="0" selection-start-column="0" selection-end-line="550" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/johns_notes.secret.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="30.73842" vertical-offset="6950" max-vertical-offset="29631">
+          <caret line="1601" column="460" selection-start-line="1601" selection-start-column="460" selection-end-line="1601" selection-end-column="460" />
           <folding />
         </state>
       </provider>

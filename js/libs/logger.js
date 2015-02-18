@@ -2,16 +2,19 @@
 //================
 var fs = require('fs');
 var sysDate = new Date();
-var illegalLogFileName = 'log/aq-list-viz-' + new Date()
-    .toDateString() + '-' + sysDate.toTimeString() + '.log';
-console.log('logger.js illegalLogFileName = ', illegalLogFileName);
-var legalLogFileName1 = illegalLogFileName.replace(':', '-');
-console.log('logger.js legalLogFileName = ', legalLogFileName1);
-var legalLogFileName2 = legalLogFileName1.replace(' ', '_');
-var legalLogFileName3 = legalLogFileName2 + '.log';
-var filename = legalLogFileName3; //
-// 'log/aq-list-viz' + new Date()
-//    .toDateString()+  sysDate.toTimeString()+ '.log';
+
+var makeLogFileName = function () {
+  var illegalLogFileName = 'log/aq-list-viz-' + new Date()
+      .toDateString() + '-' + sysDate.toTimeString() + '.log';
+  var legalLogFileName = illegalLogFileName.replace(/':'/g, '-');
+  legalLogFileName = legalLogFileName.replace(/' '/g, '_');
+  legalLogFileName = legalLogFileName + '.log';
+  console.log('logger.js legalLogFileName = ', legalLogFileName);
+  return legalLogFileName.trim();
+};
+
+var fileName = makeLogFileName();
+
 var last_message = {
   date: null,
   time: null,
@@ -32,9 +35,10 @@ var log_message = function (message, level) {
     msg: message,
     level: level
   };
-  var log = '[ ' + last_message.date + ' ] [ ' + last_message.time + ' ] [ ' + last_message.level + ' ] ' + last_message.msg;
+  var log = '[ ' + last_message.date + ' ] [ ' + last_message.time + ' ] [ level: ' + last_message.level + ' ] ' + last_message.msg;
 
-  fs.appendFile(filename, log + "\n", function (err) {
+//  var fileName = makeLogFileName();
+  fs.appendFile(fileName, log + "\n", function (err) {
     if (err) {
       throw err;
     } else {
@@ -51,3 +55,4 @@ module.exports = {
   log_message: log_message,
   get_last_message: get_last_message
 };
+

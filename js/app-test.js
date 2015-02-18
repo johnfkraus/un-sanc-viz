@@ -34,6 +34,14 @@ var fsOptions = {
   autoClose: true
 };
 
+
+var log = require('custom-logger').config({ level: 0 });
+log.debug( 'hello?' );
+log.info( 'hello world!' );
+log.warn( 'carefule there, world!' );
+log.error( 'WHOA WHOA WHOA world?!' );
+
+
 var runAppTest = function () {
 //  if (consoleLog) { console.log('\n ', __filename, __line, ', runApp\n');
   if (consoleLog) {
