@@ -861,13 +861,18 @@ Network = function () {
     console.log("viz.js 1006, showTheDoc(d, i), this = ", this, "; d.id = ", d.id, "; i = ", i);
     var aNode = this;
     console.log("typeof aNode = ", typeof aNode);
-
     var longNarrative;
     //  $("button#getNarrative").click(function () {
     var fileName = d.narrativeFileName;
     // var fileName = "NSQE01101E.shtml";
     var path = "data/narrative_summaries/";
     var url = path + fileName;
+    $.ajaxSetup({
+      async: false,
+      scriptCharset: "utf-8",
+      cache: false,
+      contentType: "utf-8"
+    });
     $.ajax({
       url: url, success: function (result) {
         longNarrative = result;
@@ -875,7 +880,7 @@ Network = function () {
         //  console.log("longNarrative = \n\n", longNarrative);
 
         var content;
-        if (typeof(longNarrative) !== null && typeof(longNarrative) !== undefined) {
+        if (typeof(longNarrative) !== 'null' && typeof(longNarrative) !== 'undefined') {
           content = longNarrative;
         } else {
           content = d.docs;

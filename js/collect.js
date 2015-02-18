@@ -203,7 +203,7 @@ var collect = function () {
       // read 'raw' unprocessed json data file created from raw XML file data feed
       function (callback) {
         // var dataPath = __dirname + '/../data/output/data.json';
-        data = JSON.parse(fse.readFileSync(dataPath));
+        data = JSON.parse(fse.readFileSync(dataPath, fsOptions));
         if (consoleLog) {
           console.log('\n ', __filename, 'line', __line, '; function #:', ++functionCount, '; read data.json');
         }
@@ -547,7 +547,7 @@ var collect = function () {
       // read json file containing config
       function (callback) {
         var configJsonFileName = __dirname + '/../data/config/config.json';
-        var buffer = fse.readFileSync(configJsonFileName); //, fsOptions); //, function (err, data) {
+        var buffer = fse.readFileSync(configJsonFileName, fsOptions); //, fsOptions); //, function (err, data) {
         config = JSON.parse(buffer);
         if (consoleLog) {
           console.log('\n ', __filename, 'line', __line, '; function #:', ++functionCount);
@@ -637,7 +637,7 @@ var collect = function () {
         var narrative, node, nodeNarrFileName, readFilePath, responseString, trimmedNarrative, trimmedLabeledNarrative, writeNarrativesFilePath;
         console.log('\n ', __filename, 'line', __line, '; function #:', ++functionCount, '; ');
         // read the data file; each node has a narrativeFileName property
-        data = JSON.parse(fse.readFileSync(__dirname + '/../data/output/data.json'));
+        data = JSON.parse(fse.readFileSync(__dirname + '/../data/output/data.json',fsOptions));
         var nodes = data.nodes;
         // var trimmedLabeledNarrative;
         for (var nodeCounter = 0; nodeCounter < nodes.length; nodeCounter++) {
@@ -651,11 +651,14 @@ var collect = function () {
               console.log('\n ', __filename, 'line', __line, '; Error: ', err, '; url = ', url);
             }
             console.log('\n ', __filename, 'line', __line, '; getting file nodeCounter = ', nodeCounter, '; readFilePath = ', readFilePath, '\n narrative.substring(0, 300) = ', narrative.substring(0, 300), ' [INTENTIONALLY TRUNCATED TO FIRST 300 CHARACTERS]');
+
+            writeNarrativesFilePath = __dirname + '/../data/narrative_summaries/' + nodeNarrFileName + '.html';
+            syncWriteHtmlFile(narrative, writeNarrativesFilePath);
             var narrWebPageAsString = utilities_aq_viz.forceUnicodeEncoding(narrative.toString());
-            trimmedNarrative = utilities_aq_viz.trimNarrative(narrWebPageAsString);
-            trimmedLabeledNarrative = utilities_aq_viz.addFileLabel(trimmedNarrative);
+            trimmedNarrative = utilities_aq_viz.trimNarrative2(narrWebPageAsString, url);
+            trimmedLabeledNarrative = utilities_aq_viz.addFileLabel(trimmedNarrative,url);
             writeNarrativesFilePath = __dirname + '/../data/narrative_summaries/' + nodeNarrFileName;
-            syncWriteHtmlFile(trimmedNarrative, writeNarrativesFilePath);
+            syncWriteHtmlFile(trimmedLabeledNarrative, writeNarrativesFilePath);
           }
         }
         callback();
@@ -1601,7 +1604,7 @@ var readAndParseJsonFile = function (dataPath) {
   var narrativeUrl;
   var buffer;
   try {
-    buffer = fse.readFileSync(dataPath);
+    buffer = fse.readFileSync(dataPath, fsOptions);
     data = JSON.parse(buffer);
   } catch (err) {
     console.log('\n ', __filename, 'line', __line, '; Error: ', err);
@@ -1633,7 +1636,7 @@ var syncGetRawHtmlNarrativePages = function (url, saveFilePath) {
   res = requestSync('GET', url);
   var responseBody = res.body.toString();
   var narrWebPageString = utilities_aq_viz.forceUnicodeEncoding(responseBody);
-  var narrative = utilities_aq_viz.trimNarrative(narrWebPageString, url);
+  var narrative = utilities_aq_viz.trimNarrative2(narrWebPageString, url);
   utilities_aq_viz.syncWriteMyFile(saveFilePath, narrative, fsOptions);
   return narrative.trim();
   // } catch (err) {

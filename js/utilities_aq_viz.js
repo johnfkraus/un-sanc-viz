@@ -14,8 +14,8 @@ require('console-stamp')(console, '[HH:MM:ss.l]');
 var logger = require('./libs/logger.js');
 var message;
 
-var addFileLabel = function (inString, fileName) {
-  return '<!-- http://www.un.org/sc/committees/1267/' + fileName + ' -->' + inString;
+var addFileLabel = function (inString, url) {
+  return '<!-- ' + url + ' -->' + inString;
 };
 
 // var Args = require("vargs").Constructor;
@@ -28,7 +28,7 @@ var countLines = function (textFile) {
       if (chunk[i] == 10) count++;
   })
     .on('end', function () {
-      console.log(__filename, 'line', __line, '; count = ',count);
+      console.log(__filename, 'line', __line, '; count = ', count);
     });
   return count;
 };
@@ -124,6 +124,18 @@ var stringifyAndWriteJsonDataFile = function (data, writeFileNameAndPath) {
 // write data to a local file
 var syncWriteMyFile = function (localFileNameAndPath, data, fsOptions) {
   try {
+
+    // var fs = require('fs-extra')
+    // var file = '/tmp/this/path/does/not/exist/file.txt'
+
+//    fs.outputFile(file, 'hello!', function(err) {
+//      console.log(err) // => null
+
+    //    fs.readFile(file, 'utf8', function(err, data) {
+    //      console.log(data) // => hello!
+    //   })
+    //  })
+
     fse.writeFileSync(localFileNameAndPath, data, fsOptions);
   } catch (err) {
     console.log(__filename, 'line', __line, '; Error: ', err);
@@ -135,31 +147,58 @@ var truncateStringToFirstNumChars = function (inString, truncateToFirstNumChars)
   return ['; [TRUNCATED]:\n', inString.substring(0, truncateToFirstNumChars), ' ... [LOG OUTPUT INTENTIONALLY TRUNCATED TO FIRST ', truncateToFirstNumChars, ' CHARACTERS]\n'].join('');
 };
 
-function trimNarrative(narrWebPageString) {
-  // var narrativeTrimError;
-  // remove all CR, newline and tab characters from the narrative file
+// remove all CR, newline and tab characters from the narrative file
+// remove &nbsp;, all slanty apostrophes and quote marks
+// replace any occurrence of two or more space characters with one space character
+function trimNarrative(narrWebPageString, url) {
 
-  var narrative0 = narrWebPageString.replace('’', "'");
-
-  var narrative1 = narrWebPageString.replace(/([\r\n\t])/gm, ' ');
-  // replace any occurrence of two or more space characters with one space character
-  var narrative2 = narrative1.replace(/(\s{2,})/gm, ' ');
+  var narrative4 = narrWebPageString.replace('’', "'");
+  var narrative7 = narrative4.replace(/([\r\n\t])/gm, ' ');
+  var narrative10 = narrative7.replace(/(\s{2,})/gm, ' ');
   // remove paragraphs containing non-breaking space; they mess up the rendered page by adding too many blank lines
-  var narrative2a = narrative2.replace(/<p>&nbsp;<\/p>/gmi, '');
+  var narrative13 = narrative10.replace(/<p>&nbsp;<\/p>/gmi, '');
+  var narrative16 = narrative13.replace(/&nbsp;/gmi, ' ');
+  var narrative18 = narrative16.replace(/[^\x00-\x7F]/g, '');
   // extract main content from web page; omit head, footer, etc.
-  var narrative3 = narrative2a.replace(/(.*NARRATIVE SUMMARIES OF REASONS FOR LISTING<\/h3>)(.*?)(<!-- TemplateEndEditable.*)/mi, '$2');
-//  var narrative3 = narrative2a.replace(/(.*>=?NARRATIVE SUMMARIES OF REASONS FOR LISTING<\/h3>)(.*)(<div id='footer'>.*)/mi, '$2');
+  var narrative19 = narrative18.replace(/(.*NARRATIVE SUMMARIES OF REASONS FOR LISTING<\/h3>)(.*?)(<!-- TemplateEndEditable.*)/mi, '$2');
 // special regex for NSQE00401E.shtml, AL QAIDA, narrative page.
-//   (.*NARRATIVE SUMMARIES OF REASONS FOR LISTING<\/h3>)(.*?)(<\/div>\s*<div id="footer".*)
-  var narrative4 = narrative3.replace(/(.*NARRATIVE SUMMARIES OF REASONS FOR LISTING<\/h3>)(.*?)(<\/div>\s*<div id="footer".*)/mi, '$2');
-  var tail = narrative3.substring(narrative3.length - 120, narrative3.length);
-  var tailOmitsChars = (narrative3.length - tail.length);
-  if (narrative3.length >= narrative2a.length) {
-    console.log(__filename, ' line ', __line, '; tail = [FIRST', tailOmitsChars, 'CHARACTERS INTENTIONALLY OMITTED]', tail, '\nnarrative1.length = ', narrative1.length, '\nnarrative2.length = ', narrative2.length, '\nnarrative2a.length = ', narrative2a.length, '\nnarrative3.length = ', narrative3.length, '\ntail.length = ', tail.length, '\nnarrative3.substring(0,300) = ', narrative3.substring(0, 300));
-    logger.log_message([__filename, ' line ', __line, '; tail = [FIRST', tailOmitsChars, 'CHARACTERS INTENTIONALLY OMITTED]', tail, '\n  narrative1.length = ', narrative1.length, '\n  narrative2.length = ', narrative2.length, '\n  narrative2a.length = ', narrative2a.length, '\n  narrative3.length = ', narrative3.length, '\n  tail.length = ', tail.length, '\n  narrative3.substring(0,300) = ', narrative3.substring(0, 300)].join(''));
-  }
+  var narrative35 = narrative19.replace(/(.*NARRATIVE SUMMARIES OF REASONS FOR LISTING<\/h3>)(.*?)(<\/div>\s*<div id="footer".*)/mi, '$2');
+// make hyperlink
+  var narrative40 = narrative35.replace(/(<u>)(.*?)(<\/u>)/gmi, '<a href=\'' + url + '\' target=\'_blank\'>$1$2$3<\/a>');
+  var narrative50 = narrative40.replace(/[^\x00-\x7F]/g, '')
+  var tail = narrative50.substring(narrative50.length - 120, narrative50.length);
+  var tailOmitsChars = (narrative50.length - tail.length);
+  /*  if (narrative40.length >= narrative1.length) {
+   console.log(__filename, ' line ', __line, '; tail = [FIRST', tailOmitsChars, 'CHARACTERS INTENTIONALLY OMITTED]', tail, '\nnarrative1.length = ', narrative1.length, '\nnarrative2.length = ', narrative2.length, '\nnarrative2a.length = ', narrative2a.length, '\nnarrative3.length = ', narrative3.length, '\ntail.length = ', tail.length, '\nnarrative3.substring(0,300) = ', narrative3.substring(0, 300));
+   logger.log_message([__filename, ' line ', __line, '; tail = [FIRST', tailOmitsChars, 'CHARACTERS INTENTIONALLY OMITTED]', tail, '\n  narrative1.length = ', narrative1.length, '\n  narrative2.length = ', narrative2.length, '\n  narrative2a.length = ', narrative2a.length, '\n  narrative3.length = ', narrative3.length, '\n  tail.length = ', tail.length, '\n  narrative3.substring(0,300) = ', narrative3.substring(0, 300)].join(''));
+   }
+   */
 //  narrative5 = addFileLabel(narrative4);
-  return narrative4.trim();
+  return narrative50.trim();
+}
+
+// remove all CR, newline and tab characters from the narrative file
+// remove &nbsp;, all slanty apostrophes and quote marks
+// replace any occurrence of two or more space characters with one space character
+function trimNarrative2(narrWebPageString, url) {
+
+  var narrative = narrWebPageString.replace('’', "'");
+  narrative = narrative.replace(/([\r\n\t])/gm, ' ');
+  narrative = narrative.replace(/(\s{2,})/gm, ' ');
+  // remove paragraphs containing non-breaking space; they mess up the rendered page by adding too many blank lines
+  narrative = narrative.replace(/<p>&nbsp;<\/p>/gmi, '');
+  narrative = narrative.replace(/&nbsp;/gmi, ' ');
+  narrative = narrative.replace(/[^\x00-\x7F]/g, '');
+  // extract main content from web page; omit head, footer, etc.
+  narrative = narrative.replace(/(.*NARRATIVE SUMMARIES OF REASONS FOR LISTING<\/h3>)(.*?)(<!-- TemplateEndEditable.*)/mi, '$2');
+  // special regex for NSQE00401E.shtml, AL QAIDA, narrative page.
+  narrative = narrative.replace(/(.*NARRATIVE SUMMARIES OF REASONS FOR LISTING<\/h3>)(.*?)(<\/div>\s*<div id="footer".*)/mi, '$2');
+  // make hyperlink
+  narrative = narrative.replace(/(<u>)(.*?)(<\/u>)/gmi, '<a href=\'' + url + '\' target=\'_blank\'>$1$2$3<\/a>');
+  narrative = narrative.replace(/[^\x00-\x7F]/g, '')
+  var tail = narrative.substring(narrative.length - 120, narrative.length);
+  var tailOmitsChars = (narrative.length - tail.length);
+  return narrative.trim();
 }
 
 var validateUrl = function (url) {
@@ -183,6 +222,7 @@ module.exports = {
   stringifyAndWriteJsonDataFile: stringifyAndWriteJsonDataFile,
   syncWriteMyFile: syncWriteMyFile,
   trimNarrative: trimNarrative,
+  trimNarrative2: trimNarrative2,
   validateUrl: validateUrl
 };
 
