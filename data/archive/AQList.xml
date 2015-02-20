@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<CONSOLIDATED_LIST dateGenerated="2015-02-11T00:00:00">
+<CONSOLIDATED_LIST dateGenerated="2015-02-19T00:00:00">
    <INDIVIDUALS>
       <INDIVIDUAL>
          <DATAID>111900</DATAID>
@@ -5057,7 +5057,7 @@
       </INDIVIDUAL>
       <INDIVIDUAL>
          <DATAID>2827659</DATAID>
-         <VERSIONNUM>12</VERSIONNUM>
+         <VERSIONNUM>13</VERSIONNUM>
          <FIRST_NAME>KHALIFA</FIRST_NAME>
          <SECOND_NAME>MUHAMMAD</SECOND_NAME>
          <THIRD_NAME>TURKI</THIRD_NAME>
@@ -5075,6 +5075,7 @@
          <LAST_DAY_UPDATED>
             <VALUE>2010-01-25T00:00:00</VALUE>
             <VALUE>2012-11-15T00:00:00</VALUE>
+            <VALUE>2015-02-19T00:00:00</VALUE>
          </LAST_DAY_UPDATED>
          <INDIVIDUAL_ALIAS>
             <QUALITY>Good</QUALITY>
@@ -5091,6 +5092,14 @@
          <INDIVIDUAL_ALIAS>
             <QUALITY>Good</QUALITY>
             <ALIAS_NAME>Khalifa Turki bin Muhammad bin al-Suaiy</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Low</QUALITY>
+            <ALIAS_NAME>Abu Mohammed al-Qatari</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Low</QUALITY>
+            <ALIAS_NAME>Katrina</ALIAS_NAME>
          </INDIVIDUAL_ALIAS>
          <INDIVIDUAL_ADDRESS>
             <CITY>Doha</CITY>
@@ -5113,7 +5122,7 @@
             <NOTE>Qatari identity card number 26563400140</NOTE>
          </INDIVIDUAL_DOCUMENT>
          <SORT_KEY>ALSUBAIY KHALIFA MUHAMMAD TURKI</SORT_KEY>
-         <SORT_KEY_LAST_MOD>2012-11-15T00:00:00</SORT_KEY_LAST_MOD>
+         <SORT_KEY_LAST_MOD>2015-02-19T00:00:00</SORT_KEY_LAST_MOD>
       </INDIVIDUAL>
       <INDIVIDUAL>
          <DATAID>2787013</DATAID>

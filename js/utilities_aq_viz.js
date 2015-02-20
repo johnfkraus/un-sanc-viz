@@ -2,24 +2,21 @@
 
 var consoleLog = false;
 // var log = require('custom-logger').config({ level: 0 });
-var log = require('custom-logger').config({ format: "%event% %padding%[%timestamp%]: %message%" });
+// var logger = require('tracer').colorConsole({level:'warn'});
+var tlc = require('./tracer-logger-config.js');
+// var log = require('custom-logger').config({ format: "%event% %padding%[%timestamp%]: %message%" });
+require('console-stamp')(console, '[HH:MM:ss.l]');
+
 var fsOptions = {
   flags: 'r+', encoding: 'utf-8', autoClose: true
 };
 var fse = require('fs-extra');
 var dateFormat = require('dateformat');
 var linenums = require('./linenums.js');
-// var __line = __line || {};
-
-require('console-stamp')(console, '[HH:MM:ss.l]');
-var logger = require('./libs/logger.js');
 var message;
-
 var addFileLabel = function (inString, url) {
   return '<!-- ' + url + ' -->' + inString;
 };
-
-// var Args = require("vargs").Constructor;
 
 var countLines = function (textFile) {
   var i;
@@ -42,7 +39,7 @@ var errorPageReturned = function (inString) {
   // responsePageError = (responseBody.match('xyz'));
 
   if (errorPageMessageString !== null) {
-    logger.log_message([__filename, ' line ', __line, '; The server return a page containing ', errorPageMessageString].join());
+    logger.debug([__filename, ' line ', __line, '; The server return a page containing ', errorPageMessageString].join());
     console.log(__filename, 'line', __line, '; The server return a page containing ', errorPageMessageString);
     return true;
   } else {
@@ -73,7 +70,7 @@ var formatMyDate = function (dateString) {
   dateFormat.masks.common = 'mm-dd-yyyy';
   var date = new Date(dateString);
   var formattedDate = dateFormat(date, 'common');
-  logger.log_message([__filename, ' line ', __line, '; formattedDate = ', formattedDate].join(''));
+  tlc.logger.debug([__filename, ' line ', __line, '; formattedDate = ', formattedDate].join(''));
   return formattedDate.trim();
 };
 
@@ -83,10 +80,10 @@ var getCleanId = function (referenceNumber) {
   try {
     refNumRegexMatch = referenceNumber.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/);
   } catch (err) {
-    logger.log_message([__filename, ' line ', __line, '; Error: ', err].join(''));
-    // logger.log_message(__filename + ' line ' + __line + '; Error: = ' + err);
-    // logger.log_message(__filename, 'line', __line, '; Error: ', err, '; referenceNumber =', referenceNumber);
-    console.log(__filename, 'line', __line, '; Error: ', err, '; referenceNumber =', referenceNumber);
+    tlc.logger.debug([__filename, ' line ', __line, '; Error: ', err].join(''));
+    // tlc.logger.debug(__filename + ' line ' + __line + '; Error: = ' + err);
+    // tlc.logger.debug(__filename, 'line', __line, '; Error: ', err, '; referenceNumber =', referenceNumber);
+    logger.error(__filename, 'line', __line, '; Error: ', err, '; referenceNumber =', referenceNumber);
   }
   return refNumRegexMatch[0].trim();
 };
@@ -98,7 +95,7 @@ var generateNarrFileName = function (node) {
   var narrFileName = 'NSQ' + idSplit[0].substring(1, 2) + idSplit[2] + idSplit[3] + 'E.shtml';
   if (consoleLog) {
     console.log(__filename, ' line ', __line, '; node.id = ', node.id, '; generated narrFileName = ', narrFileName);
-    logger.log_message([__filename, ' line ', __line, '; node.id = ', node.id, '; generated narrFileName = ', narrFileName].join(''));
+    tlc.logger.debug([__filename, ' line ', __line, '; node.id = ', node.id, '; generated narrFileName = ', narrFileName].join(''));
   }
   return narrFileName.trim();
 };
@@ -112,12 +109,12 @@ var stringifyAndWriteJsonDataFile = function (data, writeFileNameAndPath) {
     fse.writeFileSync(writeFileNameAndPath, stringifiedData, fsOptions);
     if (consoleLog) {
       console.log(__filename, 'line', __line, '; utilities_aq_viz.stringifyAndWriteJsonFile() wrote file to: ', writeFileNameAndPath, ';  file contained (truncated): ', stringifiedData.substring(0, truncateToNumChars), ' ... [CONSOLE LOG OUTPUT INTENTIONALLY TRUNCATED TO FIRST ', truncateToNumChars, ' CHARACTERS]\n\n');
-      logger.log_message([__filename, 'line', __line, '; utilities_aq_viz.stringifyAndWriteJsonFile() wrote file to: ', writeFileNameAndPath, ';  file contained (truncated): ', stringifiedData.substring(0, truncateToNumChars), ' ... [CONSOLE LOG OUTPUT INTENTIONALLY TRUNCATED TO FIRST ', truncateToNumChars, ' CHARACTERS]\n'].join(''));
+      tlc.logger.debug([__filename, 'line', __line, '; utilities_aq_viz.stringifyAndWriteJsonFile() wrote file to: ', writeFileNameAndPath, ';  file contained (truncated): ', stringifiedData.substring(0, truncateToNumChars), ' ... [CONSOLE LOG OUTPUT INTENTIONALLY TRUNCATED TO FIRST ', truncateToNumChars, ' CHARACTERS]\n'].join(''));
 
     }
   } catch (err) {
     if (consoleLog) {
-      console.log(__filename, 'line', __line, ';  Error: ', err, '; countLines(stringifiedData) = ', countLines(stringifiedData));
+      logger.error(__filename, 'line', __line, ';  Error: ', err, '; countLines(stringifiedData) = ', countLines(stringifiedData));
     }
   }
 };
@@ -130,7 +127,7 @@ var syncWriteMyFile = function (localFileNameAndPath, data, fsOptions) {
     // var file = '/tmp/this/path/does/not/exist/file.txt'
 
 //    fs.outputFile(file, 'hello!', function(err) {
-//      console.log(err) // => null
+//      logger.error(err) // => null
 
     //    fs.readFile(file, 'utf8', function(err, data) {
     //      console.log(data) // => hello!
@@ -139,8 +136,8 @@ var syncWriteMyFile = function (localFileNameAndPath, data, fsOptions) {
 
     fse.writeFileSync(localFileNameAndPath, data, fsOptions);
   } catch (err) {
-    console.log(__filename, 'line', __line, '; Error: ', err);
-    logger.log_message(__filename, 'line', __line, '; Error: ', err);
+    logger.error(__filename, 'line', __line, '; Error: ', err);
+    tlc.logger.debug(__filename, 'line', __line, '; Error: ', err);
   }
 };
 
@@ -171,7 +168,7 @@ function trimNarrative(narrWebPageString, url) {
   var tailOmitsChars = (narrative50.length - tail.length);
   /*  if (narrative40.length >= narrative1.length) {
    console.log(__filename, ' line ', __line, '; tail = [FIRST', tailOmitsChars, 'CHARACTERS INTENTIONALLY OMITTED]', tail, '\nnarrative1.length = ', narrative1.length, '\nnarrative2.length = ', narrative2.length, '\nnarrative2a.length = ', narrative2a.length, '\nnarrative3.length = ', narrative3.length, '\ntail.length = ', tail.length, '\nnarrative3.substring(0,300) = ', narrative3.substring(0, 300));
-   logger.log_message([__filename, ' line ', __line, '; tail = [FIRST', tailOmitsChars, 'CHARACTERS INTENTIONALLY OMITTED]', tail, '\n  narrative1.length = ', narrative1.length, '\n  narrative2.length = ', narrative2.length, '\n  narrative2a.length = ', narrative2a.length, '\n  narrative3.length = ', narrative3.length, '\n  tail.length = ', tail.length, '\n  narrative3.substring(0,300) = ', narrative3.substring(0, 300)].join(''));
+   tlc.logger.debug([__filename, ' line ', __line, '; tail = [FIRST', tailOmitsChars, 'CHARACTERS INTENTIONALLY OMITTED]', tail, '\n  narrative1.length = ', narrative1.length, '\n  narrative2.length = ', narrative2.length, '\n  narrative2a.length = ', narrative2a.length, '\n  narrative3.length = ', narrative3.length, '\n  tail.length = ', tail.length, '\n  narrative3.substring(0,300) = ', narrative3.substring(0, 300)].join(''));
    }
    */
 //  narrative5 = addFileLabel(narrative4);
@@ -226,5 +223,3 @@ module.exports = {
   trimNarrative2: trimNarrative2,
   validateUrl: validateUrl
 };
-
-

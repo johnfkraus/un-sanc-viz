@@ -1,6 +1,14 @@
 // app-test.js
 //=============
+var linenums = require('./linenums.js');
 var consoleLog = false;
+var utilities_aq_viz = require('./utilities_aq_viz');
+var logger = require('./tracer-logger-config.js').logger;
+//var logger = require('tracer').colorConsole({level:'info'});
+// var logger = require('./tracer-logger-config.js');
+// var log = require('custom-logger').config({ level: 0 });
+// var logger = require('./libs/logger.js');
+
 if (typeof define !== 'function') {
   var define = require('amdefine');
 }
@@ -13,17 +21,16 @@ var async = require('async'),
   inspect = require('object-inspect'),
   parseString = require('xml2js')
     .parseString;
-var utilities_aq_viz = require('./utilities_aq_viz');
+
 var collect = require('./collect.js');
 // var parseDoc = require('./parseDoc.js');
-var setupData1 = require('./setupData1.js');
-var setupData2 = require('./setupData2.js');
-var collectNarratives = require('./collectNarratives.js');
-var getNarrativeList = require('./getNarrativeList.js');
+// var setupData1 = require('./setupData1.js');
+// var setupData2 = require('./setupData2.js');
+// var collectNarratives = require('./collectNarratives.js');
+// var getNarrativeList = require('./getNarrativeList.js');
 // var makeDocs = require('./makeDocs.js');
 var filewalker = require('./filewalker.js');
-var logger = require('./libs/logger.js');
-var linenums = require('./linenums.js');
+
 var functionCount = 0;
 var __filename = __filename || {};
 var __line = __line || {};
@@ -34,14 +41,6 @@ var fsOptions = {
   autoClose: true
 };
 
-
-var log = require('custom-logger').config({ level: 0 });
-log.debug( 'hello?' );
-log.info( 'hello world!' );
-log.warn( 'carefule there, world!' );
-log.error( 'WHOA WHOA WHOA world?!' );
-
-
 var runAppTest = function () {
 //  if (consoleLog) { console.log('\n ', __filename, __line, ', runApp\n');
   if (consoleLog) {
@@ -50,6 +49,18 @@ var runAppTest = function () {
 
   async.series([
       // collect raw data (xml file) from the Internet
+
+      function (callback) {
+        // if (consoleLog) {
+        logger.log('hello?');
+        logger.debug('hello?');
+        logger.info('hello world!');
+        logger.warn('carefule there, world!');
+        logger.error('WHOA WHOA WHOA world?!');
+
+        callback();
+      },
+
       function (callback) {
         if (consoleLog) {
           console.log('\n ', __filename, __line, '; Phase 1#:', ++functionCount, '; collect.convertXMLToJson)_');
