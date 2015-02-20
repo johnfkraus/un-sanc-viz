@@ -1,6 +1,7 @@
 /* utilities_aq_vis.js */
 
 var consoleLog = false;
+var truncateToNumChars = 100;
 // var log = require('custom-logger').config({ level: 0 });
 // var logger = require('tracer').colorConsole({level:'warn'});
 var tlc = require('./tracer-logger-config.js');
@@ -101,7 +102,7 @@ var generateNarrFileName = function (node) {
 };
 
 var stringifyAndWriteJsonDataFile = function (data, writeFileNameAndPath) {
-  var truncateToNumChars = 400;
+
   var stringifiedData;
   try {
 //    var myFile = __dirname + '/../data/output/' + fileName;
@@ -221,5 +222,6 @@ module.exports = {
   syncWriteMyFile: syncWriteMyFile,
   trimNarrative: trimNarrative,
   trimNarrative2: trimNarrative2,
+  truncateToNumChars: truncateToNumChars,
   validateUrl: validateUrl
 };

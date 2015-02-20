@@ -8,11 +8,12 @@
 //==========================
 
 // do we want lots of console.log messages for debugging (if so, set consoleLog = true)
+var utilities_aq_viz = require('./utilities_aq_viz');
 var consoleLog = false;
 var useLocalNarrativeFiles = true;
 var logger = require('./tracer-logger-config.js').logger;
 var tlc = require('./tracer-logger-config');
-var substringChars = 100;
+var substringChars = utilities_aq_viz.truncateToNumChars;
 var debugWithFewerNodesCount = 10;
 //var __filename = __filename || {};
 var linenums = require('./linenums.js');
@@ -62,7 +63,6 @@ var select = require('soupselect').select,
   htmlparser = require('htmlparser'),
   http = require('http'),
   sys = require('sys'),
-  utilities_aq_viz = require('./utilities_aq_viz'),
   MongoClient = require('mongodb').MongoClient,
   assert = require('assert');
 var targetName = '';
@@ -109,19 +109,19 @@ var collect = function () {
         callback();
       },
 
-       function (callback) {
-       fse.removeSync(writeJsonOutputDebuggingDirectory);
-      if (!useLocalNarrativeFiles) {
-        fse.removeSync(__dirname + '/../data/narrative_summaries/');
-        fse.mkdirs(__dirname + '/../data/narrative_summaries/');
-      }
+      function (callback) {
+        fse.removeSync(writeJsonOutputDebuggingDirectory);
+        if (!useLocalNarrativeFiles) {
+          fse.removeSync(__dirname + '/../data/narrative_summaries/');
+          fse.mkdirs(__dirname + '/../data/narrative_summaries/');
+        }
         fse.removeSync(__dirname + '/../data/narrative_lists/');
-       fse.removeSync(dataPath);   // deletes /data/output/data.json
-       // re-create deleted directories
-       fse.mkdirs(writeJsonOutputDebuggingDirectory);
-       fse.mkdirs(__dirname + '/../data/narrative_lists/');
-       callback();
-       },
+        fse.removeSync(dataPath);   // deletes /data/output/data.json
+        // re-create deleted directories
+        fse.mkdirs(writeJsonOutputDebuggingDirectory);
+        fse.mkdirs(__dirname + '/../data/narrative_lists/');
+        callback();
+      },
 
       // get the raw xml file from the UN site on the Internet
       function (callback) {
@@ -296,10 +296,9 @@ var collect = function () {
         }
         concatNames(data.nodes);
         createNationality(data.nodes);
-
-        if (consoleLog) {
+        if (consoleLog && (node.nodeNumber % 17 === 0)) {
           //          logger.debug(__filename, 'line', __line, '; function #:', ++functionCount, '; put data into nodes array for d3');
-          logger.debug(__filename, 'line', __line, '; JSON.stringify(data).substring(0, 800) = \n', JSON.stringify(data, null, ' ').substring(0, 800));
+          logger.debug(__filename, 'line', __line,'node.nodeNumber = ', node.nodeNumber,  '; JSON.stringify(data).substring(0, substringChars) = \n', JSON.stringify(data, null, ' ').substring(0, substringChars));
         }
         callback();
       },
@@ -311,7 +310,7 @@ var collect = function () {
         utilities_aq_viz.stringifyAndWriteJsonDataFile(data, writeJsonPathAndFileName);
         utilities_aq_viz.stringifyAndWriteJsonDataFile(data, dataPath);
         if (consoleLog) {
-          logger.debug('\n ', __filename, 'line', __line, '; wrote file to: writeJsonPathAndFileName = ', writeJsonPathAndFileName, ';  file contained (truncated): ', JSON.stringify(data, null, ' ').substring(0, 800), ' ... [CONSOLE LOG OUTPUT INTENTIONALLY TRUNCATED TO FIRST 800 CHARACTERS]\n\n');
+          logger.debug('\n ', __filename, 'line', __line, '; wrote file to: writeJsonPathAndFileName = ', writeJsonPathAndFileName, ';  file contained (truncated): ', JSON.stringify(data, null, ' ').substring(0, substringChars), ' ... [CONSOLE LOG OUTPUT INTENTIONALLY TRUNCATED TO FIRST 800 CHARACTERS]\n\n');
         }
         callback();
       },
@@ -323,7 +322,7 @@ var collect = function () {
         utilities_aq_viz.stringifyAndWriteJsonDataFile(data, writeJsonPathAndFileName);
         utilities_aq_viz.stringifyAndWriteJsonDataFile(data, dataPath);
         if (consoleLog) {
-          logger.debug('\n ', __filename, 'line', __line, '; wrote data file to: writeJsonPathAndFileName = ', writeJsonPathAndFileName, ';  file contained (truncated): ', JSON.stringify(data, null, ' ').substring(0, 800), ' ... [CONSOLE LOG OUTPUT INTENTIONALLY TRUNCATED TO FIRST 800 CHARACTERS]\n\n');
+          logger.debug('\n ', __filename, 'line', __line, '; wrote data file to: writeJsonPathAndFileName = ', writeJsonPathAndFileName, ';  file contained (truncated): ', JSON.stringify(data, null, ' ').substring(0, substringChars), ' ... [CONSOLE LOG OUTPUT INTENTIONALLY TRUNCATED TO FIRST 800 CHARACTERS]\n\n');
         }
         callback();
       },
@@ -371,7 +370,6 @@ var collect = function () {
           }
           counter++;
         });
-
         callback();
       },
 
@@ -671,8 +669,8 @@ var collect = function () {
             readNarrativeFileNameAndPath = __dirname + '/../data/narrative_summaries/' + nodeNarrFileName;
             try {
               narrative = fse.readFileSync(readNarrativeFileNameAndPath, fsOptions); //, fsOptions); //, function (err, data) {
-              if (consoleLog) {
-                logger.debug('\n ', __filename, 'line', __line, '; getting file nodeCounter = ', nodeCounter, '; readNarrativeFileNameAndPath = ', readNarrativeFileNameAndPath, '\n narrative.substring(0, substringChars) = ', narrative.substring(0, substringChars), ' [INTENTIONALLY TRUNCATED TO FIRST 300 CHARACTERS]');
+              if (consoleLog && (node.nodeNumber % 17 === 0)) {
+                logger.debug('\n ', __filename, 'line', __line, 'node.nodeNumber = ', node.nodeNumber, '; getting file nodeCounter = ', nodeCounter, '; readNarrativeFileNameAndPath = ', readNarrativeFileNameAndPath, '\n narrative.substring(0, substringChars) = ', narrative.substring(0, substringChars), ' [INTENTIONALLY TRUNCATED TO FIRST ' + substringChars + ' CHARACTERS]');
               }
             } catch (err) {
               logger.error('\n ', __filename, 'line', __line, '; Error: ', err, ';\n nodeNarrFileName = ', nodeNarrFileName, '; \nreadNarrativeFileNameAndPath = ', readNarrativeFileNameAndPath);
@@ -756,19 +754,21 @@ var collect = function () {
       function (callback) {
         var nodes = data.nodes;
         nodes.forEach(function (node) {
-          if ((typeof node.links !== 'null') && (typeof node.links !== 'undefined')) {
-            logger.debug(__filename, 'line', __line, '; node.nodeNumber = ', node.nodeNumber, '; node.links.length = ', node.links.length);
+          if (node.nodeNumber % 17 === 0) {
+            if ((typeof node.links !== 'null') && (typeof node.links !== 'undefined')) {
+              logger.debug(__filename, 'line', __line, '; node.nodeNumber = ', node.nodeNumber, '; node.links.length = ', node.links.length);
+            }
+            if ((typeof node.linksNarr !== 'null') && (typeof node.linksNarr !== 'undefined')) {
+              logger.debug(__filename, 'line', __line, '; node.nodeNumber = ', node.nodeNumber, 'node.linksNarr.length = ', node.linksNarr.length);
+            }
+            if ((typeof node.connectedToIdFromNarrativesArray !== 'null') && (typeof node.connectedToIdFromNarrativesArray !== 'undefined')) {
+              logger.debug(__filename, 'line', __line, '; node.nodeNumber = ', node.nodeNumber, 'node.connectedToIdFromNarrativesArray.length = ', node.connectedToIdFromNarrativesArray.length);
+            }
+            if ((typeof node.connectionIdsFromNarrativesStrSet !== 'null') && (typeof node.connectionIdsFromNarrativesStrSet !== 'undefined')) {
+              logger.debug(__filename, 'line', __line, '; node.nodeNumber = ', node.nodeNumber, 'node.connectionIdsFromNarrativesStrSet.count = ', node.connectionIdsFromNarrativesStrSet.count);
+            }
+            logger.debug(__filename, 'line', __line, '; node.nodeNumber = ', node.nodeNumber);
           }
-          if ((typeof node.linksNarr !== 'null') && (typeof node.linksNarr !== 'undefined')) {
-            logger.debug(__filename, 'line', __line, '; node.nodeNumber = ', node.nodeNumber, 'node.linksNarr.length = ', node.linksNarr.length);
-          }
-          if ((typeof node.connectedToIdFromNarrativesArray !== 'null') && (typeof node.connectedToIdFromNarrativesArray !== 'undefined')) {
-            logger.debug(__filename, 'line', __line, '; node.nodeNumber = ', node.nodeNumber, 'node.connectedToIdFromNarrativesArray.length = ', node.connectedToIdFromNarrativesArray.length);
-          }
-          if ((typeof node.connectionIdsFromNarrativesStrSet !== 'null') && (typeof node.connectionIdsFromNarrativesStrSet !== 'undefined')) {
-            logger.debug(__filename, 'line', __line, '; node.nodeNumber = ', node.nodeNumber, 'node.connectionIdsFromNarrativesStrSet.count = ', node.connectionIdsFromNarrativesStrSet.count);
-          }
-          logger.debug(__filename, 'line', __line, '; node.nodeNumber = ', node.nodeNumber);
         });
         callback();
       }
@@ -1314,7 +1314,9 @@ var addConnectionIdsArrayFromComments = function (nodes) {
         logger.debug(__filename, 'line', __line, '; node.nodeNumber = ', node.nodeNumber, '; node.id = ', node.id, '; node.name = ', node.name, '; has node.connectionIdsFromCommentsSet set.length = ', node.connectionIdsFromCommentsSet.length);
       }
     } else {
-      logger.debug(__filename, 'line', __line, '; counter = ', counter, '; node.id = ', node.id, '; node.name = ', node.name, '; has no comments to parse; node.COMMENTS1 = ', node.COMMENTS1);
+      if (consoleLog && (node.nodeNumber % 17 === 0)) {
+        logger.debug(__filename, 'line', __line, '; counter = ', counter, '; node.id = ', node.id, '; node.name = ', node.name, '; has no comments to parse; node.COMMENTS1 = ', node.COMMENTS1);
+      }
     }
   });
 };
@@ -1335,10 +1337,6 @@ var addConnectionIdsArrayFromNarrative = function (node, narrative) {
     var regexHasAtLeastOneLink = narrative.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/gi).length > 0;
     if (typeofNarrativeIsNotNull && typeofNarrativeIsNotUndefined && typeofNarrativeMatchRegexIsNotNull && typeofNarrativeMatchRegexIsNotUndefined && regexHasAtLeastOneLink) {
       linkRegexMatch = narrative.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/gi);
-      // if the narrative contains links ...
-//      logger.debug(__filename, 'line', __line, '; method: addConnectionIdsArrayFromNarrative(); node.id = ', node.id,
-      //       '; node.name = ', node.name, '; has ', linkRegexMatch.length, 'link regex matches');
-
       // LOOP THROUGH EACH REGEX MATCH
       for (var linkFromNarrativeNumber = 0; linkFromNarrativeNumber < linkRegexMatch.length; linkFromNarrativeNumber++) {
         if (linkRegexMatch[linkFromNarrativeNumber] !== node.id) {
@@ -1346,17 +1344,19 @@ var addConnectionIdsArrayFromNarrative = function (node, narrative) {
         }
       }
     } // end of  long if condition
-
   } catch (err) {
     logger.error(__filename, 'line', __line, '; Error: ', err);
   }
 
   try {
     var msg = ([__filename, 'line', __line, '; typeof node.connectionIdsFromNarrativesStrSet = ', typeof node.connectionIdsFromNarrativesStrSet, '; node.id = ', node.id, '; utilities_aq_viz.generateNarrFileName(node) = ', utilities_aq_viz.generateNarrFileName(node)].join());
-    logger.debug('msg = ', msg);
     var msg2 = util.inspect(node.connectionIdsFromNarrativesStrSet);
-    logger.debug('msg2 = ', msg2);
-    logger.debug([__filename, 'line', __line, '; typeof node.connectionIdsFromNarrativesStrSet = ', typeof node.connectionIdsFromNarrativesStrSet, '; node.id = ', node.id, '; utilities_aq_viz.generateNarrFileName(node) = ', utilities_aq_viz.generateNarrFileName(node)].join());
+    if (node.nodeNumber % 17 === 0) {
+      logger.debug('node.nodeNumber = ', node.nodeNumber, '; msg = ', msg);
+      logger.debug('node.nodeNumber = ', node.nodeNumber, 'msg2 = ', msg2);
+      logger.debug([__filename, 'line', __line, '; node.nodeNumber = ', node.nodeNumber, '; typeof node.connectionIdsFromNarrativesStrSet = ', typeof node.connectionIdsFromNarrativesStrSet, '; node.id = ', node.id, '; utilities_aq_viz.generateNarrFileName(node) = ', utilities_aq_viz.generateNarrFileName(node)].join());
+
+    }
     node.connectionIdsFromNarrativesStrSet.forEach(function (uniqueConnectionIdFromNarrative) {
       node.connectedToIdFromNarrativesArray.push(uniqueConnectionIdFromNarrative);
       node.linksNarr.push(uniqueConnectionIdFromNarrative);
@@ -1393,7 +1393,7 @@ var addConnectionObjectsArrayFromComments = function (nodes) {
           node.connectionsFromComments.push(connectionFromComments);
         }
         if (consoleLog) {
-          if (counter < 10) {
+          if (node.nodeNumber % 17 === 0) {
             logger.debug(__filename, 'line', __line, '; counter++ = ', counter++, '; node.id = ', node.id, '; connectionFromComments = ', connectionFromComments);
           }
         }
@@ -1653,8 +1653,10 @@ var countLinks = function (data) {
         }
       }
     });
-    logger.debug(__filename, 'line', __line, '; node.nodeNumber = ', node.nodeNumber, '; linkCounter = ', linkCounter);
     node.linkCount = linkCounter;
+    if (node.nodeNumber % 17 === 0) {
+      logger.debug(__filename, 'line', __line, '; node.nodeNumber = ', node.nodeNumber, '; linkCounter = ', linkCounter);
+    }
   });
 };
 
