@@ -22,7 +22,7 @@ var entitiesHtmlUnicodeString;
 
 var missingNodes = require('./missing_nodes.js'),
   async = require('async'),
-  trunc = require('./trunc.js'),
+  // trunc = require('./trunc.js'),
   re = require('request-enhanced'),
   request = require('request'),
   fse = require('fs-extra'),
@@ -884,7 +884,7 @@ var syncWriteFileAQListXML = function (data, localFileNameAndPath) {
     console.log(__filename, 'line', __line, ' Error: ', err);
   }
   if (consoleLog) {
-    console.log(__filename, 'line', __line, ' AQList_xml = \n', trunc.n400(AQList_xml.toString()));
+    console.log(__filename, 'line', __line, ' AQList_xml = \n', AQList_xml.toString().substring(0,300));
   }
 };
 
@@ -1193,7 +1193,7 @@ var normalizeNarrativeFileName = function (narrativeFileNameString) {
   // var narrativeFileName1 = narrativeFileNameString.replace(/http:\/\/dev.un.org(\/sc\/committees\/1267\/NSQ.*\.shtml)/, '$1');
   // console.log( __filename, __line, '; narrativeFileName1 = ', narrativeFileName1);
   var narrativeFileName2 = narrativeFileName1.replace(/\/sc\/committees\/1267\/(NSQ.*\.shtml)/, '$1');
-  return narrativeFileName2;
+  return narrativeFileName2.trim();
 };
 
 var cleanUpIds = function (nodes) {

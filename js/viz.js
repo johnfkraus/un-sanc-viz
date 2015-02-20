@@ -1036,6 +1036,7 @@ activate = function (group, link) {
 // end of activate()
 
 $(function () {
+    var searchTerm;
     var myNetwork;
     myNetwork = Network();
 
