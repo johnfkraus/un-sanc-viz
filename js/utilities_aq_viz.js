@@ -2,10 +2,11 @@
 
 var consoleLog = false;
 var truncateToNumChars = 100;
-// var log = require('custom-logger').config({ level: 0 });
 // var logger = require('tracer').colorConsole({level:'warn'});
-var tlc = require('./tracer-logger-config.js');
-// var log = require('custom-logger').config({ format: "%event% %padding%[%timestamp%]: %message%" });
+var logger = require('./tracer-logger-config.js').logger;
+// primes: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127, 131, 137, 139, 149, 151, 157, 163, 167, 173
+var logModulus = 43;
+// var tlc = require('./tracer-logger-config.js');
 require('console-stamp')(console, '[HH:MM:ss.l]');
 
 var fsOptions = {
@@ -71,7 +72,7 @@ var formatMyDate = function (dateString) {
   dateFormat.masks.common = 'mm-dd-yyyy';
   var date = new Date(dateString);
   var formattedDate = dateFormat(date, 'common');
-  tlc.logger.debug([__filename, ' line ', __line, '; formattedDate = ', formattedDate].join(''));
+  logger.debug([__filename, ' line ', __line, '; formattedDate = ', formattedDate].join(''));
   return formattedDate.trim();
 };
 
@@ -81,9 +82,9 @@ var getCleanId = function (referenceNumber) {
   try {
     refNumRegexMatch = referenceNumber.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/);
   } catch (err) {
-    tlc.logger.debug([__filename, ' line ', __line, '; Error: ', err].join(''));
-    // tlc.logger.debug(__filename + ' line ' + __line + '; Error: = ' + err);
-    // tlc.logger.debug(__filename, 'line', __line, '; Error: ', err, '; referenceNumber =', referenceNumber);
+    logger.debug([__filename, ' line ', __line, '; Error: ', err].join(''));
+    // logger.debug(__filename + ' line ' + __line + '; Error: = ' + err);
+    // logger.debug(__filename, 'line', __line, '; Error: ', err, '; referenceNumber =', referenceNumber);
     logger.error(__filename, 'line', __line, '; Error: ', err, '; referenceNumber =', referenceNumber);
   }
   return refNumRegexMatch[0].trim();
@@ -96,7 +97,7 @@ var generateNarrFileName = function (node) {
   var narrFileName = 'NSQ' + idSplit[0].substring(1, 2) + idSplit[2] + idSplit[3] + 'E.shtml';
   if (consoleLog) {
     console.log(__filename, ' line ', __line, '; node.id = ', node.id, '; generated narrFileName = ', narrFileName);
-    tlc.logger.debug([__filename, ' line ', __line, '; node.id = ', node.id, '; generated narrFileName = ', narrFileName].join(''));
+    logger.debug([__filename, ' line ', __line, '; node.id = ', node.id, '; generated narrFileName = ', narrFileName].join(''));
   }
   return narrFileName.trim();
 };
@@ -110,7 +111,7 @@ var stringifyAndWriteJsonDataFile = function (data, writeFileNameAndPath) {
     fse.writeFileSync(writeFileNameAndPath, stringifiedData, fsOptions);
     if (consoleLog) {
       console.log(__filename, 'line', __line, '; utilities_aq_viz.stringifyAndWriteJsonFile() wrote file to: ', writeFileNameAndPath, ';  file contained (truncated): ', stringifiedData.substring(0, truncateToNumChars), ' ... [CONSOLE LOG OUTPUT INTENTIONALLY TRUNCATED TO FIRST ', truncateToNumChars, ' CHARACTERS]\n\n');
-      tlc.logger.debug([__filename, 'line', __line, '; utilities_aq_viz.stringifyAndWriteJsonFile() wrote file to: ', writeFileNameAndPath, ';  file contained (truncated): ', stringifiedData.substring(0, truncateToNumChars), ' ... [CONSOLE LOG OUTPUT INTENTIONALLY TRUNCATED TO FIRST ', truncateToNumChars, ' CHARACTERS]\n'].join(''));
+      logger.debug([__filename, 'line', __line, '; utilities_aq_viz.stringifyAndWriteJsonFile() wrote file to: ', writeFileNameAndPath, ';  file contained (truncated): ', stringifiedData.substring(0, truncateToNumChars), ' ... [CONSOLE LOG OUTPUT INTENTIONALLY TRUNCATED TO FIRST ', truncateToNumChars, ' CHARACTERS]\n'].join(''));
 
     }
   } catch (err) {
@@ -138,7 +139,7 @@ var syncWriteMyFile = function (localFileNameAndPath, data, fsOptions) {
     fse.writeFileSync(localFileNameAndPath, data, fsOptions);
   } catch (err) {
     logger.error(__filename, 'line', __line, '; Error: ', err);
-    tlc.logger.debug(__filename, 'line', __line, '; Error: ', err);
+    logger.debug(__filename, 'line', __line, '; Error: ', err);
   }
 };
 
@@ -169,7 +170,7 @@ function trimNarrative(narrWebPageString, url) {
   var tailOmitsChars = (narrative50.length - tail.length);
   /*  if (narrative40.length >= narrative1.length) {
    console.log(__filename, ' line ', __line, '; tail = [FIRST', tailOmitsChars, 'CHARACTERS INTENTIONALLY OMITTED]', tail, '\nnarrative1.length = ', narrative1.length, '\nnarrative2.length = ', narrative2.length, '\nnarrative2a.length = ', narrative2a.length, '\nnarrative3.length = ', narrative3.length, '\ntail.length = ', tail.length, '\nnarrative3.substring(0,300) = ', narrative3.substring(0, 300));
-   tlc.logger.debug([__filename, ' line ', __line, '; tail = [FIRST', tailOmitsChars, 'CHARACTERS INTENTIONALLY OMITTED]', tail, '\n  narrative1.length = ', narrative1.length, '\n  narrative2.length = ', narrative2.length, '\n  narrative2a.length = ', narrative2a.length, '\n  narrative3.length = ', narrative3.length, '\n  tail.length = ', tail.length, '\n  narrative3.substring(0,300) = ', narrative3.substring(0, 300)].join(''));
+   logger.debug([__filename, ' line ', __line, '; tail = [FIRST', tailOmitsChars, 'CHARACTERS INTENTIONALLY OMITTED]', tail, '\n  narrative1.length = ', narrative1.length, '\n  narrative2.length = ', narrative2.length, '\n  narrative2a.length = ', narrative2a.length, '\n  narrative3.length = ', narrative3.length, '\n  tail.length = ', tail.length, '\n  narrative3.substring(0,300) = ', narrative3.substring(0, 300)].join(''));
    }
    */
 //  narrative5 = addFileLabel(narrative4);
@@ -218,6 +219,7 @@ module.exports = {
   formatMyDate: formatMyDate,
   generateNarrFileName: generateNarrFileName,
   getCleanId: getCleanId,
+  logModulus: logModulus,
   stringifyAndWriteJsonDataFile: stringifyAndWriteJsonDataFile,
   syncWriteMyFile: syncWriteMyFile,
   trimNarrative: trimNarrative,

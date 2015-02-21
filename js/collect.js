@@ -13,7 +13,8 @@ var consoleLog = false;
 // skip downloading 300+ narrative files and use locally stored files instead; for debugging
 var useLocalNarrativeFiles = true;
 var logger = require('./tracer-logger-config.js').logger;
-var tlc = require('./tracer-logger-config');
+var logModulus = utilities_aq_viz.logModulus;
+//  var tlc = require('./tracer-logger-config');
 var substringChars = utilities_aq_viz.truncateToNumChars;
 var debugWithFewerNodesCount = 10;
 //var __filename = __filename || {};
@@ -255,12 +256,9 @@ var collect = function () {
           indiv.indivDobString = createIndivDateOfBirthString(indiv);
           indiv.indivPlaceOfBirthString = processPlaceOfBirthArray(indiv);
           indiv.indivAliasString = processAliasArray(indiv);
-          // logger.debug('indiv.indivDobString = ', indiv.indivDobString);
         });
         data.entities = data.entities.concat(missingEnts);
-        // data.entities = data.entities.concat(missingNodes.getMissingEnts());
-        // indiv0OrEnt1 1 = entity; 0 = individual
-        data.entities.forEach(function (entity) {
+         data.entities.forEach(function (entity) {
           entity.indiv0OrEnt1 = 1;
         });
         data.nodes = data.indivs.concat(data.entities);
@@ -268,26 +266,22 @@ var collect = function () {
         data.dateCollected = utilities_aq_viz.formatMyDate(new Date());
         data.nodes.forEach(function (node) {
           node.dateUpdatedString = processDateUpdatedArray(node);
-          //node.narrativeFileName = utilities_aq_viz.generateNarrFileName(node);
-          // node.narrativeFileName = '';
-        });
 
+        });
         var generatedFileDateString = dateFormat(data.dateGenerated, 'yyyy-mm-dd');
         var archiveFileNameAndPath = __dirname + '/../data/archive_historical/AQList-' + generatedFileDateString + '.xml';
-        //       archiveRawSource(archiveFile);
         syncWriteFileAQListXML(data, archiveFileNameAndPath);
-        //        writeAQListXML(archiveFileNameAndPath);
         createDateGeneratedMessage();
         delete data.entities;
         delete data.indivs;
-        //data.CONSOLIDATED_LIST = null;
         delete data.CONSOLIDATED_LIST;
         cleanUpRefNums(data.nodes);
         cleanUpIds(data.nodes);
-        data.nodes.forEach(function (node) {
-          //  node.narrativeFileName = utilities_aq_viz.generateNarrFileName(node);
-        });
-        var nodes = data.nodes;
+        data.comments = {};
+        data.comments.links = [];
+        data.narratives = {};
+        data.narratives.links = [];
+         var nodes = data.nodes;
         var node;
         for (var nodeCounter = 0; nodeCounter < nodes.length; nodeCounter++) {
           node = nodes[nodeCounter];
@@ -297,7 +291,7 @@ var collect = function () {
         }
         concatNames(data.nodes);
         createNationality(data.nodes);
-        if (consoleLog && (node.nodeNumber % 17 === 0)) {
+        if (consoleLog && (node.nodeNumber % logModulus === 0)) {
           //          logger.debug(__filename, 'line', __line, '; function #:', ++functionCount, '; put data into nodes array for d3');
           logger.debug(__filename, 'line', __line,'node.nodeNumber = ', node.nodeNumber,  '; JSON.stringify(data).substring(0, substringChars) = \n', JSON.stringify(data, null, ' ').substring(0, substringChars));
         }
@@ -670,7 +664,7 @@ var collect = function () {
             readNarrativeFileNameAndPath = __dirname + '/../data/narrative_summaries/' + nodeNarrFileName;
             try {
               narrative = fse.readFileSync(readNarrativeFileNameAndPath, fsOptions); //, fsOptions); //, function (err, data) {
-              if (consoleLog && (node.nodeNumber % 17 === 0)) {
+              if (consoleLog && (node.nodeNumber % logModulus === 0)) {
                 logger.debug('\n ', __filename, 'line', __line, 'node.nodeNumber = ', node.nodeNumber, '; getting file nodeCounter = ', nodeCounter, '; readNarrativeFileNameAndPath = ', readNarrativeFileNameAndPath, '\n narrative.substring(0, substringChars) = ', narrative.substring(0, substringChars), ' [INTENTIONALLY TRUNCATED TO FIRST ' + substringChars + ' CHARACTERS]');
               }
             } catch (err) {
@@ -755,7 +749,7 @@ var collect = function () {
       function (callback) {
         var nodes = data.nodes;
         nodes.forEach(function (node) {
-          if (node.nodeNumber % 17 === 0) {
+          if (node.nodeNumber % logModulus === 0) {
             if ((typeof node.links !== 'null') && (typeof node.links !== 'undefined')) {
               logger.debug(__filename, 'line', __line, '; node.nodeNumber = ', node.nodeNumber, '; node.links.length = ', node.links.length);
             }
@@ -1296,7 +1290,7 @@ var addConnectionIdsArrayFromComments = function (nodes) {
       linkRegexMatch = comments.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/gi);
       // we have at least one link in the comments
       if (linkRegexMatch !== null) {
-        if (consoleLog && (node.nodeNumber % 17 === 0)) {
+        if (consoleLog && (node.nodeNumber % logModulus === 0)) {
           logger.debug(__filename, 'line', __line, '; node.nodeNumber = ', node.nodeNumber, '; node.id = ', node.id,
             '; node.name = ', node.name, '; has ', linkRegexMatch.length, 'link regex matches from comments');
         }
@@ -1311,11 +1305,11 @@ var addConnectionIdsArrayFromComments = function (nodes) {
           node.links.push(uniqueConnectionIdFromComments);
         });
       }
-      if (consoleLog && (node.nodeNumber % 17 === 0)) {
+      if (consoleLog && (node.nodeNumber % logModulus === 0)) {
         logger.debug(__filename, 'line', __line, '; node.nodeNumber = ', node.nodeNumber, '; node.id = ', node.id, '; node.name = ', node.name, '; has node.connectionIdsFromCommentsSet set.length = ', node.connectionIdsFromCommentsSet.length);
       }
     } else {
-      if (consoleLog && (node.nodeNumber % 17 === 0)) {
+      if (consoleLog && (node.nodeNumber % logModulus === 0)) {
         logger.debug(__filename, 'line', __line, '; counter = ', counter, '; node.id = ', node.id, '; node.name = ', node.name, '; has no comments to parse; node.COMMENTS1 = ', node.COMMENTS1);
       }
     }
@@ -1352,7 +1346,7 @@ var addConnectionIdsArrayFromNarrative = function (node, narrative) {
   try {
     var msg = ([__filename, 'line', __line, '; typeof node.connectionIdsFromNarrativesStrSet = ', typeof node.connectionIdsFromNarrativesStrSet, '; node.id = ', node.id, '; utilities_aq_viz.generateNarrFileName(node) = ', utilities_aq_viz.generateNarrFileName(node)].join());
     var msg2 = util.inspect(node.connectionIdsFromNarrativesStrSet);
-    if (node.nodeNumber % 17 === 0) {
+    if (node.nodeNumber % logModulus === 0) {
       logger.debug('node.nodeNumber = ', node.nodeNumber, '; msg = ', msg);
       logger.debug('node.nodeNumber = ', node.nodeNumber, 'msg2 = ', msg2);
       logger.debug([__filename, 'line', __line, '; node.nodeNumber = ', node.nodeNumber, '; typeof node.connectionIdsFromNarrativesStrSet = ', typeof node.connectionIdsFromNarrativesStrSet, '; node.id = ', node.id, '; utilities_aq_viz.generateNarrFileName(node) = ', utilities_aq_viz.generateNarrFileName(node)].join());
@@ -1394,7 +1388,7 @@ var addConnectionObjectsArrayFromComments = function (nodes) {
           node.connectionsFromComments.push(connectionFromComments);
         }
         if (consoleLog) {
-          if (node.nodeNumber % 17 === 0) {
+          if (node.nodeNumber % logModulus === 0) {
             logger.debug(__filename, 'line', __line, '; counter++ = ', counter++, '; node.id = ', node.id, '; connectionFromComments = ', connectionFromComments);
           }
         }
@@ -1578,7 +1572,7 @@ var createDateGeneratedMessage = function () {
   generatedFileDateString = vizFormatDateSetup(dateAqListGenerated);
   var message = 'Collected AQList.xml labeled as generated on: ' + dateAqListGeneratedString + ' [' + dateAqListGenerated + ']';
   data.message = message;
-  tlc.logger.debug([__filename, ' line ', __line + '; ', message].join(''));
+  logger.debug([__filename, ' line ', __line + '; ', message].join(''));
 };
 
 var createIndivPlaceOfBirthString = function (singlePob) {
@@ -1606,7 +1600,7 @@ var formatDate = function (intlDateString) {
   } catch (err) {
     logger.error('769 Error: ', err, '; intlDateString = ', intlDateString);
   }
-  // tlc.logger.debug(__filename + ' line ' + __line + '; ' + dateResultString);
+  // logger.debug(__filename + ' line ' + __line + '; ' + dateResultString);
   return dateResultString;
 };
 
@@ -1655,7 +1649,7 @@ var countLinks = function (data) {
       }
     });
     node.linkCount = linkCounter;
-    if (node.nodeNumber % 17 === 0) {
+    if (node.nodeNumber % logModulus === 0) {
       logger.debug(__filename, 'line', __line, '; node.nodeNumber = ', node.nodeNumber, '; linkCounter = ', linkCounter);
     }
   });
@@ -1739,7 +1733,7 @@ var readAndParseJsonFile = function (dataPath) {
     data = JSON.parse(buffer);
   } catch (err) {
     logger.error('\n ', __filename, 'line', __line, '; Error: ', err);
-    tlc.logger.error([__filename, 'line', __line, '; Error: ', err].join(''));
+    logger.error([__filename, 'line', __line, '; Error: ', err].join(''));
   }
   return data;
 };

@@ -12,21 +12,48 @@ var generateFileNameAndPath = function () {
 
 var logFileNameAndPath = logFileNameAndPath || generateFileNameAndPath();
 
-var logger = require('tracer').console({
-  transport: function (data) {
-    console.log(data.output);
-    try {
-      var stream = fse.createWriteStream(logFileNameAndPath, { // }; // "./stream.log", {
-        flags: "a",
-        encoding: "utf8",
-        mode: 0666
-      }).write(data.output + "\n");
-    } catch (err) {
-      console.log(__filename, 'line', __line, '; Error: ', err); // method: generateFileNameAndPath() legalLogFileName = ', legalLogFileName);
+var colors = require('colors');
+
+
+var logger = require('tracer').colorConsole({
+    transport: function (data) {
+      console.log(data.output);
+      try {
+        var stream = fse.createWriteStream(logFileNameAndPath, { // }; // "./stream.log", {
+          flags: "a",
+          encoding: "utf8",
+          mode: 0666
+        }).write(data.output + "\n");
+      } catch (err) {
+        console.log(__filename, 'line', __line, '; Error: ', err); // method: generateFileNameAndPath() legalLogFileName = ', legalLogFileName);
+      }
     }
-  }
-});
+  });
+
+
+
+
+
+
+
+
 /*
+ var logger = require('tracer').console({
+ transport: function (data) {
+ console.log(data.output);
+ try {
+ var stream = fse.createWriteStream(logFileNameAndPath, { // }; // "./stream.log", {
+ flags: "a",
+ encoding: "utf8",
+ mode: 0666
+ }).write(data.output + "\n");
+ } catch (err) {
+ console.log(__filename, 'line', __line, '; Error: ', err); // method: generateFileNameAndPath() legalLogFileName = ', legalLogFileName);
+ }
+ }
+ });
+
+
  var logger = require('tracer').console({
  transport : function(data) {
  console.log(data.output);
