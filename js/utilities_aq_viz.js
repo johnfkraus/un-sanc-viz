@@ -4,8 +4,10 @@ var consoleLog = false;
 var truncateToNumChars = 100;
 // var logger = require('tracer').colorConsole({level:'warn'});
 var logger = require('./tracer-logger-config.js').logger;
-// primes: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127, 131, 137, 139, 149, 151, 157, 163, 167, 173
-var logModulus = 43;
+var primes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127, 131, 137, 139, 149, 151, 157, 163, 167, 173];
+
+var logModulus = primes[Math.floor(Math.random()*primes.length)];
+// var logModulus = 43;
 // var tlc = require('./tracer-logger-config.js');
 require('console-stamp')(console, '[HH:MM:ss.l]');
 
@@ -41,8 +43,8 @@ var errorPageReturned = function (inString) {
   // responsePageError = (responseBody.match('xyz'));
 
   if (errorPageMessageString !== null) {
-    logger.debug([__filename, ' line ', __line, '; The server return a page containing ', errorPageMessageString].join());
-    console.log(__filename, 'line', __line, '; The server return a page containing ', errorPageMessageString);
+    logger.error([__filename, ' line ', __line, '; The server return a page containing ', errorPageMessageString].join());
+    logger.error(__filename, 'line', __line, '; The server return a page containing ', errorPageMessageString);
     return true;
   } else {
     return false;

@@ -41,6 +41,7 @@ var runAppTest = function () {
 
   async.series([
       // test logging
+     /*
       function (callback) {
         // if (consoleLog) {
         logger.log('hello?');
@@ -50,10 +51,10 @@ var runAppTest = function () {
         logger.error('WHOA WHOA WHOA world?!');
         callback();
       },
-
+*/
       function (callback) {
         if (consoleLog) {
-          logger.debu('\n ', __filename, __line, '; Phase 1#:', ++functionCount, '; collect.convertXMLToJson)_');
+          logger.debug('\n ', __filename, __line, '; Phase #:', ++functionCount, '; collect.convertXMLToJson)_');
         }
         collect.collect();
         callback();

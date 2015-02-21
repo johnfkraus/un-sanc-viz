@@ -99,8 +99,9 @@ var collect = function () {
   async.series([
       // test logger
       function (callback) {
+        logger.debug(__filename, 'line', __line, '; logModulus = ', logModulus);
 
-        logger.log('hello');
+  //      logger.log('hello');
         // logger.log('hello');
         logger.trace('hello', 'world');
         logger.debug('hello %s', 'world', 123);
