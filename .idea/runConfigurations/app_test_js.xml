@@ -1,6 +1,6 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="app-test.js" type="NodeJSConfigurationType" factoryName="Node.js" singleton="false" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="js/app-test.js" working-dir="$PROJECT_DIR$" coffeescript-path="C:\Users\User1\AppData\Roaming\npm\node_modules\coffee-script\bin\coffee">
-    <browser name="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" url="http://localhost:63343/aq-list-viz/index.html" />
+    <browser start="true" url="http://localhost:63343/aq-list-viz/index.html" />
     <RunnerSettings RunnerId="Basic" />
     <RunnerSettings RunnerId="debuggableProgram" />
     <ConfigurationWrapper RunnerId="Basic" />

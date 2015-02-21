@@ -10,6 +10,7 @@
 // do we want lots of console.log messages for debugging (if so, set consoleLog = true)
 var utilities_aq_viz = require('./utilities_aq_viz');
 var consoleLog = false;
+// skip downloading 300+ narrative files and use locally stored files instead; for debugging
 var useLocalNarrativeFiles = true;
 var logger = require('./tracer-logger-config.js').logger;
 var tlc = require('./tracer-logger-config');

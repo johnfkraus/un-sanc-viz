@@ -1,5 +1,14 @@
-// app.js
+// app-test.js
 //=============
+var linenums = require('./linenums.js');
+var consoleLog = false;
+var utilities_aq_viz = require('./utilities_aq_viz');
+var logger = require('./tracer-logger-config.js').logger;
+//var logger = require('tracer').colorConsole({level:'info'});
+// var logger = require('./tracer-logger-config.js');
+// var log = require('custom-logger').config({ level: 0 });
+// var logger = require('./libs/logger.js');
+
 if (typeof define !== 'function') {
   var define = require('amdefine');
 }
@@ -14,83 +23,66 @@ var async = require('async'),
     .parseString;
 
 var collect = require('./collect.js');
-var setupData = require('./setupData.js');
-var collectNarratives = require('./collectNarratives.js');
-var getNarrativeList = require('./getNarrativeList.js');
-var makeDocs = require('./makeDocs.js');
+// var parseDoc = require('./parseDoc.js');
+// var setupData1 = require('./setupData1.js');
+// var setupData2 = require('./setupData2.js');
+// var collectNarratives = require('./collectNarratives.js');
+// var getNarrativeList = require('./getNarrativeList.js');
+// var makeDocs = require('./makeDocs.js');
 var filewalker = require('./filewalker.js');
-var logger = require('./libs/logger.js');
-var linenums = require('./linenums.js');
+
 var functionCount = 0;
 var __filename = __filename || {};
 var __line = __line || {};
-var consoleLog = false;
 
-var runApp = function () {
-//  if (consoleLog) { console.log("\n ", __filename, __line, ", runApp\n");
+var fsOptions = {
+  flags: 'r+',
+  encoding: 'utf-8',
+  autoClose: true
+};
+
+var runAppTest = function () {
+//  if (consoleLog) { console.log('\n ', __filename, __line, ', runApp\n');
   if (consoleLog) {
-    console.log("\n ", __filename, "line", __line, "; running app.js; ", new Date());
+    logger.debug('\n ', __filename, 'line', __line, '; running ', __filename, '; ', new Date());
   }
 
   async.series([
-    function (callback) {
-      // collect raw data from the Internet
-      if (consoleLog) {
-        console.log("\n ", __filename, __line, "; function 2#:", ++functionCount);
-      }
-      collect.convertXMLToJson(); //     setupData.fixData();
-      callback();
-    },
+      // collect raw data (xml file) from the Internet
 
-    function (callback) {
-      // get the lists of narratives, consolidate in one json file
-      if (consoleLog) {
-        console.log("\n ", __filename, __line, "; function 3#:", ++functionCount);
-      }
-      getNarrativeList.getListOfNarratives();
-      callback();
-    },
+      function (callback) {
+        // if (consoleLog) {
+        logger.log('hello?');
+        logger.debug('hello?');
+        logger.info('hello world!');
+        logger.warn('carefule there, world!');
+        logger.error('WHOA WHOA WHOA world?!');
 
-    function (callback) {
-      // put data in arrays for d3
-      if (consoleLog) {
-        console.log("\n ", __filename, __line, "; function 3#:", ++functionCount);
-      }
-      setupData.fixData();
-      callback();
-    },
+        callback();
+      },
 
-    function (callback) {
-      // collect the narrative files from the Internet
-      if (consoleLog) {
-        console.log("\n ", __filename, __line, "; function 3#:", ++functionCount);
-      }
-      collectNarratives.getTheNarratives();
-      callback();
-    },
+      function (callback) {
+        if (consoleLog) {
+          console.log('\n ', __filename, __line, '; Phase 1#:', ++functionCount, '; collect.convertXMLToJson)_');
+        }
+        collect.collect();
+        callback();
+      },
 
-    function (callback) {
-      // put the narrative in the data structure
-      if (consoleLog) {
-        console.log("\n ", __filename, __line, "; function 4#:", ++functionCount);
-      }
-      makeDocs.get_html_docs();
-      callback();
-    },
-    function (callback) {
-      // list files in /data/output
-      if (consoleLog) {
-        console.log("\n ", __filename, __line, "; function 5#:", ++functionCount);
-      }
-      // console.log("\n ", __filename, "line", __line, "; running filewalker.filewalker()");
-      var fwPath = "./data/output";
-      filewalker.filewalker(fwPath);
+      function (callback) {
+        // list files in /data/output
+        if (consoleLog) {
+          console.log('\n ', __filename, __line, '; Phase 6#:', ++functionCount, '; filewalker.filewalker()');
+        }
+        var fwPath = './data/output';
+        filewalker.filewalker(fwPath);
 
-      callback();
+        callback();
+      }
+    ],
+    function (err) { //This function gets called after the two tasks have called their 'task callbacks'
+      if (err) console.log('\n app.js 32 Err: ', err);
     }
-
-  ], function (err) { //This function gets called after the two tasks have called their "task callbacks"
-    if (err) console.log("\n app.js 32 Err: ", err);
-  });
+  );
 };
-runApp();
+runAppTest();
