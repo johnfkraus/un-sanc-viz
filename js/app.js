@@ -17,9 +17,10 @@ var async = require('async'),
   fs = require('fs'),
   util = require('util'),
   dateFormat = require('dateformat'),
-  inspect = require('object-inspect'),
-  parseString = require('xml2js')
-    .parseString;
+  inspect = require('object-inspect');
+
+//  parseString = require('xml2js')
+//    .parseString;
 
 var collect = require('./collect.js');
 var filewalker = require('./filewalker.js');
@@ -47,7 +48,7 @@ var runAppTest = function () {
         logger.log('hello?');
         logger.debug('hello?');
         logger.info('hello world!');
-        logger.warn('carefule there, world!');
+        logger.warn('careful there, world!');
         logger.error('WHOA WHOA WHOA world?!');
         callback();
       },

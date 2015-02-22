@@ -6,7 +6,7 @@ var truncateToNumChars = 100;
 var logger = require('./tracer-logger-config.js').logger;
 var primes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127, 131, 137, 139, 149, 151, 157, 163, 167, 173];
 
-var logModulus = primes[Math.floor(Math.random()*primes.length)];
+var logModulus = primes[Math.floor(Math.random() * primes.length)];
 // var logModulus = 43;
 // var tlc = require('./tracer-logger-config.js');
 require('console-stamp')(console, '[HH:MM:ss.l]');
@@ -123,6 +123,35 @@ var stringifyAndWriteJsonDataFile = function (data, writeFileNameAndPath) {
   }
 };
 
+var nodeSummary = function (node) {
+  var nodeSummaryString = '\n\n';
+  nodeSummaryString += '\nNode number: ' + node.nodeNumber;
+  nodeSummaryString += '\nId: ' + node.id;
+  nodeSummaryString += "\nName: " + node.name;
+
+  if (typeof node.NATIONALITY !== 'undefined') {
+    nodeSummaryString += "\nNationality: " + node.NATIONALITY.VALUE;
+  }
+  nodeSummaryString += "\nNationality2: " + node.NATIONALITY2;
+  // nodeSummaryString += "\nNumber of links: " + node.links.length;
+  nodeSummaryString += "\nComments: " + node.COMMENTS1;
+  if (typeof node.connectionsFromComments !== 'undefined') {
+    nodeSummaryString += '\nnode.connectionsFromComments.length = ' + node.connectionsFromComments.length;
+  }
+
+//  if (typeof node.links !== 'undefined') {
+//    nodeSummaryString += '\nnode.links.length = ' + node.links.length;
+//  }
+  if (typeof node.connectionsFromNarrative !== 'undefined') {
+    nodeSummaryString += '\nnode.connectionsFromNarrative.length = ' + node.connectionsFromNarrative.length;
+  }
+  if (typeof node.linkCount !== 'undefined') {
+    nodeSummaryString += '\nnode.linkCount = ' + node.linkCount;
+  }
+
+  return nodeSummaryString.trim();
+};
+
 // write data to a local file
 var syncWriteMyFile = function (localFileNameAndPath, data, fsOptions) {
   try {
@@ -222,6 +251,7 @@ module.exports = {
   generateNarrFileName: generateNarrFileName,
   getCleanId: getCleanId,
   logModulus: logModulus,
+  nodeSummary: nodeSummary,
   stringifyAndWriteJsonDataFile: stringifyAndWriteJsonDataFile,
   syncWriteMyFile: syncWriteMyFile,
   trimNarrative: trimNarrative,

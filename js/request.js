@@ -10,7 +10,7 @@ console.log("__dirname = ", __dirname);
 // var file = __dirname + '/../data/test/AQList-2014-11-18.json';
 // var file = "/home/codio/workspace/data/test/AQList-2014-11-18.json";
 var file = "aqlist.json";
-var filePath = "aqlist.json";
+// var filePath = "aqlist.json";
 //var file = __dirname + '/../data/test/AQList-2014-11-18.json';
 
 console.log("file = ", file);
