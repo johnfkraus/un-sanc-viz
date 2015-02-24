@@ -693,11 +693,6 @@ var collect = function () {
         callback();
       },
 
-      function (callback) {
-        countLinks(data);
-        callback();
-      },
-
 
         // add array of connection OBJECTS derived from narrative to data
         function (callback) {
@@ -776,6 +771,21 @@ function (callback) {
   }
   callback();
 },
+
+
+        function (callback) {
+          countLinks(data);
+          callback();
+        },
+
+        // write intermediate data file for debugging
+        function (callback) {
+          var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'AQList-L' + __line + '-addConnectionObjectsArray.json';
+          utilities_aq_viz.stringifyAndWriteJsonDataFile(data, writeJsonPathAndFileName);
+          utilities_aq_viz.stringifyAndWriteJsonDataFile(data, dataPath);
+          callback();
+        },
+
 
 // summarize output
 // compare number of comment links to number of narrative links
@@ -1629,7 +1639,7 @@ var consolidateLinksFromNarratives = function (data) {
           data.narratives.links.push(conn);
         }
       });
-node.linkCount = node.connectionsFromNarrative.length;
+// node.linkCount = node.connectionsFromNarrative.length;
     }
   });
   data.links = data.narratives.links;
@@ -1792,17 +1802,21 @@ var getKeys = function (pob) {
 // count the unique links for each node
 var countLinks = function (data) {
   var linkCounter;
+  // loop through each node
   data.nodes.forEach(function (node) {
     linkCounter = 0;
+    // linkCounter = 0;
     var keySet = new Set();
     var keyAdded1, keyAdded2;
     var linkConcatKey1, linkConcatKey2;
+    // loop through each link
     data.links.forEach(function (link) {
       // delete a link if source and target are the same
       if (link.source === link.target) {
         delete data.link;
         logger.debug(__filename, 'line', __line, 'deleted ', data.link, ' because link.source === link.target');
       } else {
+        // increment the link count if the node.id is either the link source or link target
         if (node.id === link.source || node.id === link.target) {
           linkConcatKey1 = link.source + link.target;
           linkConcatKey2 = link.target + link.source;
@@ -1814,7 +1828,7 @@ var countLinks = function (data) {
         }
       }
     });
-//    node.linkCount = linkCounter;
+    node.linkCount = linkCounter;
 //    node.linkCount = node.connectionsFromNarrative.length;
     if (node.nodeNumber % logModulus === 0) {
       // logger.debug(__filename, 'line', __line, '; node.nodeNumber = ', node.nodeNumber, '; linkCounter = ', linkCounter);
@@ -2006,3 +2020,5 @@ var writeMyFile = function (localFileNameAndPath, data, fsOptions) {
 module.exports = {
   collect: collect
 };
+
+

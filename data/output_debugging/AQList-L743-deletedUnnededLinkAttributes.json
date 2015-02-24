@@ -72,6 +72,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -109,8 +110,7 @@
      "source": "QI.A.12.01",
      "target": "QI.A.6.01"
     }
-   ],
-   "linkCount": 2
+   ]
   },
   {
    "DATAID": "111513",
@@ -192,6 +192,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -264,8 +265,7 @@
      "source": "QI.A.157.04",
      "target": "QI.D.164.04"
     }
-   ],
-   "linkCount": 7
+   ]
   },
   {
    "DATAID": "2827788",
@@ -354,6 +354,10 @@
     "QE.A.4.01",
     "QE.L.11.01"
    ],
+   "links": [
+    "QE.A.4.01",
+    "QE.L.11.01"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -400,8 +404,7 @@
      "source": "QI.A.255.08",
      "target": "QE.L.11.01"
     }
-   ],
-   "linkCount": 2
+   ]
   },
   {
    "DATAID": "2959427",
@@ -529,6 +532,9 @@
    "connectedToIdFromCommentsArray": [
     "QE.A.4.01"
    ],
+   "links": [
+    "QE.A.4.01"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -564,8 +570,7 @@
      "source": "QI.A.289.11",
      "target": "QE.A.4.01"
     }
-   ],
-   "linkCount": 1
+   ]
   },
   {
    "DATAID": "111533",
@@ -647,6 +652,9 @@
     }
    },
    "connectedToIdFromCommentsArray": [
+    "QE.A.3.01"
+   ],
+   "links": [
     "QE.A.3.01"
    ],
    "linksSet": {
@@ -733,8 +741,7 @@
      "source": "QI.A.192.05",
      "target": "QI.A.198.05"
     }
-   ],
-   "linkCount": 8
+   ]
   },
   {
    "DATAID": "111449",
@@ -803,6 +810,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -868,8 +876,7 @@
      "source": "QI.A.54.01",
      "target": "QE.W.15.01"
     }
-   ],
-   "linkCount": 6
+   ]
   },
   {
    "DATAID": "111395",
@@ -1015,6 +1022,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -1094,8 +1102,7 @@
      "source": "QI.A.109.03",
      "target": "QI.B.217.06"
     }
-   ],
-   "linkCount": 8
+   ]
   },
   {
    "DATAID": "111450",
@@ -1165,6 +1172,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -1216,8 +1224,7 @@
      "source": "QI.A.200.05",
      "target": "QI.A.202.05"
     }
-   ],
-   "linkCount": 4
+   ]
   },
   {
    "DATAID": "111514",
@@ -1279,6 +1286,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -1309,8 +1317,7 @@
      "source": "QI.A.18.01",
      "target": "QE.A.4.01"
     }
-   ],
-   "linkCount": 1
+   ]
   },
   {
    "DATAID": "2972739",
@@ -1451,6 +1458,10 @@
     "QE.J.92.02",
     "QI.A.86.03"
    ],
+   "links": [
+    "QE.J.92.02",
+    "QI.A.86.03"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -1511,8 +1522,7 @@
      "source": "QI.A.295.11",
      "target": "QE.A.4.01"
     }
-   ],
-   "linkCount": 4
+   ]
   },
   {
    "DATAID": "2786469",
@@ -1598,6 +1608,9 @@
    "connectedToIdFromCommentsArray": [
     "QE.L.11.01"
    ],
+   "links": [
+    "QE.L.11.01"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -1661,8 +1674,7 @@
      "source": "QI.A.229.07",
      "target": "QI.A.231.07"
     }
-   ],
-   "linkCount": 5
+   ]
   },
   {
    "DATAID": "111451",
@@ -1766,6 +1778,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -1852,8 +1865,7 @@
      "source": "QI.A.86.03",
      "target": "QI.A.295.11"
     }
-   ],
-   "linkCount": 9
+   ]
   },
   {
    "DATAID": "2983651",
@@ -1970,6 +1982,12 @@
     "QE.J.19.01",
     "QE.A.121.05"
    ],
+   "links": [
+    "QE.A.4.01",
+    "QE.H.130.10",
+    "QE.J.19.01",
+    "QE.A.121.05"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -2038,8 +2056,7 @@
      "source": "QI.A.309.12",
      "target": "QE.A.121.05"
     }
-   ],
-   "linkCount": 4
+   ]
   },
   {
    "DATAID": "2922613",
@@ -2159,6 +2176,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -2189,8 +2207,7 @@
      "source": "QI.A.285.10",
      "target": "QE.A.4.01"
     }
-   ],
-   "linkCount": 1
+   ]
   },
   {
    "DATAID": "111640",
@@ -2306,6 +2323,11 @@
     "QI.M.129.03",
     "QI.A.132.03"
    ],
+   "links": [
+    "QI.S.128.03",
+    "QI.M.129.03",
+    "QI.A.132.03"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -2377,8 +2399,7 @@
      "source": "QI.A.130.03",
      "target": "QI.M.129.03"
     }
-   ],
-   "linkCount": 5
+   ]
   },
   {
    "DATAID": "111732",
@@ -2471,6 +2492,9 @@
    "connectedToIdFromCommentsArray": [
     "QI.A.224.06"
    ],
+   "links": [
+    "QI.A.224.06"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -2520,8 +2544,7 @@
      "source": "QI.A.201.05",
      "target": "QI.A.224.06"
     }
-   ],
-   "linkCount": 3
+   ]
   },
   {
    "DATAID": "2983821",
@@ -2640,6 +2663,12 @@
     "QI.B.293.11",
     "QE.J.92.02"
    ],
+   "links": [
+    "QE.J.133.12",
+    "QI.B.217.06",
+    "QI.B.293.11",
+    "QE.J.92.02"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -2715,8 +2744,7 @@
      "source": "QI.A.304.12",
      "target": "QI.B.293.11"
     }
-   ],
-   "linkCount": 6
+   ]
   },
   {
    "DATAID": "3012677",
@@ -2810,6 +2838,10 @@
     "QE.T.14.01",
     "QE.M.134.12"
    ],
+   "links": [
+    "QE.T.14.01",
+    "QE.M.134.12"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -2870,8 +2902,7 @@
      "source": "QI.A.316.13",
      "target": "QI.D.232.07"
     }
-   ],
-   "linkCount": 4
+   ]
   },
   {
    "DATAID": "111953",
@@ -2948,6 +2979,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -2992,8 +3024,7 @@
      "source": "QI.A.203.05",
      "target": "QI.A.202.05"
     }
-   ],
-   "linkCount": 3
+   ]
   },
   {
    "DATAID": "2762998",
@@ -3069,6 +3100,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -3106,8 +3138,7 @@
      "source": "QI.A.226.06",
      "target": "QE.A.4.01"
     }
-   ],
-   "linkCount": 3
+   ]
   },
   {
    "DATAID": "2797952",
@@ -3216,6 +3247,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -3267,8 +3299,7 @@
      "source": "QI.A.237.08",
      "target": "QE.A.137.14"
     }
-   ],
-   "linkCount": 7
+   ]
   },
   {
    "DATAID": "111498",
@@ -3344,6 +3375,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -3395,8 +3427,7 @@
      "source": "QI.A.14.01",
      "target": "QI.A.17.01"
     }
-   ],
-   "linkCount": 4
+   ]
   },
   {
    "DATAID": "111641",
@@ -3480,6 +3511,9 @@
     }
    },
    "connectedToIdFromCommentsArray": [
+    "QE.A.3.01"
+   ],
+   "links": [
     "QE.A.3.01"
    ],
    "linksSet": {
@@ -3566,8 +3600,7 @@
      "source": "QI.A.193.05",
      "target": "QI.A.198.05"
     }
-   ],
-   "linkCount": 8
+   ]
   },
   {
    "DATAID": "111733",
@@ -3641,6 +3674,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -3713,8 +3747,7 @@
      "source": "QI.A.161.04",
      "target": "QI.A.160.04"
     }
-   ],
-   "linkCount": 7
+   ]
   },
   {
    "DATAID": "3002734",
@@ -3788,6 +3821,9 @@
     }
    },
    "connectedToIdFromCommentsArray": [
+    "QE.T.14.01"
+   ],
+   "links": [
     "QE.T.14.01"
    ],
    "linksSet": {
@@ -3867,8 +3903,7 @@
      "source": "QI.A.313.13",
      "target": "QE.M.141.14"
     }
-   ],
-   "linkCount": 7
+   ]
   },
   {
    "DATAID": "111500",
@@ -3949,6 +3984,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -4035,8 +4071,7 @@
      "source": "QI.A.91.03",
      "target": "QI.A.104.03"
     }
-   ],
-   "linkCount": 9
+   ]
   },
   {
    "DATAID": "3152553",
@@ -4173,6 +4208,11 @@
     "QI.A.317.13",
     "QI.A.299.11"
    ],
+   "links": [
+    "QE.J.115.04",
+    "QI.A.317.13",
+    "QI.A.299.11"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -4244,8 +4284,7 @@
      "source": "QI.A.325.14",
      "target": "QE.A.4.01"
     }
-   ],
-   "linkCount": 5
+   ]
   },
   {
    "DATAID": "3152437",
@@ -4334,6 +4373,9 @@
    "connectedToIdFromCommentsArray": [
     "QE.A.137.14"
    ],
+   "links": [
+    "QE.A.137.14"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -4376,8 +4418,7 @@
      "source": "QI.A.328.14",
      "target": "QE.A.4.01"
     }
-   ],
-   "linkCount": 2
+   ]
   },
   {
    "DATAID": "3162065",
@@ -4465,6 +4506,9 @@
    "connectedToIdFromCommentsArray": [
     "QE.A.137.14"
    ],
+   "links": [
+    "QE.A.137.14"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -4507,8 +4551,7 @@
      "source": "QI.A.338.14",
      "target": "QE.A.4.01"
     }
-   ],
-   "linkCount": 2
+   ]
   },
   {
    "DATAID": "2797951",
@@ -4612,6 +4655,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -4663,8 +4707,7 @@
      "source": "QI.A.236.08",
      "target": "QE.J.115.04"
     }
-   ],
-   "linkCount": 4
+   ]
   },
   {
    "DATAID": "3152863",
@@ -4768,6 +4811,12 @@
     "QI.A.299.11",
     "QI.A.317.13"
    ],
+   "links": [
+    "QE.J.115.04",
+    "QE.A.137.14",
+    "QI.A.299.11",
+    "QI.A.317.13"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -4843,8 +4892,7 @@
      "source": "QI.A.326.14",
      "target": "QI.A.317.13"
     }
-   ],
-   "linkCount": 5
+   ]
   },
   {
    "DATAID": "111734",
@@ -4961,6 +5009,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -5047,8 +5096,7 @@
      "source": "QI.A.92.03",
      "target": "QI.A.104.03"
     }
-   ],
-   "linkCount": 9
+   ]
   },
   {
    "DATAID": "3162066",
@@ -5150,6 +5198,10 @@
     "QE.A.4.01",
     "QE.J.115.04"
    ],
+   "links": [
+    "QE.A.4.01",
+    "QE.J.115.04"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -5203,8 +5255,7 @@
      "source": "QI.A.335.14",
      "target": "QE.J.115.04"
     }
-   ],
-   "linkCount": 3
+   ]
   },
   {
    "DATAID": "111735",
@@ -5309,6 +5360,9 @@
    "connectedToIdFromCommentsArray": [
     "QE.A.143.14"
    ],
+   "links": [
+    "QE.A.143.14"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -5379,8 +5433,7 @@
      "source": "QI.A.60.02",
      "target": "QI.B.333.14"
     }
-   ],
-   "linkCount": 6
+   ]
   },
   {
    "DATAID": "2962519",
@@ -5554,6 +5607,13 @@
     "QI.A.282.10",
     "QI.A.283.10"
    ],
+   "links": [
+    "QE.A.129.10",
+    "QI.A.274.10",
+    "QI.A.275.10",
+    "QI.A.282.10",
+    "QI.A.283.10"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -5647,8 +5707,7 @@
      "source": "QI.A.291.11",
      "target": "QI.A.292.11"
     }
-   ],
-   "linkCount": 7
+   ]
   },
   {
    "DATAID": "2913655",
@@ -5745,6 +5804,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -5817,8 +5877,7 @@
      "source": "QI.A.283.10",
      "target": "QI.A.292.11"
     }
-   ],
-   "linkCount": 7
+   ]
   },
   {
    "DATAID": "111834",
@@ -5920,6 +5979,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -6006,8 +6066,7 @@
      "source": "QI.A.93.03",
      "target": "QI.A.104.03"
     }
-   ],
-   "linkCount": 9
+   ]
   },
   {
    "DATAID": "3169877",
@@ -6105,6 +6164,9 @@
    "connectedToIdFromCommentsArray": [
     "QE.A.4.01"
    ],
+   "links": [
+    "QE.A.4.01"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -6147,8 +6209,7 @@
      "source": "QI.A.344.15",
      "target": "QI.U.346.15"
     }
-   ],
-   "linkCount": 2
+   ]
   },
   {
    "DATAID": "3152650",
@@ -6230,6 +6291,10 @@
     "QE.A.4.01",
     "QE.A.137.14"
    ],
+   "links": [
+    "QE.A.4.01",
+    "QE.A.137.14"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -6290,8 +6355,7 @@
      "source": "QI.A.324.14",
      "target": "QI.A.327.14"
     }
-   ],
-   "linkCount": 4
+   ]
   },
   {
    "DATAID": "111835",
@@ -6440,6 +6504,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -6575,8 +6640,7 @@
      "source": "QI.A.138.03",
      "target": "QI.Z.223.06"
     }
-   ],
-   "linkCount": 16
+   ]
   },
   {
    "DATAID": "2786246",
@@ -6686,6 +6750,10 @@
     "QE.L.11.01",
     "QE.A.4.01"
    ],
+   "links": [
+    "QE.L.11.01",
+    "QE.A.4.01"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -6753,8 +6821,7 @@
      "source": "QI.A.231.07",
      "target": "QI.A.6.01"
     }
-   ],
-   "linkCount": 5
+   ]
   },
   {
    "DATAID": "111836",
@@ -6846,6 +6913,11 @@
     "QI.M.129.03",
     "QI.A.130.03"
    ],
+   "links": [
+    "QI.S.128.03",
+    "QI.M.129.03",
+    "QI.A.130.03"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -6917,8 +6989,7 @@
      "source": "QI.A.132.03",
      "target": "QI.M.129.03"
     }
-   ],
-   "linkCount": 5
+   ]
   },
   {
    "DATAID": "2894441",
@@ -7052,6 +7123,9 @@
    "connectedToIdFromCommentsArray": [
     "QE.J.115.04"
    ],
+   "links": [
+    "QE.J.115.04"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -7087,8 +7161,7 @@
      "source": "QI.A.278.10",
      "target": "QE.J.115.04"
     }
-   ],
-   "linkCount": 1
+   ]
   },
   {
    "DATAID": "111837",
@@ -7173,6 +7246,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -7294,8 +7368,7 @@
      "source": "QI.A.149.03",
      "target": "QI.H.221.06"
     }
-   ],
-   "linkCount": 16
+   ]
   },
   {
    "DATAID": "111763",
@@ -7394,6 +7467,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -7438,8 +7512,7 @@
      "source": "QI.A.59.02",
      "target": "QI.M.31.01"
     }
-   ],
-   "linkCount": 3
+   ]
   },
   {
    "DATAID": "2760967",
@@ -7503,6 +7576,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -7540,8 +7614,7 @@
      "source": "QI.A.228.06",
      "target": "QE.H.8.01"
     }
-   ],
-   "linkCount": 2
+   ]
   },
   {
    "DATAID": "2968403",
@@ -7667,6 +7740,10 @@
     "QE.A.129.10",
     "QI.A.282.10"
    ],
+   "links": [
+    "QE.A.129.10",
+    "QI.A.282.10"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -7748,8 +7825,7 @@
      "source": "QI.A.292.11",
      "target": "QI.A.291.11"
     }
-   ],
-   "linkCount": 7
+   ]
   },
   {
    "DATAID": "3161940",
@@ -7830,6 +7906,9 @@
    "connectedToIdFromCommentsArray": [
     "QE.A.144.14"
    ],
+   "links": [
+    "QE.A.144.14"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -7886,8 +7965,7 @@
      "source": "QI.A.332.14",
      "target": "QI.A.317.13"
     }
-   ],
-   "linkCount": 4
+   ]
   },
   {
    "DATAID": "111857",
@@ -7983,6 +8061,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -8055,8 +8134,7 @@
      "source": "QI.A.160.04",
      "target": "QI.A.161.04"
     }
-   ],
-   "linkCount": 7
+   ]
   },
   {
    "DATAID": "111916",
@@ -8169,6 +8247,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -8290,8 +8369,7 @@
      "source": "QI.A.140.03",
      "target": "QI.H.221.06"
     }
-   ],
-   "linkCount": 16
+   ]
   },
   {
    "DATAID": "2827324",
@@ -8387,6 +8465,9 @@
    "connectedToIdFromCommentsArray": [
     "QE.A.4.01"
    ],
+   "links": [
+    "QE.A.4.01"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -8429,8 +8510,7 @@
      "source": "QI.A.254.08",
      "target": "QI.A.253.08"
     }
-   ],
-   "linkCount": 2
+   ]
   },
   {
    "DATAID": "111917",
@@ -8547,6 +8627,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -8605,8 +8686,7 @@
      "source": "QI.A.21.01",
      "target": "QI.G.28.01"
     }
-   ],
-   "linkCount": 5
+   ]
   },
   {
    "DATAID": "111496",
@@ -8674,6 +8754,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -8711,8 +8792,7 @@
      "source": "QI.A.154.04",
      "target": "QI.A.6.01"
     }
-   ],
-   "linkCount": 2
+   ]
   },
   {
    "DATAID": "2975516",
@@ -8804,6 +8884,9 @@
    "connectedToIdFromCommentsArray": [
     "QE.J.115.04"
    ],
+   "links": [
+    "QE.J.115.04"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -8853,8 +8936,7 @@
      "source": "QI.A.299.11",
      "target": "QE.A.137.14"
     }
-   ],
-   "linkCount": 6
+   ]
   },
   {
    "DATAID": "2973988",
@@ -8982,6 +9064,10 @@
     "QE.L.96.03",
     "QE.H.130.10"
    ],
+   "links": [
+    "QE.L.96.03",
+    "QE.H.130.10"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -9035,8 +9121,7 @@
      "source": "QI.M.296.11",
      "target": "QE.H.130.10"
     }
-   ],
-   "linkCount": 3
+   ]
   },
   {
    "DATAID": "111918",
@@ -9119,6 +9204,9 @@
     }
    },
    "connectedToIdFromCommentsArray": [
+    "QE.A.3.01"
+   ],
+   "links": [
     "QE.A.3.01"
    ],
    "linksSet": {
@@ -9205,8 +9293,7 @@
      "source": "QI.A.194.05",
      "target": "QI.A.198.05"
     }
-   ],
-   "linkCount": 8
+   ]
   },
   {
    "DATAID": "3152864",
@@ -9348,6 +9435,9 @@
    "connectedToIdFromCommentsArray": [
     "QE.A.137.14"
    ],
+   "links": [
+    "QE.A.137.14"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -9404,8 +9494,7 @@
      "source": "QI.A.327.14",
      "target": "QI.A.324.14"
     }
-   ],
-   "linkCount": 4
+   ]
   },
   {
    "DATAID": "111784",
@@ -9478,6 +9567,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -9599,8 +9689,7 @@
      "source": "QI.A.176.04",
      "target": "QI.D.232.07"
     }
-   ],
-   "linkCount": 14
+   ]
   },
   {
    "DATAID": "3020633",
@@ -9704,6 +9793,12 @@
     "QI.A.299.11",
     "QI.A.6.01"
    ],
+   "links": [
+    "QE.A.137.14",
+    "QE.J.115.04",
+    "QI.A.299.11",
+    "QI.A.6.01"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -9779,8 +9874,7 @@
      "source": "QI.A.317.13",
      "target": "QI.A.6.01"
     }
-   ],
-   "linkCount": 11
+   ]
   },
   {
    "DATAID": "111902",
@@ -9857,6 +9951,10 @@
     "QE.A.69.02",
     "QE.A.4.01"
    ],
+   "links": [
+    "QE.A.69.02",
+    "QE.A.4.01"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -9910,8 +10008,7 @@
      "source": "QI.A.58.02",
      "target": "QE.R.70.02"
     }
-   ],
-   "linkCount": 3
+   ]
   },
   {
    "DATAID": "112016",
@@ -9991,6 +10088,9 @@
     }
    },
    "connectedToIdFromCommentsArray": [
+    "QE.T.90.02"
+   ],
+   "links": [
     "QE.T.90.02"
    ],
    "linksSet": {
@@ -10140,8 +10240,7 @@
      "source": "QI.A.71.02",
      "target": "QI.Z.223.06"
     }
-   ],
-   "linkCount": 17
+   ]
   },
   {
    "DATAID": "112017",
@@ -10226,6 +10325,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -10312,8 +10412,7 @@
      "source": "QI.A.101.03",
      "target": "QI.A.104.03"
     }
-   ],
-   "linkCount": 9
+   ]
   },
   {
    "DATAID": "3162146",
@@ -10418,6 +10517,9 @@
    "connectedToIdFromCommentsArray": [
     "QE.A.137.14"
    ],
+   "links": [
+    "QE.A.137.14"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -10467,8 +10569,7 @@
      "source": "QI.A.337.14",
      "target": "QI.A.317.13"
     }
-   ],
-   "linkCount": 3
+   ]
   },
   {
    "DATAID": "3026942",
@@ -10652,6 +10753,14 @@
     "QI.A.6.01",
     "QE.T.14.01"
    ],
+   "links": [
+    "QE.A.4.01",
+    "QE.A.3.01",
+    "QE.M.136.13",
+    "QE.A.129.10",
+    "QI.A.6.01",
+    "QE.T.14.01"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -10756,8 +10865,7 @@
      "source": "QI.A.318.13",
      "target": "QI.A.282.10"
     }
-   ],
-   "linkCount": 8
+   ]
   },
   {
    "DATAID": "2786785",
@@ -10910,6 +11018,9 @@
    "connectedToIdFromCommentsArray": [
     "QE.A.1.01"
    ],
+   "links": [
+    "QE.A.1.01"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -10952,8 +11063,7 @@
      "source": "QI.A.233.07",
      "target": "QI.J.180.04"
     }
-   ],
-   "linkCount": 2
+   ]
   },
   {
    "DATAID": "111925",
@@ -11035,6 +11145,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -11107,8 +11218,7 @@
      "source": "QI.A.170.04",
      "target": "QI.E.169.04"
     }
-   ],
-   "linkCount": 8
+   ]
   },
   {
    "DATAID": "111785",
@@ -11184,6 +11294,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -11312,8 +11423,7 @@
      "source": "QI.A.177.04",
      "target": "QI.D.232.07"
     }
-   ],
-   "linkCount": 15
+   ]
   },
   {
    "DATAID": "111920",
@@ -11403,6 +11513,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -11447,8 +11558,7 @@
      "source": "QI.A.74.02",
      "target": "QI.K.72.02"
     }
-   ],
-   "linkCount": 10
+   ]
   },
   {
    "DATAID": "3029127",
@@ -11559,6 +11669,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -11589,8 +11700,7 @@
      "source": "QI.A.320.13",
      "target": "QE.A.4.01"
     }
-   ],
-   "linkCount": 1
+   ]
   },
   {
    "DATAID": "3161939",
@@ -11689,6 +11799,9 @@
    "connectedToIdFromCommentsArray": [
     "QE.A.4.01"
    ],
+   "links": [
+    "QE.A.4.01"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -11731,8 +11844,7 @@
      "source": "QI.A.330.14",
      "target": "QI.S.1.01"
     }
-   ],
-   "linkCount": 2
+   ]
   },
   {
    "DATAID": "2892251",
@@ -11813,6 +11925,9 @@
    "connectedToIdFromCommentsArray": [
     "QI.A.277.10"
    ],
+   "links": [
+    "QI.A.277.10"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -11855,8 +11970,7 @@
      "source": "QI.A.276.10",
      "target": "QI.A.277.10"
     }
-   ],
-   "linkCount": 2
+   ]
   },
   {
    "DATAID": "2892252",
@@ -11941,6 +12055,9 @@
    "connectedToIdFromCommentsArray": [
     "QI.A.276.10"
    ],
+   "links": [
+    "QI.A.276.10"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -11983,8 +12100,7 @@
      "source": "QI.A.277.10",
      "target": "QI.A.276.10"
     }
-   ],
-   "linkCount": 2
+   ]
   },
   {
    "DATAID": "3162145",
@@ -12101,6 +12217,10 @@
     "QE.A.4.01",
     "QE.J.115.04"
    ],
+   "links": [
+    "QE.A.4.01",
+    "QE.J.115.04"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -12147,8 +12267,7 @@
      "source": "QI.A.334.14",
      "target": "QE.J.115.04"
     }
-   ],
-   "linkCount": 2
+   ]
   },
   {
    "DATAID": "113223",
@@ -12222,6 +12341,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -12336,8 +12456,7 @@
      "source": "QI.T.76.02",
      "target": "QI.D.232.07"
     }
-   ],
-   "linkCount": 13
+   ]
   },
   {
    "DATAID": "2863393",
@@ -12446,6 +12565,9 @@
    "connectedToIdFromCommentsArray": [
     "QE.A.4.01"
    ],
+   "links": [
+    "QE.A.4.01"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -12481,8 +12603,7 @@
      "source": "QI.A.273.09",
      "target": "QE.A.4.01"
     }
-   ],
-   "linkCount": 1
+   ]
   },
   {
    "DATAID": "3161941",
@@ -12611,6 +12732,10 @@
     "QE.J.115.04",
     "QE.A.4.01"
    ],
+   "links": [
+    "QE.J.115.04",
+    "QE.A.4.01"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -12657,8 +12782,7 @@
      "source": "QI.A.339.14",
      "target": "QE.A.4.01"
     }
-   ],
-   "linkCount": 2
+   ]
   },
   {
    "DATAID": "2903810",
@@ -12752,6 +12876,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -12838,8 +12963,7 @@
      "source": "QI.A.282.10",
      "target": "QI.A.318.13"
     }
-   ],
-   "linkCount": 9
+   ]
   },
   {
    "DATAID": "111786",
@@ -12933,6 +13057,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -12998,8 +13123,7 @@
      "source": "QI.A.23.01",
      "target": "QI.G.28.01"
     }
-   ],
-   "linkCount": 8
+   ]
   },
   {
    "DATAID": "2881835",
@@ -13166,6 +13290,11 @@
     "QE.A.129.10",
     "QE.A.4.01"
    ],
+   "links": [
+    "QI.A.274.10",
+    "QE.A.129.10",
+    "QE.A.4.01"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -13258,8 +13387,7 @@
      "source": "QI.A.275.10",
      "target": "QI.A.292.11"
     }
-   ],
-   "linkCount": 8
+   ]
   },
   {
    "DATAID": "2827659",
@@ -13367,6 +13495,9 @@
    "connectedToIdFromCommentsArray": [
     "QE.A.4.01"
    ],
+   "links": [
+    "QE.A.4.01"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -13409,8 +13540,7 @@
      "source": "QI.A.253.08",
      "target": "QI.A.254.08"
     }
-   ],
-   "linkCount": 4
+   ]
   },
   {
    "DATAID": "2787013",
@@ -13542,6 +13672,9 @@
    "connectedToIdFromCommentsArray": [
     "QE.A.1.01"
    ],
+   "links": [
+    "QE.A.1.01"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -13577,8 +13710,7 @@
      "source": "QI.A.234.07",
      "target": "QE.A.1.01"
     }
-   ],
-   "linkCount": 1
+   ]
   },
   {
    "DATAID": "112022",
@@ -13653,6 +13785,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -13767,8 +13900,7 @@
      "source": "QI.A.77.02",
      "target": "QI.D.232.07"
     }
-   ],
-   "linkCount": 13
+   ]
   },
   {
    "DATAID": "112023",
@@ -13944,6 +14076,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -14065,8 +14198,7 @@
      "source": "QI.A.151.03",
      "target": "QI.H.221.06"
     }
-   ],
-   "linkCount": 14
+   ]
   },
   {
    "DATAID": "112024",
@@ -14184,6 +14316,9 @@
    "connectedToIdFromCommentsArray": [
     "QE.A.2.01"
    ],
+   "links": [
+    "QE.A.2.01"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -14233,8 +14368,7 @@
      "source": "QI.A.172.04",
      "target": "QI.D.42.01"
     }
-   ],
-   "linkCount": 3
+   ]
   },
   {
    "DATAID": "2881834",
@@ -14378,6 +14512,11 @@
     "QI.A.275.10",
     "QE.A.4.01"
    ],
+   "links": [
+    "QE.A.129.10",
+    "QI.A.275.10",
+    "QE.A.4.01"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -14484,8 +14623,7 @@
      "source": "QI.A.274.10",
      "target": "QI.A.318.13"
     }
-   ],
-   "linkCount": 10
+   ]
   },
   {
    "DATAID": "112026",
@@ -14558,6 +14696,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -14588,8 +14727,7 @@
      "source": "QI.A.15.01",
      "target": "QE.A.4.01"
     }
-   ],
-   "linkCount": 1
+   ]
   },
   {
    "DATAID": "112027",
@@ -14673,6 +14811,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -14759,8 +14898,7 @@
      "source": "QI.A.104.03",
      "target": "QI.R.103.03"
     }
-   ],
-   "linkCount": 10
+   ]
   },
   {
    "DATAID": "3162382",
@@ -14861,6 +14999,9 @@
    "connectedToIdFromCommentsArray": [
     "QE.A.4.01"
    ],
+   "links": [
+    "QE.A.4.01"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -14896,8 +15037,7 @@
      "source": "QI.A.329.14",
      "target": "QE.A.4.01"
     }
-   ],
-   "linkCount": 1
+   ]
   },
   {
    "DATAID": "111923",
@@ -15047,6 +15187,9 @@
    "connectedToIdFromCommentsArray": [
     "QE.A.3.01"
    ],
+   "links": [
+    "QE.A.3.01"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -15117,8 +15260,7 @@
      "source": "QI.A.6.01",
      "target": "QI.A.318.13"
     }
-   ],
-   "linkCount": 35
+   ]
   },
   {
    "DATAID": "111924",
@@ -15203,6 +15345,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -15240,8 +15383,7 @@
      "source": "QI.A.156.04",
      "target": "QE.A.129.10"
     }
-   ],
-   "linkCount": 3
+   ]
   },
   {
    "DATAID": "112028",
@@ -15354,6 +15496,9 @@
    "connectedToIdFromCommentsArray": [
     "QE.T.14.01"
    ],
+   "links": [
+    "QE.T.14.01"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -15438,8 +15583,7 @@
      "source": "QI.A.152.03",
      "target": "QI.B.279.10"
     }
-   ],
-   "linkCount": 12
+   ]
   },
   {
    "DATAID": "111790",
@@ -15510,6 +15654,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -15575,8 +15720,7 @@
      "source": "QI.A.216.06",
      "target": "QI.R.186.05"
     }
-   ],
-   "linkCount": 6
+   ]
   },
   {
    "DATAID": "3152862",
@@ -15670,6 +15814,9 @@
    "connectedToIdFromCommentsArray": [
     "QE.A.137.14"
    ],
+   "links": [
+    "QE.A.137.14"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -15712,8 +15859,7 @@
      "source": "QI.A.323.14",
      "target": "QE.A.4.01"
     }
-   ],
-   "linkCount": 2
+   ]
   },
   {
    "DATAID": "111704",
@@ -15803,6 +15949,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -15840,8 +15987,7 @@
      "source": "QI.A.184.05",
      "target": "QI.A.20.01"
     }
-   ],
-   "linkCount": 6
+   ]
   },
   {
    "DATAID": "2832890",
@@ -15953,6 +16099,9 @@
    "connectedToIdFromCommentsArray": [
     "QE.L.118.05"
    ],
+   "links": [
+    "QE.L.118.05"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -16037,8 +16186,7 @@
      "source": "QI.A.265.08",
      "target": "QI.I.308.12"
     }
-   ],
-   "linkCount": 9
+   ]
   },
   {
    "DATAID": "111944",
@@ -16172,6 +16320,9 @@
    "connectedToIdFromCommentsArray": [
     "QE.A.2.01"
    ],
+   "links": [
+    "QE.A.2.01"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -16291,8 +16442,7 @@
      "source": "QI.D.42.01",
      "target": "QE.A.113.04"
     }
-   ],
-   "linkCount": 13
+   ]
   },
   {
    "DATAID": "2813253",
@@ -16392,6 +16542,9 @@
     }
    },
    "connectedToIdFromCommentsArray": [
+    "QE.R.128.08"
+   ],
+   "links": [
     "QE.R.128.08"
    ],
    "linksSet": {
@@ -16499,8 +16652,7 @@
      "source": "QI.A.248.08",
      "target": "QI.L.247.08"
     }
-   ],
-   "linkCount": 11
+   ]
   },
   {
    "DATAID": "2983638",
@@ -16607,6 +16759,12 @@
     "QE.J.133.12",
     "QE.J.92.02"
    ],
+   "links": [
+    "QI.B.217.06",
+    "QI.B.293.11",
+    "QE.J.133.12",
+    "QE.J.92.02"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -16682,8 +16840,7 @@
      "source": "QI.B.305.12",
      "target": "QE.A.4.01"
     }
-   ],
-   "linkCount": 5
+   ]
   },
   {
    "DATAID": "111792",
@@ -16754,6 +16911,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -16840,8 +16998,7 @@
      "source": "QI.B.217.06",
      "target": "QI.B.310.12"
     }
-   ],
-   "linkCount": 22
+   ]
   },
   {
    "DATAID": "2971675",
@@ -16988,6 +17145,10 @@
     "QE.J.92.02",
     "QI.B.217.06"
    ],
+   "links": [
+    "QE.J.92.02",
+    "QI.B.217.06"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -17069,8 +17230,7 @@
      "source": "QI.B.293.11",
      "target": "QI.R.186.05"
     }
-   ],
-   "linkCount": 8
+   ]
   },
   {
    "DATAID": "112030",
@@ -17173,6 +17333,9 @@
    "connectedToIdFromCommentsArray": [
     "QE.A.4.01"
    ],
+   "links": [
+    "QE.A.4.01"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -17229,8 +17392,7 @@
      "source": "QI.B.80.02",
      "target": "QI.E.82.02"
     }
-   ],
-   "linkCount": 4
+   ]
   },
   {
    "DATAID": "2832991",
@@ -17325,6 +17487,9 @@
    "connectedToIdFromCommentsArray": [
     "QE.L.118.05"
    ],
+   "links": [
+    "QE.L.118.05"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -17416,8 +17581,7 @@
      "source": "QI.B.266.08",
      "target": "QI.I.308.12"
     }
-   ],
-   "linkCount": 9
+   ]
   },
   {
    "DATAID": "2999481",
@@ -17526,6 +17690,10 @@
     "QE.I.10.01",
     "QI.R.303.12"
    ],
+   "links": [
+    "QE.I.10.01",
+    "QI.R.303.12"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -17565,8 +17733,7 @@
      "source": "QI.B.311.12",
      "target": "QE.I.10.01"
     }
-   ],
-   "linkCount": 1
+   ]
   },
   {
    "DATAID": "112032",
@@ -17666,6 +17833,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -17731,8 +17899,7 @@
      "source": "QI.B.55.01",
      "target": "QE.W.15.01"
     }
-   ],
-   "linkCount": 6
+   ]
   },
   {
    "DATAID": "3169878",
@@ -17866,6 +18033,9 @@
    "connectedToIdFromCommentsArray": [
     "QE.J.115.04"
    ],
+   "links": [
+    "QE.J.115.04"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -17915,8 +18085,7 @@
      "source": "QI.B.345.15",
      "target": "QE.A.4.01"
     }
-   ],
-   "linkCount": 3
+   ]
   },
   {
    "DATAID": "2902221",
@@ -17993,6 +18162,9 @@
     }
    },
    "connectedToIdFromCommentsArray": [
+    "QE.T.14.01"
+   ],
+   "links": [
     "QE.T.14.01"
    ],
    "linksSet": {
@@ -18072,8 +18244,7 @@
      "source": "QI.B.279.10",
      "target": "QE.M.141.14"
     }
-   ],
-   "linkCount": 7
+   ]
   },
   {
    "DATAID": "111794",
@@ -18211,6 +18382,12 @@
     }
    },
    "connectedToIdFromCommentsArray": [
+    "QE.T.14.01",
+    "QE.M.139.14",
+    "QE.M.140.14",
+    "QE.M.141.14"
+   ],
+   "links": [
     "QE.T.14.01",
     "QE.M.139.14",
     "QE.M.140.14",
@@ -18403,8 +18580,7 @@
      "source": "QI.B.136.03",
      "target": "QI.L.319.13"
     }
-   ],
-   "linkCount": 25
+   ]
   },
   {
    "DATAID": "3162144",
@@ -18509,6 +18685,10 @@
     "QE.T.90.02",
     "QE.A.143.14"
    ],
+   "links": [
+    "QE.T.90.02",
+    "QE.A.143.14"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -18576,8 +18756,7 @@
      "source": "QI.B.333.14",
      "target": "QI.A.74.02"
     }
-   ],
-   "linkCount": 8
+   ]
   },
   {
    "DATAID": "2983834",
@@ -18689,6 +18868,10 @@
     "QE.L.118.05",
     "QI.S.263.08"
    ],
+   "links": [
+    "QE.L.118.05",
+    "QI.S.263.08"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -18777,8 +18960,7 @@
      "source": "QI.B.307.12",
      "target": "QI.I.308.12"
     }
-   ],
-   "linkCount": 8
+   ]
   },
   {
    "DATAID": "111943",
@@ -18907,6 +19089,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -18958,8 +19141,7 @@
      "source": "QI.B.81.02",
      "target": "QI.E.83.02"
     }
-   ],
-   "linkCount": 5
+   ]
   },
   {
    "DATAID": "111942",
@@ -19006,6 +19188,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -19043,8 +19226,7 @@
      "source": "QI.B.9.01",
      "target": "QE.I.99.03"
     }
-   ],
-   "linkCount": 2
+   ]
   },
   {
    "DATAID": "112034",
@@ -19130,6 +19312,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -19181,8 +19364,7 @@
      "source": "QI.B.63.02",
      "target": "QI.E.64.02"
     }
-   ],
-   "linkCount": 4
+   ]
   },
   {
    "DATAID": "111798",
@@ -19255,6 +19437,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -19334,8 +19517,7 @@
      "source": "QI.B.188.05",
      "target": "QI.Z.223.06"
     }
-   ],
-   "linkCount": 8
+   ]
   },
   {
    "DATAID": "111799",
@@ -19421,6 +19603,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -19542,8 +19725,7 @@
      "source": "QI.B.143.03",
      "target": "QI.H.221.06"
     }
-   ],
-   "linkCount": 14
+   ]
   },
   {
    "DATAID": "2999482",
@@ -19635,6 +19817,9 @@
    "connectedToIdFromCommentsArray": [
     "QE.T.132.11"
    ],
+   "links": [
+    "QE.T.132.11"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -19670,8 +19855,7 @@
      "source": "QI.C.312.12",
      "target": "QE.T.132.11"
     }
-   ],
-   "linkCount": 1
+   ]
   },
   {
    "DATAID": "111800",
@@ -19745,6 +19929,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -19859,8 +20044,7 @@
      "source": "QI.C.70.02",
      "target": "QI.A.177.04"
     }
-   ],
-   "linkCount": 13
+   ]
   },
   {
    "DATAID": "2982105",
@@ -19965,6 +20149,10 @@
     "QE.I.10.01",
     "QI.C.301.12"
    ],
+   "links": [
+    "QE.I.10.01",
+    "QI.C.301.12"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -20018,8 +20206,7 @@
      "source": "QI.C.300.12",
      "target": "QE.A.4.01"
     }
-   ],
-   "linkCount": 3
+   ]
   },
   {
    "DATAID": "2981652",
@@ -20124,6 +20311,10 @@
     "QE.I.10.01",
     "QI.C.300.12"
    ],
+   "links": [
+    "QE.I.10.01",
+    "QI.C.300.12"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -20177,8 +20368,7 @@
      "source": "QI.C.301.12",
      "target": "QE.A.4.01"
     }
-   ],
-   "linkCount": 3
+   ]
   },
   {
    "DATAID": "112035",
@@ -20258,6 +20448,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -20379,8 +20570,7 @@
      "source": "QI.C.141.03",
      "target": "QI.H.221.06"
     }
-   ],
-   "linkCount": 14
+   ]
   },
   {
    "DATAID": "3170021",
@@ -20453,6 +20643,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -20497,8 +20688,7 @@
      "source": "QI.C.347.15",
      "target": "QE.A.4.01"
     }
-   ],
-   "linkCount": 3
+   ]
   },
   {
    "DATAID": "3162064",
@@ -20576,6 +20766,9 @@
    "connectedToIdFromCommentsArray": [
     "QE.A.129.10"
    ],
+   "links": [
+    "QE.A.129.10"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -20618,8 +20811,7 @@
      "source": "QI.D.331.14",
      "target": "QE.A.4.01"
     }
-   ],
-   "linkCount": 2
+   ]
   },
   {
    "DATAID": "2816243",
@@ -20699,6 +20891,9 @@
     }
    },
    "connectedToIdFromCommentsArray": [
+    "QE.T.14.01"
+   ],
+   "links": [
     "QE.T.14.01"
    ],
    "linksSet": {
@@ -20792,8 +20987,7 @@
      "source": "QI.D.252.08",
      "target": "QI.G.251.08"
     }
-   ],
-   "linkCount": 9
+   ]
   },
   {
    "DATAID": "2813036",
@@ -20902,6 +21096,10 @@
     }
    },
    "connectedToIdFromCommentsArray": [
+    "QE.R.128.08",
+    "QE.A.1.01"
+   ],
+   "links": [
     "QE.R.128.08",
     "QE.A.1.01"
    ],
@@ -21021,8 +21219,7 @@
      "source": "QI.D.246.08",
      "target": "QI.A.248.08"
     }
-   ],
-   "linkCount": 12
+   ]
   },
   {
    "DATAID": "2813147",
@@ -21102,6 +21299,9 @@
     }
    },
    "connectedToIdFromCommentsArray": [
+    "QE.R.128.08"
+   ],
+   "links": [
     "QE.R.128.08"
    ],
    "linksSet": {
@@ -21209,8 +21409,7 @@
      "source": "QI.D.243.08",
      "target": "QI.A.248.08"
     }
-   ],
-   "linkCount": 11
+   ]
   },
   {
    "DATAID": "111803",
@@ -21287,6 +21486,9 @@
     }
    },
    "connectedToIdFromCommentsArray": [
+    "QI.L.155.04"
+   ],
+   "links": [
     "QI.L.155.04"
    ],
    "linksSet": {
@@ -21366,8 +21568,7 @@
      "source": "QI.D.164.04",
      "target": "QI.A.160.04"
     }
-   ],
-   "linkCount": 7
+   ]
   },
   {
    "DATAID": "2813149",
@@ -21485,6 +21686,11 @@
     }
    },
    "connectedToIdFromCommentsArray": [
+    "QE.R.128.08",
+    "QE.A.1.01",
+    "QE.J.92.02"
+   ],
+   "links": [
     "QE.R.128.08",
     "QE.A.1.01",
     "QE.J.92.02"
@@ -21616,8 +21822,7 @@
      "source": "QI.D.245.08",
      "target": "QI.P.294.11"
     }
-   ],
-   "linkCount": 13
+   ]
   },
   {
    "DATAID": "3162262",
@@ -21692,6 +21897,9 @@
    "connectedToIdFromCommentsArray": [
     "QE.A.137.14"
    ],
+   "links": [
+    "QE.A.137.14"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -21734,8 +21942,7 @@
      "source": "QI.D.342.14",
      "target": "QE.A.4.01"
     }
-   ],
-   "linkCount": 2
+   ]
   },
   {
    "DATAID": "112037",
@@ -21824,6 +22031,9 @@
    "connectedToIdFromCommentsArray": [
     "QE.T.14.01"
    ],
+   "links": [
+    "QE.T.14.01"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -21908,8 +22118,7 @@
      "source": "QI.D.167.04",
      "target": "QI.D.232.07"
     }
-   ],
-   "linkCount": 9
+   ]
   },
   {
    "DATAID": "2816344",
@@ -21984,6 +22193,9 @@
     }
    },
    "connectedToIdFromCommentsArray": [
+    "QE.T.14.01"
+   ],
+   "links": [
     "QE.T.14.01"
    ],
    "linksSet": {
@@ -22077,8 +22289,7 @@
      "source": "QI.D.249.08",
      "target": "QI.G.251.08"
     }
-   ],
-   "linkCount": 9
+   ]
   },
   {
    "DATAID": "2785476",
@@ -22151,6 +22362,9 @@
     }
    },
    "connectedToIdFromCommentsArray": [
+    "QE.T.14.01"
+   ],
+   "links": [
     "QE.T.14.01"
    ],
    "linksSet": {
@@ -22286,8 +22500,7 @@
      "source": "QI.D.232.07",
      "target": "QI.A.313.13"
     }
-   ],
-   "linkCount": 22
+   ]
   },
   {
    "DATAID": "112038",
@@ -22417,6 +22630,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -22510,8 +22724,7 @@
      "source": "QI.D.95.03",
      "target": "QI.A.104.03"
     }
-   ],
-   "linkCount": 12
+   ]
   },
   {
    "DATAID": "112039",
@@ -22576,6 +22789,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -22662,8 +22876,7 @@
      "source": "QI.D.111.03",
      "target": "QI.Z.187.05"
     }
-   ],
-   "linkCount": 10
+   ]
   },
   {
    "DATAID": "111804",
@@ -22727,6 +22940,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -22792,8 +23006,7 @@
      "source": "QI.E.169.04",
      "target": "QI.D.232.07"
     }
-   ],
-   "linkCount": 7
+   ]
   },
   {
    "DATAID": "111947",
@@ -22865,6 +23078,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -22902,8 +23116,7 @@
      "source": "QI.E.19.01",
      "target": "QI.G.28.01"
     }
-   ],
-   "linkCount": 5
+   ]
   },
   {
    "DATAID": "112040",
@@ -22967,6 +23180,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -23088,8 +23302,7 @@
      "source": "QI.E.142.03",
      "target": "QI.H.221.06"
     }
-   ],
-   "linkCount": 16
+   ]
   },
   {
    "DATAID": "2830919",
@@ -23178,6 +23391,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -23222,8 +23436,7 @@
      "source": "QI.E.262.08",
      "target": "QE.T.14.01"
     }
-   ],
-   "linkCount": 3
+   ]
   },
   {
    "DATAID": "111951",
@@ -23298,6 +23511,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -23349,8 +23563,7 @@
      "source": "QI.E.82.02",
      "target": "QI.E.83.02"
     }
-   ],
-   "linkCount": 4
+   ]
   },
   {
    "DATAID": "111805",
@@ -23421,6 +23634,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -23493,8 +23707,7 @@
      "source": "QI.E.65.02",
      "target": "QI.A.77.02"
     }
-   ],
-   "linkCount": 8
+   ]
   },
   {
    "DATAID": "111806",
@@ -23589,6 +23802,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -23710,8 +23924,7 @@
      "source": "QI.E.64.02",
      "target": "QI.A.177.04"
     }
-   ],
-   "linkCount": 14
+   ]
   },
   {
    "DATAID": "112042",
@@ -23794,6 +24007,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -23880,8 +24094,7 @@
      "source": "QI.E.96.03",
      "target": "QI.A.104.03"
     }
-   ],
-   "linkCount": 9
+   ]
   },
   {
    "DATAID": "112043",
@@ -23966,6 +24179,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -24017,8 +24231,7 @@
      "source": "QI.E.83.02",
      "target": "QI.E.82.02"
     }
-   ],
-   "linkCount": 4
+   ]
   },
   {
    "DATAID": "111807",
@@ -24147,6 +24360,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -24191,8 +24405,7 @@
      "source": "QI.F.27.01",
      "target": "QI.E.19.01"
     }
-   ],
-   "linkCount": 3
+   ]
   },
   {
    "DATAID": "2816345",
@@ -24280,6 +24493,10 @@
     }
    },
    "connectedToIdFromCommentsArray": [
+    "QE.T.14.01",
+    "QI.D.232.07"
+   ],
+   "links": [
     "QE.T.14.01",
     "QI.D.232.07"
    ],
@@ -24371,8 +24588,7 @@
      "source": "QI.G.251.08",
      "target": "QI.D.252.08"
     }
-   ],
-   "linkCount": 8
+   ]
   },
   {
    "DATAID": "2830250",
@@ -24503,6 +24719,11 @@
     "QI.S.260.08",
     "QI.Y.261.08"
    ],
+   "links": [
+    "QE.I.119.05",
+    "QI.S.260.08",
+    "QI.Y.261.08"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -24574,8 +24795,7 @@
      "source": "QI.G.259.08",
      "target": "QI.K.302.12"
     }
-   ],
-   "linkCount": 6
+   ]
   },
   {
    "DATAID": "112044",
@@ -24736,6 +24956,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -24829,8 +25050,7 @@
      "source": "QI.G.28.01",
      "target": "QI.A.59.02"
     }
-   ],
-   "linkCount": 10
+   ]
   },
   {
    "DATAID": "2816565",
@@ -24921,6 +25141,9 @@
     }
    },
    "connectedToIdFromCommentsArray": [
+    "QE.T.14.01"
+   ],
+   "links": [
     "QE.T.14.01"
    ],
    "linksSet": {
@@ -25028,8 +25251,7 @@
      "source": "QI.H.250.08",
      "target": "QI.A.313.13"
     }
-   ],
-   "linkCount": 12
+   ]
   },
   {
    "DATAID": "3162147",
@@ -25095,6 +25317,9 @@
    "connectedToIdFromCommentsArray": [
     "QE.A.137.14"
    ],
+   "links": [
+    "QE.A.137.14"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -25137,8 +25362,7 @@
      "source": "QI.G.341.14",
      "target": "QE.A.4.01"
     }
-   ],
-   "linkCount": 2
+   ]
   },
   {
    "DATAID": "111952",
@@ -25231,6 +25455,9 @@
    "connectedToIdFromCommentsArray": [
     "QI.I.87.03"
    ],
+   "links": [
+    "QI.I.87.03"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -25308,8 +25535,7 @@
      "source": "QI.G.218.06",
      "target": "QI.A.295.11"
     }
-   ],
-   "linkCount": 7
+   ]
   },
   {
    "DATAID": "111919",
@@ -25411,6 +25637,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -25448,8 +25675,7 @@
      "source": "QI.H.3.01",
      "target": "QI.S.1.01"
     }
-   ],
-   "linkCount": 2
+   ]
   },
   {
    "DATAID": "112033",
@@ -25540,6 +25766,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -25654,8 +25881,7 @@
      "source": "QI.B.68.02",
      "target": "QI.A.177.04"
     }
-   ],
-   "linkCount": 13
+   ]
   },
   {
    "DATAID": "111810",
@@ -25719,6 +25945,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -25840,8 +26067,7 @@
      "source": "QI.H.144.03",
      "target": "QI.A.151.03"
     }
-   ],
-   "linkCount": 14
+   ]
   },
   {
    "DATAID": "112075",
@@ -25921,6 +26147,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -25993,8 +26220,7 @@
      "source": "QI.H.204.05",
      "target": "QI.D.245.08"
     }
-   ],
-   "linkCount": 7
+   ]
   },
   {
    "DATAID": "2854925",
@@ -26125,6 +26351,9 @@
    "connectedToIdFromCommentsArray": [
     "QE.E.88.02"
    ],
+   "links": [
+    "QE.E.88.02"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -26167,8 +26396,7 @@
      "source": "QI.H.268.09",
      "target": "QE.A.4.01"
     }
-   ],
-   "linkCount": 2
+   ]
   },
   {
    "DATAID": "112077",
@@ -26250,6 +26478,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -26287,8 +26516,7 @@
      "source": "QI.H.88.03",
      "target": "QI.A.6.01"
     }
-   ],
-   "linkCount": 2
+   ]
   },
   {
    "DATAID": "112078",
@@ -26378,6 +26606,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -26415,8 +26644,7 @@
      "source": "QI.H.29.01",
      "target": "QI.H.10.01"
     }
-   ],
-   "linkCount": 2
+   ]
   },
   {
    "DATAID": "2758185",
@@ -26483,6 +26711,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -26604,8 +26833,7 @@
      "source": "QI.H.221.06",
      "target": "QI.A.151.03"
     }
-   ],
-   "linkCount": 14
+   ]
   },
   {
    "DATAID": "112135",
@@ -26698,6 +26926,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -26742,8 +26971,7 @@
      "source": "QI.H.10.01",
      "target": "QI.H.29.01"
     }
-   ],
-   "linkCount": 6
+   ]
   },
   {
    "DATAID": "112079",
@@ -26867,6 +27095,9 @@
    "connectedToIdFromCommentsArray": [
     "QE.A.3.01"
    ],
+   "links": [
+    "QE.A.3.01"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -26951,8 +27182,7 @@
      "source": "QI.H.195.05",
      "target": "QI.A.198.05"
     }
-   ],
-   "linkCount": 8
+   ]
   },
   {
    "DATAID": "112166",
@@ -27056,6 +27286,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -27086,8 +27317,7 @@
      "source": "QI.I.67.02",
      "target": "QE.I.9.01"
     }
-   ],
-   "linkCount": 3
+   ]
   },
   {
    "DATAID": "2983973",
@@ -27183,6 +27413,9 @@
    "connectedToIdFromCommentsArray": [
     "QE.L.118.05"
    ],
+   "links": [
+    "QE.L.118.05"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -27274,8 +27507,7 @@
      "source": "QI.I.308.12",
      "target": "QI.B.307.12"
     }
-   ],
-   "linkCount": 9
+   ]
   },
   {
    "DATAID": "112001",
@@ -27388,6 +27620,10 @@
     "QE.J.92.02",
     "QI.G.218.06"
    ],
+   "links": [
+    "QE.J.92.02",
+    "QI.G.218.06"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -27490,8 +27726,7 @@
      "source": "QI.I.87.03",
      "target": "QI.B.293.11"
     }
-   ],
-   "linkCount": 20
+   ]
   },
   {
    "DATAID": "3035478",
@@ -27562,6 +27797,9 @@
    "connectedToIdFromCommentsArray": [
     "QE.L.96.03"
    ],
+   "links": [
+    "QE.L.96.03"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -27604,8 +27842,7 @@
      "source": "QI.I.321.14",
      "target": "QE.L.96.03"
     }
-   ],
-   "linkCount": 2
+   ]
   },
   {
    "DATAID": "112099",
@@ -27676,6 +27913,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -27783,8 +28021,7 @@
      "source": "QI.J.180.04",
      "target": "QI.L.247.08"
     }
-   ],
-   "linkCount": 16
+   ]
   },
   {
    "DATAID": "112100",
@@ -27895,6 +28132,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -27988,8 +28226,7 @@
      "source": "QI.J.99.03",
      "target": "QI.A.104.03"
     }
-   ],
-   "linkCount": 10
+   ]
   },
   {
    "DATAID": "112007",
@@ -28058,6 +28295,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -28123,8 +28361,7 @@
      "source": "QI.J.114.03",
      "target": "QI.B.217.06"
     }
-   ],
-   "linkCount": 6
+   ]
   },
   {
    "DATAID": "112248",
@@ -28195,6 +28432,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -28302,8 +28540,7 @@
      "source": "QI.K.72.02",
      "target": "QI.A.177.04"
     }
-   ],
-   "linkCount": 13
+   ]
   },
   {
    "DATAID": "2982423",
@@ -28415,6 +28652,9 @@
    "connectedToIdFromCommentsArray": [
     "QE.I.119.05"
    ],
+   "links": [
+    "QE.I.119.05"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -28478,8 +28718,7 @@
      "source": "QI.K.302.12",
      "target": "QI.S.260.08"
     }
-   ],
-   "linkCount": 5
+   ]
   },
   {
    "DATAID": "112138",
@@ -28711,6 +28950,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -28755,8 +28995,7 @@
      "source": "QI.K.135.03",
      "target": "QI.Q.271.09"
     }
-   ],
-   "linkCount": 3
+   ]
   },
   {
    "DATAID": "2983746",
@@ -28866,6 +29105,9 @@
    "connectedToIdFromCommentsArray": [
     "QE.A.4.01"
    ],
+   "links": [
+    "QE.A.4.01"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -28915,8 +29157,7 @@
      "source": "QI.K.306.12",
      "target": "QI.A.6.01"
     }
-   ],
-   "linkCount": 3
+   ]
   },
   {
    "DATAID": "3161942",
@@ -28999,6 +29240,9 @@
    "connectedToIdFromCommentsArray": [
     "QE.A.137.14"
    ],
+   "links": [
+    "QE.A.137.14"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -29055,8 +29299,7 @@
      "source": "QI.A.336.14",
      "target": "QE.A.4.01"
     }
-   ],
-   "linkCount": 4
+   ]
   },
   {
    "DATAID": "112270",
@@ -29122,6 +29365,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -29243,8 +29487,7 @@
      "source": "QI.K.73.02",
      "target": "QI.D.232.07"
     }
-   ],
-   "linkCount": 14
+   ]
   },
   {
    "DATAID": "3162261",
@@ -29318,6 +29561,10 @@
     "QE.J.115.04",
     "QE.A.4.01"
    ],
+   "links": [
+    "QE.J.115.04",
+    "QE.A.4.01"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -29364,8 +29611,7 @@
      "source": "QI.K.340.14",
      "target": "QE.A.4.01"
     }
-   ],
-   "linkCount": 2
+   ]
   },
   {
    "DATAID": "112483",
@@ -29439,6 +29685,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -29511,8 +29758,7 @@
      "source": "QI.L.190.05",
      "target": "QI.B.188.05"
     }
-   ],
-   "linkCount": 7
+   ]
   },
   {
    "DATAID": "3026710",
@@ -29590,6 +29836,9 @@
    "connectedToIdFromCommentsArray": [
     "QE.M.134.12"
    ],
+   "links": [
+    "QE.M.134.12"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -29653,8 +29902,7 @@
      "source": "QI.L.319.13",
      "target": "QI.O.315.13"
     }
-   ],
-   "linkCount": 5
+   ]
   },
   {
    "DATAID": "111796",
@@ -29754,6 +30002,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -29805,8 +30054,7 @@
      "source": "QI.B.62.02",
      "target": "QI.E.64.02"
     }
-   ],
-   "linkCount": 4
+   ]
   },
   {
    "DATAID": "2832887",
@@ -29912,6 +30160,9 @@
    "connectedToIdFromCommentsArray": [
     "QE.L.118.05"
    ],
+   "links": [
+    "QE.L.118.05"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -29996,8 +30247,7 @@
      "source": "QI.L.264.08",
      "target": "QI.I.308.12"
     }
-   ],
-   "linkCount": 9
+   ]
   },
   {
    "DATAID": "2813150",
@@ -30152,6 +30402,10 @@
     "QE.R.128.08",
     "QI.J.180.04"
    ],
+   "links": [
+    "QE.R.128.08",
+    "QI.J.180.04"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -30261,8 +30515,7 @@
      "source": "QI.L.247.08",
      "target": "QI.A.248.08"
     }
-   ],
-   "linkCount": 11
+   ]
   },
   {
    "DATAID": "112494",
@@ -30337,6 +30590,9 @@
     }
    },
    "connectedToIdFromCommentsArray": [
+    "QI.D.164.04"
+   ],
+   "links": [
     "QI.D.164.04"
    ],
    "linksSet": {
@@ -30416,8 +30672,7 @@
      "source": "QI.L.155.04",
      "target": "QI.D.164.04"
     }
-   ],
-   "linkCount": 7
+   ]
   },
   {
    "DATAID": "2936490",
@@ -30492,6 +30747,9 @@
    "connectedToIdFromCommentsArray": [
     "QE.T.132.11"
    ],
+   "links": [
+    "QE.T.132.11"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -30534,8 +30792,7 @@
      "source": "QI.M.286.10",
      "target": "QE.T.132.11"
     }
-   ],
-   "linkCount": 2
+   ]
   },
   {
    "DATAID": "112364",
@@ -30626,6 +30883,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -30670,8 +30928,7 @@
      "source": "QI.M.206.05",
      "target": "QI.A.224.06"
     }
-   ],
-   "linkCount": 3
+   ]
   },
   {
    "DATAID": "111783",
@@ -30762,6 +31019,9 @@
    "connectedToIdFromCommentsArray": [
     "QE.A.98.03"
    ],
+   "links": [
+    "QE.A.98.03"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -30825,8 +31085,7 @@
      "source": "QI.A.202.05",
      "target": "QI.A.203.05"
     }
-   ],
-   "linkCount": 6
+   ]
   },
   {
    "DATAID": "113442",
@@ -30910,6 +31169,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -30975,8 +31235,7 @@
      "source": "QI.Y.126.03",
      "target": "QI.B.217.06"
     }
-   ],
-   "linkCount": 6
+   ]
   },
   {
    "DATAID": "112378",
@@ -31036,6 +31295,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -31157,8 +31417,7 @@
      "source": "QI.M.147.03",
      "target": "QI.H.221.06"
     }
-   ],
-   "linkCount": 14
+   ]
   },
   {
    "DATAID": "112379",
@@ -31367,6 +31626,11 @@
     "QI.A.130.03",
     "QI.A.132.03"
    ],
+   "links": [
+    "QI.S.128.03",
+    "QI.A.130.03",
+    "QI.A.132.03"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -31438,8 +31702,7 @@
      "source": "QI.M.129.03",
      "target": "QI.S.128.03"
     }
-   ],
-   "linkCount": 5
+   ]
   },
   {
    "DATAID": "2797841",
@@ -31552,6 +31815,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -31617,8 +31881,7 @@
      "source": "QI.A.238.08",
      "target": "QI.A.236.08"
     }
-   ],
-   "linkCount": 6
+   ]
   },
   {
    "DATAID": "2863574",
@@ -31688,6 +31951,9 @@
     }
    },
    "connectedToIdFromCommentsArray": [
+    "QE.L.118.05"
+   ],
+   "links": [
     "QE.L.118.05"
    ],
    "linksSet": {
@@ -31774,8 +32040,7 @@
      "source": "QI.M.272.09",
      "target": "QI.I.308.12"
     }
-   ],
-   "linkCount": 8
+   ]
   },
   {
    "DATAID": "113211",
@@ -31841,6 +32106,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -31913,8 +32179,7 @@
      "source": "QI.M.119.03",
      "target": "QI.Z.187.05"
     }
-   ],
-   "linkCount": 7
+   ]
   },
   {
    "DATAID": "113313",
@@ -32008,6 +32273,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -32073,8 +32339,7 @@
      "source": "QI.M.120.03",
      "target": "QI.B.217.06"
     }
-   ],
-   "linkCount": 6
+   ]
   },
   {
    "DATAID": "113212",
@@ -32157,6 +32422,10 @@
     }
    },
    "connectedToIdFromCommentsArray": [
+    "QE.A.4.01",
+    "QE.A.3.01"
+   ],
+   "links": [
     "QE.A.4.01",
     "QE.A.3.01"
    ],
@@ -32255,8 +32524,7 @@
      "source": "QI.M.196.05",
      "target": "QI.A.198.05"
     }
-   ],
-   "linkCount": 9
+   ]
   },
   {
    "DATAID": "2901762",
@@ -32340,6 +32608,9 @@
    "connectedToIdFromCommentsArray": [
     "QE.T.14.01"
    ],
+   "links": [
+    "QE.T.14.01"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -32389,8 +32660,7 @@
      "source": "QI.N.280.10",
      "target": "QE.M.141.14"
     }
-   ],
-   "linkCount": 3
+   ]
   },
   {
    "DATAID": "3012888",
@@ -32501,6 +32771,11 @@
     "QE.T.14.01",
     "QI.B.136.03"
    ],
+   "links": [
+    "QE.M.134.12",
+    "QE.T.14.01",
+    "QI.B.136.03"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -32579,8 +32854,7 @@
      "source": "QI.O.314.13",
      "target": "QE.M.141.14"
     }
-   ],
-   "linkCount": 6
+   ]
   },
   {
    "DATAID": "3013119",
@@ -32681,6 +32955,10 @@
     "QE.M.134.12",
     "QE.T.14.01"
    ],
+   "links": [
+    "QE.M.134.12",
+    "QE.T.14.01"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -32741,8 +33019,7 @@
      "source": "QI.O.315.13",
      "target": "QI.L.319.13"
     }
-   ],
-   "linkCount": 4
+   ]
   },
   {
    "DATAID": "2974555",
@@ -32852,6 +33129,10 @@
     "QE.A.4.01",
     "QE.T.14.01"
    ],
+   "links": [
+    "QE.A.4.01",
+    "QE.T.14.01"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -32905,8 +33186,7 @@
      "source": "QI.O.298.11",
      "target": "QI.B.136.03"
     }
-   ],
-   "linkCount": 3
+   ]
   },
   {
    "DATAID": "2812923",
@@ -33000,6 +33280,9 @@
     }
    },
    "connectedToIdFromCommentsArray": [
+    "QE.R.128.08"
+   ],
+   "links": [
     "QE.R.128.08"
    ],
    "linksSet": {
@@ -33114,8 +33397,7 @@
      "source": "QI.P.242.08",
      "target": "QI.L.247.08"
     }
-   ],
-   "linkCount": 12
+   ]
   },
   {
    "DATAID": "2971762",
@@ -33228,6 +33510,10 @@
     "QE.J.92.02",
     "QE.A.1.01"
    ],
+   "links": [
+    "QE.J.92.02",
+    "QE.A.1.01"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -33330,8 +33616,7 @@
      "source": "QI.P.294.11",
      "target": "QI.A.248.08"
     }
-   ],
-   "linkCount": 10
+   ]
   },
   {
    "DATAID": "2863362",
@@ -33431,6 +33716,10 @@
     }
    },
    "connectedToIdFromCommentsArray": [
+    "QE.L.118.05",
+    "QE.A.4.01"
+   ],
+   "links": [
     "QE.L.118.05",
     "QE.A.4.01"
    ],
@@ -33536,8 +33825,7 @@
      "source": "QI.Q.271.09",
      "target": "QI.I.308.12"
     }
-   ],
-   "linkCount": 10
+   ]
   },
   {
    "DATAID": "2974860",
@@ -33681,6 +33969,9 @@
    "connectedToIdFromCommentsArray": [
     "QE.A.4.01"
    ],
+   "links": [
+    "QE.A.4.01"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -33723,8 +34014,7 @@
      "source": "QI.Q.297.11",
      "target": "QI.A.6.01"
     }
-   ],
-   "linkCount": 2
+   ]
   },
   {
    "DATAID": "2983791",
@@ -33833,6 +34123,10 @@
     "QE.I.10.01",
     "QE.A.4.01"
    ],
+   "links": [
+    "QE.I.10.01",
+    "QE.A.4.01"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -33879,8 +34173,7 @@
      "source": "QI.R.303.12",
      "target": "QE.I.10.01"
     }
-   ],
-   "linkCount": 2
+   ]
   },
   {
    "DATAID": "113214",
@@ -33959,6 +34252,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -34045,8 +34339,7 @@
      "source": "QI.R.103.03",
      "target": "QI.A.104.03"
     }
-   ],
-   "linkCount": 9
+   ]
   },
   {
    "DATAID": "111429",
@@ -34133,6 +34426,9 @@
    "connectedToIdFromCommentsArray": [
     "QE.A.98.03"
    ],
+   "links": [
+    "QE.A.98.03"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -34189,8 +34485,7 @@
      "source": "QI.A.199.05",
      "target": "QE.A.4.01"
     }
-   ],
-   "linkCount": 6
+   ]
   },
   {
    "DATAID": "113322",
@@ -34266,6 +34561,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -34373,8 +34669,7 @@
      "source": "QI.R.75.02",
      "target": "QI.A.177.04"
     }
-   ],
-   "linkCount": 13
+   ]
   },
   {
    "DATAID": "113435",
@@ -34500,6 +34795,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -34558,8 +34854,7 @@
      "source": "QI.R.219.06",
      "target": "QI.B.217.06"
     }
-   ],
-   "linkCount": 5
+   ]
   },
   {
    "DATAID": "113436",
@@ -34640,6 +34935,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -34761,8 +35057,7 @@
      "source": "QI.R.150.03",
      "target": "QI.H.221.06"
     }
-   ],
-   "linkCount": 16
+   ]
   },
   {
    "DATAID": "113215",
@@ -34846,6 +35141,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -34925,8 +35221,7 @@
      "source": "QI.R.186.05",
      "target": "QI.J.180.04"
     }
-   ],
-   "linkCount": 21
+   ]
   },
   {
    "DATAID": "111497",
@@ -35001,6 +35296,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -35031,8 +35327,7 @@
      "source": "QI.A.2.01",
      "target": "QE.A.4.01"
     }
-   ],
-   "linkCount": 1
+   ]
   },
   {
    "DATAID": "111660",
@@ -35144,6 +35439,9 @@
    "connectedToIdFromCommentsArray": [
     "QE.A.4.01"
    ],
+   "links": [
+    "QE.A.4.01"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -35179,8 +35477,7 @@
      "source": "QI.A.20.01",
      "target": "QE.A.4.01"
     }
-   ],
-   "linkCount": 2
+   ]
   },
   {
    "DATAID": "2833107",
@@ -35299,6 +35596,9 @@
    "connectedToIdFromCommentsArray": [
     "QE.L.118.05"
    ],
+   "links": [
+    "QE.L.118.05"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -35390,8 +35690,7 @@
      "source": "QI.S.263.08",
      "target": "QI.I.308.12"
     }
-   ],
-   "linkCount": 9
+   ]
   },
   {
    "DATAID": "113323",
@@ -35466,6 +35765,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -35517,8 +35817,7 @@
      "source": "QI.S.208.05",
      "target": "QI.D.246.08"
     }
-   ],
-   "linkCount": 4
+   ]
   },
   {
    "DATAID": "2758395",
@@ -35591,6 +35890,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -35670,8 +35970,7 @@
      "source": "QI.S.222.06",
      "target": "QI.Z.223.06"
     }
-   ],
-   "linkCount": 8
+   ]
   },
   {
    "DATAID": "113317",
@@ -35780,6 +36079,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -35901,8 +36201,7 @@
      "source": "QI.S.148.03",
      "target": "QI.H.221.06"
     }
-   ],
-   "linkCount": 16
+   ]
   },
   {
    "DATAID": "2813148",
@@ -36026,6 +36325,10 @@
     "QE.R.128.08",
     "QE.A.1.01"
    ],
+   "links": [
+    "QE.R.128.08",
+    "QE.A.1.01"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -36135,8 +36438,7 @@
      "source": "QI.S.244.08",
      "target": "QI.L.247.08"
     }
-   ],
-   "linkCount": 11
+   ]
   },
   {
    "DATAID": "113219",
@@ -36221,6 +36523,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -36272,8 +36575,7 @@
      "source": "QI.S.1.01",
      "target": "QI.M.196.05"
     }
-   ],
-   "linkCount": 9
+   ]
   },
   {
    "DATAID": "2830001",
@@ -36385,6 +36687,11 @@
     "QI.G.259.08",
     "QI.Y.261.08"
    ],
+   "links": [
+    "QE.I.119.05",
+    "QI.G.259.08",
+    "QI.Y.261.08"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -36456,8 +36763,7 @@
      "source": "QI.S.260.08",
      "target": "QI.K.302.12"
     }
-   ],
-   "linkCount": 6
+   ]
   },
   {
    "DATAID": "113324",
@@ -36563,6 +36869,11 @@
     "QI.A.130.03",
     "QI.A.132.03"
    ],
+   "links": [
+    "QI.M.129.03",
+    "QI.A.130.03",
+    "QI.A.132.03"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -36634,8 +36945,7 @@
      "source": "QI.S.128.03",
      "target": "QI.M.129.03"
     }
-   ],
-   "linkCount": 5
+   ]
   },
   {
    "DATAID": "3150494",
@@ -36739,6 +37049,9 @@
    "connectedToIdFromCommentsArray": [
     "QE.B.138.14"
    ],
+   "links": [
+    "QE.B.138.14"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -36795,8 +37108,7 @@
      "source": "QI.S.322.14",
      "target": "QE.A.142.14"
     }
-   ],
-   "linkCount": 4
+   ]
   },
   {
    "DATAID": "111782",
@@ -36873,6 +37185,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -36924,8 +37237,7 @@
      "source": "QI.A.17.01",
      "target": "QI.A.14.01"
     }
-   ],
-   "linkCount": 4
+   ]
   },
   {
    "DATAID": "113220",
@@ -36992,6 +37304,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -37036,8 +37349,7 @@
      "source": "QI.S.122.03",
      "target": "QI.D.111.03"
     }
-   ],
-   "linkCount": 3
+   ]
   },
   {
    "DATAID": "113439",
@@ -37119,6 +37431,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -37198,8 +37511,7 @@
      "source": "QI.S.124.03",
      "target": "QI.B.217.06"
     }
-   ],
-   "linkCount": 8
+   ]
   },
   {
    "DATAID": "113222",
@@ -37293,6 +37605,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -37358,8 +37671,7 @@
      "source": "QI.S.123.03",
      "target": "QI.B.217.06"
     }
-   ],
-   "linkCount": 6
+   ]
   },
   {
    "DATAID": "111639",
@@ -37489,6 +37801,11 @@
     "QE.R.70.02",
     "QE.L.11.01"
    ],
+   "links": [
+    "QE.A.69.02",
+    "QE.R.70.02",
+    "QE.L.11.01"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -37553,8 +37870,7 @@
      "source": "QI.T.57.02",
      "target": "QE.L.11.01"
     }
-   ],
-   "linkCount": 4
+   ]
   },
   {
    "DATAID": "2813362",
@@ -37660,6 +37976,11 @@
     }
    },
    "connectedToIdFromCommentsArray": [
+    "QE.R.128.08",
+    "QE.A.1.01",
+    "QE.J.92.02"
+   ],
+   "links": [
     "QE.R.128.08",
     "QE.A.1.01",
     "QE.J.92.02"
@@ -37777,8 +38098,7 @@
      "source": "QI.T.241.08",
      "target": "QI.A.248.08"
     }
-   ],
-   "linkCount": 11
+   ]
   },
   {
    "DATAID": "113440",
@@ -37848,6 +38168,9 @@
     }
    },
    "connectedToIdFromCommentsArray": [
+    "QE.U.68.01"
+   ],
+   "links": [
     "QE.U.68.01"
    ],
    "linksSet": {
@@ -37920,8 +38243,7 @@
      "source": "QI.T.56.01",
      "target": "QE.W.15.01"
     }
-   ],
-   "linkCount": 6
+   ]
   },
   {
    "DATAID": "2960872",
@@ -38016,6 +38338,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -38067,8 +38390,7 @@
      "source": "QI.U.290.11",
      "target": "QE.E.131.11"
     }
-   ],
-   "linkCount": 4
+   ]
   },
   {
    "DATAID": "112283",
@@ -38171,6 +38493,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -38257,8 +38580,7 @@
      "source": "QI.M.31.01",
      "target": "QE.A.98.03"
     }
-   ],
-   "linkCount": 10
+   ]
   },
   {
    "DATAID": "3169774",
@@ -38355,6 +38677,10 @@
     "QE.A.4.01",
     "QE.A.137.14"
    ],
+   "links": [
+    "QE.A.4.01",
+    "QE.A.137.14"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -38422,8 +38748,7 @@
      "source": "QI.U.346.15",
      "target": "QI.A.184.05"
     }
-   ],
-   "linkCount": 5
+   ]
   },
   {
    "DATAID": "3169548",
@@ -38543,6 +38868,11 @@
     "QE.A.137.14",
     "QE.J.115.04"
    ],
+   "links": [
+    "QE.A.4.01",
+    "QE.A.137.14",
+    "QE.J.115.04"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -38607,8 +38937,7 @@
      "source": "QI.U.343.15",
      "target": "QI.A.253.08"
     }
-   ],
-   "linkCount": 4
+   ]
   },
   {
    "DATAID": "113328",
@@ -38694,6 +39023,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -38724,8 +39054,7 @@
      "source": "QI.Y.37.01",
      "target": "QE.A.4.01"
     }
-   ],
-   "linkCount": 1
+   ]
   },
   {
    "DATAID": "2830354",
@@ -38822,6 +39151,11 @@
     "QI.G.259.08",
     "QI.S.260.08"
    ],
+   "links": [
+    "QE.I.119.05",
+    "QI.G.259.08",
+    "QI.S.260.08"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -38900,8 +39234,7 @@
      "source": "QI.Y.261.08",
      "target": "QI.K.302.12"
     }
-   ],
-   "linkCount": 6
+   ]
   },
   {
    "DATAID": "112285",
@@ -38980,6 +39313,9 @@
    "connectedToIdFromCommentsArray": [
     "QE.A.98.03"
    ],
+   "links": [
+    "QE.A.98.03"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -39043,8 +39379,7 @@
      "source": "QI.M.205.05",
      "target": "QE.A.4.01"
     }
-   ],
-   "linkCount": 5
+   ]
   },
   {
    "DATAID": "112021",
@@ -39173,6 +39508,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -39273,8 +39609,7 @@
      "source": "QI.A.198.05",
      "target": "QI.M.196.05"
     }
-   ],
-   "linkCount": 11
+   ]
   },
   {
    "DATAID": "111922",
@@ -39373,6 +39708,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -39501,8 +39837,7 @@
      "source": "QI.A.139.03",
      "target": "QI.Z.223.06"
     }
-   ],
-   "linkCount": 15
+   ]
   },
   {
    "DATAID": "113330",
@@ -39598,6 +39933,9 @@
    "connectedToIdFromCommentsArray": [
     "QE.T.14.01"
    ],
+   "links": [
+    "QE.T.14.01"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -39668,8 +40006,7 @@
      "source": "QI.Z.168.04",
      "target": "QI.D.232.07"
     }
-   ],
-   "linkCount": 7
+   ]
   },
   {
    "DATAID": "2758288",
@@ -39798,6 +40135,9 @@
    "connectedToIdFromCommentsArray": [
     "QE.L.11.01"
    ],
+   "links": [
+    "QE.L.11.01"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -39903,8 +40243,7 @@
      "source": "QI.Z.223.06",
      "target": "QI.A.139.03"
     }
-   ],
-   "linkCount": 11
+   ]
   },
   {
    "DATAID": "113444",
@@ -39988,6 +40327,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -40053,8 +40393,7 @@
      "source": "QI.Z.187.05",
      "target": "QI.B.293.11"
     }
-   ],
-   "linkCount": 17
+   ]
   },
   {
    "name": "Fahd Mohammed Ahmed al-Quso (no longer listed)",
@@ -40120,6 +40459,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -40132,8 +40472,7 @@
    "narrativeFileName": "NSQI28810E.shtml",
    "narrativeFileNameSource": "derived from id",
    "linksFromNarr": [],
-   "connectionsFromNarrative": [],
-   "linkCount": 0
+   "connectionsFromNarrative": []
   },
   {
    "name": "Usama Bin Laden (no longer listed)",
@@ -40199,6 +40538,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -40211,8 +40551,7 @@
    "narrativeFileName": "NSQI801E.shtml",
    "narrativeFileNameSource": "derived from id",
    "linksFromNarr": [],
-   "connectionsFromNarrative": [],
-   "linkCount": 0
+   "connectionsFromNarrative": []
   },
   {
    "name": "Wa&apos;el Hamza Abd al-Fatah Julaidan (no longer listed)",
@@ -40278,6 +40617,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -40290,8 +40630,7 @@
    "narrativeFileName": "NSQI7902E.shtml",
    "narrativeFileNameSource": "derived from id",
    "linksFromNarr": [],
-   "connectionsFromNarrative": [],
-   "linkCount": 3
+   "connectionsFromNarrative": []
   },
   {
    "DATAID": "empty004",
@@ -40367,6 +40706,9 @@
    "connectedToIdFromCommentsArray": [
     "QE.T.132.11"
    ],
+   "links": [
+    "QE.T.132.11"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -40384,8 +40726,7 @@
    "narrativeFileName": "NSQI28710E.shtml",
    "narrativeFileNameSource": "derived from id",
    "linksFromNarr": [],
-   "connectionsFromNarrative": [],
-   "linkCount": 1
+   "connectionsFromNarrative": []
   },
   {
    "DATAID": "empty006",
@@ -40469,6 +40810,10 @@
     "QE.A.5.01",
     "QE.A.73.02"
    ],
+   "links": [
+    "QE.A.5.01",
+    "QE.A.73.02"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -40490,8 +40835,7 @@
    "narrativeFileName": "NSQI3001E.shtml",
    "narrativeFileNameSource": "derived from id",
    "linksFromNarr": [],
-   "connectionsFromNarrative": [],
-   "linkCount": 0
+   "connectionsFromNarrative": []
   },
   {
    "DATAID": "empty007",
@@ -40557,6 +40901,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -40569,8 +40914,7 @@
    "narrativeFileName": "NSQI24008E.shtml",
    "narrativeFileNameSource": "derived from id",
    "linksFromNarr": [],
-   "connectionsFromNarrative": [],
-   "linkCount": 0
+   "connectionsFromNarrative": []
   },
   {
    "DATAID": "empty008",
@@ -40636,6 +40980,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -40648,8 +40993,7 @@
    "narrativeFileName": "NSQI23908E.shtml",
    "narrativeFileNameSource": "derived from id",
    "linksFromNarr": [],
-   "connectionsFromNarrative": [],
-   "linkCount": 0
+   "connectionsFromNarrative": []
   },
   {
    "DATAID": "emptyStl",
@@ -40728,6 +41072,9 @@
    "connectedToIdFromCommentsArray": [
     "QI.B.8.01"
    ],
+   "links": [
+    "QI.B.8.01"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -40745,8 +41092,7 @@
    "narrativeFileName": "NSQI000E.shtml",
    "narrativeFileNameSource": "derived from id",
    "linksFromNarr": [],
-   "connectionsFromNarrative": [],
-   "linkCount": 0
+   "connectionsFromNarrative": []
   },
   {
    "DATAID": "3162069",
@@ -40806,6 +41152,9 @@
    "connectedToIdFromCommentsArray": [
     "QE.A.137.14"
    ],
+   "links": [
+    "QE.A.137.14"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -40862,8 +41211,7 @@
      "source": "QE.A.144.14",
      "target": "QI.A.332.14"
     }
-   ],
-   "linkCount": 4
+   ]
   },
   {
    "DATAID": "113445",
@@ -40921,6 +41269,10 @@
     }
    },
    "connectedToIdFromCommentsArray": [
+    "QE.J.92.02",
+    "QI.S.208.05"
+   ],
+   "links": [
     "QE.J.92.02",
     "QI.S.208.05"
    ],
@@ -41019,8 +41371,7 @@
      "source": "QE.A.1.01",
      "target": "QI.P.294.11"
     }
-   ],
-   "linkCount": 20
+   ]
   },
   {
    "DATAID": "113226",
@@ -41095,6 +41446,10 @@
     "QE.R.70.02",
     "QI.A.58.02"
    ],
+   "links": [
+    "QE.R.70.02",
+    "QI.A.58.02"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -41155,8 +41510,7 @@
      "source": "QE.A.69.02",
      "target": "QI.T.57.02"
     }
-   ],
-   "linkCount": 4
+   ]
   },
   {
    "DATAID": "113227",
@@ -41262,6 +41616,12 @@
     "QE.L.96.03",
     "QE.L.118.05"
    ],
+   "links": [
+    "QE.J.19.01",
+    "QE.H.8.01",
+    "QE.L.96.03",
+    "QE.L.118.05"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -41351,8 +41711,7 @@
      "source": "QE.A.121.05",
      "target": "QI.A.309.12"
     }
-   ],
-   "linkCount": 7
+   ]
   },
   {
    "DATAID": "113231",
@@ -41464,6 +41823,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -41522,8 +41882,7 @@
      "source": "QE.A.107.04",
      "target": "QE.A.4.01"
     }
-   ],
-   "linkCount": 5
+   ]
   },
   {
    "DATAID": "113453",
@@ -41564,6 +41923,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -41720,8 +42080,7 @@
      "source": "QE.A.110.04",
      "target": "QE.M.12.01"
     }
-   ],
-   "linkCount": 20
+   ]
   },
   {
    "DATAID": "113335",
@@ -41761,6 +42120,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -41910,8 +42270,7 @@
      "source": "QE.A.111.04",
      "target": "QE.L.118.05"
     }
-   ],
-   "linkCount": 19
+   ]
   },
   {
    "DATAID": "113232",
@@ -41990,6 +42349,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -42160,8 +42520,7 @@
      "source": "QE.A.109.04",
      "target": "QE.L.118.05"
     }
-   ],
-   "linkCount": 21
+   ]
   },
   {
    "DATAID": "113454",
@@ -42201,6 +42560,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -42350,8 +42710,7 @@
      "source": "QE.A.112.04",
      "target": "QE.L.118.05"
     }
-   ],
-   "linkCount": 19
+   ]
   },
   {
    "DATAID": "113233",
@@ -42391,6 +42750,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -42540,8 +42900,7 @@
      "source": "QE.A.113.04",
      "target": "QE.L.118.05"
     }
-   ],
-   "linkCount": 20
+   ]
   },
   {
    "DATAID": "113336",
@@ -42584,6 +42943,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -42747,8 +43107,7 @@
      "source": "QE.A.103.04",
      "target": "QI.M.119.03"
     }
-   ],
-   "linkCount": 21
+   ]
   },
   {
    "DATAID": "113455",
@@ -42788,6 +43147,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -42944,8 +43304,7 @@
      "source": "QE.A.104.04",
      "target": "QE.M.12.01"
     }
-   ],
-   "linkCount": 20
+   ]
   },
   {
    "DATAID": "113234",
@@ -42985,6 +43344,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -43134,8 +43494,7 @@
      "source": "QE.A.116.04",
      "target": "QE.L.118.05"
     }
-   ],
-   "linkCount": 19
+   ]
   },
   {
    "DATAID": "113456",
@@ -43202,6 +43561,9 @@
     }
    },
    "connectedToIdFromCommentsArray": [
+    "QI.A.104.03"
+   ],
+   "links": [
     "QI.A.104.03"
    ],
    "linksSet": {
@@ -43365,8 +43727,7 @@
      "source": "QE.A.71.02",
      "target": "QI.A.104.03"
     }
-   ],
-   "linkCount": 20
+   ]
   },
   {
    "DATAID": "244845",
@@ -43414,6 +43775,9 @@
     }
    },
    "connectedToIdFromCommentsArray": [
+    "QI.A.171.04"
+   ],
+   "links": [
     "QI.A.171.04"
    ],
    "linksSet": {
@@ -43570,8 +43934,7 @@
      "source": "QE.A.72.02",
      "target": "QE.L.118.05"
     }
-   ],
-   "linkCount": 20
+   ]
   },
   {
    "DATAID": "113235",
@@ -43622,6 +43985,9 @@
     }
    },
    "connectedToIdFromCommentsArray": [
+    "QI.A.171.04"
+   ],
+   "links": [
     "QI.A.171.04"
    ],
    "linksSet": {
@@ -43778,8 +44144,7 @@
      "source": "QE.A.114.04",
      "target": "QE.L.118.05"
     }
-   ],
-   "linkCount": 19
+   ]
   },
   {
    "DATAID": "113338",
@@ -43833,6 +44198,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -43996,8 +44362,7 @@
      "source": "QE.A.105.04",
      "target": "QI.G.28.01"
     }
-   ],
-   "linkCount": 22
+   ]
   },
   {
    "DATAID": "113339",
@@ -44037,6 +44402,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -44186,8 +44552,7 @@
      "source": "QE.A.106.04",
      "target": "QE.L.118.05"
     }
-   ],
-   "linkCount": 20
+   ]
   },
   {
    "DATAID": "113457",
@@ -44266,6 +44631,13 @@
     }
    },
    "connectedToIdFromCommentsArray": [
+    "QE.A.4.01",
+    "QI.A.6.01",
+    "QI.A.172.04",
+    "QI.D.42.01",
+    "QE.A.72.02"
+   ],
+   "links": [
     "QE.A.4.01",
     "QI.A.6.01",
     "QI.A.172.04",
@@ -44407,8 +44779,7 @@
      "source": "QE.A.2.01",
      "target": "QE.A.113.04"
     }
-   ],
-   "linkCount": 23
+   ]
   },
   {
    "DATAID": "3116299",
@@ -44474,6 +44845,10 @@
     }
    },
    "connectedToIdFromCommentsArray": [
+    "QE.T.14.01",
+    "QI.B.136.03"
+   ],
+   "links": [
     "QE.T.14.01",
     "QI.B.136.03"
    ],
@@ -44551,8 +44926,7 @@
      "source": "QE.M.139.14",
      "target": "QE.M.141.14"
     }
-   ],
-   "linkCount": 7
+   ]
   },
   {
    "DATAID": "3116737",
@@ -44629,6 +45003,11 @@
     }
    },
    "connectedToIdFromCommentsArray": [
+    "QE.T.14.01",
+    "QE.M.134.12",
+    "QI.B.136.03"
+   ],
+   "links": [
     "QE.T.14.01",
     "QE.M.134.12",
     "QI.B.136.03"
@@ -44711,8 +45090,7 @@
      "source": "QE.M.140.14",
      "target": "QE.M.141.14"
     }
-   ],
-   "linkCount": 8
+   ]
   },
   {
    "DATAID": "3116738",
@@ -44788,6 +45166,12 @@
     }
    },
    "connectedToIdFromCommentsArray": [
+    "QE.M.140.14",
+    "QE.M.134.12",
+    "QE.T.14.01",
+    "QI.B.136.03"
+   ],
+   "links": [
     "QE.M.140.14",
     "QE.M.134.12",
     "QE.T.14.01",
@@ -44931,8 +45315,7 @@
      "source": "QE.M.141.14",
      "target": "QI.A.313.13"
     }
-   ],
-   "linkCount": 15
+   ]
   },
   {
    "DATAID": "3039466",
@@ -45022,6 +45405,12 @@
     "QE.J.115.04",
     "QE.A.7.01"
    ],
+   "links": [
+    "QE.A.4.01",
+    "QI.A.299.11",
+    "QE.J.115.04",
+    "QE.A.7.01"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -45104,8 +45493,7 @@
      "source": "QE.A.137.14",
      "target": "QE.A.7.01"
     }
-   ],
-   "linkCount": 25
+   ]
   },
   {
    "DATAID": "113458",
@@ -45188,6 +45576,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -45253,8 +45642,7 @@
      "source": "QE.A.4.01",
      "target": "QE.A.129.10"
     }
-   ],
-   "linkCount": 246
+   ]
   },
   {
    "DATAID": "113966",
@@ -45365,6 +45753,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -45500,8 +45889,7 @@
      "source": "QE.J.115.04",
      "target": "QI.A.278.10"
     }
-   ],
-   "linkCount": 31
+   ]
   },
   {
    "DATAID": "2881836",
@@ -45587,6 +45975,11 @@
     }
    },
    "connectedToIdFromCommentsArray": [
+    "QE.A.4.01",
+    "QI.A.274.10",
+    "QI.A.275.10"
+   ],
+   "links": [
     "QE.A.4.01",
     "QI.A.274.10",
     "QI.A.275.10"
@@ -45697,8 +46090,7 @@
      "source": "QE.A.129.10",
      "target": "QI.A.318.13"
     }
-   ],
-   "linkCount": 12
+   ]
   },
   {
    "DATAID": "113459",
@@ -45839,6 +46231,10 @@
     "QE.A.73.02",
     "QE.J.19.01"
    ],
+   "links": [
+    "QE.A.73.02",
+    "QE.J.19.01"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -45892,8 +46288,7 @@
      "source": "QE.A.5.01",
      "target": "QE.A.121.05"
     }
-   ],
-   "linkCount": 6
+   ]
   },
   {
    "DATAID": "3165860",
@@ -46003,6 +46398,12 @@
     "QE.A.143.14",
     "QE.A.145.14"
    ],
+   "links": [
+    "QE.T.14.01",
+    "QE.M.141.14",
+    "QE.A.143.14",
+    "QE.A.145.14"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -46099,8 +46500,7 @@
      "source": "QE.A.146.14",
      "target": "QI.B.333.14"
     }
-   ],
-   "linkCount": 8
+   ]
   },
   {
    "DATAID": "3165859",
@@ -46186,6 +46586,11 @@
     }
    },
    "connectedToIdFromCommentsArray": [
+    "QE.T.14.01",
+    "QE.A.143.14",
+    "QE.A.146.14"
+   ],
+   "links": [
     "QE.T.14.01",
     "QE.A.143.14",
     "QE.A.146.14"
@@ -46282,8 +46687,7 @@
      "source": "QE.A.145.14",
      "target": "QI.B.333.14"
     }
-   ],
-   "linkCount": 8
+   ]
   },
   {
    "DATAID": "113460",
@@ -46388,6 +46792,10 @@
     }
    },
    "connectedToIdFromCommentsArray": [
+    "QI.A.226.06",
+    "QE.J.115.04"
+   ],
+   "links": [
     "QI.A.226.06",
     "QE.J.115.04"
    ],
@@ -46612,8 +47020,7 @@
      "source": "QE.A.98.03",
      "target": "QI.A.237.08"
     }
-   ],
-   "linkCount": 28
+   ]
   },
   {
    "DATAID": "3162386",
@@ -46685,6 +47092,9 @@
    "connectedToIdFromCommentsArray": [
     "QI.B.333.14"
    ],
+   "links": [
+    "QI.B.333.14"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -46734,8 +47144,7 @@
      "source": "QE.A.143.14",
      "target": "QE.A.4.01"
     }
-   ],
-   "linkCount": 6
+   ]
   },
   {
    "DATAID": "3014161",
@@ -46810,6 +47219,12 @@
     "QE.M.134.12",
     "QI.D.232.07"
    ],
+   "links": [
+    "QI.A.316.13",
+    "QE.T.14.01",
+    "QE.M.134.12",
+    "QI.D.232.07"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -46878,8 +47293,7 @@
      "source": "QE.A.135.13",
      "target": "QI.D.232.07"
     }
-   ],
-   "linkCount": 4
+   ]
   },
   {
    "DATAID": "3150933",
@@ -46972,6 +47386,11 @@
     "QE.B.138.14",
     "QI.S.322.14"
    ],
+   "links": [
+    "QE.T.14.01",
+    "QE.B.138.14",
+    "QI.S.322.14"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -47036,8 +47455,7 @@
      "source": "QE.A.142.14",
      "target": "QI.S.322.14"
     }
-   ],
-   "linkCount": 4
+   ]
   },
   {
    "DATAID": "113237",
@@ -47094,6 +47512,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -47271,8 +47690,7 @@
      "source": "QE.A.6.01",
      "target": "QI.A.313.13"
     }
-   ],
-   "linkCount": 27
+   ]
   },
   {
    "DATAID": "113461",
@@ -47327,6 +47745,9 @@
    "connectedToIdFromCommentsArray": [
     "QE.J.115.04"
    ],
+   "links": [
+    "QE.J.115.04"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -47376,8 +47797,7 @@
      "source": "QE.A.7.01",
      "target": "QE.A.137.14"
     }
-   ],
-   "linkCount": 3
+   ]
   },
   {
    "DATAID": "113474",
@@ -47479,6 +47899,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -47509,8 +47930,7 @@
      "source": "QE.B.93.02",
      "target": "QE.A.4.01"
     }
-   ],
-   "linkCount": 1
+   ]
   },
   {
    "DATAID": "113245",
@@ -47583,6 +48003,10 @@
     "QE.A.6.01",
     "QE.T.14.01"
    ],
+   "links": [
+    "QE.A.6.01",
+    "QE.T.14.01"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -47650,8 +48074,7 @@
      "source": "QE.D.102.03",
      "target": "QI.I.67.02"
     }
-   ],
-   "linkCount": 5
+   ]
   },
   {
    "DATAID": "113356",
@@ -47709,6 +48132,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -47753,8 +48177,7 @@
      "source": "QE.E.88.02",
      "target": "QI.H.268.09"
     }
-   ],
-   "linkCount": 3
+   ]
   },
   {
    "DATAID": "113236",
@@ -47825,6 +48248,9 @@
     }
    },
    "connectedToIdFromCommentsArray": [
+    "QI.A.6.01"
+   ],
+   "links": [
     "QI.A.6.01"
    ],
    "linksSet": {
@@ -47960,8 +48386,7 @@
      "source": "QE.A.3.01",
      "target": "QI.A.318.13"
     }
-   ],
-   "linkCount": 29
+   ]
   },
   {
    "DATAID": "2971893",
@@ -48005,6 +48430,9 @@
     }
    },
    "connectedToIdFromCommentsArray": [
+    "QI.U.290.11"
+   ],
+   "links": [
     "QI.U.290.11"
    ],
    "linksSet": {
@@ -48063,8 +48491,7 @@
      "source": "QE.E.131.11",
      "target": "QE.R.100.03"
     }
-   ],
-   "linkCount": 4
+   ]
   },
   {
    "DATAID": "113476",
@@ -48125,6 +48552,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -48176,8 +48604,7 @@
      "source": "QE.G.91.02",
      "target": "QE.T.108.04"
     }
-   ],
-   "linkCount": 4
+   ]
   },
   {
    "DATAID": "2921366",
@@ -48259,6 +48686,9 @@
    "connectedToIdFromCommentsArray": [
     "QE.H.8.01"
    ],
+   "links": [
+    "QE.H.8.01"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -48329,8 +48759,7 @@
      "source": "QE.H.130.10",
      "target": "QI.A.309.12"
     }
-   ],
-   "linkCount": 6
+   ]
   },
   {
    "DATAID": "113263",
@@ -48421,6 +48850,11 @@
     "QE.L.96.03",
     "QE.L.118.05"
    ],
+   "links": [
+    "QE.J.19.01",
+    "QE.L.96.03",
+    "QE.L.118.05"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -48492,8 +48926,7 @@
      "source": "QE.H.8.01",
      "target": "QI.A.228.06"
     }
-   ],
-   "linkCount": 7
+   ]
   },
   {
    "DATAID": "114074",
@@ -48528,6 +48961,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -48579,8 +49013,7 @@
      "source": "QE.I.9.01",
      "target": "QI.I.67.02"
     }
-   ],
-   "linkCount": 4
+   ]
   },
   {
    "DATAID": "113963",
@@ -48661,6 +49094,10 @@
     "QE.R.100.03",
     "QE.S.101.03"
    ],
+   "links": [
+    "QE.R.100.03",
+    "QE.S.101.03"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -48728,8 +49165,7 @@
      "source": "QE.I.99.03",
      "target": "QI.B.9.01"
     }
-   ],
-   "linkCount": 5
+   ]
   },
   {
    "DATAID": "113853",
@@ -48834,6 +49270,10 @@
     "QE.I.10.01",
     "QE.E.131.11"
    ],
+   "links": [
+    "QE.I.10.01",
+    "QE.E.131.11"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -48929,8 +49369,7 @@
      "source": "QE.I.119.05",
      "target": "QI.K.302.12"
     }
-   ],
-   "linkCount": 9
+   ]
   },
   {
    "DATAID": "113964",
@@ -48993,6 +49432,11 @@
     }
    },
    "connectedToIdFromCommentsArray": [
+    "QE.E.88.02",
+    "QE.I.119.05",
+    "QE.E.131.11"
+   ],
+   "links": [
     "QE.E.88.02",
     "QE.I.119.05",
     "QE.E.131.11"
@@ -49096,8 +49540,7 @@
      "source": "QE.I.10.01",
      "target": "QI.B.311.12"
     }
-   ],
-   "linkCount": 13
+   ]
   },
   {
    "DATAID": "113965",
@@ -49169,6 +49612,12 @@
     }
    },
    "connectedToIdFromCommentsArray": [
+    "QE.H.8.01",
+    "QE.L.118.05",
+    "QE.A.121.05",
+    "QE.H.130.10"
+   ],
+   "links": [
     "QE.H.8.01",
     "QE.L.118.05",
     "QE.A.121.05",
@@ -49263,8 +49712,7 @@
      "source": "QE.J.19.01",
      "target": "QI.A.309.12"
     }
-   ],
-   "linkCount": 7
+   ]
   },
   {
    "DATAID": "3048562",
@@ -49340,6 +49788,10 @@
     "QE.A.4.01",
     "QE.T.14.01"
    ],
+   "links": [
+    "QE.A.4.01",
+    "QE.T.14.01"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -49400,8 +49852,7 @@
      "source": "QE.B.138.14",
      "target": "QE.A.142.14"
     }
-   ],
-   "linkCount": 4
+   ]
   },
   {
    "DATAID": "113854",
@@ -49455,6 +49906,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -49485,8 +49937,7 @@
      "source": "QE.J.20.01",
      "target": "QE.A.4.01"
     }
-   ],
-   "linkCount": 1
+   ]
   },
   {
    "DATAID": "113967",
@@ -49553,6 +50004,9 @@
     }
    },
    "connectedToIdFromCommentsArray": [
+    "QE.A.1.01"
+   ],
+   "links": [
     "QE.A.1.01"
    ],
    "linksSet": {
@@ -49779,8 +50233,7 @@
      "source": "QE.J.92.02",
      "target": "QI.B.305.12"
     }
-   ],
-   "linkCount": 50
+   ]
   },
   {
    "DATAID": "2983820",
@@ -49860,6 +50313,10 @@
     "QI.B.217.06",
     "QE.J.92.02"
    ],
+   "links": [
+    "QI.B.217.06",
+    "QE.J.92.02"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -49927,8 +50384,7 @@
      "source": "QE.J.133.12",
      "target": "QI.A.304.12"
     }
-   ],
-   "linkCount": 5
+   ]
   },
   {
    "DATAID": "114076",
@@ -50087,6 +50543,9 @@
     }
    },
    "connectedToIdFromCommentsArray": [
+    "QI.S.263.08"
+   ],
+   "links": [
     "QI.S.263.08"
    ],
    "linksSet": {
@@ -50257,8 +50716,7 @@
      "source": "QE.L.118.05",
      "target": "QI.I.308.12"
     }
-   ],
-   "linkCount": 32
+   ]
   },
   {
    "DATAID": "114089",
@@ -50296,6 +50754,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -50347,8 +50806,7 @@
      "source": "QE.L.96.03",
      "target": "QI.M.296.11"
     }
-   ],
-   "linkCount": 5
+   ]
   },
   {
    "DATAID": "114090",
@@ -50403,6 +50861,9 @@
     }
    },
    "connectedToIdFromCommentsArray": [
+    "QE.A.4.01"
+   ],
+   "links": [
     "QE.A.4.01"
    ],
    "linksSet": {
@@ -50517,8 +50978,7 @@
      "source": "QE.L.11.01",
      "target": "QI.A.255.08"
     }
-   ],
-   "linkCount": 13
+   ]
   },
   {
    "DATAID": "113858",
@@ -50577,6 +51037,9 @@
     }
    },
    "connectedToIdFromCommentsArray": [
+    "QE.A.4.01"
+   ],
+   "links": [
     "QE.A.4.01"
    ],
    "linksSet": {
@@ -50649,8 +51112,7 @@
      "source": "QE.M.12.01",
      "target": "QI.J.79.02"
     }
-   ],
-   "linkCount": 7
+   ]
   },
   {
    "DATAID": "113977",
@@ -50708,6 +51170,9 @@
     }
    },
    "connectedToIdFromCommentsArray": [
+    "QE.T.14.01"
+   ],
+   "links": [
     "QE.T.14.01"
    ],
    "linksSet": {
@@ -50780,8 +51245,7 @@
      "source": "QE.M.89.02",
      "target": "QI.L.190.05"
     }
-   ],
-   "linkCount": 6
+   ]
   },
   {
    "DATAID": "3001252",
@@ -50839,6 +51303,10 @@
     }
    },
    "connectedToIdFromCommentsArray": [
+    "QE.T.14.01",
+    "QI.B.136.03"
+   ],
+   "links": [
     "QE.T.14.01",
     "QI.B.136.03"
    ],
@@ -50937,8 +51405,7 @@
      "source": "QE.M.134.12",
      "target": "QI.L.319.13"
     }
-   ],
-   "linkCount": 12
+   ]
   },
   {
    "DATAID": "3026605",
@@ -51029,6 +51496,13 @@
     }
    },
    "connectedToIdFromCommentsArray": [
+    "QI.A.318.13",
+    "QE.A.4.01",
+    "QI.A.6.01",
+    "QE.A.129.10",
+    "QE.T.14.01"
+   ],
+   "links": [
     "QI.A.318.13",
     "QE.A.4.01",
     "QI.A.6.01",
@@ -51142,8 +51616,7 @@
      "source": "QE.M.136.13",
      "target": "QE.A.3.01"
     }
-   ],
-   "linkCount": 9
+   ]
   },
   {
    "DATAID": "113993",
@@ -51191,6 +51664,9 @@
     }
    },
    "connectedToIdFromCommentsArray": [
+    "QI.J.79.02"
+   ],
+   "links": [
     "QI.J.79.02"
    ],
    "linksSet": {
@@ -51277,8 +51753,7 @@
      "source": "QE.R.21.01",
      "target": "QE.A.6.01"
     }
-   ],
-   "linkCount": 8
+   ]
   },
   {
    "DATAID": "2812924",
@@ -51372,6 +51847,12 @@
     }
    },
    "connectedToIdFromCommentsArray": [
+    "QI.S.244.08",
+    "QE.A.1.01",
+    "QE.J.92.02",
+    "QI.J.180.04"
+   ],
+   "links": [
     "QI.S.244.08",
     "QE.A.1.01",
     "QE.J.92.02",
@@ -51501,8 +51982,7 @@
      "source": "QE.R.128.08",
      "target": "QI.A.248.08"
     }
-   ],
-   "linkCount": 12
+   ]
   },
   {
    "DATAID": "113994",
@@ -51587,6 +52067,10 @@
     "QI.A.58.02",
     "QE.A.69.02"
    ],
+   "links": [
+    "QI.A.58.02",
+    "QE.A.69.02"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -51647,8 +52131,7 @@
      "source": "QE.R.70.02",
      "target": "QI.T.57.02"
     }
-   ],
-   "linkCount": 7
+   ]
   },
   {
    "DATAID": "113868",
@@ -51736,6 +52219,11 @@
     "QE.S.101.03",
     "QE.E.131.11"
    ],
+   "links": [
+    "QE.I.99.03",
+    "QE.S.101.03",
+    "QE.E.131.11"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -51814,8 +52302,7 @@
      "source": "QE.R.100.03",
      "target": "QI.U.290.11"
     }
-   ],
-   "linkCount": 6
+   ]
   },
   {
    "DATAID": "114111",
@@ -51887,6 +52374,10 @@
     "QE.I.99.03",
     "QE.R.100.03"
    ],
+   "links": [
+    "QE.I.99.03",
+    "QE.R.100.03"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -51947,8 +52438,7 @@
      "source": "QE.S.101.03",
      "target": "QI.A.4.01"
     }
-   ],
-   "linkCount": 4
+   ]
   },
   {
    "DATAID": "114112",
@@ -52024,6 +52514,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -52068,8 +52559,7 @@
      "source": "QE.T.108.04",
      "target": "QE.A.107.04"
     }
-   ],
-   "linkCount": 3
+   ]
   },
   {
    "DATAID": "2971894",
@@ -52130,6 +52620,9 @@
     }
    },
    "connectedToIdFromCommentsArray": [
+    "QI.M.286.10"
+   ],
+   "links": [
     "QI.M.286.10"
    ],
    "linksSet": {
@@ -52202,8 +52695,7 @@
      "source": "QE.T.132.11",
      "target": "QI.C.312.12"
     }
-   ],
-   "linkCount": 6
+   ]
   },
   {
    "DATAID": "113995",
@@ -52292,6 +52784,9 @@
     }
    },
    "connectedToIdFromCommentsArray": [
+    "QI.D.232.07"
+   ],
+   "links": [
     "QI.D.232.07"
    ],
    "linksSet": {
@@ -52679,8 +53174,7 @@
      "source": "QE.T.14.01",
      "target": "QI.S.322.14"
     }
-   ],
-   "linkCount": 64
+   ]
   },
   {
    "DATAID": "113997",
@@ -52746,6 +53240,9 @@
     }
    },
    "connectedToIdFromCommentsArray": [
+    "QE.T.14.01"
+   ],
+   "links": [
     "QE.T.14.01"
    ],
    "linksSet": {
@@ -52818,8 +53315,7 @@
      "source": "QE.T.90.02",
      "target": "QI.A.71.02"
     }
-   ],
-   "linkCount": 7
+   ]
   },
   {
    "DATAID": "113883",
@@ -52881,6 +53377,11 @@
     }
    },
    "connectedToIdFromCommentsArray": [
+    "QI.B.55.01",
+    "QI.A.54.01",
+    "QI.T.56.01"
+   ],
+   "links": [
     "QI.B.55.01",
     "QI.A.54.01",
     "QI.T.56.01"
@@ -52949,8 +53450,7 @@
      "source": "QE.U.68.01",
      "target": "QI.T.56.01"
     }
-   ],
-   "linkCount": 4
+   ]
   },
   {
    "DATAID": "114113",
@@ -53013,6 +53513,9 @@
    "connectedToIdFromCommentsArray": [
     "QE.A.4.01"
    ],
+   "links": [
+    "QE.A.4.01"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -53048,8 +53551,7 @@
      "source": "QE.W.15.01",
      "target": "QE.A.4.01"
     }
-   ],
-   "linkCount": 4
+   ]
   },
   {
    "name": "International Islamic Relief Organization, Philippines, branch offices (no longer listed)",
@@ -53073,6 +53575,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -53085,8 +53588,7 @@
    "narrativeFileName": "NSQE12606E.shtml",
    "narrativeFileNameSource": "derived from id",
    "linksFromNarr": [],
-   "connectionsFromNarrative": [],
-   "linkCount": 1
+   "connectionsFromNarrative": []
   },
   {
    "name": "Aid Organization of the Ulema, Pakistan (no longer listed)",
@@ -53136,6 +53638,11 @@
     "QI.L.30.01",
     "QE.J.19.01"
    ],
+   "links": [
+    "QE.A.5.01",
+    "QI.L.30.01",
+    "QE.J.19.01"
+   ],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -53161,8 +53668,7 @@
    "narrativeFileName": "NSQE7302E.shtml",
    "narrativeFileNameSource": "derived from id",
    "linksFromNarr": [],
-   "connectionsFromNarrative": [],
-   "linkCount": 0
+   "connectionsFromNarrative": []
   },
   {
    "name": "Benevolence International Fund  (no longer listed)",
@@ -53186,6 +53692,7 @@
     }
    },
    "connectedToIdFromCommentsArray": [],
+   "links": [],
    "linksSet": {
     "_map": {
      "_list": [],
@@ -53198,8 +53705,7 @@
    "narrativeFileName": "NSQE9402E.shtml",
    "narrativeFileNameSource": "derived from id",
    "linksFromNarr": [],
-   "connectionsFromNarrative": [],
-   "linkCount": 0
+   "connectionsFromNarrative": []
   }
  ],
  "dateGenerated": "02-18-2015",

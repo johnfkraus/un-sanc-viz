@@ -4,10 +4,10 @@ var selected = {},
 
 Network = function () {
   //  variables we want to access in multiple places of Network
-  var allData, charge, charge2, consoleLog, curLinksData, curNodesData, desiredDocsHeight, doc, filter, filterLinks, filterNodes, force,
+  var allData, charge, charge2, consoleLog, curLinksData, curNodesData, desiredDocsHeight, doc, filter, filterLinks, filterNodes, n,
     forceChargeParam, forceTick, groupCenters, svgHeight, hideDetails, layout, link, linkedByIndex, linksG, mapNodes,
     moveToRadialLayout, neighboring, network, node, nodeColors, nodeColors2, nodeColorsForNoLongerListed, nodeCounts, nodesG, radialTick,
-    searchTerm, setFilter, setLayout, setSort, setupData, setupData2, showDetails, showingDoc, showTheDoc, sort, sortedTargets,
+    searchTerm, setFilter, setLayout, setMaxRadius, setSort, setupData, setupData2, showDetails, showingDoc, showTheDoc, sort, sortedTargets,
     strokeFor, tooltip, update, updateCenters, updateLinks, updateNodes, width;
   var docClosePadding = 8;
   var topStuffNegativeMargin = 10;
@@ -308,6 +308,18 @@ Network = function () {
       }
     });
   };
+
+
+  // Public function to update highlighted nodes
+  network.updateMaxRadius = function (maxRadius) {
+    return node.each(function (d) {
+      var element = d3.select(this);
+        element.style("radius", "#F38630");
+        return d.searched = true;
+      })
+    };
+
+
   // Public function to update highlighted nodes from search
   network.updateSearchId = function (searchTermId) {
     var searchRegEx;
@@ -402,7 +414,7 @@ Network = function () {
     });
 
     circleRadius = d3.scale.sqrt()
-      .range([3, 12])
+      .range([3, $('#max_radius_select').val()]) // 25]) //12])
       .domain(countExtent);
 //      .domain(countExtent);
     data.nodes.forEach(function (n) {
@@ -457,7 +469,7 @@ Network = function () {
       return parseInt(d.linkCount, 10);
     });
     circleRadius = d3.scale.sqrt()
-      .range([3, 12])
+      .range([3, $('#max_radius_select').val()])
       .domain(countExtent);
 //      .domain(countExtent);
     data.nodes.forEach(function (n) {
@@ -475,9 +487,6 @@ Network = function () {
     var linkedByIndexData;
     data.links.forEach(function (l) {
       count++;
-      // if (!(nodesMap.get(l.target))) {
-      // console.log("274 count = ", count, "l.target is undefined; l.source = ", nodesMap.get(l.source));
-      // }
       l.source = nodesMap.get(l.source);
       l.target = nodesMap.get(l.target);
       // linkedByIndexData = linkedByIndex["" + l.source.id + "," + l.target.id] = 1;
@@ -620,14 +629,15 @@ Network = function () {
           console.log('filename: viz.js, line approx. 620; Error null target id where l.source.id = ', l.source.id, '; l.source = ', JSON.stringify(l.source));
         }
       } catch (err) {
-        console.log('filename: viz.js, line approx. 623;  Error: ', err, '; null target id where l.source.id = ', l.source.id, '; l.source = ', JSON.stringify(l.source));
+        console.log('filename: viz.js, line approx. 623;  Error: ', err, '; null target id where l.source.id = ', l.source.id, '; l.source = ', JSON.stringify(l.source).substring(0,100));
       }
       try {
         if ((typeof curNodes.get(l.target.id) !== 'undefined') && (curNodes.get(l.target.id) !== null)) {
           return curNodes.get(l.source.id) && curNodes.get(l.target.id);
+          return curNodes.get(l.source.id).substring(0,100) && curNodes.get(l.target.id).substring(0,100);
         }
       } catch (err) {
-        console.log('filename: viz.js, line approx. 623;  Error: ', err);
+        console.log('filename: viz.js, line approx. 623;  Error: ', err.toString().substring(0,100));
 
       }
     });
@@ -753,6 +763,33 @@ Network = function () {
         .charge(charge);
     }
   };
+
+
+
+
+
+
+
+
+
+
+
+  setMaxRadius = function (newLayout, changeInt) {
+    layout = newLayout;
+    changeInt = changeInt || 0;
+    var radius = $('#circle_radius_max').val();
+   // var newRadius = parseInt(forceCharge, 10) + changeInt;
+    if (layout === "force") {
+      return force.on("tick", forceTick)
+        .charge(newForceCharge)
+        .linkDistance($('#link_distance_select')
+          .val());
+    } else if (layout === "radial") {
+      return force.on("tick", radialTick)
+        .charge(charge);
+    }
+  };
+
 //  switches filter option to new filter
   setFilter = function (newFilter) {
     return filter = newFilter;
@@ -1071,7 +1108,11 @@ $(function () {
         activate("layouts", "force");
         return myNetwork.toggleLayout("force");
       });
-
+    $("#max_radius_select")
+      .on("change", function (e) {
+        activate("layouts", "force");
+        return myNetwork.toggleLayout("force");
+      });
     if (false) {
       var intervalID = setInterval(function () {
         wiggle();
