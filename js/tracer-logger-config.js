@@ -10,10 +10,9 @@ var generateFileNameAndPath = function () {
   return legalLogFileName.trim();
 };
 
-var logFileNameAndPath = logFileNameAndPath || generateFileNameAndPath();
+var logFileNameAndPath = __dirname + '/../log/log.log'; //logFileNameAndPath || generateFileNameAndPath();
 
 var colors = require('colors');
-
 
 var logger = require('tracer').colorConsole({
     transport: function (data) {

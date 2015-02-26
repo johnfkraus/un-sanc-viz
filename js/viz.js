@@ -6,7 +6,7 @@ Network = function () {
   //  variables we want to access in multiple places of Network
   var allData, charge, charge2, consoleLog, curLinksData, curNodesData, desiredDocsHeight, doc, filter, filterLinks, filterNodes, n,
     forceChargeParam, forceTick, groupCenters, svgHeight, hideDetails, layout, link, linkedByIndex, linksG, mapNodes,
-    moveToRadialLayout, neighboring, network, node, nodeColors, nodeColors2, nodeColorsForNoLongerListed, nodeCounts, nodesG, radialTick,
+    maxRadius, maxRadiusSelect, moveToRadialLayout, neighboring, network, node, nodeColors, nodeColors2, nodeColorsForNoLongerListed, nodeCounts, nodesG, radialTick, radius2,
     searchTerm, setFilter, setLayout, setMaxRadius, setSort, setupData, setupData2, showDetails, showingDoc, showTheDoc, sort, sortedTargets,
     strokeFor, tooltip, update, updateCenters, updateLinks, updateNodes, width;
   var docClosePadding = 8;
@@ -309,16 +309,14 @@ Network = function () {
     });
   };
 
-
   // Public function to update highlighted nodes
   network.updateMaxRadius = function (maxRadius) {
     return node.each(function (d) {
       var element = d3.select(this);
-        element.style("radius", "#F38630");
-        return d.searched = true;
-      })
-    };
-
+      element.style("radius", node.linkCount);
+      return d.searched = true;
+    })
+  };
 
   // Public function to update highlighted nodes from search
   network.updateSearchId = function (searchTermId) {
@@ -413,9 +411,15 @@ Network = function () {
       return parseInt(d.linkCount, 10);
     });
 
+    maxRadiusSelect = $('#max_radius_select').val()
+
     circleRadius = d3.scale.sqrt()
       .range([3, $('#max_radius_select').val()]) // 25]) //12])
       .domain(countExtent);
+// countExtent is an Array with value 1 = minimum link count (0) and value 2 = maximum link count;
+//    console.log('$(\'#max_radius_select\').val() = ', $('#max_radius_select').val());
+//    console.log('circleRadius = ', circleRadius);
+
 //      .domain(countExtent);
     data.nodes.forEach(function (n) {
       // set initial x/y to values within the width/height
@@ -629,15 +633,15 @@ Network = function () {
           console.log('filename: viz.js, line approx. 620; Error null target id where l.source.id = ', l.source.id, '; l.source = ', JSON.stringify(l.source));
         }
       } catch (err) {
-        console.log('filename: viz.js, line approx. 623;  Error: ', err, '; null target id where l.source.id = ', l.source.id, '; l.source = ', JSON.stringify(l.source).substring(0,100));
+        console.log('filename: viz.js, line approx. 623;  Error: ', err, '; null target id where l.source.id = ', l.source.id, '; l.source = ', JSON.stringify(l.source).substring(0, 100));
       }
       try {
         if ((typeof curNodes.get(l.target.id) !== 'undefined') && (curNodes.get(l.target.id) !== null)) {
           return curNodes.get(l.source.id) && curNodes.get(l.target.id);
-          return curNodes.get(l.source.id).substring(0,100) && curNodes.get(l.target.id).substring(0,100);
+          return curNodes.get(l.source.id).substring(0, 100) && curNodes.get(l.target.id).substring(0, 100);
         }
       } catch (err) {
-        console.log('filename: viz.js, line approx. 623;  Error: ', err.toString().substring(0,100));
+        console.log('filename: viz.js, line approx. 623;  Error: ', err.toString().substring(0, 100));
 
       }
     });
@@ -659,8 +663,19 @@ Network = function () {
         return d.y;
       })
       .attr("r", function (d) {
-        console.log('d.radius = ', d.radius);
-        return (d.radius);
+
+        radius2 = function () {
+          maxRadius = $('#max_radius_select').val();
+          return (d3.scale.sqrt().range([3, maxRadius]))();
+        };
+        console.log('d.radius = ', d.radius, '; maxRadiusSelect = ', maxRadiusSelect, "; d.linkCount = ", d.linkCount, '; d.radius = ', d.radius, '; maxRadius = ', maxRadius, '; radius2() = ', radius2());
+
+//       circleRadius = d3.scale.sqrt()
+//          .range([3, $('#max_radius_select').val()]) // 25]) //12])
+
+        return (radius2());
+
+        // return (d.radius);
       })
       .style("fill", function (d) {
         return nodeColors(d[$('#node_color_select').val()]);
@@ -764,21 +779,11 @@ Network = function () {
     }
   };
 
-
-
-
-
-
-
-
-
-
-
   setMaxRadius = function (newLayout, changeInt) {
     layout = newLayout;
     changeInt = changeInt || 0;
     var radius = $('#circle_radius_max').val();
-   // var newRadius = parseInt(forceCharge, 10) + changeInt;
+    // var newRadius = parseInt(forceCharge, 10) + changeInt;
     if (layout === "force") {
       return force.on("tick", forceTick)
         .charge(newForceCharge)

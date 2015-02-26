@@ -37,7 +37,7 @@ c:\Users\User1\WebstormProjects\aq-list-viz\js\collect.js,line,1347,; typeof nod
 	 
 	 
 	 
-	 events.js:72
-        throw er; // Unhandled 'error' event
+events.js:72
+ throw er; // Unhandled 'error' event
               ^
 Error: EMFILE, open 'c:\Users\User1\WebstormProjects\aq-list-viz\log\aq-list-viz-Fri_Feb_20_2015-15-53-43.log'

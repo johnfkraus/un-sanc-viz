@@ -104,6 +104,20 @@ var generateNarrFileName = function (node) {
   return narrFileName.trim();
 };
 
+var generateNarrFileNameFromId = function (nodeId) {
+  var idSplit = (nodeId).trim().split('.');
+  // id = id.trim();
+  // var idSplit = id.split('.');
+  var narrFileName = 'NSQ' + idSplit[0].substring(1, 2) + idSplit[2] + idSplit[3] + 'E.shtml';
+  if (consoleLog) {
+    console.log(__filename, ' line ', __line, '; nodeId = ', nodeId, '; generated narrFileName = ', narrFileName);
+    logger.debug([__filename, ' line ', __line, '; nodeId = ', nodeId, '; generated narrFileName = ', narrFileName].join(''));
+  }
+  return narrFileName.trim();
+};
+
+
+
 var stringifyAndWriteJsonDataFile = function (data, writeFileNameAndPath) {
 
   var stringifiedData;
@@ -127,6 +141,7 @@ var nodeSummary = function (node) {
   var nodeSummaryString = '\n\n';
   nodeSummaryString += '\nNode number: ' + node.nodeNumber;
   nodeSummaryString += '\nId: ' + node.id;
+  nodeSummaryString += '\nNarrative file name: ' + node.narrativeFileName;
   nodeSummaryString += "\nName: " + node.name;
 
   if (typeof node.NATIONALITY !== 'undefined') {
@@ -144,6 +159,7 @@ var nodeSummary = function (node) {
 //  }
   if (typeof node.connectionsFromNarrative !== 'undefined') {
     nodeSummaryString += '\nnode.connectionsFromNarrative.length = ' + node.connectionsFromNarrative.length;
+    nodeSummaryString += '\nnode.linksFromNarr = ' + node.linksFromNarr;
   }
   if (typeof node.linkCount !== 'undefined') {
     nodeSummaryString += '\nnode.linkCount = ' + node.linkCount;
@@ -249,6 +265,7 @@ module.exports = {
   forceUnicodeEncoding: forceUnicodeEncoding,
   formatMyDate: formatMyDate,
   generateNarrFileName: generateNarrFileName,
+  generateNarrFileNameFromId: generateNarrFileNameFromId,
   getCleanId: getCleanId,
   logModulus: logModulus,
   nodeSummary: nodeSummary,
