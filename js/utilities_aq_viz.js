@@ -157,9 +157,9 @@ var nodeSummary = function (node) {
 //  if (typeof node.links !== 'undefined') {
 //    nodeSummaryString += '\nnode.links.length = ' + node.links.length;
 //  }
-  if (typeof node.connectionsFromNarrative !== 'undefined') {
-    nodeSummaryString += '\nnode.connectionsFromNarrative.length = ' + node.connectionsFromNarrative.length;
-    nodeSummaryString += '\nnode.linksFromNarr = ' + node.linksFromNarr;
+  if (typeof node.connectionObjectsFromNarrative !== 'undefined') {
+    nodeSummaryString += '\nnode.connectionObjectsFromNarrative.length = ' + node.connectionObjectsFromNarrative.length;
+    nodeSummaryString += '\nnode.linksFromNarrArray = ' + node.linksFromNarrArray;
   }
   if (typeof node.linkCount !== 'undefined') {
     nodeSummaryString += '\nnode.linkCount = ' + node.linkCount;

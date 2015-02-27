@@ -440,6 +440,7 @@
   "urlNum": 55
  },
  {
+  "id": "QI.A.101.03",
   "narrativeFileName": "NSQI10103E.shtml",
   "targetName": "Faouzi ben Mohamed ben Ahmed al-Jendoubi",
   "indivOrEntityString": "indiv",
@@ -455,6 +456,7 @@
   "urlNum": 57
  },
  {
+  "id": "QI.A.104.03",
   "narrativeFileName": "NSQI10403E.shtml",
   "targetName": "Najib ben Mohamed ben Salem al-Waz",
   "indivOrEntityString": "indiv",
@@ -670,6 +672,7 @@
   "urlNum": 84
  },
  {
+  "id": "QI.A.151.03",
   "narrativeFileName": "NSQI15103E.shtml",
   "targetName": "Mourad ben Ali ben al-Basheer al-Trabelsi",
   "indivOrEntityString": "indiv",
@@ -1245,6 +1248,7 @@
   "urlNum": 156
  },
  {
+  "id": "QI.E.262.08",
   "narrativeFileName": "NSQI26208E.shtml",
   "targetName": "Redouane El Habhab",
   "indivOrEntityString": "indiv",
