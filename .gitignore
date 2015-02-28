@@ -28,7 +28,6 @@ build/Release
 node_modules
 
 # crap
-archives
 doc
 secret
 johns_notes.txt
