@@ -8,28 +8,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4182aee6-13b8-4466-9993-4422af087054" name="John's change list" comment="cleanup before deployment attempt on heroku">
-      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\.idea\.name" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\.idea\aq-list-viz.iml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\.idea\codeStyleSettings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\.idea\dbnavigator.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\.idea\encodings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\.idea\jsLibraryMappings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\.idea\misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\.idea\modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\.idea\mongoSettings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\.idea\requirejsPlugin.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\.idea\vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\.idea\watcherTasks.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\output_debugging\AQList-L295-writedata.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\output_debugging\AQList-L307-normData-01-flattened.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\output_debugging\AQList-L364-bagData.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\output_debugging\AQList-L388-setupData1-nodeBagSet.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\output_debugging\AQList-L457-addConnectionIdsArrayFromComments.json" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/aq-list-viz.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/lambda.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_lists\entities_other_groups_undertakings_associated_with_Al-Qaida.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_lists\individuals_associated_with_Al-Qaida.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\narrative_lists\narrativeUrlsArray.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\aq-list-viz\data\output_debugging\AQList-L211-raw_data.json" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_summaries/NSQI19005E.shtml" afterPath="$PROJECT_DIR$/data/narrative_summaries/NSQI19005E.shtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/collect.js" afterPath="$PROJECT_DIR$/js/collect.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/output/data.json" afterPath="$PROJECT_DIR$/data/output/data.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_lists/individuals_associated_with_Al-Qaida.json" afterPath="$PROJECT_DIR$/data/narrative_lists/individuals_associated_with_Al-Qaida.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_lists/narrativeUrlsArray.json" afterPath="$PROJECT_DIR$/data/narrative_lists/narrativeUrlsArray.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/narrative_lists/individuals_associated_with_Al-Qaida.shtml" afterPath="$PROJECT_DIR$/data/narrative_lists/individuals_associated_with_Al-Qaida.shtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/utilities_aq_viz.js" afterPath="$PROJECT_DIR$/js/utilities_aq_viz.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/viz.js" afterPath="$PROJECT_DIR$/js/viz.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="aqlist-visualization.iws" />
@@ -53,7 +51,121 @@
     <favorites_list name="aqlist-visualization" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="viz.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/viz.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.423077" vertical-offset="7552" max-vertical-offset="22066">
+              <caret line="451" column="167" selection-start-line="451" selection-start-column="167" selection-end-line="451" selection-end-column="167" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="johns_notes.secret.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/johns_notes.secret.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="29105" max-vertical-offset="29563">
+              <caret line="1603" column="0" selection-start-line="1603" selection-start-column="0" selection-end-line="1603" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-26.807692" vertical-offset="2788" max-vertical-offset="6528">
+              <caret line="246" column="6" selection-start-line="246" selection-start-column="6" selection-end-line="246" selection-end-column="6" />
+              <folding>
+                <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#3;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#4;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#5;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#6;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#7;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1425128809759" expanded="true" signature="17012:17105" placeholder="..." />
+                <marker date="1425128809759" expanded="true" signature="17054:17096" placeholder="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="1224">
+              <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="d3.v2.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/libs/d3.v2.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="51692" max-vertical-offset="167042">
+              <caret line="3046" column="0" selection-start-line="3046" selection-start-column="0" selection-end-line="3046" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="collect.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/collect.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6377246" vertical-offset="7131" max-vertical-offset="28866">
+              <caret line="418" column="130" selection-start-line="418" selection-start-column="130" selection-end-line="418" selection-end-column="130" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="e#47150#52564#0" expanded="false" />
+                <element signature="e#47165#47237#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="utilities_aq_viz.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/utilities_aq_viz.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1628" max-vertical-offset="5423">
+              <caret line="107" column="2" selection-start-line="107" selection-start-column="2" selection-end-line="107" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NSQI07702E.shtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/narrative_summaries/NSQI07702E.shtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="425">
+              <caret line="0" column="166" selection-start-line="0" selection-start-column="156" selection-end-line="0" selection-end-column="166" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="linenums.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/linenums.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="188" max-vertical-offset="561">
+              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="log.log" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/log/log.log">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="74902" max-vertical-offset="130424">
+              <caret line="4406" column="0" selection-start-line="4406" selection-start-column="0" selection-end-line="4406" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -69,7 +181,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/express.js" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/data/HSQE00401E-B.SHTML" />
         <option value="$PROJECT_DIR$/js/utilities-aq-viz.js" />
@@ -103,7 +214,6 @@
         <option value="$PROJECT_DIR$/data/xml/AQ-2014-11-20-202052.xml" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/js/libs/logger.js" />
-        <option value="$PROJECT_DIR$/johns_notes.secret.txt" />
         <option value="$PROJECT_DIR$/js/app-test.js" />
         <option value="$PROJECT_DIR$/heroku webstorm error message.txt" />
         <option value="$PROJECT_DIR$/fs.js" />
@@ -111,15 +221,17 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/node_modules/tracer/example/info.20150221.log" />
         <option value="$PROJECT_DIR$/js/request.js" />
+        <option value="$PROJECT_DIR$/js/tracer-logger-config.js" />
+        <option value="$PROJECT_DIR$/js/iterator.js" />
+        <option value="$PROJECT_DIR$/data/output/data.json" />
+        <option value="$PROJECT_DIR$/johns_notes.secret.txt" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/viz.js" />
+        <option value="$PROJECT_DIR$/js/lambda.js" />
         <option value="$PROJECT_DIR$/js/app.js" />
-        <option value="$PROJECT_DIR$/js/tracer-logger-config.js" />
         <option value="$PROJECT_DIR$/log/log.log" />
-        <option value="$PROJECT_DIR$/js/iterator.js" />
-        <option value="$PROJECT_DIR$/js/utilities_aq_viz.js" />
-        <option value="$PROJECT_DIR$/data/output/data.json" />
         <option value="$PROJECT_DIR$/js/collect.js" />
+        <option value="$PROJECT_DIR$/js/utilities_aq_viz.js" />
       </list>
     </option>
   </component>
@@ -185,16 +297,13 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="aq-list-viz" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -245,39 +354,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="doc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aq-list-viz" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aq-list-viz" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aq-list-viz" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aq-list-viz" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="output" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -301,7 +378,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -391,28 +467,13 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="open index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" engineId="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" uri="http://localhost:63342/aq-list-viz/index.html">
-      <RunnerSettings RunnerId="JavascriptDebugRunner" />
-      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="circles.html" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="false" engineId="ee957b40-49d2-4995-a146-2f1d96ccda17" uri="http://localhost:63343/aq-list-viz/circles.html">
-      <RunnerSettings RunnerId="JavascriptDebugRunner" />
-      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="app.js JavaScript" type="JavascriptDebugType" factoryName="JavaScript Debug" engineId="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" uri="http://localhost:63342/aq-list-viz/index.html">
-      <RunnerSettings RunnerId="JavascriptDebugRunner" />
-      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="app-test.js JavaScript" type="JavascriptDebugType" factoryName="JavaScript Debug" engineId="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" uri="http://localhost:63343/aq-list-viz/index.html">
+    <configuration default="false" name="app.js JavaScript" type="JavascriptDebugType" factoryName="JavaScript Debug" uri="http://localhost:63343/aq-list-viz/index.html">
       <RunnerSettings RunnerId="JavascriptDebugRunner" />
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
       <method />
     </configuration>
     <configuration default="false" name="app.js" type="NodeJSConfigurationType" factoryName="Node.js" singleton="false" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="js/app.js" working-dir="$PROJECT_DIR$" coffeescript-path="C:\Users\User1\AppData\Roaming\npm\node_modules\coffee-script\bin\coffee">
-      <browser url="http://localhost:63343/aq-list-viz/index.html" />
+      <browser with-js-debugger="true" url="http://localhost:63343/aq-list-viz/index.html" />
       <RunnerSettings RunnerId="Basic" />
       <RunnerSettings RunnerId="debuggableProgram" />
       <ConfigurationWrapper RunnerId="Basic" />
@@ -472,22 +533,18 @@
       <ConfigurationWrapper RunnerId="Basic" />
       <method />
     </configuration>
-    <list size="15">
-      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.open index.html" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.circles.html" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.app.js JavaScript" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.app-test.js JavaScript" />
-      <item index="4" class="java.lang.String" itemvalue="Node.js.app-test.js" />
-      <item index="5" class="java.lang.String" itemvalue="Node.js.app.js" />
-      <item index="6" class="java.lang.String" itemvalue="Node.js.updateMongo.js" />
-      <item index="7" class="java.lang.String" itemvalue="Node.js.findOneAndUpdate.js" />
-      <item index="8" class="java.lang.String" itemvalue="Node.js.scriptMongo" />
-      <item index="9" class="java.lang.String" itemvalue="Node.js.findMongo" />
-      <item index="10" class="java.lang.String" itemvalue="Node.js.hasOwnProperty.sj" />
-      <item index="11" class="java.lang.String" itemvalue="Node.js.mongoSaveFile" />
-      <item index="12" class="java.lang.String" itemvalue="Node.js.mongoConnectDriver" />
-      <item index="13" class="java.lang.String" itemvalue="Node.js.mongoStartup.js" />
-      <item index="14" class="java.lang.String" itemvalue="Node.js.unlimitedParamsFunction.js" />
+    <list size="11">
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.app.js JavaScript" />
+      <item index="1" class="java.lang.String" itemvalue="Node.js.app.js" />
+      <item index="2" class="java.lang.String" itemvalue="Node.js.updateMongo.js" />
+      <item index="3" class="java.lang.String" itemvalue="Node.js.findOneAndUpdate.js" />
+      <item index="4" class="java.lang.String" itemvalue="Node.js.scriptMongo" />
+      <item index="5" class="java.lang.String" itemvalue="Node.js.findMongo" />
+      <item index="6" class="java.lang.String" itemvalue="Node.js.hasOwnProperty.sj" />
+      <item index="7" class="java.lang.String" itemvalue="Node.js.mongoSaveFile" />
+      <item index="8" class="java.lang.String" itemvalue="Node.js.mongoConnectDriver" />
+      <item index="9" class="java.lang.String" itemvalue="Node.js.mongoStartup.js" />
+      <item index="10" class="java.lang.String" itemvalue="Node.js.unlimitedParamsFunction.js" />
     </list>
     <recent_temporary>
       <list size="1">
@@ -504,12 +561,6 @@
       <created>1416008001889</created>
       <option name="number" value="Default" />
       <updated>1417180880658</updated>
-    </task>
-    <task id="LOCAL-00026" summary="fixing indiv date of birth string">
-      <created>1418819515353</created>
-      <option name="number" value="00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1418819515353</updated>
     </task>
     <task id="LOCAL-00027" summary="unclick no longer list now returns you to &quot;name&quot; based colors">
       <created>1418829214511</created>
@@ -799,7 +850,13 @@
       <option name="project" value="LOCAL" />
       <updated>1424978712704</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="collecting narratives for created nodes not listed on the two html lists">
+      <created>1425048116927</created>
+      <option name="number" value="00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1425048116947</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <option name="trackContextForNewChangelist" value="true" />
     <servers />
   </component>
@@ -825,13 +882,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="916" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2994723" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.47229552" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Heroku" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33377308" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.47361478" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39342105" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.47361478" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.47361478" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Code Review" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -841,7 +898,7 @@
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1861938" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29139924" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.44459102" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44459102" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Get Gist" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -903,7 +960,6 @@
       <TodoPanelSettings />
     </option>
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="connected longer narratives to gui" />
     <MESSAGE value="fixing long narratives; generate filenames for narrative is missing from downloaded list;" />
     <MESSAGE value="setupData1.js to parse Narrative files, collect links, in progress" />
     <MESSAGE value="added setupdata2" />
@@ -928,7 +984,8 @@
     <MESSAGE value="minor update" />
     <MESSAGE value="USING links from narratives; counting of links is broken" />
     <MESSAGE value="create nodes for links that have nonexistent target nodes" />
-    <option name="LAST_COMMIT_MESSAGE" value="create nodes for links that have nonexistent target nodes" />
+    <MESSAGE value="collecting narratives for created nodes not listed on the two html lists" />
+    <option name="LAST_COMMIT_MESSAGE" value="collecting narratives for created nodes not listed on the two html lists" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -936,12 +993,12 @@
       <breakpoints>
         <line-breakpoint type="javascript">
           <url>file://$PROJECT_DIR$/js/collect.js</url>
-          <line>892</line>
+          <line>923</line>
           <option name="timeStamp" value="952" />
         </line-breakpoint>
         <line-breakpoint type="javascript">
           <url>file://$PROJECT_DIR$/js/collect.js</url>
-          <line>804</line>
+          <line>835</line>
           <option name="timeStamp" value="980" />
         </line-breakpoint>
         <line-breakpoint type="javascript">
@@ -949,41 +1006,58 @@
           <line>523</line>
           <option name="timeStamp" value="991" />
         </line-breakpoint>
-        <line-breakpoint type="javascript">
-          <url>file://$PROJECT_DIR$/js/viz.js</url>
-          <line>668</line>
-          <option name="timeStamp" value="1032" />
-        </line-breakpoint>
-        <line-breakpoint type="javascript">
-          <url>file://$PROJECT_DIR$/js/viz.js</url>
-          <line>675</line>
-          <option name="timeStamp" value="1033" />
-        </line-breakpoint>
-        <line-breakpoint type="javascript">
-          <url>file://$PROJECT_DIR$/js/viz.js</url>
-          <line>670</line>
-          <option name="timeStamp" value="1034" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/collect.js</url>
-          <line>977</line>
+          <line>1016</line>
           <option name="timeStamp" value="1054" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/js/collect.js</url>
-          <line>652</line>
-          <option name="timeStamp" value="1057" />
+          <condition expression="name === 'r' &amp;&amp; (typeof x) !== 'number'" language="JavaScript" />
+          <url>file://$PROJECT_DIR$/js/libs/d3.v2.js</url>
+          <line>1727</line>
+          <option name="timeStamp" value="1082" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/js/viz.js</url>
+          <line>271</line>
+          <option name="timeStamp" value="1083" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/js/viz.js</url>
+          <line>453</line>
+          <option name="timeStamp" value="1089" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/js/viz.js</url>
+          <line>83</line>
+          <option name="timeStamp" value="1090" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/js/viz.js</url>
+          <line>1131</line>
+          <option name="timeStamp" value="1091" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/collect.js</url>
-          <line>585</line>
-          <option name="timeStamp" value="1058" />
+          <line>815</line>
+          <option name="timeStamp" value="1092" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <condition expression="typeof linkRegexMatch = 'null'" language="JavaScript" />
+          <url>file://$PROJECT_DIR$/js/collect.js</url>
+          <line>1258</line>
+          <option name="timeStamp" value="1093" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/js/collect.js</url>
+          <line>412</line>
+          <option name="timeStamp" value="1094" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="1059" />
+      <option name="time" value="1095" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JavascriptDebugType">
@@ -991,53 +1065,35 @@
         <watch expression="radius2()" language="JavaScript" />
         <watch expression="radius2" language="JavaScript" />
         <watch expression="$('#max_radius_select').val()" language="JavaScript" />
+        <watch expression="d.radius" language="JavaScript" />
+        <watch expression="n.id" language="JavaScript" />
+        <watch expression="typeof x" language="JavaScript" />
+        <watch expression="countExtent" language="JavaScript" />
+        <watch expression="d" language="JavaScript" />
       </configuration>
       <configuration name="NodeJSConfigurationType">
-        <watch expression="narrLink.id" language="JavaScript" />
-        <watch expression="cleanId" language="JavaScript" />
-        <watch expression="rawId" language="JavaScript" />
+        <watch expression="maxRadius" language="JavaScript" />
+        <watch expression="radius2()" language="JavaScript" />
+        <watch expression="radius2" language="JavaScript" />
+        <watch expression="$('#max_radius_select').val()" language="JavaScript" />
+        <watch expression="d.radius" language="JavaScript" />
+        <watch expression="n.id" language="JavaScript" />
+        <watch expression="typeof x" language="JavaScript" />
+        <watch expression="countExtent" language="JavaScript" />
+        <watch expression="d" language="JavaScript" />
+        <watch expression="htmlString" language="JavaScript" />
       </configuration>
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/log/log.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="264775" max-vertical-offset="272374">
-          <caret line="15575" column="13" selection-start-line="570" selection-start-column="62" selection-end-line="570" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/tracer-logger-config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="98" max-vertical-offset="1377">
-          <caret line="12" column="58" selection-start-line="12" selection-start-column="58" selection-end-line="12" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="1258">
-          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/viz.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="11390" max-vertical-offset="21692">
-          <caret line="670" column="145" selection-start-line="670" selection-start-column="145" selection-end-line="687" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/collect.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="27863">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
+            <element signature="e#47150#52564#0" expanded="false" />
+            <element signature="e#47165#47237#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1269,34 +1325,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.092391305" vertical-offset="2890" max-vertical-offset="6392">
-          <caret line="170" column="60" selection-start-line="170" selection-start-column="60" selection-end-line="170" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.52538073" vertical-offset="643" max-vertical-offset="1224">
-          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="1258">
           <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/viz.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="11407" max-vertical-offset="21845">
-          <caret line="670" column="145" selection-start-line="670" selection-start-column="145" selection-end-line="687" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1315,19 +1347,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/log/log.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="264775" max-vertical-offset="272374">
-          <caret line="15575" column="13" selection-start-line="570" selection-start-column="62" selection-end-line="570" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/iterator.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1411">
           <caret line="24" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1335,28 +1358,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
           <caret line="0" column="1639" selection-start-line="0" selection-start-column="1560" selection-end-line="0" selection-end-column="1639" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/utilities_aq_viz.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2635" max-vertical-offset="5049">
-          <caret line="155" column="0" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/output/data.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="93.83117" vertical-offset="7225" max-vertical-offset="973233">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1425047837913" expanded="true" signature="-1:-1" placeholder="[...]" />
-            <marker date="1425047837913" expanded="true" signature="-1:-1" placeholder="{&quot;id&quot;: &quot;QI.A.12.01&quot;...}" />
-            <marker date="1425047837913" expanded="true" signature="-1:-1" placeholder="[...]" />
-            <marker date="1425047837913" expanded="true" signature="-1:-1" placeholder="{&quot;source&quot;: &quot;QE.A.73.02&quot;...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1364,7 +1365,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="395">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1372,18 +1372,106 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1071">
           <caret line="0" column="57" selection-start-line="0" selection-start-column="42" selection-end-line="0" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/johns_notes.secret.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="29105" max-vertical-offset="29563">
+          <caret line="1603" column="0" selection-start-line="1603" selection-start-column="0" selection-end-line="1603" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/lambda.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8636364" vertical-offset="731" max-vertical-offset="1207">
+          <caret line="62" column="2" selection-start-line="62" selection-start-column="2" selection-end-line="62" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-26.807692" vertical-offset="2788" max-vertical-offset="6528">
+          <caret line="246" column="6" selection-start-line="246" selection-start-column="6" selection-end-line="246" selection-end-column="6" />
           <folding>
-            <element signature="n#style#0;n#iframe#0;n#noscript#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#3;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#4;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#5;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#6;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#7;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1425128809759" expanded="true" signature="17012:17105" placeholder="..." />
+            <marker date="1425128809759" expanded="true" signature="17054:17096" placeholder="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/libs/d3.v2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="51692" max-vertical-offset="167042">
+          <caret line="3046" column="0" selection-start-line="3046" selection-start-column="0" selection-end-line="3046" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/viz.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.423077" vertical-offset="7552" max-vertical-offset="22066">
+          <caret line="451" column="167" selection-start-line="451" selection-start-column="167" selection-end-line="451" selection-end-column="167" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="1224">
+          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/linenums.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="188" max-vertical-offset="561">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log/log.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="74902" max-vertical-offset="130424">
+          <caret line="4406" column="0" selection-start-line="4406" selection-start-column="0" selection-end-line="4406" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/narrative_summaries/NSQI07702E.shtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="425">
+          <caret line="0" column="166" selection-start-line="0" selection-start-column="156" selection-end-line="0" selection-end-column="166" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/utilities_aq_viz.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1628" max-vertical-offset="5423">
+          <caret line="107" column="2" selection-start-line="107" selection-start-column="2" selection-end-line="107" selection-end-column="2" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/collect.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33146068" vertical-offset="13108" max-vertical-offset="30107">
-          <caret line="752" column="82" selection-start-line="752" selection-start-column="79" selection-end-line="752" selection-end-column="82" />
+        <state vertical-scroll-proportion="0.6377246" vertical-offset="7131" max-vertical-offset="28866">
+          <caret line="418" column="130" selection-start-line="418" selection-start-column="130" selection-end-line="418" selection-end-column="130" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
+            <element signature="e#47150#52564#0" expanded="false" />
+            <element signature="e#47165#47237#0" expanded="false" />
           </folding>
         </state>
       </provider>

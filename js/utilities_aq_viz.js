@@ -96,27 +96,49 @@ var generateNarrFileName = function (node) {
   var idSplit = (node.id).trim().split('.');
   // id = id.trim();
   // var idSplit = id.split('.');
-  var narrFileName = 'NSQ' + idSplit[0].substring(1, 2) + idSplit[2] + idSplit[3] + 'E.shtml';
+
+  var narrFileName = 'NSQ' + idSplit[0].substring(1, 2) + pad(idSplit[2],3) + pad(idSplit[3],2) + 'E.shtml';
+//  var narrFileName = 'NSQ' + idSplit[0].substring(1, 2) + idSplit[2] + idSplit[3] + 'E.shtml';
   if (consoleLog) {
     console.log(__filename, ' line ', __line, '; node.id = ', node.id, '; generated narrFileName = ', narrFileName);
     logger.debug([__filename, ' line ', __line, '; node.id = ', node.id, '; generated narrFileName = ', narrFileName].join(''));
   }
+  testNarrativeFileName(narrFileName);
   return narrFileName.trim();
 };
 
 var generateNarrFileNameFromId = function (nodeId) {
+  // QI.A.77.02  filename: NSQI07702E.shtml
   var idSplit = (nodeId).trim().split('.');
   // id = id.trim();
   // var idSplit = id.split('.');
-  var narrFileName = 'NSQ' + idSplit[0].substring(1, 2) + idSplit[2] + idSplit[3] + 'E.shtml';
+  var narrFileName = 'NSQ' + idSplit[0].substring(1, 2) + pad(idSplit[2],3) + pad(idSplit[3],2) + 'E.shtml';
   if (consoleLog) {
-    console.log(__filename, ' line ', __line, '; nodeId = ', nodeId, '; generated narrFileName = ', narrFileName);
+    logger.debug(__filename, ' line ', __line, '; nodeId = ', nodeId, '; generated narrFileName = ', narrFileName);
     logger.debug([__filename, ' line ', __line, '; nodeId = ', nodeId, '; generated narrFileName = ', narrFileName].join(''));
   }
+  testNarrativeFileName(narrFileName);
   return narrFileName.trim();
 };
 
+var pad = function(num, size) {
+  var s = "000000000" + num;
+  return s.substr(s.length-size);
+};
 
+
+var testNarrativeFileName = function (narrFileName) {
+  var nameTestString = narrFileName.split('.')[0];
+  // var nameLengthTest = node.narrativeFileName.split('.')[0].length;
+  if (nameTestString.length < 10) { // node.narrativeFileName === 'NSQE4601E.shtml') {
+    logger.error(__filename, 'line', __line, '; narrFileName = ', narrFileName, '; nameTestString.length = ', nameTestString.length);
+    return false;
+  } else if (nameTestString.length === 10) {
+    return true;
+  } else {
+    return false;
+  }
+};
 
 var stringifyAndWriteJsonDataFile = function (data, writeFileNameAndPath) {
 

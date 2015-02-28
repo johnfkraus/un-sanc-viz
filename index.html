@@ -172,9 +172,9 @@
                             <option value="20">20px</option>
                             <option value="25">25px</option>
                             <option value="30">30px</option>
-                            <option value="35">35px</option>
+                            <option selected="selected" value="35">35px</option>
                             <option value="40">40px</option>
-                            <option selected="selected" value="45">45px</option>
+                            <option value="45">45px</option>
                             <option value="50">50px</option>
                             <option value="55">55px</option>
                             <option value="60">60px</option>
@@ -187,7 +187,7 @@
                             <option value="200">200px</option>
                             <option value="300">300px</option>
                             <option value="400">400px</option>
-                            <option  value="500">500px</option>
+                            <option value="500">500px</option>
                             <option value="600">600px</option>
                             <option value="700">700px</option>
                             <option value="800">800px</option>
@@ -196,8 +196,6 @@
                             <option value="2000">2000px</option>
                         </select>
                     </div>
-
-
 
 
                     <div class="force_selection control" style="">
@@ -238,6 +236,17 @@
             </td>
         </tr>
     </table>
+    <!-- here we are inside the element div#container.container  -->
+    <!-- inside the following div#svg element, d3 will render 'svg/g#nodes/circle.node, for example:
+
+      <circle class="node"
+        cx="686.4488903704053"
+        cy="132.70452655191878"
+        r="15.58421442819249"
+        style="fill: rgb(127, 127, 127); stroke: rgb(110, 152, 160); stroke-width: 1px;">
+      </circle>
+
+      -->
     <div id="svg"></div>
     <div id="doc-container">
         <a id="doc-close" style="display: inline; margin-right: 20px; margin-top: 5px;" href="#">&times;</a>
@@ -296,7 +305,6 @@
         </div>
     </div>
     <!--/div-->
-    <!-- end of #main -->
     <footer>
         <!--
         <p style="font-size: 12px; font-weight: bold;">A Thing by John Kraus</p>

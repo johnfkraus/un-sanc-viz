@@ -12,6 +12,7 @@ var utilities_aq_viz = require('./utilities_aq_viz');
 var consoleLog = false;
 // skip downloading 300+ narrative files and use locally stored files instead; for debugging
 var useLocalNarrativeFiles = true;
+
 var logger = require('./tracer-logger-config.js').logger;
 var logModulus = utilities_aq_viz.logModulus;
 var substringChars = utilities_aq_viz.truncateToNumChars;
@@ -102,6 +103,13 @@ var collect = function () {
         callback();
       },
 
+      // copy previously downloaded or created data files to archive
+      function (callback) {
+        fse.copySync(__dirname + '/../data', __dirname + '/../archives/data/'); // , fsOptions);
+        logger.debug(__filename, 'line', __line, 'Copied ', __dirname, '/../data to ', __dirname, '/../archives');
+        callback();
+      },
+
       function (callback) {
         fse.removeSync(writeJsonOutputDebuggingDirectory);
         if (!useLocalNarrativeFiles) {
@@ -123,7 +131,7 @@ var collect = function () {
           AQList_xml = res.body.toString();
         } catch (err) {
           var backupRawXmlFileName = __dirname + '/../data/backup/AQList.xml';
-          logger.error('\n ', __filename, 'line', __line, '; Error: ', err, '; reading stored backup file:', backupRawXmlFileName);
+          logger.error(__filename, 'line', __line, '; Error: ', err, '; reading stored backup file:', backupRawXmlFileName);
           AQList_xml = fse.readFileSync(backupRawXmlFileName, fsOptions); //, function (err, data) {
         }
         if (consoleLog) {
@@ -626,6 +634,8 @@ var collect = function () {
 
       // read each narrative file from local storage using 'narrativeFileName' from the data file
       // parse the narratives
+// narrative file names must have 10 characters, not counting the '.shtml' extension
+
       function (callback) {
         var readNarrativeFileNameAndPath, narrative, node, nodeNarrFileName;
         logger.debug(__filename, 'line', __line, '; function #:', ++functionCount, '; ');
@@ -641,17 +651,17 @@ var collect = function () {
           if (node.noLongerListed === 1) {
             logger.debug(__filename, 'line', __line, '; node.nodeNumber = ', node.nodeNumber, 'node.name = ', node.name, ' is no longer listed as a sanction party');
           } // else {
-            nodeNarrFileName = node.narrativeFileName;
+          nodeNarrFileName = node.narrativeFileName;
           if (nodeNarrFileName === 'NSQE4601E.shtml') {
             logger.error(__filename, 'line', __line, '; nodeNarrFileName.length = ', nodeNarrFileName.length, '; node.nodeNumber = ', node.nodeNumber, 'node.name = ', node.name, ' malformed narrative file name');
           }
 
-            readNarrativeFileNameAndPath = __dirname + '/../data/narrative_summaries/' + nodeNarrFileName;
-            try {
-              narrative = fse.readFileSync(readNarrativeFileNameAndPath, fsOptions); //, fsOptions); //, function (err, data) {
-            } catch (err) {
-              logger.error('\n ', __filename, 'line', __line, '; Error: ', err, ';\n nodeNarrFileName = ', nodeNarrFileName, '; \nreadNarrativeFileNameAndPath = ', readNarrativeFileNameAndPath, '; node.noLongerListed = ', node.noLongerListed);
-            }
+          readNarrativeFileNameAndPath = __dirname + '/../data/narrative_summaries/' + nodeNarrFileName;
+          try {
+            narrative = fse.readFileSync(readNarrativeFileNameAndPath, fsOptions); //, fsOptions); //, function (err, data) {
+          } catch (err) {
+            logger.error('\n ', __filename, 'line', __line, '; Error reading narrativeFileName: ', err, ';\n nodeNarrFileName = ', nodeNarrFileName, '; \nreadNarrativeFileNameAndPath = ', readNarrativeFileNameAndPath, '; node.noLongerListed = ', node.noLongerListed);
+          }
           // }
           addConnectionIdsArrayFromNarrative(node, narrative);
         }
@@ -800,6 +810,27 @@ var collect = function () {
            }
            */
         }
+        var compare = function (nodeA, nodeB) {
+          return nodeA.linkCount - nodeB.linkCount;
+        };
+        nodes.sort(compare);
+//        list.sort();
+//        for(var i=0;i<list.length  ;i++){
+        //        console.log(list[i]);
+        //    }
+        // What is perhaps slightly less well known is that the sort method can also take an optional function which it will use to compare the values of the array. This function is defined as:
+        //  function(a,b)
+        // and it has to return a negative value if a<b, 0 if a==b and a positive value if a>b.
+        // For example:
+        /*
+         var compare = function(a,b){
+         return a.length-b.length;
+         }
+         used in
+         list.sort(compare);
+
+         */
+
         callback();
       },
 
@@ -916,6 +947,14 @@ var syncWriteFileAQListXML = function (data, localFileNameAndPath) {
 // write to json file: narrativeUrlsArrayLocalFileNameAndPath
 
 var syncParseHtmlListPage = function (htmlString, indivOrEntityString) {
+  logger.debug(__filename, ' line ', __line, '; running syncParseHtmlListPage (htmlString = ', htmlString.substring(0,100), ', indivOrEntityString = ', indivOrEntityString, ')');
+  if ((typeof htmlString === 'null') || (typeof htmlString === 'undefined')) {
+    throw {
+      name: 'MissingParameterError',
+      message: '; Parameter \'htmlString\' = ' + htmlString
+    };
+    logger.error(__filename, ' line ', __line, 'Error: parameter htmlString missing');
+  }
 
   if (utilities_aq_viz.errorPageReturned(htmlString)) {
     logger.error(__filename, ' line ', __line, 'Error: PageNotFoundError; Server returned: Error: Page Not Found');
@@ -962,7 +1001,7 @@ var syncParseHtmlListPage = function (htmlString, indivOrEntityString) {
                 // if  ((typeof paragraph[0] !== 'null')  && (typeof paragraph[0] !== 'undefined')) {
 //                var ch0 = '';
 //                var pp0 = '';
-                  rawId = paragraph[0].children[0].data;
+                rawId = paragraph[0].children[0].data;
 //                pp0 = paragraph[0]; //.children[0].data;
 //                ch0 = pp0.children[0]; // .data;
 //                rawId = ch0.data; // paragraph[0].children[0].data;
@@ -971,11 +1010,11 @@ var syncParseHtmlListPage = function (htmlString, indivOrEntityString) {
 //                rawId = '';
 //                cleanId = '';
 //                pp0 = '';
- //               ch0 = '';
+                //               ch0 = '';
                 // }
               } catch (err) {
 
-                logger.error(__filename, 'line', __line, ' Error: ', err);
+                logger.error(__filename, 'line', __line, ' Error: ', err, '; rawId = ', rawId);
               }
             }
           }
@@ -1216,10 +1255,14 @@ var addConnectionIdsArrayFromNarrative = function (node, narrative) {
             '; node.name = ', node.name, '; has ', linkRegexMatch.length, 'link regex matches from Narrative');
         }
         // LOOP THROUGH EACH REGEX MATCH
-        for (var linkFromNarrativeNumber = 0; linkFromNarrativeNumber < linkRegexMatch.length; linkFromNarrativeNumber++) {
-          if (linkRegexMatch[linkFromNarrativeNumber] !== node.id) {
-            node.connectionIdsFromNarrativeSet.add(linkRegexMatch[linkFromNarrativeNumber]);
+        try {
+          for (var linkFromNarrativeNumber = 0; linkFromNarrativeNumber < linkRegexMatch.length; linkFromNarrativeNumber++) {
+            if (linkRegexMatch[linkFromNarrativeNumber] !== node.id) {
+              node.connectionIdsFromNarrativeSet.add(linkRegexMatch[linkFromNarrativeNumber]);
+            }
           }
+        } catch (err) {
+          logger.error(__filename, 'line', __line, '; Error: ', err);
         }
         node.connectionIdsFromNarrativeSet.forEach(function (uniqueConnectionIdFromNarrative) {
           node.connectedToIdFromNarrativeArray.push(uniqueConnectionIdFromNarrative);

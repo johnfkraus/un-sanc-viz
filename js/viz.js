@@ -277,13 +277,17 @@ Network = function () {
     searchRegEx = new RegExp(searchTermName, "i"); // .toLowerCase());
     return node.each(function (d) {
       var element, match;
+      d.radius = 44;
       element = d3.select(this);
+      element.r = '44'; // = d3.select(this);
       match = d.name
         .search(searchRegEx);
       if (searchTermName.length > 0 && match >= 0) {
         element.style("fill", "#F38630")
           .style("stroke-width", 2.0)
-          .style("stroke", "#555");
+          .style("stroke", "#555")
+          .r === "44";
+
         return d.searched = true;
       } else {
         d.searched = false;
@@ -397,24 +401,36 @@ Network = function () {
     return update();
   };
 
-//  called once to clean up raw data and switch links to point to node instances.  Returns modified data
+  // called once to clean up raw data and switch links to point to node instances.  Returns modified data
   setupData = function (data) {
     // initialize circle radius scale
     // parseInt( stringToParse, 10 );
     // countExtent = d3.extent(data.nodes, (d) -> d.playcount)
+
+
+
     var circleRadius, count, countExtent, nodesMap;
     var result;
+
+    // countExtent is an Array with value 1 = minimum link count (0) and value 2 = maximum link count;
+//    console.log('$(\'#max_radius_select\').val() = ', $('#max_radius_select').val());
+//    console.log('circleRadius = ', circleRadius);
+
+
+    // d is a sanctioned node from the array 'nodes' in the Object 'data'.  d has a 'radius' among its properties
+
     countExtent = d3.extent(data.nodes, function (d) {
       //result = parseInt(d.linkCount, 10);
-      result = parseInt(d.linkCount, 10);
+      result = parseInt(d.linkCount, 10); // 10 is merely the radix; we are using decimal, base 10
+      // if the node has 4 links, the radius is set to 4, a number, not a string representation of  anumber
       d.radius = d.linkCount;
       return parseInt(d.linkCount, 10);
     });
 
-    maxRadiusSelect = $('#max_radius_select').val()
+    maxRadiusSelect = parseInt($('#max_radius_select').val());
 
     circleRadius = d3.scale.sqrt()
-      .range([3, $('#max_radius_select').val()]) // 25]) //12])
+      .range([3, parseInt($('#max_radius_select').val())])
       .domain(countExtent);
 // countExtent is an Array with value 1 = minimum link count (0) and value 2 = maximum link count;
 //    console.log('$(\'#max_radius_select\').val() = ', $('#max_radius_select').val());
@@ -431,6 +447,10 @@ Network = function () {
       //return n.radius = circleRadius(n.linkCount);
       // return n.radius = (n.linkCount);
       // determine radius of each node circle
+
+      var circleRadiusResult = circleRadius(Math.pow(n.linkCount * 3, 0.9));
+      console.log('n.id = ', n.id, '; n.linkCount = ', n.linkCount, '; circleRadius(Math.pow(n.linkCount * 3, 0.9)) = ', circleRadius(Math.pow(n.linkCount * 3, 0.9)));
+
       return n.radius = circleRadius(Math.pow(n.linkCount * 3, 0.9));
     });
     // id's -> node objects
@@ -466,6 +486,11 @@ Network = function () {
   setupData2 = function (data) {
     var circleRadius, count, countExtent, nodesMap;
     var result;
+
+    // countExtent is an Array with value 1 = minimum link count (0) and value 2 = maximum link count;
+//    console.log('$(\'#max_radius_select\').val() = ', $('#max_radius_select').val());
+//    console.log('circleRadius = ', circleRadius);
+
     countExtent = d3.extent(data.nodes, function (d) {
       //result = parseInt(d.linkCount, 10);
       result = parseInt(d.linkCount, 10);
@@ -663,19 +688,7 @@ Network = function () {
         return d.y;
       })
       .attr("r", function (d) {
-
-        radius2 = function () {
-          maxRadius = $('#max_radius_select').val();
-          return (d3.scale.sqrt().range([3, maxRadius]))();
-        };
-        console.log('d.radius = ', d.radius, '; maxRadiusSelect = ', maxRadiusSelect, "; d.linkCount = ", d.linkCount, '; d.radius = ', d.radius, '; maxRadius = ', maxRadius, '; radius2() = ', radius2());
-
-//       circleRadius = d3.scale.sqrt()
-//          .range([3, $('#max_radius_select').val()]) // 25]) //12])
-
-        return (radius2());
-
-        // return (d.radius);
+        return (d.radius);
       })
       .style("fill", function (d) {
         return nodeColors(d[$('#node_color_select').val()]);
