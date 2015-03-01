@@ -60,77 +60,45 @@
    "id": "QI.A.12.01",
    "nodeNumber": 1,
    "name": "NASHWAN ABD AL-RAZZAQ ABD AL-BAQI",
-   "natnlty": "Iraqi"
-  },
-  {
-   "DATAID": "111513",
-   "VERSIONNUM": "20",
-   "FIRST_NAME": "ABD AL WAHAB",
-   "SECOND_NAME": "ABD AL HAFIZ",
-   "UN_LIST_TYPE": "Al-Qaida",
-   "REFERENCE_NUMBER": "QI.A.157.04",
-   "LISTED_ON": "2004-03-17T00:00:00",
-   "NAME_ORIGINAL_SCRIPT": "عبد الوهاب عبد الحافظ",
-   "COMMENTS1": "Sentenced in absentia in Italy to 5 years of imprisonment. Arrest warrant issued by the Italian authorities on 19 May 2005. Considered a fugitive from justice by the Italian authorities as of Jun. 2009. Review pursuant to Security Council resolution 1822 (2008) was concluded on 30 Jul. 2009.",
-   "LIST_TYPE": {
-    "VALUE": "UN List"
-   },
-   "LAST_DAY_UPDATED": {
-    "VALUE": [
-     "2004-11-26T00:00:00",
-     "2005-09-09T00:00:00",
-     "2007-12-21T00:00:00",
-     "2010-01-25T00:00:00",
-     "2011-05-16T00:00:00"
-    ]
-   },
-   "INDIVIDUAL_ALIAS": [
+   "natnlty": "Iraqi",
+   "narrativeFileName": "NSQI01201E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [
+    "QE.A.4.01",
+    "QI.A.6.01"
+   ],
+   "connectedToIdFromNarrativeArray": [
+    "QE.A.4.01",
+    "QI.A.6.01"
+   ],
+   "connectionObjectsFromNarrative": [
     {
-     "QUALITY": "Good",
-     "ALIAS_NAME": "Ferdjani Mouloud"
+     "source": "QI.A.12.01",
+     "target": "QE.A.4.01"
     },
     {
-     "QUALITY": "Good",
-     "ALIAS_NAME": "Rabah Di Roma"
-    },
-    {
-     "QUALITY": "Low",
-     "ALIAS_NAME": "Mourad"
-    },
-    {
-     "QUALITY": "Low",
-     "ALIAS_NAME": "Said"
-    },
-    {
-     "QUALITY": "Good",
-     "ALIAS_NAME": "Abdel Wahab Abdelhafid",
-     "DATE_OF_BIRTH": "1968-10-30 00:00:00.0",
-     "COUNTRY_OF_BIRTH": "Algeria"
+     "source": "QI.A.12.01",
+     "target": "QI.A.6.01"
     }
    ],
-   "INDIVIDUAL_ADDRESS": "",
-   "INDIVIDUAL_DATE_OF_BIRTH": {
-    "TYPE_OF_DATE": "Exact",
-    "DATE": "1967-09-07T00:00:00"
-   },
-   "INDIVIDUAL_PLACE_OF_BIRTH": {
-    "CITY": "Algiers",
-    "COUNTRY": "Algeria"
-   },
-   "INDIVIDUAL_DOCUMENT": "",
-   "SORT_KEY": "ABDALHAFIZ ABDALWAHAB",
-   "SORT_KEY_LAST_MOD": "2011-05-16T00:00:00",
-   "noLongerListed": 0,
-   "indiv0OrEnt1": 0,
-   "indivDobString": "6 September 1967 (Exact)",
-   "indivPlaceOfBirthString": "Algiers, Algeria, ",
-   "aliasCount": 5,
-   "indivAliasString": "Ferdjani Mouloud (Good); Rabah Di Roma (Good); Mourad (Low); Said (Low); Abdel Wahab Abdelhafid (Good); ",
-   "lastDateUpdatedCount": 5,
-   "dateUpdatedString": "25 November 2004, 8 September 2005, 20 December 2007, 24 January 2010, 15 May 2011",
-   "id": "QI.A.157.04",
-   "nodeNumber": 2,
-   "name": "ABD AL WAHAB ABD AL HAFIZ"
+   "linkCount": 2
+  },
+  {
+   "name": "Benevolence International Fund  (no longer listed)",
+   "FIRST_NAME": "Benevolence International Fund  (no longer listed)",
+   "id": "QE.B.94.02",
+   "REFERENCE_NUMBER": "QE.B.94.02",
+   "COMMENTS1": "",
+   "indiv0OrEnt1": 1,
+   "noLongerListed": 1,
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 315,
+   "narrativeFileName": "NSQE09402E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "2827788",
@@ -189,7 +157,13 @@
    "id": "QI.A.255.08",
    "nodeNumber": 3,
    "name": "ADIL MUHAMMAD MAHMUD ABD AL-KHALIQ",
-   "natnlty": "Bahraini"
+   "natnlty": "Bahraini",
+   "narrativeFileName": "NSQI25508E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "2959427",
@@ -295,7 +269,13 @@
    "id": "QI.A.289.11",
    "nodeNumber": 4,
    "name": "SAID JAN ‘ABD AL-SALAM",
-   "natnlty": "Afghan"
+   "natnlty": "Afghan",
+   "narrativeFileName": "NSQI28911E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "111533",
@@ -357,7 +337,13 @@
    "id": "QI.A.192.05",
    "nodeNumber": 5,
    "name": "ABD ALLAH MOHAMED RAGAB ABDEL RAHMAN",
-   "natnlty": "Egyptian"
+   "natnlty": "Egyptian",
+   "narrativeFileName": "NSQI19205E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "111449",
@@ -414,7 +400,13 @@
    "id": "QI.A.54.01",
    "nodeNumber": 6,
    "name": "MAJEED ABDUL CHAUDHRY",
-   "natnlty": "Pakistani"
+   "natnlty": "Pakistani",
+   "narrativeFileName": "NSQI05401E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "111395",
@@ -548,7 +540,13 @@
    "id": "QI.A.109.03",
    "nodeNumber": 7,
    "name": "ZULKIFLI ABDUL HIR",
-   "natnlty": "Malaysian"
+   "natnlty": "Malaysian",
+   "narrativeFileName": "NSQI10903E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "111450",
@@ -606,7 +604,13 @@
    "id": "QI.A.200.05",
    "nodeNumber": 8,
    "name": "DIEMAN ABDULKADIR IZZAT",
-   "natnlty": "Iraqi"
+   "natnlty": "Iraqi",
+   "narrativeFileName": "NSQI20005E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "111514",
@@ -656,7 +660,22 @@
    "dateUpdatedString": "25 June 2013",
    "id": "QI.A.18.01",
    "nodeNumber": 9,
-   "name": "ABDUL MANAN AGHA"
+   "name": "ABDUL MANAN AGHA",
+   "narrativeFileName": "NSQI01801E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [
+    "QE.A.4.01"
+   ],
+   "connectedToIdFromNarrativeArray": [
+    "QE.A.4.01"
+   ],
+   "connectionObjectsFromNarrative": [
+    {
+     "source": "QI.A.18.01",
+     "target": "QE.A.4.01"
+    }
+   ],
+   "linkCount": 1
   },
   {
    "DATAID": "2972739",
@@ -767,7 +786,13 @@
    "id": "QI.A.295.11",
    "nodeNumber": 10,
    "name": "MUHAMMAD JIBRIL ABDUL RAHMAN",
-   "natnlty": "Indonesian"
+   "natnlty": "Indonesian",
+   "narrativeFileName": "NSQI29511E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "2786469",
@@ -831,7 +856,13 @@
    "dateUpdatedString": "12 December 2011",
    "id": "QI.A.229.07",
    "nodeNumber": 11,
-   "name": "ALY SOLIMAN MASSOUD ABDUL SAYED"
+   "name": "ALY SOLIMAN MASSOUD ABDUL SAYED",
+   "narrativeFileName": "NSQI22907E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "111451",
@@ -923,7 +954,13 @@
    "id": "QI.A.86.03",
    "nodeNumber": 12,
    "name": "MOHAMAD IQBAL ABDURRAHMAN",
-   "natnlty": "Indonesian"
+   "natnlty": "Indonesian",
+   "narrativeFileName": "NSQI08603E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "2983651",
@@ -994,7 +1031,13 @@
    "id": "QI.A.309.12",
    "nodeNumber": 13,
    "name": "ABDUR REHMAN",
-   "natnlty": "Pakistani"
+   "natnlty": "Pakistani",
+   "narrativeFileName": "NSQI30912E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "2922613",
@@ -1102,7 +1145,13 @@
    "id": "QI.A.285.10",
    "nodeNumber": 14,
    "name": "MUHAMMAD ABDALLAH HASAN ABU-AL-KHAYR",
-   "natnlty": "Saudi Arabian"
+   "natnlty": "Saudi Arabian",
+   "narrativeFileName": "NSQI28510E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "111640",
@@ -1180,7 +1229,13 @@
    "id": "QI.A.130.03",
    "nodeNumber": 15,
    "name": "MOHAMED GHASSAN ALI ABU DHESS",
-   "natnlty": "Jordanian"
+   "natnlty": "Jordanian",
+   "narrativeFileName": "NSQI13003E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "111732",
@@ -1251,7 +1306,13 @@
    "dateUpdatedString": "6 September 2007, 10 March 2010, 27 September 2010, 12 December 2011",
    "id": "QI.A.201.05",
    "nodeNumber": 16,
-   "name": "YASSER MOHAMED ISMAIL ABU SHAWEESH"
+   "name": "YASSER MOHAMED ISMAIL ABU SHAWEESH",
+   "narrativeFileName": "NSQI20105E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "2983821",
@@ -1324,7 +1385,22 @@
    "id": "QI.A.304.12",
    "nodeNumber": 17,
    "name": "MOCHAMMAD ACHWAN",
-   "natnlty": "Indonesian"
+   "natnlty": "Indonesian",
+   "narrativeFileName": "NSQI30412E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [
+    "QI.B.293.11"
+   ],
+   "connectedToIdFromNarrativeArray": [
+    "QI.B.293.11"
+   ],
+   "connectionObjectsFromNarrative": [
+    {
+     "source": "QI.A.304.12",
+     "target": "QI.B.293.11"
+    }
+   ],
+   "linkCount": 1
   },
   {
    "DATAID": "3012677",
@@ -1388,7 +1464,13 @@
    "id": "QI.A.316.13",
    "nodeNumber": 18,
    "name": "IYAD AG GHALI",
-   "natnlty": "Malian"
+   "natnlty": "Malian",
+   "narrativeFileName": "NSQI31613E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "111953",
@@ -1453,7 +1535,13 @@
    "id": "QI.A.203.05",
    "nodeNumber": 19,
    "name": "FARHAD KANABI AHMAD",
-   "natnlty": "Iraqi"
+   "natnlty": "Iraqi",
+   "narrativeFileName": "NSQI20305E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "2762998",
@@ -1517,7 +1605,13 @@
    "id": "QI.A.226.06",
    "nodeNumber": 20,
    "name": "NAJMUDDIN FARAJ AHMAD",
-   "natnlty": "Iraqi"
+   "natnlty": "Iraqi",
+   "narrativeFileName": "NSQI22606E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "2797952",
@@ -1614,7 +1708,13 @@
    "id": "QI.A.237.08",
    "nodeNumber": 21,
    "name": "JABER ABDALLAH JABER AHMAD AL-JALAHMAH",
-   "natnlty": "Kuwaiti"
+   "natnlty": "Kuwaiti",
+   "narrativeFileName": "NSQI23708E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "111498",
@@ -1678,7 +1778,40 @@
    "id": "QI.A.14.01",
    "nodeNumber": 22,
    "name": "TARIQ ANWAR EL SAYED AHMED",
-   "natnlty": "Egyptian"
+   "natnlty": "Egyptian",
+   "narrativeFileName": "NSQI01401E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [
+    "QE.A.4.01",
+    "QE.A.3.01",
+    "QI.A.6.01",
+    "QI.A.17.01"
+   ],
+   "connectedToIdFromNarrativeArray": [
+    "QE.A.4.01",
+    "QE.A.3.01",
+    "QI.A.6.01",
+    "QI.A.17.01"
+   ],
+   "connectionObjectsFromNarrative": [
+    {
+     "source": "QI.A.14.01",
+     "target": "QE.A.4.01"
+    },
+    {
+     "source": "QI.A.14.01",
+     "target": "QE.A.3.01"
+    },
+    {
+     "source": "QI.A.14.01",
+     "target": "QI.A.6.01"
+    },
+    {
+     "source": "QI.A.14.01",
+     "target": "QI.A.17.01"
+    }
+   ],
+   "linkCount": 4
   },
   {
    "DATAID": "111641",
@@ -1742,7 +1875,13 @@
    "id": "QI.A.193.05",
    "nodeNumber": 23,
    "name": "ZAKI EZAT ZAKI AHMED",
-   "natnlty": "Egyptian"
+   "natnlty": "Egyptian",
+   "narrativeFileName": "NSQI19305E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "111733",
@@ -1804,7 +1943,13 @@
    "id": "QI.A.161.04",
    "nodeNumber": 24,
    "name": "FARID AIDER",
-   "natnlty": "Algerian"
+   "natnlty": "Algerian",
+   "narrativeFileName": "NSQI16104E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "3002734",
@@ -1858,7 +2003,13 @@
    "id": "QI.A.313.13",
    "nodeNumber": 25,
    "name": "DJAMEL AKKACHA",
-   "natnlty": "Algerian"
+   "natnlty": "Algerian",
+   "narrativeFileName": "NSQI31313E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "111500",
@@ -1927,7 +2078,13 @@
    "id": "QI.A.91.03",
    "nodeNumber": 26,
    "name": "MOHAMED AMINE AKLI",
-   "natnlty": "Algerian"
+   "natnlty": "Algerian",
+   "narrativeFileName": "NSQI09103E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "3152553",
@@ -2026,7 +2183,13 @@
    "id": "QI.A.325.14",
    "nodeNumber": 27,
    "name": "ABOU MOHAMED AL ADNANI",
-   "natnlty": "Iraqi"
+   "natnlty": "Iraqi",
+   "narrativeFileName": "NSQI32514E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "3152437",
@@ -2093,7 +2256,13 @@
    "id": "QI.A.328.14",
    "nodeNumber": 28,
    "name": "HAJJAJ BIN FAHD AL AJMI",
-   "natnlty": "Kuwaiti"
+   "natnlty": "Kuwaiti",
+   "narrativeFileName": "NSQI32814E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "3162065",
@@ -2159,7 +2328,13 @@
    "id": "QI.A.338.14",
    "nodeNumber": 29,
    "name": "SHAFI SULTAN MOHAMMED AL-AJMI",
-   "natnlty": "Kuwaiti"
+   "natnlty": "Kuwaiti",
+   "narrativeFileName": "NSQI33814E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "2797951",
@@ -2251,7 +2426,13 @@
    "id": "QI.A.236.08",
    "nodeNumber": 30,
    "name": "HAMID ABDALLAH AHMAD AL-ALI",
-   "natnlty": "Kuwaiti"
+   "natnlty": "Kuwaiti",
+   "narrativeFileName": "NSQI23608E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "3152863",
@@ -2309,7 +2490,13 @@
    "id": "QI.A.326.14",
    "nodeNumber": 31,
    "name": "HAMID HAMAD HAMID AL-‘ALI",
-   "natnlty": "Kuwaiti"
+   "natnlty": "Kuwaiti",
+   "narrativeFileName": "NSQI32614E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "111734",
@@ -2414,7 +2601,13 @@
    "id": "QI.A.92.03",
    "nodeNumber": 32,
    "name": "MEHREZ BEN MAHMOUD BEN SASSI AL-AMDOUNI",
-   "natnlty": "Tunisian"
+   "natnlty": "Tunisian",
+   "narrativeFileName": "NSQI09203E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "3162066",
@@ -2486,7 +2679,13 @@
    "id": "QI.A.335.14",
    "nodeNumber": 33,
    "name": "‘ABD AL-RAHMAN KHALAF ‘UBAYD JUDAY’ AL-‘ANIZI",
-   "natnlty": "Kuwaiti"
+   "natnlty": "Kuwaiti",
+   "narrativeFileName": "NSQI33514E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "111735",
@@ -2569,7 +2768,22 @@
    "id": "QI.A.60.02",
    "nodeNumber": 34,
    "name": "MOHAMED BEN BELGACEM BEN ABDALLAH AL-AOUADI",
-   "natnlty": "Tunisian"
+   "natnlty": "Tunisian",
+   "narrativeFileName": "NSQI06002E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [
+    "QE.A.143.14"
+   ],
+   "connectedToIdFromNarrativeArray": [
+    "QE.A.143.14"
+   ],
+   "connectionObjectsFromNarrative": [
+    {
+     "source": "QI.A.60.02",
+     "target": "QE.A.143.14"
+    }
+   ],
+   "linkCount": 1
   },
   {
    "DATAID": "2962519",
@@ -2689,7 +2903,13 @@
    "id": "QI.A.291.11",
    "nodeNumber": 35,
    "name": "IBRAHIM HASSAN TALI AL-ASIRI",
-   "natnlty": "Saudi Arabian"
+   "natnlty": "Saudi Arabian",
+   "narrativeFileName": "NSQI29111E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "2913655",
@@ -2774,7 +2994,13 @@
    "natnlty": [
     "United States of America",
     "Yemeni"
-   ]
+   ],
+   "narrativeFileName": "NSQI28310E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "111834",
@@ -2864,7 +3090,13 @@
    "id": "QI.A.93.03",
    "nodeNumber": 37,
    "name": "CHIHEB BEN MOHAMED BEN MOKHTAR AL-AYARI",
-   "natnlty": "Tunisian"
+   "natnlty": "Tunisian",
+   "narrativeFileName": "NSQI09303E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "3169877",
@@ -2940,7 +3172,13 @@
    "id": "QI.A.344.15",
    "nodeNumber": 38,
    "name": "IBRAHIM 'ISA HAJJI MUHAMMAD AL-BAKR",
-   "natnlty": "of Qatar"
+   "natnlty": "of Qatar",
+   "narrativeFileName": "NSQI34415E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "3152650",
@@ -2992,7 +3230,13 @@
    "id": "QI.A.324.14",
    "nodeNumber": 39,
    "name": "ABDUL MOHSEN ABDALLAH IBRAHIM AL CHAREKH",
-   "natnlty": "Saudi Arabian"
+   "natnlty": "Saudi Arabian",
+   "narrativeFileName": "NSQI32414E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "111835",
@@ -3129,7 +3373,13 @@
    "id": "QI.A.138.03",
    "nodeNumber": 40,
    "name": "SAID BEN ABDELHAKIM BEN OMAR AL-CHERIF",
-   "natnlty": "Tunisian"
+   "natnlty": "Tunisian",
+   "narrativeFileName": "NSQI13803E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "2786246",
@@ -3209,7 +3459,13 @@
    "dateUpdatedString": "12 December 2011",
    "id": "QI.A.231.07",
    "nodeNumber": 41,
-   "name": "SALEM NOR ELDIN AMOHAMED AL-DABSKI"
+   "name": "SALEM NOR ELDIN AMOHAMED AL-DABSKI",
+   "narrativeFileName": "NSQI23107E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "111836",
@@ -3263,7 +3519,13 @@
    "dateUpdatedString": "22 December 2008, 10 March 2010, 9 June 2011",
    "id": "QI.A.132.03",
    "nodeNumber": 42,
-   "name": "ASCHRAF AL-DAGMA"
+   "name": "ASCHRAF AL-DAGMA",
+   "narrativeFileName": "NSQI13203E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "2894441",
@@ -3375,7 +3637,13 @@
    "id": "QI.A.278.10",
    "nodeNumber": 43,
    "name": "MUTHANNA HARITH AL-DARI",
-   "natnlty": "Iraqi"
+   "natnlty": "Iraqi",
+   "narrativeFileName": "NSQI27810E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "111837",
@@ -3448,7 +3716,13 @@
    "id": "QI.A.149.03",
    "nodeNumber": 44,
    "name": "NOUREDDINE BEN ALI BEN BELKASSEM AL-DRISSI",
-   "natnlty": "Tunisian"
+   "natnlty": "Tunisian",
+   "narrativeFileName": "NSQI14903E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "111763",
@@ -3535,7 +3809,13 @@
    "id": "QI.A.59.02",
    "nodeNumber": 45,
    "name": "KHALID ABD AL-RAHMAN HAMD AL-FAWAZ",
-   "natnlty": "Saudi Arabian"
+   "natnlty": "Saudi Arabian",
+   "narrativeFileName": "NSQI05902E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 2
   },
   {
    "DATAID": "2760967",
@@ -3587,7 +3867,13 @@
    "id": "QI.A.228.06",
    "nodeNumber": 46,
    "name": "MOHAMMED AL GHABRA",
-   "natnlty": "British"
+   "natnlty": "British",
+   "narrativeFileName": "NSQI22806E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "2968403",
@@ -3683,7 +3969,13 @@
    "id": "QI.A.292.11",
    "nodeNumber": 47,
    "name": "OTHMAN AHMED OTHMAN AL-GHAMDI",
-   "natnlty": "Saudi Arabian"
+   "natnlty": "Saudi Arabian",
+   "narrativeFileName": "NSQI29211E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "3161940",
@@ -3742,7 +4034,13 @@
    "id": "QI.A.332.14",
    "nodeNumber": 48,
    "name": "IBRAHIM SULEIMAN HAMAD AL-HABLAIN",
-   "natnlty": "Saudi Arabian"
+   "natnlty": "Saudi Arabian",
+   "narrativeFileName": "NSQI33214E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "111857",
@@ -3826,7 +4124,13 @@
    "id": "QI.A.160.04",
    "nodeNumber": 49,
    "name": "FETHI BEN HASSEN BEN SALEM AL-HADDAD",
-   "natnlty": "Tunisian"
+   "natnlty": "Tunisian",
+   "narrativeFileName": "NSQI16004E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "111916",
@@ -3927,7 +4231,13 @@
    "id": "QI.A.140.03",
    "nodeNumber": 50,
    "name": "KAMAL BEN MAOELDI BEN HASSAN AL-HAMRAOUI",
-   "natnlty": "Tunisian"
+   "natnlty": "Tunisian",
+   "narrativeFileName": "NSQI14003E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "2827324",
@@ -4001,7 +4311,13 @@
    "id": "QI.A.254.08",
    "nodeNumber": 51,
    "name": "ABD AL-RAHMAN MUHAMMAD JAFFAR ‘ALI",
-   "natnlty": "Bahraini"
+   "natnlty": "Bahraini",
+   "narrativeFileName": "NSQI25408E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "111917",
@@ -4106,7 +4422,46 @@
    "dateUpdatedString": "1 July 2007, 15 December 2010",
    "id": "QI.A.21.01",
    "nodeNumber": 52,
-   "name": "AHMED MOHAMMED HAMED ALI"
+   "name": "AHMED MOHAMMED HAMED ALI",
+   "narrativeFileName": "NSQI02101E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [
+    "QE.A.4.01",
+    "QI.S.1.01",
+    "QI.E.19.01",
+    "QI.A.23.01",
+    "QI.G.28.01"
+   ],
+   "connectedToIdFromNarrativeArray": [
+    "QE.A.4.01",
+    "QI.S.1.01",
+    "QI.E.19.01",
+    "QI.A.23.01",
+    "QI.G.28.01"
+   ],
+   "connectionObjectsFromNarrative": [
+    {
+     "source": "QI.A.21.01",
+     "target": "QE.A.4.01"
+    },
+    {
+     "source": "QI.A.21.01",
+     "target": "QI.S.1.01"
+    },
+    {
+     "source": "QI.A.21.01",
+     "target": "QI.E.19.01"
+    },
+    {
+     "source": "QI.A.21.01",
+     "target": "QI.A.23.01"
+    },
+    {
+     "source": "QI.A.21.01",
+     "target": "QI.G.28.01"
+    }
+   ],
+   "linkCount": 5
   },
   {
    "DATAID": "111496",
@@ -4162,7 +4517,13 @@
    "dateUpdatedString": "22 July 2008, 9 June 2011",
    "id": "QI.A.154.04",
    "nodeNumber": 53,
-   "name": "SULAIMAN JASSEM SULAIMAN ALI ABO GHAITH"
+   "name": "SULAIMAN JASSEM SULAIMAN ALI ABO GHAITH",
+   "narrativeFileName": "NSQI15404E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "2975516",
@@ -4232,7 +4593,13 @@
    "id": "QI.A.299.11",
    "nodeNumber": 54,
    "name": "IBRAHIM AWWAD IBRAHIM ALI AL-BADRI AL-SAMARRAI",
-   "natnlty": "Iraqi"
+   "natnlty": "Iraqi",
+   "narrativeFileName": "NSQI29911E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "2973988",
@@ -4330,7 +4697,13 @@
    "id": "QI.M.296.11",
    "nodeNumber": 55,
    "name": "MATI UR-REHMAN ALI MUHAMMAD",
-   "natnlty": "Pakistani"
+   "natnlty": "Pakistani",
+   "narrativeFileName": "NSQI29611E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "111918",
@@ -4393,7 +4766,13 @@
    "id": "QI.A.194.05",
    "nodeNumber": 56,
    "name": "MOHAMMED AHMED SHAWKI AL ISLAMBOLLY",
-   "natnlty": "Egyptian"
+   "natnlty": "Egyptian",
+   "narrativeFileName": "NSQI19405E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "3152864",
@@ -4513,7 +4892,13 @@
    "id": "QI.A.327.14",
    "nodeNumber": 57,
    "name": "ABDELRAHMAN MOUHAMAD ZAFIR AL DABIDI AL JAHANI",
-   "natnlty": "Saudi Arabian"
+   "natnlty": "Saudi Arabian",
+   "narrativeFileName": "NSQI32714E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "111784",
@@ -4574,7 +4959,13 @@
    "id": "QI.A.176.04",
    "nodeNumber": 58,
    "name": "IMAD BEN BECHIR BEN HAMDA AL-JAMMALI",
-   "natnlty": "Tunisian"
+   "natnlty": "Tunisian",
+   "narrativeFileName": "NSQI17604E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "3020633",
@@ -4632,7 +5023,13 @@
    "id": "QI.A.317.13",
    "nodeNumber": 59,
    "name": "ABU MOHAMMED AL-JAWLANI",
-   "natnlty": "Syrian"
+   "natnlty": "Syrian",
+   "narrativeFileName": "NSQI31713E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 1
   },
   {
    "DATAID": "111902",
@@ -4679,7 +5076,13 @@
    "id": "QI.A.58.02",
    "nodeNumber": 60,
    "name": "ABU BAKR AL-JAZIRI",
-   "natnlty": "Algerian"
+   "natnlty": "Algerian",
+   "narrativeFileName": "NSQI05802E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "112016",
@@ -4739,7 +5142,13 @@
    "id": "QI.A.71.02",
    "nodeNumber": 61,
    "name": "RIADH BEN BELKASSEM BEN MOHAMED AL-JELASSI",
-   "natnlty": "Tunisian"
+   "natnlty": "Tunisian",
+   "narrativeFileName": "NSQI07102E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "112017",
@@ -4812,7 +5221,13 @@
    "id": "QI.A.101.03",
    "nodeNumber": 62,
    "name": "FAOUZI BEN MOHAMED BEN AHMED AL-JENDOUBI",
-   "natnlty": "Tunisian"
+   "natnlty": "Tunisian",
+   "narrativeFileName": "NSQI10103E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "3162146",
@@ -4895,7 +5310,13 @@
    "id": "QI.A.337.14",
    "nodeNumber": 63,
    "name": "MAYSAR ALI MUSA ABDALLAH AL-JUBURI",
-   "natnlty": "Iraqi"
+   "natnlty": "Iraqi",
+   "narrativeFileName": "NSQI33714E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "3026942",
@@ -5017,7 +5438,13 @@
    "id": "QI.A.318.13",
    "nodeNumber": 64,
    "name": "MUHAMMAD JAMAL ABD-AL RAHIM AHMAD AL-KASHIF",
-   "natnlty": "Egyptian"
+   "natnlty": "Egyptian",
+   "narrativeFileName": "NSQI31813E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 1
   },
   {
    "DATAID": "2786785",
@@ -5148,7 +5575,13 @@
    "id": "QI.A.233.07",
    "nodeNumber": 65,
    "name": "FAHD MUHAMMAD 'ABD AL-'AZIZ AL-KHASHIBAN",
-   "natnlty": "Saudi Arabian"
+   "natnlty": "Saudi Arabian",
+   "narrativeFileName": "NSQI23307E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "111925",
@@ -5218,7 +5651,13 @@
    "id": "QI.A.170.04",
    "nodeNumber": 66,
    "name": "HACENE ALLANE",
-   "natnlty": "Algerian"
+   "natnlty": "Algerian",
+   "narrativeFileName": "NSQI17004E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "111785",
@@ -5282,7 +5721,13 @@
    "id": "QI.A.177.04",
    "nodeNumber": 67,
    "name": "HABIB BEN AHMED AL-LOUBIRI",
-   "natnlty": "Tunisian"
+   "natnlty": "Tunisian",
+   "narrativeFileName": "NSQI17704E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "111920",
@@ -5360,7 +5805,13 @@
    "id": "QI.A.74.02",
    "nodeNumber": 68,
    "name": "TAREK BEN HABIB BEN AL-TOUMI AL-MAAROUFI",
-   "natnlty": "Tunisian"
+   "natnlty": "Tunisian",
+   "narrativeFileName": "NSQI07402E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "3029127",
@@ -5459,7 +5910,13 @@
    "id": "QI.A.320.13",
    "nodeNumber": 69,
    "name": "ABD-AL-HAMID AL-MASLI",
-   "natnlty": "Libyan"
+   "natnlty": "Libyan",
+   "narrativeFileName": "NSQI32013E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "3161939",
@@ -5536,7 +5993,13 @@
    "id": "QI.A.330.14",
    "nodeNumber": 70,
    "name": "AZZAM ABDULLAH ZUREIK AL-MAULID AL-SUBHI",
-   "natnlty": "Saudi Arabian"
+   "natnlty": "Saudi Arabian",
+   "narrativeFileName": "NSQI33014E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "2892251",
@@ -5595,7 +6058,13 @@
    "dateUpdatedString": "",
    "id": "QI.A.276.10",
    "nodeNumber": 71,
-   "name": "AKRAM TURKI HISHAN AL-MAZIDIH"
+   "name": "AKRAM TURKI HISHAN AL-MAZIDIH",
+   "narrativeFileName": "NSQI27610E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "2892252",
@@ -5658,7 +6127,13 @@
    "dateUpdatedString": "",
    "id": "QI.A.277.10",
    "nodeNumber": 72,
-   "name": "GHAZY FEZZA HISHAN AL-MAZIDIH"
+   "name": "GHAZY FEZZA HISHAN AL-MAZIDIH",
+   "narrativeFileName": "NSQI27710E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "3162145",
@@ -5745,7 +6220,13 @@
    "dateUpdatedString": "",
    "id": "QI.A.334.14",
    "nodeNumber": 73,
-   "name": "‘ABD AL-RAHMAN BIN ‘UMAYR AL-NU’AYMI"
+   "name": "‘ABD AL-RAHMAN BIN ‘UMAYR AL-NU’AYMI",
+   "narrativeFileName": "NSQI33414E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "113223",
@@ -5807,7 +6288,13 @@
    "id": "QI.T.76.02",
    "nodeNumber": 74,
    "name": "ISAM ALI MOHAMED ALOUCHE",
-   "natnlty": "Jordanian"
+   "natnlty": "Jordanian",
+   "narrativeFileName": "NSQI07602E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "2863393",
@@ -5894,7 +6381,13 @@
    "id": "QI.A.273.09",
    "nodeNumber": 75,
    "name": "FAZEEL-A-TUL SHAYKH ABU MOHAMMED AMEEN AL-PESHAWARI",
-   "natnlty": "Afghan"
+   "natnlty": "Afghan",
+   "narrativeFileName": "NSQI27309E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "3161941",
@@ -5993,7 +6486,13 @@
    "id": "QI.A.339.14",
    "nodeNumber": 76,
    "name": "‘ABD AL-RAHMAN MUHAMMAD MUSTAFA AL-QADULI",
-   "natnlty": "Iraqi"
+   "natnlty": "Iraqi",
+   "narrativeFileName": "NSQI33914E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "2903810",
@@ -6075,7 +6574,13 @@
    "id": "QI.A.282.10",
    "nodeNumber": 77,
    "name": "QASIM YAHYA MAHDI AL-RIMI",
-   "natnlty": "Yemeni"
+   "natnlty": "Yemeni",
+   "narrativeFileName": "NSQI28210E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "111786",
@@ -6157,7 +6662,52 @@
    "id": "QI.A.23.01",
    "nodeNumber": 78,
    "name": "NAZIH ABDUL HAMED NABIH AL-RUQAI’I",
-   "natnlty": "Libyan"
+   "natnlty": "Libyan",
+   "narrativeFileName": "NSQI02301E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [
+    "QE.A.4.01",
+    "QI.S.1.01",
+    "QI.A.6.01",
+    "QI.E.19.01",
+    "QI.A.21.01",
+    "QI.G.28.01"
+   ],
+   "connectedToIdFromNarrativeArray": [
+    "QE.A.4.01",
+    "QI.S.1.01",
+    "QI.A.6.01",
+    "QI.E.19.01",
+    "QI.A.21.01",
+    "QI.G.28.01"
+   ],
+   "connectionObjectsFromNarrative": [
+    {
+     "source": "QI.A.23.01",
+     "target": "QE.A.4.01"
+    },
+    {
+     "source": "QI.A.23.01",
+     "target": "QI.S.1.01"
+    },
+    {
+     "source": "QI.A.23.01",
+     "target": "QI.A.6.01"
+    },
+    {
+     "source": "QI.A.23.01",
+     "target": "QI.E.19.01"
+    },
+    {
+     "source": "QI.A.23.01",
+     "target": "QI.A.21.01"
+    },
+    {
+     "source": "QI.A.23.01",
+     "target": "QI.G.28.01"
+    }
+   ],
+   "linkCount": 6
   },
   {
    "DATAID": "2881835",
@@ -6286,7 +6836,13 @@
    "id": "QI.A.275.10",
    "nodeNumber": 79,
    "name": "SAID ALI AL-SHIHRI",
-   "natnlty": "Saudi Arabian"
+   "natnlty": "Saudi Arabian",
+   "narrativeFileName": "NSQI27510E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "2827659",
@@ -6372,7 +6928,13 @@
    "dateUpdatedString": "24 January 2010, 14 November 2012, 18 February 2015",
    "id": "QI.A.253.08",
    "nodeNumber": 80,
-   "name": "KHALIFA MUHAMMAD TURKI AL-SUBAIY"
+   "name": "KHALIFA MUHAMMAD TURKI AL-SUBAIY",
+   "narrativeFileName": "NSQI25308E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "2787013",
@@ -6482,7 +7044,13 @@
    "id": "QI.A.234.07",
    "nodeNumber": 81,
    "name": "ABDUL RAHIM AL-TALHI",
-   "natnlty": "Saudi Arabian"
+   "natnlty": "Saudi Arabian",
+   "narrativeFileName": "NSQI23407E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "112022",
@@ -6545,7 +7113,13 @@
    "id": "QI.A.77.02",
    "nodeNumber": 82,
    "name": "AL-AZHAR BEN MOHAMMED BEN EL-ABED AL-TLILI",
-   "natnlty": "Tunisian"
+   "natnlty": "Tunisian",
+   "narrativeFileName": "NSQI07702E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "112023",
@@ -6709,7 +7283,13 @@
    "id": "QI.A.151.03",
    "nodeNumber": 83,
    "name": "MOURAD BEN ALI BEN AL-BASHEER AL-TRABELSI",
-   "natnlty": "Tunisian"
+   "natnlty": "Tunisian",
+   "narrativeFileName": "NSQI15103E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "112024",
@@ -6805,7 +7385,13 @@
    "id": "QI.A.172.04",
    "nodeNumber": 84,
    "name": "HASSAN ABDULLAH HERSI AL-TURKI",
-   "natnlty": "Somali"
+   "natnlty": "Somali",
+   "narrativeFileName": "NSQI17204E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 1
   },
   {
    "DATAID": "2881834",
@@ -6911,7 +7497,13 @@
    "id": "QI.A.274.10",
    "nodeNumber": 85,
    "name": "NASIR 'ABD-AL-KARIM 'ABDULLAH AL-WAHISHI",
-   "natnlty": "Yemeni"
+   "natnlty": "Yemeni",
+   "narrativeFileName": "NSQI27410E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "112026",
@@ -6972,7 +7564,22 @@
    "id": "QI.A.15.01",
    "nodeNumber": 86,
    "name": "MAHFOUZ OULD AL-WALID",
-   "natnlty": "Mauritanian"
+   "natnlty": "Mauritanian",
+   "narrativeFileName": "NSQI01501E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [
+    "QE.A.4.01"
+   ],
+   "connectedToIdFromNarrativeArray": [
+    "QE.A.4.01"
+   ],
+   "connectionObjectsFromNarrative": [
+    {
+     "source": "QI.A.15.01",
+     "target": "QE.A.4.01"
+    }
+   ],
+   "linkCount": 1
   },
   {
    "DATAID": "112027",
@@ -7044,7 +7651,13 @@
    "id": "QI.A.104.03",
    "nodeNumber": 87,
    "name": "NAJIB BEN MOHAMED BEN SALEM AL-WAZ",
-   "natnlty": "Tunisian"
+   "natnlty": "Tunisian",
+   "narrativeFileName": "NSQI10403E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "3162382",
@@ -7123,7 +7736,13 @@
    "id": "QI.A.329.14",
    "nodeNumber": 88,
    "name": "AHMED ABDULLAH SALEH AL-KHAZMARI AL-ZAHRANI",
-   "natnlty": "Saudi Arabian"
+   "natnlty": "Saudi Arabian",
+   "narrativeFileName": "NSQI32914E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "111923",
@@ -7251,7 +7870,52 @@
    "id": "QI.A.6.01",
    "nodeNumber": 89,
    "name": "AIMAN MUHAMMED RABI AL-ZAWAHIRI",
-   "natnlty": "Egyptian"
+   "natnlty": "Egyptian",
+   "narrativeFileName": "NSQI00601E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [
+    "QE.A.4.01",
+    "QE.A.3.01",
+    "QI.A.14.01",
+    "QE.M.136.13",
+    "QI.A.317.13",
+    "QI.A.318.13"
+   ],
+   "connectedToIdFromNarrativeArray": [
+    "QE.A.4.01",
+    "QE.A.3.01",
+    "QI.A.14.01",
+    "QE.M.136.13",
+    "QI.A.317.13",
+    "QI.A.318.13"
+   ],
+   "connectionObjectsFromNarrative": [
+    {
+     "source": "QI.A.6.01",
+     "target": "QE.A.4.01"
+    },
+    {
+     "source": "QI.A.6.01",
+     "target": "QE.A.3.01"
+    },
+    {
+     "source": "QI.A.6.01",
+     "target": "QI.A.14.01"
+    },
+    {
+     "source": "QI.A.6.01",
+     "target": "QE.M.136.13"
+    },
+    {
+     "source": "QI.A.6.01",
+     "target": "QI.A.317.13"
+    },
+    {
+     "source": "QI.A.6.01",
+     "target": "QI.A.318.13"
+    }
+   ],
+   "linkCount": 12
   },
   {
    "DATAID": "111924",
@@ -7324,7 +7988,13 @@
    "id": "QI.A.156.04",
    "nodeNumber": 90,
    "name": "ABD-AL-MAJID AZIZ AL-ZINDANI",
-   "natnlty": "Yemeni"
+   "natnlty": "Yemeni",
+   "narrativeFileName": "NSQI15604E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "112028",
@@ -7415,7 +8085,13 @@
    "id": "QI.A.152.03",
    "nodeNumber": 91,
    "name": "SAIFI AMMARI",
-   "natnlty": "Algerian"
+   "natnlty": "Algerian",
+   "narrativeFileName": "NSQI15203E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "111790",
@@ -7474,7 +8150,13 @@
    "id": "QI.A.216.06",
    "nodeNumber": 92,
    "name": "ABDULLAH ANSHORI",
-   "natnlty": "Indonesian"
+   "natnlty": "Indonesian",
+   "narrativeFileName": "NSQI21606E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "3152862",
@@ -7546,7 +8228,13 @@
    "id": "QI.A.323.14",
    "nodeNumber": 93,
    "name": "SAID ARIF",
-   "natnlty": "Algerian"
+   "natnlty": "Algerian",
+   "narrativeFileName": "NSQI32314E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "111704",
@@ -7624,7 +8312,13 @@
    "id": "QI.A.184.05",
    "nodeNumber": 94,
    "name": "MUHSIN FADHIL AYED ASHOUR AL-FADHLI",
-   "natnlty": "Kuwaiti"
+   "natnlty": "Kuwaiti",
+   "narrativeFileName": "NSQI18405E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "2832890",
@@ -7714,7 +8408,13 @@
    "id": "QI.A.265.08",
    "nodeNumber": 95,
    "name": "HAJI MUHAMMAD ASHRAF",
-   "natnlty": "Pakistani"
+   "natnlty": "Pakistani",
+   "narrativeFileName": "NSQI26508E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "111944",
@@ -7826,7 +8526,94 @@
    "id": "QI.D.42.01",
    "nodeNumber": 96,
    "name": "HASSAN DAHIR AWEYS",
-   "natnlty": "Somali"
+   "natnlty": "Somali",
+   "narrativeFileName": "NSQI04201E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [
+    "QE.A.4.01",
+    "QE.A.2.01",
+    "QI.A.172.04",
+    "QE.A.6.01",
+    "QE.A.3.01",
+    "QE.T.14.01",
+    "QE.L.11.01",
+    "QE.I.9.01",
+    "QE.R.70.02",
+    "QE.A.72.02",
+    "QE.A.105.04",
+    "QE.A.106.04",
+    "QE.A.113.04"
+   ],
+   "connectedToIdFromNarrativeArray": [
+    "QE.A.4.01",
+    "QE.A.2.01",
+    "QI.A.172.04",
+    "QE.A.6.01",
+    "QE.A.3.01",
+    "QE.T.14.01",
+    "QE.L.11.01",
+    "QE.I.9.01",
+    "QE.R.70.02",
+    "QE.A.72.02",
+    "QE.A.105.04",
+    "QE.A.106.04",
+    "QE.A.113.04"
+   ],
+   "connectionObjectsFromNarrative": [
+    {
+     "source": "QI.D.42.01",
+     "target": "QE.A.4.01"
+    },
+    {
+     "source": "QI.D.42.01",
+     "target": "QE.A.2.01"
+    },
+    {
+     "source": "QI.D.42.01",
+     "target": "QI.A.172.04"
+    },
+    {
+     "source": "QI.D.42.01",
+     "target": "QE.A.6.01"
+    },
+    {
+     "source": "QI.D.42.01",
+     "target": "QE.A.3.01"
+    },
+    {
+     "source": "QI.D.42.01",
+     "target": "QE.T.14.01"
+    },
+    {
+     "source": "QI.D.42.01",
+     "target": "QE.L.11.01"
+    },
+    {
+     "source": "QI.D.42.01",
+     "target": "QE.I.9.01"
+    },
+    {
+     "source": "QI.D.42.01",
+     "target": "QE.R.70.02"
+    },
+    {
+     "source": "QI.D.42.01",
+     "target": "QE.A.72.02"
+    },
+    {
+     "source": "QI.D.42.01",
+     "target": "QE.A.105.04"
+    },
+    {
+     "source": "QI.D.42.01",
+     "target": "QE.A.106.04"
+    },
+    {
+     "source": "QI.D.42.01",
+     "target": "QE.A.113.04"
+    }
+   ],
+   "linkCount": 13
   },
   {
    "DATAID": "2813253",
@@ -7906,7 +8693,13 @@
    "dateUpdatedString": "12 December 2011",
    "id": "QI.A.248.08",
    "nodeNumber": 97,
-   "name": "RICARDO PEREZ AYERAS"
+   "name": "RICARDO PEREZ AYERAS",
+   "narrativeFileName": "NSQI24808E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "2983638",
@@ -7967,7 +8760,13 @@
    "id": "QI.B.305.12",
    "nodeNumber": 98,
    "name": "ABDUL ROSYID RIDHO BA’ASYIR",
-   "natnlty": "Indonesian"
+   "natnlty": "Indonesian",
+   "narrativeFileName": "NSQI30512E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "111792",
@@ -8026,7 +8825,13 @@
    "id": "QI.B.217.06",
    "nodeNumber": 99,
    "name": "ABU BAKAR BA'ASYIR",
-   "natnlty": "Indonesian"
+   "natnlty": "Indonesian",
+   "narrativeFileName": "NSQI21706E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "2971675",
@@ -8143,7 +8948,13 @@
    "id": "QI.B.293.11",
    "nodeNumber": 100,
    "name": "ABDUL RAHIM BA'AYSIR",
-   "natnlty": "Indonesian"
+   "natnlty": "Indonesian",
+   "narrativeFileName": "NSQI29311E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 1
   },
   {
    "DATAID": "112030",
@@ -8224,7 +9035,13 @@
    "id": "QI.B.80.02",
    "nodeNumber": 101,
    "name": "SAID BAHAJI",
-   "natnlty": "German"
+   "natnlty": "German",
+   "narrativeFileName": "NSQI08002E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "2832991",
@@ -8297,7 +9114,13 @@
    "id": "QI.B.266.08",
    "nodeNumber": 102,
    "name": "MAHMOUD MOHAMMAD AHMED BAHAZIQ",
-   "natnlty": "Saudi Arabian"
+   "natnlty": "Saudi Arabian",
+   "narrativeFileName": "NSQI26608E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "2999481",
@@ -8376,7 +9199,13 @@
    "natnlty": [
     "Uzbek",
     "Afghan"
-   ]
+   ],
+   "narrativeFileName": "NSQI31112E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "112032",
@@ -8464,7 +9293,13 @@
    "id": "QI.B.55.01",
    "nodeNumber": 104,
    "name": "MAHMOOD SULTAN BASHIR-UD-DIN",
-   "natnlty": "Pakistani"
+   "natnlty": "Pakistani",
+   "narrativeFileName": "NSQI05501E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "3169878",
@@ -8576,7 +9411,13 @@
    "id": "QI.B.345.15",
    "nodeNumber": 105,
    "name": "TARKHAN TAYUMURAZOVICH BATIRASHVILI",
-   "natnlty": "Georgian"
+   "natnlty": "Georgian",
+   "narrativeFileName": "NSQI34515E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "2902221",
@@ -8633,7 +9474,13 @@
    "id": "QI.B.279.10",
    "nodeNumber": 106,
    "name": "MOHAMED BELKALEM",
-   "natnlty": "Algerian"
+   "natnlty": "Algerian",
+   "narrativeFileName": "NSQI27910E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "111794",
@@ -8730,7 +9577,13 @@
    "id": "QI.B.136.03",
    "nodeNumber": 107,
    "name": "MOKHTAR BELMOKHTAR",
-   "natnlty": "Algerian"
+   "natnlty": "Algerian",
+   "narrativeFileName": "NSQI13603E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "3162144",
@@ -8805,7 +9658,13 @@
    "id": "QI.B.333.14",
    "nodeNumber": 108,
    "name": "SEIFALLAH BEN HASSINE",
-   "natnlty": "Tunisian"
+   "natnlty": "Tunisian",
+   "narrativeFileName": "NSQI33314E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "2983834",
@@ -8887,7 +9746,13 @@
    "id": "QI.B.307.12",
    "nodeNumber": 109,
    "name": "HAFIZ ABDUL SALAM BHUTTAVI",
-   "natnlty": "Pakistani"
+   "natnlty": "Pakistani",
+   "narrativeFileName": "NSQI30712E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "111943",
@@ -9004,7 +9869,13 @@
    "id": "QI.B.81.02",
    "nodeNumber": 110,
    "name": "RAMZI MOHAMED ABDULLAH BINALSHIBH",
-   "natnlty": "Yemeni"
+   "natnlty": "Yemeni",
+   "narrativeFileName": "NSQI08102E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "111942",
@@ -9039,7 +9910,28 @@
    "dateUpdatedString": "",
    "id": "QI.B.9.01",
    "nodeNumber": 111,
-   "name": "BILAL BIN MARWAN"
+   "name": "BILAL BIN MARWAN",
+   "narrativeFileName": "NSQI00901E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [
+    "QE.A.4.01",
+    "QE.I.99.03"
+   ],
+   "connectedToIdFromNarrativeArray": [
+    "QE.A.4.01",
+    "QE.I.99.03"
+   ],
+   "connectionObjectsFromNarrative": [
+    {
+     "source": "QI.B.9.01",
+     "target": "QE.A.4.01"
+    },
+    {
+     "source": "QI.B.9.01",
+     "target": "QE.I.99.03"
+    }
+   ],
+   "linkCount": 2
   },
   {
    "DATAID": "112034",
@@ -9113,7 +10005,13 @@
    "id": "QI.B.63.02",
    "nodeNumber": 112,
    "name": "AL-MOKHTAR BEN MOHAMED BEN AL-MOKHTAR BOUCHOUCHA",
-   "natnlty": "Tunisian"
+   "natnlty": "Tunisian",
+   "narrativeFileName": "NSQI06302E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "111798",
@@ -9174,7 +10072,13 @@
    "id": "QI.B.188.05",
    "nodeNumber": 113,
    "name": "FAYCAL BOUGHANEMI",
-   "natnlty": "Tunisian"
+   "natnlty": "Tunisian",
+   "narrativeFileName": "NSQI18805E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "111799",
@@ -9248,7 +10152,13 @@
    "id": "QI.B.143.03",
    "nodeNumber": 114,
    "name": "HAMADI BEN ABDUL AZIZ BEN ALI BOUYEHIA",
-   "natnlty": "Tunisian"
+   "natnlty": "Tunisian",
+   "narrativeFileName": "NSQI14303E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "2999482",
@@ -9318,7 +10228,13 @@
    "id": "QI.C.312.12",
    "nodeNumber": 115,
    "name": "AAMIR ALI CHAUDHRY",
-   "natnlty": "Pakistani"
+   "natnlty": "Pakistani",
+   "narrativeFileName": "NSQI31212E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "111800",
@@ -9380,7 +10296,13 @@
    "id": "QI.C.70.02",
    "nodeNumber": 116,
    "name": "YASSINE CHEKKOURI",
-   "natnlty": "Moroccan"
+   "natnlty": "Moroccan",
+   "narrativeFileName": "NSQI07002E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "2982105",
@@ -9455,7 +10377,13 @@
    "natnlty": [
     "German",
     "Moroccan"
-   ]
+   ],
+   "narrativeFileName": "NSQI30012E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "2981652",
@@ -9530,7 +10458,13 @@
    "natnlty": [
     "German",
     "Moroccan"
-   ]
+   ],
+   "narrativeFileName": "NSQI30112E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "112035",
@@ -9598,7 +10532,13 @@
    "id": "QI.C.141.03",
    "nodeNumber": 119,
    "name": "MAXAMED CABDULLAAH CIISE",
-   "natnlty": "Somali"
+   "natnlty": "Somali",
+   "narrativeFileName": "NSQI14103E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "3170021",
@@ -9659,7 +10599,34 @@
    "id": "QI.C.347.15",
    "nodeNumber": 120,
    "name": "DENIS MAMADOU GERHARD CUSPERT",
-   "natnlty": "German"
+   "natnlty": "German",
+   "narrativeFileName": "NSQI34715E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [
+    "QE.J.115.04",
+    "QE.A.137.14",
+    "QE.A.4.01"
+   ],
+   "connectedToIdFromNarrativeArray": [
+    "QE.J.115.04",
+    "QE.A.137.14",
+    "QE.A.4.01"
+   ],
+   "connectionObjectsFromNarrative": [
+    {
+     "source": "QI.C.347.15",
+     "target": "QE.J.115.04"
+    },
+    {
+     "source": "QI.C.347.15",
+     "target": "QE.A.137.14"
+    },
+    {
+     "source": "QI.C.347.15",
+     "target": "QE.A.4.01"
+    }
+   ],
+   "linkCount": 3
   },
   {
    "DATAID": "3162064",
@@ -9715,7 +10682,13 @@
    "id": "QI.D.331.14",
    "nodeNumber": 121,
    "name": "ANDERS CAMEROON OSTENSVIG DALE",
-   "natnlty": "Norwegian"
+   "natnlty": "Norwegian",
+   "narrativeFileName": "NSQI33114E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "2816243",
@@ -9775,7 +10748,13 @@
    "id": "QI.D.252.08",
    "nodeNumber": 122,
    "name": "AHMED DEGHDEGH",
-   "natnlty": "Algerian"
+   "natnlty": "Algerian",
+   "narrativeFileName": "NSQI25208E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "2813036",
@@ -9857,7 +10836,13 @@
    "dateUpdatedString": "2 June 2009, 12 December 2011",
    "id": "QI.D.246.08",
    "nodeNumber": 123,
-   "name": "REDENDO CAIN DELLOSA"
+   "name": "REDENDO CAIN DELLOSA",
+   "narrativeFileName": "NSQI24608E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "2813147",
@@ -9917,7 +10902,13 @@
    "dateUpdatedString": "2 June 2009, 12 December 2011",
    "id": "QI.D.243.08",
    "nodeNumber": 124,
-   "name": "FELICIANO SEMBORIO DELOS REYES JR."
+   "name": "FELICIANO SEMBORIO DELOS REYES JR.",
+   "narrativeFileName": "NSQI24308E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "111803",
@@ -9974,7 +10965,13 @@
    "id": "QI.D.164.04",
    "nodeNumber": 125,
    "name": "OTHMAN DERAMCHI",
-   "natnlty": "Algerian"
+   "natnlty": "Algerian",
+   "narrativeFileName": "NSQI16404E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "2813149",
@@ -10058,7 +11055,13 @@
    "dateUpdatedString": "2 June 2009, 12 December 2011",
    "id": "QI.D.245.08",
    "nodeNumber": 126,
-   "name": "PIO ABOGNE DE VERA"
+   "name": "PIO ABOGNE DE VERA",
+   "narrativeFileName": "NSQI24508E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "3162262",
@@ -10111,7 +11114,13 @@
    "id": "QI.D.342.14",
    "nodeNumber": 127,
    "name": "OUMAR DIABY",
-   "natnlty": "Senegalese"
+   "natnlty": "Senegalese",
+   "narrativeFileName": "NSQI34214E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "112037",
@@ -10178,7 +11187,13 @@
    "id": "QI.D.167.04",
    "nodeNumber": 128,
    "name": "KAMEL DJERMANE",
-   "natnlty": "Algerian"
+   "natnlty": "Algerian",
+   "narrativeFileName": "NSQI16704E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "2816344",
@@ -10233,7 +11248,13 @@
    "id": "QI.D.249.08",
    "nodeNumber": 129,
    "name": "YAHIA DJOUADI",
-   "natnlty": "Algerian"
+   "natnlty": "Algerian",
+   "narrativeFileName": "NSQI24908E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "2785476",
@@ -10286,7 +11307,13 @@
    "id": "QI.D.232.07",
    "nodeNumber": 130,
    "name": "ABDELMALEK DROUKDEL",
-   "natnlty": "Algerian"
+   "natnlty": "Algerian",
+   "narrativeFileName": "NSQI23207E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "112038",
@@ -10404,7 +11431,13 @@
    "id": "QI.D.95.03",
    "nodeNumber": 131,
    "name": "LIONEL DUMONT",
-   "natnlty": "French"
+   "natnlty": "French",
+   "narrativeFileName": "NSQI09503E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "112039",
@@ -10457,7 +11490,13 @@
    "id": "QI.D.111.03",
    "nodeNumber": 132,
    "name": "AGUS DWIKARNA",
-   "natnlty": "Indonesian"
+   "natnlty": "Indonesian",
+   "narrativeFileName": "NSQI11103E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "111804",
@@ -10509,7 +11548,13 @@
    "id": "QI.E.169.04",
    "nodeNumber": 133,
    "name": "DHOU EL-AICH",
-   "natnlty": "Algerian"
+   "natnlty": "Algerian",
+   "narrativeFileName": "NSQI16904E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "111947",
@@ -10569,7 +11614,28 @@
    "id": "QI.E.19.01",
    "nodeNumber": 134,
    "name": "ABDULLAH AHMED ABDULLAH EL ALFI",
-   "natnlty": "Egyptian"
+   "natnlty": "Egyptian",
+   "narrativeFileName": "NSQI01901E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [
+    "QE.A.4.01",
+    "QI.G.28.01"
+   ],
+   "connectedToIdFromNarrativeArray": [
+    "QE.A.4.01",
+    "QI.G.28.01"
+   ],
+   "connectionObjectsFromNarrative": [
+    {
+     "source": "QI.E.19.01",
+     "target": "QE.A.4.01"
+    },
+    {
+     "source": "QI.E.19.01",
+     "target": "QI.G.28.01"
+    }
+   ],
+   "linkCount": 5
   },
   {
    "DATAID": "112040",
@@ -10621,7 +11687,13 @@
    "dateUpdatedString": "8 September 2005, 20 December 2007, 15 May 2011",
    "id": "QI.E.142.03",
    "nodeNumber": 135,
-   "name": "RADI ABD EL SAMIE ABOU EL YAZID EL AYASHI"
+   "name": "RADI ABD EL SAMIE ABOU EL YAZID EL AYASHI",
+   "narrativeFileName": "NSQI14203E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "2830919",
@@ -10698,7 +11770,13 @@
    "natnlty": [
     "German",
     "Moroccan"
-   ]
+   ],
+   "narrativeFileName": "NSQI26208E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "111951",
@@ -10761,7 +11839,13 @@
    "id": "QI.E.82.02",
    "nodeNumber": 137,
    "name": "MOUNIR EL MOTASSADEQ",
-   "natnlty": "Moroccan"
+   "natnlty": "Moroccan",
+   "narrativeFileName": "NSQI08202E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "111805",
@@ -10820,7 +11904,13 @@
    "id": "QI.E.65.02",
    "nodeNumber": 138,
    "name": "ABD EL KADER MAHMOUD MOHAMED EL SAYED",
-   "natnlty": "Egyptian"
+   "natnlty": "Egyptian",
+   "narrativeFileName": "NSQI06502E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "111806",
@@ -10903,7 +11993,13 @@
    "id": "QI.E.64.02",
    "nodeNumber": 139,
    "name": "SAMI BEN KHAMIS BEN SALEH ELSSEID",
-   "natnlty": "Tunisian"
+   "natnlty": "Tunisian",
+   "narrativeFileName": "NSQI06402E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "112042",
@@ -10974,7 +12070,13 @@
    "id": "QI.E.96.03",
    "nodeNumber": 140,
    "name": "MOUSSA BEN OMAR BEN ALI ESSAADI",
-   "natnlty": "Tunisian"
+   "natnlty": "Tunisian",
+   "narrativeFileName": "NSQI09603E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "112043",
@@ -11047,7 +12149,13 @@
    "id": "QI.E.83.02",
    "nodeNumber": 141,
    "name": "ZAKARYA ESSABAR",
-   "natnlty": "Moroccan"
+   "natnlty": "Moroccan",
+   "narrativeFileName": "NSQI08302E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "111807",
@@ -11164,7 +12272,34 @@
    "id": "QI.F.27.01",
    "nodeNumber": 142,
    "name": "MUSTAFA MOHAMED FADHIL",
-   "natnlty": "Kenyan"
+   "natnlty": "Kenyan",
+   "narrativeFileName": "NSQI02701E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [
+    "QE.A.4.01",
+    "QI.G.28.01",
+    "QI.E.19.01"
+   ],
+   "connectedToIdFromNarrativeArray": [
+    "QE.A.4.01",
+    "QI.G.28.01",
+    "QI.E.19.01"
+   ],
+   "connectionObjectsFromNarrative": [
+    {
+     "source": "QI.F.27.01",
+     "target": "QE.A.4.01"
+    },
+    {
+     "source": "QI.F.27.01",
+     "target": "QI.G.28.01"
+    },
+    {
+     "source": "QI.F.27.01",
+     "target": "QI.E.19.01"
+    }
+   ],
+   "linkCount": 3
   },
   {
    "DATAID": "2816345",
@@ -11225,7 +12360,13 @@
    "id": "QI.G.251.08",
    "nodeNumber": 143,
    "name": "SALAH EDDINE GASMI",
-   "natnlty": "Algerian"
+   "natnlty": "Algerian",
+   "narrativeFileName": "NSQI25108E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "2830250",
@@ -11318,7 +12459,13 @@
    "id": "QI.G.259.08",
    "nodeNumber": 144,
    "name": "FRITZ MARTIN GELOWICZ",
-   "natnlty": "German"
+   "natnlty": "German",
+   "narrativeFileName": "NSQI25908E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "112044",
@@ -11467,7 +12614,76 @@
    "id": "QI.G.28.01",
    "nodeNumber": 145,
    "name": "AHMED KHALFAN GHAILANI",
-   "natnlty": "Tanzanian"
+   "natnlty": "Tanzanian",
+   "narrativeFileName": "NSQI02801E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [
+    "QE.A.4.01",
+    "QI.F.27.01",
+    "QI.E.19.01",
+    "QE.A.2.01",
+    "QE.A.105.04",
+    "QI.S.1.01",
+    "QI.A.6.01",
+    "QI.A.21.01",
+    "QI.A.23.01",
+    "QI.A.59.02"
+   ],
+   "connectedToIdFromNarrativeArray": [
+    "QE.A.4.01",
+    "QI.F.27.01",
+    "QI.E.19.01",
+    "QE.A.2.01",
+    "QE.A.105.04",
+    "QI.S.1.01",
+    "QI.A.6.01",
+    "QI.A.21.01",
+    "QI.A.23.01",
+    "QI.A.59.02"
+   ],
+   "connectionObjectsFromNarrative": [
+    {
+     "source": "QI.G.28.01",
+     "target": "QE.A.4.01"
+    },
+    {
+     "source": "QI.G.28.01",
+     "target": "QI.F.27.01"
+    },
+    {
+     "source": "QI.G.28.01",
+     "target": "QI.E.19.01"
+    },
+    {
+     "source": "QI.G.28.01",
+     "target": "QE.A.2.01"
+    },
+    {
+     "source": "QI.G.28.01",
+     "target": "QE.A.105.04"
+    },
+    {
+     "source": "QI.G.28.01",
+     "target": "QI.S.1.01"
+    },
+    {
+     "source": "QI.G.28.01",
+     "target": "QI.A.6.01"
+    },
+    {
+     "source": "QI.G.28.01",
+     "target": "QI.A.21.01"
+    },
+    {
+     "source": "QI.G.28.01",
+     "target": "QI.A.23.01"
+    },
+    {
+     "source": "QI.G.28.01",
+     "target": "QI.A.59.02"
+    }
+   ],
+   "linkCount": 10
   },
   {
    "DATAID": "2816565",
@@ -11538,7 +12754,13 @@
    "id": "QI.H.250.08",
    "nodeNumber": 146,
    "name": "AMOR MOHAMED GHEDEIR",
-   "natnlty": "Algerian"
+   "natnlty": "Algerian",
+   "narrativeFileName": "NSQI25008E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "3162147",
@@ -11582,7 +12804,13 @@
    "id": "QI.G.341.14",
    "nodeNumber": 147,
    "name": "KEVIN GUIAVARCH",
-   "natnlty": "French"
+   "natnlty": "French",
+   "narrativeFileName": "NSQI34114E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "111952",
@@ -11653,7 +12881,13 @@
    "id": "QI.G.218.06",
    "nodeNumber": 148,
    "name": "GUN GUN RUSMAN GUNAWAN",
-   "natnlty": "Indonesian"
+   "natnlty": "Indonesian",
+   "narrativeFileName": "NSQI21806E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "111919",
@@ -11743,7 +12977,28 @@
    "id": "QI.H.3.01",
    "nodeNumber": 149,
    "name": "SALIM AHMAD SALIM HAMDAN",
-   "natnlty": "Yemeni"
+   "natnlty": "Yemeni",
+   "narrativeFileName": "NSQI00301E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [
+    "QE.A.4.01",
+    "QI.S.1.01"
+   ],
+   "connectedToIdFromNarrativeArray": [
+    "QE.A.4.01",
+    "QI.S.1.01"
+   ],
+   "connectionObjectsFromNarrative": [
+    {
+     "source": "QI.H.3.01",
+     "target": "QE.A.4.01"
+    },
+    {
+     "source": "QI.H.3.01",
+     "target": "QI.S.1.01"
+    }
+   ],
+   "linkCount": 2
   },
   {
    "DATAID": "112033",
@@ -11822,7 +13077,13 @@
    "id": "QI.B.68.02",
    "nodeNumber": 150,
    "name": "ADEL BEN AL-AZHAR BEN YOUSSEF HAMDI",
-   "natnlty": "Tunisian"
+   "natnlty": "Tunisian",
+   "narrativeFileName": "NSQI06802E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "111810",
@@ -11874,7 +13135,13 @@
    "dateUpdatedString": "8 September 2005, 20 December 2007, 15 May 2011",
    "id": "QI.H.144.03",
    "nodeNumber": 151,
-   "name": "MOHAMMAD TAHIR HAMMID"
+   "name": "MOHAMMAD TAHIR HAMMID",
+   "narrativeFileName": "NSQI14403E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "112075",
@@ -11942,7 +13209,13 @@
    "id": "QI.H.204.05",
    "nodeNumber": 152,
    "name": "ISNILON TOTONI HAPILON",
-   "natnlty": "Filipino"
+   "natnlty": "Filipino",
+   "narrativeFileName": "NSQI20405E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "2854925",
@@ -12051,7 +13324,13 @@
    "id": "QI.H.268.09",
    "nodeNumber": 153,
    "name": "ABDUL HAQ",
-   "natnlty": "Chinese"
+   "natnlty": "Chinese",
+   "narrativeFileName": "NSQI26809E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "112077",
@@ -12121,7 +13400,13 @@
    "id": "QI.H.88.03",
    "nodeNumber": 154,
    "name": "GULBUDDIN HEKMATYAR",
-   "natnlty": "Afghan"
+   "natnlty": "Afghan",
+   "narrativeFileName": "NSQI08803E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "112078",
@@ -12199,7 +13484,28 @@
    "id": "QI.H.29.01",
    "nodeNumber": 155,
    "name": "RI’AD MUHAMMAD HASAN MUHAMMAD HIJAZI",
-   "natnlty": "Jordanian"
+   "natnlty": "Jordanian",
+   "narrativeFileName": "NSQI02901E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [
+    "QE.A.4.01",
+    "QI.H.10.01"
+   ],
+   "connectedToIdFromNarrativeArray": [
+    "QE.A.4.01",
+    "QI.H.10.01"
+   ],
+   "connectionObjectsFromNarrative": [
+    {
+     "source": "QI.H.29.01",
+     "target": "QE.A.4.01"
+    },
+    {
+     "source": "QI.H.29.01",
+     "target": "QI.H.10.01"
+    }
+   ],
+   "linkCount": 2
   },
   {
    "DATAID": "2758185",
@@ -12254,7 +13560,13 @@
    "dateUpdatedString": "31 August 2009",
    "id": "QI.H.221.06",
    "nodeNumber": 156,
-   "name": "JAMAL HOUSNI"
+   "name": "JAMAL HOUSNI",
+   "narrativeFileName": "NSQI22106E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "112135",
@@ -12335,109 +13647,110 @@
    "dateUpdatedString": "9 April 2003, 24 July 2006, 22 April 2007, 17 July 2007, 26 July 2007, 16 July 2009, 15 December 2010",
    "id": "QI.H.10.01",
    "nodeNumber": 157,
-   "name": "ZAYN AL-ABIDIN MUHAMMAD HUSSEIN"
+   "name": "ZAYN AL-ABIDIN MUHAMMAD HUSSEIN",
+   "narrativeFileName": "NSQI01001E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [
+    "QE.A.4.01",
+    "QE.J.115.04",
+    "QI.H.29.01"
+   ],
+   "connectedToIdFromNarrativeArray": [
+    "QE.A.4.01",
+    "QE.J.115.04",
+    "QI.H.29.01"
+   ],
+   "connectionObjectsFromNarrative": [
+    {
+     "source": "QI.H.10.01",
+     "target": "QE.A.4.01"
+    },
+    {
+     "source": "QI.H.10.01",
+     "target": "QE.J.115.04"
+    },
+    {
+     "source": "QI.H.10.01",
+     "target": "QI.H.29.01"
+    }
+   ],
+   "linkCount": 3
   },
   {
-   "DATAID": "112079",
-   "VERSIONNUM": "8",
-   "FIRST_NAME": "AL SAYYID",
-   "SECOND_NAME": "AHMED",
-   "THIRD_NAME": "FATHI",
-   "FOURTH_NAME": "HUSSEIN ELIWAH",
+   "DATAID": "111513",
+   "VERSIONNUM": "20",
+   "FIRST_NAME": "ABD AL WAHAB",
+   "SECOND_NAME": "ABD AL HAFIZ",
    "UN_LIST_TYPE": "Al-Qaida",
-   "REFERENCE_NUMBER": "QI.H.195.05",
-   "LISTED_ON": "2005-09-29T00:00:00",
-   "NAME_ORIGINAL_SCRIPT": "السيد احمد فتحي حسين عليوة",
-   "COMMENTS1": "Sentenced to 15 years imprisonment in Egypt in 1999. Father’s name is Fathi Hussein Elaiwa. Member of Egyptian Islamic Jihad (QE.A.3.01). Review pursuant to Security Council resolution 1822 (2008) was concluded on 29 Jul. 2010.",
-   "NATIONALITY": {
-    "VALUE": "Egyptian"
-   },
+   "REFERENCE_NUMBER": "QI.A.157.04",
+   "LISTED_ON": "2004-03-17T00:00:00",
+   "NAME_ORIGINAL_SCRIPT": "عبد الوهاب عبد الحافظ",
+   "COMMENTS1": "Sentenced in absentia in Italy to 5 years of imprisonment. Arrest warrant issued by the Italian authorities on 19 May 2005. Considered a fugitive from justice by the Italian authorities as of Jun. 2009. Review pursuant to Security Council resolution 1822 (2008) was concluded on 30 Jul. 2009.",
    "LIST_TYPE": {
     "VALUE": "UN List"
    },
    "LAST_DAY_UPDATED": {
     "VALUE": [
-     "2005-10-06T00:00:00",
-     "2006-08-18T00:00:00",
-     "2011-12-13T00:00:00"
+     "2004-11-26T00:00:00",
+     "2005-09-09T00:00:00",
+     "2007-12-21T00:00:00",
+     "2010-01-25T00:00:00",
+     "2011-05-16T00:00:00"
     ]
    },
    "INDIVIDUAL_ALIAS": [
     {
      "QUALITY": "Good",
-     "ALIAS_NAME": "Al Sayyid Ahmed Fathi Hussein Eliwa"
+     "ALIAS_NAME": "Ferdjani Mouloud"
     },
     {
      "QUALITY": "Good",
-     "ALIAS_NAME": "Al Sayyid Ahmed Fathi Hussein Alaiwah"
+     "ALIAS_NAME": "Rabah Di Roma"
+    },
+    {
+     "QUALITY": "Low",
+     "ALIAS_NAME": "Mourad"
+    },
+    {
+     "QUALITY": "Low",
+     "ALIAS_NAME": "Said"
     },
     {
      "QUALITY": "Good",
-     "ALIAS_NAME": "Al Sayyid Ahmed Fathi Hussein Elaiwa"
-    },
-    {
-     "QUALITY": "Good",
-     "ALIAS_NAME": "Al Sayyid Ahmed Fathi Hussein Ilewah"
-    },
-    {
-     "QUALITY": "Good",
-     "ALIAS_NAME": "Al Sayyid Ahmed Fathi Hussein Alaywah"
-    },
-    {
-     "QUALITY": "Good",
-     "ALIAS_NAME": "El Sayed Ahmad Fathi Hussein Elaiwa"
-    },
-    {
-     "QUALITY": "Good",
-     "ALIAS_NAME": "Hatim"
-    },
-    {
-     "QUALITY": "Good",
-     "ALIAS_NAME": "Hisham"
-    },
-    {
-     "QUALITY": "Good",
-     "ALIAS_NAME": "Abu Umar"
-    },
-    {
-     "QUALITY": "Good",
-     "ALIAS_NAME": "El-Sayed Ilawah born on 3 Jul.1954"
+     "ALIAS_NAME": "Abdel Wahab Abdelhafid",
+     "DATE_OF_BIRTH": "1968-10-30 00:00:00.0",
+     "COUNTRY_OF_BIRTH": "Algeria"
     }
    ],
-   "INDIVIDUAL_ADDRESS": {
-    "COUNTRY": "United Kingdom"
+   "INDIVIDUAL_ADDRESS": "",
+   "INDIVIDUAL_DATE_OF_BIRTH": {
+    "TYPE_OF_DATE": "Exact",
+    "DATE": "1967-09-07T00:00:00"
    },
-   "INDIVIDUAL_DATE_OF_BIRTH": [
-    {
-     "TYPE_OF_DATE": "Exact",
-     "DATE": "1964-07-30T00:00:00"
-    },
-    {
-     "TYPE_OF_DATE": "Exact",
-     "DATE": "1964-01-30T00:00:00"
-    }
-   ],
    "INDIVIDUAL_PLACE_OF_BIRTH": {
-    "NOTE": "Suez, Egypt"
+    "CITY": "Algiers",
+    "COUNTRY": "Algeria"
    },
-   "INDIVIDUAL_DOCUMENT": {
-    "TYPE_OF_DOCUMENT": "Passport",
-    "NOTE": "United Kingdom passport number RP0185179 issued on 11 Sep. 2001, expires on 11 Sep. 2011 (in the name of Al-Sayyid Ilewah)"
-   },
-   "SORT_KEY": "HUSSEINELIWAH ALSAYYID AHMED FATHI",
-   "SORT_KEY_LAST_MOD": "2011-12-13T00:00:00",
+   "INDIVIDUAL_DOCUMENT": "",
+   "SORT_KEY": "ABDALHAFIZ ABDALWAHAB",
+   "SORT_KEY_LAST_MOD": "2011-05-16T00:00:00",
    "noLongerListed": 0,
    "indiv0OrEnt1": 0,
-   "indivDobString": "",
-   "indivPlaceOfBirthString": "Suez, Egypt, ",
-   "aliasCount": 10,
-   "indivAliasString": "Al Sayyid Ahmed Fathi Hussein Eliwa (Good); Al Sayyid Ahmed Fathi Hussein Alaiwah (Good); Al Sayyid Ahmed Fathi Hussein Elaiwa (Good); Al Sayyid Ahmed Fathi Hussein Ilewah (Good); Al Sayyid Ahmed Fathi Hussein Alaywah (Good); El Sayed Ahmad Fathi Hussein Elaiwa (Good); Hatim (Good); Hisham (Good); Abu Umar (Good); El-Sayed Ilawah born on 3 Jul.1954 (Good); ",
-   "lastDateUpdatedCount": 3,
-   "dateUpdatedString": "5 October 2005, 17 August 2006, 12 December 2011",
-   "id": "QI.H.195.05",
-   "nodeNumber": 158,
-   "name": "AL SAYYID AHMED FATHI HUSSEIN ELIWAH",
-   "natnlty": "Egyptian"
+   "indivDobString": "6 September 1967 (Exact)",
+   "indivPlaceOfBirthString": "Algiers, Algeria, ",
+   "aliasCount": 5,
+   "indivAliasString": "Ferdjani Mouloud (Good); Rabah Di Roma (Good); Mourad (Low); Said (Low); Abdel Wahab Abdelhafid (Good); ",
+   "lastDateUpdatedCount": 5,
+   "dateUpdatedString": "25 November 2004, 8 September 2005, 20 December 2007, 24 January 2010, 15 May 2011",
+   "id": "QI.A.157.04",
+   "nodeNumber": 2,
+   "name": "ABD AL WAHAB ABD AL HAFIZ",
+   "narrativeFileName": "NSQI15704E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "112166",
@@ -12529,7 +13842,13 @@
    "id": "QI.I.67.02",
    "nodeNumber": 159,
    "name": "MOSTAFA KAMEL MOSTAFA IBRAHIM",
-   "natnlty": "British"
+   "natnlty": "British",
+   "narrativeFileName": "NSQI06702E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "2983973",
@@ -12603,7 +13922,13 @@
    "id": "QI.I.308.12",
    "nodeNumber": 160,
    "name": "ZAFAR IQBAL",
-   "natnlty": "Pakistani"
+   "natnlty": "Pakistani",
+   "narrativeFileName": "NSQI30812E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "112001",
@@ -12686,7 +14011,13 @@
    "id": "QI.I.87.03",
    "nodeNumber": 161,
    "name": "NURJAMAN RIDUAN ISAMUDDIN",
-   "natnlty": "Indonesian"
+   "natnlty": "Indonesian",
+   "narrativeFileName": "NSQI08703E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "3035478",
@@ -12735,7 +14066,13 @@
    "id": "QI.I.321.14",
    "nodeNumber": 162,
    "name": "MALIK MUHAMMAD ISHAQ",
-   "natnlty": "Pakistani"
+   "natnlty": "Pakistani",
+   "narrativeFileName": "NSQI32114E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "112099",
@@ -12794,7 +14131,13 @@
    "id": "QI.J.180.04",
    "nodeNumber": 163,
    "name": "KHADAFI ABUBAKAR JANJALANI",
-   "natnlty": "Filipino"
+   "natnlty": "Filipino",
+   "narrativeFileName": "NSQI18004E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "112100",
@@ -12893,7 +14236,13 @@
    "id": "QI.J.99.03",
    "nodeNumber": 164,
    "name": "KHALIL BEN AHMED BEN MOHAMED JARRAYA",
-   "natnlty": "Tunisian"
+   "natnlty": "Tunisian",
+   "narrativeFileName": "NSQI09903E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "112007",
@@ -12950,7 +14299,13 @@
    "id": "QI.J.114.03",
    "nodeNumber": 165,
    "name": "SALIM Y SALAMUDDIN JULKIPLI",
-   "natnlty": "Filipino"
+   "natnlty": "Filipino",
+   "narrativeFileName": "NSQI11403E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "112248",
@@ -13009,7 +14364,13 @@
    "id": "QI.K.72.02",
    "nodeNumber": 166,
    "name": "MEHDI BEN MOHAMED BEN MOHAMED KAMMOUN",
-   "natnlty": "Tunisian"
+   "natnlty": "Tunisian",
+   "narrativeFileName": "NSQI07202E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "2982423",
@@ -13099,7 +14460,13 @@
    "id": "QI.K.302.12",
    "nodeNumber": 167,
    "name": "MEVLÜT KAR",
-   "natnlty": "Turkish"
+   "natnlty": "Turkish",
+   "narrativeFileName": "NSQI30212E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "112138",
@@ -13319,7 +14686,13 @@
    "id": "QI.K.135.03",
    "nodeNumber": 168,
    "name": "DAWOOD IBRAHIM KASKAR",
-   "natnlty": "Indian"
+   "natnlty": "Indian",
+   "narrativeFileName": "NSQI13503E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "2983746",
@@ -13407,7 +14780,13 @@
    "natnlty": [
     "Pakistani",
     "Saudi Arabian"
-   ]
+   ],
+   "narrativeFileName": "NSQI30612E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "3161942",
@@ -13468,7 +14847,13 @@
    "dateUpdatedString": "",
    "id": "QI.A.336.14",
    "nodeNumber": 170,
-   "name": "ANAS HASAN KHATTAB"
+   "name": "ANAS HASAN KHATTAB",
+   "narrativeFileName": "NSQI33614E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "112270",
@@ -13522,7 +14907,13 @@
    "id": "QI.K.73.02",
    "nodeNumber": 171,
    "name": "SAMIR ABD EL LATIF EL SAYED KISHK",
-   "natnlty": "Egyptian"
+   "natnlty": "Egyptian",
+   "narrativeFileName": "NSQI07302E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "3162261",
@@ -13566,7 +14957,13 @@
    "id": "QI.K.340.14",
    "nodeNumber": 172,
    "name": "EMILIE KONIG",
-   "natnlty": "French"
+   "natnlty": "French",
+   "narrativeFileName": "NSQI34014E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "112483",
@@ -13628,7 +15025,13 @@
    "id": "QI.L.190.05",
    "nodeNumber": 173,
    "name": "ABDELKADER LAAGOUB",
-   "natnlty": "Moroccan"
+   "natnlty": "Moroccan",
+   "narrativeFileName": "NSQI19005E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "3026710",
@@ -13684,7 +15087,13 @@
    "id": "QI.L.319.13",
    "nodeNumber": 174,
    "name": "MOHAMED LAHBOUS",
-   "natnlty": "Malian"
+   "natnlty": "Malian",
+   "narrativeFileName": "NSQI31913E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "111796",
@@ -13772,7 +15181,13 @@
    "id": "QI.B.62.02",
    "nodeNumber": 175,
    "name": "MOHAMED LAKHAL",
-   "natnlty": "Tunisian"
+   "natnlty": "Tunisian",
+   "narrativeFileName": "NSQI06202E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "2832887",
@@ -13856,7 +15271,13 @@
    "id": "QI.L.264.08",
    "nodeNumber": 176,
    "name": "ZAKI-UR-REHMAN LAKHVI",
-   "natnlty": "Pakistani"
+   "natnlty": "Pakistani",
+   "narrativeFileName": "NSQI26408E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "2813150",
@@ -13981,7 +15402,13 @@
    "dateUpdatedString": "15 September 2008, 12 December 2011",
    "id": "QI.L.247.08",
    "nodeNumber": 177,
-   "name": "RUBEN PESTANO LAVILLA, JR"
+   "name": "RUBEN PESTANO LAVILLA, JR",
+   "narrativeFileName": "NSQI24708E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "112494",
@@ -14036,7 +15463,13 @@
    "id": "QI.L.155.04",
    "nodeNumber": 178,
    "name": "DJAMEL LOUNICI",
-   "natnlty": "Algerian"
+   "natnlty": "Algerian",
+   "narrativeFileName": "NSQI15504E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "2936490",
@@ -14089,7 +15522,13 @@
    "id": "QI.M.286.10",
    "nodeNumber": 179,
    "name": "HAKIMULLAH MEHSUD",
-   "natnlty": "Pakistani"
+   "natnlty": "Pakistani",
+   "narrativeFileName": "NSQI28610E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "112364",
@@ -14168,7 +15607,13 @@
    "id": "QI.M.206.05",
    "nodeNumber": 180,
    "name": "IBRAHIM MOHAMED KHALIL",
-   "natnlty": "Syrian"
+   "natnlty": "Syrian",
+   "narrativeFileName": "NSQI20605E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "111783",
@@ -14237,7 +15682,13 @@
    "id": "QI.A.202.05",
    "nodeNumber": 181,
    "name": "MAZEN SALAH MOHAMMED",
-   "natnlty": "Iraqi"
+   "natnlty": "Iraqi",
+   "narrativeFileName": "NSQI20205E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "113442",
@@ -14309,7 +15760,13 @@
    "id": "QI.Y.126.03",
    "nodeNumber": 182,
    "name": "YUNOS UMPARA MOKLIS",
-   "natnlty": "Filipino"
+   "natnlty": "Filipino",
+   "narrativeFileName": "NSQI12603E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "112378",
@@ -14357,7 +15814,13 @@
    "dateUpdatedString": "8 September 2005, 6 June 2007, 15 May 2011",
    "id": "QI.M.147.03",
    "nodeNumber": 183,
-   "name": "MOHAMED AMIN MOSTAFA"
+   "name": "MOHAMED AMIN MOSTAFA",
+   "narrativeFileName": "NSQI14703E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "112379",
@@ -14528,7 +15991,13 @@
    "id": "QI.M.129.03",
    "nodeNumber": 184,
    "name": "DJAMEL MOUSTFA",
-   "natnlty": "Algerian"
+   "natnlty": "Algerian",
+   "narrativeFileName": "NSQI12903E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "2797841",
@@ -14629,7 +16098,13 @@
    "id": "QI.A.238.08",
    "nodeNumber": 185,
    "name": "MUBARAK MUSHAKHAS SANAD MUBARAK AL-BATHALI",
-   "natnlty": "Kuwaiti"
+   "natnlty": "Kuwaiti",
+   "narrativeFileName": "NSQI23808E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "2863574",
@@ -14679,7 +16154,13 @@
    "id": "QI.M.272.09",
    "nodeNumber": 186,
    "name": "MOHAMMED YAHYA MUJAHID",
-   "natnlty": "Pakistani"
+   "natnlty": "Pakistani",
+   "narrativeFileName": "NSQI27209E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "113211",
@@ -14733,7 +16214,13 @@
    "id": "QI.M.119.03",
    "nodeNumber": 187,
    "name": "ARIS MUNANDAR",
-   "natnlty": "Indonesian"
+   "natnlty": "Indonesian",
+   "narrativeFileName": "NSQI11903E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "113313",
@@ -14815,7 +16302,13 @@
    "id": "QI.M.120.03",
    "nodeNumber": 188,
    "name": "ABDUL HAKIM MURAD",
-   "natnlty": "Pakistani"
+   "natnlty": "Pakistani",
+   "narrativeFileName": "NSQI12003E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "113212",
@@ -14871,7 +16364,13 @@
    "id": "QI.M.196.05",
    "nodeNumber": 189,
    "name": "ALI SAYYID MUHAMED MUSTAFA BAKRI",
-   "natnlty": "Egyptian"
+   "natnlty": "Egyptian",
+   "narrativeFileName": "NSQI19605E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 1
   },
   {
    "DATAID": "2901762",
@@ -14933,7 +16432,13 @@
    "id": "QI.N.280.10",
    "nodeNumber": 190,
    "name": "TAYEB NAIL",
-   "natnlty": "Algerian"
+   "natnlty": "Algerian",
+   "narrativeFileName": "NSQI28010E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "3012888",
@@ -15006,7 +16511,13 @@
    "id": "QI.O.314.13",
    "nodeNumber": 191,
    "name": "ABDERRAHMANE OULD EL AMAR",
-   "natnlty": "Malian"
+   "natnlty": "Malian",
+   "narrativeFileName": "NSQI31413E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "3013119",
@@ -15077,7 +16588,13 @@
    "natnlty": [
     "Mauritanian",
     "Malian"
-   ]
+   ],
+   "narrativeFileName": "NSQI31513E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "2974555",
@@ -15157,7 +16674,13 @@
    "id": "QI.O.298.11",
    "nodeNumber": 193,
    "name": "ABD AL-RAHMAN OULD MUHAMMAD AL-HUSAYN OULD MUHAMMAD SALIM",
-   "natnlty": "Mauritanian"
+   "natnlty": "Mauritanian",
+   "narrativeFileName": "NSQI29811E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "2812923",
@@ -15231,7 +16754,13 @@
    "dateUpdatedString": "2 June 2009, 12 December 2011",
    "id": "QI.P.242.08",
    "nodeNumber": 194,
-   "name": "DINNO AMOR ROSALEJOS PAREJA"
+   "name": "DINNO AMOR ROSALEJOS PAREJA",
+   "narrativeFileName": "NSQI24208E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "2971762",
@@ -15314,7 +16843,13 @@
    "id": "QI.P.294.11",
    "nodeNumber": 195,
    "name": "UMAR PATEK",
-   "natnlty": "Indonesian"
+   "natnlty": "Indonesian",
+   "narrativeFileName": "NSQI29411E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "2863362",
@@ -15387,7 +16922,13 @@
    "id": "QI.Q.271.09",
    "nodeNumber": 196,
    "name": "ARIF QASMANI",
-   "natnlty": "Pakistani"
+   "natnlty": "Pakistani",
+   "narrativeFileName": "NSQI27109E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "2974860",
@@ -15509,7 +17050,13 @@
    "id": "QI.Q.297.11",
    "nodeNumber": 197,
    "name": "HASSAN MUHAMMAD ABU BAKR QAYED",
-   "natnlty": "Libyan"
+   "natnlty": "Libyan",
+   "narrativeFileName": "NSQI29711E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "2983791",
@@ -15588,7 +17135,13 @@
    "id": "QI.R.303.12",
    "nodeNumber": 198,
    "name": "FAZAL RAHIM",
-   "natnlty": "Afghan"
+   "natnlty": "Afghan",
+   "narrativeFileName": "NSQI30312E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "113214",
@@ -15655,7 +17208,13 @@
    "id": "QI.R.103.03",
    "nodeNumber": 199,
    "name": "AHMED HOSNI RARRBO",
-   "natnlty": "Algerian"
+   "natnlty": "Algerian",
+   "narrativeFileName": "NSQI10303E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "111429",
@@ -15720,7 +17279,13 @@
    "id": "QI.A.199.05",
    "nodeNumber": 200,
    "name": "ATA ABDOULAZIZ RASHID",
-   "natnlty": "Iraqi"
+   "natnlty": "Iraqi",
+   "narrativeFileName": "NSQI19905E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "113322",
@@ -15784,7 +17349,13 @@
    "id": "QI.R.75.02",
    "nodeNumber": 201,
    "name": "ABDELHALIM HAFED ABDELFATTAH REMADNA",
-   "natnlty": "Algerian"
+   "natnlty": "Algerian",
+   "narrativeFileName": "NSQI07502E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "113435",
@@ -15898,7 +17469,13 @@
    "id": "QI.R.219.06",
    "nodeNumber": 202,
    "name": "TAUFIK RIFKI",
-   "natnlty": "Indonesian"
+   "natnlty": "Indonesian",
+   "narrativeFileName": "NSQI21906E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "113436",
@@ -15967,7 +17544,13 @@
    "id": "QI.R.150.03",
    "nodeNumber": 203,
    "name": "AL-AZHAR BEN KHALIFA BEN AHMED ROUINE",
-   "natnlty": "Tunisian"
+   "natnlty": "Tunisian",
+   "narrativeFileName": "NSQI15003E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "113215",
@@ -16039,7 +17622,13 @@
    "dateUpdatedString": "11 December 2014",
    "id": "QI.R.186.05",
    "nodeNumber": 204,
-   "name": "ABU RUSDAN"
+   "name": "ABU RUSDAN",
+   "narrativeFileName": "NSQI18605E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "111497",
@@ -16102,7 +17691,22 @@
    "dateUpdatedString": "17 July 2007, 15 December 2010",
    "id": "QI.A.2.01",
    "nodeNumber": 205,
-   "name": "AMIN MUHAMMAD UL HAQ SAAM KHAN"
+   "name": "AMIN MUHAMMAD UL HAQ SAAM KHAN",
+   "narrativeFileName": "NSQI00201E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [
+    "QE.A.4.01"
+   ],
+   "connectedToIdFromNarrativeArray": [
+    "QE.A.4.01"
+   ],
+   "connectionObjectsFromNarrative": [
+    {
+     "source": "QI.A.2.01",
+     "target": "QE.A.4.01"
+    }
+   ],
+   "linkCount": 1
   },
   {
    "DATAID": "111660",
@@ -16192,7 +17796,22 @@
    "id": "QI.A.20.01",
    "nodeNumber": 206,
    "name": "MOHAMMAD HAMDI MOHAMMAD SADIQ AL-AHDAL",
-   "natnlty": "Yemeni"
+   "natnlty": "Yemeni",
+   "narrativeFileName": "NSQI02001E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [
+    "QE.A.4.01"
+   ],
+   "connectedToIdFromNarrativeArray": [
+    "QE.A.4.01"
+   ],
+   "connectionObjectsFromNarrative": [
+    {
+     "source": "QI.A.20.01",
+     "target": "QE.A.4.01"
+    }
+   ],
+   "linkCount": 1
   },
   {
    "DATAID": "2833107",
@@ -16289,7 +17908,13 @@
    "id": "QI.S.263.08",
    "nodeNumber": 207,
    "name": "HAFIZ MUHAMMAD SAEED",
-   "natnlty": "Pakistani"
+   "natnlty": "Pakistani",
+   "narrativeFileName": "NSQI26308E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "113323",
@@ -16352,7 +17977,13 @@
    "id": "QI.S.208.05",
    "nodeNumber": 208,
    "name": "RADULAN SAHIRON",
-   "natnlty": "Filipino"
+   "natnlty": "Filipino",
+   "narrativeFileName": "NSQI20805E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "2758395",
@@ -16413,7 +18044,13 @@
    "id": "QI.S.222.06",
    "nodeNumber": 209,
    "name": "NESSIM BEN ROMDHANE SAHRAOUI",
-   "natnlty": "Tunisian"
+   "natnlty": "Tunisian",
+   "narrativeFileName": "NSQI22206E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "113317",
@@ -16510,7 +18147,13 @@
    "id": "QI.S.148.03",
    "nodeNumber": 210,
    "name": "NESSIM BEN MOHAMED AL-CHERIF BEN MOHAMED SALEH AL-SAADI",
-   "natnlty": "Tunisian"
+   "natnlty": "Tunisian",
+   "narrativeFileName": "NSQI14803E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "2813148",
@@ -16604,7 +18247,13 @@
    "dateUpdatedString": "12 December 2011",
    "id": "QI.S.244.08",
    "nodeNumber": 211,
-   "name": "HILARION DEL ROSARIO SANTOS III"
+   "name": "HILARION DEL ROSARIO SANTOS III",
+   "narrativeFileName": "NSQI24408E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "113219",
@@ -16677,7 +18326,40 @@
    "id": "QI.S.1.01",
    "nodeNumber": 212,
    "name": "SAYF-AL ADL",
-   "natnlty": "Egyptian"
+   "natnlty": "Egyptian",
+   "narrativeFileName": "NSQI00101E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [
+    "QE.A.4.01",
+    "QE.A.3.01",
+    "QI.A.6.01",
+    "QI.M.196.05"
+   ],
+   "connectedToIdFromNarrativeArray": [
+    "QE.A.4.01",
+    "QE.A.3.01",
+    "QI.A.6.01",
+    "QI.M.196.05"
+   ],
+   "connectionObjectsFromNarrative": [
+    {
+     "source": "QI.S.1.01",
+     "target": "QE.A.4.01"
+    },
+    {
+     "source": "QI.S.1.01",
+     "target": "QE.A.3.01"
+    },
+    {
+     "source": "QI.S.1.01",
+     "target": "QI.A.6.01"
+    },
+    {
+     "source": "QI.S.1.01",
+     "target": "QI.M.196.05"
+    }
+   ],
+   "linkCount": 8
   },
   {
    "DATAID": "2830001",
@@ -16751,7 +18433,13 @@
    "id": "QI.S.260.08",
    "nodeNumber": 213,
    "name": "DANIEL MARTIN SCHNEIDER",
-   "natnlty": "German"
+   "natnlty": "German",
+   "narrativeFileName": "NSQI26008E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "113324",
@@ -16819,7 +18507,13 @@
    "dateUpdatedString": "9 June 2011",
    "id": "QI.S.128.03",
    "nodeNumber": 214,
-   "name": "ISMAIL ABDALLAH SBAITAN SHALABI"
+   "name": "ISMAIL ABDALLAH SBAITAN SHALABI",
+   "narrativeFileName": "NSQI12803E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "3150494",
@@ -16901,7 +18595,13 @@
    "id": "QI.S.322.14",
    "nodeNumber": 215,
    "name": "ABUBAKAR MOHAMMED SHEKAU",
-   "natnlty": "Nigerian"
+   "natnlty": "Nigerian",
+   "narrativeFileName": "NSQI32214E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "111782",
@@ -16966,7 +18666,40 @@
    "id": "QI.A.17.01",
    "nodeNumber": 216,
    "name": "THARWAT SALAH SHIHATA",
-   "natnlty": "Egyptian"
+   "natnlty": "Egyptian",
+   "narrativeFileName": "NSQI01701E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [
+    "QE.A.3.01",
+    "QI.A.6.01",
+    "QE.A.4.01",
+    "QI.A.14.01"
+   ],
+   "connectedToIdFromNarrativeArray": [
+    "QE.A.3.01",
+    "QI.A.6.01",
+    "QE.A.4.01",
+    "QI.A.14.01"
+   ],
+   "connectionObjectsFromNarrative": [
+    {
+     "source": "QI.A.17.01",
+     "target": "QE.A.3.01"
+    },
+    {
+     "source": "QI.A.17.01",
+     "target": "QI.A.6.01"
+    },
+    {
+     "source": "QI.A.17.01",
+     "target": "QE.A.4.01"
+    },
+    {
+     "source": "QI.A.17.01",
+     "target": "QI.A.14.01"
+    }
+   ],
+   "linkCount": 4
   },
   {
    "DATAID": "113220",
@@ -17021,7 +18754,13 @@
    "id": "QI.S.122.03",
    "nodeNumber": 217,
    "name": "PARLINDUNGAN SIREGAR",
-   "natnlty": "Indonesian"
+   "natnlty": "Indonesian",
+   "narrativeFileName": "NSQI12203E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "113439",
@@ -17091,7 +18830,13 @@
    "id": "QI.S.124.03",
    "nodeNumber": 218,
    "name": "YAZID SUFAAT",
-   "natnlty": "Malaysian"
+   "natnlty": "Malaysian",
+   "narrativeFileName": "NSQI12403E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "113222",
@@ -17173,7 +18918,13 @@
    "id": "QI.S.123.03",
    "nodeNumber": 219,
    "name": "YASSIN SYAWAL",
-   "natnlty": "Indonesian"
+   "natnlty": "Indonesian",
+   "narrativeFileName": "NSQI12303E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "111639",
@@ -17265,7 +19016,13 @@
    "dateUpdatedString": "30 July 2006, 3 October 2006, 15 May 2011",
    "id": "QI.T.57.02",
    "nodeNumber": 220,
-   "name": "IBRAHIM ALI ABU BAKR TANTOUSH"
+   "name": "IBRAHIM ALI ABU BAKR TANTOUSH",
+   "narrativeFileName": "NSQI05702E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "2813362",
@@ -17337,7 +19094,13 @@
    "dateUpdatedString": "12 December 2011",
    "id": "QI.T.241.08",
    "nodeNumber": 221,
-   "name": "ANGELO RAMIREZ TRINIDAD"
+   "name": "ANGELO RAMIREZ TRINIDAD",
+   "narrativeFileName": "NSQI24108E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "113440",
@@ -17387,7 +19150,13 @@
    "id": "QI.T.56.01",
    "nodeNumber": 222,
    "name": "MOHAMMED TUFAIL",
-   "natnlty": "Pakistani"
+   "natnlty": "Pakistani",
+   "narrativeFileName": "NSQI05601E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "2960872",
@@ -17470,7 +19239,13 @@
    "id": "QI.U.290.11",
    "nodeNumber": 223,
    "name": "DOKU KHAMATOVICH UMAROV",
-   "natnlty": "Russian"
+   "natnlty": "Russian",
+   "narrativeFileName": "NSQI29011E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "112283",
@@ -17561,7 +19336,64 @@
    "id": "QI.M.31.01",
    "nodeNumber": 224,
    "name": "OMAR MAHMOUD UTHMAN",
-   "natnlty": "Jordanian"
+   "natnlty": "Jordanian",
+   "narrativeFileName": "NSQI03101E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [
+    "QE.A.4.01",
+    "QE.A.6.01",
+    "QE.T.14.01",
+    "QE.A.3.01",
+    "QI.A.59.02",
+    "QI.A.6.01",
+    "QE.J.115.04",
+    "QE.A.98.03"
+   ],
+   "connectedToIdFromNarrativeArray": [
+    "QE.A.4.01",
+    "QE.A.6.01",
+    "QE.T.14.01",
+    "QE.A.3.01",
+    "QI.A.59.02",
+    "QI.A.6.01",
+    "QE.J.115.04",
+    "QE.A.98.03"
+   ],
+   "connectionObjectsFromNarrative": [
+    {
+     "source": "QI.M.31.01",
+     "target": "QE.A.4.01"
+    },
+    {
+     "source": "QI.M.31.01",
+     "target": "QE.A.6.01"
+    },
+    {
+     "source": "QI.M.31.01",
+     "target": "QE.T.14.01"
+    },
+    {
+     "source": "QI.M.31.01",
+     "target": "QE.A.3.01"
+    },
+    {
+     "source": "QI.M.31.01",
+     "target": "QI.A.59.02"
+    },
+    {
+     "source": "QI.M.31.01",
+     "target": "QI.A.6.01"
+    },
+    {
+     "source": "QI.M.31.01",
+     "target": "QE.J.115.04"
+    },
+    {
+     "source": "QI.M.31.01",
+     "target": "QE.A.98.03"
+    }
+   ],
+   "linkCount": 8
   },
   {
    "DATAID": "3169774",
@@ -17628,7 +19460,13 @@
    "id": "QI.U.346.15",
    "nodeNumber": 225,
    "name": "'ABD AL-MALIK MUHAMMAD YUSUF 'UTHMAN 'ABD AL-SALAM",
-   "natnlty": "Jordanian"
+   "natnlty": "Jordanian",
+   "narrativeFileName": "NSQI34615E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "3169548",
@@ -17710,7 +19548,13 @@
    "id": "QI.U.343.15",
    "nodeNumber": 226,
    "name": "ASHRAF MUHAMMAD YUSUF 'UTHMAN 'ABD AL-SALAM",
-   "natnlty": "Jordanian"
+   "natnlty": "Jordanian",
+   "narrativeFileName": "NSQI34315E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "113328",
@@ -17784,7 +19628,22 @@
    "dateUpdatedString": "9 April 2003",
    "id": "QI.Y.37.01",
    "nodeNumber": 227,
-   "name": "ABDUL RAHMAN YASIN"
+   "name": "ABDUL RAHMAN YASIN",
+   "narrativeFileName": "NSQI03701E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [
+    "QE.A.4.01"
+   ],
+   "connectedToIdFromNarrativeArray": [
+    "QE.A.4.01"
+   ],
+   "connectionObjectsFromNarrative": [
+    {
+     "source": "QI.Y.37.01",
+     "target": "QE.A.4.01"
+    }
+   ],
+   "linkCount": 1
   },
   {
    "DATAID": "2830354",
@@ -17843,7 +19702,13 @@
    "id": "QI.Y.261.08",
    "nodeNumber": 228,
    "name": "ADEM YILMAZ",
-   "natnlty": "Turkish"
+   "natnlty": "Turkish",
+   "narrativeFileName": "NSQI26108E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "112285",
@@ -17900,7 +19765,13 @@
    "id": "QI.M.205.05",
    "nodeNumber": 229,
    "name": "RAFIK MOHAMAD YOUSEF",
-   "natnlty": "Iraqi"
+   "natnlty": "Iraqi",
+   "narrativeFileName": "NSQI20505E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "112021",
@@ -18017,7 +19888,13 @@
    "id": "QI.A.198.05",
    "nodeNumber": 230,
    "name": "HANI AL-SAYYID AL-SEBAI YUSIF",
-   "natnlty": "Egyptian"
+   "natnlty": "Egyptian",
+   "narrativeFileName": "NSQI19805E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "111922",
@@ -18104,7 +19981,13 @@
    "id": "QI.A.139.03",
    "nodeNumber": 231,
    "name": "IMED BEN MEKKI ZARKAOUI",
-   "natnlty": "Tunisian"
+   "natnlty": "Tunisian",
+   "narrativeFileName": "NSQI13903E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "113330",
@@ -18178,7 +20061,13 @@
    "id": "QI.Z.168.04",
    "nodeNumber": 232,
    "name": "AHMAD ZERFAOUI",
-   "natnlty": "Algerian"
+   "natnlty": "Algerian",
+   "narrativeFileName": "NSQI16804E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "2758288",
@@ -18285,7 +20174,13 @@
    "dateUpdatedString": "2 June 2009, 31 August 2009, 12 December 2011",
    "id": "QI.Z.223.06",
    "nodeNumber": 233,
-   "name": "MERAI ZOGHBAI"
+   "name": "MERAI ZOGHBAI",
+   "narrativeFileName": "NSQI22306E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "113444",
@@ -18357,7 +20252,13 @@
    "id": "QI.Z.187.05",
    "nodeNumber": 234,
    "name": "ZULKARNAEN",
-   "natnlty": "Indonesian"
+   "natnlty": "Indonesian",
+   "narrativeFileName": "NSQI18705E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "name": "Fahd Mohammed Ahmed al-Quso (no longer listed)",
@@ -18411,7 +20312,12 @@
    "lastDateUpdatedCount": 2,
    "dateUpdatedString": "13 May 2007, 26 July 2007",
    "nodeNumber": 235,
-   "natnlty": ""
+   "natnlty": "",
+   "narrativeFileName": "NSQI28810E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "name": "Usama Bin Laden (no longer listed)",
@@ -18465,7 +20371,12 @@
    "lastDateUpdatedCount": 2,
    "dateUpdatedString": "13 May 2007, 26 July 2007",
    "nodeNumber": 236,
-   "natnlty": ""
+   "natnlty": "",
+   "narrativeFileName": "NSQI00801E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "name": "Wa&apos;el Hamza Abd al-Fatah Julaidan (no longer listed)",
@@ -18519,7 +20430,12 @@
    "lastDateUpdatedCount": 2,
    "dateUpdatedString": "13 May 2007, 26 July 2007",
    "nodeNumber": 237,
-   "natnlty": ""
+   "natnlty": "",
+   "narrativeFileName": "NSQI07902E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "empty004",
@@ -18573,7 +20489,12 @@
    "id": "QI.U.287.10",
    "nodeNumber": 238,
    "name": "Wali Ur Rehman (no longer listed)",
-   "natnlty": ""
+   "natnlty": "",
+   "narrativeFileName": "NSQI28710E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "empty006",
@@ -18627,7 +20548,12 @@
    "id": "QI.L.30.01",
    "nodeNumber": 239,
    "name": "Mufti Rashid Ahmad Ledahyanoy (no longer listed)",
-   "natnlty": ""
+   "natnlty": "",
+   "narrativeFileName": "NSQI03001E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "empty007",
@@ -18681,7 +20607,12 @@
    "id": "QI.J.240.08",
    "nodeNumber": 240,
    "name": "Najmiddin Kamolitdinovich Jalolov (no longer listed)",
-   "natnlty": ""
+   "natnlty": "",
+   "narrativeFileName": "NSQI24008E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "empty008",
@@ -18735,7 +20666,12 @@
    "id": "QI.B.239.08",
    "nodeNumber": 241,
    "name": "Suhayl Fatilloevich Buranov (no longer listed)",
-   "natnlty": ""
+   "natnlty": "",
+   "narrativeFileName": "NSQI23908E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "emptyStl",
@@ -18792,7 +20728,12 @@
    "id": "QI.T.0.00",
    "nodeNumber": 242,
    "name": "Stephen Lane Taylor (no longer listed)",
-   "natnlty": "United States, nominally"
+   "natnlty": "United States, nominally",
+   "narrativeFileName": "NSQI00000E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "3162069",
@@ -18830,7 +20771,13 @@
    "dateUpdatedString": "",
    "id": "QE.A.144.14",
    "nodeNumber": 243,
-   "name": "ABDALLAH AZZAM BRIGADES (AAB)"
+   "name": "ABDALLAH AZZAM BRIGADES (AAB)",
+   "narrativeFileName": "NSQE14414E.shtml",
+   "narrativeFileNameSource": "html list file",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "113445",
@@ -18861,7 +20808,13 @@
    "dateUpdatedString": "12 December 2011",
    "id": "QE.A.1.01",
    "nodeNumber": 244,
-   "name": "ABU SAYYAF GROUP"
+   "name": "ABU SAYYAF GROUP",
+   "narrativeFileName": "NSQE00101E.shtml",
+   "narrativeFileNameSource": "html list file",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "113226",
@@ -18906,7 +20859,13 @@
    "dateUpdatedString": "12 December 2011",
    "id": "QE.A.69.02",
    "nodeNumber": 245,
-   "name": "AFGHAN SUPPORT COMMITTEE (ASC)"
+   "name": "AFGHAN SUPPORT COMMITTEE (ASC)",
+   "narrativeFileName": "NSQE06902E.shtml",
+   "narrativeFileNameSource": "html list file",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "113227",
@@ -18966,7 +20925,13 @@
    "dateUpdatedString": "9 December 2008, 12 December 2011",
    "id": "QE.A.121.05",
    "nodeNumber": 246,
-   "name": "AL-AKHTAR TRUST INTERNATIONAL"
+   "name": "AL-AKHTAR TRUST INTERNATIONAL",
+   "narrativeFileName": "NSQE12105E.shtml",
+   "narrativeFileNameSource": "html list file",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "113231",
@@ -19066,7 +21031,13 @@
    "dateUpdatedString": "25 November 2004, 23 March 2009",
    "id": "QE.A.107.04",
    "nodeNumber": 247,
-   "name": "AL FURQAN"
+   "name": "AL FURQAN",
+   "narrativeFileName": "NSQE10704E.shtml",
+   "narrativeFileNameSource": "html list file",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "113453",
@@ -19095,7 +21066,13 @@
    "dateUpdatedString": "20 March 2012",
    "id": "QE.A.110.04",
    "nodeNumber": 248,
-   "name": "AL-HARAMAIN: AFGHANISTAN BRANCH"
+   "name": "AL-HARAMAIN: AFGHANISTAN BRANCH",
+   "narrativeFileName": "NSQE11004E.shtml",
+   "narrativeFileNameSource": "html list file",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "113335",
@@ -19123,7 +21100,13 @@
    "dateUpdatedString": "20 March 2012",
    "id": "QE.A.111.04",
    "nodeNumber": 249,
-   "name": "AL-HARAMAIN: ALBANIA BRANCH"
+   "name": "AL-HARAMAIN: ALBANIA BRANCH",
+   "narrativeFileName": "NSQE11104E.shtml",
+   "narrativeFileNameSource": "html list file",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "113232",
@@ -19190,7 +21173,13 @@
    "dateUpdatedString": "25 November 2004, 15 September 2008, 23 March 2009",
    "id": "QE.A.109.04",
    "nodeNumber": 250,
-   "name": "AL-HARAMAIN & AL MASJED AL-AQSA CHARITY FOUNDATION"
+   "name": "AL-HARAMAIN & AL MASJED AL-AQSA CHARITY FOUNDATION",
+   "narrativeFileName": "NSQE10904E.shtml",
+   "narrativeFileNameSource": "html list file",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "113454",
@@ -19218,7 +21207,13 @@
    "dateUpdatedString": "20 March 2012",
    "id": "QE.A.112.04",
    "nodeNumber": 251,
-   "name": "AL-HARAMAIN: BANGLADESH BRANCH"
+   "name": "AL-HARAMAIN: BANGLADESH BRANCH",
+   "narrativeFileName": "NSQE11204E.shtml",
+   "narrativeFileNameSource": "html list file",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "113233",
@@ -19246,7 +21241,13 @@
    "dateUpdatedString": "20 March 2012",
    "id": "QE.A.113.04",
    "nodeNumber": 252,
-   "name": "AL-HARAMAIN: ETHIOPIA BRANCH"
+   "name": "AL-HARAMAIN: ETHIOPIA BRANCH",
+   "narrativeFileName": "NSQE11304E.shtml",
+   "narrativeFileNameSource": "html list file",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 1
   },
   {
    "DATAID": "113336",
@@ -19277,7 +21278,13 @@
    "dateUpdatedString": "20 March 2012",
    "id": "QE.A.103.04",
    "nodeNumber": 253,
-   "name": "AL-HARAMAIN FOUNDATION (INDONESIA)"
+   "name": "AL-HARAMAIN FOUNDATION (INDONESIA)",
+   "narrativeFileName": "NSQE10304E.shtml",
+   "narrativeFileNameSource": "html list file",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "113455",
@@ -19305,7 +21312,13 @@
    "dateUpdatedString": "20 March 2012",
    "id": "QE.A.104.04",
    "nodeNumber": 254,
-   "name": "AL-HARAMAIN FOUNDATION (PAKISTAN)"
+   "name": "AL-HARAMAIN FOUNDATION (PAKISTAN)",
+   "narrativeFileName": "NSQE10404E.shtml",
+   "narrativeFileNameSource": "html list file",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "113234",
@@ -19333,7 +21346,13 @@
    "dateUpdatedString": "20 March 2012",
    "id": "QE.A.116.04",
    "nodeNumber": 255,
-   "name": "AL-HARAMAIN FOUNDATION (UNION OF THE COMOROS)"
+   "name": "AL-HARAMAIN FOUNDATION (UNION OF THE COMOROS)",
+   "narrativeFileName": "NSQE11604E.shtml",
+   "narrativeFileNameSource": "html list file",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "113456",
@@ -19380,7 +21399,13 @@
    "dateUpdatedString": "25 December 2003, 15 September 2008, 15 June 2011",
    "id": "QE.A.71.02",
    "nodeNumber": 256,
-   "name": "AL-HARAMAIN ISLAMIC FOUNDATION"
+   "name": "AL-HARAMAIN ISLAMIC FOUNDATION",
+   "narrativeFileName": "NSQE07102E.shtml",
+   "narrativeFileNameSource": "html list file",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "244845",
@@ -19408,7 +21433,13 @@
    "dateUpdatedString": "12 December 2011",
    "id": "QE.A.72.02",
    "nodeNumber": 257,
-   "name": "AL-HARAMAIN ISLAMIC FOUNDATION (SOMALIA)"
+   "name": "AL-HARAMAIN ISLAMIC FOUNDATION (SOMALIA)",
+   "narrativeFileName": "NSQE07202E.shtml",
+   "narrativeFileNameSource": "html list file",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 1
   },
   {
    "DATAID": "113235",
@@ -19439,7 +21470,13 @@
    "dateUpdatedString": "12 April 2012",
    "id": "QE.A.114.04",
    "nodeNumber": 258,
-   "name": "AL-HARAMAIN: THE NETHERLANDS BRANCH"
+   "name": "AL-HARAMAIN: THE NETHERLANDS BRANCH",
+   "narrativeFileName": "NSQE11404E.shtml",
+   "narrativeFileNameSource": "html list file",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "113338",
@@ -19481,7 +21518,13 @@
    "dateUpdatedString": "20 March 2012",
    "id": "QE.A.105.04",
    "nodeNumber": 259,
-   "name": "AL-HARAMAYN FOUNDATION (KENYA)"
+   "name": "AL-HARAMAYN FOUNDATION (KENYA)",
+   "narrativeFileName": "NSQE10504E.shtml",
+   "narrativeFileNameSource": "html list file",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 2
   },
   {
    "DATAID": "113339",
@@ -19509,7 +21552,13 @@
    "dateUpdatedString": "20 March 2012",
    "id": "QE.A.106.04",
    "nodeNumber": 260,
-   "name": "AL-HARAMAYN FOUNDATION (TANZANIA)"
+   "name": "AL-HARAMAYN FOUNDATION (TANZANIA)",
+   "narrativeFileName": "NSQE10604E.shtml",
+   "narrativeFileNameSource": "html list file",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 1
   },
   {
    "DATAID": "113457",
@@ -19540,7 +21589,13 @@
    "dateUpdatedString": "20 December 2007, 12 December 2011, 17 March 2013",
    "id": "QE.A.2.01",
    "nodeNumber": 261,
-   "name": "AL-ITIHAAD AL-ISLAMIYA / AIAI"
+   "name": "AL-ITIHAAD AL-ISLAMIYA / AIAI",
+   "narrativeFileName": "NSQE00201E.shtml",
+   "narrativeFileNameSource": "html list file",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 2
   },
   {
    "DATAID": "3116299",
@@ -19579,7 +21634,13 @@
    "dateUpdatedString": "",
    "id": "QE.M.139.14",
    "nodeNumber": 262,
-   "name": "AL MOUAKAOUNE BIDDAM"
+   "name": "AL MOUAKAOUNE BIDDAM",
+   "narrativeFileName": "NSQE13914E.shtml",
+   "narrativeFileNameSource": "html list file",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "3116737",
@@ -19622,7 +21683,13 @@
    "dateUpdatedString": "",
    "id": "QE.M.140.14",
    "nodeNumber": 263,
-   "name": "AL MOULATHAMOUN"
+   "name": "AL MOULATHAMOUN",
+   "narrativeFileName": "NSQE14014E.shtml",
+   "narrativeFileNameSource": "html list file",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "3116738",
@@ -19657,7 +21724,13 @@
    "dateUpdatedString": "",
    "id": "QE.M.141.14",
    "nodeNumber": 264,
-   "name": "AL MOURABITOUN"
+   "name": "AL MOURABITOUN",
+   "narrativeFileName": "NSQE14114E.shtml",
+   "narrativeFileNameSource": "html list file",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "3039466",
@@ -19701,7 +21774,13 @@
    "dateUpdatedString": "",
    "id": "QE.A.137.14",
    "nodeNumber": 265,
-   "name": "AL-NUSRAH FRONT FOR THE PEOPLE OF THE LEVANT"
+   "name": "AL-NUSRAH FRONT FOR THE PEOPLE OF THE LEVANT",
+   "narrativeFileName": "NSQE13714E.shtml",
+   "narrativeFileNameSource": "html list file",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 1
   },
   {
    "DATAID": "113458",
@@ -19772,7 +21851,13 @@
    "dateUpdatedString": "4 March 2009, 20 March 2012",
    "id": "QE.A.4.01",
    "nodeNumber": 266,
-   "name": "AL-QAIDA"
+   "name": "AL-QAIDA",
+   "narrativeFileName": "NSQE00401E.shtml",
+   "narrativeFileNameSource": "html list file",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 22
   },
   {
    "DATAID": "113966",
@@ -19871,7 +21956,13 @@
    "dateUpdatedString": "1 December 2004, 4 March 2009, 12 December 2011, 29 May 2013, 12 May 2014, 1 June 2014",
    "id": "QE.J.115.04",
    "nodeNumber": 267,
-   "name": "AL-QAIDA IN IRAQ"
+   "name": "AL-QAIDA IN IRAQ",
+   "narrativeFileName": "NSQE11504E.shtml",
+   "narrativeFileNameSource": "html list file",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 3
   },
   {
    "DATAID": "2881836",
@@ -19923,7 +22014,13 @@
    "dateUpdatedString": "3 October 2012",
    "id": "QE.A.129.10",
    "nodeNumber": 268,
-   "name": "AL-QAIDA IN THE ARABIAN PENINSULA (AQAP)"
+   "name": "AL-QAIDA IN THE ARABIAN PENINSULA (AQAP)",
+   "narrativeFileName": "NSQE12910E.shtml",
+   "narrativeFileNameSource": "html list file",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "113459",
@@ -20034,7 +22131,13 @@
    "dateUpdatedString": "20 October 2008, 9 December 2008, 12 December 2011",
    "id": "QE.A.5.01",
    "nodeNumber": 269,
-   "name": "AL RASHID TRUST"
+   "name": "AL RASHID TRUST",
+   "narrativeFileName": "NSQE00501E.shtml",
+   "narrativeFileNameSource": "html list file",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "3165860",
@@ -20098,7 +22201,13 @@
    "dateUpdatedString": "",
    "id": "QE.A.146.14",
    "nodeNumber": 270,
-   "name": "ANSAR AL CHARIA BENGHAZI"
+   "name": "ANSAR AL CHARIA BENGHAZI",
+   "narrativeFileName": "NSQE14614E.shtml",
+   "narrativeFileNameSource": "html list file",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "3165859",
@@ -20150,7 +22259,13 @@
    "dateUpdatedString": "",
    "id": "QE.A.145.14",
    "nodeNumber": 271,
-   "name": "ANSAR AL CHARIA DERNA"
+   "name": "ANSAR AL CHARIA DERNA",
+   "narrativeFileName": "NSQE14514E.shtml",
+   "narrativeFileNameSource": "html list file",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "113460",
@@ -20228,7 +22343,13 @@
    "dateUpdatedString": "30 March 2004, 4 March 2009, 17 March 2009, 20 October 2010, 12 December 2011",
    "id": "QE.A.98.03",
    "nodeNumber": 272,
-   "name": "ANSAR AL-ISLAM"
+   "name": "ANSAR AL-ISLAM",
+   "narrativeFileName": "NSQE09803E.shtml",
+   "narrativeFileNameSource": "html list file",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 1
   },
   {
    "DATAID": "3162386",
@@ -20278,7 +22399,13 @@
    "dateUpdatedString": "",
    "id": "QE.A.143.14",
    "nodeNumber": 273,
-   "name": "ANSAR AL-SHARI’A IN TUNISIA (AAS-T)"
+   "name": "ANSAR AL-SHARI’A IN TUNISIA (AAS-T)",
+   "narrativeFileName": "NSQE14314E.shtml",
+   "narrativeFileNameSource": "html list file",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 1
   },
   {
    "DATAID": "3014161",
@@ -20307,7 +22434,13 @@
    "dateUpdatedString": "",
    "id": "QE.A.135.13",
    "nodeNumber": 274,
-   "name": "ANSAR EDDINE"
+   "name": "ANSAR EDDINE",
+   "narrativeFileName": "NSQE13513E.shtml",
+   "narrativeFileNameSource": "html list file",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "3150933",
@@ -20362,7 +22495,13 @@
    "dateUpdatedString": "",
    "id": "QE.A.142.14",
    "nodeNumber": 275,
-   "name": "ANSARUL MUSLIMINA FI BILADIS SUDAN"
+   "name": "ANSARUL MUSLIMINA FI BILADIS SUDAN",
+   "narrativeFileName": "NSQE14214E.shtml",
+   "narrativeFileNameSource": "html list file",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "113237",
@@ -20407,7 +22546,13 @@
    "dateUpdatedString": "6 April 2008, 12 December 2011",
    "id": "QE.A.6.01",
    "nodeNumber": 276,
-   "name": "ARMED ISLAMIC GROUP"
+   "name": "ARMED ISLAMIC GROUP",
+   "narrativeFileName": "NSQE00601E.shtml",
+   "narrativeFileNameSource": "html list file",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 2
   },
   {
    "DATAID": "113461",
@@ -20440,7 +22585,13 @@
    "dateUpdatedString": "29 January 2009, 12 December 2011",
    "id": "QE.A.7.01",
    "nodeNumber": 277,
-   "name": "ASBAT AL-ANSAR"
+   "name": "ASBAT AL-ANSAR",
+   "narrativeFileName": "NSQE00701E.shtml",
+   "narrativeFileNameSource": "html list file",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "113474",
@@ -20530,7 +22681,13 @@
    "dateUpdatedString": "23 January 2003, 27 April 2011, 17 May 2012",
    "id": "QE.B.93.02",
    "nodeNumber": 278,
-   "name": "BENEVOLENCE INTERNATIONAL FOUNDATION"
+   "name": "BENEVOLENCE INTERNATIONAL FOUNDATION",
+   "narrativeFileName": "NSQE09302E.shtml",
+   "narrativeFileNameSource": "html list file",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "113245",
@@ -20573,7 +22730,13 @@
    "dateUpdatedString": "25 November 2004, 6 April 2008, 24 January 2010, 12 December 2011",
    "id": "QE.D.102.03",
    "nodeNumber": 279,
-   "name": "DJAMAT HOUMAT DAAWA SALAFIA (DHDS)"
+   "name": "DJAMAT HOUMAT DAAWA SALAFIA (DHDS)",
+   "narrativeFileName": "NSQE10203E.shtml",
+   "narrativeFileNameSource": "html list file",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "113356",
@@ -20619,7 +22782,13 @@
    "dateUpdatedString": "2 October 2008, 12 December 2011",
    "id": "QE.E.88.02",
    "nodeNumber": 280,
-   "name": "EASTERN TURKISTAN ISLAMIC MOVEMENT (ETIM)"
+   "name": "EASTERN TURKISTAN ISLAMIC MOVEMENT (ETIM)",
+   "narrativeFileName": "NSQE08802E.shtml",
+   "narrativeFileNameSource": "html list file",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "113236",
@@ -20670,7 +22839,13 @@
    "dateUpdatedString": "4 March 2009, 12 December 2011",
    "id": "QE.A.3.01",
    "nodeNumber": 281,
-   "name": "EGYPTIAN ISLAMIC JIHAD"
+   "name": "EGYPTIAN ISLAMIC JIHAD",
+   "narrativeFileName": "NSQE00301E.shtml",
+   "narrativeFileNameSource": "html list file",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 6
   },
   {
    "DATAID": "2971893",
@@ -20694,7 +22869,13 @@
    "dateUpdatedString": "",
    "id": "QE.E.131.11",
    "nodeNumber": 282,
-   "name": "EMARAT KAVKAZ"
+   "name": "EMARAT KAVKAZ",
+   "narrativeFileName": "NSQE13111E.shtml",
+   "narrativeFileNameSource": "html list file",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "113476",
@@ -20743,7 +22924,13 @@
    "dateUpdatedString": "25 November 2004, 19 December 2005, 24 July 2006, 23 March 2009, 10 March 2010, 24 March 2010, 27 April 2011, 20 February 2012, 13 February 2014",
    "id": "QE.G.91.02",
    "nodeNumber": 283,
-   "name": "GLOBAL RELIEF FOUNDATION (GRF)"
+   "name": "GLOBAL RELIEF FOUNDATION (GRF)",
+   "narrativeFileName": "NSQE09102E.shtml",
+   "narrativeFileNameSource": "html list file",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "2921366",
@@ -20803,7 +22990,13 @@
    "dateUpdatedString": "12 December 2011",
    "id": "QE.H.130.10",
    "nodeNumber": 284,
-   "name": "HARAKAT-UL JIHAD ISLAMI"
+   "name": "HARAKAT-UL JIHAD ISLAMI",
+   "narrativeFileName": "NSQE13010E.shtml",
+   "narrativeFileNameSource": "html list file",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "113263",
@@ -20856,7 +23049,13 @@
    "dateUpdatedString": "12 December 2011",
    "id": "QE.H.8.01",
    "nodeNumber": 285,
-   "name": "HARAKAT UL-MUJAHIDIN / HUM"
+   "name": "HARAKAT UL-MUJAHIDIN / HUM",
+   "narrativeFileName": "NSQE00801E.shtml",
+   "narrativeFileNameSource": "html list file",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "114074",
@@ -20879,7 +23078,13 @@
    "dateUpdatedString": "",
    "id": "QE.I.9.01",
    "nodeNumber": 286,
-   "name": "ISLAMIC ARMY OF ADEN"
+   "name": "ISLAMIC ARMY OF ADEN",
+   "narrativeFileName": "NSQE00901E.shtml",
+   "narrativeFileNameSource": "html list file",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 1
   },
   {
    "DATAID": "113963",
@@ -20930,7 +23135,13 @@
    "dateUpdatedString": "12 December 2011",
    "id": "QE.I.99.03",
    "nodeNumber": 287,
-   "name": "ISLAMIC INTERNATIONAL BRIGADE (IIB)"
+   "name": "ISLAMIC INTERNATIONAL BRIGADE (IIB)",
+   "narrativeFileName": "NSQE09903E.shtml",
+   "narrativeFileNameSource": "html list file",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 1
   },
   {
    "DATAID": "113853",
@@ -21005,7 +23216,13 @@
    "dateUpdatedString": "18 April 2006, 19 February 2008, 12 December 2011",
    "id": "QE.I.119.05",
    "nodeNumber": 288,
-   "name": "ISLAMIC JIHAD GROUP"
+   "name": "ISLAMIC JIHAD GROUP",
+   "narrativeFileName": "NSQE11905E.shtml",
+   "narrativeFileNameSource": "html list file",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "113964",
@@ -21034,7 +23251,13 @@
    "dateUpdatedString": "12 December 2011",
    "id": "QE.I.10.01",
    "nodeNumber": 289,
-   "name": "ISLAMIC MOVEMENT OF UZBEKISTAN"
+   "name": "ISLAMIC MOVEMENT OF UZBEKISTAN",
+   "narrativeFileName": "NSQE01001E.shtml",
+   "narrativeFileNameSource": "html list file",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "113965",
@@ -21065,7 +23288,13 @@
    "dateUpdatedString": "12 December 2011",
    "id": "QE.J.19.01",
    "nodeNumber": 290,
-   "name": "JAISH-I-MOHAMMED"
+   "name": "JAISH-I-MOHAMMED",
+   "narrativeFileName": "NSQE01901E.shtml",
+   "narrativeFileNameSource": "html list file",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "3048562",
@@ -21111,7 +23340,13 @@
    "dateUpdatedString": "",
    "id": "QE.B.138.14",
    "nodeNumber": 291,
-   "name": "JAMA'ATU AHLIS SUNNA LIDDA'AWATI WAL-JIHAD"
+   "name": "JAMA'ATU AHLIS SUNNA LIDDA'AWATI WAL-JIHAD",
+   "narrativeFileName": "NSQE13814E.shtml",
+   "narrativeFileNameSource": "html list file",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "113854",
@@ -21153,7 +23388,13 @@
    "dateUpdatedString": "12 December 2011",
    "id": "QE.J.20.01",
    "nodeNumber": 292,
-   "name": "JAM'YAH TA'AWUN AL-ISLAMIA"
+   "name": "JAM'YAH TA'AWUN AL-ISLAMIA",
+   "narrativeFileName": "NSQE02001E.shtml",
+   "narrativeFileNameSource": "html list file",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "113967",
@@ -21200,7 +23441,13 @@
    "dateUpdatedString": "12 December 2011",
    "id": "QE.J.92.02",
    "nodeNumber": 293,
-   "name": "JEMAAH ISLAMIYAH"
+   "name": "JEMAAH ISLAMIYAH",
+   "narrativeFileName": "NSQE09202E.shtml",
+   "narrativeFileNameSource": "html list file",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "2983820",
@@ -21250,7 +23497,13 @@
    "dateUpdatedString": "",
    "id": "QE.J.133.12",
    "nodeNumber": 294,
-   "name": "JEMMAH ANSHORUT TAUHID (JAT)"
+   "name": "JEMMAH ANSHORUT TAUHID (JAT)",
+   "narrativeFileName": "NSQE13312E.shtml",
+   "narrativeFileNameSource": "html list file",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "114076",
@@ -21389,7 +23642,13 @@
    "dateUpdatedString": "2 November 2005, 9 December 2008, 13 March 2012",
    "id": "QE.L.118.05",
    "nodeNumber": 295,
-   "name": "LASHKAR-E-TAYYIBA"
+   "name": "LASHKAR-E-TAYYIBA",
+   "narrativeFileName": "NSQE11805E.shtml",
+   "narrativeFileNameSource": "html list file",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "114089",
@@ -21415,7 +23674,13 @@
    "dateUpdatedString": "12 December 2011",
    "id": "QE.L.96.03",
    "nodeNumber": 296,
-   "name": "LASHKAR I JHANGVI (LJ)"
+   "name": "LASHKAR I JHANGVI (LJ)",
+   "narrativeFileName": "NSQE09603E.shtml",
+   "narrativeFileNameSource": "html list file",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "114090",
@@ -21450,7 +23715,13 @@
    "dateUpdatedString": "4 March 2009, 12 December 2011",
    "id": "QE.L.11.01",
    "nodeNumber": 297,
-   "name": "LIBYAN ISLAMIC FIGHTING GROUP"
+   "name": "LIBYAN ISLAMIC FIGHTING GROUP",
+   "narrativeFileName": "NSQE01101E.shtml",
+   "narrativeFileNameSource": "html list file",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 1
   },
   {
    "DATAID": "113858",
@@ -21489,7 +23760,13 @@
    "dateUpdatedString": "4 March 2009, 12 December 2011",
    "id": "QE.M.12.01",
    "nodeNumber": 298,
-   "name": "MAKHTAB AL-KHIDAMAT"
+   "name": "MAKHTAB AL-KHIDAMAT",
+   "narrativeFileName": "NSQE01201E.shtml",
+   "narrativeFileNameSource": "html list file",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "113977",
@@ -21527,7 +23804,13 @@
    "dateUpdatedString": "4 March 2009",
    "id": "QE.M.89.02",
    "nodeNumber": 299,
-   "name": "MOROCCAN ISLAMIC COMBATANT GROUP"
+   "name": "MOROCCAN ISLAMIC COMBATANT GROUP",
+   "narrativeFileName": "NSQE08902E.shtml",
+   "narrativeFileNameSource": "html list file",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "3001252",
@@ -21558,7 +23841,13 @@
    "dateUpdatedString": "",
    "id": "QE.M.134.12",
    "nodeNumber": 300,
-   "name": "MOUVEMENT POUR L’UNIFICATION ET LE JIHAD EN AFRIQUE DE L’OUEST (MUJAO)"
+   "name": "MOUVEMENT POUR L’UNIFICATION ET LE JIHAD EN AFRIQUE DE L’OUEST (MUJAO)",
+   "narrativeFileName": "NSQE13412E.shtml",
+   "narrativeFileNameSource": "html list file",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "3026605",
@@ -21601,7 +23890,13 @@
    "dateUpdatedString": "",
    "id": "QE.M.136.13",
    "nodeNumber": 301,
-   "name": "MUHAMMAD JAMAL NETWORK (MJN)"
+   "name": "MUHAMMAD JAMAL NETWORK (MJN)",
+   "narrativeFileName": "NSQE13613E.shtml",
+   "narrativeFileNameSource": "html list file",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 1
   },
   {
    "DATAID": "113993",
@@ -21629,7 +23924,13 @@
    "dateUpdatedString": "20 March 2012",
    "id": "QE.R.21.01",
    "nodeNumber": 302,
-   "name": "RABITA TRUST"
+   "name": "RABITA TRUST",
+   "narrativeFileName": "NSQE02101E.shtml",
+   "narrativeFileNameSource": "html list file",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "2812924",
@@ -21682,7 +23983,13 @@
    "dateUpdatedString": "12 December 2011",
    "id": "QE.R.128.08",
    "nodeNumber": 303,
-   "name": "RAJAH SOLAIMAN MOVEMENT"
+   "name": "RAJAH SOLAIMAN MOVEMENT",
+   "narrativeFileName": "NSQE12808E.shtml",
+   "narrativeFileNameSource": "html list file",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "113994",
@@ -21737,7 +24044,13 @@
    "dateUpdatedString": "24 July 2006, 4 March 2009, 12 December 2011",
    "id": "QE.R.70.02",
    "nodeNumber": 304,
-   "name": "REVIVAL OF ISLAMIC HERITAGE SOCIETY"
+   "name": "REVIVAL OF ISLAMIC HERITAGE SOCIETY",
+   "narrativeFileName": "NSQE07002E.shtml",
+   "narrativeFileNameSource": "html list file",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 1
   },
   {
    "DATAID": "113868",
@@ -21787,7 +24100,13 @@
    "dateUpdatedString": "24 July 2006, 12 December 2011",
    "id": "QE.R.100.03",
    "nodeNumber": 305,
-   "name": "RIYADUS-SALIKHIN RECONNAISSANCE AND SABOTAGE BATTALION OF CHECHEN MARTYRS (RSRSBCM)"
+   "name": "RIYADUS-SALIKHIN RECONNAISSANCE AND SABOTAGE BATTALION OF CHECHEN MARTYRS (RSRSBCM)",
+   "narrativeFileName": "NSQE10003E.shtml",
+   "narrativeFileNameSource": "html list file",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "114111",
@@ -21829,7 +24148,13 @@
    "dateUpdatedString": "24 July 2006, 12 December 2011",
    "id": "QE.S.101.03",
    "nodeNumber": 306,
-   "name": "SPECIAL PURPOSE ISLAMIC REGIMENT (SPIR)"
+   "name": "SPECIAL PURPOSE ISLAMIC REGIMENT (SPIR)",
+   "narrativeFileName": "NSQE10103E.shtml",
+   "narrativeFileNameSource": "html list file",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "114112",
@@ -21893,7 +24218,13 @@
    "dateUpdatedString": "23 March 2009",
    "id": "QE.T.108.04",
    "nodeNumber": 307,
-   "name": "TAIBAH INTERNATIONAL-BOSNIA OFFICES"
+   "name": "TAIBAH INTERNATIONAL-BOSNIA OFFICES",
+   "narrativeFileName": "NSQE10804E.shtml",
+   "narrativeFileNameSource": "html list file",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "2971894",
@@ -21934,7 +24265,13 @@
    "dateUpdatedString": "",
    "id": "QE.T.132.11",
    "nodeNumber": 308,
-   "name": "TEHRIK-E TALIBAN PAKISTAN (TTP)"
+   "name": "TEHRIK-E TALIBAN PAKISTAN (TTP)",
+   "narrativeFileName": "NSQE13211E.shtml",
+   "narrativeFileNameSource": "html list file",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "113995",
@@ -22003,7 +24340,13 @@
    "dateUpdatedString": "25 April 2007, 6 April 2008, 16 July 2009, 12 December 2011",
    "id": "QE.T.14.01",
    "nodeNumber": 309,
-   "name": "THE ORGANIZATION OF AL-QAIDA IN THE ISLAMIC MAGHREB"
+   "name": "THE ORGANIZATION OF AL-QAIDA IN THE ISLAMIC MAGHREB",
+   "narrativeFileName": "NSQE01401E.shtml",
+   "narrativeFileNameSource": "html list file",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 2
   },
   {
    "DATAID": "113997",
@@ -22049,7 +24392,13 @@
    "dateUpdatedString": "25 November 2004, 4 March 2009, 12 December 2011",
    "id": "QE.T.90.02",
    "nodeNumber": 310,
-   "name": "TUNISIAN COMBATANT GROUP"
+   "name": "TUNISIAN COMBATANT GROUP",
+   "narrativeFileName": "NSQE09002E.shtml",
+   "narrativeFileNameSource": "html list file",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "113883",
@@ -22077,7 +24426,13 @@
    "dateUpdatedString": "12 December 2011",
    "id": "QE.U.68.01",
    "nodeNumber": 311,
-   "name": "UMMAH TAMEER E-NAU (UTN)"
+   "name": "UMMAH TAMEER E-NAU (UTN)",
+   "narrativeFileName": "NSQE06801E.shtml",
+   "narrativeFileNameSource": "html list file",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "DATAID": "114113",
@@ -22118,7 +24473,13 @@
    "dateUpdatedString": "20 March 2012",
    "id": "QE.W.15.01",
    "nodeNumber": 312,
-   "name": "WAFA HUMANITARIAN ORGANIZATION"
+   "name": "WAFA HUMANITARIAN ORGANIZATION",
+   "narrativeFileName": "NSQE01501E.shtml",
+   "narrativeFileNameSource": "html list file",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "name": "International Islamic Relief Organization, Philippines, branch offices (no longer listed)",
@@ -22130,7 +24491,12 @@
    "noLongerListed": 1,
    "lastDateUpdatedCount": 0,
    "dateUpdatedString": "",
-   "nodeNumber": 313
+   "nodeNumber": 313,
+   "narrativeFileName": "NSQE12606E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
    "name": "Aid Organization of the Ulema, Pakistan (no longer listed)",
@@ -22142,28 +24508,2129 @@
    "noLongerListed": 1,
    "lastDateUpdatedCount": 0,
    "dateUpdatedString": "",
-   "nodeNumber": 314
+   "nodeNumber": 314,
+   "narrativeFileName": "NSQE07302E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   },
   {
-   "name": "Benevolence International Fund  (no longer listed)",
-   "FIRST_NAME": "Benevolence International Fund  (no longer listed)",
-   "id": "QE.B.94.02",
-   "REFERENCE_NUMBER": "QE.B.94.02",
-   "COMMENTS1": "",
-   "indiv0OrEnt1": 1,
-   "noLongerListed": 1,
-   "lastDateUpdatedCount": 0,
-   "dateUpdatedString": "",
-   "nodeNumber": 315
+   "DATAID": "112079",
+   "VERSIONNUM": "8",
+   "FIRST_NAME": "AL SAYYID",
+   "SECOND_NAME": "AHMED",
+   "THIRD_NAME": "FATHI",
+   "FOURTH_NAME": "HUSSEIN ELIWAH",
+   "UN_LIST_TYPE": "Al-Qaida",
+   "REFERENCE_NUMBER": "QI.H.195.05",
+   "LISTED_ON": "2005-09-29T00:00:00",
+   "NAME_ORIGINAL_SCRIPT": "السيد احمد فتحي حسين عليوة",
+   "COMMENTS1": "Sentenced to 15 years imprisonment in Egypt in 1999. Father’s name is Fathi Hussein Elaiwa. Member of Egyptian Islamic Jihad (QE.A.3.01). Review pursuant to Security Council resolution 1822 (2008) was concluded on 29 Jul. 2010.",
+   "NATIONALITY": {
+    "VALUE": "Egyptian"
+   },
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "LAST_DAY_UPDATED": {
+    "VALUE": [
+     "2005-10-06T00:00:00",
+     "2006-08-18T00:00:00",
+     "2011-12-13T00:00:00"
+    ]
+   },
+   "INDIVIDUAL_ALIAS": [
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Al Sayyid Ahmed Fathi Hussein Eliwa"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Al Sayyid Ahmed Fathi Hussein Alaiwah"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Al Sayyid Ahmed Fathi Hussein Elaiwa"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Al Sayyid Ahmed Fathi Hussein Ilewah"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Al Sayyid Ahmed Fathi Hussein Alaywah"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "El Sayed Ahmad Fathi Hussein Elaiwa"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Hatim"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Hisham"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Abu Umar"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "El-Sayed Ilawah born on 3 Jul.1954"
+    }
+   ],
+   "INDIVIDUAL_ADDRESS": {
+    "COUNTRY": "United Kingdom"
+   },
+   "INDIVIDUAL_DATE_OF_BIRTH": [
+    {
+     "TYPE_OF_DATE": "Exact",
+     "DATE": "1964-07-30T00:00:00"
+    },
+    {
+     "TYPE_OF_DATE": "Exact",
+     "DATE": "1964-01-30T00:00:00"
+    }
+   ],
+   "INDIVIDUAL_PLACE_OF_BIRTH": {
+    "NOTE": "Suez, Egypt"
+   },
+   "INDIVIDUAL_DOCUMENT": {
+    "TYPE_OF_DOCUMENT": "Passport",
+    "NOTE": "United Kingdom passport number RP0185179 issued on 11 Sep. 2001, expires on 11 Sep. 2011 (in the name of Al-Sayyid Ilewah)"
+   },
+   "SORT_KEY": "HUSSEINELIWAH ALSAYYID AHMED FATHI",
+   "SORT_KEY_LAST_MOD": "2011-12-13T00:00:00",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "",
+   "indivPlaceOfBirthString": "Suez, Egypt, ",
+   "aliasCount": 10,
+   "indivAliasString": "Al Sayyid Ahmed Fathi Hussein Eliwa (Good); Al Sayyid Ahmed Fathi Hussein Alaiwah (Good); Al Sayyid Ahmed Fathi Hussein Elaiwa (Good); Al Sayyid Ahmed Fathi Hussein Ilewah (Good); Al Sayyid Ahmed Fathi Hussein Alaywah (Good); El Sayed Ahmad Fathi Hussein Elaiwa (Good); Hatim (Good); Hisham (Good); Abu Umar (Good); El-Sayed Ilawah born on 3 Jul.1954 (Good); ",
+   "lastDateUpdatedCount": 3,
+   "dateUpdatedString": "5 October 2005, 17 August 2006, 12 December 2011",
+   "id": "QI.H.195.05",
+   "nodeNumber": 158,
+   "name": "AL SAYYID AHMED FATHI HUSSEIN ELIWAH",
+   "natnlty": "Egyptian",
+   "narrativeFileName": "NSQI19505E.shtml",
+   "narrativeFileNameSource": "derived from id",
+   "linksFromNarrArray": [],
+   "connectedToIdFromNarrativeArray": [],
+   "connectionObjectsFromNarrative": [],
+   "linkCount": 0
   }
  ],
  "dateGenerated": "02-18-2015",
  "dateCollected": "02-28-2015",
  "message": "Collected AQList.xml labeled as generated on: 02-18-2015 [Wed Feb 18 2015 00:00:00 GMT-0500 (Eastern Standard Time)]",
  "comments": {
-  "links": []
+  "links": [
+   {
+    "source": "QI.A.255.08",
+    "target": "QE.A.4.01"
+   },
+   {
+    "source": "QI.A.255.08",
+    "target": "QE.L.11.01"
+   },
+   {
+    "source": "QI.A.289.11",
+    "target": "QE.A.4.01"
+   },
+   {
+    "source": "QI.A.192.05",
+    "target": "QE.A.3.01"
+   },
+   {
+    "source": "QI.A.295.11",
+    "target": "QE.J.92.02"
+   },
+   {
+    "source": "QI.A.295.11",
+    "target": "QI.A.86.03"
+   },
+   {
+    "source": "QI.A.229.07",
+    "target": "QE.L.11.01"
+   },
+   {
+    "source": "QI.A.309.12",
+    "target": "QE.A.4.01"
+   },
+   {
+    "source": "QI.A.309.12",
+    "target": "QE.H.130.10"
+   },
+   {
+    "source": "QI.A.309.12",
+    "target": "QE.J.19.01"
+   },
+   {
+    "source": "QI.A.309.12",
+    "target": "QE.A.121.05"
+   },
+   {
+    "source": "QI.A.130.03",
+    "target": "QI.S.128.03"
+   },
+   {
+    "source": "QI.A.130.03",
+    "target": "QI.M.129.03"
+   },
+   {
+    "source": "QI.A.130.03",
+    "target": "QI.A.132.03"
+   },
+   {
+    "source": "QI.A.201.05",
+    "target": "QI.A.224.06"
+   },
+   {
+    "source": "QI.A.304.12",
+    "target": "QE.J.133.12"
+   },
+   {
+    "source": "QI.A.304.12",
+    "target": "QI.B.217.06"
+   },
+   {
+    "source": "QI.A.304.12",
+    "target": "QI.B.293.11"
+   },
+   {
+    "source": "QI.A.304.12",
+    "target": "QE.J.92.02"
+   },
+   {
+    "source": "QI.A.316.13",
+    "target": "QE.T.14.01"
+   },
+   {
+    "source": "QI.A.316.13",
+    "target": "QE.M.134.12"
+   },
+   {
+    "source": "QI.A.193.05",
+    "target": "QE.A.3.01"
+   },
+   {
+    "source": "QI.A.313.13",
+    "target": "QE.T.14.01"
+   },
+   {
+    "source": "QI.A.325.14",
+    "target": "QE.J.115.04"
+   },
+   {
+    "source": "QI.A.325.14",
+    "target": "QI.A.317.13"
+   },
+   {
+    "source": "QI.A.325.14",
+    "target": "QI.A.299.11"
+   },
+   {
+    "source": "QI.A.328.14",
+    "target": "QE.A.137.14"
+   },
+   {
+    "source": "QI.A.338.14",
+    "target": "QE.A.137.14"
+   },
+   {
+    "source": "QI.A.326.14",
+    "target": "QE.J.115.04"
+   },
+   {
+    "source": "QI.A.326.14",
+    "target": "QE.A.137.14"
+   },
+   {
+    "source": "QI.A.326.14",
+    "target": "QI.A.299.11"
+   },
+   {
+    "source": "QI.A.326.14",
+    "target": "QI.A.317.13"
+   },
+   {
+    "source": "QI.A.335.14",
+    "target": "QE.A.4.01"
+   },
+   {
+    "source": "QI.A.335.14",
+    "target": "QE.J.115.04"
+   },
+   {
+    "source": "QI.A.60.02",
+    "target": "QE.A.143.14"
+   },
+   {
+    "source": "QI.A.291.11",
+    "target": "QE.A.129.10"
+   },
+   {
+    "source": "QI.A.291.11",
+    "target": "QI.A.274.10"
+   },
+   {
+    "source": "QI.A.291.11",
+    "target": "QI.A.275.10"
+   },
+   {
+    "source": "QI.A.291.11",
+    "target": "QI.A.282.10"
+   },
+   {
+    "source": "QI.A.291.11",
+    "target": "QI.A.283.10"
+   },
+   {
+    "source": "QI.A.344.15",
+    "target": "QE.A.4.01"
+   },
+   {
+    "source": "QI.A.324.14",
+    "target": "QE.A.4.01"
+   },
+   {
+    "source": "QI.A.324.14",
+    "target": "QE.A.137.14"
+   },
+   {
+    "source": "QI.A.231.07",
+    "target": "QE.L.11.01"
+   },
+   {
+    "source": "QI.A.231.07",
+    "target": "QE.A.4.01"
+   },
+   {
+    "source": "QI.A.132.03",
+    "target": "QI.S.128.03"
+   },
+   {
+    "source": "QI.A.132.03",
+    "target": "QI.M.129.03"
+   },
+   {
+    "source": "QI.A.132.03",
+    "target": "QI.A.130.03"
+   },
+   {
+    "source": "QI.A.278.10",
+    "target": "QE.J.115.04"
+   },
+   {
+    "source": "QI.A.292.11",
+    "target": "QE.A.129.10"
+   },
+   {
+    "source": "QI.A.292.11",
+    "target": "QI.A.282.10"
+   },
+   {
+    "source": "QI.A.332.14",
+    "target": "QE.A.144.14"
+   },
+   {
+    "source": "QI.A.254.08",
+    "target": "QE.A.4.01"
+   },
+   {
+    "source": "QI.A.299.11",
+    "target": "QE.J.115.04"
+   },
+   {
+    "source": "QI.M.296.11",
+    "target": "QE.L.96.03"
+   },
+   {
+    "source": "QI.M.296.11",
+    "target": "QE.H.130.10"
+   },
+   {
+    "source": "QI.A.194.05",
+    "target": "QE.A.3.01"
+   },
+   {
+    "source": "QI.A.327.14",
+    "target": "QE.A.137.14"
+   },
+   {
+    "source": "QI.A.317.13",
+    "target": "QE.A.137.14"
+   },
+   {
+    "source": "QI.A.317.13",
+    "target": "QE.J.115.04"
+   },
+   {
+    "source": "QI.A.317.13",
+    "target": "QI.A.299.11"
+   },
+   {
+    "source": "QI.A.317.13",
+    "target": "QI.A.6.01"
+   },
+   {
+    "source": "QI.A.58.02",
+    "target": "QE.A.69.02"
+   },
+   {
+    "source": "QI.A.58.02",
+    "target": "QE.A.4.01"
+   },
+   {
+    "source": "QI.A.71.02",
+    "target": "QE.T.90.02"
+   },
+   {
+    "source": "QI.A.337.14",
+    "target": "QE.A.137.14"
+   },
+   {
+    "source": "QI.A.318.13",
+    "target": "QE.A.4.01"
+   },
+   {
+    "source": "QI.A.318.13",
+    "target": "QE.A.3.01"
+   },
+   {
+    "source": "QI.A.318.13",
+    "target": "QE.M.136.13"
+   },
+   {
+    "source": "QI.A.318.13",
+    "target": "QE.A.129.10"
+   },
+   {
+    "source": "QI.A.318.13",
+    "target": "QI.A.6.01"
+   },
+   {
+    "source": "QI.A.318.13",
+    "target": "QE.T.14.01"
+   },
+   {
+    "source": "QI.A.233.07",
+    "target": "QE.A.1.01"
+   },
+   {
+    "source": "QI.A.330.14",
+    "target": "QE.A.4.01"
+   },
+   {
+    "source": "QI.A.276.10",
+    "target": "QI.A.277.10"
+   },
+   {
+    "source": "QI.A.277.10",
+    "target": "QI.A.276.10"
+   },
+   {
+    "source": "QI.A.334.14",
+    "target": "QE.A.4.01"
+   },
+   {
+    "source": "QI.A.334.14",
+    "target": "QE.J.115.04"
+   },
+   {
+    "source": "QI.A.273.09",
+    "target": "QE.A.4.01"
+   },
+   {
+    "source": "QI.A.339.14",
+    "target": "QE.J.115.04"
+   },
+   {
+    "source": "QI.A.339.14",
+    "target": "QE.A.4.01"
+   },
+   {
+    "source": "QI.A.275.10",
+    "target": "QI.A.274.10"
+   },
+   {
+    "source": "QI.A.275.10",
+    "target": "QE.A.129.10"
+   },
+   {
+    "source": "QI.A.275.10",
+    "target": "QE.A.4.01"
+   },
+   {
+    "source": "QI.A.253.08",
+    "target": "QE.A.4.01"
+   },
+   {
+    "source": "QI.A.234.07",
+    "target": "QE.A.1.01"
+   },
+   {
+    "source": "QI.A.172.04",
+    "target": "QE.A.2.01"
+   },
+   {
+    "source": "QI.A.274.10",
+    "target": "QE.A.129.10"
+   },
+   {
+    "source": "QI.A.274.10",
+    "target": "QI.A.275.10"
+   },
+   {
+    "source": "QI.A.274.10",
+    "target": "QE.A.4.01"
+   },
+   {
+    "source": "QI.A.329.14",
+    "target": "QE.A.4.01"
+   },
+   {
+    "source": "QI.A.6.01",
+    "target": "QE.A.3.01"
+   },
+   {
+    "source": "QI.A.152.03",
+    "target": "QE.T.14.01"
+   },
+   {
+    "source": "QI.A.323.14",
+    "target": "QE.A.137.14"
+   },
+   {
+    "source": "QI.A.265.08",
+    "target": "QE.L.118.05"
+   },
+   {
+    "source": "QI.D.42.01",
+    "target": "QE.A.2.01"
+   },
+   {
+    "source": "QI.A.248.08",
+    "target": "QE.R.128.08"
+   },
+   {
+    "source": "QI.B.305.12",
+    "target": "QI.B.217.06"
+   },
+   {
+    "source": "QI.B.305.12",
+    "target": "QI.B.293.11"
+   },
+   {
+    "source": "QI.B.305.12",
+    "target": "QE.J.133.12"
+   },
+   {
+    "source": "QI.B.305.12",
+    "target": "QE.J.92.02"
+   },
+   {
+    "source": "QI.B.293.11",
+    "target": "QE.J.92.02"
+   },
+   {
+    "source": "QI.B.293.11",
+    "target": "QI.B.217.06"
+   },
+   {
+    "source": "QI.B.80.02",
+    "target": "QE.A.4.01"
+   },
+   {
+    "source": "QI.B.266.08",
+    "target": "QE.L.118.05"
+   },
+   {
+    "source": "QI.B.311.12",
+    "target": "QE.I.10.01"
+   },
+   {
+    "source": "QI.B.311.12",
+    "target": "QI.R.303.12"
+   },
+   {
+    "source": "QI.B.345.15",
+    "target": "QE.J.115.04"
+   },
+   {
+    "source": "QI.B.279.10",
+    "target": "QE.T.14.01"
+   },
+   {
+    "source": "QI.B.136.03",
+    "target": "QE.T.14.01"
+   },
+   {
+    "source": "QI.B.136.03",
+    "target": "QE.M.139.14"
+   },
+   {
+    "source": "QI.B.136.03",
+    "target": "QE.M.140.14"
+   },
+   {
+    "source": "QI.B.136.03",
+    "target": "QE.M.141.14"
+   },
+   {
+    "source": "QI.B.333.14",
+    "target": "QE.T.90.02"
+   },
+   {
+    "source": "QI.B.333.14",
+    "target": "QE.A.143.14"
+   },
+   {
+    "source": "QI.B.307.12",
+    "target": "QE.L.118.05"
+   },
+   {
+    "source": "QI.B.307.12",
+    "target": "QI.S.263.08"
+   },
+   {
+    "source": "QI.C.312.12",
+    "target": "QE.T.132.11"
+   },
+   {
+    "source": "QI.C.300.12",
+    "target": "QE.I.10.01"
+   },
+   {
+    "source": "QI.C.300.12",
+    "target": "QI.C.301.12"
+   },
+   {
+    "source": "QI.C.301.12",
+    "target": "QE.I.10.01"
+   },
+   {
+    "source": "QI.C.301.12",
+    "target": "QI.C.300.12"
+   },
+   {
+    "source": "QI.D.331.14",
+    "target": "QE.A.129.10"
+   },
+   {
+    "source": "QI.D.252.08",
+    "target": "QE.T.14.01"
+   },
+   {
+    "source": "QI.D.246.08",
+    "target": "QE.R.128.08"
+   },
+   {
+    "source": "QI.D.246.08",
+    "target": "QE.A.1.01"
+   },
+   {
+    "source": "QI.D.243.08",
+    "target": "QE.R.128.08"
+   },
+   {
+    "source": "QI.D.164.04",
+    "target": "QI.L.155.04"
+   },
+   {
+    "source": "QI.D.245.08",
+    "target": "QE.R.128.08"
+   },
+   {
+    "source": "QI.D.245.08",
+    "target": "QE.A.1.01"
+   },
+   {
+    "source": "QI.D.245.08",
+    "target": "QE.J.92.02"
+   },
+   {
+    "source": "QI.D.342.14",
+    "target": "QE.A.137.14"
+   },
+   {
+    "source": "QI.D.167.04",
+    "target": "QE.T.14.01"
+   },
+   {
+    "source": "QI.D.249.08",
+    "target": "QE.T.14.01"
+   },
+   {
+    "source": "QI.D.232.07",
+    "target": "QE.T.14.01"
+   },
+   {
+    "source": "QI.G.251.08",
+    "target": "QE.T.14.01"
+   },
+   {
+    "source": "QI.G.251.08",
+    "target": "QI.D.232.07"
+   },
+   {
+    "source": "QI.G.259.08",
+    "target": "QE.I.119.05"
+   },
+   {
+    "source": "QI.G.259.08",
+    "target": "QI.S.260.08"
+   },
+   {
+    "source": "QI.G.259.08",
+    "target": "QI.Y.261.08"
+   },
+   {
+    "source": "QI.H.250.08",
+    "target": "QE.T.14.01"
+   },
+   {
+    "source": "QI.G.341.14",
+    "target": "QE.A.137.14"
+   },
+   {
+    "source": "QI.G.218.06",
+    "target": "QI.I.87.03"
+   },
+   {
+    "source": "QI.H.268.09",
+    "target": "QE.E.88.02"
+   },
+   {
+    "source": "QI.H.195.05",
+    "target": "QE.A.3.01"
+   },
+   {
+    "source": "QI.I.308.12",
+    "target": "QE.L.118.05"
+   },
+   {
+    "source": "QI.I.87.03",
+    "target": "QE.J.92.02"
+   },
+   {
+    "source": "QI.I.87.03",
+    "target": "QI.G.218.06"
+   },
+   {
+    "source": "QI.I.321.14",
+    "target": "QE.L.96.03"
+   },
+   {
+    "source": "QI.K.302.12",
+    "target": "QE.I.119.05"
+   },
+   {
+    "source": "QI.K.306.12",
+    "target": "QE.A.4.01"
+   },
+   {
+    "source": "QI.A.336.14",
+    "target": "QE.A.137.14"
+   },
+   {
+    "source": "QI.K.340.14",
+    "target": "QE.J.115.04"
+   },
+   {
+    "source": "QI.K.340.14",
+    "target": "QE.A.4.01"
+   },
+   {
+    "source": "QI.L.319.13",
+    "target": "QE.M.134.12"
+   },
+   {
+    "source": "QI.L.264.08",
+    "target": "QE.L.118.05"
+   },
+   {
+    "source": "QI.L.247.08",
+    "target": "QE.R.128.08"
+   },
+   {
+    "source": "QI.L.247.08",
+    "target": "QI.J.180.04"
+   },
+   {
+    "source": "QI.L.155.04",
+    "target": "QI.D.164.04"
+   },
+   {
+    "source": "QI.M.286.10",
+    "target": "QE.T.132.11"
+   },
+   {
+    "source": "QI.A.202.05",
+    "target": "QE.A.98.03"
+   },
+   {
+    "source": "QI.M.129.03",
+    "target": "QI.S.128.03"
+   },
+   {
+    "source": "QI.M.129.03",
+    "target": "QI.A.130.03"
+   },
+   {
+    "source": "QI.M.129.03",
+    "target": "QI.A.132.03"
+   },
+   {
+    "source": "QI.M.272.09",
+    "target": "QE.L.118.05"
+   },
+   {
+    "source": "QI.M.196.05",
+    "target": "QE.A.4.01"
+   },
+   {
+    "source": "QI.M.196.05",
+    "target": "QE.A.3.01"
+   },
+   {
+    "source": "QI.N.280.10",
+    "target": "QE.T.14.01"
+   },
+   {
+    "source": "QI.O.314.13",
+    "target": "QE.M.134.12"
+   },
+   {
+    "source": "QI.O.314.13",
+    "target": "QE.T.14.01"
+   },
+   {
+    "source": "QI.O.314.13",
+    "target": "QI.B.136.03"
+   },
+   {
+    "source": "QI.O.315.13",
+    "target": "QE.M.134.12"
+   },
+   {
+    "source": "QI.O.315.13",
+    "target": "QE.T.14.01"
+   },
+   {
+    "source": "QI.O.298.11",
+    "target": "QE.A.4.01"
+   },
+   {
+    "source": "QI.O.298.11",
+    "target": "QE.T.14.01"
+   },
+   {
+    "source": "QI.P.242.08",
+    "target": "QE.R.128.08"
+   },
+   {
+    "source": "QI.P.294.11",
+    "target": "QE.J.92.02"
+   },
+   {
+    "source": "QI.P.294.11",
+    "target": "QE.A.1.01"
+   },
+   {
+    "source": "QI.Q.271.09",
+    "target": "QE.L.118.05"
+   },
+   {
+    "source": "QI.Q.271.09",
+    "target": "QE.A.4.01"
+   },
+   {
+    "source": "QI.Q.297.11",
+    "target": "QE.A.4.01"
+   },
+   {
+    "source": "QI.R.303.12",
+    "target": "QE.I.10.01"
+   },
+   {
+    "source": "QI.R.303.12",
+    "target": "QE.A.4.01"
+   },
+   {
+    "source": "QI.A.199.05",
+    "target": "QE.A.98.03"
+   },
+   {
+    "source": "QI.A.20.01",
+    "target": "QE.A.4.01"
+   },
+   {
+    "source": "QI.S.263.08",
+    "target": "QE.L.118.05"
+   },
+   {
+    "source": "QI.S.244.08",
+    "target": "QE.R.128.08"
+   },
+   {
+    "source": "QI.S.244.08",
+    "target": "QE.A.1.01"
+   },
+   {
+    "source": "QI.S.260.08",
+    "target": "QE.I.119.05"
+   },
+   {
+    "source": "QI.S.260.08",
+    "target": "QI.G.259.08"
+   },
+   {
+    "source": "QI.S.260.08",
+    "target": "QI.Y.261.08"
+   },
+   {
+    "source": "QI.S.128.03",
+    "target": "QI.M.129.03"
+   },
+   {
+    "source": "QI.S.128.03",
+    "target": "QI.A.130.03"
+   },
+   {
+    "source": "QI.S.128.03",
+    "target": "QI.A.132.03"
+   },
+   {
+    "source": "QI.S.322.14",
+    "target": "QE.B.138.14"
+   },
+   {
+    "source": "QI.T.57.02",
+    "target": "QE.A.69.02"
+   },
+   {
+    "source": "QI.T.57.02",
+    "target": "QE.R.70.02"
+   },
+   {
+    "source": "QI.T.57.02",
+    "target": "QE.L.11.01"
+   },
+   {
+    "source": "QI.T.241.08",
+    "target": "QE.R.128.08"
+   },
+   {
+    "source": "QI.T.241.08",
+    "target": "QE.A.1.01"
+   },
+   {
+    "source": "QI.T.241.08",
+    "target": "QE.J.92.02"
+   },
+   {
+    "source": "QI.T.56.01",
+    "target": "QE.U.68.01"
+   },
+   {
+    "source": "QI.U.346.15",
+    "target": "QE.A.4.01"
+   },
+   {
+    "source": "QI.U.346.15",
+    "target": "QE.A.137.14"
+   },
+   {
+    "source": "QI.U.343.15",
+    "target": "QE.A.4.01"
+   },
+   {
+    "source": "QI.U.343.15",
+    "target": "QE.A.137.14"
+   },
+   {
+    "source": "QI.U.343.15",
+    "target": "QE.J.115.04"
+   },
+   {
+    "source": "QI.Y.261.08",
+    "target": "QE.I.119.05"
+   },
+   {
+    "source": "QI.Y.261.08",
+    "target": "QI.G.259.08"
+   },
+   {
+    "source": "QI.Y.261.08",
+    "target": "QI.S.260.08"
+   },
+   {
+    "source": "QI.M.205.05",
+    "target": "QE.A.98.03"
+   },
+   {
+    "source": "QI.Z.168.04",
+    "target": "QE.T.14.01"
+   },
+   {
+    "source": "QI.Z.223.06",
+    "target": "QE.L.11.01"
+   },
+   {
+    "source": "QI.U.287.10",
+    "target": "QE.T.132.11"
+   },
+   {
+    "source": "QI.L.30.01",
+    "target": "QE.A.5.01"
+   },
+   {
+    "source": "QI.L.30.01",
+    "target": "QE.A.73.02"
+   },
+   {
+    "source": "QI.T.0.00",
+    "target": "QI.B.8.01"
+   },
+   {
+    "source": "QE.A.144.14",
+    "target": "QE.A.137.14"
+   },
+   {
+    "source": "QE.A.1.01",
+    "target": "QE.J.92.02"
+   },
+   {
+    "source": "QE.A.1.01",
+    "target": "QI.S.208.05"
+   },
+   {
+    "source": "QE.A.69.02",
+    "target": "QE.R.70.02"
+   },
+   {
+    "source": "QE.A.69.02",
+    "target": "QI.A.58.02"
+   },
+   {
+    "source": "QE.A.121.05",
+    "target": "QE.J.19.01"
+   },
+   {
+    "source": "QE.A.121.05",
+    "target": "QE.H.8.01"
+   },
+   {
+    "source": "QE.A.121.05",
+    "target": "QE.L.96.03"
+   },
+   {
+    "source": "QE.A.121.05",
+    "target": "QE.L.118.05"
+   },
+   {
+    "source": "QE.A.71.02",
+    "target": "QI.A.104.03"
+   },
+   {
+    "source": "QE.A.72.02",
+    "target": "QI.A.171.04"
+   },
+   {
+    "source": "QE.A.114.04",
+    "target": "QI.A.171.04"
+   },
+   {
+    "source": "QE.A.2.01",
+    "target": "QE.A.4.01"
+   },
+   {
+    "source": "QE.A.2.01",
+    "target": "QI.A.6.01"
+   },
+   {
+    "source": "QE.A.2.01",
+    "target": "QI.A.172.04"
+   },
+   {
+    "source": "QE.A.2.01",
+    "target": "QI.D.42.01"
+   },
+   {
+    "source": "QE.A.2.01",
+    "target": "QE.A.72.02"
+   },
+   {
+    "source": "QE.M.139.14",
+    "target": "QE.T.14.01"
+   },
+   {
+    "source": "QE.M.139.14",
+    "target": "QI.B.136.03"
+   },
+   {
+    "source": "QE.M.140.14",
+    "target": "QE.T.14.01"
+   },
+   {
+    "source": "QE.M.140.14",
+    "target": "QE.M.134.12"
+   },
+   {
+    "source": "QE.M.140.14",
+    "target": "QI.B.136.03"
+   },
+   {
+    "source": "QE.M.141.14",
+    "target": "QE.M.140.14"
+   },
+   {
+    "source": "QE.M.141.14",
+    "target": "QE.M.134.12"
+   },
+   {
+    "source": "QE.M.141.14",
+    "target": "QE.T.14.01"
+   },
+   {
+    "source": "QE.M.141.14",
+    "target": "QI.B.136.03"
+   },
+   {
+    "source": "QE.A.137.14",
+    "target": "QE.A.4.01"
+   },
+   {
+    "source": "QE.A.137.14",
+    "target": "QI.A.299.11"
+   },
+   {
+    "source": "QE.A.137.14",
+    "target": "QE.J.115.04"
+   },
+   {
+    "source": "QE.A.137.14",
+    "target": "QE.A.7.01"
+   },
+   {
+    "source": "QE.A.129.10",
+    "target": "QE.A.4.01"
+   },
+   {
+    "source": "QE.A.129.10",
+    "target": "QI.A.274.10"
+   },
+   {
+    "source": "QE.A.129.10",
+    "target": "QI.A.275.10"
+   },
+   {
+    "source": "QE.A.5.01",
+    "target": "QE.A.73.02"
+   },
+   {
+    "source": "QE.A.5.01",
+    "target": "QE.J.19.01"
+   },
+   {
+    "source": "QE.A.146.14",
+    "target": "QE.T.14.01"
+   },
+   {
+    "source": "QE.A.146.14",
+    "target": "QE.M.141.14"
+   },
+   {
+    "source": "QE.A.146.14",
+    "target": "QE.A.143.14"
+   },
+   {
+    "source": "QE.A.146.14",
+    "target": "QE.A.145.14"
+   },
+   {
+    "source": "QE.A.145.14",
+    "target": "QE.T.14.01"
+   },
+   {
+    "source": "QE.A.145.14",
+    "target": "QE.A.143.14"
+   },
+   {
+    "source": "QE.A.145.14",
+    "target": "QE.A.146.14"
+   },
+   {
+    "source": "QE.A.98.03",
+    "target": "QI.A.226.06"
+   },
+   {
+    "source": "QE.A.98.03",
+    "target": "QE.J.115.04"
+   },
+   {
+    "source": "QE.A.143.14",
+    "target": "QI.B.333.14"
+   },
+   {
+    "source": "QE.A.135.13",
+    "target": "QI.A.316.13"
+   },
+   {
+    "source": "QE.A.135.13",
+    "target": "QE.T.14.01"
+   },
+   {
+    "source": "QE.A.135.13",
+    "target": "QE.M.134.12"
+   },
+   {
+    "source": "QE.A.135.13",
+    "target": "QI.D.232.07"
+   },
+   {
+    "source": "QE.A.142.14",
+    "target": "QE.T.14.01"
+   },
+   {
+    "source": "QE.A.142.14",
+    "target": "QE.B.138.14"
+   },
+   {
+    "source": "QE.A.142.14",
+    "target": "QI.S.322.14"
+   },
+   {
+    "source": "QE.A.7.01",
+    "target": "QE.J.115.04"
+   },
+   {
+    "source": "QE.D.102.03",
+    "target": "QE.A.6.01"
+   },
+   {
+    "source": "QE.D.102.03",
+    "target": "QE.T.14.01"
+   },
+   {
+    "source": "QE.A.3.01",
+    "target": "QI.A.6.01"
+   },
+   {
+    "source": "QE.E.131.11",
+    "target": "QI.U.290.11"
+   },
+   {
+    "source": "QE.H.130.10",
+    "target": "QE.H.8.01"
+   },
+   {
+    "source": "QE.H.8.01",
+    "target": "QE.J.19.01"
+   },
+   {
+    "source": "QE.H.8.01",
+    "target": "QE.L.96.03"
+   },
+   {
+    "source": "QE.H.8.01",
+    "target": "QE.L.118.05"
+   },
+   {
+    "source": "QE.I.99.03",
+    "target": "QE.R.100.03"
+   },
+   {
+    "source": "QE.I.99.03",
+    "target": "QE.S.101.03"
+   },
+   {
+    "source": "QE.I.119.05",
+    "target": "QE.I.10.01"
+   },
+   {
+    "source": "QE.I.119.05",
+    "target": "QE.E.131.11"
+   },
+   {
+    "source": "QE.I.10.01",
+    "target": "QE.E.88.02"
+   },
+   {
+    "source": "QE.I.10.01",
+    "target": "QE.I.119.05"
+   },
+   {
+    "source": "QE.I.10.01",
+    "target": "QE.E.131.11"
+   },
+   {
+    "source": "QE.J.19.01",
+    "target": "QE.H.8.01"
+   },
+   {
+    "source": "QE.J.19.01",
+    "target": "QE.L.118.05"
+   },
+   {
+    "source": "QE.J.19.01",
+    "target": "QE.A.121.05"
+   },
+   {
+    "source": "QE.J.19.01",
+    "target": "QE.H.130.10"
+   },
+   {
+    "source": "QE.B.138.14",
+    "target": "QE.A.4.01"
+   },
+   {
+    "source": "QE.B.138.14",
+    "target": "QE.T.14.01"
+   },
+   {
+    "source": "QE.J.92.02",
+    "target": "QE.A.1.01"
+   },
+   {
+    "source": "QE.J.133.12",
+    "target": "QI.B.217.06"
+   },
+   {
+    "source": "QE.J.133.12",
+    "target": "QE.J.92.02"
+   },
+   {
+    "source": "QE.L.118.05",
+    "target": "QI.S.263.08"
+   },
+   {
+    "source": "QE.L.11.01",
+    "target": "QE.A.4.01"
+   },
+   {
+    "source": "QE.M.12.01",
+    "target": "QE.A.4.01"
+   },
+   {
+    "source": "QE.M.89.02",
+    "target": "QE.T.14.01"
+   },
+   {
+    "source": "QE.M.134.12",
+    "target": "QE.T.14.01"
+   },
+   {
+    "source": "QE.M.134.12",
+    "target": "QI.B.136.03"
+   },
+   {
+    "source": "QE.M.136.13",
+    "target": "QI.A.318.13"
+   },
+   {
+    "source": "QE.M.136.13",
+    "target": "QE.A.4.01"
+   },
+   {
+    "source": "QE.M.136.13",
+    "target": "QI.A.6.01"
+   },
+   {
+    "source": "QE.M.136.13",
+    "target": "QE.A.129.10"
+   },
+   {
+    "source": "QE.M.136.13",
+    "target": "QE.T.14.01"
+   },
+   {
+    "source": "QE.R.21.01",
+    "target": "QI.J.79.02"
+   },
+   {
+    "source": "QE.R.128.08",
+    "target": "QI.S.244.08"
+   },
+   {
+    "source": "QE.R.128.08",
+    "target": "QE.A.1.01"
+   },
+   {
+    "source": "QE.R.128.08",
+    "target": "QE.J.92.02"
+   },
+   {
+    "source": "QE.R.128.08",
+    "target": "QI.J.180.04"
+   },
+   {
+    "source": "QE.R.70.02",
+    "target": "QI.A.58.02"
+   },
+   {
+    "source": "QE.R.70.02",
+    "target": "QE.A.69.02"
+   },
+   {
+    "source": "QE.R.100.03",
+    "target": "QE.I.99.03"
+   },
+   {
+    "source": "QE.R.100.03",
+    "target": "QE.S.101.03"
+   },
+   {
+    "source": "QE.R.100.03",
+    "target": "QE.E.131.11"
+   },
+   {
+    "source": "QE.S.101.03",
+    "target": "QE.I.99.03"
+   },
+   {
+    "source": "QE.S.101.03",
+    "target": "QE.R.100.03"
+   },
+   {
+    "source": "QE.T.132.11",
+    "target": "QI.M.286.10"
+   },
+   {
+    "source": "QE.T.14.01",
+    "target": "QI.D.232.07"
+   },
+   {
+    "source": "QE.T.90.02",
+    "target": "QE.T.14.01"
+   },
+   {
+    "source": "QE.U.68.01",
+    "target": "QI.B.55.01"
+   },
+   {
+    "source": "QE.U.68.01",
+    "target": "QI.A.54.01"
+   },
+   {
+    "source": "QE.U.68.01",
+    "target": "QI.T.56.01"
+   },
+   {
+    "source": "QE.W.15.01",
+    "target": "QE.A.4.01"
+   },
+   {
+    "source": "QE.A.73.02",
+    "target": "QE.A.5.01"
+   },
+   {
+    "source": "QE.A.73.02",
+    "target": "QI.L.30.01"
+   },
+   {
+    "source": "QE.A.73.02",
+    "target": "QE.J.19.01"
+   }
+  ]
  },
  "narratives": {
-  "links": []
- }
+  "links": [
+   {
+    "source": "QI.A.12.01",
+    "target": "QE.A.4.01"
+   },
+   {
+    "source": "QI.A.12.01",
+    "target": "QI.A.6.01"
+   },
+   {
+    "source": "QI.A.18.01",
+    "target": "QE.A.4.01"
+   },
+   {
+    "source": "QI.A.304.12",
+    "target": "QI.B.293.11"
+   },
+   {
+    "source": "QI.A.14.01",
+    "target": "QE.A.4.01"
+   },
+   {
+    "source": "QI.A.14.01",
+    "target": "QE.A.3.01"
+   },
+   {
+    "source": "QI.A.14.01",
+    "target": "QI.A.6.01"
+   },
+   {
+    "source": "QI.A.14.01",
+    "target": "QI.A.17.01"
+   },
+   {
+    "source": "QI.A.60.02",
+    "target": "QE.A.143.14"
+   },
+   {
+    "source": "QI.A.21.01",
+    "target": "QE.A.4.01"
+   },
+   {
+    "source": "QI.A.21.01",
+    "target": "QI.S.1.01"
+   },
+   {
+    "source": "QI.A.21.01",
+    "target": "QI.E.19.01"
+   },
+   {
+    "source": "QI.A.21.01",
+    "target": "QI.A.23.01"
+   },
+   {
+    "source": "QI.A.21.01",
+    "target": "QI.G.28.01"
+   },
+   {
+    "source": "QI.A.23.01",
+    "target": "QE.A.4.01"
+   },
+   {
+    "source": "QI.A.23.01",
+    "target": "QI.S.1.01"
+   },
+   {
+    "source": "QI.A.23.01",
+    "target": "QI.A.6.01"
+   },
+   {
+    "source": "QI.A.23.01",
+    "target": "QI.E.19.01"
+   },
+   {
+    "source": "QI.A.23.01",
+    "target": "QI.A.21.01"
+   },
+   {
+    "source": "QI.A.23.01",
+    "target": "QI.G.28.01"
+   },
+   {
+    "source": "QI.A.15.01",
+    "target": "QE.A.4.01"
+   },
+   {
+    "source": "QI.A.6.01",
+    "target": "QE.A.4.01"
+   },
+   {
+    "source": "QI.A.6.01",
+    "target": "QE.A.3.01"
+   },
+   {
+    "source": "QI.A.6.01",
+    "target": "QI.A.14.01"
+   },
+   {
+    "source": "QI.A.6.01",
+    "target": "QE.M.136.13"
+   },
+   {
+    "source": "QI.A.6.01",
+    "target": "QI.A.317.13"
+   },
+   {
+    "source": "QI.A.6.01",
+    "target": "QI.A.318.13"
+   },
+   {
+    "source": "QI.D.42.01",
+    "target": "QE.A.4.01"
+   },
+   {
+    "source": "QI.D.42.01",
+    "target": "QE.A.2.01"
+   },
+   {
+    "source": "QI.D.42.01",
+    "target": "QI.A.172.04"
+   },
+   {
+    "source": "QI.D.42.01",
+    "target": "QE.A.6.01"
+   },
+   {
+    "source": "QI.D.42.01",
+    "target": "QE.A.3.01"
+   },
+   {
+    "source": "QI.D.42.01",
+    "target": "QE.T.14.01"
+   },
+   {
+    "source": "QI.D.42.01",
+    "target": "QE.L.11.01"
+   },
+   {
+    "source": "QI.D.42.01",
+    "target": "QE.I.9.01"
+   },
+   {
+    "source": "QI.D.42.01",
+    "target": "QE.R.70.02"
+   },
+   {
+    "source": "QI.D.42.01",
+    "target": "QE.A.72.02"
+   },
+   {
+    "source": "QI.D.42.01",
+    "target": "QE.A.105.04"
+   },
+   {
+    "source": "QI.D.42.01",
+    "target": "QE.A.106.04"
+   },
+   {
+    "source": "QI.D.42.01",
+    "target": "QE.A.113.04"
+   },
+   {
+    "source": "QI.B.9.01",
+    "target": "QE.A.4.01"
+   },
+   {
+    "source": "QI.B.9.01",
+    "target": "QE.I.99.03"
+   },
+   {
+    "source": "QI.C.347.15",
+    "target": "QE.J.115.04"
+   },
+   {
+    "source": "QI.C.347.15",
+    "target": "QE.A.137.14"
+   },
+   {
+    "source": "QI.C.347.15",
+    "target": "QE.A.4.01"
+   },
+   {
+    "source": "QI.E.19.01",
+    "target": "QE.A.4.01"
+   },
+   {
+    "source": "QI.E.19.01",
+    "target": "QI.G.28.01"
+   },
+   {
+    "source": "QI.F.27.01",
+    "target": "QE.A.4.01"
+   },
+   {
+    "source": "QI.F.27.01",
+    "target": "QI.G.28.01"
+   },
+   {
+    "source": "QI.F.27.01",
+    "target": "QI.E.19.01"
+   },
+   {
+    "source": "QI.G.28.01",
+    "target": "QE.A.4.01"
+   },
+   {
+    "source": "QI.G.28.01",
+    "target": "QI.F.27.01"
+   },
+   {
+    "source": "QI.G.28.01",
+    "target": "QI.E.19.01"
+   },
+   {
+    "source": "QI.G.28.01",
+    "target": "QE.A.2.01"
+   },
+   {
+    "source": "QI.G.28.01",
+    "target": "QE.A.105.04"
+   },
+   {
+    "source": "QI.G.28.01",
+    "target": "QI.S.1.01"
+   },
+   {
+    "source": "QI.G.28.01",
+    "target": "QI.A.6.01"
+   },
+   {
+    "source": "QI.G.28.01",
+    "target": "QI.A.21.01"
+   },
+   {
+    "source": "QI.G.28.01",
+    "target": "QI.A.23.01"
+   },
+   {
+    "source": "QI.G.28.01",
+    "target": "QI.A.59.02"
+   },
+   {
+    "source": "QI.H.3.01",
+    "target": "QE.A.4.01"
+   },
+   {
+    "source": "QI.H.3.01",
+    "target": "QI.S.1.01"
+   },
+   {
+    "source": "QI.H.29.01",
+    "target": "QE.A.4.01"
+   },
+   {
+    "source": "QI.H.29.01",
+    "target": "QI.H.10.01"
+   },
+   {
+    "source": "QI.H.10.01",
+    "target": "QE.A.4.01"
+   },
+   {
+    "source": "QI.H.10.01",
+    "target": "QE.J.115.04"
+   },
+   {
+    "source": "QI.H.10.01",
+    "target": "QI.H.29.01"
+   },
+   {
+    "source": "QI.A.2.01",
+    "target": "QE.A.4.01"
+   },
+   {
+    "source": "QI.A.20.01",
+    "target": "QE.A.4.01"
+   },
+   {
+    "source": "QI.S.1.01",
+    "target": "QE.A.4.01"
+   },
+   {
+    "source": "QI.S.1.01",
+    "target": "QE.A.3.01"
+   },
+   {
+    "source": "QI.S.1.01",
+    "target": "QI.A.6.01"
+   },
+   {
+    "source": "QI.S.1.01",
+    "target": "QI.M.196.05"
+   },
+   {
+    "source": "QI.A.17.01",
+    "target": "QE.A.3.01"
+   },
+   {
+    "source": "QI.A.17.01",
+    "target": "QI.A.6.01"
+   },
+   {
+    "source": "QI.A.17.01",
+    "target": "QE.A.4.01"
+   },
+   {
+    "source": "QI.A.17.01",
+    "target": "QI.A.14.01"
+   },
+   {
+    "source": "QI.M.31.01",
+    "target": "QE.A.4.01"
+   },
+   {
+    "source": "QI.M.31.01",
+    "target": "QE.A.6.01"
+   },
+   {
+    "source": "QI.M.31.01",
+    "target": "QE.T.14.01"
+   },
+   {
+    "source": "QI.M.31.01",
+    "target": "QE.A.3.01"
+   },
+   {
+    "source": "QI.M.31.01",
+    "target": "QI.A.59.02"
+   },
+   {
+    "source": "QI.M.31.01",
+    "target": "QI.A.6.01"
+   },
+   {
+    "source": "QI.M.31.01",
+    "target": "QE.J.115.04"
+   },
+   {
+    "source": "QI.M.31.01",
+    "target": "QE.A.98.03"
+   },
+   {
+    "source": "QI.Y.37.01",
+    "target": "QE.A.4.01"
+   }
+  ]
+ },
+ "links": [
+  {
+   "source": "QI.A.12.01",
+   "target": "QE.A.4.01"
+  },
+  {
+   "source": "QI.A.12.01",
+   "target": "QI.A.6.01"
+  },
+  {
+   "source": "QI.A.18.01",
+   "target": "QE.A.4.01"
+  },
+  {
+   "source": "QI.A.304.12",
+   "target": "QI.B.293.11"
+  },
+  {
+   "source": "QI.A.14.01",
+   "target": "QE.A.4.01"
+  },
+  {
+   "source": "QI.A.14.01",
+   "target": "QE.A.3.01"
+  },
+  {
+   "source": "QI.A.14.01",
+   "target": "QI.A.6.01"
+  },
+  {
+   "source": "QI.A.14.01",
+   "target": "QI.A.17.01"
+  },
+  {
+   "source": "QI.A.60.02",
+   "target": "QE.A.143.14"
+  },
+  {
+   "source": "QI.A.21.01",
+   "target": "QE.A.4.01"
+  },
+  {
+   "source": "QI.A.21.01",
+   "target": "QI.S.1.01"
+  },
+  {
+   "source": "QI.A.21.01",
+   "target": "QI.E.19.01"
+  },
+  {
+   "source": "QI.A.21.01",
+   "target": "QI.A.23.01"
+  },
+  {
+   "source": "QI.A.21.01",
+   "target": "QI.G.28.01"
+  },
+  {
+   "source": "QI.A.23.01",
+   "target": "QE.A.4.01"
+  },
+  {
+   "source": "QI.A.23.01",
+   "target": "QI.S.1.01"
+  },
+  {
+   "source": "QI.A.23.01",
+   "target": "QI.A.6.01"
+  },
+  {
+   "source": "QI.A.23.01",
+   "target": "QI.E.19.01"
+  },
+  {
+   "source": "QI.A.23.01",
+   "target": "QI.A.21.01"
+  },
+  {
+   "source": "QI.A.23.01",
+   "target": "QI.G.28.01"
+  },
+  {
+   "source": "QI.A.15.01",
+   "target": "QE.A.4.01"
+  },
+  {
+   "source": "QI.A.6.01",
+   "target": "QE.A.4.01"
+  },
+  {
+   "source": "QI.A.6.01",
+   "target": "QE.A.3.01"
+  },
+  {
+   "source": "QI.A.6.01",
+   "target": "QI.A.14.01"
+  },
+  {
+   "source": "QI.A.6.01",
+   "target": "QE.M.136.13"
+  },
+  {
+   "source": "QI.A.6.01",
+   "target": "QI.A.317.13"
+  },
+  {
+   "source": "QI.A.6.01",
+   "target": "QI.A.318.13"
+  },
+  {
+   "source": "QI.D.42.01",
+   "target": "QE.A.4.01"
+  },
+  {
+   "source": "QI.D.42.01",
+   "target": "QE.A.2.01"
+  },
+  {
+   "source": "QI.D.42.01",
+   "target": "QI.A.172.04"
+  },
+  {
+   "source": "QI.D.42.01",
+   "target": "QE.A.6.01"
+  },
+  {
+   "source": "QI.D.42.01",
+   "target": "QE.A.3.01"
+  },
+  {
+   "source": "QI.D.42.01",
+   "target": "QE.T.14.01"
+  },
+  {
+   "source": "QI.D.42.01",
+   "target": "QE.L.11.01"
+  },
+  {
+   "source": "QI.D.42.01",
+   "target": "QE.I.9.01"
+  },
+  {
+   "source": "QI.D.42.01",
+   "target": "QE.R.70.02"
+  },
+  {
+   "source": "QI.D.42.01",
+   "target": "QE.A.72.02"
+  },
+  {
+   "source": "QI.D.42.01",
+   "target": "QE.A.105.04"
+  },
+  {
+   "source": "QI.D.42.01",
+   "target": "QE.A.106.04"
+  },
+  {
+   "source": "QI.D.42.01",
+   "target": "QE.A.113.04"
+  },
+  {
+   "source": "QI.B.9.01",
+   "target": "QE.A.4.01"
+  },
+  {
+   "source": "QI.B.9.01",
+   "target": "QE.I.99.03"
+  },
+  {
+   "source": "QI.C.347.15",
+   "target": "QE.J.115.04"
+  },
+  {
+   "source": "QI.C.347.15",
+   "target": "QE.A.137.14"
+  },
+  {
+   "source": "QI.C.347.15",
+   "target": "QE.A.4.01"
+  },
+  {
+   "source": "QI.E.19.01",
+   "target": "QE.A.4.01"
+  },
+  {
+   "source": "QI.E.19.01",
+   "target": "QI.G.28.01"
+  },
+  {
+   "source": "QI.F.27.01",
+   "target": "QE.A.4.01"
+  },
+  {
+   "source": "QI.F.27.01",
+   "target": "QI.G.28.01"
+  },
+  {
+   "source": "QI.F.27.01",
+   "target": "QI.E.19.01"
+  },
+  {
+   "source": "QI.G.28.01",
+   "target": "QE.A.4.01"
+  },
+  {
+   "source": "QI.G.28.01",
+   "target": "QI.F.27.01"
+  },
+  {
+   "source": "QI.G.28.01",
+   "target": "QI.E.19.01"
+  },
+  {
+   "source": "QI.G.28.01",
+   "target": "QE.A.2.01"
+  },
+  {
+   "source": "QI.G.28.01",
+   "target": "QE.A.105.04"
+  },
+  {
+   "source": "QI.G.28.01",
+   "target": "QI.S.1.01"
+  },
+  {
+   "source": "QI.G.28.01",
+   "target": "QI.A.6.01"
+  },
+  {
+   "source": "QI.G.28.01",
+   "target": "QI.A.21.01"
+  },
+  {
+   "source": "QI.G.28.01",
+   "target": "QI.A.23.01"
+  },
+  {
+   "source": "QI.G.28.01",
+   "target": "QI.A.59.02"
+  },
+  {
+   "source": "QI.H.3.01",
+   "target": "QE.A.4.01"
+  },
+  {
+   "source": "QI.H.3.01",
+   "target": "QI.S.1.01"
+  },
+  {
+   "source": "QI.H.29.01",
+   "target": "QE.A.4.01"
+  },
+  {
+   "source": "QI.H.29.01",
+   "target": "QI.H.10.01"
+  },
+  {
+   "source": "QI.H.10.01",
+   "target": "QE.A.4.01"
+  },
+  {
+   "source": "QI.H.10.01",
+   "target": "QE.J.115.04"
+  },
+  {
+   "source": "QI.H.10.01",
+   "target": "QI.H.29.01"
+  },
+  {
+   "source": "QI.A.2.01",
+   "target": "QE.A.4.01"
+  },
+  {
+   "source": "QI.A.20.01",
+   "target": "QE.A.4.01"
+  },
+  {
+   "source": "QI.S.1.01",
+   "target": "QE.A.4.01"
+  },
+  {
+   "source": "QI.S.1.01",
+   "target": "QE.A.3.01"
+  },
+  {
+   "source": "QI.S.1.01",
+   "target": "QI.A.6.01"
+  },
+  {
+   "source": "QI.S.1.01",
+   "target": "QI.M.196.05"
+  },
+  {
+   "source": "QI.A.17.01",
+   "target": "QE.A.3.01"
+  },
+  {
+   "source": "QI.A.17.01",
+   "target": "QI.A.6.01"
+  },
+  {
+   "source": "QI.A.17.01",
+   "target": "QE.A.4.01"
+  },
+  {
+   "source": "QI.A.17.01",
+   "target": "QI.A.14.01"
+  },
+  {
+   "source": "QI.M.31.01",
+   "target": "QE.A.4.01"
+  },
+  {
+   "source": "QI.M.31.01",
+   "target": "QE.A.6.01"
+  },
+  {
+   "source": "QI.M.31.01",
+   "target": "QE.T.14.01"
+  },
+  {
+   "source": "QI.M.31.01",
+   "target": "QE.A.3.01"
+  },
+  {
+   "source": "QI.M.31.01",
+   "target": "QI.A.59.02"
+  },
+  {
+   "source": "QI.M.31.01",
+   "target": "QI.A.6.01"
+  },
+  {
+   "source": "QI.M.31.01",
+   "target": "QE.J.115.04"
+  },
+  {
+   "source": "QI.M.31.01",
+   "target": "QE.A.98.03"
+  },
+  {
+   "source": "QI.Y.37.01",
+   "target": "QE.A.4.01"
+  }
+ ]
 }

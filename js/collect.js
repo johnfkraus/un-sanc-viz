@@ -11,7 +11,7 @@
 var utilities_aq_viz = require('./utilities_aq_viz');
 var consoleLog = false;
 // skip downloading 300+ narrative files and use locally stored files instead; for debugging
-var useLocalNarrativeFiles = true;
+var useLocalNarrativeFiles = false;
 
 var logger = require('./tracer-logger-config.js').logger;
 var logModulus = utilities_aq_viz.logModulus;
@@ -1014,7 +1014,7 @@ var syncParseHtmlListPage = function (htmlString, indivOrEntityString) {
                 // }
               } catch (err) {
 
-                logger.error(__filename, 'line', __line, ' Error: ', err, '; rawId = ', rawId);
+                logger.error(__filename, 'line', __line, ' Error: ', err, '; rawId = ', rawId, '; paragraph = ', paragraph);
               }
             }
           }
