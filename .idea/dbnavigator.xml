@@ -2,7 +2,7 @@
 <project version="4">
   <component name="DBNavigator.Project.DataEditorManager">
     <record-view-column-sorting-type value="BY_INDEX" />
-    <value-preview-text-wrapping value="false" />
+    <value-preview-text-wrapping value="true" />
     <value-preview-pinned value="false" />
   </component>
   <component name="DBNavigator.Project.DataExportManager">
@@ -128,7 +128,7 @@
         <popup-delay value="1000" />
       </text-editor-popup>
       <values-list-popup>
-        <active-for-primary-keys value="false" />
+        <show-popup-button value="true" />
         <element-count-threshold value="1000" />
         <data-length-threshold value="250" />
       </values-list-popup>
@@ -405,5 +405,8 @@
         </visibility-settings>
       </environment>
     </general-settings>
+  </component>
+  <component name="DBNavigator.Project.StatementExecutionManager">
+    <execution-variables />
   </component>
 </project>
