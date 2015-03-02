@@ -1,10 +1,10 @@
 // collect.js
-// collect AQ List.xml from 'http://www.un.org/sc/committees/1267/AQList.xml', convert to json
+// collect consolidated sanctions list file from 'http://www.un.org/sc/committees/consolidated.xml', convert to json
 // get the two html files containing narrative names and file names/urls
 // write narrative urls array file (a json array) to /data/narrative_lists/narrativeUrlsArray.json
 // normalize the data and put it into arrays for d3
 // each element in the node array in the main json data file (represented by the 'data' variable and stored in /data/output/data.json) contains data on a single individual or
-// entity listed in the AQ List.xml sanctions data file collected from the U.N. site located at http://www.un.org/sc/committees/1267/.
+// entity listed in the consolidated.xml sanctions data file collected from the U.N. site located at http://www.un.org/sc/committees/1267/.
 //==========================
 
 // do we want lots of console.log messages for debugging (if so, set consoleLog = true)
@@ -48,7 +48,7 @@ if (typeof define !== 'function') {
   var define = require('amdefine');
 }
 var requestSync = require('sync-request'),
-  AQList_xml,
+  list_xml,
   parseString = require('xml2js')
     .parseString;
 require('console-stamp')(console, '[HH:MM:ss.l]');
@@ -76,7 +76,7 @@ var indivLinks = [];
 var entLinks = [];
 var dataPath = __dirname + '/../data/output/data.json';
 var writeJsonOutputDebuggingDirectory = __dirname + '/../data/output_debugging/';
-var aqListUrl = 'http://www.un.org/sc/committees/1267/AQList.xml';
+var listUrl = 'http://www.un.org/sc/committees/consolidated.xml';
 var individualsLocalOutputFileNameAndPath = __dirname + '/../data/narrative_lists/individuals_associated_with_Al-Qaida.json';
 var entitiesLocalOutputFileNameAndPath = __dirname + '/../data/narrative_lists/entities_other_groups_undertakings_associated_with_Al-Qaida.json';
 var narrativeUrlsArrayLocalFileNameAndPath = __dirname + '/../data/narrative_lists/narrativeUrlsArray.json';
@@ -93,10 +93,8 @@ var collect = function () {
       // test logger
       function (callback) {
         logger.debug(__filename, 'line', __line, '; logModulus = ', logModulus);
-        //      logger.log('hello');
-        // logger.log('hello');
         logger.trace('hello', 'world');
-        logger.debug('hello %s', 'world', 123);
+        // logger.debug('hello %s', 'world', 123);
         logger.info('hello %s %d', 'world', 123, {foo: 'bar'});
         logger.warn('hello %s %d %j', 'world', 123, {foo: 'bar'});
         logger.error('hello %s %d %j', 'world', 123, {foo: 'bar'}, [1, 2, 3, 4], Object);
@@ -127,35 +125,35 @@ var collect = function () {
       // get the raw xml file from the UN site on the Internet
       function (callback) {
         try {
-          var res = requestSync('GET', aqListUrl);
-          AQList_xml = res.body.toString();
+          var res = requestSync('GET', listUrl);
+          list_xml = res.body.toString();
         } catch (err) {
-          var backupRawXmlFileName = __dirname + '/../data/backup/AQList.xml';
+          var backupRawXmlFileName = __dirname + '/../data/backup/consolidated.xml';
           logger.error(__filename, 'line', __line, '; Error: ', err, '; reading stored backup file:', backupRawXmlFileName);
-          AQList_xml = fse.readFileSync(backupRawXmlFileName, fsOptions); //, function (err, data) {
+          list_xml = fse.readFileSync(backupRawXmlFileName, fsOptions); //, function (err, data) {
         }
         if (consoleLog) {
-          logger.debug(__filename, 'line', __line, 'AQList_xml res.body.toString() = ', AQList_xml.substring(0, substringChars), '\nAQList_xml Response body length: ', AQList_xml.length);
-          logger.debug([__filename, 'line', __line, 'AQList_xml res.body.toString() = ', AQList_xml.substring(0, substringChars), '\nAQList_xml Response body length: ', AQList_xml.length].join(''));
+          logger.debug(__filename, 'line', __line, 'list_xml res.body.toString() = ', list_xml.substring(0, substringChars), '\nlist_xml Response body length: ', list_xml.length);
+          logger.debug([__filename, 'line', __line, 'list_xml res.body.toString() = ', list_xml.substring(0, substringChars), '\nlist_xml Response body length: ', list_xml.length].join(''));
         }
         callback();
       },
 
-      // write AQList.xml to local file and archive_historical directory
+      // write consolidated.xml to local file and archive_historical directory
       function (callback) {
-        var fileNameAndPathForProcessing = __dirname + '/../data/output/AQList.xml';
-        syncWriteFileAQListXML(AQList_xml, fileNameAndPathForProcessing);
-        var fileNameAndPathForArchive = __dirname + '/../data/archive/AQList.xml';
-        syncWriteFileAQListXML(AQList_xml, fileNameAndPathForArchive);
+        var fileNameAndPathForProcessing = __dirname + '/../data/output/consolidated.xml';
+        syncWriteFileXML(list_xml, fileNameAndPathForProcessing);
+        var fileNameAndPathForArchive = __dirname + '/../data/archive/consolidated.xml';
+        syncWriteFileXML(list_xml, fileNameAndPathForArchive);
         callback();
       },
 
-      // convert AQList.xml to json and store in var 'data'
+      // convert consolidated.xml to json and store in var 'data'
       function (callback) {
         if (consoleLog) {
           logger.debug('\n ', __filename, 'line', __line, ' function #:', ++functionCount);
         }
-        parseString(AQList_xml, {
+        parseString(list_xml, {
           explicitArray: false,
           trim: true
         }, function (err, result) {
@@ -170,16 +168,15 @@ var collect = function () {
         callback();
       },
 
-      // current data file: AQList.xml
       // read local copy of XML file that was downloaded from UN web site
       function (callback) {
-        var readRawXmlFileName = __dirname + '/../data/output/AQList.xml';
+        var readRawXmlFileName = __dirname + '/../data/output/consolidated.xml';
         if (consoleLog) {
           logger.debug('\n ', __filename, 'line', __line, '; function #', ++functionCount);
         }
-        AQList_xml = fse.readFileSync(readRawXmlFileName, fsOptions);
+        list_xml = fse.readFileSync(readRawXmlFileName, fsOptions);
         if (consoleLog) {
-          logger.debug(__filename, 'line', __line, ' AQList_xml = ', AQList_xml.toString().substring(0, 400));
+          logger.debug(__filename, 'line', __line, ' list_xml = ', list_xml.toString().substring(0, 400));
         }
         callback();
       },
@@ -216,7 +213,7 @@ var collect = function () {
 
       // write the intermediate file for debugging
       function (callback) {
-        var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'AQList-L' + __line + '-raw_data.json';
+        var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'conList-L' + __line + '-raw_data.json';
         utilities_aq_viz.stringifyAndWriteJsonDataFile(data, writeJsonPathAndFileName);
         utilities_aq_viz.stringifyAndWriteJsonDataFile(data, dataPath);
         callback();
@@ -226,7 +223,7 @@ var collect = function () {
       // put all the individual and entity nodes in a single array and add a property to identify node as indiv or ent
       // from local file, add no-longer-listed and otherwise missing ents and indivs to nodes
       // normalize indiv.indivDobString, indiv.indivPlaceOfBirthString, indiv.indivAliasString
-      // archive a dated copy of AQList.xml for potential future time series analysis
+      // archive a dated copy of consolidated.xml for potential future time series analysis
       // normalize reference numbers, ids, name strings, nationality.
       function (callback) {
         if (consoleLog) {
@@ -268,14 +265,15 @@ var collect = function () {
 
         });
         var generatedFileDateString = dateFormat(data.dateGenerated, 'yyyy-mm-dd');
-        var archiveFileNameAndPath = __dirname + '/../data/archive_historical/AQList-' + generatedFileDateString + '.xml';
-        syncWriteFileAQListXML(data, archiveFileNameAndPath);
+        var archiveFileNameAndPath = __dirname + '/../data/archive_historical/consolidated-' + generatedFileDateString + '.xml';
+        syncWriteFileXML(data, archiveFileNameAndPath);
         createDateGeneratedMessage();
         delete data.entities;
         delete data.indivs;
         delete data.CONSOLIDATED_LIST;
-        cleanUpRefNums(data.nodes);
-        cleanUpIds(data.nodes);
+
+        // cleanUpRefNums(data.nodes);
+        // cleanUpIds(data.nodes);
         data.comments = {};
         data.comments.links = [];
         data.narratives = {};
@@ -285,6 +283,8 @@ var collect = function () {
         for (var nodeCounter = 0; nodeCounter < nodes.length; nodeCounter++) {
           node = nodes[nodeCounter];
           node.nodeNumber = nodeCounter + 1;
+          node.id = node.REFERENCE_NUMBER;
+          node.oldRefNum = node.COMMENTS1;
         }
         concatNames(data.nodes);
         createNationality(data.nodes);
@@ -297,7 +297,7 @@ var collect = function () {
       // write normalized json data to local file for debugging
       function (callback) {
         // var myFile = __dirname + '/../data/output/' + fileName;
-        var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'AQList-L' + __line + '-writedata.json';
+        var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'conList-L' + __line + '-writedata.json';
         utilities_aq_viz.stringifyAndWriteJsonDataFile(data, writeJsonPathAndFileName);
         utilities_aq_viz.stringifyAndWriteJsonDataFile(data, dataPath);
         if (consoleLog) {
@@ -309,7 +309,7 @@ var collect = function () {
       // write intermediate data to local file for debugging
       function (callback) {
         // var myFile = __dirname + '/../data/output/' + fileName;
-        var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'AQList-L' + __line + '-normData-01-flattened.json';
+        var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'conList-L' + __line + '-normData-01-flattened.json';
         utilities_aq_viz.stringifyAndWriteJsonDataFile(data, writeJsonPathAndFileName);
         utilities_aq_viz.stringifyAndWriteJsonDataFile(data, dataPath);
         if (consoleLog) {
@@ -347,12 +347,12 @@ var collect = function () {
         counter = 0;
         data.nodes.forEach(function (node) {
 
-          if (consoleLog & counter < 40) {
+          if (consoleLog && counter < 40) {
             logger.debug(__filename, 'line', __line, '; counter = ', counter, '; node.id = ', node.id);
           }
-          node.id = getCleanId(node.REFERENCE_NUMBER);
+          // node.id = getCleanId(node.REFERENCE_NUMBER);
           if (!(node.id)) {
-            node.id = 'NODE' + counter;
+            node.id = 'NODE' + utilities_aq_viz.pad(node.nodeNumber, 4);
           }
           nodeBag.add(node.id, node);
           // logger.debug('\n ', __filename, 'line', __line, 'counter = ', counter ,'; nodeBag.length = ', nodeBag.count);
@@ -366,7 +366,7 @@ var collect = function () {
 
       // write intermediate data file for debugging
       function (callback) {
-        var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'AQList-L' + __line + '-bagData.json';
+        var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'conList-L' + __line + '-bagData.json';
         utilities_aq_viz.stringifyAndWriteJsonDataFile(data, writeJsonPathAndFileName);
         utilities_aq_viz.stringifyAndWriteJsonDataFile(data, dataPath);
         callback();
@@ -377,7 +377,7 @@ var collect = function () {
         var nodeBag2 = new Bag();
         counter = 0;
         data.nodes.forEach(function (node) {
-          node.id = getCleanId(node.REFERENCE_NUMBER);
+          // node.id = getCleanId(node.REFERENCE_NUMBER);
           nodeBag2.add(node.id, node);
           counter++;
         });
@@ -390,7 +390,7 @@ var collect = function () {
       // write intermediate data file for debugging
       // no links here yet
       function (callback) {
-        var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'AQList-L' + __line + '-setupData1-nodeBagSet.json';
+        var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'conList-L' + __line + '-setupData1-nodeBagSet.json';
         utilities_aq_viz.stringifyAndWriteJsonDataFile(data, writeJsonPathAndFileName);
         utilities_aq_viz.stringifyAndWriteJsonDataFile(data, dataPath);
         callback();
@@ -459,7 +459,7 @@ var collect = function () {
 
       // write intermediate data file for debugging
       function (callback) {
-        var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'AQList-L' + __line + '-addConnectionIdsArrayFromComments.json';
+        var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'conList-L' + __line + '-addConnectionIdsArrayFromComments.json';
         utilities_aq_viz.stringifyAndWriteJsonDataFile(data, writeJsonPathAndFileName);
         utilities_aq_viz.stringifyAndWriteJsonDataFile(data, dataPath);
         callback();
@@ -477,7 +477,7 @@ var collect = function () {
 
       // write intermediate data file for debugging
       function (callback) {
-        var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'AQList-L' + __line + '-addConnectionObjectsArray.json';
+        var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'conList-L' + __line + '-addConnectionObjectsArray.json';
         utilities_aq_viz.stringifyAndWriteJsonDataFile(data, writeJsonPathAndFileName);
         utilities_aq_viz.stringifyAndWriteJsonDataFile(data, dataPath);
         callback();
@@ -494,7 +494,7 @@ var collect = function () {
 
       // write intermediate data file for debugging
       function (callback) {
-        var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'AQList-L' + __line + '-consolidatedLinksFromComments.json';
+        var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'conList-L' + __line + '-consolidatedLinksFromComments.json';
         utilities_aq_viz.stringifyAndWriteJsonDataFile(data, writeJsonPathAndFileName);
         utilities_aq_viz.stringifyAndWriteJsonDataFile(data, dataPath);
         callback();
@@ -541,7 +541,7 @@ var collect = function () {
 
       // write intermediate data file for debugging
       function (callback) {
-        var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'AQList-L' + __line + '-readdata.json';
+        var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'conList-L' + __line + '-readdata.json';
         utilities_aq_viz.stringifyAndWriteJsonDataFile(data, writeJsonPathAndFileName);
         utilities_aq_viz.stringifyAndWriteJsonDataFile(data, dataPath);
         callback();
@@ -579,7 +579,7 @@ var collect = function () {
 
       // write intermediate data file for debugging
       function (callback) {
-        var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'AQList-L' + __line + '-generatedNarrFileNames.json';
+        var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'conList-L' + __line + '-generatedNarrFileNames.json';
         utilities_aq_viz.stringifyAndWriteJsonDataFile(data, writeJsonPathAndFileName);
         // var dataPath = __dirname + '/../data/output/data.json';
         utilities_aq_viz.stringifyAndWriteJsonDataFile(data, dataPath);
@@ -626,7 +626,7 @@ var collect = function () {
 
       // write intermediate data file for debugging
       function (callback) {
-        var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'AQList-L' + __line + '-downloadedStoredReadAndParsedNarratives.json';
+        var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'conList-L' + __line + '-downloadedStoredReadAndParsedNarratives.json';
         utilities_aq_viz.stringifyAndWriteJsonDataFile(data, writeJsonPathAndFileName);
         utilities_aq_viz.stringifyAndWriteJsonDataFile(data, dataPath);
         callback();
@@ -691,7 +691,7 @@ var collect = function () {
       // write intermediate data file for debugging
       function
         (callback) {
-        var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'AQList-L' + __line + '-deletedUnnededLinkAttributes.json';
+        var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'conList-L' + __line + '-deletedUnnededLinkAttributes.json';
         utilities_aq_viz.stringifyAndWriteJsonDataFile(data, writeJsonPathAndFileName);
         utilities_aq_viz.stringifyAndWriteJsonDataFile(data, dataPath);
         callback();
@@ -782,7 +782,7 @@ var collect = function () {
 
       // write intermediate data file for debugging
       function (callback) {
-        var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'AQList-L' + __line + '-createdNodesForOrphanedNarrIds.json';
+        var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'conList-L' + __line + '-createdNodesForOrphanedNarrIds.json';
         utilities_aq_viz.stringifyAndWriteJsonDataFile(data, writeJsonPathAndFileName);
         utilities_aq_viz.stringifyAndWriteJsonDataFile(data, dataPath);
         callback();
@@ -841,7 +841,7 @@ var collect = function () {
 
       // write intermediate data file for debugging
       function (callback) {
-        var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'AQList-L' + __line + '-addConnectionObjectsArray.json';
+        var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'conList-L' + __line + '-addConnectionObjectsArray.json';
         utilities_aq_viz.stringifyAndWriteJsonDataFile(data, writeJsonPathAndFileName);
         utilities_aq_viz.stringifyAndWriteJsonDataFile(data, dataPath);
         callback();
@@ -878,7 +878,7 @@ var collect = function () {
 
       // write intermediate data file for debugging
       function (callback) {
-        var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'AQList-L' + __line + '-cleanup.json';
+        var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'conList-L' + __line + '-cleanup.json';
         utilities_aq_viz.stringifyAndWriteJsonDataFile(data, writeJsonPathAndFileName);
         utilities_aq_viz.stringifyAndWriteJsonDataFile(data, dataPath);
         callback();
@@ -925,10 +925,10 @@ var collect = function () {
   ;
 };
 
-var syncWriteFileAQListXML = function (data, localFileNameAndPath) {
-//  var myFile = __dirname + '/../data/output/AQList.xml';
+var syncWriteFileXML = function (data, localFileNameAndPath) {
+//  var myFile = __dirname + '/../data/output/consolidated.xml';
   try {
-//    fse.writeFileSync(localFileNameAndPath, AQList_xml, fsOptions);
+//    fse.writeFileSync(localFileNameAndPath, list_xml, fsOptions);
     fse.writeFileSync(localFileNameAndPath, data, fsOptions);
     if (consoleLog) {
       logger.debug(__filename, 'line', __line, '; data written to: ', localFileNameAndPath);
@@ -938,7 +938,7 @@ var syncWriteFileAQListXML = function (data, localFileNameAndPath) {
     logger.error(__filename, 'line', __line, ' Error: ', err);
   }
   if (consoleLog) {
-    logger.debug(__filename, 'line', __line, ' AQList_xml = \n', AQList_xml.toString().substring(0, substringChars));
+    logger.debug(__filename, 'line', __line, ' list_xml = \n', list_xml.toString().substring(0, substringChars));
   }
 };
 
@@ -1113,15 +1113,20 @@ var cleanUpIds = function (nodes) {
     var refNumRegexMatch;
     try {
       refNumRegexMatch = (node.REFERENCE_NUMBER).match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/);
-    } catch (error) {
+      node.id = refNumRegexMatch[1].trim();
+    } catch (err) {
       if (consoleLog) {
-        logger.error(__filename, 'line', __line, '; Error: ', error, '; node =', node, '; counter = ', counter);
+        logger.error(__filename, 'line', __line, '; Error: ', err, '; node =', node, '; node.id = ', node.id, '; counter = ', counter);
       }
     }
     //  clean up indiv id for consistency;  none should have trailing period.
-    node.id = refNumRegexMatch[1].trim();
+
     if ((node.REFERENCE_NUMBER).match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/)[1].trim() !== node.id) {
-      throw 'id error';
+      logger.error(__filename, 'line', __line, ' Error: ', err, '; Cannot parse node.REFERENCE_NUMBER');
+      throw {
+        name: 'IDError',
+        message: '; Cannot parse node.REFERENCE_NUMBER'
+      };
     }
     // for consistency, remove period from end of all reference numbers that have them; not all do.
     if (counter <= numObjectsToShow) {
@@ -1150,8 +1155,8 @@ var cleanUpRefNums = function (nodes) {
     var refNumRegexMatch;
     try {
       refNumRegexMatch = (node.REFERENCE_NUMBER).match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/);
-    } catch (error) {
-      logger.error(__filename, 'line', __line, '; Error: ', error, '; node =', node, '; counter = ', counter);
+    } catch (err) {
+      logger.error(__filename, 'line', __line, '; Error: ', err, '; node =', node, '; counter = ', counter);
     }
     try {
       node.REFERENCE_NUMBER = refNumRegexMatch[0].trim();
@@ -1514,12 +1519,12 @@ var createIndivDateOfBirthString = function (d) {
 };
 
 var createDateGeneratedMessage = function () {
-  var dateAqListGeneratedString = data.dateGenerated;
-  var dateAqListGenerated = new Date(dateAqListGeneratedString);
+  var dateListGeneratedString = data.dateGenerated;
+  var dateListGenerated = new Date(dateListGeneratedString);
   dateFormat.masks.shortDate = 'mm-dd-yyyy';
   dateFormat.masks.friendly_display = 'dddd, mmmm dS, yyyy';
-  generatedFileDateString = vizFormatDateSetup(dateAqListGenerated);
-  var message = 'Collected AQList.xml labeled as generated on: ' + dateAqListGeneratedString + ' [' + dateAqListGenerated + ']';
+  generatedFileDateString = vizFormatDateSetup(dateListGenerated);
+  var message = 'Collected consolidated.xml labeled as generated on: ' + dateListGeneratedString + ' [' + dateListGenerated + ']';
   data.message = message;
   logger.debug([__filename, ' line ', __line + '; ', message].join(''));
 };

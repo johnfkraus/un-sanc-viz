@@ -19,7 +19,7 @@ describe('assert some xml', function () {
 
   var rawXmlFileName = __dirname + "/../data/output/AQList.xml";
   var someXml = fse.readFileSync(rawXmlFileName, fsOptions);
-//  var res = request('GET', 'http://www.un.org/sc/committees/1267/AQList.xml');
+//  var res = request('GET', 'http://www.un.org/sc/committees/consolidated.xml');
   // var otherXml = res.body.toString();
   // var someXml = '<root>\n\t<child name="foo" value="bar"></child>\n</root>';
   var brokeXml = '<root>\n\t<child name="foo" value="bar"></child>';

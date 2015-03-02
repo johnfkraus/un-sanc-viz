@@ -78,6 +78,21 @@ var formatMyDate = function (dateString) {
   return formattedDate.trim();
 };
 
+var generateNarrFileNameFromId = function (nodeId) {
+  // QI.A.77.02  filename: NSQI07702E.shtml
+  var idSplit = (nodeId).trim().split('.');
+  // id = id.trim();
+  // var idSplit = id.split('.');
+  var narrFileName = 'NSQ' + idSplit[0].substring(1, 2) + pad(idSplit[2],3) + pad(idSplit[3],2) + 'E.shtml';
+  if (consoleLog) {
+    logger.debug(__filename, ' line ', __line, '; nodeId = ', nodeId, '; generated narrFileName = ', narrFileName);
+    logger.debug([__filename, ' line ', __line, '; nodeId = ', nodeId, '; generated narrFileName = ', narrFileName].join(''));
+  }
+  testNarrativeFileName(narrFileName);
+  return narrFileName.trim();
+};
+
+
 //  clean up ids for consistency;  none should have trailing period.
 var getCleanId = function (referenceNumber) {
   var refNumRegexMatch;
@@ -107,19 +122,6 @@ var generateNarrFileName = function (node) {
   return narrFileName.trim();
 };
 
-var generateNarrFileNameFromId = function (nodeId) {
-  // QI.A.77.02  filename: NSQI07702E.shtml
-  var idSplit = (nodeId).trim().split('.');
-  // id = id.trim();
-  // var idSplit = id.split('.');
-  var narrFileName = 'NSQ' + idSplit[0].substring(1, 2) + pad(idSplit[2],3) + pad(idSplit[3],2) + 'E.shtml';
-  if (consoleLog) {
-    logger.debug(__filename, ' line ', __line, '; nodeId = ', nodeId, '; generated narrFileName = ', narrFileName);
-    logger.debug([__filename, ' line ', __line, '; nodeId = ', nodeId, '; generated narrFileName = ', narrFileName].join(''));
-  }
-  testNarrativeFileName(narrFileName);
-  return narrFileName.trim();
-};
 
 var pad = function(num, size) {
   var s = "000000000" + num;
@@ -291,6 +293,7 @@ module.exports = {
   getCleanId: getCleanId,
   logModulus: logModulus,
   nodeSummary: nodeSummary,
+  pad: pad,
   stringifyAndWriteJsonDataFile: stringifyAndWriteJsonDataFile,
   syncWriteMyFile: syncWriteMyFile,
   trimNarrative: trimNarrative,
@@ -298,3 +301,4 @@ module.exports = {
   truncateToNumChars: truncateToNumChars,
   validateUrl: validateUrl
 };
+

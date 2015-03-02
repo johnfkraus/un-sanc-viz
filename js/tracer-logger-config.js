@@ -1,4 +1,5 @@
 var fse = require('fs-extra');
+// var rotate = require('log-rotate');
 
 var sysDate = new Date();
 var sysDateString = sysDate.toDateString().replace(/ /g, '_');
@@ -10,9 +11,10 @@ var generateFileNameAndPath = function () {
   return legalLogFileName.trim();
 };
 
-var logFileNameAndPath = __dirname + '/../log/log.log'; //logFileNameAndPath || generateFileNameAndPath();
+var logFileNameAndPath = __dirname + '/../log/consolidated.log'; //logFileNameAndPath || generateFileNameAndPath();
 
 var colors = require('colors');
+
 
 var logger = require('tracer').colorConsole({
     transport: function (data) {
@@ -73,3 +75,4 @@ var logger = require('tracer').colorConsole({
 module.exports = {
   logger: logger
 };
+

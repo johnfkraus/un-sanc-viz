@@ -9,24 +9,21 @@
 <html class="no-js" lang="en">
 <!--<![endif]-->
 <head>
-
-
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>U.N. Al-Qaida Sanctions List Network Visualization</title>
+    <title>United Nations Consolidated Sanctions List Network Visualization</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta charset="UTF-8">
     <meta name="dc.title"
-          content="Security Council Committee established pursuant to Resolution 1267 (1999) concerning Al-Qaida and the Taliban and Associated Individuals and Entities">
+          content="Security Council Committees">
     <meta name="dc.description"
-          content="This is the United Nations site for the Security Council Sanctions Committee 1267. You will find here some information as well as links to related materials.">
+          content="This is the United Nations site for the Security Council Sanctions Committees">
     <meta name="dc.subject"
-          content=" Taliban, Al-Qaida, Sanctions Committee, United Nations 1267 Committee, Resolution 1267">
+          content="sanctions, isis, Taliban, Al-Qaida, United Nations">
     <meta name="dc.publisher" content="United Nations">
-    <meta name="dc.date.created" content="2007-01-31">
-    <meta name="author" content="United Nations Web Services Section">
+    <meta name="dc.date.created" content="2015-01-01">
     <meta name="dc.format" content="text/html">
-    <meta name="dc.language" content="EN">
-    <meta name="dc.rights" content="Copyright &copy; United Nations 2007">
+    <meta name="dc.language" content="en">
+    <meta name="dc.rights" content="Copyright &copy; John F. Kraus 2014">
     <meta name="author" content="John Kraus">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <!-- CSS concatenated and minified via ant build script-->
@@ -38,9 +35,6 @@
     <!--script src="js/libs/modernizr-2.0.6.min.js"></script-->
     <script src="js/libs/modernizr.custom.99838.js"></script>
     <script src="js/utilities.js"></script>
-    <!--
-    <script src="js/json-pruned.js"></script>
-    -->
     <script src="js/libs/underscore.js"></script>
     <script src="js/libs/backbone.js"></script>
     <script src="js/config.js"></script>
@@ -57,11 +51,11 @@
             </td>
             <td class="mainTitleTd">
                 <div class="mainTitleDiv"><a
-                        href="http://www.un.org/sc/committees/1267/AQList.xml" id="AQList.xml" target="_blank"
-                        style="text-decoration: none;">U.N. Al-Qaida Sanctions List</a>
+                        href="http://www.un.org/sc/committees/consolidated.xml" class="list_xml" target="_blank"
+                        style="text-decoration: none;">U.N. Sanctions List</a>
                     <br/>Network Visualization
                 </div>
-                <div class="noPadMar"><a href="http://www.un.org/sc/committees/1267/AQList.xml" id="AQList.xml"
+                <div class="noPadMar"><a href="http://www.un.org/sc/committees/consolidated.xml" class="list_xml"
                                          target="_blank"
                                          style="text-decoration: none;"><span
                         style="font-size: 10px; line-height: 120%;"
@@ -72,14 +66,14 @@
                             style="text-decoration: none;">John Kraus</a></span>
                 </div>
             </td>
-            <td align="center" style="display: none;">
+            <!-- td align="center" style="display: none;">
                 <div id="list_selection" class="control">
                     <h3>Name</h3>
                     <select id="list_select">
                         <option value="al-qaida.json">Al-Qaida List</option>
                     </select>
                 </div>
-            </td>
+            </td -->
             <td align="center" style="display: none;">
                 <div id="layouts" class="control">
                     <h3>Layout</h3>

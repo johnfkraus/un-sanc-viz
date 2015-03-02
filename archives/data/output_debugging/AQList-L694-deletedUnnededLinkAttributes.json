@@ -6538,15 +6538,54 @@
    "connectionObjectsFromComments": [],
    "narrativeFileName": "NSQI02101E.shtml",
    "narrativeFileNameSource": "derived from id",
-   "linksFromNarrArray": [],
+   "linksFromNarrArray": [
+    "QE.A.4.01",
+    "QI.S.1.01",
+    "QI.E.19.01",
+    "QI.A.23.01",
+    "QI.G.28.01"
+   ],
    "connectionIdsFromNarrativeSet": {
     "_map": {
-     "_count": 0,
-     "_map": {}
+     "_count": 5,
+     "_map": {
+      "QE.A.4.01": true,
+      "QI.S.1.01": true,
+      "QI.E.19.01": true,
+      "QI.A.23.01": true,
+      "QI.G.28.01": true
+     }
     }
    },
-   "connectedToIdFromNarrativeArray": [],
-   "connectionObjectsFromNarrative": []
+   "connectedToIdFromNarrativeArray": [
+    "QE.A.4.01",
+    "QI.S.1.01",
+    "QI.E.19.01",
+    "QI.A.23.01",
+    "QI.G.28.01"
+   ],
+   "connectionObjectsFromNarrative": [
+    {
+     "source": "QI.A.21.01",
+     "target": "QE.A.4.01"
+    },
+    {
+     "source": "QI.A.21.01",
+     "target": "QI.S.1.01"
+    },
+    {
+     "source": "QI.A.21.01",
+     "target": "QI.E.19.01"
+    },
+    {
+     "source": "QI.A.21.01",
+     "target": "QI.A.23.01"
+    },
+    {
+     "source": "QI.A.21.01",
+     "target": "QI.G.28.01"
+    }
+   ]
   },
   {
    "DATAID": "111496",
@@ -37157,7 +37196,7 @@
   }
  ],
  "dateGenerated": "02-18-2015",
- "dateCollected": "02-28-2015",
+ "dateCollected": "03-02-2015",
  "message": "Collected AQList.xml labeled as generated on: 02-18-2015 [Wed Feb 18 2015 00:00:00 GMT-0500 (Eastern Standard Time)]",
  "comments": {
   "links": [
@@ -38510,6 +38549,26 @@
     "target": "QE.A.143.14"
    },
    {
+    "source": "QI.A.21.01",
+    "target": "QE.A.4.01"
+   },
+   {
+    "source": "QI.A.21.01",
+    "target": "QI.S.1.01"
+   },
+   {
+    "source": "QI.A.21.01",
+    "target": "QI.E.19.01"
+   },
+   {
+    "source": "QI.A.21.01",
+    "target": "QI.A.23.01"
+   },
+   {
+    "source": "QI.A.21.01",
+    "target": "QI.G.28.01"
+   },
+   {
     "source": "QI.A.23.01",
     "target": "QE.A.4.01"
    },
@@ -38835,6 +38894,26 @@
   {
    "source": "QI.A.60.02",
    "target": "QE.A.143.14"
+  },
+  {
+   "source": "QI.A.21.01",
+   "target": "QE.A.4.01"
+  },
+  {
+   "source": "QI.A.21.01",
+   "target": "QI.S.1.01"
+  },
+  {
+   "source": "QI.A.21.01",
+   "target": "QI.E.19.01"
+  },
+  {
+   "source": "QI.A.21.01",
+   "target": "QI.A.23.01"
+  },
+  {
+   "source": "QI.A.21.01",
+   "target": "QI.G.28.01"
   },
   {
    "source": "QI.A.23.01",

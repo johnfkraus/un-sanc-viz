@@ -30,6 +30,7 @@
     "mongojs": "*",
     "object-inspect": "^1.0.0",
     "request-enhanced": "^0.1.1",
+    "log-rotate": "*",
     "request-sync": "^1.0.0",
     "sync-request": "^1.0.1",
     "tracer": "0.7.3",
