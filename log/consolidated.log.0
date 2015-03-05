@@ -1,34 +1,204 @@
-[36m2015-03-05T10:26:06 <debug> app.js:45 (parse2) 
-  c:\Users\User1\WebstormProjects\un-sanc-viz\js\app.js line {} ; running  c:\Users\User1\WebstormProjects\un-sanc-viz\js\app.js ;  Thu Mar 05 2015 10:26:06 GMT-0500 (Eastern Standard Time)[39m
-[36m2015-03-05T10:26:06 <debug> app.js:58 (async.series.fwPath) 
+[36m2015-03-05T13:25:46 <debug> app.js:45 (parse2) 
+  c:\Users\User1\WebstormProjects\un-sanc-viz\js\app.js line {} ; running  c:\Users\User1\WebstormProjects\un-sanc-viz\js\app.js ;  Thu Mar 05 2015 13:25:46 GMT-0500 (Eastern Standard Time)[39m
+[36m2015-03-05T13:25:46 <debug> app.js:58 (async.series.fwPath) 
   c:\Users\User1\WebstormProjects\un-sanc-viz\js\app.js {} ; Phase #: 1 ; logFileNameAndPath =  c:\Users\User1\WebstormProjects\un-sanc-viz\js/../log/consolidated.log[39m
-[36m2015-03-05T10:26:06 <debug> app.js:65 (async.series.fwPath) 
+[36m2015-03-05T13:25:46 <debug> app.js:65 (async.series.fwPath) 
   c:\Users\User1\WebstormProjects\un-sanc-viz\js\app.js {} ; Phase #: 2 ; collect.convertXMLToJson)_[39m
-[36m2015-03-05T10:26:06 <debug> collect.js:95 (async.series.backupRawXmlFileName) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 95 ; consoleLog =  true[39m
-[36m2015-03-05T10:26:06 <debug> collect.js:96 (async.series.backupRawXmlFileName) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 96 ; logModulus =  61[39m
-[35m2015-03-05T10:26:06 <trace> collect.js:97 (async.series.backupRawXmlFileName) hello world[39m
-[32m2015-03-05T10:26:06 <info> collect.js:99 (async.series.backupRawXmlFileName) hello world 123 { foo: 'bar' }[39m
-[33m2015-03-05T10:26:06 <warn> collect.js:100 (async.series.backupRawXmlFileName) hello world 123 {"foo":"bar"}[39m
-[1m[31m2015-03-05T10:26:06 <error> collect.js:101 (async.series.backupRawXmlFileName) hello world 123 {"foo":"bar"} [ 1, 2, 3, 4 ] function Object() { [native code] }[39m[22m
-[36m2015-03-05T10:26:07 <debug> collect.js:108 () c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 108 Copied  c:\Users\User1\WebstormProjects\un-sanc-viz\js /../data to  c:\Users\User1\WebstormProjects\un-sanc-viz\js /../archives[39m
-[36m2015-03-05T10:26:12 <debug> collect.js:138 (async.series.fileNameAndPathForProcessing) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 138 ; consoleLog =  true ; list_xml res.body.toString() =  <?xml version="1.0" encoding="UTF-8"?>
+[36m2015-03-05T13:25:46 <debug> collect.js:97 (async.series.backupRawXmlFileName) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 97 ; consoleLog =  true[39m
+[36m2015-03-05T13:25:46 <debug> collect.js:98 (async.series.backupRawXmlFileName) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 98 ; logModulus =  19[39m
+[35m2015-03-05T13:25:46 <trace> collect.js:99 (async.series.backupRawXmlFileName) hello world[39m
+[32m2015-03-05T13:25:46 <info> collect.js:101 (async.series.backupRawXmlFileName) hello world 123 { foo: 'bar' }[39m
+[33m2015-03-05T13:25:46 <warn> collect.js:102 (async.series.backupRawXmlFileName) hello world 123 {"foo":"bar"}[39m
+[1m[31m2015-03-05T13:25:46 <error> collect.js:103 (async.series.backupRawXmlFileName) hello world 123 {"foo":"bar"} [ 1, 2, 3, 4 ] function Object() { [native code] }[39m[22m
+[36m2015-03-05T13:25:51 <debug> collect.js:110 (async.series.backupRawXmlFileName) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 110 Copied  c:\Users\User1\WebstormProjects\un-sanc-viz\js /../data to  c:\Users\User1\WebstormProjects\un-sanc-viz\js /../archives[39m
+[32m2015-03-05T13:25:51 <info> collect.js:145 (async.series.fileNameAndPathForProcessing) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 145 ; Per configuration, reading stored backup XML file: c:\Users\User1\WebstormProjects\un-sanc-viz\js/../data/committees/consolidated/backup/consolidated.xml ; useLocalConsolidatedListFile =  true[39m
+[36m2015-03-05T13:25:51 <debug> collect.js:149 (async.series.fileNameAndPathForProcessing) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 149 ; consoleLog =  true ; list_xml res.body.toString() =  <?xml version="1.0" encoding="UTF-8"?>
 <CONSOLIDATED_LIST xmlns:xsi="http://www.w3.org/2001/XMLSchem 
-list_xml Response body length:  1916534[39m
-[36m2015-03-05T10:26:12 <debug> collect.js:139 (async.series.fileNameAndPathForProcessing) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.jsline139list_xml res.body.toString() = <?xml version="1.0" encoding="UTF-8"?>
+ list_xml Response body length:  1916534[39m
+[36m2015-03-05T13:25:51 <debug> collect.js:150 (async.series.fileNameAndPathForProcessing) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.jsline150list_xml res.body.toString() = <?xml version="1.0" encoding="UTF-8"?>
 <CONSOLIDATED_LIST xmlns:xsi="http://www.w3.org/2001/XMLSchem
 list_xml Response body length: 1916534[39m
-[36m2015-03-05T10:26:12 <debug> collect.js:937 (syncWriteFileXML) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 937 ; data written to:  c:\Users\User1\WebstormProjects\un-sanc-viz\js/../data/committees/consolidated/consolidated.xml[39m
-[36m2015-03-05T10:26:12 <debug> collect.js:938 (syncWriteFileXML) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 938 ; file contained:  <?xml version="1.0" encoding="UTF-8"?>
+[36m2015-03-05T13:25:51 <debug> collect.js:958 (syncWriteFileXML) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 958 ; data written to:  c:\Users\User1\WebstormProjects\un-sanc-viz\js/../data/committees/consolidated/consolidated.xml[39m
+[36m2015-03-05T13:25:51 <debug> collect.js:959 (syncWriteFileXML) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 959 ; file contained:  <?xml version="1.0" encoding="UTF-8"?>
 <CONSOLIDATED_LIST xmlns:xsi="http://www.w3.org/2001/XMLSchem[39m
-[36m2015-03-05T10:26:12 <debug> collect.js:944 (syncWriteFileXML) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 944  list_xml = 
+[36m2015-03-05T13:25:51 <debug> collect.js:965 (syncWriteFileXML) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 965  list_xml = 
  <?xml version="1.0" encoding="UTF-8"?>
 <CONSOLIDATED_LIST xmlns:xsi="http://www.w3.org/2001/XMLSchem[39m
-[36m2015-03-05T10:26:12 <debug> collect.js:937 (syncWriteFileXML) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 937 ; data written to:  c:\Users\User1\WebstormProjects\un-sanc-viz\js/../data/archive/consolidated.xml[39m
-[36m2015-03-05T10:26:12 <debug> collect.js:938 (syncWriteFileXML) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 938 ; file contained:  <?xml version="1.0" encoding="UTF-8"?>
+[36m2015-03-05T13:25:51 <debug> collect.js:958 (syncWriteFileXML) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 958 ; data written to:  c:\Users\User1\WebstormProjects\un-sanc-viz\js/../data/archive/consolidated.xml[39m
+[36m2015-03-05T13:25:51 <debug> collect.js:959 (syncWriteFileXML) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 959 ; file contained:  <?xml version="1.0" encoding="UTF-8"?>
 <CONSOLIDATED_LIST xmlns:xsi="http://www.w3.org/2001/XMLSchem[39m
-[36m2015-03-05T10:26:12 <debug> collect.js:944 (syncWriteFileXML) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 944  list_xml = 
+[36m2015-03-05T13:25:51 <debug> collect.js:965 (syncWriteFileXML) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 965  list_xml = 
  <?xml version="1.0" encoding="UTF-8"?>
 <CONSOLIDATED_LIST xmlns:xsi="http://www.w3.org/2001/XMLSchem[39m
-[36m2015-03-05T10:26:12 <debug> app.js:73 (async.series.fwPath) 
+[36m2015-03-05T13:25:51 <debug> collect.js:167 (async.series.writeJsonPathAndFileName) 
+  c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 167  function #: 1[39m
+[32m2015-03-05T13:25:53 <info> collect.js:197 (async.series.committeesPath) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 197 ; function #: 2 ; read data.json, consoleLog =  true[39m
+[32m2015-03-05T13:25:53 <info> collect.js:207 (async.series.data.entities) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 207 ; function #: 3 ; read committees.json, consoleLog =  true ; committees =  [
+ {
+  "Permanent reference numbers for individuals": "CDi.001",
+  "Permanent reference numbers for entities": "CDe.001",
+  "Two Digit Country ISO Code": "CD",
+  "Committee": "1533 (2004)",
+  "Subject Matter Abbreviated": "Resolution 1533 (2004) concerning the Democratic Republic of the Congo"
+ },
+ {
+  "Permanent reference numbers for individuals": "CFi.001",
+  "Permanent reference numbers for entities": "CFe.001",
+  "Two Digit Country ISO Code": "CF",
+  "Committee": "2127 (2013)",
+  "Subject Matter Abbreviated": "Resolution 2127 (2013) concerning the Central African Republic"
+ },
+ {
+  "Permanent reference numbers for individuals": "CIi.001",
+  "Permanent reference numbers for entities": "CIe.001",
+  "Two Digit Country ISO Code": "CI",
+  "Committee": "1572 (2004)",
+  "Subject Matter Abbreviated": "Resolution 1572 (2004) concerning Côte d'Ivoire"
+ },
+ {
+  "Permanent reference numbers for individuals": "GBi.001",
+  "Permanent reference numbers for entities": "GBe.001",
+  "Two Digit Country ISO Code": "GB",
+  "Committee": "2048 (2012)",
+  "Subject Matter Abbreviated": "Resolution 2048 (2012) concerning Guinea-Bissau"
+ },
+ {
+  "Permanent reference numbers for individuals": "IQi.001",
+  "Permanent reference numbers for entities": "IQe.001",
+  "Two Digit Country ISO Code": "IQ",
+  "Committee": "1518 (2003)",
+  "Subject Matter Abbreviated": "Resolution 1518 (2003) re: the former Iraqi regime"
+ },
+ {
+  "Permanent reference numbers for individuals": "IRi.001",
+  "Permanent reference numbers for entities": "IRe.001",
+  "Two Digit Country ISO Code": "IR",
+  "Committee": "1737 (2006)",
+  "Subject Matter Abbreviated": "Resolution 1737 (2006) relating to the Islamic Republic of Iran."
+ },
+ {
+  "Permanent reference numbers for individuals": "KPi.001",
+  "Permanent reference numbers for entities": "KPe.001",
+  "Two Digit Country ISO Code": "KP",
+  "Committee": "1718 (2006)",
+  "Subject Matter Abbreviated": "Resolution 1718 (2006) relating to the Democratic People’s Republic of Korea (DPRK)."
+ },
+ {
+  "Permanent reference numbers for individuals": "LRi.001",
+  "Permanent reference numbers for entities": "LRe.001",
+  "Two Digit Country ISO Code": "LR",
+  "Committee": "1521 (2003)",
+  "Subject Matter Abbreviated": "Resolution 1521 (2003) concerning Liberia"
+ },
+ {
+  "Permanent reference numbers for individuals": "LYi.001",
+  "Permanent reference numbers for entities": "LYe.001",
+  "Two Digit Country ISO Code": "LY",
+  "Committee": "1970 (2011)",
+  "Subject Matter Abbreviated": "Resolution 1970 (2011) concerning Libya"
+ },
+ {
+  "Permanent reference numbers for individuals": "QDi.001",
+  "Permanent reference numbers for entities": "QDe.001",
+  "Two Digit Country ISO Code": "non-State entity",
+  "Committee": "1267/1989",
+  "Subject Matter Abbreviated": "Resolutions 1267 (1999) and 1989 (2011) concerning Al-Qaida and associated individuals and entities"
+ },
+ {
+  "Permanent reference numbers for individuals": "SDi.001",
+  "Permanent reference numbers for entities": "SDe.001",
+  "Two Digit Country ISO Code": "SD",
+  "Committee": "1591 (2005)",
+  "Subject Matter Abbreviated": "Resolution 1591 (2005) concerning the Sudan"
+ },
+ {
+  "Permanent reference numbers for individuals": "SOi.001",
+  "Permanent reference numbers for entities": "SOe.001",
+  "Two Digit Country ISO Code": "SO",
+  "Committee": "751 (1992) / 1907 (2009)",
+  "Subject Matter Abbreviated": "Resolutions 751 (1992) and 1907 (2009) concerning Somalia and Eritrea"
+ },
+ {
+  "Permanent reference numbers for individuals": "TAi.001",
+  "Permanent reference numbers for entities": "TAe.001",
+  "Two Digit Country ISO Code": "non-State entity",
+  "Committee": "1988 (2011)",
+  "Subject Matter Abbreviated": "Resolution 1988 (2011), Resolution 2082 (2012) re: Taliban/Afghanistan"
+ },
+ {
+  "Permanent reference numbers for individuals": "NA",
+  "Permanent reference numbers for entities": "NA",
+  "Two Digit Country ISO Code": "NA",
+  "Committee": "NA",
+  "Subject Matter Abbreviated": "Resolution 2140 (2014) re: Yemen."
+ },
+ {
+  "Permanent reference numbers for individuals": "NA",
+  "Permanent reference numbers for entities": "NA",
+  "Two Digit Country ISO Code": "NA",
+  "Committee": "NA",
+  "Subject Matter Abbreviated": "Resolution 1636 (2005) re: February 2005 terrorist bombing in Beirut, Lebanon that killed former P.M. Hariri and 22 others."
+ }
+][39m
+[36m2015-03-05T13:25:53 <debug> collect.js:224 (async.series.writeJsonPathAndFileName) 
+  c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 224 ; function #: 4 ; normalize data.json[39m
+[36m2015-03-05T13:25:53 <debug> utilities_aq_viz.js:77 (Object.formatMyDate) c:\Users\User1\WebstormProjects\un-sanc-viz\js\utilities_aq_viz.js line 77; formattedDate = 02-26-2015[39m
+[36m2015-03-05T13:25:53 <debug> utilities_aq_viz.js:77 (Object.formatMyDate) c:\Users\User1\WebstormProjects\un-sanc-viz\js\utilities_aq_viz.js line 77; formattedDate = 03-05-2015[39m
+[36m2015-03-05T13:25:53 <debug> collect.js:958 (syncWriteFileXML) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 958 ; data written to:  c:\Users\User1\WebstormProjects\un-sanc-viz\js/../data/archive_historical/consolidated-2015-02-26.xml[39m
+[36m2015-03-05T13:25:53 <debug> collect.js:959 (syncWriteFileXML) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 959 ; file contained:  [object Object][39m
+[36m2015-03-05T13:25:53 <debug> collect.js:965 (syncWriteFileXML) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 965  list_xml = 
+ <?xml version="1.0" encoding="UTF-8"?>
+<CONSOLIDATED_LIST xmlns:xsi="http://www.w3.org/2001/XMLSchem[39m
+[36m2015-03-05T13:25:53 <debug> collect.js:1553 (createDateGeneratedMessage) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 1553; Collected consolidated.xml labeled as generated on: 02-26-2015 [Thu Feb 26 2015 00:00:00 GMT-0500 (Eastern Standard Time)][39m
+[36m2015-03-05T13:25:53 <debug> collect.js:292 (async.series.writeJsonPathAndFileName) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 292 node.nodeNumber =  1 ; node.oldRefNum2 =  I.47.D.7[39m
+[36m2015-03-05T13:25:53 <debug> collect.js:292 (async.series.writeJsonPathAndFileName) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 292 node.nodeNumber =  2 ; node.oldRefNum2 =  I.47.D.3[39m
+[36m2015-03-05T13:25:53 <debug> collect.js:292 (async.series.writeJsonPathAndFileName) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 292 node.nodeNumber =  4 ; node.oldRefNum2 =  I.03.I.13[39m
+[36m2015-03-05T13:25:53 <debug> collect.js:292 (async.series.writeJsonPathAndFileName) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 292 node.nodeNumber =  5 ; node.oldRefNum2 =  I.47.D.6[39m
+[36m2015-03-05T13:25:53 <debug> collect.js:292 (async.series.writeJsonPathAndFileName) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 292 node.nodeNumber =  6 ; node.oldRefNum2 =  I.37.D.1[39m
+[36m2015-03-05T13:25:53 <debug> collect.js:292 (async.series.writeJsonPathAndFileName) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 292 node.nodeNumber =  7 ; node.oldRefNum2 =  I.47.C.3[39m
+[36m2015-03-05T13:25:53 <debug> collect.js:292 (async.series.writeJsonPathAndFileName) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 292 node.nodeNumber =  10 ; node.oldRefNum2 =  I.03.I.8[39m
+[36m2015-03-05T13:25:53 <debug> collect.js:292 (async.series.writeJsonPathAndFileName) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 292 node.nodeNumber =  11 ; node.oldRefNum2 =  I.47.D.1[39m
+[36m2015-03-05T13:25:53 <debug> collect.js:292 (async.series.writeJsonPathAndFileName) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 292 node.nodeNumber =  12 ; node.oldRefNum2 =  I.03.I.12[39m
+[36m2015-03-05T13:25:53 <debug> collect.js:292 (async.series.writeJsonPathAndFileName) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 292 node.nodeNumber =  13 ; node.oldRefNum2 =  I.29.A.23[39m
+[36m2015-03-05T13:25:53 <debug> collect.js:292 (async.series.writeJsonPathAndFileName) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 292 node.nodeNumber =  14 ; node.oldRefNum2 =  I.47.C.4[39m
+[36m2015-03-05T13:25:53 <debug> collect.js:292 (async.series.writeJsonPathAndFileName) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 292 node.nodeNumber =  15 ; node.oldRefNum2 =  I.37.C.1[39m
+[36m2015-03-05T13:25:53 <debug> collect.js:292 (async.series.writeJsonPathAndFileName) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 292 node.nodeNumber =  16 ; node.oldRefNum2 =  I.03.I.11[39m
+[36m2015-03-05T13:25:53 <debug> collect.js:292 (async.series.writeJsonPathAndFileName) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 292 node.nodeNumber =  17 ; node.oldRefNum2 =  I.37.C.7[39m
+[36m2015-03-05T13:25:53 <debug> collect.js:292 (async.series.writeJsonPathAndFileName) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 292 node.nodeNumber =  18 ; node.oldRefNum2 =  I.03.I.10[39m
+[36m2015-03-05T13:25:53 <debug> collect.js:292 (async.series.writeJsonPathAndFileName) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 292 node.nodeNumber =  19 ; node.oldRefNum2 =  I.37.C.4[39m
+[36m2015-03-05T13:25:53 <debug> collect.js:292 (async.series.writeJsonPathAndFileName) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 292 node.nodeNumber =  20 ; node.oldRefNum2 =  I.37.C.5[39m
+[36m2015-03-05T13:25:53 <debug> collect.js:292 (async.series.writeJsonPathAndFileName) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 292 node.nodeNumber =  21 ; node.oldRefNum2 =  I.03.I.9[39m
+[36m2015-03-05T13:25:53 <debug> collect.js:292 (async.series.writeJsonPathAndFileName) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 292 node.nodeNumber =  22 ; node.oldRefNum2 =  I.47.C.7[39m
+[36m2015-03-05T13:25:53 <debug> collect.js:292 (async.series.writeJsonPathAndFileName) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 292 node.nodeNumber =  23 ; node.oldRefNum2 =  I.37.C.6[39m
+[36m2015-03-05T13:25:53 <debug> collect.js:292 (async.series.writeJsonPathAndFileName) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 292 node.nodeNumber =  24 ; node.oldRefNum2 =  I.47.C.6[39m
+[36m2015-03-05T13:25:53 <debug> collect.js:292 (async.series.writeJsonPathAndFileName) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 292 node.nodeNumber =  25 ; node.oldRefNum2 =  I.03.I.7[39m
+[36m2015-03-05T13:25:53 <debug> collect.js:292 (async.series.writeJsonPathAndFileName) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 292 node.nodeNumber =  26 ; node.oldRefNum2 =  I.47.C.5[39m
+[36m2015-03-05T13:25:53 <debug> collect.js:292 (async.series.writeJsonPathAndFileName) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 292 node.nodeNumber =  27 ; node.oldRefNum2 =  I.47.D.5[39m
+[36m2015-03-05T13:25:53 <debug> collect.js:292 (async.series.writeJsonPathAndFileName) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 292 node.nodeNumber =  28 ; node.oldRefNum2 =  I.47.C.2[39m
+[36m2015-03-05T13:25:53 <debug> collect.js:292 (async.series.writeJsonPathAndFileName) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 292 node.nodeNumber =  29 ; node.oldRefNum2 =  I.37.D.3[39m
+[36m2015-03-05T13:25:53 <debug> collect.js:292 (async.series.writeJsonPathAndFileName) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 292 node.nodeNumber =  30 ; node.oldRefNum2 =  I.03.I.6[39m
+[36m2015-03-05T13:25:53 <debug> collect.js:292 (async.series.writeJsonPathAndFileName) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 292 node.nodeNumber =  31 ; node.oldRefNum2 =  I.47.C.8[39m
+[36m2015-03-05T13:25:53 <debug> collect.js:292 (async.series.writeJsonPathAndFileName) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 292 node.nodeNumber =  32 ; node.oldRefNum2 =  I.37.D.2[39m
+[36m2015-03-05T13:25:53 <debug> collect.js:292 (async.series.writeJsonPathAndFileName) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 292 node.nodeNumber =  33 ; node.oldRefNum2 =  I.03.I.5[39m
+[36m2015-03-05T13:25:53 <debug> collect.js:292 (async.series.writeJsonPathAndFileName) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 292 node.nodeNumber =  34 ; node.oldRefNum2 =  I.03.I.4[39m
+[36m2015-03-05T13:25:53 <debug> collect.js:292 (async.series.writeJsonPathAndFileName) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 292 node.nodeNumber =  35 ; node.oldRefNum2 =  I.37.D.4[39m
+[36m2015-03-05T13:25:53 <debug> collect.js:292 (async.series.writeJsonPathAndFileName) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 292 node.nodeNumber =  36 ; node.oldRefNum2 =  I.03.I.3[39m
+[36m2015-03-05T13:25:53 <debug> collect.js:292 (async.series.writeJsonPathAndFileName) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 292 node.nodeNumber =  37 ; node.oldRefNum2 =  I.03.I.2[39m
+[36m2015-03-05T13:25:53 <debug> collect.js:292 (async.series.writeJsonPathAndFileName) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 292 node.nodeNumber =  38 ; node.oldRefNum2 =  I.37.C.2[39m
+[36m2015-03-05T13:25:53 <debug> collect.js:292 (async.series.writeJsonPathAndFileName) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 292 node.nodeNumber =  39 ; node.oldRefNum2 =  I.03.I.1[39m
+[36m2015-03-05T13:25:53 <debug> collect.js:292 (async.series.writeJsonPathAndFileName) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 292 node.nodeNumber =  40 ; node.oldRefNum2 =  I.47.D.2[39m
+[36m2015-03-05T13:25:53 <debug> collect.js:292 (async.series.writeJsonPathAndFileName) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 292 node.nodeNumber =  42 ; node.oldRefNum2 =  I.37.C.3[39m
+[36m2015-03-05T13:25:53 <debug> collect.js:292 (async.series.writeJsonPathAndFileName) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 292 node.nodeNumber =  43 ; node.oldRefNum2 =  I.47.C.1[39m
+[36m2015-03-05T13:25:53 <debug> collect.js:1399 () c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 1399 ; node.name =  MOHAMMAD BAQER ZOLQADR nameFromArray =  MOHAMMAD BAQER ZOLQADR  [39m
+[36m2015-03-05T13:25:53 <debug> collect.js:1399 () c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 1399 ; node.name =  MOHAMMAD REZA ZAHEDI nameFromArray =  MOHAMMAD REZA ZAHEDI  [39m
+[36m2015-03-05T13:25:53 <debug> collect.js:1399 () c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 1399 ; node.name =  ALI AKBAR TABATABAEI nameFromArray =  ALI AKBAR TABATABAEI  [39m
+[36m2015-03-05T13:25:53 <debug> collect.js:1399 () c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 1399 ; node.name =  GHASEM SOLEYMANI nameFromArray =  GHASEM SOLEYMANI  [39m
+[36m2015-03-05T13:25:53 <debug> collect.js:1399 () c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 1399 ; node.name =  QASEM SOLEIMANI nameFromArray =  QASEM SOLEIMANI  [39m
+[36m2015-03-05T13:25:53 <debug> collect.js:1399 () c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 1399 ; node.name =  HOSEIN SALIMI nameFromArray =  HOSEIN SALIMI  [39m
+[36m2015-03-05T13:25:53 <debug> collect.js:1399 () c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 1399 ; node.name =  SEYED JABER SAFDARI nameFromArray =  SEYED JABER SAFDARI  [39m
+[36m2015-03-05T13:25:53 <debug> collect.js:1399 () c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 1399 ; node.name =  YAHYA RAHIM SAFAVI nameFromArray =  YAHYA RAHIM SAFAVI  [39m
+[36m2015-03-05T13:25:53 <debug> collect.js:1399 () c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 1399 ; node.name =  MORTEZA SAFARI nameFromArray =  MORTEZA SAFARI  [39m
+[36m2015-03-05T13:25:53 <debug> collect.js:1399 () c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 1399 ; node.name =  M. JAVAD KARIMI SABET nameFromArray =  M. JAVAD KARIMI SABET  [39m
+[36m2015-03-05T13:25:54 <debug> app.js:73 (async.series.fwPath) 
   c:\Users\User1\WebstormProjects\un-sanc-viz\js\app.js {} ; Phase #: 3 ; collect.convertXMLToJson)_[39m
-[36m2015-03-05T10:26:12 <debug> app.js:82 () c:\Users\User1\WebstormProjects\un-sanc-viz\js\app.js {} ; Phase 6#: 4 ; filewalker.filewalker()[39m
+[36m2015-03-05T13:25:54 <debug> app.js:82 () c:\Users\User1\WebstormProjects\un-sanc-viz\js\app.js {} ; Phase 6#: 4 ; filewalker.filewalker()[39m

@@ -107,24 +107,16 @@ var init = function (committee) {
   // logging
   logFileNameAndPath = __dirname + '/../log/parse2lists.log';
   // readWriteLocalNarrativesFilePath = __dirname + '/../data/committees/' + committee + '/narratives/' + linkNarrFileName;
-  writeJsonOutputDebuggingDirectory = __dirname + '/../data/committees/'+committee+'/debug/';
+  writeJsonOutputDebuggingDirectory = __dirname + '/../data/committees/' + committee + '/debug/';
   switch (committee) {
     case '751':
       individualsListUrl = 'http://www.un.org/sc/committees/' + committee + '/individuals_associated_with_Al-Qaida.shtml';
       entitiesListUrl = 'http://www.un.org/sc/committees/' + committee + '/entities_other_groups_undertakings_associated_with_Al-Qaida.shtml';
-//      narrativeUrlsArrayLocalFileNameAndPath = __dirname + '/../data/narrative_lists/narrativeUrlsArray.json';
-//      var indivOrEntityString;
-//      logFileNameAndPath = __dirname + '/../log/parse2lists.log'; //logFileNameAndPath || generateFileNameAndPath();
       break;
     case '1267':
       individualsListUrl = 'http://www.un.org/sc/committees/' + committee + '/individuals_associated_with_Al-Qaida.shtml';
       entitiesListUrl = 'http://www.un.org/sc/committees/' + committee + '/entities_other_groups_undertakings_associated_with_Al-Qaida.shtml';
       narrativeLinksJsonLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/narrative_links.json';
-      //entitiesLocalOutputFileNameAndPath; // = __dirname + '/../data/narrative_lists/entities_other_groups_undertakings_associated_with_Al-Qaida.json';
-      // var narrativeUrlsArrayLocalFileNameAndPath;  // = __dirname + '/../data/narrative_lists/narrativeUrlsArray.json';
-
-//      narrativeUrlsArrayLocalFileNameAndPath = __dirname + '/../data/narrative_lists/narrativeUrlsArray.json';
-//      var indivOrEntityString;
       break;
 
     case '1518':
@@ -325,7 +317,7 @@ var parse2Lists = function () {
           if (linkNarrFileName === 'NSQE4601E.shtml') {
             logger.error(__filename, 'line', __line, '; linkNarrFileName.length = ', linkNarrFileName.length, '; link.urlNum = ', link.urlNum, 'link.targetName = ', link.targetName, ' malformed narrative file name');
           }
-          readWriteLocalNarrativesFilePath = __dirname + '/../data/committees/'+committee+'/narratives/' + linkNarrFileName;
+          readWriteLocalNarrativesFilePath = __dirname + '/../data/committees/' + committee + '/narratives/' + linkNarrFileName;
           try {
             narrative = fse.readFileSync(readWriteLocalNarrativesFilePath, fsOptions); //, fsOptions); //, function (err, data) {
           } catch (err) {
@@ -342,10 +334,9 @@ var parse2Lists = function () {
         (callback) {
         var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'narr_links-L' + __line + '-collectedLinks.json';
         utilities_aq_viz.stringifyAndWriteJsonDataFile(narrativeLinks, writeJsonPathAndFileName);
-       utilities_aq_viz.stringifyAndWriteJsonDataFile(narrativeLinks, narrativeLinksJsonLocalOutputFileNameAndPath);
+        utilities_aq_viz.stringifyAndWriteJsonDataFile(narrativeLinks, narrativeLinksJsonLocalOutputFileNameAndPath);
         callback();
       },
-
 
       // summarize output
       // compare number of comment links to number of narrative links
@@ -760,11 +751,10 @@ var addConnectionIdsArrayFromNarrative = function (link, narrative) {
     // if ((typeof Narrative !== 'undefined') && (typeof Narrative.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/gi) !== 'undefined')) {
     if (weHaveNarrativeToParse === true) {
       linkRegexMatch = null;
-    //  (QD[ie]\.\d{3})
+      //  (QD[ie]\.\d{3})
       linkRegexMatch = narrative.match(/(QD[ie]\.\d{3})/gi);
 //      linkRegexMatch = narrative.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/gi);
       logger.debug(__filename, 'line', __line, '; linkRegexMatch = ', linkRegexMatch);
-
 
       logger.debug(__filename, 'line', __line, '; link.urlNum = ', link.urlNum, '; link.id = ', link.id,
         '; link.targetName = ', link.targetName, '; has typeof linkRegexMatch = ', typeof linkRegexMatch);
