@@ -1,10 +1,12 @@
-// app-test.js
+// app.js
 //=============
 var linenums = require('./linenums.js');
+
 var consoleLog = true;
 var utilities_aq_viz = require('./utilities_aq_viz');
 var rotate = require('log-rotate');
 var logger = require('./tracer-logger-config.js').logger;
+var parse2Lists = require('./parse2Lists.js');
 
 //var logger = require('tracer').colorConsole({level:'info'});
 // var logger = require('./tracer-logger-config.js');
@@ -38,7 +40,7 @@ var fsOptions = {
 };
 
 
-var parse2lists= function () {
+var parse2 = function () {
   if (consoleLog) {
     logger.debug('\n ', __filename, 'line', __line, '; running ', __filename, '; ', new Date());
   }
@@ -58,17 +60,19 @@ var parse2lists= function () {
         callback();
       },
 
-
-
-
-
-
+      function (callback) {
+        if (consoleLog) {
+          logger.debug('\n ', __filename, __line, '; Phase #:', ++functionCount, '; collect.convertXMLToJson)_');
+        }
+        collect.collect();
+        callback();
+      },
 
       function (callback) {
         if (consoleLog) {
           logger.debug('\n ', __filename, __line, '; Phase #:', ++functionCount, '; collect.convertXMLToJson)_');
         }
-        parse2lists.parse2lists(); //collect.collect();
+        // parse2Lists.parse2Lists(); //collect.collect();
         callback();
       },
 
@@ -88,15 +92,11 @@ var parse2lists= function () {
   );
 };
 
-
-
 var runApp = function () {
   if (consoleLog) {
     logger.debug('\n ', __filename, 'line', __line, '; running ', __filename, '; ', new Date());
   }
-
   async.series([
-
     function (callback) {
       var logFileNameAndPath = __dirname + '/../log/consolidated.log';
 
@@ -111,12 +111,6 @@ var runApp = function () {
       }
       callback();
     },
-
-
-
-
-
-
 
   function (callback) {
         if (consoleLog) {
@@ -142,8 +136,9 @@ var runApp = function () {
   );
 };
 
+parse2();
 
 module.exports = {
   runApp: runApp,
-  parse2lists: parse2lists
+  parse2: parse2
 };

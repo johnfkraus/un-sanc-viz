@@ -9,7 +9,7 @@
 
 // do we want lots of console.log messages for debugging (if so, set consoleLog = true)
 var utilities_aq_viz = require('./utilities_aq_viz');
-var consoleLog = false;
+var consoleLog = true;
 // skip downloading 300+ narrative files and use locally stored files instead; for debugging
 var useLocalNarrativeFiles = false;
 
@@ -92,6 +92,7 @@ var collect = function () {
   async.series([
       // test logger
       function (callback) {
+        logger.debug(__filename, 'line', __line, '; consoleLog = ', consoleLog);
         logger.debug(__filename, 'line', __line, '; logModulus = ', logModulus);
         logger.trace('hello', 'world');
         // logger.debug('hello %s', 'world', 123);
@@ -109,16 +110,17 @@ var collect = function () {
       },
 
       function (callback) {
-        fse.removeSync(writeJsonOutputDebuggingDirectory);
+
+       // fse.removeSync(writeJsonOutputDebuggingDirectory);
         if (!useLocalNarrativeFiles) {
           fse.removeSync(__dirname + '/../data/narrative_summaries/');
           fse.mkdirs(__dirname + '/../data/narrative_summaries/');
         }
-        fse.removeSync(__dirname + '/../data/narrative_lists/');
-        fse.removeSync(dataPath);   // deletes /data/output/data.json
+       // fse.removeSync(__dirname + '/../data/narrative_lists/');
+       // fse.removeSync(dataPath);   // deletes /data/output/data.json
         // re-create deleted directories
-        fse.mkdirs(writeJsonOutputDebuggingDirectory);
-        fse.mkdirs(__dirname + '/../data/narrative_lists/');
+       // fse.mkdirs(writeJsonOutputDebuggingDirectory);
+      //  fse.mkdirs(__dirname + '/../data/narrative_lists/');
         callback();
       },
 
@@ -128,12 +130,12 @@ var collect = function () {
           var res = requestSync('GET', listUrl);
           list_xml = res.body.toString();
         } catch (err) {
-          var backupRawXmlFileName = __dirname + '/../data/backup/consolidated.xml';
+          var backupRawXmlFileName = __dirname + '/../data/committees/consolidated/backup/consolidated.xml';
           logger.error(__filename, 'line', __line, '; Error: ', err, '; reading stored backup file:', backupRawXmlFileName);
-          list_xml = fse.readFileSync(backupRawXmlFileName, fsOptions); //, function (err, data) {
+          list_xml = fse.readFileSync(backupRawXmlFileName, fsOptions);
         }
         if (consoleLog) {
-          logger.debug(__filename, 'line', __line, 'list_xml res.body.toString() = ', list_xml.substring(0, substringChars), '\nlist_xml Response body length: ', list_xml.length);
+          logger.debug(__filename, 'line', __line,  '; consoleLog = ', consoleLog,  '; list_xml res.body.toString() = ', list_xml.substring(0, substringChars), '\nlist_xml Response body length: ', list_xml.length);
           logger.debug([__filename, 'line', __line, 'list_xml res.body.toString() = ', list_xml.substring(0, substringChars), '\nlist_xml Response body length: ', list_xml.length].join(''));
         }
         callback();
@@ -141,13 +143,13 @@ var collect = function () {
 
       // write consolidated.xml to local file and archive_historical directory
       function (callback) {
-        var fileNameAndPathForProcessing = __dirname + '/../data/output/consolidated.xml';
+        var fileNameAndPathForProcessing = __dirname + '/../data/committees/consolidated/consolidated.xml';
         syncWriteFileXML(list_xml, fileNameAndPathForProcessing);
         var fileNameAndPathForArchive = __dirname + '/../data/archive/consolidated.xml';
         syncWriteFileXML(list_xml, fileNameAndPathForArchive);
         callback();
-      },
-
+      }
+/*
       // convert consolidated.xml to json and store in var 'data'
       function (callback) {
         if (consoleLog) {
@@ -809,6 +811,7 @@ var collect = function () {
            //, '; node.links.length = ', node.links.length,'; node.linksNarr.length = ', node.linksNarr.length );
            }
            */
+  /*
         }
         var compare = function (nodeA, nodeB) {
           return nodeA.linkCount - nodeB.linkCount;
@@ -830,7 +833,7 @@ var collect = function () {
          list.sort(compare);
 
          */
-
+/*
         callback();
       },
 
@@ -913,7 +916,7 @@ var collect = function () {
         });
         callback();
       }
-
+*/
     ],
     function (err) {
       // if (consoleLog) { logger.debug( __filename, 'line', __line, ' wroteJson = ', trunc.n400(myResult));

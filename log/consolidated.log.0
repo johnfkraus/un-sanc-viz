@@ -1,0 +1,34 @@
+[36m2015-03-05T10:26:06 <debug> app.js:45 (parse2) 
+  c:\Users\User1\WebstormProjects\un-sanc-viz\js\app.js line {} ; running  c:\Users\User1\WebstormProjects\un-sanc-viz\js\app.js ;  Thu Mar 05 2015 10:26:06 GMT-0500 (Eastern Standard Time)[39m
+[36m2015-03-05T10:26:06 <debug> app.js:58 (async.series.fwPath) 
+  c:\Users\User1\WebstormProjects\un-sanc-viz\js\app.js {} ; Phase #: 1 ; logFileNameAndPath =  c:\Users\User1\WebstormProjects\un-sanc-viz\js/../log/consolidated.log[39m
+[36m2015-03-05T10:26:06 <debug> app.js:65 (async.series.fwPath) 
+  c:\Users\User1\WebstormProjects\un-sanc-viz\js\app.js {} ; Phase #: 2 ; collect.convertXMLToJson)_[39m
+[36m2015-03-05T10:26:06 <debug> collect.js:95 (async.series.backupRawXmlFileName) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 95 ; consoleLog =  true[39m
+[36m2015-03-05T10:26:06 <debug> collect.js:96 (async.series.backupRawXmlFileName) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 96 ; logModulus =  61[39m
+[35m2015-03-05T10:26:06 <trace> collect.js:97 (async.series.backupRawXmlFileName) hello world[39m
+[32m2015-03-05T10:26:06 <info> collect.js:99 (async.series.backupRawXmlFileName) hello world 123 { foo: 'bar' }[39m
+[33m2015-03-05T10:26:06 <warn> collect.js:100 (async.series.backupRawXmlFileName) hello world 123 {"foo":"bar"}[39m
+[1m[31m2015-03-05T10:26:06 <error> collect.js:101 (async.series.backupRawXmlFileName) hello world 123 {"foo":"bar"} [ 1, 2, 3, 4 ] function Object() { [native code] }[39m[22m
+[36m2015-03-05T10:26:07 <debug> collect.js:108 () c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 108 Copied  c:\Users\User1\WebstormProjects\un-sanc-viz\js /../data to  c:\Users\User1\WebstormProjects\un-sanc-viz\js /../archives[39m
+[36m2015-03-05T10:26:12 <debug> collect.js:138 (async.series.fileNameAndPathForProcessing) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 138 ; consoleLog =  true ; list_xml res.body.toString() =  <?xml version="1.0" encoding="UTF-8"?>
+<CONSOLIDATED_LIST xmlns:xsi="http://www.w3.org/2001/XMLSchem 
+list_xml Response body length:  1916534[39m
+[36m2015-03-05T10:26:12 <debug> collect.js:139 (async.series.fileNameAndPathForProcessing) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.jsline139list_xml res.body.toString() = <?xml version="1.0" encoding="UTF-8"?>
+<CONSOLIDATED_LIST xmlns:xsi="http://www.w3.org/2001/XMLSchem
+list_xml Response body length: 1916534[39m
+[36m2015-03-05T10:26:12 <debug> collect.js:937 (syncWriteFileXML) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 937 ; data written to:  c:\Users\User1\WebstormProjects\un-sanc-viz\js/../data/committees/consolidated/consolidated.xml[39m
+[36m2015-03-05T10:26:12 <debug> collect.js:938 (syncWriteFileXML) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 938 ; file contained:  <?xml version="1.0" encoding="UTF-8"?>
+<CONSOLIDATED_LIST xmlns:xsi="http://www.w3.org/2001/XMLSchem[39m
+[36m2015-03-05T10:26:12 <debug> collect.js:944 (syncWriteFileXML) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 944  list_xml = 
+ <?xml version="1.0" encoding="UTF-8"?>
+<CONSOLIDATED_LIST xmlns:xsi="http://www.w3.org/2001/XMLSchem[39m
+[36m2015-03-05T10:26:12 <debug> collect.js:937 (syncWriteFileXML) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 937 ; data written to:  c:\Users\User1\WebstormProjects\un-sanc-viz\js/../data/archive/consolidated.xml[39m
+[36m2015-03-05T10:26:12 <debug> collect.js:938 (syncWriteFileXML) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 938 ; file contained:  <?xml version="1.0" encoding="UTF-8"?>
+<CONSOLIDATED_LIST xmlns:xsi="http://www.w3.org/2001/XMLSchem[39m
+[36m2015-03-05T10:26:12 <debug> collect.js:944 (syncWriteFileXML) c:\Users\User1\WebstormProjects\un-sanc-viz\js\collect.js line 944  list_xml = 
+ <?xml version="1.0" encoding="UTF-8"?>
+<CONSOLIDATED_LIST xmlns:xsi="http://www.w3.org/2001/XMLSchem[39m
+[36m2015-03-05T10:26:12 <debug> app.js:73 (async.series.fwPath) 
+  c:\Users\User1\WebstormProjects\un-sanc-viz\js\app.js {} ; Phase #: 3 ; collect.convertXMLToJson)_[39m
+[36m2015-03-05T10:26:12 <debug> app.js:82 () c:\Users\User1\WebstormProjects\un-sanc-viz\js\app.js {} ; Phase 6#: 4 ; filewalker.filewalker()[39m

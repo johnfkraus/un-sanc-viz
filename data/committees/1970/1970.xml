@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONSOLIDATED_LIST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:noNamespaceSchemaLocation="../resources/xsd/consolodated_list.xsd"
+                   dateGenerated="2014-10-31T16:32:18.945-04:00">
+   <INDIVIDUALS>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="file:/C:/Program%20Files/Oxygen%20XML%20Editor%2015/frameworks/sc-sanctions/xsd/sc-sanctions.xsd">
+         <DATAID>690730</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>Abdulqader</FIRST_NAME>
+         <SECOND_NAME>Mohammed</SECOND_NAME>
+         <THIRD_NAME>Al-Baghdadi</THIRD_NAME>
+         <UN_LIST_TYPE>Libya</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>LYi.001</REFERENCE_NUMBER>
+         <LISTED_ON>2011-02-26</LISTED_ON>
+         <COMMENTS1>Listed pursuant to paragraph 15 of resolution 1970 (Travel Ban). </COMMENTS1>
+         <TITLE>
+            <VALUE>Dr</VALUE>
+         </TITLE>
+         <DESIGNATION>
+            <VALUE>Head of the Liaison Office of the Revolutionary Committees</VALUE>
+         </DESIGNATION>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ALIAS/>
+         <INDIVIDUAL_ADDRESS>
+            <COUNTRY>Tunisia</COUNTRY>
+            <NOTE>Believed status/location: jail in Tunisia.</NOTE>
+         </INDIVIDUAL_ADDRESS>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1950-07-01</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH/>
+         <INDIVIDUAL_DOCUMENT>
+            <TYPE_OF_DOCUMENT>Passport</TYPE_OF_DOCUMENT>
+            <NUMBER>B010574</NUMBER>
+         </INDIVIDUAL_DOCUMENT>
+         <SORT_KEY>Abdulqader Mohammed Al-Baghdadi </SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-05-28</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="file:/C:/Program%20Files/Oxygen%20XML%20Editor%2015/frameworks/sc-sanctions/xsd/sc-sanctions.xsd">
+         <DATAID>690731</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>Abdulqader</FIRST_NAME>
+         <SECOND_NAME>Yusef</SECOND_NAME>
+         <THIRD_NAME>Dibri</THIRD_NAME>
+         <UN_LIST_TYPE>Libya</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>LYi.002</REFERENCE_NUMBER>
+         <LISTED_ON>2011-02-26</LISTED_ON>
+         <COMMENTS1>Listed pursuant to paragraph 15 of resolution 1970 (Travel Ban).</COMMENTS1>
+         <DESIGNATION>
+            <VALUE>Head of Muammar Qadhafi's personal security</VALUE>
+         </DESIGNATION>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <YEAR>1946</YEAR>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Houn</CITY>
+            <COUNTRY>Libya</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <SORT_KEY>Abdulqader Yusef Dibri </SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-05-28</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="file:/C:/Program%20Files/Oxygen%20XML%20Editor%2015/frameworks/sc-sanctions/xsd/sc-sanctions.xsd">
+         <DATAID>690732</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>Sayyid</FIRST_NAME>
+         <SECOND_NAME>Mohammed</SECOND_NAME>
+         <THIRD_NAME>Qadhaf Al-dam</THIRD_NAME>
+         <UN_LIST_TYPE>Libya</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>LYi.003</REFERENCE_NUMBER>
+         <LISTED_ON>2011-02-26</LISTED_ON>
+         <COMMENTS1>Listed pursuant to paragraph 15 of resolution 1970 (Travel Ban). </COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <YEAR>1948</YEAR>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Sirte</CITY>
+            <COUNTRY>Libya</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <SORT_KEY>Sayyid Mohammed Qadhaf Al-dam</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-05-28</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="file:/C:/Program%20Files/Oxygen%20XML%20Editor%2015/frameworks/sc-sanctions/xsd/sc-sanctions.xsd">
+         <DATAID>690736</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>Quren</FIRST_NAME>
+         <SECOND_NAME>Salih</SECOND_NAME>
+         <THIRD_NAME>Quren</THIRD_NAME>
+         <FOURTH_NAME>Al Qadhafi</FOURTH_NAME>
+         <UN_LIST_TYPE>Libya</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>LYi.004</REFERENCE_NUMBER>
+         <LISTED_ON>2011-03-17</LISTED_ON>
+         <DESIGNATION>
+            <VALUE>Libyan Ambassador to Chad</VALUE>
+         </DESIGNATION>
+         <COMMENTS1>Listed pursuant to paragraph 15 of resolution 1970 (Travel Ban). </COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH/>
+         <INDIVIDUAL_PLACE_OF_BIRTH/>
+         <SORT_KEY>QUREN SALIH QUREN AL QADHAFI</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-11</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="file:/C:/Program%20Files/Oxygen%20XML%20Editor%2015/frameworks/sc-sanctions/xsd/sc-sanctions.xsd">
+         <DATAID>690737</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>Amid</FIRST_NAME>
+         <SECOND_NAME>Husain</SECOND_NAME>
+         <THIRD_NAME>Al Kuni</THIRD_NAME>
+         <UN_LIST_TYPE>Libya</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>LYi.005</REFERENCE_NUMBER>
+         <LISTED_ON>2011-03-17</LISTED_ON>
+         <COMMENTS1>Listed pursuant to paragraph 15 of resolution 1970 (Travel Ban). </COMMENTS1>
+         <TITLE>
+            <VALUE>Colonel</VALUE>
+         </TITLE>
+         <DESIGNATION>
+            <VALUE>Governor of Ghat (South Libya)</VALUE>
+         </DESIGNATION>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ADDRESS>
+            <COUNTRY>Libya</COUNTRY>
+            <NOTE>Believed status/location: South Libya</NOTE>
+         </INDIVIDUAL_ADDRESS>
+         <INDIVIDUAL_DATE_OF_BIRTH/>
+         <INDIVIDUAL_PLACE_OF_BIRTH/>
+         <SORT_KEY>AMID HUSAIN AL KUNI </SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-11</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="file:/C:/Program%20Files/Oxygen%20XML%20Editor%2015/frameworks/sc-sanctions/xsd/sc-sanctions.xsd">
+         <DATAID>690738</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>Abu</FIRST_NAME>
+         <SECOND_NAME>Zayd</SECOND_NAME>
+         <THIRD_NAME>Umar</THIRD_NAME>
+         <FOURTH_NAME>Dorda</FOURTH_NAME>
+         <UN_LIST_TYPE>Libya</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>LYi.006</REFERENCE_NUMBER>
+         <LISTED_ON>2011-02-26</LISTED_ON>
+         <COMMENTS1>Listed pursuant to paragraph 15 of resolution 1970 (Travel Ban). Listed on 17 March 2011 pursuant to paragraph 17 of resolution 1970 (Asset Freeze). </COMMENTS1>
+         <DESIGNATION>
+            <VALUE>Position: Director, External Security Organisation.</VALUE>
+            <VALUE>Head of external intelligence agency.</VALUE>
+         </DESIGNATION>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ADDRESS>
+            <COUNTRY>Libya</COUNTRY>
+            <NOTE>(Believed status/location: in custody in Libya)</NOTE>
+         </INDIVIDUAL_ADDRESS>
+         <INDIVIDUAL_DATE_OF_BIRTH/>
+         <INDIVIDUAL_PLACE_OF_BIRTH/>
+         <SORT_KEY>Abu Zayd Umar Dorda</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-11</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="file:/C:/Program%20Files/Oxygen%20XML%20Editor%2015/frameworks/sc-sanctions/xsd/sc-sanctions.xsd">
+         <DATAID>690748</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>Abu</FIRST_NAME>
+         <SECOND_NAME>Bakr</SECOND_NAME>
+         <THIRD_NAME>Yunis</THIRD_NAME>
+         <FOURTH_NAME>Jabir</FOURTH_NAME>
+         <UN_LIST_TYPE>Libya</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>LYi.007</REFERENCE_NUMBER>
+         <LISTED_ON>2011-02-26</LISTED_ON>
+         <TITLE>
+            <VALUE>Major General</VALUE>
+         </TITLE>
+         <COMMENTS1>Listed pursuant to paragraph 15 of resolution 1970 (Travel Ban). Listed on 17 March 2011 pursuant to paragraph 17 of resolution 1970 (Asset Freeze). Believed status/location: deceased.</COMMENTS1>
+         <DESIGNATION>
+            <VALUE>Position: Defence Minister.</VALUE>
+         </DESIGNATION>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <YEAR>1952</YEAR>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Jalo</CITY>
+            <COUNTRY>Libya</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_DOCUMENT/>
+         <SORT_KEY>Abu Bakr Yunis Jabir</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-11</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="file:/C:/Program%20Files/Oxygen%20XML%20Editor%2015/frameworks/sc-sanctions/xsd/sc-sanctions.xsd">
+         <DATAID>690754</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>Matuq</FIRST_NAME>
+         <SECOND_NAME>Mohammed</SECOND_NAME>
+         <THIRD_NAME>Matuq</THIRD_NAME>
+         <UN_LIST_TYPE>Libya</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>LYi.008</REFERENCE_NUMBER>
+         <LISTED_ON>2011-02-26</LISTED_ON>
+         <DESIGNATION>
+            <VALUE>Position: Secretary for Utilities</VALUE>
+         </DESIGNATION>
+         <COMMENTS1>Listed pursuant to paragraph 15 of resolution 1970 (Travel Ban). Listed on 17 March 2011 pursuant to paragraph 17 of resolution 1970 (Asset Freeze). Believed status/location: unknown, believed captured.</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <YEAR>1956</YEAR>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Khoms</CITY>
+            <COUNTRY>Libya</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <SORT_KEY>Matuq Mohammed Matuq</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-04</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="file:/C:/Program%20Files/Oxygen%20XML%20Editor%2015/frameworks/sc-sanctions/xsd/sc-sanctions.xsd">
+         <DATAID>690757</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>Aisha</FIRST_NAME>
+         <SECOND_NAME>Muammar Muhammed</SECOND_NAME>
+         <THIRD_NAME>Abu Minyar</THIRD_NAME>
+         <FOURTH_NAME>Qadhafi</FOURTH_NAME>
+         <UN_LIST_TYPE>Libya</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>LYi.009</REFERENCE_NUMBER>
+         <LISTED_ON>2011-02-26</LISTED_ON>
+         <COMMENTS1>Listed pursuant to paragraphs 15 and 17 of resolution 1970 (Travel Ban, Asset Freeze). </COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Aisha Muhammed Abdul Salam</ALIAS_NAME>
+            <NOTE>Passport number: 215215</NOTE>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS>
+            <COUNTRY>Sultanate of Oman</COUNTRY>
+            <NOTE>Believed status/location: Sultanate of Oman</NOTE>
+         </INDIVIDUAL_ADDRESS>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <YEAR>1978</YEAR>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Tripoli</CITY>
+            <COUNTRY>Libya</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_DOCUMENT>
+            <TYPE_OF_DOCUMENT>Passport</TYPE_OF_DOCUMENT>
+            <NUMBER>428720</NUMBER>
+         </INDIVIDUAL_DOCUMENT>
+         <SORT_KEY>Aisha Muammar Muhammed Abu Minyar Qadhafi</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-11</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="file:/C:/Program%20Files/Oxygen%20XML%20Editor%2015/frameworks/sc-sanctions/xsd/sc-sanctions.xsd">
+         <DATAID>690771</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>Hannibal </FIRST_NAME>
+         <SECOND_NAME>Muammar</SECOND_NAME>
+         <THIRD_NAME>Qadhafi</THIRD_NAME>
+         <FOURTH_NAME/>
+         <UN_LIST_TYPE>Libya</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>LYi.010</REFERENCE_NUMBER>
+         <LISTED_ON>2011-02-26</LISTED_ON>
+         <COMMENTS1>Listed pursuant to paragraphs 15 and 17 of resolution 1970 (Travel Ban, Asset Freeze). </COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ADDRESS>
+            <COUNTRY>Algeria</COUNTRY>
+            <NOTE>Believed status/location: Algeria</NOTE>
+         </INDIVIDUAL_ADDRESS>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1975-09-20</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Tripoli</CITY>
+            <COUNTRY>Libya</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_DOCUMENT>
+            <TYPE_OF_DOCUMENT>Passport</TYPE_OF_DOCUMENT>
+            <NUMBER>B/002210</NUMBER>
+         </INDIVIDUAL_DOCUMENT>
+         <SORT_KEY>Hannibal Muammar Qadhafi</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-11</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="file:/C:/Program%20Files/Oxygen%20XML%20Editor%2015/frameworks/sc-sanctions/xsd/sc-sanctions.xsd">
+         <DATAID>690772</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>Khamis</FIRST_NAME>
+         <SECOND_NAME>Muammar</SECOND_NAME>
+         <THIRD_NAME>Qadhafi</THIRD_NAME>
+         <UN_LIST_TYPE>Libya</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>LYi.011</REFERENCE_NUMBER>
+         <LISTED_ON>2011-02-26</LISTED_ON>
+         <COMMENTS1>Listed pursuant to paragraphs 15 and 17 of resolution 1970 (Travel Ban, Asset Freeze). Believed status/location: deceased.</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <YEAR>1978</YEAR>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Tripoli</CITY>
+            <COUNTRY>Libya</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <SORT_KEY>Khamis Muammar Qadhafi</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-11</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="file:/C:/Program%20Files/Oxygen%20XML%20Editor%2015/frameworks/sc-sanctions/xsd/sc-sanctions.xsd">
+         <DATAID>690773</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>Mohammed</FIRST_NAME>
+         <SECOND_NAME>Muammar</SECOND_NAME>
+         <THIRD_NAME>Qadhafi</THIRD_NAME>
+         <UN_LIST_TYPE>Libya</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>LYi.012</REFERENCE_NUMBER>
+         <LISTED_ON>2011-02-26</LISTED_ON>
+         <COMMENTS1>Listed pursuant to paragraphs 15 and 17 of resolution 1970 (Travel Ban, Asset Freeze).</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ADDRESS>
+            <COUNTRY>Sultanate of Oman</COUNTRY>
+            <NOTE>Believed status/location: Sultanate of Oman</NOTE>
+         </INDIVIDUAL_ADDRESS>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <YEAR>1970</YEAR>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Tripoli</CITY>
+            <COUNTRY>Libya</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <SORT_KEY>Mohammed Muammar Qadhafi</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-11</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="file:/C:/Program%20Files/Oxygen%20XML%20Editor%2015/frameworks/sc-sanctions/xsd/sc-sanctions.xsd">
+         <DATAID>690774</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>Muammar</FIRST_NAME>
+         <SECOND_NAME>Mohammed</SECOND_NAME>
+         <THIRD_NAME>Abu Minyar</THIRD_NAME>
+         <FOURTH_NAME>Qadhafi</FOURTH_NAME>
+         <UN_LIST_TYPE>Libya</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>LYi.013</REFERENCE_NUMBER>
+         <LISTED_ON>2011-02-26</LISTED_ON>
+         <COMMENTS1>Listed pursuant to paragraphs 15 and 17 of resolution 1970  (Travel Ban, Asset Freeze). Believed status/location: deceased.</COMMENTS1>
+         <DESIGNATION>
+            <VALUE>Leader of the Revolution, Supreme Commander of Armed Forces</VALUE>
+         </DESIGNATION>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <YEAR>1942</YEAR>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Sirte</CITY>
+            <COUNTRY>Libya</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <SORT_KEY>Muammar Mohammed Abu Minyar Qadhafi </SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-11</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="file:/C:/Program%20Files/Oxygen%20XML%20Editor%2015/frameworks/sc-sanctions/xsd/sc-sanctions.xsd">
+         <DATAID>690775</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>Mutassim</FIRST_NAME>
+         <SECOND_NAME>Qadhafi</SECOND_NAME>
+         <UN_LIST_TYPE>Libya</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>LYi.014</REFERENCE_NUMBER>
+         <LISTED_ON>2011-02-26</LISTED_ON>
+         <DESIGNATION>
+            <VALUE>National Security Adviser</VALUE>
+         </DESIGNATION>
+         <COMMENTS1>Listed pursuant to paragraphs 15 and 17 of resolution 1970 (Travel Ban, Asset Freeze). Believed status/location: deceased.</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <YEAR>1976</YEAR>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Tripoli</CITY>
+            <COUNTRY>Libya</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <SORT_KEY>Mutassim Qadhafi</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-11</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="file:/C:/Program%20Files/Oxygen%20XML%20Editor%2015/frameworks/sc-sanctions/xsd/sc-sanctions.xsd">
+         <DATAID>690776</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>Saadi</FIRST_NAME>
+         <SECOND_NAME>Qadhafi</SECOND_NAME>
+         <UN_LIST_TYPE>Libya</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>LYi.015</REFERENCE_NUMBER>
+         <LISTED_ON>2011-02-26</LISTED_ON>
+         <DESIGNATION>
+            <VALUE>Commander Special Forces</VALUE>
+         </DESIGNATION>
+         <COMMENTS1>Listed pursuant to paragraph 15 of resolution 1970 (Travel Ban). Listed on 17 March 2011 pursuant to paragraph 17 of resolution 1970 (Asset Freeze). </COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ADDRESS>
+            <COUNTRY>Niger</COUNTRY>
+            <NOTE>Believed status/location: Niger</NOTE>
+         </INDIVIDUAL_ADDRESS>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1973-05-27</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1975-01-01</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Tripoli</CITY>
+            <COUNTRY>Libya</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_DOCUMENT>
+            <TYPE_OF_DOCUMENT>Passport</TYPE_OF_DOCUMENT>
+            <NUMBER>014797</NUMBER>
+         </INDIVIDUAL_DOCUMENT>
+         <INDIVIDUAL_DOCUMENT>
+            <TYPE_OF_DOCUMENT>Passport</TYPE_OF_DOCUMENT>
+            <NUMBER>524521</NUMBER>
+         </INDIVIDUAL_DOCUMENT>
+         <SORT_KEY>Saadi Qadhafi</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-11</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="file:/C:/Program%20Files/Oxygen%20XML%20Editor%2015/frameworks/sc-sanctions/xsd/sc-sanctions.xsd">
+         <DATAID>690777</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>Saif al-Arab</FIRST_NAME>
+         <SECOND_NAME>Qadhafi</SECOND_NAME>
+         <UN_LIST_TYPE>Libya</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>LYi.016</REFERENCE_NUMBER>
+         <LISTED_ON>2011-02-26</LISTED_ON>
+         <COMMENTS1>Listed pursuant to paragraph 15 of resolution 1970 (Travel Ban). Listed on 17 March 2011 pursuant to paragraph 17 of resolution 1970 (Asset Freeze). Believed status/location: deceased.</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <YEAR>1982</YEAR>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Tripoli</CITY>
+            <COUNTRY>Libya</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <SORT_KEY>Saif al-Arab Qadhafi </SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-11</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="file:/C:/Program%20Files/Oxygen%20XML%20Editor%2015/frameworks/sc-sanctions/xsd/sc-sanctions.xsd">
+         <DATAID>690778</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>Saif al-Islam</FIRST_NAME>
+         <SECOND_NAME>Qadhafi</SECOND_NAME>
+         <UN_LIST_TYPE>Libya</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>LYi.017</REFERENCE_NUMBER>
+         <LISTED_ON>2011-02-26</LISTED_ON>
+         <DESIGNATION>
+            <VALUE>Director, Qadhafi Foundation</VALUE>
+         </DESIGNATION>
+         <COMMENTS1>Listed pursuant to paragraphs 15 and 17 of resolution 1970 (Travel Ban, Asset Freeze). </COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ADDRESS>
+            <COUNTRY>Libya</COUNTRY>
+            <NOTE>Believed status/location: in custody in Libya.</NOTE>
+         </INDIVIDUAL_ADDRESS>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1972-06-25</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Tripoli</CITY>
+            <COUNTRY>Libya</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_DOCUMENT>
+            <TYPE_OF_DOCUMENT>Passport</TYPE_OF_DOCUMENT>
+            <NUMBER>B014995</NUMBER>
+         </INDIVIDUAL_DOCUMENT>
+         <SORT_KEY>Saif al-Islam Qadhafi</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-11</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="file:/C:/Program%20Files/Oxygen%20XML%20Editor%2015/frameworks/sc-sanctions/xsd/sc-sanctions.xsd">
+         <DATAID>690779</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>Abdullah</FIRST_NAME>
+         <SECOND_NAME>Al-Senussi</SECOND_NAME>
+         <UN_LIST_TYPE>Libya</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>LYi.018</REFERENCE_NUMBER>
+         <LISTED_ON>2011-02-26</LISTED_ON>
+         <TITLE>
+            <VALUE>Colonel</VALUE>
+         </TITLE>
+         <DESIGNATION>
+            <VALUE>Director Military Intelligence</VALUE>
+         </DESIGNATION>
+         <COMMENTS1>Listed pursuant to paragraph 15 of resolution 1970 (Travel Ban). Listed on 17 March 2011 pursuant to paragraph 17 of resolution 1970 (Asset Freeze). </COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Abdoullah Ould Ahmed</ALIAS_NAME>
+            <NOTE>Passport number: B0515260; DOB: 1948; POB: Anefif (Kidal), Mali; Date of issue: 10 Jan 2012; Place of issue: Bamako, Mali; Date of expiration: 10 Jan 2017.</NOTE>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Abdoullah Ould Ahmed</ALIAS_NAME>
+            <NOTE>Mali ID Number 073/SPICRE; POB: Anefif, Mali; Date of issue: 6 Dec 2011; Place of issue: Essouck, Mali</NOTE>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS>
+            <COUNTRY>Libya</COUNTRY>
+            <NOTE>Believed status/location: in custody in Libya.</NOTE>
+         </INDIVIDUAL_ADDRESS>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <YEAR>1949</YEAR>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <COUNTRY>Sudan</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <SORT_KEY>Abdullah Al-Senussi</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-11</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="file:/C:/Program%20Files/Oxygen%20XML%20Editor%2015/frameworks/sc-sanctions/xsd/sc-sanctions.xsd">
+         <DATAID>690780</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>Safia</FIRST_NAME>
+         <SECOND_NAME>Farkash</SECOND_NAME>
+         <THIRD_NAME>Al-Barassi</THIRD_NAME>
+         <UN_LIST_TYPE>Libya</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>LYi.019</REFERENCE_NUMBER>
+         <LISTED_ON>2011-06-24</LISTED_ON>
+         <COMMENTS1>Listed pursuant to paragraph 15 of resolution 1970 and paragraph 19 of resolution 1973 (Travel Ban, Asset Freeze).</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ADDRESS>
+            <COUNTRY>Sultanate of Oman</COUNTRY>
+            <NOTE>Believed status/location: Sultanate of Oman</NOTE>
+         </INDIVIDUAL_ADDRESS>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <YEAR>1952</YEAR>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Al Bayda</CITY>
+            <COUNTRY>Libya</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <SORT_KEY>Safia Farkash AL-BARASSI </SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-11</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="file:/C:/Program%20Files/Oxygen%20XML%20Editor%2015/frameworks/sc-sanctions/xsd/sc-sanctions.xsd">
+         <DATAID>690781</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>Abdelhafiz</FIRST_NAME>
+         <SECOND_NAME>Zlitni</SECOND_NAME>
+         <UN_LIST_TYPE>Libya</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>LYi.020</REFERENCE_NUMBER>
+         <LISTED_ON>2011-06-24</LISTED_ON>
+         <DESIGNATION>
+            <VALUE>Minister for Planning and Finance in Colonel Qadhafi's Government. </VALUE>
+            <VALUE>Secretary of the General People’s Committee for Finance and Planning</VALUE>
+            <VALUE>Temporary head of the Central Bank of Libya</VALUE>
+         </DESIGNATION>
+         <COMMENTS1>Listed pursuant to paragraph 15 of resolution 1970 and paragraph 19 of resolution 1973 (Travel Ban, Asset Freeze). </COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <YEAR>1935</YEAR>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH/>
+         <SORT_KEY>Abdelhafiz Zlitni</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-11</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+   </INDIVIDUALS>
+   <ENTITIES>
+      <ENTITY xsi:noNamespaceSchemaLocation="file:/C:/Program%20Files/Oxygen%20XML%20Editor%2015/frameworks/sc-sanctions/xsd/sc-sanctions.xsd">
+         <DATAID>690782</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>Libyan Investment Authority</FIRST_NAME>
+         <UN_LIST_TYPE>Libya</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>LYe.001</REFERENCE_NUMBER>
+         <LISTED_ON>2011-03-17</LISTED_ON>
+         <COMMENTS1>Listed pursuant to paragraph 17 of resolution 1973, as modified on 16 September pursuant to paragraph 15 of resolution 2009. </COMMENTS1>
+         <LIST_TYPE>
+            <VALUE/>
+         </LIST_TYPE>
+         <ENTITY_ALIAS>
+            <QUALITY>a.k.a.</QUALITY>
+            <ALIAS_NAME>Libyan Foreign Investment Company (LFIC)</ALIAS_NAME>
+         </ENTITY_ALIAS>
+         <ENTITY_ADDRESS>
+            <STREET>1 Fateh Tower Office, No 99 22nd Floor, Borgaida Street</STREET>
+            <CITY>Tripoli</CITY>
+            <ZIP_CODE>1103</ZIP_CODE>
+            <COUNTRY>Libya</COUNTRY>
+         </ENTITY_ADDRESS>
+         <SORT_KEY>Libyan Investment Authority</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-11</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="file:/C:/Program%20Files/Oxygen%20XML%20Editor%2015/frameworks/sc-sanctions/xsd/sc-sanctions.xsd">
+         <DATAID>690783</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>Libyan Africa Investment Portfolio</FIRST_NAME>
+         <UN_LIST_TYPE>Libya</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>LYe.002</REFERENCE_NUMBER>
+         <LISTED_ON>2011-03-17</LISTED_ON>
+         <COMMENTS1>Listed pursuant to paragraph 17 of resolution 1973, as modified on 16 September pursuant to paragraph 15 of resolution 2009. </COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ADDRESS>
+            <STREET>Jamahiriya Street, LAP Building, PO Box 91330</STREET>
+            <CITY>Tripoli</CITY>
+            <COUNTRY>Libya</COUNTRY>
+         </ENTITY_ADDRESS>
+         <SORT_KEY>Libyan Africa Investment Portfolio</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-11</SORT_KEY_LAST_MOD>
+      </ENTITY>
+   </ENTITIES>
+</CONSOLIDATED_LIST>
