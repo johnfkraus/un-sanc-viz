@@ -170,10 +170,20 @@ var init = function (committee) {
   }
 };
 
-var committeeArray = ['751', '1267', '1518', '1521', '1533', '1572', '1591', '1718', '1737', '1970', '1988', '2048', '2127'];
-
 //  committeeArray = [751, 1518, 1737, 1718, 1970];
+
 var parse2Lists = function () {
+  var committeeArray = ['751', '1267', '1518', '1521', '1533', '1572', '1591', '1718', '1737', '1970', '1988', '2048', '2127'];
+  committeeArray.forEach(function (committee) {
+    try {
+      parse2ListsCommittee(committee);
+    } catch (err) {
+      logger.error('\n ', __filename, 'line', __line, '; Error: ', err);
+    }
+  });
+};
+
+var parse2ListsCommittee = function (committee) {
   var functionCount = 0;
   async.series([
       // test logger
