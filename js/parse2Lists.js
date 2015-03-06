@@ -111,18 +111,13 @@ var init = function (committee) {
   writeJsonOutputDebuggingDirectory = __dirname + '/../data/committees/' + committee + '/debug/';
   narrativeFilesUrlPath = __dirname + '/../data/committees/' + committee + '/';
   narrativeLinksJsonLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/narrative_links.json';
-  individualsListUrl = 'http://www.un.org/sc/committees/' + committee + '/individuals.shtml';
-  entitiesListUrl = 'http://www.un.org/sc/committees/' + committee + '/entities.shtml';
+  individualsListUrl = 'http://www.un.org/sc/committees/' + committee + '/Individuals.shtml';
+  entitiesListUrl = 'http://www.un.org/sc/committees/' + committee + '/Entities.shtml';
   //narrativeLinksJsonLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/narrative_links.json';
   switch (committee) {
     case '751':
-      individualsListUrl = 'http://www.un.org/sc/committees/' + committee + '/individuals.shtml';
-      entitiesListUrl = 'http://www.un.org/sc/committees/' + committee + '/entities.shtml';
-      narrativeLinksJsonLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/narrative_links.json';
-      break;
-    case '1737':
-      individualsListUrl = 'http://www.un.org/sc/committees/' + committee + '/individuals.shtml';
-      entitiesListUrl = 'http://www.un.org/sc/committees/' + committee + '/entities.shtml';
+      individualsListUrl = 'http://www.un.org/sc/committees/' + committee + '/Individuals.shtml';
+      entitiesListUrl = 'http://www.un.org/sc/committees/' + committee + '/Entities.shtml';
       narrativeLinksJsonLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/narrative_links.json';
       break;
     case '1267':
@@ -130,23 +125,28 @@ var init = function (committee) {
       entitiesListUrl = 'http://www.un.org/sc/committees/' + committee + '/entities_other_groups_undertakings_associated_with_Al-Qaida.shtml';
       narrativeLinksJsonLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/narrative_links.json';
       break;
-
     case '1518':
       break;
     case '1521':
       break;
-
     case '1533':
       break;
     case '1572':
       break;
     case '1591':
       break;
+    case '1636':
+      // Lebanon
+      break;
     case '1718':
       individualsListUrl = 'http://www.un.org/sc/committees/' + committee + '/Individuals.shtml';
       entitiesListUrl = 'http://www.un.org/sc/committees/' + committee + '/Entities.shtml';
       break;
-
+    case '1737':
+      individualsListUrl = 'http://www.un.org/sc/committees/' + committee + '/individuals.shtml';
+      entitiesListUrl = 'http://www.un.org/sc/committees/' + committee + '/entities.shtml';
+      narrativeLinksJsonLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/narrative_links.json';
+      break;
     case '1970':
       individualsListUrl = 'http://www.un.org/sc/committees/' + committee + '/Individuals.shtml';
       entitiesListUrl = 'http://www.un.org/sc/committees/' + committee + '/Entities.shtml';
@@ -157,6 +157,10 @@ var init = function (committee) {
       break;
     case '2127':
       break;
+    case '2140':
+      individualsListUrl = 'http://www.un.org/sc/committees/' + committee + '/Individuals.shtml';
+      entitiesListUrl = false; // 'http://www.un.org/sc/committees/' + committee + '/Entities.shtml';
+      break;
     default:
       // default code block
       logger.error(__filename, 'line', __line, '; no valid committee selected.');
@@ -166,20 +170,19 @@ var init = function (committee) {
   }
 };
 
-var committeeArray = [751,1737,1718, 1970];
+var committeeArray = ['751', '1267', '1518', '1521', '1533', '1572', '1591', '1718', '1737', '1970', '1988', '2048', '2127'];
+
+//  committeeArray = [751, 1518, 1737, 1718, 1970];
 var parse2Lists = function () {
   var functionCount = 0;
   async.series([
       // test logger
       function (callback) {
 
-        committee = '1970';
+        committee = '2140';
         init(committee);
         logger.debug(__filename, 'line', __line, '; logModulus = ', logModulus);
         logger.trace('hello', 'world');
-        // logger.debug('hello %s', 'world', 123);
-        logger.info('hello %s %d', 'world', 123, {foo: 'bar'});
-        logger.warn('hello %s %d %j', 'world', 123, {foo: 'bar'});
         logger.error('intention error for testing; hello %s %d %j', 'world', 123, {foo: 'bar'}, [1, 2, 3, 4], Object);
         callback();
       },
@@ -218,18 +221,31 @@ var parse2Lists = function () {
         }
         if (!useLocalListFiles) {
           // INDIVIDUALS LIST
-          individualsHtmlUnicodeString = syncGetHtmlAsUnicodeString(individualsListUrl);
-          try {
-            syncWriteHtmlFile(individualsHtmlUnicodeString, __dirname + '/../data/committees/' + committee + '/individuals.html');
-          } catch (err) {
-            logger.error('\n ', __filename, 'line', __line, '; Error: ', err);
+          if (individualsListUrl) {
+            individualsHtmlUnicodeString = syncGetHtmlAsUnicodeString(individualsListUrl);
+            if (utilities_aq_viz.errorPageReturned(individualsHtmlUnicodeString)) {
+              logger.error(__filename, ' line ', __line, 'Error: Server returned: ', utilities_aq_viz.errorPageReturned(individualsHtmlUnicodeString));
+            }
+
+            try {
+              syncWriteHtmlFile(individualsHtmlUnicodeString, __dirname + '/../data/committees/' + committee + '/individuals.html');
+            } catch (err) {
+              logger.error('\n ', __filename, 'line', __line, '; Error: ', err);
+            }
           }
           // entities list
-          entitiesHtmlUnicodeString = syncGetHtmlAsUnicodeString(entitiesListUrl);
-          try {
-            syncWriteHtmlFile(entitiesHtmlUnicodeString, __dirname + '/../data/committees/' + committee + '/entities.html');
-          } catch (err) {
-            logger.error('\n ', __filename, 'line', __line, '; Error: ', err);
+          if (entitiesListUrl) {
+            entitiesHtmlUnicodeString = syncGetHtmlAsUnicodeString(entitiesListUrl);
+            if (utilities_aq_viz.errorPageReturned(entitiesHtmlUnicodeString)) {
+              logger.error(__filename, ' line ', __line, 'Error: PageNotFoundError; Server returned ', utilities_aq_viz.errorPageReturned(entitiesHtmlUnicodeString));
+
+            }
+
+            try {
+              syncWriteHtmlFile(entitiesHtmlUnicodeString, __dirname + '/../data/committees/' + committee + '/entities.html');
+            } catch (err) {
+              logger.error('\n ', __filename, 'line', __line, '; Error: ', err);
+            }
           }
         } else {
           // instead of downloading the list files from the UN web site,
@@ -454,35 +470,24 @@ var syncParseHtmlListPage = function (htmlString, indivOrEntityString) {
    </tr>
 
    */
-  var rowNum;
-  var rawId;
-  var cleanId;
+  var narrLink, rowNum, rawId, cleanId;
   // loop through each table row
-  var narrLink;
   try {
-
     logger.debug(__filename, ' line ', __line, '; running syncParseHtmlListPage (htmlString = ', htmlString.substring(0, 100), ', indivOrEntityString = ', indivOrEntityString, ')');
-    if ((typeof htmlString === 'null') || (typeof htmlString === 'undefined')) {
+    if (!htmlString) {
       logger.error(__filename, ' line ', __line, 'Error: parameter htmlString missing');
       throw {
         name: 'MissingParameterError',
         message: '; Parameter \'htmlString\' = ' + htmlString
       };
-
     }
-
     if (utilities_aq_viz.errorPageReturned(htmlString)) {
-      logger.error(__filename, ' line ', __line, 'Error: PageNotFoundError; Server returned: Error: Page Not Found');
+      logger.error(__filename, ' line ', __line, 'Error: PageNotFoundError; Server returned: ', utilities_aq_viz.errorPageReturned(htmlString));
       throw {
         name: 'PageNotFoundError',
         message: '; Server returned: ' + responseBody.match('Error: Page Not Found')
       }
     }
-
-// table tr td p a need to be lower case
-    htmlString =   convertHtmlTagsToLowerCase(htmlString);
-
-
 
     // re 'handler', see the following lines below:
     //   var parser = new htmlparser.Parser(handler);
@@ -532,7 +537,6 @@ var syncParseHtmlListPage = function (htmlString, indivOrEntityString) {
                   } catch (err) {
                     logger.error(__filename, 'line', __line, ' Error: ', err, '; rawId = ', rawId, '; paragraph = ', paragraph);
                   }
-
                 }
               }
             }
@@ -588,25 +592,23 @@ var syncParseHtmlListPage = function (htmlString, indivOrEntityString) {
                   } else {
                     narrLink.targetName = targetName;
                   }
-
                 } catch (err) {
                   logger.error(__filename, 'line', __line, '; Error: ', err);
                 }
                 // end of if (typeof paragraph !== 'undefined' && typeof paragraph[0] !== 'undefined')
               } else if (typeof anchor[0].attribs.href !== 'undefined' && anchor[0].attribs.href !== '') {
 
-               try {
-                narrativeFileName = normalizeNarrativeFileName(anchor[0].attribs.href);
-                narrLink.narrativeFileName = narrativeFileName;
-                if (typeof anchor[0].children[0] !== 'undefined' && anchor[0].children[0].data !== '') {
-                  targetName = anchor[0].children[0].data;
-                  narrLink.targetName = targetName;
+                try {
+                  narrativeFileName = normalizeNarrativeFileName(anchor[0].attribs.href);
+                  narrLink.narrativeFileName = narrativeFileName;
+                  if (typeof anchor[0].children[0] !== 'undefined' && anchor[0].children[0].data !== '') {
+                    targetName = anchor[0].children[0].data;
+                    narrLink.targetName = targetName;
+                  }
+
+                } catch (err) {
+                  logger.error(__filename, 'line', __line, '; Error: ', err);
                 }
-
-              } catch (err) {
-                logger.error(__filename, 'line', __line, '; Error: ', err);
-              }
-
               }
             }
           }
@@ -617,14 +619,46 @@ var syncParseHtmlListPage = function (htmlString, indivOrEntityString) {
         }
       }
     });
+    // table tr td p a need to be lower case
+    htmlString = convertHtmlTagsToLowerCase(htmlString);
+    // syncWriteHtmlFile(htmlString, __dirname + '/../data/committees/' + committee + '/'+ indivOrEntityString + '-parsed.html');
     var parser = new htmlparser.Parser(handler);
     parser.parseComplete(htmlString);
     writeMyFile(narrativeLinksJsonLocalOutputFileNameAndPath, JSON.stringify(narrLinksJson, null, ' '), fsOptions);
   } catch (err) {
-getStackTrace(err);
-     logger.error(__filename, 'line', __line, ' Error: ', err);
-
+    getStackTrace(err);
+    logger.error(__filename, 'line', __line, ' Error: ', err);
   }
+};
+
+// str.replace(/str[123]|etc/, replaceCallback);
+// Imagine you have a lookup object of strings and replacements.
+// and this callback function:
+var replaceCallback = function (match) {
+  return match.toLowerCase();
+  /*
+   var lookup = {"<TABLE": "<table", "<TR": "<tr", "<TD": "<td","<P": "<p", "<HREF": "<href", "<A": "<a" };
+   if (lookup[match])
+   return lookup[match];
+   else
+   return match;
+   */
+};
+
+// table tr td p a HREF need to be lower case
+var convertHtmlTagsToLowerCase = function (inString) {
+  var outString = inString.replace(/(<TABLE)/gm, replaceCallback);
+  outString = outString.replace(/(<\/TABLE)/gm, replaceCallback);
+  outString = outString.replace(/(<TR)/gm, replaceCallback);
+  outString = outString.replace(/(<TD)/gm, replaceCallback);
+  outString = outString.replace(/(<A)/gm, replaceCallback);
+  outString = outString.replace(/(<P)/gm, replaceCallback);
+  outString = outString.replace(/(HREF)/gm, replaceCallback);
+  outString = outString.replace(/(<\/TR)/gm, replaceCallback);
+  outString = outString.replace(/(<\/TD)/gm, replaceCallback);
+  outString = outString.replace(/(<\/A)/gm, replaceCallback);
+  outString = outString.replace(/(<\/P)/gm, replaceCallback);
+  return outString;
 };
 
 var getStackTrace = function (err) {
@@ -634,7 +668,7 @@ var getStackTrace = function (err) {
   // Who called foo when j took this interesting value?
   //
 
- //  var e = new Error('dummy');
+  //  var e = new Error('dummy');
   var stack = err.stack.replace(/^[^\(]+?[\n$]/gm, '')
     .replace(/^\s+at\s+/gm, '')
     .replace(/^Object.<anonymous>\s*\(/gm, '{anonymous}()@')
@@ -647,7 +681,7 @@ var getStackTrace = function (err) {
 
 var normalizeNarrativeFileName = function (narrativeFileNameString) {
   // logger.debug( __filename, __line, '; narrativeFileNameString = ', narrativeFileNameString);
-  var narrativeFileName1 = narrativeFileNameString.replace(/http:\/\/dev.un.org\/sc\/committees\/1267\/(NSQ.*\.shtml)/, '$1');
+  var narrativeFileName1 = narrativeFileNameString.replace(/http,\/\/dev.un.org\/sc\/committees\/1267\/(NSQ.*\.shtml)/, '$1');
   // var narrativeFileName1 = narrativeFileNameString.replace(/http:\/\/dev.un.org(\/sc\/committees\/1267\/NSQ.*\.shtml)/, '$1');
   // logger.debug( __filename, __line, '; narrativeFileName1 = ', narrativeFileName1);
   var narrativeFileName2 = narrativeFileName1.replace(/\/sc\/committees\/1267\/(NSQ.*\.shtml)/, '$1');
@@ -810,7 +844,7 @@ var addConnectionIdsArrayFromNarrative = function (link, narrative) {
       logger.debug(__filename, 'line', __line, '; link.urlNum = ', link.urlNum, '; link.id = ', link.id,
         '; link.targetName = ', link.targetName, '; has typeof linkRegexMatch = ', typeof linkRegexMatch);
       // we have at least one link in the Narrative
-      if (!linkRegexMatch || ((typeof linkRegexMatch.length) === 'null')) {
+      if (!linkRegexMatch || !linkRegexMatch.length) {
         logger.debug(__filename, 'line', __line, '; link.urlNum = ', link.urlNum, '; link.id = ', link.id,
           '; link.targetName = ', link.targetName, '; has typeof linkRegexMatch = null');
 
@@ -854,8 +888,8 @@ var addConnectionObjectsArrayFromComments = function (nodes) {
   nodes.forEach(function (node) {
     // counter ++;
     node.connectionObjectsFromComments = [];
-    var weHaveNodeConnectedToIdFromCommentsToParse = ((typeof node.connectedToIdFromCommentsArray !== 'null') && (typeof node.connectedToIdFromCommentsArray !== 'undefined'));
-    if (weHaveNodeConnectedToIdFromCommentsToParse === true) {
+//    var weHaveNodeConnectedToIdFromCommentsToParse = (!(node.connectedToIdFromCommentsArray));
+    if (node.connectedToIdFromCommentsArray) {
       node.connectedToIdFromCommentsArray.forEach(function (connId) {
         if (node.id !== connId) {
           connectionFromComments = {};
@@ -882,8 +916,8 @@ var addConnectionObjectsArrayFromNarratives = function (nodes) {
   nodes.forEach(function (node) {
 
     node.connectionObjectsFromNarrative = node.connectionObjectsFromNarrative || [];
-    var weHaveNodeConnectedToIdFromNarrativeToParse = ((typeof node.connectedToIdFromNarrativeArray !== 'null') && (typeof node.connectedToIdFromNarrativeArray !== 'undefined'));
-    if (weHaveNodeConnectedToIdFromNarrativeToParse === true) {
+    // var weHaveNodeConnectedToIdFromNarrativeToParse = (node.connectedToIdFromNarrativeArray);
+    if (node.connectedToIdFromNarrativeArray) {
       node.connectedToIdFromNarrativeArray.forEach(function (connId) {
         if (node.id !== connId) {
           connectionFromNarrative = {};

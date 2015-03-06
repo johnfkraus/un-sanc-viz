@@ -37,15 +37,11 @@ var countLines = function (textFile) {
 
 // return true if inString contained the string 'Error: Page Not Found', else return false
 var errorPageReturned = function (inString) {
-
   var errorPageMessageString = inString.match('Error: Page Not Found');
-//  var errorPageMessageString = (inString.match('Error: Page Not Found'));
-  // responsePageError = (responseBody.match('xyz'));
-
+  var errorMessage;
   if (errorPageMessageString !== null) {
-    logger.error([__filename, ' line ', __line, '; The server return a page containing ', errorPageMessageString].join());
-    logger.error(__filename, 'line', __line, '; The server return a page containing ', errorPageMessageString);
-    return true;
+    errorMessage = ([__filename, ' line ', __line, '; The server return a page containing ', errorPageMessageString].join());
+    return errorMessage;
   } else {
     return false;
   }
