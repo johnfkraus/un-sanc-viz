@@ -163,18 +163,25 @@ var stringifyAndWriteJsonDataFile = function (data, writeFileNameAndPath) {
 
 var nodeSummary = function (node) {
   var nodeSummaryString = '\n\n';
+if (node.nodeNumber ) {
   nodeSummaryString += '\nNode number: ' + node.nodeNumber;
-  nodeSummaryString += '\nId: ' + node.id;
-  nodeSummaryString += '\nNarrative file name: ' + node.narrativeFileName;
-  nodeSummaryString += "\nName: " + node.name;
-
-  if (typeof node.NATIONALITY !== 'undefined') {
+}
+  if (node.id) {
+    nodeSummaryString += '\nId: ' + node.id;
+  }
+  if (node.narrativeFileName) {
+    nodeSummaryString += '\nNarrative file name: ' + node.narrativeFileName;
+  }
+  if (node.name) {
+    nodeSummaryString += "\nName: " + node.name;
+  }
+  if (node.NATIONALITY) {
     nodeSummaryString += "\nNationality: " + node.NATIONALITY.VALUE;
   }
   nodeSummaryString += "\nNationality2: " + node.NATIONALITY2;
   // nodeSummaryString += "\nNumber of links: " + node.links.length;
   nodeSummaryString += "\nComments: " + node.COMMENTS1;
-  if (typeof node.connectionsFromComments !== 'undefined') {
+  if (node.connectionsFromComments) {
     nodeSummaryString += '\nnode.connectionsFromComments.length = ' + node.connectionsFromComments.length;
   }
 

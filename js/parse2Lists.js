@@ -11,8 +11,8 @@
 var utilities_aq_viz = require('./utilities_aq_viz');
 var consoleLog = true;
 // skip downloading 300+ narrative files and use locally stored files instead; for debugging
-var useLocalListFiles = true;
-var useLocalNarrativeFiles = true;
+var useLocalListFiles = false;
+var useLocalNarrativeFiles = false;
 
 var logger = require('./tracer-logger-config.js').logger;
 var logModulus = utilities_aq_viz.logModulus;
@@ -99,6 +99,7 @@ var entitiesJsonLocalOutputFileNameAndPath;
 
 var init = function (committee) {
   // json files (local)
+  readWriteLocalNarrativesFilePath = __dirname + '/../data/committees/' + committee + '/narratives/';
   individualsJsonLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/individuals.json';
   entitiesJsonLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/entities.json';
   // html files (local)
@@ -108,10 +109,21 @@ var init = function (committee) {
   logFileNameAndPath = __dirname + '/../log/parse2lists.log';
   // readWriteLocalNarrativesFilePath = __dirname + '/../data/committees/' + committee + '/narratives/' + linkNarrFileName;
   writeJsonOutputDebuggingDirectory = __dirname + '/../data/committees/' + committee + '/debug/';
+  narrativeFilesUrlPath = __dirname + '/../data/committees/' + committee + '/';
+  narrativeLinksJsonLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/narrative_links.json';
+  individualsListUrl = 'http://www.un.org/sc/committees/' + committee + '/individuals.shtml';
+  entitiesListUrl = 'http://www.un.org/sc/committees/' + committee + '/entities.shtml';
+  //narrativeLinksJsonLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/narrative_links.json';
   switch (committee) {
     case '751':
-      individualsListUrl = 'http://www.un.org/sc/committees/' + committee + '/individuals_associated_with_Al-Qaida.shtml';
-      entitiesListUrl = 'http://www.un.org/sc/committees/' + committee + '/entities_other_groups_undertakings_associated_with_Al-Qaida.shtml';
+      individualsListUrl = 'http://www.un.org/sc/committees/' + committee + '/individuals.shtml';
+      entitiesListUrl = 'http://www.un.org/sc/committees/' + committee + '/entities.shtml';
+      narrativeLinksJsonLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/narrative_links.json';
+      break;
+    case '1737':
+      individualsListUrl = 'http://www.un.org/sc/committees/' + committee + '/individuals.shtml';
+      entitiesListUrl = 'http://www.un.org/sc/committees/' + committee + '/entities.shtml';
+      narrativeLinksJsonLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/narrative_links.json';
       break;
     case '1267':
       individualsListUrl = 'http://www.un.org/sc/committees/' + committee + '/individuals_associated_with_Al-Qaida.shtml';
@@ -131,10 +143,13 @@ var init = function (committee) {
     case '1591':
       break;
     case '1718':
+      individualsListUrl = 'http://www.un.org/sc/committees/' + committee + '/Individuals.shtml';
+      entitiesListUrl = 'http://www.un.org/sc/committees/' + committee + '/Entities.shtml';
       break;
-    case '1737':
-      break;
+
     case '1970':
+      individualsListUrl = 'http://www.un.org/sc/committees/' + committee + '/Individuals.shtml';
+      entitiesListUrl = 'http://www.un.org/sc/committees/' + committee + '/Entities.shtml';
       break;
     case '1988':
       break;
@@ -145,15 +160,20 @@ var init = function (committee) {
     default:
       // default code block
       logger.error(__filename, 'line', __line, '; no valid committee selected.');
+      individualsListUrl = 'http://www.un.org/sc/committees/' + committee + '/Individuals.shtml';
+      entitiesListUrl = 'http://www.un.org/sc/committees/' + committee + '/Entities.shtml';
+      narrativeLinksJsonLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/narrative_links.json';
   }
 };
 
+var committeeArray = [751,1737,1718, 1970];
 var parse2Lists = function () {
   var functionCount = 0;
   async.series([
       // test logger
       function (callback) {
-        committee = '1267';  // al qaida
+
+        committee = '1970';
         init(committee);
         logger.debug(__filename, 'line', __line, '; logModulus = ', logModulus);
         logger.trace('hello', 'world');
@@ -235,11 +255,11 @@ var parse2Lists = function () {
         } catch (err) {
           logger.error('\n ', __filename, 'line', __line, '; Error: ', err);
         }
-        try {
-          syncParseHtmlListPage(entitiesHtmlUnicodeString, 'entity');
-        } catch (err) {
-          logger.error('\n ', __filename, 'line', __line, '; Error: ', err);
-        }
+        //try {
+        syncParseHtmlListPage(entitiesHtmlUnicodeString, 'entity');
+        //} catch (err) {
+        // logger.error('\n ', __filename, 'line', __line, '; Error: ', err);
+        //}
         callback();
       },
 
@@ -264,7 +284,8 @@ var parse2Lists = function () {
           for (var linkCounter = 0; linkCounter < narrativeLinks.length; linkCounter++) {
             link = narrativeLinks[linkCounter];
             linkNarrFileName = link.narrativeFileName;
-            url = 'http://www.un.org/sc/committees/1267/' + linkNarrFileName;
+
+            url = 'http://www.un.org/sc/committees/' + committee + '/' + linkNarrFileName;
             try {
               narrative = syncGetHtmlAsUnicodeString(url);
             } catch (err) {
@@ -277,7 +298,7 @@ var parse2Lists = function () {
             trimmedNarrative = utilities_aq_viz.trimNarrative2(narrWebPageAsString, url);
             trimmedLabeledNarrative = utilities_aq_viz.addFileLabel(trimmedNarrative, url);
             // writeNarrativesFilePath = __dirname + '/../data/committees/' + committee + '/narratives/' + linkNarrFileName;
-            syncWriteHtmlFile(trimmedLabeledNarrative, readWriteLocalNarrativesFilePath);
+            syncWriteHtmlFile(trimmedLabeledNarrative, readWriteLocalNarrativesFilePath + linkNarrFileName);
             // PARSE NARRATIVE FOR LINKS
             //  addConnectionIdsArrayFromNarrative(node, narrative);
           }
@@ -433,165 +454,195 @@ var syncParseHtmlListPage = function (htmlString, indivOrEntityString) {
    </tr>
 
    */
+  var rowNum;
+  var rawId;
+  var cleanId;
+  // loop through each table row
+  var narrLink;
+  try {
 
-  logger.debug(__filename, ' line ', __line, '; running syncParseHtmlListPage (htmlString = ', htmlString.substring(0, 100), ', indivOrEntityString = ', indivOrEntityString, ')');
-  if ((typeof htmlString === 'null') || (typeof htmlString === 'undefined')) {
-    logger.error(__filename, ' line ', __line, 'Error: parameter htmlString missing');
-    throw {
-      name: 'MissingParameterError',
-      message: '; Parameter \'htmlString\' = ' + htmlString
-    };
+    logger.debug(__filename, ' line ', __line, '; running syncParseHtmlListPage (htmlString = ', htmlString.substring(0, 100), ', indivOrEntityString = ', indivOrEntityString, ')');
+    if ((typeof htmlString === 'null') || (typeof htmlString === 'undefined')) {
+      logger.error(__filename, ' line ', __line, 'Error: parameter htmlString missing');
+      throw {
+        name: 'MissingParameterError',
+        message: '; Parameter \'htmlString\' = ' + htmlString
+      };
 
-  }
-
-  if (utilities_aq_viz.errorPageReturned(htmlString)) {
-    logger.error(__filename, ' line ', __line, 'Error: PageNotFoundError; Server returned: Error: Page Not Found');
-    throw {
-      name: 'PageNotFoundError',
-      message: '; Server returned: ' + responseBody.match('Error: Page Not Found')
     }
-  }
-  // re 'handler', see the following lines below:
-  //   var parser = new htmlparser.Parser(handler);
-  //   parser.parseComplete(responseBody);
-  var handler = new htmlparser.DefaultHandler(function (err, dom) {
-    if (err) {
-      logger.error(__filename, 'line', __line, 'Error: ' + err);
-    } else {
-      // soupselect happening here...
-      // var titles = select(dom, 'a.title');
-      rows = select(dom, 'table tr');
-      var rowNum;
-      var rawId;
-      var cleanId;
-      // loop through each table row
-      var narrLink;
-      for (var i = 0; i < rows.length; i++) {
-        // skip the header row
-        if (i === 0) {
-          continue;
-        }
-        rowNum = i;
-        row = rows[i];
-        // we are creating a json array of narrLinks
-        narrLink = {};
-        tds = select(row, 'td');
-        // loop through each td/column in the row
-        for (var j = 0; j < tds.length; j++) {
-          td = tds[j];
-          // get the id/permanent reference number from the first td
-          if (j === 0) {
-            paragraph = select(td, 'p');
-            if ((typeof paragraph !== 'null') && (typeof paragraph !== 'undefined') && (typeof paragraph[0].children !== 'null')) {
 
-              if (indivOrEntityString === 'entity') {
-
-                try {
-                  // if  ((typeof paragraph[0] !== 'null')  && (typeof paragraph[0] !== 'undefined')) {
-//                var ch0 = '';
-//                var pp0 = '';
-
-                  rawId = paragraph[0].children[0].data;
-//                pp0 = paragraph[0]; //.children[0].data;
-//                ch0 = pp0.children[0]; // .data;
-//                rawId = ch0.data; // paragraph[0].children[0].data;
-                  cleanId = getCleanId(rawId);
-                  narrLink.id = cleanId; // getCleanId(rawId); //paragraph[0].children[0].dat1a);
-//                rawId = '';
-//                cleanId = '';
-//                pp0 = '';
-                  //               ch0 = '';
-                  // }
-                } catch (err) {
-
-                  logger.error(__filename, 'line', __line, ' Error: ', err, '; rawId = ', rawId, '; paragraph = ', paragraph);
-                }
-              } else {
-                try {
-                  // use individual id type
-                  rawId = paragraph[0].children[0].data;
-                  cleanId = rawId; //getCleanId(rawId);
-                  narrLink.id = cleanId; // getCleanId(rawId); //paragraph[0].children[0].dat1a);
-                } catch (err) {
-
-                  logger.error(__filename, 'line', __line, ' Error: ', err, '; rawId = ', rawId, '; paragraph = ', paragraph);
-                }
-
-              }
-            }
-          }
-          // if we are in the second td in the row...
-          else if (j === 1) {
-            paragraph = select(td, 'p');
-            anchor = select(td, 'a');
-
-            if (typeof paragraph !== 'undefined' && typeof paragraph[0] !== 'undefined') {
-              //logger.debug( __filename, 'line', __line, 'paragraph = ', JSON.stringify(paragraph));
-              if (typeof paragraph[0].children[0].attribs !== 'undefined') {
-                try {
-                  narrativeFileName = paragraph[0].children[0].attribs.href;
-                  narrativeFileName = normalizeNarrativeFileName(narrativeFileName); //.replace(/\/sc\/committees\/1267\/(NSQ.*\.shtml)/, '$1');
-                  // narrativeFileName = narrativeFileName.replace(/http:\/\/dev.un.org\/sc\/committees\/1267\/(NSQ.*\.shtml)/, '$1');
-                  // http://dev.un.org/sc/committees/1267/
-                  narrLink.narrativeFileName = narrativeFileName;
-                } catch (err) {
-                  logger.error(__filename, 'line', __line, '; paragraph[0].children[0] = ', paragraph[0].children[0]);
-                  logger.error(__filename, 'line', __line, '; Error: paragraph[0].children[0].attribs is undefined; tr = ', i, '; td = ', j, err);
-                }
-              } else if (typeof anchor[0].attribs.href !== 'undefined') {
-                narrLink.narrativeFileName = normalizeNarrativeFileName(narrativeFileName);
-                narrLink.targetName = JSON.stringify(anchor[0].children[0].data);
-              } else {
-                narrLink.narrativeFileName = 'PLACEHOLDER0';
-                logger.error(__filename, 'line', __line, '; Error: narrativeFileName for tr = ', i, '; td = ', j, 'is PLACEHOLDER0');
-              }
-              // if anchor inside of paragraph
-              if (anchor[0].children[0].data !== 'u') {
-                targetName = anchor[0].children[0].data;
-              } else if (anchor[0].children[0].data === 'u') {
-                underscore = select(td, 'u');
-                targetName = JSON.stringify(underscore[0].children[0].data);
-              } else {
-                targetName = 'PLACEHOLDER1';
-              }
-              targetName = targetName.replace(/[\n\f\r\t]/gm, '');
-              targetName = targetName.replace(/\s\s+/gm, ' ');
-              targetName = targetName.trim();
-              if (targetName === '') {
-                narrLink.targetName = 'PLACEHOLDER2';
-              } else {
-                narrLink.targetName = targetName;
-              }
-              // end of if (typeof paragraph !== 'undefined' && typeof paragraph[0] !== 'undefined')
-            } else if (typeof anchor[0].attribs.href !== 'undefined' && anchor[0].attribs.href !== '') {
-              narrativeFileName = normalizeNarrativeFileName(anchor[0].attribs.href);
-              narrLink.narrativeFileName = narrativeFileName;
-              if (typeof anchor[0].children[0] !== 'undefined' && anchor[0].children[0].data !== '') {
-                targetName = anchor[0].children[0].data;
-                narrLink.targetName = targetName;
-              }
-            }
-          }
-        }
-        narrLink.indivOrEntityString = indivOrEntityString;
-        narrLink.rowNum = i;
-        narrLink.urlNum = narrLinksJson.length + 1;
-        narrLinksJson.push(narrLink);
+    if (utilities_aq_viz.errorPageReturned(htmlString)) {
+      logger.error(__filename, ' line ', __line, 'Error: PageNotFoundError; Server returned: Error: Page Not Found');
+      throw {
+        name: 'PageNotFoundError',
+        message: '; Server returned: ' + responseBody.match('Error: Page Not Found')
       }
     }
-  });
 
-  var parser = new htmlparser.Parser(handler);
-  parser.parseComplete(htmlString);
+// table tr td p a need to be lower case
+    htmlString =   convertHtmlTagsToLowerCase(htmlString);
 
-  writeMyFile(narrativeLinksJsonLocalOutputFileNameAndPath, JSON.stringify(narrLinksJson, null, ' '), fsOptions);
-  // if (indivOrEntityString === 'indiv') {
-//    writeMyFile(individualsJsonLocalOutputFileNameAndPath, JSON.stringify(indivLinks, null, ' '), fsOptions);
-  // }
-  // if (indivOrEntityString === 'entity') {
-//    writeMyFile(entitiesJsonLocalOutputFileNameAndPath, JSON.stringify(entLinks, null, ' '), fsOptions);
-  //WW }
-//  writeMyFile(narrativeUrlsArrayLocalFileNameAndPath, JSON.stringify(narrativeUrlsArray, null, ' '), fsOptions);
+
+
+    // re 'handler', see the following lines below:
+    //   var parser = new htmlparser.Parser(handler);
+    //   parser.parseComplete(responseBody);
+    var handler = new htmlparser.DefaultHandler(function (err, dom) {
+      if (err) {
+        logger.error(__filename, 'line', __line, 'Error: ' + err);
+      } else {
+        // soupselect happening here...
+        // var titles = select(dom, 'a.title');
+        rows = select(dom, 'table tr');
+
+        for (var i = 0; i < rows.length; i++) {
+          // skip the header row
+          if (i === 0) {
+            continue;
+          }
+          rowNum = i;
+          row = rows[i];
+          // we are creating a json array of narrLinks
+          narrLink = {};
+          tds = select(row, 'td');
+          // loop through each td/column in the row
+          for (var j = 0; j < tds.length; j++) {
+            td = tds[j];
+            // get the id/permanent reference number from the first td
+            if (j === 0) {
+              paragraph = select(td, 'p');
+              if (!paragraph || (!paragraph[0]) || (!paragraph[0].children)) {
+
+                if (indivOrEntityString === 'entity') {
+
+                  try {
+                    rawId = paragraph[0].children[0].data;
+                    cleanId = getCleanId(rawId);
+                    narrLink.id = cleanId; // getCleanId(rawId); //paragraph[0].children[0].dat1a);11
+                  } catch (err) {
+
+                    logger.error(__filename, 'line', __line, ' Error: ', err, '; rawId = ', rawId, '; paragraph = ', paragraph);
+                  }
+                } else {
+                  try {
+                    // use individual id type
+                    rawId = paragraph[0].children[0].data;
+                    cleanId = rawId; //getCleanId(rawId);
+                    narrLink.id = cleanId; // getCleanId(rawId); //paragraph[0].children[0].dat1a);
+                  } catch (err) {
+                    logger.error(__filename, 'line', __line, ' Error: ', err, '; rawId = ', rawId, '; paragraph = ', paragraph);
+                  }
+
+                }
+              }
+            }
+            // if we are in the second td in the row...
+            else if (j === 1) {
+              paragraph = select(td, 'p');
+              anchor = select(td, 'a');
+
+              if (typeof paragraph !== 'undefined' && typeof paragraph[0] !== 'undefined') {
+                //logger.debug( __filename, 'line', __line, 'paragraph = ', JSON.stringify(paragraph));
+                if (typeof paragraph[0].children[0].attribs !== 'undefined') {
+                  try {
+                    narrativeFileName = paragraph[0].children[0].attribs.href;
+                    narrativeFileName = normalizeNarrativeFileName(narrativeFileName); //.replace(/\/sc\/committees\/1267\/(NSQ.*\.shtml)/, '$1');
+                    // narrativeFileName = narrativeFileName.replace(/http:\/\/dev.un.org\/sc\/committees\/1267\/(NSQ.*\.shtml)/, '$1');
+                    // http://dev.un.org/sc/committees/1267/
+                    narrLink.narrativeFileName = narrativeFileName;
+                  } catch (err) {
+                    logger.error(__filename, 'line', __line, '; paragraph[0].children[0] = ', paragraph[0].children[0]);
+                    logger.error(__filename, 'line', __line, '; Error: paragraph[0].children[0].attribs is undefined; tr = ', i, '; td = ', j, err);
+                  }
+                } else if (typeof anchor[0].attribs.href !== 'undefined') {
+                  try {
+                    narrLink.narrativeFileName = normalizeNarrativeFileName(narrativeFileName);
+                    narrLink.targetName = JSON.stringify(anchor[0].children[0].data);
+                  } catch (err) {
+                    logger.error(__filename, 'line', __line, '; Error: ', err);
+                  }
+                } else {
+                  try {
+                    narrLink.narrativeFileName = 'PLACEHOLDER0';
+                    logger.error(__filename, 'line', __line, '; Error: narrativeFileName for tr = ', i, '; td = ', j, 'is PLACEHOLDER0');
+                  } catch (err) {
+                    logger.error(__filename, 'line', __line, '; Error: ', err);
+                  }
+
+                }
+                // if anchor inside of paragraph
+                try {
+                  if (anchor[0].children[0].data !== 'u') {
+                    targetName = anchor[0].children[0].data;
+                  } else if (anchor[0].children[0].data === 'u') {
+                    underscore = select(td, 'u');
+                    targetName = JSON.stringify(underscore[0].children[0].data);
+                  } else {
+                    targetName = 'PLACEHOLDER1';
+                  }
+                  targetName = targetName.replace(/[\n\f\r\t]/gm, '');
+                  targetName = targetName.replace(/\s\s+/gm, ' ');
+                  targetName = targetName.trim();
+                  if (targetName === '') {
+                    narrLink.targetName = 'PLACEHOLDER2';
+                  } else {
+                    narrLink.targetName = targetName;
+                  }
+
+                } catch (err) {
+                  logger.error(__filename, 'line', __line, '; Error: ', err);
+                }
+                // end of if (typeof paragraph !== 'undefined' && typeof paragraph[0] !== 'undefined')
+              } else if (typeof anchor[0].attribs.href !== 'undefined' && anchor[0].attribs.href !== '') {
+
+               try {
+                narrativeFileName = normalizeNarrativeFileName(anchor[0].attribs.href);
+                narrLink.narrativeFileName = narrativeFileName;
+                if (typeof anchor[0].children[0] !== 'undefined' && anchor[0].children[0].data !== '') {
+                  targetName = anchor[0].children[0].data;
+                  narrLink.targetName = targetName;
+                }
+
+              } catch (err) {
+                logger.error(__filename, 'line', __line, '; Error: ', err);
+              }
+
+              }
+            }
+          }
+          narrLink.indivOrEntityString = indivOrEntityString;
+          narrLink.rowNum = i;
+          narrLink.urlNum = narrLinksJson.length + 1;
+          narrLinksJson.push(narrLink);
+        }
+      }
+    });
+    var parser = new htmlparser.Parser(handler);
+    parser.parseComplete(htmlString);
+    writeMyFile(narrativeLinksJsonLocalOutputFileNameAndPath, JSON.stringify(narrLinksJson, null, ' '), fsOptions);
+  } catch (err) {
+getStackTrace(err);
+     logger.error(__filename, 'line', __line, ' Error: ', err);
+
+  }
+};
+
+var getStackTrace = function (err) {
+  var i, j, k;
+  // ...
+  // j acquires some interesting value
+  // Who called foo when j took this interesting value?
+  //
+
+ //  var e = new Error('dummy');
+  var stack = err.stack.replace(/^[^\(]+?[\n$]/gm, '')
+    .replace(/^\s+at\s+/gm, '')
+    .replace(/^Object.<anonymous>\s*\(/gm, '{anonymous}()@')
+    .split('\n');
+  logger.error(stack);
+
+  // ...
+  // rest of the code
 };
 
 var normalizeNarrativeFileName = function (narrativeFileNameString) {
@@ -683,7 +734,7 @@ var addConnectionIdsArrayFromComments = function (nodes) {
     node.linksSet = new Set();
     comments = node.COMMENTS1;
 
-    var weHaveCommentsToParse = ((typeof comments !== 'null') && (typeof comments !== 'undefined') &&
+    var weHaveCommentsToParse = (!comments &&
     (typeof comments.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/gi) !== 'undefined'));
 
     // if ((typeof comments !== 'undefined') && (typeof comments.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/gi) !== 'undefined')) {
@@ -745,11 +796,11 @@ var addConnectionIdsArrayFromNarrative = function (link, narrative) {
 //    link.linksSet = new Set();
     // narrative = link.Narrative1;
 
-    var weHaveNarrativeToParse = ((typeof narrative !== 'null') && (typeof narrative !== 'undefined') &&
-    (typeof narrative.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/gi) !== 'undefined'));
+    var weHaveNarrativeToParse = (!(!narrative ||
+    (typeof narrative.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/gi) !== 'undefined')));
 
     // if ((typeof Narrative !== 'undefined') && (typeof Narrative.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/gi) !== 'undefined')) {
-    if (weHaveNarrativeToParse === true) {
+    if (narrative) {
       linkRegexMatch = null;
       //  (QD[ie]\.\d{3})
       linkRegexMatch = narrative.match(/(QD[ie]\.\d{3})/gi);
@@ -759,7 +810,7 @@ var addConnectionIdsArrayFromNarrative = function (link, narrative) {
       logger.debug(__filename, 'line', __line, '; link.urlNum = ', link.urlNum, '; link.id = ', link.id,
         '; link.targetName = ', link.targetName, '; has typeof linkRegexMatch = ', typeof linkRegexMatch);
       // we have at least one link in the Narrative
-      if ((linkRegexMatch === null) || ((typeof linkRegexMatch.length) === 'null')) {
+      if (!linkRegexMatch || ((typeof linkRegexMatch.length) === 'null')) {
         logger.debug(__filename, 'line', __line, '; link.urlNum = ', link.urlNum, '; link.id = ', link.id,
           '; link.targetName = ', link.targetName, '; has typeof linkRegexMatch = null');
 
@@ -1084,12 +1135,14 @@ var getCleanId = function (referenceNumber) {
   }
 
   try {
-    refNumRegexMatch = result3.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/);
+//    refNumRegexMatch = result3.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/);
     // logger.debug(__filename, 'line', __line, '; refNumRegexMatch =', refNumRegexMatch, '; referenceNumber = ', referenceNumber);
   } catch (err) {
     logger.error(__filename, 'line', __line, '; Error: ', err, '; referenceNumber =', referenceNumber, '; counter = ', counter);
   }
-  return refNumRegexMatch[0].trim();
+  //return refNumRegexMatch[0].trim();
+
+  return result3;
 };
 
 var getKeys = function (pob) {

@@ -64,7 +64,7 @@ var parse2 = function () {
         if (consoleLog) {
           logger.debug('\n ', __filename, __line, '; Phase #:', ++functionCount, '; collect.convertXMLToJson)_');
         }
-        collect.collect();
+        // collect.collect();
         callback();
       },
 
@@ -72,7 +72,7 @@ var parse2 = function () {
         if (consoleLog) {
           logger.debug('\n ', __filename, __line, '; Phase #:', ++functionCount, '; collect.convertXMLToJson)_');
         }
-        // parse2Lists.parse2Lists(); //collect.collect();
+        parse2Lists.parse2Lists(); //collect.collect();
         callback();
       },
 
