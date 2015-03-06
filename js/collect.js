@@ -7,7 +7,7 @@
 // entity listed in the consolidated.xml sanctions data file collected from the U.N. site located at http://www.un.org/sc/committees/1267/.
 //==========================
 
-// do we want lots of console.log messages for debugging (if so, set consoleLog = true)
+// do we want lots of logging messages for debugging (if so, set consoleLog = true)
 var utilities_aq_viz = require('./utilities_aq_viz');
 var consoleLog = true;
 // skip downloading 300+ narrative files and use locally stored files instead; for debugging
@@ -175,7 +175,7 @@ var collect = function () {
             }
             data = result;
             if (consoleLog) {
-              console.log(__filename, 'line', __line, ' result = \n', JSON.stringify(data).substring(0, 400));
+              logger.debug(__filename, 'line', __line, ' result = \n', JSON.stringify(data).substring(0, 400));
             }
           });
           callback();
@@ -203,7 +203,7 @@ var collect = function () {
         function (callback) {
           var committeesPath = __dirname + '/../data/committees/committees.json';
           committees = JSON.parse(fse.readFileSync(committeesPath, fsOptions));
-          if (consoleLog) {
+          if (false) {
             logger.info(__filename, 'line', __line, '; function #:', ++functionCount, '; read committees.json, consoleLog = ', consoleLog, '; committees = ', JSON.stringify(committees, null, ' '));
           }
           callback();
@@ -278,17 +278,16 @@ var collect = function () {
           for (var nodeCounter = 0; nodeCounter < nodes.length; nodeCounter++) {
 
             node = nodes[nodeCounter];
-            delete node.$;
+            delete node.$;  // delete reference to xml schema
             node.nodeNumber = nodeCounter + 1;
             node.id = node.REFERENCE_NUMBER;
-
+            // is there an OLD-format reference number in COMMENTS1?  If so, extract it.
             if ((node.COMMENTS1 !== null) && ( typeof node.COMMENTS1 !== 'undefined') && (node.COMMENTS1).match(/\[Old Reference # ([I]\.\d{1,3}\.[A-Z]\.\d{1,2})\]/gim) !== null) {
-              node.oldRefNum1 = node.COMMENTS1;
+              node.oldRefNumDebug = node.COMMENTS1;
               oldRefNumRegexMatch = (node.COMMENTS1).match(/\[Old Reference # ([I]\.\d{1,3}\.[A-Z]\.\d{1,2})\]/gim);
-
               oldRefNumRegexReplace = oldRefNumRegexMatch[0].replace(/\[Old Reference # ([I]\.\d{1,3}\.[A-Z]\.\d{1,2})\]/gim, '$1');
-              node.oldRefNum2 = oldRefNumRegexReplace.trim();
-              logger.debug(__filename, 'line', __line, 'node.nodeNumber = ', node.nodeNumber, '; node.oldRefNum2 = ', node.oldRefNum2);
+              node.oldRefNum = oldRefNumRegexReplace.trim();
+              // logger.debug(__filename, 'line', __line, 'node.nodeNumber = ', node.nodeNumber, '; node.oldRefNum = ', node.oldRefNum);
             }
           }
           concatNames(nodes);
@@ -966,120 +965,118 @@ var getCommitteeInfo = function (data, committees) {
 
     switch (committeeIdentifier) {
       case 'CD':
-        two_Digit_Country_ISO_Code = 'CD';
-        committeeResNum = "1533 (2004)";
-        subject_Matter_Abbreviated = "Resolution 1533 (2004) concerning the Democratic Republic of the Congo";
+        node.two_Digit_Country_ISO_Code = 'CD';
+        node.committeeResNum = "1533 (2004)";
+        node.subject_Matter_Abbreviated = "Resolution 1533 (2004) concerning the Democratic Republic of the Congo";
         break;
       case 'CF':
-        two_Digit_Country_ISO_Code = 'CF';
-        committeeResNum = "2127 (2013)";
-        subject_Matter_Abbreviated = "Resolution 2127 (2013) concerning the Central African Republic";
+        node.two_Digit_Country_ISO_Code = 'CF';
+        node.committeeResNum = "2127 (2013)";
+        node.subject_Matter_Abbreviated = "Resolution 2127 (2013) concerning the Central African Republic";
         break;
       case 'CI':
-        two_Digit_Country_ISO_Code = 'CI';
-        committeeResNum = "1572 (2004)";
-        subject_Matter_Abbreviated = "Resolution 1572 (2004) concerning Côte d\'Ivoire";
+        node.two_Digit_Country_ISO_Code = 'CI';
+        node.committeeResNum = "1572 (2004)";
+        node.subject_Matter_Abbreviated = "Resolution 1572 (2004) concerning Côte d\'Ivoire";
         break;
       case 'GB':
-        two_Digit_Country_ISO_Code = 'GB';
-        committeeResNum = "2048 (2012)";
-        subject_Matter_Abbreviated = "Resolution 2048 (2012) concerning Guinea-Bissau";
+        node.two_Digit_Country_ISO_Code = 'GB';
+        node.committeeResNum = "2048 (2012)";
+        node.subject_Matter_Abbreviated = "Resolution 2048 (2012) concerning Guinea-Bissau";
         break;
-      /*
-       [
-       {
-       "Permanent reference numbers for individuals": "IQi.001",
-       "Permanent reference numbers for entities": "IQe.001",
-       "Two Digit Country ISO Code": "IQ",
-       "Committee": "1518 (2003)",
-       "Subject Matter Abbreviated": "Resolution 1518 (2003) re: the former Iraqi regime"
-       },
-       {
-       "Permanent reference numbers for individuals": "IRi.001",
-       "Permanent reference numbers for entities": "IRe.001",
-       "Two Digit Country ISO Code": "IR",
-       "Committee": "1737 (2006)",
-       "Subject Matter Abbreviated": "Resolution 1737 (2006) relating to the Islamic Republic of Iran."
-       },
-       {
-       "Permanent reference numbers for individuals": "KPi.001",
-       "Permanent reference numbers for entities": "KPe.001",
-       "Two Digit Country ISO Code": "KP",
-       "Committee": "1718 (2006)",
-       "Subject Matter Abbreviated": "Resolution 1718 (2006) relating to the Democratic People’s Republic of Korea (DPRK)."
-       },
-       {
-       "Permanent reference numbers for individuals": "LRi.001",
-       "Permanent reference numbers for entities": "LRe.001",
-       "Two Digit Country ISO Code": "LR",
-       "Committee": "1521 (2003)",
-       "Subject Matter Abbreviated": "Resolution 1521 (2003) concerning Liberia"
-       },
-       {
-       "Permanent reference numbers for individuals": "LYi.001",
-       "Permanent reference numbers for entities": "LYe.001",
-       "Two Digit Country ISO Code": "LY",
-       "Committee": "1970 (2011)",
-       "Subject Matter Abbreviated": "Resolution 1970 (2011) concerning Libya"
-       },
-       {
-       "Permanent reference numbers for individuals": "QDi.001",
-       "Permanent reference numbers for entities": "QDe.001",
-       "Two Digit Country ISO Code": "non-State entity",
-       "Committee": "1267/1989",
-       "Subject Matter Abbreviated": "Resolutions 1267 (1999) and 1989 (2011) concerning Al-Qaida and associated individuals and entities"
-       },
-       {
-       "Permanent reference numbers for individuals": "SDi.001",
-       "Permanent reference numbers for entities": "SDe.001",
-       "Two Digit Country ISO Code": "SD",
-       "Committee": "1591 (2005)",
-       "Subject Matter Abbreviated": "Resolution 1591 (2005) concerning the Sudan"
-       },
-       {
-       "Permanent reference numbers for individuals": "SOi.001",
-       "Permanent reference numbers for entities": "SOe.001",
-       "Two Digit Country ISO Code": "SO",
-       "Committee": "751 (1992) / 1907 (2009)",
-       "Subject Matter Abbreviated": "Resolutions 751 (1992) and 1907 (2009) concerning Somalia and Eritrea"
-       },
-       {
-       "Permanent reference numbers for individuals": "TAi.001",
-       "Permanent reference numbers for entities": "TAe.001",
-       "Two Digit Country ISO Code": "non-State entity",
-       "Committee": "1988 (2011)",
-       "Subject Matter Abbreviated": "Resolution 1988 (2011), Resolution 2082 (2012) re: Taliban/Afghanistan"
-       },
-       {
-       "Permanent reference numbers for individuals": "NA",
-       "Permanent reference numbers for entities": "NA",
-       "Two Digit Country ISO Code": "NA",
-       "Committee": "NA",
-       "Subject Matter Abbreviated": "Resolution 2140 (2014) re: Yemen."
-       },
-       {
-       "Permanent reference numbers for individuals": "NA",
-       "Permanent reference numbers for entities": "NA",
-       "Two Digit Country ISO Code": "NA",
-       "Committee": "NA",
-       "Subject Matter Abbreviated": "Resolution 1636 (2005) re: February 2005 terrorist bombing in Beirut, Lebanon that killed former P.M. Hariri and 22 others."
-       }
-       ]
+      case 'IQ':
+        node.two_Digit_Country_ISO_Code = 'GB';
+        node.committeeResNum = "1518 (2003)";
+        node.subject_Matter_Abbreviated = "Resolution 1518 (2003) re: the former Iraqi regime";
+        break;
+      case 'IR':
+        node.two_Digit_Country_ISO_Code = 'IR';
+        node.committeeResNum = "1737 (2006)";
+        node.subject_Matter_Abbreviated = "Resolution 1737 (2006) relating to the Islamic Republic of Iran.";
+        break;
+      case 'KP':
+        node.two_Digit_Country_ISO_Code = 'KP';
+        node.committeeResNum = "1718 (2006)";
+        node.subject_Matter_Abbreviated = "Resolution 1718 (2006) relating to the Democratic People’s Republic of Korea (DPRK).";
+        break;
+      case 'LR':
+        node.two_Digit_Country_ISO_Code = 'LR';
+        node.committeeResNum = "1521 (2003)";
+        node.subject_Matter_Abbreviated = "Resolution 1521 (2003) concerning Liberia";
+        break;
+      case 'LY':
+        node.two_Digit_Country_ISO_Code = 'LY';
+        node.committeeResNum = "1970 (2011)";
+        node.subject_Matter_Abbreviated = "Resolution 1970 (2011) concerning Libya";
+        break;
+      case 'QD':
+        node.two_Digit_Country_ISO_Code = 'non-State entity';
+        node.committeeResNum = "1267 (1999) and 1989 (2011)";
+        node.subject_Matter_Abbreviated = "Resolutions 1267 (1999) and 1989 (2011) concerning Al-Qaida and associated individuals and entities";
+        break;
 
-       */
+      case 'QE':
+        node.two_Digit_Country_ISO_Code = 'non-State entity';
+        node.committeeResNum = "1267 (1999) and 1989 (2011)";
+        node.subject_Matter_Abbreviated = "Resolutions 1267 (1999) and 1989 (2011) concerning Al-Qaida and associated individuals and entities";
+        break;
+      case 'QI':
+        node.two_Digit_Country_ISO_Code = 'non-State entity';
+        node.committeeResNum = "1267 (1999) and 1989 (2011)";
+        node.subject_Matter_Abbreviated = "Resolutions 1267 (1999) and 1989 (2011) concerning Al-Qaida and associated individuals and entities";
+        break;
+
+      case 'SD':
+        node.two_Digit_Country_ISO_Code = 'SD';
+        node.committeeResNum = "1591 (2005)";
+        node.subject_Matter_Abbreviated = "Resolution 1591 (2005) concerning the Sudan";
+        break;
+      case 'SO':
+        node.two_Digit_Country_ISO_Code = 'SO';
+        node.committeeResNum = "751 (1992) / 1907 (2009)";
+        node.subject_Matter_Abbreviated = "Resolutions 751 (1992) and 1907 (2009) concerning Somalia and Eritrea";
+        break;
+      case 'TA':
+        node.two_Digit_Country_ISO_Code = 'TA';
+        node.committeeResNum = "non-State entity";
+        node.subject_Matter_Abbreviated = "Resolution 1988 (2011), Resolution 2082 (2012) re: Taliban/Afghanistan";
+        break;
+
+      case 'YE':
+        node.two_Digit_Country_ISO_Code = 'YE';
+        node.committeeResNum = "2140 (2014)";
+        node.subject_Matter_Abbreviated = "Resolution 2140 (2014) re: Yemen.";
+        break;
+
+      case 'LB':
+        node.two_Digit_Country_ISO_Code = 'LB';
+        node.committeeResNum = "1636 (2005)";
+        node.subject_Matter_Abbreviated = "Resolution 1636 (2005) re: February 2005 terrorist bombing in Beirut, Lebanon that killed former P.M. Hariri and 22 others.";
+        break;
 
       default:
         // default code block
-        logger.error(__filename, 'line', __line, '; no valid committee selected.');
+        logger.error(__filename, 'line', __line, '; no valid committee detected in ', nodeId);
+        node.two_Digit_Country_ISO_Code = 'err';
+        node.committeeResNum = "err";
+        node.subject_Matter_Abbreviated = "No valid committee detected from node.id.";
     }
 
-    indivEntIdentifier = nodeId.substring(2, 3);
+    indivEntIdentifier = nodeId.substring(2, 3).toLowerCase();
     if (indivEntIdentifier === 'e') {
-      logger.debug('e');
+      // logger.debug('e');
+      node.indivOrEntFromId = 'e1';
     } else if (indivEntIdentifier === 'i') {
-      logger.debug('i');
-    } else {
-      logger.debug('; node id fucked up nodeId = ', nodeId);
+      // logger.debug('i');
+      node.indivOrEntFromId = 'i1';
+    } else if (node.indiv0OrEnt1 === 0) {
+      node.indivOrEntFromId = 'i2';
+    } else if (node.indiv0OrEnt1 === 1) {
+      node.indivOrEntFromId = 'e2';
+
+  } else {
+      node.indivOrEntFromId = 'error';
+      logger.error('; entity/indiv info missing from nodeId = ', nodeId, '; node.nodeNum =', node.nodeNumber);
       /*
        throw {
        name: 'MissingIdentifier',
@@ -1535,10 +1532,8 @@ var concatNames = function (nodes) {
       name = name.concat(' ', fourthName.trim());
     }
     node.name = name.trim();
-    if (counter <= 10) {
-      if (consoleLog) {
-        logger.debug(__filename, 'line', __line, '; node.name = ', node.name, 'nameFromArray = ', nameFromArray);
-      }
+    if (consoleLog && (counter <= 10) && false) {
+        logger.debug(__filename, 'line', __line, '; counter = ', counter,'; node.name = ', node.name, 'nameFromArray = ', nameFromArray);
     }
   });
 };

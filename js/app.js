@@ -76,13 +76,14 @@ var parse2 = function () {
         callback();
       },
 
-      // list files in /data/output
+      // list files in /data
       function (callback) {
+        var fwPath = './data/committees/consolidated';
+
         if (consoleLog) {
-          logger.debug( __filename, __line, '; Phase 6#:', ++functionCount, '; filewalker.filewalker()');
+          logger.debug( __filename, __line, '; Phase #:', ++functionCount, '; filewalker.filewalker(fwPath), fwPath = ', fwPath);
         }
-        var fwPath = './data/output';
-        filewalker.filewalker(fwPath);
+        filewalker.fwalker(fwPath);
         callback();
       }
     ],
