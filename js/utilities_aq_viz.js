@@ -286,6 +286,14 @@ var validateUrl = function (url) {
   return result;
 };
 
+var showObjectProperties = function (object) {
+  var propValue;
+  for (var propName in object) {
+    propValue = object[propName]
+    console.log(propName, ': ', propValue);
+  }
+};
+
 module.exports = {
   addFileLabel: addFileLabel,
   errorPageReturned: errorPageReturned,
@@ -297,6 +305,7 @@ module.exports = {
   logModulus: logModulus,
   nodeSummary: nodeSummary,
   pad: pad,
+  showObjectProperties: showObjectProperties,
   stringifyAndWriteJsonDataFile: stringifyAndWriteJsonDataFile,
   syncWriteMyFile: syncWriteMyFile,
   trimNarrative: trimNarrative,

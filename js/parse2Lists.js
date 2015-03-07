@@ -301,16 +301,18 @@ var parse2ListsCommittee = function (committee) {
       // if a target node id does not exist create a node.
       // using 'narrativeFileName' from the data file, parse the narratives
       function (callback) {
+        // do we want to parse files freshly downloaded from the Internet or use locally stored files?
         // if useLocalNarrativeFiles === true, we will not download all the narrative files; use locally stored copies instead.
+
+        logger.debug(__filename, 'line', __line, '; function #:', ++functionCount, '; useLocalNarrativeFiles = ', useLocalNarrativeFiles);
         if (!useLocalNarrativeFiles) {
           var narrative, link, linkNarrFileName, trimmedNarrative, trimmedLabeledNarrative, writeNarrativesFilePath;
-          logger.debug(__filename, 'line', __line, '; function #:', ++functionCount, '; ');
+
           // read the data file; each node has a narrativeFileName property
           narrativeLinks = JSON.parse(fse.readFileSync(narrativeLinksJsonLocalOutputFileNameAndPath, fsOptions));
           for (var linkCounter = 0; linkCounter < narrativeLinks.length; linkCounter++) {
             link = narrativeLinks[linkCounter];
             linkNarrFileName = link.narrativeFileName;
-
             url = 'http://www.un.org/sc/committees/' + committee + '/' + linkNarrFileName;
             try {
               narrative = syncGetHtmlAsUnicodeString(url);
@@ -320,12 +322,15 @@ var parse2ListsCommittee = function (committee) {
             if (consoleLog) {
               //   logger.debug('\n ', __filename, 'line', __line, '; getting file linkCounter = ', linkCounter, '; url = ', url, '\n narrative.substring(0, substringChars) = ', narrative.substring(0, substringChars), ' [INTENTIONALLY TRUNCATED TO FIRST 300 CHARACTERS]');
             }
+            // massage the downloaded narrative file
             var narrWebPageAsString = utilities_aq_viz.forceUnicodeEncoding(narrative.toString());
             trimmedNarrative = utilities_aq_viz.trimNarrative2(narrWebPageAsString, url);
             trimmedLabeledNarrative = utilities_aq_viz.addFileLabel(trimmedNarrative, url);
             // writeNarrativesFilePath = __dirname + '/../data/committees/' + committee + '/narratives/' + linkNarrFileName;
+
+            // write the file to this directory: readWriteLocalNarrativesFilePath = __dirname + '/../data/committees/' + committee + '/narratives/';
             syncWriteHtmlFile(trimmedLabeledNarrative, readWriteLocalNarrativesFilePath + linkNarrFileName);
-            // PARSE NARRATIVE FOR LINKS
+            // Next: PARSE NARRATIVE FOR LINKS
             //  addConnectionIdsArrayFromNarrative(node, narrative);
           }
         }
@@ -354,21 +359,21 @@ var parse2ListsCommittee = function (committee) {
         for (var linkCounter = 0; linkCounter < narrativeLinks.length; linkCounter++) {
           link = narrativeLinks[linkCounter];
           link.linksFromNarrArray = [];
-          // skip nodes that represent individuals and entities no longer on the sanctions
+          // skip over nodes that represent individuals and entities no longer on the sanctions
           // list (as represented by node.noLongerListed === 0)
-          // because they probably have no narrative file on the UN web site
+          // because they probably (?) have no narrative file on the UN web site
           if (link.noLongerListed === 1) {
-            logger.debug(__filename, 'line', __line, '; node.nodeNumber = ', node.nodeNumber, 'node.name = ', node.name, ' is no longer listed as a sanction party');
+            logger.debug(__filename, 'line', __line, '; utilities_aq_viz.showObjectProperties(link) = ', utilities_aq_viz.showObjectProperties(link), ' is no longer listed as a sanction party');
           } // else {
           linkNarrFileName = link.narrativeFileName;
           if (linkNarrFileName === 'NSQE4601E.shtml') {
-            logger.error(__filename, 'line', __line, '; linkNarrFileName.length = ', linkNarrFileName.length, '; link.urlNum = ', link.urlNum, 'link.targetName = ', link.targetName, ' malformed narrative file name');
+            logger.error(__filename, 'line', __line, '; linkNarrFileName.length = ', linkNarrFileName.length, '; link.urlNum = ', link.urlNum, 'link.targetName = ', link.targetName, ' malformed narrative file name', '; utilities_aq_viz.showObjectProperties(link) = ', utilities_aq_viz.showObjectProperties(link));
           }
           readWriteLocalNarrativesFilePath = __dirname + '/../data/committees/' + committee + '/narratives/' + linkNarrFileName;
           try {
             narrative = fse.readFileSync(readWriteLocalNarrativesFilePath, fsOptions); //, fsOptions); //, function (err, data) {
           } catch (err) {
-            logger.error('\n ', __filename, 'line', __line, '; Error reading narrativeFileName: ', err, ';\n linkNarrFileName = ', linkNarrFileName, '; \readWriteLocalNarrativesFilePath = ', readWriteLocalNarrativesFilePath, '; link.noLongerListed = ', link.noLongerListed);
+            logger.error('\n ', __filename, 'line', __line, '; Error reading narrativeFileName: ', err, ';\n linkNarrFileName = ', linkNarrFileName, '; \readWriteLocalNarrativesFilePath = ', readWriteLocalNarrativesFilePath, '; link.noLongerListed = ', link.noLongerListed, '; utilities_aq_viz.showObjectProperties(link) = ', utilities_aq_viz.showObjectProperties(link));
           }
           // }
           addConnectionIdsArrayFromNarrative(link, narrative);
