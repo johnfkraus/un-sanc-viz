@@ -1,4 +1,7 @@
 var fse = require('fs-extra');
+var utilities_aq_viz = require('./utilities_aq_viz');
+var logFileNameAndPath = __dirname + '/../log/consolidated.log'; //logFileNameAndPath || generateFileNameAndPath();
+var colors = require('colors');
 // var rotate = require('log-rotate');
 
 var sysDate = new Date();
@@ -11,21 +14,22 @@ var generateFileNameAndPath = function () {
   return legalLogFileName.trim();
 };
 
-var logFileNameAndPath = __dirname + '/../log/consolidated.log'; //logFileNameAndPath || generateFileNameAndPath();
-
-var colors = require('colors');
 
 
 var logger = require('tracer').colorConsole({
+//  console.log(__filename, 'line', __line, '; running logger);
     transport: function (data) {
-      console.log(data.output);
+     console.log(data.output);
+     // var stream;
       try {
-        var stream = fse.createWriteStream(logFileNameAndPath, { // }; // "./stream.log", {
+        stream = fse.createWriteStream(logFileNameAndPath, { // }; // "./stream.log", {
           flags: "a",
           encoding: "utf8",
           mode: 0666
         }).write(data.output + "\n");
+        // stream.end();
       } catch (err) {
+        // stream.end();
         console.log(__filename, 'line', __line, '; Error: ', err); // method: generateFileNameAndPath() legalLogFileName = ', legalLogFileName);
       }
     }

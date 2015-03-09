@@ -19,7 +19,7 @@ var async = require('async'),
   parseString = require('xml2js')
     .parseString;
 var col;
-var consoleLog = true;
+var consoleLog = false;
 
 var fsOptions = {
   flags: 'r+',

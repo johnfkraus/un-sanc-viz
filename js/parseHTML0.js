@@ -49,7 +49,7 @@ domutils.findAll
 
 var outputFileNameAndPath = (__dirname + "/../data/narrative_summaries/The Al-Qaida Sanctions Committee.json");
 console.log("outputFileNameAndPath = ", outputFileNameAndPath);
-var consoleLog = true;
+var consoleLog = false;
 writeMyFile(outputFileNameAndPath, sys.inspect(handler.dom, false, null), fsOptions);
 
 /*

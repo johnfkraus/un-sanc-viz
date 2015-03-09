@@ -6,7 +6,7 @@ var fse = require('fs-extra');
 var dateFormat = require('dateformat');
 var linenums = require('./linenums.js');
 // var __line = __line || {};
-var consoleLog = true;
+var consoleLog = false;
 require('console-stamp')(console, '[HH:MM:ss.l]');
 var logger = require('./libs/logger.js');
 var message;

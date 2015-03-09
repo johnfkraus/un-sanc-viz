@@ -1,0 +1,587 @@
+[
+ {
+  "narrativeFileName": "YEi001.shtml",
+  "targetName": "ABD AL-KHALIQ AL-HUTHI",
+  "indivOrEntityString": "indiv",
+  "rowNum": 1,
+  "urlNum": 1,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "YEi002.shtml",
+  "targetName": "ABDULLAH YAHYA AL HAKIM",
+  "indivOrEntityString": "indiv",
+  "rowNum": 2,
+  "urlNum": 2,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "YEi003.shtml",
+  "targetName": "ALI ABDULLAH SALEH",
+  "indivOrEntityString": "indiv",
+  "rowNum": 3,
+  "urlNum": 3,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "YEi001.shtml",
+  "targetName": "ABD AL-KHALIQ AL-HUTHI",
+  "indivOrEntityString": "indiv",
+  "rowNum": 1,
+  "urlNum": 4,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "YEi002.shtml",
+  "targetName": "ABDULLAH YAHYA AL HAKIM",
+  "indivOrEntityString": "indiv",
+  "rowNum": 2,
+  "urlNum": 5,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "YEi003.shtml",
+  "targetName": "ALI ABDULLAH SALEH",
+  "indivOrEntityString": "indiv",
+  "rowNum": 3,
+  "urlNum": 6,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "YEi001.shtml",
+  "targetName": "ABD AL-KHALIQ AL-HUTHI",
+  "indivOrEntityString": "indiv",
+  "rowNum": 1,
+  "urlNum": 7,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "YEi002.shtml",
+  "targetName": "ABDULLAH YAHYA AL HAKIM",
+  "indivOrEntityString": "indiv",
+  "rowNum": 2,
+  "urlNum": 8,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "YEi003.shtml",
+  "targetName": "ALI ABDULLAH SALEH",
+  "indivOrEntityString": "indiv",
+  "rowNum": 3,
+  "urlNum": 9,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "YEi001.shtml",
+  "targetName": "ABD AL-KHALIQ AL-HUTHI",
+  "indivOrEntityString": "indiv",
+  "rowNum": 1,
+  "urlNum": 10,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "YEi002.shtml",
+  "targetName": "ABDULLAH YAHYA AL HAKIM",
+  "indivOrEntityString": "indiv",
+  "rowNum": 2,
+  "urlNum": 11,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "YEi003.shtml",
+  "targetName": "ALI ABDULLAH SALEH",
+  "indivOrEntityString": "indiv",
+  "rowNum": 3,
+  "urlNum": 12,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "YEi001.shtml",
+  "targetName": "ABD AL-KHALIQ AL-HUTHI",
+  "indivOrEntityString": "indiv",
+  "rowNum": 1,
+  "urlNum": 13,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "YEi002.shtml",
+  "targetName": "ABDULLAH YAHYA AL HAKIM",
+  "indivOrEntityString": "indiv",
+  "rowNum": 2,
+  "urlNum": 14,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "YEi003.shtml",
+  "targetName": "ALI ABDULLAH SALEH",
+  "indivOrEntityString": "indiv",
+  "rowNum": 3,
+  "urlNum": 15,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "YEi001.shtml",
+  "targetName": "ABD AL-KHALIQ AL-HUTHI",
+  "indivOrEntityString": "indiv",
+  "rowNum": 1,
+  "urlNum": 16,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "YEi002.shtml",
+  "targetName": "ABDULLAH YAHYA AL HAKIM",
+  "indivOrEntityString": "indiv",
+  "rowNum": 2,
+  "urlNum": 17,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "YEi003.shtml",
+  "targetName": "ALI ABDULLAH SALEH",
+  "indivOrEntityString": "indiv",
+  "rowNum": 3,
+  "urlNum": 18,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "YEi001.shtml",
+  "targetName": "ABD AL-KHALIQ AL-HUTHI",
+  "indivOrEntityString": "indiv",
+  "rowNum": 1,
+  "urlNum": 19,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "YEi002.shtml",
+  "targetName": "ABDULLAH YAHYA AL HAKIM",
+  "indivOrEntityString": "indiv",
+  "rowNum": 2,
+  "urlNum": 20,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "YEi003.shtml",
+  "targetName": "ALI ABDULLAH SALEH",
+  "indivOrEntityString": "indiv",
+  "rowNum": 3,
+  "urlNum": 21,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "YEi001.shtml",
+  "targetName": "ABD AL-KHALIQ AL-HUTHI",
+  "indivOrEntityString": "indiv",
+  "rowNum": 1,
+  "urlNum": 22,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "YEi002.shtml",
+  "targetName": "ABDULLAH YAHYA AL HAKIM",
+  "indivOrEntityString": "indiv",
+  "rowNum": 2,
+  "urlNum": 23,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "YEi003.shtml",
+  "targetName": "ALI ABDULLAH SALEH",
+  "indivOrEntityString": "indiv",
+  "rowNum": 3,
+  "urlNum": 24,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "YEi001.shtml",
+  "targetName": "ABD AL-KHALIQ AL-HUTHI",
+  "indivOrEntityString": "indiv",
+  "rowNum": 1,
+  "urlNum": 25,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "YEi002.shtml",
+  "targetName": "ABDULLAH YAHYA AL HAKIM",
+  "indivOrEntityString": "indiv",
+  "rowNum": 2,
+  "urlNum": 26,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "YEi003.shtml",
+  "targetName": "ALI ABDULLAH SALEH",
+  "indivOrEntityString": "indiv",
+  "rowNum": 3,
+  "urlNum": 27,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "YEi001.shtml",
+  "targetName": "ABD AL-KHALIQ AL-HUTHI",
+  "indivOrEntityString": "indiv",
+  "rowNum": 1,
+  "urlNum": 28,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "YEi002.shtml",
+  "targetName": "ABDULLAH YAHYA AL HAKIM",
+  "indivOrEntityString": "indiv",
+  "rowNum": 2,
+  "urlNum": 29,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "YEi003.shtml",
+  "targetName": "ALI ABDULLAH SALEH",
+  "indivOrEntityString": "indiv",
+  "rowNum": 3,
+  "urlNum": 30,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "YEi001.shtml",
+  "targetName": "ABD AL-KHALIQ AL-HUTHI",
+  "indivOrEntityString": "indiv",
+  "rowNum": 1,
+  "urlNum": 31,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "YEi002.shtml",
+  "targetName": "ABDULLAH YAHYA AL HAKIM",
+  "indivOrEntityString": "indiv",
+  "rowNum": 2,
+  "urlNum": 32,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "YEi003.shtml",
+  "targetName": "ALI ABDULLAH SALEH",
+  "indivOrEntityString": "indiv",
+  "rowNum": 3,
+  "urlNum": 33,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "YEi001.shtml",
+  "targetName": "ABD AL-KHALIQ AL-HUTHI",
+  "indivOrEntityString": "indiv",
+  "rowNum": 1,
+  "urlNum": 34,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "YEi002.shtml",
+  "targetName": "ABDULLAH YAHYA AL HAKIM",
+  "indivOrEntityString": "indiv",
+  "rowNum": 2,
+  "urlNum": 35,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "YEi003.shtml",
+  "targetName": "ALI ABDULLAH SALEH",
+  "indivOrEntityString": "indiv",
+  "rowNum": 3,
+  "urlNum": 36,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "YEi001.shtml",
+  "targetName": "ABD AL-KHALIQ AL-HUTHI",
+  "indivOrEntityString": "indiv",
+  "rowNum": 1,
+  "urlNum": 37,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "YEi002.shtml",
+  "targetName": "ABDULLAH YAHYA AL HAKIM",
+  "indivOrEntityString": "indiv",
+  "rowNum": 2,
+  "urlNum": 38,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "YEi003.shtml",
+  "targetName": "ALI ABDULLAH SALEH",
+  "indivOrEntityString": "indiv",
+  "rowNum": 3,
+  "urlNum": 39,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ }
+]

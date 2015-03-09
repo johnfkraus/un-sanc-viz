@@ -1,0 +1,62 @@
+[
+ {
+  "narrativeFileName": "SDi001.shtml",
+  "targetName": "GAFFAR MOHAMMED ELHASSAN",
+  "indivOrEntityString": "indiv",
+  "rowNum": 1,
+  "urlNum": 1,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "SDi002.shtml",
+  "targetName": "MUSA HILAL ABDALLA ALNSIEM",
+  "indivOrEntityString": "indiv",
+  "rowNum": 2,
+  "urlNum": 2,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "SDi003.shtml",
+  "targetName": "ADAM YACUB SHARIF",
+  "indivOrEntityString": "indiv",
+  "rowNum": 3,
+  "urlNum": 3,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "SDi004.shtml",
+  "targetName": "JIBRIL ABDULKARIM IBRAHIM MAYU",
+  "indivOrEntityString": "indiv",
+  "rowNum": 4,
+  "urlNum": 4,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ }
+]

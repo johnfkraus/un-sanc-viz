@@ -39,7 +39,7 @@ var async = require('async'),
     .parseString;
 var col;
 
-var consoleLog = true;
+var consoleLog = false;
 
 var fsOptions = {
   flags: 'r+',

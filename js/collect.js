@@ -9,7 +9,7 @@
 
 // do we want lots of logging messages for debugging (if so, set consoleLog = true)
 var utilities_aq_viz = require('./utilities_aq_viz');
-var consoleLog = true;
+var consoleLog = false;
 // skip downloading 300+ narrative files and use locally stored files instead; for debugging
 var useLocalConsolidatedListFile = true;
 var useLocalNarrativeFiles = false;
@@ -94,13 +94,7 @@ var collect = function () {
     async.series([
         // test logger
         function (callback) {
-          logger.debug(__filename, 'line', __line, '; consoleLog = ', consoleLog);
-          logger.debug(__filename, 'line', __line, '; logModulus = ', logModulus);
-          logger.trace('hello', 'world');
-          // logger.debug('hello %s', 'world', 123);
-          logger.info('hello %s %d', 'world', 123, {foo: 'bar'});
-          logger.warn('hello %s %d %j', 'world', 123, {foo: 'bar'});
-          logger.error('hello %s %d %j', 'world', 123, {foo: 'bar'}, [1, 2, 3, 4], Object);
+          utilities_aq_viz.testLogging();
           callback();
         },
 
@@ -155,9 +149,11 @@ var collect = function () {
         // write consolidated.xml to local file and archive_historical directory
         function (callback) {
           var fileNameAndPathForProcessing = __dirname + '/../data/committees/consolidated/consolidated.xml';
-          syncWriteFileXML(list_xml, fileNameAndPathForProcessing);
+          utilities_aq_viz.syncWriteMyFile(list_xml, fileNameAndPathForProcessing, fsOptions);
+          // syncWriteFileXML(list_xml, fileNameAndPathForProcessing);
           var fileNameAndPathForArchive = __dirname + '/../data/archive/consolidated.xml';
-          syncWriteFileXML(list_xml, fileNameAndPathForArchive);
+          utilities_aq_viz.syncWriteMyFile(list_xml, fileNameAndPathForArchive, fsOptions);
+          // syncWriteFileXML(list_xml, fileNameAndPathForArchive);
           callback();
         },
 
@@ -260,7 +256,8 @@ var collect = function () {
           });
           var generatedFileDateString = dateFormat(data.dateGenerated, 'yyyy-mm-dd');
           var archiveFileNameAndPath = __dirname + '/../data/archive_historical/consolidated-' + generatedFileDateString + '.xml';
-          syncWriteFileXML(data, archiveFileNameAndPath);
+
+          utilities_aq_viz.syncWriteMyFile(data, archiveFileNameAndPath, fsOptions);
           createDateGeneratedMessage();
           delete data.entities;
           delete data.indivs;
@@ -276,7 +273,6 @@ var collect = function () {
           var node;
           var oldRefNumRegexMatch;
           for (var nodeCounter = 0; nodeCounter < nodes.length; nodeCounter++) {
-
             node = nodes[nodeCounter];
             delete node.$;  // delete reference to xml schema
             node.nodeNumber = nodeCounter + 1;
@@ -425,7 +421,7 @@ var collect = function () {
          // parse the list file, extract ids, file names etc. and put into narrativeUrlsArray json array
          // write as local file: individualsLocalOutputFileNameAndPath = __dirname + '/../data/narrative_lists/individuals_associated_with_Al-Qaida.json';
          function (callback) {
-         // consoleLog = true;
+         // consoleLog = false;
          indivOrEntityString = 'indiv';
          if (consoleLog) {
          logger.debug('\n ', __filename, __line, '; function 1#:', ++functionCount, '; collect the two list files for sanctioned individuals and entities');
@@ -451,7 +447,7 @@ var collect = function () {
 
          // add connection ids array to data from comments
          function (callback) {
-         // consoleLog = true;
+         // consoleLog = false;
          if (consoleLog) {
          logger.debug('\n ', __filename, 'line', __line, '; function #:', ++functionCount, '; addConnectionIdsArrayFromComments(data.nodes)');
          }
@@ -723,7 +719,7 @@ var collect = function () {
          // IF A NODE FOR ANY LINK TARGET DOES NOT EXIST, CREATE ONE.
          function (callback) {
          var consoleLogValueToBeRestored = consoleLog;
-         consoleLog = true;
+         consoleLog = false;
          // var nodeTargetIdsFromNarrativeSet = new StrSet();
          var nodeIdsSet = new StrSet();
          var nodes = data.nodes;
@@ -1074,7 +1070,7 @@ var getCommitteeInfo = function (data, committees) {
     } else if (node.indiv0OrEnt1 === 1) {
       node.indivOrEntFromId = 'e2';
 
-  } else {
+    } else {
       node.indivOrEntFromId = 'error';
       logger.error('; entity/indiv info missing from nodeId = ', nodeId, '; node.nodeNum =', node.nodeNumber);
       /*
@@ -1086,23 +1082,25 @@ var getCommitteeInfo = function (data, committees) {
     }
   }
 };
+/*
+ var syncWriteFileXML = function (data, localFileNameAndPath) {
+ //  var myFile = __dirname + '/../data/output/consolidated.xml';
+ try {
+ //    fse.writeFileSync(localFileNameAndPath, list_xml, fsOptions);
+ fse.writeFileSync(localFileNameAndPath, data, fsOptions);
+ if (consoleLog) {
+ logger.debug(__filename, 'line', __line, '; data written to: ', localFileNameAndPath);
+ logger.debug(__filename, 'line', __line, '; file contained: ', data.toString().substring(0, substringChars)); ///, false, null).trunc(truncateToNumChars));
+ }
+ } catch (err) {
+ logger.error(__filename, 'line', __line, ' Error: ', err);
+ }
+ if (consoleLog) {
+ logger.debug(__filename, 'line', __line, ' list_xml = \n', list_xml.toString().substring(0, substringChars));
+ }
+ };
 
-var syncWriteFileXML = function (data, localFileNameAndPath) {
-//  var myFile = __dirname + '/../data/output/consolidated.xml';
-  try {
-//    fse.writeFileSync(localFileNameAndPath, list_xml, fsOptions);
-    fse.writeFileSync(localFileNameAndPath, data, fsOptions);
-    if (consoleLog) {
-      logger.debug(__filename, 'line', __line, '; data written to: ', localFileNameAndPath);
-      logger.debug(__filename, 'line', __line, '; file contained: ', data.toString().substring(0, substringChars)); ///, false, null).trunc(truncateToNumChars));
-    }
-  } catch (err) {
-    logger.error(__filename, 'line', __line, ' Error: ', err);
-  }
-  if (consoleLog) {
-    logger.debug(__filename, 'line', __line, ' list_xml = \n', list_xml.toString().substring(0, substringChars));
-  }
-};
+ */
 
 // parse the html narrative list files
 // put html file names in narrativeUrlsArray
@@ -1533,7 +1531,7 @@ var concatNames = function (nodes) {
     }
     node.name = name.trim();
     if (consoleLog && (counter <= 10) && false) {
-        logger.debug(__filename, 'line', __line, '; counter = ', counter,'; node.name = ', node.name, 'nameFromArray = ', nameFromArray);
+      logger.debug(__filename, 'line', __line, '; counter = ', counter, '; node.name = ', node.name, 'nameFromArray = ', nameFromArray);
     }
   });
 };
@@ -1611,7 +1609,7 @@ var consolidateLinksFromNarrativeArray = function (data) {
 
 var checkNodeExistsById = function (nodeId) {
   var consoleLogValueToBeRestored = consoleLog;
-  consoleLog = true;
+  consoleLog = false;
   var nodeIdsSet = new StrSet();
   nodes.forEach(function (node) {
     nodeIdsSet.add(node.id);
@@ -1628,7 +1626,7 @@ var checkNodeExistsById = function (nodeId) {
 
 var checkTargetsExist = function (nodes, links) {
   var consoleLogValueToBeRestored = consoleLog;
-  consoleLog = true;
+  consoleLog = false;
   var nodeTargetIdsFromNarrativeSet = new StrSet();
   var nodeTargetIdsFromCommentsSet = new StrSet();
   var nodeIdsSet = new StrSet();
@@ -1879,7 +1877,7 @@ var syncGetHtmlAsUnicodeString = function (url) {
 // save to json file: narrativeLinksLocalFileNameAndPath
 var syncWriteHtmlFile = function (htmlString, saveFilePath) {
   var unicodeHtmlString = utilities_aq_viz.forceUnicodeEncoding(htmlString);
-  utilities_aq_viz.syncWriteMyFile(saveFilePath, unicodeHtmlString, fsOptions);
+  utilities_aq_viz.syncWriteMyFile(unicodeHtmlString, saveFilePath, fsOptions);
   return true;
 };
 

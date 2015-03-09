@@ -1,0 +1,47 @@
+[
+ {
+  "narrativeFileName": "YEi001.shtml",
+  "targetName": "ABD AL-KHALIQ AL-HUTHI",
+  "indivOrEntityString": "indiv",
+  "rowNum": 1,
+  "urlNum": 1,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "YEi002.shtml",
+  "targetName": "ABDULLAH YAHYA AL HAKIM",
+  "indivOrEntityString": "indiv",
+  "rowNum": 2,
+  "urlNum": 2,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "YEi003.shtml",
+  "targetName": "ALI ABDULLAH SALEH",
+  "indivOrEntityString": "indiv",
+  "rowNum": 3,
+  "urlNum": 3,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ }
+]

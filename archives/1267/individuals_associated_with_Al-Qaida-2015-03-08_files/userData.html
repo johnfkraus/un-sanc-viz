@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<!-- saved from url=(0090)http://www.superfish.com/ws/userData.jsp?dlsource=dnmrlsp&userid=NTBCNTBC&ver=2015.3.5.1.1 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <script>
+            var qs = {};
+            qs.// This function extracts key value data from the selected querystring obj
+// Input parameters:
+// obj_to_add = the desired object to add the querystring object into
+// initial_QS the querystring value
+
+setQueryString = function(obj_to_add,initial_QS){
+    obj_to_add.qsObj={};
+    initial_QS.replace(
+        new RegExp("([^?=&]+)(=([^&]*))?", "g"),
+        function($0, $1, $2, $3)
+        {
+            if ($1 === 'ctid')
+            {
+	            $1 = 'CTID';
+            }
+
+	        obj_to_add.qsObj[$1] = decodeURIComponent($3);
+        }
+    );
+}
+
+            qs.setQueryString(qs, window.location.href);
+            window.xdmsg = {
+    cbFunction: 0,
+
+    postMsg : function( target, param ){
+        if( target != window ){
+            target.postMessage( param, "*" );
+        }
+    },
+
+    getMsg : function(event){
+        ( window.xdmsg ? xdmsg : similarproducts.b.xdmsg).cbFunction( event.data, event.origin );
+    },
+
+    init: function( cbFunc ){
+        this.cbFunction = cbFunc;
+        if( window.addEventListener ){
+            window.addEventListener("message", this.getMsg, false );
+        }else{
+            window.attachEvent('onmessage', this.getMsg );
+        }
+    },
+
+    kill: function (){
+        if( window.removeEventListener ){
+            window.removeEventListener("message", this.getMsg, false );
+        }else{
+            if (window.detachEvent) {
+                window.detachEvent ('onmessage', this.getMsg );
+            }
+        }
+    }
+}
+;
+            var userIdUtil = function () {
+    var _userIdKey = 'WSUserId';
+    var _userIdUpdatingKey = 'WSUserIdUpdating';
+    var _noUserIdKey = "NO-USER-ID";
+    var _userId = _noUserIdKey;
+
+    var _NTBCIdentity = 'NTBC'; //'NTBC';
+    var _debug = false;
+
+
+    function _s4() {
+        return Math.floor((1 + Math.random()) * 0x10000)
+            .toString(16)
+            .substring(1);
+    }
+
+
+    function _hasUserId() {
+        _userId = localStorage.getItem(_userIdKey);
+        return (_userId != null);
+    }
+
+    function _generateUserId(){
+        var newUserId = _s4() + _s4() + '-' + _s4() + '-' + _s4() + '-' + _s4() + '-' + _s4() + _s4() + _s4() + '-' + _s4().substr(0,3);
+        return newUserId;
+    }
+
+   function get() {
+        _log("Getting UserId");
+        if(!_hasUserId()) {
+            _log("generating user id");
+            _userId = _generateUserId();
+            localStorage.setItem(_userIdKey, _userId);
+            return _userId;
+        }
+        _log("userId exits - " + _userId);
+        return _userId;
+    }
+
+
+    function needToChange(uid) {
+        _log("Checking UserId - " + uid);
+        return (_startsWith(uid,_NTBCIdentity) && _endsWith(uid,_NTBCIdentity));
+    }
+
+
+    function _reportOnError(errorMessage) {
+        var dDate = new Date();
+        var msg = errorMessage + "&URL=" + document.URL.replace( "?", "&") + "&userAgent=" + navigator.userAgent  + "&platform=" + navigator.platform  + "&referrer=" + encodeURIComponent(document.referrer);
+        try{
+            var url = similarproducts.b.site + "trackSession.action?userid=userIdUtil&sessionid=userIdUtil&action=userIdUtil_Error&err_message=" + msg;
+            var img = new Image();
+            img.src = url;
+            document.getElementsByTagName("body")[0].appendChild(img);
+        }
+        catch(e){
+            _log(" *** exception in func_userid_util.js in _reportOnError ");
+        }
+    }
+
+    function _endsWith(str, suffix) {
+        return str.indexOf(suffix, str.length - suffix.length) !== -1;
+    }
+
+
+    function _startsWith(str, prefix) {
+        return str.indexOf(prefix) === 0;
+    }
+
+
+    function _log(msg) {
+        if (_debug && window.console) {
+            var dDate = new Date();
+            console.log(dDate.getTime() + " - " + msg);
+        }
+    }
+
+
+    return {
+        get: get,
+        needToChange: needToChange
+    }
+
+
+}();
+            var abTestUtil = (function() {
+    var names = [
+        "tier1_bucket",
+        "tier1_curr_group",
+        "tier1_next_group",
+        "tier1_prev_group",
+        "tier2_bucket",
+        "tier2_curr_group",
+        "tier2_next_group",
+        "tier2_prev_group"
+    ];
+    var dataObj = {};
+    var dataString = "";
+
+    function init() {
+        if (dataObj === {}) {
+            for (var i = 0; i < names.length; i++) {
+                dataObj[names[i]] = "";
+            }
+        }
+    }
+    
+    function setValues(obj) {
+        if (obj) {
+            if (obj.tier1) {
+                dataObj.tier1_bucket = obj.tier1.bucket || "";
+                dataObj.tier1_curr_group = obj.tier1.group;
+                dataObj.tier1_next_group = obj.tier1.nextGroup;
+                dataObj.tier1_prev_group = obj.tier1.previousGroup;
+            }
+            if (obj.tier2) {
+                dataObj.tier2_bucket = obj.tier2.bucket || "";
+                dataObj.tier2_curr_group = obj.tier2.group;
+                dataObj.tier2_next_group = obj.tier2.nextGroup;
+                dataObj.tier2_prev_group = obj.tier2.previousGroup;
+            }            
+        }
+        dataString = '';
+        for (var i = 0; i < names.length; i++) {
+            if (dataObj[names[i]] == null || typeof(dataObj[names[i]]) === "undefined") {
+                dataObj[names[i]] = "";
+            }
+            dataString += ("&" + names[i] + "=" + dataObj[names[i]]);
+        }
+    }
+    
+    function setValuesFromQS(qsObj) {
+        if (qsObj) {
+            dataString = '';
+            for (var i = 0; i < names.length; i++) {
+                if (qsObj[names[i]] == null || typeof(qsObj[names[i]]) === "undefined") {
+                    dataObj[names[i]] = "";
+                }
+                else {
+                    dataObj[names[i]] = qsObj[names[i]];
+                }
+                dataString += ("&" + names[i] + "=" + dataObj[names[i]]);
+            }
+        }
+    }
+    
+    
+//    function overrideBucket() {
+//        dataObj.tier1_bucket = ((similarproducts.b.qsObj && similarproducts.b.qsObj.bucket ) || (window.qsObj && window.qsObj.bucket )) || dataObj.tier1.bucket;
+//        dataObj.tier2_bucket = ((similarproducts.b.qsObj && similarproducts.b.qsObj.bucket ) || (window.qsObj && window.qsObj.bucket )) || dataObj.tier2.bucket;
+//    }
+    
+    function getBucket() {
+        return dataObj.tier1_bucket || dataObj.tier2_bucket;
+    }
+    
+    function addDataToObject(obj) {
+        if (!obj) {
+            obj = {};
+        }
+        for (var i = 0; i < names.length; i++) {
+            obj[names[i]] = dataObj[names[i]];
+        }
+        return obj;
+    }
+
+    function getDataString() {
+        return dataString;
+    }
+    
+    init();
+    
+    return {
+        setValues: setValues,
+        setValuesFromQS: setValuesFromQS,        
+        getBucket: getBucket,
+        addDataToObject: addDataToObject,
+        getDataString:getDataString
+    };
+    
+})();                
+            var userDataFlow = (function() {
+
+    var startTime = 0;
+    var flowSteps = [];
+
+    function addStep(step) {
+        if(startTime === 0){
+            startTime = new Date().getTime();
+        }
+        step = ((new Date().getTime()) - startTime) + ' : ' + step;
+        flowSteps.push(step);
+    }
+
+    function getSteps(delimiter) {
+    	var del = delimiter || ' ==> ';
+        return flowSteps.join(del);
+    }
+
+//    function getSteps() {
+//    	return flowSteps.join('==>');
+//    }
+
+    return {
+        addStep: addStep,
+        getSteps: getSteps
+    };
+
+})();
+	        userDataFlow.addStep('In userData.jsp  - (' + new Date().getTime() + ')');
+            var userData = (function() {
+    
+    var userid = '';
+    var dlsource = 'no_dlsource';
+    var sfDomain = 'https://www.superfish.com/ws/';
+    var action = 'getUD.action';
+    var workDone = 0;
+    var msgSent = 0;
+    var xdMsgDelimiter = '*sfxd*';
+    var timer = 0;
+    var secTimer = 0;
+    var userDataVersion = '15.2.19';
+
+    function init()
+    {
+        userDataFlow.addStep('In init');
+        loadSecData();
+        timer = setTimeout(function() {
+            userDataFlow.addStep('In init setTimeout');
+            alternativeWork(-3);
+             if(Math.floor(Math.random() * 1000) == 1) {
+                var url = sfDomain + "trackSession.action?userid=" + userid + "&sessionid=-10&action=ud_iframe_failed";
+                var img = new Image();
+                img.src = url;     
+             }            
+        }, 3000);
+
+        if (typeof(qs.qsObj) != 'undefined'){
+            if(typeof (qs.qsObj.userid) != 'undefined'){
+                userid = qs.qsObj.userid;
+            }
+            if (qs.qsObj.dlsource) {
+                dlsource = qs.qsObj.dlsource;
+            }
+        }
+        
+        sfDomain = window.location.protocol == "http:" ? sfDomain.replace('https:', 'http:') : sfDomain;
+        if(window.xdmsg){
+            userDataFlow.addStep('before call to xdmsg init 1');
+            xdmsg.init(gotMessage);
+        }
+        
+        userDataFlow.addStep('before work');
+        work(1);
+        userDataFlow.addStep('after work');
+//        if(window.xdmsg){
+//            userDataFlow.addStep('before call to xdmsg init 2');
+//            xdmsg.init(gotMessage);
+//        }
+    }
+    
+    function loadSecData()
+    {
+        if(window.location.protocol === "https:") {
+            return;
+        }
+        var lastSecSync = localStorage.getItem('lastSecSync');
+        if(qs.qsObj.dlsource === 'test' || !lastSecSync || (lastSecSync && ( ( (new Date().getTime()) - lastSecSync) / (1000*60*60*24) ) > 1) ){
+            localStorage.setItem('lastSecSync',new Date().getTime());
+            userDataFlow.addStep("in loadSecData create source iframe");
+
+            if (window.addEventListener) {
+                addEventListener("message", syncLocalStorage, false);
+            } else {
+                attachEvent("onmessage", syncLocalStorage);
+            }
+
+            var getLocalStorageUrl = sfDomain + "sf_postLocalStorage.jsp?getSec=1&ver=" + qs.qsObj.ver + '&dlsource=' + qs.qsObj.dlsource;
+
+            if (getLocalStorageUrl.indexOf( "localhost" ) > -1) {
+                getLocalStorageUrl = getLocalStorageUrl.replace("https:","http:");
+            }
+
+            var ifrm;
+            ifrm = document.createElement("IFRAME");
+            ifrm.setAttribute("src", getLocalStorageUrl);
+            ifrm.setAttribute("style", "position:absolute; top:-20px; left:-20px;");
+            ifrm.setAttribute("id", "sfPostLocalStorage2");
+            ifrm.style.width = "1px";
+            ifrm.style.height = "1px";
+            document.body.appendChild(ifrm);
+            userDataFlow.addStep("Iframe created loadSecData");
+            secTimer = setTimeout(function() {
+                userDataFlow.addStep("in syncFromSecLoadTimeOut");
+                if(Math.floor(Math.random() * 1000) === 1) {
+                    var url = currentDomain + "trackSession.action?userid=NA&sessionid=NA&action=syncFromSecLoadTimeOut";
+                    var img = new Image();
+                    img.src = url;
+                 }
+            }, 4000);
+        }
+    }
+
+    function syncLocalStorage(event) {
+        var postObj = event.data && JSON.parse(event.data) || {};
+        if(postObj.from && postObj.from === 'postLocalStorage'){
+            userDataFlow.addStep("Got message from source");
+            clearTimeout(secTimer);
+            var syncSecureDomainKeys = /^(mos|WSUserId)$/i
+            for(var i=0 ;  i < postObj.syncObj.length ; i++)
+            {
+                var localStorageItem =  postObj.syncObj[i];
+                if( localStorageItem.key !== ''){
+                    if(syncSecureDomainKeys.test(localStorageItem.key)){
+                        localStorage.setItem(localStorageItem.key,localStorageItem.value);
+                        userDataFlow.addStep(" >>>> key :" + localStorageItem.key + " value :" + localStorageItem.value);
+                    }
+                }
+            }
+        }
+    }
+
+    function work(from) {
+        userDataFlow.addStep('In work' + from);
+        if (!workDone) {
+            workDone = 1;
+            initUserId();
+            loadUserData();
+	        reportInactiveUser();
+        }
+    }
+
+    function alternativeWork(group) {
+        userDataFlow.addStep('In alternativeWork - ' + group);
+        var data = {
+            uc: 'US',
+            ut:{
+                tier1: {
+                    "bucket": null,
+                    "group": group,
+                    "nextGroup": group,
+                    "previousGroup": group
+                },
+                tier2: {
+                    "bucket": null,
+                    "group": group,
+                    "nextGroup": group,
+                    "previousGroup": group
+                },
+                userId: userid
+            }
+            //needToShowOptOut: false,
+	        //inactiveCount: parseInt(localStorage.getItem('retargetingInactiveCount') || 0)
+        };
+
+        var dataString = JSON.stringify(data);
+        sendUserData(dataString);
+    }
+    
+    function initUserId() {
+        if (!userid || userIdUtil.needToChange(userid)) {
+            userid = userIdUtil.get();
+        }
+     }
+    
+    function needToShowOptOut() {
+        var isOptOutWasShown;
+        var removeOptOutWasShown = false;
+        if(removeOptOutWasShown){
+            localStorage.removeItem('optout_was_shown');
+            localStorage.removeItem('sf_uninstall');
+        }
+        isOptOutWasShown = localStorage.getItem("optout_was_shown") || "";
+        if((dlsource === 'hdrykzc' || dlsource === 'komodiatest')  && isOptOutWasShown === ""){
+           return true;
+        }
+        return false;
+    }
+
+    function gotMessage() {}
+    
+    function sendMessage(msg) {
+        if(window.xdmsg){
+           window.xdmsg.postMsg(top, msg);
+        }
+    }
+    
+    function sendRequest(url, callback) {
+        userDataFlow.addStep('In sendRequest');
+        var httpRequest;
+	    var startTime = new Date().getTime();
+
+	    if (window.XMLHttpRequest)
+        {
+            httpRequest = new XMLHttpRequest();
+        }
+        else if (window.ActiveXObject)
+        {
+            httpRequest = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+
+        httpRequest.onreadystatechange = function()
+        {
+            userDataFlow.addStep('In onreadystatechange - ' + httpRequest.readyState);
+            if(httpRequest.readyState === 4)
+            {
+                if (httpRequest.status === 200)
+                {
+                    userDataFlow.addStep('In onreadystatechange - SUCCESS');
+	                callback(httpRequest.responseText);
+                }
+	            else
+                {
+                    userDataFlow.addStep('In onreadystatechange - FAIL(' + httpRequest.status +')');
+	                if (Math.floor(Math.random() * 100) + 1 == 1)
+	                {
+		                var img = new Image();
+		                var timeTaken = new Date().getTime() - startTime;
+
+		                img.src = sfDomain + "trackSession.action?userid=" + userid + "&action=get_ud_failed&dscr="+[httpRequest.status, httpRequest.responseText, timeTaken, encodeURIComponent(url)].join('==>');
+	                }
+                }
+            }             
+        };
+          
+        httpRequest.open('GET', url, true);
+        userDataFlow.addStep('In sendRequest before send');
+        httpRequest.send();
+    }  
+    
+    function loadUserData() {
+        var url = sfDomain + action + '?dlsource=' + dlsource + '&userId=' + userid + '&ver=' + userDataVersion;
+        sendRequest(url, sendUserData);
+    }
+
+	function reportInactiveUser()
+	{
+		var now = new Date().getTime();
+		var inactiveCount = parseInt(localStorage.getItem('retargetingInactiveCount') || 0);
+		var inactiveUserReportTimestamp = parseInt(localStorage.getItem('inactiveUserReportTimestamp') || 0);
+		var pixel;
+
+		if (inactiveCount >= 3 && now > inactiveUserReportTimestamp+86400000)
+	    {
+		    pixel = new Image();
+		    pixel.src = sfDomain+'trackSession.action?dlsource='+dlsource+'&userid='+userid+'&ver='+userDataVersion+'&dscr='+inactiveCount+'&action=inactive user';
+
+		    localStorage.setItem('inactiveUserReportTimestamp', now);
+	    }
+	}
+    
+    function sendUserData (data){
+        clearTimeout(timer);
+
+	    var storageData = {};
+	    var key;
+
+        if (!msgSent)
+        {
+            msgSent = 1;
+
+	        for (var i= 0, l=localStorage.length; i<l; i++)
+	        {
+		        key = localStorage.key(i);
+		        storageData[key] = localStorage.getItem(key);
+	        }
+			localStorage.removeItem('aoimlp');
+
+	        data = JSON.parse(data) || {};
+
+	        data.needToShowOptOut = needToShowOptOut();
+	        data.inactiveCount = parseInt(localStorage.getItem('retargetingInactiveCount') || 0);
+	        data.inactiveTimestamp = parseInt(localStorage.getItem('retargetingInactiveTimestamp') || 0);
+	        data.storageData = storageData;
+            userDataFlow.addStep('In sendUserData - (' + new Date().getTime() + ')');
+            sendMessage("-3344" + xdMsgDelimiter + JSON.stringify(data) + xdMsgDelimiter + userDataFlow.getSteps('=>'));
+//            if(dlsource === 'test'){
+//                setTimeout(function() {
+//                    console.log(userDataFlow.getSteps());
+//                }, 4000);
+//            }
+        }
+    }
+
+
+	return {
+        init: init
+    };
+
+    
+})();
+			var refererHostNameParts = document.referrer.split('/');
+			var refererHostName = refererHostNameParts.length > 2 ? refererHostNameParts[2] : '';
+			if(refererHostName === 'play.google.com' || refererHostName === 'itunes.apple.com' || refererHostName === 'www.apple.com'){
+				var mos = 'itunes';
+				if(refererHostName === 'play.google.com'){
+					mos='android';
+				}
+				localStorage.setItem('mos', mos);
+
+				var trackSession = new Image();
+				var data = [];
+				data.push('action=detectMOS');
+				data.push('userid=' + userIdUtil.get());
+				data.push('sessionid=detectMOS');
+				data.push('page_url='+encodeURIComponent(document.referrer));
+				data.push('merchantName='+refererHostName);
+				data.push('dlsource=' + qs.qsObj.dlsource);
+
+				trackSession.src = 'trackSession.action?' + data.join('&');
+			}
+            window.onload = function() {
+		        userDataFlow.addStep('before userData.init');
+				userData.init();
+            }
+	        </script>
+    <style type="text/css"></style></head>
+    <body>
+    
+
+</body></html>

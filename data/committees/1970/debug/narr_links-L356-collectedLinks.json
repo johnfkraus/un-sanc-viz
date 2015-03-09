@@ -1,0 +1,32 @@
+[
+ {
+  "narrativeFileName": "LYe001.shtml",
+  "targetName": "LIBYAN INVESTMENT AUTHORITY",
+  "indivOrEntityString": "entity",
+  "rowNum": 1,
+  "urlNum": 1,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "LYe002.shtml",
+  "targetName": "LIBYAN AFRICA INVESTMENT PORTFOLIO",
+  "indivOrEntityString": "entity",
+  "rowNum": 2,
+  "urlNum": 2,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ }
+]

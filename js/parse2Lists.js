@@ -9,12 +9,12 @@
 
 // do we want lots of console.log messages for debugging (if so, set consoleLog = true)
 var utilities_aq_viz = require('./utilities_aq_viz');
-var consoleLog = true;
+var consoleLog = false;
 // skip downloading 300+ narrative files and use locally stored files instead; for debugging
-var useLocalListFiles = false;
-var useLocalNarrativeFiles = false;
-
-var logger = require('./tracer-logger-config.js').logger;
+var useLocalListFiles = true;
+var useLocalNarrativeFiles = true;
+var logger = utilities_aq_viz.logger;
+// var logger = require('./tracer-logger-config.js').logger;
 var logModulus = utilities_aq_viz.logModulus;
 var substringChars = utilities_aq_viz.truncateToNumChars;
 var linenums = require('./linenums.js');
@@ -30,7 +30,7 @@ var missingNodes = require('./missing_nodes.js'),
   util = require('util'),
   dateFormat = require('dateformat'),
   inspect = require('object-inspect');
-var narrativeUrlsArray = narrativeUrlsArray || [];
+// var narrativeUrlsArray = narrativeUrlsArray || [];
 
 var counter = 0;
 var numObjectsToShow = 3;
@@ -38,7 +38,7 @@ var generatedFileDateString;
 var Set = require('backpack-node').collections.Set;
 // StrSet class has exactly the same interface like the Set, but values have to be strings only.
 var StrSet = require('backpack-node').collections.StrSet;
-var Bag = require('backpack-node').collections.Bag;
+// var Bag = require('backpack-node').collections.Bag;
 var Map = require('backpack-node').collections.Map;
 
 var fsOptions = {
@@ -73,16 +73,17 @@ var anchor,
   underscore,
   url;
 // var functionCount = 0;
-var indivLinks = [];
-var entLinks = [];
+// var indivLinks = [];
+// var entLinks = [];
 // var dataPath = __dirname + '/../data/output/data.json';
 var writeJsonOutputDebuggingDirectory;
 // var listUrl = 'http://www.un.org/sc/committees/consolidated.xml';
 var individualsHtmlLocalOutputFileNameAndPath;
 var entitiesHtmlLocalOutputFileNameAndPath;
-var narrativeUrlsArrayLocalFileNameAndPath;
+// var narrativeUrlsArrayLocalFileNameAndPath;
+var narrativeFilesUrlPath;
 var narrativeLinksJsonLocalOutputFileNameAndPath;
-var indivOrEntityString;
+// var indivOrEntityString;
 var individualsListUrl;
 var entitiesListUrl;
 var host = 'www.un.org';
@@ -97,7 +98,8 @@ var individualsJsonLocalOutputFileNameAndPath;
 var entitiesJsonLocalOutputFileNameAndPath;
 // var link;
 
-var init = function (committee) {
+var init = function (committeeParam) {
+  committee = committeeParam;
   // json files (local)
   readWriteLocalNarrativesFilePath = __dirname + '/../data/committees/' + committee + '/narratives/';
   individualsJsonLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/individuals.json';
@@ -170,30 +172,32 @@ var init = function (committee) {
   }
 };
 
-//  committeeArray = [751, 1518, 1737, 1718, 1970];
-
 var parse2Lists = function () {
   var committeeArray = ['751', '1267', '1518', '1521', '1533', '1572', '1591', '1718', '1737', '1970', '1988', '2048', '2127'];
-  committeeArray.forEach(function (committee) {
+
+//  committeeArray.forEach(function (committee) {
     try {
-      parse2ListsCommittee(committee);
+      parse2ListsCommittee('1267');
     } catch (err) {
       logger.error('\n ', __filename, 'line', __line, '; Error: ', err);
     }
-  });
+  // });
 };
 
 var parse2ListsCommittee = function (committee) {
   var functionCount = 0;
+  if (consoleLog) {
+    logger.debug('\n ', __filename, __line, '; running parse2ListsCommittee; committee = ', committee);
+  }
   async.series([
-      // test logger
+      // initialize committee settings; test logging
       function (callback) {
-
-        committee = '2140';
+//        committee = '2140';
+        if (consoleLog) {
+          logger.debug('\n ', __filename, __line, '; function #:', ++functionCount, '; initializing ; committee = ', committee);
+        }
         init(committee);
-        logger.debug(__filename, 'line', __line, '; logModulus = ', logModulus);
-        logger.trace('hello', 'world');
-        logger.error('intention error for testing; hello %s %d %j', 'world', 123, {foo: 'bar'}, [1, 2, 3, 4], Object);
+        utilities_aq_viz.testLogging();
         callback();
       },
 
@@ -219,38 +223,35 @@ var parse2ListsCommittee = function (committee) {
         callback();
       },
 
-      // download from the U.N. web site the two list files for sanctioned (1) individuals and (2) entities.
-      // collect from the Internet (specifically, from www.un.org/sc/committees/1267/individuals_associated_with_Al-Qaida.shtml)
+      // download from each U.N. sanctions committee web site the two list files for sanctioned (1) individuals and (2) entities.
+      // collect from the Internet (for example, from www.un.org/sc/committees/1267/individuals_associated_with_Al-Qaida.shtml)
       // the raw html page that lists the names of html files containing narratives regarding sanctioned individuals
       // parse the list file, extract ids, file names etc. and put into narrativeUrlsArray json array
       // write as local file: individualsLocalOutputFileNameAndPath = __dirname + '/../data/narrative_lists/individuals_associated_with_Al-Qaida.json';
       function (callback) {
-        // consoleLog = true;
+        // consoleLog = false;
         if (consoleLog) {
           logger.debug('\n ', __filename, __line, '; function 1#:', ++functionCount, '; collect the two list files for sanctioned individuals and entities');
         }
         if (!useLocalListFiles) {
-          // INDIVIDUALS LIST
+          // 1 of 2: list of individuals
           if (individualsListUrl) {
             individualsHtmlUnicodeString = syncGetHtmlAsUnicodeString(individualsListUrl);
             if (utilities_aq_viz.errorPageReturned(individualsHtmlUnicodeString)) {
               logger.error(__filename, ' line ', __line, 'Error: Server returned: ', utilities_aq_viz.errorPageReturned(individualsHtmlUnicodeString));
             }
-
             try {
               syncWriteHtmlFile(individualsHtmlUnicodeString, __dirname + '/../data/committees/' + committee + '/individuals.html');
             } catch (err) {
               logger.error('\n ', __filename, 'line', __line, '; Error: ', err);
             }
           }
-          // entities list
+          // 2 of 2: entities list
           if (entitiesListUrl) {
             entitiesHtmlUnicodeString = syncGetHtmlAsUnicodeString(entitiesListUrl);
             if (utilities_aq_viz.errorPageReturned(entitiesHtmlUnicodeString)) {
               logger.error(__filename, ' line ', __line, 'Error: PageNotFoundError; Server returned ', utilities_aq_viz.errorPageReturned(entitiesHtmlUnicodeString));
-
             }
-
             try {
               syncWriteHtmlFile(entitiesHtmlUnicodeString, __dirname + '/../data/committees/' + committee + '/entities.html');
             } catch (err) {
@@ -276,11 +277,14 @@ var parse2ListsCommittee = function (committee) {
         if (consoleLog) {
           logger.debug('\n ', __filename, __line, '; function 1#:', ++functionCount, '; parse the html list files to obtain narrative file names');
         }
+
+   // individuals
         try {
           syncParseHtmlListPage(individualsHtmlUnicodeString, 'indiv');
         } catch (err) {
           logger.error('\n ', __filename, 'line', __line, '; Error: ', err);
         }
+        // entities
         //try {
         syncParseHtmlListPage(entitiesHtmlUnicodeString, 'entity');
         //} catch (err) {
@@ -296,18 +300,15 @@ var parse2ListsCommittee = function (committee) {
       // read each narrative file from local storage using 'narrativeFileName' from the data file
       // parse the narratives
       // narrative file names must have 10 characters, not counting the '.shtml' extension
-
       // using file names extracted from the two list files and organized in the narrative_links.json file, download each narrative file from the UN web site and save to local file
       // if a target node id does not exist create a node.
       // using 'narrativeFileName' from the data file, parse the narratives
       function (callback) {
+        logger.debug(__filename, 'line', __line, '; function #:', ++functionCount, '; useLocalNarrativeFiles = ', useLocalNarrativeFiles);
         // do we want to parse files freshly downloaded from the Internet or use locally stored files?
         // if useLocalNarrativeFiles === true, we will not download all the narrative files; use locally stored copies instead.
-
-        logger.debug(__filename, 'line', __line, '; function #:', ++functionCount, '; useLocalNarrativeFiles = ', useLocalNarrativeFiles);
         if (!useLocalNarrativeFiles) {
           var narrative, link, linkNarrFileName, trimmedNarrative, trimmedLabeledNarrative, writeNarrativesFilePath;
-
           // read the data file; each node has a narrativeFileName property
           narrativeLinks = JSON.parse(fse.readFileSync(narrativeLinksJsonLocalOutputFileNameAndPath, fsOptions));
           for (var linkCounter = 0; linkCounter < narrativeLinks.length; linkCounter++) {
@@ -340,15 +341,12 @@ var parse2ListsCommittee = function (committee) {
 
       // extract ids/reference numbers from the narrative files for each link/node
       //  function (callback) {
-
-//  var addConnectionIdsArrayFromNarrative = function (node, narrative) {
-
+      //  var addConnectionIdsArrayFromNarrative = function (node, narrative) {
       //  callback();
       // },
-
       // read each narrative file from local storage using 'narrativeFileName' from the data file
       // parse the narratives
-// narrative file names must have 10 characters, not counting the '.shtml' extension
+      // narrative file names must have 10 characters, not counting the '.shtml' extension
 
       function (callback) {
         var readNarrativeFileNameAndPath, narrative, link, linkNarrFileName;
@@ -364,18 +362,19 @@ var parse2ListsCommittee = function (committee) {
           // because they probably (?) have no narrative file on the UN web site
           if (link.noLongerListed === 1) {
             logger.debug(__filename, 'line', __line, '; utilities_aq_viz.showObjectProperties(link) = ', utilities_aq_viz.showObjectProperties(link), ' is no longer listed as a sanction party');
-          } // else {
+          }
           linkNarrFileName = link.narrativeFileName;
+          /*
           if (linkNarrFileName === 'NSQE4601E.shtml') {
             logger.error(__filename, 'line', __line, '; linkNarrFileName.length = ', linkNarrFileName.length, '; link.urlNum = ', link.urlNum, 'link.targetName = ', link.targetName, ' malformed narrative file name', '; utilities_aq_viz.showObjectProperties(link) = ', utilities_aq_viz.showObjectProperties(link));
           }
-          readWriteLocalNarrativesFilePath = __dirname + '/../data/committees/' + committee + '/narratives/' + linkNarrFileName;
+          */
+          readWriteLocalNarrativesFilePath = __dirname + '/../data/committees/' + committee + '/narratives/' + link.narrativeFileName;;
           try {
-            narrative = fse.readFileSync(readWriteLocalNarrativesFilePath, fsOptions); //, fsOptions); //, function (err, data) {
+            narrative = fse.readFileSync(readWriteLocalNarrativesFilePath, fsOptions);
           } catch (err) {
             logger.error('\n ', __filename, 'line', __line, '; Error reading narrativeFileName: ', err, ';\n linkNarrFileName = ', linkNarrFileName, '; \readWriteLocalNarrativesFilePath = ', readWriteLocalNarrativesFilePath, '; link.noLongerListed = ', link.noLongerListed, '; utilities_aq_viz.showObjectProperties(link) = ', utilities_aq_viz.showObjectProperties(link));
           }
-          // }
           addConnectionIdsArrayFromNarrative(link, narrative);
         }
         callback();
@@ -389,6 +388,9 @@ var parse2ListsCommittee = function (committee) {
         utilities_aq_viz.stringifyAndWriteJsonDataFile(narrativeLinks, narrativeLinksJsonLocalOutputFileNameAndPath);
         callback();
       },
+
+
+
 
       // summarize output
       // compare number of comment links to number of narrative links
@@ -438,26 +440,15 @@ var parse2ListsCommittee = function (committee) {
   ;
 };
 
-var syncWriteFileXML = function (data, localFileNameAndPath) {
-//  var myFile = __dirname + '/../data/output/consolidated.xml';
-  try {
-//    fse.writeFileSync(localFileNameAndPath, list_xml, fsOptions);
-    fse.writeFileSync(localFileNameAndPath, data, fsOptions);
-    if (consoleLog) {
-      logger.debug(__filename, 'line', __line, '; data written to: ', localFileNameAndPath);
-      logger.debug(__filename, 'line', __line, '; file contained: ', data.toString().substring(0, substringChars)); ///, false, null).trunc(truncateToNumChars));
-    }
-  } catch (err) {
-    logger.error(__filename, 'line', __line, ' Error: ', err);
-  }
-  if (consoleLog) {
-    logger.debug(__filename, 'line', __line, ' list_xml = \n', list_xml.toString().substring(0, substringChars));
-  }
-};
 
-// parse the html narrative list files
+// parse each the html narrative list files
 // put html file names in narrativeUrlsArray
 // write to json file: narrativeUrlsArrayLocalFileNameAndPath
+// create a narrLink object and set properties:
+// narrLink.indivOrEntityString = indivOrEntityString;
+// narrLink.rowNum = i;
+// narrLink.urlNum = narrLinksJson.length + 1;
+// narrLinksJson.push(narrLink);
 
 var syncParseHtmlListPage = function (htmlString, indivOrEntityString) {
 
@@ -483,8 +474,8 @@ var syncParseHtmlListPage = function (htmlString, indivOrEntityString) {
    <td width="320" valign="top"><p><a href="NSQDi002E.shtml">Amin Muhammad Ul    Haq Saam Khan</a></p></td>
    <td width="150"><p align="center">10 January 2011</p></td>
    </tr>
-
    */
+
   var narrLink, rowNum, rawId, cleanId;
   // loop through each table row
   try {
@@ -531,7 +522,10 @@ var syncParseHtmlListPage = function (htmlString, indivOrEntityString) {
             // get the id/permanent reference number from the first td
             if (j === 0) {
               paragraph = select(td, 'p');
-              if (!paragraph || (!paragraph[0]) || (!paragraph[0].children)) {
+
+              // unless (!paragraph || (!paragraph[0]) || (!paragraph[0].children));
+
+              if (!(!paragraph || (!paragraph[0]) || (!paragraph[0].children))) {
 
                 if (indivOrEntityString === 'entity') {
 
@@ -641,7 +635,7 @@ var syncParseHtmlListPage = function (htmlString, indivOrEntityString) {
     parser.parseComplete(htmlString);
     writeMyFile(narrativeLinksJsonLocalOutputFileNameAndPath, JSON.stringify(narrLinksJson, null, ' '), fsOptions);
   } catch (err) {
-    getStackTrace(err);
+    utilities_aq_viz.getStackTrace(err);
     logger.error(__filename, 'line', __line, ' Error: ', err);
   }
 };
@@ -674,24 +668,6 @@ var convertHtmlTagsToLowerCase = function (inString) {
   outString = outString.replace(/(<\/A)/gm, replaceCallback);
   outString = outString.replace(/(<\/P)/gm, replaceCallback);
   return outString;
-};
-
-var getStackTrace = function (err) {
-  var i, j, k;
-  // ...
-  // j acquires some interesting value
-  // Who called foo when j took this interesting value?
-  //
-
-  //  var e = new Error('dummy');
-  var stack = err.stack.replace(/^[^\(]+?[\n$]/gm, '')
-    .replace(/^\s+at\s+/gm, '')
-    .replace(/^Object.<anonymous>\s*\(/gm, '{anonymous}()@')
-    .split('\n');
-  logger.error(stack);
-
-  // ...
-  // rest of the code
 };
 
 var normalizeNarrativeFileName = function (narrativeFileNameString) {
@@ -743,7 +719,7 @@ var createIndivAliasString = function (singleAlias) {
   return aliasString;
 };
 
-// some REFERENCE_NUMBERs in the source xml (including those in comments) have periods at the end; some don't; we remove all trailing periods for consistency.
+// some REFERENCE NUMBERs in the source xml (including those in comments) have periods at the end; some don't; we remove all trailing periods for consistency.
 var cleanUpRefNums = function (nodes) {
   counter = 0;
   nodes.forEach(function (node) {
@@ -769,7 +745,6 @@ var cleanUpRefNums = function (nodes) {
   });
 };
 
-// legacy method
 // create an array, connectedToId[], of linked-to ids in each node;
 // create link objects for each link (source and target ids) and insert in each node
 var addConnectionIdsArrayFromComments = function (nodes) {
@@ -854,15 +829,16 @@ var addConnectionIdsArrayFromNarrative = function (link, narrative) {
       //  (QD[ie]\.\d{3})
       linkRegexMatch = narrative.match(/(QD[ie]\.\d{3})/gi);
 //      linkRegexMatch = narrative.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/gi);
-      logger.debug(__filename, 'line', __line, '; linkRegexMatch = ', linkRegexMatch);
-
-      logger.debug(__filename, 'line', __line, '; link.urlNum = ', link.urlNum, '; link.id = ', link.id,
-        '; link.targetName = ', link.targetName, '; has typeof linkRegexMatch = ', typeof linkRegexMatch);
-      // we have at least one link in the Narrative
-      if (!linkRegexMatch || !linkRegexMatch.length) {
+      if (consoleLog) {
+        logger.debug(__filename, 'line', __line, '; linkRegexMatch = ', linkRegexMatch);
         logger.debug(__filename, 'line', __line, '; link.urlNum = ', link.urlNum, '; link.id = ', link.id,
-          '; link.targetName = ', link.targetName, '; has typeof linkRegexMatch = null');
+          '; link.targetName = ', link.targetName, '; has typeof linkRegexMatch = ', typeof linkRegexMatch);
+        // we have at least one link in the Narrative
+        if (!linkRegexMatch || !linkRegexMatch.length) {
+          logger.debug(__filename, 'line', __line, '; link.urlNum = ', link.urlNum, '; link.id = ', link.id,
+            '; link.targetName = ', link.targetName, '; has typeof linkRegexMatch = null');
 
+        }
       }
       if (linkRegexMatch !== null) {
         if (consoleLog && (link.urlNum % logModulus === 0)) {
@@ -895,31 +871,30 @@ var addConnectionIdsArrayFromNarrative = function (link, narrative) {
   }
 };
 
-// within each NODE, create array of connection objects with source and target
-var addConnectionObjectsArrayFromComments = function (nodes) {
-// for each node
-  var connectionFromComments;
-  // counter = 0;
-  nodes.forEach(function (node) {
-    // counter ++;
-    node.connectionObjectsFromComments = [];
-//    var weHaveNodeConnectedToIdFromCommentsToParse = (!(node.connectedToIdFromCommentsArray));
-    if (node.connectedToIdFromCommentsArray) {
-      node.connectedToIdFromCommentsArray.forEach(function (connId) {
-        if (node.id !== connId) {
-          connectionFromComments = {};
-          connectionFromComments.source = node.id;
-          connectionFromComments.target = connId;
-          node.connectionObjectsFromComments.push(connectionFromComments);
+// within each narrative link, create array of pairedNodeIds
+/*
+ pairedNodeIds = ['QDi.042','QDi.054']
+ sort the values
+ */
+var addConnectionObjectsArrayFromComments = function (narrativeLinks) {
+  narrativeLinks.forEach(function (narrativeLink) {
+    narrativeLink.pairedNodeIdsFromNarrative = [];
+    if (narrativeLink.linksFromNarrArray) {
+      narrativeLink.linksFromNarrArray.forEach(function (targetNodeId) {
+        if (narrativeLink.id !== targetNodeId) {
+          pairedNodeIds = [];
+          pairedNodeIds.push(node.id);
+          pairedNodeIds.push(targetNodeId);
+          sortArrayOfStrings(pairedNodeIds);
+          narrativeLink.pairedNodeIdsFromNarrative.push(pairedNodeIds);
         }
         if (consoleLog) {
-          if (node.nodeNumber % logModulus === 0) {
-            logger.debug(__filename, 'line', __line, '; node.id = ', node.id, '; connectionFromComments = ', connectionFromComments);
+          if (link.nodeNumber % logModulus === 0) {
+            logger.debug(__filename, 'line', __line, '; link.id = ', link.id, '; pairedNodeIds = ', pairedNodeIds);
           }
         }
       });
     }
-
   });
 };
 
@@ -956,10 +931,10 @@ var concatNames = function (nodes) {
     counter++;
     var name = '';
     var nameArray = [];
-    var firstName = node.FIRST_NAME;
+//    var firstName = node.FIRST_NAME;
     var secondName = node.SECOND_NAME;
     var thirdName = node.THIRD_NAME;
-    var fourthName = node.FOURTH_NAME;
+//    var fourthName = node.FOURTH_NAME;
 
     nameArray.push(node.FIRST_NAME);
     nameArray.push(node.SECOND_NAME);
@@ -967,8 +942,8 @@ var concatNames = function (nodes) {
     nameArray.push(node.FOURTH_NAME);
     var nameFromArray = nameArray.join(' ');
 
-    if (firstName) {
-      name = name.concat(firstName.trim());
+    if (node.FIRST_NAME) {
+      name = name.concat(node.FIRST_NAME.trim());
     }
     if (secondName) {
       name = name.concat(' ', secondName.trim());
@@ -976,8 +951,8 @@ var concatNames = function (nodes) {
     if (thirdName) {
       name = name.concat(' ', thirdName.trim());
     }
-    if (fourthName) {
-      name = name.concat(' ', fourthName.trim());
+    if (node.FOURTH_NAME) {
+      name = name.concat(' ', node.FOURTH_NAME.trim());
     }
     node.name = name.trim();
     if (counter <= 10) {
@@ -1061,7 +1036,7 @@ var consolidateLinksFromNarrativeArray = function (data) {
 
 var checkNodeExistsById = function (nodeId) {
   var consoleLogValueToBeRestored = consoleLog;
-  consoleLog = true;
+  consoleLog = false;
   var nodeIdsSet = new StrSet();
   nodes.forEach(function (node) {
     nodeIdsSet.add(node.id);
@@ -1079,7 +1054,7 @@ var checkNodeExistsById = function (nodeId) {
 
 var checkTargetsExist = function (nodes, links) {
   var consoleLogValueToBeRestored = consoleLog;
-  consoleLog = true;
+  consoleLog = false;
   var nodeTargetIdsFromNarrativeSet = new StrSet();
   var nodeTargetIdsFromCommentsSet = new StrSet();
   var nodeIdsSet = new StrSet();
@@ -1183,12 +1158,12 @@ var getCleanId = function (referenceNumber) {
     logger.error(__filename, 'line', __line, '; Error: ', err, '; referenceNumber =', referenceNumber);
   }
 
-  try {
+//  try {
 //    refNumRegexMatch = result3.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/);
-    // logger.debug(__filename, 'line', __line, '; refNumRegexMatch =', refNumRegexMatch, '; referenceNumber = ', referenceNumber);
-  } catch (err) {
-    logger.error(__filename, 'line', __line, '; Error: ', err, '; referenceNumber =', referenceNumber, '; counter = ', counter);
-  }
+  // logger.debug(__filename, 'line', __line, '; refNumRegexMatch =', refNumRegexMatch, '; referenceNumber = ', referenceNumber);
+//  } catch (err) {
+//    logger.error(__filename, 'line', __line, '; Error: ', err, '; referenceNumber =', referenceNumber, '; counter = ', counter);
+//  }
   //return refNumRegexMatch[0].trim();
 
   return result3;

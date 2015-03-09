@@ -1,0 +1,782 @@
+[
+ {
+  "narrativeFileName": "LRi001.shtml",
+  "targetName": "VIKTOR ANATOLJEVITCH BOUT",
+  "indivOrEntityString": "indiv",
+  "rowNum": 1,
+  "urlNum": 1,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "LRi002.shtml",
+  "targetName": "RICHARD AMMAR CHICHAKLI",
+  "indivOrEntityString": "indiv",
+  "rowNum": 2,
+  "urlNum": 2,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "LRi003.shtml",
+  "targetName": "BABA JOBE",
+  "indivOrEntityString": "indiv",
+  "rowNum": 3,
+  "urlNum": 3,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "LRi004.shtml",
+  "targetName": "JOSEPH WONG KIIA TAI, JOSEPH KIIA WONG",
+  "indivOrEntityString": "indiv",
+  "rowNum": 4,
+  "urlNum": 4,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "LRi005.shtml",
+  "targetName": "SANJIVAN SINGH RUPRAH",
+  "indivOrEntityString": "indiv",
+  "rowNum": 5,
+  "urlNum": 5,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "LRi006.shtml",
+  "targetName": "CHARLES \"CHUCKIE\" (JUNIOR) TAYLOR",
+  "indivOrEntityString": "indiv",
+  "rowNum": 6,
+  "urlNum": 6,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "LRi007.shtml",
+  "targetName": "CHARLES GHANKAY (CHARLES MACARTHUR) TAYLOR",
+  "indivOrEntityString": "indiv",
+  "rowNum": 7,
+  "urlNum": 7,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "LRi008.shtml",
+  "targetName": "BENJAMIN D. YEATEN (YEATON)",
+  "indivOrEntityString": "indiv",
+  "rowNum": 8,
+  "urlNum": 8,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "LRi009.shtml",
+  "targetName": "JOVAN ALEKSIC",
+  "indivOrEntityString": "indiv",
+  "rowNum": 9,
+  "urlNum": 9,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "LRi010.shtml",
+  "targetName": "IBRAHIM (IBRAHIMA) BAH (BALDE) (BA)",
+  "indivOrEntityString": "indiv",
+  "rowNum": 10,
+  "urlNum": 10,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "LRi011.shtml",
+  "targetName": "RAPHAEL DAGO GNADRE",
+  "indivOrEntityString": "indiv",
+  "rowNum": 11,
+  "urlNum": 11,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "LRi012.shtml",
+  "targetName": "JAMES (WILLIE ADOLPHUS) (COO COO) DENNIS",
+  "indivOrEntityString": "indiv",
+  "rowNum": 12,
+  "urlNum": 12,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "LRi013.shtml",
+  "targetName": "\"SUMO\" DENNIS",
+  "indivOrEntityString": "indiv",
+  "rowNum": 13,
+  "urlNum": 13,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "LRi014.shtml",
+  "targetName": "DUANE EGLI",
+  "indivOrEntityString": "indiv",
+  "rowNum": 14,
+  "urlNum": 14,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "LRi015.shtml",
+  "targetName": "KIA FARLEY",
+  "indivOrEntityString": "indiv",
+  "rowNum": 15,
+  "urlNum": 15,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "LRi016.shtml",
+  "targetName": "MACIFIERRAN MOMO JIBBA (JEBBA)",
+  "indivOrEntityString": "indiv",
+  "rowNum": 16,
+  "urlNum": 16,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "LRi017.shtml",
+  "targetName": "PASTI KADIMA",
+  "indivOrEntityString": "indiv",
+  "rowNum": 17,
+  "urlNum": 17,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "LRi018.shtml",
+  "targetName": "AZIZ NASSOUR (NASR)",
+  "indivOrEntityString": "indiv",
+  "rowNum": 18,
+  "urlNum": 18,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "LRi019.shtml",
+  "targetName": "SAMIH OSSAILY",
+  "indivOrEntityString": "indiv",
+  "rowNum": 19,
+  "urlNum": 19,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "LRi020.shtml",
+  "targetName": "SIMON ROSENBLUM",
+  "indivOrEntityString": "indiv",
+  "rowNum": 20,
+  "urlNum": 20,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "LRi021.shtml",
+  "targetName": "JOSEPH (JOACHIM) TUAH (TOUAH)",
+  "indivOrEntityString": "indiv",
+  "rowNum": 21,
+  "urlNum": 21,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "LRi022.shtml",
+  "targetName": "D. BENJAMIN (JR.) TAYLOR",
+  "indivOrEntityString": "indiv",
+  "rowNum": 22,
+  "urlNum": 22,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "LRe001.shtml",
+  "targetName": "ABIDJAN FREIGHT",
+  "indivOrEntityString": "entity",
+  "rowNum": 1,
+  "urlNum": 23,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "LRe002.shtml",
+  "targetName": "AIR CESS",
+  "indivOrEntityString": "entity",
+  "rowNum": 2,
+  "urlNum": 24,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "LRe003.shtml",
+  "targetName": "AIR ZORY",
+  "indivOrEntityString": "entity",
+  "rowNum": 3,
+  "urlNum": 25,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "LRe004.shtml",
+  "targetName": "AIRBAS TRANSPORTATION FZE",
+  "indivOrEntityString": "entity",
+  "rowNum": 4,
+  "urlNum": 26,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "LRe005.shtml",
+  "targetName": "ATC, LTD.",
+  "indivOrEntityString": "entity",
+  "rowNum": 5,
+  "urlNum": 27,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "LRe006.shtml",
+  "targetName": "BUKAVU AVIATION TRANSPORT",
+  "indivOrEntityString": "entity",
+  "rowNum": 6,
+  "urlNum": 28,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "LRe007.shtml",
+  "targetName": "BUSINESS AIR SERVICES",
+  "indivOrEntityString": "entity",
+  "rowNum": 7,
+  "urlNum": 29,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "LRe008.shtml",
+  "targetName": "CENTRAFRICAN AIRLINES",
+  "indivOrEntityString": "entity",
+  "rowNum": 8,
+  "urlNum": 30,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "LRe009.shtml",
+  "targetName": "CENTRAL AFRICA DEVELOPMENT FUND",
+  "indivOrEntityString": "entity",
+  "rowNum": 9,
+  "urlNum": 31,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "LRe010.shtml",
+  "targetName": "CET AVIATION ENTERPRISE (FZE)",
+  "indivOrEntityString": "entity",
+  "rowNum": 10,
+  "urlNum": 32,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "LRe011.shtml",
+  "targetName": "CHICHAKLI & ASSOCIATES, PLLC",
+  "indivOrEntityString": "entity",
+  "rowNum": 11,
+  "urlNum": 33,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "LRe012.shtml",
+  "targetName": "CONTINUE PROFESSIONAL EDUCATION, INC.",
+  "indivOrEntityString": "entity",
+  "rowNum": 12,
+  "urlNum": 34,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "LRe013.shtml",
+  "targetName": "DAYTONA POOLS, INC.",
+  "indivOrEntityString": "entity",
+  "rowNum": 13,
+  "urlNum": 35,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "LRe014.shtml",
+  "targetName": "DHH ENTERPRISES, INC.",
+  "indivOrEntityString": "entity",
+  "rowNum": 14,
+  "urlNum": 36,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "LRe015.shtml",
+  "targetName": "GAMBIA NEW MILLENNIUM AIR COMPANY",
+  "indivOrEntityString": "entity",
+  "rowNum": 15,
+  "urlNum": 37,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "LRe016.shtml",
+  "targetName": "IB OF AMERICA HOLDINGS, INC.",
+  "indivOrEntityString": "entity",
+  "rowNum": 16,
+  "urlNum": 38,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "LRe017.shtml",
+  "targetName": "IRBIS AIR COMPANY",
+  "indivOrEntityString": "entity",
+  "rowNum": 17,
+  "urlNum": 39,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "LRe018.shtml",
+  "targetName": "MOLDTRANSAVIA SRL",
+  "indivOrEntityString": "entity",
+  "rowNum": 18,
+  "urlNum": 40,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "LRe019.shtml",
+  "targetName": "NORDIC, LTD.",
+  "indivOrEntityString": "entity",
+  "rowNum": 19,
+  "urlNum": 41,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "LRe020.shtml",
+  "targetName": "ODESSA AIR",
+  "indivOrEntityString": "entity",
+  "rowNum": 20,
+  "urlNum": 42,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "LRe021.shtml",
+  "targetName": "ORIENT STAR CORPORATION",
+  "indivOrEntityString": "entity",
+  "rowNum": 21,
+  "urlNum": 43,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "LRe022.shtml",
+  "targetName": "RICHARD A. CHICHAKLI, P.C.",
+  "indivOrEntityString": "entity",
+  "rowNum": 22,
+  "urlNum": 44,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "LRe023.shtml",
+  "targetName": "ROCKMAN, LTD.",
+  "indivOrEntityString": "entity",
+  "rowNum": 23,
+  "urlNum": 45,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "LRe024.html",
+  "targetName": "SAN AIR GENERAL TRADING FZE",
+  "indivOrEntityString": "entity",
+  "rowNum": 24,
+  "urlNum": 46,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "LRe025.shtml",
+  "targetName": "SANTA CRUZ IMPERIAL AIRLINES",
+  "indivOrEntityString": "entity",
+  "rowNum": 25,
+  "urlNum": 47,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "LRe026.shtml",
+  "targetName": "SOUTHBOUND, LTD.",
+  "indivOrEntityString": "entity",
+  "rowNum": 26,
+  "urlNum": 48,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "LRe027.shtml",
+  "targetName": "TRANS AVIATION GLOBAL GROUP, INC.",
+  "indivOrEntityString": "entity",
+  "rowNum": 27,
+  "urlNum": 49,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "LRe028.shtml",
+  "targetName": "TRANSAVIA NETWORK",
+  "indivOrEntityString": "entity",
+  "rowNum": 28,
+  "urlNum": 50,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "LRe029.shtml",
+  "targetName": "VIAL COMPANY",
+  "indivOrEntityString": "entity",
+  "rowNum": 29,
+  "urlNum": 51,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ },
+ {
+  "narrativeFileName": "LRe030.shtml",
+  "targetName": "WESTBOUND, LTD.",
+  "indivOrEntityString": "entity",
+  "rowNum": 30,
+  "urlNum": 52,
+  "linksFromNarrArray": [],
+  "connectionIdsFromNarrativeSet": {
+   "_map": {
+    "_count": 0,
+    "_map": {}
+   }
+  },
+  "connectedToIdFromNarrativeArray": []
+ }
+]

@@ -4,6 +4,8 @@ var consoleLog = false;
 var truncateToNumChars = 100;
 // var logger = require('tracer').colorConsole({level:'warn'});
 var logger = require('./tracer-logger-config.js').logger;
+var rotate = require('log-rotate');
+
 var primes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127, 131, 137, 139, 149, 151, 157, 163, 167, 173];
 
 var logModulus = primes[Math.floor(Math.random() * primes.length)];
@@ -20,6 +22,24 @@ var linenums = require('./linenums.js');
 var message;
 var addFileLabel = function (inString, url) {
   return '<!-- ' + url + ' -->' + inString;
+};
+
+var getStackTrace = function (err) {
+  var i, j, k;
+  // ...
+  // j acquires some interesting value
+  // Who called foo when j took this interesting value?
+  //
+
+  //  var e = new Error('dummy');
+  var stack = err.stack.replace(/^[^\(]+?[\n$]/gm, '')
+    .replace(/^\s+at\s+/gm, '')
+    .replace(/^Object.<anonymous>\s*\(/gm, '{anonymous}()@')
+    .split('\n');
+  logger.error(stack);
+
+  // ...
+  // rest of the code
 };
 
 var countLines = function (textFile) {
@@ -79,7 +99,7 @@ var generateNarrFileNameFromId = function (nodeId) {
   var idSplit = (nodeId).trim().split('.');
   // id = id.trim();
   // var idSplit = id.split('.');
-  var narrFileName = 'NSQ' + idSplit[0].substring(1, 2) + pad(idSplit[2],3) + pad(idSplit[3],2) + 'E.shtml';
+  var narrFileName = 'NSQ' + idSplit[0].substring(1, 2) + pad(idSplit[2], 3) + pad(idSplit[3], 2) + 'E.shtml';
   if (consoleLog) {
     logger.debug(__filename, ' line ', __line, '; nodeId = ', nodeId, '; generated narrFileName = ', narrFileName);
     logger.debug([__filename, ' line ', __line, '; nodeId = ', nodeId, '; generated narrFileName = ', narrFileName].join(''));
@@ -87,7 +107,6 @@ var generateNarrFileNameFromId = function (nodeId) {
   testNarrativeFileName(narrFileName);
   return narrFileName.trim();
 };
-
 
 //  clean up ids for consistency;  none should have trailing period.
 var getCleanId = function (referenceNumber) {
@@ -108,7 +127,7 @@ var generateNarrFileName = function (node) {
   // id = id.trim();
   // var idSplit = id.split('.');
 
-  var narrFileName = 'NSQ' + idSplit[0].substring(1, 2) + pad(idSplit[2],3) + pad(idSplit[3],2) + 'E.shtml';
+  var narrFileName = 'NSQ' + idSplit[0].substring(1, 2) + pad(idSplit[2], 3) + pad(idSplit[3], 2) + 'E.shtml';
 //  var narrFileName = 'NSQ' + idSplit[0].substring(1, 2) + idSplit[2] + idSplit[3] + 'E.shtml';
   if (consoleLog) {
     console.log(__filename, ' line ', __line, '; node.id = ', node.id, '; generated narrFileName = ', narrFileName);
@@ -118,12 +137,10 @@ var generateNarrFileName = function (node) {
   return narrFileName.trim();
 };
 
-
-var pad = function(num, size) {
+var pad = function (num, size) {
   var s = "000000000" + num;
-  return s.substr(s.length-size);
+  return s.substr(s.length - size);
 };
-
 
 var testNarrativeFileName = function (narrFileName) {
   var nameTestString = narrFileName.split('.')[0];
@@ -159,9 +176,9 @@ var stringifyAndWriteJsonDataFile = function (data, writeFileNameAndPath) {
 
 var nodeSummary = function (node) {
   var nodeSummaryString = '\n\n';
-if (node.nodeNumber ) {
-  nodeSummaryString += '\nNode number: ' + node.nodeNumber;
-}
+  if (node.nodeNumber) {
+    nodeSummaryString += '\nNode number: ' + node.nodeNumber;
+  }
   if (node.id) {
     nodeSummaryString += '\nId: ' + node.id;
   }
@@ -195,26 +212,49 @@ if (node.nodeNumber ) {
   return nodeSummaryString.trim();
 };
 
+var rotateLogFile = function (logFileNameAndPath) {
+  var logFileNameAndPath2 = logFileNameAndPath || __dirname + '/../log/consolidated.log';
+  rotate(logFileNameAndPath2, {count: 11}, function (err) {
+    if (err) {
+      logger.error('\n ', __filename, __line, '; Error: ', err);
+    }
+    // ls ./ => test.log test.log.0 test.log.1
+  });
+  if (consoleLog) {
+    logger.debug('\n ', __filename, __line, '; Phase #:', ++functionCount, '; logFileNameAndPath2 = ', logFileNameAndPath2);
+  }
+};
+
+var sortArrayOfStrings = function (arrayOfStrings) {
+  arrayOfStrings.sort(function (stringA, stringB) {
+    if (stringA > stringB) {
+      return 1;
+    }
+    if (stringA < stringB) {
+      return -1;
+    }
+    // a must be equal to b
+    return 0;
+  });
+};
+
+
+
 // write data to a local file
-var syncWriteMyFile = function (localFileNameAndPath, data, fsOptions) {
+// works for XML files
+var syncWriteMyFile = function (data, localFileNameAndPath, fsOptions) {
   try {
-
-    // var fs = require('fs-extra')
-    // var file = '/tmp/this/path/does/not/exist/file.txt'
-
-//    fs.outputFile(file, 'hello!', function(err) {
-//      logger.error(err) // => null
-
-    //    fs.readFile(file, 'utf8', function(err, data) {
-    //      console.log(data) // => hello!
-    //   })
-    //  })
-
     fse.writeFileSync(localFileNameAndPath, data, fsOptions);
   } catch (err) {
     logger.error(__filename, 'line', __line, '; Error: ', err);
     logger.debug(__filename, 'line', __line, '; Error: ', err);
   }
+};
+
+var testLogging = function () {
+  logger.debug(__filename, 'line', __line, '; logModulus = ', logModulus);
+  logger.trace('hello', 'world');
+  logger.error('intention error for testing; hello %s %d %j', 'world', 123, {foo: 'bar'}, [1, 2, 3, 4], Object);
 };
 
 var truncateStringToFirstNumChars = function (inString, truncateToFirstNumChars) {
@@ -302,12 +342,16 @@ module.exports = {
   generateNarrFileName: generateNarrFileName,
   generateNarrFileNameFromId: generateNarrFileNameFromId,
   getCleanId: getCleanId,
+  getStackTrace: getStackTrace,
   logModulus: logModulus,
+  logger: logger,
   nodeSummary: nodeSummary,
   pad: pad,
+  rotateLogFile: rotateLogFile,
   showObjectProperties: showObjectProperties,
   stringifyAndWriteJsonDataFile: stringifyAndWriteJsonDataFile,
   syncWriteMyFile: syncWriteMyFile,
+  testLogging: testLogging,
   trimNarrative: trimNarrative,
   trimNarrative2: trimNarrative2,
   truncateToNumChars: truncateToNumChars,
