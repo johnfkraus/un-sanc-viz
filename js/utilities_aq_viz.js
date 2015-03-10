@@ -5,14 +5,11 @@ var truncateToNumChars = 100;
 // var logger = require('tracer').colorConsole({level:'warn'});
 var logger = require('./tracer-logger-config.js').logger;
 var rotate = require('log-rotate');
-
 var primes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127, 131, 137, 139, 149, 151, 157, 163, 167, 173];
-
 var logModulus = primes[Math.floor(Math.random() * primes.length)];
 // var logModulus = 43;
 // var tlc = require('./tracer-logger-config.js');
 require('console-stamp')(console, '[HH:MM:ss.l]');
-
 var fsOptions = {
   flags: 'r+', encoding: 'utf-8', autoClose: true
 };
@@ -30,14 +27,12 @@ var getStackTrace = function (err) {
   // j acquires some interesting value
   // Who called foo when j took this interesting value?
   //
-
   //  var e = new Error('dummy');
   var stack = err.stack.replace(/^[^\(]+?[\n$]/gm, '')
     .replace(/^\s+at\s+/gm, '')
     .replace(/^Object.<anonymous>\s*\(/gm, '{anonymous}()@')
     .split('\n');
   logger.error(stack);
-
   // ...
   // rest of the code
 };
@@ -75,7 +70,8 @@ var forceUnicodeEncoding = function (string) {
   //  attache  é
   var result = unescape(encodeURIComponent(string3));
   return result.trim();
-}
+};
+
 
 var formatMyDate = function (dateString) {
 // Basic usage
@@ -145,22 +141,21 @@ var pad = function (num, size) {
 var testNarrativeFileName = function (narrFileName) {
   var nameTestString = narrFileName.split('.')[0];
   // var nameLengthTest = node.narrativeFileName.split('.')[0].length;
-  if (nameTestString.length < 10) { // node.narrativeFileName === 'NSQE4601E.shtml') {
+  if (nameTestString.length < 5) { // node.narrativeFileName === 'NSQE4601E.shtml') {
     logger.error(__filename, 'line', __line, '; narrFileName = ', narrFileName, '; nameTestString.length = ', nameTestString.length);
     return false;
-  } else if (nameTestString.length === 10) {
-    return true;
+//  } else if (nameTestString.length === 10) {
+//    return true;
   } else {
-    return false;
+    return true;
   }
 };
 
 var stringifyAndWriteJsonDataFile = function (data, writeFileNameAndPath) {
-
-  var stringifiedData;
+  // var stringifiedData;
   try {
-//    var myFile = __dirname + '/../data/output/' + fileName;
-    stringifiedData = JSON.stringify(data, null, ' ');
+    // var myFile = __dirname + '/../data/output/' + fileName;
+    var stringifiedData = JSON.stringify(data, null, ' ');
     fse.writeFileSync(writeFileNameAndPath, stringifiedData, fsOptions);
     if (consoleLog) {
       console.log(__filename, 'line', __line, '; utilities_aq_viz.stringifyAndWriteJsonFile() wrote file to: ', writeFileNameAndPath, ';  file contained (truncated): ', stringifiedData.substring(0, truncateToNumChars), ' ... [CONSOLE LOG OUTPUT INTENTIONALLY TRUNCATED TO FIRST ', truncateToNumChars, ' CHARACTERS]\n\n');
@@ -221,7 +216,7 @@ var rotateLogFile = function (logFileNameAndPath) {
     // ls ./ => test.log test.log.0 test.log.1
   });
   if (consoleLog) {
-    logger.debug('\n ', __filename, __line, '; Phase #:', ++functionCount, '; logFileNameAndPath2 = ', logFileNameAndPath2);
+//    logger.debug('\n ', __filename, __line, '; Phase #:', ++functionCount, '; logFileNameAndPath2 = ', logFileNameAndPath2);
   }
 };
 
@@ -238,16 +233,13 @@ var sortArrayOfStrings = function (arrayOfStrings) {
   });
 };
 
-
-
 // write data to a local file
 // works for XML files
 var syncWriteMyFile = function (data, localFileNameAndPath, fsOptions) {
   try {
     fse.writeFileSync(localFileNameAndPath, data, fsOptions);
   } catch (err) {
-    logger.error(__filename, 'line', __line, '; Error: ', err);
-    logger.debug(__filename, 'line', __line, '; Error: ', err);
+    logger.error(__filename, 'line', __line, '; Error: ', err, '; localFileNameAndPath = ', localFileNameAndPath, getStackTrace(err));
   }
 };
 
@@ -265,7 +257,6 @@ var truncateStringToFirstNumChars = function (inString, truncateToFirstNumChars)
 // remove &nbsp;, all slanty apostrophes and quote marks
 // replace any occurrence of two or more space characters with one space character
 function trimNarrative(narrWebPageString, url) {
-
   var narrative4 = narrWebPageString.replace('’', "'");
   var narrative7 = narrative4.replace(/([\r\n\t])/gm, ' ');
   var narrative10 = narrative7.replace(/(\s{2,})/gm, ' ');
@@ -279,15 +270,9 @@ function trimNarrative(narrWebPageString, url) {
   var narrative35 = narrative19.replace(/(.*NARRATIVE SUMMARIES OF REASONS FOR LISTING<\/h3>)(.*?)(<\/div>\s*<div id="footer".*)/mi, '$2');
 // make hyperlink
   var narrative40 = narrative35.replace(/(<u>)(.*?)(<\/u>)/gmi, '<a href=\'' + url + '\' target=\'_blank\'>$1$2$3<\/a>');
-  var narrative50 = narrative40.replace(/[^\x00-\x7F]/g, '')
+  var narrative50 = narrative40.replace(/[^\x00-\x7F]/g, '');
   var tail = narrative50.substring(narrative50.length - 120, narrative50.length);
   var tailOmitsChars = (narrative50.length - tail.length);
-  /*  if (narrative40.length >= narrative1.length) {
-   console.log(__filename, ' line ', __line, '; tail = [FIRST', tailOmitsChars, 'CHARACTERS INTENTIONALLY OMITTED]', tail, '\nnarrative1.length = ', narrative1.length, '\nnarrative2.length = ', narrative2.length, '\nnarrative2a.length = ', narrative2a.length, '\nnarrative3.length = ', narrative3.length, '\ntail.length = ', tail.length, '\nnarrative3.substring(0,300) = ', narrative3.substring(0, 300));
-   logger.debug([__filename, ' line ', __line, '; tail = [FIRST', tailOmitsChars, 'CHARACTERS INTENTIONALLY OMITTED]', tail, '\n  narrative1.length = ', narrative1.length, '\n  narrative2.length = ', narrative2.length, '\n  narrative2a.length = ', narrative2a.length, '\n  narrative3.length = ', narrative3.length, '\n  tail.length = ', tail.length, '\n  narrative3.substring(0,300) = ', narrative3.substring(0, 300)].join(''));
-   }
-   */
-//  narrative5 = addFileLabel(narrative4);
   return narrative50.trim();
 }
 
@@ -295,7 +280,6 @@ function trimNarrative(narrWebPageString, url) {
 // remove &nbsp;, all slanty apostrophes and quote marks
 // replace any occurrence of two or more space characters with one space character
 function trimNarrative2(narrWebPageString, url) {
-
   var narrative = narrWebPageString.replace('’', "'");
   narrative = narrative.replace(/([\r\n\t])/gm, ' ');
   narrative = narrative.replace(/(\s{2,})/gm, ' ');
@@ -309,7 +293,7 @@ function trimNarrative2(narrWebPageString, url) {
   narrative = narrative.replace(/(.*NARRATIVE SUMMARIES OF REASONS FOR LISTING<\/h3>)(.*?)(<\/div>\s*<div id="footer".*)/mi, '$2');
   // make hyperlink
   narrative = narrative.replace(/(<u>)(.*?)(<\/u>)/gmi, '<a href=\'' + url + '\' target=\'_blank\'>$1$2$3<\/a>');
-  narrative = narrative.replace(/[^\x00-\x7F]/g, '')
+  narrative = narrative.replace(/[^\x00-\x7F]/g, '');
   var tail = narrative.substring(narrative.length - 120, narrative.length);
   var tailOmitsChars = (narrative.length - tail.length);
   return narrative.trim();
@@ -329,7 +313,7 @@ var validateUrl = function (url) {
 var showObjectProperties = function (object) {
   var propValue;
   for (var propName in object) {
-    propValue = object[propName]
+    propValue = object[propName];
     console.log(propName, ': ', propValue);
   }
 };
