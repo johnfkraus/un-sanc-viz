@@ -93,6 +93,7 @@ var narrLinksJson = [];
 var narrativeLinks;
 var logFileNameAndPath;
 var readWriteLocalNarrativesFilePath;
+var narrativeFilesUrlPath;
 var individualsJsonLocalOutputFileNameAndPath;
 var entitiesJsonLocalOutputFileNameAndPath;
 // var link;
@@ -111,20 +112,20 @@ var init = function (committeeParam) {
   // readWriteLocalNarrativesFilePath = __dirname + '/../data/committees/' + committee + '/narratives/' + linkNarrFileName;
   writeJsonOutputDebuggingDirectory = __dirname + '/../data/committees/' + committee + '/debug/';
   narrativeFilesUrlPath = __dirname + '/../data/committees/' + committee + '/';
-  narrativeLinksJsonLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/narrative_links.json';
+  narrativeLinksJsonLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/data2.json';
   individualsListUrl = 'http://www.un.org/sc/committees/' + committee + '/Individuals.shtml';
   entitiesListUrl = 'http://www.un.org/sc/committees/' + committee + '/Entities.shtml';
-  //narrativeLinksJsonLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/narrative_links.json';
+  //narrativeLinksJsonLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/data2.json';
   switch (committee) {
     case '751':
       individualsListUrl = 'http://www.un.org/sc/committees/' + committee + '/Individuals.shtml';
       entitiesListUrl = 'http://www.un.org/sc/committees/' + committee + '/Entities.shtml';
-      narrativeLinksJsonLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/narrative_links.json';
+      narrativeLinksJsonLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/data2.json';
       break;
     case '1267':
       individualsListUrl = 'http://www.un.org/sc/committees/' + committee + '/individuals_associated_with_Al-Qaida.shtml';
       entitiesListUrl = 'http://www.un.org/sc/committees/' + committee + '/entities_other_groups_undertakings_associated_with_Al-Qaida.shtml';
-      narrativeLinksJsonLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/narrative_links.json';
+      narrativeLinksJsonLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/data2.json';
       dotFileLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/links.dot';
       break;
     case '1518':
@@ -147,7 +148,7 @@ var init = function (committeeParam) {
     case '1737':
       individualsListUrl = 'http://www.un.org/sc/committees/' + committee + '/individuals.shtml';
       entitiesListUrl = 'http://www.un.org/sc/committees/' + committee + '/entities.shtml';
-      narrativeLinksJsonLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/narrative_links.json';
+      narrativeLinksJsonLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/data2.json';
       break;
     case '1970':
       individualsListUrl = 'http://www.un.org/sc/committees/' + committee + '/Individuals.shtml';
@@ -168,7 +169,7 @@ var init = function (committeeParam) {
       logger.error(__filename, 'line', __line, '; no valid committee selected.');
       individualsListUrl = 'http://www.un.org/sc/committees/' + committee + '/Individuals.shtml';
       entitiesListUrl = 'http://www.un.org/sc/committees/' + committee + '/Entities.shtml';
-      narrativeLinksJsonLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/narrative_links.json';
+      narrativeLinksJsonLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/data2.json';
   }
 };
 
@@ -881,7 +882,7 @@ var checkNodeExistsById = function (nodeId) {
     nodeIdsSet.add(node.id);
   });
   if (!nodeIdsSet.exists(nodeId)) {
-    logger.debug(__filename, 'line', __line, ', nodeId = ', nodeId, ' DOES NOT EXIST as as node. generateNarrFileNameFromId = ', utilities_aq_viz.generateNarrFileNameFromId(linkTarget), ';  missingNodesNarrativesCount = ', '; nodeSummary = ', utilities_aq_viz.nodeSummary(node));
+    logger.debug(__filename, 'line', __line, ', nodeId = ', nodeId, ' DOES NOT EXIST as as node. ; ');
     consoleLog = consoleLogValueToBeRestored;
     return false;
   } else {

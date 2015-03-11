@@ -17,10 +17,10 @@ exec('dot -Tjpg data/committees/1267/trunc_links.dot -o data/committees/1267/tru
 });
 
 */
-exec('sfdp -Tsvg data/committees/1267/trunc_links.dot -o data/committees/1267/trunc_links.svg', function (error, stdout, stderr) {
+exec('sfdp -Tsvg data/committees/1267/links_1267_sfdp_strict.dot -o data/committees/1267/links_1267_sfdp_strict.svg.svg', function (error, stdout, stderr) {
   // output is in stdout
 });
 
-exec('sfdp -Tjpg data/committees/1267/trunc_links.dot -o data/committees/1267/trunc_links.jpg', function (error, stdout, stderr) {
+exec('sfdp -Tjpg data/committees/1267/links_1267_sfdp_strict.dot -o data/committees/1267/links_1267_sfdp_strict.svg.jpg', function (error, stdout, stderr) {
   // output is in stdout
 });

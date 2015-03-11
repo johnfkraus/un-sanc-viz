@@ -7,7 +7,7 @@ var logger = require('tracer').colorConsole({level:'info'});
 // var logger = require('./tracer-logger-config.js');
 // var logger = require('./libs/logger.js');
 
-var utilities_aq_viz = require('./utilities_aq_viz');
+// var utilities_aq_viz = require('./utilities_aq_viz');
 var rotate = require('log-rotate');
 // var logger = require('./tracer-logger-config.js').logger;
 var parse2Lists = require('./parse2Lists.js');
@@ -67,7 +67,7 @@ var runApp = function () {
 
       // rotate log file
       function (callback) {
-        var logFileNameAndPath = __dirname + '/../log/consolidated.log';
+        // var logFileNameAndPath = __dirname + '/../log/consolidated.log';
         // utilities_aq_viz.rotateLogFile(logFileNameAndPath);
 
         /*
@@ -126,7 +126,7 @@ var parse2 = function () {
       },
 
       function (callback) {
-        var logFileNameAndPath = __dirname + '/../log/consolidated.log';
+        // var logFileNameAndPath = __dirname + '/../log/consolidated.log';
       //  utilities_aq_viz.rotateLogFile(logFileNameAndPath);
         callback();
       }
