@@ -28,3 +28,9 @@ Total # of free bytes        : 23856873472
 Total # of bytes             : 248660357120
 Total # of avail free bytes  : 23856873472
 ========= 
+Thu 03/12/2015 
+03:36 PM
+Total # of free bytes        : 16790683648
+Total # of bytes             : 248660357120
+Total # of avail free bytes  : 16790683648
+========= 

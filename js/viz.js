@@ -36,6 +36,8 @@ Network = function () {
   layout = "force";
   filter = "all";
   sort = "arts";
+staticRadius = 10;
+
 
   //  groupCenters will store our radial layout for
   //  the group by artist layout.
@@ -317,6 +319,10 @@ Network = function () {
   network.updateMaxRadius = function (maxRadius) {
     return node.each(function (d) {
       var element = d3.select(this);
+
+
+      node.linkCount = staticRadius;
+
       element.style("radius", node.linkCount);
       return d.searched = true;
     })
@@ -407,15 +413,12 @@ Network = function () {
     // parseInt( stringToParse, 10 );
     // countExtent = d3.extent(data.nodes, (d) -> d.playcount)
 
-
-
     var circleRadius, count, countExtent, nodesMap;
     var result;
 
     // countExtent is an Array with value 1 = minimum link count (0) and value 2 = maximum link count;
 //    console.log('$(\'#max_radius_select\').val() = ', $('#max_radius_select').val());
 //    console.log('circleRadius = ', circleRadius);
-
 
     // d is a sanctioned node from the array 'nodes' in the Object 'data'.  d has a 'radius' among its properties
 
@@ -448,10 +451,14 @@ Network = function () {
       // return n.radius = (n.linkCount);
       // determine radius of each node circle
 
-      var circleRadiusResult = circleRadius(Math.pow(n.linkCount * 3, 0.9));
-      console.log('n.id = ', n.id, '; n.linkCount = ', n.linkCount, '; circleRadius(Math.pow(n.linkCount * 3, 0.9)) = ', circleRadius(Math.pow(n.linkCount * 3, 0.9)));
+      var circleRadiusResult = circleRadius(Math.pow(staticRadius * 3, 0.9));
+//      console.log('n.id = ', n.id, '; n.linkCount = ', n.linkCount, '; circleRadius(Math.pow(n.linkCount * 3, 0.9)) = ', circleRadius(Math.pow(n.linkCount * 3, 0.9)));
+      return n.radius = circleRadius(Math.pow(staticRadius * 3, 0.9));
 
-      return n.radius = circleRadius(Math.pow(n.linkCount * 3, 0.9));
+//      var circleRadiusResult = circleRadius(Math.pow(n.linkCount * 3, 0.9));
+//      console.log('n.id = ', n.id, '; n.linkCount = ', n.linkCount, '; circleRadius(Math.pow(n.linkCount * 3, 0.9)) = ', circleRadius(Math.pow(n.linkCount * 3, 0.9)));
+      //    return n.radius = circleRadius(Math.pow(n.linkCount * 3, 0.9));
+
     });
     // id's -> node objects
     nodesMap = mapNodes(data.nodes);
@@ -463,12 +470,21 @@ Network = function () {
 //      if (!(nodesMap.get(l.target))) {
       // console.log("274 count = ", count, "l.target is undefined; l.source = ", nodesMap.get(l.source));
       //     }
+
+      if (!l.target || !l.source) {
+        console.log('485 error l.target = ', l.target, '; l.source = ', l.source);
+      }
+
       l.source = nodesMap.get(l.source);
       l.target = nodesMap.get(l.target);
       // linkedByIndexData = linkedByIndex["" + l.source.id + "," + l.target.id] = 1;
-      if ((typeof(l.target) !== 'undefined') && (l.target !== null)) {
+      // if ((typeof(l.target) !== 'undefined') && (l.target !== null)) {
+      if (l.target && l.source) {
         return linkedByIndex["" + l.source.id + "," + l.target.id] = 1;
+      } else {
+        console.log('489 error ', l.target);
       }
+
     });
     return data;
   };
@@ -650,15 +666,22 @@ Network = function () {
   filterLinks = function (allLinks, curNodes) {
     curNodes = mapNodes(curNodes);
     return allLinks.filter(function (l) {
-      if ((typeof l.target === 'undefined') && (l.target) === null) {
+      if (!l.target  || !l.target.id ) {
         console.log('filename: viz.js, line approx. 616;  Error null target where l.source.id = ', l.source.id, '; l.source = ', JSON.stringify(l.source));
+        /*
+        throw {
+          name: 'undefErr',
+          message: ''
+        }
+        */
+        alert('hello');
       }
       try {
-        if ((typeof l.target.id === 'undefined') && (l.target.id) === null) {
+        if (!l.target.id) {
           console.log('filename: viz.js, line approx. 620; Error null target id where l.source.id = ', l.source.id, '; l.source = ', JSON.stringify(l.source));
         }
       } catch (err) {
-        console.log('filename: viz.js, line approx. 623;  Error: ', err, '; null target id where l.source.id = ', l.source.id, '; l.source = ', JSON.stringify(l.source).substring(0, 100));
+        console.log('filename: viz.js, line approx. 688;  Error: ', err, '; null target id where l.source.id = ', l.source.id, '; l.source = ', JSON.stringify(l.source).substring(0, 100));
       }
       try {
         if ((typeof curNodes.get(l.target.id) !== 'undefined') && (curNodes.get(l.target.id) !== null)) {
@@ -688,7 +711,10 @@ Network = function () {
         return d.y;
       })
       .attr("r", function (d) {
-        return (d.radius);
+
+        return (staticRadius);
+        // return (d.radius);
+
       })
       .style("fill", function (d) {
         return nodeColors(d[$('#node_color_select').val()]);
@@ -1275,7 +1301,8 @@ $(function () {
     }
 
     // LOAD THE JSON DATA FILE HERE
-    return d3.json("data/output/data.json", function (json) {
+//     return d3.json("data/output/data.json", function (json) {
+    return d3.json("data/committees/1267/data.json", function (json) {
       return myNetwork("#svg", json);
     });
   }

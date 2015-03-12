@@ -115,7 +115,7 @@ var init = function (committeeParam) {
   // readWriteLocalNarrativesFilePath = __dirname + '/../data/committees/' + committee + '/narratives/' + nodeNarrFileName;
   writeJsonOutputDebuggingDirectory = __dirname + '/../data/committees/' + committee + '/debug/';
   narrativeFilesUrlPath = __dirname + '/../data/committees/' + committee + '/';
-  dataJsonLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/data2.json';
+  dataJsonLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/data.json';
   individualsListUrl = 'http://www.un.org/sc/committees/' + committee + '/Individuals.shtml';
   entitiesListUrl = 'http://www.un.org/sc/committees/' + committee + '/Entities.shtml';
   dotFileLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/links.dot';
@@ -124,12 +124,12 @@ var init = function (committeeParam) {
     case '751':
       individualsListUrl = 'http://www.un.org/sc/committees/' + committee + '/Individuals.shtml';
       entitiesListUrl = 'http://www.un.org/sc/committees/' + committee + '/Entities.shtml';
-      dataJsonLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/data2.json';
+      dataJsonLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/data.json';
       break;
     case '1267':
       individualsListUrl = 'http://www.un.org/sc/committees/' + committee + '/individuals_associated_with_Al-Qaida.shtml';
       entitiesListUrl = 'http://www.un.org/sc/committees/' + committee + '/entities_other_groups_undertakings_associated_with_Al-Qaida.shtml';
-      dataJsonLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/data2.json';
+      dataJsonLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/data.json';
       break;
     case '1518':
       break;
@@ -151,7 +151,7 @@ var init = function (committeeParam) {
     case '1737':
       individualsListUrl = 'http://www.un.org/sc/committees/' + committee + '/individuals.shtml';
       entitiesListUrl = 'http://www.un.org/sc/committees/' + committee + '/entities.shtml';
-      dataJsonLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/data2.json';
+      dataJsonLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/data.json';
       break;
     case '1970':
       individualsListUrl = 'http://www.un.org/sc/committees/' + committee + '/Individuals.shtml';
@@ -172,7 +172,7 @@ var init = function (committeeParam) {
       logger.error(__filename, 'line', __line, '; no valid committee selected.');
       individualsListUrl = 'http://www.un.org/sc/committees/' + committee + '/Individuals.shtml';
       entitiesListUrl = 'http://www.un.org/sc/committees/' + committee + '/Entities.shtml';
-      dataJsonLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/data2.json';
+      dataJsonLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/data.json';
   }
 };
 
@@ -422,9 +422,13 @@ var parse2ListsCommittee = function (committee) {
         // var configJsonFileName = __dirname + '/../data/config/config.json';
         var buffer = fse.readFileSync(dataJsonLocalOutputFileNameAndPath, fsOptions);
         data = JSON.parse(buffer);
+        // validateNodeIds(data);
         addPairedIdsToNodes();
-        addPairedIdsToLinks();
-        sortArrayOfPairedIds(data.links);
+//        addPairedIdsToLinks();
+        addSourceTargetObjectsToLinks();
+        sortSourceTargetIds(data.links);
+        //  sortArrayOfPairedIds(data.links);
+
         logger.debug(__filename, 'line', __line, '; data.links.length = ', data.links.length);
 
         callback();
@@ -439,38 +443,38 @@ var parse2ListsCommittee = function (committee) {
         }
         callback();
       },
-/*
-      function (callback) {
-        // read data json file
-        // dataJsonLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/data2.json';
-        // var configJsonFileName = __dirname + '/../data/config/config.json';
-        var buffer = fse.readFileSync(dataJsonLocalOutputFileNameAndPath, fsOptions);
-        data = JSON.parse(buffer);
-        var links = data.links;
-        //  var pairedIdA, pairedIdB;
+      /*
+       function (callback) {
+       // read data json file
+       // dataJsonLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/data2.json';
+       // var configJsonFileName = __dirname + '/../data/config/config.json';
+       var buffer = fse.readFileSync(dataJsonLocalOutputFileNameAndPath, fsOptions);
+       data = JSON.parse(buffer);
+       var links = data.links;
+       //  var pairedIdA, pairedIdB;
 
-        /*
-         for (var linkCounterA = 0; linkCounterA < links.length; linkCounterA++) {
-         pairedIdA = links[linkCounterA];
+       /*
+       for (var linkCounterA = 0; linkCounterA < links.length; linkCounterA++) {
+       pairedIdA = links[linkCounterA];
 
-         for (var linkCounterB = linkCounterA + 1; linkCounterB < links.length; linkCounterB++) {
-         pairedIdB = links[linkCounterB];
-         var valueA = fixIdCase(pairedIdA[0]) + pairedIdA[1];
-         var valueB = fixIdCase(pairedIdB[0]) + pairedIdB[1];
-         if (valueA === valueB) {
-         delete links[linkCounterB];
-         }
-         }
-         }
+       for (var linkCounterB = linkCounterA + 1; linkCounterB < links.length; linkCounterB++) {
+       pairedIdB = links[linkCounterB];
+       var valueA = fixIdCase(pairedIdA[0]) + pairedIdA[1];
+       var valueB = fixIdCase(pairedIdB[0]) + pairedIdB[1];
+       if (valueA === valueB) {
+       delete links[linkCounterB];
+       }
+       }
+       }
 
-        addPairedIdsToNodes();
-        addPairedIdsToLinks();
-        sortArrayOfPairedIds(data.links);
-        logger.debug(__filename, 'line', __line, '; data.links.length = ', data.links.length);
+       addPairedIdsToNodes();
+       addPairedIdsToLinks();
+       sortArrayOfPairedIds(data.links);
+       logger.debug(__filename, 'line', __line, '; data.links.length = ', data.links.length);
 
-        callback();
-      },
-*/
+       callback();
+       },
+       */
       // write intermediate data file for debugging
       function (callback) {
         if (data) {
@@ -485,32 +489,60 @@ var parse2ListsCommittee = function (committee) {
       //
       function (callback) {
         logger.debug(__filename, 'line', __line, '; function #:', ++functionCount);
+
         var linkString, link1, link0;
         var link;
         // read the data file; each node has a narrativeFileName property
         data = JSON.parse(fse.readFileSync(dataJsonLocalOutputFileNameAndPath, fsOptions));
+        // validateNodeIds(data);
+
         linkString = "strict graph 1267 {\n";
         var links = data.links;
         for (var linkCounter = 0; linkCounter < links.length; linkCounter++) {
           link = links[linkCounter];
-          link0 = fixIdCase(link[0]).replace(/\./, '_');
-          link1 = link[1].replace(/\./, '_');
-          linkString += link0 + ' -- ' + link1 + ';\n';
+
+          if (link[0]) {
+            link0 = fixIdCase(link[0]).replace(/\./, '_');
+            link1 = link[1].replace(/\./, '_');
+            linkString += link0 + ' -- ' + link1 + ';\n';
+          } else {
+            link0 = fixIdCase(link.source).replace(/\./, '_');
+            link1 = (link.target).replace(/\./, '_');
+            linkString += link0 + ' -- ' + link1 + ';\n';
+          }
+
         }
         linkString += '}';
         fse.writeFileSync(dotFileLocalOutputFileNameAndPath, linkString, fsOptions);
         callback();
       },
 
+      function (callback) {
+        logger.debug(__filename, 'line', __line, '; function #:', ++functionCount);
+        validateNodeIds(data);
+        callback();
+      },
+
+      // write intermediate data file for debugging
+      function (callback) {
+        if (data) {
+          var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'narr_links-L' + __line + '-collectedLinks.json';
+          utilities_aq_viz.stringifyAndWriteJsonDataFile(data, writeJsonPathAndFileName);
+          utilities_aq_viz.stringifyAndWriteJsonDataFile(data, dataJsonLocalOutputFileNameAndPath);
+        }
+        callback();
+      },
+
       // summarize output
       // compare number of comment links to number of narrative links
       function (callback) {
-
+        validateNodeIds(data);
         // dataJsonLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/data2.json';
         // var configJsonFileName = __dirname + '/../data/config/config.json';
         var buffer = fse.readFileSync(dataJsonLocalOutputFileNameAndPath, fsOptions);
         data = JSON.parse(buffer);
         logger.debug(__filename, 'line', __line, '; data.nodes.length = ', data.nodes.length);
+        logger.debug(__filename, 'line', __line, '; data.links.length = ', data.links.length);
 //        logger.debug(__filename, 'line', __line, '; data.comments.links.length = ', data.comments.links.length);
         //       logger.debug(__filename, 'line', __line, '; data.narratives.links.length = ', data.narratives.links.length);
         //       logger.debug(__filename, 'line', __line, '; data.links.length = ', data.links.length);
@@ -545,8 +577,44 @@ var parse2ListsCommittee = function (committee) {
         logger.error(__filename, 'line', __line, '; Error: ' + err);
       }
     }
-  )
-  ;
+  );
+};
+
+var validateNodeIds = function (data) {
+//  var nodes = data.nodes;
+  var nodeMap = new Map();
+
+  (data.nodes).forEach(function (node) {
+    nodeMap.add(node.id, node);
+  });
+var link;
+  for (var linkCounter = 0; linkCounter < data.links.length; linkCounter++) {
+link = data.links[linkCounter];
+//  (data.links).forEach(function (link) {
+//    if (link) {
+
+      var linkSource = link.source;
+      var linkTarget = link.target;
+      if (!nodeMap.get(link.source) || (!nodeMap.get(link.target))) {
+
+//      First, find the index of the element you want to remove:
+
+//        var array = [2, 5, 9];
+//      var index = links.indexOf(link);
+        //    Note: browser support for indexOf is limited, it is not supported in IE7-8.
+
+        //  Then remove it with splice:
+
+        if (linkCounter > -1) {
+          data.links.splice(linkCounter, 1);
+        }
+//      The second parameter o
+
+        // delete link;
+        console.log('Error, missing node source or target: ', linkSource, linkTarget);
+      }
+    }
+  //}
 };
 
 // parse each the html narrative list files
@@ -603,7 +671,7 @@ var syncParseHtmlListPage = function (htmlString, indivOrEntityString) {
       throw {
         name: 'PageNotFoundError',
         message: '; Server returned: ' + responseBody.match('Error: Page Not Found')
-      }
+      };
     }
 
     // re 'handler', see the following lines below:
@@ -781,10 +849,15 @@ String.prototype.replaceAt = function (index, character) {
 };
 
 var fixIdCase = function (inString) {
-  if (inString.substring(2, 3) === 'E') {
-    return inString.replaceAt(2, 'e');
+  if (inString) {
+    if (inString.substring(2, 3) === 'E') {
+      return inString.replaceAt(2, 'e');
+    } else {
+      return inString;
+    }
   } else {
-    return inString;
+
+    logger.error(__filename, 'line', __line, '; inString null or not defined');
   }
 };
 
@@ -1029,6 +1102,44 @@ var addPairedIdsToNodes = function () {
   });
 };
 
+var addSourceTargetObjectsToLinks = function () {
+  var nodes = data.nodes;
+  data.linkSet = data.linkSet || new Set();
+  var concatenatedPairedIds;
+  data.links = data.links || [];
+  var linkSet = data.linkSet;
+  var pairedNodeIds;
+  var sourceTargetObject;
+
+  if (nodes) {
+
+    nodes.forEach(function (node) {
+        if (node && node.pairedNodeIdsFromNarrative && node.pairedNodeIdsFromNarrative.length > 0) {
+          for (var pairedIdCounter = 0; pairedIdCounter < node.pairedNodeIdsFromNarrative.length; pairedIdCounter++) {
+            pairedNodeIds = node.pairedNodeIdsFromNarrative[pairedIdCounter];
+
+            if (pairedNodeIds && pairedNodeIds[0] && pairedNodeIds[1]) {
+              concatenatedPairedIds = fixIdCase(pairedNodeIds[0]) + pairedNodeIds[1];
+
+              sourceTargetObject = {};
+              sourceTargetObject.source = fixIdCase(pairedNodeIds[0]);
+              sourceTargetObject.target = fixIdCase(pairedNodeIds[1]);
+
+              if (concatenatedPairedIds && linkSet && linkSet.add(concatenatedPairedIds)) {
+
+                (data.links).push(sourceTargetObject);
+
+              } else {
+                logger.debug(__filename, 'line', __line, '; linkSet.add(concatenatedPairedIds) = ', linkSet.add(concatenatedPairedIds));
+              }
+            }
+          }
+        }
+      }
+    );
+  }
+};
+
 var addPairedIdsToLinks = function () {
   var nodes = data.nodes;
   data.linkSet = data.linkSet || new Set();
@@ -1047,7 +1158,7 @@ var addPairedIdsToLinks = function () {
               if (concatenatedPairedIds && linkSet && linkSet.add(concatenatedPairedIds)) {
                 (data.links).push(pairedNodeIds);
               } else {
-                logger.debug(__filename, 'line', __line, '; linkSet.add(concatenatedPairedIds) = ',linkSet.add(concatenatedPairedIds));
+                logger.debug(__filename, 'line', __line, '; linkSet.add(concatenatedPairedIds) = ', linkSet.add(concatenatedPairedIds));
               }
             }
           }
@@ -1320,7 +1431,7 @@ var getCleanId = function (referenceNumber) {
     result1 = referenceNumber.replace(/\.\./gi, '.');
     result2 = result1.replace(/ÃÂ/gi, '');
     result3 = result2.replace(/QIA/gi, 'QI.A');
-    result4 = result3replace(/Q\.E\.262\.08/gi, 'QI.E.262.08');
+    result4 = result3.replace(/Q\.E\.262\.08/gi, 'QI.E.262.08');
 //    logger.debug(__filename, 'line', __line, '; refNumRegexMatch =', refNumRegexMatch, '; referenceNumber = ', referenceNumber);
   } catch (err) {
     logger.error(__filename, 'line', __line, '; Error: ', err, '; referenceNumber =', referenceNumber);
@@ -1346,44 +1457,44 @@ var getKeys = function (pob) {
   return keys;
 };
 /*
-// count the unique links for each node
-var countLinks = function (data) {
-  var nodeCounter;
-  // loop through each node
-  data.nodes.forEach(function (node) {
-    nodeCounter = 0;
-    // nodeCounter = 0;
-    var keySet = new Set();
-    var keyAdded1, keyAdded2;
-    var linkConcatKey1, linkConcatKey2;
-    // loop through each link
-    data.links.forEach(function (link) {
-      // delete a link if source and target are the same
-      if (link.source === link.target) {
-        delete data.link;
-        logger.debug(__filename, 'line', __line, 'deleted ', data.link, ' because link.source === link.target');
-      } else {
-        // increment the link count if the node.id is either the link source or link target
-        if (node.id === link.source || node.id === link.target) {
-          linkConcatKey1 = link.source + link.target;
-          linkConcatKey2 = link.target + link.source;
-          keyAdded1 = keySet.add(linkConcatKey1);
-          keyAdded2 = keySet.add(linkConcatKey2);
-          if (keyAdded1 && keyAdded2) {
-            nodeCounter++;
-          }
-        }
-      }
-    });
-    node.linkCount = nodeCounter;
-//    node.linkCount = node.connectionObjectsFromNarrative.length;
-    if (node.nodeNumber % logModulus === 0) {
-      // logger.debug(__filename, 'line', __line, '; node.nodeNumber = ', node.nodeNumber, '; nodeCounter = ', nodeCounter);
-//      logger.debug(__filename, 'line', __line, '; node.nodeNumber = ', node.nodeNumber, '; node.links.length = ', node.links.length, 'node.linksFromNarrArray.length = ', node.linksFromNarrArray.length, '; ', node.links.length, '/', node.linksFromNarrArray.length);
-    }
-  });
-};
-*/
+ // count the unique links for each node
+ var countLinks = function (data) {
+ var nodeCounter;
+ // loop through each node
+ data.nodes.forEach(function (node) {
+ nodeCounter = 0;
+ // nodeCounter = 0;
+ var keySet = new Set();
+ var keyAdded1, keyAdded2;
+ var linkConcatKey1, linkConcatKey2;
+ // loop through each link
+ data.links.forEach(function (link) {
+ // delete a link if source and target are the same
+ if (link.source === link.target) {
+ delete data.link;
+ logger.debug(__filename, 'line', __line, 'deleted ', data.link, ' because link.source === link.target');
+ } else {
+ // increment the link count if the node.id is either the link source or link target
+ if (node.id === link.source || node.id === link.target) {
+ linkConcatKey1 = link.source + link.target;
+ linkConcatKey2 = link.target + link.source;
+ keyAdded1 = keySet.add(linkConcatKey1);
+ keyAdded2 = keySet.add(linkConcatKey2);
+ if (keyAdded1 && keyAdded2) {
+ nodeCounter++;
+ }
+ }
+ }
+ });
+ node.linkCount = nodeCounter;
+ //    node.linkCount = node.connectionObjectsFromNarrative.length;
+ if (node.nodeNumber % logModulus === 0) {
+ // logger.debug(__filename, 'line', __line, '; node.nodeNumber = ', node.nodeNumber, '; nodeCounter = ', nodeCounter);
+ //      logger.debug(__filename, 'line', __line, '; node.nodeNumber = ', node.nodeNumber, '; node.links.length = ', node.links.length, 'node.linksFromNarrArray.length = ', node.linksFromNarrArray.length, '; ', node.links.length, '/', node.linksFromNarrArray.length);
+ }
+ });
+ };
+ */
 var processDateUpdatedArray = function (d) {
   var dateUpdatedArrayString = '';
   if (typeof d['LAST_DAY_UPDATED'] === 'undefined') {
@@ -1462,6 +1573,30 @@ var sortArrayOfPairedIds = function (arrayOfPairedIds) {
   arrayOfPairedIds.sort(function (pairedIdA, pairedIdB) {
     var valueA = fixIdCase(pairedIdA[0]) + pairedIdA[1];
     var valueB = fixIdCase(pairedIdB[0]) + pairedIdB[1];
+    if (valueA > valueB) {
+      return 1;
+    }
+    if (valueA < valueB) {
+      return -1;
+    }
+    // a must be equal to b
+    return 0;
+  });
+};
+
+var sortSourceTargetIds = function (arrayOfSourceTargetObjects) {
+  var temp;
+  arrayOfSourceTargetObjects.forEach(function (object) {
+    if (object.source > object.target) {
+      temp = object.source;
+      object.source = object.target;
+      object.target = temp;
+    }
+  });
+
+  arrayOfSourceTargetObjects.sort(function (objectA, objectB) {
+    var valueA = fixIdCase(objectA.source) + objectA.target;
+    var valueB = fixIdCase(objectB.source) + objectB.target;
     if (valueA > valueB) {
       return 1;
     }
