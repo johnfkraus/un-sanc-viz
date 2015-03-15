@@ -1,3 +1,10 @@
+
+window.onerror = function(msg, url, line) {
+  console.log(msg + ' at ' + url + ':' + line);
+  // $('body').append(msg + ' at ' + url + ':' + line);
+};
+
+
 var Network, RadialPlacement, activate, root;
 var selected = {},
   root = typeof exports !== "undefined" && exports !== null ? exports : this;
@@ -11,7 +18,7 @@ Network = function () {
     strokeFor, tooltip, update, updateCenters, updateLinks, updateNodes, width;
   var docClosePadding = 8;
   var topStuffNegativeMargin = 10;
-
+var circleRadius, countExtent;
   var w = window.innerWidth;
   var h = window.innerHeight;
   width = w - 20; // 1152;
@@ -36,7 +43,9 @@ Network = function () {
   layout = "force";
   filter = "all";
   sort = "arts";
-staticRadius = 10;
+
+
+  staticRadius = 10;
 
 
   //  groupCenters will store our radial layout for
@@ -77,6 +86,15 @@ staticRadius = 10;
     //  format our data
     allData = setupData(data);
     //  create our svg and groups
+    // the html page contains this:
+    // <div id="container" class="container">
+    //    ...
+    //    <div id="svg">
+    //      <g id='links'></g>
+    //      <g id='nodes'></g>
+    //    </div>
+    // </div>
+
     viz = d3.select(selection)
       .append("svg")
       .attr("width", width)
@@ -155,6 +173,7 @@ staticRadius = 10;
 //  and the network needs to be reset.
 
   update = function () {
+    maxRadiusSelect = $('#circle_radius_max').val();
     // forceChargeParam = $("#force_charge_select").val();
     var targets;
     //  filter data to show based on current filter settings.
@@ -196,12 +215,15 @@ staticRadius = 10;
 
   network.toggleLayout = function (newLayout, changeInt) {
     force.stop();
+    maxRadiusSelect = parseInt($('#max_radius_select').val());
+    maxRadius = maxRadiusSelect;
     setLayout(newLayout, changeInt);
     return update();
   };
 // where did this method come from????
   network.toggleForce = function (newLayout) {
     force.stop();
+    maxRadiusSelect = $('#circle_radius_max').val();
     network.forceChargeParam = $('#force_charge_select')
       .val();
     setLayout(newLayout);
@@ -210,18 +232,21 @@ staticRadius = 10;
 //  Public function to switch between filter options
   network.toggleFilter = function (newFilter) {
     force.stop();
+    maxRadiusSelect = $('#circle_radius_max').val();
     setFilter(newFilter);
     return update();
   };
 //  Public function to switch between sort options
   network.toggleSort = function (newSort) {
     force.stop();
+    maxRadiusSelect = $('#circle_radius_max').val();
     setSort(newSort);
     return update();
   };
 //  Public function to update highlighted nodes from search
   network.updateSearchIdLinkClick = function (id) {
     var searchRegEx;
+    maxRadiusSelect = $('#circle_radius_max').val();
     searchRegEx = new RegExp(id, "i"); // .toLowerCase());
     var searchResult = [];
     node.each(function (d) {
@@ -237,6 +262,7 @@ staticRadius = 10;
 
   network.resize = function (showDoc) {
     console.log("viz.js 1120 resize(showDoc = ", showDoc, ")");
+    maxRadiusSelect = $('#circle_radius_max').val();
     var docHeight = 0,
       svgHeight = 0,
       docContainer = $('#doc-container'),
@@ -271,6 +297,7 @@ staticRadius = 10;
   // Public function to update highlighted nodes from search
   network.updateColor3 = function (searchTermName) {
     // reset the none/entities/individuals radio buttons to "none"
+    maxRadiusSelect = $('#circle_radius_max').val();
     $('input[name="noneEntIndiv"][value=""]').prop('checked', true);
     if (consoleLog) {
       console.log("viz.js updateColor() searchTermName = ", searchTermName, "; node_color_select = ", $('#node_color_select').val());
@@ -288,7 +315,7 @@ staticRadius = 10;
         element.style("fill", "#F38630")
           .style("stroke-width", 2.0)
           .style("stroke", "#555")
-          .r === "44";
+          .attr("r", "44");
 
         return d.searched = true;
       } else {
@@ -316,14 +343,18 @@ staticRadius = 10;
   };
 
   // Public function to update highlighted nodes
-  network.updateMaxRadius = function (maxRadius) {
+//   network.updateMaxRadius = function (maxRadius) {
+    network.updateMaxRadius = function (maxRadiusSelect) {
+
+//    maxRadius = maxRadiusSelect;
+
     return node.each(function (d) {
+      maxRadiusSelect = $('#circle_radius_max').val();
       var element = d3.select(this);
 
+     // node.linkCount = staticRadius;
 
-      node.linkCount = staticRadius;
-
-      element.style("radius", node.linkCount);
+      element.r = node.linkCount;
       return d.searched = true;
     })
   };
@@ -331,6 +362,7 @@ staticRadius = 10;
   // Public function to update highlighted nodes from search
   network.updateSearchId = function (searchTermId) {
     var searchRegEx;
+    maxRadiusSelect = $('#circle_radius_max').val();
     searchRegEx = new RegExp(searchTermId, "i"); // .toLowerCase());
     return node.each(function (d) {
       var element, match;
@@ -340,13 +372,16 @@ staticRadius = 10;
       if (searchTermId.length > 0 && match >= 0) {
         element.style("fill", "#F38630")
           .style("stroke-width", 2.0)
-          .style("stroke", "#555");
+          .style("stroke", "#555")
+          .attr("r", "45");
+
         return d.searched = true;
       } else {
         d.searched = false;
         return element.style("fill", function (d) {
           return nodeColors(d[$('#node_color_select').val()]);
         })
+          .attr("r", "47")
           .style("stroke-width", 1.0);
       }
     });
@@ -354,6 +389,7 @@ staticRadius = 10;
   // Public function to update highlighted nodes from search
   network.updateSearchListedOrNot = function (searchTermListedOrNot) {
     var searchRegEx;
+    maxRadiusSelect = $('#circle_radius_max').val();
     searchRegEx = new RegExp(searchTermListedOrNot, "i"); // .toLowerCase());
     return node.each(function (d) {
       var element, match;
@@ -363,13 +399,16 @@ staticRadius = 10;
       if (searchTermListedOrNot.length > 0 && match >= 0) {
         element.style("fill", "#F38630")
           .style("stroke-width", 2.0)
-          .style("stroke", "#555");
+          .style("stroke", "#555")
+          .attr("r", "55");
+
         return d.searched = true;
       } else {
         d.searched = false;
         return element.style("fill", function (d) {
           return nodeColors(d[$('#node_color_select').val()]);
         })
+          .attr("r", "58")
           .style("stroke-width", 1.0);
       }
     });
@@ -387,7 +426,8 @@ staticRadius = 10;
       if (searchTermName.length > 0 && match >= 0) {
         element.style("fill", "#F38630")
           .style("stroke-width", 2.0)
-          .style("stroke", "#555");
+          .style("stroke", "#555")
+          .r='77';
         return d.searched = true;
       } else {
         d.searched = false;
@@ -395,6 +435,7 @@ staticRadius = 10;
           // return nodeColors(d.target);
           return nodeColors(d[$('#node_color_select').val()]);
         })
+          .attr("r", "99")
           .style("stroke-width", 1.0);
       }
     });
@@ -406,21 +447,27 @@ staticRadius = 10;
     node.remove();
     return update();
   };
-
+  maxRadiusSelect = parseInt($('#max_radius_select').val());
   // called once to clean up raw data and switch links to point to node instances.  Returns modified data
   setupData = function (data) {
     // initialize circle radius scale
     // parseInt( stringToParse, 10 );
     // countExtent = d3.extent(data.nodes, (d) -> d.playcount)
-
-    var circleRadius, count, countExtent, nodesMap;
+    // var circleRadius;
+    var count, nodesMap;
     var result;
+//    var countExtent;
 
     // countExtent is an Array with value 1 = minimum link count (0) and value 2 = maximum link count;
 //    console.log('$(\'#max_radius_select\').val() = ', $('#max_radius_select').val());
 //    console.log('circleRadius = ', circleRadius);
 
     // d is a sanctioned node from the array 'nodes' in the Object 'data'.  d has a 'radius' among its properties
+
+    // # d3.extent(array[, accessor])
+    // Returns the minimum and maximum value in the given array using natural order. This is equivalent to calling d3.min and d3.max simultaneously.
+    // # d3.extent(array[, accessor])
+    // Returns the minimum and maximum value in the given array using natural order. This is equivalent to calling d3.min and d3.max simultaneously.
 
     countExtent = d3.extent(data.nodes, function (d) {
       //result = parseInt(d.linkCount, 10);
@@ -430,10 +477,15 @@ staticRadius = 10;
       return parseInt(d.linkCount, 10);
     });
 
-    maxRadiusSelect = parseInt($('#max_radius_select').val());
+
+// # d3.scale.sqrt()
+    // Constructs a new power scale with the default domain [0,1], the default range [0,1], and the exponent .5. This method is shorthand for:
+    // d3.scale.pow().exponent(.5)
+    // The returned scale is a function that takes a single argument x representing a value in the input domain; the return
+    // value is the corresponding value in the output range. Thus, the returned scale is equivalent to the sqrt function for numbers; for example sqrt(0.25) returns 0.5.
 
     circleRadius = d3.scale.sqrt()
-      .range([3, parseInt($('#max_radius_select').val())])
+      .range([3, maxRadiusSelect])   // parseInt($('#max_radius_select').val())])
       .domain(countExtent);
 // countExtent is an Array with value 1 = minimum link count (0) and value 2 = maximum link count;
 //    console.log('$(\'#max_radius_select\').val() = ', $('#max_radius_select').val());
@@ -451,9 +503,11 @@ staticRadius = 10;
       // return n.radius = (n.linkCount);
       // determine radius of each node circle
 
-      var circleRadiusResult = circleRadius(Math.pow(staticRadius * 3, 0.9));
+      var circleRadiusResult = circleRadius(Math.pow(n.linkCount * 3, 0.9));
 //      console.log('n.id = ', n.id, '; n.linkCount = ', n.linkCount, '; circleRadius(Math.pow(n.linkCount * 3, 0.9)) = ', circleRadius(Math.pow(n.linkCount * 3, 0.9)));
-      return n.radius = circleRadius(Math.pow(staticRadius * 3, 0.9));
+      n.radius = circleRadius(Math.pow(n.linkCount * 3, 0.9));
+
+      return n.radius = circleRadius(Math.pow(n.linkCount * 3, 0.9));
 
 //      var circleRadiusResult = circleRadius(Math.pow(n.linkCount * 3, 0.9));
 //      console.log('n.id = ', n.id, '; n.linkCount = ', n.linkCount, '; circleRadius(Math.pow(n.linkCount * 3, 0.9)) = ', circleRadius(Math.pow(n.linkCount * 3, 0.9)));
@@ -490,9 +544,16 @@ staticRadius = 10;
   };
 //  called once to clean up raw data and switch links to point to node instances.  Returns modified data
   network.updateData2 = function (data) {
+
+
+
+    circleRadius = d3.scale.sqrt()
+      .range([3, maxRadiusSelect])   // parseInt($('#max_radius_select').val())])
+      .domain(countExtent);
     allData = setupData2(data);
     link.remove();
     node.remove();
+
     return update();
   };
 
@@ -503,7 +564,7 @@ staticRadius = 10;
     var circleRadius, count, countExtent, nodesMap;
     var result;
 
-    // countExtent is an Array with value 1 = minimum link count (0) and value 2 = maximum link count;
+    // countExtent is an Array with value 1 = minimum link count (0) and value 2 = maximum link count, about 242;
 //    console.log('$(\'#max_radius_select\').val() = ', $('#max_radius_select').val());
 //    console.log('circleRadius = ', circleRadius);
 
@@ -514,7 +575,7 @@ staticRadius = 10;
       return parseInt(d.linkCount, 10);
     });
     circleRadius = d3.scale.sqrt()
-      .range([3, $('#max_radius_select').val()])
+      .range([3, maxRadiusSelect])  // $('#max_radius_select').val()])
       .domain(countExtent);
 //      .domain(countExtent);
     data.nodes.forEach(function (n) {
@@ -666,30 +727,30 @@ staticRadius = 10;
   filterLinks = function (allLinks, curNodes) {
     curNodes = mapNodes(curNodes);
     return allLinks.filter(function (l) {
-      if (!l.target  || !l.target.id ) {
-        console.log('filename: viz.js, line approx. 616;  Error null target where l.source.id = ', l.source.id, '; l.source = ', JSON.stringify(l.source));
+      if (!l.target || !l.target.id) {
+        console.log('filename: viz.js, line ', (new Error).lineNumber ,';  Error null target where l.source.id = ', l.source.id, '; l.source = ', JSON.stringify(l.source));
         /*
-        throw {
-          name: 'undefErr',
-          message: ''
-        }
-        */
-        alert('hello');
+         throw {
+         name: 'undefErr',
+         message: ''
+         }
+         */
+        // alert('hello');
       }
       try {
         if (!l.target.id) {
-          console.log('filename: viz.js, line approx. 620; Error null target id where l.source.id = ', l.source.id, '; l.source = ', JSON.stringify(l.source));
+          console.log('filename: viz.js, line ', (new Error).lineNumber ,'; Error null target id where l.source.id = ', l.source.id, '; l.source = ', JSON.stringify(l.source));
         }
       } catch (err) {
-        console.log('filename: viz.js, line approx. 688;  Error: ', err, '; null target id where l.source.id = ', l.source.id, '; l.source = ', JSON.stringify(l.source).substring(0, 100));
+        console.log('filename: viz.js, line ', (new Error).lineNumber ,'; Error: ', err, '; null target id where l.source.id = ', l.source.id, '; l.source = ', JSON.stringify(l.source).substring(0, 100));
       }
       try {
-        if ((typeof curNodes.get(l.target.id) !== 'undefined') && (curNodes.get(l.target.id) !== null)) {
+        if (curNodes.get(l.target.id))  {
           return curNodes.get(l.source.id) && curNodes.get(l.target.id);
-          return curNodes.get(l.source.id).substring(0, 100) && curNodes.get(l.target.id).substring(0, 100);
+         // return curNodes.get(l.source.id).substring(0, 100) && curNodes.get(l.target.id).substring(0, 100);
         }
       } catch (err) {
-        console.log('filename: viz.js, line approx. 623;  Error: ', err.toString().substring(0, 100));
+        console.log('filename: viz.js, line ', (new Error).lineNumber ,';  Error: ', err.toString().substring(0, 100));
 
       }
     });
@@ -710,12 +771,13 @@ staticRadius = 10;
       .attr("cy", function (d) {
         return d.y;
       })
-      .attr("r", function (d) {
-
-        return (staticRadius);
-        // return (d.radius);
-
+      .attr("r", function(d) {
+        return circleRadius(Math.pow(d.linkCount * 3, 0.9));
       })
+//      .attr("r", function (d) {
+//        return (d.radius); // staticRadius);
+        // return (d.radius);
+//      })
       .style("fill", function (d) {
         return nodeColors(d[$('#node_color_select').val()]);
       })
@@ -821,8 +883,11 @@ staticRadius = 10;
   setMaxRadius = function (newLayout, changeInt) {
     layout = newLayout;
     changeInt = changeInt || 0;
-    var radius = $('#circle_radius_max').val();
+
+    maxRadiusSelect = $('#circle_radius_max').val();
     // var newRadius = parseInt(forceCharge, 10) + changeInt;
+    // maxRadiusSelect = radius;
+
     if (layout === "force") {
       return force.on("tick", forceTick)
         .charge(newForceCharge)
@@ -1154,7 +1219,21 @@ $(function () {
       });
     $("#max_radius_select")
       .on("change", function (e) {
+
+        countExtent = d3.extent(data.nodes, function (d) {
+          //result = parseInt(d.linkCount, 10);
+          result = parseInt(d.linkCount, 10); // 10 is merely the radix; we are using decimal, base 10
+          // if the node has 4 links, the radius is set to 4, a number, not a string representation of  anumber
+          d.radius = d.linkCount;
+          return parseInt(d.linkCount, 10);
+        });
+
+
+        maxRadiusSelect = parseInt($('#max_radius_select').val());
         activate("layouts", "force");
+        circleRadius = d3.scale.sqrt()
+          .range([3, maxRadiusSelect])   // parseInt($('#max_radius_select').val())])
+          .domain(countExtent);
         return myNetwork.toggleLayout("force");
       });
     if (false) {

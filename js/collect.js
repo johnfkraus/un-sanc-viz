@@ -8,13 +8,18 @@
 //==========================
 
 // do we want lots of logging messages for debugging (if so, set consoleLog = true)
-var utilities_aq_viz = require('./utilities_aq_viz');
-var consoleLog = false;
-// skip downloading 300+ narrative files and use locally stored files instead; for debugging
-var useLocalConsolidatedListFile = true;
-var useLocalNarrativeFiles = false;
 
+var app = require('./app.js');
+// var logger = app.logger; //
 var logger = require('./tracer-logger-config.js').logger;
+// RUN CONFIGURATION
+// skip downloading 300+ narrative files and use locally stored files instead; for debugging
+var useLocalConsolidatedListFile = app.useLocalListFiles;
+var useLocalNarrativeFiles = app.useLocalNarrativeFiles;
+var consoleLog = app.consoleLog;
+var utilities_aq_viz = require('./utilities_aq_viz');
+
+
 var logModulus = utilities_aq_viz.logModulus;
 var substringChars = utilities_aq_viz.truncateToNumChars;
 var linenums = require('./linenums.js');
@@ -75,7 +80,7 @@ var anchor,
 // var functionCount = 0;
 var indivLinks = [];
 var entLinks = [];
-var dataPath = __dirname + '/../data/committees/consolidated/data.json';
+var dataPath = __dirname + '/../data/committees/consolidated/data_consolidated_list.json';
 var writeJsonOutputDebuggingDirectory = __dirname + '/../data/committees/consolidated/debug/';
 var listUrl = 'http://www.un.org/sc/committees/consolidated.xml';
 var individualsLocalOutputFileNameAndPath = __dirname + '/../data/narrative_lists/individuals_associated_with_Al-Qaida.json';
@@ -113,7 +118,7 @@ var collect = function () {
             fse.mkdirs(__dirname + '/../data/narrative_summaries/');
           }
           // fse.removeSync(__dirname + '/../data/narrative_lists/');
-          // fse.removeSync(dataPath);   // deletes /data/output/data.json
+          // fse.removeSync(dataPath);   // deletes /data/output/data_consolidated_list.json
           // re-create deleted directories
           // fse.mkdirs(writeJsonOutputDebuggingDirectory);
           //  fse.mkdirs(__dirname + '/../data/narrative_lists/');
@@ -177,9 +182,9 @@ var collect = function () {
           callback();
         },
 
-        // update the data.json file; write the intermediate file for debugging
+        // update the data_consolidated_list.json file; write the intermediate file for debugging
         function (callback) {
-          var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'data-collect-L' + __line + '-raw_data.json';
+          var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'data-collect-L' + __line + '-raw_data_consolidated_list.json';
           utilities_aq_viz.stringifyAndWriteJsonDataFile(data, writeJsonPathAndFileName);
           utilities_aq_viz.stringifyAndWriteJsonDataFile(data, dataPath);
           callback();
@@ -187,10 +192,10 @@ var collect = function () {
 
         // read 'raw' unprocessed json data file created from raw XML file data feed
         function (callback) {
-          // var dataPath = __dirname + '/../data/output/data.json';
+          // var dataPath = __dirname + '/../data/output/data_consolidated_list.json';
           data = JSON.parse(fse.readFileSync(dataPath, fsOptions));
           if (consoleLog) {
-            logger.info(__filename, 'line', __line, '; function #:', ++functionCount, '; read data.json, consoleLog = ', consoleLog);
+            logger.info(__filename, 'line', __line, '; function #:', ++functionCount, '; read data_consolidated_list.json, consoleLog = ', consoleLog);
           }
           callback();
         },
@@ -216,7 +221,7 @@ var collect = function () {
           var oldRefNumRegexReplace;
 
           if (consoleLog) {
-            logger.debug('\n ', __filename, 'line', __line, '; function #:', ++functionCount, '; normalize data.json');
+            logger.debug('\n ', __filename, 'line', __line, '; function #:', ++functionCount, '; normalize data_consolidated_list.json');
           }
           data.entities = data.CONSOLIDATED_LIST.ENTITIES.ENTITY;
           data.indivs = data.CONSOLIDATED_LIST.INDIVIDUALS.INDIVIDUAL;
@@ -296,15 +301,15 @@ var collect = function () {
           callback();
         },
 
-        // update the data.json file; write the intermediate file for debugging
+        // update the data_consolidated_list.json file; write the intermediate file for debugging
         function (callback) {
-          var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'data-collect-L' + __line + '-normzd1_data.json';
+          var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'data-collect-L' + __line + '-normzd1_data_consolidated_list.json';
           utilities_aq_viz.stringifyAndWriteJsonDataFile(data, writeJsonPathAndFileName);
           utilities_aq_viz.stringifyAndWriteJsonDataFile(data, dataPath);
           callback();
         },
 
-        // update the data.json file; write the intermediate file for debugging
+        // update the data_consolidated_list.json file; write the intermediate file for debugging
         function (callback) {
 
           callback();
@@ -316,7 +321,7 @@ var collect = function () {
          // write normalized json data to local file for debugging
          function (callback) {
          // var myFile = __dirname + '/../data/output/' + fileName;
-         var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'conList-L' + __line + '-writedata.json';
+         var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'conList-L' + __line + '-writedata_consolidated_list.json';
          utilities_aq_viz.stringifyAndWriteJsonDataFile(data, writeJsonPathAndFileName);
          utilities_aq_viz.stringifyAndWriteJsonDataFile(data, dataPath);
          if (consoleLog) {
@@ -385,7 +390,7 @@ var collect = function () {
 
          // write intermediate data file for debugging
          function (callback) {
-         var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'conList-L' + __line + '-bagData.json';
+         var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'conList-L' + __line + '-bagdata_consolidated_list.json';
          utilities_aq_viz.stringifyAndWriteJsonDataFile(data, writeJsonPathAndFileName);
          utilities_aq_viz.stringifyAndWriteJsonDataFile(data, dataPath);
          callback();
@@ -560,7 +565,7 @@ var collect = function () {
 
          // write intermediate data file for debugging
          function (callback) {
-         var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'conList-L' + __line + '-readdata.json';
+         var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'conList-L' + __line + '-readdata_consolidated_list.json';
          utilities_aq_viz.stringifyAndWriteJsonDataFile(data, writeJsonPathAndFileName);
          utilities_aq_viz.stringifyAndWriteJsonDataFile(data, dataPath);
          callback();
@@ -600,7 +605,7 @@ var collect = function () {
          function (callback) {
          var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'conList-L' + __line + '-generatedNarrFileNames.json';
          utilities_aq_viz.stringifyAndWriteJsonDataFile(data, writeJsonPathAndFileName);
-         // var dataPath = __dirname + '/../data/output/data.json';
+         // var dataPath = __dirname + '/../data/output/data_consolidated_list.json';
          utilities_aq_viz.stringifyAndWriteJsonDataFile(data, dataPath);
          callback();
          },
@@ -614,7 +619,7 @@ var collect = function () {
          var narrative, node, nodeNarrFileName, trimmedNarrative, trimmedLabeledNarrative, writeNarrativesFilePath;
          logger.debug('\n ', __filename, 'line', __line, '; function #:', ++functionCount, '; ');
          // read the data file; each node has a narrativeFileName property
-         data = JSON.parse(fse.readFileSync(__dirname + '/../data/output/data.json', fsOptions));
+         data = JSON.parse(fse.readFileSync(__dirname + '/../data/output/data_consolidated_list.json', fsOptions));
          var nodes = data.nodes;
          // var trimmedLabeledNarrative;
          for (var nodeCounter = 0; nodeCounter < nodes.length; nodeCounter++) {
@@ -659,7 +664,7 @@ var collect = function () {
          var readNarrativeFileNameAndPath, narrative, node, nodeNarrFileName;
          logger.debug(__filename, 'line', __line, '; function #:', ++functionCount, '; ');
          // read the data file; each node has a narrativeFileName property
-         data = JSON.parse(fse.readFileSync(__dirname + '/../data/output/data.json', fsOptions));
+         data = JSON.parse(fse.readFileSync(__dirname + '/../data/output/data_consolidated_list.json', fsOptions));
          var nodes = data.nodes;
          for (var nodeCounter = 0; nodeCounter < nodes.length; nodeCounter++) {
          node = nodes[nodeCounter];

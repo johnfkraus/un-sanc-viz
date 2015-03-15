@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <script>
+        window.jQuery || document.write('<script src="js/libs/jquery-1.7.2.js"><\/script>')
+    </script>
+
+
+    <script type="text/javascript">
+        $(function() {
+            window.onerror = function(msg, url, line) {
+                console.log(msg + ' at ' + url + ':' + line);
+               // $('body').append(msg + ' at ' + url + ':' + line);
+            };
+
+
+            var gOldOnError = window.onerror;
+// Override previous handler.
+            window.onerror = function myErrorHandler(errorMsg, url, lineNumber) {
+                if (gOldOnError)
+                // Call previous handler.
+                    return gOldOnError(errorMsg, url, lineNumber);
+
+                // Just let default handler run.
+                return false;
+            }
+
+            throw {
+                name: 'gOldOnError',
+                message: '; Parameter \'htmlString\' = '
+            };
+
+            // Handler for .ready() called.
+            var stack = new Error().stack;
+
+            var thisline = new Error().lineNumber;
+            console.log('thisline = ' , new Error().lineNumber);
+
+        });
+</script>
+
+
+</head>
+<body>
+
+</body>
+</html>

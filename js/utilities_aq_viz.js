@@ -1,9 +1,13 @@
 /* utilities_aq_vis.js */
-
-var consoleLog = false;
+var app = require('./app.js');
+var consoleLog = app.consoleLog;
+// var consoleLog = false;
+var Set = require('backpack-node').collections.Set;
 var truncateToNumChars = 100;
 // var logger = require('tracer').colorConsole({level:'warn'});
 var logger = require('./tracer-logger-config.js').logger;
+// var logger = app.logger;
+// var logger = require('./app.js').logger;
 var rotate = require('log-rotate');
 var primes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127, 131, 137, 139, 149, 151, 157, 163, 167, 173];
 var logModulus = primes[Math.floor(Math.random() * primes.length)];
@@ -21,21 +25,45 @@ var addFileLabel = function (inString, url) {
   return '<!-- ' + url + ' -->' + inString;
 };
 
-var getStackTrace = function (err) {
-  var i, j, k;
-  // ...
-  // j acquires some interesting value
-  // Who called foo when j took this interesting value?
-  //
-  //  var e = new Error('dummy');
-  var stack = err.stack.replace(/^[^\(]+?[\n$]/gm, '')
-    .replace(/^\s+at\s+/gm, '')
-    .replace(/^Object.<anonymous>\s*\(/gm, '{anonymous}()@')
-    .split('\n');
-  logger.error(stack);
-  // ...
-  // rest of the code
+// count the unique links for each node
+var countLinks = function (data) {
+  var linkCounter;
+  // loop through each node
+  data.nodes.forEach(function (node) {
+    linkCounter = 0;
+    // linkCounter = 0;
+    var keySet = new Set();
+    var keyAdded1, keyAdded2;
+    var linkConcatKey1, linkConcatKey2;
+    // loop through each link
+    data.links.forEach(function (link) {
+      // delete a link if source and target are the same
+      if (link.source === link.target) {
+        delete data.link;
+        logger.debug(__filename, 'line', __line, 'deleted ', data.link, ' because link.source === link.target');
+      } else {
+        // increment the link count if the node.id is either the link source or link target
+        if (node.id === link.source || node.id === link.target) {
+          linkConcatKey1 = link.source + link.target;
+          linkConcatKey2 = link.target + link.source;
+          keyAdded1 = keySet.add(linkConcatKey1);
+          keyAdded2 = keySet.add(linkConcatKey2);
+          if (keyAdded1 && keyAdded2) {
+            linkCounter++;
+          }
+        }
+      }
+    });
+    node.linkCount = linkCounter;
+//    node.linkCount = node.connectionObjectsFromNarrative.length;
+    if (node.nodeNumber % logModulus === 0) {
+      // logger.debug(__filename, 'line', __line, '; node.nodeNumber = ', node.nodeNumber, '; linkCounter = ', linkCounter);
+//      logger.debug(__filename, 'line', __line, '; node.nodeNumber = ', node.nodeNumber, '; node.links.length = ', node.links.length, 'node.linksFromNarrArray.length = ', node.linksFromNarrArray.length, '; ', node.links.length, '/', node.linksFromNarrArray.length);
+    }
+  });
+  return data;
 };
+
 
 var countLines = function (textFile) {
   var i;
@@ -72,7 +100,6 @@ var forceUnicodeEncoding = function (string) {
   return result.trim();
 };
 
-
 var formatMyDate = function (dateString) {
 // Basic usage
 // dateFormat.masks.hammerTime = 'yyyy-mm-dd-HHMMss';
@@ -80,6 +107,8 @@ var formatMyDate = function (dateString) {
 // Saturday, June 9th, 2007, 5:46:21 PM
 // var fileDateString = dateFormat(now, 'hammerTime');
   // var now = new Date();
+  // logger = require('./app.js').logger;
+  logger = require('./tracer-logger-config.js').logger;
   dateFormat.masks.friendly_detailed = 'dddd, mmmm dS, yyyy, h:MM:ss TT';
   dateFormat.masks.friendly_display = 'dddd, mmmm dS, yyyy';
   dateFormat.masks.file_generated_date = 'yyyy-mm-dd';
@@ -117,6 +146,25 @@ var getCleanId = function (referenceNumber) {
   }
   return refNumRegexMatch[0].trim();
 };
+
+var getStackTrace = function (err) {
+  logger = require('./tracer-logger-config.js').logger;
+  var i, j, k;
+  // ...
+  // j acquires some interesting value
+  // Who called foo when j took this interesting value?
+  //
+  //  var e = new Error('dummy');
+  var stack = err.stack.replace(/^[^\(]+?[\n$]/gm, '')
+    .replace(/^\s+at\s+/gm, '')
+    .replace(/^Object.<anonymous>\s*\(/gm, '{anonymous}()@')
+    .split('\n');
+  logger.error(stack);
+  // ...
+  // rest of the code
+};
+
+
 
 var generateNarrFileName = function (node) {
   var idSplit = (node.id).trim().split('.');
@@ -244,9 +292,12 @@ var syncWriteMyFile = function (data, localFileNameAndPath, fsOptions) {
 };
 
 var testLogging = function () {
+  logger = require('./tracer-logger-config.js').logger;
+//  app = require('./app.js');
+//  logger = logger;
   logger.debug(__filename, 'line', __line, '; logModulus = ', logModulus);
   logger.trace('hello', 'world');
-  logger.error('intention error for testing; hello %s %d %j', 'world', 123, {foo: 'bar'}, [1, 2, 3, 4], Object);
+  logger.error('Intentional error for testing; hello %s %d %j', 'world', 123, {foo: 'bar'}, [1, 2, 3, 4], Object);
 };
 
 var truncateStringToFirstNumChars = function (inString, truncateToFirstNumChars) {
@@ -320,6 +371,7 @@ var showObjectProperties = function (object) {
 
 module.exports = {
   addFileLabel: addFileLabel,
+  countLinks: countLinks,
   errorPageReturned: errorPageReturned,
   forceUnicodeEncoding: forceUnicodeEncoding,
   formatMyDate: formatMyDate,
@@ -328,7 +380,7 @@ module.exports = {
   getCleanId: getCleanId,
   getStackTrace: getStackTrace,
   logModulus: logModulus,
-  logger: logger,
+  // logger: logger,
   nodeSummary: nodeSummary,
   pad: pad,
   rotateLogFile: rotateLogFile,

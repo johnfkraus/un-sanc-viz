@@ -2,15 +2,19 @@
 //=============
 var linenums = require('./linenums.js');
 // CONFIG settings:
+
+// skip downloading 300+ narrative files and use locally stored files instead; for debugging
+var useLocalListFiles = true;
+var useLocalNarrativeFiles = true;
+// do we want lots of console.log messages for debugging (if so, set consoleLog = true)
 var consoleLog = false;
-var logger = require('tracer').colorConsole({level:'info'});
-// var logger = require('./tracer-logger-config.js');
+// var logger = require('tracer').colorConsole({level: 'info'});
+var logger = require('./tracer-logger-config.js').logger;
 // var logger = require('./libs/logger.js');
 
-// var utilities_aq_viz = require('./utilities_aq_viz');
+ var utilities_aq_viz = require('./utilities_aq_viz.js');
 var rotate = require('log-rotate');
 // var logger = require('./tracer-logger-config.js').logger;
-var parse2Lists = require('./parse2Lists.js');
 
 if (typeof define !== 'function') {
   var define = require('amdefine');
@@ -23,6 +27,8 @@ var async = require('async'),
   dateFormat = require('dateformat'),
   inspect = require('object-inspect');
 var collect = require('./collect.js');
+var parse2Lists = require('./parse2Lists.js');
+var mergeLists = require('./mergeLists.js');
 var filewalker = require('./filewalker.js');
 var functionCount = 0;
 var __filename = __filename || {};
@@ -40,20 +46,44 @@ var runApp = function () {
   async.series([
 
       function (callback) {
-        if (consoleLog) {
-          logger.debug('\n ', __filename, __line, '; Phase #:', ++functionCount, '; collect.convertXMLToJson)_');
+
+        logger.debug('\n ', __filename, __line, '; consoleLog = ', consoleLog);
+        if (true) {
+          if (consoleLog) {
+
+            logger.debug('\n ', __filename, __line, '; Phase #:', ++functionCount, '; running collect.collect())');
+            logger.debug('\n ', __filename, __line, '; useLocalListFiles = ', useLocalListFiles, '; useLocalNarrativeFiles = ', useLocalNarrativeFiles);
+          }
+          // collect.collect();
         }
-        // collect.collect();
+        callback();
+      },
+
+      function (callback) {
+        if (false) {
+          if (consoleLog) {
+            logger.debug('\n ', __filename, __line, '; Phase #:', ++functionCount, '; running parse2Lists.parse2Lists()');
+          }
+          // parse2Lists.parse2Lists();
+        }
         callback();
       },
 
       function (callback) {
         if (consoleLog) {
-          logger.debug('\n ', __filename, __line, '; Phase #:', ++functionCount, '; collect.convertXMLToJson)_');
+          logger.debug('\n ', __filename, 'line', __line, '; running ', __filename, '; mergeLists');
         }
-        parse2Lists.parse2Lists();
+        logger.debug('\n ', __filename, __line, '; consoleLog = ', consoleLog);
+        if (true) {
+          if (consoleLog) {
+            logger.debug('\n ', __filename, __line, '; Phase #:', ++functionCount, '; running collect.collect())');
+            logger.debug('\n ', __filename, __line, '; useLocalListFiles = ', useLocalListFiles, '; useLocalNarrativeFiles = ', useLocalNarrativeFiles);
+          }
+          mergeLists.mergeLists();
+        }
         callback();
       },
+
 
       // list files in /data/output
       function (callback) {
@@ -92,7 +122,6 @@ var runApp = function () {
   );
 };
 
-
 var parse2 = function () {
   if (consoleLog) {
     logger.debug('\n ', __filename, 'line', __line, '; running ', __filename, '; ', new Date());
@@ -123,12 +152,6 @@ var parse2 = function () {
         }
         filewalker.fwalker(fwPath);
         callback();
-      },
-
-      function (callback) {
-        // var logFileNameAndPath = __dirname + '/../log/consolidated.log';
-      //  utilities_aq_viz.rotateLogFile(logFileNameAndPath);
-        callback();
       }
     ],
     function (err) { //This function gets called after the two tasks have called their 'task callbacks'
@@ -137,12 +160,14 @@ var parse2 = function () {
   );
 };
 
-
 runApp();
 // parse2();
 
 module.exports = {
   logger: logger,
   runApp: runApp,
-  parse2: parse2
+  parse2: parse2,
+  useLocalListFiles: useLocalListFiles,
+  useLocalNarrativeFiles: useLocalNarrativeFiles,
+  consoleLog: consoleLog
 };
