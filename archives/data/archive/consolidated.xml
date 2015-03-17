@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CONSOLIDATED_LIST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                    xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd"
-                   dateGenerated="2015-03-13T16:34:28.092-04:00">
+                   dateGenerated="2015-03-16T18:10:47.056-04:00">
    <INDIVIDUALS>
       <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
          <DATAID>110404</DATAID>
@@ -8050,6 +8050,7 @@
          </INDIVIDUAL_DOCUMENT>
          <SORT_KEY>ASHOURALFADHLI MUHSIN FADHIL AYED</SORT_KEY>
          <SORT_KEY_LAST_MOD>2008-07-23</SORT_KEY_LAST_MOD>
+         <DELISTED_ON>2015-03-16</DELISTED_ON>
       </INDIVIDUAL>
       <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
          <DATAID>111732</DATAID>
@@ -9233,105 +9234,6 @@
          <SORT_KEY_LAST_MOD>2010-12-23</SORT_KEY_LAST_MOD>
       </INDIVIDUAL>
       <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
-         <DATAID>111807</DATAID>
-         <VERSIONNUM>11</VERSIONNUM>
-         <FIRST_NAME>MUSTAFA</FIRST_NAME>
-         <SECOND_NAME>MOHAMED</SECOND_NAME>
-         <THIRD_NAME>FADHIL</THIRD_NAME>
-         <UN_LIST_TYPE>Al-Qaida</UN_LIST_TYPE>
-         <REFERENCE_NUMBER>QDi.027</REFERENCE_NUMBER>
-         <LISTED_ON>2001-10-17</LISTED_ON>
-         <NAME_ORIGINAL_SCRIPT>مصطفى محمد فاضل</NAME_ORIGINAL_SCRIPT>
-         <COMMENTS1>Review pursuant to Security Council resolution 1822 (2008) was concluded on 21 Jun. 2010.</COMMENTS1>
-         <NATIONALITY>
-            <VALUE>Kenyan</VALUE>
-         </NATIONALITY>
-         <LIST_TYPE>
-            <VALUE>UN List</VALUE>
-         </LIST_TYPE>
-         <LAST_DAY_UPDATED>
-            <VALUE>2007-07-02</VALUE>
-            <VALUE>2010-12-16</VALUE>
-         </LAST_DAY_UPDATED>
-         <INDIVIDUAL_ALIAS>
-            <QUALITY>Low</QUALITY>
-            <ALIAS_NAME>Hussein</ALIAS_NAME>
-         </INDIVIDUAL_ALIAS>
-         <INDIVIDUAL_ALIAS>
-            <QUALITY>Low</QUALITY>
-            <ALIAS_NAME>Jihad, Abu</ALIAS_NAME>
-         </INDIVIDUAL_ALIAS>
-         <INDIVIDUAL_ALIAS>
-            <QUALITY>Low</QUALITY>
-            <ALIAS_NAME>Khalid</ALIAS_NAME>
-         </INDIVIDUAL_ALIAS>
-         <INDIVIDUAL_ALIAS>
-            <QUALITY>Low</QUALITY>
-            <ALIAS_NAME>Man, Nu</ALIAS_NAME>
-         </INDIVIDUAL_ALIAS>
-         <INDIVIDUAL_ALIAS>
-            <QUALITY>Low</QUALITY>
-            <ALIAS_NAME>Yussrr, Abu</ALIAS_NAME>
-         </INDIVIDUAL_ALIAS>
-         <INDIVIDUAL_ALIAS>
-            <QUALITY>Good</QUALITY>
-            <ALIAS_NAME>Al Masri, Abd Al Wakil</ALIAS_NAME>
-         </INDIVIDUAL_ALIAS>
-         <INDIVIDUAL_ALIAS>
-            <QUALITY>Good</QUALITY>
-            <ALIAS_NAME>Ali, Hassan</ALIAS_NAME>
-         </INDIVIDUAL_ALIAS>
-         <INDIVIDUAL_ALIAS>
-            <QUALITY>Good</QUALITY>
-            <ALIAS_NAME>Anis, Abu;</ALIAS_NAME>
-         </INDIVIDUAL_ALIAS>
-         <INDIVIDUAL_ALIAS>
-            <QUALITY>Good</QUALITY>
-            <ALIAS_NAME>Elbishy, Moustafa Ali</ALIAS_NAME>
-         </INDIVIDUAL_ALIAS>
-         <INDIVIDUAL_ALIAS>
-            <QUALITY>Good</QUALITY>
-            <ALIAS_NAME>Fadil, Mustafa Muhamad</ALIAS_NAME>
-         </INDIVIDUAL_ALIAS>
-         <INDIVIDUAL_ALIAS>
-            <QUALITY>Good</QUALITY>
-            <ALIAS_NAME>Fazul, Mustafa</ALIAS_NAME>
-         </INDIVIDUAL_ALIAS>
-         <INDIVIDUAL_ALIAS>
-            <QUALITY>Good</QUALITY>
-            <ALIAS_NAME>Mohammed, Mustafa</ALIAS_NAME>
-         </INDIVIDUAL_ALIAS>
-         <INDIVIDUAL_ALIAS>
-            <QUALITY>Good</QUALITY>
-            <ALIAS_NAME>Mustafa Ali Elbishy</ALIAS_NAME>
-         </INDIVIDUAL_ALIAS>
-         <INDIVIDUAL_ALIAS>
-            <QUALITY>Low</QUALITY>
-            <ALIAS_NAME>Al-Nubi, Abu</ALIAS_NAME>
-         </INDIVIDUAL_ALIAS>
-         <INDIVIDUAL_ADDRESS/>
-         <INDIVIDUAL_DATE_OF_BIRTH>
-            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
-            <DATE>1976-06-23</DATE>
-         </INDIVIDUAL_DATE_OF_BIRTH>
-         <INDIVIDUAL_DATE_OF_BIRTH>
-            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
-            <DATE>1976-01-01</DATE>
-         </INDIVIDUAL_DATE_OF_BIRTH>
-         <INDIVIDUAL_PLACE_OF_BIRTH>
-            <CITY>Cairo</CITY>
-            <COUNTRY>Egypt</COUNTRY>
-         </INDIVIDUAL_PLACE_OF_BIRTH>
-         <INDIVIDUAL_DOCUMENT>
-            <TYPE_OF_DOCUMENT>National Identification Number</TYPE_OF_DOCUMENT>
-            <TYPE_OF_DOCUMENT2>Kenyan ID number</TYPE_OF_DOCUMENT2>
-            <NUMBER>12773667</NUMBER>
-            <NOTE>Serial number 201735161</NOTE>
-         </INDIVIDUAL_DOCUMENT>
-         <SORT_KEY>FADHILMUSTAFA MOHAMED   </SORT_KEY>
-         <SORT_KEY_LAST_MOD>2010-12-16</SORT_KEY_LAST_MOD>
-      </INDIVIDUAL>
-      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
          <DATAID>111810</DATAID>
          <VERSIONNUM>9</VERSIONNUM>
          <FIRST_NAME>MOHAMMAD</FIRST_NAME>
@@ -9900,98 +9802,6 @@
          </INDIVIDUAL_DOCUMENT>
          <SORT_KEY>ALHAMRAOUI KAMAL BENMAOELDI BENHASSAN</SORT_KEY>
          <SORT_KEY_LAST_MOD>2011-05-16</SORT_KEY_LAST_MOD>
-      </INDIVIDUAL>
-      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
-         <DATAID>111917</DATAID>
-         <VERSIONNUM>14</VERSIONNUM>
-         <FIRST_NAME>AHMED</FIRST_NAME>
-         <SECOND_NAME>MOHAMMED</SECOND_NAME>
-         <THIRD_NAME>HAMED</THIRD_NAME>
-         <FOURTH_NAME>ALI</FOURTH_NAME>
-         <UN_LIST_TYPE>Al-Qaida</UN_LIST_TYPE>
-         <REFERENCE_NUMBER>QDi.021</REFERENCE_NUMBER>
-         <LISTED_ON>2001-10-17</LISTED_ON>
-         <NAME_ORIGINAL_SCRIPT>احمد محمد حامد علي</NAME_ORIGINAL_SCRIPT>
-         <COMMENTS1>Afghanistan. Review pursuant to Security Council resolution 1822 (2008) was concluded on 15 Jun. 2010.</COMMENTS1>
-         <NATIONALITY>
-            <VALUE>Egyptian</VALUE>
-         </NATIONALITY>
-         <LIST_TYPE>
-            <VALUE>UN List</VALUE>
-         </LIST_TYPE>
-         <LAST_DAY_UPDATED>
-            <VALUE>2007-07-02</VALUE>
-            <VALUE>2010-12-16</VALUE>
-         </LAST_DAY_UPDATED>
-         <INDIVIDUAL_ALIAS>
-            <QUALITY>Good</QUALITY>
-            <ALIAS_NAME>Abdurehman, Ahmed Mohammed</ALIAS_NAME>
-         </INDIVIDUAL_ALIAS>
-         <INDIVIDUAL_ALIAS>
-            <QUALITY>Good</QUALITY>
-            <ALIAS_NAME>Ahmed Hamed</ALIAS_NAME>
-         </INDIVIDUAL_ALIAS>
-         <INDIVIDUAL_ALIAS>
-            <QUALITY>Good</QUALITY>
-            <ALIAS_NAME>Ali, Ahmed Mohammed</ALIAS_NAME>
-         </INDIVIDUAL_ALIAS>
-         <INDIVIDUAL_ALIAS>
-            <QUALITY>Good</QUALITY>
-            <ALIAS_NAME>Ali, Hamed</ALIAS_NAME>
-         </INDIVIDUAL_ALIAS>
-         <INDIVIDUAL_ALIAS>
-            <QUALITY>Good</QUALITY>
-            <ALIAS_NAME>Hemed, Ahmed</ALIAS_NAME>
-         </INDIVIDUAL_ALIAS>
-         <INDIVIDUAL_ALIAS>
-            <QUALITY>Good</QUALITY>
-            <ALIAS_NAME>Shieb, Ahmed</ALIAS_NAME>
-         </INDIVIDUAL_ALIAS>
-         <INDIVIDUAL_ALIAS>
-            <QUALITY>Low</QUALITY>
-            <ALIAS_NAME>Abu Fatima</ALIAS_NAME>
-         </INDIVIDUAL_ALIAS>
-         <INDIVIDUAL_ALIAS>
-            <QUALITY>Low</QUALITY>
-            <ALIAS_NAME>Abu Islam</ALIAS_NAME>
-         </INDIVIDUAL_ALIAS>
-         <INDIVIDUAL_ALIAS>
-            <QUALITY>Low</QUALITY>
-            <ALIAS_NAME>Abu Khadiijah</ALIAS_NAME>
-         </INDIVIDUAL_ALIAS>
-         <INDIVIDUAL_ALIAS>
-            <QUALITY>Low</QUALITY>
-            <ALIAS_NAME>Ahmed The Egyptian</ALIAS_NAME>
-         </INDIVIDUAL_ALIAS>
-         <INDIVIDUAL_ALIAS>
-            <QUALITY>Low</QUALITY>
-            <ALIAS_NAME>Ahmed, Ahmed</ALIAS_NAME>
-         </INDIVIDUAL_ALIAS>
-         <INDIVIDUAL_ALIAS>
-            <QUALITY>Low</QUALITY>
-            <ALIAS_NAME>Al-Masri, Ahmad</ALIAS_NAME>
-         </INDIVIDUAL_ALIAS>
-         <INDIVIDUAL_ALIAS>
-            <QUALITY>Low</QUALITY>
-            <ALIAS_NAME>Al-Surir, Abu Islam</ALIAS_NAME>
-         </INDIVIDUAL_ALIAS>
-         <INDIVIDUAL_ALIAS>
-            <QUALITY>Low</QUALITY>
-            <ALIAS_NAME>Shuaib</ALIAS_NAME>
-         </INDIVIDUAL_ALIAS>
-         <INDIVIDUAL_ADDRESS/>
-         <INDIVIDUAL_DATE_OF_BIRTH>
-            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
-            <DATE>1967-01-13</DATE>
-         </INDIVIDUAL_DATE_OF_BIRTH>
-         <INDIVIDUAL_PLACE_OF_BIRTH>
-            <CITY>Badari</CITY>
-            <STATE_PROVINCE>Asyout</STATE_PROVINCE>
-            <COUNTRY>Egypt</COUNTRY>
-         </INDIVIDUAL_PLACE_OF_BIRTH>
-         <INDIVIDUAL_DOCUMENT/>
-         <SORT_KEY>ALIAHMED MOHAMMED HAMED</SORT_KEY>
-         <SORT_KEY_LAST_MOD>2010-12-16</SORT_KEY_LAST_MOD>
       </INDIVIDUAL>
       <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
          <DATAID>111918</DATAID>
@@ -17692,119 +17502,6 @@
          <SORT_KEY_LAST_MOD>2010-01-19</SORT_KEY_LAST_MOD>
       </INDIVIDUAL>
       <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
-         <DATAID>2881835</DATAID>
-         <VERSIONNUM>4</VERSIONNUM>
-         <FIRST_NAME>SAID</FIRST_NAME>
-         <SECOND_NAME>ALI</SECOND_NAME>
-         <THIRD_NAME>AL-SHIHRI</THIRD_NAME>
-         <UN_LIST_TYPE>Al-Qaida</UN_LIST_TYPE>
-         <REFERENCE_NUMBER>QDi.275</REFERENCE_NUMBER>
-         <LISTED_ON>2010-01-19</LISTED_ON>
-         <NAME_ORIGINAL_SCRIPT>سعيد علي الشهري</NAME_ORIGINAL_SCRIPT>
-         <COMMENTS1>Since Jan. 2009, deputy to Nasir 'abd-al-Karim 'Abdullah al-Wahishi (QDi.274), leader of Al-Qaida in the Arabian Peninsula (QDe.129) operating in Yemen and Saudi Arabia. Associated with senior Al-Qaida (QDe.004) leadership. Was in custody of the United States of America between 2001-2007, detainee number 372. Fugitive in Saudi Arabia among the 85 most wanted persons. Located in Yemen as at Jan. 2010.</COMMENTS1>
-         <NATIONALITY>
-            <VALUE>Saudi Arabian</VALUE>
-         </NATIONALITY>
-         <LIST_TYPE>
-            <VALUE>UN List</VALUE>
-         </LIST_TYPE>
-         <INDIVIDUAL_ALIAS>
-            <QUALITY>Good</QUALITY>
-            <ALIAS_NAME>Sa’id Ali Jabir al-Kathim al-Shihri</ALIAS_NAME>
-         </INDIVIDUAL_ALIAS>
-         <INDIVIDUAL_ALIAS>
-            <QUALITY>Good</QUALITY>
-            <ALIAS_NAME>Said Ali Al Shahri</ALIAS_NAME>
-         </INDIVIDUAL_ALIAS>
-         <INDIVIDUAL_ALIAS>
-            <QUALITY>Good</QUALITY>
-            <ALIAS_NAME>Said Ali Jaber Al Khasaam Al Shahri</ALIAS_NAME>
-         </INDIVIDUAL_ALIAS>
-         <INDIVIDUAL_ALIAS>
-            <QUALITY>Good</QUALITY>
-            <ALIAS_NAME>Said Ali Jaber Al Khassam</ALIAS_NAME>
-         </INDIVIDUAL_ALIAS>
-         <INDIVIDUAL_ALIAS>
-            <QUALITY>Low</QUALITY>
-            <ALIAS_NAME>Abu-Sayyaf</ALIAS_NAME>
-         </INDIVIDUAL_ALIAS>
-         <INDIVIDUAL_ALIAS>
-            <QUALITY>Low</QUALITY>
-            <ALIAS_NAME>Abu-Sufyan al-Azidi</ALIAS_NAME>
-         </INDIVIDUAL_ALIAS>
-         <INDIVIDUAL_ALIAS>
-            <QUALITY>Low</QUALITY>
-            <ALIAS_NAME>Abu-Sayyaf al-Shihri</ALIAS_NAME>
-         </INDIVIDUAL_ALIAS>
-         <INDIVIDUAL_ALIAS>
-            <QUALITY>Low</QUALITY>
-            <ALIAS_NAME>Abu Sufian Kadhdhaab Matrook</ALIAS_NAME>
-         </INDIVIDUAL_ALIAS>
-         <INDIVIDUAL_ALIAS>
-            <QUALITY>Low</QUALITY>
-            <ALIAS_NAME>Salah</ALIAS_NAME>
-         </INDIVIDUAL_ALIAS>
-         <INDIVIDUAL_ALIAS>
-            <QUALITY>Low</QUALITY>
-            <ALIAS_NAME>Salah Abu Sufyan</ALIAS_NAME>
-         </INDIVIDUAL_ALIAS>
-         <INDIVIDUAL_ALIAS>
-            <QUALITY>Low</QUALITY>
-            <ALIAS_NAME>Salah al-Din</ALIAS_NAME>
-         </INDIVIDUAL_ALIAS>
-         <INDIVIDUAL_ALIAS>
-            <QUALITY>Low</QUALITY>
-            <ALIAS_NAME>Abu Osama</ALIAS_NAME>
-         </INDIVIDUAL_ALIAS>
-         <INDIVIDUAL_ALIAS>
-            <QUALITY>Low</QUALITY>
-            <ALIAS_NAME>Abu Sulaiman</ALIAS_NAME>
-         </INDIVIDUAL_ALIAS>
-         <INDIVIDUAL_ALIAS>
-            <QUALITY>Low</QUALITY>
-            <ALIAS_NAME>Nur al-Din Afghani Azibk</ALIAS_NAME>
-         </INDIVIDUAL_ALIAS>
-         <INDIVIDUAL_ALIAS>
-            <QUALITY>Low</QUALITY>
-            <ALIAS_NAME>Alahhaddm</ALIAS_NAME>
-         </INDIVIDUAL_ALIAS>
-         <INDIVIDUAL_ALIAS>
-            <QUALITY>Low</QUALITY>
-            <ALIAS_NAME>Akhdam</ALIAS_NAME>
-         </INDIVIDUAL_ALIAS>
-         <INDIVIDUAL_ALIAS>
-            <QUALITY>Low</QUALITY>
-            <ALIAS_NAME>Abu Sufian Al Azadi</ALIAS_NAME>
-         </INDIVIDUAL_ALIAS>
-         <INDIVIDUAL_ALIAS>
-            <QUALITY>Low</QUALITY>
-            <ALIAS_NAME>Abu Asmaa</ALIAS_NAME>
-         </INDIVIDUAL_ALIAS>
-         <INDIVIDUAL_ADDRESS/>
-         <INDIVIDUAL_DATE_OF_BIRTH>
-            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
-            <DATE>1973-09-12</DATE>
-         </INDIVIDUAL_DATE_OF_BIRTH>
-         <INDIVIDUAL_PLACE_OF_BIRTH>
-            <CITY>Riyadh</CITY>
-            <COUNTRY>Saudi Arabia</COUNTRY>
-         </INDIVIDUAL_PLACE_OF_BIRTH>
-         <INDIVIDUAL_DOCUMENT>
-            <TYPE_OF_DOCUMENT>Passport</TYPE_OF_DOCUMENT>
-            <NUMBER>C102432</NUMBER>
-            <ISSUING_COUNTRY>Saudi Arabian</ISSUING_COUNTRY>
-            <DATE_OF_ISSUE>2000-04-22</DATE_OF_ISSUE>
-            <NOTE>expired on 26 Feb. 2005. Issue date in Hijri Calendar 17/01/1421. Expiry date in Hijri Calendar 17/01/1426.</NOTE>
-         </INDIVIDUAL_DOCUMENT>
-         <INDIVIDUAL_DOCUMENT>
-            <TYPE_OF_DOCUMENT>National Identification Number</TYPE_OF_DOCUMENT>
-            <NUMBER>1008168450</NUMBER>
-            <ISSUING_COUNTRY>Saudi Arabian</ISSUING_COUNTRY>
-         </INDIVIDUAL_DOCUMENT>
-         <SORT_KEY>ALSHIHRI SAID ALI</SORT_KEY>
-         <SORT_KEY_LAST_MOD>2010-01-19</SORT_KEY_LAST_MOD>
-      </INDIVIDUAL>
-      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
          <DATAID>2892251</DATAID>
          <VERSIONNUM>5</VERSIONNUM>
          <FIRST_NAME>AKRAM</FIRST_NAME>
@@ -18462,45 +18159,6 @@
          </INDIVIDUAL_DOCUMENT>
          <SORT_KEY>ABUALKHAYR MUHAMMAD ABDALLAH HASAN</SORT_KEY>
          <SORT_KEY_LAST_MOD>2010-08-24</SORT_KEY_LAST_MOD>
-      </INDIVIDUAL>
-      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
-         <DATAID>2936490</DATAID>
-         <VERSIONNUM>4</VERSIONNUM>
-         <FIRST_NAME>HAKIMULLAH</FIRST_NAME>
-         <SECOND_NAME>MEHSUD</SECOND_NAME>
-         <UN_LIST_TYPE>Al-Qaida</UN_LIST_TYPE>
-         <REFERENCE_NUMBER>QDi.286</REFERENCE_NUMBER>
-         <LISTED_ON>2010-10-21</LISTED_ON>
-         <NAME_ORIGINAL_SCRIPT>حکیم اللہ محسود</NAME_ORIGINAL_SCRIPT>
-         <COMMENTS1>Reportedly born in South Waziristan, Pakistan, and believed to be residing in Pakistan. Leader of Tehrik-e Taliban Pakistan (TTP) (QDe.132), an organization based in the tribal areas along the Afghanistan/Pakistan border.</COMMENTS1>
-         <NATIONALITY>
-            <VALUE>Pakistani</VALUE>
-         </NATIONALITY>
-         <LIST_TYPE>
-            <VALUE>UN List</VALUE>
-         </LIST_TYPE>
-         <LAST_DAY_UPDATED>
-            <VALUE>2011-07-29</VALUE>
-         </LAST_DAY_UPDATED>
-         <INDIVIDUAL_ALIAS>
-            <QUALITY>Good</QUALITY>
-            <ALIAS_NAME>Hakeemullah Mehsud</ALIAS_NAME>
-         </INDIVIDUAL_ALIAS>
-         <INDIVIDUAL_ALIAS>
-            <QUALITY>Low</QUALITY>
-            <ALIAS_NAME>Zulfiqar</ALIAS_NAME>
-         </INDIVIDUAL_ALIAS>
-         <INDIVIDUAL_ADDRESS/>
-         <INDIVIDUAL_DATE_OF_BIRTH>
-            <TYPE_OF_DATE>Approximately</TYPE_OF_DATE>
-            <YEAR>1979</YEAR>
-         </INDIVIDUAL_DATE_OF_BIRTH>
-         <INDIVIDUAL_PLACE_OF_BIRTH>
-            <COUNTRY>Pakistan</COUNTRY>
-         </INDIVIDUAL_PLACE_OF_BIRTH>
-         <INDIVIDUAL_DOCUMENT/>
-         <SORT_KEY>MEHSUD HAKIMULLAH</SORT_KEY>
-         <SORT_KEY_LAST_MOD>2011-07-29</SORT_KEY_LAST_MOD>
       </INDIVIDUAL>
       <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
          <DATAID>2945562</DATAID>
@@ -32020,9 +31678,7 @@
             <CITY_OF_BIRTH>Jakarta</CITY_OF_BIRTH>
             <COUNTRY_OF_BIRTH>Indonesia</COUNTRY_OF_BIRTH>
          </INDIVIDUAL_ALIAS>
-         <INDIVIDUAL_ADDRESS>
-            <COUNTRY>na</COUNTRY>
-         </INDIVIDUAL_ADDRESS>
+         <INDIVIDUAL_ADDRESS/>
          <INDIVIDUAL_DATE_OF_BIRTH>
             <DATE>1985-03-04</DATE>
          </INDIVIDUAL_DATE_OF_BIRTH>
@@ -32064,9 +31720,7 @@
             <QUALITY>Low</QUALITY>
             <ALIAS_NAME>Abu Zahra</ALIAS_NAME>
          </INDIVIDUAL_ALIAS>
-         <INDIVIDUAL_ADDRESS>
-            <CITY>na </CITY>
-         </INDIVIDUAL_ADDRESS>
+         <INDIVIDUAL_ADDRESS/>
          <INDIVIDUAL_DATE_OF_BIRTH>
             <DATE>1975-04-05</DATE>
          </INDIVIDUAL_DATE_OF_BIRTH>
@@ -32113,9 +31767,7 @@
             <QUALITY>Low</QUALITY>
             <ALIAS_NAME>Abu Seif</ALIAS_NAME>
          </INDIVIDUAL_ALIAS>
-         <INDIVIDUAL_ADDRESS>
-            <COUNTRY>na </COUNTRY>
-         </INDIVIDUAL_ADDRESS>
+         <INDIVIDUAL_ADDRESS/>
          <INDIVIDUAL_DATE_OF_BIRTH>
             <DATE>1975-07-14</DATE>
          </INDIVIDUAL_DATE_OF_BIRTH>

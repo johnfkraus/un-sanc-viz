@@ -97,6 +97,7 @@ var committees;
 var collect = function () {
     var functionCount = 0;
     async.series([
+
         // test logger
         function (callback) {
           utilities_aq_viz.testLogging();
@@ -110,8 +111,8 @@ var collect = function () {
           callback();
         },
 
+        // delete old files
         function (callback) {
-
           // fse.removeSync(writeJsonOutputDebuggingDirectory);
           if (!useLocalNarrativeFiles) {
             fse.removeSync(__dirname + '/../data/narrative_summaries/');

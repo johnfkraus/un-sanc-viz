@@ -54,7 +54,7 @@ var runApp = function () {
             logger.debug('\n ', __filename, __line, '; Phase #:', ++functionCount, '; running collect.collect())');
             logger.debug('\n ', __filename, __line, '; useLocalListFiles = ', useLocalListFiles, '; useLocalNarrativeFiles = ', useLocalNarrativeFiles);
           }
-          // collect.collect();
+          collect.collect();
         }
         callback();
       },
@@ -79,7 +79,7 @@ var runApp = function () {
             logger.debug('\n ', __filename, __line, '; Phase #:', ++functionCount, '; running collect.collect())');
             logger.debug('\n ', __filename, __line, '; useLocalListFiles = ', useLocalListFiles, '; useLocalNarrativeFiles = ', useLocalNarrativeFiles);
           }
-          mergeLists.mergeLists();
+         // mergeLists.mergeLists();
         }
         callback();
       },

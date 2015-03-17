@@ -2,13 +2,18 @@ window.onerror = function (msg, url, line) {
   console.log(msg + ' at ' + url + ':' + line);
   // $('body').append(msg + ' at ' + url + ':' + line);
 };
-
+var spliceError = 0;
+var noSpliceError = 0;
+var noLongerListedCount = 0;
+var listedCount = 0;
+var countExtent;
 var Network, RadialPlacement, activate, root;
 var selected = {},
   root = typeof exports !== "undefined" && exports !== null ? exports : this;
 
 Network = function () {
   //  variables we want to access in multiple places of Network
+  var data;
   var allData, charge, charge2, consoleLog, curLinksData, curNodesData, desiredDocsHeight, doc, filter, filterLinks, filterNodes, n,
     forceChargeParam, forceTick, groupCenters, svgHeight, hideDetails, layout, link, linkedByIndex, linksG, mapNodes,
     maxRadius, maxRadiusSelect, moveToRadialLayout, neighboring, network, node, nodeColors, nodeColors2, nodeColorsForNoLongerListed, nodeCounts, nodesG, radialTick, radius2,
@@ -16,7 +21,7 @@ Network = function () {
     strokeFor, tooltip, update, updateCenters, updateLinks, updateNodes, width;
   var docClosePadding = 8;
   var topStuffNegativeMargin = 10;
-  var circleRadius, countExtent;
+  var circleRadius; //, countExtent;
   var w = window.innerWidth;
   var h = window.innerHeight;
   width = w - 20; // 1152;
@@ -69,6 +74,7 @@ Network = function () {
   //  Starting point for network visualization
   //  Initializes visualization and starts force layout
   network = function (selection, data) {
+
     var viz;
     var genDateString = vizFormatDate(data.dateGenerated);
     var dateStringHardSpaces = genDateString.replace(/\s/g, "&nbsp;");
@@ -207,6 +213,11 @@ Network = function () {
     return force.start();
   };
   // end of update()
+
+  network.getData = function () {
+    return data;
+  }
+
 //  Public function to switch between layouts
 
   network.toggleLayout = function (newLayout, changeInt) {
@@ -293,6 +304,8 @@ Network = function () {
   // Public function to update highlighted nodes from search
   network.updateColor3 = function (searchTermName) {
     // reset the none/entities/individuals radio buttons to "none"
+    noLongerListedCount = 0;
+    listedCount = 0;
     maxRadiusSelect = $('#circle_radius_max').val();
     $('input[name="noneEntIndiv"][value=""]').prop('checked', true);
     if (consoleLog) {
@@ -300,68 +313,122 @@ Network = function () {
     }
     var searchRegEx;
     searchRegEx = new RegExp(searchTermName, "i"); // .toLowerCase());
+
     return node.each(function (d) {
       var element, match;
-      d.radius = 44;
+      if (d.noLongerListed === 1) {
+        noLongerListedCount++;
+        console.log('noLongerListedCount = ', noLongerListedCount);
+      } else {
+        listedCount++;
+        console.log('listedCount = ', listedCount);
+      }
+
       element = d3.select(this);
-      element.r = '44'; // = d3.select(this);
       match = d.name
         .search(searchRegEx);
+
       if (searchTermName.length > 0 && match >= 0) {
         element.style("fill", "#F38630")
+          .style("fill-opacity", 1)
+          .style("stroke-opacity", 1)
           .style("stroke-width", 2.0)
           .style("stroke", "#555")
-          .attr("r", "44");
-
+          .attr("r", function (d) {
+            return circleRadius(Math.pow(d.linkCount * 3, 0.9));
+          });
         return d.searched = true;
-      } else {
-        d.searched = false;
-        return element.style("fill", function (d) {
-          // return nodeColors(d.target);
-          if (d[searchTermName] === undefined) {
-            d[searchTermName] = "0";
-          }
-          if (consoleLog) {
-            console.log("viz.js updateColor() 408 d.id = ", d.id, "; d[searchTermName] = ", d[searchTermName], "; nodeColors(d[searchTermName]) = ", nodeColors(d[searchTermName]));
-          }
-          if (searchTermName === "noLongerListed") {
-            return nodeColorsForNoLongerListed(d[searchTermName]);
-          } else {
-            if (consoleLog) {
-              console.log("nodeColors(d[searchTermName]) = ", nodeColors(d[searchTermName]));
-            }
-            return nodeColors(d[searchTermName]);
-          }
+      } else if (searchTermName.length === 0) {
+        element.style("fill", function (d) {
+          return nodeColors(d[$('#node_color_select').val()]);
         })
+          .style("fill-opacity", 1)
+          .style("stroke-opacity", 1)
+          .style("stroke", function (d) {
+            return strokeFor(d);
+          })
           .style("stroke-width", 1.0);
+        return d.searched = false;
+      } else if (searchTermName === "noLongerListed") {
+        if (consoleLog) {
+          console.log("searchTermName = ", searchTermName);
+        }
+        return nodeColorsForNoLongerListed(d[searchTermName]);
+      } else {
+        if (consoleLog) {
+          console.log("nodeColors(d[searchTermName]) = ", nodeColors(d[searchTermName]));
+        }
+        return nodeColors(d[searchTermName]);
       }
+      /*
+       } else {
+       element.style("fill", "#F38630")
+       .style("fill-opacity", 1)
+       .style("stroke-opacity", 1)
+       .style("stroke-width", 2.0)
+       .style("stroke", "#555")
+       .attr("r", function (d) {
+       return circleRadius(Math.pow(d.linkCount * 3, 0.9));
+       });
+       return d.searched = true;
+       } else {
+
+       d.searched = false;
+       return element.style("fill", function (d) {
+       // return nodeColors(d.target);
+       if (d[searchTermName] === undefined) {
+       d[searchTermName] = "0";
+       }
+       if (consoleLog) {
+       console.log("viz.js updateColor() 408 d.id = ", d.id, "; d[searchTermName] = ", d[searchTermName], "; nodeColors(d[searchTermName]) = ", nodeColors(d[searchTermName]));
+       }
+       if (searchTermName === "noLongerListed") {
+       return nodeColorsForNoLongerListed(d[searchTermName]);
+       } else {
+       if (consoleLog) {
+       console.log("nodeColors(d[searchTermName]) = ", nodeColors(d[searchTermName]));
+       }
+       return nodeColors(d[searchTermName]);
+       }
+       })
+       .style("fill-opacity",.5)
+       .style("stroke-opacity",.5)
+       .style("stroke-width", 1.0);
+       }
+       */
     });
   };
 
   // Public function to update highlighted nodes
 //   network.updateMaxRadius = function (maxRadius) {
   network.updateMaxRadius = function (maxRadiusSelect) {
-
 //    maxRadius = maxRadiusSelect;
-
     return node.each(function (d) {
       maxRadiusSelect = $('#circle_radius_max').val();
       var element = d3.select(this);
-
       // node.linkCount = staticRadius;
-
-      element.r = node.linkCount;
+      element.attr("r", function (d) {
+        return circleRadius(Math.pow(d.linkCount * 3, 0.9));
+      });
       return d.searched = true;
     })
   };
 
   // Public function to update highlighted nodes from search
   network.updateSearchId = function (searchTermId) {
-    var searchRegEx;
     maxRadiusSelect = $('#circle_radius_max').val();
+    circleRadius = d3.scale.sqrt()
+      .range([3, maxRadiusSelect])   // parseInt($('#max_radius_select').val())])
+      .domain(countExtent);
+    var searchRegEx;
+//     maxRadiusSelect = $('#circle_radius_max').val();
     searchRegEx = new RegExp(searchTermId, "i"); // .toLowerCase());
     return node.each(function (d) {
       var element, match;
+      // maxRadiusSelect = $('#circle_radius_max').val();
+      circleRadius = d3.scale.sqrt()
+        .range([3, maxRadiusSelect])   // parseInt($('#max_radius_select').val())])
+        .domain(countExtent);
       element = d3.select(this);
       match = d.id
         .search(searchRegEx);
@@ -369,15 +436,24 @@ Network = function () {
         element.style("fill", "#F38630")
           .style("stroke-width", 2.0)
           .style("stroke", "#555")
-          .attr("r", "45");
-
+          .attr("r", function (d) {
+            circleRadius = d3.scale.sqrt()
+              .range([3, parseInt($('#max_radius_select').val())])
+              .domain(countExtent);
+            return circleRadius(Math.pow(d.linkCount * 3, 0.9));
+          });
         return d.searched = true;
       } else {
         d.searched = false;
         return element.style("fill", function (d) {
           return nodeColors(d[$('#node_color_select').val()]);
         })
-          .attr("r", "47")
+          .attr("r", function (d) {
+            circleRadius = d3.scale.sqrt()
+              .range([3, parseInt($('#max_radius_select').val())])
+              .domain(countExtent);
+            return circleRadius(Math.pow(d.linkCount * 3, 0.9));
+          })
           .style("stroke-width", 1.0);
       }
     });
@@ -396,7 +472,16 @@ Network = function () {
         element.style("fill", "#F38630")
           .style("stroke-width", 2.0)
           .style("stroke", "#555")
-          .attr("r", "55");
+          .style("stroke-opacity", 1)
+          .style("fill-opacity", 1)
+          .attr("r", function (d) {
+            circleRadius = d3.scale.sqrt()
+              .range([3, parseInt($('#max_radius_select').val())])   // parseInt($('#max_radius_select').val())])
+              .domain(countExtent);
+            return circleRadius(Math.pow(d.linkCount * 3, 0.9));
+          });
+
+        // .attr("r", "55");
 
         return d.searched = true;
       } else {
@@ -404,7 +489,11 @@ Network = function () {
         return element.style("fill", function (d) {
           return nodeColors(d[$('#node_color_select').val()]);
         })
-          .attr("r", "58")
+          .style("fill-opacity", .5)
+          .style("stroke-opacity", .5)
+          .attr("r", function (d) {
+            return circleRadius(Math.pow(d.linkCount * 3, 0.9));
+          })
           .style("stroke-width", 1.0);
       }
     });
@@ -419,11 +508,33 @@ Network = function () {
       element = d3.select(this);
       match = d.name
         .search(searchRegEx);
-      if (searchTermName.length > 0 && match >= 0) {
-        element.style("fill", "#F38630")
-          .style("stroke-width", 2.0)
+      if (searchTermName.length === 0) {
+        element.style("fill", function (d) {
+          // return nodeColors(d.target);
+          return nodeColors(d[$('#node_color_select').val()]);
+        })
+          .style("fill-opacity", 1)
+//          style("fill", "#F38630")
+          .style("stroke-width", 1.0)
           .style("stroke", "#555")
-          .r = '77';
+          .style("stroke-opacity", 1)
+          .attr("r", function (d) {
+            return circleRadius(Math.pow(d.linkCount * 3, 0.9));
+          });
+        return d.searched = true;
+      } else if (searchTermName.length > 0 && match >= 0) {
+        element.style("fill", function (d) {
+          // return nodeColors(d.target);
+          return nodeColors(d[$('#node_color_select').val()]);
+        })
+          .style("fill-opacity", 1)
+//          style("fill", "#F38630")
+          .style("stroke-width", 3.0)
+          .style("stroke", "#555")
+          .style("stroke-opacity", 1)
+          .attr("r", function (d) {
+            return circleRadius(Math.pow(d.linkCount * 3, 0.9));
+          });
         return d.searched = true;
       } else {
         d.searched = false;
@@ -431,8 +542,12 @@ Network = function () {
           // return nodeColors(d.target);
           return nodeColors(d[$('#node_color_select').val()]);
         })
-          .attr("r", "99")
-          .style("stroke-width", 1.0);
+          .attr("r", function (d) {
+            return circleRadius(Math.pow(d.linkCount * 3, 0.9));
+          })
+          .style("stroke-width", 1.0)
+          .style("stroke-opacity", .5)
+          .style("fill-opacity", .5);
       }
     });
   };
@@ -444,6 +559,7 @@ Network = function () {
     return update();
   };
   maxRadiusSelect = parseInt($('#max_radius_select').val());
+
   // called once to clean up raw data and switch links to point to node instances.  Returns modified data
   setupData = function (data) {
     // initialize circle radius scale
@@ -452,16 +568,11 @@ Network = function () {
     // var circleRadius;
     var count, nodesMap;
     var result;
-//    var countExtent;
-
+    // var countExtent;
     // countExtent is an Array with value 1 = minimum link count (0) and value 2 = maximum link count;
-//    console.log('$(\'#max_radius_select\').val() = ', $('#max_radius_select').val());
-//    console.log('circleRadius = ', circleRadius);
-
+    // console.log('$(\'#max_radius_select\').val() = ', $('#max_radius_select').val());
+    // console.log('circleRadius = ', circleRadius);
     // d is a sanctioned node from the array 'nodes' in the Object 'data'.  d has a 'radius' among its properties
-
-    // # d3.extent(array[, accessor])
-    // Returns the minimum and maximum value in the given array using natural order. This is equivalent to calling d3.min and d3.max simultaneously.
     // # d3.extent(array[, accessor])
     // Returns the minimum and maximum value in the given array using natural order. This is equivalent to calling d3.min and d3.max simultaneously.
 
@@ -473,20 +584,20 @@ Network = function () {
       return parseInt(d.linkCount, 10);
     });
 
-// # d3.scale.sqrt()
+    // # d3.scale.sqrt()
     // Constructs a new power scale with the default domain [0,1], the default range [0,1], and the exponent .5. This method is shorthand for:
     // d3.scale.pow().exponent(.5)
     // The returned scale is a function that takes a single argument x representing a value in the input domain; the return
-    // value is the corresponding value in the output range. Thus, the returned scale is equivalent to the sqrt function for numbers; for example sqrt(0.25) returns 0.5.
+    // value is the corresponding value in the output range. Thus, the returned scale is equivalent to the sqrt function for numbers;
+    // for example sqrt(0.25) returns 0.5.
 
     circleRadius = d3.scale.sqrt()
       .range([3, maxRadiusSelect])   // parseInt($('#max_radius_select').val())])
       .domain(countExtent);
-// countExtent is an Array with value 1 = minimum link count (0) and value 2 = maximum link count;
-//    console.log('$(\'#max_radius_select\').val() = ', $('#max_radius_select').val());
-//    console.log('circleRadius = ', circleRadius);
+    // countExtent is an Array with value 1 = minimum link count (0) and value 2 = maximum link count;
+    // console.log('$(\'#max_radius_select\').val() = ', $('#max_radius_select').val());
+    // console.log('circleRadius = ', circleRadius);
 
-//      .domain(countExtent);
     data.nodes.forEach(function (n) {
       // set initial x/y to values within the width/height
       // of the visualization
@@ -499,44 +610,49 @@ Network = function () {
       // determine radius of each node circle
 
       var circleRadiusResult = circleRadius(Math.pow(n.linkCount * 3, 0.9));
-//      console.log('n.id = ', n.id, '; n.linkCount = ', n.linkCount, '; circleRadius(Math.pow(n.linkCount * 3, 0.9)) = ', circleRadius(Math.pow(n.linkCount * 3, 0.9)));
+      // console.log('n.id = ', n.id, '; n.linkCount = ', n.linkCount, ';
+      // circleRadius(Math.pow(n.linkCount * 3, 0.9)) = ', circleRadius(Math.pow(n.linkCount * 3, 0.9)));
       n.radius = circleRadius(Math.pow(n.linkCount * 3, 0.9));
 
       return n.radius = circleRadius(Math.pow(n.linkCount * 3, 0.9));
 
-//      var circleRadiusResult = circleRadius(Math.pow(n.linkCount * 3, 0.9));
-//      console.log('n.id = ', n.id, '; n.linkCount = ', n.linkCount, '; circleRadius(Math.pow(n.linkCount * 3, 0.9)) = ', circleRadius(Math.pow(n.linkCount * 3, 0.9)));
+      //      var circleRadiusResult = circleRadius(Math.pow(n.linkCount * 3, 0.9));
+      //   console.log('n.id = ', n.id, '; n.linkCount = ', n.linkCount, ';
+      // circleRadius(Math.pow(n.linkCount * 3, 0.9)) = ', circleRadius(Math.pow(n.linkCount * 3, 0.9)));
       //    return n.radius = circleRadius(Math.pow(n.linkCount * 3, 0.9));
 
     });
+
     // id's -> node objects
     nodesMap = mapNodes(data.nodes);
+
     // switch links to point to node objects instead of id's
     count = 0;
     var linkedByIndexData;
-//    data.links.forEach(function (l) {
+    // data.links.forEach(function (l) {
     var l;
     for (var linkCounter = 0; linkCounter < data.links.length; linkCounter++) {
       l = data.links[linkCounter];
-
       if (l.target && l.source) {
         try {
           if ((nodesMap.get(l.source)) && nodesMap.get(l.target)) {
             l.source = nodesMap.get(l.source);
             l.target = nodesMap.get(l.target);
             if (l.target && l.source) {
-              return linkedByIndex["" + l.source.id + "," + l.target.id] = 1;
+              noSpliceError++;
+              // console.log('viz.js, line 630, noSpliceError = ', noSpliceError);
+              //   return linkedByIndex["" + l.source.id + "," + l.target.id] = 1;
+              linkedByIndex["" + l.source.id + "," + l.target.id] = 1;
             }
           }
-
         } catch (err) {
+          spliceError++;
           if (linkCounter > -1) {
             data.links.splice(linkCounter, 1);
             // console.log('Error, missing node source or target: ', linkSource, linkTarget);
-            console.log('539 Error: err = ', err, '; l.target = ', l.target);
+            console.log('line 536, spliced data.links, spliceError = ', spliceError, '; Error: err = ', err, '; l.target = ', l.target);
           }
         }
-
       }
       else {
         if (linkCounter > -1) {
@@ -546,10 +662,10 @@ Network = function () {
         }
       }
     }
-
     return data;
   };
-//  called once to clean up raw data and switch links to point to node instances.  Returns modified data
+
+  // called once to clean up raw data and switch links to point to node instances.  Returns modified data
   network.updateData2 = function (data) {
 
     circleRadius = d3.scale.sqrt()
@@ -619,7 +735,8 @@ Network = function () {
 
     for (var nodeCounter = 0; nodeCounter < nodes.length; nodeCounter++) {
       n = nodes[nodeCounter];
-      return nodesMap.set(n.id, n);
+      // return nodesMap.set(n.id, n);
+      nodesMap.set(n.id, n);
     }
     return nodesMap;
   };
@@ -734,39 +851,53 @@ Network = function () {
 //  filterLinks = function (allLinks, curNodes) {
 //    curNodes = mapNodes(curNodes);
 
+  /*
+   *   allLinks is an array of objects having a source property and
+   *   a target property.
+   *   The source and target properties contain node objects, each having and id.
+   *   curNodesData is an array of node objects
+   *  curNodes is a d3_Map
+   *
+   update = () ->
+   # filter data to show based on current filter settings.
+   curNodesData = filterNodes(allData.nodes)
+   curLinksData = filterLinks(allData.links, curNodesData)
+
+
+   filterLinks = (allLinks, curNodes) ->
+   curNodes = mapNodes(curNodes)
+   allLinks.filter (l) ->
+   curNodes.get(l.source.id) and curNodes.get(l.target.id)
+   * */
+
   filterLinks = function (allLinks, curNodes) {
-    curNodes = mapNodes(curNodes);
+    var curNodes = mapNodes(curNodes);
     return allLinks.filter(function (l) {
-      if (!l.target || !l.target.id) {
-        console.log('filename: viz.js, line ', (new Error).lineNumber, ';  Error null target where l.source.id = ', l.source.id, '; l.source = ', JSON.stringify(l.source));
-        /*
-         throw {
-         name: 'undefErr',
-         message: ''
-         }
-         */
-        // alert('hello');
+      //  l.target is a node object with an id
+      if (!l.target.id) {
+        console.log('filename: viz.js, line 773;  Error null target where l.source.id = ', l.source.id, '; JSON.stringify(l.source) = ', JSON.stringify(l.source));
       }
       try {
         if (!l.target.id) {
-          console.log('filename: viz.js, line ', (new Error).lineNumber, '; Error null target id where l.source.id = ', l.source.id, '; l.source = ', JSON.stringify(l.source));
+          console.log('filename: viz.js, line 773; Error null target id where l.source.id = ', l.source.id, '; JSON.stringify(l.source) = ', JSON.stringify(l.source));
         }
       } catch (err) {
-        console.log('filename: viz.js, line ', (new Error).lineNumber, '; Error: ', err, '; null target id where l.source.id = ', l.source.id, '; l.source = ', JSON.stringify(l.source).substring(0, 100));
+        console.log('filename: viz.js, line 776; Error: ', err, '; null target id where l.source.id = ', l.source.id, '; JSON.stringify(l.source).substring(0, 100) = ', JSON.stringify(l.source).substring(0, 100));
       }
       try {
-        if (curNodes.get(l.target.id)) {
+        // curNodes is a map, param should be an id
+        if (curNodes.get(l.target.id)) { //.id)) {
           return curNodes.get(l.source.id) && curNodes.get(l.target.id);
           // return curNodes.get(l.source.id).substring(0, 100) && curNodes.get(l.target.id).substring(0, 100);
         }
       } catch (err) {
-        console.log('filename: viz.js, line ', (new Error).lineNumber, ';  Error: ', err.toString().substring(0, 100));
+        console.log('filename: viz.js, line 784;  Error: ', err.toString().substring(0, 100));
 
       }
     });
   };
 
-//  enter/exit display for nodes
+  //  enter/exit display for nodes
   network.updateNodes = function () {
     node = nodesG.selectAll("circle.node")
       .data(curNodesData, function (d) {
@@ -784,10 +915,6 @@ Network = function () {
       .attr("r", function (d) {
         return circleRadius(Math.pow(d.linkCount * 3, 0.9));
       })
-//      .attr("r", function (d) {
-//        return (d.radius); // staticRadius);
-      // return (d.radius);
-//      })
       .style("fill", function (d) {
         return nodeColors(d[$('#node_color_select').val()]);
       })
@@ -1014,14 +1141,14 @@ Network = function () {
   };
 //  click node for doc function
   showTheDoc = function (d, i) {
-    console.log("viz.js 1006, showTheDoc(d, i), this = ", this, "; d.id = ", d.id, "; i = ", i);
+    console.log("viz.js 1124, showTheDoc(d, i), this = ", this, "; d.id = ", d.id, "; i = ", i);
     var aNode = this;
     console.log("typeof aNode = ", typeof aNode);
     var longNarrative;
     //  $("button#getNarrative").click(function () {
     var fileName = d.narrativeFileName;
     // var fileName = "NSQE01101E.shtml";
-    var path = "data/narrative_summaries/";
+    var path = "data/committees/consolidated/narratives/";
     var url = path + fileName;
     $.ajaxSetup({
       async: false,
@@ -1192,19 +1319,16 @@ activate = function (group, link) {
 };
 // end of activate()
 
-$(function () {
+$(function (network, data) {
     var searchTerm;
     var myNetwork;
     myNetwork = Network();
-
-    // var consoleLog = myNetwork.
     d3.selectAll("#layouts a")
       .on("click", function (d) {
         var newLayout;
         newLayout = d3.select(this)
           .attr("id");
         activate("layouts", newLayout);
-        // console.log("newLayout = ", newLayout);
         return myNetwork.toggleLayout(newLayout);
       });
     d3.selectAll("#filters a")
@@ -1230,21 +1354,14 @@ $(function () {
       });
     $("#max_radius_select")
       .on("change", function (e) {
-
-        countExtent = d3.extent(data.nodes, function (d) {
-          //result = parseInt(d.linkCount, 10);
-          result = parseInt(d.linkCount, 10); // 10 is merely the radix; we are using decimal, base 10
-          // if the node has 4 links, the radius is set to 4, a number, not a string representation of  anumber
-          d.radius = d.linkCount;
-          return parseInt(d.linkCount, 10);
-        });
-
         maxRadiusSelect = parseInt($('#max_radius_select').val());
-        activate("layouts", "force");
         circleRadius = d3.scale.sqrt()
-          .range([3, maxRadiusSelect])   // parseInt($('#max_radius_select').val())])
+          .range([3, maxRadiusSelect])
           .domain(countExtent);
-        return myNetwork.toggleLayout("force");
+        myNetwork.updateMaxRadius(maxRadiusSelect);
+        activate("layouts", "force");
+        searchTermId = '';
+        return myNetwork.updateSearchId(searchTermId);
       });
     if (false) {
       var intervalID = setInterval(function () {
@@ -1259,6 +1376,7 @@ $(function () {
 
     $("#link_distance_select")
       .on("change", function (e) {
+        $('input[name="noLongerListed"][value="1"]').prop('checked', false);
         activate("layouts", "force");
         return myNetwork.toggleLayout("force");
       });
@@ -1266,7 +1384,6 @@ $(function () {
     $("#node_color_select")
       .on("change", function (e) {
         $('input[name="noLongerListed"][value="1"]').prop('checked', false);
-        // $('input[name="noLongerListed"]).prop('checked', false);
         activate("layouts", "force");
         var nodeColorSelect = $("#node_color_select").val();
         return myNetwork.updateColor3(nodeColorSelect);
@@ -1303,11 +1420,12 @@ $(function () {
 
     // "No Longer Listed" checkbox
     $("input[name='noLongerListed']").change(function (e) {
-      // e = jQuery.Event
       if (myNetwork.consoleLog) {
         console.log("checkbox clicked = ", this.checked);
       }
       if (this.checked) {
+        // var nodeColorSelect = $("#node_color_select").val();
+        //  return myNetwork.updateColor3(nodeColorSelect);
         activate("layouts", "force");
         return myNetwork.updateColor3("noLongerListed");
       } else {
@@ -1327,7 +1445,8 @@ $(function () {
     var radioNEI = document.forms['highlight'].elements['noneEntIndiv'];
     // loop through list
     for (var i = 0, len = radioNEI.length; i < len; i++) {
-      radioNEI[i].onclick = function () { // assign onclick handler function to each
+      radioNEI[i].onclick = function () {
+        // assign onclick handler function to each
         // put clicked radio button's value in total field
         // this.form.elements.value = this.value;
         // console.log(this.value);

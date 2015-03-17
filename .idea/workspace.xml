@@ -5,7 +5,597 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d978abb8-9bbc-4846-80bc-cd786bfafc5b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDe001E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDe002E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDe003E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDe004E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDe005E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDe006E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDe007E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDe008E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDe009E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDe010E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDe011E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDe012E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDe014E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDe015E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDe019E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDe020E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDe021E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDe068E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDe069E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDe070E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDe071E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDe072E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDe088E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDe089E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDe090E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDe091E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDe092E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDe093E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDe096E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDe098E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDe099E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDe100E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDe101E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDe102E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDe103E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDe104E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDe105E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDe106E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDe107E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDe108E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDe109E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDe110E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDe111E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDe112E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDe113E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDe114E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDe115E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDe116E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDe118E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDe121E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDe128E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDe129E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDe130E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDe131E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDe132E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDe133E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDe134E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDe135E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDe136E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDe137E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDe138E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDe139E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDe140E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDe141E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDe142E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDe143E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDe144E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDe145E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDe146E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi001E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi002E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi003E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi006E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi009E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi010E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi012E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi014E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi015E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi017E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi018E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi019E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi020E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi021E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi023E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi027E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi028E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi029E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi031E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi037E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi042E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi054E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi055E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi056E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi057E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi058E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi059E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi060E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi062E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi063E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi064E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi065E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi067E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi068E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi070E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi071E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi072E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi073E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi074E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi075E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi076E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi077E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi080E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi081E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi082E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi083E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi086E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi087E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi088E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi091E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi092E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi093E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi095E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi096E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi099E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi101E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi103E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi104E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi109E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi111E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi114E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi119E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi120E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi122E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi123E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi124E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi126E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi128E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi129E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi130E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi132E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi135E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi136E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi138E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi139E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi140E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi141E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi142E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi143E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi144E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi147E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi148E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi149E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi150E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi151E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi152E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi154E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi155E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi156E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi157E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi160E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi161E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi164E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi167E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi168E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi169E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi170E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi172E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi176E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi177E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi180E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi184E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi186E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi187E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi188E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi190E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi192E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi193E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi194E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi195E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi196E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi198E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi199E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi200E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi201E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi202E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi203E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi204E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi205E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi206E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi208E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi216E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi217E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi218E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi219E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi221E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi222E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi223E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi226E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi228E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi229E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi232E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi233E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi234E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi236E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi237E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi238E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi241E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi242E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi243E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi244E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi245E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi246E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi247E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi248E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi249E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi250E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi251E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi252E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi253E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi254E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi255E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi259E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi260E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi261E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi262E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi263E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi264E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi265E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi266E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi268E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi271E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi272E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi273E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi274E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi275E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi276E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi277E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi278E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi279E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi280E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi282E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi283E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi285E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi286E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi289E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi290E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi291E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi292E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi293E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi294E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi295E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi296E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi297E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi298E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi299E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi300E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi301E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi302E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi303E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi304E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi305E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi306E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi307E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi308E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi309E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi313E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi314E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi315E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi316E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi317E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi318E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi319E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi320E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi321E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi322E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi323E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi324E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi325E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi326E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi327E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi328E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi329E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi330E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi331E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi332E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi333E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi334E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi335E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi336E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi337E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi338E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi339E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi340E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi341E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi342E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi343E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi344E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi345E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi346E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDi347E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQE00101E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQE00201E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQE00301E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQE00401E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQE00501E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQE00601E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQE00701E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQE00801E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQE00901E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQE01001E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQE01101E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQE01201E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQE01401E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQE01501E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQE01901E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQE02001E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQE02101E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQE06801E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQE06902E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQE07002E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQE07102E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQE07202E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQE08802E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQE08902E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQE09002E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQE09102E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQE09202E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQE09302E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQE09603E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQE09803E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQE09903E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQE10003E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQE10103E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQE10203E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQE10304E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQE10404E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQE10504E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQE10604E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQE10704E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQE10804E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQE10904E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQE11004E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQE11104E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQE11204E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQE11304E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQE11404E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQE11504E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQE11604E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQE11805E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQE11905E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQE12105E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQE12808E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQE12910E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQE13010E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQE13111E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQE13211E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQE13312E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQE13412E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQE13513E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQE13613E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQE13714E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQE13814E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQE13914E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQE14014E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQE14114E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQE14214E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQE14314E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQE14414E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQE14514E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQE14614E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI05401E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI05501E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI05601E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI05702E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI05802E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI05902E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI06002E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI06202E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI06302E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI06402E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI06502E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI06702E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI06802E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI07002E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI07102E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI07202E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI07302E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI07402E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI07502E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI07602E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI07702E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI08002E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI08102E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI08202E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI08302E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI08603E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI08703E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI08803E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI09103E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI09203E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI09303E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI09503E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI09603E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI09903E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI10103E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI10303E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI10403E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI10903E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI11103E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI11403E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI11903E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI12003E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI12203E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI12303E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI12403E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI12603E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI12803E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI12903E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI13003E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI13203E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI13503E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI13603E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI13803E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI13903E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI14003E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI14103E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI14203E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI14303E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI14403E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI14703E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI14803E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI14903E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI15003E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI15103E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI15203E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI15404E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI15504E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI15604E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI15704E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI16004E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI16104E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI16404E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI16704E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI16804E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI16904E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI17004E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI17204E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI17604E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI17704E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI18004E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI18405E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI18605E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI18705E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI18805E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI19005E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI19205E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI19305E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI19405E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI19505E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI19605E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI19805E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI19905E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI20005E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI20105E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI20205E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI20305E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI20405E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI20505E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI20605E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI20805E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI21606E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI21706E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI21806E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI21906E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI22106E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI22206E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI22306E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI22606E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI22806E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI22907E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI23207E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI23307E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI23407E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI23608E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI23708E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI23808E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI24108E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI24208E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI24308E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI24408E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI24508E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI24608E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI24708E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI24808E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI24908E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI25008E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI25108E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI25208E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI25308E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI25408E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI25508E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI25908E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI26008E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI26108E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI26208E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI26308E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI26408E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI26508E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI26608E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI26809E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI27109E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI27209E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI27309E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI27410E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI27510E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI27610E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI27710E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI27810E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI27910E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI28010E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI28210E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI28310E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI28510E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI28610E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI28911E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI29011E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI29111E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI29211E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI29311E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI29411E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI29511E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI29611E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI29711E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI29811E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI29911E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI30012E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI30112E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI30212E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI30312E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI30412E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI30512E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI30612E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI30712E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI30812E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI30912E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI31112E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI31212E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI31313E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI31413E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI31513E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI31613E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI31713E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI31813E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI31913E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI32013E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI32114E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI32214E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI32314E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI32414E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI32514E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI32614E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI32714E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI32814E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI32914E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI33014E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI33114E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI33214E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI33314E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI33414E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI33514E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI33614E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI33714E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI33814E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI33914E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI34014E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI34114E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI34214E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI34315E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI34415E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI34515E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI34615E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/consolidated/narratives/NSQI34715E.shtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/1267/trunc_links_with_periods.dot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/collect.js" afterPath="$PROJECT_DIR$/js/collect.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/archives/data/archive/consolidated.xml" afterPath="$PROJECT_DIR$/archives/data/archive/consolidated.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/archives/data/committees/consolidated/consolidated.xml" afterPath="$PROJECT_DIR$/archives/data/committees/consolidated/consolidated.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/archive/consolidated.xml" afterPath="$PROJECT_DIR$/data/archive/consolidated.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/committees/consolidated/consolidated.xml" afterPath="$PROJECT_DIR$/data/committees/consolidated/consolidated.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/viz.js" afterPath="$PROJECT_DIR$/js/viz.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="un-sanc-viz.iws" />
@@ -33,80 +623,21 @@
       <file leaf-file-name="viz.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/viz.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4152334" vertical-offset="3707" max-vertical-offset="25092">
-              <caret line="227" column="38" selection-start-line="227" selection-start-column="38" selection-end-line="227" selection-end-column="38" />
+            <state vertical-scroll-proportion="0.48803827" vertical-offset="0" max-vertical-offset="25925">
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding>
-                <element signature="e#10768#11114#0" expanded="false" />
-                <element signature="e#11198#11272#0" expanded="false" />
-                <element signature="e#11518#12809#0" expanded="false" />
+                <element signature="e#11534#11608#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jquery-1.7.2.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/libs/jquery-1.7.2.js">
+      <file leaf-file-name="collect.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/collect.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="77" max-vertical-offset="159103">
-              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+            <state vertical-scroll-proportion="8.230769" vertical-offset="17469" max-vertical-offset="33218">
+              <caret line="1022" column="0" selection-start-line="1022" selection-start-column="0" selection-end-line="1022" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.576923" vertical-offset="1768" max-vertical-offset="6392">
-              <caret line="118" column="74" selection-start-line="118" selection-start-column="74" selection-end-line="118" selection-end-column="74" />
-              <folding>
-                <marker date="1426531094635" expanded="true" signature="16653:16746" placeholder="..." />
-                <marker date="1426531094635" expanded="true" signature="16695:16737" placeholder="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="d3.v2.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/libs/d3.v2.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="36440" max-vertical-offset="166957">
-              <caret line="2151" column="0" selection-start-line="2151" selection-start-column="0" selection-end-line="2151" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="data_consolidated_list.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/committees/consolidated/data_consolidated_list.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="38.423077" vertical-offset="174021" max-vertical-offset="1040400">
-              <caret line="10119" column="30" selection-start-line="10119" selection-start-column="30" selection-end-line="10119" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="utilities_aq_viz.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/utilities_aq_viz.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="6834">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="data_committee.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/committees/1267/data_committee.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="170">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#12#689994#0" expanded="false" />
-                <element signature="n#!!block;n#linkSet#0;n#!!top" expanded="false" />
-                <element signature="e#905968#982859#0" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -118,31 +649,6 @@
               <caret line="629" column="35" selection-start-line="622" selection-start-column="0" selection-end-line="629" selection-end-column="35" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mergeLists.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/mergeLists.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="4114" max-vertical-offset="23460">
-              <caret line="242" column="48" selection-start-line="242" selection-start-column="48" selection-end-line="242" selection-end-column="48" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="data_merged.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/committees/consolidated/data_merged.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="204">
-              <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
-              <folding>
-                <element signature="e#12#1360864#0" expanded="false" />
-                <element signature="e#1360876#1437767#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -163,7 +669,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/log/consolidated.log.0" />
         <option value="$PROJECT_DIR$/data/committees/1267/narrative_links.json" />
         <option value="$PROJECT_DIR$/data/committees/committees.json" />
         <option value="$PROJECT_DIR$/data/committees/consolidated/data.json" />
@@ -206,13 +711,14 @@
         <option value="$PROJECT_DIR$/data/committees/1267/data.json" />
         <option value="$PROJECT_DIR$/js/error_line.js" />
         <option value="$PROJECT_DIR$/lineNumTest.html" />
-        <option value="$PROJECT_DIR$/js/collect.js" />
         <option value="$PROJECT_DIR$/js/parse2Lists.js" />
-        <option value="$PROJECT_DIR$/js/app.js" />
         <option value="$PROJECT_DIR$/js/utilities_aq_viz.js" />
         <option value="$PROJECT_DIR$/data/committees/consolidated/data_merged.json" />
         <option value="$PROJECT_DIR$/js/mergeLists.js" />
+        <option value="$PROJECT_DIR$/data/committees/1267/trunc_links_with_periods.dot" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/app.js" />
+        <option value="$PROJECT_DIR$/js/collect.js" />
         <option value="$PROJECT_DIR$/js/viz.js" />
       </list>
     </option>
@@ -337,24 +843,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="output" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="un-sanc-viz" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="un-sanc-viz" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="committees" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -378,32 +866,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="consolidated" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="un-sanc-viz" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="un-sanc-viz" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="committees" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="consolidated" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="debug" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -453,17 +915,17 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\User1\WebstormProjects\un-sanc-viz\data\committees\1267" />
+      <recent name="C:\Users\User1\WebstormProjects\un-sanc-viz\data\committees\consolidated" />
       <recent name="C:\Users\User1\WebstormProjects\un-sanc-viz\archives" />
       <recent name="C:\Users\User1\WebstormProjects\un-sanc-viz\data\dot" />
       <recent name="C:\Users\User1\WebstormProjects\un-sanc-viz\data\committees\2140" />
-      <recent name="C:\Users\User1\WebstormProjects\un-sanc-viz\data\committees\2127" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\User1\WebstormProjects\un-sanc-viz\data\committees\1267" />
       <recent name="C:\Users\User1\WebstormProjects\un-sanc-viz\data\committees\consolidated\backup" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.app.js JavaScript">
+  <component name="RunManager" selected="Node.js.app.js">
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <method />
     </configuration>
@@ -513,8 +975,15 @@
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
       <method />
     </configuration>
+    <configuration default="false" name="error_line.js" type="MongoRunConfiguration" factoryName="Mongo">
+      <setting name="path" value="$PROJECT_DIR$/js/error_line.js" />
+      <setting name="shellParams" value="" />
+      <RunnerSettings RunnerId="Basic" />
+      <ConfigurationWrapper RunnerId="Basic" />
+      <method />
+    </configuration>
     <configuration default="false" name="app.js" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="js/app.js" working-dir="$PROJECT_DIR$">
-      <browser with-js-debugger="true" url="http://localhost:63343/un-sanc-viz/index.html" />
+      <browser start="true" with-js-debugger="true" url="http://localhost:63343/un-sanc-viz/index.html" />
       <RunnerSettings RunnerId="Basic" />
       <RunnerSettings RunnerId="debuggableProgram" />
       <ConfigurationWrapper RunnerId="Basic" />
@@ -529,18 +998,11 @@
       <ConfigurationWrapper RunnerId="debuggableProgram" />
       <method />
     </configuration>
-    <configuration default="false" name="error_line.js" type="MongoRunConfiguration" factoryName="Mongo">
-      <setting name="path" value="$PROJECT_DIR$/js/error_line.js" />
-      <setting name="shellParams" value="" />
-      <RunnerSettings RunnerId="Basic" />
-      <ConfigurationWrapper RunnerId="Basic" />
-      <method />
-    </configuration>
     <list size="4">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.app.js JavaScript" />
-      <item index="1" class="java.lang.String" itemvalue="Node.js.app.js" />
-      <item index="2" class="java.lang.String" itemvalue="Node.js.parse2Lists" />
-      <item index="3" class="java.lang.String" itemvalue="Mongo.error_line.js" />
+      <item index="1" class="java.lang.String" itemvalue="Mongo.error_line.js" />
+      <item index="2" class="java.lang.String" itemvalue="Node.js.app.js" />
+      <item index="3" class="java.lang.String" itemvalue="Node.js.parse2Lists" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -614,7 +1076,13 @@
       <option name="project" value="LOCAL" />
       <updated>1426450614106</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="get links back; only nodes rendered">
+      <created>1426536643165</created>
+      <option name="number" value="00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1426536643165</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -624,7 +1092,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40789473" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Heroku" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3944591" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.41578948" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -709,12 +1177,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/collect.js</url>
-          <line>1279</line>
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/js/collect.js</url>
-          <line>1021</line>
-          <option name="timeStamp" value="53" />
+          <line>1280</line>
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/parse2Lists.js</url>
@@ -845,32 +1308,32 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/viz.js</url>
-          <line>63</line>
+          <line>65</line>
           <option name="timeStamp" value="187" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/viz.js</url>
-          <line>68</line>
+          <line>70</line>
           <option name="timeStamp" value="188" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/viz.js</url>
-          <line>674</line>
+          <line>694</line>
           <option name="timeStamp" value="197" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/viz.js</url>
-          <line>677</line>
+          <line>697</line>
           <option name="timeStamp" value="198" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/viz.js</url>
-          <line>689</line>
+          <line>709</line>
           <option name="timeStamp" value="199" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/viz.js</url>
-          <line>1007</line>
+          <line>1027</line>
           <option name="timeStamp" value="208" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
@@ -885,42 +1348,67 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/viz.js</url>
-          <line>650</line>
+          <line>670</line>
           <option name="timeStamp" value="235" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/viz.js</url>
-          <line>692</line>
+          <line>712</line>
           <option name="timeStamp" value="241" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/viz.js</url>
-          <line>215</line>
+          <line>217</line>
           <option name="timeStamp" value="249" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/viz.js</url>
-          <line>873</line>
+          <line>893</line>
           <option name="timeStamp" value="280" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/viz.js</url>
-          <line>440</line>
+          <line>463</line>
           <option name="timeStamp" value="288" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/js/viz.js</url>
+          <line>341</line>
+          <option name="timeStamp" value="340" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/js/viz.js</url>
+          <line>339</line>
+          <option name="timeStamp" value="343" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/js/viz.js</url>
+          <line>337</line>
+          <option name="timeStamp" value="345" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/js/viz.js</url>
+          <line>350</line>
+          <option name="timeStamp" value="347" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/js/viz.js</url>
+          <line>353</line>
+          <option name="timeStamp" value="350" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/js/viz.js</url>
+          <line>358</line>
+          <option name="timeStamp" value="351" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="314" />
+      <option name="time" value="353" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JavascriptDebugType">
-        <watch expression="nodesMap" language="JavaScript" />
-        <watch expression="nodes.length" language="JavaScript" />
-        <watch expression="nodeCounter" language="JavaScript" />
-        <watch expression="data" language="JavaScript" />
-        <watch expression="circleRadius" language="JavaScript" />
-        <watch expression="allLinks" language="JavaScript" />
-        <watch expression="curNodes" language="JavaScript" />
-        <watch expression="!l.target.id" language="JavaScript" />
+        <watch expression="searchTermName" language="JavaScript" />
+        <watch expression="match" language="JavaScript" />
+        <watch expression="d" language="JavaScript" />
       </configuration>
       <configuration name="NodeJSConfigurationType">
         <watch expression="paragraph" language="JavaScript" />
@@ -933,20 +1421,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/data/dot/crazy.gv.txt.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8653">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/dot/showdot2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="374">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/dot/new-ethylene.dot">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
@@ -1007,13 +1481,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/committees/1267/trunc_links.dot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5236">
-          <caret line="301" column="0" selection-start-line="301" selection-start-column="0" selection-end-line="301" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1186,16 +1653,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/collect.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.034979425" vertical-offset="221" max-vertical-offset="33643">
-          <caret line="13" column="57" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="57" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/committees/consolidated/consolidated.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="744804">
@@ -1208,16 +1665,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1016498">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="42" max-vertical-offset="3043">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1240,11 +1687,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1016498">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#12#689994#0" expanded="false" />
-            <element signature="n#!!block;n#linkSet#0;n#!!top" expanded="false" />
-            <element signature="e#905968#982859#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1264,7 +1706,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="3961" max-vertical-offset="23732">
           <caret line="242" column="48" selection-start-line="242" selection-start-column="48" selection-end-line="242" selection-end-column="48" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1279,33 +1721,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/committees/consolidated/data_consolidated_list.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="38.423077" vertical-offset="174021" max-vertical-offset="1040400">
-          <caret line="10119" column="30" selection-start-line="10119" selection-start-column="30" selection-end-line="10119" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.576923" vertical-offset="1768" max-vertical-offset="6392">
-          <caret line="118" column="74" selection-start-line="118" selection-start-column="74" selection-end-line="118" selection-end-column="74" />
-          <folding>
-            <marker date="1426531094635" expanded="true" signature="16653:16746" placeholder="..." />
-            <marker date="1426531094635" expanded="true" signature="16695:16737" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/libs/jquery-1.7.2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="77" max-vertical-offset="159103">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/libs/d3.v2.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="36440" max-vertical-offset="166957">
@@ -1314,14 +1729,83 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/data/committees/consolidated/narratives/NSQDe001E.shtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.32336956" vertical-offset="0" max-vertical-offset="1411">
+          <caret line="0" column="432" selection-start-line="0" selection-start-column="432" selection-end-line="0" selection-end-column="432" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/libs/jquery-1.7.2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="107" max-vertical-offset="176511">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <marker date="1424190033574" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424190033574" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="4.1538463" vertical-offset="2256" max-vertical-offset="7293">
+          <caret line="120" column="35" selection-start-line="120" selection-start-column="30" selection-end-line="120" selection-end-column="35" />
+          <folding>
+            <marker date="1426545036234" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1426545036234" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/committees/1267/trunc_links_with_periods.dot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="5236">
+          <caret line="6" column="6" selection-start-line="0" selection-start-column="0" selection-end-line="302" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/committees/1267/trunc_links.dot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3992" max-vertical-offset="5236">
+          <caret line="248" column="0" selection-start-line="241" selection-start-column="19" selection-end-line="248" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1241" max-vertical-offset="3026">
+          <caret line="81" column="11" selection-start-line="81" selection-start-column="11" selection-end-line="81" selection-end-column="11" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/committees/consolidated/data_consolidated_list.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.3846154" vertical-offset="1018700" max-vertical-offset="1019898">
+          <caret line="59940" column="22" selection-start-line="59940" selection-start-column="22" selection-end-line="59940" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/collect.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="8.230769" vertical-offset="17469" max-vertical-offset="33218">
+          <caret line="1022" column="0" selection-start-line="1022" selection-start-column="0" selection-end-line="1022" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/viz.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4152334" vertical-offset="3707" max-vertical-offset="25092">
-          <caret line="227" column="38" selection-start-line="227" selection-start-column="38" selection-end-line="227" selection-end-column="38" />
+        <state vertical-scroll-proportion="0.48803827" vertical-offset="0" max-vertical-offset="25925">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding>
-            <element signature="e#10768#11114#0" expanded="false" />
-            <element signature="e#11198#11272#0" expanded="false" />
-            <element signature="e#11518#12809#0" expanded="false" />
+            <element signature="e#11534#11608#0" expanded="false" />
           </folding>
         </state>
       </provider>
