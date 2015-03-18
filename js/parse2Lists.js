@@ -10,6 +10,7 @@
 
 var app = require('./app.js');
 var utilities_aq_viz = require('./utilities_aq_viz');
+var init = require('./committees.js').init;
 // RUN CONFIGURATION
 // skip downloading 300+ narrative files and use locally stored files instead; for debugging
 var useLocalListFiles = app.useLocalListFiles;
@@ -108,7 +109,7 @@ var individualsJsonLocalOutputFileNameAndPath;
 var entitiesJsonLocalOutputFileNameAndPath;
 var dotFileLocalOutputFileNameAndPath;
 // var link;
-
+/*
 var init = function (committeeParam) {
   committee = committeeParam;
   // json files (local)
@@ -183,7 +184,7 @@ var init = function (committeeParam) {
       dataJsonLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/data_committee.json';
   }
 };
-
+*/
 var parse2Lists = function () {
   var committeeArray = ['751', '1267', '1518', '1521', '1533', '1572', '1591', '1718', '1737', '1970', '1988', '2048', '2127'];
 

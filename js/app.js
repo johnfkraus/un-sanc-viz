@@ -26,6 +26,7 @@ var async = require('async'),
   util = require('util'),
   dateFormat = require('dateformat'),
   inspect = require('object-inspect');
+var committees = require('.committees.js');
 var collect = require('./collect.js');
 var parse2Lists = require('./parse2Lists.js');
 var mergeLists = require('./mergeLists.js');
