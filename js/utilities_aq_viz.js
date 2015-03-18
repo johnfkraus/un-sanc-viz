@@ -1,6 +1,7 @@
 /* utilities_aq_vis.js */
-var app = require('./app.js');
-var consoleLog = app.consoleLog;
+// var app = require('./app.js');
+var appConfig = require('./appConfig.js');
+var consoleLog = appConfig.consoleLog;
 // var consoleLog = false;
 var Set = require('backpack-node').collections.Set;
 var truncateToNumChars = 100;

@@ -12,12 +12,13 @@
 var app = require('./app.js');
 // var logger = app.logger; //
 var logger = require('./tracer-logger-config.js').logger;
+var utilities_aq_viz = require('./utilities_aq_viz');
 // RUN CONFIGURATION
 // skip downloading 300+ narrative files and use locally stored files instead; for debugging
 var useLocalConsolidatedListFile = app.useLocalListFiles;
 var useLocalNarrativeFiles = app.useLocalNarrativeFiles;
 var consoleLog = app.consoleLog;
-var utilities_aq_viz = require('./utilities_aq_viz');
+
 var logModulus = utilities_aq_viz.logModulus;
 var substringChars = utilities_aq_viz.truncateToNumChars;
 var linenums = require('./linenums.js');
@@ -78,12 +79,15 @@ var anchor,
 // var functionCount = 0;
 var indivLinks = [];
 var entLinks = [];
+/*
 var dataPath = __dirname + '/../data/committees/consolidated/data_consolidated_list.json';
 var writeJsonOutputDebuggingDirectory = __dirname + '/../data/committees/consolidated/debug/';
 var listUrl = 'http://www.un.org/sc/committees/consolidated.xml';
-var individualsLocalOutputFileNameAndPath = __dirname + '/../data/narrative_lists/individuals_associated_with_Al-Qaida.json';
-var entitiesLocalOutputFileNameAndPath = __dirname + '/../data/narrative_lists/entities_other_groups_undertakings_associated_with_Al-Qaida.json';
+// var individualsJsonLocalOutputFileNameAndPath = __dirname + '/../data/narrative_lists/individuals_associated_with_Al-Qaida.json';
+// var entitiesJsonLocalOutputFileNameAndPath = __dirname + '/../data/narrative_lists/entities_other_groups_undertakings_associated_with_Al-Qaida.json';
 var narrativeUrlsArrayLocalFileNameAndPath = __dirname + '/../data/narrative_lists/narrativeUrlsArray.json';
+*/
+
 var indivOrEntityString;
 // var individualsListUrl = 'http://www.un.org/sc/committees/1267/individuals_associated_with_Al-Qaida.shtml';
 // var entitiesListUrl = 'http://www.un.org/sc/committees/1267/entities_other_groups_undertakings_associated_with_Al-Qaida.shtml';
@@ -124,7 +128,7 @@ var start = function () {
         callback();
       },
 
-      // collect sanctions lists for the various committees
+      // collect XML sanctions list files for the various U.N. sanctions committees
       function (callback) {
         // var committeeArray = ['751', '1267', '1518', '1521', '1533', '1572', '1591', '1718', '1737', '1970', '1988', '2048', '2127'];
         try {
@@ -652,10 +656,10 @@ var syncParseHtmlListPage = function (htmlString, indivOrEntityString) {
   var parser = new htmlparser.Parser(handler);
   parser.parseComplete(htmlString);
   if (indivOrEntityString === 'indiv') {
-    writeMyFile(individualsLocalOutputFileNameAndPath, JSON.stringify(indivLinks, null, ' '), fsOptions);
+    writeMyFile(individualsJsonLocalOutputFileNameAndPath, JSON.stringify(indivLinks, null, ' '), fsOptions);
   }
   if (indivOrEntityString === 'entity') {
-    writeMyFile(entitiesLocalOutputFileNameAndPath, JSON.stringify(entLinks, null, ' '), fsOptions);
+    writeMyFile(entitiesJsonLocalOutputFileNameAndPath, JSON.stringify(entLinks, null, ' '), fsOptions);
   }
   writeMyFile(narrativeUrlsArrayLocalFileNameAndPath, JSON.stringify(narrativeUrlsArray, null, ' '), fsOptions);
 };
