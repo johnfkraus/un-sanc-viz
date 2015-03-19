@@ -9,7 +9,6 @@ var consoleLog = false;
 var logger = require('./tracer-logger-config.js').logger;
 // var logger = require('./libs/logger.js');
 
-
 module.exports = {
   useLocalListFiles: useLocalListFiles,
   useLocalNarrativeFiles: useLocalNarrativeFiles,

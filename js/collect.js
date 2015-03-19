@@ -9,15 +9,16 @@
 
 // do we want lots of logging messages for debugging (if so, set consoleLog = true)
 
-var app = require('./app.js');
-// var logger = app.logger; //
+// var app = require('./app.js');
+var appConfig = require('./appConfig.js');
+var getCommitteesJson = require('./committees.js').getCommitteesJson;
 var logger = require('./tracer-logger-config.js').logger;
 var utilities_aq_viz = require('./utilities_aq_viz');
 // RUN CONFIGURATION
 // skip downloading 300+ narrative files and use locally stored files instead; for debugging
-var useLocalConsolidatedListFile = app.useLocalListFiles;
-var useLocalNarrativeFiles = app.useLocalNarrativeFiles;
-var consoleLog = app.consoleLog;
+var useLocalConsolidatedListFile = appConfig.useLocalListFiles;
+var useLocalNarrativeFiles = appConfig.useLocalNarrativeFiles;
+var consoleLog = appConfig.consoleLog;
 
 var logModulus = utilities_aq_viz.logModulus;
 var substringChars = utilities_aq_viz.truncateToNumChars;
@@ -80,13 +81,13 @@ var anchor,
 var indivLinks = [];
 var entLinks = [];
 /*
-var dataPath = __dirname + '/../data/committees/consolidated/data_consolidated_list.json';
-var writeJsonOutputDebuggingDirectory = __dirname + '/../data/committees/consolidated/debug/';
-var listUrl = 'http://www.un.org/sc/committees/consolidated.xml';
-// var individualsJsonLocalOutputFileNameAndPath = __dirname + '/../data/narrative_lists/individuals_associated_with_Al-Qaida.json';
-// var entitiesJsonLocalOutputFileNameAndPath = __dirname + '/../data/narrative_lists/entities_other_groups_undertakings_associated_with_Al-Qaida.json';
-var narrativeUrlsArrayLocalFileNameAndPath = __dirname + '/../data/narrative_lists/narrativeUrlsArray.json';
-*/
+ var committeesJson[committee].dataPath = __dirname + '/../data/committees/consolidated/data_consolidated_list.json';
+ var writeJsonOutputDebuggingDirectory = __dirname + '/../data/committees/consolidated/debug/';
+ var listUrl = 'http://www.un.org/sc/committees/consolidated.xml';
+ // var individualsJsonLocalOutputFileNameAndPath = __dirname + '/../data/narrative_lists/individuals_associated_with_Al-Qaida.json';
+ // var entitiesJsonLocalOutputFileNameAndPath = __dirname + '/../data/narrative_lists/entities_other_groups_undertakings_associated_with_Al-Qaida.json';
+ var narrativeUrlsArrayLocalFileNameAndPath = __dirname + '/../data/narrative_lists/narrativeUrlsArray.json';
+ */
 
 var indivOrEntityString;
 // var individualsListUrl = 'http://www.un.org/sc/committees/1267/individuals_associated_with_Al-Qaida.shtml';
@@ -96,6 +97,7 @@ var host = 'www.un.org';
 var config;
 var committees;
 var committeeArray = ['751', '1267', '1518', '1521', '1533', '1572', '1591', '1718', '1737', '1970', '1988', '2048', '2127'];
+var committeesJson;
 
 var start = function () {
   var functionCount = 0;
@@ -117,14 +119,19 @@ var start = function () {
       function (callback) {
         // fse.removeSync(writeJsonOutputDebuggingDirectory);
         if (!useLocalNarrativeFiles) {
-          fse.removeSync(__dirname + '/../data/narrative_summaries/');
-          fse.mkdirs(__dirname + '/../data/narrative_summaries/');
+          // fse.removeSync(__dirname + '/../data/narrative_summaries/');
+          // fse.mkdirs(__dirname + '/../data/narrative_summaries/');
         }
         // fse.removeSync(__dirname + '/../data/narrative_lists/');
-        // fse.removeSync(dataPath);   // deletes /data/output/data_consolidated_list.json
+        // fse.removeSync(committeesJson[committee].dataPath);   // deletes /data/output/data_consolidated_list.json
         // re-create deleted directories
         // fse.mkdirs(writeJsonOutputDebuggingDirectory);
         //  fse.mkdirs(__dirname + '/../data/narrative_lists/');
+        callback();
+      },
+
+      function (callback) {
+        committeesJson = getCommitteesJson();
         callback();
       },
 
@@ -154,19 +161,27 @@ var collect = function (committee) {
 
         // get the raw xml file from the UN site on the Internet
         function (callback) {
-          var backupRawXmlFileName = __dirname + '/../data/committees/' + commmittee + '/backup/consolidated.xml';
+          //  var backupRawXmlFilePathAndName = committeesJson[committee].backupRawXmlFilePathAndName; // __dirname + '/../data/committees/' + committee + '/backup/consolidated.xml';
           if (!useLocalConsolidatedListFile) {
             try {
-              var res = requestSync('GET', listUrl);
+              var res = requestSync('GET', committeesJson[committee].committeeXmlListUrl);
               list_xml = res.body.toString();
             } catch (err) {
-              logger.error(__filename, 'line', __line, '; Error: ', err, '; reading stored backup file:', backupRawXmlFileName);
-              list_xml = fse.readFileSync(backupRawXmlFileName, fsOptions);
+              logger.error(__filename, 'line', __line, '; Error: ', err, '; reading xml file from Internet at url = ', committeesJson[committee].committeeXmlListUrl, '; useLocalConsolidatedListFile = ', useLocalConsolidatedListFile);
+              try {
+                list_xml = fse.readFileSync(backupRawXmlFilePathAndName, fsOptions);
+              } catch (err) {
+                logger.error(__filename, 'line', __line, '; Error: ', err, '; filed to read xml file from the Internet per configuration ( useLocalConsolidatedListFile = ', useLocalConsolidatedListFile, '); then failed to read stored backup file:', backupRawXmlFilePathAndName);
+              }
             }
           }
           else {
-            list_xml = fse.readFileSync(backupRawXmlFileName, fsOptions);
-            logger.info(__filename, 'line', __line, '; Per configuration, reading stored backup XML file:', backupRawXmlFileName, '; useLocalConsolidatedListFile = ', useLocalConsolidatedListFile);
+            try {
+              list_xml = fse.readFileSync(committeesJson[committee].backupRawXmlFilePathAndName, fsOptions);
+            } catch (err) {
+              logger.error(__filename, 'line', __line, '; Error: ', err, '; reading stored backup file:', committeesJson[committee].backupRawXmlFilePathAndName, 'useLocalConsolidatedListFile = ', useLocalConsolidatedListFile);
+            }
+            logger.info(__filename, 'line', __line, '; Per configuration, reading stored backup XML file: committeesJson[committee].backupRawXmlFilePathAndName = ', committeesJson[committee].backupRawXmlFilePathAndName, '; useLocalConsolidatedListFile = ', useLocalConsolidatedListFile, '; useLocalConsolidatedListFile = ', useLocalConsolidatedListFile);
           }
           if (consoleLog) {
             logger.debug(__filename, 'line', __line, '; consoleLog = ', consoleLog, '; list_xml res.body.toString() = ', list_xml.substring(0, substringChars), '\n list_xml Response body length: ', list_xml.length);
@@ -175,18 +190,18 @@ var collect = function (committee) {
           callback();
         },
 
-        // write consolidated.xml to local file and archive_historical directory
+        // write committee or consolidated.xml to local file and archive_historical directory
         function (callback) {
-          var fileNameAndPathForProcessing = __dirname + '/../data/committees/consolidated/consolidated.xml';
-          utilities_aq_viz.syncWriteMyFile(list_xml, fileNameAndPathForProcessing, fsOptions);
+//          var fileNameAndPathForProcessing = __dirname + '/../data/committees/consolidated/consolidated.xml';
+          utilities_aq_viz.syncWriteMyFile(list_xml, committeesJson[committee].xmlFileLocalStoragePathAndName, fsOptions);
           // syncWriteFileXML(list_xml, fileNameAndPathForProcessing);
-          var fileNameAndPathForArchive = __dirname + '/../data/archive/consolidated.xml';
-          utilities_aq_viz.syncWriteMyFile(list_xml, fileNameAndPathForArchive, fsOptions);
+          // var fileNameAndPathForArchive = __dirname + '/../data/archive/consolidated.xml';
+          // utilities_aq_viz.syncWriteMyFile(list_xml, fileNameAndPathForArchive, fsOptions);
           // syncWriteFileXML(list_xml, fileNameAndPathForArchive);
           callback();
         },
 
-        // convert consolidated.xml to json and store in var 'data'
+        // convert xml in variable 'list_xml' to json and store in var 'data'
         function (callback) {
           if (consoleLog) {
             logger.debug('\n ', __filename, 'line', __line, ' function #:', ++functionCount);
@@ -208,16 +223,16 @@ var collect = function (committee) {
 
         // update the data_consolidated_list.json file; write the intermediate file for debugging
         function (callback) {
-          var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'data-collect-L' + __line + '-raw_data_consolidated_list.json';
+          var writeJsonPathAndFileName = committeesJson[committee].writeJsonOutputDebuggingDirectory + 'data-collect-L' + __line + '-raw_data_consolidated_list.json';
           utilities_aq_viz.stringifyAndWriteJsonDataFile(data, writeJsonPathAndFileName);
-          utilities_aq_viz.stringifyAndWriteJsonDataFile(data, dataPath);
+          utilities_aq_viz.stringifyAndWriteJsonDataFile(data, committeesJson[committee].dataPath);
           callback();
         },
 
         // read 'raw' unprocessed json data file created from raw XML file data feed
         function (callback) {
           // var dataPath = __dirname + '/../data/output/data_consolidated_list.json';
-          data = JSON.parse(fse.readFileSync(dataPath, fsOptions));
+          data = JSON.parse(fse.readFileSync(committeesJson[committee].dataPath, fsOptions));
           if (consoleLog) {
             logger.info(__filename, 'line', __line, '; function #:', ++functionCount, '; read data_consolidated_list.json, consoleLog = ', consoleLog);
           }
@@ -247,8 +262,35 @@ var collect = function (committee) {
           if (consoleLog) {
             logger.debug('\n ', __filename, 'line', __line, '; function #:', ++functionCount, '; normalize data_consolidated_list.json');
           }
-          data.entities = data.CONSOLIDATED_LIST.ENTITIES.ENTITY;
-          data.indivs = data.CONSOLIDATED_LIST.INDIVIDUALS.INDIVIDUAL;
+
+          //var x = Object.prototype.toString.call( data.CONSOLIDATED_LIST.ENTITIES.ENTITY );
+
+          // if there is only one data.CONSOLIDATED_LIST.ENTITIES.ENTITY, ENTITY will be an object, not an array; so we convert the single object to an element in an array
+          if (Object.prototype.toString.call(data.CONSOLIDATED_LIST.ENTITIES.ENTITY) === '[object Array]') {
+            console.log('Array!');
+            data.entities = data.CONSOLIDATED_LIST.ENTITIES.ENTITY;
+          } else {
+            data.entities = [];
+            data.entities.push(data.CONSOLIDATED_LIST.ENTITIES.ENTITY);
+          }
+
+          // var y = Object.prototype.toString.call( data.CONSOLIDATED_LIST.INDIVIDUALS.INDIVIDUAL );
+          if (Object.prototype.toString.call(data.CONSOLIDATED_LIST.INDIVIDUALS.INDIVIDUAL) === '[object Array]') {
+            console.log('Array!');
+            data.indivs = data.CONSOLIDATED_LIST.INDIVIDUALS.INDIVIDUAL;
+          } else {
+            data.individuals = [];
+            data.individuals.push(data.CONSOLIDATED_LIST.INDIVIDUALS.INDIVIDUAL);
+          }
+
+//          data.CONSOLIDATED_LIST.ENTITIES.ENTITY;
+
+          //
+
+//          data.entities = data.CONSOLIDATED_LIST.ENTITIES.ENTITY;
+
+          // data.entities = data.CONSOLIDATED_LIST.ENTITIES;
+          // data.indivs = data.CONSOLIDATED_LIST.INDIVIDUALS;
           data.entities.forEach(function (entity) {
             entity.noLongerListed = 0;
           });
@@ -323,20 +365,18 @@ var collect = function (committee) {
             logger.debug(__filename, 'line', __line, 'node.nodeNumber = ', node.nodeNumber, '; JSON.stringify(data).substring(0, substringChars) = \n', JSON.stringify(data, null, ' ').substring(0, substringChars));
           }
           callback();
-        }
-        ,
+        },
 
-// update the data_consolidated_list.json file; write the intermediate file for debugging
+        // update the data_consolidated_list.json file; write the intermediate file for debugging
         function (callback) {
           var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'data-collect-L' + __line + '-normzd1_data_consolidated_list.json';
           utilities_aq_viz.stringifyAndWriteJsonDataFile(data, writeJsonPathAndFileName);
-          utilities_aq_viz.stringifyAndWriteJsonDataFile(data, dataPath);
+          utilities_aq_viz.stringifyAndWriteJsonDataFile(data, committeesJson[committee].dataPath);
           callback();
         },
 
         // update the data_consolidated_list.json file; write the intermediate file for debugging
         function (callback) {
-
           callback();
         }
 
@@ -1289,6 +1329,10 @@ var syncWriteHtmlFile = function (htmlString, saveFilePath) {
   return true;
 };
 
+var testMethod = function () {
+  console.log("running testMethod");
+};
+
 var truncateString = function (inString) {
   var outString = '[TRUNCATED]' + inString.substring(0, substringChars) + '\n ... [CONSOLE LOG OUTPUT INTENTIONALLY TRUNCATED TO FIRST ' + substringChars + ' CHARACTERS]';
   return outString + ' ;-)';
@@ -1317,6 +1361,8 @@ var writeMyFile = function (localFileNameAndPath, data, fsOptions) {
     logger.error(__filename, 'line', __line, ' Error: ', err);
   }
 };
+
+start();
 
 module.exports = {
   collect: collect
