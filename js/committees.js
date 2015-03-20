@@ -19,25 +19,25 @@ require('console-stamp')(console, '[HH:MM:ss.l]');
 var dataPath;
 
 var consolidatedXmlListUrl;
-var individualsLocalOutputFileNameAndPath;
-var entitiesLocalOutputFileNameAndPath;
-var narrativeUrlsArrayLocalFileNameAndPath;
+//var individualsLocalOutputFileNameAndPath;
+//var entitiesLocalOutputFileNameAndPath;
+//var narrativeUrlsArrayLocalFileNameAndPath;
 
 var writeJsonOutputDebuggingDirectory;
 var individualsHtmlLocalOutputFileNameAndPath;
 var entitiesHtmlLocalOutputFileNameAndPath;
-var narrativeFilesUrlPath;
+//var narrativeFilesUrlPath;
 var dataJsonLocalOutputFileNameAndPath;
 var individualsListUrl;
 var entitiesListUrl;
-var committee;
+var CommitteeResolution;
 var logFileNameAndPath;
 var readWriteLocalNarrativesFilePath;
 var individualsJsonLocalOutputFileNameAndPath;
 var entitiesJsonLocalOutputFileNameAndPath;
 var dotFileLocalOutputFileNameAndPath;
 
-var committeeShortDescription;
+var subjectMatterAbbreviated;
 // var committeesJson;
 var committeeXmlListUrl;
 // var backupRawXmlFileName;
@@ -47,36 +47,41 @@ var countryCode2DigitIso;
 var backupRawXmlPath;
 var backupRawXmlFilePathAndName;
 var xmlFileLocalStoragePathAndName;
-var committeesUrlPath;
+var committeeUrlPath;
 var committeesJson;
 var init;
+var Permanent_reference_numbers_for_individuals;
+var Permanent_reference_numbers_for_entities;
+var Two_Digit_Country_ISO_Code;
+var committeeResolution; // = "1572 (2004)";
+var Subject_Matter_Abbreviated; // =  "Resolution 1572 (2004) concerning Côte d'Ivoire"l
 
 var getCommitteesJson = function () {
-  var committeeArray = ['751', '1267', '1518', '1521', '1533', '1572', '1591', '1718', '1737', '1970', '1988', '2048', '2127', 'consolidated'];
+  var CommitteeResolutionArray = ['751', '1267', '1518', '1521', '1533', '1572', '1591', '1718', '1737', '1970', '1988', '2048', '2127', '2140', 'consolidated'];
   committeesJson = {};
 
-  committeeArray.forEach(function (committee) {
+  CommitteeResolutionArray.forEach(function (CommitteeResolution) {
 
-    committeesJson[committee] = {};
-    init(committee);
-    committeesJson[committee].consolidatedXmlListUrl = consolidatedXmlListUrl;
-    committeesJson[committee].committeesUrlPath = committeesUrlPath;
-    committeesJson[committee].consolidatedXmlListUrl = consolidatedXmlListUrl
-    committeesJson[committee].xmlFileLocalStoragePathAndName = xmlFileLocalStoragePathAndName;
-    committeesJson[committee].committeeXmlListUrl = committeeXmlListUrl;
-    committeesJson[committee].dataPath = dataPath;
-    committeesJson[committee].individualsJsonLocalOutputFileNameAndPath = individualsJsonLocalOutputFileNameAndPath;
-    committeesJson[committee].entitiesJsonLocalOutputFileNameAndPath = entitiesJsonLocalOutputFileNameAndPath;
-    committeesJson[committee].individualsListUrl = individualsListUrl;
-    committeesJson[committee].entitiesListUrl = entitiesListUrl;
-    committeesJson[committee].logFileNameAndPath = logFileNameAndPath;
-    committeesJson[committee].writeJsonOutputDebuggingDirectory = writeJsonOutputDebuggingDirectory;
-    committeesJson[committee].dotFileLocalOutputFileNameAndPath = dotFileLocalOutputFileNameAndPath;
-    committeesJson[committee].dataJsonLocalOutputFileNameAndPath = dataJsonLocalOutputFileNameAndPath;
-    // committeesJson[committee].backupRawXmlFileName = backupRawXmlFileName;
-    committeesJson[committee].backupRawXmlPath = backupRawXmlPath;
-    committeesJson[committee].backupRawXmlFilePathAndName = backupRawXmlFilePathAndName;
-    committeesJson[committee].committeesUrlPath = committeesUrlPath;
+    committeesJson[CommitteeResolution] = {};
+    init(CommitteeResolution);
+    committeesJson[CommitteeResolution].consolidatedXmlListUrl = consolidatedXmlListUrl;
+    committeesJson[CommitteeResolution].committeeUrlPath = committeeUrlPath;
+    committeesJson[CommitteeResolution].consolidatedXmlListUrl = consolidatedXmlListUrl;
+    committeesJson[CommitteeResolution].xmlFileLocalStoragePathAndName = xmlFileLocalStoragePathAndName;
+    committeesJson[CommitteeResolution].committeeXmlListUrl = committeeXmlListUrl;
+    committeesJson[CommitteeResolution].dataPath = dataPath;
+    committeesJson[CommitteeResolution].individualsJsonLocalOutputFileNameAndPath = individualsJsonLocalOutputFileNameAndPath;
+    committeesJson[CommitteeResolution].entitiesJsonLocalOutputFileNameAndPath = entitiesJsonLocalOutputFileNameAndPath;
+    committeesJson[CommitteeResolution].individualsListUrl = individualsListUrl;
+    committeesJson[CommitteeResolution].entitiesListUrl = entitiesListUrl;
+    committeesJson[CommitteeResolution].logFileNameAndPath = logFileNameAndPath;
+    committeesJson[CommitteeResolution].writeJsonOutputDebuggingDirectory = writeJsonOutputDebuggingDirectory;
+    committeesJson[CommitteeResolution].dotFileLocalOutputFileNameAndPath = dotFileLocalOutputFileNameAndPath;
+    committeesJson[CommitteeResolution].dataJsonLocalOutputFileNameAndPath = dataJsonLocalOutputFileNameAndPath;
+    // committeesJson[CommitteeResolution].backupRawXmlFileName = backupRawXmlFileName;
+    committeesJson[CommitteeResolution].backupRawXmlPath = backupRawXmlPath;
+    committeesJson[CommitteeResolution].backupRawXmlFilePathAndName = backupRawXmlFilePathAndName;
+    committeesJson[CommitteeResolution].committeeUrlPath = committeeUrlPath;
 
   });
   console.log('committeesJson = ', JSON.stringify(committeesJson, null, " "));
@@ -89,15 +94,16 @@ init = function (committeeParam) {
 
   // default settings
   // xml files from Internet
-  committeesUrlPath = 'http://www.un.org/sc/committees/' + committee + '/';
-  committeeXmlListUrl = 'http://www.un.org/sc/committees/' + committee + '/list.xml';
+  committeeUrlPath = 'http://www.un.org/sc/committees/' + committee + '/';
+//  committeeXmlListUrl = 'http://www.un.org/sc/committees/1533/1533.xml';
+  committeeXmlListUrl = 'http://www.un.org/sc/committees/' + committee + '/' + committee + '.xml';
   consolidatedXmlListUrl = committeeXmlListUrl;
 
   // xml files local storage
-  xmlFileLocalStoragePathAndName = __dirname + '/../data/committees/' + committee + '/list.xml';
+  xmlFileLocalStoragePathAndName = __dirname + '/../data/committees/' + committee + '/' + committee + '.xml';
   backupRawXmlPath = __dirname + '/../data/committees/' + committee + '/backup/';
 //   backupRawXmlFilePathAndName = backupRawXmlPath + 'list.xml';
-  backupRawXmlFilePathAndName = __dirname + '/../data/committees/' + committee + '/backup/' + 'list.xml';
+  backupRawXmlFilePathAndName = __dirname + '/../data/committees/' + committee + '/backup/' + committee + '.xml';
 //  backupRawXmlFilePathAndName
   // html narrative directory files (Internet)
   individualsListUrl = 'http://www.un.org/sc/committees/' + committee + '/Individuals.shtml';
@@ -121,83 +127,181 @@ init = function (committeeParam) {
 
   // dot files local storage
   dotFileLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/links.dot';
-  dataJsonLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/data_committee.json';
+  dataJsonLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/data_committees.json';
 
   switch (committee) {
     // Somalia and Eritrea
     case '751':
-      committeeShortDescription = "751 (1992) / 1907 (2009) regarding Somalia and Eritrea";
+      backupRawXmlFilePathAndName = __dirname + '/../data/committees/' + committee + '/backup/751_1907.xml';
+      subjectMatterAbbreviated = "751 (1992) / 1907 (2009) regarding Somalia and Eritrea";
       permRefNumIndiv = "SOi.001";
       permRefNumEnt = "SOe.001";
       countryCode2DigitIso = 'SO';
       committeeXmlListUrl = 'http://www.un.org/sc/committees/751/751_1907.xml';
-      backupRawXmlFilePathAndName = backupRawXmlPath + '751_1907.xml';
+//      backupRawXmlFilePathAndName = backupRawXmlPath + '751_1907.xml';
+
+      permRefNumIndiv = "SOi.001";
+      permRefNumEnt = "SOe.001";
+      countryCode2DigitIso = "SO";
+      committeeResolution = "751 (1992) / 1907 (2009)";
+      subjectMatterAbbreviated = "Resolutions 751 (1992) and 1907 (2009) concerning Somalia and Eritrea";
+
       break;
     // Al-Qaida
     case '1267':
-      committeeShortDescription = "Al-Qaida";
+      subjectMatterAbbreviated = "Al-Qaida";
       individualsListUrl = 'http://www.un.org/sc/committees/' + committee + '/individuals_associated_with_Al-Qaida.shtml';
       entitiesListUrl = 'http://www.un.org/sc/committees/' + committee + '/entities_other_groups_undertakings_associated_with_Al-Qaida.shtml';
+      permRefNumIndiv = "QDi.001";
+      permRefNumEnt = "QDe.001";
+      countryCode2DigitIso = "non-State entity";
+      committeeResolution = "1267/1989";
+      subjectMatterAbbreviated = "Resolutions 1267 (1999) and 1989 (2011) concerning Al-Qaida and associated individuals and entities";
+
       break;
     case '1518':
+      // subjectMatterAbbreviated = "Al-Qaida";
       committeeXmlListUrl = 'http://www.un.org/sc/committees/1518/1518.xml';
       individualsListUrl = 'http://www.un.org/sc/committees/1518/Individuals.shtml';
       entitiesListUrl = 'http://www.un.org/sc/committees/1518/Entities.shtml';
+      permRefNumIndiv = "IQi.001";
+      permRefNumEnt = "IQe.001";
+      countryCode2DigitIso = "IQ";
+      committeeResolution = "1518 (2003)";
+      subjectMatterAbbreviated = "Resolution 1518 (2003) re: the former Iraqi regime";
+
       break;
     case '1521':
-      // committeeXmlListUrl = '';
-      // individualsListUrl = '';
-      // entitiesListUrl = '';
+
+      committeeXmlListUrl = 'http://www.un.org/sc/committees/1521/1521.xml';
+      individualsListUrl = 'http://www.un.org/sc/committees/1521/Individuals.shtml';
+      entitiesListUrl = 'http://www.un.org/sc/committees/1521/Entities.shtml';
+
+      permRefNumIndiv = "LRi.001";
+      permRefNumEnt = "LRe.001";
+      countryCode2DigitIso = "LR";
+      committeeResolution = "1521 (2003)";
+      subjectMatterAbbreviated = "Resolution 1521 (2003) concerning Liberia";
+
       break;
     case '1533':
-      // committeeXmlListUrl = '';
+      committeeXmlListUrl = 'http://www.un.org/sc/committees/1533/1533.xml';
       // individualsListUrl = '';
       // entitiesListUrl = '';
+      permRefNumIndiv = "CDi.001";
+      permRefNumEnt = "CDe.001";
+      countryCode2DigitIso = "CD";
+      committeeResolution = "1533 (2004)";
+      subjectMatterAbbreviated = "Resolution 1533 (2004) concerning the Democratic Republic of the Congo";
+
       break;
     case '1572':
       // committeeXmlListUrl = '';
       // individualsListUrl = '';
       // entitiesListUrl = '';
+      Permanent_reference_numbers_for_individuals = "CIi.001";
+      Permanent_reference_numbers_for_entities = "CIe.001";
+      Two_Digit_Country_ISO_Code = "CI";
+      committeeResolution = "1572 (2004)";
+      Subject_Matter_Abbreviated = "Resolution 1572 (2004) concerning Côte d'Ivoire";
+
+      permRefNumIndiv = "CIi.001";
+      permRefNumEnt = "CIe.001";
+      countryCode2DigitIso = "CI";
+      committeeResolution = "1572 (2004)";
+      subjectMatterAbbreviated = "Resolution 1572 (2004) concerning Côte d'Ivoire";
+
       break;
     case '1591':
       // committeeXmlListUrl = '';
       // individualsListUrl = '';
       // entitiesListUrl = '';
+      permRefNumIndiv = "SDi.001";
+      permRefNumEnt = "SDe.001";
+      countryCode2DigitIso = "SD";
+      committeeResolution = "1591 (2005)";
+      subjectMatterAbbreviated = "Resolution 1591 (2005) concerning the Sudan";
+
       break;
     case '1636':
-      committeeShortDescription = "Lebanon";
+      subjectMatterAbbreviated = "Lebanon";
       // committeeXmlListUrl = '';
       // individualsListUrl = '';
       // entitiesListUrl = '';
+
+      permRefNumIndiv = "NA";
+      permRefNumEnt = "NA";
+      countryCode2DigitIso = "NA";
+      committeeResolution = "NA";
+      subjectMatterAbbreviated = "Resolution 1636 (2005) re: February 2005 terrorist bombing in Beirut, Lebanon that killed former P.M. Hariri and 22 others.";
       break;
     case '1718':
       individualsListUrl = 'http://www.un.org/sc/committees/' + committee + '/Individuals.shtml';
       entitiesListUrl = 'http://www.un.org/sc/committees/' + committee + '/Entities.shtml';
+
+      permRefNumIndiv = "KPi.001";
+      permRefNumEnt = "KPe.001";
+      countryCode2DigitIso = "KP";
+      committeeResolution = "1718 (2006)";
+      subjectMatterAbbreviated = "Resolution 1718 (2006) relating to the Democratic People’s Republic of Korea (DPRK).";
       break;
     case '1737':
       individualsListUrl = 'http://www.un.org/sc/committees/' + committee + '/individuals.shtml';
       entitiesListUrl = 'http://www.un.org/sc/committees/' + committee + '/entities.shtml';
+
+      permRefNumIndiv = "IRi.001";
+      permRefNumEnt = "IRe.001";
+      countryCode2DigitIso = "IR";
+      committeeResolution = "1737 (2006)";
+      subjectMatterAbbreviated = "Resolution 1737 (2006) relating to the Islamic Republic of Iran.";
       break;
     case '1970':
       // regarding: individualsListUrl, entitiesListUrl, use default
       // committeeXmlListUrl = '';
       // individualsListUrl = '';
       // entitiesListUrl = '';
+      permRefNumIndiv = "LYi.001";
+      permRefNumEnt = "LYe.001";
+      countryCode2DigitIso = "LY";
+      committeeResolution = "1970 (2011)";
+      subjectMatterAbbreviated = "Resolution 1970 (2011) concerning Libya";
+
       break;
     case '1988':
       // committeeXmlListUrl = '';
       // individualsListUrl = '';
       // entitiesListUrl = '';
+
+      permRefNumIndiv = "TAi.001";
+      permRefNumEnt = "TAe.001";
+      countryCode2DigitIso = "non-State entity";
+      committeeResolution = "1988 (2011)";
+      subjectMatterAbbreviated = "Resolution 1988 (2011), Resolution 2082 (2012) re: Taliban/Afghanistan";
+
       break;
     case '2048':
       // committeeXmlListUrl = '';
       // individualsListUrl = '';
       // entitiesListUrl = '';
+
+      permRefNumIndiv = "GBi.001";
+      permRefNumEnt = "GBe.001";
+      countryCode2DigitIso = "GB";
+      committeeResolution = "2048 (2012)";
+      subjectMatterAbbreviated = "Resolution 2048 (2012) concerning Guinea-Bissau";
+
       break;
     case '2127':
       // committeeXmlListUrl = '';
       // individualsListUrl = '';
       // entitiesListUrl = '';
+
+      permRefNumIndiv = "CFi.001";
+      permRefNumEnt = "CFe.001";
+      countryCode2DigitIso = "CF";
+      committeeResolution = "2127 (2013)";
+      subjectMatterAbbreviated = "Resolution 2127 (2013) concerning the Central African Republic";
+
       break;
     case '2140':
       // committeeXmlListUrl = '';
@@ -206,23 +310,33 @@ init = function (committeeParam) {
       individualsListUrl = 'http://www.un.org/sc/committees/' + committee + '/Individuals.shtml';
       entitiesListUrl = false;
       // 'http://www.un.org/sc/committees/' + committee + '/Entities.shtml';
+      permRefNumIndiv = "NA";
+      permRefNumEnt = "NA";
+      countryCode2DigitIso = "NA";
+      committeeResolution = "NA";
+      subjectMatterAbbreviated = "Resolution 2140 (2014) re: Yemen.";
       break;
     case 'consolidated':
       // committeeXmlListUrl = '';
       // individualsListUrl = '';
       // entitiesListUrl = '';
-      committeeShortDescription = "consolidated list";
-      xmlListUrl = 'http://www.un.org/sc/committees/consolidated.xml';
+      subjectMatterAbbreviated = "consolidated list";
+      // xmlListUrl = 'http://www.un.org/sc/committees/consolidated.xml';
       break;
     // default code block
     default:
-      logger.error(__filename, 'line', __line, '; no valid committee selected, apparently.');
+      logger.error(__filename, 'line', __line, '; no valid CommitteeResolution selected, apparently.');
 //      individualsListUrl = 'http://www.un.org/sc/committees/' + committee + '/Individuals.shtml';
 //      entitiesListUrl = 'http://www.un.org/sc/committees/' + committee + '/Entities.shtml';
   }
 };
 
+var getCommitteesArray = function () {
+  return ['751', '1267', '1518', '1521', '1533', '1572', '1591', '1718', '1737', '1970', '1988', '2048', '2127', '2140', 'consolidated'];
+};
+
 module.exports = {
+  getCommitteesArray: getCommitteesArray,
   getCommitteesJson: getCommitteesJson
 };
 

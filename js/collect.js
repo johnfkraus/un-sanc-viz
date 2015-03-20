@@ -12,6 +12,7 @@
 // var app = require('./app.js');
 var appConfig = require('./appConfig.js');
 var getCommitteesJson = require('./committees.js').getCommitteesJson;
+var getCommitteesArray = require('./committees.js').getCommitteesArray;
 var logger = require('./tracer-logger-config.js').logger;
 var utilities_aq_viz = require('./utilities_aq_viz');
 // RUN CONFIGURATION
@@ -80,6 +81,7 @@ var anchor,
 // var functionCount = 0;
 var indivLinks = [];
 var entLinks = [];
+
 /*
  var committeesJson[committee].dataPath = __dirname + '/../data/committees/consolidated/data_consolidated_list.json';
  var writeJsonOutputDebuggingDirectory = __dirname + '/../data/committees/consolidated/debug/';
@@ -96,10 +98,11 @@ var host = 'www.un.org';
 // var logMessageStringHead = new String().concat(__filename, 'line', __line);
 var config;
 var committees;
-var committeeArray = ['751', '1267', '1518', '1521', '1533', '1572', '1591', '1718', '1737', '1970', '1988', '2048', '2127'];
+var committeeArray; // = ['751', '1267', '1518', '1521', '1533', '1572', '1591', '1718', '1737', '1970', '1988', '2048', '2127', '2140', 'consolidated'];
 var committeesJson;
 
 var start = function () {
+  committeesArray = getCommitteesArray();
   var functionCount = 0;
   async.series([
       // test logger
@@ -126,7 +129,16 @@ var start = function () {
         // fse.removeSync(committeesJson[committee].dataPath);   // deletes /data/output/data_consolidated_list.json
         // re-create deleted directories
         // fse.mkdirs(writeJsonOutputDebuggingDirectory);
-        //  fse.mkdirs(__dirname + '/../data/narrative_lists/');
+        // fse.mkdirs(__dirname + '/../data/narrative_lists/');
+
+        try {
+          committeeArray.forEach(function (committee) {
+            fse.removeSync(__dirname + '/../data/committees/' + committee + '/debug/');
+            fse.mkdirs(__dirname + '/../data/committees/' + committee + '/debug/');
+          })
+        } catch (err) {
+          logger.error('\n ', __filename, 'line', __line, '; Error: ', err, utilities_aq_viz.getStackTrace(err));
+        }
         callback();
       },
 
@@ -139,7 +151,7 @@ var start = function () {
       function (callback) {
         // var committeeArray = ['751', '1267', '1518', '1521', '1533', '1572', '1591', '1718', '1737', '1970', '1988', '2048', '2127'];
         try {
-          committeeArray.forEach(function (committee) {
+          committeesArray.forEach(function (committee) {
             collect(committee);
           })
         } catch (err) {
@@ -169,9 +181,9 @@ var collect = function (committee) {
             } catch (err) {
               logger.error(__filename, 'line', __line, '; Error: ', err, '; reading xml file from Internet at url = ', committeesJson[committee].committeeXmlListUrl, '; useLocalConsolidatedListFile = ', useLocalConsolidatedListFile);
               try {
-                list_xml = fse.readFileSync(backupRawXmlFilePathAndName, fsOptions);
+                list_xml = fse.readFileSync(committeesJson[committee].backupRawXmlFilePathAndName, fsOptions);
               } catch (err) {
-                logger.error(__filename, 'line', __line, '; Error: ', err, '; filed to read xml file from the Internet per configuration ( useLocalConsolidatedListFile = ', useLocalConsolidatedListFile, '); then failed to read stored backup file:', backupRawXmlFilePathAndName);
+                logger.error(__filename, 'line', __line, '; Error: ', err, '; filed to read xml file from the Internet per configuration ( useLocalConsolidatedListFile = ', useLocalConsolidatedListFile, '); then failed to read stored backup file:', committeesJson[committee].backupRawXmlFilePathAndName);
               }
             }
           }
@@ -194,6 +206,10 @@ var collect = function (committee) {
         function (callback) {
 //          var fileNameAndPathForProcessing = __dirname + '/../data/committees/consolidated/consolidated.xml';
           utilities_aq_viz.syncWriteMyFile(list_xml, committeesJson[committee].xmlFileLocalStoragePathAndName, fsOptions);
+
+          utilities_aq_viz.syncWriteMyFile(list_xml, committeesJson[committee].backupRawXmlFilePathAndName, fsOptions);
+          // committeesJson[committee].backupRawXmlFilePathAndName
+
           // syncWriteFileXML(list_xml, fileNameAndPathForProcessing);
           // var fileNameAndPathForArchive = __dirname + '/../data/archive/consolidated.xml';
           // utilities_aq_viz.syncWriteMyFile(list_xml, fileNameAndPathForArchive, fsOptions);
@@ -267,7 +283,7 @@ var collect = function (committee) {
 
           // if there is only one data.CONSOLIDATED_LIST.ENTITIES.ENTITY, ENTITY will be an object, not an array; so we convert the single object to an element in an array
           if (Object.prototype.toString.call(data.CONSOLIDATED_LIST.ENTITIES.ENTITY) === '[object Array]') {
-            console.log('Array!');
+            console.log('entities Array!, committee = ', committee);
             data.entities = data.CONSOLIDATED_LIST.ENTITIES.ENTITY;
           } else {
             data.entities = [];
@@ -276,11 +292,11 @@ var collect = function (committee) {
 
           // var y = Object.prototype.toString.call( data.CONSOLIDATED_LIST.INDIVIDUALS.INDIVIDUAL );
           if (Object.prototype.toString.call(data.CONSOLIDATED_LIST.INDIVIDUALS.INDIVIDUAL) === '[object Array]') {
-            console.log('Array!');
+            console.log('individual Array!, committee = ', committee);
             data.indivs = data.CONSOLIDATED_LIST.INDIVIDUALS.INDIVIDUAL;
           } else {
-            data.individuals = [];
-            data.individuals.push(data.CONSOLIDATED_LIST.INDIVIDUALS.INDIVIDUAL);
+            data.indivs = [];
+            data.indivs.push(data.CONSOLIDATED_LIST.INDIVIDUALS.INDIVIDUAL);
           }
 
 //          data.CONSOLIDATED_LIST.ENTITIES.ENTITY;
@@ -369,7 +385,7 @@ var collect = function (committee) {
 
         // update the data_consolidated_list.json file; write the intermediate file for debugging
         function (callback) {
-          var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'data-collect-L' + __line + '-normzd1_data_consolidated_list.json';
+          var writeJsonPathAndFileName = committeesJson[committee].writeJsonOutputDebuggingDirectory + 'data-collect-L' + __line + '-normzd1_data_consolidated_list.json';
           utilities_aq_viz.stringifyAndWriteJsonDataFile(data, writeJsonPathAndFileName);
           utilities_aq_viz.stringifyAndWriteJsonDataFile(data, committeesJson[committee].dataPath);
           callback();
@@ -379,9 +395,6 @@ var collect = function (committee) {
         function (callback) {
           callback();
         }
-
-        /*
-         */
       ],
       function (err) {
         // if (consoleLog) { logger.debug( __filename, 'line', __line, ' wroteJson = ', trunc.n400(myResult));

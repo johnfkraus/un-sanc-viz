@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONSOLIDATED_LIST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd"
+                   dateGenerated="2015-03-17T17:34:44.371-04:00">
+   <INDIVIDUALS>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>6907985</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>CHARLES</FIRST_NAME>
+         <SECOND_NAME>BLÉ  GOUDÉ</SECOND_NAME>
+         <THIRD_NAME/>
+         <FOURTH_NAME/>
+         <UN_LIST_TYPE>CdI</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>CIi.001</REFERENCE_NUMBER>
+         <LISTED_ON>2006-02-07</LISTED_ON>
+         <GENDER>Male</GENDER>
+         <COMMENTS1>Leader of COJEP (“Young Patriots”), repeated public statements advocating violence against United Nations installations and personnel, and against foreigners; direction of and participation in acts of violence by street militias, including beatings, rapes and extrajudicial killings; intimidation of the United Nations, the International Working Group (IWG), the political opposition and independent press; sabotage of international radio stations; obstacle to the action of the IWG, the United Nations Operation in Côte d’Ivoire, (UNOCI), the French Forces and to the peace process as defined by resolution 1643 (2005).</COMMENTS1>
+         <NATIONALITY>
+            <VALUE>Ivorian</VALUE>
+         </NATIONALITY>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Low</QUALITY>
+            <ALIAS_NAME>Général</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Génie de kpo</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Gbapé Zadi</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS>
+            <STREET>Yopougon Selmer, Bloc P 170</STREET>
+            <CITY>Abidjan</CITY>
+            <COUNTRY>Côte d’Ivoire</COUNTRY>
+         </INDIVIDUAL_ADDRESS>
+         <INDIVIDUAL_ADDRESS>
+            <STREET>c/o Hotel Ivoire</STREET>
+            <CITY>Abidjan</CITY>
+            <COUNTRY>Côte d’Ivoire</COUNTRY>
+         </INDIVIDUAL_ADDRESS>
+         <INDIVIDUAL_ADDRESS>
+            <STREET>Cocody (suburb)</STREET>
+            <CITY>Abidjan</CITY>
+            <COUNTRY>Côte d’Ivoire</COUNTRY>
+            <NOTE>Address declared in travel document n. C2310421 issued by Switzerland on 15 Nov. 2005 and valid until 31 Dec. 2005</NOTE>
+         </INDIVIDUAL_ADDRESS>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1972-01-01</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Guibéroua </CITY>
+            <STATE_PROVINCE>Gagnoa</STATE_PROVINCE>
+            <COUNTRY>Côte d’Ivoire</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Niagbrahio/ Guiberoua</CITY>
+            <COUNTRY>Côte d’Ivoire</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Guiberoua</CITY>
+            <COUNTRY>Côte d’Ivoire</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_DOCUMENT>
+            <TYPE_OF_DOCUMENT>Passport</TYPE_OF_DOCUMENT>
+            <NUMBER>04LE66241</NUMBER>
+            <DATE_OF_ISSUE>2005-11-10</DATE_OF_ISSUE>
+            <COUNTRY_OF_ISSUE>Côte d’Ivoire</COUNTRY_OF_ISSUE>
+            <NOTE>Expiration date: 9 Nov. 2008</NOTE>
+         </INDIVIDUAL_DOCUMENT>
+         <INDIVIDUAL_DOCUMENT>
+            <TYPE_OF_DOCUMENT>Passport</TYPE_OF_DOCUMENT>
+            <NUMBER>AE/088 DH 12</NUMBER>
+            <DATE_OF_ISSUE>2002-12-20</DATE_OF_ISSUE>
+            <COUNTRY_OF_ISSUE>Côte d’Ivoire</COUNTRY_OF_ISSUE>
+            <NOTE>Expiration date: 11 Dec. 2005</NOTE>
+         </INDIVIDUAL_DOCUMENT>
+         <INDIVIDUAL_DOCUMENT>
+            <TYPE_OF_DOCUMENT>Passport</TYPE_OF_DOCUMENT>
+            <NUMBER>98LC39292</NUMBER>
+            <COUNTRY_OF_ISSUE>Côte d’Ivoire</COUNTRY_OF_ISSUE>
+            <NOTE>Expiration date: 23 Nov. 2003</NOTE>
+         </INDIVIDUAL_DOCUMENT>
+         <SORT_KEY>BLÉ  GOUDÉ CHARLES</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-22</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>6907987</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>EUGÈNE N'GORAN KOUADIO </FIRST_NAME>
+         <SECOND_NAME>DJUÉ</SECOND_NAME>
+         <THIRD_NAME/>
+         <FOURTH_NAME/>
+         <UN_LIST_TYPE>CdI</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>CIi.003</REFERENCE_NUMBER>
+         <LISTED_ON>2006-02-07</LISTED_ON>
+         <GENDER>Male</GENDER>
+         <COMMENTS1>Leader of the Union des Patriotes pour la Libération Totale de la Côte d’Ivoire (UPLTCI). Repeated public statements advocating violence against United Nations installations and personnel, and against foreigners; direction of and participation in acts of violence by street militias, including beatings, rapes and extrajudicial killings; obstacle to the action of IWG, UNOCI, the French forces and to the peace process as defined by resolution 1643 (2005).</COMMENTS1>
+         <NATIONALITY>
+            <VALUE>Ivorian</VALUE>
+         </NATIONALITY>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY/>
+            <ALIAS_NAME/>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1966-01-01</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1969-12-20</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <COUNTRY>Côte d’Ivoire</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_DOCUMENT>
+            <TYPE_OF_DOCUMENT>Passport</TYPE_OF_DOCUMENT>
+            <NUMBER>04 LE 017521</NUMBER>
+            <DATE_OF_ISSUE>2005-02-10</DATE_OF_ISSUE>
+            <NOTE>Expiration date: 10 Feb. 2008</NOTE>
+         </INDIVIDUAL_DOCUMENT>
+         <SORT_KEY>DJUÉ EUGÈNE  N'GORAN KOUADIO </SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-22</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>6907988</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>MARTIN KOUAKOU</FIRST_NAME>
+         <SECOND_NAME>FOFIÉ</SECOND_NAME>
+         <THIRD_NAME/>
+         <FOURTH_NAME/>
+         <UN_LIST_TYPE>CdI</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>CIi.004</REFERENCE_NUMBER>
+         <LISTED_ON>2006-02-07</LISTED_ON>
+         <GENDER>Male</GENDER>
+         <COMMENTS1>Chief Corporal New Force Commandant, Korhogo Sector. Forces under his command engaged in recruitment of child soldiers, abductions, imposition of forced labor, sexual abuse of women, arbitrary arrests and extra-judicial killings, contrary to human rights conventions and to international humanitarian law; obstacle to the action of the IWG , UNOCI, French Forces and to the peace process as defined by resolution 1643 (2005). Father’s Name: Yao Koffi FOFIE. Mother’s Name: Ama Krouama KOSSONOU.
+</COMMENTS1>
+         <NATIONALITY>
+            <VALUE>Ivorian</VALUE>
+         </NATIONALITY>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY/>
+            <ALIAS_NAME/>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1968-01-01</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>BOHI</CITY>
+            <COUNTRY>Côte d’Ivoire</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_DOCUMENT>
+            <TYPE_OF_DOCUMENT>National Identification Number</TYPE_OF_DOCUMENT>
+            <NUMBER>2096927</NUMBER>
+            <DATE_OF_ISSUE>2005-03-17</DATE_OF_ISSUE>
+            <COUNTRY_OF_ISSUE>Burkina Faso</COUNTRY_OF_ISSUE>
+         </INDIVIDUAL_DOCUMENT>
+         <INDIVIDUAL_DOCUMENT>
+            <TYPE_OF_DOCUMENT>National Identification Number</TYPE_OF_DOCUMENT>
+            <NUMBER>CNB N.076 </NUMBER>
+            <DATE_OF_ISSUE>2003-02-17</DATE_OF_ISSUE>
+            <COUNTRY_OF_ISSUE>Burkina Faso</COUNTRY_OF_ISSUE>
+            <NOTE>Burkina Faso Nationality Certificate</NOTE>
+         </INDIVIDUAL_DOCUMENT>
+         <INDIVIDUAL_DOCUMENT>
+            <TYPE_OF_DOCUMENT>National Identification Number</TYPE_OF_DOCUMENT>
+            <NUMBER>970860100249</NUMBER>
+            <DATE_OF_ISSUE>1997-08-05</DATE_OF_ISSUE>
+            <COUNTRY_OF_ISSUE>Côte d’Ivoire</COUNTRY_OF_ISSUE>
+            <NOTE>Expiration date: 5 Aug. 2007</NOTE>
+         </INDIVIDUAL_DOCUMENT>
+         <SORT_KEY>FOFIÉ MARTIN KOUAKOU</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-22</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>6907989</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>LAURENT</FIRST_NAME>
+         <SECOND_NAME>GBAGBO</SECOND_NAME>
+         <THIRD_NAME/>
+         <FOURTH_NAME/>
+         <UN_LIST_TYPE>CdI</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>CIi.005</REFERENCE_NUMBER>
+         <LISTED_ON>2011-03-30</LISTED_ON>
+         <GENDER>Male</GENDER>
+         <COMMENTS1>Former President of Côte d’Ivoire: obstruction of the peace and reconciliation process, rejection of the results of the presidential election.</COMMENTS1>
+         <NATIONALITY>
+            <VALUE>Ivorian</VALUE>
+         </NATIONALITY>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY/>
+            <ALIAS_NAME/>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1945-05-31</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Gagnoa</CITY>
+            <COUNTRY>Côte d’Ivoire</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_DOCUMENT/>
+         <SORT_KEY>GBAGBO LAURENT</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-22</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>6907990</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>SIMONE</FIRST_NAME>
+         <SECOND_NAME>GBAGBO</SECOND_NAME>
+         <THIRD_NAME/>
+         <FOURTH_NAME/>
+         <UN_LIST_TYPE>CdI</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>CIi.006</REFERENCE_NUMBER>
+         <LISTED_ON>2011-03-30</LISTED_ON>
+         <GENDER>Female</GENDER>
+         <COMMENTS1>Chairperson of the Parliamentary Group of the Ivorian Popular Front (FPI): obstruction of the peace and reconciliation process, public incitement to hatred and violence.</COMMENTS1>
+         <NATIONALITY>
+            <VALUE>Ivorian</VALUE>
+         </NATIONALITY>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY/>
+            <ALIAS_NAME/>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1949-06-20</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Moossou</CITY>
+            <STATE_PROVINCE>Grand-Bassam</STATE_PROVINCE>
+            <COUNTRY>Côte d’Ivoire</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_DOCUMENT/>
+         <SORT_KEY>GBAGBO SIMONE</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-22</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>6907992</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>DÉSIRÉ</FIRST_NAME>
+         <SECOND_NAME>TAGRO</SECOND_NAME>
+         <THIRD_NAME/>
+         <FOURTH_NAME/>
+         <UN_LIST_TYPE>CdI</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>CIi.008</REFERENCE_NUMBER>
+         <LISTED_ON>2011-03-30</LISTED_ON>
+         <GENDER>Male</GENDER>
+         <COMMENTS1>Secretary-General of the so-called “presidency” of Mr. Gbagbo: participation in the illegitimate government of Mr. Gbagbo, obstruction of the peace and reconciliation process, rejection of the results of the presidential election, participation in violent repressions of popular movements. Deceased on 12 April 2011 in Abidjan.</COMMENTS1>
+         <NATIONALITY>
+            <VALUE>Ivorian</VALUE>
+         </NATIONALITY>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY/>
+            <ALIAS_NAME/>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1959-01-27</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Issia</CITY>
+            <COUNTRY>Côte d’Ivoire</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_DOCUMENT>
+            <TYPE_OF_DOCUMENT>Passport</TYPE_OF_DOCUMENT>
+            <NUMBER>AE 065FH08</NUMBER>
+         </INDIVIDUAL_DOCUMENT>
+         <SORT_KEY>TAGRO DÉSIRÉ</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-22</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+   </INDIVIDUALS>
+   <ENTITIES/>
+</CONSOLIDATED_LIST>
