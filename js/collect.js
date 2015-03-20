@@ -102,7 +102,7 @@ var committeeArray; // = ['751', '1267', '1518', '1521', '1533', '1572', '1591',
 var committeesJson;
 
 var start = function () {
-  committeesArray = getCommitteesArray();
+  committeesArray = appConfig.getCommitteesArray();
   var functionCount = 0;
   async.series([
       // test logger
@@ -282,21 +282,55 @@ var collect = function (committee) {
           //var x = Object.prototype.toString.call( data.CONSOLIDATED_LIST.ENTITIES.ENTITY );
 
           // if there is only one data.CONSOLIDATED_LIST.ENTITIES.ENTITY, ENTITY will be an object, not an array; so we convert the single object to an element in an array
-          if (Object.prototype.toString.call(data.CONSOLIDATED_LIST.ENTITIES.ENTITY) === '[object Array]') {
-            console.log('entities Array!, committee = ', committee);
-            data.entities = data.CONSOLIDATED_LIST.ENTITIES.ENTITY;
-          } else {
-            data.entities = [];
-            data.entities.push(data.CONSOLIDATED_LIST.ENTITIES.ENTITY);
+        // is an entity defined?
+          try {
+            if (data.CONSOLIDATED_LIST.ENTITIES && data.CONSOLIDATED_LIST.ENTITIES.ENTITY) {
+              // is entity an array?  Put the array into data.entities
+              if (Object.prototype.toString.call(data.CONSOLIDATED_LIST.ENTITIES.ENTITY) === '[object Array]') {
+                console.log('entities Array!, committee = ', committee);
+                data.entities = data.CONSOLIDATED_LIST.ENTITIES.ENTITY;
+                data.entities.forEach(function (entity) {
+                  entity.noLongerListed = 0;
+                });
+              } else {
+                // entity is not an array; it is probably a single object, so create data.entities as an array and put the entity in the array
+                data.entities = [];
+                data.entities.push(data.CONSOLIDATED_LIST.ENTITIES.ENTITY);
+              }
+            }
+            else {
+              // entity is undefined; there are no entities; create an empty array
+              data.entities = [];
+            }
+          } catch (err) {
+            logger.error(__filename, 'line', __line, '; Error: ', err, '; committee = ', committee);
           }
 
+
+          /*
+                    if (Object.prototype.toString.call(data.CONSOLIDATED_LIST.ENTITIES.ENTITY) === '[object Array]') {
+                      console.log('entities Array!, committee = ', committee);
+                      data.entities = data.CONSOLIDATED_LIST.ENTITIES.ENTITY;
+                      // data.indivs = data.CONSOLIDATED_LIST.INDIVIDUALS.INDIVIDUAL;
+                    } else if (data.CONSOLIDATED_LIST.ENTITIES.ENTITY) {
+                      data.entities = [];
+                      data.entities.push(data.CONSOLIDATED_LIST.ENTITIES.ENTITY);
+                    } else {
+                      data.entities = [];
+                    }
+          */
           // var y = Object.prototype.toString.call( data.CONSOLIDATED_LIST.INDIVIDUALS.INDIVIDUAL );
           if (Object.prototype.toString.call(data.CONSOLIDATED_LIST.INDIVIDUALS.INDIVIDUAL) === '[object Array]') {
             console.log('individual Array!, committee = ', committee);
             data.indivs = data.CONSOLIDATED_LIST.INDIVIDUALS.INDIVIDUAL;
+
+
+
+          } else if (data.CONSOLIDATED_LIST.INDIVIDUALS.INDIVIDUAL) {
+            data.indivs = [];
+              data.indivs.push(data.CONSOLIDATED_LIST.INDIVIDUALS.INDIVIDUAL);
           } else {
             data.indivs = [];
-            data.indivs.push(data.CONSOLIDATED_LIST.INDIVIDUALS.INDIVIDUAL);
           }
 
 //          data.CONSOLIDATED_LIST.ENTITIES.ENTITY;
@@ -307,12 +341,18 @@ var collect = function (committee) {
 
           // data.entities = data.CONSOLIDATED_LIST.ENTITIES;
           // data.indivs = data.CONSOLIDATED_LIST.INDIVIDUALS;
-          data.entities.forEach(function (entity) {
-            entity.noLongerListed = 0;
-          });
-          data.indivs.forEach(function (indiv) {
-            indiv.noLongerListed = 0;
-          });
+          try {
+
+            data.entities.forEach(function (entity) {
+              entity.noLongerListed = 0;
+            });
+            data.indivs.forEach(function (indiv) {
+              indiv.noLongerListed = 0;
+            });
+          } catch (err) {
+            logger.error(__filename, 'line', __line, '; Error: ', err, '; committee = ', committee);
+          }
+
           var missingIndivs = missingNodes.getMissingIndivs();
           missingIndivs.forEach(function (missing_indiv) {
             missing_indiv.noLongerListed = 1;

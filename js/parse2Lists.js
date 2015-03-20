@@ -8,21 +8,26 @@
 //==========================
 
 
-var app = require('./app.js');
+//var app = require('./app.js');
+var appConfig = require('./appConfig.js');
 var utilities_aq_viz = require('./utilities_aq_viz');
+
+
+
 var init = require('./committees.js').init;
 // RUN CONFIGURATION
 // skip downloading 300+ narrative files and use locally stored files instead; for debugging
-var useLocalListFiles = app.useLocalListFiles;
-var useLocalNarrativeFiles = app.useLocalNarrativeFiles;
+var useLocalListFiles = appConfig.useLocalListFiles;
+var useLocalNarrativeFiles = appConfig.useLocalNarrativeFiles;
 // do we want lots of console.log messages for debugging (if so, set consoleLog = true)
-var consoleLog = app.consoleLog;
+var consoleLog = appConfig.consoleLog;
 
 // var consoleLog = false;
 // skip downloading 300+ narrative files and use locally stored files instead; for debugging
 // var useLocalListFiles = true;
 // var useLocalNarrativeFiles = true;
-var logger = utilities_aq_viz.logger;
+// var logger = utilities_aq_viz.logger;
+var logger = require('./tracer-logger-config.js').logger;
 // var logger = require('./tracer-logger-config.js').logger;
 var logModulus = utilities_aq_viz.logModulus;
 var substringChars = utilities_aq_viz.truncateToNumChars;
@@ -108,85 +113,10 @@ var readWriteLocalNarrativesFilePath;
 var individualsJsonLocalOutputFileNameAndPath;
 var entitiesJsonLocalOutputFileNameAndPath;
 var dotFileLocalOutputFileNameAndPath;
-// var link;
-/*
-var init = function (committeeParam) {
-  committee = committeeParam;
-  // json files (local)
-  readWriteLocalNarrativesFilePath = __dirname + '/../data/committees/' + committee + '/narratives/';
-  individualsJsonLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/individuals.json';
-  entitiesJsonLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/entities.json';
-  // html files (local)
-  individualsHtmlLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/individuals.html';
-  entitiesHtmlLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/entities.html';
-  // logging
-  logFileNameAndPath = __dirname + '/../log/parse2lists.log';
-  // readWriteLocalNarrativesFilePath = __dirname + '/../data/committees/' + committee + '/narratives/' + nodeNarrFileName;
-  writeJsonOutputDebuggingDirectory = __dirname + '/../data/committees/' + committee + '/debug/';
-  narrativeFilesUrlPath = __dirname + '/../data/committees/' + committee + '/';
-  dataJsonLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/data_committee.json';
-  individualsListUrl = 'http://www.un.org/sc/committees/' + committee + '/Individuals.shtml';
-  entitiesListUrl = 'http://www.un.org/sc/committees/' + committee + '/Entities.shtml';
-  dotFileLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/links.dot';
-  //dataJsonLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/data2.json';
-  switch (committee) {
-    case '751':
-      individualsListUrl = 'http://www.un.org/sc/committees/' + committee + '/Individuals.shtml';
-      entitiesListUrl = 'http://www.un.org/sc/committees/' + committee + '/Entities.shtml';
-      dataJsonLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/data_committee.json';
-      break;
-    case '1267':
-      individualsListUrl = 'http://www.un.org/sc/committees/' + committee + '/individuals_associated_with_Al-Qaida.shtml';
-      entitiesListUrl = 'http://www.un.org/sc/committees/' + committee + '/entities_other_groups_undertakings_associated_with_Al-Qaida.shtml';
-      dataJsonLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/data_committee.json';
-      break;
-    case '1518':
-      break;
-    case '1521':
-      break;
-    case '1533':
-      break;
-    case '1572':
-      break;
-    case '1591':
-      break;
-    case '1636':
-      // Lebanon
-      break;
-    case '1718':
-      individualsListUrl = 'http://www.un.org/sc/committees/' + committee + '/Individuals.shtml';
-      entitiesListUrl = 'http://www.un.org/sc/committees/' + committee + '/Entities.shtml';
-      break;
-    case '1737':
-      individualsListUrl = 'http://www.un.org/sc/committees/' + committee + '/individuals.shtml';
-      entitiesListUrl = 'http://www.un.org/sc/committees/' + committee + '/entities.shtml';
-      dataJsonLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/data_committee.json';
-      break;
-    case '1970':
-      individualsListUrl = 'http://www.un.org/sc/committees/' + committee + '/Individuals.shtml';
-      entitiesListUrl = 'http://www.un.org/sc/committees/' + committee + '/Entities.shtml';
-      break;
-    case '1988':
-      break;
-    case '2048':
-      break;
-    case '2127':
-      break;
-    case '2140':
-      individualsListUrl = 'http://www.un.org/sc/committees/' + committee + '/Individuals.shtml';
-      entitiesListUrl = false; // 'http://www.un.org/sc/committees/' + committee + '/Entities.shtml';
-      break;
-    default:
-      // default code block
-      logger.error(__filename, 'line', __line, '; no valid committee selected.');
-      individualsListUrl = 'http://www.un.org/sc/committees/' + committee + '/Individuals.shtml';
-      entitiesListUrl = 'http://www.un.org/sc/committees/' + committee + '/Entities.shtml';
-      dataJsonLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/data_committee.json';
-  }
-};
-*/
+var getCommitteesJson = require('./committees.js').getCommitteesJson;
+
 var parse2Lists = function () {
-  var committeeArray = ['751', '1267', '1518', '1521', '1533', '1572', '1591', '1718', '1737', '1970', '1988', '2048', '2127'];
+  var committeeArray =  ['751', '1267', '1518', '1521', '1533', '1572', '1591', '1718', '1737', '1970', '1988', '2048', '2127'];
 
 //  committeeArray.forEach(function (committee) {
   try {
@@ -210,7 +140,10 @@ var parse2ListsCommittee = function (committee) {
         if (consoleLog) {
           logger.debug('\n ', __filename, __line, '; function #:', ++functionCount, '; initializing ; committee = ', committee);
         }
-        init(committee);
+
+
+        committeesJson = getCommitteesJson();
+        // init(committee);
         utilities_aq_viz.testLogging();
         callback();
       },
@@ -224,7 +157,15 @@ var parse2ListsCommittee = function (committee) {
 
       // delete old data
       function (callback) {
-        fse.removeSync(writeJsonOutputDebuggingDirectory);
+
+
+
+
+
+
+
+
+        // fse.removeSync(writeJsonOutputDebuggingDirectory);
         if (!useLocalNarrativeFiles) {
           fse.removeSync(__dirname + '/../data/narrative_summaries/');
           fse.mkdirs(__dirname + '/../data/narrative_summaries/');
@@ -1695,6 +1636,8 @@ var writeMyFile = function (localFileNameAndPath, data, fsOptions) {
     logger.error(__filename, 'line', __line, ' Error: ', err);
   }
 };
+
+parse2Lists();
 
 module.exports = {
   parse2Lists: parse2Lists

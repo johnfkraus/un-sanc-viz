@@ -9,11 +9,16 @@ var consoleLog = false;
 var logger = require('./tracer-logger-config.js').logger;
 // var logger = require('./libs/logger.js');
 
+var getCommitteesArray = function () {
+  return ['751', '1267', '1518', '1521', '1533', '1572', '1591', '1718', '1737', '1970', '1988', '2048', '2127', '2140', 'consolidated'];
+};
+
 module.exports = {
+  getCommitteesArray: getCommitteesArray,
   useLocalListFiles: useLocalListFiles,
   useLocalNarrativeFiles: useLocalNarrativeFiles,
   consoleLog: consoleLog,
-  logger:logger
+  logger: logger
 
 };
 
