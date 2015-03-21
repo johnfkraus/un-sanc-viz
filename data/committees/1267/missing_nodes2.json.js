@@ -5,7 +5,7 @@
     "noLongerListed": 1,
     "name": "International Islamic Relief Organization, Philippines, branch offices (no longer listed)",
     "FIRST_NAME": "International Islamic Relief Organization, Philippines, branch offices (no longer listed)",
-    "REFERENCE_NUMBER": "QDe.126",
+    "REFERENCE_NUMBER": "QE.I.126.06",
     "OLD_REFERENCE_NUMBER": "QE.I.126.06",
     "COMMENTS1": ""
   },
@@ -15,7 +15,7 @@
     "noLongerListed": 1,
     "FIRST_NAME": "Aid Organization of the Ulema, Pakistan (no longer listed)",
     "name": "Aid Organization of the Ulema, Pakistan (no longer listed)",
-    "REFERENCE_NUMBER": "QDe.073",
+    "REFERENCE_NUMBER": "QE.A.73.02",
     "OLD_REFERENCE_NUMBER": "QE.A.73.02",
     "COMMENTS1": "Until 21 Oct. 2008, this entity appeared also as &quot;Aid Organization of the Ulema, Pakistan&quot; (QE.A.73.02.), listed on 24 Apr. 2002 and amended on 25 Jul. 2006. The two entries Al Rashid Trust (QE.A.5.01.) and Aid Organization of the Ulema, Pakistan (QE.A.73.02.) were consolidated into this entity on 21 Oct. 2008. Founded by Mufti Rashid Ahmad Ledahyanoy (QI.L.30.01). Associated with Jaish-i-Mohammed (QE.J.19.01). Banned in Pakistan since Oct. 2001. Despite the closure of its offices in Pakistan in February 2007 it has continued its activities. Review pursuant to Security Council resolution 1822 (2008) was concluded on 6 May 2010."
   },
@@ -25,7 +25,7 @@
     "noLongerListed": 1,
     "name": "Benevolence International Fund  (no longer listed)",
     "FIRST_NAME": "Benevolence International Fund  (no longer listed)",
-    "REFERENCE_NUMBER": "QDe.094",
+    "REFERENCE_NUMBER": "QE.B.94.02",
     "OLD_REFERENCE_NUMBER": "QE.B.94.02",
     "COMMENTS1": ""
 
@@ -35,7 +35,7 @@
     "indiv0OrEnt1": 0,
     "noLongerListed": 1,
     "name": "Fahd Mohammed Ahmed al-Quso (no longer listed)",
-    "REFERENCE_NUMBER": "QDi.288",
+    "REFERENCE_NUMBER": "QI.A.288.10",
     "OLD_REFERENCE_NUMBER": "QI.A.288.10",
     "DATAID": "empty001",
     "VERSIONNUM": "10",
@@ -80,7 +80,7 @@
     "indiv0OrEnt1": 0,
     "noLongerListed": 1,
     "name": "Usama Bin Laden",
-    "REFERENCE_NUMBER": "QDi.008",
+    "REFERENCE_NUMBER": "QI.B.8.01",
     "OLD_REFERENCE_NUMBER": "QI.B.8.01",
     "DATAID": "empty002",
     "VERSIONNUM": "10",
@@ -125,7 +125,7 @@
     "indiv0OrEnt1": 0,
     "noLongerListed": 1,
     "name": "Wa&apos;el Hamza Abd al-Fatah Julaidan",
-    "REFERENCE_NUMBER": "QDi.079",
+    "REFERENCE_NUMBER": "QI.J.79.02",
     "OLD_REFERENCE_NUMBER": "QI.J.79.02",
     "DATAID": "empty003",
     "VERSIONNUM": "10",
@@ -211,17 +211,17 @@
     "SORT_KEY_LAST_MOD": "2007-07-27T00:00:00"
   },
   {
-    "id": "QDi.030",
+    "id": "QDi.031",
     "indiv0OrEnt1": 0,
     "noLongerListed": 1,
-    "REFERENCE_NUMBER": "QDi.030",
-    "OLD_REFERENCE_NUMBER": "QI.L.30.01",
     "DATAID": "empty006",
     "VERSIONNUM": "10",
     "FIRST_NAME": "Mufti Rashid Ahmad Ledahyanoy",
     "SECOND_NAME": "",
     "THIRD_NAME": "(no longer listed)",
     "UN_LIST_TYPE": "Al-Qaida",
+    "REFERENCE_NUMBER": "QI.L.30.01",
+    "OLD_REFERENCE_NUMBER": "QI.L.30.01",
     "LISTED_ON": "",
     "NAME_ORIGINAL_SCRIPT": "",
     "COMMENTS1": " Founder of the Al Rashid Trust (QE.A.5.01). Until 21 Oct. 2008, the Al Rashid Trust appeared also as &quot;Aid Organization of the Ulema, Pakistan&quot; (QE.A.73.02.).",
@@ -264,7 +264,7 @@
     "SECOND_NAME": "",
     "THIRD_NAME": "(no longer listed)",
     "UN_LIST_TYPE": "Al-Qaida",
-    "REFERENCE_NUMBER": "QDi.240",
+    "REFERENCE_NUMBER": "QI.J.240.08",
     "OLD_REFERENCE_NUMBER": "QI.J.240.08",
     "LISTED_ON": "2016-10-06T00:00:00",
     "NAME_ORIGINAL_SCRIPT": "",
@@ -302,7 +302,7 @@
     "id": "QDi.239",
     "indiv0OrEnt1": 0,
     "noLongerListed": 1,
-    "REFERENCE_NUMBER": "QDi.239",
+    "REFERENCE_NUMBER": "QI.B.239.08",
     "OLD_REFERENCE_NUMBER": "QI.B.239.08",
     "VERSIONNUM": "10",
     "FIRST_NAME": "Suhayl Fatilloevich Buranov",
@@ -346,7 +346,7 @@
     "id": "QDi.000",
     "indiv0OrEnt1": 0,
     "noLongerListed": 1,
-    "REFERENCE_NUMBER": "QDi.000",
+    "REFERENCE_NUMBER": "QI.T.0.00",
     "OLD_REFERENCE_NUMBER": "QI.T.0.00",
     "DATAID": "emptyStl",
     "VERSIONNUM": "10",
@@ -392,3 +392,41 @@
     "SORT_KEY_LAST_MOD": "2007-07-27T00:00:00"
   }
 ]
+
+/*
+ ,
+ {
+ "missing_nodes": [
+ {
+ "name": "Fahd Mohammed Ahmed al-Quso (no longer listed)",
+ "id": "QI.A.288.10",
+ "REFERENCE_NUMBER": "QI.A.288.10",
+ "COMMENTS1": "",
+ "indiv0OrEnt1": 0,
+ "noLongerListed": 1
+ }, {
+ "name": "Usama Bin Laden (no longer listed)",
+ "id": "QI.B.8.01",
+ "REFERENCE_NUMBER": "QI.B.8.01",
+ "COMMENTS1": "",
+ "indiv0OrEnt1": 0,
+ "noLongerListed": 1
+ }, {
+ "name": "International Islamic Relief Organization, Philippines, branch offices (no longer listed)",
+ "id": "QE.I.126.06",
+ "REFERENCE_NUMBER": "QE.I.126.06",
+ "COMMENTS1": "",
+ "indiv0OrEnt1": 1,
+ "noLongerListed": 1
+ }, {
+ "name": "Wa&apos;el Hamza Abd al-Fatah Julaidan (no longer listed)",
+ "id": "QI.J.79.02",
+ "REFERENCE_NUMBER": "QI.J.79.02",
+ "COMMENTS1": "",
+ "indiv0OrEnt1": 0,
+ "noLongerListed": 1
+ }
+ ]
+
+ ]
+ */

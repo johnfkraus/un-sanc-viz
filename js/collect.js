@@ -28,8 +28,9 @@ var responseBody;
 var individualsHtmlUnicodeString;
 var entitiesHtmlUnicodeString;
 var iterators = require('async-iterators');
-var missingNodes = require('./missing_nodes.js'),
-  async = require('async'),
+var missing_nodes;
+// var missingNodes = require('./missing_nodes.js'),
+var async = require('async'),
   re = require('request-enhanced'),
   request = require('request'),
   fse = require('fs-extra'),
@@ -282,7 +283,7 @@ var collect = function (committee) {
           //var x = Object.prototype.toString.call( data.CONSOLIDATED_LIST.ENTITIES.ENTITY );
 
           // if there is only one data.CONSOLIDATED_LIST.ENTITIES.ENTITY, ENTITY will be an object, not an array; so we convert the single object to an element in an array
-        // is an entity defined?
+          // is an entity defined?
           try {
             if (data.CONSOLIDATED_LIST.ENTITIES && data.CONSOLIDATED_LIST.ENTITIES.ENTITY) {
               // is entity an array?  Put the array into data.entities
@@ -306,29 +307,26 @@ var collect = function (committee) {
             logger.error(__filename, 'line', __line, '; Error: ', err, '; committee = ', committee);
           }
 
-
           /*
-                    if (Object.prototype.toString.call(data.CONSOLIDATED_LIST.ENTITIES.ENTITY) === '[object Array]') {
-                      console.log('entities Array!, committee = ', committee);
-                      data.entities = data.CONSOLIDATED_LIST.ENTITIES.ENTITY;
-                      // data.indivs = data.CONSOLIDATED_LIST.INDIVIDUALS.INDIVIDUAL;
-                    } else if (data.CONSOLIDATED_LIST.ENTITIES.ENTITY) {
-                      data.entities = [];
-                      data.entities.push(data.CONSOLIDATED_LIST.ENTITIES.ENTITY);
-                    } else {
-                      data.entities = [];
-                    }
-          */
+           if (Object.prototype.toString.call(data.CONSOLIDATED_LIST.ENTITIES.ENTITY) === '[object Array]') {
+           console.log('entities Array!, committee = ', committee);
+           data.entities = data.CONSOLIDATED_LIST.ENTITIES.ENTITY;
+           // data.indivs = data.CONSOLIDATED_LIST.INDIVIDUALS.INDIVIDUAL;
+           } else if (data.CONSOLIDATED_LIST.ENTITIES.ENTITY) {
+           data.entities = [];
+           data.entities.push(data.CONSOLIDATED_LIST.ENTITIES.ENTITY);
+           } else {
+           data.entities = [];
+           }
+           */
           // var y = Object.prototype.toString.call( data.CONSOLIDATED_LIST.INDIVIDUALS.INDIVIDUAL );
           if (Object.prototype.toString.call(data.CONSOLIDATED_LIST.INDIVIDUALS.INDIVIDUAL) === '[object Array]') {
             console.log('individual Array!, committee = ', committee);
             data.indivs = data.CONSOLIDATED_LIST.INDIVIDUALS.INDIVIDUAL;
 
-
-
           } else if (data.CONSOLIDATED_LIST.INDIVIDUALS.INDIVIDUAL) {
             data.indivs = [];
-              data.indivs.push(data.CONSOLIDATED_LIST.INDIVIDUALS.INDIVIDUAL);
+            data.indivs.push(data.CONSOLIDATED_LIST.INDIVIDUALS.INDIVIDUAL);
           } else {
             data.indivs = [];
           }
@@ -353,15 +351,6 @@ var collect = function (committee) {
             logger.error(__filename, 'line', __line, '; Error: ', err, '; committee = ', committee);
           }
 
-          var missingIndivs = missingNodes.getMissingIndivs();
-          missingIndivs.forEach(function (missing_indiv) {
-            missing_indiv.noLongerListed = 1;
-          });
-          var missingEnts = missingNodes.getMissingEnts();
-          missingEnts.forEach(function (missing_ent) {
-            missing_ent.noLongerListed = 1;
-          });
-          data.indivs = data.indivs.concat(missingIndivs);
           // data.indivs = data.indivs.concat(missingNodes.getMissingIndivs());
           data.indivs.forEach(function (indiv) {
             indiv.indiv0OrEnt1 = 0;
@@ -369,11 +358,29 @@ var collect = function (committee) {
             indiv.indivPlaceOfBirthString = processPlaceOfBirthArray(indiv);
             indiv.indivAliasString = processAliasArray(indiv);
           });
-          data.entities = data.entities.concat(missingEnts);
+
           data.entities.forEach(function (entity) {
             entity.indiv0OrEnt1 = 1;
           });
+
           data.nodes = data.indivs.concat(data.entities);
+
+          try {
+            missing_nodes = JSON.parse(fse.readFileSync(committeesJson[committee].missingNodesPathAndFileName, fsOptions));
+            data.nodes = data.nodes.concat(missing_nodes);
+            logger.error(__filename, 'line', __line, '; committee ', committee, ' has missing nodes!');
+            // var missingIndivs = missingNodes.getMissingIndivs();
+            // var missingIndivs = missing_nodes.
+
+            //data.indivs = data.indivs.concat(missingIndivs);
+            //var missingEnts = missingNodes.getMissingEnts();
+            //missingEnts.forEach(function (missing_ent) {
+            //missing_ent.noLongerListed = 1;
+            // });
+            // data.entities = data.entities.concat(missingEnts);
+          } catch (err) {
+            logger.error(__filename, 'line', __line, '; Error: ', err, '; committee = ', committee);
+          }
 
           data.dateGenerated = utilities_aq_viz.formatMyDate(data.CONSOLIDATED_LIST.$.dateGenerated);
           data.dateCollected = utilities_aq_viz.formatMyDate(new Date());

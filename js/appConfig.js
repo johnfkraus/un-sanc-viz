@@ -1,7 +1,7 @@
 // appConfig.js
 
 // skip downloading 300+ narrative files and use locally stored files instead; for debugging
-var useLocalListFiles = false;
+var useLocalListFiles = true;
 var useLocalNarrativeFiles = true;
 // do we want lots of console.log messages for debugging (if so, set consoleLog = true)
 var consoleLog = false;

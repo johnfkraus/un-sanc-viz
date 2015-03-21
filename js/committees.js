@@ -47,6 +47,7 @@ var countryCode2DigitIso;
 var backupRawXmlPath;
 var backupRawXmlFilePathAndName;
 var xmlFileLocalStoragePathAndName;
+var missingNodesPathAndFileName;
 var committeeUrlPath;
 var committeesJson = {};
 var init;
@@ -86,9 +87,11 @@ var getCommitteesJson = function () {
     committeesJson[committee].backupRawXmlPath = backupRawXmlPath;
     committeesJson[committee].backupRawXmlFilePathAndName = backupRawXmlFilePathAndName;
     committeesJson[committee].committeeUrlPath = committeeUrlPath;
-
+    committeesJson[committee].individualsHtmlLocalOutputFileNameAndPath =   individualsHtmlLocalOutputFileNameAndPath;
+    committeesJson[committee].entitiesHtmlLocalOutputFileNameAndPath = entitiesHtmlLocalOutputFileNameAndPath;
+    committeesJson[committee].missingNodesPathAndFileName = missingNodesPathAndFileName;
   });
-  console.log('committeesJson = ', JSON.stringify(committeesJson, null, " "));
+  // console.log('committeesJson = ', JSON.stringify(committeesJson, null, " "));
   utilities_aq_viz.stringifyAndWriteJsonDataFile(committeesJson, __dirname + '/../data/committees/committeesJson.json');
   return committeesJson;
 };
@@ -102,16 +105,21 @@ init = function (committeeParam) {
 //  committeeXmlListUrl = 'http://www.un.org/sc/committees/1533/1533.xml';
   committeeXmlListUrl = 'http://www.un.org/sc/committees/' + committee + '/' + committee + '.xml';
   consolidatedXmlListUrl = committeeXmlListUrl;
-
+  missingNodesPathAndFileName = __dirname + '/../data/committees/' + committee + '/missing_nodes.json.js';
   // xml files local storage
   xmlFileLocalStoragePathAndName = __dirname + '/../data/committees/' + committee + '/' + committee + '.xml';
   backupRawXmlPath = __dirname + '/../data/committees/' + committee + '/backup/';
   backupRawXmlFilePathAndName = __dirname + '/../data/committees/' + committee + '/backup/' + committee + '.xml';
   // backupRawXmlFilePathAndName = __dirname + '/../data/committees/' + committee + '/backup/751_1907.xml';
 
-  // html narrative directory files (Internet)
+  // html narrative files
+  // url download from html Internet
   individualsListUrl = 'http://www.un.org/sc/committees/' + committee + '/Individuals.shtml';
   entitiesListUrl = 'http://www.un.org/sc/committees/' + committee + '/Entities.shtml';
+  // local storage
+  readWriteLocalNarrativesFilePath = __dirname + '/../data/committees/' + committee + '/narratives/';
+  individualsHtmlLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/individuals.html';
+  entitiesHtmlLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/entities.html';
 
   // json files (local storage)
   dataPath = __dirname + '/../data/committees/' + committee + '/data.json';
@@ -121,10 +129,6 @@ init = function (committeeParam) {
   writeJsonOutputDebuggingDirectory = __dirname + '/../data/committees/' + committee + '/debug/';
   // narrativeFilesUrlPath = __dirname + '/../data/committees/' + committee + '/';
 
-  // html files (local storage)
-  readWriteLocalNarrativesFilePath = __dirname + '/../data/committees/' + committee + '/narratives/';
-  individualsHtmlLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/individuals.html';
-  entitiesHtmlLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/entities.html';
 
   // logging
   logFileNameAndPath = __dirname + '/../log/parse2lists.log';
