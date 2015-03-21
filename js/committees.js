@@ -3,34 +3,23 @@
 
 var appConfig = require('./appConfig.js');
 var utilities_aq_viz = require('./utilities_aq_viz.js');
-// RUN CONFIGURATION
-// skip downloading 300+ narrative files and use locally stored files instead; for debugging
-// do we want lots of console.log messages for debugging (if so, set consoleLog = true)
 var consoleLog = appConfig.consoleLog;
-
 var logger = appConfig.logger;
+
 var linenums = require('./linenums.js');
 var counter = 0;
 if (typeof define !== 'function') {
   var define = require('amdefine');
 }
 require('console-stamp')(console, '[HH:MM:ss.l]');
-
 var dataPath;
-
 var consolidatedXmlListUrl;
-//var individualsLocalOutputFileNameAndPath;
-//var entitiesLocalOutputFileNameAndPath;
-//var narrativeUrlsArrayLocalFileNameAndPath;
-
 var writeJsonOutputDebuggingDirectory;
 var individualsHtmlLocalOutputFileNameAndPath;
 var entitiesHtmlLocalOutputFileNameAndPath;
-//var narrativeFilesUrlPath;
 var dataJsonLocalOutputFileNameAndPath;
 var individualsListUrl;
 var entitiesListUrl;
-// var CommitteeResolution;
 var logFileNameAndPath;
 var readWriteLocalNarrativesFilePath;
 var individualsJsonLocalOutputFileNameAndPath;
@@ -38,9 +27,7 @@ var entitiesJsonLocalOutputFileNameAndPath;
 var dotFileLocalOutputFileNameAndPath;
 
 var subjectMatterAbbreviated;
-// var committeesJson;
 var committeeXmlListUrl;
-// var backupRawXmlFileName;
 var permRefNumIndiv;
 var permRefNumEnt;
 var countryCode2DigitIso;
@@ -51,11 +38,7 @@ var missingNodesPathAndFileName;
 var committeeUrlPath;
 var committeesJson = {};
 var init;
-// var Permanent_reference_numbers_for_individuals;
-// var Permanent_reference_numbers_for_entities;
-// var Two_Digit_Country_ISO_Code;
 var committeeResolution; // = "1572 (2004)";
-// var Subject_Matter_Abbreviated; // =  "Resolution 1572 (2004) concerning Côte d'Ivoire"l
 var committee;
 var committeesArray;
 
@@ -83,15 +66,14 @@ var getCommitteesJson = function () {
     committeesJson[committee].writeJsonOutputDebuggingDirectory = writeJsonOutputDebuggingDirectory;
     committeesJson[committee].dotFileLocalOutputFileNameAndPath = dotFileLocalOutputFileNameAndPath;
     committeesJson[committee].dataJsonLocalOutputFileNameAndPath = dataJsonLocalOutputFileNameAndPath;
-    // committeesJson[committee].backupRawXmlFileName = backupRawXmlFileName;
     committeesJson[committee].backupRawXmlPath = backupRawXmlPath;
     committeesJson[committee].backupRawXmlFilePathAndName = backupRawXmlFilePathAndName;
     committeesJson[committee].committeeUrlPath = committeeUrlPath;
     committeesJson[committee].individualsHtmlLocalOutputFileNameAndPath =   individualsHtmlLocalOutputFileNameAndPath;
     committeesJson[committee].entitiesHtmlLocalOutputFileNameAndPath = entitiesHtmlLocalOutputFileNameAndPath;
     committeesJson[committee].missingNodesPathAndFileName = missingNodesPathAndFileName;
+    committeesJson[committee].subjectMatterAbbreviated = subjectMatterAbbreviated;
   });
-  // console.log('committeesJson = ', JSON.stringify(committeesJson, null, " "));
   utilities_aq_viz.stringifyAndWriteJsonDataFile(committeesJson, __dirname + '/../data/committees/committeesJson.json');
   return committeesJson;
 };
@@ -99,10 +81,15 @@ var getCommitteesJson = function () {
 init = function (committeeParam) {
   committee = committeeParam;
 
+  // initialize values;
+  permRefNumIndiv = "";
+  permRefNumEnt = "";
+  subjectMatterAbbreviated = "";
+  countryCode2DigitIso = '';
+  committeeResolution = "";
+
   // default settings
-  // xml files from Internet
   committeeUrlPath = 'http://www.un.org/sc/committees/' + committee + '/';
-//  committeeXmlListUrl = 'http://www.un.org/sc/committees/1533/1533.xml';
   committeeXmlListUrl = 'http://www.un.org/sc/committees/' + committee + '/' + committee + '.xml';
   consolidatedXmlListUrl = committeeXmlListUrl;
   missingNodesPathAndFileName = __dirname + '/../data/committees/' + committee + '/missing_nodes.json.js';
@@ -110,8 +97,6 @@ init = function (committeeParam) {
   xmlFileLocalStoragePathAndName = __dirname + '/../data/committees/' + committee + '/' + committee + '.xml';
   backupRawXmlPath = __dirname + '/../data/committees/' + committee + '/backup/';
   backupRawXmlFilePathAndName = __dirname + '/../data/committees/' + committee + '/backup/' + committee + '.xml';
-  // backupRawXmlFilePathAndName = __dirname + '/../data/committees/' + committee + '/backup/751_1907.xml';
-
   // html narrative files
   // url download from html Internet
   individualsListUrl = 'http://www.un.org/sc/committees/' + committee + '/Individuals.shtml';
@@ -120,29 +105,16 @@ init = function (committeeParam) {
   readWriteLocalNarrativesFilePath = __dirname + '/../data/committees/' + committee + '/narratives/';
   individualsHtmlLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/individuals.html';
   entitiesHtmlLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/entities.html';
-
   // json files (local storage)
   dataPath = __dirname + '/../data/committees/' + committee + '/data.json';
   individualsJsonLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/individuals.json';
   entitiesJsonLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/entities.json';
-  // intermediate results debugging output path (local storage)
   writeJsonOutputDebuggingDirectory = __dirname + '/../data/committees/' + committee + '/debug/';
-  // narrativeFilesUrlPath = __dirname + '/../data/committees/' + committee + '/';
-
-
   // logging
   logFileNameAndPath = __dirname + '/../log/parse2lists.log';
-
   // dot files local storage
   dotFileLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/links.dot';
   dataJsonLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/data_committees.json';
-
-  // initialize values;
-  permRefNumIndiv = "";
-  permRefNumEnt = "";
-  subjectMatterAbbreviated = "";
-  countryCode2DigitIso = '';
-  committeeResolution = "";
 
   switch (committee) {
     // Somalia and Eritrea

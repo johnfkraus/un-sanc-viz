@@ -82,24 +82,11 @@ var anchor,
 // var functionCount = 0;
 var indivLinks = [];
 var entLinks = [];
-
-/*
- var committeesJson[committee].dataPath = __dirname + '/../data/committees/consolidated/data_consolidated_list.json';
- var writeJsonOutputDebuggingDirectory = __dirname + '/../data/committees/consolidated/debug/';
- var listUrl = 'http://www.un.org/sc/committees/consolidated.xml';
- // var individualsJsonLocalOutputFileNameAndPath = __dirname + '/../data/narrative_lists/individuals_associated_with_Al-Qaida.json';
- // var entitiesJsonLocalOutputFileNameAndPath = __dirname + '/../data/narrative_lists/entities_other_groups_undertakings_associated_with_Al-Qaida.json';
- var narrativeUrlsArrayLocalFileNameAndPath = __dirname + '/../data/narrative_lists/narrativeUrlsArray.json';
- */
-
 var indivOrEntityString;
-// var individualsListUrl = 'http://www.un.org/sc/committees/1267/individuals_associated_with_Al-Qaida.shtml';
-// var entitiesListUrl = 'http://www.un.org/sc/committees/1267/entities_other_groups_undertakings_associated_with_Al-Qaida.shtml';
 var host = 'www.un.org';
-// var logMessageStringHead = new String().concat(__filename, 'line', __line);
 var config;
 var committees;
-var committeeArray; // = ['751', '1267', '1518', '1521', '1533', '1572', '1591', '1718', '1737', '1970', '1988', '2048', '2127', '2140', 'consolidated'];
+var committeesArray; // = ['751', '1267', '1518', '1521', '1533', '1572', '1591', '1718', '1737', '1970', '1988', '2048', '2127', '2140', 'consolidated'];
 var committeesJson;
 
 var start = function () {
@@ -122,24 +109,25 @@ var start = function () {
       // delete old files
       function (callback) {
         // fse.removeSync(writeJsonOutputDebuggingDirectory);
-        if (!useLocalNarrativeFiles) {
+      //  if (!useLocalNarrativeFiles) {
           // fse.removeSync(__dirname + '/../data/narrative_summaries/');
           // fse.mkdirs(__dirname + '/../data/narrative_summaries/');
-        }
-        // fse.removeSync(__dirname + '/../data/narrative_lists/');
-        // fse.removeSync(committeesJson[committee].dataPath);   // deletes /data/output/data_consolidated_list.json
-        // re-create deleted directories
-        // fse.mkdirs(writeJsonOutputDebuggingDirectory);
-        // fse.mkdirs(__dirname + '/../data/narrative_lists/');
 
-        try {
-          committeeArray.forEach(function (committee) {
-            fse.removeSync(__dirname + '/../data/committees/' + committee + '/debug/');
-            fse.mkdirs(__dirname + '/../data/committees/' + committee + '/debug/');
-          })
-        } catch (err) {
-          logger.error('\n ', __filename, 'line', __line, '; Error: ', err, utilities_aq_viz.getStackTrace(err));
-        }
+          // fse.removeSync(__dirname + '/../data/narrative_lists/');
+          // fse.removeSync(committeesJson[committee].dataPath);   // deletes /data/output/data_consolidated_list.json
+          // re-create deleted directories
+          // fse.mkdirs(writeJsonOutputDebuggingDirectory);
+          // fse.mkdirs(__dirname + '/../data/narrative_lists/');
+
+          try {
+            committeesArray.forEach(function (committee) {
+              fse.removeSync(__dirname + '/../data/committees/' + committee + '/debug/');
+              fse.mkdirs(__dirname + '/../data/committees/' + committee + '/debug/');
+            })
+          } catch (err) {
+            logger.error('\n ', __filename, 'line', __line, '; Error: ', err, utilities_aq_viz.getStackTrace(err), '; useLocalNarrativeFiles = ', useLocalNarrativeFiles);
+          }
+        // }
         callback();
       },
 
@@ -150,20 +138,20 @@ var start = function () {
 
       // collect XML sanctions list files for the various U.N. sanctions committees
       function (callback) {
-        // var committeeArray = ['751', '1267', '1518', '1521', '1533', '1572', '1591', '1718', '1737', '1970', '1988', '2048', '2127'];
+        // var committeesArray = ['751', '1267', '1518', '1521', '1533', '1572', '1591', '1718', '1737', '1970', '1988', '2048', '2127'];
         try {
           committeesArray.forEach(function (committee) {
             collect(committee);
           })
         } catch (err) {
-          logger.error('\n ', __filename, 'line', __line, '; Error: ', err, utilities_aq_viz.getStackTrace(err));
+          logger.error('\n ', __filename, 'line', __line, '; Error: ', err, utilities_aq_viz.getStackTrace(err), '; committee = ', committee, '; committeesJson[committee].subjectMatterAbbreviated = ', committeesJson[committee].subjectMatterAbbreviated)
         }
         callback();
       }
     ],
     function (err) {
       if (err) {
-        logger.error(__filename, 'line', __line, '; Error: ' + err);
+        logger.error(__filename, 'line', __line, '; Error: ' + err, '; committeesJson[committee].subjectMatterAbbreviated = ', committeesJson[committee].subjectMatterAbbreviated);
       }
     });
 };
@@ -205,12 +193,9 @@ var collect = function (committee) {
 
         // write committee or consolidated.xml to local file and archive_historical directory
         function (callback) {
-//          var fileNameAndPathForProcessing = __dirname + '/../data/committees/consolidated/consolidated.xml';
           utilities_aq_viz.syncWriteMyFile(list_xml, committeesJson[committee].xmlFileLocalStoragePathAndName, fsOptions);
-
           utilities_aq_viz.syncWriteMyFile(list_xml, committeesJson[committee].backupRawXmlFilePathAndName, fsOptions);
           // committeesJson[committee].backupRawXmlFilePathAndName
-
           // syncWriteFileXML(list_xml, fileNameAndPathForProcessing);
           // var fileNameAndPathForArchive = __dirname + '/../data/archive/consolidated.xml';
           // utilities_aq_viz.syncWriteMyFile(list_xml, fileNameAndPathForArchive, fsOptions);
@@ -240,8 +225,8 @@ var collect = function (committee) {
 
         // update the data_consolidated_list.json file; write the intermediate file for debugging
         function (callback) {
-          var writeJsonPathAndFileName = committeesJson[committee].writeJsonOutputDebuggingDirectory + 'data-collect-L' + __line + '-raw_data_consolidated_list.json';
-          utilities_aq_viz.stringifyAndWriteJsonDataFile(data, writeJsonPathAndFileName);
+          // var writeJsonPathAndFileName = committeesJson[committee].writeJsonOutputDebuggingDirectory + 'data-collect-L' + __line + '-xml_to_json.json';
+          utilities_aq_viz.stringifyAndWriteJsonDataFile(data, committeesJson[committee].writeJsonOutputDebuggingDirectory + 'data-collect-L' + __line + '-xml_to_json.json');
           utilities_aq_viz.stringifyAndWriteJsonDataFile(data, committeesJson[committee].dataPath);
           callback();
         },
@@ -273,22 +258,19 @@ var collect = function (committee) {
         // archive a dated copy of consolidated.xml for potential future time series analysis
         // normalize reference numbers, ids, name strings, nationality.
         function (callback) {
-
           var oldRefNumRegexReplace;
-
           if (consoleLog) {
             logger.debug('\n ', __filename, 'line', __line, '; function #:', ++functionCount, '; normalize data_consolidated_list.json');
           }
-
           //var x = Object.prototype.toString.call( data.CONSOLIDATED_LIST.ENTITIES.ENTITY );
-
           // if there is only one data.CONSOLIDATED_LIST.ENTITIES.ENTITY, ENTITY will be an object, not an array; so we convert the single object to an element in an array
           // is an entity defined?
           try {
             if (data.CONSOLIDATED_LIST.ENTITIES && data.CONSOLIDATED_LIST.ENTITIES.ENTITY) {
               // is entity an array?  Put the array into data.entities
+              logger.info(__filename, 'line', __line, '\nObject.prototype.toString.call(data.CONSOLIDATED_LIST.ENTITIES.ENTITY) = ', Object.prototype.toString.call(data.CONSOLIDATED_LIST.ENTITIES.ENTITY), '; committee = ', committee, '; committeesJson[committee].subjectMatterAbbreviated = ', committeesJson[committee].subjectMatterAbbreviated);
               if (Object.prototype.toString.call(data.CONSOLIDATED_LIST.ENTITIES.ENTITY) === '[object Array]') {
-                console.log('entities Array!, committee = ', committee);
+                logger.info(__filename, 'line', __line, '\nObject.prototype.toString.call(data.CONSOLIDATED_LIST.ENTITIES.ENTITY) = ', Object.prototype.toString.call(data.CONSOLIDATED_LIST.ENTITIES.ENTITY), '; committee = ', committee, '; committeesJson[committee].subjectMatterAbbreviated = ', committeesJson[committee].subjectMatterAbbreviated);
                 data.entities = data.CONSOLIDATED_LIST.ENTITIES.ENTITY;
                 data.entities.forEach(function (entity) {
                   entity.noLongerListed = 0;
@@ -320,27 +302,18 @@ var collect = function (committee) {
            }
            */
           // var y = Object.prototype.toString.call( data.CONSOLIDATED_LIST.INDIVIDUALS.INDIVIDUAL );
-          if (Object.prototype.toString.call(data.CONSOLIDATED_LIST.INDIVIDUALS.INDIVIDUAL) === '[object Array]') {
-            console.log('individual Array!, committee = ', committee);
-            data.indivs = data.CONSOLIDATED_LIST.INDIVIDUALS.INDIVIDUAL;
 
+          logger.info(__filename, 'line', __line, '\nObject.prototype.toString.call(data.CONSOLIDATED_LIST.INDIVIDUALS.INDIVIDUAL) = ', Object.prototype.toString.call(data.CONSOLIDATED_LIST.INDIVIDUALS.INDIVIDUAL), '; committee = ', committee, '; committeesJson[committee].subjectMatterAbbreviated = ', committeesJson[committee].subjectMatterAbbreviated);
+          if (Object.prototype.toString.call(data.CONSOLIDATED_LIST.INDIVIDUALS.INDIVIDUAL) === '[object Array]') {
+            // console.log('individual Array!, committee = ', committee);
+            data.indivs = data.CONSOLIDATED_LIST.INDIVIDUALS.INDIVIDUAL;
           } else if (data.CONSOLIDATED_LIST.INDIVIDUALS.INDIVIDUAL) {
             data.indivs = [];
             data.indivs.push(data.CONSOLIDATED_LIST.INDIVIDUALS.INDIVIDUAL);
           } else {
             data.indivs = [];
           }
-
-//          data.CONSOLIDATED_LIST.ENTITIES.ENTITY;
-
-          //
-
-//          data.entities = data.CONSOLIDATED_LIST.ENTITIES.ENTITY;
-
-          // data.entities = data.CONSOLIDATED_LIST.ENTITIES;
-          // data.indivs = data.CONSOLIDATED_LIST.INDIVIDUALS;
           try {
-
             data.entities.forEach(function (entity) {
               entity.noLongerListed = 0;
             });
@@ -348,10 +321,9 @@ var collect = function (committee) {
               indiv.noLongerListed = 0;
             });
           } catch (err) {
-            logger.error(__filename, 'line', __line, '; Error: ', err, '; committee = ', committee);
+            logger.error(__filename, 'line', __line, '; Error: ', err, '; committee = ', committee, '; committeesJson[committee].subjectMatterAbbreviated = ', committeesJson[committee].subjectMatterAbbreviated);
           }
-
-          // data.indivs = data.indivs.concat(missingNodes.getMissingIndivs());
+;
           data.indivs.forEach(function (indiv) {
             indiv.indiv0OrEnt1 = 0;
             indiv.indivDobString = createIndivDateOfBirthString(indiv);
@@ -362,26 +334,14 @@ var collect = function (committee) {
           data.entities.forEach(function (entity) {
             entity.indiv0OrEnt1 = 1;
           });
-
           data.nodes = data.indivs.concat(data.entities);
-
           try {
             missing_nodes = JSON.parse(fse.readFileSync(committeesJson[committee].missingNodesPathAndFileName, fsOptions));
             data.nodes = data.nodes.concat(missing_nodes);
-            logger.error(__filename, 'line', __line, '; committee ', committee, ' has missing nodes!');
-            // var missingIndivs = missingNodes.getMissingIndivs();
-            // var missingIndivs = missing_nodes.
-
-            //data.indivs = data.indivs.concat(missingIndivs);
-            //var missingEnts = missingNodes.getMissingEnts();
-            //missingEnts.forEach(function (missing_ent) {
-            //missing_ent.noLongerListed = 1;
-            // });
-            // data.entities = data.entities.concat(missingEnts);
+            logger.error(__filename, 'line', __line, '; committee', committee, 'has inserted some missing nodes!');
           } catch (err) {
-            logger.error(__filename, 'line', __line, '; Error: ', err, '; committee = ', committee);
+            logger.error(__filename, 'line', __line, '; Error: ', err, '; committee = ', committee, '; committeesJson[committee].subjectMatterAbbreviated = ', committeesJson[committee].subjectMatterAbbreviated);
           }
-
           data.dateGenerated = utilities_aq_viz.formatMyDate(data.CONSOLIDATED_LIST.$.dateGenerated);
           data.dateCollected = utilities_aq_viz.formatMyDate(new Date());
           data.nodes.forEach(function (node) {
@@ -432,8 +392,8 @@ var collect = function (committee) {
 
         // update the data_consolidated_list.json file; write the intermediate file for debugging
         function (callback) {
-          var writeJsonPathAndFileName = committeesJson[committee].writeJsonOutputDebuggingDirectory + 'data-collect-L' + __line + '-normzd1_data_consolidated_list.json';
-          utilities_aq_viz.stringifyAndWriteJsonDataFile(data, writeJsonPathAndFileName);
+          // var writeJsonPathAndFileName = ;
+          utilities_aq_viz.stringifyAndWriteJsonDataFile(data, committeesJson[committee].writeJsonOutputDebuggingDirectory + 'data-collect-L' + __line + '-normzd1_data_consolidated_list.json');
           utilities_aq_viz.stringifyAndWriteJsonDataFile(data, committeesJson[committee].dataPath);
           callback();
         },
@@ -466,7 +426,6 @@ var getCommitteeInfo = function (data, committees) {
     node = nodes[nodeCounter];
     nodeId = node.id;
     committeeIdentifier = nodeId.substring(0, 2);
-
     switch (committeeIdentifier) {
       case 'CD':
         node.two_Digit_Country_ISO_Code = 'CD';
