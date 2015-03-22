@@ -36,28 +36,30 @@ var backupRawXmlFilePathAndName;
 var xmlFileLocalStoragePathAndName;
 var missingNodesPathAndFileName;
 var committeeUrlPath;
+var committeesConfigJsonPathAndFileName;
 var committeesJson = {};
 var init;
 var committeeResolution; // = "1572 (2004)";
 var committee;
 var committeesArray;
+var xmlDataPath;
+var htmlDataPath;
+var mergedDataPath;
 
 var getCommitteesJson = function () {
   committeesArray = appConfig.getCommitteesArray();
-
-//    = ['751', '1267', '1518', '1521', '1533', '1572', '1591', '1718', '1737', '1970', '1988', '2048', '2127', '2140', 'consolidated'];
-//  committeesJson = {};
-
   committeesArray.forEach(function (committee) {
-
     committeesJson[committee] = {};
     init(committee);
+    committeesJson[committee].xmlDataPath = xmlDataPath;
+    committeesJson[committee].htmlDataPath = htmlDataPath;
+    committeesJson[committee].mergedDataPath = mergedDataPath;
     committeesJson[committee].consolidatedXmlListUrl = consolidatedXmlListUrl;
     committeesJson[committee].committeeUrlPath = committeeUrlPath;
     committeesJson[committee].consolidatedXmlListUrl = consolidatedXmlListUrl;
     committeesJson[committee].xmlFileLocalStoragePathAndName = xmlFileLocalStoragePathAndName;
     committeesJson[committee].committeeXmlListUrl = committeeXmlListUrl;
-    committeesJson[committee].dataPath = dataPath;
+    // committeesJson[committee].dataPath = dataPath;
     committeesJson[committee].individualsJsonLocalOutputFileNameAndPath = individualsJsonLocalOutputFileNameAndPath;
     committeesJson[committee].entitiesJsonLocalOutputFileNameAndPath = entitiesJsonLocalOutputFileNameAndPath;
     committeesJson[committee].individualsListUrl = individualsListUrl;
@@ -69,12 +71,13 @@ var getCommitteesJson = function () {
     committeesJson[committee].backupRawXmlPath = backupRawXmlPath;
     committeesJson[committee].backupRawXmlFilePathAndName = backupRawXmlFilePathAndName;
     committeesJson[committee].committeeUrlPath = committeeUrlPath;
-    committeesJson[committee].individualsHtmlLocalOutputFileNameAndPath =   individualsHtmlLocalOutputFileNameAndPath;
+    committeesJson[committee].individualsHtmlLocalOutputFileNameAndPath = individualsHtmlLocalOutputFileNameAndPath;
     committeesJson[committee].entitiesHtmlLocalOutputFileNameAndPath = entitiesHtmlLocalOutputFileNameAndPath;
     committeesJson[committee].missingNodesPathAndFileName = missingNodesPathAndFileName;
     committeesJson[committee].subjectMatterAbbreviated = subjectMatterAbbreviated;
+    committeesJson[committee].committeesConfigJsonPathAndFileName = committeesConfigJsonPathAndFileName;
   });
-  utilities_aq_viz.stringifyAndWriteJsonDataFile(committeesJson, __dirname + '/../data/committees/committeesJson.json');
+  utilities_aq_viz.stringifyAndWriteJsonDataFile(committeesJson, committeesConfigJsonPathAndFileName);
   return committeesJson;
 };
 
@@ -92,7 +95,7 @@ init = function (committeeParam) {
   committeeUrlPath = 'http://www.un.org/sc/committees/' + committee + '/';
   committeeXmlListUrl = 'http://www.un.org/sc/committees/' + committee + '/' + committee + '.xml';
   consolidatedXmlListUrl = committeeXmlListUrl;
-  missingNodesPathAndFileName = __dirname + '/../data/committees/' + committee + '/missing_nodes.json.js';
+  missingNodesPathAndFileName = __dirname + '/../data/committees/' + committee + '/missing/missing_nodes.json.js';
   // xml files local storage
   xmlFileLocalStoragePathAndName = __dirname + '/../data/committees/' + committee + '/' + committee + '.xml';
   backupRawXmlPath = __dirname + '/../data/committees/' + committee + '/backup/';
@@ -106,7 +109,11 @@ init = function (committeeParam) {
   individualsHtmlLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/individuals.html';
   entitiesHtmlLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/entities.html';
   // json files (local storage)
-  dataPath = __dirname + '/../data/committees/' + committee + '/data.json';
+  // json files extracted from the xml list files
+  xmlDataPath = __dirname + '/../data/committees/' + committee + '/data_xml.json';
+  // json files of nodes extracted from the narratives
+  htmlDataPath = __dirname + '/../data/committees/' + committee + '/data_html.json';
+  mergedDataPath = __dirname + '/../data/committees/' + committee + '/data.json';
   individualsJsonLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/individuals.json';
   entitiesJsonLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/entities.json';
   writeJsonOutputDebuggingDirectory = __dirname + '/../data/committees/' + committee + '/debug/';
@@ -115,6 +122,8 @@ init = function (committeeParam) {
   // dot files local storage
   dotFileLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/links.dot';
   dataJsonLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/data_committees.json';
+  // place to store all the configuration data from this committees.js file
+  committeesConfigJsonPathAndFileName =  __dirname + '/../data/committees/committeesJson.json';
 
   switch (committee) {
     // Somalia and Eritrea
@@ -299,7 +308,6 @@ init = function (committeeParam) {
 //      entitiesListUrl = 'http://www.un.org/sc/committees/' + committee + '/Entities.shtml';
   }
 };
-
 
 module.exports = {
   getCommitteesJson: getCommitteesJson

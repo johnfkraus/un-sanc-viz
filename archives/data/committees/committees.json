@@ -1,10 +1,12 @@
 {
  "751": {
+  "xmlDataPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/751/data_xml.json",
+  "htmlDataPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/751/data_html.json",
+  "mergedDataPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/751/data.json",
   "consolidatedXmlListUrl": "http://www.un.org/sc/committees/751/751.xml",
   "committeeUrlPath": "http://www.un.org/sc/committees/751/",
   "xmlFileLocalStoragePathAndName": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/751/751.xml",
   "committeeXmlListUrl": "http://www.un.org/sc/committees/751/751_1907.xml",
-  "dataPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/751/data.json",
   "individualsJsonLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/751/individuals.json",
   "entitiesJsonLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/751/entities.json",
   "individualsListUrl": "http://www.un.org/sc/committees/751/Individuals.shtml",
@@ -16,14 +18,18 @@
   "backupRawXmlPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/751/backup/",
   "backupRawXmlFilePathAndName": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/751/backup/751_1907.xml",
   "individualsHtmlLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/751/individuals.html",
-  "entitiesHtmlLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/751/entities.html"
+  "entitiesHtmlLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/751/entities.html",
+  "missingNodesPathAndFileName": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/751/missing_nodes.json.js",
+  "subjectMatterAbbreviated": "Resolutions 751 (1992) and 1907 (2009) concerning Somalia and Eritrea"
  },
  "1267": {
+  "xmlDataPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1267/data_xml.json",
+  "htmlDataPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1267/data_html.json",
+  "mergedDataPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1267/data.json",
   "consolidatedXmlListUrl": "http://www.un.org/sc/committees/1267/1267.xml",
   "committeeUrlPath": "http://www.un.org/sc/committees/1267/",
   "xmlFileLocalStoragePathAndName": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1267/1267.xml",
   "committeeXmlListUrl": "http://www.un.org/sc/committees/1267/1267.xml",
-  "dataPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1267/data.json",
   "individualsJsonLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1267/individuals.json",
   "entitiesJsonLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1267/entities.json",
   "individualsListUrl": "http://www.un.org/sc/committees/1267/individuals_associated_with_Al-Qaida.shtml",
@@ -35,14 +41,18 @@
   "backupRawXmlPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1267/backup/",
   "backupRawXmlFilePathAndName": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1267/backup/1267.xml",
   "individualsHtmlLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1267/individuals.html",
-  "entitiesHtmlLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1267/entities.html"
+  "entitiesHtmlLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1267/entities.html",
+  "missingNodesPathAndFileName": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1267/missing_nodes.json.js",
+  "subjectMatterAbbreviated": "Resolutions 1267 (1999) and 1989 (2011) concerning Al-Qaida and associated individuals and entities"
  },
  "1518": {
+  "xmlDataPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1518/data_xml.json",
+  "htmlDataPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1518/data_html.json",
+  "mergedDataPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1518/data.json",
   "consolidatedXmlListUrl": "http://www.un.org/sc/committees/1518/1518.xml",
   "committeeUrlPath": "http://www.un.org/sc/committees/1518/",
   "xmlFileLocalStoragePathAndName": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1518/1518.xml",
   "committeeXmlListUrl": "http://www.un.org/sc/committees/1518/1518.xml",
-  "dataPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1518/data.json",
   "individualsJsonLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1518/individuals.json",
   "entitiesJsonLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1518/entities.json",
   "individualsListUrl": "http://www.un.org/sc/committees/1518/Individuals.shtml",
@@ -54,14 +64,18 @@
   "backupRawXmlPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1518/backup/",
   "backupRawXmlFilePathAndName": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1518/backup/1518.xml",
   "individualsHtmlLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1518/individuals.html",
-  "entitiesHtmlLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1518/entities.html"
+  "entitiesHtmlLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1518/entities.html",
+  "missingNodesPathAndFileName": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1518/missing_nodes.json.js",
+  "subjectMatterAbbreviated": "Resolution 1518 (2003) re: the former Iraqi regime"
  },
  "1521": {
+  "xmlDataPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1521/data_xml.json",
+  "htmlDataPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1521/data_html.json",
+  "mergedDataPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1521/data.json",
   "consolidatedXmlListUrl": "http://www.un.org/sc/committees/1521/1521.xml",
   "committeeUrlPath": "http://www.un.org/sc/committees/1521/",
   "xmlFileLocalStoragePathAndName": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1521/1521.xml",
   "committeeXmlListUrl": "http://www.un.org/sc/committees/1521/1521.xml",
-  "dataPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1521/data.json",
   "individualsJsonLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1521/individuals.json",
   "entitiesJsonLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1521/entities.json",
   "individualsListUrl": "http://www.un.org/sc/committees/1521/Individuals.shtml",
@@ -73,14 +87,18 @@
   "backupRawXmlPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1521/backup/",
   "backupRawXmlFilePathAndName": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1521/backup/1521.xml",
   "individualsHtmlLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1521/individuals.html",
-  "entitiesHtmlLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1521/entities.html"
+  "entitiesHtmlLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1521/entities.html",
+  "missingNodesPathAndFileName": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1521/missing_nodes.json.js",
+  "subjectMatterAbbreviated": "Resolution 1521 (2003) concerning Liberia"
  },
  "1533": {
+  "xmlDataPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1533/data_xml.json",
+  "htmlDataPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1533/data_html.json",
+  "mergedDataPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1533/data.json",
   "consolidatedXmlListUrl": "http://www.un.org/sc/committees/1533/1533.xml",
   "committeeUrlPath": "http://www.un.org/sc/committees/1533/",
   "xmlFileLocalStoragePathAndName": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1533/1533.xml",
   "committeeXmlListUrl": "http://www.un.org/sc/committees/1533/1533.xml",
-  "dataPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1533/data.json",
   "individualsJsonLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1533/individuals.json",
   "entitiesJsonLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1533/entities.json",
   "individualsListUrl": "http://www.un.org/sc/committees/1533/Individuals.shtml",
@@ -92,14 +110,18 @@
   "backupRawXmlPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1533/backup/",
   "backupRawXmlFilePathAndName": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1533/backup/1533.xml",
   "individualsHtmlLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1533/individuals.html",
-  "entitiesHtmlLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1533/entities.html"
+  "entitiesHtmlLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1533/entities.html",
+  "missingNodesPathAndFileName": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1533/missing_nodes.json.js",
+  "subjectMatterAbbreviated": "Resolution 1533 (2004) concerning the Democratic Republic of the Congo"
  },
  "1572": {
+  "xmlDataPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1572/data_xml.json",
+  "htmlDataPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1572/data_html.json",
+  "mergedDataPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1572/data.json",
   "consolidatedXmlListUrl": "http://www.un.org/sc/committees/1572/1572.xml",
   "committeeUrlPath": "http://www.un.org/sc/committees/1572/",
   "xmlFileLocalStoragePathAndName": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1572/1572.xml",
   "committeeXmlListUrl": "http://www.un.org/sc/committees/1572/1572.xml",
-  "dataPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1572/data.json",
   "individualsJsonLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1572/individuals.json",
   "entitiesJsonLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1572/entities.json",
   "individualsListUrl": "http://www.un.org/sc/committees/1572/individuals.shtml",
@@ -111,14 +133,18 @@
   "backupRawXmlPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1572/backup/",
   "backupRawXmlFilePathAndName": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1572/backup/1572.xml",
   "individualsHtmlLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1572/individuals.html",
-  "entitiesHtmlLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1572/entities.html"
+  "entitiesHtmlLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1572/entities.html",
+  "missingNodesPathAndFileName": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1572/missing_nodes.json.js",
+  "subjectMatterAbbreviated": "Resolution 1572 (2004) concerning Côte d'Ivoire"
  },
  "1591": {
+  "xmlDataPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1591/data_xml.json",
+  "htmlDataPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1591/data_html.json",
+  "mergedDataPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1591/data.json",
   "consolidatedXmlListUrl": "http://www.un.org/sc/committees/1591/1591.xml",
   "committeeUrlPath": "http://www.un.org/sc/committees/1591/",
   "xmlFileLocalStoragePathAndName": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1591/1591.xml",
   "committeeXmlListUrl": "http://www.un.org/sc/committees/1591/1591.xml",
-  "dataPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1591/data.json",
   "individualsJsonLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1591/individuals.json",
   "entitiesJsonLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1591/entities.json",
   "individualsListUrl": "http://www.un.org/sc/committees/1591/Individuals.shtml",
@@ -130,14 +156,18 @@
   "backupRawXmlPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1591/backup/",
   "backupRawXmlFilePathAndName": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1591/backup/1591.xml",
   "individualsHtmlLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1591/individuals.html",
-  "entitiesHtmlLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1591/entities.html"
+  "entitiesHtmlLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1591/entities.html",
+  "missingNodesPathAndFileName": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1591/missing_nodes.json.js",
+  "subjectMatterAbbreviated": "Resolution 1591 (2005) concerning the Sudan"
  },
  "1718": {
+  "xmlDataPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1718/data_xml.json",
+  "htmlDataPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1718/data_html.json",
+  "mergedDataPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1718/data.json",
   "consolidatedXmlListUrl": "http://www.un.org/sc/committees/1718/1718.xml",
   "committeeUrlPath": "http://www.un.org/sc/committees/1718/",
   "xmlFileLocalStoragePathAndName": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1718/1718.xml",
   "committeeXmlListUrl": "http://www.un.org/sc/committees/1718/1718.xml",
-  "dataPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1718/data.json",
   "individualsJsonLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1718/individuals.json",
   "entitiesJsonLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1718/entities.json",
   "individualsListUrl": "http://www.un.org/sc/committees/1718/Individuals.shtml",
@@ -149,14 +179,18 @@
   "backupRawXmlPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1718/backup/",
   "backupRawXmlFilePathAndName": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1718/backup/1718.xml",
   "individualsHtmlLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1718/individuals.html",
-  "entitiesHtmlLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1718/entities.html"
+  "entitiesHtmlLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1718/entities.html",
+  "missingNodesPathAndFileName": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1718/missing_nodes.json.js",
+  "subjectMatterAbbreviated": "Resolution 1718 (2006) relating to the Democratic People’s Republic of Korea (DPRK)."
  },
  "1737": {
+  "xmlDataPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1737/data_xml.json",
+  "htmlDataPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1737/data_html.json",
+  "mergedDataPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1737/data.json",
   "consolidatedXmlListUrl": "http://www.un.org/sc/committees/1737/1737.xml",
   "committeeUrlPath": "http://www.un.org/sc/committees/1737/",
   "xmlFileLocalStoragePathAndName": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1737/1737.xml",
   "committeeXmlListUrl": "http://www.un.org/sc/committees/1737/1737.xml",
-  "dataPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1737/data.json",
   "individualsJsonLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1737/individuals.json",
   "entitiesJsonLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1737/entities.json",
   "individualsListUrl": "http://www.un.org/sc/committees/1737/individuals.shtml",
@@ -168,14 +202,18 @@
   "backupRawXmlPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1737/backup/",
   "backupRawXmlFilePathAndName": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1737/backup/1737.xml",
   "individualsHtmlLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1737/individuals.html",
-  "entitiesHtmlLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1737/entities.html"
+  "entitiesHtmlLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1737/entities.html",
+  "missingNodesPathAndFileName": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1737/missing_nodes.json.js",
+  "subjectMatterAbbreviated": "Resolution 1737 (2006) relating to the Islamic Republic of Iran."
  },
  "1970": {
+  "xmlDataPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1970/data_xml.json",
+  "htmlDataPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1970/data_html.json",
+  "mergedDataPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1970/data.json",
   "consolidatedXmlListUrl": "http://www.un.org/sc/committees/1970/1970.xml",
   "committeeUrlPath": "http://www.un.org/sc/committees/1970/",
   "xmlFileLocalStoragePathAndName": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1970/1970.xml",
   "committeeXmlListUrl": "http://www.un.org/sc/committees/1970/1970.xml",
-  "dataPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1970/data.json",
   "individualsJsonLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1970/individuals.json",
   "entitiesJsonLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1970/entities.json",
   "individualsListUrl": "http://www.un.org/sc/committees/1970/Individuals.shtml",
@@ -187,14 +225,18 @@
   "backupRawXmlPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1970/backup/",
   "backupRawXmlFilePathAndName": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1970/backup/1970.xml",
   "individualsHtmlLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1970/individuals.html",
-  "entitiesHtmlLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1970/entities.html"
+  "entitiesHtmlLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1970/entities.html",
+  "missingNodesPathAndFileName": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1970/missing_nodes.json.js",
+  "subjectMatterAbbreviated": "Resolution 1970 (2011) concerning Libya"
  },
  "1988": {
+  "xmlDataPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1988/data_xml.json",
+  "htmlDataPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1988/data_html.json",
+  "mergedDataPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1988/data.json",
   "consolidatedXmlListUrl": "http://www.un.org/sc/committees/1988/1988.xml",
   "committeeUrlPath": "http://www.un.org/sc/committees/1988/",
   "xmlFileLocalStoragePathAndName": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1988/1988.xml",
   "committeeXmlListUrl": "http://www.un.org/sc/committees/1988/1988.xml",
-  "dataPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1988/data.json",
   "individualsJsonLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1988/individuals.json",
   "entitiesJsonLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1988/entities.json",
   "individualsListUrl": "http://www.un.org/sc/committees/1988/narrative.shtml",
@@ -206,14 +248,18 @@
   "backupRawXmlPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1988/backup/",
   "backupRawXmlFilePathAndName": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1988/backup/1988.xml",
   "individualsHtmlLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1988/individuals.html",
-  "entitiesHtmlLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1988/entities.html"
+  "entitiesHtmlLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1988/entities.html",
+  "missingNodesPathAndFileName": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/1988/missing_nodes.json.js",
+  "subjectMatterAbbreviated": "Resolution 1988 (2011), Resolution 2082 (2012) re: Taliban/Afghanistan"
  },
  "2048": {
+  "xmlDataPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/2048/data_xml.json",
+  "htmlDataPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/2048/data_html.json",
+  "mergedDataPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/2048/data.json",
   "consolidatedXmlListUrl": "http://www.un.org/sc/committees/2048/2048.xml",
   "committeeUrlPath": "http://www.un.org/sc/committees/2048/",
   "xmlFileLocalStoragePathAndName": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/2048/2048.xml",
   "committeeXmlListUrl": "http://www.un.org/sc/committees/2048/2048.xml",
-  "dataPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/2048/data.json",
   "individualsJsonLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/2048/individuals.json",
   "entitiesJsonLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/2048/entities.json",
   "individualsListUrl": "http://www.un.org/sc/committees/2048/2048individuals.shtml",
@@ -225,14 +271,18 @@
   "backupRawXmlPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/2048/backup/",
   "backupRawXmlFilePathAndName": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/2048/backup/2048.xml",
   "individualsHtmlLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/2048/individuals.html",
-  "entitiesHtmlLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/2048/entities.html"
+  "entitiesHtmlLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/2048/entities.html",
+  "missingNodesPathAndFileName": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/2048/missing_nodes.json.js",
+  "subjectMatterAbbreviated": "Resolution 2048 (2012) concerning Guinea-Bissau"
  },
  "2127": {
+  "xmlDataPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/2127/data_xml.json",
+  "htmlDataPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/2127/data_html.json",
+  "mergedDataPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/2127/data.json",
   "consolidatedXmlListUrl": "http://www.un.org/sc/committees/2127/2127.xml",
   "committeeUrlPath": "http://www.un.org/sc/committees/2127/",
   "xmlFileLocalStoragePathAndName": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/2127/2127.xml",
   "committeeXmlListUrl": "http://www.un.org/sc/committees/2127/2127.xml",
-  "dataPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/2127/data.json",
   "individualsJsonLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/2127/individuals.json",
   "entitiesJsonLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/2127/entities.json",
   "individualsListUrl": "http://www.un.org/sc/committees/2127/individuals_associated_with_CAR.shtml",
@@ -244,14 +294,18 @@
   "backupRawXmlPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/2127/backup/",
   "backupRawXmlFilePathAndName": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/2127/backup/2127.xml",
   "individualsHtmlLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/2127/individuals.html",
-  "entitiesHtmlLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/2127/entities.html"
+  "entitiesHtmlLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/2127/entities.html",
+  "missingNodesPathAndFileName": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/2127/missing_nodes.json.js",
+  "subjectMatterAbbreviated": "Resolution 2127 (2013) concerning the Central African Republic"
  },
  "2140": {
+  "xmlDataPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/2140/data_xml.json",
+  "htmlDataPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/2140/data_html.json",
+  "mergedDataPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/2140/data.json",
   "consolidatedXmlListUrl": "http://www.un.org/sc/committees/2140/2140.xml",
   "committeeUrlPath": "http://www.un.org/sc/committees/2140/",
   "xmlFileLocalStoragePathAndName": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/2140/2140.xml",
   "committeeXmlListUrl": "http://www.un.org/sc/committees/2140/2140.xml",
-  "dataPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/2140/data.json",
   "individualsJsonLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/2140/individuals.json",
   "entitiesJsonLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/2140/entities.json",
   "individualsListUrl": "http://www.un.org/sc/committees/2140/Individuals.shtml",
@@ -263,14 +317,18 @@
   "backupRawXmlPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/2140/backup/",
   "backupRawXmlFilePathAndName": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/2140/backup/2140.xml",
   "individualsHtmlLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/2140/individuals.html",
-  "entitiesHtmlLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/2140/entities.html"
+  "entitiesHtmlLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/2140/entities.html",
+  "missingNodesPathAndFileName": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/2140/missing_nodes.json.js",
+  "subjectMatterAbbreviated": "Resolution 2140 (2014) re: Yemen."
  },
  "consolidated": {
+  "xmlDataPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/consolidated/data_xml.json",
+  "htmlDataPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/consolidated/data_html.json",
+  "mergedDataPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/consolidated/data.json",
   "consolidatedXmlListUrl": "http://www.un.org/sc/committees/consolidated/consolidated.xml",
   "committeeUrlPath": "http://www.un.org/sc/committees/consolidated/",
   "xmlFileLocalStoragePathAndName": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/consolidated/consolidated.xml",
   "committeeXmlListUrl": "http://www.un.org/sc/committees/consolidated.xml",
-  "dataPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/consolidated/data.json",
   "individualsJsonLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/consolidated/individuals.json",
   "entitiesJsonLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/consolidated/entities.json",
   "individualsListUrl": "http://www.un.org/sc/committees/consolidated/Individuals.shtml",
@@ -282,6 +340,8 @@
   "backupRawXmlPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/consolidated/backup/",
   "backupRawXmlFilePathAndName": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/consolidated/backup/consolidated.xml",
   "individualsHtmlLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/consolidated/individuals.html",
-  "entitiesHtmlLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/consolidated/entities.html"
+  "entitiesHtmlLocalOutputFileNameAndPath": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/consolidated/entities.html",
+  "missingNodesPathAndFileName": "c:\\Users\\User1\\WebstormProjects\\un-sanc-viz\\js/../data/committees/consolidated/missing_nodes.json.js",
+  "subjectMatterAbbreviated": "consolidated list"
  }
 }

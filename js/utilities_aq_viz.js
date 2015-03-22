@@ -256,6 +256,21 @@ var nodeSummary = function (node) {
   return nodeSummaryString.trim();
 };
 
+var removeOldFiles = function () {
+
+  // fse.removeSync(writeJsonOutputDebuggingDirectory);
+  //if (!useLocalNarrativeFiles) {
+  //  fse.removeSync(__dirname + '/../data/narrative_summaries/');
+  //  fse.mkdirs(__dirname + '/../data/narrative_summaries/');
+  // }
+  // fse.removeSync(__dirname + '/../data/narrative_lists/');
+  // fse.removeSync(htmlDataPath);   // deletes /data/output/data_committee.json
+  // re-create deleted directories
+  // fse.mkdirs(writeJsonOutputDebuggingDirectory);
+  // fse.mkdirs(__dirname + '/../data/narrative_lists/');
+};
+
+
 var rotateLogFile = function (logFileNameAndPath) {
   var logFileNameAndPath2 = logFileNameAndPath || __dirname + '/../log/consolidated.log';
   rotate(logFileNameAndPath2, {count: 11}, function (err) {
@@ -384,6 +399,7 @@ module.exports = {
   // logger: logger,
   nodeSummary: nodeSummary,
   pad: pad,
+  removeOldFiles: removeOldFiles,
   rotateLogFile: rotateLogFile,
   showObjectProperties: showObjectProperties,
   stringifyAndWriteJsonDataFile: stringifyAndWriteJsonDataFile,

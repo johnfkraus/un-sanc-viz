@@ -16,6 +16,7 @@ var init = require('./committees.js').init;
 // skip downloading 300+ narrative files and use locally stored files instead; for debugging
 var useLocalListFiles = appConfig.useLocalListFiles;
 var useLocalNarrativeFiles = appConfig.useLocalNarrativeFiles;
+//var getCommitteesArray = require('./committees.js').getCommitteesArray;
 // do we want lots of console.log messages for debugging (if so, set consoleLog = true)
 var consoleLog = appConfig.consoleLog;
 // skip downloading 300+ narrative files and use locally stored files instead; for debugging
@@ -28,8 +29,8 @@ var responseBody;
 var individualsHtmlUnicodeString;
 var entitiesHtmlUnicodeString;
 var iterators = require('async-iterators');
-var missingNodes = require('./missing_nodes.js'),
-  async = require('async'),
+// var missingNodes = require('./missing_nodes.js'),
+  var async = require('async'),
   re = require('request-enhanced'),
   request = require('request'),
   fse = require('fs-extra'),
@@ -68,7 +69,7 @@ var select = require('soupselect').select,
   assert = require('assert');
 var targetName = '';
 var anchor,
-  data = {},
+  data_html_json = {},
   nodes,
   node,
   narrativeFileName,
@@ -90,17 +91,17 @@ var host = 'www.un.org';
 var config;
 var committee;
 var logFileNameAndPath;
-var readWriteLocalNarrativesFilePath;
+// var readWriteLocalNarrativesFilePath;
 var individualsJsonLocalOutputFileNameAndPath;
 var entitiesJsonLocalOutputFileNameAndPath;
 var dotFileLocalOutputFileNameAndPath;
+// var getCommitteesJson = require('./committees.js').getCommitteesJson;
+// var committeesJson = getCommitteesJson();
 var getCommitteesJson = require('./committees.js').getCommitteesJson;
-var committeesJson = getCommitteesJson();
-
 var parse2Lists = function () {
-  var committeeArray = appConfig.getCommitteesArray(); //['751', '1267', '1518', '1521', '1533', '1572', '1591', '1718', '1737', '1970', '1988', '2048', '2127'];
-  utilities_aq_viz.stringifyAndWriteJsonDataFile(committeesJson, __dirname + '/../data/committees/committees.json');
-  committeeArray.forEach(function (committee) {
+  var committeesArray = appConfig.getCommitteesArray();
+
+  committeesArray.forEach(function (committee) {
     try {
       parse2ListsCommittee(committee);
     } catch (err) {
@@ -115,34 +116,16 @@ var parse2ListsCommittee = function (committee) {
     logger.debug('\n ', __filename, __line, '; running parse2ListsCommittee; committee = ', committee);
   }
   async.series([
-      // initialize committee settings; test logging
-      function (callback) {
-        // committee = '2140';
-        if (consoleLog) {
-          logger.debug('\n ', __filename, __line, '; function #:', ++functionCount, '; initializing ; committee = ', committee);
-        }
-        // committeesJson = getCommitteesJson();
-
-        // init(committee);
-        utilities_aq_viz.testLogging();
-        callback();
-      },
-
-      // copy previously downloaded or created data files to archive
-      function (callback) {
-        //   fse.copySync(__dirname + '/../data', __dirname + '/../archives/data/'); // , fsOptions);
-        // logger.debug(__filename, 'line', __line, 'Copied ', __dirname, '/../data to ', __dirname, '/../archives');
-        callback();
-      },
 
       // delete old data
       function (callback) {
         if (!useLocalNarrativeFiles) {
-          removeOldFiles();
+          // utilities_aq_viz.removeOldFiles();
         }
         callback();
       },
 
+      // download narrative list files:
       // download from each U.N. sanctions committee web site the two list files for sanctioned (1) individuals and (2) entities.
       // collect from the Internet (for example, from www.un.org/sc/committees/1267/individuals_associated_with_Al-Qaida.shtml)
       // the raw html page that lists the names of html files containing narratives regarding sanctioned individuals
@@ -153,7 +136,7 @@ var parse2ListsCommittee = function (committee) {
         if (consoleLog) {
           logger.debug('\n ', __filename, __line, '; function 1#:', ++functionCount, '; collect the two list files for sanctioned individuals and entities');
         }
-        data.nodes = [];
+        data_html_json.nodes = [];
         if (!useLocalListFiles) {
           // 1 of 2: list of individuals
           if (committeesJson[committee].individualsListUrl) {
@@ -200,13 +183,10 @@ var parse2ListsCommittee = function (committee) {
       // write intermediate data file for debugging
       function
         (callback) {
-        if (data) {
-          // var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'data-L' + __line + '-collectedLinks.json';
-
-
-
-          utilities_aq_viz.stringifyAndWriteJsonDataFile(data, committeesJson[committee].writeJsonOutputDebuggingDirectory  + 'data-L' + __line + '-message.json');
-          utilities_aq_viz.stringifyAndWriteJsonDataFile(data, committeesJson[committee].dataPath);
+        if (data_html_json) {
+          // var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'data_html-parse2-L' + __line + '-collectedLinks.json';
+          utilities_aq_viz.stringifyAndWriteJsonDataFile(data_html_json, committeesJson[committee].writeJsonOutputDebuggingDirectory  + 'data_html-parse2-L' + __line + '-message.json');
+          utilities_aq_viz.stringifyAndWriteJsonDataFile(data_html_json, committeesJson[committee].htmlDataPath);
         }
         callback();
       },
@@ -235,21 +215,21 @@ var parse2ListsCommittee = function (committee) {
       // write intermediate data file for debugging
       function
         (callback) {
-        if (data) {
-          // var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'data-L' + __line + '-collectedLinks.json';
-          utilities_aq_viz.stringifyAndWriteJsonDataFile(data, committeesJson[committee].writeJsonOutputDebuggingDirectory  + 'data-L' + __line + '-message.json');
-          utilities_aq_viz.stringifyAndWriteJsonDataFile(data, committeesJson[committee].dataPath);
+        if (data_html_json) {
+          // var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'data_html-parse2-L' + __line + '-collectedLinks.json';
+          utilities_aq_viz.stringifyAndWriteJsonDataFile(data_html_json, committeesJson[committee].writeJsonOutputDebuggingDirectory  + 'data_html-parse2-L' + __line + '-message.json');
+          utilities_aq_viz.stringifyAndWriteJsonDataFile(data_html_json, committeesJson[committee].htmlDataPath);
         }
         callback();
       },
 
-      // write intermediate data file for debugging
+      // write intermediate data_html_json file for debugging
       function
         (callback) {
-        if (data) {
-          // var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'data-L' + __line + '-collectedLinks.json';
-          utilities_aq_viz.stringifyAndWriteJsonDataFile(data, committeesJson[committee].writeJsonOutputDebuggingDirectory  + 'data-L' + __line + '-message.json');
-          utilities_aq_viz.stringifyAndWriteJsonDataFile(data, committeesJson[committee].dataPath);
+        if (data_html_json) {
+          // var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'data_html-parse2-L' + __line + '-collectedLinks.json';
+          utilities_aq_viz.stringifyAndWriteJsonDataFile(data_html_json, committeesJson[committee].writeJsonOutputDebuggingDirectory  + 'data_html-parse2-L' + __line + '-message.json');
+          utilities_aq_viz.stringifyAndWriteJsonDataFile(data_html_json, committeesJson[committee].htmlDataPath);
         }
         callback();
       },
@@ -257,23 +237,23 @@ var parse2ListsCommittee = function (committee) {
       // create nodes
       // using filenames previously extracted from the two list files, download each narrative file from the UN web site and save to local file
       // if a target node id does not exist in the node ids set, create a node.
-      // using 'narrativeFileName' from the data file, parse the narratives
-      // read each narrative file from local storage using 'narrativeFileName' from the data file
+      // using 'narrativeFileName' from the data_html_json file, parse the narratives
+      // read each narrative file from local storage using 'narrativeFileName' from the data_html_json file
       // parse the narratives
       // narrative file names must have 10 characters, not counting the '.shtml' extension
-      // using file names extracted from the two list files and organized in the data2.json file, download each narrative file from the UN web site and save to local file
+      // using file names extracted from the two list files and organized in the data_html_json2.json file, download each narrative file from the UN web site and save to local file
       // if a target node id does not exist create a node.
-      // using 'narrativeFileName' from the data file, parse the narratives
+      // using 'narrativeFileName' from the data_html_json file, parse the narratives
       function (callback) {
         logger.debug(__filename, 'line', __line, '; function #:', ++functionCount, '; useLocalNarrativeFiles = ', useLocalNarrativeFiles);
         // do we want to parse files freshly downloaded from the Internet or use locally stored files?
         // if useLocalNarrativeFiles === true, we will not download all the narrative files; use locally stored copies instead.
         if (!useLocalNarrativeFiles) {
           var narrative, nodeNarrFileName, trimmedNarrative, trimmedLabeledNarrative; //, writeNarrativesFilePath;
-          // read the data file; each node has a narrativeFileName property
-          data = JSON.parse(fse.readFileSync(committeesJson[committee].dataPath, fsOptions));
-          for (var nodeCounter = 0; nodeCounter < data.nodes.length; nodeCounter++) {
-            node = data.nodes[nodeCounter];
+          // read the data_html_json file; each node has a narrativeFileName property
+          data_html_json = JSON.parse(fse.readFileSync(committeesJson[committee].htmlDataPath, fsOptions));
+          for (var nodeCounter = 0; nodeCounter < data_html_json.nodes.length; nodeCounter++) {
+            node = data_html_json.nodes[nodeCounter];
             nodeNarrFileName = node.narrativeFileName;
             url = 'http://www.un.org/sc/committees/' + committee + '/' + nodeNarrFileName;
             try {
@@ -301,16 +281,16 @@ var parse2ListsCommittee = function (committee) {
       //  var addConnectionIdsArrayFromNarrative = function (node, narrative) {
       //  callback();
       // },
-      // read each narrative file from local storage using 'narrativeFileName' from the data file
+      // read each narrative file from local storage using 'narrativeFileName' from the data_html_json file
       // parse the narratives
 
       function (callback) {
         var narrative, link, nodeNarrFileName;
         logger.debug(__filename, 'line', __line, '; function #:', ++functionCount, '; ');
-        // read the data file; each node has a narrativeFileName property
-        data = JSON.parse(fse.readFileSync(committeesJson[committee].dataPath, fsOptions));
-        // var links = data.nodes;
-        nodes = data.nodes;
+        // read the data_html_json file; each node has a narrativeFileName property
+        data_html_json = JSON.parse(fse.readFileSync(committeesJson[committee].htmlDataPath, fsOptions));
+        // var links = data_html_json.nodes;
+        nodes = data_html_json.nodes;
         for (var nodeCounter = 0; nodeCounter < nodes.length; nodeCounter++) {
           node = nodes[nodeCounter];
           node.linksFromNarrArray = [];
@@ -337,48 +317,48 @@ var parse2ListsCommittee = function (committee) {
         callback();
       },
 
-      // write intermediate data file for debugging
+      // write intermediate data_html_json file for debugging
       function
         (callback) {
-        // var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'data-L' + __line + '-collectedLinks.json';
-        utilities_aq_viz.stringifyAndWriteJsonDataFile(data, committeesJson[committee].writeJsonOutputDebuggingDirectory  + 'data-L' + __line + '-message.json');
-        utilities_aq_viz.stringifyAndWriteJsonDataFile(data, committeesJson[committee].dataPath);
+        // var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'data_html_json_html-parse2-L' + __line + '-collectedLinks.json';
+        utilities_aq_viz.stringifyAndWriteJsonDataFile(data_html_json, committeesJson[committee].writeJsonOutputDebuggingDirectory  + 'data_html-parse2-L' + __line + '-message.json');
+        utilities_aq_viz.stringifyAndWriteJsonDataFile(data_html_json, committeesJson[committee].htmlDataPath);
         callback();
       },
 
       function (callback) {
-        // read data json file
-        // committeesJson[committee].dataPath = __dirname + '/../data/committees/' + committee + '/data2.json';
+        // read data_html_json json file
+        // committeesJson[committee].htmlDataPath = __dirname + '/../data/committees/' + committee + '/data2.json';
         // var configJsonFileName = __dirname + '/../data/config/config.json';
-        var buffer = fse.readFileSync(committeesJson[committee].dataPath, fsOptions);
-        data = JSON.parse(buffer);
-        // validateNodeIds(data);
+        var buffer = fse.readFileSync(committeesJson[committee].htmlDataPath, fsOptions);
+        data_html_json = JSON.parse(buffer);
+        // validateNodeIds(data_html_json);
         addPairedIdsToNodes();
 //        addPairedIdsToLinks();
         addSourceTargetObjectsToLinks();
-        sortSourceTargetIds(data.links);
-        //  sortArrayOfPairedIds(data.links);
+        sortSourceTargetIds(data_html_json.links);
+        //  sortArrayOfPairedIds(data_html_json.links);
 
-        logger.debug(__filename, 'line', __line, '; data.links.length = ', data.links.length);
+        logger.debug(__filename, 'line', __line, '; data_html_json.links.length = ', data_html_json.links.length);
 
         callback();
       },
 
-      // write intermediate data file for debugging
+      // write intermediate data_html_json file for debugging
       function (callback) {
-        if (data) {
-          // var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'data-L' + __line + '-collectedLinks.json';
-          utilities_aq_viz.stringifyAndWriteJsonDataFile(data, committeesJson[committee].writeJsonOutputDebuggingDirectory  + 'data-L' + __line + '-message.json');
-          utilities_aq_viz.stringifyAndWriteJsonDataFile(data, committeesJson[committee].committeesJson[committee].dataPath);
+        if (data_html_json) {
+          // var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'data_html-parse2-L' + __line + '-collectedLinks.json';
+          utilities_aq_viz.stringifyAndWriteJsonDataFile(data_html_json, committeesJson[committee].writeJsonOutputDebuggingDirectory  + 'data_html-parse2-L' + __line + '-message.json');
+          utilities_aq_viz.stringifyAndWriteJsonDataFile(data_html_json, committeesJson[committee].committeesJson[committee].htmlDataPath);
         }
         callback();
       },
       /*
        function (callback) {
-       // read data json file
-       // committeesJson[committee].dataPath = __dirname + '/../data/committees/' + committee + '/data2.json';
+       // read data_html_json json file
+       // committeesJson[committee].htmlDataPath = __dirname + '/../data/committees/' + committee + '/data2.json';
        // var configJsonFileName = __dirname + '/../data/config/config.json';
-       var buffer = fse.readFileSync(committeesJson[committee].dataPath, fsOptions);
+       var buffer = fse.readFileSync(committeesJson[committee].htmlDataPath, fsOptions);
        data = JSON.parse(buffer);
        var links = data.links;
        //  var pairedIdA, pairedIdB;
@@ -405,12 +385,12 @@ var parse2ListsCommittee = function (committee) {
        callback();
        },
        */
-      // write intermediate data file for debugging
+      // write intermediate data_html_json file for debugging
       function (callback) {
-        if (data) {
-          // var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'data-L' + __line + '-collectedLinks.json';
-          utilities_aq_viz.stringifyAndWriteJsonDataFile(data, committeesJson[committee].writeJsonOutputDebuggingDirectory  + 'data-L' + __line + '-message.json');
-          utilities_aq_viz.stringifyAndWriteJsonDataFile(data, committeesJson[committee].dataPath);
+        if (data_html_json) {
+          // var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'data_html-parse2-L' + __line + '-collectedLinks.json';
+          utilities_aq_viz.stringifyAndWriteJsonDataFile(data_html_json, committeesJson[committee].writeJsonOutputDebuggingDirectory  + 'data_html-parse2-L' + __line + '-message.json');
+          utilities_aq_viz.stringifyAndWriteJsonDataFile(data_html_json, committeesJson[committee].htmlDataPath);
         }
         callback();
       },
@@ -422,12 +402,12 @@ var parse2ListsCommittee = function (committee) {
 
         var linkString, link1, link0;
         var link;
-        // read the data file; each node has a narrativeFileName property
-        data = JSON.parse(fse.readFileSync(committeesJson[committee].dataPath, fsOptions));
-        // validateNodeIds(data);
+        // read the data_html_json file; each node has a narrativeFileName property
+        data_html_json = JSON.parse(fse.readFileSync(committeesJson[committee].htmlDataPath, fsOptions));
+        // validateNodeIds(data_html_json);
 
         linkString = "strict graph 1267 {\n";
-        var links = data.links;
+        var links = data_html_json.links;
         for (var linkCounter = 0; linkCounter < links.length; linkCounter++) {
           link = links[linkCounter];
 
@@ -449,16 +429,16 @@ var parse2ListsCommittee = function (committee) {
 
       function (callback) {
         logger.debug(__filename, 'line', __line, '; function #:', ++functionCount);
-        validateNodeIds(data);
+        validateNodeIds(data_html_json);
         callback();
       },
 
-      // write intermediate data file for debugging
+      // write intermediate data_html_json file for debugging
       function (callback) {
-        if (data) {
-          // var writeJsonPathAndFileName = committeesJson[committee].writeJsonOutputDebuggingDirectory + 'data-L' + __line + '-collectedLinks.json';
-          utilities_aq_viz.stringifyAndWriteJsonDataFile(data, committeesJson[committee].writeJsonOutputDebuggingDirectory  + 'data-L' + __line + '-message.json');
-          utilities_aq_viz.stringifyAndWriteJsonDataFile(data, committeesJson[committee].dataPath);
+        if (data_html_json) {
+          // var writeJsonPathAndFileName = committeesJson[committee].writeJsonOutputDebuggingDirectory + 'data_html-parse2-L' + __line + '-collectedLinks.json';
+          utilities_aq_viz.stringifyAndWriteJsonDataFile(data_html_json, committeesJson[committee].writeJsonOutputDebuggingDirectory  + 'data_html-parse2-L' + __line + '-message.json');
+          utilities_aq_viz.stringifyAndWriteJsonDataFile(data_html_json, committeesJson[committee].htmlDataPath);
         }
         callback();
       },
@@ -467,16 +447,16 @@ var parse2ListsCommittee = function (committee) {
       // summarize output
       // compare number of comment links to number of narrative links
       function (callback) {
-        validateNodeIds(data);
-        // committeesJson[committee].dataPath = __dirname + '/../data/committees/' + committee + '/data2.json';
-        // var configJsonFileName = __dirname + '/../data/config/config.json';
-        var buffer = fse.readFileSync(committeesJson[committee].dataPath, fsOptions);
-        data = JSON.parse(buffer);
-        logger.debug(__filename, 'line', __line, '; data.nodes.length = ', data.nodes.length);
-        logger.debug(__filename, 'line', __line, '; data.links.length = ', data.links.length);
-//        logger.debug(__filename, 'line', __line, '; data.comments.links.length = ', data.comments.links.length);
-        //       logger.debug(__filename, 'line', __line, '; data.narratives.links.length = ', data.narratives.links.length);
-        //       logger.debug(__filename, 'line', __line, '; data.links.length = ', data.links.length);
+        validateNodeIds(data_html_json);
+        // committeesJson[committee].htmlDataPath = __dirname + '/../data/committees/' + committee + '/data2.json';
+        // var configJsonFileName = __dirname + '/../data_html_json/config/config.json';
+        var buffer = fse.readFileSync(committeesJson[committee].htmlDataPath, fsOptions);
+        data_html_json = JSON.parse(buffer);
+        logger.debug(__filename, 'line', __line, '; data_html_json.nodes.length = ', data_html_json.nodes.length);
+        logger.debug(__filename, 'line', __line, '; data_html_json.links.length = ', data_html_json.links.length);
+//        logger.debug(__filename, 'line', __line, '; data_html_json.comments.links.length = ', data_html_json.comments.links.length);
+        //       logger.debug(__filename, 'line', __line, '; data_html_json.narratives.links.length = ', data_html_json.narratives.links.length);
+        //       logger.debug(__filename, 'line', __line, '; data_html_json.links.length = ', data_html_json.links.length);
         //      nodes.forEach(function (node) {
         //        if (consoleLog === true && node.nodeNumber % logModulus === 0) {
         //         logger.debug(__filename, 'line', __line, '; utilities_aq_viz.nodeSummary(node) = \n', utilities_aq_viz.nodeSummary(node));
@@ -505,20 +485,20 @@ var parse2ListsCommittee = function (committee) {
       // count links; add linkcount to nodes
       function (callback) {
         logger.debug(__filename, 'line', __line, '; function #:', ++functionCount);
-        data = utilities_aq_viz.countLinks(data);
-//        validateNodeIds(data);
+        data_html_json = utilities_aq_viz.countLinks(data_html_json);
+//        validateNodeIds(data_html_json);
         callback();
       },
 
 
 
-      // write intermediate data file for debugging
+      // write intermediate data_html_json file for debugging
       function
         (callback) {
-        if (data) {
-          // var writeJsonPathAndFileName = committeesJson[committee].writeJsonOutputDebuggingDirectory + 'data-L' + __line + '-final_save.json';
-          utilities_aq_viz.stringifyAndWriteJsonDataFile(data, committeesJson[committee].writeJsonOutputDebuggingDirectory  + 'data-L' + __line + '-message.json');
-          utilities_aq_viz.stringifyAndWriteJsonDataFile(data, committeesJson[committee].dataPath);
+        if (data_html_json) {
+          // var writeJsonPathAndFileName = committeesJson[committee].writeJsonOutputDebuggingDirectory + 'data_html-parse2-L' + __line + '-final_save.json';
+          utilities_aq_viz.stringifyAndWriteJsonDataFile(data_html_json, committeesJson[committee].writeJsonOutputDebuggingDirectory  + 'data_html-parse2-L' + __line + '-message.json');
+          utilities_aq_viz.stringifyAndWriteJsonDataFile(data_html_json, committeesJson[committee].htmlDataPath);
         }
         callback();
       }
@@ -534,17 +514,17 @@ var parse2ListsCommittee = function (committee) {
   );
 };
 
-var validateNodeIds = function (data) {
-//  var nodes = data.nodes;
+var validateNodeIds = function (data_html_json) {
+//  var nodes = data_html_json.nodes;
   var nodeMap = new Map();
 
-  (data.nodes).forEach(function (node) {
+  (data_html_json.nodes).forEach(function (node) {
     nodeMap.add(node.id, node);
   });
 var link;
-  for (var linkCounter = 0; linkCounter < data.links.length; linkCounter++) {
-link = data.links[linkCounter];
-//  (data.links).forEach(function (link) {
+  for (var linkCounter = 0; linkCounter < data_html_json.links.length; linkCounter++) {
+link = data_html_json.links[linkCounter];
+//  (data_html_json.links).forEach(function (link) {
 //    if (link) {
 
       var linkSource = link.source;
@@ -560,7 +540,7 @@ link = data.links[linkCounter];
         //  Then remove it with splice:
 
         if (linkCounter > -1) {
-          data.links.splice(linkCounter, 1);
+          data_html_json.links.splice(linkCounter, 1);
         }
 //      The second parameter o
 
@@ -573,7 +553,7 @@ link = data.links[linkCounter];
 
 // parse each the html narrative list files
 // put html file names in narrativeUrlsArray
-// write to json file: narrativeUrlsArrayLocalFileNameAndPath -> data
+// write to json file: narrativeUrlsArrayLocalFileNameAndPath -> data_html_json
 // create a narrLink object and set properties:
 // narrLink.indivOrEntityString = indivOrEntityString;
 // narrLink.rowNum = i;
@@ -608,7 +588,7 @@ var syncParseHtmlListPage = function (htmlString, indivOrEntityString) {
    */
 
   var node, rowNum, rawId, cleanId;
-  var nodes = data.nodes;
+  var nodes = data_html_json.nodes;
 
   // loop through each table row
   try {
@@ -761,7 +741,7 @@ var syncParseHtmlListPage = function (htmlString, indivOrEntityString) {
     var parser = new htmlparser.Parser(handler);
     parser.parseComplete(htmlString);
 
-    writeMyFile(committeesJson[committee].dataPath, JSON.stringify(data, null, ' '), fsOptions);
+    writeMyFile(committeesJson[committee].htmlDataPath, JSON.stringify(data_html_json, null, ' '), fsOptions);
   } catch (err) {
     utilities_aq_viz.getStackTrace(err);
     logger.error(__filename, 'line', __line, ' Error: ', err);
@@ -1022,7 +1002,7 @@ var addConnectionIdsArrayFromNarrative = function (node, narrative) {
  sort the values
  */
 var addPairedIdsToNodes = function () {
-  var nodes = data.nodes;
+  var nodes = data_html_json.nodes;
   var pairedNodeIds;
   var concatenatedPairedIds;
   nodes.forEach(function (node) {
@@ -1041,8 +1021,8 @@ var addPairedIdsToNodes = function () {
           if (node.pairedNodeIdsFromNarrativeSet.add(concatenatedPairedIds)) {
             node.pairedNodeIdsFromNarrative.push(pairedNodeIds);
           }
-//          if (data.linkSet.add(pairedNodeIds)) {
-          //           data.links.push(pairedNodeIds);
+//          if (data_html_json.linkSet.add(pairedNodeIds)) {
+          //           data_html_json.links.push(pairedNodeIds);
           //         }
         }
         if (consoleLog) {
@@ -1057,11 +1037,11 @@ var addPairedIdsToNodes = function () {
 };
 
 var addSourceTargetObjectsToLinks = function () {
-  var nodes = data.nodes;
-  data.linkSet = data.linkSet || new Set();
+  var nodes = data_html_json.nodes;
+  data_html_json.linkSet = data_html_json.linkSet || new Set();
   var concatenatedPairedIds;
-  data.links = data.links || [];
-  var linkSet = data.linkSet;
+  data_html_json.links = data_html_json.links || [];
+  var linkSet = data_html_json.linkSet;
   var pairedNodeIds;
   var sourceTargetObject;
 
@@ -1081,7 +1061,7 @@ var addSourceTargetObjectsToLinks = function () {
 
               if (concatenatedPairedIds && linkSet && linkSet.add(concatenatedPairedIds)) {
 
-                (data.links).push(sourceTargetObject);
+                (data_html_json.links).push(sourceTargetObject);
 
               } else {
                 logger.debug(__filename, 'line', __line, '; linkSet.add(concatenatedPairedIds) = ', linkSet.add(concatenatedPairedIds));
@@ -1095,11 +1075,11 @@ var addSourceTargetObjectsToLinks = function () {
 };
 
 var addPairedIdsToLinks = function () {
-  var nodes = data.nodes;
-  data.linkSet = data.linkSet || new Set();
+  var nodes = data_html_json.nodes;
+  data_html_json.linkSet = data_html_json.linkSet || new Set();
   var concatenatedPairedIds;
-  data.links = data.links || [];
-  var linkSet = data.linkSet;
+  data_html_json.links = data_html_json.links || [];
+  var linkSet = data_html_json.linkSet;
   var pairedNodeIds;
   if (nodes) {
     nodes.forEach(function (node) {
@@ -1110,7 +1090,7 @@ var addPairedIdsToLinks = function () {
               concatenatedPairedIds = fixIdCase(pairedNodeIds[0]) + pairedNodeIds[1];
 
               if (concatenatedPairedIds && linkSet && linkSet.add(concatenatedPairedIds)) {
-                (data.links).push(pairedNodeIds);
+                (data_html_json.links).push(pairedNodeIds);
               } else {
                 logger.debug(__filename, 'line', __line, '; linkSet.add(concatenatedPairedIds) = ', linkSet.add(concatenatedPairedIds));
               }
@@ -1202,28 +1182,28 @@ var createNationality = function (nodes) {
 
 // consolidate links from comments; remove duplicates, BUT DOES IT REALLY?
 // create a top-level array of links containing a source and target
-var consolidateLinksFromComments = function (data) {
-  // if (consoleLog) { logger.debug( __filename, 'line',__line, '; data = ', data);
+var consolidateLinksFromComments = function (data_html_json) {
+  // if (consoleLog) { logger.debug( __filename, 'line',__line, '; data_html_json = ', data_html_json);
   if (consoleLog) {
-    logger.debug(__filename, 'line', __line, '; data.nodes[0] = ', data.nodes[0]);
-    logger.debug(__filename, 'line', __line, '; data.nodes[1] = ', data.nodes[1]);
+    logger.debug(__filename, 'line', __line, '; data_html_json.nodes[0] = ', data_html_json.nodes[0]);
+    logger.debug(__filename, 'line', __line, '; data_html_json.nodes[1] = ', data_html_json.nodes[1]);
   }
-//  data.links = [];
+//  data_html_json.links = [];
   var linksSet = new Set();
   // var linksMap = new Map();
   // var mapCounter = 1;
   var connectionObjectsFromCommentsCount = 0;
-  (data.nodes).forEach(function (node) {
+  (data_html_json.nodes).forEach(function (node) {
     if ((typeof node.connectionObjectsFromComments !== 'undefined') && (typeof node.connectionObjectsFromComments.length !== 'undefined') && (node.connectionObjectsFromComments.length > 0)) {
       connectionObjectsFromCommentsCount = connectionObjectsFromCommentsCount + node.connectionObjectsFromComments.length;
       node.connectionObjectsFromComments.forEach(function (conn) {
         if (conn && linksSet.add(conn) === true) {
-          data.links.push(conn);
+          data_html_json.links.push(conn);
         }
       });
     }
   });
-  data.comments.links = data.links;
+  data_html_json.comments.links = data_html_json.links;
   if (consoleLog) {
     logger.debug(__filename, 'line', __line, '; connectionObjectsFromCommentsCount = ', connectionObjectsFromCommentsCount, '; linksSet.count = ', linksSet.count);
   }
@@ -1232,10 +1212,10 @@ var consolidateLinksFromComments = function (data) {
 
 // consolidate links from narratives; remove duplicates, BUT DOES IT REALLY?
 // create a top-level array of links containing a source and target
-var consolidateLinks = function (data) {
-  // if (consoleLog) { logger.debug( __filename, 'line',__line, '; data = ', data);
-//  data.links = [];
-  var nodes = data.nodes;
+var consolidateLinks = function (data_html_json) {
+  // if (consoleLog) { logger.debug( __filename, 'line',__line, '; data_html_json = ', data_html_json);
+//  data_html_json.links = [];
+  var nodes = data_html_json.nodes;
   var linksNarrSet = new Set();
   // var linksMap = new Map();
   // var mapCounter = 1;
@@ -1245,14 +1225,14 @@ var consolidateLinks = function (data) {
       connectionObjectsFromNarrativesCount = connectionObjectsFromNarrativesCount + node.connectionObjectsFromNarrative.length;
       node.connectionObjectsFromNarrative.forEach(function (conn) {
         if (conn && linksNarrSet.add(conn) === true) {
-          data.links.push(conn);
+          data_html_json.links.push(conn);
         }
       });
 // node.linkCount = node.connectionObjectsFromNarrative.length;
     }
   });
-//  data.links = data.links;
-  // data.comments.links = data.links;
+//  data_html_json.links = data_html_json.links;
+  // data_html_json.comments.links = data_html_json.links;
   if (consoleLog) {
     logger.debug(__filename, 'line', __line, '; connectionObjectsFromNarrativesCount = ', connectionObjectsFromNarrativesCount, '; linksNarrSet.count = ', linksNarrSet.count);
   }
@@ -1263,7 +1243,7 @@ var checkNodeExistsById = function (nodeId) {
   var consoleLogValueToBeRestored = consoleLog;
   consoleLog = false;
   var nodeIdsSet = new StrSet();
-  nodes = data.nodes;
+  nodes = data_html_json.nodes;
   nodes.forEach(function (node) {
     if (node.id) {
       nodeIdsSet.add(node.id);
@@ -1337,13 +1317,13 @@ var createIndivDateOfBirthString = function (d) {
 };
 
 var createDateGeneratedMessage = function () {
-  var dateListGeneratedString = data.dateGenerated;
+  var dateListGeneratedString = data_html_json.dateGenerated;
   var dateListGenerated = new Date(dateListGeneratedString);
   dateFormat.masks.shortDate = 'mm-dd-yyyy';
   dateFormat.masks.friendly_display = 'dddd, mmmm dS, yyyy';
   generatedFileDateString = vizFormatDateSetup(dateListGenerated);
   var message = 'Collected consolidated.xml labeled as generated on: ' + dateListGeneratedString + ' [' + dateListGenerated + ']';
-  data.message = message;
+  data_html_json.message = message;
   logger.debug([__filename, ' line ', __line + '; ', message].join(''));
 };
 
@@ -1412,21 +1392,21 @@ var getKeys = function (pob) {
 };
 /*
  // count the unique links for each node
- var countLinks = function (data) {
+ var countLinks = function (data_html_json) {
  var nodeCounter;
  // loop through each node
- data.nodes.forEach(function (node) {
+ data_html_json.nodes.forEach(function (node) {
  nodeCounter = 0;
  // nodeCounter = 0;
  var keySet = new Set();
  var keyAdded1, keyAdded2;
  var linkConcatKey1, linkConcatKey2;
  // loop through each link
- data.links.forEach(function (link) {
+ data_html_json.links.forEach(function (link) {
  // delete a link if source and target are the same
  if (link.source === link.target) {
- delete data.link;
- logger.debug(__filename, 'line', __line, 'deleted ', data.link, ' because link.source === link.target');
+ delete data_html_json.link;
+ logger.debug(__filename, 'line', __line, 'deleted ', data_html_json.link, ' because link.source === link.target');
  } else {
  // increment the link count if the node.id is either the link source or link target
  if (node.id === link.source || node.id === link.target) {
@@ -1511,20 +1491,6 @@ var processPlaceOfBirthArray = function (d) {
 };
 
 
-var removeOldFiles = function () {
-
-
-  // fse.removeSync(writeJsonOutputDebuggingDirectory);
-  //if (!useLocalNarrativeFiles) {
-  //  fse.removeSync(__dirname + '/../data/narrative_summaries/');
-  //  fse.mkdirs(__dirname + '/../data/narrative_summaries/');
-  // }
-  // fse.removeSync(__dirname + '/../data/narrative_lists/');
-  // fse.removeSync(dataPath);   // deletes /data/output/data_committee.json
-  // re-create deleted directories
-  // fse.mkdirs(writeJsonOutputDebuggingDirectory);
-  // fse.mkdirs(__dirname + '/../data/narrative_lists/');
-};
 
 var sortArrayOfStrings = function (arrayOfStrings) {
   arrayOfStrings.sort(function (stringA, stringB) {
@@ -1624,9 +1590,9 @@ var vizFormatDateSetup = function (dateString) {
   return vizDateString.trim();
 };
 
-var writeMyFile = function (localFileNameAndPath, data, fsOptions) {
+var writeMyFile = function (localFileNameAndPath, data_html_json, fsOptions) {
   try {
-    fse.writeFileSync(localFileNameAndPath, data, fsOptions);
+    fse.writeFileSync(localFileNameAndPath, data_html_json, fsOptions);
   } catch (err) {
     logger.error(__filename, 'line', __line, ' Error: ', err);
   }
