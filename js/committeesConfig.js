@@ -1,101 +1,105 @@
-// committees.js
+// committeesConfig.js
 //==========================
-
-var appConfig = require('./appConfig.js');
-var utilities_aq_viz = require('./utilities_aq_viz.js');
-var consoleLog = appConfig.consoleLog;
-var logger = appConfig.logger;
-
-var linenums = require('./linenums.js');
-var counter = 0;
 if (typeof define !== 'function') {
   var define = require('amdefine');
 }
-require('console-stamp')(console, '[HH:MM:ss.l]');
-var dataPath;
-var consolidatedXmlListUrl;
-var writeJsonOutputDebuggingDirectory;
-var individualsHtmlLocalOutputFileNameAndPath;
-var entitiesHtmlLocalOutputFileNameAndPath;
-var dataJsonLocalOutputFileNameAndPath;
-var individualsListUrl;
-var entitiesListUrl;
-var logFileNameAndPath;
-var readWriteLocalNarrativesFilePath;
-var individualsJsonLocalOutputFileNameAndPath;
-var entitiesJsonLocalOutputFileNameAndPath;
-var dotFileLocalOutputFileNameAndPath;
+var fsOptions = {
+  flags: 'r+', encoding: 'utf-8', autoClose: true
+};
 
-var subjectMatterAbbreviated;
-var committeeXmlListUrl;
-var permRefNumIndiv;
-var permRefNumEnt;
-var countryCode2DigitIso;
-var backupRawXmlPath;
+var appConfig = require('./appConfig.js');
 var backupRawXmlFilePathAndName;
-var xmlFileLocalStoragePathAndName;
-var missingNodesPathAndFileName;
+var backupRawXmlPath;
+var committee;
+var committeeResolution;
 var committeeUrlPath;
+var committeeXmlListUrl;
+var committeesArray;
 var committeesConfigJsonPathAndFileName;
 var committeesJson;
-// var init;
-var committeeResolution; // = "1572 (2004)";
-var committee;
-var committeesArray;
-var xmlDataPath;
+var consolidatedXmlListUrl;
+var countryCode2DigitIso;
+var dataJsonLocalOutputFileNameAndPath;
+var dotFileLocalOutputFileNameAndPath;
+var entitiesHtmlLocalOutputFileNameAndPath;
+var entitiesListUrl;
+var fse = require('fs-extra');
+var getCommitteesJson;
 var htmlDataPath;
+var individualsHtmlLocalOutputFileNameAndPath;
+var individualsListUrl;
+var init;
+var linenums = require('./linenums.js');
+var logFileNameAndPath;
+var logger = appConfig.logger;
 var mergedDataPath;
+var missingNodesPathAndFileName;
+var permRefNumEnt;
+var permRefNumIndiv;
+var readWriteLocalNarrativesFilePath;
+var subjectMatterAbbreviated;
+var test;
+var utilities_aq_viz = require('./utilities_aq_viz.js');
+var writeJsonOutputDebuggingDirectory;
+var xmlDataPath;
+var xmlFileLocalStoragePathAndName;
 
-// committeesArray = appConfig.getCommitteesArray();
-// committeesJson = {};
-
-
-var getCommitteesJson = function () {
+// returns a committeesJson object
+getCommitteesJson = function () {
   committeesArray = appConfig.getCommitteesArray();
   committeesJson = {};
 
   committeesArray.forEach(function (committeeParam) {
     //committeesJson.set(committee, {});
-committee = committeeParam;
+    committee = committeeParam;
     committeesJson[committee] = {};
     init(committee);
 
-
-
-
-    committeesJson[committee].xmlDataPath = xmlDataPath;
-    committeesJson[committee].htmlDataPath = htmlDataPath;
-    committeesJson[committee].mergedDataPath = mergedDataPath;
-    committeesJson[committee].consolidatedXmlListUrl = consolidatedXmlListUrl;
-    committeesJson[committee].committeeUrlPath = committeeUrlPath;
-    committeesJson[committee].consolidatedXmlListUrl = consolidatedXmlListUrl;
-    committeesJson[committee].xmlFileLocalStoragePathAndName = xmlFileLocalStoragePathAndName;
-    committeesJson[committee].committeeXmlListUrl = committeeXmlListUrl;
-    // committeesJson[committee].dataPath = dataPath;
-    committeesJson[committee].individualsJsonLocalOutputFileNameAndPath = individualsJsonLocalOutputFileNameAndPath;
-    committeesJson[committee].entitiesJsonLocalOutputFileNameAndPath = entitiesJsonLocalOutputFileNameAndPath;
-    committeesJson[committee].individualsListUrl = individualsListUrl;
-    committeesJson[committee].entitiesListUrl = entitiesListUrl;
-    committeesJson[committee].logFileNameAndPath = logFileNameAndPath;
-    committeesJson[committee].writeJsonOutputDebuggingDirectory = writeJsonOutputDebuggingDirectory;
-    committeesJson[committee].dotFileLocalOutputFileNameAndPath = dotFileLocalOutputFileNameAndPath;
-    committeesJson[committee].dataJsonLocalOutputFileNameAndPath = dataJsonLocalOutputFileNameAndPath;
-    committeesJson[committee].backupRawXmlPath = backupRawXmlPath;
+    // committeesJson[committee].consolidatedXmlListUrl = consolidatedXmlListUrl;
     committeesJson[committee].backupRawXmlFilePathAndName = backupRawXmlFilePathAndName;
+    committeesJson[committee].backupRawXmlPath = backupRawXmlPath;
     committeesJson[committee].committeeUrlPath = committeeUrlPath;
-    committeesJson[committee].individualsHtmlLocalOutputFileNameAndPath = individualsHtmlLocalOutputFileNameAndPath;
-    committeesJson[committee].entitiesHtmlLocalOutputFileNameAndPath = entitiesHtmlLocalOutputFileNameAndPath;
-    committeesJson[committee].missingNodesPathAndFileName = missingNodesPathAndFileName;
-    committeesJson[committee].subjectMatterAbbreviated = subjectMatterAbbreviated;
+    committeesJson[committee].committeeXmlListUrl = committeeXmlListUrl;
     committeesJson[committee].committeesConfigJsonPathAndFileName = committeesConfigJsonPathAndFileName;
-    committeesJson[committee].readWriteLocalNarrativesFilePath =readWriteLocalNarrativesFilePath;
+    committeesJson[committee].consolidatedXmlListUrl = consolidatedXmlListUrl;
+    committeesJson[committee].dataJsonLocalOutputFileNameAndPath = dataJsonLocalOutputFileNameAndPath;
+    committeesJson[committee].dotFileLocalOutputFileNameAndPath = dotFileLocalOutputFileNameAndPath;
+    committeesJson[committee].entitiesHtmlLocalOutputFileNameAndPath = entitiesHtmlLocalOutputFileNameAndPath;
+    committeesJson[committee].entitiesJsonLocalOutputFileNameAndPath = entitiesJsonLocalOutputFileNameAndPath;
+    committeesJson[committee].entitiesListUrl = entitiesListUrl;
+    committeesJson[committee].htmlDataPath = htmlDataPath;
+    committeesJson[committee].individualsHtmlLocalOutputFileNameAndPath = individualsHtmlLocalOutputFileNameAndPath;
+    committeesJson[committee].individualsJsonLocalOutputFileNameAndPath = individualsJsonLocalOutputFileNameAndPath;
+    committeesJson[committee].individualsListUrl = individualsListUrl;
+    committeesJson[committee].logFileNameAndPath = logFileNameAndPath;
+    committeesJson[committee].mergedDataPath = mergedDataPath;
+    committeesJson[committee].missingNodesPathAndFileName = missingNodesPathAndFileName;
+    committeesJson[committee].readWriteLocalNarrativesFilePath = readWriteLocalNarrativesFilePath;
+    committeesJson[committee].subjectMatterAbbreviated = subjectMatterAbbreviated;
+    committeesJson[committee].writeJsonOutputDebuggingDirectory = writeJsonOutputDebuggingDirectory;
+    committeesJson[committee].xmlDataPath = xmlDataPath;
+    committeesJson[committee].xmlFileLocalStoragePathAndName = xmlFileLocalStoragePathAndName;
 
   });
-  utilities_aq_viz.stringifyAndWriteJsonDataFile(committeesJson, committeesConfigJsonPathAndFileName);
+//  utilities_aq_viz.stringifyAndWriteJsonDataFile(committeesJson, committeesConfigJsonPathAndFileName);
+
+
+//  var stringifiedData = JSON.stringify(committeesJson, null, ' ');
+  fse.writeFileSync(committeesConfigJsonPathAndFileName, JSON.stringify(committeesJson, null, ' '), fsOptions);
+
+
+
+
   return committeesJson;
 };
 
-var init = function (committeeParam) {
+test = function() {
+  var cj = getCommitteesJson();
+  console.log(JSON.stringify(cj, null, ' '));
+};
+
+
+init = function (committeeParam) {
   committee = committeeParam;
 
   // initialize values;
@@ -137,7 +141,7 @@ var init = function (committeeParam) {
   dotFileLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/links.dot';
   dataJsonLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committee + '/data_committees.json';
   // place to store all the configuration data from this committees.js file
-  committeesConfigJsonPathAndFileName =  __dirname + '/../data/committees/committeesJson.json';
+  committeesConfigJsonPathAndFileName = __dirname + '/../data/committees/committeesJson.json';
 
   switch (committee) {
     // Somalia and Eritrea
@@ -147,15 +151,11 @@ var init = function (committeeParam) {
       permRefNumEnt = "SOe.001";
       countryCode2DigitIso = 'SO';
       committeeXmlListUrl = 'http://www.un.org/sc/committees/751/751_1907.xml';
-      permRefNumIndiv = "SOi.001";
-      permRefNumEnt = "SOe.001";
-      countryCode2DigitIso = "SO";
       committeeResolution = "751 (1992) / 1907 (2009)";
       subjectMatterAbbreviated = "Resolutions 751 (1992) and 1907 (2009) concerning Somalia and Eritrea";
       break;
     // Al-Qaida
     case '1267':
-      subjectMatterAbbreviated = "Al-Qaida";
       individualsListUrl = 'http://www.un.org/sc/committees/' + committee + '/individuals_associated_with_Al-Qaida.shtml';
       entitiesListUrl = 'http://www.un.org/sc/committees/' + committee + '/entities_other_groups_undertakings_associated_with_Al-Qaida.shtml';
       permRefNumIndiv = "QDi.001";
@@ -304,10 +304,10 @@ var init = function (committeeParam) {
     // default code block
     default:
       logger.error(__filename, 'line', __line, '; no valid CommitteeResolution selected, apparently.');
-//      individualsListUrl = 'http://www.un.org/sc/committees/' + committee + '/Individuals.shtml';
-//      entitiesListUrl = 'http://www.un.org/sc/committees/' + committee + '/Entities.shtml';
   }
 };
+
+test();
 
 module.exports = {
   getCommitteesJson: getCommitteesJson

@@ -1,5 +1,5 @@
 // appConfig.js
-var komittees = require('./committees.js');
+
 // skip downloading 300+ narrative files and use locally stored files instead; for debugging
 var useLocalListFiles = true;
 var useLocalNarrativeFiles = true;
@@ -20,7 +20,6 @@ var getCommitteesArray = function () {
 module.exports = {
   getCommitteesArray: getCommitteesArray,
   useLocalListFiles: useLocalListFiles,
-  komittees: komittees,
   useLocalNarrativeFiles: useLocalNarrativeFiles,
   consoleLog: consoleLog,
   logger: logger

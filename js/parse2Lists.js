@@ -8,9 +8,10 @@
 //==========================
 
 var appConfig = require('./appConfig.js');
-var getCommitteesJson = require('./committees.js').getCommitteesJson;
+var cc = require('./committeesConfig.js');
+var getCommitteesJson = require('./committeesConfig.js').getCommitteesJson;
 var utilities_aq_viz = require('./utilities_aq_viz');
-// var committees = require('./committees.js');
+
 // RUN CONFIGURATION
 // skip downloading 300+ narrative files and use locally stored files instead; for debugging
 var useLocalListFiles = appConfig.useLocalListFiles;
@@ -91,7 +92,7 @@ var start = function () {
 //  var functionCount = 0;
   async.series([
       function (callback) {
-        committeesJson = getCommitteesJson();
+        committeesJson = kommittees.getCommitteesJson();
         callback();
       },
 
