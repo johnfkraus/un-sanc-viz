@@ -1,8 +1,8 @@
 /* utilities_aq_vis.js */
-// var app = require('./app.js');
+
 var appConfig = require('./appConfig.js');
 var consoleLog = appConfig.consoleLog;
-// var consoleLog = false;
+
 var Set = require('backpack-node').collections.Set;
 var truncateToNumChars = 100;
 // var logger = require('tracer').colorConsole({level:'warn'});
@@ -65,7 +65,6 @@ var countLinks = function (data) {
   return data;
 };
 
-
 var countLines = function (textFile) {
   var i;
   var count = 0;
@@ -81,14 +80,26 @@ var countLines = function (textFile) {
 
 // return true if inString contained the string 'Error: Page Not Found', else return false
 var errorPageReturned = function (inString) {
-  var errorPageMessageString = inString.match('Error: Page Not Found');
   var errorMessage;
-  if (errorPageMessageString !== null) {
-    errorMessage = ([__filename, ' line ', __line, '; The server return a page containing ', errorPageMessageString].join());
-    return errorMessage;
-  } else {
-    return false;
-  }
+//  try {
+    var errorPageMessageString = inString.match('Error: Page Not Found');
+    if (!errorPageMessageString) {
+      return false;
+    } else {
+      return true;
+    }
+
+    if (errorPageMessageString) {
+      errorMessage = ([__filename, ' line ', __line, '; The server return a page containing ', errorPageMessageString].join());
+      return errorMessage;
+    } else {
+      return false;
+    }
+//  } catch (err) {
+    if (consoleLog) {
+      logger.error(__filename, 'line', __line, ';  Error: ', err, '; countLines(stringifiedData) = ', countLines(stringifiedData));
+    }
+//  }
 };
 
 var forceUnicodeEncoding = function (string) {
@@ -164,8 +175,6 @@ var getStackTrace = function (err) {
   // ...
   // rest of the code
 };
-
-
 
 var generateNarrFileName = function (node) {
   var idSplit = (node.id).trim().split('.');
@@ -269,7 +278,6 @@ var removeOldFiles = function () {
   // fse.mkdirs(writeJsonOutputDebuggingDirectory);
   // fse.mkdirs(__dirname + '/../data/narrative_lists/');
 };
-
 
 var rotateLogFile = function (logFileNameAndPath) {
   var logFileNameAndPath2 = logFileNameAndPath || __dirname + '/../log/consolidated.log';
@@ -392,7 +400,6 @@ var writeMyFile = function (localFileNameAndPath, data_xml_json, fsOptions) {
     logger.error(__filename, 'line', __line, ' Error: ', err);
   }
 };
-
 
 module.exports = {
   addFileLabel: addFileLabel,

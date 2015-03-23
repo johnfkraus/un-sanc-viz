@@ -4,6 +4,8 @@
 var chai = require('chai');
 var expect = require('chai').expect;
 var chaiXml = require('chai-xml');
+
+
 var assert = require("assert");
 var request = require('sync-request');
 var fse = require('fs-extra');
@@ -17,13 +19,15 @@ var fsOptions = {
 
 describe('assert some xml', function () {
 
-  var rawXmlFileName = __dirname + "/../data/output/AQList.xml";
+  var rawXmlFileName = __dirname + "/../data/committees/consolidated/consolidated.xml";
   var someXml = fse.readFileSync(rawXmlFileName, fsOptions);
 //  var res = request('GET', 'http://www.un.org/sc/committees/consolidated.xml');
   // var otherXml = res.body.toString();
   // var someXml = '<root>\n\t<child name="foo" value="bar"></child>\n</root>';
   var brokeXml = '<root>\n\t<child name="foo" value="bar"></child>';
   var otherXml = '<root><child value="bar" name="foo" /></root>';
+
+// var committeesConfigJson = __dirname + '/../data/committees/committeesConfig.json';
 
   it("should be valid", function () {
     expect(someXml).xml.to.be.valid();
@@ -37,7 +41,10 @@ describe('assert some xml', function () {
   it("should be the same XML as otherXml ", function () {
     expect(someXml).xml.to.equal(otherXml);
   });
+
 });
+
+
 
 describe('Array', function () {
   describe('#indexOf()', function () {

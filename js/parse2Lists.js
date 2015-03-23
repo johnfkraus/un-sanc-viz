@@ -70,14 +70,6 @@ var targetName = '';
 // var anchor,
 var data_html_json = {},
   nodes,
-//  node,
-//  narrativeFileName,
-//  paragraph,
-  // rows,
-//  row,
-  // td,
-  // tds,
-  underscore,
   url;
 
 var entitiesListUrl;
@@ -87,12 +79,16 @@ var committee;
 var committeesJson;
 var committeesArray;
 
+var getCommittee = function() {
+  return committee;
+};
+
 var start = function () {
   committeesArray = appConfig.getCommitteesArray();
 //  var functionCount = 0;
   async.series([
       function (callback) {
-        committeesJson = kommittees.getCommitteesJson();
+        committeesJson = getCommitteesJson();
         callback();
       },
 
@@ -135,7 +131,7 @@ var parse2ListsCommittee = function (committeeParam) {
   }
   committee = committeeParam;
   var functionCount = 0;
-  if (consoleLog) {
+  if (true) {
     logger.debug('\n ', __filename, __line, '; running parse2ListsCommittee; committee = ', committee);
   }
   async.series([
@@ -149,7 +145,7 @@ var parse2ListsCommittee = function (committeeParam) {
       function (callback) {
 
         if (consoleLog) {
-          logger.debug('\n ', __filename, __line, '; function 1#:', ++functionCount, '; collect the two list files for sanctioned individuals and entities');
+          logger.debug('\n ', __filename, __line, '; function 1#:', ++functionCount, '; collect the two list files for sanctioned individuals and entities; committee = ', committee);
         }
         data_html_json.nodes = [];
         if (!useLocalListFiles) {
@@ -252,6 +248,7 @@ var parse2ListsCommittee = function (committeeParam) {
           var narrative, nodeNarrFileName, trimmedNarrative, trimmedLabeledNarrative; //, writeNarrativesFilePath;
           // read the data_html_json file; each node has a narrativeFileName property
           data_html_json = JSON.parse(fse.readFileSync(committeesJson[committee].htmlDataPath, fsOptions));
+          var node;
           for (var nodeCounter = 0; nodeCounter < data_html_json.nodes.length; nodeCounter++) {
             node = data_html_json.nodes[nodeCounter];
             nodeNarrFileName = node.narrativeFileName;
@@ -285,7 +282,7 @@ var parse2ListsCommittee = function (committeeParam) {
       // parse the narratives
 
       function (callback) {
-        var narrative, link, nodeNarrFileName;
+        var narrative, link, nodes, node, nodeNarrFileName;
         logger.debug(__filename, 'line', __line, '; function #:', ++functionCount, '; ');
         // read the data_html_json file; each node has a narrativeFileName property
         data_html_json = JSON.parse(fse.readFileSync(committeesJson[committee].htmlDataPath, fsOptions));
@@ -522,8 +519,8 @@ var validateNodeIds = function (data_html_json) {
   }
 };
 
-// parse each the html narrative list files
-// put html file names in narrativeUrlsArray
+// parse each of the html narrative list files
+// put the file names of the html narratives into variable name ?
 // write to json file: narrativeUrlsArrayLocalFileNameAndPath -> data_html_json
 // create a narrLink object and set properties:
 // narrLink.indivOrEntityString = indivOrEntityString;
@@ -531,95 +528,105 @@ var validateNodeIds = function (data_html_json) {
 // narrLink.urlNum = nodes.length + 1;
 // nodes.push(narrLink);
 
+/*
+ We are parsing this table:
+ <div id="maincontent" class="column"><a name="text"></a>
+ <!--    ==============================  MAIN CONTENT BEGINS ===================================   -->
+ <h3 align="center">NARRATIVE SUMMARIES OF REASONS FOR LISTING</h3>
+ <p align="center"><strong>Individuals  associated with Al-Qaida</strong></p>
+ <table border="1" cellspacing="0" cellpadding="0" width="604">
+ <tr>
+ <td width="133"><p align="center"><strong>Permanent reference number</strong></p></td>
+ <td width="320"><p align="center"><strong>Name</strong></p></td>
+ <td width="150"><p align="center"><strong>Posted on</strong></p></td>
+ </tr>
+ <tr>
+ <td width="133"><p align="center">QDi.001</p></td>
+ <td width="320" valign="top"><p><a href="NSQDi001E.shtml">Sayf-al Adl</a></p></td>
+ <td width="150"><p align="center">07 September 2010</p></td>
+ </tr>
+ <tr>
+ <td width="133"><p align="center">QDi.002</p></td>
+ <td width="320" valign="top"><p><a href="NSQDi002E.shtml">Amin Muhammad Ul    Haq Saam Khan</a></p></td>
+ <td width="150"><p align="center">10 January 2011</p></td>
+ </tr>
+ */
 var syncParseHtmlListPage = function (htmlString, indivOrEntityString) {
-
-
-  /*
-   We are parsing this table:
-   <div id="maincontent" class="column"><a name="text"></a>
-   <!--    ==============================  MAIN CONTENT BEGINS ===================================   -->
-   <h3 align="center">NARRATIVE SUMMARIES OF REASONS FOR LISTING</h3>
-   <p align="center"><strong>Individuals  associated with Al-Qaida</strong></p>
-   <table border="1" cellspacing="0" cellpadding="0" width="604">
-   <tr>
-   <td width="133"><p align="center"><strong>Permanent reference number</strong></p></td>
-   <td width="320"><p align="center"><strong>Name</strong></p></td>
-   <td width="150"><p align="center"><strong>Posted on</strong></p></td>
-   </tr>
-   <tr>
-   <td width="133"><p align="center">QDi.001</p></td>
-   <td width="320" valign="top"><p><a href="NSQDi001E.shtml">Sayf-al Adl</a></p></td>
-   <td width="150"><p align="center">07 September 2010</p></td>
-   </tr>
-   <tr>
-   <td width="133"><p align="center">QDi.002</p></td>
-   <td width="320" valign="top"><p><a href="NSQDi002E.shtml">Amin Muhammad Ul    Haq Saam Khan</a></p></td>
-   <td width="150"><p align="center">10 January 2011</p></td>
-   </tr>
-   */
-  if (!committeesJson) {
-    throw {
-      name: 'committeesJsonMissing',
-      message: 'committeesJson is null or undefined'
-    };
-  }
+  var node, nodes, parser, rawId, cleanId;
+  committee = getCommittee();
   if (!committee) {
     throw {
       name: 'committeeMissing',
       message: 'committee is null or undefined'
     };
   }
-  var node, rawId, cleanId;
-  var nodes = data_html_json.nodes;
 
-  // loop through each table row
-  try {
-    logger.debug(__filename, ' line ', __line, '; running syncParseHtmlListPage (htmlString = ', htmlString.substring(0, 100), ', indivOrEntityString = ', indivOrEntityString, ')');
-    if (!htmlString) {
-      logger.error(__filename, ' line ', __line, 'Error: parameter htmlString missing');
-      throw {
-        name: 'MissingParameterError',
-        message: '; Parameter \'htmlString\' = ' + htmlString
-      };
-    }
-    if (utilities_aq_viz.errorPageReturned(htmlString)) {
-      logger.error(__filename, ' line ', __line, 'Error: PageNotFoundError; Server returned: ', utilities_aq_viz.errorPageReturned(htmlString));
-      throw {
-        name: 'PageNotFoundError',
-        message: '; Server returned: ' + responseBody.match('Error: Page Not Found')
-      };
-    }
-  } catch (err) {
-    logger.error(__filename, 'line', __line, ' Error: ', err, utilities_aq_viz.getStackTrace(err));
+  if (!htmlString) {
+    logger.error(__filename, ' line ', __line, 'Error: parameter htmlString missing');
+    throw {
+      name: 'MissingParameterError',
+      message: '; Parameter \'htmlString\' = ' + htmlString
+    };
   }
+  var pageNotFound = function() {
+    return utilities_aq_viz.errorPageReturned(htmlString);
+  };
+  if (pageNotFound()) {
+    logger.error(__filename, ' line ', __line, 'Error: PageNotFoundError; pageNotFound = ', pageNotFound);
+    throw {
+      name: 'PageNotFoundError',
+      message: 'pageNotFound = ' + pageNotFound()
+    };
+  }
+
+  if (!committeesJson) {
+    throw {
+      name: 'committeesJsonMissing',
+      message: 'committeesJson is null or undefined'
+    };
+  }
+
+  logger.debug(__filename, ' line ', __line, '; running syncParseHtmlListPage (htmlString = ', htmlString.substring(0, 100), ', indivOrEntityString = ', indivOrEntityString, ')');
+
+  nodes = data_html_json.nodes;
+
+
   // re 'handler', see the following lines below:
   //   var parser = new htmlparser.Parser(handler);
   //   parser.parseComplete(responseBody);
   var handler = new htmlparser.DefaultHandler(function (err, dom) {
-    var rows, row, td, tds, rowNum, node, paragraph, rawId, cleanId, narrativeFileName, targetName;
+    var rows, row, td, tds, rowNum, columnNum, node, nodes, paragraph, rawId, cleanId, narrativeFileName, targetName, underscore;
     if (err) {
       logger.error(__filename, 'line', __line, 'Error: ' + err);
     } else {
       // soupselect happening here...
       // var titles = select(dom, 'a.title');
       rows = select(dom, 'table tr');
+      if (!rows) {
+        throw {
+          name: 'rowsIsUndefined',
+          message: 'rows is undefined'
+        };
+      }
+      // loop through each table row
+
       for (var i = 0; i < rows.length; i++) {
         // skip the header row
-        if (i === 0) {
-          continue;
-        }
         rowNum = i;
         row = rows[i];
+        if (rowNum === 0) {
+          continue;
+        }
         // we are creating a json array of nodes / data
         node = {};
         tds = select(row, 'td');
         // loop through each td/column in the row
         for (var j = 0; j < tds.length; j++) {
-          td = tds[j];
+          columnNum = j;
+          td = tds[columnNum];
           // get the id/permanent reference number from the first td
-          if (j === 0) {
+          if (columnNum === 0) {
             paragraph = select(td, 'p');
-            // unless (!paragraph || (!paragraph[0]) || (!paragraph[0].children));
             if (!(!paragraph || (!paragraph[0]) || (!paragraph[0].children))) {
               if (indivOrEntityString === 'entity') {
                 try {
@@ -642,7 +649,7 @@ var syncParseHtmlListPage = function (htmlString, indivOrEntityString) {
             }
           }
           // if we are in the second td in the row, extract the narrative file name...
-          else if (j === 1) {
+          else if (columnNum === 1) {
             paragraph = select(td, 'p');
             anchor = select(td, 'a');
 
@@ -657,7 +664,7 @@ var syncParseHtmlListPage = function (htmlString, indivOrEntityString) {
                   node.narrativeFileName = narrativeFileName;
                 } catch (err) {
                   logger.error(__filename, 'line', __line, '; paragraph[0].children[0] = ', paragraph[0].children[0]);
-                  logger.error(__filename, 'line', __line, '; Error: paragraph[0].children[0].attribs is undefined; tr = ', i, '; td = ', j, err);
+                  logger.error(__filename, 'line', __line, '; Error: paragraph[0].children[0].attribs is undefined; tr = ', i, '; td = ', columnNum, err);
                 }
               } else if (typeof anchor[0].attribs.href !== 'undefined') {
                 try {
@@ -669,7 +676,7 @@ var syncParseHtmlListPage = function (htmlString, indivOrEntityString) {
               } else {
                 try {
                   node.narrativeFileName = 'PLACEHOLDER0';
-                  logger.error(__filename, 'line', __line, '; Error: narrativeFileName for tr = ', i, '; td = ', j, 'is PLACEHOLDER0');
+                  logger.error(__filename, 'line', __line, '; Error: narrativeFileName for tr = ', i, '; td = ', columnNum, 'is PLACEHOLDER0');
                 } catch (err) {
                   logger.error(__filename, 'line', __line, '; Error: ', err);
                 }
@@ -736,13 +743,13 @@ var syncParseHtmlListPage = function (htmlString, indivOrEntityString) {
     // table tr td p a need to be lower case
     htmlString = convertHtmlTagsToLowerCase(htmlString);
     // syncWriteHtmlFile(htmlString, __dirname + '/../data/committees/' + committee + '/'+ indivOrEntityString + '-parsed.html');
-    var parser = new htmlparser.Parser(handler);
+    parser = new htmlparser.Parser(handler);
     parser.parseComplete(htmlString);
     console.log('hello');
 //    fse.writeFileSync(committeesJson[committee].htmlDataPath, JSON.stringify(data_html_json, null, ' '), fsOptions);
   } catch (err) {
     utilities_aq_viz.getStackTrace(err);
-    logger.error(__filename, 'line', __line, ' Error: ', err);
+    logger.error(__filename, 'line', __line, '; Error: ', err, ';\n', utilities_aq_viz.getStackTrace(err));
   }
 
   fse.writeFileSync(committeesJson[committee].htmlDataPath, JSON.stringify(data_html_json, null, ' '), fsOptions);

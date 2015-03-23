@@ -11,7 +11,7 @@
 
 // var app = require('./app.js');
 var appConfig = require('./appConfig.js');
-var getCommitteesJson = require('./committees.js').getCommitteesJson;
+var getCommitteesJson = require('./committeesConfig.js').getCommitteesJson;
 //var getCommitteesArray = require('./committees.js').getCommitteesArray;
 var logger = require('./tracer-logger-config.js').logger;
 var utilities_aq_viz = require('./utilities_aq_viz');

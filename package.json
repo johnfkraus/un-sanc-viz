@@ -42,10 +42,12 @@
     "node": "0.10.x"
   },
   "devDependencies": {
-    "coffee-script": "^1.8.0"
+    "coffee-script": "^1.8.0",
+    "should": "^5.2.0",
+    "should-http": "0.0.2"
   },
   "scripts": {
-    "test": "test"
+    "test": "make test"
   },
   "repository": {
     "type": "git",
@@ -66,4 +68,3 @@
   },
   "homepage": "http://www.johnfkraus.com"
 }
-

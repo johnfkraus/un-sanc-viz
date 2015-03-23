@@ -12,7 +12,7 @@ var utilities_aq_viz = require('./utilities_aq_viz');
 var consoleLog = true;
 
 
-var init = require('./committees.js').init;
+var init = require('./committeesConfig.js').init;
 
 // skip downloading 300+ narrative files and use locally stored files instead; for debugging
 var useLocalListFiles = false;
