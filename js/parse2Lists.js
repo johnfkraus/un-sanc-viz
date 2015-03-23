@@ -7,11 +7,10 @@
 // entity listed in the consolidated.xml sanctions data file collected from the U.N. site located at http://www.un.org/sc/committees/1267/.
 //==========================
 
-
-//var app = require('./app.js');
 var appConfig = require('./appConfig.js');
+var getCommitteesJson = require('./committees.js').getCommitteesJson;
 var utilities_aq_viz = require('./utilities_aq_viz');
-var init = require('./committees.js').init;
+// var committees = require('./committees.js');
 // RUN CONFIGURATION
 // skip downloading 300+ narrative files and use locally stored files instead; for debugging
 var useLocalListFiles = appConfig.useLocalListFiles;
@@ -30,7 +29,7 @@ var individualsHtmlUnicodeString;
 var entitiesHtmlUnicodeString;
 var iterators = require('async-iterators');
 // var missingNodes = require('./missing_nodes.js'),
-  var async = require('async'),
+var async = require('async'),
   re = require('request-enhanced'),
   request = require('request'),
   fse = require('fs-extra'),
@@ -55,7 +54,6 @@ if (typeof define !== 'function') {
   var define = require('amdefine');
 }
 var requestSync = require('sync-request'),
-  list_xml,
   parseString = require('xml2js')
     .parseString;
 require('console-stamp')(console, '[HH:MM:ss.l]');
@@ -68,62 +66,78 @@ var select = require('soupselect').select,
   MongoClient = require('mongodb').MongoClient,
   assert = require('assert');
 var targetName = '';
-var anchor,
-  data_html_json = {},
+// var anchor,
+var data_html_json = {},
   nodes,
-  node,
-  narrativeFileName,
-  paragraph,
-  rows,
-  row,
-  td,
-  tds,
+//  node,
+//  narrativeFileName,
+//  paragraph,
+  // rows,
+//  row,
+  // td,
+  // tds,
   underscore,
   url;
 
-var writeJsonOutputDebuggingDirectory;
-var individualsHtmlLocalOutputFileNameAndPath;
-var entitiesHtmlLocalOutputFileNameAndPath;
-var narrativeFilesUrlPath;
-var individualsListUrl;
 var entitiesListUrl;
 var host = 'www.un.org';
 var config;
 var committee;
-var logFileNameAndPath;
-// var readWriteLocalNarrativesFilePath;
-var individualsJsonLocalOutputFileNameAndPath;
-var entitiesJsonLocalOutputFileNameAndPath;
-var dotFileLocalOutputFileNameAndPath;
-// var getCommitteesJson = require('./committees.js').getCommitteesJson;
-// var committeesJson = getCommitteesJson();
-var getCommitteesJson = require('./committees.js').getCommitteesJson;
-var parse2Lists = function () {
-  var committeesArray = appConfig.getCommitteesArray();
+var committeesJson;
+var committeesArray;
 
-  committeesArray.forEach(function (committee) {
-    try {
-      parse2ListsCommittee(committee);
-    } catch (err) {
-      logger.error('\n ', __filename, 'line', __line, '; Error: ', err, utilities_aq_viz.getStackTrace(err));
-    }
-  });
+var start = function () {
+  committeesArray = appConfig.getCommitteesArray();
+//  var functionCount = 0;
+  async.series([
+      function (callback) {
+        committeesJson = getCommitteesJson();
+        callback();
+      },
+
+      function (callback) {
+        committeesArray.forEach(function (committeeParam) {
+          parse2ListsCommittee(committeeParam);
+        });
+        callback();
+      }
+
+    ],
+    function (err) {
+      if (err) {
+        logger.error(__filename, 'line', __line, '; Error: ' + err, '; committeesJson[committee].subjectMatterAbbreviated = ', committeesJson[committee].subjectMatterAbbreviated);
+      }
+    });
 };
 
-var parse2ListsCommittee = function (committee) {
+/*
+ var parse2Lists = function () {
+ committeesJson = committees.getCommitteesJson();
+
+ var committeesArray = appConfig.getCommitteesArray();
+ committeesArray.forEach(function (committee) {
+ try {
+ parse2ListsCommittee(committee);
+ } catch (err) {
+ logger.error('\n ', __filename, 'line', __line, '; Error: ', err, utilities_aq_viz.getStackTrace(err));
+ }
+ });
+ };
+ */
+
+var parse2ListsCommittee = function (committeeParam) {
+  if (!committeesJson) {
+    throw {
+      name: 'committeesJsonMissing',
+      message: 'committeesJson is null or undefined'
+    };
+  }
+  committee = committeeParam;
   var functionCount = 0;
   if (consoleLog) {
     logger.debug('\n ', __filename, __line, '; running parse2ListsCommittee; committee = ', committee);
   }
   async.series([
-
-      // delete old data
-      function (callback) {
-        if (!useLocalNarrativeFiles) {
-          // utilities_aq_viz.removeOldFiles();
-        }
-        callback();
-      },
 
       // download narrative list files:
       // download from each U.N. sanctions committee web site the two list files for sanctioned (1) individuals and (2) entities.
@@ -151,7 +165,7 @@ var parse2ListsCommittee = function (committee) {
             }
           }
           // 2 of 2: entities list
-          if (entitiesListUrl) {
+          if (committeesJson[committee].entitiesListUrl) {
             entitiesHtmlUnicodeString = syncGetHtmlAsUnicodeString(entitiesListUrl);
             if (utilities_aq_viz.errorPageReturned(entitiesHtmlUnicodeString)) {
               logger.error(__filename, ' line ', __line, 'Error: PageNotFoundError; Server returned ', utilities_aq_viz.errorPageReturned(entitiesHtmlUnicodeString));
@@ -167,10 +181,9 @@ var parse2ListsCommittee = function (committee) {
           // instead of downloading the list files from the UN web site,
           logger.warn(__filename, 'line', __line, '; useLocalListFiles = ', useLocalListFiles, '; reading stored (previously downloaded) local files: ', '; committeesJson[committee].individualsHtmlLocalOutputFileNameAndPath = ', committeesJson[committee].individualsHtmlLocalOutputFileNameAndPath, '; committeesJson[committee].entitiesHtmlLocalOutputFileNameAndPath = ', committeesJson[committee].entitiesHtmlLocalOutputFileNameAndPath);
 
-
           try {
-              individualsHtmlUnicodeString = fse.readFileSync(committeesJson[committee].individualsHtmlLocalOutputFileNameAndPath, fsOptions);
-              entitiesHtmlUnicodeString = fse.readFileSync(committeesJson[committee].entitiesHtmlLocalOutputFileNameAndPath, fsOptions);
+            individualsHtmlUnicodeString = fse.readFileSync(committeesJson[committee].individualsHtmlLocalOutputFileNameAndPath, fsOptions);
+            entitiesHtmlUnicodeString = fse.readFileSync(committeesJson[committee].entitiesHtmlLocalOutputFileNameAndPath, fsOptions);
 
           } catch (err) {
             logger.error('\n ', __filename, 'line', __line, '; Error: ', err, utilities_aq_viz.getStackTrace(err));
@@ -185,7 +198,7 @@ var parse2ListsCommittee = function (committee) {
         (callback) {
         if (data_html_json) {
           // var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'data_html-parse2-L' + __line + '-collectedLinks.json';
-          utilities_aq_viz.stringifyAndWriteJsonDataFile(data_html_json, committeesJson[committee].writeJsonOutputDebuggingDirectory  + 'data_html-parse2-L' + __line + '-message.json');
+          utilities_aq_viz.stringifyAndWriteJsonDataFile(data_html_json, committeesJson[committee].writeJsonOutputDebuggingDirectory + 'data_html-parse2-L' + __line + '-gotNarrListsHtml.json');
           utilities_aq_viz.stringifyAndWriteJsonDataFile(data_html_json, committeesJson[committee].htmlDataPath);
         }
         callback();
@@ -197,9 +210,6 @@ var parse2ListsCommittee = function (committee) {
         if (consoleLog) {
           logger.debug('\n ', __filename, __line, '; function 1#:', ++functionCount, '; parse the html list files to obtain narrative file names');
         }
-
-
-
 
         // individuals
         try {
@@ -217,18 +227,7 @@ var parse2ListsCommittee = function (committee) {
         (callback) {
         if (data_html_json) {
           // var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'data_html-parse2-L' + __line + '-collectedLinks.json';
-          utilities_aq_viz.stringifyAndWriteJsonDataFile(data_html_json, committeesJson[committee].writeJsonOutputDebuggingDirectory  + 'data_html-parse2-L' + __line + '-message.json');
-          utilities_aq_viz.stringifyAndWriteJsonDataFile(data_html_json, committeesJson[committee].htmlDataPath);
-        }
-        callback();
-      },
-
-      // write intermediate data_html_json file for debugging
-      function
-        (callback) {
-        if (data_html_json) {
-          // var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'data_html-parse2-L' + __line + '-collectedLinks.json';
-          utilities_aq_viz.stringifyAndWriteJsonDataFile(data_html_json, committeesJson[committee].writeJsonOutputDebuggingDirectory  + 'data_html-parse2-L' + __line + '-message.json');
+          utilities_aq_viz.stringifyAndWriteJsonDataFile(data_html_json, committeesJson[committee].writeJsonOutputDebuggingDirectory + 'data_html-parse2-L' + __line + '-syncParseHtmlListPage.json');
           utilities_aq_viz.stringifyAndWriteJsonDataFile(data_html_json, committeesJson[committee].htmlDataPath);
         }
         callback();
@@ -306,7 +305,7 @@ var parse2ListsCommittee = function (committee) {
            logger.error(__filename, 'line', __line, '; nodeNarrFileName.length = ', nodeNarrFileName.length, '; link.urlNum = ', link.urlNum, 'link.targetName = ', link.targetName, ' malformed narrative file name', '; utilities_aq_viz.showObjectProperties(link) = ', utilities_aq_viz.showObjectProperties(link));
            }
            */
-          readWriteLocalNarrativesFilePath = __dirname + '/../data/committees/' + committee + '/narratives/' + node.narrativeFileName;
+//          readWriteLocalNarrativesFilePath = readWriteLocalNarrativesFilePath + node.narrativeFileName;
           try {
             narrative = fse.readFileSync(committeesJson[committee].readWriteLocalNarrativesFilePath + node.narrativeFileName, fsOptions);
           } catch (err) {
@@ -321,7 +320,7 @@ var parse2ListsCommittee = function (committee) {
       function
         (callback) {
         // var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'data_html_json_html-parse2-L' + __line + '-collectedLinks.json';
-        utilities_aq_viz.stringifyAndWriteJsonDataFile(data_html_json, committeesJson[committee].writeJsonOutputDebuggingDirectory  + 'data_html-parse2-L' + __line + '-message.json');
+        utilities_aq_viz.stringifyAndWriteJsonDataFile(data_html_json, committeesJson[committee].writeJsonOutputDebuggingDirectory + 'data_html-parse2-L' + __line + '-message.json');
         utilities_aq_viz.stringifyAndWriteJsonDataFile(data_html_json, committeesJson[committee].htmlDataPath);
         callback();
       },
@@ -348,8 +347,8 @@ var parse2ListsCommittee = function (committee) {
       function (callback) {
         if (data_html_json) {
           // var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'data_html-parse2-L' + __line + '-collectedLinks.json';
-          utilities_aq_viz.stringifyAndWriteJsonDataFile(data_html_json, committeesJson[committee].writeJsonOutputDebuggingDirectory  + 'data_html-parse2-L' + __line + '-message.json');
-          utilities_aq_viz.stringifyAndWriteJsonDataFile(data_html_json, committeesJson[committee].committeesJson[committee].htmlDataPath);
+          utilities_aq_viz.stringifyAndWriteJsonDataFile(data_html_json, committeesJson[committee].writeJsonOutputDebuggingDirectory + 'data_html-parse2-L' + __line + '-message.json');
+          utilities_aq_viz.stringifyAndWriteJsonDataFile(data_html_json, committeesJson[committee].htmlDataPath);
         }
         callback();
       },
@@ -389,7 +388,7 @@ var parse2ListsCommittee = function (committee) {
       function (callback) {
         if (data_html_json) {
           // var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'data_html-parse2-L' + __line + '-collectedLinks.json';
-          utilities_aq_viz.stringifyAndWriteJsonDataFile(data_html_json, committeesJson[committee].writeJsonOutputDebuggingDirectory  + 'data_html-parse2-L' + __line + '-message.json');
+          utilities_aq_viz.stringifyAndWriteJsonDataFile(data_html_json, committeesJson[committee].writeJsonOutputDebuggingDirectory + 'data_html-parse2-L' + __line + '-message.json');
           utilities_aq_viz.stringifyAndWriteJsonDataFile(data_html_json, committeesJson[committee].htmlDataPath);
         }
         callback();
@@ -437,12 +436,11 @@ var parse2ListsCommittee = function (committee) {
       function (callback) {
         if (data_html_json) {
           // var writeJsonPathAndFileName = committeesJson[committee].writeJsonOutputDebuggingDirectory + 'data_html-parse2-L' + __line + '-collectedLinks.json';
-          utilities_aq_viz.stringifyAndWriteJsonDataFile(data_html_json, committeesJson[committee].writeJsonOutputDebuggingDirectory  + 'data_html-parse2-L' + __line + '-message.json');
+          utilities_aq_viz.stringifyAndWriteJsonDataFile(data_html_json, committeesJson[committee].writeJsonOutputDebuggingDirectory + 'data_html-parse2-L' + __line + '-message.json');
           utilities_aq_viz.stringifyAndWriteJsonDataFile(data_html_json, committeesJson[committee].htmlDataPath);
         }
         callback();
       },
-
 
       // summarize output
       // compare number of comment links to number of narrative links
@@ -454,59 +452,27 @@ var parse2ListsCommittee = function (committee) {
         data_html_json = JSON.parse(buffer);
         logger.debug(__filename, 'line', __line, '; data_html_json.nodes.length = ', data_html_json.nodes.length);
         logger.debug(__filename, 'line', __line, '; data_html_json.links.length = ', data_html_json.links.length);
-//        logger.debug(__filename, 'line', __line, '; data_html_json.comments.links.length = ', data_html_json.comments.links.length);
-        //       logger.debug(__filename, 'line', __line, '; data_html_json.narratives.links.length = ', data_html_json.narratives.links.length);
-        //       logger.debug(__filename, 'line', __line, '; data_html_json.links.length = ', data_html_json.links.length);
-        //      nodes.forEach(function (node) {
-        //        if (consoleLog === true && node.nodeNumber % logModulus === 0) {
-        //         logger.debug(__filename, 'line', __line, '; utilities_aq_viz.nodeSummary(node) = \n', utilities_aq_viz.nodeSummary(node));
-        //      }
-        /*
-         if ((typeof node.links !== 'null') && (typeof node.links !== 'undefined')) {
-         logger.debug(__filename, 'line', __line, '; node.nodeNumber = ', node.nodeNumber, '; node.links.length = ', node.links.length);
-         }
-         if ((typeof node.linksNarr !== 'null') && (typeof node.linksNarr !== 'undefined')) {
-         logger.debug(__filename, 'line', __line, '; node.nodeNumber = ', node.nodeNumber, 'node.linksNarr.length = ', node.linksNarr.length);
-         }
-         if ((typeof node.connectedToIdFromNarrativesArray !== 'null') && (typeof node.connectedToIdFromNarrativesArray !== 'undefined')) {
-         logger.debug(__filename, 'line', __line, '; node.nodeNumber = ', node.nodeNumber, 'node.connectedToIdFromNarrativesArray.length = ', node.connectedToIdFromNarrativesArray.length);
-         }
-         if ((typeof node.connectionIdsFromNarrativesStrSet !== 'null') && (typeof node.connectionIdsFromNarrativesStrSet !== 'undefined')) {
-         logger.debug(__filename, 'line', __line, '; node.nodeNumber = ', node.nodeNumber, 'node.connectionIdsFromNarrativesStrSet.count = ', node.connectionIdsFromNarrativesStrSet.count);
-         }
-         // logger.debug(__filename, 'line', __line, '; node.nodeNumber = ', node.nodeNumber);
-         //}
-         });
-         */
         callback();
       },
-
 
       // count links; add linkcount to nodes
       function (callback) {
         logger.debug(__filename, 'line', __line, '; function #:', ++functionCount);
         data_html_json = utilities_aq_viz.countLinks(data_html_json);
-//        validateNodeIds(data_html_json);
         callback();
       },
-
-
 
       // write intermediate data_html_json file for debugging
       function
         (callback) {
         if (data_html_json) {
-          // var writeJsonPathAndFileName = committeesJson[committee].writeJsonOutputDebuggingDirectory + 'data_html-parse2-L' + __line + '-final_save.json';
-          utilities_aq_viz.stringifyAndWriteJsonDataFile(data_html_json, committeesJson[committee].writeJsonOutputDebuggingDirectory  + 'data_html-parse2-L' + __line + '-message.json');
+          utilities_aq_viz.stringifyAndWriteJsonDataFile(data_html_json, committeesJson[committee].writeJsonOutputDebuggingDirectory + 'data_html-parse2-L' + __line + '-summarize_output.json');
           utilities_aq_viz.stringifyAndWriteJsonDataFile(data_html_json, committeesJson[committee].htmlDataPath);
         }
         callback();
       }
-
-
     ],
     function (err) {
-      // if (consoleLog) { logger.debug( __filename, 'line', __line, ' wroteJson = ', trunc.n400(myResult));
       if (err) {
         logger.error(__filename, 'line', __line, '; Error: ' + err);
       }
@@ -515,40 +481,44 @@ var parse2ListsCommittee = function (committee) {
 };
 
 var validateNodeIds = function (data_html_json) {
-//  var nodes = data_html_json.nodes;
+  if (!committeesJson) {
+    throw {
+      name: 'committeesJsonMissing',
+      message: 'committeesJson is null or undefined'
+    };
+  }
   var nodeMap = new Map();
+  if (data_html_json && data_html_json.nodes) {
+    (data_html_json.nodes).forEach(function (node) {
+      if (!node.id) {
+        logger.error(__filename, 'line', __line, '; node.id is missing');
+        /*
+         throw {
+         name: 'NodeIdMissing',
+         message: 'node.id is null or undefined'
+         };
+         */
+      } else {
 
-  (data_html_json.nodes).forEach(function (node) {
-    nodeMap.add(node.id, node);
-  });
-var link;
-  for (var linkCounter = 0; linkCounter < data_html_json.links.length; linkCounter++) {
-link = data_html_json.links[linkCounter];
-//  (data_html_json.links).forEach(function (link) {
-//    if (link) {
-
-      var linkSource = link.source;
-      var linkTarget = link.target;
-      if (!nodeMap.get(link.source) || (!nodeMap.get(link.target))) {
-
-//      First, find the index of the element you want to remove:
-
-//        var array = [2, 5, 9];
-//      var index = links.indexOf(link);
-        //    Note: browser support for indexOf is limited, it is not supported in IE7-8.
-
-        //  Then remove it with splice:
-
-        if (linkCounter > -1) {
-          data_html_json.links.splice(linkCounter, 1);
-        }
-//      The second parameter o
-
-        // delete link;
-        console.log('Error, missing node source or target: ', linkSource, linkTarget);
+        nodeMap.add(node.id, node);
       }
+    });
+  }
+  else {
+    logger.error(__filename, 'line', __line, ' Error: ', err, utilities_aq_viz.getStackTrace(err));
+  }
+  var link;
+  for (var linkCounter = 0; linkCounter < data_html_json.links.length; linkCounter++) {
+    link = data_html_json.links[linkCounter];
+    var linkSource = link.source;
+    var linkTarget = link.target;
+    if (!nodeMap.get(link.source) || (!nodeMap.get(link.target))) {
+      if (linkCounter > -1) {
+        data_html_json.links.splice(linkCounter, 1);
+      }
+      console.log('Error, missing node source or target: ', linkSource, linkTarget);
     }
-  //}
+  }
 };
 
 // parse each the html narrative list files
@@ -586,8 +556,19 @@ var syncParseHtmlListPage = function (htmlString, indivOrEntityString) {
    <td width="150"><p align="center">10 January 2011</p></td>
    </tr>
    */
-
-  var node, rowNum, rawId, cleanId;
+  if (!committeesJson) {
+    throw {
+      name: 'committeesJsonMissing',
+      message: 'committeesJson is null or undefined'
+    };
+  }
+  if (!committee) {
+    throw {
+      name: 'committeeMissing',
+      message: 'committee is null or undefined'
+    };
+  }
+  var node, rawId, cleanId;
   var nodes = data_html_json.nodes;
 
   // loop through each table row
@@ -607,145 +588,164 @@ var syncParseHtmlListPage = function (htmlString, indivOrEntityString) {
         message: '; Server returned: ' + responseBody.match('Error: Page Not Found')
       };
     }
-
-    // re 'handler', see the following lines below:
-    //   var parser = new htmlparser.Parser(handler);
-    //   parser.parseComplete(responseBody);
-    var handler = new htmlparser.DefaultHandler(function (err, dom) {
-      if (err) {
-        logger.error(__filename, 'line', __line, 'Error: ' + err);
-      } else {
-        // soupselect happening here...
-        // var titles = select(dom, 'a.title');
-        rows = select(dom, 'table tr');
-
-        for (var i = 0; i < rows.length; i++) {
-          // skip the header row
-          if (i === 0) {
-            continue;
-          }
-          rowNum = i;
-          row = rows[i];
-          // we are creating a json array of nodes / data
-          node = {};
-          tds = select(row, 'td');
-          // loop through each td/column in the row
-          for (var j = 0; j < tds.length; j++) {
-            td = tds[j];
-            // get the id/permanent reference number from the first td
-            if (j === 0) {
-              paragraph = select(td, 'p');
-              // unless (!paragraph || (!paragraph[0]) || (!paragraph[0].children));
-              if (!(!paragraph || (!paragraph[0]) || (!paragraph[0].children))) {
-                if (indivOrEntityString === 'entity') {
-                  try {
-                    rawId = paragraph[0].children[0].data;
-                    cleanId = getCleanId(rawId);
-                    node.id = cleanId.trim(); // getCleanId(rawId); //paragraph[0].children[0].dat1a);11
-                  } catch (err) {
-                    logger.error(__filename, 'line', __line, ' Error: ', err, '; rawId = ', rawId, '; paragraph = ', paragraph);
-                  }
-                } else {
-                  try {
-                    // use individual id type
-                    rawId = paragraph[0].children[0].data;
-                    cleanId = rawId.trim(); //getCleanId(rawId);
-                    node.id = cleanId.trim(); // getCleanId(rawId); //paragraph[0].children[0].dat1a);
-                  } catch (err) {
-                    logger.error(__filename, 'line', __line, ' Error: ', err, '; rawId = ', rawId, '; paragraph = ', paragraph);
-                  }
-                }
-              }
-            }
-            // if we are in the second td in the row, extract the narrative file name...
-            else if (j === 1) {
-              paragraph = select(td, 'p');
-              anchor = select(td, 'a');
-
-              if (typeof paragraph !== 'undefined' && typeof paragraph[0] !== 'undefined') {
-                //logger.debug( __filename, 'line', __line, 'paragraph = ', JSON.stringify(paragraph));
-                if (typeof paragraph[0].children[0].attribs !== 'undefined') {
-                  try {
-                    narrativeFileName = paragraph[0].children[0].attribs.href;
-                    narrativeFileName = normalizeNarrativeFileName(narrativeFileName); //.replace(/\/sc\/committees\/1267\/(NSQ.*\.shtml)/, '$1');
-                    // narrativeFileName = narrativeFileName.replace(/http:\/\/dev.un.org\/sc\/committees\/1267\/(NSQ.*\.shtml)/, '$1');
-                    // http://dev.un.org/sc/committees/1267/
-                    node.narrativeFileName = narrativeFileName;
-                  } catch (err) {
-                    logger.error(__filename, 'line', __line, '; paragraph[0].children[0] = ', paragraph[0].children[0]);
-                    logger.error(__filename, 'line', __line, '; Error: paragraph[0].children[0].attribs is undefined; tr = ', i, '; td = ', j, err);
-                  }
-                } else if (typeof anchor[0].attribs.href !== 'undefined') {
-                  try {
-                    node.narrativeFileName = normalizeNarrativeFileName(narrativeFileName);
-                    node.targetName = JSON.stringify(anchor[0].children[0].data);
-                  } catch (err) {
-                    logger.error(__filename, 'line', __line, '; Error: ', err);
-                  }
-                } else {
-                  try {
-                    node.narrativeFileName = 'PLACEHOLDER0';
-                    logger.error(__filename, 'line', __line, '; Error: narrativeFileName for tr = ', i, '; td = ', j, 'is PLACEHOLDER0');
-                  } catch (err) {
-                    logger.error(__filename, 'line', __line, '; Error: ', err);
-                  }
-                }
-                // if anchor inside of paragraph
-                try {
-                  if (anchor[0].children[0].data !== 'u') {
-                    targetName = anchor[0].children[0].data;
-                  } else if (anchor[0].children[0].data === 'u') {
-                    underscore = select(td, 'u');
-                    targetName = JSON.stringify(underscore[0].children[0].data);
-                  } else {
-                    targetName = 'PLACEHOLDER1';
-                  }
-                  targetName = targetName.replace(/[\n\f\r\t]/gm, '');
-                  targetName = targetName.replace(/\s\s+/gm, ' ');
-                  targetName = targetName.trim();
-                  if (targetName === '') {
-                    node.targetName = 'PLACEHOLDER2';
-                  } else {
-                    node.targetName = targetName;
-                  }
-                } catch (err) {
-                  logger.error(__filename, 'line', __line, '; Error: ', err);
-                }
-                // end of if (typeof paragraph !== 'undefined' && typeof paragraph[0] !== 'undefined')
-              } else if (typeof anchor[0].attribs.href !== 'undefined' && anchor[0].attribs.href !== '') {
-
-                try {
-                  narrativeFileName = normalizeNarrativeFileName(anchor[0].attribs.href);
-                  node.narrativeFileName = narrativeFileName;
-                  if (typeof anchor[0].children[0] !== 'undefined' && anchor[0].children[0].data !== '') {
-                    targetName = anchor[0].children[0].data;
-                    node.targetName = targetName;
-                  }
-
-                } catch (err) {
-                  logger.error(__filename, 'line', __line, '; Error: ', err);
-                }
-              }
-            }
-          }
-          node.indivOrEntityString = indivOrEntityString;
-          node.rowNum = i;
-          node.urlNum = nodes.length + 1;
-          nodes.push(node);
+  } catch (err) {
+    logger.error(__filename, 'line', __line, ' Error: ', err, utilities_aq_viz.getStackTrace(err));
+  }
+  // re 'handler', see the following lines below:
+  //   var parser = new htmlparser.Parser(handler);
+  //   parser.parseComplete(responseBody);
+  var handler = new htmlparser.DefaultHandler(function (err, dom) {
+    var rows, row, td, tds, rowNum, node, paragraph, rawId, cleanId, narrativeFileName, targetName;
+    if (err) {
+      logger.error(__filename, 'line', __line, 'Error: ' + err);
+    } else {
+      // soupselect happening here...
+      // var titles = select(dom, 'a.title');
+      rows = select(dom, 'table tr');
+      for (var i = 0; i < rows.length; i++) {
+        // skip the header row
+        if (i === 0) {
+          continue;
         }
+        rowNum = i;
+        row = rows[i];
+        // we are creating a json array of nodes / data
+        node = {};
+        tds = select(row, 'td');
+        // loop through each td/column in the row
+        for (var j = 0; j < tds.length; j++) {
+          td = tds[j];
+          // get the id/permanent reference number from the first td
+          if (j === 0) {
+            paragraph = select(td, 'p');
+            // unless (!paragraph || (!paragraph[0]) || (!paragraph[0].children));
+            if (!(!paragraph || (!paragraph[0]) || (!paragraph[0].children))) {
+              if (indivOrEntityString === 'entity') {
+                try {
+                  rawId = paragraph[0].children[0].data;
+                  cleanId = getCleanId(rawId);
+                  node.id = cleanId.trim(); // getCleanId(rawId); //paragraph[0].children[0].dat1a);11
+                } catch (err) {
+                  logger.error(__filename, 'line', __line, ' Error: ', err, '; rawId = ', rawId, '; paragraph = ', paragraph);
+                }
+              } else {
+                try {
+                  // use individual id type
+                  rawId = paragraph[0].children[0].data;
+                  cleanId = rawId.trim(); //getCleanId(rawId);
+                  node.id = cleanId.trim(); // getCleanId(rawId); //paragraph[0].children[0].dat1a);
+                } catch (err) {
+                  logger.error(__filename, 'line', __line, ' Error: ', err, '; rawId = ', rawId, '; paragraph = ', paragraph);
+                }
+              }
+            }
+          }
+          // if we are in the second td in the row, extract the narrative file name...
+          else if (j === 1) {
+            paragraph = select(td, 'p');
+            anchor = select(td, 'a');
+
+            if (typeof paragraph !== 'undefined' && typeof paragraph[0] !== 'undefined') {
+              //logger.debug( __filename, 'line', __line, 'paragraph = ', JSON.stringify(paragraph));
+              if (typeof paragraph[0].children[0].attribs !== 'undefined') {
+                try {
+                  narrativeFileName = paragraph[0].children[0].attribs.href;
+                  narrativeFileName = normalizeNarrativeFileName(narrativeFileName); //.replace(/\/sc\/committees\/1267\/(NSQ.*\.shtml)/, '$1');
+                  // narrativeFileName = narrativeFileName.replace(/http:\/\/dev.un.org\/sc\/committees\/1267\/(NSQ.*\.shtml)/, '$1');
+                  // http://dev.un.org/sc/committees/1267/
+                  node.narrativeFileName = narrativeFileName;
+                } catch (err) {
+                  logger.error(__filename, 'line', __line, '; paragraph[0].children[0] = ', paragraph[0].children[0]);
+                  logger.error(__filename, 'line', __line, '; Error: paragraph[0].children[0].attribs is undefined; tr = ', i, '; td = ', j, err);
+                }
+              } else if (typeof anchor[0].attribs.href !== 'undefined') {
+                try {
+                  node.narrativeFileName = normalizeNarrativeFileName(narrativeFileName);
+                  node.targetName = JSON.stringify(anchor[0].children[0].data);
+                } catch (err) {
+                  logger.error(__filename, 'line', __line, '; Error: ', err);
+                }
+              } else {
+                try {
+                  node.narrativeFileName = 'PLACEHOLDER0';
+                  logger.error(__filename, 'line', __line, '; Error: narrativeFileName for tr = ', i, '; td = ', j, 'is PLACEHOLDER0');
+                } catch (err) {
+                  logger.error(__filename, 'line', __line, '; Error: ', err);
+                }
+              }
+              // if anchor inside of paragraph
+              try {
+                if (anchor[0].children[0].data !== 'u') {
+                  targetName = anchor[0].children[0].data;
+                } else if (anchor[0].children[0].data === 'u') {
+                  underscore = select(td, 'u');
+                  targetName = JSON.stringify(underscore[0].children[0].data);
+                } else {
+                  targetName = 'PLACEHOLDER1';
+                }
+                targetName = targetName.replace(/[\n\f\r\t]/gm, '');
+                targetName = targetName.replace(/\s\s+/gm, ' ');
+                targetName = targetName.trim();
+                if (targetName === '') {
+                  node.targetName = 'PLACEHOLDER2';
+                } else {
+                  node.targetName = targetName;
+                }
+              } catch (err) {
+                logger.error(__filename, 'line', __line, '; Error: ', err);
+              }
+              // end of if (typeof paragraph !== 'undefined' && typeof paragraph[0] !== 'undefined')
+            } else if (typeof anchor[0].attribs.href !== 'undefined' && anchor[0].attribs.href !== '') {
+
+              try {
+                narrativeFileName = normalizeNarrativeFileName(anchor[0].attribs.href);
+                node.narrativeFileName = narrativeFileName;
+                if (typeof anchor[0].children[0] !== 'undefined' && anchor[0].children[0].data !== '') {
+                  targetName = anchor[0].children[0].data;
+                  node.targetName = targetName;
+                }
+
+              } catch (err) {
+                logger.error(__filename, 'line', __line, '; Error: ', err);
+              }
+            }
+          }
+        }
+        node.indivOrEntityString = indivOrEntityString;
+        node.rowNum = i;
+        node.urlNum = nodes.length + 1;
+        nodes.push(node);
       }
-    });
+    }
+  });
+
+  if (!committeesJson) {
+    throw {
+      name: 'committeesJsonMissing',
+      message: 'committeesJson is null or undefined'
+    };
+  }
+
+
+
+
+
+  try {
+
     // table tr td p a need to be lower case
     htmlString = convertHtmlTagsToLowerCase(htmlString);
     // syncWriteHtmlFile(htmlString, __dirname + '/../data/committees/' + committee + '/'+ indivOrEntityString + '-parsed.html');
     var parser = new htmlparser.Parser(handler);
     parser.parseComplete(htmlString);
-
-    writeMyFile(committeesJson[committee].htmlDataPath, JSON.stringify(data_html_json, null, ' '), fsOptions);
+    console.log('hello');
+//    fse.writeFileSync(committeesJson[committee].htmlDataPath, JSON.stringify(data_html_json, null, ' '), fsOptions);
   } catch (err) {
     utilities_aq_viz.getStackTrace(err);
     logger.error(__filename, 'line', __line, ' Error: ', err);
   }
+
+  fse.writeFileSync(committeesJson[committee].htmlDataPath, JSON.stringify(data_html_json, null, ' '), fsOptions);
+
 };
 
 // str.replace(/str[123]|etc/, replaceCallback);
@@ -950,7 +950,7 @@ var addConnectionIdsArrayFromNarrative = function (node, narrative) {
 
     // if ((typeof Narrative !== 'undefined') && (typeof Narrative.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/gi) !== 'undefined')) {
     if (narrative) {
-      linkRegexMatch = null;
+      //linkRegexMatch = null;
       //  (QD[ie]\.\d{3})
       linkRegexMatch = narrative.match(/(QD[ie]\.\d{3})/gi);
 //      linkRegexMatch = narrative.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/gi);
@@ -1490,8 +1490,6 @@ var processPlaceOfBirthArray = function (d) {
   return pobArrayString;
 };
 
-
-
 var sortArrayOfStrings = function (arrayOfStrings) {
   arrayOfStrings.sort(function (stringA, stringB) {
     if (stringA > stringB) {
@@ -1589,19 +1587,19 @@ var vizFormatDateSetup = function (dateString) {
   // logger.debug('viz.js 947 vizFormatDate() dateString = ', dateString);
   return vizDateString.trim();
 };
-
-var writeMyFile = function (localFileNameAndPath, data_html_json, fsOptions) {
-  try {
-    fse.writeFileSync(localFileNameAndPath, data_html_json, fsOptions);
-  } catch (err) {
-    logger.error(__filename, 'line', __line, ' Error: ', err);
-  }
-};
-
-parse2Lists();
+/*
+ var writeMyFile = function (localFileNameAndPath, data_html_json, fsOptions) {
+ try {
+ fse.writeFileSync(localFileNameAndPath, data_html_json, fsOptions);
+ } catch (err) {
+ logger.error(__filename, 'line', __line, ' Error: ', err);
+ }
+ };
+ */
+start();
 
 module.exports = {
-  parse2Lists: parse2Lists
+//  parse2Lists: parse2Lists
 };
 
 

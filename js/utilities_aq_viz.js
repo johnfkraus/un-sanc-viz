@@ -385,6 +385,15 @@ var showObjectProperties = function (object) {
   }
 };
 
+var writeMyFile = function (localFileNameAndPath, data_xml_json, fsOptions) {
+  try {
+    fse.writeFileSync(localFileNameAndPath, data_xml_json, fsOptions);
+  } catch (err) {
+    logger.error(__filename, 'line', __line, ' Error: ', err);
+  }
+};
+
+
 module.exports = {
   addFileLabel: addFileLabel,
   countLinks: countLinks,

@@ -46,23 +46,14 @@ var xmlDataPath;
 var htmlDataPath;
 var mergedDataPath;
 
-// committeesArray = appConfig.getCommitteesArray();
-// committeesJson = {};
-
-
 var getCommitteesJson = function () {
   committeesArray = appConfig.getCommitteesArray();
   committeesJson = {};
 
-  committeesArray.forEach(function (committeeParam) {
-    //committeesJson.set(committee, {});
-committee = committeeParam;
-    committeesJson[committee] = {};
+  committeesArray.forEach(function (committee) {
+    // committeesJson.set(committee, {});
+    // committeesJson[committee] = {};
     init(committee);
-
-
-
-
     committeesJson[committee].xmlDataPath = xmlDataPath;
     committeesJson[committee].htmlDataPath = htmlDataPath;
     committeesJson[committee].mergedDataPath = mergedDataPath;

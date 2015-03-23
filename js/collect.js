@@ -86,16 +86,16 @@ var indivOrEntityString;
 var host = 'www.un.org';
 var config;
 var committees;
-var committeesArray; // = ['751', '1267', '1518', '1521', '1533', '1572', '1591', '1718', '1737', '1970', '1988', '2048', '2127', '2140', 'consolidated'];
+var committeesArray;
 var committeesJson;
 
 var start = function () {
   committeesArray = appConfig.getCommitteesArray();
 //  var functionCount = 0;
   async.series([
-
       // test logger
       function (callback) {
+        committeesArray = appConfig.getCommitteesArray();
         utilities_aq_viz.testLogging();
         callback();
       },
@@ -150,8 +150,8 @@ var collect = function (committee) {
           }
           try {
             // committeesArray.forEach(function (committee) {
-              fse.removeSync(__dirname + '/../data/committees/' + committee + '/debug/');
-              fse.mkdirs(__dirname + '/../data/committees/' + committee + '/debug/');
+              fse.removeSync(__dirname + '/../data/committees/' + committee + '/debug');
+              fse.mkdirs(__dirname + '/../data/committees/' + committee + '/debug');
               // fse.mkdirs(__dirname + '/../data/committees/' + committee + '/missing/');
               fse.removeSync(__dirname + '/../data/committees/' + committee + '/*.json');
             //})
@@ -716,6 +716,10 @@ var syncParseHtmlListPage = function (htmlString, indivOrEntityString) {
   var parser = new htmlparser.Parser(handler);
   parser.parseComplete(htmlString);
   if (indivOrEntityString === 'indiv') {
+
+    fse.writeFileSync(localFileNameAndPath, data_xml_json, fsOptions);
+
+
     writeMyFile(individualsJsonLocalOutputFileNameAndPath, JSON.stringify(indivLinks, null, ' '), fsOptions);
   }
   if (indivOrEntityString === 'entity') {
@@ -1374,13 +1378,6 @@ var vizFormatDateSetup = function (dateString) {
   return vizDateString.trim();
 };
 
-var writeMyFile = function (localFileNameAndPath, data_xml_json, fsOptions) {
-  try {
-    fse.writeFileSync(localFileNameAndPath, data_xml_json, fsOptions);
-  } catch (err) {
-    logger.error(__filename, 'line', __line, ' Error: ', err);
-  }
-};
 
 start();
 
