@@ -183,10 +183,15 @@ var parse2ListsCommittee = function (committeeParam) {
           // instead of downloading the list files from the UN web site,
           logger.warn(__filename, 'line', __line, '; useLocalListFiles = ', useLocalListFiles, '; reading stored (previously downloaded) local files: ', '; committeesJson[committee4parse].individualsHtmlLocalOutputFileNameAndPath = ', committeesJson[committee4parse].individualsHtmlLocalOutputFileNameAndPath, '; committeesJson[committee4parse].entitiesHtmlLocalOutputFileNameAndPath = ', committeesJson[committee4parse].entitiesHtmlLocalOutputFileNameAndPath);
 
+          individualsHtmlUnicodeString = null;
+          entitiesHtmlUnicodeString = null;
           try {
-            individualsHtmlUnicodeString = fse.readFileSync(committeesJson[committee4parse].individualsHtmlLocalOutputFileNameAndPath, fsOptions);
-            entitiesHtmlUnicodeString = fse.readFileSync(committeesJson[committee4parse].entitiesHtmlLocalOutputFileNameAndPath, fsOptions);
-
+            if (committeesJson[committee4parse].individualsHtmlLocalOutputFileNameAndPath) {
+              individualsHtmlUnicodeString = fse.readFileSync(committeesJson[committee4parse].individualsHtmlLocalOutputFileNameAndPath, fsOptions);
+            }
+            if (committeesJson[committee4parse].entitiesHtmlLocalOutputFileNameAndPath) {
+              entitiesHtmlUnicodeString = fse.readFileSync(committeesJson[committee4parse].entitiesHtmlLocalOutputFileNameAndPath, fsOptions);
+            }
           } catch (err) {
             logger.error('\n ', __filename, 'line', __line, '; Error: ', err, utilities_aq_viz.getStackTrace(err));
           }
@@ -200,7 +205,7 @@ var parse2ListsCommittee = function (committeeParam) {
         (callback) {
         if (data_html_json) {
           // var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'data_html-parse2-L' + __line + '-collectedLinks.json';
-          utilities_aq_viz.stringifyAndWriteJsonDataFile(data_html_json, committeesJson[committee4parse].writeJsonOutputDebuggingDirectory + 'data_html-parse2-L' + __line + '-gotNarrListsHtml.json');
+          utilities_aq_viz.stringifyAndWriteJsonDataFile(data_html_json, committeesJson[committee4parse].writeJsonOutputDebuggingDirectory + 'data_html-parse2-L' + __line + '-readOrCollectedNarrListsHtml.json');
           utilities_aq_viz.stringifyAndWriteJsonDataFile(data_html_json, committeesJson[committee4parse].htmlDataPath);
         }
         callback();
@@ -214,12 +219,12 @@ var parse2ListsCommittee = function (committeeParam) {
         }
 
         // individuals
-        if (committee4parse !== '1988') {
+        if (individualsHtmlUnicodeString) {
           syncParseHtmlListPage(individualsHtmlUnicodeString, 'indiv');
         }
         // entities
         // committee 1572 does not have an entities list page
-        if ((committee4parse !== '1572') && (committee4parse !== '1988')) {
+        if (entitiesHtmlUnicodeString) {
           syncParseHtmlListPage(entitiesHtmlUnicodeString, 'entity');
         }
         // For committee 1988, the list of both individuals and entities is on a single page here: http://www.un.org/sc/committees/1988/narrative.shtml

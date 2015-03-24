@@ -45,6 +45,8 @@ var utilities_aq_viz = require('./utilities_aq_viz.js');
 var writeJsonOutputDebuggingDirectory;
 var xmlDataPath;
 var xmlFileLocalStoragePathAndName;
+var combinedListUrl;  // Committee 1988
+var combinedHtmlLocalOutputFileNameAndPath; // Committee 1988
 
 // returns a committeesJson object
 
@@ -93,6 +95,9 @@ committeesArray.forEach(function (committeeParam) {
   committeesJson[committeeConfig].writeJsonOutputDebuggingDirectory = writeJsonOutputDebuggingDirectory;
   committeesJson[committeeConfig].xmlDataPath = xmlDataPath;
   committeesJson[committeeConfig].xmlFileLocalStoragePathAndName = xmlFileLocalStoragePathAndName;
+  committeesJson[committeeConfig].combinedListUrl = combinedListUrl;  // Committee 1988
+  committeesJson[committeeConfig].combinedHtmlLocalOutputFileNameAndPath = combinedHtmlLocalOutputFileNameAndPath; // Committee 1988
+
 });
 fse.writeFileSync(committeesConfigJsonPathAndFileName, JSON.stringify(committeesJson, null, ' '), fsOptions);
 return committeesJson;
@@ -130,9 +135,10 @@ init = function (committeeParam) {
   individualsListUrl = 'http://www.un.org/sc/committees/' + committeeConfig + '/Individuals.shtml';
   entitiesListUrl = 'http://www.un.org/sc/committees/' + committeeConfig + '/Entities.shtml';
   // local storage
-  readWriteLocalNarrativesFilePath = __dirname + '/../data/committees/' + committeeConfig + '/narratives/';
   individualsHtmlLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committeeConfig + '/individuals.html';
   entitiesHtmlLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committeeConfig + '/entities.html';
+  readWriteLocalNarrativesFilePath = __dirname + '/../data/committees/' + committeeConfig + '/narratives/';
+
 
   // json files (local storage)
   // json files extracted from the xml list files
@@ -153,6 +159,9 @@ init = function (committeeParam) {
 
   // place to store all the configuration data from this committeesConfig.js file
   committeesConfigJsonPathAndFileName = __dirname + '/../data/committees/committeesConfig.json';
+  // Committee 1988 combined list
+  combinedListUrl = null;
+  combinedHtmlLocalOutputFileNameAndPath = null;
 
   switch (committeeConfig) {
     // Somalia and Eritrea
@@ -211,6 +220,7 @@ init = function (committeeParam) {
     case '1572':
       individualsListUrl = 'http://www.un.org/sc/committees/1572/individuals.shtml';
       entitiesListUrl = false;
+      entitiesHtmlLocalOutputFileNameAndPath = false;
       permRefNumIndiv = "CIi.001";
       permRefNumEnt = "CIe.001";
       countryCode2DigitIso = "CI";
@@ -228,9 +238,12 @@ init = function (committeeParam) {
       subjectMatterAbbreviated = "Resolution 1591 (2005) concerning the Sudan";
       break;
     // Lebanon
+      // Committee 1636 has neither an individuals list or entities list
     case '1636':
       individualsListUrl = false;
       entitiesListUrl = false;
+      individualsHtmlLocalOutputFileNameAndPath = false;
+      entitiesHtmlLocalOutputFileNameAndPath = false;
       permRefNumIndiv = "NA";
       permRefNumEnt = "NA";
       countryCode2DigitIso = "NA";
@@ -272,7 +285,10 @@ init = function (committeeParam) {
       // For committee 1988, the list of both individuals and entities is on a single page here: http://www.un.org/sc/committees/1988/narrative.shtml
       // Committee 1988 has no entities list
       individualsListUrl = 'http://www.un.org/sc/committees/1988/narrative.shtml';
-      entitiesListUrl = individualsListUrl;
+      combinedListUrl = 'http://www.un.org/sc/committees/1988/narrative.shtml';
+      combinedHtmlLocalOutputFileNameAndPath = 'http://www.un.org/sc/committees/1988/narrative.shtml';
+      entitiesListUrl = false;
+      entitiesHtmlLocalOutputFileNameAndPath = false;
       permRefNumIndiv = "TAi.001";
       permRefNumEnt = "TAe.001";
       countryCode2DigitIso = "non-State entity";
@@ -284,6 +300,7 @@ init = function (committeeParam) {
     case '2048':
       entitiesListUrl = false;
       individualsListUrl = 'http://www.un.org/sc/committees/2048/2048individuals.shtml';
+      entitiesHtmlLocalOutputFileNameAndPath = false;
       permRefNumIndiv = "GBi.001";
       permRefNumEnt = "GBe.001";
       countryCode2DigitIso = "GB";
@@ -295,6 +312,7 @@ init = function (committeeParam) {
     case '2127':
       entitiesListUrl = false;
       individualsListUrl = 'http://www.un.org/sc/committees/2127/individuals_associated_with_CAR.shtml';
+      entitiesHtmlLocalOutputFileNameAndPath = false;
       permRefNumIndiv = "CFi.001";
       permRefNumEnt = "CFe.001";
       countryCode2DigitIso = "CF";
@@ -306,6 +324,7 @@ init = function (committeeParam) {
     case '2140':
       individualsListUrl = 'http://www.un.org/sc/committees/' + committeeConfig + '/Individuals.shtml';
       entitiesListUrl = false;
+      entitiesHtmlLocalOutputFileNameAndPath = false;
       permRefNumIndiv = "NA";
       permRefNumEnt = "NA";
       countryCode2DigitIso = "NA";

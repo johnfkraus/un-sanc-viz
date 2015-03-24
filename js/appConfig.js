@@ -18,21 +18,26 @@ var getCommitteesArray = function () {
 };
 
 var getCommitteesWithNoSeparateEntitiesList = function () {
-  return ['1572','1988', '2048', '2127', '2140'];
+  return ['1572', '1636', '1988', '2048', '2127', '2140'];
 };
 
-var getCommitteesWithSingleCombinedEntitiesAndIndivsList = function () {
+var getCommitteesWithNoSeparateIndividualsList = function () {
+  return ['1636', '1988'];
+};
+
+
+var getCommitteesWithSingleCombinedEntitiesAndIndividualsList = function () {
   return ['1988'];
 };
 
 module.exports = {
+  consoleLog: consoleLog,
   getCommitteesArray: getCommitteesArray,
   getCommitteesWithNoSeparateEntitiesList: getCommitteesWithNoSeparateEntitiesList,
-  getCommitteesWithSingleCombinedEntitiesAndIndivsList: getCommitteesWithSingleCombinedEntitiesAndIndivsList,
+  getCommitteesWithNoSeparateIndividualsList: getCommitteesWithNoSeparateIndividualsList,
+  getCommitteesWithSingleCombinedEntitiesAndIndividualsList: getCommitteesWithSingleCombinedEntitiesAndIndividualsList,
+  logger: logger,
   useLocalListFiles: useLocalListFiles,
-  useLocalNarrativeFiles: useLocalNarrativeFiles,
-  consoleLog: consoleLog,
-  logger: logger
-
+  useLocalNarrativeFiles: useLocalNarrativeFiles
 };
 
