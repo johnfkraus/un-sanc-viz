@@ -393,6 +393,14 @@ var showObjectProperties = function (object) {
   }
 };
 
+var throwCustomError = function(name, message)
+{
+  throw {
+    name: name || 'customError',
+    message: message || 'custom error thrown'
+  };
+};
+
 var writeMyFile = function (localFileNameAndPath, data_xml_json, fsOptions) {
   try {
     fse.writeFileSync(localFileNameAndPath, data_xml_json, fsOptions);

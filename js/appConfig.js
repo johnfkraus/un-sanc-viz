@@ -17,8 +17,18 @@ var getCommitteesArray = function () {
   return ['751', '1267', '1518', '1521', '1533', '1572', '1591', '1718', '1737', '1970', '1988', '2048', '2127', '2140', 'consolidated'];
 };
 
+var getCommitteesWithNoSeparateEntitiesList = function () {
+  return ['1572','1988', '2048', '2127', '2140'];
+};
+
+var getCommitteesWithSingleCombinedEntitiesAndIndivsList = function () {
+  return ['1988'];
+};
+
 module.exports = {
   getCommitteesArray: getCommitteesArray,
+  getCommitteesWithNoSeparateEntitiesList: getCommitteesWithNoSeparateEntitiesList,
+  getCommitteesWithSingleCombinedEntitiesAndIndivsList: getCommitteesWithSingleCombinedEntitiesAndIndivsList,
   useLocalListFiles: useLocalListFiles,
   useLocalNarrativeFiles: useLocalNarrativeFiles,
   consoleLog: consoleLog,

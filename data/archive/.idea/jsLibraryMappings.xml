@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="JavaScriptLibraryMappings">
-    <file url="file://$PROJECT_DIR$" libraries="{aq-list-viz node_modules}" />
-    <file url="PROJECT" libraries="{Dojo-1.8.3, Modernizr-2.6.2, Node.js v0.10.32 Core Modules, YUI-3.10.0, d3-DefinitelyTyped, jQuery UI-1.10.2, jQuery-2.0.0, linenums.js}" />
-    <includedPredefinedLibrary name="Node.js Globals" />
-  </component>
-</project>

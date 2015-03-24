@@ -1,3 +1,0 @@
-<component name="DependencyValidationManager">
-  <scope name="code_inspect_custom" pattern="(file[aq-list-viz]:*/&amp;&amp;!file[aq-list-viz]:.idea//*&amp;&amp;!file[aq-list-viz]:js/libs//*||file:js/libs/logger.js)&amp;&amp;!file[aq-list-viz]:js/mongoScripts//*&amp;&amp;!file[aq-list-viz]:skybox//*&amp;&amp;!file[aq-list-viz]:markdown//*&amp;&amp;!file[aq-list-viz]:js/node_modules//*&amp;&amp;!file[aq-list-viz]:node_modules//*&amp;&amp;!file[aq-list-viz]:log//*&amp;&amp;!file:data/narrative_lists/entities_other_groups_undertakings_associated_with_Al-Qaida.shtml&amp;&amp;!file:data/narrative_lists/individuals_associated_with_Al-Qaida.shtml" />
-</component>

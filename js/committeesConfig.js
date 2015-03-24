@@ -207,6 +207,7 @@ init = function (committeeParam) {
       subjectMatterAbbreviated = "Resolution 1533 (2004) concerning the Democratic Republic of the Congo";
       break;
     // Côte d'Ivoire
+    // Committee 1572 has no entities list
     case '1572':
       individualsListUrl = 'http://www.un.org/sc/committees/1572/individuals.shtml';
       entitiesListUrl = false;
@@ -268,7 +269,8 @@ init = function (committeeParam) {
       break;
     // Taliban/Afghanistan
     case '1988':
-      // The list of both individuals and entities is on a single page here: http://www.un.org/sc/committees/1988/narrative.shtml
+      // For committee 1988, the list of both individuals and entities is on a single page here: http://www.un.org/sc/committees/1988/narrative.shtml
+      // Committee 1988 has no entities list
       individualsListUrl = 'http://www.un.org/sc/committees/1988/narrative.shtml';
       entitiesListUrl = individualsListUrl;
       permRefNumIndiv = "TAi.001";
@@ -278,8 +280,9 @@ init = function (committeeParam) {
       subjectMatterAbbreviated = "Resolution 1988 (2011), Resolution 2082 (2012) re: Taliban/Afghanistan";
       break;
     // Guinea-Bissau
+    // Committee 2048 has no entities list
     case '2048':
-      entitiesListUrl = 'false';
+      entitiesListUrl = false;
       individualsListUrl = 'http://www.un.org/sc/committees/2048/2048individuals.shtml';
       permRefNumIndiv = "GBi.001";
       permRefNumEnt = "GBe.001";
@@ -288,6 +291,7 @@ init = function (committeeParam) {
       subjectMatterAbbreviated = "Resolution 2048 (2012) concerning Guinea-Bissau";
       break;
     // Central African Republic
+    // Committee 2127 has no entities list
     case '2127':
       entitiesListUrl = false;
       individualsListUrl = 'http://www.un.org/sc/committees/2127/individuals_associated_with_CAR.shtml';
@@ -298,6 +302,7 @@ init = function (committeeParam) {
       subjectMatterAbbreviated = "Resolution 2127 (2013) concerning the Central African Republic";
       break;
     // Yemen
+    // Committee 2140 has no entities list
     case '2140':
       individualsListUrl = 'http://www.un.org/sc/committees/' + committeeConfig + '/Individuals.shtml';
       entitiesListUrl = false;

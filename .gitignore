@@ -38,3 +38,4 @@ terminal*.txt
 *.swp
 *.shtml.html
 ssh.secret.txt
+herokuAuthToken.txt

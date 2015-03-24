@@ -26,11 +26,11 @@ var should = require('should');
  "isSomething": true
  }
  */
-
-
-describe('assert data.json', function () {
+var comte = '751';
+describe('assert data.json.' + comte, function () {
   it('should be valid', function () {
-    var dataJsonPathAndFileName = __dirname + '/../data/committees/751/data.json';
+
+    var dataJsonPathAndFileName = __dirname + '/../data/committees/'+comte+'/data.json';
     var data_json = JSON.parse(fse.readFileSync(dataJsonPathAndFileName, fsOptions));
 
     should.exist(data_json);
