@@ -334,6 +334,10 @@ init = function (committeeParam) {
     // Consolidated list
     case 'consolidated':
       committeeXmlListUrl = 'http://www.un.org/sc/committees/consolidated.xml';
+      individualsListUrl = false;
+      individualsHtmlLocalOutputFileNameAndPath = false;
+      entitiesListUrl = false;
+      entitiesHtmlLocalOutputFileNameAndPath = false;
       subjectMatterAbbreviated = "Consolidated United Nations Security Council Sanctions List includes all individuals and entities subject to sanctions measures imposed by the U.N. Security Council.";
       break;
     // default code block

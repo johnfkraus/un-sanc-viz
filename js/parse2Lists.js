@@ -69,7 +69,6 @@ var select = require('soupselect').select,
 var targetName = '';
 // var anchor,
 var data_html_json = {},
-  nodes,
   url;
 
 var entitiesListUrl;
@@ -96,7 +95,7 @@ var start = function () {
         if (committeesArray) {
           committeesArray.forEach(function (committeeParam) {
             committee4parse = committeeParam;
-            parse2ListsCommittee(committeeParam);
+            parse2ListsCommittee(committee4parse);
           });
         } else {
           utilities_aq_viz.throwCustomError();
@@ -189,13 +188,17 @@ var parse2ListsCommittee = function (committeeParam) {
             if (committeesJson[committee4parse].individualsHtmlLocalOutputFileNameAndPath) {
               individualsHtmlUnicodeString = fse.readFileSync(committeesJson[committee4parse].individualsHtmlLocalOutputFileNameAndPath, fsOptions);
             }
+          }
+          catch (err) {
+            logger.error('\n ', __filename, 'line', __line, '; Error: ', err, utilities_aq_viz.getStackTrace(err));
+          }
+          try {
             if (committeesJson[committee4parse].entitiesHtmlLocalOutputFileNameAndPath) {
               entitiesHtmlUnicodeString = fse.readFileSync(committeesJson[committee4parse].entitiesHtmlLocalOutputFileNameAndPath, fsOptions);
             }
           } catch (err) {
             logger.error('\n ', __filename, 'line', __line, '; Error: ', err, utilities_aq_viz.getStackTrace(err));
           }
-
         }
         callback();
       },
@@ -209,7 +212,9 @@ var parse2ListsCommittee = function (committeeParam) {
           utilities_aq_viz.stringifyAndWriteJsonDataFile(data_html_json, committeesJson[committee4parse].htmlDataPath);
         }
         callback();
-      },
+      }
+
+      ,
 
       // parse the two html list files to obtain narrative web page file names
       // write the data to a single local json file
@@ -229,10 +234,12 @@ var parse2ListsCommittee = function (committeeParam) {
         }
         // For committee 1988, the list of both individuals and entities is on a single page here: http://www.un.org/sc/committees/1988/narrative.shtml
         if (committee4parse === '1988') {
-          syncParseHtmlListPage(individualsHtmlUnicodeString , '');
+          syncParseHtmlListPage(individualsHtmlUnicodeString, '');
         }
         callback();
-      },
+      }
+
+      ,
 
       // write intermediate data file for debugging
       function
@@ -243,7 +250,9 @@ var parse2ListsCommittee = function (committeeParam) {
           utilities_aq_viz.stringifyAndWriteJsonDataFile(data_html_json, committeesJson[committee4parse].htmlDataPath);
         }
         callback();
-      },
+      }
+
+      ,
 
       // create nodes
       // using filenames previously extracted from the two list files, download each narrative file from the UN web site and save to local file
@@ -286,7 +295,9 @@ var parse2ListsCommittee = function (committeeParam) {
           }
         }
         callback();
-      },
+      }
+
+      ,
 
       // extract ids/reference numbers from the narrative files for each link/node
       //  function (callback) {
@@ -327,7 +338,9 @@ var parse2ListsCommittee = function (committeeParam) {
           addConnectionIdsArrayFromNarrative(node, narrative);
         }
         callback();
-      },
+      }
+
+      ,
 
       // write intermediate data_html_json file for debugging
       function
@@ -336,7 +349,9 @@ var parse2ListsCommittee = function (committeeParam) {
         utilities_aq_viz.stringifyAndWriteJsonDataFile(data_html_json, committeesJson[committee4parse].writeJsonOutputDebuggingDirectory + 'data_html-parse2-L' + __line + '-message.json');
         utilities_aq_viz.stringifyAndWriteJsonDataFile(data_html_json, committeesJson[committee4parse].htmlDataPath);
         callback();
-      },
+      }
+
+      ,
 
       function (callback) {
         // read data_html_json json file
@@ -354,7 +369,9 @@ var parse2ListsCommittee = function (committeeParam) {
         logger.debug(__filename, 'line', __line, '; data_html_json.links.length = ', data_html_json.links.length);
 
         callback();
-      },
+      }
+
+      ,
 
       // write intermediate data_html_json file for debugging
       function (callback) {
@@ -364,7 +381,9 @@ var parse2ListsCommittee = function (committeeParam) {
           utilities_aq_viz.stringifyAndWriteJsonDataFile(data_html_json, committeesJson[committee4parse].htmlDataPath);
         }
         callback();
-      },
+      }
+
+      ,
       /*
        function (callback) {
        // read data_html_json json file
@@ -405,7 +424,9 @@ var parse2ListsCommittee = function (committeeParam) {
           utilities_aq_viz.stringifyAndWriteJsonDataFile(data_html_json, committeesJson[committee4parse].htmlDataPath);
         }
         callback();
-      },
+      }
+
+      ,
 
       // create dot file
       //
@@ -437,13 +458,17 @@ var parse2ListsCommittee = function (committeeParam) {
         linkString += '}';
         fse.writeFileSync(committeesJson[committee4parse].dotFileLocalOutputFileNameAndPath, linkString, fsOptions);
         callback();
-      },
+      }
+
+      ,
 
       function (callback) {
         logger.debug(__filename, 'line', __line, '; function #:', ++functionCount);
         validateNodeIds(data_html_json);
         callback();
-      },
+      }
+
+      ,
 
       // write intermediate data_html_json file for debugging
       function (callback) {
@@ -453,7 +478,9 @@ var parse2ListsCommittee = function (committeeParam) {
           utilities_aq_viz.stringifyAndWriteJsonDataFile(data_html_json, committeesJson[committee4parse].htmlDataPath);
         }
         callback();
-      },
+      }
+
+      ,
 
       // summarize output
       // compare number of comment links to number of narrative links
@@ -466,14 +493,18 @@ var parse2ListsCommittee = function (committeeParam) {
         logger.debug(__filename, 'line', __line, '; data_html_json.nodes.length = ', data_html_json.nodes.length);
         logger.debug(__filename, 'line', __line, '; data_html_json.links.length = ', data_html_json.links.length);
         callback();
-      },
+      }
+
+      ,
 
       // count links; add linkcount to nodes
       function (callback) {
         logger.debug(__filename, 'line', __line, '; function #:', ++functionCount);
         data_html_json = utilities_aq_viz.countLinks(data_html_json);
         callback();
-      },
+      }
+
+      ,
 
       // write intermediate data_html_json file for debugging
       function
@@ -484,13 +515,15 @@ var parse2ListsCommittee = function (committeeParam) {
         }
         callback();
       }
+
     ],
     function (err) {
       if (err) {
         logger.error(__filename, 'line', __line, '; Error: ' + err);
       }
     }
-  );
+  )
+  ;
 };
 
 var validateNodeIds = function (data_html_json) {
@@ -518,7 +551,7 @@ var validateNodeIds = function (data_html_json) {
     });
   }
   else {
-    logger.error(__filename, 'line', __line, ' Error: ', err, utilities_aq_viz.getStackTrace(err));
+    logger.error(__filename, 'line', __line, ' Error: ', err);
   }
   var link;
   for (var linkCounter = 0; linkCounter < data_html_json.links.length; linkCounter++) {
@@ -568,7 +601,10 @@ var validateNodeIds = function (data_html_json) {
  */
 var syncParseHtmlListPage = function (htmlString, indivOrEntityString) {
   indivOrEntityString = indivOrEntityString || '';
-  var node, nodes, parser, rawId, cleanId;
+
+  var rowNum, columnNum;
+
+  var node, parser, rawId, cleanId;
   var committee4parse = getCommittee();
   if (!committee4parse) {
     throw {
@@ -589,7 +625,7 @@ var syncParseHtmlListPage = function (htmlString, indivOrEntityString) {
   };
   if (utilities_aq_viz.errorPageReturned(htmlString)) {
     logger.error(__filename, ' line ', __line, 'Error: PageNotFoundError; utilities_aq_viz.errorPageReturned(htmlString) = ', utilities_aq_viz.errorPageReturned(htmlString), '; htmlString = ', htmlString);
-    var message = __filename + ' line ' +  __line +'; committee4parse = '+ committee4parse + '; indivOrEntityString = '+ indivOrEntityString +' ; pageNotFound; htmlString = \n' + htmlString;
+    var message = __filename + ' line ' + __line + '; committee4parse = ' + committee4parse + '; indivOrEntityString = ' + indivOrEntityString + ' ; pageNotFound; htmlString = \n' + htmlString;
     throw {
       name: 'PageNotFoundError',
       message: message
@@ -605,20 +641,24 @@ var syncParseHtmlListPage = function (htmlString, indivOrEntityString) {
 
   logger.debug(__filename, ' line ', __line, '; running syncParseHtmlListPage (htmlString = ', htmlString.substring(0, 100), ', indivOrEntityString = ', indivOrEntityString, ')');
 
-  nodes = data_html_json.nodes;
+  if (data_html_json.nodes) {
+    nodes = data_html_json.nodes;
+  } else {
+    logger.error(__filename, ' line ', __line, '; Error: data_html_json.nodes not defined');
+  }
 
   // re 'handler', see the following lines below:
   //   var parser = new htmlparser.Parser(handler);
   //   parser.parseComplete(responseBody);
   var handler = new htmlparser.DefaultHandler(function (err, dom) {
-    var rows, row, td, tds, rowNum, columnNum, node, nodes, paragraph, rawId, cleanId, narrativeFileName, targetName, underscore;
+    var anchor, rows, row, td, tds, node, paragraph, rawId, cleanId, narrativeFileName, targetName, underscore;
     if (err) {
-      logger.error(__filename, 'line', __line, 'Error: ' + err);
+      logger.error(__filename, 'line', __line, 'Error: ' + err, utilities_aq_viz.getStackTrace(err));
     } else {
       // soupselect happening here...
       // var titles = select(dom, 'a.title');
       rows = select(dom, 'table tr');
-      if (!rows) {
+      if (!rows || !rows.length) {
         throw {
           name: 'rowsIsUndefined',
           message: 'rows is undefined'
@@ -626,27 +666,40 @@ var syncParseHtmlListPage = function (htmlString, indivOrEntityString) {
       }
       // loop through each table row
 
-      for (var i = 0; i < rows.length; i++) {
+      for (rowNum = 0; rowNum < rows.length; rowNum++) {
+        // console.log('rowNum = ', rowNum, '; rows.length = ', rows.length);
         // skip the header row
-        rowNum = i;
-        row = rows[i];
+        row = rows[rowNum];
         if (rowNum === 0) {
           continue;
         }
         // we are creating a json array of nodes / data
         node = {};
         tds = select(row, 'td');
+        var columns = tds;
         // loop through each td/column in the row
-        for (var j = 0; j < tds.length; j++) {
-          columnNum = j;
-          td = tds[columnNum];
+
+        if (!columns || !columns.length) {
+          var message = '; columns is undefined; columns = ' + columns + '; columns.length = ' + columns.length;
+          throw {
+            name: 'columnsIsUndefined',
+            message: message
+          };
+        }
+
+        for (columnNum = 0; columnNum < columns.length - 1; columnNum++) {
+          // console.log(__filename, 'line', __line, 'columnNum = ', columnNum);
+
           // get the id/permanent reference number from the first td
           if (columnNum === 0) {
+            td = tds[columnNum];
             paragraph = select(td, 'p');
+            // console.log('paragraph = ', paragraph);
             if (!(!paragraph || (!paragraph[0]) || (!paragraph[0].children))) {
               if (indivOrEntityString === 'entity') {
                 try {
                   rawId = paragraph[0].children[0].data;
+                  // console.log('rawId = ', rawId);
                   cleanId = getCleanId(rawId);
                   node.id = cleanId.trim(); // getCleanId(rawId); //paragraph[0].children[0].dat1a);11
                 } catch (err) {
@@ -656,6 +709,7 @@ var syncParseHtmlListPage = function (htmlString, indivOrEntityString) {
                 try {
                   // use individual id type
                   rawId = paragraph[0].children[0].data;
+                  // console.log('rawId = ', rawId);
                   cleanId = rawId.trim(); //getCleanId(rawId);
                   node.id = cleanId.trim(); // getCleanId(rawId); //paragraph[0].children[0].dat1a);
                 } catch (err) {
@@ -666,6 +720,7 @@ var syncParseHtmlListPage = function (htmlString, indivOrEntityString) {
           }
           // if we are in the second td in the row, extract the narrative file name...
           else if (columnNum === 1) {
+            td = tds[columnNum];
             paragraph = select(td, 'p');
             anchor = select(td, 'a');
 
@@ -674,39 +729,47 @@ var syncParseHtmlListPage = function (htmlString, indivOrEntityString) {
               if (typeof paragraph[0].children[0].attribs !== 'undefined') {
                 try {
                   narrativeFileName = paragraph[0].children[0].attribs.href;
+                 // console.log('narrativeFileName = ', narrativeFileName);
                   narrativeFileName = normalizeNarrativeFileName(narrativeFileName); //.replace(/\/sc\/committees\/1267\/(NSQ.*\.shtml)/, '$1');
                   // narrativeFileName = narrativeFileName.replace(/http:\/\/dev.un.org\/sc\/committees\/1267\/(NSQ.*\.shtml)/, '$1');
                   // http://dev.un.org/sc/committees/1267/
                   node.narrativeFileName = narrativeFileName;
                 } catch (err) {
                   logger.error(__filename, 'line', __line, '; paragraph[0].children[0] = ', paragraph[0].children[0]);
-                  logger.error(__filename, 'line', __line, '; Error: paragraph[0].children[0].attribs is undefined; tr = ', i, '; td = ', columnNum, err);
+                  logger.error(__filename, 'line', __line, '; Error: paragraph[0].children[0].attribs is undefined; tr = ', rowNum, '; td = ', columnNum, err);
                 }
               } else if (typeof anchor[0].attribs.href !== 'undefined') {
                 try {
                   node.narrativeFileName = normalizeNarrativeFileName(narrativeFileName);
+                  // console.log('node.narrativeFileName = ', node.narrativeFileName);
                   node.targetName = JSON.stringify(anchor[0].children[0].data);
+                  // console.log('node.targetName = ', node.targetName);
                 } catch (err) {
-                  logger.error(__filename, 'line', __line, '; Error: ', err);
+                  logger.error(__filename, 'line', __line, '; Error: ', err, utilities_aq_viz.getStackTrace(err));
                 }
               } else {
                 try {
                   node.narrativeFileName = 'PLACEHOLDER0';
-                  logger.error(__filename, 'line', __line, '; Error: narrativeFileName for tr = ', i, '; td = ', columnNum, 'is PLACEHOLDER0');
+                  // console.log('node.narrativeFileName = ', node.narrativeFileName);
+                  logger.error(__filename, 'line', __line, '; Error: narrativeFileName for tr = ', rowNum, '; td = ', columnNum, 'is PLACEHOLDER0');
                 } catch (err) {
-                  logger.error(__filename, 'line', __line, '; Error: ', err);
+                  logger.error(__filename, 'line', __line, '; Error: ', err, utilities_aq_viz.getStackTrace(err));
                 }
               }
               // if anchor inside of paragraph
               try {
                 if (anchor[0].children[0].data !== 'u') {
                   targetName = anchor[0].children[0].data;
+                  // console.log(__filename, 'line', __line, 'targetName = ', targetName);
                 } else if (anchor[0].children[0].data === 'u') {
                   underscore = select(td, 'u');
                   targetName = JSON.stringify(underscore[0].children[0].data);
+                  // console.log(__filename, 'line', __line, 'targetName = ', targetName);
                 } else {
                   targetName = 'PLACEHOLDER1';
+                  // console.log('targetName = ', targetName);
                 }
+                // console.log(__filename, 'line', __line, 'targetName = ', targetName);
                 targetName = targetName.replace(/[\n\f\r\t]/gm, '');
                 targetName = targetName.replace(/\s\s+/gm, ' ');
                 targetName = targetName.trim();
@@ -716,29 +779,34 @@ var syncParseHtmlListPage = function (htmlString, indivOrEntityString) {
                   node.targetName = targetName;
                 }
               } catch (err) {
-                logger.error(__filename, 'line', __line, '; Error: ', err);
+                logger.error(__filename, 'line', __line, '; Error: ', err, utilities_aq_viz.getStackTrace(err));
               }
               // end of if (typeof paragraph !== 'undefined' && typeof paragraph[0] !== 'undefined')
-            } else if (typeof anchor[0].attribs.href !== 'undefined' && anchor[0].attribs.href !== '') {
+            } else if (anchor[0].attribs.href && anchor[0].attribs.href !== '') {
 
               try {
                 narrativeFileName = normalizeNarrativeFileName(anchor[0].attribs.href);
                 node.narrativeFileName = narrativeFileName;
-                if (typeof anchor[0].children[0] !== 'undefined' && anchor[0].children[0].data !== '') {
+                if (anchor[0].children[0] && anchor[0].children[0].data && anchor[0].children[0].data !== '') {
                   targetName = anchor[0].children[0].data;
                   node.targetName = targetName;
                 }
 
               } catch (err) {
-                logger.error(__filename, 'line', __line, '; Error: ', err);
+                logger.error(__filename, 'line', __line, '; Error: ', err, utilities_aq_viz.getStackTrace(err));
               }
             }
           }
         }
         node.indivOrEntityString = indivOrEntityString;
-        node.rowNum = i;
-        node.urlNum = nodes.length + 1;
-        nodes.push(node);
+        node.rowNum = rowNum;
+        if (data_html_json.nodes) { // } && (data_html_json.nodes.length + 1)) {
+          node.urlNum = nodes.length + 1;
+          data_html_json.nodes.push(node);
+        } else {
+          logger.error(__filename, 'line', __line, '; Error: ', err, '; data_html_json.nodes = ', data_html_json.nodes, '; data_html_json.nodes.length = ', data_html_json.nodes.length);
+        }
+
       }
     }
   });
@@ -756,16 +824,23 @@ var syncParseHtmlListPage = function (htmlString, indivOrEntityString) {
     htmlString = convertHtmlTagsToLowerCase(htmlString);
     // syncWriteHtmlFile(htmlString, __dirname + '/../data/committees/' + committee + '/'+ indivOrEntityString + '-parsed.html');
     parser = new htmlparser.Parser(handler);
-    parser.parseComplete(htmlString);
-    console.log('hello');
+    if (htmlString) {
+      parser.parseComplete(htmlString);
+    } else {
+      logger.error(__filename, ' line ', __line, 'Error: htmlString is undefined');
+    }
+
 //    fse.writeFileSync(committeesJson[committee4parse].htmlDataPath, JSON.stringify(data_html_json, null, ' '), fsOptions);
   } catch (err) {
-    utilities_aq_viz.getStackTrace(err);
-    logger.error(__filename, 'line', __line, '; Error: ', err, ';\n', utilities_aq_viz.getStackTrace(err));
+    if (err) {
+
+//      logger.error(__filename, ' line ', __line, 'Error: ', err, '; committee4parse = ', committee4parse, '; indivOrEntityString = ' + indivOrEntityString, ';\n', utilities_aq_viz.getStackTrace(err), '; rowNum = ', rowNum, '; columnNum = ', columnNum);
+
+            logger.error(__filename, ' line ', __line, 'Error: ', err, '; committee4parse = ', committee4parse, '; indivOrEntityString = ' + indivOrEntityString, '; rowNum = ', rowNum, '; columnNum = ', columnNum);
+
+    }
   }
-
   fse.writeFileSync(committeesJson[committee4parse].htmlDataPath, JSON.stringify(data_html_json, null, ' '), fsOptions);
-
 };
 
 // str.replace(/str[123]|etc/, replaceCallback);
