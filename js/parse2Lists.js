@@ -94,8 +94,8 @@ var start = function () {
       function (callback) {
         if (committeesArray) {
           committeesArray.forEach(function (committeeParam) {
-            committee4parse = committeeParam;
-            parse2ListsCommittee(committee4parse);
+           // committee4parse = committeeParam;
+            parse2ListsCommittee(committeeParam);
           });
         } else {
           utilities_aq_viz.throwCustomError();
@@ -111,21 +111,6 @@ var start = function () {
     });
 };
 
-/*
- var parse2Lists = function () {
- committeesJson = committees.getCommitteesJson();
-
- var committeesArray = appConfig.getCommitteesArray();
- committeesArray.forEach(function (committee) {
- try {
- parse2ListsCommittee(committee);
- } catch (err) {
- logger.error('\n ', __filename, 'line', __line, '; Error: ', err, utilities_aq_viz.getStackTrace(err));
- }
- });
- };
- */
-
 var parse2ListsCommittee = function (committeeParam) {
   if (!committeesJson) {
     throw {
@@ -133,10 +118,10 @@ var parse2ListsCommittee = function (committeeParam) {
       message: 'committeesJson is null or undefined'
     };
   }
-  committee = committee4parse || committeeParam;
+  committee4parse = committeeParam;
   var functionCount = 0;
   if (true) {
-    logger.debug('\n ', __filename, __line, '; running parse2ListsCommittee; committee = ', committee);
+    logger.debug('\n ', __filename, __line, '; running parse2ListsCommittee; committeeParam = ', committeeParam);
   }
   async.series([
 
@@ -147,10 +132,10 @@ var parse2ListsCommittee = function (committeeParam) {
       // parse the list file, extract ids, file names etc. and put into narrativeUrlsArray json array
       // write as local file: individualsLocalOutputFileNameAndPath = __dirname + '/../data/narrative_lists/individuals_associated_with_Al-Qaida.json';
       function (callback) {
-
         if (consoleLog) {
           logger.debug('\n ', __filename, __line, '; function 1#:', ++functionCount, '; collect the two list files for sanctioned individuals and entities; committee = ', committee);
         }
+        // data_html_json.nodes will be derived from the narratives; later we will sync with data_html_json nodes.
         data_html_json.nodes = [];
         if (!useLocalListFiles) {
           // 1 of 2: list of individuals
@@ -209,7 +194,7 @@ var parse2ListsCommittee = function (committeeParam) {
         if (data_html_json) {
           // var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'data_html-parse2-L' + __line + '-collectedLinks.json';
           utilities_aq_viz.stringifyAndWriteJsonDataFile(data_html_json, committeesJson[committee4parse].writeJsonOutputDebuggingDirectory + 'data_html-parse2-L' + __line + '-readOrCollectedNarrListsHtml.json');
-          utilities_aq_viz.stringifyAndWriteJsonDataFile(data_html_json, committeesJson[committee4parse].htmlDataPath);
+          utilities_aq_viz.stringifyAndWriteJsonDataFile(data_narr, committeesJson[committee4parse].htmlDataPath);
         }
         callback();
       }
@@ -244,10 +229,10 @@ var parse2ListsCommittee = function (committeeParam) {
       // write intermediate data file for debugging
       function
         (callback) {
-        if (data_html_json) {
+        if (data_narr) {
           // var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'data_html-parse2-L' + __line + '-collectedLinks.json';
-          utilities_aq_viz.stringifyAndWriteJsonDataFile(data_html_json, committeesJson[committee4parse].writeJsonOutputDebuggingDirectory + 'data_html-parse2-L' + __line + '-syncParseHtmlListPage.json');
-          utilities_aq_viz.stringifyAndWriteJsonDataFile(data_html_json, committeesJson[committee4parse].htmlDataPath);
+          utilities_aq_viz.stringifyAndWriteJsonDataFile(data_narr, committeesJson[committee4parse].writeJsonOutputDebuggingDirectory + 'data_html-parse2-L' + __line + '-syncParseHtmlListPage.json');
+          utilities_aq_viz.stringifyAndWriteJsonDataFile(data_narr, committeesJson[committee4parse].htmlDataPath);
         }
         callback();
       }
@@ -257,24 +242,24 @@ var parse2ListsCommittee = function (committeeParam) {
       // create nodes
       // using filenames previously extracted from the two list files, download each narrative file from the UN web site and save to local file
       // if a target node id does not exist in the node ids set, create a node.
-      // using 'narrativeFileName' from the data_html_json file, parse the narratives
-      // read each narrative file from local storage using 'narrativeFileName' from the data_html_json file
+      // using 'narrativeFileName' from the data_narr file, parse the narratives
+      // read each narrative file from local storage using 'narrativeFileName' from the data_narr file
       // parse the narratives
       // narrative file names must have 10 characters, not counting the '.shtml' extension
-      // using file names extracted from the two list files and organized in the data_html_json2.json file, download each narrative file from the UN web site and save to local file
+      // using file names extracted from the two list files and organized in the data_narr2.json file, download each narrative file from the UN web site and save to local file
       // if a target node id does not exist create a node.
-      // using 'narrativeFileName' from the data_html_json file, parse the narratives
+      // using 'narrativeFileName' from the data_narr file, parse the narratives
       function (callback) {
         logger.debug(__filename, 'line', __line, '; function #:', ++functionCount, '; useLocalNarrativeFiles = ', useLocalNarrativeFiles);
         // do we want to parse files freshly downloaded from the Internet or use locally stored files?
         // if useLocalNarrativeFiles === true, we will not download all the narrative files; use locally stored copies instead.
         if (!useLocalNarrativeFiles) {
           var narrative, nodeNarrFileName, trimmedNarrative, trimmedLabeledNarrative; //, writeNarrativesFilePath;
-          // read the data_html_json file; each node has a narrativeFileName property
-          data_html_json = JSON.parse(fse.readFileSync(committeesJson[committee4parse].htmlDataPath, fsOptions));
+          // read the data_narr file; each node has a narrativeFileName property
+          data_narr = JSON.parse(fse.readFileSync(committeesJson[committee4parse].htmlDataPath, fsOptions));
           var node;
-          for (var nodeCounter = 0; nodeCounter < data_html_json.nodes.length; nodeCounter++) {
-            node = data_html_json.nodes[nodeCounter];
+          for (var nodeCounter = 0; nodeCounter < data_narr.nodes.length; nodeCounter++) {
+            node = data_narr.nodes[nodeCounter];
             nodeNarrFileName = node.narrativeFileName;
             url = 'http://www.un.org/sc/committees/' + committee + '/' + nodeNarrFileName;
             try {
@@ -304,16 +289,16 @@ var parse2ListsCommittee = function (committeeParam) {
       //  var addConnectionIdsArrayFromNarrative = function (node, narrative) {
       //  callback();
       // },
-      // read each narrative file from local storage using 'narrativeFileName' from the data_html_json file
+      // read each narrative file from local storage using 'narrativeFileName' from the data_narr file
       // parse the narratives
 
       function (callback) {
         var narrative, link, nodes, node, nodeNarrFileName;
         logger.debug(__filename, 'line', __line, '; function #:', ++functionCount, '; ');
-        // read the data_html_json file; each node has a narrativeFileName property
-        data_html_json = JSON.parse(fse.readFileSync(committeesJson[committee4parse].htmlDataPath, fsOptions));
-        // var links = data_html_json.nodes;
-        nodes = data_html_json.nodes;
+        // read the data_narr file; each node has a narrativeFileName property
+        data_narr = JSON.parse(fse.readFileSync(committeesJson[committee4parse].htmlDataPath, fsOptions));
+        // var links = data_narr.nodes;
+        nodes = data_narr.nodes;
         for (var nodeCounter = 0; nodeCounter < nodes.length; nodeCounter++) {
           node = nodes[nodeCounter];
           node.linksFromNarrArray = [];
@@ -342,43 +327,43 @@ var parse2ListsCommittee = function (committeeParam) {
 
       ,
 
-      // write intermediate data_html_json file for debugging
+      // write intermediate data_narr file for debugging
       function
         (callback) {
-        // var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'data_html_json_html-parse2-L' + __line + '-collectedLinks.json';
-        utilities_aq_viz.stringifyAndWriteJsonDataFile(data_html_json, committeesJson[committee4parse].writeJsonOutputDebuggingDirectory + 'data_html-parse2-L' + __line + '-message.json');
-        utilities_aq_viz.stringifyAndWriteJsonDataFile(data_html_json, committeesJson[committee4parse].htmlDataPath);
+        // var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'data_narr_html-parse2-L' + __line + '-collectedLinks.json';
+        utilities_aq_viz.stringifyAndWriteJsonDataFile(data_narr, committeesJson[committee4parse].writeJsonOutputDebuggingDirectory + 'data_html-parse2-L' + __line + '-message.json');
+        utilities_aq_viz.stringifyAndWriteJsonDataFile(data_narr, committeesJson[committee4parse].htmlDataPath);
         callback();
       }
 
       ,
 
       function (callback) {
-        // read data_html_json json file
+        // read data_narr json file
         // committeesJson[committee4parse].htmlDataPath = __dirname + '/../data/committees/' + committee + '/data2.json';
         // var configJsonFileName = __dirname + '/../data/config/config.json';
         var buffer = fse.readFileSync(committeesJson[committee4parse].htmlDataPath, fsOptions);
-        data_html_json = JSON.parse(buffer);
-        // validateNodeIds(data_html_json);
+        data_narr = JSON.parse(buffer);
+        // validateNodeIds(data_narr);
         addPairedIdsToNodes();
 //        addPairedIdsToLinks();
         addSourceTargetObjectsToLinks();
-        sortSourceTargetIds(data_html_json.links);
-        //  sortArrayOfPairedIds(data_html_json.links);
+        sortSourceTargetIds(data_narr.links);
+        //  sortArrayOfPairedIds(data_narr.links);
 
-        logger.debug(__filename, 'line', __line, '; data_html_json.links.length = ', data_html_json.links.length);
+        logger.debug(__filename, 'line', __line, '; data_narr.links.length = ', data_narr.links.length);
 
         callback();
       }
 
       ,
 
-      // write intermediate data_html_json file for debugging
+      // write intermediate data_narr file for debugging
       function (callback) {
-        if (data_html_json) {
+        if (data_narr) {
           // var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'data_html-parse2-L' + __line + '-collectedLinks.json';
-          utilities_aq_viz.stringifyAndWriteJsonDataFile(data_html_json, committeesJson[committee4parse].writeJsonOutputDebuggingDirectory + 'data_html-parse2-L' + __line + '-message.json');
-          utilities_aq_viz.stringifyAndWriteJsonDataFile(data_html_json, committeesJson[committee4parse].htmlDataPath);
+          utilities_aq_viz.stringifyAndWriteJsonDataFile(data_narr, committeesJson[committee4parse].writeJsonOutputDebuggingDirectory + 'data_html-parse2-L' + __line + '-message.json');
+          utilities_aq_viz.stringifyAndWriteJsonDataFile(data_narr, committeesJson[committee4parse].htmlDataPath);
         }
         callback();
       }
@@ -386,7 +371,7 @@ var parse2ListsCommittee = function (committeeParam) {
       ,
       /*
        function (callback) {
-       // read data_html_json json file
+       // read data_narr json file
        // committeesJson[committee4parse].htmlDataPath = __dirname + '/../data/committees/' + committee + '/data2.json';
        // var configJsonFileName = __dirname + '/../data/config/config.json';
        var buffer = fse.readFileSync(committeesJson[committee4parse].htmlDataPath, fsOptions);
@@ -416,12 +401,12 @@ var parse2ListsCommittee = function (committeeParam) {
        callback();
        },
        */
-      // write intermediate data_html_json file for debugging
+      // write intermediate data_narr file for debugging
       function (callback) {
-        if (data_html_json) {
+        if (data_narr) {
           // var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'data_html-parse2-L' + __line + '-collectedLinks.json';
-          utilities_aq_viz.stringifyAndWriteJsonDataFile(data_html_json, committeesJson[committee4parse].writeJsonOutputDebuggingDirectory + 'data_html-parse2-L' + __line + '-message.json');
-          utilities_aq_viz.stringifyAndWriteJsonDataFile(data_html_json, committeesJson[committee4parse].htmlDataPath);
+          utilities_aq_viz.stringifyAndWriteJsonDataFile(data_narr, committeesJson[committee4parse].writeJsonOutputDebuggingDirectory + 'data_html-parse2-L' + __line + '-message.json');
+          utilities_aq_viz.stringifyAndWriteJsonDataFile(data_narr, committeesJson[committee4parse].htmlDataPath);
         }
         callback();
       }
@@ -435,12 +420,12 @@ var parse2ListsCommittee = function (committeeParam) {
 
         var linkString, link1, link0;
         var link;
-        // read the data_html_json file; each node has a narrativeFileName property
-        data_html_json = JSON.parse(fse.readFileSync(committeesJson[committee4parse].htmlDataPath, fsOptions));
-        // validateNodeIds(data_html_json);
+        // read the data_narr file; each node has a narrativeFileName property
+        data_narr = JSON.parse(fse.readFileSync(committeesJson[committee4parse].htmlDataPath, fsOptions));
+        // validateNodeIds(data_narr);
 
         linkString = "strict graph 1267 {\n";
-        var links = data_html_json.links;
+        var links = data_narr.links;
         for (var linkCounter = 0; linkCounter < links.length; linkCounter++) {
           link = links[linkCounter];
 
@@ -464,18 +449,18 @@ var parse2ListsCommittee = function (committeeParam) {
 
       function (callback) {
         logger.debug(__filename, 'line', __line, '; function #:', ++functionCount);
-        validateNodeIds(data_html_json);
+        validateNodeIds(data_narr);
         callback();
       }
 
       ,
 
-      // write intermediate data_html_json file for debugging
+      // write intermediate data_narr file for debugging
       function (callback) {
-        if (data_html_json) {
+        if (data_narr) {
           // var writeJsonPathAndFileName = committeesJson[committee4parse].writeJsonOutputDebuggingDirectory + 'data_html-parse2-L' + __line + '-collectedLinks.json';
-          utilities_aq_viz.stringifyAndWriteJsonDataFile(data_html_json, committeesJson[committee4parse].writeJsonOutputDebuggingDirectory + 'data_html-parse2-L' + __line + '-message.json');
-          utilities_aq_viz.stringifyAndWriteJsonDataFile(data_html_json, committeesJson[committee4parse].htmlDataPath);
+          utilities_aq_viz.stringifyAndWriteJsonDataFile(data_narr, committeesJson[committee4parse].writeJsonOutputDebuggingDirectory + 'data_html-parse2-L' + __line + '-message.json');
+          utilities_aq_viz.stringifyAndWriteJsonDataFile(data_narr, committeesJson[committee4parse].htmlDataPath);
         }
         callback();
       }
@@ -485,13 +470,13 @@ var parse2ListsCommittee = function (committeeParam) {
       // summarize output
       // compare number of comment links to number of narrative links
       function (callback) {
-        validateNodeIds(data_html_json);
+        validateNodeIds(data_narr);
         // committeesJson[committee4parse].htmlDataPath = __dirname + '/../data/committees/' + committee + '/data2.json';
-        // var configJsonFileName = __dirname + '/../data_html_json/config/config.json';
+        // var configJsonFileName = __dirname + '/../data_narr/config/config.json';
         var buffer = fse.readFileSync(committeesJson[committee4parse].htmlDataPath, fsOptions);
-        data_html_json = JSON.parse(buffer);
-        logger.debug(__filename, 'line', __line, '; data_html_json.nodes.length = ', data_html_json.nodes.length);
-        logger.debug(__filename, 'line', __line, '; data_html_json.links.length = ', data_html_json.links.length);
+        data_narr = JSON.parse(buffer);
+        logger.debug(__filename, 'line', __line, '; data_narr.nodes.length = ', data_narr.nodes.length);
+        logger.debug(__filename, 'line', __line, '; data_narr.links.length = ', data_narr.links.length);
         callback();
       }
 
@@ -500,18 +485,18 @@ var parse2ListsCommittee = function (committeeParam) {
       // count links; add linkcount to nodes
       function (callback) {
         logger.debug(__filename, 'line', __line, '; function #:', ++functionCount);
-        data_html_json = utilities_aq_viz.countLinks(data_html_json);
+        data_narr = utilities_aq_viz.countLinks(data_narr);
         callback();
       }
 
       ,
 
-      // write intermediate data_html_json file for debugging
+      // write intermediate data_narr file for debugging
       function
         (callback) {
-        if (data_html_json) {
-          utilities_aq_viz.stringifyAndWriteJsonDataFile(data_html_json, committeesJson[committee4parse].writeJsonOutputDebuggingDirectory + 'data_html-parse2-L' + __line + '-summarize_output.json');
-          utilities_aq_viz.stringifyAndWriteJsonDataFile(data_html_json, committeesJson[committee4parse].htmlDataPath);
+        if (data_narr) {
+          utilities_aq_viz.stringifyAndWriteJsonDataFile(data_narr, committeesJson[committee4parse].writeJsonOutputDebuggingDirectory + 'data_html-parse2-L' + __line + '-summarize_output.json');
+          utilities_aq_viz.stringifyAndWriteJsonDataFile(data_narr, committeesJson[committee4parse].htmlDataPath);
         }
         callback();
       }
@@ -526,7 +511,7 @@ var parse2ListsCommittee = function (committeeParam) {
   ;
 };
 
-var validateNodeIds = function (data_html_json) {
+var validateNodeIds = function (data_narr) {
   if (!committeesJson) {
     throw {
       name: 'committeesJsonMissing',
@@ -534,8 +519,8 @@ var validateNodeIds = function (data_html_json) {
     };
   }
   var nodeMap = new Map();
-  if (data_html_json && data_html_json.nodes) {
-    (data_html_json.nodes).forEach(function (node) {
+  if (data_narr && data_narr.nodes) {
+    (data_narr.nodes).forEach(function (node) {
       if (!node.id) {
         logger.error(__filename, 'line', __line, '; node.id is missing');
         /*
@@ -554,13 +539,13 @@ var validateNodeIds = function (data_html_json) {
     logger.error(__filename, 'line', __line, ' Error: ', err);
   }
   var link;
-  for (var linkCounter = 0; linkCounter < data_html_json.links.length; linkCounter++) {
-    link = data_html_json.links[linkCounter];
+  for (var linkCounter = 0; linkCounter < data_narr.links.length; linkCounter++) {
+    link = data_narr.links[linkCounter];
     var linkSource = link.source;
     var linkTarget = link.target;
     if (!nodeMap.get(link.source) || (!nodeMap.get(link.target))) {
       if (linkCounter > -1) {
-        data_html_json.links.splice(linkCounter, 1);
+        data_narr.links.splice(linkCounter, 1);
       }
       console.log('Error, missing node source or target: ', linkSource, linkTarget);
     }
@@ -569,7 +554,7 @@ var validateNodeIds = function (data_html_json) {
 
 // parse each of the html narrative list files
 // put the file names of the html narratives into variable name ?
-// write to json file: narrativeUrlsArrayLocalFileNameAndPath -> data_html_json
+// write to json file: narrativeUrlsArrayLocalFileNameAndPath -> data_narr
 // create a narrLink object and set properties:
 // narrLink.indivOrEntityString = indivOrEntityString;
 // narrLink.rowNum = i;
@@ -641,10 +626,10 @@ var syncParseHtmlListPage = function (htmlString, indivOrEntityString) {
 
   logger.debug(__filename, ' line ', __line, '; running syncParseHtmlListPage (htmlString = ', htmlString.substring(0, 100), ', indivOrEntityString = ', indivOrEntityString, ')');
 
-  if (data_html_json.nodes) {
-    nodes = data_html_json.nodes;
+  if (data_narr.nodes) {
+    nodes = data_narr.nodes;
   } else {
-    logger.error(__filename, ' line ', __line, '; Error: data_html_json.nodes not defined');
+    logger.error(__filename, ' line ', __line, '; Error: data_narr.nodes not defined');
   }
 
   // re 'handler', see the following lines below:
@@ -800,11 +785,11 @@ var syncParseHtmlListPage = function (htmlString, indivOrEntityString) {
         }
         node.indivOrEntityString = indivOrEntityString;
         node.rowNum = rowNum;
-        if (data_html_json.nodes) { // } && (data_html_json.nodes.length + 1)) {
+        if (data_narr.nodes) { // } && (data_narr.nodes.length + 1)) {
           node.urlNum = nodes.length + 1;
-          data_html_json.nodes.push(node);
+          data_narr.nodes.push(node);
         } else {
-          logger.error(__filename, 'line', __line, '; Error: ', err, '; data_html_json.nodes = ', data_html_json.nodes, '; data_html_json.nodes.length = ', data_html_json.nodes.length);
+          logger.error(__filename, 'line', __line, '; Error: ', err, '; data_narr.nodes = ', data_narr.nodes, '; data_narr.nodes.length = ', data_narr.nodes.length);
         }
 
       }
@@ -830,17 +815,15 @@ var syncParseHtmlListPage = function (htmlString, indivOrEntityString) {
       logger.error(__filename, ' line ', __line, 'Error: htmlString is undefined');
     }
 
-//    fse.writeFileSync(committeesJson[committee4parse].htmlDataPath, JSON.stringify(data_html_json, null, ' '), fsOptions);
+//    fse.writeFileSync(committeesJson[committee4parse].htmlDataPath, JSON.stringify(data_narr, null, ' '), fsOptions);
   } catch (err) {
     if (err) {
-
-//      logger.error(__filename, ' line ', __line, 'Error: ', err, '; committee4parse = ', committee4parse, '; indivOrEntityString = ' + indivOrEntityString, ';\n', utilities_aq_viz.getStackTrace(err), '; rowNum = ', rowNum, '; columnNum = ', columnNum);
 
             logger.error(__filename, ' line ', __line, 'Error: ', err, '; committee4parse = ', committee4parse, '; indivOrEntityString = ' + indivOrEntityString, '; rowNum = ', rowNum, '; columnNum = ', columnNum);
 
     }
   }
-  fse.writeFileSync(committeesJson[committee4parse].htmlDataPath, JSON.stringify(data_html_json, null, ' '), fsOptions);
+  fse.writeFileSync(committeesJson[committee4parse].htmlDataPath, JSON.stringify(data_narr, null, ' '), fsOptions);
 };
 
 // str.replace(/str[123]|etc/, replaceCallback);
@@ -848,13 +831,7 @@ var syncParseHtmlListPage = function (htmlString, indivOrEntityString) {
 // and this callback function:
 var replaceCallback = function (match) {
   return match.toLowerCase();
-  /*
-   var lookup = {"<TABLE": "<table", "<TR": "<tr", "<TD": "<td","<P": "<p", "<HREF": "<href", "<A": "<a" };
-   if (lookup[match])
-   return lookup[match];
-   else
-   return match;
-   */
+
 };
 
 // table tr td p a HREF need to be lower case
@@ -1013,7 +990,6 @@ var addConnectionIdsArrayFromComments = function (nodes) {
 };
 
 var addConnectionIdsArrayFromNarrative = function (node, narrative) {
-  // ar nodeNarrFileName;
   var nodeNarrFileName = node.narrativeFileName;
   var linkRegexMatch;
   // var narrFileName;
@@ -1097,7 +1073,7 @@ var addConnectionIdsArrayFromNarrative = function (node, narrative) {
  sort the values
  */
 var addPairedIdsToNodes = function () {
-  var nodes = data_html_json.nodes;
+  var nodes = data_narr.nodes;
   var pairedNodeIds;
   var concatenatedPairedIds;
   nodes.forEach(function (node) {
@@ -1116,8 +1092,8 @@ var addPairedIdsToNodes = function () {
           if (node.pairedNodeIdsFromNarrativeSet.add(concatenatedPairedIds)) {
             node.pairedNodeIdsFromNarrative.push(pairedNodeIds);
           }
-//          if (data_html_json.linkSet.add(pairedNodeIds)) {
-          //           data_html_json.links.push(pairedNodeIds);
+//          if (data_narr.linkSet.add(pairedNodeIds)) {
+          //           data_narr.links.push(pairedNodeIds);
           //         }
         }
         if (consoleLog) {
@@ -1132,17 +1108,15 @@ var addPairedIdsToNodes = function () {
 };
 
 var addSourceTargetObjectsToLinks = function () {
-  var nodes = data_html_json.nodes;
-  data_html_json.linkSet = data_html_json.linkSet || new Set();
+ // var nodes = data_narr.nodes;
+  data_narr.linkSet = data_narr.linkSet || new Set();
   var concatenatedPairedIds;
-  data_html_json.links = data_html_json.links || [];
-  var linkSet = data_html_json.linkSet;
+  data_narr.links = data_narr.links || [];
+  // var linkSet = data_narr.linkSet;
   var pairedNodeIds;
   var sourceTargetObject;
-
-  if (nodes) {
-
-    nodes.forEach(function (node) {
+  if (data_narr.nodes) {
+    data_narr.nodes.forEach(function (node) {
         if (node && node.pairedNodeIdsFromNarrative && node.pairedNodeIdsFromNarrative.length > 0) {
           for (var pairedIdCounter = 0; pairedIdCounter < node.pairedNodeIdsFromNarrative.length; pairedIdCounter++) {
             pairedNodeIds = node.pairedNodeIdsFromNarrative[pairedIdCounter];
@@ -1153,10 +1127,14 @@ var addSourceTargetObjectsToLinks = function () {
               sourceTargetObject = {};
               sourceTargetObject.source = fixIdCase(pairedNodeIds[0]);
               sourceTargetObject.target = fixIdCase(pairedNodeIds[1]);
+              // var xSet = new Set();
 
-              if (concatenatedPairedIds && linkSet && linkSet.add(concatenatedPairedIds)) {
+//var y = xSet.add(concatenatedPairedIds);
+              if (concatenatedPairedIds && data_narr.linkSet && data_narr.linkSet.add(concatenatedPairedIds)) {
 
-                (data_html_json.links).push(sourceTargetObject);
+//                var x = linkSet.add(concatenatedPairedIds)
+
+                (data_narr.links).push(sourceTargetObject);
 
               } else {
                 logger.debug(__filename, 'line', __line, '; linkSet.add(concatenatedPairedIds) = ', linkSet.add(concatenatedPairedIds));
@@ -1170,11 +1148,11 @@ var addSourceTargetObjectsToLinks = function () {
 };
 
 var addPairedIdsToLinks = function () {
-  var nodes = data_html_json.nodes;
-  data_html_json.linkSet = data_html_json.linkSet || new Set();
+  var nodes = data_narr.nodes;
+  data_narr.linkSet = data_narr.linkSet || new Set();
   var concatenatedPairedIds;
-  data_html_json.links = data_html_json.links || [];
-  var linkSet = data_html_json.linkSet;
+  data_narr.links = data_narr.links || [];
+  // var linkSet = data_narr.linkSet;
   var pairedNodeIds;
   if (nodes) {
     nodes.forEach(function (node) {
@@ -1184,10 +1162,10 @@ var addPairedIdsToLinks = function () {
             if (pairedNodeIds && pairedNodeIds[0] && pairedNodeIds[1]) {
               concatenatedPairedIds = fixIdCase(pairedNodeIds[0]) + pairedNodeIds[1];
 
-              if (concatenatedPairedIds && linkSet && linkSet.add(concatenatedPairedIds)) {
-                (data_html_json.links).push(pairedNodeIds);
+              if (concatenatedPairedIds && data_narr.linkSet && data_narr.linkSet.add(concatenatedPairedIds)) {
+                (data_narr.links).push(pairedNodeIds);
               } else {
-                logger.debug(__filename, 'line', __line, '; linkSet.add(concatenatedPairedIds) = ', linkSet.add(concatenatedPairedIds));
+                logger.debug(__filename, 'line', __line, '; data_narr.linkSet.add(concatenatedPairedIds) = ', data_narr.linkSet.add(concatenatedPairedIds));
               }
             }
           }
@@ -1277,40 +1255,40 @@ var createNationality = function (nodes) {
 
 // consolidate links from comments; remove duplicates, BUT DOES IT REALLY?
 // create a top-level array of links containing a source and target
-var consolidateLinksFromComments = function (data_html_json) {
-  // if (consoleLog) { logger.debug( __filename, 'line',__line, '; data_html_json = ', data_html_json);
+var consolidateLinksFromComments = function (data_narr) {
+  // if (consoleLog) { logger.debug( __filename, 'line',__line, '; data_narr = ', data_narr);
   if (consoleLog) {
-    logger.debug(__filename, 'line', __line, '; data_html_json.nodes[0] = ', data_html_json.nodes[0]);
-    logger.debug(__filename, 'line', __line, '; data_html_json.nodes[1] = ', data_html_json.nodes[1]);
+    logger.debug(__filename, 'line', __line, '; data_narr.nodes[0] = ', data_narr.nodes[0]);
+    logger.debug(__filename, 'line', __line, '; data_narr.nodes[1] = ', data_narr.nodes[1]);
   }
-//  data_html_json.links = [];
+//  data_narr.links = [];
   var linksSet = new Set();
   // var linksMap = new Map();
   // var mapCounter = 1;
   var connectionObjectsFromCommentsCount = 0;
-  (data_html_json.nodes).forEach(function (node) {
+  (data_narr.nodes).forEach(function (node) {
     if ((typeof node.connectionObjectsFromComments !== 'undefined') && (typeof node.connectionObjectsFromComments.length !== 'undefined') && (node.connectionObjectsFromComments.length > 0)) {
       connectionObjectsFromCommentsCount = connectionObjectsFromCommentsCount + node.connectionObjectsFromComments.length;
       node.connectionObjectsFromComments.forEach(function (conn) {
         if (conn && linksSet.add(conn) === true) {
-          data_html_json.links.push(conn);
+          data_narr.links.push(conn);
         }
       });
     }
   });
-  data_html_json.comments.links = data_html_json.links;
+  data_narr.comments.links = data_narr.links;
   if (consoleLog) {
     logger.debug(__filename, 'line', __line, '; connectionObjectsFromCommentsCount = ', connectionObjectsFromCommentsCount, '; linksSet.count = ', linksSet.count);
   }
-  // linksSet = null;
+
 };
 
 // consolidate links from narratives; remove duplicates, BUT DOES IT REALLY?
 // create a top-level array of links containing a source and target
-var consolidateLinks = function (data_html_json) {
-  // if (consoleLog) { logger.debug( __filename, 'line',__line, '; data_html_json = ', data_html_json);
-//  data_html_json.links = [];
-  var nodes = data_html_json.nodes;
+var consolidateLinks = function (data_narr) {
+  // if (consoleLog) { logger.debug( __filename, 'line',__line, '; data_narr = ', data_narr);
+//  data_narr.links = [];
+  var nodes = data_narr.nodes;
   var linksNarrSet = new Set();
   // var linksMap = new Map();
   // var mapCounter = 1;
@@ -1320,25 +1298,23 @@ var consolidateLinks = function (data_html_json) {
       connectionObjectsFromNarrativesCount = connectionObjectsFromNarrativesCount + node.connectionObjectsFromNarrative.length;
       node.connectionObjectsFromNarrative.forEach(function (conn) {
         if (conn && linksNarrSet.add(conn) === true) {
-          data_html_json.links.push(conn);
+          data_narr.links.push(conn);
         }
       });
 // node.linkCount = node.connectionObjectsFromNarrative.length;
     }
   });
-//  data_html_json.links = data_html_json.links;
-  // data_html_json.comments.links = data_html_json.links;
+
   if (consoleLog) {
     logger.debug(__filename, 'line', __line, '; connectionObjectsFromNarrativesCount = ', connectionObjectsFromNarrativesCount, '; linksNarrSet.count = ', linksNarrSet.count);
   }
-  // linksSet = null;
 };
 
 var checkNodeExistsById = function (nodeId) {
   var consoleLogValueToBeRestored = consoleLog;
   consoleLog = false;
   var nodeIdsSet = new StrSet();
-  nodes = data_html_json.nodes;
+  nodes = data_narr.nodes;
   nodes.forEach(function (node) {
     if (node.id) {
       nodeIdsSet.add(node.id);
@@ -1412,13 +1388,13 @@ var createIndivDateOfBirthString = function (d) {
 };
 
 var createDateGeneratedMessage = function () {
-  var dateListGeneratedString = data_html_json.dateGenerated;
+  var dateListGeneratedString = data_narr.dateGenerated;
   var dateListGenerated = new Date(dateListGeneratedString);
   dateFormat.masks.shortDate = 'mm-dd-yyyy';
   dateFormat.masks.friendly_display = 'dddd, mmmm dS, yyyy';
   generatedFileDateString = vizFormatDateSetup(dateListGenerated);
   var message = 'Collected consolidated.xml labeled as generated on: ' + dateListGeneratedString + ' [' + dateListGenerated + ']';
-  data_html_json.message = message;
+  data_narr.message = message;
   logger.debug([__filename, ' line ', __line + '; ', message].join(''));
 };
 
@@ -1466,14 +1442,6 @@ var getCleanId = function (referenceNumber) {
     logger.error(__filename, 'line', __line, '; Error: ', err, '; referenceNumber =', referenceNumber);
   }
 
-//  try {
-//    refNumRegexMatch = result3.match(/(Q[IE]\.[A-Z]\.\d{1,3}\.\d{2})/);
-  // logger.debug(__filename, 'line', __line, '; refNumRegexMatch =', refNumRegexMatch, '; referenceNumber = ', referenceNumber);
-//  } catch (err) {
-//    logger.error(__filename, 'line', __line, '; Error: ', err, '; referenceNumber =', referenceNumber, '; counter = ', counter);
-//  }
-  //return refNumRegexMatch[0].trim();
-
   return result4;
 };
 
@@ -1487,21 +1455,21 @@ var getKeys = function (pob) {
 };
 /*
  // count the unique links for each node
- var countLinks = function (data_html_json) {
+ var countLinks = function (data_narr) {
  var nodeCounter;
  // loop through each node
- data_html_json.nodes.forEach(function (node) {
+ data_narr.nodes.forEach(function (node) {
  nodeCounter = 0;
  // nodeCounter = 0;
  var keySet = new Set();
  var keyAdded1, keyAdded2;
  var linkConcatKey1, linkConcatKey2;
  // loop through each link
- data_html_json.links.forEach(function (link) {
+ data_narr.links.forEach(function (link) {
  // delete a link if source and target are the same
  if (link.source === link.target) {
- delete data_html_json.link;
- logger.debug(__filename, 'line', __line, 'deleted ', data_html_json.link, ' because link.source === link.target');
+ delete data_narr.link;
+ logger.debug(__filename, 'line', __line, 'deleted ', data_narr.link, ' because link.source === link.target');
  } else {
  // increment the link count if the node.id is either the link source or link target
  if (node.id === link.source || node.id === link.target) {
@@ -1679,22 +1647,11 @@ var vizFormatDateSetup = function (dateString) {
 
   var vizDateString = curr_date + ' ' + m_names[curr_month]
     + ' ' + curr_year;
-  // logger.debug('viz.js 947 vizFormatDate() dateString = ', dateString);
+
   return vizDateString.trim();
 };
-/*
- var writeMyFile = function (localFileNameAndPath, data_html_json, fsOptions) {
- try {
- fse.writeFileSync(localFileNameAndPath, data_html_json, fsOptions);
- } catch (err) {
- logger.error(__filename, 'line', __line, ' Error: ', err);
- }
- };
- */
+
 start();
 
-module.exports = {
-//  parse2Lists: parse2Lists
-};
 
 

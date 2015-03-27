@@ -26,7 +26,7 @@ var entitiesHtmlLocalOutputFileNameAndPath;
 var entitiesListUrl;
 var fse = require('fs-extra');
 var getCommitteesJson;
-var htmlDataPath;
+var narrDataPath;
 var individualsHtmlLocalOutputFileNameAndPath;
 var individualsListUrl;
 var init;
@@ -83,7 +83,7 @@ committeesArray.forEach(function (committeeParam) {
   committeesJson[committeeConfig].entitiesHtmlLocalOutputFileNameAndPath = entitiesHtmlLocalOutputFileNameAndPath;
   committeesJson[committeeConfig].entitiesJsonLocalOutputFileNameAndPath = entitiesJsonLocalOutputFileNameAndPath;
   committeesJson[committeeConfig].entitiesListUrl = entitiesListUrl;
-  committeesJson[committeeConfig].htmlDataPath = htmlDataPath;
+  committeesJson[committeeConfig].narrDataPath = narrDataPath;
   committeesJson[committeeConfig].individualsHtmlLocalOutputFileNameAndPath = individualsHtmlLocalOutputFileNameAndPath;
   committeesJson[committeeConfig].individualsJsonLocalOutputFileNameAndPath = individualsJsonLocalOutputFileNameAndPath;
   committeesJson[committeeConfig].individualsListUrl = individualsListUrl;
@@ -144,7 +144,7 @@ init = function (committeeParam) {
   // json files extracted from the xml list files
   xmlDataPath = __dirname + '/../data/committees/' + committeeConfig + '/data_xml.json';
   // json files of nodes extracted from the narratives
-  htmlDataPath = __dirname + '/../data/committees/' + committeeConfig + '/data_html.json';
+  narrDataPath = __dirname + '/../data/committees/' + committeeConfig + '/data_narr.json';
   mergedDataPath = __dirname + '/../data/committees/' + committeeConfig + '/data.json';
   individualsJsonLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committeeConfig + '/individuals.json';
   entitiesJsonLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committeeConfig + '/entities.json';

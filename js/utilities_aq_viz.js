@@ -429,6 +429,7 @@ module.exports = {
   stringifyAndWriteJsonDataFile: stringifyAndWriteJsonDataFile,
   syncWriteMyFile: syncWriteMyFile,
   testLogging: testLogging,
+  throwCustomError: throwCustomError,
   trimNarrative: trimNarrative,
   trimNarrative2: trimNarrative2,
   truncateToNumChars: truncateToNumChars,
