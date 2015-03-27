@@ -35,6 +35,7 @@ var logFileNameAndPath;
 var logger = appConfig.logger;
 var mergedDataPath;
 var missingNodesPathAndFileName;
+var narrativesUrlPath;
 var permRefNumEnt;
 var permRefNumIndiv;
 var readWriteLocalNarrativesFilePath;
@@ -59,50 +60,52 @@ getCommitteesJson = function (test) {
 
 };
 
-run = function() {
+run = function () {
 
 // getCommitteesJson = function () {
-committeesArray = appConfig.getCommitteesArray();
-committeesJson = {};
+  committeesArray = appConfig.getCommitteesArray();
+  committeesJson = {};
 
-committeesArray.forEach(function (committeeParam) {
-  //committeesJson.set(committee, {});
-  var committeeConfig = committeeParam;
-  committeesJson[committeeConfig] = {};
-  init(committeeConfig);
+  committeesArray.forEach(function (committeeParam) {
+    //committeesJson.set(committee, {});
+    var committeeConfig = committeeParam;
+    committeesJson[committeeConfig] = {};
+    init(committeeConfig);
 
-  // committeesJson[committee].consolidatedXmlListUrl = consolidatedXmlListUrl;
-  committeesJson[committeeConfig].backupRawXmlFilePathAndName = backupRawXmlFilePathAndName;
-  committeesJson[committeeConfig].backupRawXmlPath = backupRawXmlPath;
-  committeesJson[committeeConfig].committeeUrlPath = committeeUrlPath;
-  committeesJson[committeeConfig].committeeXmlListUrl = committeeXmlListUrl;
-  committeesJson[committeeConfig].committeesConfigJsonPathAndFileName = committeesConfigJsonPathAndFileName;
-  committeesJson[committeeConfig].consolidatedXmlListUrl = consolidatedXmlListUrl;
-  committeesJson[committeeConfig].dataJsonLocalOutputFileNameAndPath = dataJsonLocalOutputFileNameAndPath;
-  committeesJson[committeeConfig].dotFileLocalOutputFileNameAndPath = dotFileLocalOutputFileNameAndPath;
-  committeesJson[committeeConfig].entitiesHtmlLocalOutputFileNameAndPath = entitiesHtmlLocalOutputFileNameAndPath;
-  committeesJson[committeeConfig].entitiesJsonLocalOutputFileNameAndPath = entitiesJsonLocalOutputFileNameAndPath;
-  committeesJson[committeeConfig].entitiesListUrl = entitiesListUrl;
-  committeesJson[committeeConfig].narrDataPath = narrDataPath;
-  committeesJson[committeeConfig].individualsHtmlLocalOutputFileNameAndPath = individualsHtmlLocalOutputFileNameAndPath;
-  committeesJson[committeeConfig].individualsJsonLocalOutputFileNameAndPath = individualsJsonLocalOutputFileNameAndPath;
-  committeesJson[committeeConfig].individualsListUrl = individualsListUrl;
-  committeesJson[committeeConfig].logFileNameAndPath = logFileNameAndPath;
-  committeesJson[committeeConfig].mergedDataPath = mergedDataPath;
-  committeesJson[committeeConfig].missingNodesPathAndFileName = missingNodesPathAndFileName;
-  committeesJson[committeeConfig].readWriteLocalNarrativesFilePath = readWriteLocalNarrativesFilePath;
-  committeesJson[committeeConfig].subjectMatterAbbreviated = subjectMatterAbbreviated;
-  committeesJson[committeeConfig].writeJsonOutputDebuggingDirectory = writeJsonOutputDebuggingDirectory;
-  committeesJson[committeeConfig].xmlDataPath = xmlDataPath;
-  committeesJson[committeeConfig].xmlFileLocalStoragePathAndName = xmlFileLocalStoragePathAndName;
-  committeesJson[committeeConfig].combinedListUrl = combinedListUrl;  // Committee 1988
-  committeesJson[committeeConfig].combinedHtmlLocalOutputFileNameAndPath = combinedHtmlLocalOutputFileNameAndPath; // Committee 1988
+    // committeesJson[committee].consolidatedXmlListUrl = consolidatedXmlListUrl;
+    committeesJson[committeeConfig].backupRawXmlFilePathAndName = backupRawXmlFilePathAndName;
+    committeesJson[committeeConfig].backupRawXmlPath = backupRawXmlPath;
+    committeesJson[committeeConfig].committeeUrlPath = committeeUrlPath;
+    committeesJson[committeeConfig].committeeXmlListUrl = committeeXmlListUrl;
+    committeesJson[committeeConfig].committeesConfigJsonPathAndFileName = committeesConfigJsonPathAndFileName;
+    committeesJson[committeeConfig].consolidatedXmlListUrl = consolidatedXmlListUrl;
+    committeesJson[committeeConfig].dataJsonLocalOutputFileNameAndPath = dataJsonLocalOutputFileNameAndPath;
+    committeesJson[committeeConfig].dotFileLocalOutputFileNameAndPath = dotFileLocalOutputFileNameAndPath;
+    committeesJson[committeeConfig].entitiesHtmlLocalOutputFileNameAndPath = entitiesHtmlLocalOutputFileNameAndPath;
+    committeesJson[committeeConfig].entitiesJsonLocalOutputFileNameAndPath = entitiesJsonLocalOutputFileNameAndPath;
+    committeesJson[committeeConfig].entitiesListUrl = entitiesListUrl;
+    committeesJson[committeeConfig].narrDataPath = narrDataPath;
+    committeesJson[committeeConfig].individualsHtmlLocalOutputFileNameAndPath = individualsHtmlLocalOutputFileNameAndPath;
+    committeesJson[committeeConfig].individualsJsonLocalOutputFileNameAndPath = individualsJsonLocalOutputFileNameAndPath;
+    committeesJson[committeeConfig].individualsListUrl = individualsListUrl;
+    committeesJson[committeeConfig].logFileNameAndPath = logFileNameAndPath;
+    committeesJson[committeeConfig].mergedDataPath = mergedDataPath;
+    committeesJson[committeeConfig].missingNodesPathAndFileName = missingNodesPathAndFileName;
 
-});
-fse.writeFileSync(committeesConfigJsonPathAndFileName, JSON.stringify(committeesJson, null, ' '), fsOptions);
-return committeesJson;
-}
-;
+    committeesJson[committeeConfig].narrativesUrlPath = narrativesUrlPath;
+
+    committeesJson[committeeConfig].readWriteLocalNarrativesFilePath = readWriteLocalNarrativesFilePath;
+    committeesJson[committeeConfig].subjectMatterAbbreviated = subjectMatterAbbreviated;
+    committeesJson[committeeConfig].writeJsonOutputDebuggingDirectory = writeJsonOutputDebuggingDirectory;
+    committeesJson[committeeConfig].xmlDataPath = xmlDataPath;
+    committeesJson[committeeConfig].xmlFileLocalStoragePathAndName = xmlFileLocalStoragePathAndName;
+    committeesJson[committeeConfig].combinedListUrl = combinedListUrl;  // Committee 1988
+    committeesJson[committeeConfig].combinedHtmlLocalOutputFileNameAndPath = combinedHtmlLocalOutputFileNameAndPath; // Committee 1988
+
+  });
+  fse.writeFileSync(committeesConfigJsonPathAndFileName, JSON.stringify(committeesJson, null, ' '), fsOptions);
+  return committeesJson;
+};
 
 main = function () {
   var cj = getCommitteesJson();
@@ -137,8 +140,8 @@ init = function (committeeParam) {
   // local storage
   individualsHtmlLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committeeConfig + '/individuals.html';
   entitiesHtmlLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committeeConfig + '/entities.html';
+  narrativesUrlPath = 'http://www.un.org/sc/committees/' + committeeConfig + '/';
   readWriteLocalNarrativesFilePath = __dirname + '/../data/committees/' + committeeConfig + '/narratives/';
-
 
   // json files (local storage)
   // json files extracted from the xml list files
@@ -238,7 +241,7 @@ init = function (committeeParam) {
       subjectMatterAbbreviated = "Resolution 1591 (2005) concerning the Sudan";
       break;
     // Lebanon
-      // Committee 1636 has neither an individuals list or entities list
+    // Committee 1636 has neither an individuals list or entities list
     case '1636':
       individualsListUrl = false;
       entitiesListUrl = false;

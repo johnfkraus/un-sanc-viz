@@ -392,7 +392,8 @@ var collect = function (committee) {
         // var writeJsonPathAndFileName = ;
         utilities_aq_viz.stringifyAndWriteJsonDataFile(data_xml_json, committeesJson[committee].writeJsonOutputDebuggingDirectory + 'data_xml-collect-L' + __line + '-normzd_xml_list.json');
         utilities_aq_viz.stringifyAndWriteJsonDataFile(data_xml_json, committeesJson[committee].xmlDataPath);
-        utilities_aq_viz.stringifyAndWriteJsonDataFile(data_xml_json, committeesJson[committee].narrDataPath);
+        // save data as data_narr.json, to be read by parse2Lists.js
+//        utilities_aq_viz.stringifyAndWriteJsonDataFile(data_xml_json, committeesJson[committee].narrDataPath);
         callback();
       },
       function (callback) {

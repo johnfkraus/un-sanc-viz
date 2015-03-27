@@ -82,23 +82,23 @@ var countLines = function (textFile) {
 var errorPageReturned = function (inString) {
   var errorMessage;
 //  try {
-    var errorPageMessageString = inString.match('Error: Page Not Found');
-    if (!errorPageMessageString) {
-      return false;
-    } else {
-      return true;
-    }
+  var errorPageMessageString = inString.match('Error: Page Not Found');
+  if (!errorPageMessageString) {
+    return false;
+  } else {
+    return true;
+  }
 
-    if (errorPageMessageString) {
-      errorMessage = ([__filename, ' line ', __line, '; The server return a page containing ', errorPageMessageString].join());
-      return errorMessage;
-    } else {
-      return false;
-    }
+  if (errorPageMessageString) {
+    errorMessage = ([__filename, ' line ', __line, '; The server return a page containing ', errorPageMessageString].join());
+    return errorMessage;
+  } else {
+    return false;
+  }
 //  } catch (err) {
-    if (consoleLog) {
-      logger.error(__filename, 'line', __line, ';  Error: ', err, '; countLines(stringifiedData) = ', countLines(stringifiedData));
-    }
+  if (consoleLog) {
+    logger.error(__filename, 'line', __line, ';  Error: ', err, '; countLines(stringifiedData) = ', countLines(stringifiedData));
+  }
 //  }
 };
 
@@ -328,6 +328,7 @@ var truncateStringToFirstNumChars = function (inString, truncateToFirstNumChars)
   return ['; [TRUNCATED]:\n', inString.substring(0, truncateToFirstNumChars), ' ... [LOG OUTPUT INTENTIONALLY TRUNCATED TO FIRST ', truncateToFirstNumChars, ' CHARACTERS]\n'].join('');
 };
 
+/*
 // remove all CR, newline and tab characters from the narrative file
 // remove &nbsp;, all slanty apostrophes and quote marks
 // replace any occurrence of two or more space characters with one space character
@@ -341,15 +342,25 @@ function trimNarrative(narrWebPageString, url) {
   var narrative18 = narrative16.replace(/[^\x00-\x7F]/g, '');
   // extract main content from web page; omit head, footer, etc.
   var narrative19 = narrative18.replace(/(.*NARRATIVE SUMMARIES OF REASONS FOR LISTING<\/h3>)(.*?)(<!-- TemplateEndEditable.*)/mi, '$2');
-// special regex for NSQE00401E.shtml, AL QAIDA, narrative page.
+  // special regex for NSQE00401E.shtml, AL QAIDA, narrative page.
   var narrative35 = narrative19.replace(/(.*NARRATIVE SUMMARIES OF REASONS FOR LISTING<\/h3>)(.*?)(<\/div>\s*<div id="footer".*)/mi, '$2');
-// make hyperlink
+  // make hyperlink
   var narrative40 = narrative35.replace(/(<u>)(.*?)(<\/u>)/gmi, '<a href=\'' + url + '\' target=\'_blank\'>$1$2$3<\/a>');
-  var narrative50 = narrative40.replace(/[^\x00-\x7F]/g, '');
+  var narrative41 = narrative40.replace(/[^\x00-\x7F]/g, '');
+
+  var narrative42 = narrative41.replace(/(<p>In accordance with paragraph 14 of resolution 1844 (2008), the Security Council Committee pursuant to resolution 751 \(1992\) and 1907 \(2009\) concerning Somalia and Eritrea makes accessible a narrative summary of reasons for the listing for individuals and entities included on the 1844 Sanctions List\.<\/p>)/gmi, '');
+  var narrative43 = narrative42.replace(/(<p>In accordance with paragraph 1 \(b\) of the Guidelines for the application of paragraphs 19 and 23 of resolution 1483 \(2003\), the Security Council Committee established pursuant to resolution 1518 \(2003\) concerning Iraq makes accessible a narrative summary of reasons for the listing for individuals and entities included in the sanctions list\.<\/p>)/gmi, '');
+
+  var re = /(<p>In accordance with paragraph.*?sanctions list\.<\/p>)/gmi;
+  var subs = '';
+
+  var narrative50 = narrative43.replace(re, subs);
+
   var tail = narrative50.substring(narrative50.length - 120, narrative50.length);
   var tailOmitsChars = (narrative50.length - tail.length);
   return narrative50.trim();
 }
+*/
 
 // remove all CR, newline and tab characters from the narrative file
 // remove &nbsp;, all slanty apostrophes and quote marks
@@ -366,9 +377,20 @@ function trimNarrative2(narrWebPageString, url) {
   narrative = narrative.replace(/(.*NARRATIVE SUMMARIES OF REASONS FOR LISTING<\/h3>)(.*?)(<!-- TemplateEndEditable.*)/mi, '$2');
   // special regex for NSQE00401E.shtml, AL QAIDA, narrative page.
   narrative = narrative.replace(/(.*NARRATIVE SUMMARIES OF REASONS FOR LISTING<\/h3>)(.*?)(<\/div>\s*<div id="footer".*)/mi, '$2');
+
   // make hyperlink
   narrative = narrative.replace(/(<u>)(.*?)(<\/u>)/gmi, '<a href=\'' + url + '\' target=\'_blank\'>$1$2$3<\/a>');
   narrative = narrative.replace(/[^\x00-\x7F]/g, '');
+  narrative = narrative.replace(/(<h2> <\/h2>)/gmi, '');
+  narrative = narrative.replace(/(<p>  <\/p>)/gmi, '');
+
+  var narrative = narrative.replace(/(<p>In accordance with paragraph 14 of resolution 1844 (2008), the Security Council Committee pursuant to resolution 751 \(1992\) and 1907 \(2009\) concerning Somalia and Eritrea makes accessible a narrative summary of reasons for the listing for individuals and entities included on the 1844 Sanctions List\.<\/p>)/gmi, '');
+  var narrative = narrative.replace(/(<p>In accordance with paragraph 1 \(b\) of the Guidelines for the application of paragraphs 19 and 23 of resolution 1483 \(2003\), the Security Council Committee established pursuant to resolution 1518 \(2003\) concerning Iraq makes accessible a narrative summary of reasons for the listing for individuals and entities included in the sanctions list\.<\/p>)/gmi, '');
+
+  var re = /(<p>In accordance with paragraph.*?sanctions list\.<\/p>)/gmi;
+  var subs = '';
+  var narrative = narrative.replace(re, subs);
+
   var tail = narrative.substring(narrative.length - 120, narrative.length);
   var tailOmitsChars = (narrative.length - tail.length);
   return narrative.trim();
@@ -393,8 +415,7 @@ var showObjectProperties = function (object) {
   }
 };
 
-var throwCustomError = function(name, message)
-{
+var throwCustomError = function (name, message) {
   throw {
     name: name || 'customError',
     message: message || 'custom error thrown'
@@ -430,7 +451,7 @@ module.exports = {
   syncWriteMyFile: syncWriteMyFile,
   testLogging: testLogging,
   throwCustomError: throwCustomError,
-  trimNarrative: trimNarrative,
+  // trimNarrative: trimNarrative,
   trimNarrative2: trimNarrative2,
   truncateToNumChars: truncateToNumChars,
   validateUrl: validateUrl

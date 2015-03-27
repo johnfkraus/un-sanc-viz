@@ -2,7 +2,7 @@
 
 // skip downloading 300+ narrative files and use locally stored files instead; for debugging
 var useLocalListFiles = true;
-var useLocalNarrativeFiles = true;
+var useLocalNarrativeFiles = false;
 
 // RUN CONFIGURATION
 // skip downloading 300+ narrative files and use locally stored files instead; for debugging
@@ -24,7 +24,6 @@ var getCommitteesWithNoSeparateEntitiesList = function () {
 var getCommitteesWithNoSeparateIndividualsList = function () {
   return ['1636', '1988'];
 };
-
 
 var getCommitteesWithSingleCombinedEntitiesAndIndividualsList = function () {
   return ['1988'];
