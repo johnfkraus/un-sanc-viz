@@ -5,9 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d978abb8-9bbc-4846-80bc-cd786bfafc5b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/committees/1267/narratives/NSQDi063E.shtml" afterPath="$PROJECT_DIR$/data/committees/1267/narratives/NSQDi063E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/committees/1267/narratives/NSQDi274E.shtml" afterPath="$PROJECT_DIR$/data/committees/1267/narratives/NSQDi274E.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/committees/1267/narratives/NSQDi341E.shtml" afterPath="$PROJECT_DIR$/data/committees/1267/narratives/NSQDi341E.shtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/parse2Lists.js" afterPath="$PROJECT_DIR$/js/parse2Lists.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -33,45 +30,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="collect.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/collect.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="6898" max-vertical-offset="23443">
-              <caret line="396" column="2" selection-start-line="396" selection-start-column="2" selection-end-line="396" selection-end-column="2" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="parse2Lists.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="parse2Lists.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/parse2Lists.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.51934826" vertical-offset="19703" max-vertical-offset="29189">
-              <caret line="1139" column="0" selection-start-line="1139" selection-start-column="0" selection-end-line="1139" selection-end-column="0" />
+            <state vertical-scroll-proportion="1.5" vertical-offset="4595" max-vertical-offset="28934">
+              <caret line="268" column="0" selection-start-line="268" selection-start-column="0" selection-end-line="268" selection-end-column="0" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SOi003.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/committees/751/narratives/SOi003.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
-              <caret line="0" column="979" selection-start-line="0" selection-start-column="979" selection-end-line="0" selection-end-column="979" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NSQE11905E.shtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/committees/1267/narratives/NSQE11905E.shtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="n#style#0;n#iframe#0;n#noscript#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -80,8 +45,8 @@
       <file leaf-file-name="NSQI31313E.shtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/committees/1267/narratives/NSQI31313E.shtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="102">
+              <caret line="0" column="488" selection-start-line="0" selection-start-column="488" selection-end-line="0" selection-end-column="488" />
               <folding>
                 <element signature="n#style#0;n#iframe#0;n#noscript#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -89,11 +54,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="markup_beauty.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="markup_beauty.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/markup_beauty.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="48673" max-vertical-offset="49895">
-              <caret line="2839" column="34" selection-start-line="2839" selection-start-column="34" selection-end-line="2839" selection-end-column="34" />
+            <state vertical-scroll-proportion="0.33248731" vertical-offset="1178" max-vertical-offset="49912">
+              <caret line="77" column="13" selection-start-line="77" selection-start-column="4" selection-end-line="77" selection-end-column="13" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -114,7 +79,7 @@
       <file leaf-file-name="utilities_aq_viz.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/utilities_aq_viz.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="7429" max-vertical-offset="7905">
+            <state vertical-scroll-proportion="0.0" vertical-offset="7498" max-vertical-offset="7905">
               <caret line="434" column="0" selection-start-line="432" selection-start-column="0" selection-end-line="434" selection-end-column="0" />
               <folding />
             </state>
@@ -134,9 +99,34 @@
       <file leaf-file-name="committeesConfig.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/committeesConfig.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1445" max-vertical-offset="6171">
-              <caret line="86" column="44" selection-start-line="86" selection-start-column="36" selection-end-line="86" selection-end-column="44" />
+            <state vertical-scroll-proportion="-5.0384617" vertical-offset="2385" max-vertical-offset="6205">
+              <caret line="149" column="14" selection-start-line="149" selection-start-column="2" selection-end-line="149" selection-end-column="14" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="data_narr.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/committees/751/data_narr.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.769231" vertical-offset="527" max-vertical-offset="2040">
+              <caret line="49" column="4" selection-start-line="49" selection-start-column="4" selection-end-line="49" selection-end-column="4" />
+              <folding>
+                <marker date="1427558379661" expanded="true" signature="14:119" placeholder="{&quot;_es6Map&quot;: null...}" />
+                <marker date="1427558379661" expanded="true" signature="192:292" placeholder="{&quot;_es6Map&quot;: null...}" />
+                <marker date="1427558379661" expanded="true" signature="365:477" placeholder="{&quot;_es6Map&quot;: null...}" />
+                <marker date="1427558379661" expanded="true" signature="550:653" placeholder="{&quot;_es6Map&quot;: null...}" />
+                <marker date="1427558379661" expanded="true" signature="726:828" placeholder="{&quot;_es6Map&quot;: null...}" />
+                <marker date="1427558379661" expanded="true" signature="901:1005" placeholder="{&quot;_es6Map&quot;: null...}" />
+                <marker date="1427558379661" expanded="true" signature="1078:1181" placeholder="{&quot;_es6Map&quot;: null...}" />
+                <marker date="1427558379661" expanded="true" signature="1254:1353" placeholder="{&quot;_es6Map&quot;: null...}" />
+                <marker date="1427558379661" expanded="true" signature="1426:1520" placeholder="{&quot;_es6Map&quot;: null...}" />
+                <marker date="1427558379661" expanded="true" signature="1593:1694" placeholder="{&quot;_es6Map&quot;: null...}" />
+                <marker date="1427558379661" expanded="true" signature="1769:1873" placeholder="{&quot;_es6Map&quot;: null...}" />
+                <marker date="1427558379661" expanded="true" signature="1948:2044" placeholder="{&quot;_es6Map&quot;: null...}" />
+                <marker date="1427558379661" expanded="true" signature="2119:2214" placeholder="{&quot;_es6Map&quot;: null...}" />
+                <marker date="1427558379661" expanded="true" signature="2292:2411" placeholder="{&quot;_es6Map&quot;: null...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -319,6 +309,74 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="un-sanc-viz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="un-sanc-viz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="un-sanc-viz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="un-sanc-viz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="committees" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="un-sanc-viz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="un-sanc-viz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="committees" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="751" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="un-sanc-viz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="un-sanc-viz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="archives" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -357,7 +415,7 @@
       <recent name="C:\Users\User1\WebstormProjects\un-sanc-viz\data" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.markup_beauty.js">
+  <component name="RunManager" selected="Node.js.parse2Lists">
     <configuration default="false" name="nodeunit-reporters.js" type="MongoRunConfiguration" factoryName="Mongo" temporary="true">
       <setting name="path" value="$PROJECT_DIR$/js/nodeunit-reporters.js" />
       <setting name="shellParams" value="" />
@@ -533,6 +591,8 @@
     </configuration>
     <configuration default="false" name="markup_beauty.js" type="NodeJSConfigurationType" factoryName="Node.js" singleton="false" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="js/markup_beauty.js" working-dir="$PROJECT_DIR$">
       <browser url="http://localhost:63343/un-sanc-viz/index.html" />
+      <RunnerSettings RunnerId="debuggableProgram" />
+      <ConfigurationWrapper RunnerId="debuggableProgram" />
       <method />
     </configuration>
     <configuration default="false" name="nodeunit" type="NodeunitConfigurationType" factoryName="Nodeunit">
@@ -773,7 +833,13 @@
       <option name="project" value="LOCAL" />
       <updated>1427469346822</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="adding markup_beauty.js">
+      <created>1427556664323</created>
+      <option name="number" value="00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1427556664323</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -783,10 +849,11 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41447368" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Heroku" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32849604" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4118421" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4116095" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Code Review" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24967907" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -794,14 +861,13 @@
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991013" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2580231" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991013" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31973684" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32058048" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Get Gist" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3263158" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39473686" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -851,7 +917,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="run all the committees in series" />
     <MESSAGE value="added utilities method to show object properties" />
     <MESSAGE value="creating a set of paired nodes" />
     <MESSAGE value="1098 links" />
@@ -876,105 +941,71 @@
     <MESSAGE value="fixing parse2 errors" />
     <MESSAGE value="data_html_json becomes data_narr" />
     <MESSAGE value="parsing narratives for links" />
-    <option name="LAST_COMMIT_MESSAGE" value="parsing narratives for links" />
+    <MESSAGE value="adding markup_beauty.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding markup_beauty.js" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/parse2Lists.js</url>
-          <line>1141</line>
-          <option name="timeStamp" value="586" />
+          <line>265</line>
+          <option name="timeStamp" value="623" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/parse2Lists.js</url>
-          <line>1137</line>
-          <option name="timeStamp" value="588" />
+          <line>1126</line>
+          <option name="timeStamp" value="624" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/parse2Lists.js</url>
-          <line>1132</line>
-          <option name="timeStamp" value="590" />
+          <line>262</line>
+          <option name="timeStamp" value="625" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/parse2Lists.js</url>
-          <line>1135</line>
-          <option name="timeStamp" value="591" />
+          <line>354</line>
+          <option name="timeStamp" value="626" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/parse2Lists.js</url>
-          <line>1145</line>
-          <option name="timeStamp" value="593" />
+          <line>257</line>
+          <option name="timeStamp" value="627" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/parse2Lists.js</url>
-          <line>1140</line>
-          <option name="timeStamp" value="594" />
+          <line>260</line>
+          <option name="timeStamp" value="628" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/parse2Lists.js</url>
-          <line>1138</line>
-          <option name="timeStamp" value="595" />
+          <line>258</line>
+          <option name="timeStamp" value="629" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/parse2Lists.js</url>
-          <line>1143</line>
-          <option name="timeStamp" value="596" />
+          <line>261</line>
+          <option name="timeStamp" value="630" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/parse2Lists.js</url>
-          <line>1124</line>
-          <option name="timeStamp" value="598" />
+          <line>264</line>
+          <option name="timeStamp" value="631" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/parse2Lists.js</url>
-          <line>1122</line>
-          <option name="timeStamp" value="599" />
+          <line>263</line>
+          <option name="timeStamp" value="632" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/parse2Lists.js</url>
-          <line>1128</line>
-          <option name="timeStamp" value="603" />
+          <line>268</line>
+          <option name="timeStamp" value="633" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/parse2Lists.js</url>
-          <line>1129</line>
-          <option name="timeStamp" value="604" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/js/parse2Lists.js</url>
-          <line>280</line>
-          <option name="timeStamp" value="607" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/js/utilities_aq_viz.js</url>
-          <line>350</line>
-          <option name="timeStamp" value="611" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/js/utilities_aq_viz.js</url>
-          <line>358</line>
-          <option name="timeStamp" value="612" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/js/parse2Lists.js</url>
-          <line>142</line>
-          <option name="timeStamp" value="613" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/js/parse2Lists.js</url>
-          <line>143</line>
-          <option name="timeStamp" value="614" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/js/parse2Lists.js</url>
-          <line>145</line>
-          <option name="timeStamp" value="615" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/js/parse2Lists.js</url>
-          <line>283</line>
-          <option name="timeStamp" value="616" />
+          <line>270</line>
+          <option name="timeStamp" value="634" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -989,7 +1020,7 @@
           <properties />
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="617" />
+      <option name="time" value="635" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JavascriptDebugType">
@@ -1006,6 +1037,7 @@
         <watch expression="committee4parse" language="JavaScript" />
         <watch expression="err" language="JavaScript" />
         <watch expression="committeesJson[committee4parse].htmlDataPath" language="JavaScript" />
+        <watch expression="markup_beauty" language="JavaScript" />
       </configuration>
       <configuration name="mocha-javascript-test-runner">
         <watch expression="committeesConfigJson" language="JavaScript" />
@@ -1019,6 +1051,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="303" max-vertical-offset="3043">
           <caret line="28" column="16" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1246,13 +1279,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/committees/751/data_narr.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="114.745094" vertical-offset="5852" max-vertical-offset="6477">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/committees/751/narratives/SOi002.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="421">
@@ -1285,6 +1311,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="326" max-vertical-offset="816">
           <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1299,22 +1326,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
           <caret line="1" column="72" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/committeesConfig.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1445" max-vertical-offset="6171">
-          <caret line="86" column="44" selection-start-line="86" selection-start-column="36" selection-end-line="86" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/collect.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="6898" max-vertical-offset="24310">
-          <caret line="396" column="2" selection-start-line="396" selection-start-column="2" selection-end-line="396" selection-end-column="2" />
           <folding />
         </state>
       </provider>
@@ -1334,11 +1345,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/committees/751/narratives/SOi003.html">
+    <entry file="file://$PROJECT_DIR$/data/committees/1267/narratives/NSQI31313E.shtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="204">
-          <caret line="0" column="979" selection-start-line="0" selection-start-column="979" selection-end-line="0" selection-end-column="979" />
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1037">
+          <caret line="0" column="488" selection-start-line="0" selection-start-column="488" selection-end-line="0" selection-end-column="488" />
+          <folding>
+            <element signature="n#style#0;n#iframe#0;n#noscript#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/collect.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.85952383" vertical-offset="8003" max-vertical-offset="24310">
+          <caret line="472" column="14" selection-start-line="472" selection-start-column="14" selection-end-line="472" selection-end-column="14" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/committeesConfig.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.0384617" vertical-offset="2385" max-vertical-offset="6205">
+          <caret line="149" column="14" selection-start-line="149" selection-start-column="2" selection-end-line="149" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/committees/751/data_narr.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.769231" vertical-offset="527" max-vertical-offset="2040">
+          <caret line="49" column="4" selection-start-line="49" selection-start-column="4" selection-end-line="49" selection-end-column="4" />
+          <folding>
+            <marker date="1427558379661" expanded="true" signature="14:119" placeholder="{&quot;_es6Map&quot;: null...}" />
+            <marker date="1427558379661" expanded="true" signature="192:292" placeholder="{&quot;_es6Map&quot;: null...}" />
+            <marker date="1427558379661" expanded="true" signature="365:477" placeholder="{&quot;_es6Map&quot;: null...}" />
+            <marker date="1427558379661" expanded="true" signature="550:653" placeholder="{&quot;_es6Map&quot;: null...}" />
+            <marker date="1427558379661" expanded="true" signature="726:828" placeholder="{&quot;_es6Map&quot;: null...}" />
+            <marker date="1427558379661" expanded="true" signature="901:1005" placeholder="{&quot;_es6Map&quot;: null...}" />
+            <marker date="1427558379661" expanded="true" signature="1078:1181" placeholder="{&quot;_es6Map&quot;: null...}" />
+            <marker date="1427558379661" expanded="true" signature="1254:1353" placeholder="{&quot;_es6Map&quot;: null...}" />
+            <marker date="1427558379661" expanded="true" signature="1426:1520" placeholder="{&quot;_es6Map&quot;: null...}" />
+            <marker date="1427558379661" expanded="true" signature="1593:1694" placeholder="{&quot;_es6Map&quot;: null...}" />
+            <marker date="1427558379661" expanded="true" signature="1769:1873" placeholder="{&quot;_es6Map&quot;: null...}" />
+            <marker date="1427558379661" expanded="true" signature="1948:2044" placeholder="{&quot;_es6Map&quot;: null...}" />
+            <marker date="1427558379661" expanded="true" signature="2119:2214" placeholder="{&quot;_es6Map&quot;: null...}" />
+            <marker date="1427558379661" expanded="true" signature="2292:2411" placeholder="{&quot;_es6Map&quot;: null...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1347,43 +1399,41 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1037">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#style#0;n#iframe#0;n#noscript#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#iframe#0;n#noscript#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/committees/1267/narratives/NSQI31313E.shtml">
+    <entry file="file://$PROJECT_DIR$/data/committees/751/narratives/SOi003.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1037">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#iframe#0;n#noscript#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.25888324" vertical-offset="0" max-vertical-offset="394">
+          <caret line="0" column="979" selection-start-line="0" selection-start-column="979" selection-end-line="0" selection-end-column="979" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/utilities_aq_viz.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="7429" max-vertical-offset="7905">
+        <state vertical-scroll-proportion="0.0" vertical-offset="7498" max-vertical-offset="7905">
           <caret line="434" column="0" selection-start-line="432" selection-start-column="0" selection-end-line="434" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/markup_beauty.js">
+    <entry file="file://$PROJECT_DIR$/js/parse2Lists.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="48673" max-vertical-offset="49895">
-          <caret line="2839" column="34" selection-start-line="2839" selection-start-column="34" selection-end-line="2839" selection-end-column="34" />
+        <state vertical-scroll-proportion="1.5" vertical-offset="4595" max-vertical-offset="28934">
+          <caret line="268" column="0" selection-start-line="268" selection-start-column="0" selection-end-line="268" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/parse2Lists.js">
+    <entry file="file://$PROJECT_DIR$/js/markup_beauty.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.51934826" vertical-offset="19703" max-vertical-offset="29189">
-          <caret line="1139" column="0" selection-start-line="1139" selection-start-column="0" selection-end-line="1139" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.33248731" vertical-offset="1178" max-vertical-offset="49912">
+          <caret line="77" column="13" selection-start-line="77" selection-start-column="4" selection-end-line="77" selection-end-column="13" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>

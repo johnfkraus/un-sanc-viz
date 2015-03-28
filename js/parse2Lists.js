@@ -8,7 +8,7 @@
 //==========================
 
 var appConfig = require('./appConfig.js');
-var markup_beauty = require('./markup_beauty.js');
+var markup_beauty = require('./markup_beauty.js').markup_beauty;
 var cc = require('./committeesConfig.js');
 var getCommitteesJson = require('./committeesConfig.js').getCommitteesJson;
 var utilities_aq_viz = require('./utilities_aq_viz');
@@ -105,7 +105,6 @@ var start = function () {
         }
         callback();
       }
-
     ],
     function (err) {
       if (err) {
@@ -224,9 +223,7 @@ var parse2ListsCommittee = function (committeeParam) {
           syncParseHtmlListPage(individualsHtmlUnicodeString, '');
         }
         callback();
-      }
-
-      ,
+      },
 
       // write intermediate data file for debugging
       function
@@ -239,7 +236,7 @@ var parse2ListsCommittee = function (committeeParam) {
         callback();
       },
 
-      // create nodes
+      // create nodes based on individuals and entities found in the narrative lists
       // using filenames previously extracted from the two list files, download each narrative file from the UN web site and save to local file
       // if a target node id does not exist in the node ids set, create a node.
       // using 'narrativeFileName' from the data_narr file, parse the narratives
@@ -262,7 +259,7 @@ var parse2ListsCommittee = function (committeeParam) {
             node = data_narr.nodes[nodeCounter];
             nodeNarrFileName = node.narrativeFileName;
             url = committeesJson[committee4parse].narrativesUrlPath + nodeNarrFileName;
-            var arg;
+            var arg = {};
             try {
               narrative = syncGetHtmlAsUnicodeString(committeesJson[committee4parse].narrativesUrlPath + nodeNarrFileName);
               arg.input = narrative;
@@ -289,9 +286,7 @@ var parse2ListsCommittee = function (committeeParam) {
           }
         }
         callback();
-      }
-
-      ,
+      },
 
       // extract ids/reference numbers from the narrative files for each link/node
       //  function (callback) {
@@ -332,9 +327,7 @@ var parse2ListsCommittee = function (committeeParam) {
           addConnectionIdsArrayFromNarrative(node, narrative);
         }
         callback();
-      }
-
-      ,
+      },
 
       // write intermediate data_narr file for debugging
       function
@@ -343,9 +336,7 @@ var parse2ListsCommittee = function (committeeParam) {
         utilities_aq_viz.stringifyAndWriteJsonDataFile(data_narr, committeesJson[committee4parse].writeJsonOutputDebuggingDirectory + 'data_html-parse2-L' + __line + '-message.json');
         utilities_aq_viz.stringifyAndWriteJsonDataFile(data_narr, committeesJson[committee4parse].narrDataPath);
         callback();
-      }
-
-      ,
+      },
 
       function (callback) {
         // read data_narr json file
@@ -356,6 +347,11 @@ var parse2ListsCommittee = function (committeeParam) {
         // validateNodeIds(data_narr);
         addPairedIdsToNodes();
 //        addPairedIdsToLinks();
+
+        data_narr.linkSet = data_narr.linkSet || new Set();
+        data_narr.links = data_narr.links || [];
+
+
         addSourceTargetObjectsToLinks();
         sortSourceTargetIds(data_narr.links);
         //  sortArrayOfPairedIds(data_narr.links);
@@ -363,9 +359,7 @@ var parse2ListsCommittee = function (committeeParam) {
         logger.debug(__filename, 'line', __line, '; data_narr.links.length = ', data_narr.links.length);
 
         callback();
-      }
-
-      ,
+      },
 
       // write intermediate data_narr file for debugging
       function (callback) {
@@ -375,9 +369,8 @@ var parse2ListsCommittee = function (committeeParam) {
           utilities_aq_viz.stringifyAndWriteJsonDataFile(data_narr, committeesJson[committee4parse].narrDataPath);
         }
         callback();
-      }
+      },
 
-      ,
       /*
        function (callback) {
        // read data_narr json file
@@ -418,9 +411,7 @@ var parse2ListsCommittee = function (committeeParam) {
           utilities_aq_viz.stringifyAndWriteJsonDataFile(data_narr, committeesJson[committee4parse].narrDataPath);
         }
         callback();
-      }
-
-      ,
+      },
 
       // create dot file
       //
@@ -452,17 +443,13 @@ var parse2ListsCommittee = function (committeeParam) {
         linkString += '}';
         fse.writeFileSync(committeesJson[committee4parse].dotFileLocalOutputFileNameAndPath, linkString, fsOptions);
         callback();
-      }
-
-      ,
+      },
 
       function (callback) {
         logger.debug(__filename, 'line', __line, '; function #:', ++functionCount);
         validateNodeIds(data_narr);
         callback();
-      }
-
-      ,
+      },
 
       // write intermediate data_narr file for debugging
       function (callback) {
@@ -472,9 +459,7 @@ var parse2ListsCommittee = function (committeeParam) {
           utilities_aq_viz.stringifyAndWriteJsonDataFile(data_narr, committeesJson[committee4parse].narrDataPath);
         }
         callback();
-      }
-
-      ,
+      },
 
       // summarize output
       // compare number of comment links to number of narrative links
@@ -1118,9 +1103,9 @@ var addPairedIdsToNodes = function () {
 
 var addSourceTargetObjectsToLinks = function () {
   // var nodes = data_narr.nodes;
-  data_narr.linkSet = data_narr.linkSet || new Set();
+  // data_narr.linkSet = data_narr.linkSet || new Set();
   var concatenatedPairedIds;
-  data_narr.links = data_narr.links || [];
+  // data_narr.links = data_narr.links || [];
   // var linkSet = data_narr.linkSet;
   var pairedNodeIds;
   var sourceTargetObject;
