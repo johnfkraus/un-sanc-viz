@@ -8,6 +8,7 @@
 //==========================
 
 var appConfig = require('./appConfig.js');
+var markup_beauty = require('./markup_beauty.js');
 var cc = require('./committeesConfig.js');
 var getCommitteesJson = require('./committeesConfig.js').getCommitteesJson;
 var utilities_aq_viz = require('./utilities_aq_viz');
@@ -94,7 +95,7 @@ var start = function () {
       function (callback) {
         if (committeesArray) {
 
-         // committeesArray = ['751'];
+          // committeesArray = ['751'];
           committeesArray.forEach(function (committeeParam) {
             // committee4parse = committeeParam;
             parse2ListsCommittee(committeeParam);
@@ -261,8 +262,12 @@ var parse2ListsCommittee = function (committeeParam) {
             node = data_narr.nodes[nodeCounter];
             nodeNarrFileName = node.narrativeFileName;
             url = committeesJson[committee4parse].narrativesUrlPath + nodeNarrFileName;
+            var arg;
             try {
               narrative = syncGetHtmlAsUnicodeString(committeesJson[committee4parse].narrativesUrlPath + nodeNarrFileName);
+              arg.input = narrative;
+              narrative = markup_beauty(arg);
+
             } catch (err) {
               logger.error('\n ', __filename, 'line', __line, '; Error: ', err, '; url = ', url);
             }
@@ -1133,10 +1138,10 @@ var addSourceTargetObjectsToLinks = function () {
               sourceTargetObject.target = fixIdCase(pairedNodeIds[1]);
               // var xSet = new Set();
 
-//var y = xSet.add(concatenatedPairedIds);
+              // var y = xSet.add(concatenatedPairedIds);
               if (concatenatedPairedIds && data_narr.linkSet && data_narr.linkSet.add(concatenatedPairedIds)) {
 
-//                var x = linkSet.add(concatenatedPairedIds)
+              // var x = linkSet.add(concatenatedPairedIds)
 
                 (data_narr.links).push(sourceTargetObject);
 
