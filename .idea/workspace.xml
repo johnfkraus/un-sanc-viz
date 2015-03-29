@@ -33,65 +33,11 @@
       <file leaf-file-name="parse2Lists.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/parse2Lists.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.5" vertical-offset="4595" max-vertical-offset="28934">
-              <caret line="268" column="0" selection-start-line="268" selection-start-column="0" selection-end-line="268" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="4743" max-vertical-offset="29053">
+              <caret line="270" column="16" selection-start-line="270" selection-start-column="16" selection-end-line="270" selection-end-column="16" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NSQI31313E.shtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/committees/1267/narratives/NSQI31313E.shtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="102">
-              <caret line="0" column="488" selection-start-line="0" selection-start-column="488" selection-end-line="0" selection-end-column="488" />
-              <folding>
-                <element signature="n#style#0;n#iframe#0;n#noscript#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="markup_beauty.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/markup_beauty.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33248731" vertical-offset="1178" max-vertical-offset="49912">
-              <caret line="77" column="13" selection-start-line="77" selection-start-column="4" selection-end-line="77" selection-end-column="13" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SOe001.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/committees/751/narratives/SOe001.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
-              <caret line="0" column="4528" selection-start-line="0" selection-start-column="4528" selection-end-line="0" selection-end-column="4528" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="utilities_aq_viz.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/utilities_aq_viz.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="7498" max-vertical-offset="7905">
-              <caret line="434" column="0" selection-start-line="432" selection-start-column="0" selection-end-line="434" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="regexTest.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/regexTest.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="221">
-              <caret line="1" column="72" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="72" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -99,33 +45,21 @@
       <file leaf-file-name="committeesConfig.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/committeesConfig.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.0384617" vertical-offset="2385" max-vertical-offset="6205">
-              <caret line="149" column="14" selection-start-line="149" selection-start-column="2" selection-end-line="149" selection-end-column="14" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="2385" max-vertical-offset="6205">
+              <caret line="149" column="50" selection-start-line="149" selection-start-column="17" selection-end-line="149" selection-end-column="50" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="data_narr.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/committees/751/data_narr.json">
+      <file leaf-file-name="markup_beauty.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/markup_beauty.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.769231" vertical-offset="527" max-vertical-offset="2040">
-              <caret line="49" column="4" selection-start-line="49" selection-start-column="4" selection-end-line="49" selection-end-column="4" />
+            <state vertical-scroll-proportion="1.0954654" vertical-offset="2159" max-vertical-offset="49725">
+              <caret line="154" column="17" selection-start-line="154" selection-start-column="17" selection-end-line="154" selection-end-column="17" />
               <folding>
-                <marker date="1427558379661" expanded="true" signature="14:119" placeholder="{&quot;_es6Map&quot;: null...}" />
-                <marker date="1427558379661" expanded="true" signature="192:292" placeholder="{&quot;_es6Map&quot;: null...}" />
-                <marker date="1427558379661" expanded="true" signature="365:477" placeholder="{&quot;_es6Map&quot;: null...}" />
-                <marker date="1427558379661" expanded="true" signature="550:653" placeholder="{&quot;_es6Map&quot;: null...}" />
-                <marker date="1427558379661" expanded="true" signature="726:828" placeholder="{&quot;_es6Map&quot;: null...}" />
-                <marker date="1427558379661" expanded="true" signature="901:1005" placeholder="{&quot;_es6Map&quot;: null...}" />
-                <marker date="1427558379661" expanded="true" signature="1078:1181" placeholder="{&quot;_es6Map&quot;: null...}" />
-                <marker date="1427558379661" expanded="true" signature="1254:1353" placeholder="{&quot;_es6Map&quot;: null...}" />
-                <marker date="1427558379661" expanded="true" signature="1426:1520" placeholder="{&quot;_es6Map&quot;: null...}" />
-                <marker date="1427558379661" expanded="true" signature="1593:1694" placeholder="{&quot;_es6Map&quot;: null...}" />
-                <marker date="1427558379661" expanded="true" signature="1769:1873" placeholder="{&quot;_es6Map&quot;: null...}" />
-                <marker date="1427558379661" expanded="true" signature="1948:2044" placeholder="{&quot;_es6Map&quot;: null...}" />
-                <marker date="1427558379661" expanded="true" signature="2119:2214" placeholder="{&quot;_es6Map&quot;: null...}" />
-                <marker date="1427558379661" expanded="true" signature="2292:2411" placeholder="{&quot;_es6Map&quot;: null...}" />
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="e#124983#125639#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -278,9 +212,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files" />
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -310,6 +241,46 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="un-sanc-viz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="un-sanc-viz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="libs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="un-sanc-viz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="un-sanc-viz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="libs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="prettydiff" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -383,6 +354,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files" />
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -423,14 +397,10 @@
       <ConfigurationWrapper RunnerId="Basic" />
       <method />
     </configuration>
-    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
-      <method />
-    </configuration>
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <method />
     </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
-      <envs />
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <method />
     </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
@@ -440,13 +410,8 @@
       <setting name="preferredDebugBrowser" value="Chrome" />
       <method />
     </configuration>
-    <configuration default="true" type="MongoRunConfiguration" factoryName="Mongo">
-      <setting name="path" value="" />
-      <setting name="shellParams" value="" />
-      <method />
-    </configuration>
-    <configuration default="true" type="NodeJSRemoteDebug" factoryName="Node.js Remote Debug">
-      <node-js-remote-debug />
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="NodeunitConfigurationType" factoryName="Nodeunit">
@@ -457,6 +422,15 @@
       <setting name="workingDirectory" value="$PROJECT_DIR$" />
       <setting name="testType" value="JS_FILE" />
       <setting name="jsFile" value="test/testModule.js" />
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSRemoteDebug" factoryName="Node.js Remote Debug">
+      <node-js-remote-debug />
+      <method />
+    </configuration>
+    <configuration default="true" type="MongoRunConfiguration" factoryName="Mongo">
+      <setting name="path" value="" />
+      <setting name="shellParams" value="" />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -625,16 +599,16 @@
       <item index="2" class="java.lang.String" itemvalue="Mocha.Unnamed (1)" />
       <item index="3" class="java.lang.String" itemvalue="Mocha.mocha" />
       <item index="4" class="java.lang.String" itemvalue="Mongo.error_line.js" />
-      <item index="5" class="java.lang.String" itemvalue="Mongo.nodeunit-reporters.js" />
-      <item index="6" class="java.lang.String" itemvalue="Node.js.should" />
-      <item index="7" class="java.lang.String" itemvalue="Node.js.nodeunit-reporters.js" />
-      <item index="8" class="java.lang.String" itemvalue="Node.js.app.js" />
-      <item index="9" class="java.lang.String" itemvalue="Node.js.committeesConfig.js" />
-      <item index="10" class="java.lang.String" itemvalue="Node.js.collect.js" />
-      <item index="11" class="java.lang.String" itemvalue="Node.js.parse2Lists" />
-      <item index="12" class="java.lang.String" itemvalue="Node.js.markup_beauty.js" />
-      <item index="13" class="java.lang.String" itemvalue="Nodeunit.nodeunit" />
-      <item index="14" class="java.lang.String" itemvalue="Nodeunit.test1" />
+      <item index="5" class="java.lang.String" itemvalue="Node.js.should" />
+      <item index="6" class="java.lang.String" itemvalue="Node.js.nodeunit-reporters.js" />
+      <item index="7" class="java.lang.String" itemvalue="Node.js.app.js" />
+      <item index="8" class="java.lang.String" itemvalue="Node.js.committeesConfig.js" />
+      <item index="9" class="java.lang.String" itemvalue="Node.js.collect.js" />
+      <item index="10" class="java.lang.String" itemvalue="Node.js.parse2Lists" />
+      <item index="11" class="java.lang.String" itemvalue="Node.js.markup_beauty.js" />
+      <item index="12" class="java.lang.String" itemvalue="Nodeunit.nodeunit" />
+      <item index="13" class="java.lang.String" itemvalue="Nodeunit.test1" />
+      <item index="14" class="java.lang.String" itemvalue="Mongo.nodeunit-reporters.js" />
     </list>
     <recent_temporary>
       <list size="1">
@@ -839,21 +813,26 @@
       <option name="project" value="LOCAL" />
       <updated>1427556664323</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="added prettydiff to js/libs">
+      <created>1427559049644</created>
+      <option name="number" value="00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1427559049644</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="916" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41447368" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.41447368" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Heroku" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32849604" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4116095" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4105263" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Code Review" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24967907" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -861,16 +840,17 @@
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991013" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2580231" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991013" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32058048" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31973684" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Get Gist" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3263158" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39473686" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -889,14 +869,14 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24967907" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20346598" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991013" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39605263" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32368422" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32368422" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39605263" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Get Gist" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -917,7 +897,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="added utilities method to show object properties" />
     <MESSAGE value="creating a set of paired nodes" />
     <MESSAGE value="1098 links" />
     <MESSAGE value="d3 force charged graph working again, all radii the same" />
@@ -942,70 +921,46 @@
     <MESSAGE value="data_html_json becomes data_narr" />
     <MESSAGE value="parsing narratives for links" />
     <MESSAGE value="adding markup_beauty.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding markup_beauty.js" />
+    <MESSAGE value="added prettydiff to js/libs" />
+    <option name="LAST_COMMIT_MESSAGE" value="added prettydiff to js/libs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/parse2Lists.js</url>
-          <line>265</line>
+          <line>272</line>
           <option name="timeStamp" value="623" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/parse2Lists.js</url>
-          <line>1126</line>
+          <line>1133</line>
           <option name="timeStamp" value="624" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/parse2Lists.js</url>
-          <line>262</line>
-          <option name="timeStamp" value="625" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/js/parse2Lists.js</url>
-          <line>354</line>
+          <line>361</line>
           <option name="timeStamp" value="626" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/parse2Lists.js</url>
-          <line>257</line>
-          <option name="timeStamp" value="627" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/js/parse2Lists.js</url>
-          <line>260</line>
-          <option name="timeStamp" value="628" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/js/parse2Lists.js</url>
-          <line>258</line>
-          <option name="timeStamp" value="629" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/js/parse2Lists.js</url>
-          <line>261</line>
-          <option name="timeStamp" value="630" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/js/parse2Lists.js</url>
-          <line>264</line>
-          <option name="timeStamp" value="631" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/js/parse2Lists.js</url>
-          <line>263</line>
+          <line>267</line>
           <option name="timeStamp" value="632" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/parse2Lists.js</url>
-          <line>268</line>
+          <line>275</line>
           <option name="timeStamp" value="633" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/parse2Lists.js</url>
-          <line>270</line>
+          <line>277</line>
           <option name="timeStamp" value="634" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/js/parse2Lists.js</url>
+          <line>271</line>
+          <option name="timeStamp" value="638" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -1020,7 +975,7 @@
           <properties />
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="635" />
+      <option name="time" value="639" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JavascriptDebugType">
@@ -1326,7 +1281,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
           <caret line="1" column="72" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="72" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1341,7 +1295,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="697">
           <caret line="0" column="4528" selection-start-line="0" selection-start-column="4528" selection-end-line="0" selection-end-column="4528" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1349,9 +1302,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1037">
           <caret line="0" column="488" selection-start-line="0" selection-start-column="488" selection-end-line="0" selection-end-column="488" />
-          <folding>
-            <element signature="n#style#0;n#iframe#0;n#noscript#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1363,34 +1313,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/committeesConfig.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.0384617" vertical-offset="2385" max-vertical-offset="6205">
-          <caret line="149" column="14" selection-start-line="149" selection-start-column="2" selection-end-line="149" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/committees/751/data_narr.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.769231" vertical-offset="527" max-vertical-offset="2040">
           <caret line="49" column="4" selection-start-line="49" selection-start-column="4" selection-end-line="49" selection-end-column="4" />
-          <folding>
-            <marker date="1427558379661" expanded="true" signature="14:119" placeholder="{&quot;_es6Map&quot;: null...}" />
-            <marker date="1427558379661" expanded="true" signature="192:292" placeholder="{&quot;_es6Map&quot;: null...}" />
-            <marker date="1427558379661" expanded="true" signature="365:477" placeholder="{&quot;_es6Map&quot;: null...}" />
-            <marker date="1427558379661" expanded="true" signature="550:653" placeholder="{&quot;_es6Map&quot;: null...}" />
-            <marker date="1427558379661" expanded="true" signature="726:828" placeholder="{&quot;_es6Map&quot;: null...}" />
-            <marker date="1427558379661" expanded="true" signature="901:1005" placeholder="{&quot;_es6Map&quot;: null...}" />
-            <marker date="1427558379661" expanded="true" signature="1078:1181" placeholder="{&quot;_es6Map&quot;: null...}" />
-            <marker date="1427558379661" expanded="true" signature="1254:1353" placeholder="{&quot;_es6Map&quot;: null...}" />
-            <marker date="1427558379661" expanded="true" signature="1426:1520" placeholder="{&quot;_es6Map&quot;: null...}" />
-            <marker date="1427558379661" expanded="true" signature="1593:1694" placeholder="{&quot;_es6Map&quot;: null...}" />
-            <marker date="1427558379661" expanded="true" signature="1769:1873" placeholder="{&quot;_es6Map&quot;: null...}" />
-            <marker date="1427558379661" expanded="true" signature="1948:2044" placeholder="{&quot;_es6Map&quot;: null...}" />
-            <marker date="1427558379661" expanded="true" signature="2119:2214" placeholder="{&quot;_es6Map&quot;: null...}" />
-            <marker date="1427558379661" expanded="true" signature="2292:2411" placeholder="{&quot;_es6Map&quot;: null...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1398,9 +1324,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1037">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#iframe#0;n#noscript#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1408,7 +1331,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.25888324" vertical-offset="0" max-vertical-offset="394">
           <caret line="0" column="979" selection-start-line="0" selection-start-column="979" selection-end-line="0" selection-end-column="979" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1420,10 +1342,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/committeesConfig.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2385" max-vertical-offset="6205">
+          <caret line="149" column="50" selection-start-line="149" selection-start-column="17" selection-end-line="149" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/parse2Lists.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.5" vertical-offset="4595" max-vertical-offset="28934">
-          <caret line="268" column="0" selection-start-line="268" selection-start-column="0" selection-end-line="268" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="4743" max-vertical-offset="29053">
+          <caret line="270" column="16" selection-start-line="270" selection-start-column="16" selection-end-line="270" selection-end-column="16" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
@@ -1432,10 +1362,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/markup_beauty.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33248731" vertical-offset="1178" max-vertical-offset="49912">
-          <caret line="77" column="13" selection-start-line="77" selection-start-column="4" selection-end-line="77" selection-end-column="13" />
+        <state vertical-scroll-proportion="1.0954654" vertical-offset="2159" max-vertical-offset="49725">
+          <caret line="154" column="17" selection-start-line="154" selection-start-column="17" selection-end-line="154" selection-end-column="17" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
+            <element signature="e#124983#125639#0" expanded="false" />
           </folding>
         </state>
       </provider>

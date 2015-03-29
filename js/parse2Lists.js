@@ -8,7 +8,8 @@
 //==========================
 
 var appConfig = require('./appConfig.js');
-var markup_beauty = require('./markup_beauty.js').markup_beauty;
+var markup_beauty = require(__dirname + '/libs/prettydiff/markup_beauty.js');
+
 var cc = require('./committeesConfig.js');
 var getCommitteesJson = require('./committeesConfig.js').getCommitteesJson;
 var utilities_aq_viz = require('./utilities_aq_viz');
@@ -259,11 +260,17 @@ var parse2ListsCommittee = function (committeeParam) {
             node = data_narr.nodes[nodeCounter];
             nodeNarrFileName = node.narrativeFileName;
             url = committeesJson[committee4parse].narrativesUrlPath + nodeNarrFileName;
-            var arg = {};
+            // var arg = {};
+
+var mb;
+
             try {
               narrative = syncGetHtmlAsUnicodeString(committeesJson[committee4parse].narrativesUrlPath + nodeNarrFileName);
-              arg.input = narrative;
-              narrative = markup_beauty(arg);
+              var arg = {
+                input: narrative
+              };
+              mb = new markup_beauty(arg);
+//              narrative = markup_beauty.markup_beauty(arg);
 
             } catch (err) {
               logger.error('\n ', __filename, 'line', __line, '; Error: ', err, '; url = ', url);
