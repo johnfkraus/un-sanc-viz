@@ -14,6 +14,8 @@ var cc = require('./committeesConfig.js');
 var getCommitteesJson = require('./committeesConfig.js').getCommitteesJson;
 var utilities_aq_viz = require('./utilities_aq_viz');
 var jsbeautify = require('./jsbeautify.js');
+var debugOutputDirectoryName = 'debug_parse2Lists';
+
 
 // RUN CONFIGURATION
 // skip downloading 300+ narrative files and use locally stored files instead; for debugging
@@ -159,7 +161,7 @@ var parse2ListsCommittee = function (committeeParam) {
           }
           // 2 of 2: entities list
           if (committeesJson[committee4parse].entitiesListUrl) {
-            entitiesHtmlUnicodeString = syncGetHtmlAsUnicodeString(entitiesListUrl);
+            entitiesHtmlUnicodeString = syncGetHtmlAsUnicodeString(committeesJson[committee4parse].entitiesListUrl);
             if (utilities_aq_viz.errorPageReturned(entitiesHtmlUnicodeString)) {
               logger.error(__filename, ' line ', __line, 'Error: PageNotFoundError; Server returned ', utilities_aq_viz.errorPageReturned(entitiesHtmlUnicodeString));
             }
@@ -324,7 +326,7 @@ var parse2ListsCommittee = function (committeeParam) {
             trimmedLabeledNarrative = utilities_aq_viz.addFileLabel(trimmedNarrative, url);
             // write the file to this directory: readWriteLocalNarrativesFilePath = __dirname + '/../data/committees/' + committee4parse + '/narratives/';
             // beautify the remaining html narrative file
-            trimmedLabeledNarrative = jsbeautify.beautifyHtmlFile(trimmedLabeledNarrative);
+            trimmedLabeledNarrative = jsbeautify.beautifyHtmlUnicodeString(trimmedLabeledNarrative);
             syncWriteHtmlFile(trimmedLabeledNarrative, committeesJson[committee4parse].readWriteLocalNarrativesFilePath + nodeNarrFileName);
             // Next: PARSE NARRATIVE FOR LINKS
           }

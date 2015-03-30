@@ -20,7 +20,7 @@ var utilities_aq_viz = require('./utilities_aq_viz');
 var useLocalListFiles = appConfig.useLocalListFiles;
 var useLocalNarrativeFiles = appConfig.useLocalNarrativeFiles;
 var consoleLog = appConfig.consoleLog;
-
+var debugOutputDirectoryName = 'debug_collect';
 var logModulus = utilities_aq_viz.logModulus;
 var substringChars = utilities_aq_viz.truncateToNumChars;
 var linenums = require('./linenums.js');

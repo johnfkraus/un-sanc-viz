@@ -124,45 +124,57 @@ init = function (committeeParam) {
   committeeResolution = "";
 
   // default settings
-  committeeUrlPath = 'http://www.un.org/sc/committees/' + committeeConfig + '/';
+  // ** URLs / URIs
+  // ======================================
+  // **** URLs / URIs for XML files
   committeeXmlListUrl = 'http://www.un.org/sc/committees/' + committeeConfig + '/' + committeeConfig + '.xml';
   consolidatedXmlListUrl = committeeXmlListUrl;
+  // **** URL path
+  committeeUrlPath = 'http://www.un.org/sc/committees/' + committeeConfig + '/';
+  // **** URLs for html individual and entity list files
+  individualsListUrl = 'http://www.un.org/sc/committees/' + committeeConfig + '/Individuals.shtml';
+  entitiesListUrl = 'http://www.un.org/sc/committees/' + committeeConfig + '/Entities.shtml';
+  narrativesUrlPath = 'http://www.un.org/sc/committees/' + committeeConfig + '/';
+  // local paths and file names
   missingNodesPathAndFileName = __dirname + '/../data/committees/' + committeeConfig + '/missing/missing_nodes.json.js';
   // xml files local storage
   xmlFileLocalStoragePathAndName = __dirname + '/../data/committees/' + committeeConfig + '/' + committeeConfig + '.xml';
+
+  // XML backups
   backupRawXmlPath = __dirname + '/../data/committees/' + committeeConfig + '/backup/';
   backupRawXmlFilePathAndName = __dirname + '/../data/committees/' + committeeConfig + '/backup/' + committeeConfig + '.xml';
 
-  // html narrative files
-  // url download from html Internet
-  individualsListUrl = 'http://www.un.org/sc/committees/' + committeeConfig + '/Individuals.shtml';
-  entitiesListUrl = 'http://www.un.org/sc/committees/' + committeeConfig + '/Entities.shtml';
   // local storage
+  // ============
   individualsHtmlLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committeeConfig + '/individuals.html';
   entitiesHtmlLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committeeConfig + '/entities.html';
-  narrativesUrlPath = 'http://www.un.org/sc/committees/' + committeeConfig + '/';
+
   readWriteLocalNarrativesFilePath = __dirname + '/../data/committees/' + committeeConfig + '/narratives/';
 
-  // json files (local storage)
-  // json files extracted from the xml list files
+  // ** json files
+  // **** json files extracted from the xml list files
   xmlDataPath = __dirname + '/../data/committees/' + committeeConfig + '/data_xml.json';
   // json files of nodes extracted from the narratives
   narrDataPath = __dirname + '/../data/committees/' + committeeConfig + '/data_narr.json';
   mergedDataPath = __dirname + '/../data/committees/' + committeeConfig + '/data.json';
   individualsJsonLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committeeConfig + '/individuals.json';
   entitiesJsonLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committeeConfig + '/entities.json';
+
   writeJsonOutputDebuggingDirectory = __dirname + '/../data/committees/' + committeeConfig + '/debug/';
+//  writeJsonOutputDebuggingPath = __dirname + '/../data/committees/' + committeeConfig + '/debug/';
 
   // logging
   logFileNameAndPath = __dirname + '/../log/parse2lists.log';
 
   // dot files local storage
   dotFileLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committeeConfig + '/links.dot';
+
+  // store local 'data_committee.json' file location
   dataJsonLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committeeConfig + '/data_committees.json';
 
   // place to store all the configuration data from this committeesConfig.js file
   committeesConfigJsonPathAndFileName = __dirname + '/../data/committees/committeesConfig.json';
-  // Committee 1988 combined list
+  // Committee 1988 combined list; these variables are flags to be recognized by code
   combinedListUrl = null;
   combinedHtmlLocalOutputFileNameAndPath = null;
 
@@ -170,11 +182,11 @@ init = function (committeeParam) {
     // Somalia and Eritrea
     case '751':
       backupRawXmlFilePathAndName = __dirname + '/../data/committees/' + committeeConfig + '/backup/751_1907.xml';
-      permRefNumIndiv = "SOi.001";
-      permRefNumEnt = "SOe.001";
-      countryCode2DigitIso = 'SO';
-      committeeXmlListUrl = 'http://www.un.org/sc/committees/751/751_1907.xml';
       committeeResolution = "751 (1992) / 1907 (2009)";
+      committeeXmlListUrl = 'http://www.un.org/sc/committees/751/751_1907.xml';
+      countryCode2DigitIso = 'SO';
+      permRefNumEnt = "SOe.001";
+      permRefNumIndiv = "SOi.001";
       subjectMatterAbbreviated = "Resolutions 751 (1992) and 1907 (2009) concerning Somalia and Eritrea";
       break;
     // Al-Qaida

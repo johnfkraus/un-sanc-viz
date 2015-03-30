@@ -391,6 +391,10 @@ function trimNarrative2(narrWebPageString, url) {
   narrative = narrative.replace(/(<h2> <\/h2>)/gmi, '');
   narrative = narrative.replace(/(<p>\s{1,6}<\/p>)/gmi, '');
 
+  narrative = narrative.replace(/(<!-- undefined -->)/gmi, '');
+
+
+
   var narrative = narrative.replace(/(<p>In accordance with paragraph 14 of resolution 1844 (2008), the Security Council Committee pursuant to resolution 751 \(1992\) and 1907 \(2009\) concerning Somalia and Eritrea makes accessible a narrative summary of reasons for the listing for individuals and entities included on the 1844 Sanctions List\.<\/p>)/gmi, '');
   var narrative = narrative.replace(/(<p>In accordance with paragraph 1 \(b\) of the Guidelines for the application of paragraphs 19 and 23 of resolution 1483 \(2003\), the Security Council Committee established pursuant to resolution 1518 \(2003\) concerning Iraq makes accessible a narrative summary of reasons for the listing for individuals and entities included in the sanctions list\.<\/p>)/gmi, '');
 

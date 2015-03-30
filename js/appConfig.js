@@ -1,8 +1,8 @@
 // appConfig.js
 
 // skip downloading 300+ narrative files and use locally stored files instead; for debugging
-var useLocalListFiles = true;
-var useLocalNarrativeFiles = true;
+var useLocalListFiles = false;
+var useLocalNarrativeFiles = false;
 
 // RUN CONFIGURATION
 // skip downloading 300+ narrative files and use locally stored files instead; for debugging
