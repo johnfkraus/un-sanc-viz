@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CONSOLIDATED_LIST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                    xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd"
-                   dateGenerated="2015-03-16T18:10:47.056-04:00">
+                   dateGenerated="2015-03-27T17:37:13.737-04:00">
    <INDIVIDUALS>
       <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
          <DATAID>110404</DATAID>
@@ -8050,7 +8050,6 @@
          </INDIVIDUAL_DOCUMENT>
          <SORT_KEY>ASHOURALFADHLI MUHSIN FADHIL AYED</SORT_KEY>
          <SORT_KEY_LAST_MOD>2008-07-23</SORT_KEY_LAST_MOD>
-         <DELISTED_ON>2015-03-16</DELISTED_ON>
       </INDIVIDUAL>
       <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
          <DATAID>111732</DATAID>
@@ -21662,7 +21661,7 @@
          <UN_LIST_TYPE>Libya</UN_LIST_TYPE>
          <REFERENCE_NUMBER>LYi.001</REFERENCE_NUMBER>
          <LISTED_ON>2011-02-26</LISTED_ON>
-         <COMMENTS1>Listed pursuant to paragraph 15 of resolution 1970 (Travel Ban). </COMMENTS1>
+         <COMMENTS1>Listed pursuant to paragraph 15 of resolution 1970 (Travel Ban). Believed status/location: deceased.</COMMENTS1>
          <TITLE>
             <VALUE>Dr</VALUE>
          </TITLE>
@@ -21783,16 +21782,23 @@
          <UN_LIST_TYPE>Libya</UN_LIST_TYPE>
          <REFERENCE_NUMBER>LYi.004</REFERENCE_NUMBER>
          <LISTED_ON>2011-03-17</LISTED_ON>
+         <COMMENTS1>Listed pursuant to paragraph 15 of resolution 1970 (Travel Ban). </COMMENTS1>
          <DESIGNATION>
             <VALUE>Libyan Ambassador to Chad</VALUE>
          </DESIGNATION>
-         <COMMENTS1>Listed pursuant to paragraph 15 of resolution 1970 (Travel Ban). </COMMENTS1>
          <LIST_TYPE>
             <VALUE>UN List</VALUE>
          </LIST_TYPE>
-         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Akrin Saleh Akrin (أقرين صالح أقرين) </ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS>
+            <COUNTRY>Egypt</COUNTRY>
+         </INDIVIDUAL_ADDRESS>
          <INDIVIDUAL_DATE_OF_BIRTH/>
          <INDIVIDUAL_PLACE_OF_BIRTH/>
+         <INDIVIDUAL_DOCUMENT/>
          <SORT_KEY>AL QADHAFIQUREN SALIH QUREN </SORT_KEY>
          <SORT_KEY_LAST_MOD>2014-06-11</SORT_KEY_LAST_MOD>
       </INDIVIDUAL>
@@ -22413,8 +22419,7 @@
             <VALUE>UN List</VALUE>
          </LIST_TYPE>
          <INDIVIDUAL_ADDRESS>
-            <COUNTRY>Niger</COUNTRY>
-            <NOTE>Believed status/location: Niger</NOTE>
+            <COUNTRY>Libya (in custody)</COUNTRY>
          </INDIVIDUAL_ADDRESS>
          <INDIVIDUAL_DATE_OF_BIRTH>
             <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
@@ -22548,21 +22553,29 @@
          <UN_LIST_TYPE>Libya</UN_LIST_TYPE>
          <REFERENCE_NUMBER>LYi.019</REFERENCE_NUMBER>
          <LISTED_ON>2011-06-24</LISTED_ON>
-         <COMMENTS1>Listed pursuant to paragraph 15 of resolution 1970 and paragraph 19 of resolution 1973 (Travel Ban, Asset Freeze).</COMMENTS1>
+         <COMMENTS1>Listed pursuant to paragraph 15 of resolution 1970 and paragraph 19 of resolution 1973 (Travel Ban, Asset Freeze). </COMMENTS1>
          <LIST_TYPE>
             <VALUE>UN List</VALUE>
          </LIST_TYPE>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Safia Farkash Mohammed Al-Hadad, born 1 Jan. 1953 (Oman passport no. 03825239)</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
          <INDIVIDUAL_ADDRESS>
             <COUNTRY>Sultanate of Oman</COUNTRY>
-            <NOTE>Believed status/location: Sultanate of Oman</NOTE>
          </INDIVIDUAL_ADDRESS>
          <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Approximately</TYPE_OF_DATE>
             <YEAR>1952</YEAR>
          </INDIVIDUAL_DATE_OF_BIRTH>
          <INDIVIDUAL_PLACE_OF_BIRTH>
             <CITY>Al Bayda</CITY>
             <COUNTRY>Libya</COUNTRY>
          </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_DOCUMENT>
+            <TYPE_OF_DOCUMENT>Passport</TYPE_OF_DOCUMENT>
+            <NUMBER>03825239</NUMBER>
+         </INDIVIDUAL_DOCUMENT>
          <SORT_KEY>AL-BARASSI Safia Farkash </SORT_KEY>
          <SORT_KEY_LAST_MOD>2014-06-11</SORT_KEY_LAST_MOD>
       </INDIVIDUAL>
@@ -31637,13 +31650,12 @@
          <SORT_KEY>CUSPERT</SORT_KEY>
          <SORT_KEY_LAST_MOD/>
       </INDIVIDUAL>
-      <INDIVIDUAL xsi:noNamespaceSchemaLocation="file:/C:/Program%20Files/Oxygen%20XML%20Editor%2015/frameworks/sc-sanctions/xsd/sc-sanctions.xsd">
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
          <DATAID>6908445</DATAID>
          <VERSIONNUM>1</VERSIONNUM>
          <FIRST_NAME>ANGGA</FIRST_NAME>
          <SECOND_NAME>DIMAS</SECOND_NAME>
          <THIRD_NAME>PERSHADA</THIRD_NAME>
-         <FOURTH_NAME/>
          <UN_LIST_TYPE>Al-Qaida</UN_LIST_TYPE>
          <REFERENCE_NUMBER>QDi.348</REFERENCE_NUMBER>
          <LISTED_ON>2015-03-13</LISTED_ON>
@@ -31695,7 +31707,7 @@
          <SORT_KEY>PERSHADA</SORT_KEY>
          <SORT_KEY_LAST_MOD/>
       </INDIVIDUAL>
-      <INDIVIDUAL xsi:noNamespaceSchemaLocation="file:/C:/Program%20Files/Oxygen%20XML%20Editor%2015/frameworks/sc-sanctions/xsd/sc-sanctions.xsd">
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
          <DATAID>6908446</DATAID>
          <VERSIONNUM>1</VERSIONNUM>
          <FIRST_NAME>BAMBANG</FIRST_NAME>
@@ -31735,7 +31747,7 @@
          <SORT_KEY>SUKIRNO</SORT_KEY>
          <SORT_KEY_LAST_MOD/>
       </INDIVIDUAL>
-      <INDIVIDUAL xsi:noNamespaceSchemaLocation="file:/C:/Program%20Files/Oxygen%20XML%20Editor%2015/frameworks/sc-sanctions/xsd/sc-sanctions.xsd">
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
          <DATAID>6908447</DATAID>
          <VERSIONNUM>1</VERSIONNUM>
          <FIRST_NAME>WIJI</FIRST_NAME>
@@ -31785,6 +31797,141 @@
          </INDIVIDUAL_DOCUMENT>
          <SORT_KEY>SANTOSO</SORT_KEY>
          <SORT_KEY_LAST_MOD/>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>6908449</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>ALIASKHAB</FIRST_NAME>
+         <SECOND_NAME>ALIBULATOVICH</SECOND_NAME>
+         <THIRD_NAME>KEBEKOV</THIRD_NAME>
+         <FOURTH_NAME/>
+         <UN_LIST_TYPE>Al-Qaida</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>QDi.351</REFERENCE_NUMBER>
+         <LISTED_ON>2015-03-23-04:00</LISTED_ON>
+         <NAME_ORIGINAL_SCRIPT>Алиaсхаб Алибулатович Кебеков</NAME_ORIGINAL_SCRIPT>
+         <COMMENTS1>Physical description: eye colour: brown; hair colour: grey; height: 170-175cm; build: heavy, oval face, beard. Tribal/ethnic background: Avar. Father’s name: Alibulat Kebekovich Kebekov, born in 1927. Wanted by Federal Russian authorities for terrorist crimes. Photo available for inclusion in the INTERPOL-UN Security Council Special Notice.</COMMENTS1>
+         <NATIONALITY>
+            <VALUE>Russian</VALUE>
+         </NATIONALITY>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Low</QUALITY>
+            <ALIAS_NAME>Sheikh Abu Muhammad</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Low</QUALITY>
+            <ALIAS_NAME>Ali Abu Muhammad</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Low</QUALITY>
+            <ALIAS_NAME>Abu Muhammad Ali Al-Dagestani</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS>
+            <CITY>Shosse Aeroporta, 5 Ap. 7 Makhachkala</CITY>
+            <STATE_PROVINCE>Republic of Dagestan</STATE_PROVINCE>
+            <COUNTRY>Russian Federation</COUNTRY>
+         </INDIVIDUAL_ADDRESS>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1972-01-01-05:00</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Teletl Village, Shamilskiy District</CITY>
+            <STATE_PROVINCE>Republic of Dagestan</STATE_PROVINCE>
+            <COUNTRY>Russian Federation</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_DOCUMENT>
+            <TYPE_OF_DOCUMENT>Passport</TYPE_OF_DOCUMENT>
+            <NUMBER>Russian Foreign Travel Passport number 628605523</NUMBER>
+            <DATE_OF_ISSUE>2006-07-04</DATE_OF_ISSUE>
+            <COUNTRY_OF_ISSUE>Federal Migration Service of the Russian Federation</COUNTRY_OF_ISSUE>
+            <NOTE>expires on 16 Jul. 2016</NOTE>
+         </INDIVIDUAL_DOCUMENT>
+         <INDIVIDUAL_DOCUMENT>
+            <TYPE_OF_DOCUMENT>National Identification Number</TYPE_OF_DOCUMENT>
+            <NUMBER>Russian National Passport number 8203883123</NUMBER>
+            <DATE_OF_ISSUE>2005-07-16</DATE_OF_ISSUE>
+            <COUNTRY_OF_ISSUE>Department of Internal Affairs (OVD), Kirovskiy District, Republic of
+            Dagestan, the Russian Federation</COUNTRY_OF_ISSUE>
+            <NOTE>expires on 1 Jan. 2017</NOTE>
+         </INDIVIDUAL_DOCUMENT>
+         <SORT_KEY>ALIASKHAB ALIBULATOVICH KEBEKOV</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2015-03-23-04:00</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>6908450</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>ABDUL BASIR</FIRST_NAME>
+         <SECOND_NAME>NOORZAI</SECOND_NAME>
+         <THIRD_NAME/>
+         <FOURTH_NAME/>
+         <UN_LIST_TYPE>Taliban</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>TAi.173</REFERENCE_NUMBER>
+         <LISTED_ON>2015-03-27-04:00</LISTED_ON>
+         <NAME_ORIGINAL_SCRIPT>عبد البصیر نورزی</NAME_ORIGINAL_SCRIPT>
+         <COMMENTS1>Owner of Haji  Basir and Zarjmil Company Hawala (TAe.014), which provides financial services to Taliban in the region.</COMMENTS1>
+         <TITLE>
+            <VALUE>Haji </VALUE>
+         </TITLE>
+         <NATIONALITY>
+            <VALUE>Afghan</VALUE>
+         </NATIONALITY>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Haji Abdul Basir </ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Haji ‘Abd Al-Basir </ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Haji Basir Noorzai </ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Abdul Baseer </ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Abdul Basir  </ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS>
+            <CITY>Chaman</CITY>
+            <STATE_PROVINCE>Baluchistan Province</STATE_PROVINCE>
+            <COUNTRY>Pakistan  </COUNTRY>
+         </INDIVIDUAL_ADDRESS>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <YEAR>1965 </YEAR>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <YEAR>1960 </YEAR>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <YEAR>1963 </YEAR>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <STATE_PROVINCE>Baluchistan Province</STATE_PROVINCE>
+            <COUNTRY>Pakistan  </COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_DOCUMENT>
+            <TYPE_OF_DOCUMENT>Passport</TYPE_OF_DOCUMENT>
+            <NUMBER>Pakistani passport number AA3829182  </NUMBER>
+         </INDIVIDUAL_DOCUMENT>
+         <INDIVIDUAL_DOCUMENT>
+            <TYPE_OF_DOCUMENT>National Identification Number</TYPE_OF_DOCUMENT>
+            <NUMBER>Pakistani national identification number 5420124679187   </NUMBER>
+         </INDIVIDUAL_DOCUMENT>
+         <SORT_KEY>NOORZAI ABDUL BASIR</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2015-03-27-04:00</SORT_KEY_LAST_MOD>
       </INDIVIDUAL>
    </INDIVIDUALS>
    <ENTITIES>
@@ -42622,7 +42769,7 @@ GAS AND STATE ESTABLISHMENT OF OIL TANKERS).</COMMENTS1>
          <SORT_KEY>ANSAR AL CHARIA BENGHAZI </SORT_KEY>
          <SORT_KEY_LAST_MOD>2014-11-19</SORT_KEY_LAST_MOD>
       </ENTITY>
-      <ENTITY xsi:noNamespaceSchemaLocation="file:/C:/Program%20Files/Oxygen%20XML%20Editor%2015/frameworks/sc-sanctions/xsd/sc-sanctions.xsd">
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
          <DATAID>6908448</DATAID>
          <VERSIONNUM>1</VERSIONNUM>
          <FIRST_NAME>HILAL AHMAR SOCIETY INDONESIA (HASI)</FIRST_NAME>
@@ -42644,6 +42791,95 @@ GAS AND STATE ESTABLISHMENT OF OIL TANKERS).</COMMENTS1>
          <ENTITY_ADDRESS/>
          <SORT_KEY>HILAL AHMAR SOCIETY INDONESIA (HASI)</SORT_KEY>
          <SORT_KEY_LAST_MOD/>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>6908451</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>HAJI BASIR AND ZARJMIL COMPANY HAWALA</FIRST_NAME>
+         <UN_LIST_TYPE>Taliban</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>TAe.014</REFERENCE_NUMBER>
+         <LISTED_ON>2015-03-27-04:00</LISTED_ON>
+         <NAME_ORIGINAL_SCRIPT>د حاجی بصیر او ضرجمیل کمپنی حواله</NAME_ORIGINAL_SCRIPT>
+         <COMMENTS1>Money service provider used by senior Taliban leaders to transfer funds to Taliban commanders in the region. Owned by Abdul Basir Noorzai (TAi.173).</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS>
+            <QUALITY>a.k.a.</QUALITY>
+            <ALIAS_NAME>Haji Bashir and Zarjmil Hawala Company </ALIAS_NAME>
+         </ENTITY_ALIAS>
+         <ENTITY_ALIAS>
+            <QUALITY>a.k.a.</QUALITY>
+            <ALIAS_NAME>Haji Abdul Basir and Zar Jameel Hawala</ALIAS_NAME>
+         </ENTITY_ALIAS>
+         <ENTITY_ALIAS>
+            <QUALITY>a.k.a.</QUALITY>
+            <ALIAS_NAME>Haji Basir Hawala </ALIAS_NAME>
+         </ENTITY_ALIAS>
+         <ENTITY_ALIAS>
+            <QUALITY>a.k.a.</QUALITY>
+            <ALIAS_NAME>Haji Baseer Hawala</ALIAS_NAME>
+         </ENTITY_ALIAS>
+         <ENTITY_ALIAS>
+            <QUALITY>a.k.a.</QUALITY>
+            <ALIAS_NAME>Haji Abdul Basir Exchange Shop </ALIAS_NAME>
+         </ENTITY_ALIAS>
+         <ENTITY_ALIAS>
+            <QUALITY>a.k.a.</QUALITY>
+            <ALIAS_NAME>Haji Basir and Zarjamil Currency Exchange </ALIAS_NAME>
+         </ENTITY_ALIAS>
+         <ENTITY_ALIAS>
+            <QUALITY>a.k.a.</QUALITY>
+            <ALIAS_NAME>Haji Zar Jamil, Haji Abdul Baseer Money Changer</ALIAS_NAME>
+         </ENTITY_ALIAS>
+         <ENTITY_ADDRESS>
+            <STREET>Branch Office 1: Sanatan (variant Sanatin) Bazaar</STREET>
+            <CITY>Sanatan Bazaar Street</CITY>
+            <STATE_PROVINCE>near Trench (variant Tranch) Road</STATE_PROVINCE>
+            <ZIP_CODE>Chaman, Baluchistan Province</ZIP_CODE>
+            <COUNTRY>Pakistan   </COUNTRY>
+         </ENTITY_ADDRESS>
+         <ENTITY_ADDRESS>
+            <CITY>Branch Office 2: Quetta</CITY>
+            <COUNTRY>Pakistan </COUNTRY>
+         </ENTITY_ADDRESS>
+         <ENTITY_ADDRESS>
+            <STATE_PROVINCE>Branch Office 3: Lahore</STATE_PROVINCE>
+            <COUNTRY>Pakistan  </COUNTRY>
+         </ENTITY_ADDRESS>
+         <ENTITY_ADDRESS>
+            <STATE_PROVINCE>Branch Office 4: Peshawar</STATE_PROVINCE>
+            <COUNTRY>Pakistan  </COUNTRY>
+         </ENTITY_ADDRESS>
+         <ENTITY_ADDRESS>
+            <STATE_PROVINCE>Branch Office 5: Karachi</STATE_PROVINCE>
+            <COUNTRY>Pakistan  </COUNTRY>
+         </ENTITY_ADDRESS>
+         <ENTITY_ADDRESS>
+            <STATE_PROVINCE>Branch Office 6: Islamabad</STATE_PROVINCE>
+            <COUNTRY>Pakistan  </COUNTRY>
+         </ENTITY_ADDRESS>
+         <ENTITY_ADDRESS>
+            <STATE_PROVINCE>Branch Office 7: Kandahar Province</STATE_PROVINCE>
+            <COUNTRY>Afghanistan  </COUNTRY>
+         </ENTITY_ADDRESS>
+         <ENTITY_ADDRESS>
+            <STATE_PROVINCE>Branch Office 8: Herat Province</STATE_PROVINCE>
+            <COUNTRY>Afghanistan  </COUNTRY>
+         </ENTITY_ADDRESS>
+         <ENTITY_ADDRESS>
+            <STATE_PROVINCE>Branch Office 9: Helmand Province</STATE_PROVINCE>
+            <COUNTRY>Afghanistan  </COUNTRY>
+         </ENTITY_ADDRESS>
+         <ENTITY_ADDRESS>
+            <STATE_PROVINCE>Branch Office 10: Dubai</STATE_PROVINCE>
+            <COUNTRY>United Arab Emirates  </COUNTRY>
+         </ENTITY_ADDRESS>
+         <ENTITY_ADDRESS>
+            <COUNTRY>Branch Office 11: Iran  </COUNTRY>
+         </ENTITY_ADDRESS>
+         <SORT_KEY>HAJI BASIR AND ZARJMIL COMPANY HAWALA</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2015-03-27-04:00</SORT_KEY_LAST_MOD>
       </ENTITY>
    </ENTITIES>
 </CONSOLIDATED_LIST>

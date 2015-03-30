@@ -5,30 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d978abb8-9bbc-4846-80bc-cd786bfafc5b" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\un-sanc-viz\data\committees\751\751 Sanctions Committee-entities.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\un-sanc-viz\data\committees\751\751 Sanctions Committee-individuals.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\un-sanc-viz\data\committees\751\Entities.shtml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\un-sanc-viz\data\committees\751\Individuals.shtml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\User1\WebstormProjects\un-sanc-viz\data\committees\751\narrative_links.json" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/committees/751/narratives/SOe001.html" afterPath="$PROJECT_DIR$/data/committees/751/narratives/SOe001.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/committees/751/narratives/SOi001.html" afterPath="$PROJECT_DIR$/data/committees/751/narratives/SOi001.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/committees/751/narratives/SOi002.html" afterPath="$PROJECT_DIR$/data/committees/751/narratives/SOi002.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/committees/751/narratives/SOi003.html" afterPath="$PROJECT_DIR$/data/committees/751/narratives/SOi003.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/committees/751/narratives/SOi004.html" afterPath="$PROJECT_DIR$/data/committees/751/narratives/SOi004.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/committees/751/narratives/SOi005.html" afterPath="$PROJECT_DIR$/data/committees/751/narratives/SOi005.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/committees/751/narratives/SOi006.html" afterPath="$PROJECT_DIR$/data/committees/751/narratives/SOi006.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/committees/751/narratives/SOi008.html" afterPath="$PROJECT_DIR$/data/committees/751/narratives/SOi008.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/committees/751/narratives/SOi009.html" afterPath="$PROJECT_DIR$/data/committees/751/narratives/SOi009.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/committees/751/narratives/SOi010.html" afterPath="$PROJECT_DIR$/data/committees/751/narratives/SOi010.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/committees/751/narratives/SOi011.html" afterPath="$PROJECT_DIR$/data/committees/751/narratives/SOi011.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/committees/751/narratives/SOi012.html" afterPath="$PROJECT_DIR$/data/committees/751/narratives/SOi012.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/committees/751/narratives/SOi013.shtml" afterPath="$PROJECT_DIR$/data/committees/751/narratives/SOi013.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/committees/751/narratives/SOi014.shtml" afterPath="$PROJECT_DIR$/data/committees/751/narratives/SOi014.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/appConfig.js" afterPath="$PROJECT_DIR$/js/appConfig.js" />
+      <change type="MOVED" beforePath="C:\Users\User1\WebstormProjects\un-sanc-viz\data\committees\1267\missing_nodes.js" afterPath="$PROJECT_DIR$/data/committees/1267/backup/missing_nodes.js" />
+      <change type="MOVED" beforePath="C:\Users\User1\WebstormProjects\un-sanc-viz\data\committees\1267\missing_nodes.json.js" afterPath="$PROJECT_DIR$/data/committees/1267/backup/missing_nodes.json.js" />
+      <change type="MOVED" beforePath="C:\Users\User1\WebstormProjects\un-sanc-viz\data\committees\1267\missing_nodes2.json.js" afterPath="$PROJECT_DIR$/data/committees/1267/backup/missing_nodes2.json.js" />
+      <change type="MOVED" beforePath="C:\Users\User1\WebstormProjects\un-sanc-viz\data\committees\1267\missing_nodes3.json.js" afterPath="$PROJECT_DIR$/data/committees/1267/backup/missing_nodes3.json.js" />
+      <change type="MOVED" beforePath="C:\Users\User1\WebstormProjects\un-sanc-viz\data\committees\751\entities.html" afterPath="$PROJECT_DIR$/data/committees/751/backup/entities.html" />
+      <change type="MOVED" beforePath="C:\Users\User1\WebstormProjects\un-sanc-viz\data\committees\751\individuals.html" afterPath="$PROJECT_DIR$/data/committees/751/backup/individuals.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/committees/1267/backup/1267.xml" afterPath="$PROJECT_DIR$/data/committees/1267/backup/1267.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/committees/1970/1970.xml" afterPath="$PROJECT_DIR$/data/committees/1970/1970.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/collect.js" afterPath="$PROJECT_DIR$/js/collect.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/committeesConfig.js" afterPath="$PROJECT_DIR$/js/committeesConfig.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/committees/751/entities.html" afterPath="$PROJECT_DIR$/data/committees/751/entities.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/parse2Lists.js" afterPath="$PROJECT_DIR$/js/parse2Lists.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/committees/consolidated/consolidated.xml" afterPath="$PROJECT_DIR$/data/committees/consolidated/consolidated.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/committees/consolidated/backup/consolidated.xml" afterPath="$PROJECT_DIR$/data/committees/consolidated/backup/consolidated.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/utilities_aq_viz.js" afterPath="$PROJECT_DIR$/js/utilities_aq_viz.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -53,112 +41,7 @@
     <favorites_list name="un-sanc-viz" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="parse2Lists.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/parse2Lists.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="30277">
-              <caret line="16" column="51" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="51" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="entities.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/committees/751/entities.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="11.115385" vertical-offset="289" max-vertical-offset="4080">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="individuals.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/committees/751/individuals.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="6052">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="links.dot" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/committees/751/links.dot">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="119">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="collect.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/collect.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="24310">
-              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="data_narr.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/committees/751/data_narr.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="195.26923" vertical-offset="5094" max-vertical-offset="6239">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="committeesConfig.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/committeesConfig.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33333334" vertical-offset="2038" max-vertical-offset="6426">
-              <caret line="129" column="55" selection-start-line="129" selection-start-column="46" selection-end-line="129" selection-end-column="55" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jsbeautify.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/jsbeautify.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="1887">
-              <caret line="12" column="30" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SOi003.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/committees/751/narratives/SOi003.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="255">
-              <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="appConfig.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/appConfig.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="816">
-              <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -219,11 +102,11 @@
         <option value="$PROJECT_DIR$/data/committees/751/narratives/SOe001.html" />
         <option value="$PROJECT_DIR$/js/jsbeautify.js" />
         <option value="$PROJECT_DIR$/data/committees/751/narratives/SOi003.html" />
-        <option value="$PROJECT_DIR$/js/utilities_aq_viz.js" />
         <option value="$PROJECT_DIR$/js/appConfig.js" />
         <option value="$PROJECT_DIR$/js/parse2Lists.js" />
-        <option value="$PROJECT_DIR$/js/collect.js" />
         <option value="$PROJECT_DIR$/js/committeesConfig.js" />
+        <option value="$PROJECT_DIR$/js/utilities_aq_viz.js" />
+        <option value="$PROJECT_DIR$/js/collect.js" />
       </list>
     </option>
   </component>
@@ -419,6 +302,54 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="1267" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="un-sanc-viz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="un-sanc-viz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="committees" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="1267" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="un-sanc-viz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="un-sanc-viz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="committees" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="751" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -446,6 +377,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="debug" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="un-sanc-viz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="un-sanc-viz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="archive_historical" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -479,14 +428,14 @@
       <recent name="C:\Users\User1\WebstormProjects\un-sanc-viz\data\committees\751\missing" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\User1\WebstormProjects\un-sanc-viz\data\committees\consolidated\backup" />
+      <recent name="C:\Users\User1\WebstormProjects\un-sanc-viz\data\committees\1267\backup" />
       <recent name="C:\Users\User1\WebstormProjects\un-sanc-viz\data\committees\751\backup" />
+      <recent name="C:\Users\User1\WebstormProjects\un-sanc-viz\data\committees\consolidated\backup" />
       <recent name="C:\Users\User1\WebstormProjects\un-sanc-viz\test" />
       <recent name="C:\Users\User1\WebstormProjects\un-sanc-viz\testarchive" />
-      <recent name="C:\Users\User1\WebstormProjects\un-sanc-viz\data" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.parse2Lists">
+  <component name="RunManager" selected="Node.js.collect.js">
     <configuration default="false" name="nodeunit-reporters.js" type="MongoRunConfiguration" factoryName="Mongo" temporary="true">
       <setting name="path" value="$PROJECT_DIR$/js/nodeunit-reporters.js" />
       <setting name="shellParams" value="" />
@@ -934,7 +883,13 @@
       <option name="project" value="LOCAL" />
       <updated>1427674943039</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="confirm raw list files and json list files are stored">
+      <created>1427692828733</created>
+      <option name="number" value="00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1427692828733</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -959,15 +914,16 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="916" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41447368" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Heroku" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32849604" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4105263" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41029024" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Code Review" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24967907" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -975,14 +931,13 @@
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991013" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2580231" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991013" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31973684" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32058048" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Get Gist" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3263158" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39473686" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1032,7 +987,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="radius control achieved; merge data files" />
     <MESSAGE value="get links back; only nodes rendered" />
     <MESSAGE value="fixing no longer listed; none in final data set" />
     <MESSAGE value="CLEAN the fuck up" />
@@ -1057,7 +1011,8 @@
     <MESSAGE value="npm install html" />
     <MESSAGE value="added js-beautify" />
     <MESSAGE value="beautifying list and narrative files" />
-    <option name="LAST_COMMIT_MESSAGE" value="beautifying list and narrative files" />
+    <MESSAGE value="confirm raw list files and json list files are stored" />
+    <option name="LAST_COMMIT_MESSAGE" value="confirm raw list files and json list files are stored" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1112,6 +1067,11 @@
           <line>162</line>
           <option name="timeStamp" value="653" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/js/collect.js</url>
+          <line>347</line>
+          <option name="timeStamp" value="654" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog>
@@ -1125,7 +1085,7 @@
           <properties />
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="654" />
+      <option name="time" value="655" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JavascriptDebugType">
@@ -1143,6 +1103,7 @@
         <watch expression="err" language="JavaScript" />
         <watch expression="committeesJson[committee4parse].htmlDataPath" language="JavaScript" />
         <watch expression="markup_beauty" language="JavaScript" />
+        <watch expression="typeof dateString" language="JavaScript" />
       </configuration>
       <configuration name="mocha-javascript-test-runner">
         <watch expression="committeesConfigJson" language="JavaScript" />
@@ -1152,104 +1113,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/testarchive/mocha-should.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2839">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testarchive/shouldAssertion.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.034907598" vertical-offset="0" max-vertical-offset="487">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testarchive/mocha-test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testarchive/test-json.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.798768" vertical-offset="1175" max-vertical-offset="1921">
-          <caret line="92" column="0" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/archives/screen.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="748">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/freespace.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="714">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/express.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="799">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="44" max-vertical-offset="799">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/committees/751/backup/data.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.036876354" vertical-offset="1904" max-vertical-offset="20672">
-          <caret line="111" column="30" selection-start-line="111" selection-start-column="30" selection-end-line="111" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test751.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1649">
-          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/committees/751/debug/data_xml-collect-L393-normzd_xml_list.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="132.07692" vertical-offset="3434" max-vertical-offset="20944">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/node_modules/async/lib/async.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28542095" vertical-offset="3754" max-vertical-offset="19414">
-          <caret line="235" column="0" selection-start-line="235" selection-start-column="0" selection-end-line="235" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/committees/2048/individuals.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3570">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/committees/1572/entities.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3230">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/htmlparser/lib/htmlparser.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="10881" max-vertical-offset="14263">
@@ -1414,14 +1277,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/utilities_aq_viz.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="6562" max-vertical-offset="8398">
-          <caret line="392" column="0" selection-start-line="392" selection-start-column="0" selection-end-line="392" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/committees/751/narratives/SOi003.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="323">
@@ -1446,7 +1301,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/committees/751/entities.html">
+    <entry file="file://$PROJECT_DIR$/data/committees/751/backup/entities.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="11.115385" vertical-offset="289" max-vertical-offset="4080">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1454,7 +1309,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/committees/751/data_narr.json">
+    <entry file="file://$PROJECT_DIR$/data/committees/751/backup/data_narr.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="195.26923" vertical-offset="5094" max-vertical-offset="6239">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
@@ -1462,7 +1317,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/committees/751/individuals.html">
+    <entry file="file://$PROJECT_DIR$/data/committees/751/backup/individuals.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="6052">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
@@ -1488,21 +1343,167 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/collect.js">
+    <entry file="file://$PROJECT_DIR$/data/committees/751/entities.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="24310">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4080">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/committees/751/individuals.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6052">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/committees/751/data_xml.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="289">
+          <caret line="1211" column="1" selection-start-line="1211" selection-start-column="1" selection-end-line="1211" selection-end-column="1" />
+          <folding>
+            <element signature="e#12#30664#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/committeesConfig.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334" vertical-offset="2038" max-vertical-offset="6426">
-          <caret line="129" column="55" selection-start-line="129" selection-start-column="46" selection-end-line="129" selection-end-column="55" />
+        <state vertical-scroll-proportion="-11.269231" vertical-offset="2257" max-vertical-offset="6511">
+          <caret line="150" column="18" selection-start-line="150" selection-start-column="18" selection-end-line="150" selection-end-column="18" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/utilities_aq_viz.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2771" max-vertical-offset="8738">
+          <caret line="178" column="0" selection-start-line="178" selection-start-column="0" selection-end-line="178" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/collect.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.3846154" vertical-offset="3201" max-vertical-offset="24378">
+          <caret line="202" column="0" selection-start-line="202" selection-start-column="0" selection-end-line="202" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/archive_historical/751-2015-03-30.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="15878">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/archive_historical/1267-2015-03-30.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="301189">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/archive_historical/1518-2015-03-30.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="129982">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/archive_historical/1521-2015-03-30.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="28356">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/archive_historical/1533-2015-03-30.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="29784">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/archive_historical/1572-2015-03-30.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5423">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/archive_historical/1591-2015-03-30.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3910">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/archive_historical/1718-2015-03-30.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="18785">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/archive_historical/1737-2015-03-30.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="52938">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/archive_historical/1988-2015-03-30.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="134419">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/archive_historical/2048-2015-03-30.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8143">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/archive_historical/2127-2015-03-30.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2057">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/archive_historical/2140-2015-03-30.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3502">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/archive_historical/1970-2015-03-30.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="11628">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

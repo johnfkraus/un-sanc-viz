@@ -119,7 +119,7 @@ var forceUnicodeEncoding = function (string) {
   return result.trim();
 };
 
-var formatMyDate = function (dateString) {
+var formatMyDate = function (dateObject) {
 // Basic usage
 // dateFormat.masks.hammerTime = 'yyyy-mm-dd-HHMMss';
 // var displayDateString = dateFormat(now, 'friendly_display');
@@ -132,9 +132,10 @@ var formatMyDate = function (dateString) {
   dateFormat.masks.friendly_display = 'dddd, mmmm dS, yyyy';
   dateFormat.masks.file_generated_date = 'yyyy-mm-dd';
   dateFormat.masks.common = 'mm-dd-yyyy';
-  var date = new Date(dateString);
+  // is dateString really a string?  or is it a Date()?
+  var date = new Date(dateObject);
   var formattedDate = dateFormat(date, 'common');
- // logger.debug([__filename, ' line ', __line, '; formattedDate = ', formattedDate].join(''));
+  // logger.debug([__filename, ' line ', __line, '; formattedDate = ', formattedDate].join(''));
   return formattedDate.trim();
 };
 
@@ -164,6 +165,26 @@ var getCleanId = function (referenceNumber) {
     logger.error(__filename, 'line', __line, '; Error: ', err, '; referenceNumber =', referenceNumber);
   }
   return refNumRegexMatch[0].trim();
+};
+
+// dateToFormat parameter is a Date()
+// dateFormatMask is a string like 'yyyy-mm-dd'
+var getFormattedDateStringForBackupFileName = function (dateToFormatObject, dateFormatMask) {
+  // default parameters
+  var myDate = dateToFormatObject || new Date();
+  var myDateString = myDate.toString();
+  var myDateFormatMask = dateFormatMask || 'yyyy-mm-dd';
+  // Basic usage
+  // dateFormat.masks.hammerTime = 'yyyy-mm-dd-HHMMss';
+  // var displayDateString = dateFormat(now, 'friendly_display');
+  // Saturday, June 9th, 2007, 5:46:21 PM
+  dateFormat.masks.friendly_detailed = 'dddd, mmmm dS, yyyy, h:MM:ss TT';
+  dateFormat.masks.friendly_display = 'dddd, mmmm dS, yyyy';
+  dateFormat.masks.file_generated_date = 'yyyy-mm-dd';
+  dateFormat.masks.common = 'mm-dd-yyyy';
+  dateFormat.masks.dateForFileNames = 'yyyy-mm-dd';
+  var formattedDate = dateFormat(dateToFormatObject, myDateFormatMask);
+  return formattedDate.trim();
 };
 
 var getStackTrace = function (err) {
@@ -393,8 +414,6 @@ function trimNarrative2(narrWebPageString, url) {
 
   narrative = narrative.replace(/(<!-- undefined -->)/gmi, '');
 
-
-
   var narrative = narrative.replace(/(<p>In accordance with paragraph 14 of resolution 1844 (2008), the Security Council Committee pursuant to resolution 751 \(1992\) and 1907 \(2009\) concerning Somalia and Eritrea makes accessible a narrative summary of reasons for the listing for individuals and entities included on the 1844 Sanctions List\.<\/p>)/gmi, '');
   var narrative = narrative.replace(/(<p>In accordance with paragraph 1 \(b\) of the Guidelines for the application of paragraphs 19 and 23 of resolution 1483 \(2003\), the Security Council Committee established pursuant to resolution 1518 \(2003\) concerning Iraq makes accessible a narrative summary of reasons for the listing for individuals and entities included in the sanctions list\.<\/p>)/gmi, '');
 
@@ -450,6 +469,7 @@ module.exports = {
   generateNarrFileName: generateNarrFileName,
   generateNarrFileNameFromId: generateNarrFileNameFromId,
   getCleanId: getCleanId,
+  getFormattedDateStringForBackupFileName: getFormattedDateStringForBackupFileName,
   getStackTrace: getStackTrace,
   logModulus: logModulus,
   // logger: logger,

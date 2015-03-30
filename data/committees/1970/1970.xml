@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CONSOLIDATED_LIST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                    xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd"
-                   dateGenerated="2015-03-17T17:34:48.63-04:00">
+                   dateGenerated="2015-03-27T13:31:32.054-04:00">
    <INDIVIDUALS>
       <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
          <DATAID>690730</DATAID>
@@ -12,7 +12,7 @@
          <UN_LIST_TYPE>Libya</UN_LIST_TYPE>
          <REFERENCE_NUMBER>LYi.001</REFERENCE_NUMBER>
          <LISTED_ON>2011-02-26</LISTED_ON>
-         <COMMENTS1>Listed pursuant to paragraph 15 of resolution 1970 (Travel Ban). </COMMENTS1>
+         <COMMENTS1>Listed pursuant to paragraph 15 of resolution 1970 (Travel Ban). Believed status/location: deceased.</COMMENTS1>
          <TITLE>
             <VALUE>Dr</VALUE>
          </TITLE>
@@ -102,16 +102,23 @@
          <UN_LIST_TYPE>Libya</UN_LIST_TYPE>
          <REFERENCE_NUMBER>LYi.004</REFERENCE_NUMBER>
          <LISTED_ON>2011-03-17</LISTED_ON>
+         <COMMENTS1>Listed pursuant to paragraph 15 of resolution 1970 (Travel Ban). </COMMENTS1>
          <DESIGNATION>
             <VALUE>Libyan Ambassador to Chad</VALUE>
          </DESIGNATION>
-         <COMMENTS1>Listed pursuant to paragraph 15 of resolution 1970 (Travel Ban). </COMMENTS1>
          <LIST_TYPE>
             <VALUE>UN List</VALUE>
          </LIST_TYPE>
-         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Akrin Saleh Akrin (أقرين صالح أقرين) </ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS>
+            <COUNTRY>Egypt</COUNTRY>
+         </INDIVIDUAL_ADDRESS>
          <INDIVIDUAL_DATE_OF_BIRTH/>
          <INDIVIDUAL_PLACE_OF_BIRTH/>
+         <INDIVIDUAL_DOCUMENT/>
          <SORT_KEY>AL QADHAFIQUREN SALIH QUREN </SORT_KEY>
          <SORT_KEY_LAST_MOD>2014-06-11</SORT_KEY_LAST_MOD>
       </INDIVIDUAL>
@@ -427,8 +434,7 @@
             <VALUE>UN List</VALUE>
          </LIST_TYPE>
          <INDIVIDUAL_ADDRESS>
-            <COUNTRY>Niger</COUNTRY>
-            <NOTE>Believed status/location: Niger</NOTE>
+            <COUNTRY>Libya (in custody)</COUNTRY>
          </INDIVIDUAL_ADDRESS>
          <INDIVIDUAL_DATE_OF_BIRTH>
             <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
@@ -562,21 +568,29 @@
          <UN_LIST_TYPE>Libya</UN_LIST_TYPE>
          <REFERENCE_NUMBER>LYi.019</REFERENCE_NUMBER>
          <LISTED_ON>2011-06-24</LISTED_ON>
-         <COMMENTS1>Listed pursuant to paragraph 15 of resolution 1970 and paragraph 19 of resolution 1973 (Travel Ban, Asset Freeze).</COMMENTS1>
+         <COMMENTS1>Listed pursuant to paragraph 15 of resolution 1970 and paragraph 19 of resolution 1973 (Travel Ban, Asset Freeze). </COMMENTS1>
          <LIST_TYPE>
             <VALUE>UN List</VALUE>
          </LIST_TYPE>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Safia Farkash Mohammed Al-Hadad, born 1 Jan. 1953 (Oman passport no. 03825239)</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
          <INDIVIDUAL_ADDRESS>
             <COUNTRY>Sultanate of Oman</COUNTRY>
-            <NOTE>Believed status/location: Sultanate of Oman</NOTE>
          </INDIVIDUAL_ADDRESS>
          <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Approximately</TYPE_OF_DATE>
             <YEAR>1952</YEAR>
          </INDIVIDUAL_DATE_OF_BIRTH>
          <INDIVIDUAL_PLACE_OF_BIRTH>
             <CITY>Al Bayda</CITY>
             <COUNTRY>Libya</COUNTRY>
          </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_DOCUMENT>
+            <TYPE_OF_DOCUMENT>Passport</TYPE_OF_DOCUMENT>
+            <NUMBER>03825239</NUMBER>
+         </INDIVIDUAL_DOCUMENT>
          <SORT_KEY>AL-BARASSI Safia Farkash </SORT_KEY>
          <SORT_KEY_LAST_MOD>2014-06-11</SORT_KEY_LAST_MOD>
       </INDIVIDUAL>

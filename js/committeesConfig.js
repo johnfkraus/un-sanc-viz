@@ -15,6 +15,7 @@ var backupRawXmlPath;
 var committeeResolution;
 var committeeUrlPath;
 var committeeXmlListUrl;
+var xmlFileLocalHistorialArchiveStoragePathAndName;
 var committeesArray;
 var committeesConfigJsonPathAndFileName;
 var committeesJson;
@@ -99,6 +100,7 @@ run = function () {
     committeesJson[committeeConfig].writeJsonOutputDebuggingDirectory = writeJsonOutputDebuggingDirectory;
     committeesJson[committeeConfig].xmlDataPath = xmlDataPath;
     committeesJson[committeeConfig].xmlFileLocalStoragePathAndName = xmlFileLocalStoragePathAndName;
+    committeesJson[committeeConfig].xmlFileLocalHistorialArchiveStoragePathAndName = xmlFileLocalHistorialArchiveStoragePathAndName;
     committeesJson[committeeConfig].combinedListUrl = combinedListUrl;  // Committee 1988
     committeesJson[committeeConfig].combinedHtmlLocalOutputFileNameAndPath = combinedHtmlLocalOutputFileNameAndPath; // Committee 1988
 
@@ -139,6 +141,8 @@ init = function (committeeParam) {
   missingNodesPathAndFileName = __dirname + '/../data/committees/' + committeeConfig + '/missing/missing_nodes.json.js';
   // xml files local storage
   xmlFileLocalStoragePathAndName = __dirname + '/../data/committees/' + committeeConfig + '/' + committeeConfig + '.xml';
+
+  xmlFileLocalHistorialArchiveStoragePathAndName = __dirname + '/../data/archive_historical/' + committeeConfig + '-' + utilities_aq_viz.getFormattedDateStringForBackupFileName(new Date(), 'yyyy-mm-dd') + '.xml';
 
   // XML backups
   backupRawXmlPath = __dirname + '/../data/committees/' + committeeConfig + '/backup/';

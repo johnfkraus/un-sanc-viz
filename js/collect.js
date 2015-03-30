@@ -197,6 +197,8 @@ var collect = function (committee) {
       function (callback) {
         utilities_aq_viz.syncWriteMyFile(list_xml, committeesJson[committee].xmlFileLocalStoragePathAndName, fsOptions);
         utilities_aq_viz.syncWriteMyFile(list_xml, committeesJson[committee].backupRawXmlFilePathAndName, fsOptions);
+        // save xml file to historical archives, for example: data\archive_historical\751-2015-03-30.xml
+        utilities_aq_viz.syncWriteMyFile(list_xml, committeesJson[committee].xmlFileLocalHistorialArchiveStoragePathAndName, fsOptions);
         // save intermediate file for debugging
         utilities_aq_viz.stringifyAndWriteJsonDataFile(data, committeesJson[committee].writeJsonOutputDebuggingDirectory + 'data_xml-collect-L' + __line + '-raw_xml_list.xml');
         callback();
@@ -340,7 +342,9 @@ var collect = function (committee) {
         } catch (err) {
           logger.info(__filename, 'line', __line, '; Error: ', err, '; committee = ', committee, '; committeesJson[committee].subjectMatterAbbreviated = ', committeesJson[committee].subjectMatterAbbreviated);
         }
+        // "dateGenerated": "03-17-2015"
         data_xml_json.dateGenerated = utilities_aq_viz.formatMyDate(data_xml_json.CONSOLIDATED_LIST.$.dateGenerated);
+        // "dateCollected": "03-30-2015"
         data_xml_json.dateCollected = utilities_aq_viz.formatMyDate(new Date());
         data_xml_json.nodes.forEach(function (node) {
           node.dateUpdatedString = processDateUpdatedArray(node);
