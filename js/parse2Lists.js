@@ -13,6 +13,7 @@ var markup_beauty = require(__dirname + '/libs/prettydiff/markup_beauty.js');
 var cc = require('./committeesConfig.js');
 var getCommitteesJson = require('./committeesConfig.js').getCommitteesJson;
 var utilities_aq_viz = require('./utilities_aq_viz');
+var jsbeautify = require('./jsbeautify.js');
 
 // RUN CONFIGURATION
 // skip downloading 300+ narrative files and use locally stored files instead; for debugging
@@ -89,6 +90,7 @@ var start = function () {
 //  var functionCount = 0;
   async.series([
       function (callback) {
+
         committeesJson = getCommitteesJson();
         callback();
       },
@@ -96,7 +98,7 @@ var start = function () {
       function (callback) {
         if (committeesArray) {
 
-          // committeesArray = ['751'];
+          committeesArray = ['751'];
           committeesArray.forEach(function (committeeParam) {
             // committee4parse = committeeParam;
             parse2ListsCommittee(committeeParam);
@@ -145,6 +147,7 @@ var parse2ListsCommittee = function (committeeParam) {
           // 1 of 2: list of individuals
           if (committeesJson[committee4parse].individualsListUrl) {
             individualsHtmlUnicodeString = syncGetHtmlAsUnicodeString(committeesJson[committee4parse].individualsListUrl);
+            // if the U.N. web site returned 'Page Not Found"...
             if (utilities_aq_viz.errorPageReturned(individualsHtmlUnicodeString)) {
               logger.error(__filename, ' line ', __line, 'Error: Server returned: ', utilities_aq_viz.errorPageReturned(individualsHtmlUnicodeString));
             }
@@ -169,7 +172,7 @@ var parse2ListsCommittee = function (committeeParam) {
         } else {
           // open local html files previously downloaded from the UN website to the local file system
           // instead of downloading the list files from the UN web site,
-          logger.warn(__filename, 'line', __line, '; useLocalListFiles = ', useLocalListFiles, '; reading stored (previously downloaded) local files: ', '; committeesJson[committee4parse].individualsHtmlLocalOutputFileNameAndPath = ', committeesJson[committee4parse].individualsHtmlLocalOutputFileNameAndPath, '; committeesJson[committee4parse].entitiesHtmlLocalOutputFileNameAndPath = ', committeesJson[committee4parse].entitiesHtmlLocalOutputFileNameAndPath);
+          //    logger.warn(__filename, 'line', __line, '; useLocalListFiles = ', useLocalListFiles, '; reading stored (previously downloaded) local files: ', '; committeesJson[committee4parse].individualsHtmlLocalOutputFileNameAndPath = ', committeesJson[committee4parse].individualsHtmlLocalOutputFileNameAndPath, '; committeesJson[committee4parse].entitiesHtmlLocalOutputFileNameAndPath = ', committeesJson[committee4parse].entitiesHtmlLocalOutputFileNameAndPath);
 
           individualsHtmlUnicodeString = null;
           entitiesHtmlUnicodeString = null;
@@ -188,6 +191,45 @@ var parse2ListsCommittee = function (committeeParam) {
           } catch (err) {
             logger.error('\n ', __filename, 'line', __line, '; Error: ', err, utilities_aq_viz.getStackTrace(err));
           }
+        }
+
+        callback();
+      },
+
+      function (callback) {
+        if (consoleLog) {
+          logger.debug('\n ', __filename, __line, '; function #:', ++functionCount, '; read the two local list files for sanctioned individuals and entities');
+        }
+        individualsHtmlUnicodeString = null;
+        entitiesHtmlUnicodeString = null;
+        try {
+          if (committeesJson[committee4parse].individualsHtmlLocalOutputFileNameAndPath) {
+            individualsHtmlUnicodeString = fse.readFileSync(committeesJson[committee4parse].individualsHtmlLocalOutputFileNameAndPath, fsOptions);
+          }
+        }
+        catch (err) {
+          logger.error('\n ', __filename, 'line', __line, '; Error: ', err, utilities_aq_viz.getStackTrace(err));
+        }
+        try {
+          // beautify
+          jsbeautify.beautifyAndSaveHtmlUnicodeString(individualsHtmlUnicodeString, committeesJson[committee4parse].individualsHtmlLocalOutputFileNameAndPath);
+        }
+        catch (err) {
+          logger.error('\n ', __filename, 'line', __line, '; Error: ', err, utilities_aq_viz.getStackTrace(err));
+        }
+        try {
+          if (committeesJson[committee4parse].entitiesHtmlLocalOutputFileNameAndPath) {
+            entitiesHtmlUnicodeString = fse.readFileSync(committeesJson[committee4parse].entitiesHtmlLocalOutputFileNameAndPath, fsOptions);
+          }
+        } catch (err) {
+          logger.error('\n ', __filename, 'line', __line, '; Error: ', err, utilities_aq_viz.getStackTrace(err));
+        }
+        try {
+          // beautify
+          jsbeautify.beautifyAndSaveHtmlUnicodeString(entitiesHtmlUnicodeString, committeesJson[committee4parse].entitiesHtmlLocalOutputFileNameAndPath);
+        }
+        catch (err) {
+          logger.error('\n ', __filename, 'line', __line, '; Error: ', err, utilities_aq_viz.getStackTrace(err));
         }
         callback();
       },
@@ -209,7 +251,6 @@ var parse2ListsCommittee = function (committeeParam) {
         if (consoleLog) {
           logger.debug('\n ', __filename, __line, '; function 1#:', ++functionCount, '; parse the html list files to obtain narrative file names');
         }
-
         // individuals
         if (individualsHtmlUnicodeString) {
           syncParseHtmlListPage(individualsHtmlUnicodeString, 'indiv');
@@ -252,6 +293,7 @@ var parse2ListsCommittee = function (committeeParam) {
         // do we want to parse files freshly downloaded from the Internet or use locally stored files?
         // if useLocalNarrativeFiles === true, we will not download all the narrative files; use locally stored copies instead.
         if (!useLocalNarrativeFiles) {
+          // download the narrative files from the U.N. site
           var narrative, nodeNarrFileName, trimmedNarrative, trimmedLabeledNarrative; //, writeNarrativesFilePath;
           // read the data_narr file; each node has a narrativeFileName property
           data_narr = JSON.parse(fse.readFileSync(committeesJson[committee4parse].narrDataPath, fsOptions));
@@ -261,16 +303,9 @@ var parse2ListsCommittee = function (committeeParam) {
             nodeNarrFileName = node.narrativeFileName;
             url = committeesJson[committee4parse].narrativesUrlPath + nodeNarrFileName;
             // var arg = {};
-
-var mb;
-
+            var mb;
             try {
               narrative = syncGetHtmlAsUnicodeString(committeesJson[committee4parse].narrativesUrlPath + nodeNarrFileName);
-              var arg = {
-                input: narrative
-              };
-              mb = new markup_beauty(arg);
-//              narrative = markup_beauty.markup_beauty(arg);
 
             } catch (err) {
               logger.error('\n ', __filename, 'line', __line, '; Error: ', err, '; url = ', url);
@@ -288,6 +323,8 @@ var mb;
             trimmedNarrative = utilities_aq_viz.trimNarrative2(narrWebPageAsString, url);
             trimmedLabeledNarrative = utilities_aq_viz.addFileLabel(trimmedNarrative, url);
             // write the file to this directory: readWriteLocalNarrativesFilePath = __dirname + '/../data/committees/' + committee4parse + '/narratives/';
+            // beautify the remaining html narrative file
+            trimmedLabeledNarrative = jsbeautify.beautifyHtmlFile(trimmedLabeledNarrative);
             syncWriteHtmlFile(trimmedLabeledNarrative, committeesJson[committee4parse].readWriteLocalNarrativesFilePath + nodeNarrFileName);
             // Next: PARSE NARRATIVE FOR LINKS
           }
@@ -326,12 +363,27 @@ var mb;
            }
            */
 //          readWriteLocalNarrativesFilePath = readWriteLocalNarrativesFilePath + node.narrativeFileName;
+
           try {
             narrative = fse.readFileSync(committeesJson[committee4parse].readWriteLocalNarrativesFilePath + node.narrativeFileName, fsOptions);
           } catch (err) {
-            logger.error('\n ', __filename, 'line', __line, '; Error reading narrativeFileName: ', err, ';\n nodeNarrFileName = ', nodeNarrFileName, '; \readWriteLocalNarrativesFilePath = ', committeesJson[committee4parse].readWriteLocalNarrativesFilePath, '; node.noLongerListed = ', node.noLongerListed, '; utilities_aq_viz.showObjectProperties(link) = ', utilities_aq_viz.showObjectProperties(node));
+            logger.error(__filename, 'line', __line, '; Error reading narrativeFileName: ', err, ';\n nodeNarrFileName = ', nodeNarrFileName, '; \readWriteLocalNarrativesFilePath = ', committeesJson[committee4parse].readWriteLocalNarrativesFilePath, '; node.noLongerListed = ', node.noLongerListed, '; utilities_aq_viz.showObjectProperties(link) = ', utilities_aq_viz.showObjectProperties(node));
+          }
+
+          try {
+            narrative = trimBeautifyNarrativeHtmlFile(narrative, url);
+          } catch (err) {
+            logger.error(__filename, 'line', __line, '; Error: ', err);
+
           }
           addConnectionIdsArrayFromNarrative(node, narrative);
+          try {
+            jsbeautify.beautifyAndSaveHtmlUnicodeString(narrative, committeesJson[committee4parse].readWriteLocalNarrativesFilePath + node.narrativeFileName);
+//            narrative = fse.readFileSync(committeesJson[committee4parse].readWriteLocalNarrativesFilePath + node.narrativeFileName, fsOptions);
+          } catch (err) {
+            logger.error(__filename, 'line', __line, '; Error: ', err);
+          }
+
         }
         callback();
       },
@@ -357,7 +409,6 @@ var mb;
 
         data_narr.linkSet = data_narr.linkSet || new Set();
         data_narr.links = data_narr.links || [];
-
 
         addSourceTargetObjectsToLinks();
         sortSourceTargetIds(data_narr.links);
@@ -409,89 +460,89 @@ var mb;
 
        callback();
        },
+
+       // write intermediate data_narr file for debugging
+       function (callback) {
+       if (data_narr) {
+       // var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'data_html-parse2-L' + __line + '-collectedLinks.json';
+       utilities_aq_viz.stringifyAndWriteJsonDataFile(data_narr, committeesJson[committee4parse].writeJsonOutputDebuggingDirectory + 'data_html-parse2-L' + __line + '-message.json');
+       utilities_aq_viz.stringifyAndWriteJsonDataFile(data_narr, committeesJson[committee4parse].narrDataPath);
+       }
+       callback();
+       },
+
+       // create dot file
+       //
+       function (callback) {
+       logger.debug(__filename, 'line', __line, '; function #:', ++functionCount);
+
+       var linkString, link1, link0;
+       var link;
+       // read the data_narr file; each node has a narrativeFileName property
+       data_narr = JSON.parse(fse.readFileSync(committeesJson[committee4parse].narrDataPath, fsOptions));
+       // validateNodeIds(data_narr);
+
+       linkString = "strict graph 1267 {\n";
+       var links = data_narr.links;
+       for (var linkCounter = 0; linkCounter < links.length; linkCounter++) {
+       link = links[linkCounter];
+
+       if (link[0]) {
+       link0 = fixIdCase(link[0]).replace(/\./, '_');
+       link1 = link[1].replace(/\./, '_');
+       linkString += link0 + ' -- ' + link1 + ';\n';
+       } else {
+       link0 = fixIdCase(link.source).replace(/\./, '_');
+       link1 = (link.target).replace(/\./, '_');
+       linkString += link0 + ' -- ' + link1 + ';\n';
+       }
+
+       }
+       linkString += '}';
+       fse.writeFileSync(committeesJson[committee4parse].dotFileLocalOutputFileNameAndPath, linkString, fsOptions);
+       callback();
+       },
+
+       function (callback) {
+       logger.debug(__filename, 'line', __line, '; function #:', ++functionCount);
+       validateNodeIds(data_narr);
+       callback();
+       },
+
+       // write intermediate data_narr file for debugging
+       function (callback) {
+       if (data_narr) {
+       // var writeJsonPathAndFileName = committeesJson[committee4parse].writeJsonOutputDebuggingDirectory + 'data_html-parse2-L' + __line + '-collectedLinks.json';
+       utilities_aq_viz.stringifyAndWriteJsonDataFile(data_narr, committeesJson[committee4parse].writeJsonOutputDebuggingDirectory + 'data_html-parse2-L' + __line + '-message.json');
+       utilities_aq_viz.stringifyAndWriteJsonDataFile(data_narr, committeesJson[committee4parse].narrDataPath);
+       }
+       callback();
+       },
+
+       // summarize output
+       // compare number of comment links to number of narrative links
+       function (callback) {
+       validateNodeIds(data_narr);
+       // committeesJson[committee4parse].narrDataPath = __dirname + '/../data/committees/' + committee4parse + '/data2.json';
+       // var configJsonFileName = __dirname + '/../data_narr/config/config.json';
+       var buffer = fse.readFileSync(committeesJson[committee4parse].narrDataPath, fsOptions);
+       data_narr = JSON.parse(buffer);
+       logger.debug(__filename, 'line', __line, '; data_narr.nodes.length = ', data_narr.nodes.length);
+       logger.debug(__filename, 'line', __line, '; data_narr.links.length = ', data_narr.links.length);
+       callback();
+       }
+
+       ,
+
+       // count links; add linkcount to nodes
+       function (callback) {
+       logger.debug(__filename, 'line', __line, '; function #:', ++functionCount);
+       data_narr = utilities_aq_viz.countLinks(data_narr);
+       callback();
+       }
+
+       ,
        */
-      // write intermediate data_narr file for debugging
-      function (callback) {
-        if (data_narr) {
-          // var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'data_html-parse2-L' + __line + '-collectedLinks.json';
-          utilities_aq_viz.stringifyAndWriteJsonDataFile(data_narr, committeesJson[committee4parse].writeJsonOutputDebuggingDirectory + 'data_html-parse2-L' + __line + '-message.json');
-          utilities_aq_viz.stringifyAndWriteJsonDataFile(data_narr, committeesJson[committee4parse].narrDataPath);
-        }
-        callback();
-      },
-
-      // create dot file
-      //
-      function (callback) {
-        logger.debug(__filename, 'line', __line, '; function #:', ++functionCount);
-
-        var linkString, link1, link0;
-        var link;
-        // read the data_narr file; each node has a narrativeFileName property
-        data_narr = JSON.parse(fse.readFileSync(committeesJson[committee4parse].narrDataPath, fsOptions));
-        // validateNodeIds(data_narr);
-
-        linkString = "strict graph 1267 {\n";
-        var links = data_narr.links;
-        for (var linkCounter = 0; linkCounter < links.length; linkCounter++) {
-          link = links[linkCounter];
-
-          if (link[0]) {
-            link0 = fixIdCase(link[0]).replace(/\./, '_');
-            link1 = link[1].replace(/\./, '_');
-            linkString += link0 + ' -- ' + link1 + ';\n';
-          } else {
-            link0 = fixIdCase(link.source).replace(/\./, '_');
-            link1 = (link.target).replace(/\./, '_');
-            linkString += link0 + ' -- ' + link1 + ';\n';
-          }
-
-        }
-        linkString += '}';
-        fse.writeFileSync(committeesJson[committee4parse].dotFileLocalOutputFileNameAndPath, linkString, fsOptions);
-        callback();
-      },
-
-      function (callback) {
-        logger.debug(__filename, 'line', __line, '; function #:', ++functionCount);
-        validateNodeIds(data_narr);
-        callback();
-      },
-
-      // write intermediate data_narr file for debugging
-      function (callback) {
-        if (data_narr) {
-          // var writeJsonPathAndFileName = committeesJson[committee4parse].writeJsonOutputDebuggingDirectory + 'data_html-parse2-L' + __line + '-collectedLinks.json';
-          utilities_aq_viz.stringifyAndWriteJsonDataFile(data_narr, committeesJson[committee4parse].writeJsonOutputDebuggingDirectory + 'data_html-parse2-L' + __line + '-message.json');
-          utilities_aq_viz.stringifyAndWriteJsonDataFile(data_narr, committeesJson[committee4parse].narrDataPath);
-        }
-        callback();
-      },
-
-      // summarize output
-      // compare number of comment links to number of narrative links
-      function (callback) {
-        validateNodeIds(data_narr);
-        // committeesJson[committee4parse].narrDataPath = __dirname + '/../data/committees/' + committee4parse + '/data2.json';
-        // var configJsonFileName = __dirname + '/../data_narr/config/config.json';
-        var buffer = fse.readFileSync(committeesJson[committee4parse].narrDataPath, fsOptions);
-        data_narr = JSON.parse(buffer);
-        logger.debug(__filename, 'line', __line, '; data_narr.nodes.length = ', data_narr.nodes.length);
-        logger.debug(__filename, 'line', __line, '; data_narr.links.length = ', data_narr.links.length);
-        callback();
-      }
-
-      ,
-
-      // count links; add linkcount to nodes
-      function (callback) {
-        logger.debug(__filename, 'line', __line, '; function #:', ++functionCount);
-        data_narr = utilities_aq_viz.countLinks(data_narr);
-        callback();
-      }
-
-      ,
-
       // write intermediate data_narr file for debugging
       function
         (callback) {
@@ -551,6 +602,16 @@ var validateNodeIds = function (data_narr) {
       console.log('Error, missing node source or target: ', linkSource, linkTarget);
     }
   }
+};
+
+var trimBeautifyNarrativeHtmlFile = function (narrWebPageAsString2, url2) {
+// trim the narrative html file; remove head, etc.
+  var trimmedNarrative2 = utilities_aq_viz.trimNarrative2(narrWebPageAsString2, url2);
+  var trimmedLabeledNarrative2 = utilities_aq_viz.addFileLabel(trimmedNarrative2, url2);
+// write the file to this directory: readWriteLocalNarrativesFilePath = __dirname + '/../data/committees/' + committee4parse + '/narratives/';
+// beautify the remaining html narrative file
+  trimmedLabeledNarrative2 = jsbeautify.beautifyHtmlUnicodeString(trimmedLabeledNarrative2);
+  return trimmedLabeledNarrative2;
 };
 
 // parse each of the html narrative list files
@@ -1131,15 +1192,21 @@ var addSourceTargetObjectsToLinks = function () {
               // var xSet = new Set();
 
               // var y = xSet.add(concatenatedPairedIds);
-              if (concatenatedPairedIds && data_narr.linkSet && data_narr.linkSet.add(concatenatedPairedIds)) {
+              try {
+                if (concatenatedPairedIds && data_narr.linkSet && data_narr.linkSet.add(concatenatedPairedIds)) {
 
-              // var x = linkSet.add(concatenatedPairedIds)
+                  // var x = linkSet.add(concatenatedPairedIds)
 
-                (data_narr.links).push(sourceTargetObject);
+                  (data_narr.links).push(sourceTargetObject);
 
-              } else {
-                logger.debug(__filename, 'line', __line, '; linkSet.add(concatenatedPairedIds) = ', linkSet.add(concatenatedPairedIds));
+                } else {
+                  logger.debug(__filename, 'line', __line, '; linkSet.add(concatenatedPairedIds) = ', linkSet.add(concatenatedPairedIds));
+                }
+
+              } catch (err) {
+                logger.error(__filename, 'line', __line, '; Error: ', err);
               }
+
             }
           }
         }

@@ -5,8 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d978abb8-9bbc-4846-80bc-cd786bfafc5b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/foo.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jsbeautify.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/committees/751/narratives/SOe001.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archives/jsbeautify.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/archive_historical/jsbeautify.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/committees/751/narratives/SOi001.html" afterPath="$PROJECT_DIR$/data/committees/751/narratives/SOi001.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/committees/751/narratives/SOi002.html" afterPath="$PROJECT_DIR$/data/committees/751/narratives/SOi002.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/committees/751/narratives/SOi003.html" afterPath="$PROJECT_DIR$/data/committees/751/narratives/SOi003.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/committees/751/narratives/SOi004.html" afterPath="$PROJECT_DIR$/data/committees/751/narratives/SOi004.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/committees/751/narratives/SOi005.html" afterPath="$PROJECT_DIR$/data/committees/751/narratives/SOi005.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/committees/751/narratives/SOi006.html" afterPath="$PROJECT_DIR$/data/committees/751/narratives/SOi006.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/committees/751/narratives/SOi008.html" afterPath="$PROJECT_DIR$/data/committees/751/narratives/SOi008.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/committees/751/narratives/SOi009.html" afterPath="$PROJECT_DIR$/data/committees/751/narratives/SOi009.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/committees/751/narratives/SOi010.html" afterPath="$PROJECT_DIR$/data/committees/751/narratives/SOi010.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/committees/751/narratives/SOi011.html" afterPath="$PROJECT_DIR$/data/committees/751/narratives/SOi011.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/committees/751/narratives/SOi012.html" afterPath="$PROJECT_DIR$/data/committees/751/narratives/SOi012.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/committees/751/narratives/SOi013.shtml" afterPath="$PROJECT_DIR$/data/committees/751/narratives/SOi013.shtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/committees/751/narratives/SOi014.shtml" afterPath="$PROJECT_DIR$/data/committees/751/narratives/SOi014.shtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/appConfig.js" afterPath="$PROJECT_DIR$/js/appConfig.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/committees/751/entities.html" afterPath="$PROJECT_DIR$/data/committees/751/entities.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/committees/751/individuals.html" afterPath="$PROJECT_DIR$/data/committees/751/individuals.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/jsbeautify.js" afterPath="$PROJECT_DIR$/js/jsbeautify.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/parse2Lists.js" afterPath="$PROJECT_DIR$/js/parse2Lists.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/utilities_aq_viz.js" afterPath="$PROJECT_DIR$/js/utilities_aq_viz.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="un-sanc-viz.iws" />
@@ -34,8 +54,8 @@
       <file leaf-file-name="parse2Lists.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/parse2Lists.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.114285715" vertical-offset="3005" max-vertical-offset="29053">
-              <caret line="177" column="57" selection-start-line="177" selection-start-column="49" selection-end-line="177" selection-end-column="57" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="29427">
+              <caret line="378" column="0" selection-start-line="378" selection-start-column="0" selection-end-line="378" selection-end-column="0" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -43,31 +63,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jsbeautify.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="jsbeautify.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/jsbeautify.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7961631" vertical-offset="382" max-vertical-offset="1275">
-              <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="629" max-vertical-offset="1887">
+              <caret line="55" column="54" selection-start-line="55" selection-start-column="29" selection-end-line="55" selection-end-column="54" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="KPe001.shtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/committees/1718/narratives/KPe001.shtml">
+      <file leaf-file-name="utilities_aq_viz.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/utilities_aq_viz.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="221">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="2063" max-vertical-offset="8330">
+              <caret line="135" column="3" selection-start-line="135" selection-start-column="3" selection-end-line="135" selection-end-column="3" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="foo.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/foo.html">
+      <file leaf-file-name="SOi003.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/data/committees/751/narratives/SOi003.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
-              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.3655914" vertical-offset="0" max-vertical-offset="465">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="collect.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/collect.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="5939" max-vertical-offset="24310">
+              <caret line="343" column="80" selection-start-line="343" selection-start-column="0" selection-end-line="343" selection-end-column="80" />
               <folding />
             </state>
           </provider>
@@ -88,9 +118,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/lineNumTest.html" />
-        <option value="$PROJECT_DIR$/data/committees/consolidated/data_merged.json" />
-        <option value="$PROJECT_DIR$/js/mergeLists.js" />
         <option value="$PROJECT_DIR$/data/committees/1267/trunc_links_with_periods.dot" />
         <option value="$PROJECT_DIR$/js/viz.js" />
         <option value="$PROJECT_DIR$/data/committees/1267/missing_nodes.js" />
@@ -128,17 +155,20 @@
         <option value="$PROJECT_DIR$/test/test751.js" />
         <option value="$PROJECT_DIR$/data/committees/751/data_html.json" />
         <option value="$PROJECT_DIR$/js/committeesConfig.js" />
-        <option value="$PROJECT_DIR$/js/appConfig.js" />
         <option value="$PROJECT_DIR$/js/regexTest.js" />
         <option value="$PROJECT_DIR$/js/collect.js" />
         <option value="$PROJECT_DIR$/data/committees/751/narratives/SOi001.html" />
-        <option value="$PROJECT_DIR$/js/utilities_aq_viz.js" />
-        <option value="$PROJECT_DIR$/data/committees/751/narratives/SOe001.html" />
         <option value="$PROJECT_DIR$/data/committees/1267/narratives/NSQI31313E.shtml" />
         <option value="$PROJECT_DIR$/js/markup_beauty.js" />
         <option value="$PROJECT_DIR$/js/foo.js" />
-        <option value="$PROJECT_DIR$/js/parse2Lists.js" />
+        <option value="$PROJECT_DIR$/archives/jsbeautify.js" />
+        <option value="$PROJECT_DIR$/data/archive_historical/jsbeautify.js" />
+        <option value="$PROJECT_DIR$/js/appConfig.js" />
+        <option value="$PROJECT_DIR$/data/committees/751/narratives/SOe001.html" />
         <option value="$PROJECT_DIR$/js/jsbeautify.js" />
+        <option value="$PROJECT_DIR$/js/parse2Lists.js" />
+        <option value="$PROJECT_DIR$/data/committees/751/narratives/SOi003.html" />
+        <option value="$PROJECT_DIR$/js/utilities_aq_viz.js" />
       </list>
     </option>
   </component>
@@ -220,6 +250,9 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files" />
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -235,6 +268,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="un-sanc-viz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="un-sanc-viz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="un-sanc-viz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node_modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="un-sanc-viz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="un-sanc-viz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node_modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fs-extra" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -302,76 +367,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="2127" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="un-sanc-viz" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="un-sanc-viz" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="committees" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="1718" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="un-sanc-viz" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="un-sanc-viz" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="committees" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="1718" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="narratives" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="un-sanc-viz" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="un-sanc-viz" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="committees" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="751" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -399,27 +394,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="narratives" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="un-sanc-viz" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="un-sanc-viz" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="archives" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files" />
       </pane>
     </panes>
   </component>
@@ -439,11 +417,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\User1\WebstormProjects\un-sanc-viz\test" />
+      <recent name="C:\Users\User1\WebstormProjects\un-sanc-viz\data\committees\751\narratives" />
+      <recent name="C:\Users\User1\WebstormProjects\un-sanc-viz\data\archive_historical" />
       <recent name="C:\Users\User1\WebstormProjects\un-sanc-viz\archives" />
+      <recent name="C:\Users\User1\WebstormProjects\un-sanc-viz\test" />
       <recent name="C:\Users\User1\WebstormProjects\un-sanc-viz\data\committees\751\missing" />
-      <recent name="C:\Users\User1\WebstormProjects\un-sanc-viz\data\committees\1267\missing" />
-      <recent name="C:\Users\User1\WebstormProjects\un-sanc-viz\data\committees\1267" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\User1\WebstormProjects\un-sanc-viz\data\committees\consolidated\backup" />
@@ -889,35 +867,61 @@
       <option name="project" value="LOCAL" />
       <updated>1427599256017</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="added js-beautify">
+      <created>1427643326596</created>
+      <option name="number" value="00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1427643326596</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
+  </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="916" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.41556728" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41447368" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Heroku" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32849604" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4105263" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Code Review" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24967907" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991013" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2580231" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991013" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31973684" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31973684" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Get Gist" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3263158" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39473686" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -967,7 +971,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="1098 links" />
     <MESSAGE value="d3 force charged graph working again, all radii the same" />
     <MESSAGE value="radius control achieved; merge data files" />
     <MESSAGE value="get links back; only nodes rendered" />
@@ -992,45 +995,56 @@
     <MESSAGE value="adding markup_beauty.js" />
     <MESSAGE value="added prettydiff to js/libs" />
     <MESSAGE value="npm install html" />
-    <option name="LAST_COMMIT_MESSAGE" value="npm install html" />
+    <MESSAGE value="added js-beautify" />
+    <option name="LAST_COMMIT_MESSAGE" value="added js-beautify" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/parse2Lists.js</url>
-          <line>272</line>
-          <option name="timeStamp" value="623" />
+          <line>183</line>
+          <option name="timeStamp" value="639" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/parse2Lists.js</url>
-          <line>1133</line>
-          <option name="timeStamp" value="624" />
+          <line>186</line>
+          <option name="timeStamp" value="640" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/parse2Lists.js</url>
-          <line>361</line>
-          <option name="timeStamp" value="626" />
+          <line>178</line>
+          <option name="timeStamp" value="641" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/parse2Lists.js</url>
-          <line>267</line>
-          <option name="timeStamp" value="632" />
+          <line>174</line>
+          <option name="timeStamp" value="642" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/parse2Lists.js</url>
-          <line>275</line>
-          <option name="timeStamp" value="633" />
+          <line>307</line>
+          <option name="timeStamp" value="647" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/parse2Lists.js</url>
-          <line>277</line>
-          <option name="timeStamp" value="634" />
+          <line>322</line>
+          <option name="timeStamp" value="649" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/parse2Lists.js</url>
-          <line>271</line>
-          <option name="timeStamp" value="638" />
+          <line>378</line>
+          <option name="timeStamp" value="650" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/js/parse2Lists.js</url>
+          <line>375</line>
+          <option name="timeStamp" value="651" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/js/parse2Lists.js</url>
+          <line>373</line>
+          <option name="timeStamp" value="652" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -1045,7 +1059,7 @@
           <properties />
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="639" />
+      <option name="time" value="653" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JavascriptDebugType">
@@ -1072,34 +1086,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/data/committees/consolidated/data.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.576923" vertical-offset="459" max-vertical-offset="1027701">
-          <caret line="34" column="21" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/committees/committeesConfig.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6494">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testarchive/should-test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.68321514" vertical-offset="0" max-vertical-offset="476">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/make">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-13.307693" vertical-offset="470" max-vertical-offset="1292">
@@ -1261,46 +1247,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/committees/751/data_xml.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="20944">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/committees/751/narratives/SOi002.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="421">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/committees/751/narratives/SOi004.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="421">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/committees/751/narratives/SOi005.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="421">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/committees/1518/narratives/IQe/IQe001.shtml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.043037973" vertical-offset="0" max-vertical-offset="395">
           <caret line="0" column="250" selection-start-line="0" selection-start-column="62" selection-end-line="0" selection-end-column="411" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/appConfig.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="326" max-vertical-offset="816">
-          <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1325,14 +1275,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/collect.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.85952383" vertical-offset="8003" max-vertical-offset="24310">
-          <caret line="472" column="14" selection-start-line="472" selection-start-column="14" selection-end-line="472" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/committees/751/data_narr.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.769231" vertical-offset="527" max-vertical-offset="2040">
@@ -1347,29 +1289,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/committees/751/narratives/SOi003.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25888324" vertical-offset="0" max-vertical-offset="394">
-          <caret line="0" column="979" selection-start-line="0" selection-start-column="979" selection-end-line="0" selection-end-column="979" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/utilities_aq_viz.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="7498" max-vertical-offset="7905">
-          <caret line="434" column="0" selection-start-line="432" selection-start-column="0" selection-end-line="434" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/committeesConfig.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2385" max-vertical-offset="6205">
-          <caret line="149" column="50" selection-start-line="149" selection-start-column="17" selection-end-line="149" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/committees/1718/narratives/KPe001.shtml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="417">
@@ -1378,71 +1297,184 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/committees/751/narratives/SOe001.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="697">
-          <caret line="0" column="4528" selection-start-line="0" selection-start-column="4528" selection-end-line="0" selection-end-column="4528" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/committees/751/narratives/SOi010.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="417">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/committees/751/narratives/SOi013.shtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="289">
-          <caret line="0" column="1669" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="1669" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/committees/751/narratives/SOi001.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="102">
-          <caret line="0" column="843" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="843" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/markup_beauty.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.1007195" vertical-offset="2159" max-vertical-offset="49725">
           <caret line="154" column="17" selection-start-line="154" selection-start-column="17" selection-end-line="154" selection-end-column="17" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#124983#125639#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/foo.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <caret line="7" column="209" selection-start-line="7" selection-start-column="209" selection-end-line="7" selection-end-column="209" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/archives/jsbeautify.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.040767387" vertical-offset="187" max-vertical-offset="1632">
+          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/archive_historical/jsbeautify.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.48920864" vertical-offset="0" max-vertical-offset="1343">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/fs-extra/README.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2720" max-vertical-offset="7089">
+          <caret line="160" column="1" selection-start-line="160" selection-start-column="0" selection-end-line="160" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/committees/751/narratives/SOi008.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/committees/751/data_xml.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-24.1671" vertical-offset="9528" max-vertical-offset="9911">
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <folding>
+            <element signature="e#14163#15923#0" expanded="false" />
+            <element signature="e#15927#18193#0" expanded="false" />
+            <element signature="e#18197#20334#0" expanded="false" />
+            <element signature="e#20338#22370#0" expanded="false" />
+            <element signature="e#22374#24255#0" expanded="false" />
+            <element signature="e#24259#26217#0" expanded="false" />
+            <element signature="e#26221#28006#0" expanded="false" />
+            <element signature="e#28010#30149#0" expanded="false" />
+            <element signature="e#30153#30661#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/committeesConfig.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2258" max-vertical-offset="6205">
+          <caret line="143" column="23" selection-start-line="143" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/appConfig.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="816">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/committees/751/narratives/SOe001.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="6.9615383" vertical-offset="385" max-vertical-offset="561">
+          <caret line="12" column="177" selection-start-line="12" selection-start-column="177" selection-end-line="12" selection-end-column="177" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/archives/data/committees/751/narratives/SOe001.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1880531" vertical-offset="0" max-vertical-offset="3281">
+          <caret line="5" column="77" selection-start-line="5" selection-start-column="77" selection-end-line="5" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/committees/751/narratives/SOi001.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="491">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/committees/751/narratives/SOi002.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="491">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/committees/751/narratives/SOi004.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="491">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jsbeautify.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="629" max-vertical-offset="1887">
+          <caret line="55" column="54" selection-start-line="55" selection-start-column="29" selection-end-line="55" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/committees/751/narratives/SOi013.shtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="491">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/committees/751/narratives/SOi014.shtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="357">
+          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/parse2Lists.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.114285715" vertical-offset="3005" max-vertical-offset="29053">
-          <caret line="177" column="57" selection-start-line="177" selection-start-column="49" selection-end-line="177" selection-end-column="57" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="6305" max-vertical-offset="29427">
+          <caret line="378" column="0" selection-start-line="378" selection-start-column="0" selection-end-line="378" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/jsbeautify.js">
+    <entry file="file://$PROJECT_DIR$/js/collect.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7961631" vertical-offset="382" max-vertical-offset="1275">
-          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="5939" max-vertical-offset="24310">
+          <caret line="343" column="80" selection-start-line="343" selection-start-column="0" selection-end-line="343" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/utilities_aq_viz.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2063" max-vertical-offset="8330">
+          <caret line="135" column="3" selection-start-line="135" selection-start-column="3" selection-end-line="135" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/committees/751/narratives/SOi003.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3655914" vertical-offset="0" max-vertical-offset="465">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>

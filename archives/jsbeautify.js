@@ -9,53 +9,22 @@ var fsOptions = {
   flags: 'r+', encoding: 'utf-8', autoClose: true
 };
 
-
-var beautifyHtmlUnicodeString = function (htmlUnicodeString) {
-//  var readWriteLocalNarrativesFilePath = __dirname + '/../data/committees/' + committeeParam + '/narratives/';
-//  var htmlNarrPath = 'C:/Users/User1/WebstormProjects/un-sanc-viz/data/committees/751/narratives/SOe001.html';
+var beautifyHtml = function(committeeParam) {
+  var htmlNarrPath = 'C:/Users/User1/WebstormProjects/un-sanc-viz/data/committees/751/narratives/SOe001.html';
 // var htmlNarrPath = 'C:/Users/User1/WebstormProjects/un-sanc-viz/data/committees/751/narratives/*.html';
+
 // var htmlFileNameAndPath = 'C:/Users/User1/WebstormProjects/un-sanc-viz/js/foo.html';
-//var htmlFile = fse.readFileSync(htmlPathAndFileName, fsOptions);
+  var htmlFile = fse.readFileSync(htmlNarrPath, fsOptions);
 //var htmlFile = fse.readFileSync(htmlFileNameAndPath, fsOptions);
-  // console.log(beautify_html(htmlUnicodeString, {indent_size: 4}));
-  var beautified_html_narr = beautify_html(htmlUnicodeString, {indent_size: 4});
-return beautified_html_narr;
-
-//  fse.writeFileSync(htmlPathAndFileName, beautified_html_narr, fsOptions);
-};
-
-
-var beautifyAndSaveHtmlUnicodeString = function (htmlUnicodeString, htmlPathAndFileName) {
-//  var readWriteLocalNarrativesFilePath = __dirname + '/../data/committees/' + committeeParam + '/narratives/';
-//  var htmlNarrPath = 'C:/Users/User1/WebstormProjects/un-sanc-viz/data/committees/751/narratives/SOe001.html';
-// var htmlNarrPath = 'C:/Users/User1/WebstormProjects/un-sanc-viz/data/committees/751/narratives/*.html';
-// var htmlFileNameAndPath = 'C:/Users/User1/WebstormProjects/un-sanc-viz/js/foo.html';
-//var htmlFile = fse.readFileSync(htmlPathAndFileName, fsOptions);
-//var htmlFile = fse.readFileSync(htmlFileNameAndPath, fsOptions);
- // console.log(beautify_html(htmlUnicodeString, {indent_size: 4}));
-  var beautified_html_narr = beautify_html(htmlUnicodeString, {indent_size: 4});
-  fse.writeFileSync(htmlPathAndFileName, beautified_html_narr, fsOptions);
-};
-
-
-var beautifyHtmlFile = function (htmlPathAndFileName) {
-//  var readWriteLocalNarrativesFilePath = __dirname + '/../data/committees/' + committeeParam + '/narratives/';
-//  var htmlNarrPath = 'C:/Users/User1/WebstormProjects/un-sanc-viz/data/committees/751/narratives/SOe001.html';
-// var htmlNarrPath = 'C:/Users/User1/WebstormProjects/un-sanc-viz/data/committees/751/narratives/*.html';
-// var htmlFileNameAndPath = 'C:/Users/User1/WebstormProjects/un-sanc-viz/js/foo.html';
-  var htmlFile = fse.readFileSync(htmlPathAndFileName, fsOptions);
-//var htmlFile = fse.readFileSync(htmlFileNameAndPath, fsOptions);
- // console.log(beautify_html(htmlFile, {indent_size: 4}));
+  console.log(beautify_html(htmlFile, {indent_size: 4}));
   var beautified_html_narr = beautify_html(htmlFile, {indent_size: 4});
-  //fse.writeFileSync(htmlPathAndFileName, beautified_html_narr, fsOptions);
-return beautified_html_narr;
+  fse.writeFileSync(htmlNarrPath, beautified_html_narr, fsOptions);
+
 };
 
 
 module.exports = {
-  beautifyHtmlUnicodeString: beautifyHtmlUnicodeString,
-  beautifyHtmlFile: beautifyHtmlFile,
-  beautifyAndSaveHtmlUnicodeString: beautifyAndSaveHtmlUnicodeString
+
 }
 
 /*
@@ -102,5 +71,21 @@ defaults:
  -m, --max-preserve-newlines        Maximum number of line-breaks to be preserved in one chunk [10]
  -U, --unformatted                  List of tags (defaults to inline) that should not be reformatted
  -n, --end-with-newline             End output with newline
+
+
+
+
+ var htmlNarrPath = 'C:/Users/User1/WebstormProjects/un-sanc-viz/data/committees/751/narratives/SOe001.html';
+ // var htmlNarrPath = 'C:/Users/User1/WebstormProjects/un-sanc-viz/data/committees/751/narratives/*.html';
+
+ // var htmlFileNameAndPath = 'C:/Users/User1/WebstormProjects/un-sanc-viz/js/foo.html';
+ var htmlFile = fse.readFileSync(htmlNarrPath, fsOptions);
+ //var htmlFile = fse.readFileSync(htmlFileNameAndPath, fsOptions);
+ console.log(beautify_html(htmlFile, {indent_size: 4}));
+ var beautified_html_narr = beautify_html(htmlFile, {indent_size: 4});
+ fse.writeFileSync(htmlNarrPath, beautified_html_narr, fsOptions);
+
+
+
 
  */
