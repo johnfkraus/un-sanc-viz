@@ -90,8 +90,6 @@ var committeesArray;
 var committeesJson;
 var writeJsonOutputDebuggingDirectory;
 
-
-
 var start = function () {
   committeesArray = appConfig.getCommitteesArray();
 //  var functionCount = 0;
