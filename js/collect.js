@@ -88,6 +88,9 @@ var config;
 var committees;
 var committeesArray;
 var committeesJson;
+var writeJsonOutputDebuggingDirectory;
+
+
 
 var start = function () {
   committeesArray = appConfig.getCommitteesArray();
@@ -141,6 +144,8 @@ var start = function () {
 
 var collect = function (committee) {
   var functionCount = 0;
+  writeJsonOutputDebuggingDirectory = __dirname + '/../data/committees/' + committee + '/debug_collect/';
+
   async.series([
 
       // delete old files
@@ -151,6 +156,11 @@ var collect = function (committee) {
         try {
           fse.removeSync(__dirname + '/../data/committees/' + committee + '/debug');
           fse.mkdirs(__dirname + '/../data/committees/' + committee + '/debug');
+          fse.removeSync(__dirname + '/../data/committees/' + committee + '/debug_collect');
+          fse.mkdirs(__dirname + '/../data/committees/' + committee + '/debug_collect');
+          // fse.removeSync(__dirname + '/../data/committees/' + committee + '/debug_parse2Lists');
+          // fse.mkdirs(__dirname + '/../data/committees/' + committee + '/debug_parse2Lists');
+
           fse.removeSync(__dirname + '/../data/committees/' + committee + '/*.json');
         } catch (err) {
           logger.error('\n ', __filename, 'line', __line, '; Error: ', err, utilities_aq_viz.getStackTrace(err), '; useLocalNarrativeFiles = ', useLocalNarrativeFiles);
@@ -200,7 +210,7 @@ var collect = function (committee) {
         // save xml file to historical archives, for example: data\archive_historical\751-2015-03-30.xml
         utilities_aq_viz.syncWriteMyFile(list_xml, committeesJson[committee].xmlFileLocalHistorialArchiveStoragePathAndName, fsOptions);
         // save intermediate file for debugging
-        utilities_aq_viz.stringifyAndWriteJsonDataFile(data, committeesJson[committee].writeJsonOutputDebuggingDirectory + 'data_xml-collect-L' + __line + '-raw_xml_list.xml');
+        utilities_aq_viz.stringifyAndWriteJsonDataFile(data, writeJsonOutputDebuggingDirectory + 'data_xml-collect-L' + __line + '-raw_xml_list.xml');
         callback();
       },
 
@@ -227,7 +237,7 @@ var collect = function (committee) {
       // update the data_consolidated_list.json file; write the intermediate file for debugging
       function (callback) {
         // save intermediate file for debugging
-        utilities_aq_viz.stringifyAndWriteJsonDataFile(data_xml_json, committeesJson[committee].writeJsonOutputDebuggingDirectory + 'data_xml-collect-L' + __line + '-xml_to_json.json');
+        utilities_aq_viz.stringifyAndWriteJsonDataFile(data_xml_json, writeJsonOutputDebuggingDirectory + 'data_xml-collect-L' + __line + '-xml_to_json.json');
         // update local data_xml file
         utilities_aq_viz.stringifyAndWriteJsonDataFile(data_xml_json, committeesJson[committee].xmlDataPath);
         callback();
@@ -394,7 +404,7 @@ var collect = function (committee) {
       // update the data_xml_json_consolidated_list.json file; write the intermediate file for debugging
       function (callback) {
         // var writeJsonPathAndFileName = ;
-        utilities_aq_viz.stringifyAndWriteJsonDataFile(data_xml_json, committeesJson[committee].writeJsonOutputDebuggingDirectory + 'data_xml-collect-L' + __line + '-normzd_xml_list.json');
+        utilities_aq_viz.stringifyAndWriteJsonDataFile(data_xml_json, writeJsonOutputDebuggingDirectory + 'data_xml-collect-L' + __line + '-normzd_xml_list.json');
         utilities_aq_viz.stringifyAndWriteJsonDataFile(data_xml_json, committeesJson[committee].xmlDataPath);
         // save data as data_narr.json, to be read by parse2Lists.js
 //        utilities_aq_viz.stringifyAndWriteJsonDataFile(data_xml_json, committeesJson[committee].narrDataPath);

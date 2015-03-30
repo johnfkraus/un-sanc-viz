@@ -11,11 +11,11 @@ var fsOptions = {
 var appConfig = require('./appConfig.js');
 var backupRawXmlFilePathAndName;
 var backupRawXmlPath;
-// var committee;
+var combinedHtmlLocalOutputFileNameAndPath; // Committee 1988
+var combinedListUrl;  // Committee 1988
 var committeeResolution;
 var committeeUrlPath;
 var committeeXmlListUrl;
-var xmlFileLocalHistorialArchiveStoragePathAndName;
 var committeesArray;
 var committeesConfigJsonPathAndFileName;
 var committeesJson;
@@ -24,31 +24,32 @@ var countryCode2DigitIso;
 var dataJsonLocalOutputFileNameAndPath;
 var dotFileLocalOutputFileNameAndPath;
 var entitiesHtmlLocalOutputFileNameAndPath;
+var entitiesJsonLocalOutputFileNameAndPath;
 var entitiesListUrl;
 var fse = require('fs-extra');
 var getCommitteesJson;
-var narrDataPath;
 var individualsHtmlLocalOutputFileNameAndPath;
+var individualsJsonLocalOutputFileNameAndPath;
 var individualsListUrl;
 var init;
 var linenums = require('./linenums.js');
 var logFileNameAndPath;
 var logger = appConfig.logger;
+var main;
 var mergedDataPath;
 var missingNodesPathAndFileName;
+var narrDataPath;
 var narrativesUrlPath;
 var permRefNumEnt;
 var permRefNumIndiv;
 var readWriteLocalNarrativesFilePath;
 var run;
 var subjectMatterAbbreviated;
-var main;
 var utilities_aq_viz = require('./utilities_aq_viz.js');
 var writeJsonOutputDebuggingDirectory;
 var xmlDataPath;
+var xmlFileLocalHistoricalArchiveStoragePathAndName;
 var xmlFileLocalStoragePathAndName;
-var combinedListUrl;  // Committee 1988
-var combinedHtmlLocalOutputFileNameAndPath; // Committee 1988
 
 // returns a committeesJson object
 
@@ -100,7 +101,7 @@ run = function () {
     committeesJson[committeeConfig].writeJsonOutputDebuggingDirectory = writeJsonOutputDebuggingDirectory;
     committeesJson[committeeConfig].xmlDataPath = xmlDataPath;
     committeesJson[committeeConfig].xmlFileLocalStoragePathAndName = xmlFileLocalStoragePathAndName;
-    committeesJson[committeeConfig].xmlFileLocalHistorialArchiveStoragePathAndName = xmlFileLocalHistorialArchiveStoragePathAndName;
+    committeesJson[committeeConfig].xmlFileLocalHistoricalArchiveStoragePathAndName = xmlFileLocalHistoricalArchiveStoragePathAndName;
     committeesJson[committeeConfig].combinedListUrl = combinedListUrl;  // Committee 1988
     committeesJson[committeeConfig].combinedHtmlLocalOutputFileNameAndPath = combinedHtmlLocalOutputFileNameAndPath; // Committee 1988
 
@@ -142,7 +143,7 @@ init = function (committeeParam) {
   // xml files local storage
   xmlFileLocalStoragePathAndName = __dirname + '/../data/committees/' + committeeConfig + '/' + committeeConfig + '.xml';
 
-  xmlFileLocalHistorialArchiveStoragePathAndName = __dirname + '/../data/archive_historical/' + committeeConfig + '-' + utilities_aq_viz.getFormattedDateStringForBackupFileName(new Date(), 'yyyy-mm-dd') + '.xml';
+  xmlFileLocalHistoricalArchiveStoragePathAndName = __dirname + '/../data/archive_historical/' + committeeConfig + '-' + utilities_aq_viz.getFormattedDateStringForBackupFileName(new Date(), 'yyyy-mm-dd') + '.xml';
 
   // XML backups
   backupRawXmlPath = __dirname + '/../data/committees/' + committeeConfig + '/backup/';
@@ -164,8 +165,8 @@ init = function (committeeParam) {
   individualsJsonLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committeeConfig + '/individuals.json';
   entitiesJsonLocalOutputFileNameAndPath = __dirname + '/../data/committees/' + committeeConfig + '/entities.json';
 
-  writeJsonOutputDebuggingDirectory = __dirname + '/../data/committees/' + committeeConfig + '/debug/';
-//  writeJsonOutputDebuggingPath = __dirname + '/../data/committees/' + committeeConfig + '/debug/';
+  // debugging output is written to a different directory for each javascript file
+  // for example, collect.js writes debugging output to __dirname + '/../data/committees/' + committeeConfig + '/debug_collect/';
 
   // logging
   logFileNameAndPath = __dirname + '/../log/parse2lists.log';

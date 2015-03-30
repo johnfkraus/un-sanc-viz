@@ -15,7 +15,7 @@ var getCommitteesJson = require('./committeesConfig.js').getCommitteesJson;
 var utilities_aq_viz = require('./utilities_aq_viz');
 var jsbeautify = require('./jsbeautify.js');
 var debugOutputDirectoryName = 'debug_parse2Lists';
-
+var writeJsonOutputDebuggingDirectory;
 
 // RUN CONFIGURATION
 // skip downloading 300+ narrative files and use locally stored files instead; for debugging
@@ -100,7 +100,7 @@ var start = function () {
       function (callback) {
         if (committeesArray) {
 
-          committeesArray = ['751'];
+          committeesArray = ['751', '1267'];
           committeesArray.forEach(function (committeeParam) {
             // committee4parse = committeeParam;
             parse2ListsCommittee(committeeParam);
@@ -130,7 +130,28 @@ var parse2ListsCommittee = function (committeeParam) {
   if (true) {
     logger.debug('\n ', __filename, __line, '; running parse2ListsCommittee; committeeParam = ', committeeParam);
   }
+  writeJsonOutputDebuggingDirectory = __dirname + '/../data/committees/' + committeeParam + '/debug_parse2Lists/';
+
   async.series([
+
+      // delete old files
+      function (callback) {
+        if (!useLocalNarrativeFiles) {
+          utilities_aq_viz.removeOldFiles();
+        }
+        try {
+          fse.removeSync(__dirname + '/../data/committees/' + committeeParam + '/debug_parse2Lists');
+          fse.mkdirs(__dirname + '/../data/committees/' + committeeParam + '/debug_parse2Lists');
+
+        } catch (err) {
+          logger.error('\n ', __filename, 'line', __line, '; Error: ', err, utilities_aq_viz.getStackTrace(err), '; useLocalNarrativeFiles = ', useLocalNarrativeFiles);
+        }
+        callback();
+      },
+
+
+
+
       // read the data_narr.json file created by collect.js
       // download narrative list files:
       // download from each U.N. sanctions committee web site the two list files for sanctioned (1) individuals and (2) entities.
@@ -241,7 +262,7 @@ var parse2ListsCommittee = function (committeeParam) {
         (callback) {
         if (data_narr) {
           // var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'data_html-parse2-L' + __line + '-collectedLinks.json';
-          utilities_aq_viz.stringifyAndWriteJsonDataFile(data_narr, committeesJson[committee4parse].writeJsonOutputDebuggingDirectory + 'data_html-parse2-L' + __line + '-readOrCollectedNarrListsHtml.json');
+          utilities_aq_viz.stringifyAndWriteJsonDataFile(data_narr, writeJsonOutputDebuggingDirectory + 'data_html-parse2-L' + __line + '-readOrCollectedNarrListsHtml.json');
           utilities_aq_viz.stringifyAndWriteJsonDataFile(data_narr, committeesJson[committee4parse].narrDataPath);
         }
         callback();
@@ -274,7 +295,7 @@ var parse2ListsCommittee = function (committeeParam) {
         (callback) {
         if (data_narr) {
           // var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'data_html-parse2-L' + __line + '-collectedLinks.json';
-          utilities_aq_viz.stringifyAndWriteJsonDataFile(data_narr, committeesJson[committee4parse].writeJsonOutputDebuggingDirectory + 'data_html-parse2-L' + __line + '-syncParseHtmlListPage.json');
+          utilities_aq_viz.stringifyAndWriteJsonDataFile(data_narr, writeJsonOutputDebuggingDirectory + 'data_html-parse2-L' + __line + '-syncParseHtmlListPage.json');
           utilities_aq_viz.stringifyAndWriteJsonDataFile(data_narr, committeesJson[committee4parse].narrDataPath);
         }
         callback();
@@ -394,7 +415,7 @@ var parse2ListsCommittee = function (committeeParam) {
       function
         (callback) {
         // var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'data_narr_html-parse2-L' + __line + '-collectedLinks.json';
-        utilities_aq_viz.stringifyAndWriteJsonDataFile(data_narr, committeesJson[committee4parse].writeJsonOutputDebuggingDirectory + 'data_html-parse2-L' + __line + '-message.json');
+        utilities_aq_viz.stringifyAndWriteJsonDataFile(data_narr, writeJsonOutputDebuggingDirectory + 'data_html-parse2-L' + __line + '-message.json');
         utilities_aq_viz.stringifyAndWriteJsonDataFile(data_narr, committeesJson[committee4parse].narrDataPath);
         callback();
       },
@@ -425,7 +446,7 @@ var parse2ListsCommittee = function (committeeParam) {
       function (callback) {
         if (data_narr) {
           // var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'data_html-parse2-L' + __line + '-collectedLinks.json';
-          utilities_aq_viz.stringifyAndWriteJsonDataFile(data_narr, committeesJson[committee4parse].writeJsonOutputDebuggingDirectory + 'data_html-parse2-L' + __line + '-message.json');
+          utilities_aq_viz.stringifyAndWriteJsonDataFile(data_narr, writeJsonOutputDebuggingDirectory + 'data_html-parse2-L' + __line + '-message.json');
           utilities_aq_viz.stringifyAndWriteJsonDataFile(data_narr, committeesJson[committee4parse].narrDataPath);
         }
         callback();
@@ -467,7 +488,7 @@ var parse2ListsCommittee = function (committeeParam) {
        function (callback) {
        if (data_narr) {
        // var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'data_html-parse2-L' + __line + '-collectedLinks.json';
-       utilities_aq_viz.stringifyAndWriteJsonDataFile(data_narr, committeesJson[committee4parse].writeJsonOutputDebuggingDirectory + 'data_html-parse2-L' + __line + '-message.json');
+       utilities_aq_viz.stringifyAndWriteJsonDataFile(data_narr, writeJsonOutputDebuggingDirectory + 'data_html-parse2-L' + __line + '-message.json');
        utilities_aq_viz.stringifyAndWriteJsonDataFile(data_narr, committeesJson[committee4parse].narrDataPath);
        }
        callback();
@@ -514,8 +535,8 @@ var parse2ListsCommittee = function (committeeParam) {
        // write intermediate data_narr file for debugging
        function (callback) {
        if (data_narr) {
-       // var writeJsonPathAndFileName = committeesJson[committee4parse].writeJsonOutputDebuggingDirectory + 'data_html-parse2-L' + __line + '-collectedLinks.json';
-       utilities_aq_viz.stringifyAndWriteJsonDataFile(data_narr, committeesJson[committee4parse].writeJsonOutputDebuggingDirectory + 'data_html-parse2-L' + __line + '-message.json');
+       // var writeJsonPathAndFileName = writeJsonOutputDebuggingDirectory + 'data_html-parse2-L' + __line + '-collectedLinks.json';
+       utilities_aq_viz.stringifyAndWriteJsonDataFile(data_narr, writeJsonOutputDebuggingDirectory + 'data_html-parse2-L' + __line + '-message.json');
        utilities_aq_viz.stringifyAndWriteJsonDataFile(data_narr, committeesJson[committee4parse].narrDataPath);
        }
        callback();
@@ -549,7 +570,7 @@ var parse2ListsCommittee = function (committeeParam) {
       function
         (callback) {
         if (data_narr) {
-          utilities_aq_viz.stringifyAndWriteJsonDataFile(data_narr, committeesJson[committee4parse].writeJsonOutputDebuggingDirectory + 'data_html-parse2-L' + __line + '-summarize_output.json');
+          utilities_aq_viz.stringifyAndWriteJsonDataFile(data_narr, writeJsonOutputDebuggingDirectory + 'data_html-parse2-L' + __line + '-summarize_output.json');
           utilities_aq_viz.stringifyAndWriteJsonDataFile(data_narr, committeesJson[committee4parse].narrDataPath);
         }
         callback();
