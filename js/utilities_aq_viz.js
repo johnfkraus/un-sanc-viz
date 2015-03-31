@@ -84,20 +84,17 @@ var countLines = function (textFile) {
 // return true if inString contained the string 'Error: Page Not Found', else return false
 var errorPageReturned = function (inString) {
   var errorMessage;
-  var errorPageMessageString = inString.match('Error: Page Not Found');
-  if (!errorPageMessageString) {
-    return false;
+  if (inString) {
+    var errorPageMessageString = inString.match('Error: Page Not Found');
+    if (errorPageMessageString) {
+      errorMessage = ([__filename, ' line ', __line, '; The server return a page containing ', errorPageMessageString].join());
+      return errorMessage;
+//      return true;
+    } else {
+      return false;
+    }
   } else {
-    return true;
-  }
-  if (errorPageMessageString) {
-    errorMessage = ([__filename, ' line ', __line, '; The server return a page containing ', errorPageMessageString].join());
-    return errorMessage;
-  } else {
-    return false;
-  }
-  if (consoleLog) {
-    logger.error(__filename, 'line', __line, ';  Error: ', err, '; countLines(stringifiedData) = ', countLines(stringifiedData));
+    logger.error(__filename, 'line', __line, ';  Error: inString = ', inString);
   }
 };
 
@@ -230,7 +227,6 @@ var stringifyAndWriteJsonDataFile = function (data, writeFileNameAndPath) {
     if (consoleLog) {
       console.log(__filename, 'line', __line, '; utilities_aq_viz.stringifyAndWriteJsonFile() wrote file to: ', writeFileNameAndPath, ';  file contained (truncated): ', stringifiedData.substring(0, truncateToNumChars), ' ... [CONSOLE LOG OUTPUT INTENTIONALLY TRUNCATED TO FIRST ', truncateToNumChars, ' CHARACTERS]\n\n');
       logger.debug([__filename, 'line', __line, '; utilities_aq_viz.stringifyAndWriteJsonFile() wrote file to: ', writeFileNameAndPath, ';  file contained (truncated): ', stringifiedData.substring(0, truncateToNumChars), ' ... [CONSOLE LOG OUTPUT INTENTIONALLY TRUNCATED TO FIRST ', truncateToNumChars, ' CHARACTERS]\n'].join(''));
-
     }
   } catch (err) {
     if (consoleLog) {
@@ -342,11 +338,11 @@ function trimNarrative2(narrWebPageString, url) {
   narrative = narrative.replace(/(<h2> <\/h2>)/gmi, '');
   narrative = narrative.replace(/(<p>\s{1,6}<\/p>)/gmi, '');
   narrative = narrative.replace(/(<!-- undefined -->)/gmi, '');
-  var narrative = narrative.replace(/(<p>In accordance with paragraph 14 of resolution 1844 (2008), the Security Council Committee pursuant to resolution 751 \(1992\) and 1907 \(2009\) concerning Somalia and Eritrea makes accessible a narrative summary of reasons for the listing for individuals and entities included on the 1844 Sanctions List\.<\/p>)/gmi, '');
-  var narrative = narrative.replace(/(<p>In accordance with paragraph 1 \(b\) of the Guidelines for the application of paragraphs 19 and 23 of resolution 1483 \(2003\), the Security Council Committee established pursuant to resolution 1518 \(2003\) concerning Iraq makes accessible a narrative summary of reasons for the listing for individuals and entities included in the sanctions list\.<\/p>)/gmi, '');
+  narrative = narrative.replace(/(<p>In accordance with paragraph 14 of resolution 1844 (2008), the Security Council Committee pursuant to resolution 751 \(1992\) and 1907 \(2009\) concerning Somalia and Eritrea makes accessible a narrative summary of reasons for the listing for individuals and entities included on the 1844 Sanctions List\.<\/p>)/gmi, '');
+  narrative = narrative.replace(/(<p>In accordance with paragraph 1 \(b\) of the Guidelines for the application of paragraphs 19 and 23 of resolution 1483 \(2003\), the Security Council Committee established pursuant to resolution 1518 \(2003\) concerning Iraq makes accessible a narrative summary of reasons for the listing for individuals and entities included in the sanctions list\.<\/p>)/gmi, '');
   var re = /(<p>In accordance with paragraph.*?sanctions list\.<\/p>)/gmi;
   var subs = '';
-  var narrative = narrative.replace(re, subs);
+  narrative = narrative.replace(re, subs);
   var tail = narrative.substring(narrative.length - 120, narrative.length);
   var tailOmitsChars = (narrative.length - tail.length);
   return narrative.trim();
@@ -355,12 +351,11 @@ function trimNarrative2(narrWebPageString, url) {
 var validateUrl = function (url) {
   var regex_result = url.match(/^(?:(?:https?|ftp):\/\/)(?:\S+(?::\S*)?@)?(?:(?!(?:10|127)(?:\.\d{1,3}){3})(?!(?:169\.254|192\.168)(?:\.\d{1,3}){2})(?!172\.(?:1[6-9]|2\d|3[0-1])(?:\.\d{1,3}){2})(?:[1-9]\d?|1\d\d|2[01]\d|22[0-3])(?:\.(?:1?\d{1,2}|2[0-4]\d|25[0-5])){2}(?:\.(?:[1-9]\d?|1\d\d|2[0-4]\d|25[0-4]))|(?:(?:[a-z\u00a1-\uffff0-9]-*)*[a-z\u00a1-\uffff0-9]+)(?:\.(?:[a-z\u00a1-\uffff0-9]-*)*[a-z\u00a1-\uffff0-9]+)*(?:\.(?:[a-z\u00a1-\uffff]{2,})))(?::\d{2,5})?(?:\/\S*)?$/i);
   var result;
-  if (typeof regex_result !== 'null') {
-    result = true;
+  if (regex_result) {
+    return true;
   } else {
-    result = false;
+    return  false;
   }
-  return result;
 };
 
 var showObjectProperties = function (object) {
