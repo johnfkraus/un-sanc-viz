@@ -4,21 +4,22 @@
 var useLocalListFiles = false;
 var useLocalNarrativeFiles = false;
 
-var committeesArray2 = [{'name': '751', 'useLocalNarrativeFiles': true, 'useLocalListFiles': true},
-  {'name': '1267', 'run': true, 'useLocalNarrativeFiles': true, 'useLocalListFiles': true},
-  {'name': '1518', 'run': true, 'useLocalNarrativeFiles': true, 'useLocalListFiles': true},
-  {'name': '1521', 'run': false, 'useLocalNarrativeFiles': true, 'useLocalListFiles': true},
-  {'name': '1533', 'run': false, 'useLocalNarrativeFiles': true, 'useLocalListFiles': true},
-  {'name': '1572', 'run': false, 'useLocalNarrativeFiles': true, 'useLocalListFiles': true},
-  {'name': '1591', 'run': false, 'useLocalNarrativeFiles': true, 'useLocalListFiles': true},
-  {'name': '1718', 'run': false, 'useLocalNarrativeFiles': true, 'useLocalListFiles': true},
-  {'name': '1737', 'run': false, 'useLocalNarrativeFiles': true, 'useLocalListFiles': true},
-  {'name': '1970', 'run': false, 'useLocalNarrativeFiles': true, 'useLocalListFiles': true},
-  {'name': '1988', 'run': false, 'useLocalNarrativeFiles': true, 'useLocalListFiles': true},
-  {'name': '2048', 'run': false, 'useLocalNarrativeFiles': true, 'useLocalListFiles': true},
-  {'name': '2127', 'run': false, 'useLocalNarrativeFiles': true, 'useLocalListFiles': true},
-  {'name': '2140', 'run': false, 'useLocalNarrativeFiles': true, 'useLocalListFiles': true},
-  {'name': 'consolidated', 'run': false, 'useLocalNarrativeFiles': true, 'useLocalListFiles': true}];
+var committeesArray2 = [
+  {'id': '751', 'run': true, 'useLocalNarrativeFiles': true, 'useLocalListFiles': true},
+  {'id': '1267', 'run': false, 'useLocalNarrativeFiles': true, 'useLocalListFiles': true},
+  {'id': '1518', 'run': false, 'useLocalNarrativeFiles': true, 'useLocalListFiles': true},
+  {'id': '1521', 'run': false, 'useLocalNarrativeFiles': true, 'useLocalListFiles': true},
+  {'id': '1533', 'run': false, 'useLocalNarrativeFiles': true, 'useLocalListFiles': true},
+  {'id': '1572', 'run': false, 'useLocalNarrativeFiles': true, 'useLocalListFiles': true},
+  {'id': '1591', 'run': false, 'useLocalNarrativeFiles': true, 'useLocalListFiles': true},
+  {'id': '1718', 'run': false, 'useLocalNarrativeFiles': true, 'useLocalListFiles': true},
+  {'id': '1737', 'run': false, 'useLocalNarrativeFiles': true, 'useLocalListFiles': true},
+  {'id': '1970', 'run': false, 'useLocalNarrativeFiles': true, 'useLocalListFiles': true},
+  {'id': '1988', 'run': false, 'useLocalNarrativeFiles': true, 'useLocalListFiles': true},
+  {'id': '2048', 'run': false, 'useLocalNarrativeFiles': true, 'useLocalListFiles': true},
+  {'id': '2127', 'run': false, 'useLocalNarrativeFiles': true, 'useLocalListFiles': true},
+  {'id': '2140', 'run': false, 'useLocalNarrativeFiles': true, 'useLocalListFiles': true},
+  {'id': 'consolidated', 'run': false, 'useLocalNarrativeFiles': true, 'useLocalListFiles': true}];
 
 // RUN CONFIGURATION
 // skip downloading 300+ narrative files and use locally stored files instead; for debugging
@@ -49,9 +50,21 @@ var getCommitteesWithSingleCombinedEntitiesAndIndividualsList = function () {
   return ['1988'];
 };
 
+var run = function () {
+  var ca = getCommitteesArray2();
+  ca.forEach(function (comte) {
+    console.log(comte);
+    if (comte.run === true) {
+      console.log(comte.id);
+    }
+  })
+};
+// run();
+
 module.exports = {
   consoleLog: consoleLog,
   getCommitteesArray: getCommitteesArray,
+  getCommitteesArray2: getCommitteesArray2,
   getCommitteesWithNoSeparateEntitiesList: getCommitteesWithNoSeparateEntitiesList,
   getCommitteesWithNoSeparateIndividualsList: getCommitteesWithNoSeparateIndividualsList,
   getCommitteesWithSingleCombinedEntitiesAndIndividualsList: getCommitteesWithSingleCombinedEntitiesAndIndividualsList,

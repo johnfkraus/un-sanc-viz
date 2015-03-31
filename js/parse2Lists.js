@@ -78,28 +78,18 @@ var start = function () {
 
       function (callback) {
         if (committeesArray) {
-          var committeesArray3 = [{'name': '751', 'useLocalNarrativeFiles': true, 'useLocalListFiles': true},
-            {'name': '1267', 'run': true, 'useLocalNarrativeFiles': true, 'useLocalListFiles': true},
-            {'name': '1518', 'run': true, 'useLocalNarrativeFiles': true, 'useLocalListFiles': true},
-            {'name': '1521', 'run': false, 'useLocalNarrativeFiles': true, 'useLocalListFiles': true},
-            {'name': '1533', 'run': false, 'useLocalNarrativeFiles': true, 'useLocalListFiles': true},
-            {'name': '1572', 'run': false, 'useLocalNarrativeFiles': true, 'useLocalListFiles': true},
-            {'name': '1591', 'run': false, 'useLocalNarrativeFiles': true, 'useLocalListFiles': true},
-            {'name': '1718', 'run': false, 'useLocalNarrativeFiles': true, 'useLocalListFiles': true},
-            {'name': '1737', 'run': false, 'useLocalNarrativeFiles': true, 'useLocalListFiles': true},
-            {'name': '1970', 'run': false, 'useLocalNarrativeFiles': true, 'useLocalListFiles': true},
-            {'name': '1988', 'run': false, 'useLocalNarrativeFiles': true, 'useLocalListFiles': true},
-            {'name': '2048', 'run': false, 'useLocalNarrativeFiles': true, 'useLocalListFiles': true},
-            {'name': '2127', 'run': false, 'useLocalNarrativeFiles': true, 'useLocalListFiles': true},
-            {'name': '2140', 'run': false, 'useLocalNarrativeFiles': true, 'useLocalListFiles': true},
-            {'name': 'consolidated', 'run': false, 'useLocalNarrativeFiles': true, 'useLocalListFiles': true}];
-          console.log('committeesArray3[2].run = ', committeesArray3[2].run);
           // committeesArray = ['751', '1267'];
           if (true) {
-            var numCommittees = 0;
-            for (var n = 0; n < numCommittees; n++) {
-              parse2ListsCommittee(committeesArray[n]);
-            }
+
+              var ca = appConfig.getCommitteesArray2();
+              ca.forEach(function (comte) {
+                // console.log(comte);
+                if (comte.run === true) {
+                  parse2ListsCommittee(comte.id);
+                  console.log('parsing ', comte.id);
+                }
+              });
+
           } else {
             committeesArray.forEach(function (committeeParam) {
               parse2ListsCommittee(committeeParam);
@@ -351,7 +341,7 @@ var parse2ListsCommittee = function (committeeParam) {
             // var arg = {};
             var mb;
             try {
-              narrative = syncGetHtmlAsUnicodeString(committeesJson[committee4parse].narrativesUrlPath + nodeNarrFileName);
+              narrative = syncGetHtmlAsUnicodeString(committeesJson[committee4parse].narrativesUrlPath + node.narrativeFileName);
             } catch (err) {
               logger.error('\n ', __filename, 'line', __line, '; Error: ', err, '; url = ', url);
             }
@@ -368,7 +358,7 @@ var parse2ListsCommittee = function (committeeParam) {
             // write the file to this directory: readWriteLocalNarrativesFilePath = __dirname + '/../data/committees/' + committee4parse + '/narratives/';
             // beautify the remaining html narrative file
             trimmedLabeledNarrative = jsbeautify.beautifyHtmlUnicodeString(trimmedLabeledNarrative);
-            syncWriteHtmlFile(trimmedLabeledNarrative, committeesJson[committee4parse].readWriteLocalNarrativesFilePath + nodeNarrFileName);
+            syncWriteHtmlFile(trimmedLabeledNarrative, committeesJson[committee4parse].readWriteLocalNarrativesFilePath + node.narrativeFileName);
             // Next: PARSE NARRATIVE FOR LINKS
           }
         }
