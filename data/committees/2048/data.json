@@ -1,0 +1,659 @@
+{
+ "nodes": [
+  {
+   "DATAID": "690789",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "IBRAIMA",
+   "SECOND_NAME": "CAMARÁ",
+   "THIRD_NAME": "",
+   "FOURTH_NAME": "",
+   "UN_LIST_TYPE": "GB",
+   "REFERENCE_NUMBER": "GBi.001",
+   "LISTED_ON": "2012-05-18",
+   "GENDER": "Male",
+   "COMMENTS1": "Camará was listed on 18 May 2012 pursuant to paragraph 4 of resolution 2048 (2012) as “Member of the “Military Command”, which has assumed responsibility for the coup d’état of 12 April 2012.” Father’s name is Suareba Camará; Mother’s name is Sale Queita.",
+   "DESIGNATION": {
+    "VALUE": [
+     "Brigadier General",
+     "Chief of Staff of the Air Force"
+    ]
+   },
+   "NATIONALITY": {
+    "VALUE": "Guinea-Bissau"
+   },
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ALIAS": {
+    "QUALITY": "Good",
+    "ALIAS_NAME": "Papa Camará"
+   },
+   "INDIVIDUAL_ADDRESS": "",
+   "INDIVIDUAL_DATE_OF_BIRTH": {
+    "TYPE_OF_DATE": "Exact",
+    "DATE": "1964-05-11"
+   },
+   "INDIVIDUAL_PLACE_OF_BIRTH": "",
+   "INDIVIDUAL_DOCUMENT": [
+    "",
+    {
+     "TYPE_OF_DOCUMENT": "Passport",
+     "NUMBER": "AAID00437",
+     "DATE_OF_ISSUE": "2010-02-18",
+     "COUNTRY_OF_ISSUE": "Guinea-Bissau",
+     "NOTE": "Expiration date 18 Feb. 2013"
+    }
+   ],
+   "SORT_KEY": "CAMARÁIBRAIMA",
+   "SORT_KEY_LAST_MOD": "2014-06-13",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "10 May 1964 (Exact)",
+   "indivPlaceOfBirthString": "",
+   "aliasCount": 1,
+   "indivAliasString": "Papa Camará (Good)",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 1,
+   "id": "GBi.001",
+   "name": "IBRAIMA CAMARÁ",
+   "natnlty": "Guinea-Bissau",
+   "two_Digit_Country_ISO_Code": "GB",
+   "committeeResNum": "2048 (2012)",
+   "subject_Matter_Abbreviated": "Resolution 2048 (2012) concerning Guinea-Bissau",
+   "indivOrEntFromId": "i1"
+  },
+  {
+   "DATAID": "690790",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "SANHA",
+   "SECOND_NAME": "CLUSSÉ",
+   "THIRD_NAME": "",
+   "FOURTH_NAME": "",
+   "UN_LIST_TYPE": "GB",
+   "REFERENCE_NUMBER": "GBi.002",
+   "LISTED_ON": "2012-07-18",
+   "COMMENTS1": "Clussé was listed on 18 Jul. 2012 pursuant to paragraph 4 of resolution 2048 (2012) as “Member of the “Military Command” which has assumed responsibility for the coup d'état of 12 April 2012. Very close to António Injai. Sanha Clussé integrated the “Military Command” delegation that met with ECOWAS in Abidjan on 26 April 2012.”   Father’s name is Clusse Mutcha; Mother’s name is Dalu Imbungue.",
+   "DESIGNATION": {
+    "VALUE": [
+     "Captain (Navy)",
+     "Acting Navy Chief of Staff"
+    ]
+   },
+   "NATIONALITY": {
+    "VALUE": "Guinea-Bissau"
+   },
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ALIAS": {
+    "QUALITY": "",
+    "ALIAS_NAME": ""
+   },
+   "INDIVIDUAL_ADDRESS": "",
+   "INDIVIDUAL_DATE_OF_BIRTH": {
+    "TYPE_OF_DATE": "Exact",
+    "DATE": "1965-09-28"
+   },
+   "INDIVIDUAL_PLACE_OF_BIRTH": "",
+   "INDIVIDUAL_DOCUMENT": {
+    "TYPE_OF_DOCUMENT": "Passport",
+    "NUMBER": "SA0000515",
+    "DATE_OF_ISSUE": "2003-12-08",
+    "COUNTRY_OF_ISSUE": "Guinea-Bissau",
+    "NOTE": "Expiration date 29 Aug. 2013"
+   },
+   "SORT_KEY": "CLUSSÉSANHA",
+   "SORT_KEY_LAST_MOD": "2014-06-13",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "27 September 1965 (Exact)",
+   "indivPlaceOfBirthString": "",
+   "aliasCount": 1,
+   "indivAliasString": " ()",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 2,
+   "id": "GBi.002",
+   "name": "SANHA CLUSSÉ",
+   "natnlty": "Guinea-Bissau",
+   "two_Digit_Country_ISO_Code": "GB",
+   "committeeResNum": "2048 (2012)",
+   "subject_Matter_Abbreviated": "Resolution 2048 (2012) concerning Guinea-Bissau",
+   "indivOrEntFromId": "i1"
+  },
+  {
+   "DATAID": "690791",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "CRANHA",
+   "SECOND_NAME": "DANFA",
+   "THIRD_NAME": "",
+   "FOURTH_NAME": "",
+   "UN_LIST_TYPE": "GB",
+   "REFERENCE_NUMBER": "GBi.003",
+   "LISTED_ON": "2012-07-18",
+   "COMMENTS1": "Danfa was listed on 18 Jul. 2012 pursuant to paragraph 4 of resolution 2048 (2012) as “Member of the “Military Command” which has assumed responsibility for the coup d'état of 12 April 2012. Close Advisor to Armed Forces Chief of Staff António Injai.”",
+   "DESIGNATION": {
+    "VALUE": [
+     "Colonel",
+     "Head of Operations of the Armed Forces Joint Staff"
+    ]
+   },
+   "NATIONALITY": {
+    "VALUE": "Guinea-Bissau"
+   },
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ALIAS": {
+    "QUALITY": "",
+    "ALIAS_NAME": ""
+   },
+   "INDIVIDUAL_ADDRESS": "",
+   "INDIVIDUAL_DATE_OF_BIRTH": {
+    "DATE": "1957-03-05"
+   },
+   "INDIVIDUAL_PLACE_OF_BIRTH": "",
+   "INDIVIDUAL_DOCUMENT": {
+    "TYPE_OF_DOCUMENT": "Passport",
+    "NUMBER": "AAIN29392",
+    "DATE_OF_ISSUE": "2011-09-29",
+    "COUNTRY_OF_ISSUE": "Guinea-Bissau",
+    "NOTE": "Expiration date 29 Sep. 2016"
+   },
+   "SORT_KEY": "DANFACRANHA",
+   "SORT_KEY_LAST_MOD": "2014-06-13",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "4 March 1957",
+   "indivPlaceOfBirthString": "",
+   "aliasCount": 1,
+   "indivAliasString": " ()",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 3,
+   "id": "GBi.003",
+   "name": "CRANHA DANFA",
+   "natnlty": "Guinea-Bissau",
+   "two_Digit_Country_ISO_Code": "GB",
+   "committeeResNum": "2048 (2012)",
+   "subject_Matter_Abbreviated": "Resolution 2048 (2012) concerning Guinea-Bissau",
+   "indivOrEntFromId": "i1"
+  },
+  {
+   "DATAID": "690792",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "IDRISSA",
+   "SECOND_NAME": "DJALÓ",
+   "THIRD_NAME": "",
+   "FOURTH_NAME": "",
+   "UN_LIST_TYPE": "GB",
+   "REFERENCE_NUMBER": "GBi.004",
+   "LISTED_ON": "2012-07-18",
+   "GENDER": "Male",
+   "COMMENTS1": "Djaló was listed on 18 Jul. 2012 pursuant to paragraph 4 of resolution 2048 (2012) as “Point of Contact for the “Military Command” which has assumed responsibility for the coup d'état of 12 April 2012 and one of its most active members. He was one of the first officers to publicly assume his affiliation to the “Military Command”, having signed one of its first communiqués (nº5, dated 13 April 2012). Major Djaló also belongs to the Military Intelligence.”",
+   "DESIGNATION": {
+    "VALUE": [
+     "Major",
+     "Protocol Advisor to the Armed Forces Chief of Staff",
+     "Colonel",
+     "Chief of Protocol of the Headquarters of the Armed Forces (subsequently)"
+    ]
+   },
+   "NATIONALITY": {
+    "VALUE": "Guinea-Bissau"
+   },
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ALIAS": {
+    "QUALITY": "Good",
+    "ALIAS_NAME": "Idriça Djaló"
+   },
+   "INDIVIDUAL_ADDRESS": "",
+   "INDIVIDUAL_DATE_OF_BIRTH": {
+    "TYPE_OF_DATE": "Exact",
+    "DATE": "1954-12-18"
+   },
+   "INDIVIDUAL_PLACE_OF_BIRTH": "",
+   "INDIVIDUAL_DOCUMENT": {
+    "TYPE_OF_DOCUMENT": "Passport",
+    "NUMBER": "AAISO40158",
+    "DATE_OF_ISSUE": "2012-10-12",
+    "COUNTRY_OF_ISSUE": "Guinea-Bissau",
+    "NOTE": "Expiration date 2 Oct. 2015"
+   },
+   "SORT_KEY": "IDRISSADJALÓ",
+   "SORT_KEY_LAST_MOD": "2014-06-13",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "17 December 1954 (Exact)",
+   "indivPlaceOfBirthString": "",
+   "aliasCount": 1,
+   "indivAliasString": "Idriça Djaló (Good)",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 4,
+   "id": "GBi.004",
+   "name": "IDRISSA DJALÓ",
+   "natnlty": "Guinea-Bissau",
+   "two_Digit_Country_ISO_Code": "GB",
+   "committeeResNum": "2048 (2012)",
+   "subject_Matter_Abbreviated": "Resolution 2048 (2012) concerning Guinea-Bissau",
+   "indivOrEntFromId": "i1"
+  },
+  {
+   "DATAID": "690793",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "ANTÓNIO",
+   "SECOND_NAME": "INJAI",
+   "THIRD_NAME": "",
+   "FOURTH_NAME": "",
+   "UN_LIST_TYPE": "GB",
+   "REFERENCE_NUMBER": "GBi.005",
+   "LISTED_ON": "2012-05-18",
+   "GENDER": "Male",
+   "COMMENTS1": "Injai was listed on 18 May 2012 pursuant to paragraph 4 of resolution 2048 (2012) as “António Injai was personally involved in planning and leading the mutiny of 1 April 2010, culminating with the illegal apprehension of the Prime Minister, Carlo Gomes Junior, and the then Chief of Staff of the Armed Forces, José Zamora Induta; during the 2012 electoral period, in his capacity as Chief of Staff of the Armed Forces, Injai made statements threatening to overthrow the elected authorities and to put an end to the electoral process; António Injai has been involved in the operational planning of the coup d’état of 12 April 2012. In the aftermath of the coup, the first communiqué by the “Military Command” was issued by the Armed Forces General Staff, which is led by General Injai.”   Father’s name is Wasna Injai; Mother’s name is Quiritche Cofte.",
+   "DESIGNATION": {
+    "VALUE": [
+     "Lieutenant General",
+     "Chief of Staff of the Armed Forces"
+    ]
+   },
+   "NATIONALITY": {
+    "VALUE": "Guinea-Bissau"
+   },
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ALIAS": {
+    "QUALITY": "Good",
+    "ALIAS_NAME": "António Indjai"
+   },
+   "INDIVIDUAL_ADDRESS": "",
+   "INDIVIDUAL_DATE_OF_BIRTH": {
+    "DATE": "1955-01-20"
+   },
+   "INDIVIDUAL_PLACE_OF_BIRTH": {
+    "CITY": "Encheia",
+    "STATE_PROVINCE": "Sector de Bissorá, Região de Oio",
+    "COUNTRY": "Guinea-Bissau"
+   },
+   "INDIVIDUAL_DOCUMENT": {
+    "TYPE_OF_DOCUMENT": "Passport",
+    "NUMBER": "AAID00435",
+    "DATE_OF_ISSUE": "2010-02-18",
+    "COUNTRY_OF_ISSUE": "Guinea-Bissau",
+    "NOTE": "Expiration date 18 Feb. 2013"
+   },
+   "SORT_KEY": "INJAIANTÓNIO",
+   "SORT_KEY_LAST_MOD": "2014-06-13",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "19 January 1955",
+   "indivPlaceOfBirthString": "Encheia, Sector de Bissorá, Região de Oio, Guinea-Bissau, ",
+   "aliasCount": 1,
+   "indivAliasString": "António Indjai (Good)",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 5,
+   "id": "GBi.005",
+   "name": "ANTÓNIO INJAI",
+   "natnlty": "Guinea-Bissau",
+   "two_Digit_Country_ISO_Code": "GB",
+   "committeeResNum": "2048 (2012)",
+   "subject_Matter_Abbreviated": "Resolution 2048 (2012) concerning Guinea-Bissau",
+   "indivOrEntFromId": "i1"
+  },
+  {
+   "DATAID": "690794",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "TCHIPA",
+   "SECOND_NAME": "NA BIDON",
+   "THIRD_NAME": "",
+   "FOURTH_NAME": "",
+   "UN_LIST_TYPE": "GB",
+   "REFERENCE_NUMBER": "GBi.006",
+   "LISTED_ON": "2012-07-18",
+   "GENDER": "Male",
+   "COMMENTS1": "Na Bidon was listed on 18 Jul. 2012 pursuant to paragraph 4 of resolution 2048 (2012) as “Member of the “Military Command” which has assumed responsibility for the coup d'état of 12 April 2012.” Parentage: “Nabidom”.",
+   "DESIGNATION": {
+    "VALUE": [
+     "Lieutenant-colonel",
+     "Head of Intelligence"
+    ]
+   },
+   "NATIONALITY": {
+    "VALUE": "Guinea-Bissau"
+   },
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ALIAS": {
+    "QUALITY": "",
+    "ALIAS_NAME": ""
+   },
+   "INDIVIDUAL_ADDRESS": "",
+   "INDIVIDUAL_DATE_OF_BIRTH": {
+    "TYPE_OF_DATE": "Exact",
+    "DATE": "1954-05-28"
+   },
+   "INDIVIDUAL_PLACE_OF_BIRTH": "",
+   "INDIVIDUAL_DOCUMENT": {
+    "TYPE_OF_DOCUMENT": "Passport",
+    "NUMBER": "DA0001564",
+    "DATE_OF_ISSUE": "2005-11-30",
+    "COUNTRY_OF_ISSUE": "Guinea-Bissau",
+    "NOTE": "Expiration date 15 May 2011"
+   },
+   "SORT_KEY": "NA BIDONTCHIPA",
+   "SORT_KEY_LAST_MOD": "2014-06-13",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "27 May 1954 (Exact)",
+   "indivPlaceOfBirthString": "",
+   "aliasCount": 1,
+   "indivAliasString": " ()",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 6,
+   "id": "GBi.006",
+   "name": "TCHIPA NA BIDON",
+   "natnlty": "Guinea-Bissau",
+   "two_Digit_Country_ISO_Code": "GB",
+   "committeeResNum": "2048 (2012)",
+   "subject_Matter_Abbreviated": "Resolution 2048 (2012) concerning Guinea-Bissau",
+   "indivOrEntFromId": "i1"
+  },
+  {
+   "DATAID": "690795",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "TCHAM",
+   "SECOND_NAME": "NA MAN",
+   "THIRD_NAME": "",
+   "FOURTH_NAME": "",
+   "UN_LIST_TYPE": "GB",
+   "REFERENCE_NUMBER": "GBi.007",
+   "LISTED_ON": "2012-07-18",
+   "GENDER": "Male",
+   "COMMENTS1": "Na Man was listed on 18 Jul. 2012 pursuant to paragraph 4 of resolution 2048 (2012) as “Member of the “Military Command” which has assumed responsibility for the coup d'état of 12 April 2012. Also a member of the Military High Command (highest hierarchy of the Bissau-Guinean Armed Forces).” Father’s name is Biute Naman; Mother’s name is Ndjade Na Noa.",
+   "DESIGNATION": {
+    "VALUE": [
+     "Lieutenant-colonel",
+     "Head of the Armed Forces Military Hospital"
+    ]
+   },
+   "NATIONALITY": {
+    "VALUE": "Guinea-Bissau"
+   },
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ALIAS": {
+    "QUALITY": "Low",
+    "ALIAS_NAME": "Namam"
+   },
+   "INDIVIDUAL_ADDRESS": "",
+   "INDIVIDUAL_DATE_OF_BIRTH": {
+    "TYPE_OF_DATE": "Exact",
+    "DATE": "1953-02-27"
+   },
+   "INDIVIDUAL_PLACE_OF_BIRTH": "",
+   "INDIVIDUAL_DOCUMENT": {
+    "TYPE_OF_DOCUMENT": "Passport",
+    "NUMBER": "SA0002264",
+    "DATE_OF_ISSUE": "2006-07-24",
+    "COUNTRY_OF_ISSUE": "Guinea-Bissau",
+    "NOTE": "Expiration date 23 Jul. 2009"
+   },
+   "SORT_KEY": "NA MANTCHAM",
+   "SORT_KEY_LAST_MOD": "2014-06-13",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "26 February 1953 (Exact)",
+   "indivPlaceOfBirthString": "",
+   "aliasCount": 1,
+   "indivAliasString": "Namam (Low)",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 7,
+   "id": "GBi.007",
+   "name": "TCHAM NA MAN",
+   "natnlty": "Guinea-Bissau",
+   "two_Digit_Country_ISO_Code": "GB",
+   "committeeResNum": "2048 (2012)",
+   "subject_Matter_Abbreviated": "Resolution 2048 (2012) concerning Guinea-Bissau",
+   "indivOrEntFromId": "i1"
+  },
+  {
+   "DATAID": "690796",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "ESTÊVÃO",
+   "SECOND_NAME": "NA MENA",
+   "THIRD_NAME": "",
+   "FOURTH_NAME": "",
+   "UN_LIST_TYPE": "GB",
+   "REFERENCE_NUMBER": "GBi.008",
+   "LISTED_ON": "2012-07-18",
+   "COMMENTS1": "Na Mena was listed on 18 May 2012 pursuant to paragraph 4 of resolution 2048 (2012) as “Member of the “Military Command” which has assumed responsibility for the coup d’état of 12 April 2012.”",
+   "DESIGNATION": {
+    "VALUE": "Inspector-General of the Armed Forces"
+   },
+   "NATIONALITY": {
+    "VALUE": "Guinea-Bissau"
+   },
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ALIAS": {
+    "QUALITY": "",
+    "ALIAS_NAME": ""
+   },
+   "INDIVIDUAL_ADDRESS": "",
+   "INDIVIDUAL_DATE_OF_BIRTH": {
+    "DATE": "1956-03-07"
+   },
+   "INDIVIDUAL_PLACE_OF_BIRTH": "",
+   "INDIVIDUAL_DOCUMENT": "",
+   "SORT_KEY": "NA MENAESTÊVÃO",
+   "SORT_KEY_LAST_MOD": "2014-06-13",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "6 March 1956",
+   "indivPlaceOfBirthString": "",
+   "aliasCount": 1,
+   "indivAliasString": " ()",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 8,
+   "id": "GBi.008",
+   "name": "ESTÊVÃO NA MENA",
+   "natnlty": "Guinea-Bissau",
+   "two_Digit_Country_ISO_Code": "GB",
+   "committeeResNum": "2048 (2012)",
+   "subject_Matter_Abbreviated": "Resolution 2048 (2012) concerning Guinea-Bissau",
+   "indivOrEntFromId": "i1"
+  },
+  {
+   "DATAID": "690797",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "DABA",
+   "SECOND_NAME": "NAUALNA",
+   "THIRD_NAME": "",
+   "FOURTH_NAME": "",
+   "UN_LIST_TYPE": "GB",
+   "REFERENCE_NUMBER": "GBi.009",
+   "LISTED_ON": "2012-05-18",
+   "COMMENTS1": "Naualna was listed on 18 May 2012 pursuant to paragraph 4 of resolution 2048 (2012) as “Spokesperson of the “Military Command” which has assumed responsibility for the coup d’état of 12 April 2012.” Father’s name is Samba Naualna; Mother’s name is In-Uasne Nanfafe.",
+   "DESIGNATION": {
+    "VALUE": [
+     "Lieutenant-colonel",
+     "Spokesperson of the “Military Command”"
+    ]
+   },
+   "NATIONALITY": {
+    "VALUE": "Guinea-Bissau"
+   },
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ALIAS": {
+    "QUALITY": "Good",
+    "ALIAS_NAME": "Daba Na Walna"
+   },
+   "INDIVIDUAL_ADDRESS": "",
+   "INDIVIDUAL_DATE_OF_BIRTH": {
+    "TYPE_OF_DATE": "Exact",
+    "DATE": "1966-06-06"
+   },
+   "INDIVIDUAL_PLACE_OF_BIRTH": "",
+   "INDIVIDUAL_DOCUMENT": {
+    "TYPE_OF_DOCUMENT": "Passport",
+    "NUMBER": "SA000417",
+    "DATE_OF_ISSUE": "2003-10-29",
+    "COUNTRY_OF_ISSUE": "Guinea-Bissau",
+    "NOTE": "Expiration date 10 Mar. 2013"
+   },
+   "SORT_KEY": "NAUALNADABA",
+   "SORT_KEY_LAST_MOD": "2014-06-13",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "5 June 1966 (Exact)",
+   "indivPlaceOfBirthString": "",
+   "aliasCount": 1,
+   "indivAliasString": "Daba Na Walna (Good)",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 9,
+   "id": "GBi.009",
+   "name": "DABA NAUALNA",
+   "natnlty": "Guinea-Bissau",
+   "two_Digit_Country_ISO_Code": "GB",
+   "committeeResNum": "2048 (2012)",
+   "subject_Matter_Abbreviated": "Resolution 2048 (2012) concerning Guinea-Bissau",
+   "indivOrEntFromId": "i1"
+  },
+  {
+   "DATAID": "690798",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "JÚLIO",
+   "SECOND_NAME": "NHATE",
+   "THIRD_NAME": "",
+   "FOURTH_NAME": "",
+   "UN_LIST_TYPE": "GB",
+   "REFERENCE_NUMBER": "GBi.010",
+   "LISTED_ON": "2012-07-18",
+   "GENDER": "Male",
+   "COMMENTS1": "",
+   "DESIGNATION": {
+    "VALUE": [
+     "Lieutenant-colonel",
+     "Commander of the Paratroops Regiment"
+    ]
+   },
+   "NATIONALITY": {
+    "VALUE": "Guinea-Bissau"
+   },
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ALIAS": {
+    "QUALITY": "",
+    "ALIAS_NAME": ""
+   },
+   "INDIVIDUAL_ADDRESS": "",
+   "INDIVIDUAL_DATE_OF_BIRTH": {
+    "TYPE_OF_DATE": "Exact",
+    "DATE": "1965-09-28"
+   },
+   "INDIVIDUAL_PLACE_OF_BIRTH": "",
+   "INDIVIDUAL_DOCUMENT": "",
+   "SORT_KEY": "NHATEJÚLIO",
+   "SORT_KEY_LAST_MOD": "2014-06-13",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "27 September 1965 (Exact)",
+   "indivPlaceOfBirthString": "",
+   "aliasCount": 1,
+   "indivAliasString": " ()",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 10,
+   "id": "GBi.010",
+   "name": "JÚLIO NHATE",
+   "natnlty": "Guinea-Bissau",
+   "two_Digit_Country_ISO_Code": "GB",
+   "committeeResNum": "2048 (2012)",
+   "subject_Matter_Abbreviated": "Resolution 2048 (2012) concerning Guinea-Bissau",
+   "indivOrEntFromId": "i1"
+  },
+  {
+   "DATAID": "6907984",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "MAMADU",
+   "SECOND_NAME": "TURE",
+   "THIRD_NAME": "",
+   "FOURTH_NAME": "",
+   "UN_LIST_TYPE": "GB",
+   "REFERENCE_NUMBER": "GBi.011",
+   "LISTED_ON": "2012-05-18",
+   "GENDER": "Male",
+   "COMMENTS1": "Ture was listed on 18 May 2012 pursuant to paragraph 4 of resolution 2048 (2012) as “Member of the “Military Command” which has assumed responsibility for the coup d’état of 12 April 2012.”",
+   "DESIGNATION": {
+    "VALUE": [
+     "Major General",
+     "Deputy Chief of Staff of the Armed Forces"
+    ]
+   },
+   "NATIONALITY": {
+    "VALUE": "Guinea-Bissau"
+   },
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ALIAS": {
+    "QUALITY": "Low",
+    "ALIAS_NAME": "N’Krumah"
+   },
+   "INDIVIDUAL_ADDRESS": "",
+   "INDIVIDUAL_DATE_OF_BIRTH": {
+    "DATE": "1947-04-26"
+   },
+   "INDIVIDUAL_PLACE_OF_BIRTH": "",
+   "INDIVIDUAL_DOCUMENT": {
+    "TYPE_OF_DOCUMENT": "Passport",
+    "NUMBER": "DA0002186",
+    "DATE_OF_ISSUE": "2007-03-30",
+    "COUNTRY_OF_ISSUE": "Guinea-Bissau",
+    "NOTE": "Expiration date 26 Aug. 2013"
+   },
+   "SORT_KEY": "TUREMAMADU",
+   "SORT_KEY_LAST_MOD": "2014-06-13",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "25 April 1947",
+   "indivPlaceOfBirthString": "",
+   "aliasCount": 1,
+   "indivAliasString": "N’Krumah (Low)",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 11,
+   "id": "GBi.011",
+   "name": "MAMADU TURE",
+   "natnlty": "Guinea-Bissau",
+   "two_Digit_Country_ISO_Code": "GB",
+   "committeeResNum": "2048 (2012)",
+   "subject_Matter_Abbreviated": "Resolution 2048 (2012) concerning Guinea-Bissau",
+   "indivOrEntFromId": "i1"
+  }
+ ],
+ "dateGenerated": "03-17-2015",
+ "dateCollected": "03-21-2015",
+ "message": "Collected consolidated.xml labeled as generated on: 03-17-2015 [Tue Mar 17 2015 00:00:00 GMT-0400 (Eastern Daylight Time)]",
+ "comments": {
+  "links": []
+ },
+ "narratives": {
+  "links": []
+ }
+}

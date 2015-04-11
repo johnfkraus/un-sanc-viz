@@ -1,0 +1,458 @@
+/* CSS Document */
+html {
+overflow-y: scroll; /* IE */
+min-height: 100%; margin-bottom: 1px;  /* FIREFOX */
+}
+
+
+body {
+	font-family: Arial,Verdana, Helvetica, sans-serif;
+	color: #000000;
+	/* background-color: #4D6B7C;  background-color: #7e8eae;*/
+	background-color: #CCCCFF;
+	font-size: 80%;
+	margin: 0 auto;
+}
+
+ /* Skip navigation */
+div#skiplinks {
+	width: 61em;
+	margin: 0 auto;
+	padding: 0;
+}
+
+div#skiplinks ul {
+	text-align: left;
+	margin: 0;
+	padding: 0;
+}
+
+div#skiplinks ul li {
+	list-style-type:none;
+	display:inline;
+	margin: 0;
+	padding: 0 2%;
+}
+
+div#skiplinks ul li a:link
+{color:#CCCCFF;}
+div#skiplinks ul li a:visited
+{color:#CCCCFF;}
+div#skiplinks ul li a:active
+{color:#CCCCFF;}
+div#skiplinks ul li a:hover
+{color:#CCCCFF;}
+
+ /* Main div starts here*/
+div#main {
+	padding: 0;
+	width: 61em; /* to fit netscape it has to be at least 68em */
+	margin: 0 auto;
+	/* background-color: #e6b153; */
+	/* background-color: #000066; */
+	background-color: #003399;
+	
+}
+
+
+a:link, a:active {
+	color: #fbb577;
+	text-decoration: underline;
+}
+
+a:visited {
+	color: #E09C23;
+}
+a:hover {
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+ /* Logo Area */
+div#topbanner1 {
+	background-image: url(../images/topbanner1.gif);
+	background-repeat: repeat-x;
+	background-position: left;
+	height: 23px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+div#topbanner2 {
+	background-image: url(../images/unlogo.gif);
+	background-repeat: no-repeat;
+	background-color: #e6b153;
+	background-position:left center;
+	padding: 0;
+	width: 100%;
+	height:8em;
+	vertical-align:middle;
+	border-bottom: 2px solid #000066;
+	border-top: 2px solid #000066;
+}
+
+div#santionsnb {
+	background-image: url(../images/sanctionsnb.gif);
+	background-position: right;
+	background-repeat: no-repeat;
+	height:7.5em;
+}
+
+/* Banner Title */
+h1 {
+	margin-left: 150px;
+	margin-right: 118px;
+	margin-top: 10px;
+	padding: .1em;
+	text-align: left center;
+	font-size: 1.5em;
+	display: table;
+}
+
+
+div#topbanner3 {
+	background-image: url(../images/topbanner3.gif);
+	background-position: left;
+	background-repeat: repeat-x;
+	height: 23px;
+	width: 100%;
+	margin: -1px 0 0 0;
+	padding: 0;
+}
+
+ /* Language bar */
+div#lang {
+	padding: 0;
+	margin-right: 0;
+	text-align: right;
+	font-size: 90%;
+	background-color: #000066;
+	width: 100%;
+	vertical-align: middle;
+	margin: -1.1px 0 0 0;
+	padding: 0;
+}
+
+div#lang ul {
+	padding: 0.1em 0;
+	margin: 0;
+}
+
+div#nav ul li, div#lang ul li {
+	display: inline;
+	padding-right: 1.5em;
+	padding-left: 1.5em;
+	border-right: 1px solid #fff2ad;
+	text-align: center;
+}
+
+div#lang ul li.first {
+	padding-right: 0.5em;
+	padding-left: 0.5em;
+}
+
+div#nav ul li.last, div#lang ul li.last {
+	padding-right: 0.5em;
+	padding-left: 0.5em;
+	border: none;
+}
+
+div#lang ul li#arabic {direction:rtl; font-size: 120%;}
+div#lang ul li#english {color:#fbb577;}
+div#lang a:link, div#lang a:visited {color: #fff2ad; text-decoration: none;}
+div#lang a:hover, div#lang a:active {color: #fbb577; text-decoration: none;}
+
+div.clear {clear: both;}
+
+
+/* Left navigation bar starts here */
+div#leftnav {
+	width: 19.3%; /* 20% without border */
+	float: left;
+	background-color: #003399;
+	font-size: .85em;
+	border-left: 1px solid #000066;
+	border-right: 1px solid #000066;
+}
+
+/* Search Box */
+div#searchbox {
+	background-color: #000000;
+	padding: 2px 8px 3px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+div#searchbutton {
+	color: #000000;
+	margin: 5px;
+	background-position: left center;
+	height: 2em;
+}
+
+/* Vertical Menu */
+#navcontainer {
+	width:100%;
+	font-weight: bold;
+}
+
+#navcontainer ul
+{
+	 margin-left: 0;
+	 padding-left: 0px;
+	 font-weight: bold;
+	 list-style-type: none;
+}
+
+#navcontainer ul li
+{border-bottom: 1px solid #0099FF;}
+
+#navcontainer ul li li
+{border-bottom:none;}
+
+#navcontainer ul li.navtitlewithsublinks
+{
+	 display: block;
+	 padding: 4px;
+	 color:#FFFF66;
+	 text-decoration: none;
+}
+
+
+#navcontainer a
+{
+	 display: block;
+	 padding: 4px;
+	 color:#FFFF66;
+	 text-decoration: none;
+}
+
+#navcontainer a:hover
+{
+	background-color: #000066;
+	color: #ffffff;
+}
+
+#current a
+{
+	background-color: #000066;
+	color: #ffffff;
+}
+
+#current 
+{
+	color:#EAFFFF;
+	padding-left: .5em;
+}
+
+
+/* subhead links in navigation bar */
+#navcontainer ul ul a
+{
+	 display: block;
+	 color: #FFCC66;
+	 background-image: url(/french/sc/committees/images/arrows-yellow.gif);
+	 background-repeat: no-repeat;
+	 background-position: 2px 5px;
+	 border-bottom: 1px solid #003399;
+	 padding-left: 20px;
+	 font-weight: bold;
+}
+
+
+#navcontainer ul ul a:hover
+{
+	color: #ffffff;
+	background-color:#003399;
+}
+
+/*end navigation vertical*/
+
+
+ /* Main Content Area*/
+
+ #mainimg {
+ 	background-image: url(../images/sc-meeting.jpg);
+ 	width=100%;
+ 	height=100%;
+ }
+
+div#maincontent {
+	width: 76.8%; /* DO NOT CHANGE */
+	float: left;
+	padding: 1em;
+	margin: 0;
+	background-color:#ffffff;
+}
+
+
+/* Content title */
+h2 {
+	padding-top: 1.2em;
+	padding-bottom: 1.2em;
+	width: 99%;
+	text-align:center;
+	font-size: 1.0em;
+	color:#000066;
+}
+
+h3 {
+	background-color:#F5E3C0;
+	padding-top: .5em;
+	padding-bottom: .5em;
+	width: 99%;
+	text-align:center;
+	font-size: .9em;
+	color:#000066;
+}
+
+h4 {
+	padding-top: .5em;
+	padding-bottom: .5em;
+	width: 99%;
+	text-align:left;
+	font-size: .7em;
+	color:#000066;
+}
+
+#maincontent a
+{
+	font-style:underline;
+}
+
+#maincontent a:link, a:active
+{
+	color: #6777a8;
+	text-decoration: underline;
+}
+
+#maincontent a:hover
+{
+	color: #022289;
+}
+
+#maincontent a:visited
+{
+	color: #826200;
+}
+
+ /* Foot area*/
+div#footer {
+	clear: both;
+	background-color: #000066;
+	width: 100%;
+	font-size: 85%;
+	color: #fff2ad;
+	text-align: center;
+	vertical-align: middle;
+	padding: 0;
+	margin: 0;
+	border-top: 1px solid #000066;
+}
+
+div#footer ul {
+	padding: 0.5em;
+	margin: 0;
+}
+
+div#footer ul li {
+	display: inline;
+	
+}
+
+div#footer ul li {
+	color:#005566
+}
+
+
+div#footer ul li.end {
+	border: none;
+}
+
+
+/* Credit Area */
+div#credits {
+	clear: both;
+	font-size: 80%;
+	text-align: center;
+	padding: 1em;
+	margin: 0;
+}
+
+/* begnning of css for sub pages  */
+
+.rowtitle {
+	padding: 0;
+	margin-right: 0;
+	width: 47.7em;
+	vertical-align: center;
+	margin: 0;
+	padding: .5em;
+	background-color:#b9dfed;
+	border: 1px solid #000000;
+	font-weight:bold;
+}
+
+
+.rowcontent {
+	padding: 0;
+	margin-right: 0;
+	width: 47.7em;
+	vertical-align:top;
+	margin: 0;
+	padding: .5em;
+	border-left: 1px solid #000000;
+	border-right: 1px solid #000000;
+	border-top: 1px solid #000000;
+}
+
+.rowcontentbot {
+	border-bottom: 1px solid #000000;
+}
+
+.tline {
+	border-bottom-width: 1px;
+	border-bottom-style: dashed;
+	border-bottom-color: #C8C8D0;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	margin-top: 2px;
+	padding-top: 2px;
+}
+
+#topbox {
+	font-size: 91%;
+	text-align:left;
+	margin-top: 1em;
+	margin-right: 1em;
+	margin-bottom: 1em;
+	margin-left: 1.3em;
+	width: 85%;
+	background-image: url(images/blockquotegrad.jpg);
+	background-repeat: repeat-x;
+	background-color: #E5F8FF;
+	border: 1px solid #333333;
+	padding-top: 1em;
+	padding-right: 2em;
+	padding-bottom: 2em;
+	padding-left: 3em;
+	clear:right;
+}
+
+#topbox .credit {
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: italic;
+	padding-right: 0.6em;
+	color: #E5F8FF;
+	text-align: right;
+}
+#topbox     .text  {
+	width: 88%;
+	padding-right: 2em;
+	padding-top: 0.2em;
+	padding-bottom: 0.6em;
+	margin: 0px;
+	color: #E5F8FF;
+}
+}

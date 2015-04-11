@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="schemas.reuters.com" 
+  elementFormDefault="qualified" targetNamespace="schemas.reuters.com" >
+  <xs:import schemaLocation="un_schema.xsd"/>
+  <xs:attribute name="noNamespaceSchemaLocation"  type="anyUrl" />
+</xs:schema>

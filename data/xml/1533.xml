@@ -1,0 +1,1693 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONSOLIDATED_LIST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd"
+                   dateGenerated="2015-03-17T17:34:46.504-04:00">
+   <INDIVIDUALS>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>6907993</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>ERIC</FIRST_NAME>
+         <SECOND_NAME>BADEGE</SECOND_NAME>
+         <THIRD_NAME/>
+         <FOURTH_NAME/>
+         <UN_LIST_TYPE>DRC</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>CDi.001</REFERENCE_NUMBER>
+         <LISTED_ON>2012-12-31</LISTED_ON>
+         <GENDER>Male</GENDER>
+         <COMMENTS1/>
+         <NATIONALITY>
+            <VALUE>Congolese</VALUE>
+         </NATIONALITY>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY/>
+            <ALIAS_NAME/>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <YEAR>1971</YEAR>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH/>
+         <INDIVIDUAL_DOCUMENT/>
+         <SORT_KEY>BADEGEERIC </SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-24</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>6907994</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>FRANK KAKOLELE</FIRST_NAME>
+         <SECOND_NAME>BWAMBALE</SECOND_NAME>
+         <THIRD_NAME/>
+         <FOURTH_NAME/>
+         <UN_LIST_TYPE>DRC</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>CDi.002</REFERENCE_NUMBER>
+         <LISTED_ON>2005-11-01</LISTED_ON>
+         <GENDER>Male</GENDER>
+         <COMMENTS1>Left the CNDP in January 2008. As of June 2011, resides in Kinshasa. Since 2010, Kakolele has been involved in activities apparently on behalf of the DRC government’s Programme de Stabilisation et Reconstruction des Zones Sortant des Conflits Armés (STAREC), including participation in a STAREC mission to Goma and Beni in March 2011.  DRC authorities arrested him in December 2013 in Beni, North Kivu Province, for allegedly blocking the DDR process.</COMMENTS1>
+         <DESIGNATION>
+            <VALUE>FARDC General</VALUE>
+         </DESIGNATION>
+         <NATIONALITY>
+            <VALUE>Congolese </VALUE>
+         </NATIONALITY>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>FRANK KAKORERE</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>FRANK KAKORERE BWAMBALE</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>AIGLE BLANC</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH/>
+         <INDIVIDUAL_PLACE_OF_BIRTH/>
+         <INDIVIDUAL_DOCUMENT/>
+         <SORT_KEY>BWAMBALE</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-24</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>6907995</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>GASTON</FIRST_NAME>
+         <SECOND_NAME>IYAMUREMYE</SECOND_NAME>
+         <THIRD_NAME/>
+         <FOURTH_NAME/>
+         <UN_LIST_TYPE>DRC</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>CDi.003</REFERENCE_NUMBER>
+         <LISTED_ON>2010-12-01</LISTED_ON>
+         <GENDER>Male</GENDER>
+         <COMMENTS1>Brigadier General.</COMMENTS1>
+         <DESIGNATION>
+            <VALUE>FDLR President</VALUE>
+         </DESIGNATION>
+         <DESIGNATION>
+            <VALUE>2nd Vice-President of FDLR-FOCA </VALUE>
+         </DESIGNATION>
+         <NATIONALITY>
+            <VALUE>Rwandan</VALUE>
+         </NATIONALITY>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Low</QUALITY>
+            <ALIAS_NAME>Rumuli</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Byiringiro  Victor Rumuli </ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Victor Rumuri</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Michel Byiringiro</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS>
+            <NOTE>As of December 2014, based in North Kivu Province.</NOTE>
+         </INDIVIDUAL_ADDRESS>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <YEAR>1948</YEAR>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Musanze District</CITY>
+            <STATE_PROVINCE>Northern Province</STATE_PROVINCE>
+            <COUNTRY>Rwanda</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Ruhengeri</CITY>
+            <COUNTRY>Rwanda</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_DOCUMENT/>
+         <SORT_KEY>IYAMUREMYEGASTON </SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-24</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>6907996</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>INNOCENT</FIRST_NAME>
+         <SECOND_NAME>KAINA</SECOND_NAME>
+         <THIRD_NAME/>
+         <FOURTH_NAME/>
+         <UN_LIST_TYPE>DRC</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>CDi.004</REFERENCE_NUMBER>
+         <LISTED_ON>2012-11-30</LISTED_ON>
+         <GENDER>Male</GENDER>
+         <COMMENTS1>In Rwanda as of late 2014.</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Colonel Innocent KAINA</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Low</QUALITY>
+            <ALIAS_NAME>India Queen</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH/>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Bunagana</CITY>
+            <STATE_PROVINCE>Rutshuru territory</STATE_PROVINCE>
+            <COUNTRY>DRC</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_DOCUMENT/>
+         <SORT_KEY>KAINA INNOCENT</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-24</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>6907997</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>JÉRÔME</FIRST_NAME>
+         <SECOND_NAME>KAKWAVU BUKANDE </SECOND_NAME>
+         <THIRD_NAME/>
+         <FOURTH_NAME/>
+         <UN_LIST_TYPE>DRC</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>CDi.005</REFERENCE_NUMBER>
+         <LISTED_ON>2005-11-01</LISTED_ON>
+         <GENDER>Male</GENDER>
+         <COMMENTS1>Given the rank of General in the FARDC in December 2004. As of June 2011, detained in Makala Prison in Kinshasa. As of 25 March 2011, the High Military Court in Kinshasa opened a trial against Kakwavu for war crimes. In November 2014, convicted by a DRC military court to ten years in prison for rape, murder, and torture.</COMMENTS1>
+         <NATIONALITY>
+            <VALUE>Congolese</VALUE>
+         </NATIONALITY>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Jérôme Kakwavu</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Low</QUALITY>
+            <ALIAS_NAME>Commandant Jérôme</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH/>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Goma</CITY>
+            <COUNTRY>DRC</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_DOCUMENT/>
+         <SORT_KEY>KAKWAVU BUKANDE JÉRÔME</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-24</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>6907998</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>GERMAIN</FIRST_NAME>
+         <SECOND_NAME>KATANGA</SECOND_NAME>
+         <THIRD_NAME/>
+         <FOURTH_NAME/>
+         <UN_LIST_TYPE>DRC</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>CDi.006</REFERENCE_NUMBER>
+         <LISTED_ON>2005-11-01</LISTED_ON>
+         <COMMENTS1>Appointed General in the FARDC in December 2004. Handed over by the Government of the DRC to the International Criminal Court on 18 October 2007. Convicted in May 2014 by the ICC to 12 years in prison for war crimes and crimes against humanity. Currently in prison in the Netherlands.</COMMENTS1>
+         <NATIONALITY>
+            <VALUE>Congolese</VALUE>
+         </NATIONALITY>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY/>
+            <ALIAS_NAME/>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH/>
+         <INDIVIDUAL_PLACE_OF_BIRTH/>
+         <INDIVIDUAL_DOCUMENT/>
+         <SORT_KEY>KATANGA GERMAIN</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-24</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>6907999</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>SULTANI</FIRST_NAME>
+         <SECOND_NAME>MAKENGA</SECOND_NAME>
+         <THIRD_NAME/>
+         <FOURTH_NAME/>
+         <UN_LIST_TYPE>DRC</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>CDi.008</REFERENCE_NUMBER>
+         <LISTED_ON>2012-11-12</LISTED_ON>
+         <GENDER>Male</GENDER>
+         <COMMENTS1>A military leader of the Mouvement du 23 Mars (M23) group operating in the Democratic Republic of the Congo. In Uganda as of late 2014.</COMMENTS1>
+         <NATIONALITY>
+            <VALUE>Congolese</VALUE>
+         </NATIONALITY>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>MAKENGA, Colonel SULTANI</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>MAKENGA, EMMANUEL SULTANI</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1973-12-25</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Rutshuru</CITY>
+            <COUNTRY>DRC</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_DOCUMENT/>
+         <SORT_KEY>MAKENGA SULTANI</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-24</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>6908000</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>KHAWA PANGA</FIRST_NAME>
+         <SECOND_NAME>MANDRO</SECOND_NAME>
+         <THIRD_NAME/>
+         <FOURTH_NAME/>
+         <UN_LIST_TYPE>DRC</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>CDi.009</REFERENCE_NUMBER>
+         <LISTED_ON>2005-11-01</LISTED_ON>
+         <GENDER>Male</GENDER>
+         <COMMENTS1>Placed in prison in Bunia in April 2005 for sabotage of the Ituri peace process. Arrested by Congolese authorities in October 2005, acquitted by the Court of Appeal in Kisangani, subsequently transferred to the judicial authorities in Kinshasa on new charges of crimes against humanity, war crimes, murder, aggravated assault and battery. In August 2014, a DRC military court in Kisangani convicted him of war crimes and crimes against humanity, sentenced him to nine years in prison, and ordered him to pay approximately $85,000 to his victims.</COMMENTS1>
+         <NATIONALITY>
+            <VALUE>Congolese</VALUE>
+         </NATIONALITY>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Kawa Panga</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Kawa Panga Mandro</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Kawa Mandro</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Yves Andoul Karim  </ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Mandro Panga Kahwa</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME> Yves Khawa Panga Mandro</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Low</QUALITY>
+            <ALIAS_NAME> “Chief Kahwa” </ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Low</QUALITY>
+            <ALIAS_NAME>“Kawa” </ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1973-08-20</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Bunia</CITY>
+            <COUNTRY>DRC</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_DOCUMENT/>
+         <SORT_KEY>MANDRO</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-24</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>6908001</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>CALLIXTE</FIRST_NAME>
+         <SECOND_NAME>MBARUSHIMANA</SECOND_NAME>
+         <THIRD_NAME/>
+         <FOURTH_NAME/>
+         <UN_LIST_TYPE>DRC</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>CDi.010</REFERENCE_NUMBER>
+         <LISTED_ON>2009-03-03</LISTED_ON>
+         <GENDER>Male</GENDER>
+         <COMMENTS1>Arrested in Paris on 3 October 2010 under ICC warrant for war crimes and crimes against humanity committed by FDLR troops in the Kivus in 2009 and transferred to The Hague on 25 January 2011, but released by the ICC in late 2011.</COMMENTS1>
+         <NATIONALITY>
+            <VALUE>Rwandan</VALUE>
+         </NATIONALITY>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY/>
+            <ALIAS_NAME/>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1963-07-24</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Ndusu / Ruhengeri</CITY>
+            <STATE_PROVINCE>Northern Province</STATE_PROVINCE>
+            <COUNTRY>Rwanda</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_DOCUMENT/>
+         <SORT_KEY>MBARUSHIMANA CALLIXTE</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-24</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>6908002</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>IRUTA DOUGLAS</FIRST_NAME>
+         <SECOND_NAME>MPAMO</SECOND_NAME>
+         <THIRD_NAME/>
+         <FOURTH_NAME/>
+         <UN_LIST_TYPE>DRC</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>CDi.011</REFERENCE_NUMBER>
+         <LISTED_ON>2005-11-01</LISTED_ON>
+         <GENDER>Male</GENDER>
+         <COMMENTS1>No known occupation since two of the planes managed by Great Lakes Business Company (GLBC) crashed.</COMMENTS1>
+         <NATIONALITY>
+            <VALUE>Congolese</VALUE>
+         </NATIONALITY>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Douglas Iruta Mpamo</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Low</QUALITY>
+            <ALIAS_NAME>Mpano</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS>
+            <CITY>Gisenyi</CITY>
+            <COUNTRY>Rwanda</COUNTRY>
+            <NOTE> As of June 2011..</NOTE>
+         </INDIVIDUAL_ADDRESS>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1965-12-28</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1965-12-29</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Bashali</CITY>
+            <STATE_PROVINCE>Masisi</STATE_PROVINCE>
+            <COUNTRY>DRC</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Goma</CITY>
+            <COUNTRY>DRC</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Uvira</CITY>
+            <COUNTRY>DRC</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_DOCUMENT/>
+         <SORT_KEY>MPAMO IRUTA DOUGLAS</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-24</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>6908003</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>SYLVESTRE</FIRST_NAME>
+         <SECOND_NAME>MUDACUMURA</SECOND_NAME>
+         <THIRD_NAME/>
+         <FOURTH_NAME/>
+         <UN_LIST_TYPE>DRC</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>CDi.012</REFERENCE_NUMBER>
+         <LISTED_ON>2005-11-01</LISTED_ON>
+         <GENDER>Male</GENDER>
+         <COMMENTS1>Military commander of FDLR-FOCA, also political 1st Vice-President and head of FOCA High Command, thus combining overall military and political command functions since the arrests of FDLR leaders in Europe. As of 2014, based at the FDLR’s headquarters in Nganga, North Kivu.</COMMENTS1>
+         <NATIONALITY>
+            <VALUE>Rwandan</VALUE>
+         </NATIONALITY>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Low</QUALITY>
+            <ALIAS_NAME>Radja</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Mupenzi Bernard</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>General Major Mupenzi</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>General Mudacumura</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS>
+            <CITY>Kikoma forest, near Bogoyi, Walikale</CITY>
+            <STATE_PROVINCE>North Kivu</STATE_PROVINCE>
+            <COUNTRY>DRC</COUNTRY>
+            <NOTE> As of June 2011</NOTE>
+         </INDIVIDUAL_ADDRESS>
+         <INDIVIDUAL_DATE_OF_BIRTH/>
+         <INDIVIDUAL_PLACE_OF_BIRTH/>
+         <INDIVIDUAL_DOCUMENT/>
+         <SORT_KEY>MUDACUMURA SYLVESTRE</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-24</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>6908004</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>LEODOMIR</FIRST_NAME>
+         <SECOND_NAME>MUGARAGU</SECOND_NAME>
+         <THIRD_NAME/>
+         <FOURTH_NAME/>
+         <UN_LIST_TYPE>DRC</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>CDi.013</REFERENCE_NUMBER>
+         <LISTED_ON>2010-12-01</LISTED_ON>
+         <GENDER>Male</GENDER>
+         <COMMENTS1>FDLR-FOCA Chief of Staff, in charge of administration.</COMMENTS1>
+         <NATIONALITY>
+            <VALUE>Rwandan</VALUE>
+         </NATIONALITY>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Manzi Leon</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Leo Manzi</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS>
+            <CITY>FDLR HQ at Kikoma forest, Bogoyi, Walikale</CITY>
+            <STATE_PROVINCE>North Kivu</STATE_PROVINCE>
+            <COUNTRY>DRC</COUNTRY>
+            <NOTE>As of June 2011.</NOTE>
+         </INDIVIDUAL_ADDRESS>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <YEAR>1954</YEAR>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <YEAR>1953</YEAR>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Kigali</CITY>
+            <COUNTRY>Rwanda</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Rushashi</CITY>
+            <STATE_PROVINCE>Northern Province</STATE_PROVINCE>
+            <COUNTRY>Rwanda</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_DOCUMENT/>
+         <SORT_KEY>MUGARAGU LEODOMIR</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-24</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>6908005</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>JAMIL</FIRST_NAME>
+         <SECOND_NAME>MUKULU</SECOND_NAME>
+         <THIRD_NAME/>
+         <FOURTH_NAME/>
+         <UN_LIST_TYPE>DRC</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>CDi.015</REFERENCE_NUMBER>
+         <LISTED_ON>2011-10-12</LISTED_ON>
+         <GENDER>Male</GENDER>
+         <COMMENTS1>Whereabouts unknown as of late 2014; however, he is believed to be in North Kivu, DRC.</COMMENTS1>
+         <DESIGNATION>
+            <VALUE>Head of the Allied Democratic Forces (ADF)</VALUE>
+            <VALUE>Commander, Allied Democratic Forces</VALUE>
+         </DESIGNATION>
+         <NATIONALITY>
+            <VALUE>Ugandan</VALUE>
+         </NATIONALITY>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Low</QUALITY>
+            <ALIAS_NAME>Professor Musharaf</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Steven Alirabaki</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>David Kyagulanyi</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Musezi Talengelanimiro</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Mzee Tutu</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Abdullah Junjuaka</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Alilabaki Kyagulanyi</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Hussein Muhammad</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Nicolas Luumu</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Low</QUALITY>
+            <ALIAS_NAME>Talengelanimiro</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <YEAR>1965</YEAR>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1964-01-01</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Ntoke Village, Ntenjeru Sub County</CITY>
+            <STATE_PROVINCE>Kayunga District</STATE_PROVINCE>
+            <COUNTRY>Uganda</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_DOCUMENT/>
+         <SORT_KEY>MUKULU JAMIL</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-24</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>6908006</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>LEOPOLD</FIRST_NAME>
+         <SECOND_NAME>MUJYAMBERE</SECOND_NAME>
+         <THIRD_NAME/>
+         <FOURTH_NAME/>
+         <UN_LIST_TYPE>DRC</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>CDi.014</REFERENCE_NUMBER>
+         <LISTED_ON>2009-03-03</LISTED_ON>
+         <GENDER>Male</GENDER>
+         <COMMENTS1>As of late 2014, acting deputy commander of FDLR/FOCA, based in Nganga, North Kivu. </COMMENTS1>
+         <NATIONALITY>
+            <VALUE>Rwandan</VALUE>
+         </NATIONALITY>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Low</QUALITY>
+            <ALIAS_NAME>Musenyeri</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Low</QUALITY>
+            <ALIAS_NAME>Achille</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Low</QUALITY>
+            <ALIAS_NAME>Frere Petrus Ibrahim</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS>
+            <CITY>Nyakaleke (south-east of Mwenga)</CITY>
+            <STATE_PROVINCE>South Kivu</STATE_PROVINCE>
+            <COUNTRY>DRC</COUNTRY>
+         </INDIVIDUAL_ADDRESS>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1962-03-17</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Approximately</TYPE_OF_DATE>
+            <YEAR>1966</YEAR>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Kigali</CITY>
+            <COUNTRY>Rwanda</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_DOCUMENT/>
+         <SORT_KEY>MUJYAMBERE LEOPOLD</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-24</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>6908007</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>IGNACE</FIRST_NAME>
+         <SECOND_NAME>MURWANASHYAKA</SECOND_NAME>
+         <THIRD_NAME/>
+         <FOURTH_NAME/>
+         <UN_LIST_TYPE>DRC</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>CDi.016</REFERENCE_NUMBER>
+         <LISTED_ON>2005-11-01</LISTED_ON>
+         <GENDER>Male</GENDER>
+         <COMMENTS1>Arrested by German authorities on 17 November 2009. Replaced by Gaston Iamuremye, alias ‘Rumuli’ as President of FDLR-FOCA. Murwanashyaka’s trial for war crimes and crimes against humanity committed by FDLR troops in DRC in 2008 and 2009 began on 4 May 2011 in a German court.</COMMENTS1>
+         <TITLE>
+            <VALUE>Dr.</VALUE>
+         </TITLE>
+         <NATIONALITY>
+            <VALUE>Rwandan</VALUE>
+         </NATIONALITY>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Low</QUALITY>
+            <ALIAS_NAME>Dr. Ignace</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1963-05-14</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Butera</CITY>
+            <COUNTRY>Rwanda</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Ngoma</CITY>
+            <STATE_PROVINCE>Butare</STATE_PROVINCE>
+            <COUNTRY>Rwanda</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_DOCUMENT/>
+         <SORT_KEY>MURWANASHYAKA IGNACE</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-24</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>6908008</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>STRATON</FIRST_NAME>
+         <SECOND_NAME>MUSONI</SECOND_NAME>
+         <THIRD_NAME/>
+         <FOURTH_NAME/>
+         <UN_LIST_TYPE>DRC</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>CDi.017</REFERENCE_NUMBER>
+         <LISTED_ON>2007-03-29</LISTED_ON>
+         <GENDER>Male</GENDER>
+         <COMMENTS1>Arrested by German authorities on 17 November 2009. Musoni’s trial for war crimes and crimes against humanity committed by FDLR troops in DRC in 2008 and 2009 began on 4 May 2011 in a German court. Replaced as 1st Vice-President of the FDLR by Sylvestre Mudacumura.</COMMENTS1>
+         <NATIONALITY>
+            <VALUE>Rwandan</VALUE>
+         </NATIONALITY>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>IO Musoni</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1961-04-06</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1961-06-04</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Mugambazi, Kigali</CITY>
+            <COUNTRY>Rwanda</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_DOCUMENT/>
+         <SORT_KEY>MUSONI STRATON</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-24</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>6908009</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>JULES</FIRST_NAME>
+         <SECOND_NAME>MUTEBUTSI</SECOND_NAME>
+         <THIRD_NAME/>
+         <FOURTH_NAME/>
+         <UN_LIST_TYPE>DRC</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>CDi.018</REFERENCE_NUMBER>
+         <LISTED_ON>2005-11-01</LISTED_ON>
+         <GENDER>Male</GENDER>
+         <COMMENTS1>Former FARDC Deputy Military Regional Commander of 10th Military Region in April 2004, dismissed for indiscipline. In December 2007, he was arrested by Rwandan authorities when he tried to cross the border into the DRC. He has lived since in semi-liberty in Kigali (not authorized to leave the country).</COMMENTS1>
+         <NATIONALITY>
+            <VALUE>Congolese</VALUE>
+         </NATIONALITY>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Jules Mutebusi  </ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Jules Mutebuzi </ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Colonel Mutebutsi</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <YEAR>1964</YEAR>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Minembwe</CITY>
+            <STATE_PROVINCE>South Kivu</STATE_PROVINCE>
+            <COUNTRY>DRC</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_DOCUMENT/>
+         <SORT_KEY>MUTEBUTSI JULES</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-25</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>6908010</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>BAUDOIN</FIRST_NAME>
+         <SECOND_NAME>NGARUYE WA MYAMURO</SECOND_NAME>
+         <THIRD_NAME/>
+         <FOURTH_NAME/>
+         <UN_LIST_TYPE>DRC</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>CDi.019</REFERENCE_NUMBER>
+         <LISTED_ON>2012-11-30</LISTED_ON>
+         <GENDER>Male</GENDER>
+         <COMMENTS1>Entered the Republic of Rwanda on 16 March 2013.  As of late 2014, living in Ngoma camp, Rwanda.</COMMENTS1>
+         <TITLE>
+            <VALUE>Military leader of the Mouvement du 23 Mars (M23) </VALUE>
+         </TITLE>
+         <DESIGNATION>
+            <VALUE>Brigadier General</VALUE>
+         </DESIGNATION>
+         <NATIONALITY>
+            <VALUE>Congolese</VALUE>
+         </NATIONALITY>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Colonel Baudoin NGARUYE</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS>
+            <CITY>Rubavu / Mudende</CITY>
+            <COUNTRY>Rwanda</COUNTRY>
+         </INDIVIDUAL_ADDRESS>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1978-04-01</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <YEAR>1978</YEAR>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Bibwe</CITY>
+            <COUNTRY>DRC</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Lusamambo</CITY>
+            <STATE_PROVINCE>Lubero territory</STATE_PROVINCE>
+            <COUNTRY>DRC</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_DOCUMENT>
+            <TYPE_OF_DOCUMENT>National Identification Number</TYPE_OF_DOCUMENT>
+            <TYPE_OF_DOCUMENT2>FARDC ID</TYPE_OF_DOCUMENT2>
+            <NUMBER>1-78-09-44621-80</NUMBER>
+         </INDIVIDUAL_DOCUMENT>
+         <SORT_KEY>NGARUYE WA MYAMURO Baudoin</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-25</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>6908011</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>MATHIEU, CHUI</FIRST_NAME>
+         <SECOND_NAME>NGUDJOLO</SECOND_NAME>
+         <THIRD_NAME/>
+         <FOURTH_NAME/>
+         <UN_LIST_TYPE>DRC</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>CDi.020</REFERENCE_NUMBER>
+         <LISTED_ON>2005-11-01</LISTED_ON>
+         <GENDER>Male</GENDER>
+         <COMMENTS1>Arrested by MONUC in Bunia in October 2003. Surrendered by  the Government of  the DRC to the  International Criminal  Court on 7 February 2008. Acquitted of all charges by the ICC in December 2012. After being released from custody, was detained by Dutch authorities, and has filed a claim for asylum in the Netherlands. The Prosecution appealed the ICC’s decision; hearings were held in October 2014 and a decision is pending as of December 2014.</COMMENTS1>
+         <NATIONALITY>
+            <VALUE>Congolese</VALUE>
+         </NATIONALITY>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Cui Ngudjolo</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH/>
+         <INDIVIDUAL_PLACE_OF_BIRTH/>
+         <INDIVIDUAL_DOCUMENT/>
+         <SORT_KEY>NGUDJOLO MATHIEU, CHUI</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-25</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>6908012</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>FLORIBERT NGABU</FIRST_NAME>
+         <SECOND_NAME>NJABU</SECOND_NAME>
+         <THIRD_NAME/>
+         <FOURTH_NAME/>
+         <UN_LIST_TYPE>DRC</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>CDi.021</REFERENCE_NUMBER>
+         <LISTED_ON>2005-11-01</LISTED_ON>
+         <GENDER>Male</GENDER>
+         <COMMENTS1>Under house arrest in Kinshasa since March 2005 for FNI involvement in human rights abuses. Transferred to The Hague on 27 March 2011 to testify in the ICC Germain Katanga and Mathieu Ngudjolo trials. Applied for asylum in the Netherlands in May 2011. In October 2012, a Dutch court denied his asylum claim. In July 2014, he was deported from the Netherlands to DRC, where he was placed under arrest. </COMMENTS1>
+         <NATIONALITY>
+            <VALUE>Congolese</VALUE>
+         </NATIONALITY>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Floribert Njabu Ngabu</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Floribert Ndjabu</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Floribert Ngabu Ndjabu </ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH/>
+         <INDIVIDUAL_PLACE_OF_BIRTH/>
+         <INDIVIDUAL_DOCUMENT/>
+         <SORT_KEY>NJABU FLORIBERT NGABU</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-25</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>6908013</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>LAURENT</FIRST_NAME>
+         <SECOND_NAME>NKUNDA</SECOND_NAME>
+         <THIRD_NAME/>
+         <FOURTH_NAME/>
+         <UN_LIST_TYPE>DRC</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>CDi.022</REFERENCE_NUMBER>
+         <LISTED_ON>2005-11-01</LISTED_ON>
+         <GENDER>Male</GENDER>
+         <COMMENTS1>Former RCD-G General. Founder, National Congress for the People’s Defense, 2006; Senior Officer, Rally for Congolese Democracy-Goma (RCD-G), 1998-2006; Officer Rwandan Patriotic Front (RPF), 1992-1998. Laurent Nkunda was arrested by Rwandan authorities in Rwanda in January 2009 and replaced as the commander of the CNDP. Since then, he has been under house arrest in Kigali, Rwanda. DRC Government’s request to extradite Nkunda for crimes committed in eastern DRC has been refused by Rwanda. In 2010, Nkunda’s appeal for illegal detention was rejected by Rwandan court in Gisenyi, ruling that the matter should be examined by a military court. Nkunda’s lawyers appealed with the Rwandan Military Court. </COMMENTS1>
+         <NATIONALITY>
+            <VALUE>Congolese</VALUE>
+         </NATIONALITY>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Nkunda Mihigo Laurent</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Laurent Nkunda Bwatare</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Laurent Nkundabatware</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Laurent Nkunda Mahoro Batware</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Laurent Nkunda Batware </ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Low</QUALITY>
+            <ALIAS_NAME>Chairman</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Low</QUALITY>
+            <ALIAS_NAME>General Nkunda</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Low</QUALITY>
+            <ALIAS_NAME>Papa Six</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1967-02-06</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1967-02-02</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Rutshuru</CITY>
+            <STATE_PROVINCE>North Kivu</STATE_PROVINCE>
+            <COUNTRY>DRC</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_DOCUMENT/>
+         <SORT_KEY>NKUNDALAURENT </SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-25</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>6908014</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>FELICIEN</FIRST_NAME>
+         <SECOND_NAME>NSANZUBUKIRE</SECOND_NAME>
+         <THIRD_NAME/>
+         <FOURTH_NAME/>
+         <UN_LIST_TYPE>DRC</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>CDi.023</REFERENCE_NUMBER>
+         <LISTED_ON>2010-12-01</LISTED_ON>
+         <GENDER>Male</GENDER>
+         <COMMENTS1>A member of the FDLR since at least 1994 and operating in eastern DRC since October 1998.</COMMENTS1>
+         <DESIGNATION>
+            <VALUE>1st battalion leader of the FDLR/FOCA, based in the Uvira-Sange area of South Kivu.</VALUE>
+         </DESIGNATION>
+         <NATIONALITY>
+            <VALUE>Rwandan</VALUE>
+         </NATIONALITY>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Fred Irakeza</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS>
+            <CITY>Magunda</CITY>
+            <STATE_PROVINCE>Mwenga territory, South Kivu</STATE_PROVINCE>
+            <COUNTRY>DRC</COUNTRY>
+            <NOTE>As of June 2011</NOTE>
+         </INDIVIDUAL_ADDRESS>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <YEAR>1967</YEAR>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Murama, Kigali</CITY>
+            <COUNTRY>Rwanda</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Rubungo, Kigali</CITY>
+            <COUNTRY>Rwanda</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Kinyinya, Kigali</CITY>
+            <COUNTRY>Rwanda</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_DOCUMENT/>
+         <SORT_KEY>NSANZUBUKIRE FELICIEN</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-25</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>6908015</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>PACIFIQUE</FIRST_NAME>
+         <SECOND_NAME>NTAWUNGUKA</SECOND_NAME>
+         <THIRD_NAME/>
+         <FOURTH_NAME/>
+         <UN_LIST_TYPE>DRC</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>CDi.024</REFERENCE_NUMBER>
+         <LISTED_ON>2009-03-03</LISTED_ON>
+         <GENDER>Male</GENDER>
+         <COMMENTS1>Received military training in Egypt. As of late 2014, based in Tongo area, North Kivu.</COMMENTS1>
+         <DESIGNATION>
+            <VALUE>Commander, Operational Sector North Kivu ‘SONOKI’ of FDLR-FOCA</VALUE>
+         </DESIGNATION>
+         <NATIONALITY>
+            <VALUE>Rwandan</VALUE>
+         </NATIONALITY>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Low</QUALITY>
+            <ALIAS_NAME>Colonel Omega</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Low</QUALITY>
+            <ALIAS_NAME>Nzeri</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Low</QUALITY>
+            <ALIAS_NAME>Israel</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Pacifique Ntawungula</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS>
+            <CITY>Matembe</CITY>
+            <STATE_PROVINCE>North Kivu</STATE_PROVINCE>
+            <COUNTRY>DRC</COUNTRY>
+            <NOTE>As of June 2011.</NOTE>
+         </INDIVIDUAL_ADDRESS>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1964-01-01</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Approximately</TYPE_OF_DATE>
+            <YEAR>1964</YEAR>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Gaseke</CITY>
+            <STATE_PROVINCE>Gisenyi Province</STATE_PROVINCE>
+            <COUNTRY>Rwanda</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_DOCUMENT/>
+         <SORT_KEY>NTAWUNGUKAPACIFIQUE </SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-25</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>6908016</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>JAMES</FIRST_NAME>
+         <SECOND_NAME>NYAKUNI</SECOND_NAME>
+         <THIRD_NAME/>
+         <FOURTH_NAME/>
+         <UN_LIST_TYPE>DRC</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>CDi.025</REFERENCE_NUMBER>
+         <LISTED_ON>2005-11-01</LISTED_ON>
+         <GENDER>Male</GENDER>
+         <COMMENTS1/>
+         <NATIONALITY>
+            <VALUE>Ugandan</VALUE>
+         </NATIONALITY>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY/>
+            <ALIAS_NAME/>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH/>
+         <INDIVIDUAL_PLACE_OF_BIRTH/>
+         <INDIVIDUAL_DOCUMENT/>
+         <SORT_KEY>NYAKUNI JAMES</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-25</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>6908017</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>STANISLAS</FIRST_NAME>
+         <SECOND_NAME>NZEYIMANA</SECOND_NAME>
+         <THIRD_NAME/>
+         <FOURTH_NAME/>
+         <UN_LIST_TYPE>DRC</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>CDi.026</REFERENCE_NUMBER>
+         <LISTED_ON>2009-03-03</LISTED_ON>
+         <GENDER>Male</GENDER>
+         <COMMENTS1>Disappeared while in Tanzania in early 2013. Whereabouts unknown as of late 2014.</COMMENTS1>
+         <DESIGNATION>
+            <VALUE>Deputy commander of the FDLR-FOCA </VALUE>
+         </DESIGNATION>
+         <NATIONALITY>
+            <VALUE>Rwandan</VALUE>
+         </NATIONALITY>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Deogratias Bigaruka Izabayo  </ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Low</QUALITY>
+            <ALIAS_NAME>Bigaruka</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Low</QUALITY>
+            <ALIAS_NAME>Bigurura</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Izabayo Deo</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Jules Mateso Mlamba</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS>
+            <CITY>Mukobervwa</CITY>
+            <STATE_PROVINCE>North Kivu</STATE_PROVINCE>
+            <COUNTRY>DRC</COUNTRY>
+            <NOTE>As of June 2011.</NOTE>
+         </INDIVIDUAL_ADDRESS>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1966-01-01</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1966-08-28</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Approximately</TYPE_OF_DATE>
+            <YEAR>1967</YEAR>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Mugusa</CITY>
+            <STATE_PROVINCE>Butare</STATE_PROVINCE>
+            <COUNTRY>Rwanda</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_DOCUMENT/>
+         <SORT_KEY>NZEYIMANASTANISLAS </SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-25</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>6908018</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>DIEUDONNÉ</FIRST_NAME>
+         <SECOND_NAME>OZIA MAZIO</SECOND_NAME>
+         <THIRD_NAME/>
+         <FOURTH_NAME/>
+         <UN_LIST_TYPE>DRC</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>CDi.027</REFERENCE_NUMBER>
+         <LISTED_ON>2005-11-01</LISTED_ON>
+         <GENDER>Male</GENDER>
+         <COMMENTS1>While president of the Fédération des entreprises congolaises (FEC) in Aru territory, Dieudonné Ozia Mazio is believed to have died in Ariwara on 23 September 2008.</COMMENTS1>
+         <NATIONALITY>
+            <VALUE>Congolese</VALUE>
+         </NATIONALITY>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Ozia Mazio</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Low</QUALITY>
+            <ALIAS_NAME>Omari</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Low</QUALITY>
+            <ALIAS_NAME>Mr Omari</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1949-06-06</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Ariwara</CITY>
+            <COUNTRY>DRC</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_DOCUMENT/>
+         <SORT_KEY>OZIA MAZIO DIEUDONNÉ</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-25</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>6908019</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>JEAN-MARIE LUGERERO</FIRST_NAME>
+         <SECOND_NAME>RUNIGA</SECOND_NAME>
+         <THIRD_NAME/>
+         <FOURTH_NAME/>
+         <UN_LIST_TYPE>DRC</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>CDi.028</REFERENCE_NUMBER>
+         <LISTED_ON>2012-12-31</LISTED_ON>
+         <GENDER>Male</GENDER>
+         <COMMENTS1>Entered the Republic of Rwanda on 16 March 2013. As of late 2014, residing in Rwanda. </COMMENTS1>
+         <DESIGNATION>
+            <VALUE>M23, President</VALUE>
+         </DESIGNATION>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Jean-Marie Rugerero</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS>
+            <CITY>Rubavu / Mudende</CITY>
+            <COUNTRY>Rwanda</COUNTRY>
+         </INDIVIDUAL_ADDRESS>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Approximately</TYPE_OF_DATE>
+            <YEAR>1960</YEAR>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1966-09-09</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Bukavu</CITY>
+            <COUNTRY>DRC</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_DOCUMENT/>
+         <SORT_KEY>RUNIGA JEAN-MARIE LUGERERO </SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-25</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>6908020</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>NTABO NTABERI</FIRST_NAME>
+         <SECOND_NAME>SHEKA</SECOND_NAME>
+         <THIRD_NAME/>
+         <FOURTH_NAME/>
+         <UN_LIST_TYPE>DRC</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>CDi.029</REFERENCE_NUMBER>
+         <LISTED_ON>2011-11-28</LISTED_ON>
+         <GENDER>Male</GENDER>
+         <COMMENTS1/>
+         <DESIGNATION>
+            <VALUE>Commander-in-Chief, Nduma Defence of Congo, Mayi Mayi Sheka group</VALUE>
+         </DESIGNATION>
+         <NATIONALITY>
+            <VALUE>Congolese</VALUE>
+         </NATIONALITY>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ALIAS/>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1976-04-04</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <STATE_PROVINCE>Walikalele territory</STATE_PROVINCE>
+            <COUNTRY>DRC</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_DOCUMENT/>
+         <SORT_KEY>SHEKA NTABO NTABERI</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-25</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>6908021</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>BOSCO</FIRST_NAME>
+         <SECOND_NAME>TAGANDA</SECOND_NAME>
+         <THIRD_NAME/>
+         <FOURTH_NAME/>
+         <UN_LIST_TYPE>DRC</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>CDi.030</REFERENCE_NUMBER>
+         <LISTED_ON>2005-11-01</LISTED_ON>
+         <GENDER>Male</GENDER>
+         <COMMENTS1>Born in Rwanda, he moved to Nyamitaba, Masisi territory, North Kivu, when he was a child. Nominated FARDC Brigadier-General by Presidential Decree on 11 December 2004, following Ituri peace agreements. Formerly Chief of Staff in CNDP and became CNDP military commander since the arrest of Laurent Nkunda in January 2009. Since January 2009, de facto Deputy Commander of consecutive anti-FDLR operations ‘Umoja Wetu’, ‘Kimia II’, and ‘Amani Leo’ in North and South Kivu. Entered Rwanda in March 2013, and voluntarily surrender to ICC officials in Kigali on March 22. Transferred to the ICC in The Hague, Netherlands. On 9 June 2014, ICC confirmed 13 charges of war crimes and five charges of crimes against humanity against him; the trial is scheduled to start 2 June 2015.</COMMENTS1>
+         <NATIONALITY>
+            <VALUE>Congolese</VALUE>
+         </NATIONALITY>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Bosco Ntaganda </ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Bosco Ntagenda</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>General Taganda</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Low</QUALITY>
+            <ALIAS_NAME>Lydia</ALIAS_NAME>
+            <NOTE>When he was part of APR.</NOTE>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Low</QUALITY>
+            <ALIAS_NAME>Terminator</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Low</QUALITY>
+            <ALIAS_NAME>Tango Romeo</ALIAS_NAME>
+            <NOTE>Call sign </NOTE>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Low</QUALITY>
+            <ALIAS_NAME>Romeo</ALIAS_NAME>
+            <NOTE>Call sign</NOTE>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Low</QUALITY>
+            <ALIAS_NAME>Major</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS>
+            <CITY>Goma</CITY>
+            <COUNTRY>DRC</COUNTRY>
+            <NOTE>As of June 2011.</NOTE>
+         </INDIVIDUAL_ADDRESS>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Between</TYPE_OF_DATE>
+            <FROM_YEAR>1973</FROM_YEAR>
+            <TO_YEAR>1974</TO_YEAR>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Bigogwe</CITY>
+            <COUNTRY>Rwanda</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_DOCUMENT/>
+         <SORT_KEY>TAGANDA BOSCO</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-25</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>6908022</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>INNOCENT</FIRST_NAME>
+         <SECOND_NAME>ZIMURINDA</SECOND_NAME>
+         <THIRD_NAME/>
+         <FOURTH_NAME/>
+         <UN_LIST_TYPE>DRC</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>CDi.031</REFERENCE_NUMBER>
+         <LISTED_ON>2010-12-01</LISTED_ON>
+         <GENDER>Male</GENDER>
+         <COMMENTS1>Integrated in the FARDC in 2009 as a Lieutenant Colonel, brigade commander in FARDC Kimia II Ops, based in Ngungu area. In July 2009, Zimurinda was promoted to full Colonel and became FARDC Sector commander in Ngungu and subsequently in Kitchanga in FARDC Kimia II and Amani Leo Operations. Whereas Zimurinda did not appear in the 31 December 2010 DRC Presidential ordinance nominating high FARDC officers, Zimurinda de facto maintained his command position of FARDC 22nd sector in Kitchanga and wears the newly issued FARDC rank and uniform. In December 2010, recruitment activities carried out by elements under the command of Zimurinda were denounced in open source reports. Entered the Republic of Rwanda on 16 March 2013. As of late 2014, residing in Ngoma camp, Rwanda.</COMMENTS1>
+         <DESIGNATION>
+            <VALUE>M23, Bde Comd, Rank: Colonel</VALUE>
+            <VALUE>Colonel in the FARDC</VALUE>
+         </DESIGNATION>
+         <NATIONALITY>
+            <VALUE>Congolese</VALUE>
+         </NATIONALITY>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Low</QUALITY>
+            <ALIAS_NAME>Zimulinda</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS>
+            <CITY>Rubavu</CITY>
+            <STATE_PROVINCE>Mudende</STATE_PROVINCE>
+         </INDIVIDUAL_ADDRESS>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1972-09-01</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Approximately</TYPE_OF_DATE>
+            <YEAR>1975</YEAR>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1972-03-16</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Ngungu</CITY>
+            <STATE_PROVINCE>Masisi territory, North Kivu</STATE_PROVINCE>
+            <COUNTRY>DRC</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Masisi</CITY>
+            <COUNTRY>DRC</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_DOCUMENT/>
+         <SORT_KEY>ZIMURINDA INNOCENT</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-25</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>6908023</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>THOMAS</FIRST_NAME>
+         <SECOND_NAME>LUBANGA</SECOND_NAME>
+         <THIRD_NAME/>
+         <FOURTH_NAME/>
+         <UN_LIST_TYPE>DRC</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>CDi.007</REFERENCE_NUMBER>
+         <LISTED_ON>2005-11-01</LISTED_ON>
+         <GENDER>Male</GENDER>
+         <COMMENTS1>Arrested in Kinshasa in March 2005 for UPC/L involvement in human rights abuses violations. Transferred to the ICC on 17 March 2006. Convicted by the ICC in March 2012 and sentenced to 14 years in prison. On 1 December 2014, ICC appeals judges upheld Lubanga’s conviction and sentence. Currently in prison in the Netherlands.</COMMENTS1>
+         <NATIONALITY>
+            <VALUE>Congolese</VALUE>
+         </NATIONALITY>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY/>
+            <ALIAS_NAME/>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH/>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <STATE_PROVINCE>Ituri</STATE_PROVINCE>
+            <COUNTRY>DRC</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_DOCUMENT/>
+         <SORT_KEY>LUBANGA THOMAS</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-25</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+   </INDIVIDUALS>
+   <ENTITIES>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>6908024</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>BUTEMBO AIRLINES (BAL)</FIRST_NAME>
+         <UN_LIST_TYPE>DRC</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>CDe.002</REFERENCE_NUMBER>
+         <LISTED_ON>2007-03-29</LISTED_ON>
+         <COMMENTS1>Privately-owned airline, operates out of Butembo. Since December 2008, BAL no longer holds an aircraft operating license in the DRC.</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS>
+            <CITY>Butembo</CITY>
+            <COUNTRY>DRC</COUNTRY>
+         </ENTITY_ADDRESS>
+         <SORT_KEY>BUTEMBO AIRLINES (BAL</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-25</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>6908025</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>CONGOMET TRADING HOUSE </FIRST_NAME>
+         <UN_LIST_TYPE>DRC</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>CDe.004</REFERENCE_NUMBER>
+         <LISTED_ON>2007-03-29</LISTED_ON>
+         <COMMENTS1>No longer exists as a gold trading house in Butembo, North Kivu</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS>
+            <CITY>Butembo</CITY>
+            <STATE_PROVINCE>North Kivu</STATE_PROVINCE>
+         </ENTITY_ADDRESS>
+         <SORT_KEY>CONGOMET TRADING HOUSE </SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-25</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>6908026</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>COMPAGNIE AERIENNE DES GRANDS LACS (CAGL) ; GREAT LAKES BUSINESS COMPANY (GLBC) </FIRST_NAME>
+         <UN_LIST_TYPE>DRC</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>CDe.003</REFERENCE_NUMBER>
+         <LISTED_ON>2007-03-29</LISTED_ON>
+         <COMMENTS1>As of December 2008, GLBC no longer had any operational aircraft, although several aircraft continued flying in 2008 despite UN sanctions.</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS>
+            <QUALITY>a.k.a.</QUALITY>
+            <ALIAS_NAME>CAGL</ALIAS_NAME>
+         </ENTITY_ALIAS>
+         <ENTITY_ADDRESS>
+            <STREET>Avenue Président Mobutu </STREET>
+            <CITY>Goma</CITY>
+            <COUNTRY>DRC</COUNTRY>
+         </ENTITY_ADDRESS>
+         <ENTITY_ADDRESS>
+            <CITY>Gisenyi</CITY>
+            <COUNTRY>Rwanda</COUNTRY>
+         </ENTITY_ADDRESS>
+         <ENTITY_ADDRESS>
+            <STREET>PO BOX 315</STREET>
+            <CITY>Goma</CITY>
+            <COUNTRY>DRC</COUNTRY>
+         </ENTITY_ADDRESS>
+         <SORT_KEY>COMPAGNIE AERIENNE DES GRANDS LACS (CAGL) ; GREAT LAKES BUSINESS COMPANY (GLBC) </SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-25</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>6908027</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>FORCES DEMOCRATIQUES DE LIBERATION DU RWANDA (FDLR)</FIRST_NAME>
+         <UN_LIST_TYPE>DRC</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>CDe.005</REFERENCE_NUMBER>
+         <LISTED_ON>2012-12-31</LISTED_ON>
+         <COMMENTS1>Email: Fdlr@fmx.de; fldrrse@yahoo.fr; fdlr@gmx.net; fdlrsrt@gmail.com; humura2020@gmail.com.</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS>
+            <QUALITY>a.k.a.</QUALITY>
+            <ALIAS_NAME>FDLR</ALIAS_NAME>
+         </ENTITY_ALIAS>
+         <ENTITY_ALIAS>
+            <QUALITY>a.k.a.</QUALITY>
+            <ALIAS_NAME>Force Combattante Abacunguzi</ALIAS_NAME>
+         </ENTITY_ALIAS>
+         <ENTITY_ALIAS>
+            <QUALITY>a.k.a.</QUALITY>
+            <ALIAS_NAME>Combatant Force for the Liberation of Rwanda</ALIAS_NAME>
+         </ENTITY_ALIAS>
+         <ENTITY_ALIAS>
+            <QUALITY>a.k.a.</QUALITY>
+            <ALIAS_NAME>FOCA</ALIAS_NAME>
+         </ENTITY_ALIAS>
+         <ENTITY_ADDRESS>
+            <STATE_PROVINCE>North Kivu</STATE_PROVINCE>
+            <COUNTRY>DRC</COUNTRY>
+         </ENTITY_ADDRESS>
+         <ENTITY_ADDRESS>
+            <STATE_PROVINCE>South Kivu</STATE_PROVINCE>
+            <COUNTRY>DRC</COUNTRY>
+         </ENTITY_ADDRESS>
+         <SORT_KEY>FORCES DEMOCRATIQUES DE LIBERATION DU RWANDA (FDLR)</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-25</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>6908028</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>M23</FIRST_NAME>
+         <UN_LIST_TYPE>DRC</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>CDe.006</REFERENCE_NUMBER>
+         <LISTED_ON>2012-12-31</LISTED_ON>
+         <COMMENTS1>Email: mouvementdu23mars1@gmail.com</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS>
+            <QUALITY>a.k.a.</QUALITY>
+            <ALIAS_NAME>Mouvement du 23 mars</ALIAS_NAME>
+         </ENTITY_ALIAS>
+         <SORT_KEY>M23</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-25</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>6908029</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>MACHANGA LTD</FIRST_NAME>
+         <UN_LIST_TYPE>DRC</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>CDe.007</REFERENCE_NUMBER>
+         <LISTED_ON>2007-03-29</LISTED_ON>
+         <COMMENTS1>Gold export company (Directors: Mr. Rajendra Kumar Vaya and Mr. Hirendra M. Vaya). In 2010, assets belonging to Machanga, held in the account of Emirates Gold, were frozen by Bank of Nova Scotia Mocatta (UK). The owners of Machanga have remained involved in purchasing gold from eastern DRC.</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS>
+            <STREET>Plot 55A, Upper Kololo Terrace</STREET>
+            <CITY>Kampala</CITY>
+            <COUNTRY>Uganda</COUNTRY>
+         </ENTITY_ADDRESS>
+         <SORT_KEY>MACHANGA LTD</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-25</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>6908030</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>TOUS POUR LA PAIX ET LE DEVELOPPEMENT (NGO)</FIRST_NAME>
+         <UN_LIST_TYPE>DRC</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>CDe.008</REFERENCE_NUMBER>
+         <LISTED_ON>2005-11-01</LISTED_ON>
+         <COMMENTS1>Goma, with provincial committees in South Kivu, Kasai Occidental, Kasai Oriental and Maniema Officially suspended all activities since 2008. In practice, as of June 2011 TPD offices are open and involved in cases related to returns of IDPs, community reconciliation initiatives, land conflict settlements, etc. The TPD President is Eugene Serufuli and Vice-President is Saverina Karomba. Important members include North Kivu provincial deputies Robert Seninga and Bertin Kirivita.</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS>
+            <QUALITY>a.k.a.</QUALITY>
+            <ALIAS_NAME>TPD</ALIAS_NAME>
+         </ENTITY_ALIAS>
+         <ENTITY_ADDRESS>
+            <CITY>Goma, North Kivu</CITY>
+            <COUNTRY>DRC</COUNTRY>
+         </ENTITY_ADDRESS>
+         <SORT_KEY>TOUS POUR LA PAIX ET LE DEVELOPPEMENT (NGO)</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-25</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>6908031</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>UGANDA COMMERCIAL IMPEX (UCI) LTD</FIRST_NAME>
+         <UN_LIST_TYPE>DRC</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>CDe.009</REFERENCE_NUMBER>
+         <LISTED_ON>2007-03-29</LISTED_ON>
+         <COMMENTS1>Gold export company. (Directors Mr. Jamnadas V. LODHIA – known as “Chuni”- and his sons Mr. Kunal LODHIA and Jitendra J. LODHIA). In January 2011, Ugandan authorities notified the Committee that following an exemption on its financial holdings, Emirates Gold repaid UCI’s debt to Crane Bank in Kampala, leading to final closure of its accounts. The directors of UCI have remained involved in purchasing gold from eastern DRC.</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS>
+            <STREET>Plot 22, Kanjokya Street, Kamwokya</STREET>
+            <CITY>Kampala</CITY>
+            <COUNTRY>Uganda</COUNTRY>
+            <NOTE>Tel.: +256 41 533 578/9</NOTE>
+         </ENTITY_ADDRESS>
+         <ENTITY_ADDRESS>
+            <STREET>PO BOX 22709</STREET>
+            <CITY>Kampala</CITY>
+            <COUNTRY>Uganda</COUNTRY>
+         </ENTITY_ADDRESS>
+         <SORT_KEY>UGANDA COMMERCIAL IMPEX (UCI) LTD</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-25</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>6908402</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>ADF</FIRST_NAME>
+         <UN_LIST_TYPE>DRC</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>CDe.001</REFERENCE_NUMBER>
+         <LISTED_ON>2014-06-30</LISTED_ON>
+         <COMMENTS1>As of December 2014, ADF was split into several small groups.  Jamil Mukulu leads one group, which contains several senior ADF leaders, and is in an unknown location, probably in North Kivu Province.  Seka Baluku leads the other main group, which operates in the forest northeast of Beni town in North Kivu Province.  ADF also has an extensive support network in DRC, Uganda, Rwanda, and possibly other countries.</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS>
+            <QUALITY>a.k.a.</QUALITY>
+            <ALIAS_NAME>Allied Democratic Forces</ALIAS_NAME>
+         </ENTITY_ALIAS>
+         <ENTITY_ALIAS>
+            <QUALITY>f.k.a.</QUALITY>
+            <ALIAS_NAME>Forces Démocratiques Alliées-Armée Nationale de Libération de l’Ouganda</ALIAS_NAME>
+         </ENTITY_ALIAS>
+         <ENTITY_ALIAS>
+            <QUALITY>f.k.a.</QUALITY>
+            <ALIAS_NAME>ADF/NALU</ALIAS_NAME>
+         </ENTITY_ALIAS>
+         <ENTITY_ALIAS>
+            <QUALITY>f.k.a.</QUALITY>
+            <ALIAS_NAME>NALU</ALIAS_NAME>
+         </ENTITY_ALIAS>
+         <ENTITY_ADDRESS>
+            <STATE_PROVINCE>North Kivu Province</STATE_PROVINCE>
+            <COUNTRY> Democratic Republic of the Congo</COUNTRY>
+         </ENTITY_ADDRESS>
+         <SORT_KEY>ADF</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-10-02</SORT_KEY_LAST_MOD>
+      </ENTITY>
+   </ENTITIES>
+</CONSOLIDATED_LIST>

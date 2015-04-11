@@ -1,0 +1,307 @@
+{
+ "nodes": [
+  {
+   "DATAID": "690784",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "GAFFAR",
+   "SECOND_NAME": "MOHAMMED",
+   "THIRD_NAME": "ELHASSAN",
+   "UN_LIST_TYPE": "Sudan",
+   "REFERENCE_NUMBER": "SDi.001",
+   "LISTED_ON": "2006-04-25",
+   "DESIGNATION": {
+    "VALUE": "Major-General and Commander of the Western Military Region for the Sudanese Armed Forces (SAF)"
+   },
+   "COMMENTS1": "Retired from the Sudanese Army.",
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ALIAS": {
+    "QUALITY": "Good",
+    "ALIAS_NAME": "Gaffar Mohmed Elhassan"
+   },
+   "INDIVIDUAL_ADDRESS": {
+    "STREET": "El Waha",
+    "CITY": "Omdurman",
+    "COUNTRY": "Sudan"
+   },
+   "INDIVIDUAL_DATE_OF_BIRTH": {
+    "TYPE_OF_DATE": "Exact",
+    "DATE": "1952-06-24"
+   },
+   "INDIVIDUAL_DOCUMENT": {
+    "TYPE_OF_DOCUMENT": "National Identification Number",
+    "TYPE_OF_DOCUMENT2": "Ex-serviceman’s identification card",
+    "NUMBER": "4302"
+   },
+   "SORT_KEY": "Elhassan Gaffar Mohammed",
+   "SORT_KEY_LAST_MOD": "2014-06-12",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "23 June 1952 (Exact)",
+   "indivPlaceOfBirthString": "",
+   "aliasCount": 1,
+   "indivAliasString": "Gaffar Mohmed Elhassan (Good)",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 1,
+   "id": "SDi.001",
+   "name": "GAFFAR MOHAMMED ELHASSAN",
+   "two_Digit_Country_ISO_Code": "SD",
+   "committeeResNum": "1591 (2005)",
+   "subject_Matter_Abbreviated": "Resolution 1591 (2005) concerning the Sudan",
+   "indivOrEntFromId": "1"
+  },
+  {
+   "DATAID": "690785",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "MUSA",
+   "SECOND_NAME": "HILAL",
+   "THIRD_NAME": "ABDALLA",
+   "FOURTH_NAME": "ALNSIEM",
+   "UN_LIST_TYPE": "Sudan",
+   "REFERENCE_NUMBER": "SDi.002",
+   "LISTED_ON": "2006-04-25",
+   "COMMENTS1": "",
+   "DESIGNATION": {
+    "VALUE": [
+     "Member of the National Assembly of Sudan",
+     "In 2008, appointed by the President of Sudan as special adviser to the Ministry of Federal Affairs",
+     "Paramount Chief of the Jalul Tribe in North Darfur"
+    ]
+   },
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ALIAS": [
+    {
+     "QUALITY": "Low",
+     "ALIAS_NAME": "(Sheikh) Musa Hilal"
+    },
+    {
+     "QUALITY": "Low",
+     "ALIAS_NAME": "Abd Allah"
+    },
+    {
+     "QUALITY": "Low",
+     "ALIAS_NAME": "Abdallah"
+    },
+    {
+     "QUALITY": "Low",
+     "ALIAS_NAME": "AlNasim"
+    },
+    {
+     "QUALITY": "Low",
+     "ALIAS_NAME": "Al Nasim"
+    },
+    {
+     "QUALITY": "Low",
+     "ALIAS_NAME": "AlNaseem"
+    },
+    {
+     "QUALITY": "Low",
+     "ALIAS_NAME": "Al Naseem"
+    },
+    {
+     "QUALITY": "Low",
+     "ALIAS_NAME": "AlNasseem"
+    },
+    {
+     "QUALITY": "Low",
+     "ALIAS_NAME": "Al Nasseem"
+    }
+   ],
+   "INDIVIDUAL_ADDRESS": [
+    {
+     "CITY": "Kabkabiya",
+     "COUNTRY": "Sudan"
+    },
+    {
+     "CITY": "Kutum",
+     "COUNTRY": "Sudan",
+     "NOTE": "Resides in Kabkabiya and the city of Kutum, Northern Darfur and has resided in Khartoum."
+    }
+   ],
+   "INDIVIDUAL_DATE_OF_BIRTH": [
+    {
+     "TYPE_OF_DATE": "Exact",
+     "DATE": "1964-01-01"
+    },
+    {
+     "TYPE_OF_DATE": "Exact",
+     "YEAR": "1959"
+    }
+   ],
+   "INDIVIDUAL_PLACE_OF_BIRTH": {
+    "CITY": "Kutum"
+   },
+   "INDIVIDUAL_DOCUMENT": [
+    {
+     "TYPE_OF_DOCUMENT": "Passport",
+     "TYPE_OF_DOCUMENT2": "Diplomatic Passport",
+     "NUMBER": "D014433",
+     "DATE_OF_ISSUE": "2013-02-21",
+     "NOTE": "Expires 21 February 2015"
+    },
+    {
+     "TYPE_OF_DOCUMENT": "National Identification Number",
+     "TYPE_OF_DOCUMENT2": "Certificate of Nationality",
+     "NUMBER": "A0680623"
+    }
+   ],
+   "SORT_KEY": "Alnsiem Musa Hilal Abdalla",
+   "SORT_KEY_LAST_MOD": "2014-06-12",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "",
+   "indivPlaceOfBirthString": "Kutum, ",
+   "aliasCount": 9,
+   "indivAliasString": "(Sheikh) Musa Hilal (Low); Abd Allah (Low); Abdallah (Low); AlNasim (Low); Al Nasim (Low); AlNaseem (Low); Al Naseem (Low); AlNasseem (Low); Al Nasseem (Low); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 2,
+   "id": "SDi.002",
+   "name": "MUSA HILAL ABDALLA ALNSIEM",
+   "two_Digit_Country_ISO_Code": "SD",
+   "committeeResNum": "1591 (2005)",
+   "subject_Matter_Abbreviated": "Resolution 1591 (2005) concerning the Sudan",
+   "indivOrEntFromId": "1"
+  },
+  {
+   "DATAID": "690787",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "ADAM",
+   "SECOND_NAME": "YACUB",
+   "THIRD_NAME": "SHARIF",
+   "UN_LIST_TYPE": "Sudan",
+   "REFERENCE_NUMBER": "SDi.003",
+   "LISTED_ON": "2006-04-25",
+   "COMMENTS1": "Reportedly deceased on 7 June 2012.",
+   "DESIGNATION": {
+    "VALUE": "Sudanese Liberation Army (SLA) Commander"
+   },
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ALIAS": [
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Adam Yacub Shant"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Adam Yacoub"
+    }
+   ],
+   "INDIVIDUAL_ADDRESS": "",
+   "INDIVIDUAL_DATE_OF_BIRTH": {
+    "TYPE_OF_DATE": "Approximately",
+    "YEAR": "1976"
+   },
+   "SORT_KEY": "Sharif Adam Yacub",
+   "SORT_KEY_LAST_MOD": "2014-06-12",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "1976 (Approximately)",
+   "indivPlaceOfBirthString": "",
+   "aliasCount": 2,
+   "indivAliasString": "Adam Yacub Shant (Good); Adam Yacoub (Good); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 3,
+   "id": "SDi.003",
+   "name": "ADAM YACUB SHARIF",
+   "two_Digit_Country_ISO_Code": "SD",
+   "committeeResNum": "1591 (2005)",
+   "subject_Matter_Abbreviated": "Resolution 1591 (2005) concerning the Sudan",
+   "indivOrEntFromId": "1"
+  },
+  {
+   "DATAID": "690788",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "JIBRIL",
+   "SECOND_NAME": "ABDULKARIM",
+   "THIRD_NAME": "IBRAHIM",
+   "FOURTH_NAME": "MAYU",
+   "UN_LIST_TYPE": "Sudan",
+   "REFERENCE_NUMBER": "SDi.004",
+   "LISTED_ON": "2006-04-25",
+   "COMMENTS1": "",
+   "DESIGNATION": {
+    "VALUE": "National Movement for Reform and Development (NMRD) Field Commander"
+   },
+   "NATIONALITY": {
+    "VALUE": "Sudanese by birth"
+   },
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ALIAS": [
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "General Gibril Abdul Kareem Barey"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "“Tek”"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Gabril Abdul Kareem Badri"
+    }
+   ],
+   "INDIVIDUAL_ADDRESS": {
+    "CITY": "Tine",
+    "COUNTRY": "Sudan",
+    "NOTE": "Resides in Tine, on the Sudanese side of the border with Chad"
+   },
+   "INDIVIDUAL_DATE_OF_BIRTH": {
+    "TYPE_OF_DATE": "Exact",
+    "DATE": "1967-01-01"
+   },
+   "INDIVIDUAL_PLACE_OF_BIRTH": {
+    "CITY": "El-Fasher",
+    "STATE_PROVINCE": "North Darfur",
+    "NOTE": "Place of Birth: Nile District, El-Fasher, El- Fasher, North Darfur"
+   },
+   "INDIVIDUAL_DOCUMENT": [
+    {
+     "TYPE_OF_DOCUMENT": "National Identification Number",
+     "NUMBER": "192-3238459- 9"
+    },
+    {
+     "TYPE_OF_DOCUMENT": "National Identification Number",
+     "TYPE_OF_DOCUMENT2": "Certificate of nationality acquired through birth",
+     "NUMBER": "302581"
+    }
+   ],
+   "SORT_KEY": "Mayu Jibril Abdulkarim Ibrahim",
+   "SORT_KEY_LAST_MOD": "2014-06-12",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "31 December 1966 (Exact)",
+   "indivPlaceOfBirthString": "El-Fasher, North Darfur, Place of Birth: Nile District, El-Fasher, El- Fasher, North Darfur, ",
+   "aliasCount": 3,
+   "indivAliasString": "General Gibril Abdul Kareem Barey (Good); “Tek” (Good); Gabril Abdul Kareem Badri (Good); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 4,
+   "id": "SDi.004",
+   "name": "JIBRIL ABDULKARIM IBRAHIM MAYU",
+   "natnlty": "Sudanese by birth",
+   "two_Digit_Country_ISO_Code": "SD",
+   "committeeResNum": "1591 (2005)",
+   "subject_Matter_Abbreviated": "Resolution 1591 (2005) concerning the Sudan",
+   "indivOrEntFromId": "1"
+  }
+ ],
+ "dateGenerated": "03-17-2015",
+ "dateCollected": "03-26-2015",
+ "message": "Collected consolidated.xml labeled as generated on: 03-17-2015 [Tue Mar 17 2015 00:00:00 GMT-0400 (Eastern Daylight Time)]",
+ "comments": {
+  "links": []
+ },
+ "narratives": {
+  "links": []
+ }
+}

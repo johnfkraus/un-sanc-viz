@@ -1,0 +1,412 @@
+{
+ "nodes": [
+  {
+   "DATAID": "6907985",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "CHARLES",
+   "SECOND_NAME": "BLÉ  GOUDÉ",
+   "THIRD_NAME": "",
+   "FOURTH_NAME": "",
+   "UN_LIST_TYPE": "CdI",
+   "REFERENCE_NUMBER": "CIi.001",
+   "LISTED_ON": "2006-02-07",
+   "GENDER": "Male",
+   "COMMENTS1": "Leader of COJEP (“Young Patriots”), repeated public statements advocating violence against United Nations installations and personnel, and against foreigners; direction of and participation in acts of violence by street militias, including beatings, rapes and extrajudicial killings; intimidation of the United Nations, the International Working Group (IWG), the political opposition and independent press; sabotage of international radio stations; obstacle to the action of the IWG, the United Nations Operation in Côte d’Ivoire, (UNOCI), the French Forces and to the peace process as defined by resolution 1643 (2005).",
+   "NATIONALITY": {
+    "VALUE": "Ivorian"
+   },
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ALIAS": [
+    {
+     "QUALITY": "Low",
+     "ALIAS_NAME": "Général"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Génie de kpo"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Gbapé Zadi"
+    }
+   ],
+   "INDIVIDUAL_ADDRESS": [
+    {
+     "STREET": "Yopougon Selmer, Bloc P 170",
+     "CITY": "Abidjan",
+     "COUNTRY": "Côte d’Ivoire"
+    },
+    {
+     "STREET": "c/o Hotel Ivoire",
+     "CITY": "Abidjan",
+     "COUNTRY": "Côte d’Ivoire"
+    },
+    {
+     "STREET": "Cocody (suburb)",
+     "CITY": "Abidjan",
+     "COUNTRY": "Côte d’Ivoire",
+     "NOTE": "Address declared in travel document n. C2310421 issued by Switzerland on 15 Nov. 2005 and valid until 31 Dec. 2005"
+    }
+   ],
+   "INDIVIDUAL_DATE_OF_BIRTH": {
+    "TYPE_OF_DATE": "Exact",
+    "DATE": "1972-01-01"
+   },
+   "INDIVIDUAL_PLACE_OF_BIRTH": [
+    {
+     "CITY": "Guibéroua",
+     "STATE_PROVINCE": "Gagnoa",
+     "COUNTRY": "Côte d’Ivoire"
+    },
+    {
+     "CITY": "Niagbrahio/ Guiberoua",
+     "COUNTRY": "Côte d’Ivoire"
+    },
+    {
+     "CITY": "Guiberoua",
+     "COUNTRY": "Côte d’Ivoire"
+    }
+   ],
+   "INDIVIDUAL_DOCUMENT": [
+    {
+     "TYPE_OF_DOCUMENT": "Passport",
+     "NUMBER": "04LE66241",
+     "DATE_OF_ISSUE": "2005-11-10",
+     "COUNTRY_OF_ISSUE": "Côte d’Ivoire",
+     "NOTE": "Expiration date: 9 Nov. 2008"
+    },
+    {
+     "TYPE_OF_DOCUMENT": "Passport",
+     "NUMBER": "AE/088 DH 12",
+     "DATE_OF_ISSUE": "2002-12-20",
+     "COUNTRY_OF_ISSUE": "Côte d’Ivoire",
+     "NOTE": "Expiration date: 11 Dec. 2005"
+    },
+    {
+     "TYPE_OF_DOCUMENT": "Passport",
+     "NUMBER": "98LC39292",
+     "COUNTRY_OF_ISSUE": "Côte d’Ivoire",
+     "NOTE": "Expiration date: 23 Nov. 2003"
+    }
+   ],
+   "SORT_KEY": "BLÉ  GOUDÉ CHARLES",
+   "SORT_KEY_LAST_MOD": "2014-06-22",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "31 December 1971 (Exact)",
+   "indivPlaceOfBirthString": "Guibéroua, Gagnoa, Côte d’Ivoire, ; Niagbrahio/ Guiberoua, Côte d’Ivoire, ; Guiberoua, Côte d’Ivoire, ; ",
+   "aliasCount": 3,
+   "indivAliasString": "Général (Low); Génie de kpo (Good); Gbapé Zadi (Good); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 1,
+   "id": "CIi.001",
+   "name": "CHARLES BLÉ  GOUDÉ",
+   "natnlty": "Ivorian",
+   "two_Digit_Country_ISO_Code": "CI",
+   "committeeResNum": "1572 (2004)",
+   "subject_Matter_Abbreviated": "Resolution 1572 (2004) concerning Côte d'Ivoire",
+   "indivOrEntFromId": "1"
+  },
+  {
+   "DATAID": "6907987",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "EUGÈNE N'GORAN KOUADIO",
+   "SECOND_NAME": "DJUÉ",
+   "THIRD_NAME": "",
+   "FOURTH_NAME": "",
+   "UN_LIST_TYPE": "CdI",
+   "REFERENCE_NUMBER": "CIi.003",
+   "LISTED_ON": "2006-02-07",
+   "GENDER": "Male",
+   "COMMENTS1": "Leader of the Union des Patriotes pour la Libération Totale de la Côte d’Ivoire (UPLTCI). Repeated public statements advocating violence against United Nations installations and personnel, and against foreigners; direction of and participation in acts of violence by street militias, including beatings, rapes and extrajudicial killings; obstacle to the action of IWG, UNOCI, the French forces and to the peace process as defined by resolution 1643 (2005).",
+   "NATIONALITY": {
+    "VALUE": "Ivorian"
+   },
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ALIAS": {
+    "QUALITY": "",
+    "ALIAS_NAME": ""
+   },
+   "INDIVIDUAL_ADDRESS": "",
+   "INDIVIDUAL_DATE_OF_BIRTH": [
+    {
+     "TYPE_OF_DATE": "Exact",
+     "DATE": "1966-01-01"
+    },
+    {
+     "TYPE_OF_DATE": "Exact",
+     "DATE": "1969-12-20"
+    }
+   ],
+   "INDIVIDUAL_PLACE_OF_BIRTH": {
+    "COUNTRY": "Côte d’Ivoire"
+   },
+   "INDIVIDUAL_DOCUMENT": {
+    "TYPE_OF_DOCUMENT": "Passport",
+    "NUMBER": "04 LE 017521",
+    "DATE_OF_ISSUE": "2005-02-10",
+    "NOTE": "Expiration date: 10 Feb. 2008"
+   },
+   "SORT_KEY": "DJUÉ EUGÈNE  N'GORAN KOUADIO",
+   "SORT_KEY_LAST_MOD": "2014-06-22",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "",
+   "indivPlaceOfBirthString": "Côte d’Ivoire, ",
+   "aliasCount": 1,
+   "indivAliasString": " ()",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 2,
+   "id": "CIi.003",
+   "name": "EUGÈNE N'GORAN KOUADIO DJUÉ",
+   "natnlty": "Ivorian",
+   "two_Digit_Country_ISO_Code": "CI",
+   "committeeResNum": "1572 (2004)",
+   "subject_Matter_Abbreviated": "Resolution 1572 (2004) concerning Côte d'Ivoire",
+   "indivOrEntFromId": "1"
+  },
+  {
+   "DATAID": "6907988",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "MARTIN KOUAKOU",
+   "SECOND_NAME": "FOFIÉ",
+   "THIRD_NAME": "",
+   "FOURTH_NAME": "",
+   "UN_LIST_TYPE": "CdI",
+   "REFERENCE_NUMBER": "CIi.004",
+   "LISTED_ON": "2006-02-07",
+   "GENDER": "Male",
+   "COMMENTS1": "Chief Corporal New Force Commandant, Korhogo Sector. Forces under his command engaged in recruitment of child soldiers, abductions, imposition of forced labor, sexual abuse of women, arbitrary arrests and extra-judicial killings, contrary to human rights conventions and to international humanitarian law; obstacle to the action of the IWG , UNOCI, French Forces and to the peace process as defined by resolution 1643 (2005). Father’s Name: Yao Koffi FOFIE. Mother’s Name: Ama Krouama KOSSONOU.",
+   "NATIONALITY": {
+    "VALUE": "Ivorian"
+   },
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ALIAS": {
+    "QUALITY": "",
+    "ALIAS_NAME": ""
+   },
+   "INDIVIDUAL_DATE_OF_BIRTH": {
+    "TYPE_OF_DATE": "Exact",
+    "DATE": "1968-01-01"
+   },
+   "INDIVIDUAL_PLACE_OF_BIRTH": {
+    "CITY": "BOHI",
+    "COUNTRY": "Côte d’Ivoire"
+   },
+   "INDIVIDUAL_DOCUMENT": [
+    {
+     "TYPE_OF_DOCUMENT": "National Identification Number",
+     "NUMBER": "2096927",
+     "DATE_OF_ISSUE": "2005-03-17",
+     "COUNTRY_OF_ISSUE": "Burkina Faso"
+    },
+    {
+     "TYPE_OF_DOCUMENT": "National Identification Number",
+     "NUMBER": "CNB N.076",
+     "DATE_OF_ISSUE": "2003-02-17",
+     "COUNTRY_OF_ISSUE": "Burkina Faso",
+     "NOTE": "Burkina Faso Nationality Certificate"
+    },
+    {
+     "TYPE_OF_DOCUMENT": "National Identification Number",
+     "NUMBER": "970860100249",
+     "DATE_OF_ISSUE": "1997-08-05",
+     "COUNTRY_OF_ISSUE": "Côte d’Ivoire",
+     "NOTE": "Expiration date: 5 Aug. 2007"
+    }
+   ],
+   "SORT_KEY": "FOFIÉ MARTIN KOUAKOU",
+   "SORT_KEY_LAST_MOD": "2014-06-22",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "31 December 1967 (Exact)",
+   "indivPlaceOfBirthString": "BOHI, Côte d’Ivoire, ",
+   "aliasCount": 1,
+   "indivAliasString": " ()",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 3,
+   "id": "CIi.004",
+   "name": "MARTIN KOUAKOU FOFIÉ",
+   "natnlty": "Ivorian",
+   "two_Digit_Country_ISO_Code": "CI",
+   "committeeResNum": "1572 (2004)",
+   "subject_Matter_Abbreviated": "Resolution 1572 (2004) concerning Côte d'Ivoire",
+   "indivOrEntFromId": "1"
+  },
+  {
+   "DATAID": "6907989",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "LAURENT",
+   "SECOND_NAME": "GBAGBO",
+   "THIRD_NAME": "",
+   "FOURTH_NAME": "",
+   "UN_LIST_TYPE": "CdI",
+   "REFERENCE_NUMBER": "CIi.005",
+   "LISTED_ON": "2011-03-30",
+   "GENDER": "Male",
+   "COMMENTS1": "Former President of Côte d’Ivoire: obstruction of the peace and reconciliation process, rejection of the results of the presidential election.",
+   "NATIONALITY": {
+    "VALUE": "Ivorian"
+   },
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ALIAS": {
+    "QUALITY": "",
+    "ALIAS_NAME": ""
+   },
+   "INDIVIDUAL_ADDRESS": "",
+   "INDIVIDUAL_DATE_OF_BIRTH": {
+    "TYPE_OF_DATE": "Exact",
+    "DATE": "1945-05-31"
+   },
+   "INDIVIDUAL_PLACE_OF_BIRTH": {
+    "CITY": "Gagnoa",
+    "COUNTRY": "Côte d’Ivoire"
+   },
+   "INDIVIDUAL_DOCUMENT": "",
+   "SORT_KEY": "GBAGBO LAURENT",
+   "SORT_KEY_LAST_MOD": "2014-06-22",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "30 May 1945 (Exact)",
+   "indivPlaceOfBirthString": "Gagnoa, Côte d’Ivoire, ",
+   "aliasCount": 1,
+   "indivAliasString": " ()",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 4,
+   "id": "CIi.005",
+   "name": "LAURENT GBAGBO",
+   "natnlty": "Ivorian",
+   "two_Digit_Country_ISO_Code": "CI",
+   "committeeResNum": "1572 (2004)",
+   "subject_Matter_Abbreviated": "Resolution 1572 (2004) concerning Côte d'Ivoire",
+   "indivOrEntFromId": "1"
+  },
+  {
+   "DATAID": "6907990",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "SIMONE",
+   "SECOND_NAME": "GBAGBO",
+   "THIRD_NAME": "",
+   "FOURTH_NAME": "",
+   "UN_LIST_TYPE": "CdI",
+   "REFERENCE_NUMBER": "CIi.006",
+   "LISTED_ON": "2011-03-30",
+   "GENDER": "Female",
+   "COMMENTS1": "Chairperson of the Parliamentary Group of the Ivorian Popular Front (FPI): obstruction of the peace and reconciliation process, public incitement to hatred and violence.",
+   "NATIONALITY": {
+    "VALUE": "Ivorian"
+   },
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ALIAS": {
+    "QUALITY": "",
+    "ALIAS_NAME": ""
+   },
+   "INDIVIDUAL_ADDRESS": "",
+   "INDIVIDUAL_DATE_OF_BIRTH": {
+    "TYPE_OF_DATE": "Exact",
+    "DATE": "1949-06-20"
+   },
+   "INDIVIDUAL_PLACE_OF_BIRTH": {
+    "CITY": "Moossou",
+    "STATE_PROVINCE": "Grand-Bassam",
+    "COUNTRY": "Côte d’Ivoire"
+   },
+   "INDIVIDUAL_DOCUMENT": "",
+   "SORT_KEY": "GBAGBO SIMONE",
+   "SORT_KEY_LAST_MOD": "2014-06-22",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "19 June 1949 (Exact)",
+   "indivPlaceOfBirthString": "Moossou, Grand-Bassam, Côte d’Ivoire, ",
+   "aliasCount": 1,
+   "indivAliasString": " ()",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 5,
+   "id": "CIi.006",
+   "name": "SIMONE GBAGBO",
+   "natnlty": "Ivorian",
+   "two_Digit_Country_ISO_Code": "CI",
+   "committeeResNum": "1572 (2004)",
+   "subject_Matter_Abbreviated": "Resolution 1572 (2004) concerning Côte d'Ivoire",
+   "indivOrEntFromId": "1"
+  },
+  {
+   "DATAID": "6907992",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "DÉSIRÉ",
+   "SECOND_NAME": "TAGRO",
+   "THIRD_NAME": "",
+   "FOURTH_NAME": "",
+   "UN_LIST_TYPE": "CdI",
+   "REFERENCE_NUMBER": "CIi.008",
+   "LISTED_ON": "2011-03-30",
+   "GENDER": "Male",
+   "COMMENTS1": "Secretary-General of the so-called “presidency” of Mr. Gbagbo: participation in the illegitimate government of Mr. Gbagbo, obstruction of the peace and reconciliation process, rejection of the results of the presidential election, participation in violent repressions of popular movements. Deceased on 12 April 2011 in Abidjan.",
+   "NATIONALITY": {
+    "VALUE": "Ivorian"
+   },
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ALIAS": {
+    "QUALITY": "",
+    "ALIAS_NAME": ""
+   },
+   "INDIVIDUAL_ADDRESS": "",
+   "INDIVIDUAL_DATE_OF_BIRTH": {
+    "TYPE_OF_DATE": "Exact",
+    "DATE": "1959-01-27"
+   },
+   "INDIVIDUAL_PLACE_OF_BIRTH": {
+    "CITY": "Issia",
+    "COUNTRY": "Côte d’Ivoire"
+   },
+   "INDIVIDUAL_DOCUMENT": {
+    "TYPE_OF_DOCUMENT": "Passport",
+    "NUMBER": "AE 065FH08"
+   },
+   "SORT_KEY": "TAGRO DÉSIRÉ",
+   "SORT_KEY_LAST_MOD": "2014-06-22",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "26 January 1959 (Exact)",
+   "indivPlaceOfBirthString": "Issia, Côte d’Ivoire, ",
+   "aliasCount": 1,
+   "indivAliasString": " ()",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 6,
+   "id": "CIi.008",
+   "name": "DÉSIRÉ TAGRO",
+   "natnlty": "Ivorian",
+   "two_Digit_Country_ISO_Code": "CI",
+   "committeeResNum": "1572 (2004)",
+   "subject_Matter_Abbreviated": "Resolution 1572 (2004) concerning Côte d'Ivoire",
+   "indivOrEntFromId": "1"
+  }
+ ],
+ "dateGenerated": "03-17-2015",
+ "dateCollected": "03-30-2015",
+ "message": "Collected consolidated.xml labeled as generated on: 03-17-2015 [Tue Mar 17 2015 00:00:00 GMT-0400 (Eastern Daylight Time)]",
+ "comments": {
+  "links": []
+ },
+ "narratives": {
+  "links": []
+ }
+}

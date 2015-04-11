@@ -1,0 +1,991 @@
+{
+ "nodes": [
+  {
+   "DATAID": "690730",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "ABDULQADER",
+   "SECOND_NAME": "MOHAMMED",
+   "THIRD_NAME": "AL-BAGHDADI",
+   "UN_LIST_TYPE": "Libya",
+   "REFERENCE_NUMBER": "LYi.001",
+   "LISTED_ON": "2011-02-26",
+   "COMMENTS1": "Listed pursuant to paragraph 15 of resolution 1970 (Travel Ban).",
+   "TITLE": {
+    "VALUE": "Dr"
+   },
+   "DESIGNATION": {
+    "VALUE": "Head of the Liaison Office of the Revolutionary Committees"
+   },
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ALIAS": "",
+   "INDIVIDUAL_ADDRESS": {
+    "COUNTRY": "Tunisia",
+    "NOTE": "Believed status/location: jail in Tunisia."
+   },
+   "INDIVIDUAL_DATE_OF_BIRTH": {
+    "TYPE_OF_DATE": "Exact",
+    "DATE": "1950-07-01"
+   },
+   "INDIVIDUAL_PLACE_OF_BIRTH": "",
+   "INDIVIDUAL_DOCUMENT": {
+    "TYPE_OF_DOCUMENT": "Passport",
+    "NUMBER": "B010574"
+   },
+   "SORT_KEY": "Al-Baghdadi Abdulqader Mohammed",
+   "SORT_KEY_LAST_MOD": "2014-05-28",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "30 June 1950 (Exact)",
+   "indivPlaceOfBirthString": "",
+   "aliasCount": 0,
+   "indivAliasString": "",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 1,
+   "id": "LYi.001",
+   "name": "ABDULQADER MOHAMMED AL-BAGHDADI",
+   "two_Digit_Country_ISO_Code": "LY",
+   "committeeResNum": "1970 (2011)",
+   "subject_Matter_Abbreviated": "Resolution 1970 (2011) concerning Libya",
+   "indivOrEntFromId": "i1"
+  },
+  {
+   "DATAID": "690731",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "ABDULQADER",
+   "SECOND_NAME": "YUSEF",
+   "THIRD_NAME": "DIBRI",
+   "UN_LIST_TYPE": "Libya",
+   "REFERENCE_NUMBER": "LYi.002",
+   "LISTED_ON": "2011-02-26",
+   "COMMENTS1": "Listed pursuant to paragraph 15 of resolution 1970 (Travel Ban).",
+   "DESIGNATION": {
+    "VALUE": "Head of Muammar Qadhafi's personal security"
+   },
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ADDRESS": "",
+   "INDIVIDUAL_DATE_OF_BIRTH": {
+    "TYPE_OF_DATE": "Exact",
+    "YEAR": "1946"
+   },
+   "INDIVIDUAL_PLACE_OF_BIRTH": {
+    "CITY": "Houn",
+    "COUNTRY": "Libya"
+   },
+   "SORT_KEY": "Dibri Abdulqader Yusef",
+   "SORT_KEY_LAST_MOD": "2014-05-28",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "1946 (Exact)",
+   "indivPlaceOfBirthString": "Houn, Libya, ",
+   "aliasCount": 0,
+   "indivAliasString": "",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 2,
+   "id": "LYi.002",
+   "name": "ABDULQADER YUSEF DIBRI",
+   "two_Digit_Country_ISO_Code": "LY",
+   "committeeResNum": "1970 (2011)",
+   "subject_Matter_Abbreviated": "Resolution 1970 (2011) concerning Libya",
+   "indivOrEntFromId": "i1"
+  },
+  {
+   "DATAID": "690732",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "SAYYID",
+   "SECOND_NAME": "MOHAMMED",
+   "THIRD_NAME": "QADHAF AL-DAM",
+   "UN_LIST_TYPE": "Libya",
+   "REFERENCE_NUMBER": "LYi.003",
+   "LISTED_ON": "2011-02-26",
+   "COMMENTS1": "Listed pursuant to paragraph 15 of resolution 1970 (Travel Ban).",
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ADDRESS": "",
+   "INDIVIDUAL_DATE_OF_BIRTH": {
+    "TYPE_OF_DATE": "Exact",
+    "YEAR": "1948"
+   },
+   "INDIVIDUAL_PLACE_OF_BIRTH": {
+    "CITY": "Sirte",
+    "COUNTRY": "Libya"
+   },
+   "SORT_KEY": "Qadhaf Al-damSayyid Mohammed",
+   "SORT_KEY_LAST_MOD": "2014-05-28",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "1948 (Exact)",
+   "indivPlaceOfBirthString": "Sirte, Libya, ",
+   "aliasCount": 0,
+   "indivAliasString": "",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 3,
+   "id": "LYi.003",
+   "name": "SAYYID MOHAMMED QADHAF AL-DAM",
+   "two_Digit_Country_ISO_Code": "LY",
+   "committeeResNum": "1970 (2011)",
+   "subject_Matter_Abbreviated": "Resolution 1970 (2011) concerning Libya",
+   "indivOrEntFromId": "i1"
+  },
+  {
+   "DATAID": "690736",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "QUREN",
+   "SECOND_NAME": "SALIH",
+   "THIRD_NAME": "QUREN",
+   "FOURTH_NAME": "AL QADHAFI",
+   "UN_LIST_TYPE": "Libya",
+   "REFERENCE_NUMBER": "LYi.004",
+   "LISTED_ON": "2011-03-17",
+   "DESIGNATION": {
+    "VALUE": "Libyan Ambassador to Chad"
+   },
+   "COMMENTS1": "Listed pursuant to paragraph 15 of resolution 1970 (Travel Ban).",
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ADDRESS": "",
+   "INDIVIDUAL_DATE_OF_BIRTH": "",
+   "INDIVIDUAL_PLACE_OF_BIRTH": "",
+   "SORT_KEY": "AL QADHAFIQUREN SALIH QUREN",
+   "SORT_KEY_LAST_MOD": "2014-06-11",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "",
+   "indivPlaceOfBirthString": "",
+   "aliasCount": 0,
+   "indivAliasString": "",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 4,
+   "id": "LYi.004",
+   "name": "QUREN SALIH QUREN AL QADHAFI",
+   "two_Digit_Country_ISO_Code": "LY",
+   "committeeResNum": "1970 (2011)",
+   "subject_Matter_Abbreviated": "Resolution 1970 (2011) concerning Libya",
+   "indivOrEntFromId": "i1"
+  },
+  {
+   "DATAID": "690737",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "AMID",
+   "SECOND_NAME": "HUSAIN",
+   "THIRD_NAME": "AL KUNI",
+   "UN_LIST_TYPE": "Libya",
+   "REFERENCE_NUMBER": "LYi.005",
+   "LISTED_ON": "2011-03-17",
+   "COMMENTS1": "Listed pursuant to paragraph 15 of resolution 1970 (Travel Ban).",
+   "TITLE": {
+    "VALUE": "Colonel"
+   },
+   "DESIGNATION": {
+    "VALUE": "Governor of Ghat (South Libya)"
+   },
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ADDRESS": {
+    "COUNTRY": "Libya",
+    "NOTE": "Believed status/location: South Libya"
+   },
+   "INDIVIDUAL_DATE_OF_BIRTH": "",
+   "INDIVIDUAL_PLACE_OF_BIRTH": "",
+   "SORT_KEY": "AL KUNI AMID HUSAIN",
+   "SORT_KEY_LAST_MOD": "2014-06-11",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "",
+   "indivPlaceOfBirthString": "",
+   "aliasCount": 0,
+   "indivAliasString": "",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 5,
+   "id": "LYi.005",
+   "name": "AMID HUSAIN AL KUNI",
+   "two_Digit_Country_ISO_Code": "LY",
+   "committeeResNum": "1970 (2011)",
+   "subject_Matter_Abbreviated": "Resolution 1970 (2011) concerning Libya",
+   "indivOrEntFromId": "i1"
+  },
+  {
+   "DATAID": "690738",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "ABU",
+   "SECOND_NAME": "ZAYD",
+   "THIRD_NAME": "UMAR",
+   "FOURTH_NAME": "DORDA",
+   "UN_LIST_TYPE": "Libya",
+   "REFERENCE_NUMBER": "LYi.006",
+   "LISTED_ON": "2011-02-26",
+   "COMMENTS1": "Listed pursuant to paragraph 15 of resolution 1970 (Travel Ban). Listed on 17 March 2011 pursuant to paragraph 17 of resolution 1970 (Asset Freeze).",
+   "DESIGNATION": {
+    "VALUE": [
+     "Position: Director, External Security Organisation.",
+     "Head of external intelligence agency."
+    ]
+   },
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ADDRESS": {
+    "COUNTRY": "Libya",
+    "NOTE": "(Believed status/location: in custody in Libya)"
+   },
+   "INDIVIDUAL_DATE_OF_BIRTH": "",
+   "INDIVIDUAL_PLACE_OF_BIRTH": "",
+   "SORT_KEY": "DordaAbu Zayd Umar",
+   "SORT_KEY_LAST_MOD": "2014-06-11",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "",
+   "indivPlaceOfBirthString": "",
+   "aliasCount": 0,
+   "indivAliasString": "",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 6,
+   "id": "LYi.006",
+   "name": "ABU ZAYD UMAR DORDA",
+   "two_Digit_Country_ISO_Code": "LY",
+   "committeeResNum": "1970 (2011)",
+   "subject_Matter_Abbreviated": "Resolution 1970 (2011) concerning Libya",
+   "indivOrEntFromId": "i1"
+  },
+  {
+   "DATAID": "690748",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "ABU",
+   "SECOND_NAME": "BAKR",
+   "THIRD_NAME": "YUNIS",
+   "FOURTH_NAME": "JABIR",
+   "UN_LIST_TYPE": "Libya",
+   "REFERENCE_NUMBER": "LYi.007",
+   "LISTED_ON": "2011-02-26",
+   "TITLE": {
+    "VALUE": "Major General"
+   },
+   "COMMENTS1": "Listed pursuant to paragraph 15 of resolution 1970 (Travel Ban). Listed on 17 March 2011 pursuant to paragraph 17 of resolution 1970 (Asset Freeze). Believed status/location: deceased.",
+   "DESIGNATION": {
+    "VALUE": "Position: Defence Minister."
+   },
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ADDRESS": "",
+   "INDIVIDUAL_DATE_OF_BIRTH": {
+    "TYPE_OF_DATE": "Exact",
+    "YEAR": "1952"
+   },
+   "INDIVIDUAL_PLACE_OF_BIRTH": {
+    "CITY": "Jalo",
+    "COUNTRY": "Libya"
+   },
+   "INDIVIDUAL_DOCUMENT": "",
+   "SORT_KEY": "JabirAbu Bakr Yunis",
+   "SORT_KEY_LAST_MOD": "2014-06-11",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "1952 (Exact)",
+   "indivPlaceOfBirthString": "Jalo, Libya, ",
+   "aliasCount": 0,
+   "indivAliasString": "",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 7,
+   "id": "LYi.007",
+   "name": "ABU BAKR YUNIS JABIR",
+   "two_Digit_Country_ISO_Code": "LY",
+   "committeeResNum": "1970 (2011)",
+   "subject_Matter_Abbreviated": "Resolution 1970 (2011) concerning Libya",
+   "indivOrEntFromId": "i1"
+  },
+  {
+   "DATAID": "690754",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "MATUQ",
+   "SECOND_NAME": "MOHAMMED",
+   "THIRD_NAME": "MATUQ",
+   "UN_LIST_TYPE": "Libya",
+   "REFERENCE_NUMBER": "LYi.008",
+   "LISTED_ON": "2011-02-26",
+   "DESIGNATION": {
+    "VALUE": "Position: Secretary for Utilities"
+   },
+   "COMMENTS1": "Listed pursuant to paragraph 15 of resolution 1970 (Travel Ban). Listed on 17 March 2011 pursuant to paragraph 17 of resolution 1970 (Asset Freeze). Believed status/location: unknown, believed captured.",
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ADDRESS": "",
+   "INDIVIDUAL_DATE_OF_BIRTH": {
+    "TYPE_OF_DATE": "Exact",
+    "YEAR": "1956"
+   },
+   "INDIVIDUAL_PLACE_OF_BIRTH": {
+    "CITY": "Khoms",
+    "COUNTRY": "Libya"
+   },
+   "SORT_KEY": "MatuqMatuq Mohammed",
+   "SORT_KEY_LAST_MOD": "2014-06-04",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "1956 (Exact)",
+   "indivPlaceOfBirthString": "Khoms, Libya, ",
+   "aliasCount": 0,
+   "indivAliasString": "",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 8,
+   "id": "LYi.008",
+   "name": "MATUQ MOHAMMED MATUQ",
+   "two_Digit_Country_ISO_Code": "LY",
+   "committeeResNum": "1970 (2011)",
+   "subject_Matter_Abbreviated": "Resolution 1970 (2011) concerning Libya",
+   "indivOrEntFromId": "i1"
+  },
+  {
+   "DATAID": "690757",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "AISHA",
+   "SECOND_NAME": "MUAMMAR MUHAMMED",
+   "THIRD_NAME": "ABU MINYAR",
+   "FOURTH_NAME": "QADHAFI",
+   "UN_LIST_TYPE": "Libya",
+   "REFERENCE_NUMBER": "LYi.009",
+   "LISTED_ON": "2011-02-26",
+   "COMMENTS1": "Listed pursuant to paragraphs 15 and 17 of resolution 1970 (Travel Ban, Asset Freeze).",
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ALIAS": {
+    "QUALITY": "Good",
+    "ALIAS_NAME": "Aisha Muhammed Abdul Salam",
+    "NOTE": "Passport number: 215215"
+   },
+   "INDIVIDUAL_ADDRESS": {
+    "COUNTRY": "Sultanate of Oman",
+    "NOTE": "Believed status/location: Sultanate of Oman"
+   },
+   "INDIVIDUAL_DATE_OF_BIRTH": {
+    "TYPE_OF_DATE": "Exact",
+    "YEAR": "1978"
+   },
+   "INDIVIDUAL_PLACE_OF_BIRTH": {
+    "CITY": "Tripoli",
+    "COUNTRY": "Libya"
+   },
+   "INDIVIDUAL_DOCUMENT": {
+    "TYPE_OF_DOCUMENT": "Passport",
+    "NUMBER": "428720"
+   },
+   "SORT_KEY": "QadhafiAisha Muammar Muhammed Abu Minyar",
+   "SORT_KEY_LAST_MOD": "2014-06-11",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "1978 (Exact)",
+   "indivPlaceOfBirthString": "Tripoli, Libya, ",
+   "aliasCount": 1,
+   "indivAliasString": "Aisha Muhammed Abdul Salam (Good)",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 9,
+   "id": "LYi.009",
+   "name": "AISHA MUAMMAR MUHAMMED ABU MINYAR QADHAFI",
+   "two_Digit_Country_ISO_Code": "LY",
+   "committeeResNum": "1970 (2011)",
+   "subject_Matter_Abbreviated": "Resolution 1970 (2011) concerning Libya",
+   "indivOrEntFromId": "i1"
+  },
+  {
+   "DATAID": "690771",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "HANNIBAL",
+   "SECOND_NAME": "MUAMMAR",
+   "THIRD_NAME": "QADHAFI",
+   "FOURTH_NAME": "",
+   "UN_LIST_TYPE": "Libya",
+   "REFERENCE_NUMBER": "LYi.010",
+   "LISTED_ON": "2011-02-26",
+   "COMMENTS1": "Listed pursuant to paragraphs 15 and 17 of resolution 1970 (Travel Ban, Asset Freeze).",
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ADDRESS": {
+    "COUNTRY": "Algeria",
+    "NOTE": "Believed status/location: Algeria"
+   },
+   "INDIVIDUAL_DATE_OF_BIRTH": {
+    "TYPE_OF_DATE": "Exact",
+    "DATE": "1975-09-20"
+   },
+   "INDIVIDUAL_PLACE_OF_BIRTH": {
+    "CITY": "Tripoli",
+    "COUNTRY": "Libya"
+   },
+   "INDIVIDUAL_DOCUMENT": {
+    "TYPE_OF_DOCUMENT": "Passport",
+    "NUMBER": "B/002210"
+   },
+   "SORT_KEY": "QadhafiHannibal Muammar",
+   "SORT_KEY_LAST_MOD": "2014-06-11",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "19 September 1975 (Exact)",
+   "indivPlaceOfBirthString": "Tripoli, Libya, ",
+   "aliasCount": 0,
+   "indivAliasString": "",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 10,
+   "id": "LYi.010",
+   "name": "HANNIBAL MUAMMAR QADHAFI",
+   "two_Digit_Country_ISO_Code": "LY",
+   "committeeResNum": "1970 (2011)",
+   "subject_Matter_Abbreviated": "Resolution 1970 (2011) concerning Libya",
+   "indivOrEntFromId": "i1"
+  },
+  {
+   "DATAID": "690772",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "KHAMIS",
+   "SECOND_NAME": "MUAMMAR",
+   "THIRD_NAME": "QADHAFI",
+   "UN_LIST_TYPE": "Libya",
+   "REFERENCE_NUMBER": "LYi.011",
+   "LISTED_ON": "2011-02-26",
+   "COMMENTS1": "Listed pursuant to paragraphs 15 and 17 of resolution 1970 (Travel Ban, Asset Freeze). Believed status/location: deceased.",
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ADDRESS": "",
+   "INDIVIDUAL_DATE_OF_BIRTH": {
+    "TYPE_OF_DATE": "Exact",
+    "YEAR": "1978"
+   },
+   "INDIVIDUAL_PLACE_OF_BIRTH": {
+    "CITY": "Tripoli",
+    "COUNTRY": "Libya"
+   },
+   "SORT_KEY": "QadhafiKhamis Muammar",
+   "SORT_KEY_LAST_MOD": "2014-06-11",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "1978 (Exact)",
+   "indivPlaceOfBirthString": "Tripoli, Libya, ",
+   "aliasCount": 0,
+   "indivAliasString": "",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 11,
+   "id": "LYi.011",
+   "name": "KHAMIS MUAMMAR QADHAFI",
+   "two_Digit_Country_ISO_Code": "LY",
+   "committeeResNum": "1970 (2011)",
+   "subject_Matter_Abbreviated": "Resolution 1970 (2011) concerning Libya",
+   "indivOrEntFromId": "i1"
+  },
+  {
+   "DATAID": "690773",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "MOHAMMED",
+   "SECOND_NAME": "MUAMMAR",
+   "THIRD_NAME": "QADHAFI",
+   "UN_LIST_TYPE": "Libya",
+   "REFERENCE_NUMBER": "LYi.012",
+   "LISTED_ON": "2011-02-26",
+   "COMMENTS1": "Listed pursuant to paragraphs 15 and 17 of resolution 1970 (Travel Ban, Asset Freeze).",
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ADDRESS": {
+    "COUNTRY": "Sultanate of Oman",
+    "NOTE": "Believed status/location: Sultanate of Oman"
+   },
+   "INDIVIDUAL_DATE_OF_BIRTH": {
+    "TYPE_OF_DATE": "Exact",
+    "YEAR": "1970"
+   },
+   "INDIVIDUAL_PLACE_OF_BIRTH": {
+    "CITY": "Tripoli",
+    "COUNTRY": "Libya"
+   },
+   "SORT_KEY": "QadhafiMohammed Muammar",
+   "SORT_KEY_LAST_MOD": "2014-06-11",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "1970 (Exact)",
+   "indivPlaceOfBirthString": "Tripoli, Libya, ",
+   "aliasCount": 0,
+   "indivAliasString": "",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 12,
+   "id": "LYi.012",
+   "name": "MOHAMMED MUAMMAR QADHAFI",
+   "two_Digit_Country_ISO_Code": "LY",
+   "committeeResNum": "1970 (2011)",
+   "subject_Matter_Abbreviated": "Resolution 1970 (2011) concerning Libya",
+   "indivOrEntFromId": "i1"
+  },
+  {
+   "DATAID": "690774",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "MUAMMAR",
+   "SECOND_NAME": "MOHAMMED",
+   "THIRD_NAME": "ABU MINYAR",
+   "FOURTH_NAME": "QADHAFI",
+   "UN_LIST_TYPE": "Libya",
+   "REFERENCE_NUMBER": "LYi.013",
+   "LISTED_ON": "2011-02-26",
+   "COMMENTS1": "Listed pursuant to paragraphs 15 and 17 of resolution 1970  (Travel Ban, Asset Freeze). Believed status/location: deceased.",
+   "DESIGNATION": {
+    "VALUE": "Leader of the Revolution, Supreme Commander of Armed Forces"
+   },
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ADDRESS": "",
+   "INDIVIDUAL_DATE_OF_BIRTH": {
+    "TYPE_OF_DATE": "Exact",
+    "YEAR": "1942"
+   },
+   "INDIVIDUAL_PLACE_OF_BIRTH": {
+    "CITY": "Sirte",
+    "COUNTRY": "Libya"
+   },
+   "SORT_KEY": "Qadhafi Muammar Mohammed Abu Minyar",
+   "SORT_KEY_LAST_MOD": "2014-06-11",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "1942 (Exact)",
+   "indivPlaceOfBirthString": "Sirte, Libya, ",
+   "aliasCount": 0,
+   "indivAliasString": "",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 13,
+   "id": "LYi.013",
+   "name": "MUAMMAR MOHAMMED ABU MINYAR QADHAFI",
+   "two_Digit_Country_ISO_Code": "LY",
+   "committeeResNum": "1970 (2011)",
+   "subject_Matter_Abbreviated": "Resolution 1970 (2011) concerning Libya",
+   "indivOrEntFromId": "i1"
+  },
+  {
+   "DATAID": "690775",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "MUTASSIM",
+   "SECOND_NAME": "QADHAFI",
+   "UN_LIST_TYPE": "Libya",
+   "REFERENCE_NUMBER": "LYi.014",
+   "LISTED_ON": "2011-02-26",
+   "DESIGNATION": {
+    "VALUE": "National Security Adviser"
+   },
+   "COMMENTS1": "Listed pursuant to paragraphs 15 and 17 of resolution 1970 (Travel Ban, Asset Freeze). Believed status/location: deceased.",
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ADDRESS": "",
+   "INDIVIDUAL_DATE_OF_BIRTH": {
+    "TYPE_OF_DATE": "Exact",
+    "YEAR": "1976"
+   },
+   "INDIVIDUAL_PLACE_OF_BIRTH": {
+    "CITY": "Tripoli",
+    "COUNTRY": "Libya"
+   },
+   "SORT_KEY": "QadhafiMutassim",
+   "SORT_KEY_LAST_MOD": "2014-06-11",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "1976 (Exact)",
+   "indivPlaceOfBirthString": "Tripoli, Libya, ",
+   "aliasCount": 0,
+   "indivAliasString": "",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 14,
+   "id": "LYi.014",
+   "name": "MUTASSIM QADHAFI",
+   "two_Digit_Country_ISO_Code": "LY",
+   "committeeResNum": "1970 (2011)",
+   "subject_Matter_Abbreviated": "Resolution 1970 (2011) concerning Libya",
+   "indivOrEntFromId": "i1"
+  },
+  {
+   "DATAID": "690776",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "SAADI",
+   "SECOND_NAME": "QADHAFI",
+   "UN_LIST_TYPE": "Libya",
+   "REFERENCE_NUMBER": "LYi.015",
+   "LISTED_ON": "2011-02-26",
+   "DESIGNATION": {
+    "VALUE": "Commander Special Forces"
+   },
+   "COMMENTS1": "Listed pursuant to paragraph 15 of resolution 1970 (Travel Ban). Listed on 17 March 2011 pursuant to paragraph 17 of resolution 1970 (Asset Freeze).",
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ADDRESS": {
+    "COUNTRY": "Niger",
+    "NOTE": "Believed status/location: Niger"
+   },
+   "INDIVIDUAL_DATE_OF_BIRTH": [
+    {
+     "TYPE_OF_DATE": "Exact",
+     "DATE": "1973-05-27"
+    },
+    {
+     "TYPE_OF_DATE": "Exact",
+     "DATE": "1975-01-01"
+    }
+   ],
+   "INDIVIDUAL_PLACE_OF_BIRTH": {
+    "CITY": "Tripoli",
+    "COUNTRY": "Libya"
+   },
+   "INDIVIDUAL_DOCUMENT": [
+    {
+     "TYPE_OF_DOCUMENT": "Passport",
+     "NUMBER": "014797"
+    },
+    {
+     "TYPE_OF_DOCUMENT": "Passport",
+     "NUMBER": "524521"
+    }
+   ],
+   "SORT_KEY": "QadhafiSaadi",
+   "SORT_KEY_LAST_MOD": "2014-06-11",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "",
+   "indivPlaceOfBirthString": "Tripoli, Libya, ",
+   "aliasCount": 0,
+   "indivAliasString": "",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 15,
+   "id": "LYi.015",
+   "name": "SAADI QADHAFI",
+   "two_Digit_Country_ISO_Code": "LY",
+   "committeeResNum": "1970 (2011)",
+   "subject_Matter_Abbreviated": "Resolution 1970 (2011) concerning Libya",
+   "indivOrEntFromId": "i1"
+  },
+  {
+   "DATAID": "690777",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "SAIF AL-ARAB",
+   "SECOND_NAME": "QADHAFI",
+   "UN_LIST_TYPE": "Libya",
+   "REFERENCE_NUMBER": "LYi.016",
+   "LISTED_ON": "2011-02-26",
+   "COMMENTS1": "Listed pursuant to paragraph 15 of resolution 1970 (Travel Ban). Listed on 17 March 2011 pursuant to paragraph 17 of resolution 1970 (Asset Freeze). Believed status/location: deceased.",
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ADDRESS": "",
+   "INDIVIDUAL_DATE_OF_BIRTH": {
+    "TYPE_OF_DATE": "Exact",
+    "YEAR": "1982"
+   },
+   "INDIVIDUAL_PLACE_OF_BIRTH": {
+    "CITY": "Tripoli",
+    "COUNTRY": "Libya"
+   },
+   "SORT_KEY": "Qadhafi Saif al-Arab",
+   "SORT_KEY_LAST_MOD": "2014-06-11",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "1982 (Exact)",
+   "indivPlaceOfBirthString": "Tripoli, Libya, ",
+   "aliasCount": 0,
+   "indivAliasString": "",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 16,
+   "id": "LYi.016",
+   "name": "SAIF AL-ARAB QADHAFI",
+   "two_Digit_Country_ISO_Code": "LY",
+   "committeeResNum": "1970 (2011)",
+   "subject_Matter_Abbreviated": "Resolution 1970 (2011) concerning Libya",
+   "indivOrEntFromId": "i1"
+  },
+  {
+   "DATAID": "690778",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "SAIF AL-ISLAM",
+   "SECOND_NAME": "QADHAFI",
+   "UN_LIST_TYPE": "Libya",
+   "REFERENCE_NUMBER": "LYi.017",
+   "LISTED_ON": "2011-02-26",
+   "DESIGNATION": {
+    "VALUE": "Director, Qadhafi Foundation"
+   },
+   "COMMENTS1": "Listed pursuant to paragraphs 15 and 17 of resolution 1970 (Travel Ban, Asset Freeze).",
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ADDRESS": {
+    "COUNTRY": "Libya",
+    "NOTE": "Believed status/location: in custody in Libya."
+   },
+   "INDIVIDUAL_DATE_OF_BIRTH": {
+    "TYPE_OF_DATE": "Exact",
+    "DATE": "1972-06-25"
+   },
+   "INDIVIDUAL_PLACE_OF_BIRTH": {
+    "CITY": "Tripoli",
+    "COUNTRY": "Libya"
+   },
+   "INDIVIDUAL_DOCUMENT": {
+    "TYPE_OF_DOCUMENT": "Passport",
+    "NUMBER": "B014995"
+   },
+   "SORT_KEY": "QadhafiSaif al-Islam",
+   "SORT_KEY_LAST_MOD": "2014-06-11",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "24 June 1972 (Exact)",
+   "indivPlaceOfBirthString": "Tripoli, Libya, ",
+   "aliasCount": 0,
+   "indivAliasString": "",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 17,
+   "id": "LYi.017",
+   "name": "SAIF AL-ISLAM QADHAFI",
+   "two_Digit_Country_ISO_Code": "LY",
+   "committeeResNum": "1970 (2011)",
+   "subject_Matter_Abbreviated": "Resolution 1970 (2011) concerning Libya",
+   "indivOrEntFromId": "i1"
+  },
+  {
+   "DATAID": "690779",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "ABDULLAH",
+   "SECOND_NAME": "AL-SENUSSI",
+   "UN_LIST_TYPE": "Libya",
+   "REFERENCE_NUMBER": "LYi.018",
+   "LISTED_ON": "2011-02-26",
+   "TITLE": {
+    "VALUE": "Colonel"
+   },
+   "DESIGNATION": {
+    "VALUE": "Director Military Intelligence"
+   },
+   "COMMENTS1": "Listed pursuant to paragraph 15 of resolution 1970 (Travel Ban). Listed on 17 March 2011 pursuant to paragraph 17 of resolution 1970 (Asset Freeze).",
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ALIAS": [
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Abdoullah Ould Ahmed",
+     "NOTE": "Passport number: B0515260; DOB: 1948; POB: Anefif (Kidal), Mali; Date of issue: 10 Jan 2012; Place of issue: Bamako, Mali; Date of expiration: 10 Jan 2017."
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Abdoullah Ould Ahmed",
+     "NOTE": "Mali ID Number 073/SPICRE; POB: Anefif, Mali; Date of issue: 6 Dec 2011; Place of issue: Essouck, Mali"
+    }
+   ],
+   "INDIVIDUAL_ADDRESS": {
+    "COUNTRY": "Libya",
+    "NOTE": "Believed status/location: in custody in Libya."
+   },
+   "INDIVIDUAL_DATE_OF_BIRTH": {
+    "TYPE_OF_DATE": "Exact",
+    "YEAR": "1949"
+   },
+   "INDIVIDUAL_PLACE_OF_BIRTH": {
+    "COUNTRY": "Sudan"
+   },
+   "SORT_KEY": "Al-SenussiAbdullah",
+   "SORT_KEY_LAST_MOD": "2014-06-11",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "1949 (Exact)",
+   "indivPlaceOfBirthString": "Sudan, ",
+   "aliasCount": 2,
+   "indivAliasString": "Abdoullah Ould Ahmed (Good); Abdoullah Ould Ahmed (Good); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 18,
+   "id": "LYi.018",
+   "name": "ABDULLAH AL-SENUSSI",
+   "two_Digit_Country_ISO_Code": "LY",
+   "committeeResNum": "1970 (2011)",
+   "subject_Matter_Abbreviated": "Resolution 1970 (2011) concerning Libya",
+   "indivOrEntFromId": "i1"
+  },
+  {
+   "DATAID": "690780",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "SAFIA",
+   "SECOND_NAME": "FARKASH",
+   "THIRD_NAME": "AL-BARASSI",
+   "UN_LIST_TYPE": "Libya",
+   "REFERENCE_NUMBER": "LYi.019",
+   "LISTED_ON": "2011-06-24",
+   "COMMENTS1": "Listed pursuant to paragraph 15 of resolution 1970 and paragraph 19 of resolution 1973 (Travel Ban, Asset Freeze).",
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ADDRESS": {
+    "COUNTRY": "Sultanate of Oman",
+    "NOTE": "Believed status/location: Sultanate of Oman"
+   },
+   "INDIVIDUAL_DATE_OF_BIRTH": {
+    "YEAR": "1952"
+   },
+   "INDIVIDUAL_PLACE_OF_BIRTH": {
+    "CITY": "Al Bayda",
+    "COUNTRY": "Libya"
+   },
+   "SORT_KEY": "AL-BARASSI Safia Farkash",
+   "SORT_KEY_LAST_MOD": "2014-06-11",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "1952",
+   "indivPlaceOfBirthString": "Al Bayda, Libya, ",
+   "aliasCount": 0,
+   "indivAliasString": "",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 19,
+   "id": "LYi.019",
+   "name": "SAFIA FARKASH AL-BARASSI",
+   "two_Digit_Country_ISO_Code": "LY",
+   "committeeResNum": "1970 (2011)",
+   "subject_Matter_Abbreviated": "Resolution 1970 (2011) concerning Libya",
+   "indivOrEntFromId": "i1"
+  },
+  {
+   "DATAID": "690781",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "ABDELHAFIZ",
+   "SECOND_NAME": "ZLITNI",
+   "UN_LIST_TYPE": "Libya",
+   "REFERENCE_NUMBER": "LYi.020",
+   "LISTED_ON": "2011-06-24",
+   "DESIGNATION": {
+    "VALUE": [
+     "Minister for Planning and Finance in Colonel Qadhafi's Government.",
+     "Secretary of the General People’s Committee for Finance and Planning",
+     "Temporary head of the Central Bank of Libya"
+    ]
+   },
+   "COMMENTS1": "Listed pursuant to paragraph 15 of resolution 1970 and paragraph 19 of resolution 1973 (Travel Ban, Asset Freeze).",
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ADDRESS": "",
+   "INDIVIDUAL_DATE_OF_BIRTH": {
+    "TYPE_OF_DATE": "Exact",
+    "YEAR": "1935"
+   },
+   "INDIVIDUAL_PLACE_OF_BIRTH": "",
+   "SORT_KEY": "ZlitniAbdelhafiz",
+   "SORT_KEY_LAST_MOD": "2014-06-11",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "1935 (Exact)",
+   "indivPlaceOfBirthString": "",
+   "aliasCount": 0,
+   "indivAliasString": "",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 20,
+   "id": "LYi.020",
+   "name": "ABDELHAFIZ ZLITNI",
+   "two_Digit_Country_ISO_Code": "LY",
+   "committeeResNum": "1970 (2011)",
+   "subject_Matter_Abbreviated": "Resolution 1970 (2011) concerning Libya",
+   "indivOrEntFromId": "i1"
+  },
+  {
+   "DATAID": "690782",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "LIBYAN INVESTMENT AUTHORITY",
+   "UN_LIST_TYPE": "Libya",
+   "REFERENCE_NUMBER": "LYe.001",
+   "LISTED_ON": "2011-03-17",
+   "COMMENTS1": "Listed pursuant to paragraph 17 of resolution 1973, as modified on 16 September pursuant to paragraph 15 of resolution 2009.",
+   "LIST_TYPE": {
+    "VALUE": ""
+   },
+   "ENTITY_ALIAS": {
+    "QUALITY": "a.k.a.",
+    "ALIAS_NAME": "Libyan Foreign Investment Company (LFIC)"
+   },
+   "ENTITY_ADDRESS": {
+    "STREET": "1 Fateh Tower Office, No 99 22nd Floor, Borgaida Street",
+    "CITY": "Tripoli",
+    "ZIP_CODE": "1103",
+    "COUNTRY": "Libya"
+   },
+   "SORT_KEY": "Libyan Investment Authority",
+   "SORT_KEY_LAST_MOD": "2014-06-11",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 21,
+   "id": "LYe.001",
+   "name": "LIBYAN INVESTMENT AUTHORITY",
+   "two_Digit_Country_ISO_Code": "LY",
+   "committeeResNum": "1970 (2011)",
+   "subject_Matter_Abbreviated": "Resolution 1970 (2011) concerning Libya",
+   "indivOrEntFromId": "e1"
+  },
+  {
+   "DATAID": "690783",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "LIBYAN AFRICA INVESTMENT PORTFOLIO",
+   "UN_LIST_TYPE": "Libya",
+   "REFERENCE_NUMBER": "LYe.002",
+   "LISTED_ON": "2011-03-17",
+   "COMMENTS1": "Listed pursuant to paragraph 17 of resolution 1973, as modified on 16 September pursuant to paragraph 15 of resolution 2009.",
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "ENTITY_ADDRESS": {
+    "STREET": "Jamahiriya Street, LAP Building, PO Box 91330",
+    "CITY": "Tripoli",
+    "COUNTRY": "Libya"
+   },
+   "SORT_KEY": "Libyan Africa Investment Portfolio",
+   "SORT_KEY_LAST_MOD": "2014-06-11",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 22,
+   "id": "LYe.002",
+   "name": "LIBYAN AFRICA INVESTMENT PORTFOLIO",
+   "two_Digit_Country_ISO_Code": "LY",
+   "committeeResNum": "1970 (2011)",
+   "subject_Matter_Abbreviated": "Resolution 1970 (2011) concerning Libya",
+   "indivOrEntFromId": "e1"
+  }
+ ],
+ "dateGenerated": "03-17-2015",
+ "dateCollected": "03-21-2015",
+ "message": "Collected consolidated.xml labeled as generated on: 03-17-2015 [Tue Mar 17 2015 00:00:00 GMT-0400 (Eastern Daylight Time)]",
+ "comments": {
+  "links": []
+ },
+ "narratives": {
+  "links": []
+ }
+}

@@ -1,0 +1,2378 @@
+{
+ "nodes": [
+  {
+   "DATAID": "6907993",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "ERIC",
+   "SECOND_NAME": "BADEGE",
+   "THIRD_NAME": "",
+   "FOURTH_NAME": "",
+   "UN_LIST_TYPE": "DRC",
+   "REFERENCE_NUMBER": "CDi.001",
+   "LISTED_ON": "2012-12-31",
+   "GENDER": "Male",
+   "COMMENTS1": "",
+   "NATIONALITY": {
+    "VALUE": "Congolese"
+   },
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ALIAS": {
+    "QUALITY": "",
+    "ALIAS_NAME": ""
+   },
+   "INDIVIDUAL_ADDRESS": "",
+   "INDIVIDUAL_DATE_OF_BIRTH": {
+    "TYPE_OF_DATE": "Exact",
+    "YEAR": "1971"
+   },
+   "INDIVIDUAL_PLACE_OF_BIRTH": "",
+   "INDIVIDUAL_DOCUMENT": "",
+   "SORT_KEY": "BADEGEERIC",
+   "SORT_KEY_LAST_MOD": "2014-06-24",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "1971 (Exact)",
+   "indivPlaceOfBirthString": "",
+   "aliasCount": 1,
+   "indivAliasString": " ()",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 1,
+   "id": "CDi.001",
+   "name": "ERIC BADEGE",
+   "natnlty": "Congolese",
+   "two_Digit_Country_ISO_Code": "CD",
+   "committeeResNum": "1533 (2004)",
+   "subject_Matter_Abbreviated": "Resolution 1533 (2004) concerning the Democratic Republic of the Congo",
+   "indivOrEntFromId": "1"
+  },
+  {
+   "DATAID": "6907994",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "FRANK KAKOLELE",
+   "SECOND_NAME": "BWAMBALE",
+   "THIRD_NAME": "",
+   "FOURTH_NAME": "",
+   "UN_LIST_TYPE": "DRC",
+   "REFERENCE_NUMBER": "CDi.002",
+   "LISTED_ON": "2005-11-01",
+   "GENDER": "Male",
+   "COMMENTS1": "Left the CNDP in January 2008. As of June 2011, resides in Kinshasa. Since 2010, Kakolele has been involved in activities apparently on behalf of the DRC government’s Programme de Stabilisation et Reconstruction des Zones Sortant des Conflits Armés (STAREC), including participation in a STAREC mission to Goma and Beni in March 2011.  DRC authorities arrested him in December 2013 in Beni, North Kivu Province, for allegedly blocking the DDR process.",
+   "DESIGNATION": {
+    "VALUE": "FARDC General"
+   },
+   "NATIONALITY": {
+    "VALUE": "Congolese"
+   },
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ALIAS": [
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "FRANK KAKORERE"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "FRANK KAKORERE BWAMBALE"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "AIGLE BLANC"
+    }
+   ],
+   "INDIVIDUAL_ADDRESS": "",
+   "INDIVIDUAL_DATE_OF_BIRTH": "",
+   "INDIVIDUAL_PLACE_OF_BIRTH": "",
+   "INDIVIDUAL_DOCUMENT": "",
+   "SORT_KEY": "BWAMBALE",
+   "SORT_KEY_LAST_MOD": "2014-06-24",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "",
+   "indivPlaceOfBirthString": "",
+   "aliasCount": 3,
+   "indivAliasString": "FRANK KAKORERE (Good); FRANK KAKORERE BWAMBALE (Good); AIGLE BLANC (Good); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 2,
+   "id": "CDi.002",
+   "name": "FRANK KAKOLELE BWAMBALE",
+   "natnlty": "Congolese",
+   "two_Digit_Country_ISO_Code": "CD",
+   "committeeResNum": "1533 (2004)",
+   "subject_Matter_Abbreviated": "Resolution 1533 (2004) concerning the Democratic Republic of the Congo",
+   "indivOrEntFromId": "1"
+  },
+  {
+   "DATAID": "6907995",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "GASTON",
+   "SECOND_NAME": "IYAMUREMYE",
+   "THIRD_NAME": "",
+   "FOURTH_NAME": "",
+   "UN_LIST_TYPE": "DRC",
+   "REFERENCE_NUMBER": "CDi.003",
+   "LISTED_ON": "2010-12-01",
+   "GENDER": "Male",
+   "COMMENTS1": "Brigadier General.",
+   "DESIGNATION": [
+    {
+     "VALUE": "FDLR President"
+    },
+    {
+     "VALUE": "2nd Vice-President of FDLR-FOCA"
+    }
+   ],
+   "NATIONALITY": {
+    "VALUE": "Rwandan"
+   },
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ALIAS": [
+    {
+     "QUALITY": "Low",
+     "ALIAS_NAME": "Rumuli"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Byiringiro  Victor Rumuli"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Victor Rumuri"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Michel Byiringiro"
+    }
+   ],
+   "INDIVIDUAL_ADDRESS": {
+    "NOTE": "As of December 2014, based in North Kivu Province."
+   },
+   "INDIVIDUAL_DATE_OF_BIRTH": {
+    "TYPE_OF_DATE": "Exact",
+    "YEAR": "1948"
+   },
+   "INDIVIDUAL_PLACE_OF_BIRTH": [
+    {
+     "CITY": "Musanze District",
+     "STATE_PROVINCE": "Northern Province",
+     "COUNTRY": "Rwanda"
+    },
+    {
+     "CITY": "Ruhengeri",
+     "COUNTRY": "Rwanda"
+    }
+   ],
+   "INDIVIDUAL_DOCUMENT": "",
+   "SORT_KEY": "IYAMUREMYEGASTON",
+   "SORT_KEY_LAST_MOD": "2014-06-24",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "1948 (Exact)",
+   "indivPlaceOfBirthString": "Musanze District, Northern Province, Rwanda, ; Ruhengeri, Rwanda, ; ",
+   "aliasCount": 4,
+   "indivAliasString": "Rumuli (Low); Byiringiro  Victor Rumuli (Good); Victor Rumuri (Good); Michel Byiringiro (Good); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 3,
+   "id": "CDi.003",
+   "name": "GASTON IYAMUREMYE",
+   "natnlty": "Rwandan",
+   "two_Digit_Country_ISO_Code": "CD",
+   "committeeResNum": "1533 (2004)",
+   "subject_Matter_Abbreviated": "Resolution 1533 (2004) concerning the Democratic Republic of the Congo",
+   "indivOrEntFromId": "1"
+  },
+  {
+   "DATAID": "6907996",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "INNOCENT",
+   "SECOND_NAME": "KAINA",
+   "THIRD_NAME": "",
+   "FOURTH_NAME": "",
+   "UN_LIST_TYPE": "DRC",
+   "REFERENCE_NUMBER": "CDi.004",
+   "LISTED_ON": "2012-11-30",
+   "GENDER": "Male",
+   "COMMENTS1": "In Rwanda as of late 2014.",
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ALIAS": [
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Colonel Innocent KAINA"
+    },
+    {
+     "QUALITY": "Low",
+     "ALIAS_NAME": "India Queen"
+    }
+   ],
+   "INDIVIDUAL_ADDRESS": "",
+   "INDIVIDUAL_DATE_OF_BIRTH": "",
+   "INDIVIDUAL_PLACE_OF_BIRTH": {
+    "CITY": "Bunagana",
+    "STATE_PROVINCE": "Rutshuru territory",
+    "COUNTRY": "DRC"
+   },
+   "INDIVIDUAL_DOCUMENT": "",
+   "SORT_KEY": "KAINA INNOCENT",
+   "SORT_KEY_LAST_MOD": "2014-06-24",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "",
+   "indivPlaceOfBirthString": "Bunagana, Rutshuru territory, DRC, ",
+   "aliasCount": 2,
+   "indivAliasString": "Colonel Innocent KAINA (Good); India Queen (Low); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 4,
+   "id": "CDi.004",
+   "name": "INNOCENT KAINA",
+   "two_Digit_Country_ISO_Code": "CD",
+   "committeeResNum": "1533 (2004)",
+   "subject_Matter_Abbreviated": "Resolution 1533 (2004) concerning the Democratic Republic of the Congo",
+   "indivOrEntFromId": "1"
+  },
+  {
+   "DATAID": "6907997",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "JÉRÔME",
+   "SECOND_NAME": "KAKWAVU BUKANDE",
+   "THIRD_NAME": "",
+   "FOURTH_NAME": "",
+   "UN_LIST_TYPE": "DRC",
+   "REFERENCE_NUMBER": "CDi.005",
+   "LISTED_ON": "2005-11-01",
+   "GENDER": "Male",
+   "COMMENTS1": "Given the rank of General in the FARDC in December 2004. As of June 2011, detained in Makala Prison in Kinshasa. As of 25 March 2011, the High Military Court in Kinshasa opened a trial against Kakwavu for war crimes. In November 2014, convicted by a DRC military court to ten years in prison for rape, murder, and torture.",
+   "NATIONALITY": {
+    "VALUE": "Congolese"
+   },
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ALIAS": [
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Jérôme Kakwavu"
+    },
+    {
+     "QUALITY": "Low",
+     "ALIAS_NAME": "Commandant Jérôme"
+    }
+   ],
+   "INDIVIDUAL_ADDRESS": "",
+   "INDIVIDUAL_DATE_OF_BIRTH": "",
+   "INDIVIDUAL_PLACE_OF_BIRTH": {
+    "CITY": "Goma",
+    "COUNTRY": "DRC"
+   },
+   "INDIVIDUAL_DOCUMENT": "",
+   "SORT_KEY": "KAKWAVU BUKANDE JÉRÔME",
+   "SORT_KEY_LAST_MOD": "2014-06-24",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "",
+   "indivPlaceOfBirthString": "Goma, DRC, ",
+   "aliasCount": 2,
+   "indivAliasString": "Jérôme Kakwavu (Good); Commandant Jérôme (Low); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 5,
+   "id": "CDi.005",
+   "name": "JÉRÔME KAKWAVU BUKANDE",
+   "natnlty": "Congolese",
+   "two_Digit_Country_ISO_Code": "CD",
+   "committeeResNum": "1533 (2004)",
+   "subject_Matter_Abbreviated": "Resolution 1533 (2004) concerning the Democratic Republic of the Congo",
+   "indivOrEntFromId": "1"
+  },
+  {
+   "DATAID": "6907998",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "GERMAIN",
+   "SECOND_NAME": "KATANGA",
+   "THIRD_NAME": "",
+   "FOURTH_NAME": "",
+   "UN_LIST_TYPE": "DRC",
+   "REFERENCE_NUMBER": "CDi.006",
+   "LISTED_ON": "2005-11-01",
+   "COMMENTS1": "Appointed General in the FARDC in December 2004. Handed over by the Government of the DRC to the International Criminal Court on 18 October 2007. Convicted in May 2014 by the ICC to 12 years in prison for war crimes and crimes against humanity. Currently in prison in the Netherlands.",
+   "NATIONALITY": {
+    "VALUE": "Congolese"
+   },
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ALIAS": {
+    "QUALITY": "",
+    "ALIAS_NAME": ""
+   },
+   "INDIVIDUAL_ADDRESS": "",
+   "INDIVIDUAL_DATE_OF_BIRTH": "",
+   "INDIVIDUAL_PLACE_OF_BIRTH": "",
+   "INDIVIDUAL_DOCUMENT": "",
+   "SORT_KEY": "KATANGA GERMAIN",
+   "SORT_KEY_LAST_MOD": "2014-06-24",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "",
+   "indivPlaceOfBirthString": "",
+   "aliasCount": 1,
+   "indivAliasString": " ()",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 6,
+   "id": "CDi.006",
+   "name": "GERMAIN KATANGA",
+   "natnlty": "Congolese",
+   "two_Digit_Country_ISO_Code": "CD",
+   "committeeResNum": "1533 (2004)",
+   "subject_Matter_Abbreviated": "Resolution 1533 (2004) concerning the Democratic Republic of the Congo",
+   "indivOrEntFromId": "1"
+  },
+  {
+   "DATAID": "6907999",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "SULTANI",
+   "SECOND_NAME": "MAKENGA",
+   "THIRD_NAME": "",
+   "FOURTH_NAME": "",
+   "UN_LIST_TYPE": "DRC",
+   "REFERENCE_NUMBER": "CDi.008",
+   "LISTED_ON": "2012-11-12",
+   "GENDER": "Male",
+   "COMMENTS1": "A military leader of the Mouvement du 23 Mars (M23) group operating in the Democratic Republic of the Congo. In Uganda as of late 2014.",
+   "NATIONALITY": {
+    "VALUE": "Congolese"
+   },
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ALIAS": [
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "MAKENGA, Colonel SULTANI"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "MAKENGA, EMMANUEL SULTANI"
+    }
+   ],
+   "INDIVIDUAL_ADDRESS": "",
+   "INDIVIDUAL_DATE_OF_BIRTH": {
+    "TYPE_OF_DATE": "Exact",
+    "DATE": "1973-12-25"
+   },
+   "INDIVIDUAL_PLACE_OF_BIRTH": {
+    "CITY": "Rutshuru",
+    "COUNTRY": "DRC"
+   },
+   "INDIVIDUAL_DOCUMENT": "",
+   "SORT_KEY": "MAKENGA SULTANI",
+   "SORT_KEY_LAST_MOD": "2014-06-24",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "24 December 1973 (Exact)",
+   "indivPlaceOfBirthString": "Rutshuru, DRC, ",
+   "aliasCount": 2,
+   "indivAliasString": "MAKENGA, Colonel SULTANI (Good); MAKENGA, EMMANUEL SULTANI (Good); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 7,
+   "id": "CDi.008",
+   "name": "SULTANI MAKENGA",
+   "natnlty": "Congolese",
+   "two_Digit_Country_ISO_Code": "CD",
+   "committeeResNum": "1533 (2004)",
+   "subject_Matter_Abbreviated": "Resolution 1533 (2004) concerning the Democratic Republic of the Congo",
+   "indivOrEntFromId": "1"
+  },
+  {
+   "DATAID": "6908000",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "KHAWA PANGA",
+   "SECOND_NAME": "MANDRO",
+   "THIRD_NAME": "",
+   "FOURTH_NAME": "",
+   "UN_LIST_TYPE": "DRC",
+   "REFERENCE_NUMBER": "CDi.009",
+   "LISTED_ON": "2005-11-01",
+   "GENDER": "Male",
+   "COMMENTS1": "Placed in prison in Bunia in April 2005 for sabotage of the Ituri peace process. Arrested by Congolese authorities in October 2005, acquitted by the Court of Appeal in Kisangani, subsequently transferred to the judicial authorities in Kinshasa on new charges of crimes against humanity, war crimes, murder, aggravated assault and battery. In August 2014, a DRC military court in Kisangani convicted him of war crimes and crimes against humanity, sentenced him to nine years in prison, and ordered him to pay approximately $85,000 to his victims.",
+   "NATIONALITY": {
+    "VALUE": "Congolese"
+   },
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ALIAS": [
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Kawa Panga"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Kawa Panga Mandro"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Kawa Mandro"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Yves Andoul Karim"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Mandro Panga Kahwa"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Yves Khawa Panga Mandro"
+    },
+    {
+     "QUALITY": "Low",
+     "ALIAS_NAME": "“Chief Kahwa”"
+    },
+    {
+     "QUALITY": "Low",
+     "ALIAS_NAME": "“Kawa”"
+    }
+   ],
+   "INDIVIDUAL_ADDRESS": "",
+   "INDIVIDUAL_DATE_OF_BIRTH": {
+    "TYPE_OF_DATE": "Exact",
+    "DATE": "1973-08-20"
+   },
+   "INDIVIDUAL_PLACE_OF_BIRTH": {
+    "CITY": "Bunia",
+    "COUNTRY": "DRC"
+   },
+   "INDIVIDUAL_DOCUMENT": "",
+   "SORT_KEY": "MANDRO",
+   "SORT_KEY_LAST_MOD": "2014-06-24",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "19 August 1973 (Exact)",
+   "indivPlaceOfBirthString": "Bunia, DRC, ",
+   "aliasCount": 8,
+   "indivAliasString": "Kawa Panga (Good); Kawa Panga Mandro (Good); Kawa Mandro (Good); Yves Andoul Karim (Good); Mandro Panga Kahwa (Good); Yves Khawa Panga Mandro (Good); “Chief Kahwa” (Low); “Kawa” (Low); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 8,
+   "id": "CDi.009",
+   "name": "KHAWA PANGA MANDRO",
+   "natnlty": "Congolese",
+   "two_Digit_Country_ISO_Code": "CD",
+   "committeeResNum": "1533 (2004)",
+   "subject_Matter_Abbreviated": "Resolution 1533 (2004) concerning the Democratic Republic of the Congo",
+   "indivOrEntFromId": "1"
+  },
+  {
+   "DATAID": "6908001",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "CALLIXTE",
+   "SECOND_NAME": "MBARUSHIMANA",
+   "THIRD_NAME": "",
+   "FOURTH_NAME": "",
+   "UN_LIST_TYPE": "DRC",
+   "REFERENCE_NUMBER": "CDi.010",
+   "LISTED_ON": "2009-03-03",
+   "GENDER": "Male",
+   "COMMENTS1": "Arrested in Paris on 3 October 2010 under ICC warrant for war crimes and crimes against humanity committed by FDLR troops in the Kivus in 2009 and transferred to The Hague on 25 January 2011, but released by the ICC in late 2011.",
+   "NATIONALITY": {
+    "VALUE": "Rwandan"
+   },
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ALIAS": {
+    "QUALITY": "",
+    "ALIAS_NAME": ""
+   },
+   "INDIVIDUAL_ADDRESS": "",
+   "INDIVIDUAL_DATE_OF_BIRTH": {
+    "TYPE_OF_DATE": "Exact",
+    "DATE": "1963-07-24"
+   },
+   "INDIVIDUAL_PLACE_OF_BIRTH": {
+    "CITY": "Ndusu / Ruhengeri",
+    "STATE_PROVINCE": "Northern Province",
+    "COUNTRY": "Rwanda"
+   },
+   "INDIVIDUAL_DOCUMENT": "",
+   "SORT_KEY": "MBARUSHIMANA CALLIXTE",
+   "SORT_KEY_LAST_MOD": "2014-06-24",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "23 July 1963 (Exact)",
+   "indivPlaceOfBirthString": "Ndusu / Ruhengeri, Northern Province, Rwanda, ",
+   "aliasCount": 1,
+   "indivAliasString": " ()",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 9,
+   "id": "CDi.010",
+   "name": "CALLIXTE MBARUSHIMANA",
+   "natnlty": "Rwandan",
+   "two_Digit_Country_ISO_Code": "CD",
+   "committeeResNum": "1533 (2004)",
+   "subject_Matter_Abbreviated": "Resolution 1533 (2004) concerning the Democratic Republic of the Congo",
+   "indivOrEntFromId": "1"
+  },
+  {
+   "DATAID": "6908002",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "IRUTA DOUGLAS",
+   "SECOND_NAME": "MPAMO",
+   "THIRD_NAME": "",
+   "FOURTH_NAME": "",
+   "UN_LIST_TYPE": "DRC",
+   "REFERENCE_NUMBER": "CDi.011",
+   "LISTED_ON": "2005-11-01",
+   "GENDER": "Male",
+   "COMMENTS1": "No known occupation since two of the planes managed by Great Lakes Business Company (GLBC) crashed.",
+   "NATIONALITY": {
+    "VALUE": "Congolese"
+   },
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ALIAS": [
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Douglas Iruta Mpamo"
+    },
+    {
+     "QUALITY": "Low",
+     "ALIAS_NAME": "Mpano"
+    }
+   ],
+   "INDIVIDUAL_ADDRESS": {
+    "CITY": "Gisenyi",
+    "COUNTRY": "Rwanda",
+    "NOTE": "As of June 2011.."
+   },
+   "INDIVIDUAL_DATE_OF_BIRTH": [
+    {
+     "TYPE_OF_DATE": "Exact",
+     "DATE": "1965-12-28"
+    },
+    {
+     "TYPE_OF_DATE": "Exact",
+     "DATE": "1965-12-29"
+    }
+   ],
+   "INDIVIDUAL_PLACE_OF_BIRTH": [
+    {
+     "CITY": "Bashali",
+     "STATE_PROVINCE": "Masisi",
+     "COUNTRY": "DRC"
+    },
+    {
+     "CITY": "Goma",
+     "COUNTRY": "DRC"
+    },
+    {
+     "CITY": "Uvira",
+     "COUNTRY": "DRC"
+    }
+   ],
+   "INDIVIDUAL_DOCUMENT": "",
+   "SORT_KEY": "MPAMO IRUTA DOUGLAS",
+   "SORT_KEY_LAST_MOD": "2014-06-24",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "",
+   "indivPlaceOfBirthString": "Bashali, Masisi, DRC, ; Goma, DRC, ; Uvira, DRC, ; ",
+   "aliasCount": 2,
+   "indivAliasString": "Douglas Iruta Mpamo (Good); Mpano (Low); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 10,
+   "id": "CDi.011",
+   "name": "IRUTA DOUGLAS MPAMO",
+   "natnlty": "Congolese",
+   "two_Digit_Country_ISO_Code": "CD",
+   "committeeResNum": "1533 (2004)",
+   "subject_Matter_Abbreviated": "Resolution 1533 (2004) concerning the Democratic Republic of the Congo",
+   "indivOrEntFromId": "1"
+  },
+  {
+   "DATAID": "6908003",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "SYLVESTRE",
+   "SECOND_NAME": "MUDACUMURA",
+   "THIRD_NAME": "",
+   "FOURTH_NAME": "",
+   "UN_LIST_TYPE": "DRC",
+   "REFERENCE_NUMBER": "CDi.012",
+   "LISTED_ON": "2005-11-01",
+   "GENDER": "Male",
+   "COMMENTS1": "Military commander of FDLR-FOCA, also political 1st Vice-President and head of FOCA High Command, thus combining overall military and political command functions since the arrests of FDLR leaders in Europe. As of 2014, based at the FDLR’s headquarters in Nganga, North Kivu.",
+   "NATIONALITY": {
+    "VALUE": "Rwandan"
+   },
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ALIAS": [
+    {
+     "QUALITY": "Low",
+     "ALIAS_NAME": "Radja"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Mupenzi Bernard"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "General Major Mupenzi"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "General Mudacumura"
+    }
+   ],
+   "INDIVIDUAL_ADDRESS": {
+    "CITY": "Kikoma forest, near Bogoyi, Walikale",
+    "STATE_PROVINCE": "North Kivu",
+    "COUNTRY": "DRC",
+    "NOTE": "As of June 2011"
+   },
+   "INDIVIDUAL_DATE_OF_BIRTH": "",
+   "INDIVIDUAL_PLACE_OF_BIRTH": "",
+   "INDIVIDUAL_DOCUMENT": "",
+   "SORT_KEY": "MUDACUMURA SYLVESTRE",
+   "SORT_KEY_LAST_MOD": "2014-06-24",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "",
+   "indivPlaceOfBirthString": "",
+   "aliasCount": 4,
+   "indivAliasString": "Radja (Low); Mupenzi Bernard (Good); General Major Mupenzi (Good); General Mudacumura (Good); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 11,
+   "id": "CDi.012",
+   "name": "SYLVESTRE MUDACUMURA",
+   "natnlty": "Rwandan",
+   "two_Digit_Country_ISO_Code": "CD",
+   "committeeResNum": "1533 (2004)",
+   "subject_Matter_Abbreviated": "Resolution 1533 (2004) concerning the Democratic Republic of the Congo",
+   "indivOrEntFromId": "1"
+  },
+  {
+   "DATAID": "6908004",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "LEODOMIR",
+   "SECOND_NAME": "MUGARAGU",
+   "THIRD_NAME": "",
+   "FOURTH_NAME": "",
+   "UN_LIST_TYPE": "DRC",
+   "REFERENCE_NUMBER": "CDi.013",
+   "LISTED_ON": "2010-12-01",
+   "GENDER": "Male",
+   "COMMENTS1": "FDLR-FOCA Chief of Staff, in charge of administration.",
+   "NATIONALITY": {
+    "VALUE": "Rwandan"
+   },
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ALIAS": [
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Manzi Leon"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Leo Manzi"
+    }
+   ],
+   "INDIVIDUAL_ADDRESS": {
+    "CITY": "FDLR HQ at Kikoma forest, Bogoyi, Walikale",
+    "STATE_PROVINCE": "North Kivu",
+    "COUNTRY": "DRC",
+    "NOTE": "As of June 2011."
+   },
+   "INDIVIDUAL_DATE_OF_BIRTH": [
+    {
+     "TYPE_OF_DATE": "Exact",
+     "YEAR": "1954"
+    },
+    {
+     "TYPE_OF_DATE": "Exact",
+     "YEAR": "1953"
+    }
+   ],
+   "INDIVIDUAL_PLACE_OF_BIRTH": [
+    {
+     "CITY": "Kigali",
+     "COUNTRY": "Rwanda"
+    },
+    {
+     "CITY": "Rushashi",
+     "STATE_PROVINCE": "Northern Province",
+     "COUNTRY": "Rwanda"
+    }
+   ],
+   "INDIVIDUAL_DOCUMENT": "",
+   "SORT_KEY": "MUGARAGU LEODOMIR",
+   "SORT_KEY_LAST_MOD": "2014-06-24",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "",
+   "indivPlaceOfBirthString": "Kigali, Rwanda, ; Rushashi, Northern Province, Rwanda, ; ",
+   "aliasCount": 2,
+   "indivAliasString": "Manzi Leon (Good); Leo Manzi (Good); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 12,
+   "id": "CDi.013",
+   "name": "LEODOMIR MUGARAGU",
+   "natnlty": "Rwandan",
+   "two_Digit_Country_ISO_Code": "CD",
+   "committeeResNum": "1533 (2004)",
+   "subject_Matter_Abbreviated": "Resolution 1533 (2004) concerning the Democratic Republic of the Congo",
+   "indivOrEntFromId": "1"
+  },
+  {
+   "DATAID": "6908005",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "JAMIL",
+   "SECOND_NAME": "MUKULU",
+   "THIRD_NAME": "",
+   "FOURTH_NAME": "",
+   "UN_LIST_TYPE": "DRC",
+   "REFERENCE_NUMBER": "CDi.015",
+   "LISTED_ON": "2011-10-12",
+   "GENDER": "Male",
+   "COMMENTS1": "Whereabouts unknown as of late 2014; however, he is believed to be in North Kivu, DRC.",
+   "DESIGNATION": {
+    "VALUE": [
+     "Head of the Allied Democratic Forces (ADF)",
+     "Commander, Allied Democratic Forces"
+    ]
+   },
+   "NATIONALITY": {
+    "VALUE": "Ugandan"
+   },
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ALIAS": [
+    {
+     "QUALITY": "Low",
+     "ALIAS_NAME": "Professor Musharaf"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Steven Alirabaki"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "David Kyagulanyi"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Musezi Talengelanimiro"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Mzee Tutu"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Abdullah Junjuaka"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Alilabaki Kyagulanyi"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Hussein Muhammad"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Nicolas Luumu"
+    },
+    {
+     "QUALITY": "Low",
+     "ALIAS_NAME": "Talengelanimiro"
+    }
+   ],
+   "INDIVIDUAL_ADDRESS": "",
+   "INDIVIDUAL_DATE_OF_BIRTH": [
+    {
+     "TYPE_OF_DATE": "Exact",
+     "YEAR": "1965"
+    },
+    {
+     "TYPE_OF_DATE": "Exact",
+     "DATE": "1964-01-01"
+    }
+   ],
+   "INDIVIDUAL_PLACE_OF_BIRTH": {
+    "CITY": "Ntoke Village, Ntenjeru Sub County",
+    "STATE_PROVINCE": "Kayunga District",
+    "COUNTRY": "Uganda"
+   },
+   "INDIVIDUAL_DOCUMENT": "",
+   "SORT_KEY": "MUKULU JAMIL",
+   "SORT_KEY_LAST_MOD": "2014-06-24",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "",
+   "indivPlaceOfBirthString": "Ntoke Village, Ntenjeru Sub County, Kayunga District, Uganda, ",
+   "aliasCount": 10,
+   "indivAliasString": "Professor Musharaf (Low); Steven Alirabaki (Good); David Kyagulanyi (Good); Musezi Talengelanimiro (Good); Mzee Tutu (Good); Abdullah Junjuaka (Good); Alilabaki Kyagulanyi (Good); Hussein Muhammad (Good); Nicolas Luumu (Good); Talengelanimiro (Low); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 13,
+   "id": "CDi.015",
+   "name": "JAMIL MUKULU",
+   "natnlty": "Ugandan",
+   "two_Digit_Country_ISO_Code": "CD",
+   "committeeResNum": "1533 (2004)",
+   "subject_Matter_Abbreviated": "Resolution 1533 (2004) concerning the Democratic Republic of the Congo",
+   "indivOrEntFromId": "1"
+  },
+  {
+   "DATAID": "6908006",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "LEOPOLD",
+   "SECOND_NAME": "MUJYAMBERE",
+   "THIRD_NAME": "",
+   "FOURTH_NAME": "",
+   "UN_LIST_TYPE": "DRC",
+   "REFERENCE_NUMBER": "CDi.014",
+   "LISTED_ON": "2009-03-03",
+   "GENDER": "Male",
+   "COMMENTS1": "As of late 2014, acting deputy commander of FDLR/FOCA, based in Nganga, North Kivu.",
+   "NATIONALITY": {
+    "VALUE": "Rwandan"
+   },
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ALIAS": [
+    {
+     "QUALITY": "Low",
+     "ALIAS_NAME": "Musenyeri"
+    },
+    {
+     "QUALITY": "Low",
+     "ALIAS_NAME": "Achille"
+    },
+    {
+     "QUALITY": "Low",
+     "ALIAS_NAME": "Frere Petrus Ibrahim"
+    }
+   ],
+   "INDIVIDUAL_ADDRESS": {
+    "CITY": "Nyakaleke (south-east of Mwenga)",
+    "STATE_PROVINCE": "South Kivu",
+    "COUNTRY": "DRC"
+   },
+   "INDIVIDUAL_DATE_OF_BIRTH": [
+    {
+     "TYPE_OF_DATE": "Exact",
+     "DATE": "1962-03-17"
+    },
+    {
+     "TYPE_OF_DATE": "Approximately",
+     "YEAR": "1966"
+    }
+   ],
+   "INDIVIDUAL_PLACE_OF_BIRTH": {
+    "CITY": "Kigali",
+    "COUNTRY": "Rwanda"
+   },
+   "INDIVIDUAL_DOCUMENT": "",
+   "SORT_KEY": "MUJYAMBERE LEOPOLD",
+   "SORT_KEY_LAST_MOD": "2014-06-24",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "",
+   "indivPlaceOfBirthString": "Kigali, Rwanda, ",
+   "aliasCount": 3,
+   "indivAliasString": "Musenyeri (Low); Achille (Low); Frere Petrus Ibrahim (Low); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 14,
+   "id": "CDi.014",
+   "name": "LEOPOLD MUJYAMBERE",
+   "natnlty": "Rwandan",
+   "two_Digit_Country_ISO_Code": "CD",
+   "committeeResNum": "1533 (2004)",
+   "subject_Matter_Abbreviated": "Resolution 1533 (2004) concerning the Democratic Republic of the Congo",
+   "indivOrEntFromId": "1"
+  },
+  {
+   "DATAID": "6908007",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "IGNACE",
+   "SECOND_NAME": "MURWANASHYAKA",
+   "THIRD_NAME": "",
+   "FOURTH_NAME": "",
+   "UN_LIST_TYPE": "DRC",
+   "REFERENCE_NUMBER": "CDi.016",
+   "LISTED_ON": "2005-11-01",
+   "GENDER": "Male",
+   "COMMENTS1": "Arrested by German authorities on 17 November 2009. Replaced by Gaston Iamuremye, alias ‘Rumuli’ as President of FDLR-FOCA. Murwanashyaka’s trial for war crimes and crimes against humanity committed by FDLR troops in DRC in 2008 and 2009 began on 4 May 2011 in a German court.",
+   "TITLE": {
+    "VALUE": "Dr."
+   },
+   "NATIONALITY": {
+    "VALUE": "Rwandan"
+   },
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ALIAS": {
+    "QUALITY": "Low",
+    "ALIAS_NAME": "Dr. Ignace"
+   },
+   "INDIVIDUAL_ADDRESS": "",
+   "INDIVIDUAL_DATE_OF_BIRTH": {
+    "TYPE_OF_DATE": "Exact",
+    "DATE": "1963-05-14"
+   },
+   "INDIVIDUAL_PLACE_OF_BIRTH": [
+    {
+     "CITY": "Butera",
+     "COUNTRY": "Rwanda"
+    },
+    {
+     "CITY": "Ngoma",
+     "STATE_PROVINCE": "Butare",
+     "COUNTRY": "Rwanda"
+    }
+   ],
+   "INDIVIDUAL_DOCUMENT": "",
+   "SORT_KEY": "MURWANASHYAKA IGNACE",
+   "SORT_KEY_LAST_MOD": "2014-06-24",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "13 May 1963 (Exact)",
+   "indivPlaceOfBirthString": "Butera, Rwanda, ; Ngoma, Butare, Rwanda, ; ",
+   "aliasCount": 1,
+   "indivAliasString": "Dr. Ignace (Low)",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 15,
+   "id": "CDi.016",
+   "name": "IGNACE MURWANASHYAKA",
+   "natnlty": "Rwandan",
+   "two_Digit_Country_ISO_Code": "CD",
+   "committeeResNum": "1533 (2004)",
+   "subject_Matter_Abbreviated": "Resolution 1533 (2004) concerning the Democratic Republic of the Congo",
+   "indivOrEntFromId": "1"
+  },
+  {
+   "DATAID": "6908008",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "STRATON",
+   "SECOND_NAME": "MUSONI",
+   "THIRD_NAME": "",
+   "FOURTH_NAME": "",
+   "UN_LIST_TYPE": "DRC",
+   "REFERENCE_NUMBER": "CDi.017",
+   "LISTED_ON": "2007-03-29",
+   "GENDER": "Male",
+   "COMMENTS1": "Arrested by German authorities on 17 November 2009. Musoni’s trial for war crimes and crimes against humanity committed by FDLR troops in DRC in 2008 and 2009 began on 4 May 2011 in a German court. Replaced as 1st Vice-President of the FDLR by Sylvestre Mudacumura.",
+   "NATIONALITY": {
+    "VALUE": "Rwandan"
+   },
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ALIAS": {
+    "QUALITY": "Good",
+    "ALIAS_NAME": "IO Musoni"
+   },
+   "INDIVIDUAL_DATE_OF_BIRTH": [
+    {
+     "TYPE_OF_DATE": "Exact",
+     "DATE": "1961-04-06"
+    },
+    {
+     "TYPE_OF_DATE": "Exact",
+     "DATE": "1961-06-04"
+    }
+   ],
+   "INDIVIDUAL_PLACE_OF_BIRTH": {
+    "CITY": "Mugambazi, Kigali",
+    "COUNTRY": "Rwanda"
+   },
+   "INDIVIDUAL_DOCUMENT": "",
+   "SORT_KEY": "MUSONI STRATON",
+   "SORT_KEY_LAST_MOD": "2014-06-24",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "",
+   "indivPlaceOfBirthString": "Mugambazi, Kigali, Rwanda, ",
+   "aliasCount": 1,
+   "indivAliasString": "IO Musoni (Good)",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 16,
+   "id": "CDi.017",
+   "name": "STRATON MUSONI",
+   "natnlty": "Rwandan",
+   "two_Digit_Country_ISO_Code": "CD",
+   "committeeResNum": "1533 (2004)",
+   "subject_Matter_Abbreviated": "Resolution 1533 (2004) concerning the Democratic Republic of the Congo",
+   "indivOrEntFromId": "1"
+  },
+  {
+   "DATAID": "6908009",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "JULES",
+   "SECOND_NAME": "MUTEBUTSI",
+   "THIRD_NAME": "",
+   "FOURTH_NAME": "",
+   "UN_LIST_TYPE": "DRC",
+   "REFERENCE_NUMBER": "CDi.018",
+   "LISTED_ON": "2005-11-01",
+   "GENDER": "Male",
+   "COMMENTS1": "Former FARDC Deputy Military Regional Commander of 10th Military Region in April 2004, dismissed for indiscipline. In December 2007, he was arrested by Rwandan authorities when he tried to cross the border into the DRC. He has lived since in semi-liberty in Kigali (not authorized to leave the country).",
+   "NATIONALITY": {
+    "VALUE": "Congolese"
+   },
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ALIAS": [
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Jules Mutebusi"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Jules Mutebuzi"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Colonel Mutebutsi"
+    }
+   ],
+   "INDIVIDUAL_ADDRESS": "",
+   "INDIVIDUAL_DATE_OF_BIRTH": {
+    "TYPE_OF_DATE": "Exact",
+    "YEAR": "1964"
+   },
+   "INDIVIDUAL_PLACE_OF_BIRTH": {
+    "CITY": "Minembwe",
+    "STATE_PROVINCE": "South Kivu",
+    "COUNTRY": "DRC"
+   },
+   "INDIVIDUAL_DOCUMENT": "",
+   "SORT_KEY": "MUTEBUTSI JULES",
+   "SORT_KEY_LAST_MOD": "2014-06-25",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "1964 (Exact)",
+   "indivPlaceOfBirthString": "Minembwe, South Kivu, DRC, ",
+   "aliasCount": 3,
+   "indivAliasString": "Jules Mutebusi (Good); Jules Mutebuzi (Good); Colonel Mutebutsi (Good); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 17,
+   "id": "CDi.018",
+   "name": "JULES MUTEBUTSI",
+   "natnlty": "Congolese",
+   "two_Digit_Country_ISO_Code": "CD",
+   "committeeResNum": "1533 (2004)",
+   "subject_Matter_Abbreviated": "Resolution 1533 (2004) concerning the Democratic Republic of the Congo",
+   "indivOrEntFromId": "1"
+  },
+  {
+   "DATAID": "6908010",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "BAUDOIN",
+   "SECOND_NAME": "NGARUYE WA MYAMURO",
+   "THIRD_NAME": "",
+   "FOURTH_NAME": "",
+   "UN_LIST_TYPE": "DRC",
+   "REFERENCE_NUMBER": "CDi.019",
+   "LISTED_ON": "2012-11-30",
+   "GENDER": "Male",
+   "COMMENTS1": "Entered the Republic of Rwanda on 16 March 2013.  As of late 2014, living in Ngoma camp, Rwanda.",
+   "TITLE": {
+    "VALUE": "Military leader of the Mouvement du 23 Mars (M23)"
+   },
+   "DESIGNATION": {
+    "VALUE": "Brigadier General"
+   },
+   "NATIONALITY": {
+    "VALUE": "Congolese"
+   },
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ALIAS": {
+    "QUALITY": "Good",
+    "ALIAS_NAME": "Colonel Baudoin NGARUYE"
+   },
+   "INDIVIDUAL_ADDRESS": {
+    "CITY": "Rubavu / Mudende",
+    "COUNTRY": "Rwanda"
+   },
+   "INDIVIDUAL_DATE_OF_BIRTH": [
+    {
+     "TYPE_OF_DATE": "Exact",
+     "DATE": "1978-04-01"
+    },
+    {
+     "TYPE_OF_DATE": "Exact",
+     "YEAR": "1978"
+    }
+   ],
+   "INDIVIDUAL_PLACE_OF_BIRTH": [
+    {
+     "CITY": "Bibwe",
+     "COUNTRY": "DRC"
+    },
+    {
+     "CITY": "Lusamambo",
+     "STATE_PROVINCE": "Lubero territory",
+     "COUNTRY": "DRC"
+    }
+   ],
+   "INDIVIDUAL_DOCUMENT": {
+    "TYPE_OF_DOCUMENT": "National Identification Number",
+    "TYPE_OF_DOCUMENT2": "FARDC ID",
+    "NUMBER": "1-78-09-44621-80"
+   },
+   "SORT_KEY": "NGARUYE WA MYAMURO Baudoin",
+   "SORT_KEY_LAST_MOD": "2014-06-25",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "",
+   "indivPlaceOfBirthString": "Bibwe, DRC, ; Lusamambo, Lubero territory, DRC, ; ",
+   "aliasCount": 1,
+   "indivAliasString": "Colonel Baudoin NGARUYE (Good)",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 18,
+   "id": "CDi.019",
+   "name": "BAUDOIN NGARUYE WA MYAMURO",
+   "natnlty": "Congolese",
+   "two_Digit_Country_ISO_Code": "CD",
+   "committeeResNum": "1533 (2004)",
+   "subject_Matter_Abbreviated": "Resolution 1533 (2004) concerning the Democratic Republic of the Congo",
+   "indivOrEntFromId": "1"
+  },
+  {
+   "DATAID": "6908011",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "MATHIEU, CHUI",
+   "SECOND_NAME": "NGUDJOLO",
+   "THIRD_NAME": "",
+   "FOURTH_NAME": "",
+   "UN_LIST_TYPE": "DRC",
+   "REFERENCE_NUMBER": "CDi.020",
+   "LISTED_ON": "2005-11-01",
+   "GENDER": "Male",
+   "COMMENTS1": "Arrested by MONUC in Bunia in October 2003. Surrendered by  the Government of  the DRC to the  International Criminal  Court on 7 February 2008. Acquitted of all charges by the ICC in December 2012. After being released from custody, was detained by Dutch authorities, and has filed a claim for asylum in the Netherlands. The Prosecution appealed the ICC’s decision; hearings were held in October 2014 and a decision is pending as of December 2014.",
+   "NATIONALITY": {
+    "VALUE": "Congolese"
+   },
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ALIAS": {
+    "QUALITY": "Good",
+    "ALIAS_NAME": "Cui Ngudjolo"
+   },
+   "INDIVIDUAL_ADDRESS": "",
+   "INDIVIDUAL_DATE_OF_BIRTH": "",
+   "INDIVIDUAL_PLACE_OF_BIRTH": "",
+   "INDIVIDUAL_DOCUMENT": "",
+   "SORT_KEY": "NGUDJOLO MATHIEU, CHUI",
+   "SORT_KEY_LAST_MOD": "2014-06-25",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "",
+   "indivPlaceOfBirthString": "",
+   "aliasCount": 1,
+   "indivAliasString": "Cui Ngudjolo (Good)",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 19,
+   "id": "CDi.020",
+   "name": "MATHIEU, CHUI NGUDJOLO",
+   "natnlty": "Congolese",
+   "two_Digit_Country_ISO_Code": "CD",
+   "committeeResNum": "1533 (2004)",
+   "subject_Matter_Abbreviated": "Resolution 1533 (2004) concerning the Democratic Republic of the Congo",
+   "indivOrEntFromId": "1"
+  },
+  {
+   "DATAID": "6908012",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "FLORIBERT NGABU",
+   "SECOND_NAME": "NJABU",
+   "THIRD_NAME": "",
+   "FOURTH_NAME": "",
+   "UN_LIST_TYPE": "DRC",
+   "REFERENCE_NUMBER": "CDi.021",
+   "LISTED_ON": "2005-11-01",
+   "GENDER": "Male",
+   "COMMENTS1": "Under house arrest in Kinshasa since March 2005 for FNI involvement in human rights abuses. Transferred to The Hague on 27 March 2011 to testify in the ICC Germain Katanga and Mathieu Ngudjolo trials. Applied for asylum in the Netherlands in May 2011. In October 2012, a Dutch court denied his asylum claim. In July 2014, he was deported from the Netherlands to DRC, where he was placed under arrest.",
+   "NATIONALITY": {
+    "VALUE": "Congolese"
+   },
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ALIAS": [
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Floribert Njabu Ngabu"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Floribert Ndjabu"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Floribert Ngabu Ndjabu"
+    }
+   ],
+   "INDIVIDUAL_ADDRESS": "",
+   "INDIVIDUAL_DATE_OF_BIRTH": "",
+   "INDIVIDUAL_PLACE_OF_BIRTH": "",
+   "INDIVIDUAL_DOCUMENT": "",
+   "SORT_KEY": "NJABU FLORIBERT NGABU",
+   "SORT_KEY_LAST_MOD": "2014-06-25",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "",
+   "indivPlaceOfBirthString": "",
+   "aliasCount": 3,
+   "indivAliasString": "Floribert Njabu Ngabu (Good); Floribert Ndjabu (Good); Floribert Ngabu Ndjabu (Good); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 20,
+   "id": "CDi.021",
+   "name": "FLORIBERT NGABU NJABU",
+   "natnlty": "Congolese",
+   "two_Digit_Country_ISO_Code": "CD",
+   "committeeResNum": "1533 (2004)",
+   "subject_Matter_Abbreviated": "Resolution 1533 (2004) concerning the Democratic Republic of the Congo",
+   "indivOrEntFromId": "1"
+  },
+  {
+   "DATAID": "6908013",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "LAURENT",
+   "SECOND_NAME": "NKUNDA",
+   "THIRD_NAME": "",
+   "FOURTH_NAME": "",
+   "UN_LIST_TYPE": "DRC",
+   "REFERENCE_NUMBER": "CDi.022",
+   "LISTED_ON": "2005-11-01",
+   "GENDER": "Male",
+   "COMMENTS1": "Former RCD-G General. Founder, National Congress for the People’s Defense, 2006; Senior Officer, Rally for Congolese Democracy-Goma (RCD-G), 1998-2006; Officer Rwandan Patriotic Front (RPF), 1992-1998. Laurent Nkunda was arrested by Rwandan authorities in Rwanda in January 2009 and replaced as the commander of the CNDP. Since then, he has been under house arrest in Kigali, Rwanda. DRC Government’s request to extradite Nkunda for crimes committed in eastern DRC has been refused by Rwanda. In 2010, Nkunda’s appeal for illegal detention was rejected by Rwandan court in Gisenyi, ruling that the matter should be examined by a military court. Nkunda’s lawyers appealed with the Rwandan Military Court.",
+   "NATIONALITY": {
+    "VALUE": "Congolese"
+   },
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ALIAS": [
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Nkunda Mihigo Laurent"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Laurent Nkunda Bwatare"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Laurent Nkundabatware"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Laurent Nkunda Mahoro Batware"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Laurent Nkunda Batware"
+    },
+    {
+     "QUALITY": "Low",
+     "ALIAS_NAME": "Chairman"
+    },
+    {
+     "QUALITY": "Low",
+     "ALIAS_NAME": "General Nkunda"
+    },
+    {
+     "QUALITY": "Low",
+     "ALIAS_NAME": "Papa Six"
+    }
+   ],
+   "INDIVIDUAL_ADDRESS": "",
+   "INDIVIDUAL_DATE_OF_BIRTH": [
+    {
+     "TYPE_OF_DATE": "Exact",
+     "DATE": "1967-02-06"
+    },
+    {
+     "TYPE_OF_DATE": "Exact",
+     "DATE": "1967-02-02"
+    }
+   ],
+   "INDIVIDUAL_PLACE_OF_BIRTH": {
+    "CITY": "Rutshuru",
+    "STATE_PROVINCE": "North Kivu",
+    "COUNTRY": "DRC"
+   },
+   "INDIVIDUAL_DOCUMENT": "",
+   "SORT_KEY": "NKUNDALAURENT",
+   "SORT_KEY_LAST_MOD": "2014-06-25",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "",
+   "indivPlaceOfBirthString": "Rutshuru, North Kivu, DRC, ",
+   "aliasCount": 8,
+   "indivAliasString": "Nkunda Mihigo Laurent (Good); Laurent Nkunda Bwatare (Good); Laurent Nkundabatware (Good); Laurent Nkunda Mahoro Batware (Good); Laurent Nkunda Batware (Good); Chairman (Low); General Nkunda (Low); Papa Six (Low); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 21,
+   "id": "CDi.022",
+   "name": "LAURENT NKUNDA",
+   "natnlty": "Congolese",
+   "two_Digit_Country_ISO_Code": "CD",
+   "committeeResNum": "1533 (2004)",
+   "subject_Matter_Abbreviated": "Resolution 1533 (2004) concerning the Democratic Republic of the Congo",
+   "indivOrEntFromId": "1"
+  },
+  {
+   "DATAID": "6908014",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "FELICIEN",
+   "SECOND_NAME": "NSANZUBUKIRE",
+   "THIRD_NAME": "",
+   "FOURTH_NAME": "",
+   "UN_LIST_TYPE": "DRC",
+   "REFERENCE_NUMBER": "CDi.023",
+   "LISTED_ON": "2010-12-01",
+   "GENDER": "Male",
+   "COMMENTS1": "A member of the FDLR since at least 1994 and operating in eastern DRC since October 1998.",
+   "DESIGNATION": {
+    "VALUE": "1st battalion leader of the FDLR/FOCA, based in the Uvira-Sange area of South Kivu."
+   },
+   "NATIONALITY": {
+    "VALUE": "Rwandan"
+   },
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ALIAS": {
+    "QUALITY": "Good",
+    "ALIAS_NAME": "Fred Irakeza"
+   },
+   "INDIVIDUAL_ADDRESS": {
+    "CITY": "Magunda",
+    "STATE_PROVINCE": "Mwenga territory, South Kivu",
+    "COUNTRY": "DRC",
+    "NOTE": "As of June 2011"
+   },
+   "INDIVIDUAL_DATE_OF_BIRTH": {
+    "TYPE_OF_DATE": "Exact",
+    "YEAR": "1967"
+   },
+   "INDIVIDUAL_PLACE_OF_BIRTH": [
+    {
+     "CITY": "Murama, Kigali",
+     "COUNTRY": "Rwanda"
+    },
+    {
+     "CITY": "Rubungo, Kigali",
+     "COUNTRY": "Rwanda"
+    },
+    {
+     "CITY": "Kinyinya, Kigali",
+     "COUNTRY": "Rwanda"
+    }
+   ],
+   "INDIVIDUAL_DOCUMENT": "",
+   "SORT_KEY": "NSANZUBUKIRE FELICIEN",
+   "SORT_KEY_LAST_MOD": "2014-06-25",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "1967 (Exact)",
+   "indivPlaceOfBirthString": "Murama, Kigali, Rwanda, ; Rubungo, Kigali, Rwanda, ; Kinyinya, Kigali, Rwanda, ; ",
+   "aliasCount": 1,
+   "indivAliasString": "Fred Irakeza (Good)",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 22,
+   "id": "CDi.023",
+   "name": "FELICIEN NSANZUBUKIRE",
+   "natnlty": "Rwandan",
+   "two_Digit_Country_ISO_Code": "CD",
+   "committeeResNum": "1533 (2004)",
+   "subject_Matter_Abbreviated": "Resolution 1533 (2004) concerning the Democratic Republic of the Congo",
+   "indivOrEntFromId": "1"
+  },
+  {
+   "DATAID": "6908015",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "PACIFIQUE",
+   "SECOND_NAME": "NTAWUNGUKA",
+   "THIRD_NAME": "",
+   "FOURTH_NAME": "",
+   "UN_LIST_TYPE": "DRC",
+   "REFERENCE_NUMBER": "CDi.024",
+   "LISTED_ON": "2009-03-03",
+   "GENDER": "Male",
+   "COMMENTS1": "Received military training in Egypt. As of late 2014, based in Tongo area, North Kivu.",
+   "DESIGNATION": {
+    "VALUE": "Commander, Operational Sector North Kivu ‘SONOKI’ of FDLR-FOCA"
+   },
+   "NATIONALITY": {
+    "VALUE": "Rwandan"
+   },
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ALIAS": [
+    {
+     "QUALITY": "Low",
+     "ALIAS_NAME": "Colonel Omega"
+    },
+    {
+     "QUALITY": "Low",
+     "ALIAS_NAME": "Nzeri"
+    },
+    {
+     "QUALITY": "Low",
+     "ALIAS_NAME": "Israel"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Pacifique Ntawungula"
+    }
+   ],
+   "INDIVIDUAL_ADDRESS": {
+    "CITY": "Matembe",
+    "STATE_PROVINCE": "North Kivu",
+    "COUNTRY": "DRC",
+    "NOTE": "As of June 2011."
+   },
+   "INDIVIDUAL_DATE_OF_BIRTH": [
+    {
+     "TYPE_OF_DATE": "Exact",
+     "DATE": "1964-01-01"
+    },
+    {
+     "TYPE_OF_DATE": "Approximately",
+     "YEAR": "1964"
+    }
+   ],
+   "INDIVIDUAL_PLACE_OF_BIRTH": {
+    "CITY": "Gaseke",
+    "STATE_PROVINCE": "Gisenyi Province",
+    "COUNTRY": "Rwanda"
+   },
+   "INDIVIDUAL_DOCUMENT": "",
+   "SORT_KEY": "NTAWUNGUKAPACIFIQUE",
+   "SORT_KEY_LAST_MOD": "2014-06-25",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "",
+   "indivPlaceOfBirthString": "Gaseke, Gisenyi Province, Rwanda, ",
+   "aliasCount": 4,
+   "indivAliasString": "Colonel Omega (Low); Nzeri (Low); Israel (Low); Pacifique Ntawungula (Good); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 23,
+   "id": "CDi.024",
+   "name": "PACIFIQUE NTAWUNGUKA",
+   "natnlty": "Rwandan",
+   "two_Digit_Country_ISO_Code": "CD",
+   "committeeResNum": "1533 (2004)",
+   "subject_Matter_Abbreviated": "Resolution 1533 (2004) concerning the Democratic Republic of the Congo",
+   "indivOrEntFromId": "1"
+  },
+  {
+   "DATAID": "6908016",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "JAMES",
+   "SECOND_NAME": "NYAKUNI",
+   "THIRD_NAME": "",
+   "FOURTH_NAME": "",
+   "UN_LIST_TYPE": "DRC",
+   "REFERENCE_NUMBER": "CDi.025",
+   "LISTED_ON": "2005-11-01",
+   "GENDER": "Male",
+   "COMMENTS1": "",
+   "NATIONALITY": {
+    "VALUE": "Ugandan"
+   },
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ALIAS": {
+    "QUALITY": "",
+    "ALIAS_NAME": ""
+   },
+   "INDIVIDUAL_ADDRESS": "",
+   "INDIVIDUAL_DATE_OF_BIRTH": "",
+   "INDIVIDUAL_PLACE_OF_BIRTH": "",
+   "INDIVIDUAL_DOCUMENT": "",
+   "SORT_KEY": "NYAKUNI JAMES",
+   "SORT_KEY_LAST_MOD": "2014-06-25",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "",
+   "indivPlaceOfBirthString": "",
+   "aliasCount": 1,
+   "indivAliasString": " ()",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 24,
+   "id": "CDi.025",
+   "name": "JAMES NYAKUNI",
+   "natnlty": "Ugandan",
+   "two_Digit_Country_ISO_Code": "CD",
+   "committeeResNum": "1533 (2004)",
+   "subject_Matter_Abbreviated": "Resolution 1533 (2004) concerning the Democratic Republic of the Congo",
+   "indivOrEntFromId": "1"
+  },
+  {
+   "DATAID": "6908017",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "STANISLAS",
+   "SECOND_NAME": "NZEYIMANA",
+   "THIRD_NAME": "",
+   "FOURTH_NAME": "",
+   "UN_LIST_TYPE": "DRC",
+   "REFERENCE_NUMBER": "CDi.026",
+   "LISTED_ON": "2009-03-03",
+   "GENDER": "Male",
+   "COMMENTS1": "Disappeared while in Tanzania in early 2013. Whereabouts unknown as of late 2014.",
+   "DESIGNATION": {
+    "VALUE": "Deputy commander of the FDLR-FOCA"
+   },
+   "NATIONALITY": {
+    "VALUE": "Rwandan"
+   },
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ALIAS": [
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Deogratias Bigaruka Izabayo"
+    },
+    {
+     "QUALITY": "Low",
+     "ALIAS_NAME": "Bigaruka"
+    },
+    {
+     "QUALITY": "Low",
+     "ALIAS_NAME": "Bigurura"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Izabayo Deo"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Jules Mateso Mlamba"
+    }
+   ],
+   "INDIVIDUAL_ADDRESS": {
+    "CITY": "Mukobervwa",
+    "STATE_PROVINCE": "North Kivu",
+    "COUNTRY": "DRC",
+    "NOTE": "As of June 2011."
+   },
+   "INDIVIDUAL_DATE_OF_BIRTH": [
+    {
+     "TYPE_OF_DATE": "Exact",
+     "DATE": "1966-01-01"
+    },
+    {
+     "TYPE_OF_DATE": "Exact",
+     "DATE": "1966-08-28"
+    },
+    {
+     "TYPE_OF_DATE": "Approximately",
+     "YEAR": "1967"
+    }
+   ],
+   "INDIVIDUAL_PLACE_OF_BIRTH": {
+    "CITY": "Mugusa",
+    "STATE_PROVINCE": "Butare",
+    "COUNTRY": "Rwanda"
+   },
+   "INDIVIDUAL_DOCUMENT": "",
+   "SORT_KEY": "NZEYIMANASTANISLAS",
+   "SORT_KEY_LAST_MOD": "2014-06-25",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "",
+   "indivPlaceOfBirthString": "Mugusa, Butare, Rwanda, ",
+   "aliasCount": 5,
+   "indivAliasString": "Deogratias Bigaruka Izabayo (Good); Bigaruka (Low); Bigurura (Low); Izabayo Deo (Good); Jules Mateso Mlamba (Good); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 25,
+   "id": "CDi.026",
+   "name": "STANISLAS NZEYIMANA",
+   "natnlty": "Rwandan",
+   "two_Digit_Country_ISO_Code": "CD",
+   "committeeResNum": "1533 (2004)",
+   "subject_Matter_Abbreviated": "Resolution 1533 (2004) concerning the Democratic Republic of the Congo",
+   "indivOrEntFromId": "1"
+  },
+  {
+   "DATAID": "6908018",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "DIEUDONNÉ",
+   "SECOND_NAME": "OZIA MAZIO",
+   "THIRD_NAME": "",
+   "FOURTH_NAME": "",
+   "UN_LIST_TYPE": "DRC",
+   "REFERENCE_NUMBER": "CDi.027",
+   "LISTED_ON": "2005-11-01",
+   "GENDER": "Male",
+   "COMMENTS1": "While president of the Fédération des entreprises congolaises (FEC) in Aru territory, Dieudonné Ozia Mazio is believed to have died in Ariwara on 23 September 2008.",
+   "NATIONALITY": {
+    "VALUE": "Congolese"
+   },
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ALIAS": [
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Ozia Mazio"
+    },
+    {
+     "QUALITY": "Low",
+     "ALIAS_NAME": "Omari"
+    },
+    {
+     "QUALITY": "Low",
+     "ALIAS_NAME": "Mr Omari"
+    }
+   ],
+   "INDIVIDUAL_ADDRESS": "",
+   "INDIVIDUAL_DATE_OF_BIRTH": {
+    "TYPE_OF_DATE": "Exact",
+    "DATE": "1949-06-06"
+   },
+   "INDIVIDUAL_PLACE_OF_BIRTH": {
+    "CITY": "Ariwara",
+    "COUNTRY": "DRC"
+   },
+   "INDIVIDUAL_DOCUMENT": "",
+   "SORT_KEY": "OZIA MAZIO DIEUDONNÉ",
+   "SORT_KEY_LAST_MOD": "2014-06-25",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "5 June 1949 (Exact)",
+   "indivPlaceOfBirthString": "Ariwara, DRC, ",
+   "aliasCount": 3,
+   "indivAliasString": "Ozia Mazio (Good); Omari (Low); Mr Omari (Low); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 26,
+   "id": "CDi.027",
+   "name": "DIEUDONNÉ OZIA MAZIO",
+   "natnlty": "Congolese",
+   "two_Digit_Country_ISO_Code": "CD",
+   "committeeResNum": "1533 (2004)",
+   "subject_Matter_Abbreviated": "Resolution 1533 (2004) concerning the Democratic Republic of the Congo",
+   "indivOrEntFromId": "1"
+  },
+  {
+   "DATAID": "6908019",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "JEAN-MARIE LUGERERO",
+   "SECOND_NAME": "RUNIGA",
+   "THIRD_NAME": "",
+   "FOURTH_NAME": "",
+   "UN_LIST_TYPE": "DRC",
+   "REFERENCE_NUMBER": "CDi.028",
+   "LISTED_ON": "2012-12-31",
+   "GENDER": "Male",
+   "COMMENTS1": "Entered the Republic of Rwanda on 16 March 2013. As of late 2014, residing in Rwanda.",
+   "DESIGNATION": {
+    "VALUE": "M23, President"
+   },
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ALIAS": {
+    "QUALITY": "Good",
+    "ALIAS_NAME": "Jean-Marie Rugerero"
+   },
+   "INDIVIDUAL_ADDRESS": {
+    "CITY": "Rubavu / Mudende",
+    "COUNTRY": "Rwanda"
+   },
+   "INDIVIDUAL_DATE_OF_BIRTH": [
+    {
+     "TYPE_OF_DATE": "Approximately",
+     "YEAR": "1960"
+    },
+    {
+     "TYPE_OF_DATE": "Exact",
+     "DATE": "1966-09-09"
+    }
+   ],
+   "INDIVIDUAL_PLACE_OF_BIRTH": {
+    "CITY": "Bukavu",
+    "COUNTRY": "DRC"
+   },
+   "INDIVIDUAL_DOCUMENT": "",
+   "SORT_KEY": "RUNIGA JEAN-MARIE LUGERERO",
+   "SORT_KEY_LAST_MOD": "2014-06-25",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "",
+   "indivPlaceOfBirthString": "Bukavu, DRC, ",
+   "aliasCount": 1,
+   "indivAliasString": "Jean-Marie Rugerero (Good)",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 27,
+   "id": "CDi.028",
+   "name": "JEAN-MARIE LUGERERO RUNIGA",
+   "two_Digit_Country_ISO_Code": "CD",
+   "committeeResNum": "1533 (2004)",
+   "subject_Matter_Abbreviated": "Resolution 1533 (2004) concerning the Democratic Republic of the Congo",
+   "indivOrEntFromId": "1"
+  },
+  {
+   "DATAID": "6908020",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "NTABO NTABERI",
+   "SECOND_NAME": "SHEKA",
+   "THIRD_NAME": "",
+   "FOURTH_NAME": "",
+   "UN_LIST_TYPE": "DRC",
+   "REFERENCE_NUMBER": "CDi.029",
+   "LISTED_ON": "2011-11-28",
+   "GENDER": "Male",
+   "COMMENTS1": "",
+   "DESIGNATION": {
+    "VALUE": "Commander-in-Chief, Nduma Defence of Congo, Mayi Mayi Sheka group"
+   },
+   "NATIONALITY": {
+    "VALUE": "Congolese"
+   },
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ALIAS": "",
+   "INDIVIDUAL_ADDRESS": "",
+   "INDIVIDUAL_DATE_OF_BIRTH": {
+    "TYPE_OF_DATE": "Exact",
+    "DATE": "1976-04-04"
+   },
+   "INDIVIDUAL_PLACE_OF_BIRTH": {
+    "STATE_PROVINCE": "Walikalele territory",
+    "COUNTRY": "DRC"
+   },
+   "INDIVIDUAL_DOCUMENT": "",
+   "SORT_KEY": "SHEKA NTABO NTABERI",
+   "SORT_KEY_LAST_MOD": "2014-06-25",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "3 April 1976 (Exact)",
+   "indivPlaceOfBirthString": "Walikalele territory, DRC, ",
+   "aliasCount": 0,
+   "indivAliasString": "",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 28,
+   "id": "CDi.029",
+   "name": "NTABO NTABERI SHEKA",
+   "natnlty": "Congolese",
+   "two_Digit_Country_ISO_Code": "CD",
+   "committeeResNum": "1533 (2004)",
+   "subject_Matter_Abbreviated": "Resolution 1533 (2004) concerning the Democratic Republic of the Congo",
+   "indivOrEntFromId": "1"
+  },
+  {
+   "DATAID": "6908021",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "BOSCO",
+   "SECOND_NAME": "TAGANDA",
+   "THIRD_NAME": "",
+   "FOURTH_NAME": "",
+   "UN_LIST_TYPE": "DRC",
+   "REFERENCE_NUMBER": "CDi.030",
+   "LISTED_ON": "2005-11-01",
+   "GENDER": "Male",
+   "COMMENTS1": "Born in Rwanda, he moved to Nyamitaba, Masisi territory, North Kivu, when he was a child. Nominated FARDC Brigadier-General by Presidential Decree on 11 December 2004, following Ituri peace agreements. Formerly Chief of Staff in CNDP and became CNDP military commander since the arrest of Laurent Nkunda in January 2009. Since January 2009, de facto Deputy Commander of consecutive anti-FDLR operations ‘Umoja Wetu’, ‘Kimia II’, and ‘Amani Leo’ in North and South Kivu. Entered Rwanda in March 2013, and voluntarily surrender to ICC officials in Kigali on March 22. Transferred to the ICC in The Hague, Netherlands. On 9 June 2014, ICC confirmed 13 charges of war crimes and five charges of crimes against humanity against him; the trial is scheduled to start 2 June 2015.",
+   "NATIONALITY": {
+    "VALUE": "Congolese"
+   },
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ALIAS": [
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Bosco Ntaganda"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Bosco Ntagenda"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "General Taganda"
+    },
+    {
+     "QUALITY": "Low",
+     "ALIAS_NAME": "Lydia",
+     "NOTE": "When he was part of APR."
+    },
+    {
+     "QUALITY": "Low",
+     "ALIAS_NAME": "Terminator"
+    },
+    {
+     "QUALITY": "Low",
+     "ALIAS_NAME": "Tango Romeo",
+     "NOTE": "Call sign"
+    },
+    {
+     "QUALITY": "Low",
+     "ALIAS_NAME": "Romeo",
+     "NOTE": "Call sign"
+    },
+    {
+     "QUALITY": "Low",
+     "ALIAS_NAME": "Major"
+    }
+   ],
+   "INDIVIDUAL_ADDRESS": {
+    "CITY": "Goma",
+    "COUNTRY": "DRC",
+    "NOTE": "As of June 2011."
+   },
+   "INDIVIDUAL_DATE_OF_BIRTH": {
+    "TYPE_OF_DATE": "Between",
+    "FROM_YEAR": "1973",
+    "TO_YEAR": "1974"
+   },
+   "INDIVIDUAL_PLACE_OF_BIRTH": {
+    "CITY": "Bigogwe",
+    "COUNTRY": "Rwanda"
+   },
+   "INDIVIDUAL_DOCUMENT": "",
+   "SORT_KEY": "TAGANDA BOSCO",
+   "SORT_KEY_LAST_MOD": "2014-06-25",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": " (Between)",
+   "indivPlaceOfBirthString": "Bigogwe, Rwanda, ",
+   "aliasCount": 8,
+   "indivAliasString": "Bosco Ntaganda (Good); Bosco Ntagenda (Good); General Taganda (Good); Lydia (Low); Terminator (Low); Tango Romeo (Low); Romeo (Low); Major (Low); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 29,
+   "id": "CDi.030",
+   "name": "BOSCO TAGANDA",
+   "natnlty": "Congolese",
+   "two_Digit_Country_ISO_Code": "CD",
+   "committeeResNum": "1533 (2004)",
+   "subject_Matter_Abbreviated": "Resolution 1533 (2004) concerning the Democratic Republic of the Congo",
+   "indivOrEntFromId": "1"
+  },
+  {
+   "DATAID": "6908022",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "INNOCENT",
+   "SECOND_NAME": "ZIMURINDA",
+   "THIRD_NAME": "",
+   "FOURTH_NAME": "",
+   "UN_LIST_TYPE": "DRC",
+   "REFERENCE_NUMBER": "CDi.031",
+   "LISTED_ON": "2010-12-01",
+   "GENDER": "Male",
+   "COMMENTS1": "Integrated in the FARDC in 2009 as a Lieutenant Colonel, brigade commander in FARDC Kimia II Ops, based in Ngungu area. In July 2009, Zimurinda was promoted to full Colonel and became FARDC Sector commander in Ngungu and subsequently in Kitchanga in FARDC Kimia II and Amani Leo Operations. Whereas Zimurinda did not appear in the 31 December 2010 DRC Presidential ordinance nominating high FARDC officers, Zimurinda de facto maintained his command position of FARDC 22nd sector in Kitchanga and wears the newly issued FARDC rank and uniform. In December 2010, recruitment activities carried out by elements under the command of Zimurinda were denounced in open source reports. Entered the Republic of Rwanda on 16 March 2013. As of late 2014, residing in Ngoma camp, Rwanda.",
+   "DESIGNATION": {
+    "VALUE": [
+     "M23, Bde Comd, Rank: Colonel",
+     "Colonel in the FARDC"
+    ]
+   },
+   "NATIONALITY": {
+    "VALUE": "Congolese"
+   },
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ALIAS": {
+    "QUALITY": "Low",
+    "ALIAS_NAME": "Zimulinda"
+   },
+   "INDIVIDUAL_ADDRESS": {
+    "CITY": "Rubavu",
+    "STATE_PROVINCE": "Mudende"
+   },
+   "INDIVIDUAL_DATE_OF_BIRTH": [
+    {
+     "TYPE_OF_DATE": "Exact",
+     "DATE": "1972-09-01"
+    },
+    {
+     "TYPE_OF_DATE": "Approximately",
+     "YEAR": "1975"
+    },
+    {
+     "TYPE_OF_DATE": "Exact",
+     "DATE": "1972-03-16"
+    }
+   ],
+   "INDIVIDUAL_PLACE_OF_BIRTH": [
+    {
+     "CITY": "Ngungu",
+     "STATE_PROVINCE": "Masisi territory, North Kivu",
+     "COUNTRY": "DRC"
+    },
+    {
+     "CITY": "Masisi",
+     "COUNTRY": "DRC"
+    }
+   ],
+   "INDIVIDUAL_DOCUMENT": "",
+   "SORT_KEY": "ZIMURINDA INNOCENT",
+   "SORT_KEY_LAST_MOD": "2014-06-25",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "",
+   "indivPlaceOfBirthString": "Ngungu, Masisi territory, North Kivu, DRC, ; Masisi, DRC, ; ",
+   "aliasCount": 1,
+   "indivAliasString": "Zimulinda (Low)",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 30,
+   "id": "CDi.031",
+   "name": "INNOCENT ZIMURINDA",
+   "natnlty": "Congolese",
+   "two_Digit_Country_ISO_Code": "CD",
+   "committeeResNum": "1533 (2004)",
+   "subject_Matter_Abbreviated": "Resolution 1533 (2004) concerning the Democratic Republic of the Congo",
+   "indivOrEntFromId": "1"
+  },
+  {
+   "DATAID": "6908023",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "THOMAS",
+   "SECOND_NAME": "LUBANGA",
+   "THIRD_NAME": "",
+   "FOURTH_NAME": "",
+   "UN_LIST_TYPE": "DRC",
+   "REFERENCE_NUMBER": "CDi.007",
+   "LISTED_ON": "2005-11-01",
+   "GENDER": "Male",
+   "COMMENTS1": "Arrested in Kinshasa in March 2005 for UPC/L involvement in human rights abuses violations. Transferred to the ICC on 17 March 2006. Convicted by the ICC in March 2012 and sentenced to 14 years in prison. On 1 December 2014, ICC appeals judges upheld Lubanga’s conviction and sentence. Currently in prison in the Netherlands.",
+   "NATIONALITY": {
+    "VALUE": "Congolese"
+   },
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ALIAS": {
+    "QUALITY": "",
+    "ALIAS_NAME": ""
+   },
+   "INDIVIDUAL_ADDRESS": "",
+   "INDIVIDUAL_DATE_OF_BIRTH": "",
+   "INDIVIDUAL_PLACE_OF_BIRTH": {
+    "STATE_PROVINCE": "Ituri",
+    "COUNTRY": "DRC"
+   },
+   "INDIVIDUAL_DOCUMENT": "",
+   "SORT_KEY": "LUBANGA THOMAS",
+   "SORT_KEY_LAST_MOD": "2014-06-25",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "",
+   "indivPlaceOfBirthString": "Ituri, DRC, ",
+   "aliasCount": 1,
+   "indivAliasString": " ()",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 31,
+   "id": "CDi.007",
+   "name": "THOMAS LUBANGA",
+   "natnlty": "Congolese",
+   "two_Digit_Country_ISO_Code": "CD",
+   "committeeResNum": "1533 (2004)",
+   "subject_Matter_Abbreviated": "Resolution 1533 (2004) concerning the Democratic Republic of the Congo",
+   "indivOrEntFromId": "1"
+  },
+  {
+   "DATAID": "6908024",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "BUTEMBO AIRLINES (BAL)",
+   "UN_LIST_TYPE": "DRC",
+   "REFERENCE_NUMBER": "CDe.002",
+   "LISTED_ON": "2007-03-29",
+   "COMMENTS1": "Privately-owned airline, operates out of Butembo. Since December 2008, BAL no longer holds an aircraft operating license in the DRC.",
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "ENTITY_ALIAS": "",
+   "ENTITY_ADDRESS": {
+    "CITY": "Butembo",
+    "COUNTRY": "DRC"
+   },
+   "SORT_KEY": "BUTEMBO AIRLINES (BAL",
+   "SORT_KEY_LAST_MOD": "2014-06-25",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 32,
+   "id": "CDe.002",
+   "name": "BUTEMBO AIRLINES (BAL)",
+   "two_Digit_Country_ISO_Code": "CD",
+   "committeeResNum": "1533 (2004)",
+   "subject_Matter_Abbreviated": "Resolution 1533 (2004) concerning the Democratic Republic of the Congo",
+   "indivOrEntFromId": "0"
+  },
+  {
+   "DATAID": "6908025",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "CONGOMET TRADING HOUSE",
+   "UN_LIST_TYPE": "DRC",
+   "REFERENCE_NUMBER": "CDe.004",
+   "LISTED_ON": "2007-03-29",
+   "COMMENTS1": "No longer exists as a gold trading house in Butembo, North Kivu",
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "ENTITY_ALIAS": "",
+   "ENTITY_ADDRESS": {
+    "CITY": "Butembo",
+    "STATE_PROVINCE": "North Kivu"
+   },
+   "SORT_KEY": "CONGOMET TRADING HOUSE",
+   "SORT_KEY_LAST_MOD": "2014-06-25",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 33,
+   "id": "CDe.004",
+   "name": "CONGOMET TRADING HOUSE",
+   "two_Digit_Country_ISO_Code": "CD",
+   "committeeResNum": "1533 (2004)",
+   "subject_Matter_Abbreviated": "Resolution 1533 (2004) concerning the Democratic Republic of the Congo",
+   "indivOrEntFromId": "0"
+  },
+  {
+   "DATAID": "6908026",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "COMPAGNIE AERIENNE DES GRANDS LACS (CAGL) ; GREAT LAKES BUSINESS COMPANY (GLBC)",
+   "UN_LIST_TYPE": "DRC",
+   "REFERENCE_NUMBER": "CDe.003",
+   "LISTED_ON": "2007-03-29",
+   "COMMENTS1": "As of December 2008, GLBC no longer had any operational aircraft, although several aircraft continued flying in 2008 despite UN sanctions.",
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "ENTITY_ALIAS": {
+    "QUALITY": "a.k.a.",
+    "ALIAS_NAME": "CAGL"
+   },
+   "ENTITY_ADDRESS": [
+    {
+     "STREET": "Avenue Président Mobutu",
+     "CITY": "Goma",
+     "COUNTRY": "DRC"
+    },
+    {
+     "CITY": "Gisenyi",
+     "COUNTRY": "Rwanda"
+    },
+    {
+     "STREET": "PO BOX 315",
+     "CITY": "Goma",
+     "COUNTRY": "DRC"
+    }
+   ],
+   "SORT_KEY": "COMPAGNIE AERIENNE DES GRANDS LACS (CAGL) ; GREAT LAKES BUSINESS COMPANY (GLBC)",
+   "SORT_KEY_LAST_MOD": "2014-06-25",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 34,
+   "id": "CDe.003",
+   "name": "COMPAGNIE AERIENNE DES GRANDS LACS (CAGL) ; GREAT LAKES BUSINESS COMPANY (GLBC)",
+   "two_Digit_Country_ISO_Code": "CD",
+   "committeeResNum": "1533 (2004)",
+   "subject_Matter_Abbreviated": "Resolution 1533 (2004) concerning the Democratic Republic of the Congo",
+   "indivOrEntFromId": "0"
+  },
+  {
+   "DATAID": "6908027",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "FORCES DEMOCRATIQUES DE LIBERATION DU RWANDA (FDLR)",
+   "UN_LIST_TYPE": "DRC",
+   "REFERENCE_NUMBER": "CDe.005",
+   "LISTED_ON": "2012-12-31",
+   "COMMENTS1": "Email: Fdlr@fmx.de; fldrrse@yahoo.fr; fdlr@gmx.net; fdlrsrt@gmail.com; humura2020@gmail.com.",
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "ENTITY_ALIAS": [
+    {
+     "QUALITY": "a.k.a.",
+     "ALIAS_NAME": "FDLR"
+    },
+    {
+     "QUALITY": "a.k.a.",
+     "ALIAS_NAME": "Force Combattante Abacunguzi"
+    },
+    {
+     "QUALITY": "a.k.a.",
+     "ALIAS_NAME": "Combatant Force for the Liberation of Rwanda"
+    },
+    {
+     "QUALITY": "a.k.a.",
+     "ALIAS_NAME": "FOCA"
+    }
+   ],
+   "ENTITY_ADDRESS": [
+    {
+     "STATE_PROVINCE": "North Kivu",
+     "COUNTRY": "DRC"
+    },
+    {
+     "STATE_PROVINCE": "South Kivu",
+     "COUNTRY": "DRC"
+    }
+   ],
+   "SORT_KEY": "FORCES DEMOCRATIQUES DE LIBERATION DU RWANDA (FDLR)",
+   "SORT_KEY_LAST_MOD": "2014-06-25",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 35,
+   "id": "CDe.005",
+   "name": "FORCES DEMOCRATIQUES DE LIBERATION DU RWANDA (FDLR)",
+   "two_Digit_Country_ISO_Code": "CD",
+   "committeeResNum": "1533 (2004)",
+   "subject_Matter_Abbreviated": "Resolution 1533 (2004) concerning the Democratic Republic of the Congo",
+   "indivOrEntFromId": "0"
+  },
+  {
+   "DATAID": "6908028",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "M23",
+   "UN_LIST_TYPE": "DRC",
+   "REFERENCE_NUMBER": "CDe.006",
+   "LISTED_ON": "2012-12-31",
+   "COMMENTS1": "Email: mouvementdu23mars1@gmail.com",
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "ENTITY_ALIAS": {
+    "QUALITY": "a.k.a.",
+    "ALIAS_NAME": "Mouvement du 23 mars"
+   },
+   "SORT_KEY": "M23",
+   "SORT_KEY_LAST_MOD": "2014-06-25",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 36,
+   "id": "CDe.006",
+   "name": "M23",
+   "two_Digit_Country_ISO_Code": "CD",
+   "committeeResNum": "1533 (2004)",
+   "subject_Matter_Abbreviated": "Resolution 1533 (2004) concerning the Democratic Republic of the Congo",
+   "indivOrEntFromId": "0"
+  },
+  {
+   "DATAID": "6908029",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "MACHANGA LTD",
+   "UN_LIST_TYPE": "DRC",
+   "REFERENCE_NUMBER": "CDe.007",
+   "LISTED_ON": "2007-03-29",
+   "COMMENTS1": "Gold export company (Directors: Mr. Rajendra Kumar Vaya and Mr. Hirendra M. Vaya). In 2010, assets belonging to Machanga, held in the account of Emirates Gold, were frozen by Bank of Nova Scotia Mocatta (UK). The owners of Machanga have remained involved in purchasing gold from eastern DRC.",
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "ENTITY_ALIAS": "",
+   "ENTITY_ADDRESS": {
+    "STREET": "Plot 55A, Upper Kololo Terrace",
+    "CITY": "Kampala",
+    "COUNTRY": "Uganda"
+   },
+   "SORT_KEY": "MACHANGA LTD",
+   "SORT_KEY_LAST_MOD": "2014-06-25",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 37,
+   "id": "CDe.007",
+   "name": "MACHANGA LTD",
+   "two_Digit_Country_ISO_Code": "CD",
+   "committeeResNum": "1533 (2004)",
+   "subject_Matter_Abbreviated": "Resolution 1533 (2004) concerning the Democratic Republic of the Congo",
+   "indivOrEntFromId": "0"
+  },
+  {
+   "DATAID": "6908030",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "TOUS POUR LA PAIX ET LE DEVELOPPEMENT (NGO)",
+   "UN_LIST_TYPE": "DRC",
+   "REFERENCE_NUMBER": "CDe.008",
+   "LISTED_ON": "2005-11-01",
+   "COMMENTS1": "Goma, with provincial committees in South Kivu, Kasai Occidental, Kasai Oriental and Maniema Officially suspended all activities since 2008. In practice, as of June 2011 TPD offices are open and involved in cases related to returns of IDPs, community reconciliation initiatives, land conflict settlements, etc. The TPD President is Eugene Serufuli and Vice-President is Saverina Karomba. Important members include North Kivu provincial deputies Robert Seninga and Bertin Kirivita.",
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "ENTITY_ALIAS": {
+    "QUALITY": "a.k.a.",
+    "ALIAS_NAME": "TPD"
+   },
+   "ENTITY_ADDRESS": {
+    "CITY": "Goma, North Kivu",
+    "COUNTRY": "DRC"
+   },
+   "SORT_KEY": "TOUS POUR LA PAIX ET LE DEVELOPPEMENT (NGO)",
+   "SORT_KEY_LAST_MOD": "2014-06-25",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 38,
+   "id": "CDe.008",
+   "name": "TOUS POUR LA PAIX ET LE DEVELOPPEMENT (NGO)",
+   "two_Digit_Country_ISO_Code": "CD",
+   "committeeResNum": "1533 (2004)",
+   "subject_Matter_Abbreviated": "Resolution 1533 (2004) concerning the Democratic Republic of the Congo",
+   "indivOrEntFromId": "0"
+  },
+  {
+   "DATAID": "6908031",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "UGANDA COMMERCIAL IMPEX (UCI) LTD",
+   "UN_LIST_TYPE": "DRC",
+   "REFERENCE_NUMBER": "CDe.009",
+   "LISTED_ON": "2007-03-29",
+   "COMMENTS1": "Gold export company. (Directors Mr. Jamnadas V. LODHIA – known as “Chuni”- and his sons Mr. Kunal LODHIA and Jitendra J. LODHIA). In January 2011, Ugandan authorities notified the Committee that following an exemption on its financial holdings, Emirates Gold repaid UCI’s debt to Crane Bank in Kampala, leading to final closure of its accounts. The directors of UCI have remained involved in purchasing gold from eastern DRC.",
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "ENTITY_ALIAS": "",
+   "ENTITY_ADDRESS": [
+    {
+     "STREET": "Plot 22, Kanjokya Street, Kamwokya",
+     "CITY": "Kampala",
+     "COUNTRY": "Uganda",
+     "NOTE": "Tel.: +256 41 533 578/9"
+    },
+    {
+     "STREET": "PO BOX 22709",
+     "CITY": "Kampala",
+     "COUNTRY": "Uganda"
+    }
+   ],
+   "SORT_KEY": "UGANDA COMMERCIAL IMPEX (UCI) LTD",
+   "SORT_KEY_LAST_MOD": "2014-06-25",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 39,
+   "id": "CDe.009",
+   "name": "UGANDA COMMERCIAL IMPEX (UCI) LTD",
+   "two_Digit_Country_ISO_Code": "CD",
+   "committeeResNum": "1533 (2004)",
+   "subject_Matter_Abbreviated": "Resolution 1533 (2004) concerning the Democratic Republic of the Congo",
+   "indivOrEntFromId": "0"
+  },
+  {
+   "DATAID": "6908402",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "ADF",
+   "UN_LIST_TYPE": "DRC",
+   "REFERENCE_NUMBER": "CDe.001",
+   "LISTED_ON": "2014-06-30",
+   "COMMENTS1": "As of December 2014, ADF was split into several small groups.  Jamil Mukulu leads one group, which contains several senior ADF leaders, and is in an unknown location, probably in North Kivu Province.  Seka Baluku leads the other main group, which operates in the forest northeast of Beni town in North Kivu Province.  ADF also has an extensive support network in DRC, Uganda, Rwanda, and possibly other countries.",
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "ENTITY_ALIAS": [
+    {
+     "QUALITY": "a.k.a.",
+     "ALIAS_NAME": "Allied Democratic Forces"
+    },
+    {
+     "QUALITY": "f.k.a.",
+     "ALIAS_NAME": "Forces Démocratiques Alliées-Armée Nationale de Libération de l’Ouganda"
+    },
+    {
+     "QUALITY": "f.k.a.",
+     "ALIAS_NAME": "ADF/NALU"
+    },
+    {
+     "QUALITY": "f.k.a.",
+     "ALIAS_NAME": "NALU"
+    }
+   ],
+   "ENTITY_ADDRESS": {
+    "STATE_PROVINCE": "North Kivu Province",
+    "COUNTRY": "Democratic Republic of the Congo"
+   },
+   "SORT_KEY": "ADF",
+   "SORT_KEY_LAST_MOD": "2014-10-02",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 40,
+   "id": "CDe.001",
+   "name": "ADF",
+   "two_Digit_Country_ISO_Code": "CD",
+   "committeeResNum": "1533 (2004)",
+   "subject_Matter_Abbreviated": "Resolution 1533 (2004) concerning the Democratic Republic of the Congo",
+   "indivOrEntFromId": "0"
+  }
+ ],
+ "dateGenerated": "03-17-2015",
+ "dateCollected": "03-26-2015",
+ "message": "Collected consolidated.xml labeled as generated on: 03-17-2015 [Tue Mar 17 2015 00:00:00 GMT-0400 (Eastern Daylight Time)]",
+ "comments": {
+  "links": []
+ },
+ "narratives": {
+  "links": []
+ }
+}

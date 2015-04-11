@@ -1,0 +1,362 @@
+{
+ "nodes": [
+  {
+   "id": "SOi.001",
+   "narrativeFileName": "SOi001.html",
+   "targetName": "YASIN ALI BAYNAH",
+   "indivOrEntityString": "indiv",
+   "rowNum": 1,
+   "urlNum": 1,
+   "linksFromNarrArray": [],
+   "connectionIdsFromNarrativeSet": {
+    "_map": {
+     "_count": 0,
+     "_map": {}
+    }
+   },
+   "connectedToIdFromNarrativeArray": [],
+   "pairedNodeIdsFromNarrative": [],
+   "pairedNodeIdsFromNarrativeSet": {
+    "_map": {
+     "_list": [],
+     "_es6Map": null,
+     "_buckets": null,
+     "_count": 0
+    }
+   }
+  },
+  {
+   "id": "SOi.002",
+   "narrativeFileName": "SOi002.html",
+   "targetName": "HASSAN DAHIR AWEYS",
+   "indivOrEntityString": "indiv",
+   "rowNum": 2,
+   "urlNum": 2,
+   "linksFromNarrArray": [],
+   "connectionIdsFromNarrativeSet": {
+    "_map": {
+     "_count": 0,
+     "_map": {}
+    }
+   },
+   "connectedToIdFromNarrativeArray": [],
+   "pairedNodeIdsFromNarrative": [],
+   "pairedNodeIdsFromNarrativeSet": {
+    "_map": {
+     "_list": [],
+     "_es6Map": null,
+     "_buckets": null,
+     "_count": 0
+    }
+   }
+  },
+  {
+   "id": "SOi.003",
+   "narrativeFileName": "SOi003.html",
+   "targetName": "HASSAN ABDULLAH HERSI AL-TURKI",
+   "indivOrEntityString": "indiv",
+   "rowNum": 3,
+   "urlNum": 3,
+   "linksFromNarrArray": [],
+   "connectionIdsFromNarrativeSet": {
+    "_map": {
+     "_count": 0,
+     "_map": {}
+    }
+   },
+   "connectedToIdFromNarrativeArray": [],
+   "pairedNodeIdsFromNarrative": [],
+   "pairedNodeIdsFromNarrativeSet": {
+    "_map": {
+     "_list": [],
+     "_es6Map": null,
+     "_buckets": null,
+     "_count": 0
+    }
+   }
+  },
+  {
+   "id": "SOi.004",
+   "narrativeFileName": "SOi004.html",
+   "targetName": "AHMED ABDI AW-MOHAMED",
+   "indivOrEntityString": "indiv",
+   "rowNum": 4,
+   "urlNum": 4,
+   "linksFromNarrArray": [],
+   "connectionIdsFromNarrativeSet": {
+    "_map": {
+     "_count": 0,
+     "_map": {}
+    }
+   },
+   "connectedToIdFromNarrativeArray": [],
+   "pairedNodeIdsFromNarrative": [],
+   "pairedNodeIdsFromNarrativeSet": {
+    "_map": {
+     "_list": [],
+     "_es6Map": null,
+     "_buckets": null,
+     "_count": 0
+    }
+   }
+  },
+  {
+   "id": "SOi.005",
+   "narrativeFileName": "SOi005.html",
+   "targetName": "FOUAD MOHAMED KHALAF",
+   "indivOrEntityString": "indiv",
+   "rowNum": 5,
+   "urlNum": 5,
+   "linksFromNarrArray": [],
+   "connectionIdsFromNarrativeSet": {
+    "_map": {
+     "_count": 0,
+     "_map": {}
+    }
+   },
+   "connectedToIdFromNarrativeArray": [],
+   "pairedNodeIdsFromNarrative": [],
+   "pairedNodeIdsFromNarrativeSet": {
+    "_map": {
+     "_list": [],
+     "_es6Map": null,
+     "_buckets": null,
+     "_count": 0
+    }
+   }
+  },
+  {
+   "id": "SOi.006",
+   "narrativeFileName": "SOi006.html",
+   "targetName": "BASHIR MOHAMED MAHMOUD",
+   "indivOrEntityString": "indiv",
+   "rowNum": 6,
+   "urlNum": 6,
+   "linksFromNarrArray": [],
+   "connectionIdsFromNarrativeSet": {
+    "_map": {
+     "_count": 0,
+     "_map": {}
+    }
+   },
+   "connectedToIdFromNarrativeArray": [],
+   "pairedNodeIdsFromNarrative": [],
+   "pairedNodeIdsFromNarrativeSet": {
+    "_map": {
+     "_list": [],
+     "_es6Map": null,
+     "_buckets": null,
+     "_count": 0
+    }
+   }
+  },
+  {
+   "id": "SOi.008",
+   "narrativeFileName": "SOi008.html",
+   "targetName": "FARES MOHAMMED MANA'A",
+   "indivOrEntityString": "indiv",
+   "rowNum": 7,
+   "urlNum": 7,
+   "linksFromNarrArray": [],
+   "connectionIdsFromNarrativeSet": {
+    "_map": {
+     "_count": 0,
+     "_map": {}
+    }
+   },
+   "connectedToIdFromNarrativeArray": [],
+   "pairedNodeIdsFromNarrative": [],
+   "pairedNodeIdsFromNarrativeSet": {
+    "_map": {
+     "_list": [],
+     "_es6Map": null,
+     "_buckets": null,
+     "_count": 0
+    }
+   }
+  },
+  {
+   "id": "SOi.009",
+   "narrativeFileName": "SOi009.html",
+   "targetName": "HASSAN MAHAT OMAR",
+   "indivOrEntityString": "indiv",
+   "rowNum": 8,
+   "urlNum": 8,
+   "linksFromNarrArray": [],
+   "connectionIdsFromNarrativeSet": {
+    "_map": {
+     "_count": 0,
+     "_map": {}
+    }
+   },
+   "connectedToIdFromNarrativeArray": [],
+   "pairedNodeIdsFromNarrative": [],
+   "pairedNodeIdsFromNarrativeSet": {
+    "_map": {
+     "_list": [],
+     "_es6Map": null,
+     "_buckets": null,
+     "_count": 0
+    }
+   }
+  },
+  {
+   "id": "SOi.010",
+   "narrativeFileName": "SOi010.html",
+   "targetName": "OMAR HAMMAMI",
+   "indivOrEntityString": "indiv",
+   "rowNum": 9,
+   "urlNum": 9,
+   "linksFromNarrArray": [],
+   "connectionIdsFromNarrativeSet": {
+    "_map": {
+     "_count": 0,
+     "_map": {}
+    }
+   },
+   "connectedToIdFromNarrativeArray": [],
+   "pairedNodeIdsFromNarrative": [],
+   "pairedNodeIdsFromNarrativeSet": {
+    "_map": {
+     "_list": [],
+     "_es6Map": null,
+     "_buckets": null,
+     "_count": 0
+    }
+   }
+  },
+  {
+   "id": "SOi.011",
+   "narrativeFileName": "SOi011.html",
+   "targetName": "ABOUD ROGO MOHAMMED",
+   "indivOrEntityString": "indiv",
+   "rowNum": 10,
+   "urlNum": 10,
+   "linksFromNarrArray": [],
+   "connectionIdsFromNarrativeSet": {
+    "_map": {
+     "_count": 0,
+     "_map": {}
+    }
+   },
+   "connectedToIdFromNarrativeArray": [],
+   "pairedNodeIdsFromNarrative": [],
+   "pairedNodeIdsFromNarrativeSet": {
+    "_map": {
+     "_list": [],
+     "_es6Map": null,
+     "_buckets": null,
+     "_count": 0
+    }
+   }
+  },
+  {
+   "id": "SOi.012",
+   "narrativeFileName": "SOi012.html",
+   "targetName": "ABUBAKER SHARIFF AHMED",
+   "indivOrEntityString": "indiv",
+   "rowNum": 11,
+   "urlNum": 11,
+   "linksFromNarrArray": [],
+   "connectionIdsFromNarrativeSet": {
+    "_map": {
+     "_count": 0,
+     "_map": {}
+    }
+   },
+   "connectedToIdFromNarrativeArray": [],
+   "pairedNodeIdsFromNarrative": [],
+   "pairedNodeIdsFromNarrativeSet": {
+    "_map": {
+     "_list": [],
+     "_es6Map": null,
+     "_buckets": null,
+     "_count": 0
+    }
+   }
+  },
+  {
+   "id": "SOi.013",
+   "narrativeFileName": "SOi013.shtml",
+   "targetName": "MAALIM SALMAN",
+   "indivOrEntityString": "indiv",
+   "rowNum": 12,
+   "urlNum": 12,
+   "linksFromNarrArray": [],
+   "connectionIdsFromNarrativeSet": {
+    "_map": {
+     "_count": 0,
+     "_map": {}
+    }
+   },
+   "connectedToIdFromNarrativeArray": [],
+   "pairedNodeIdsFromNarrative": [],
+   "pairedNodeIdsFromNarrativeSet": {
+    "_map": {
+     "_list": [],
+     "_es6Map": null,
+     "_buckets": null,
+     "_count": 0
+    }
+   }
+  },
+  {
+   "id": "SOi.014",
+   "narrativeFileName": "SOi014.shtml",
+   "targetName": "AHMED DIRIYE",
+   "indivOrEntityString": "indiv",
+   "rowNum": 13,
+   "urlNum": 13,
+   "linksFromNarrArray": [],
+   "connectionIdsFromNarrativeSet": {
+    "_map": {
+     "_count": 0,
+     "_map": {}
+    }
+   },
+   "connectedToIdFromNarrativeArray": [],
+   "pairedNodeIdsFromNarrative": [],
+   "pairedNodeIdsFromNarrativeSet": {
+    "_map": {
+     "_list": [],
+     "_es6Map": null,
+     "_buckets": null,
+     "_count": 0
+    }
+   }
+  },
+  {
+   "narrativeFileName": "SOe001.html",
+   "targetName": "AL-SHABAAB",
+   "indivOrEntityString": "entity",
+   "rowNum": 1,
+   "urlNum": 14,
+   "linksFromNarrArray": [],
+   "connectionIdsFromNarrativeSet": {
+    "_map": {
+     "_count": 0,
+     "_map": {}
+    }
+   },
+   "connectedToIdFromNarrativeArray": [],
+   "pairedNodeIdsFromNarrative": [],
+   "pairedNodeIdsFromNarrativeSet": {
+    "_map": {
+     "_list": [],
+     "_es6Map": null,
+     "_buckets": null,
+     "_count": 0
+    }
+   }
+  }
+ ],
+ "linkSet": {
+  "_map": {
+   "_list": [],
+   "_es6Map": null,
+   "_buckets": null,
+   "_count": 0
+  }
+ },
+ "links": []
+}

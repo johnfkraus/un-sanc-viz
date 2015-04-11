@@ -5,23 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d978abb8-9bbc-4846-80bc-cd786bfafc5b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/committees/751/narratives/SOe001.html" afterPath="$PROJECT_DIR$/data/committees/751/narratives/SOe001.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/committees/751/narratives/SOi001.html" afterPath="$PROJECT_DIR$/data/committees/751/narratives/SOi001.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/committees/751/narratives/SOi002.html" afterPath="$PROJECT_DIR$/data/committees/751/narratives/SOi002.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/committees/751/narratives/SOi003.html" afterPath="$PROJECT_DIR$/data/committees/751/narratives/SOi003.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/committees/751/narratives/SOi004.html" afterPath="$PROJECT_DIR$/data/committees/751/narratives/SOi004.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/committees/751/narratives/SOi005.html" afterPath="$PROJECT_DIR$/data/committees/751/narratives/SOi005.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/committees/751/narratives/SOi006.html" afterPath="$PROJECT_DIR$/data/committees/751/narratives/SOi006.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/committees/751/narratives/SOi008.html" afterPath="$PROJECT_DIR$/data/committees/751/narratives/SOi008.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/committees/751/narratives/SOi009.html" afterPath="$PROJECT_DIR$/data/committees/751/narratives/SOi009.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/committees/751/narratives/SOi010.html" afterPath="$PROJECT_DIR$/data/committees/751/narratives/SOi010.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/committees/751/narratives/SOi011.html" afterPath="$PROJECT_DIR$/data/committees/751/narratives/SOi011.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/committees/751/narratives/SOi012.html" afterPath="$PROJECT_DIR$/data/committees/751/narratives/SOi012.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/committees/751/narratives/SOi013.shtml" afterPath="$PROJECT_DIR$/data/committees/751/narratives/SOi013.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/committees/751/narratives/SOi014.shtml" afterPath="$PROJECT_DIR$/data/committees/751/narratives/SOi014.shtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/appConfig.js" afterPath="$PROJECT_DIR$/js/appConfig.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/parse2Lists.js" afterPath="$PROJECT_DIR$/js/parse2Lists.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="un-sanc-viz.iws" />
@@ -45,52 +28,7 @@
     <favorites_list name="un-sanc-viz" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="parse2Lists.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/parse2Lists.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.42677826" vertical-offset="1275" max-vertical-offset="30447">
-              <caret line="84" column="43" selection-start-line="84" selection-start-column="43" selection-end-line="84" selection-end-column="43" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="utilities_aq_viz.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/utilities_aq_viz.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1950" max-vertical-offset="7276">
-              <caret line="322" column="0" selection-start-line="322" selection-start-column="0" selection-end-line="322" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="committeesConfig.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/committeesConfig.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="6443">
-              <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="appConfig.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/appConfig.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1377">
-              <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -920,7 +858,13 @@
       <option name="project" value="LOCAL" />
       <updated>1427760487165</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="using committees json array">
+      <created>1427839199634</created>
+      <option name="number" value="00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1427839199634</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -945,7 +889,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="916" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41447368" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -954,21 +898,21 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Code Review" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24967907" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991013" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2580231" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2580231" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991013" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31973684" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31973684" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Get Gist" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3263158" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3944591" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1018,7 +962,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="added committees.js, appConfig.js" />
     <MESSAGE value="use array instead of object for single entity or indiv" />
     <MESSAGE value="tweaking committee collections" />
     <MESSAGE value="update parse2Lists.js to use committees.js, appConfig.js" />
@@ -1043,7 +986,8 @@
     <MESSAGE value="fix this:events.js:72 throw er; // Unhandled 'error' event&#10;Error: EMFILE, open 'c:\Users\User1\WebstormProjects\un-sanc-viz\log\consolidated.log'&#10;Process finished with exit code 8" />
     <MESSAGE value="cleanup" />
     <MESSAGE value="added committeesArray2" />
-    <option name="LAST_COMMIT_MESSAGE" value="added committeesArray2" />
+    <MESSAGE value="using committees json array" />
+    <option name="LAST_COMMIT_MESSAGE" value="using committees json array" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1454,6 +1398,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/parse2Lists.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.78571427" vertical-offset="1275" max-vertical-offset="30447">
+          <caret line="94" column="51" selection-start-line="94" selection-start-column="51" selection-end-line="94" selection-end-column="51" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/utilities_aq_viz.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="7.6533613" vertical-offset="1950" max-vertical-offset="7038">
+          <caret line="322" column="0" selection-start-line="322" selection-start-column="0" selection-end-line="322" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/committeesConfig.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6494">
@@ -1466,27 +1428,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/appConfig.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1377">
+        <state vertical-scroll-proportion="0.2781186" vertical-offset="0" max-vertical-offset="1377">
           <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/utilities_aq_viz.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="5452" max-vertical-offset="7276">
-          <caret line="322" column="0" selection-start-line="322" selection-start-column="0" selection-end-line="322" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/parse2Lists.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42677826" vertical-offset="1275" max-vertical-offset="30447">
-          <caret line="84" column="43" selection-start-line="84" selection-start-column="43" selection-end-line="84" selection-end-column="43" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

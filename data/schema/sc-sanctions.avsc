@@ -1,0 +1,714 @@
+{
+  "type" : "record",
+  "name" : "type0",
+  "doc" : "",
+  "fields" : [ {
+    "name" : "DATE_OF_ISSUE",
+    "type" : [ "null", "string" ],
+    "source" : "element DATE_OF_ISSUE"
+  }, {
+    "name" : "NOTE",
+    "type" : [ "null", "string" ],
+    "source" : "element NOTE"
+  }, {
+    "name" : "CITY_OF_ISSUE",
+    "type" : [ "null", "string" ],
+    "source" : "element CITY_OF_ISSUE"
+  }, {
+    "name" : "ENTITY",
+    "type" : [ "null", {
+      "type" : "record",
+      "name" : "AnonType_ENTITY",
+      "fields" : [ {
+        "name" : "DATAID",
+        "type" : "string",
+        "source" : "element DATAID"
+      }, {
+        "name" : "VERSIONNUM",
+        "type" : "string",
+        "source" : "element VERSIONNUM"
+      }, {
+        "name" : "FIRST_NAME",
+        "type" : "string",
+        "source" : "element FIRST_NAME"
+      }, {
+        "name" : "UN_LIST_TYPE",
+        "type" : "string",
+        "source" : "element UN_LIST_TYPE"
+      }, {
+        "name" : "REFERENCE_NUMBER",
+        "type" : "string",
+        "source" : "element REFERENCE_NUMBER"
+      }, {
+        "name" : "LISTED_ON",
+        "type" : "string",
+        "source" : "element LISTED_ON"
+      }, {
+        "name" : "SUBMITTED_ON",
+        "type" : [ "null", "string" ],
+        "source" : "element SUBMITTED_ON"
+      }, {
+        "name" : "NAME_ORIGINAL_SCRIPT",
+        "type" : [ "null", "string" ],
+        "source" : "element NAME_ORIGINAL_SCRIPT"
+      }, {
+        "name" : "COMMENTS1",
+        "type" : "string",
+        "source" : "element COMMENTS1"
+      }, {
+        "name" : "LIST_TYPE",
+        "type" : {
+          "type" : "record",
+          "name" : "AnonType_LIST_TYPE",
+          "fields" : [ {
+            "name" : "VALUE",
+            "type" : "string",
+            "source" : "element VALUE"
+          } ]
+        },
+        "source" : "element LIST_TYPE"
+      }, {
+        "name" : "LAST_DAY_UPDATED",
+        "type" : [ "null", {
+          "type" : "record",
+          "name" : "AnonType_LAST_DAY_UPDATED",
+          "fields" : [ {
+            "name" : "VALUE",
+            "type" : {
+              "type" : "array",
+              "items" : "string"
+            },
+            "source" : "element VALUE"
+          } ]
+        } ],
+        "source" : "element LAST_DAY_UPDATED"
+      }, {
+        "name" : "ENTITY_ALIAS",
+        "type" : {
+          "type" : "array",
+          "items" : {
+            "type" : "record",
+            "name" : "AnonType_ENTITY_ALIAS",
+            "fields" : [ {
+              "name" : "QUALITY",
+              "type" : "string",
+              "source" : "element QUALITY"
+            }, {
+              "name" : "ALIAS_NAME",
+              "type" : "string",
+              "source" : "element ALIAS_NAME"
+            } ]
+          }
+        },
+        "source" : "element ENTITY_ALIAS"
+      }, {
+        "name" : "ENTITY_ADDRESS",
+        "type" : {
+          "type" : "array",
+          "items" : {
+            "type" : "record",
+            "name" : "AnonType_ENTITY_ADDRESS",
+            "fields" : [ {
+              "name" : "STREET",
+              "type" : [ "null", "string" ],
+              "source" : "element STREET"
+            }, {
+              "name" : "CITY",
+              "type" : [ "null", "string" ],
+              "source" : "element CITY"
+            }, {
+              "name" : "STATE_PROVINCE",
+              "type" : [ "null", "string" ],
+              "source" : "element STATE_PROVINCE"
+            }, {
+              "name" : "ZIP_CODE",
+              "type" : [ "null", "string" ],
+              "source" : "element ZIP_CODE"
+            }, {
+              "name" : "COUNTRY",
+              "type" : [ "null", "string" ],
+              "source" : "element COUNTRY"
+            }, {
+              "name" : "NOTE",
+              "type" : [ "null", "string" ],
+              "source" : "element NOTE"
+            } ]
+          }
+        },
+        "source" : "element ENTITY_ADDRESS"
+      }, {
+        "name" : "SORT_KEY",
+        "type" : "string",
+        "source" : "element SORT_KEY"
+      }, {
+        "name" : "SORT_KEY_LAST_MOD",
+        "type" : "string",
+        "source" : "element SORT_KEY_LAST_MOD"
+      }, {
+        "name" : "DELISTED_ON",
+        "type" : [ "null", "string" ],
+        "source" : "element DELISTED_ON"
+      } ]
+    } ],
+    "source" : "element ENTITY"
+  }, {
+    "name" : "SORT_KEY_LAST_MOD",
+    "type" : [ "null", "string" ],
+    "source" : "element SORT_KEY_LAST_MOD"
+  }, {
+    "name" : "STATE_PROVINCE",
+    "type" : [ "null", "string" ],
+    "source" : "element STATE_PROVINCE"
+  }, {
+    "name" : "COUNTRY_OF_ISSUE",
+    "type" : [ "null", "string" ],
+    "source" : "element COUNTRY_OF_ISSUE"
+  }, {
+    "name" : "ZIP_CODE",
+    "type" : [ "null", "string" ],
+    "source" : "element ZIP_CODE"
+  }, {
+    "name" : "ENTITIES",
+    "type" : [ "null", {
+      "type" : "record",
+      "name" : "AnonType_ENTITIES",
+      "fields" : [ {
+        "name" : "ENTITY",
+        "type" : {
+          "type" : "array",
+          "items" : "AnonType_ENTITY"
+        },
+        "source" : "element ENTITY"
+      } ]
+    } ],
+    "source" : "element ENTITIES"
+  }, {
+    "name" : "VERSIONNUM",
+    "type" : [ "null", "string" ],
+    "source" : "element VERSIONNUM"
+  }, {
+    "name" : "DATE_OF_BIRTH",
+    "type" : [ "null", "string" ],
+    "source" : "element DATE_OF_BIRTH"
+  }, {
+    "name" : "DATE",
+    "type" : [ "null", "string" ],
+    "source" : "element DATE"
+  }, {
+    "name" : "TITLE",
+    "type" : [ "null", {
+      "type" : "record",
+      "name" : "AnonType_TITLE",
+      "fields" : [ {
+        "name" : "VALUE",
+        "type" : {
+          "type" : "array",
+          "items" : "string"
+        },
+        "source" : "element VALUE"
+      } ]
+    } ],
+    "source" : "element TITLE"
+  }, {
+    "name" : "CITY_OF_BIRTH",
+    "type" : [ "null", "string" ],
+    "source" : "element CITY_OF_BIRTH"
+  }, {
+    "name" : "ENTITY_ADDRESS",
+    "type" : [ "null", "AnonType_ENTITY_ADDRESS" ],
+    "source" : "element ENTITY_ADDRESS"
+  }, {
+    "name" : "THIRD_NAME",
+    "type" : [ "null", "string" ],
+    "source" : "element THIRD_NAME"
+  }, {
+    "name" : "FIRST_NAME",
+    "type" : [ "null", "string" ],
+    "source" : "element FIRST_NAME"
+  }, {
+    "name" : "INDIVIDUAL_ADDRESS",
+    "type" : [ "null", {
+      "type" : "record",
+      "name" : "AnonType_INDIVIDUAL_ADDRESS",
+      "fields" : [ {
+        "name" : "STREET",
+        "type" : [ "null", "string" ],
+        "source" : "element STREET"
+      }, {
+        "name" : "CITY",
+        "type" : [ "null", "string" ],
+        "source" : "element CITY"
+      }, {
+        "name" : "STATE_PROVINCE",
+        "type" : [ "null", "string" ],
+        "source" : "element STATE_PROVINCE"
+      }, {
+        "name" : "ZIP_CODE",
+        "type" : [ "null", "string" ],
+        "source" : "element ZIP_CODE"
+      }, {
+        "name" : "COUNTRY",
+        "type" : "string",
+        "source" : "element COUNTRY"
+      }, {
+        "name" : "NOTE",
+        "type" : [ "null", "string" ],
+        "source" : "element NOTE"
+      } ]
+    } ],
+    "source" : "element INDIVIDUAL_ADDRESS"
+  }, {
+    "name" : "COUNTRY_OF_BIRTH",
+    "type" : [ "null", "string" ],
+    "source" : "element COUNTRY_OF_BIRTH"
+  }, {
+    "name" : "LIST_TYPE",
+    "type" : [ "null", "AnonType_LIST_TYPE" ],
+    "source" : "element LIST_TYPE"
+  }, {
+    "name" : "TYPE_OF_DOCUMENT2",
+    "type" : [ "null", "string" ],
+    "source" : "element TYPE_OF_DOCUMENT2"
+  }, {
+    "name" : "COUNTRY",
+    "type" : [ "null", "string" ],
+    "source" : "element COUNTRY"
+  }, {
+    "name" : "ISSUING_COUNTRY",
+    "type" : [ "null", "string" ],
+    "source" : "element ISSUING_COUNTRY"
+  }, {
+    "name" : "DATAID",
+    "type" : [ "null", "string" ],
+    "source" : "element DATAID"
+  }, {
+    "name" : "NATIONALITY2",
+    "type" : [ "null", "string" ],
+    "source" : "element NATIONALITY2"
+  }, {
+    "name" : "CONSOLIDATED_LIST",
+    "type" : [ "null", {
+      "type" : "record",
+      "name" : "AnonType_CONSOLIDATED_LIST",
+      "fields" : [ {
+        "name" : "dateGenerated",
+        "type" : "long",
+        "source" : "attribute dateGenerated"
+      }, {
+        "name" : "INDIVIDUALS",
+        "type" : {
+          "type" : "record",
+          "name" : "AnonType_INDIVIDUALS",
+          "fields" : [ {
+            "name" : "INDIVIDUAL",
+            "type" : {
+              "type" : "array",
+              "items" : {
+                "type" : "record",
+                "name" : "AnonType_INDIVIDUAL",
+                "fields" : [ {
+                  "name" : "DATAID",
+                  "type" : "string",
+                  "source" : "element DATAID"
+                }, {
+                  "name" : "VERSIONNUM",
+                  "type" : "string",
+                  "source" : "element VERSIONNUM"
+                }, {
+                  "name" : "FIRST_NAME",
+                  "type" : "string",
+                  "source" : "element FIRST_NAME"
+                }, {
+                  "name" : "SECOND_NAME",
+                  "type" : [ "null", "string" ],
+                  "source" : "element SECOND_NAME"
+                }, {
+                  "name" : "THIRD_NAME",
+                  "type" : [ "null", "string" ],
+                  "source" : "element THIRD_NAME"
+                }, {
+                  "name" : "FOURTH_NAME",
+                  "type" : [ "null", "string" ],
+                  "source" : "element FOURTH_NAME"
+                }, {
+                  "name" : "UN_LIST_TYPE",
+                  "type" : "string",
+                  "source" : "element UN_LIST_TYPE"
+                }, {
+                  "name" : "REFERENCE_NUMBER",
+                  "type" : "string",
+                  "source" : "element REFERENCE_NUMBER"
+                }, {
+                  "name" : "LISTED_ON",
+                  "type" : "string",
+                  "source" : "element LISTED_ON"
+                }, {
+                  "name" : "GENDER",
+                  "type" : [ "null", "string" ],
+                  "source" : "element GENDER"
+                }, {
+                  "name" : "SUBMITTED_BY",
+                  "type" : [ "null", "string" ],
+                  "source" : "element SUBMITTED_BY"
+                }, {
+                  "name" : "NAME_ORIGINAL_SCRIPT",
+                  "type" : [ "null", "string" ],
+                  "source" : "element NAME_ORIGINAL_SCRIPT"
+                }, {
+                  "name" : "COMMENTS1",
+                  "type" : "string",
+                  "source" : "element COMMENTS1"
+                }, {
+                  "name" : "NATIONALITY2",
+                  "type" : [ "null", "string" ],
+                  "source" : "element NATIONALITY2"
+                }, {
+                  "name" : "TITLE",
+                  "type" : [ "null", "AnonType_TITLE" ],
+                  "source" : "element TITLE"
+                }, {
+                  "name" : "DESIGNATION",
+                  "type" : [ "null", {
+                    "type" : "record",
+                    "name" : "AnonType_DESIGNATION",
+                    "fields" : [ {
+                      "name" : "VALUE",
+                      "type" : {
+                        "type" : "array",
+                        "items" : "string"
+                      },
+                      "source" : "element VALUE"
+                    } ]
+                  } ],
+                  "source" : "element DESIGNATION"
+                }, {
+                  "name" : "NATIONALITY",
+                  "type" : [ "null", {
+                    "type" : "record",
+                    "name" : "AnonType_NATIONALITY",
+                    "fields" : [ {
+                      "name" : "VALUE",
+                      "type" : {
+                        "type" : "array",
+                        "items" : "string"
+                      },
+                      "source" : "element VALUE"
+                    } ]
+                  } ],
+                  "source" : "element NATIONALITY"
+                }, {
+                  "name" : "LIST_TYPE",
+                  "type" : "AnonType_LIST_TYPE",
+                  "source" : "element LIST_TYPE"
+                }, {
+                  "name" : "LAST_DAY_UPDATED",
+                  "type" : [ "null", "AnonType_LAST_DAY_UPDATED" ],
+                  "source" : "element LAST_DAY_UPDATED"
+                }, {
+                  "name" : "INDIVIDUAL_ALIAS",
+                  "type" : {
+                    "type" : "array",
+                    "items" : {
+                      "type" : "record",
+                      "name" : "AnonType_INDIVIDUAL_ALIAS",
+                      "fields" : [ {
+                        "name" : "QUALITY",
+                        "type" : "string",
+                        "source" : "element QUALITY"
+                      }, {
+                        "name" : "ALIAS_NAME",
+                        "type" : "string",
+                        "source" : "element ALIAS_NAME"
+                      }, {
+                        "name" : "DATE_OF_BIRTH",
+                        "type" : [ "null", "string" ],
+                        "source" : "element DATE_OF_BIRTH"
+                      }, {
+                        "name" : "CITY_OF_BIRTH",
+                        "type" : [ "null", "string" ],
+                        "source" : "element CITY_OF_BIRTH"
+                      }, {
+                        "name" : "COUNTRY_OF_BIRTH",
+                        "type" : [ "null", "string" ],
+                        "source" : "element COUNTRY_OF_BIRTH"
+                      }, {
+                        "name" : "NOTE",
+                        "type" : [ "null", "string" ],
+                        "source" : "element NOTE"
+                      } ]
+                    }
+                  },
+                  "source" : "element INDIVIDUAL_ALIAS"
+                }, {
+                  "name" : "INDIVIDUAL_ADDRESS",
+                  "type" : {
+                    "type" : "array",
+                    "items" : "AnonType_INDIVIDUAL_ADDRESS"
+                  },
+                  "source" : "element INDIVIDUAL_ADDRESS"
+                }, {
+                  "name" : "INDIVIDUAL_DATE_OF_BIRTH",
+                  "type" : {
+                    "type" : "array",
+                    "items" : {
+                      "type" : "record",
+                      "name" : "AnonType_INDIVIDUAL_DATE_OF_BIRTH",
+                      "fields" : [ {
+                        "name" : "TYPE_OF_DATE",
+                        "type" : [ "null", "string" ],
+                        "source" : "element TYPE_OF_DATE"
+                      }, {
+                        "name" : "NOTE",
+                        "type" : [ "null", "string" ],
+                        "source" : "element NOTE"
+                      }, {
+                        "name" : "DATE",
+                        "type" : [ "null", "string" ],
+                        "source" : "element DATE"
+                      }, {
+                        "name" : "YEAR",
+                        "type" : [ "null", "string" ],
+                        "source" : "element YEAR"
+                      }, {
+                        "name" : "FROM_YEAR",
+                        "type" : [ "null", "string" ],
+                        "source" : "element FROM_YEAR"
+                      }, {
+                        "name" : "TO_YEAR",
+                        "type" : [ "null", "string" ],
+                        "source" : "element TO_YEAR"
+                      } ]
+                    }
+                  },
+                  "source" : "element INDIVIDUAL_DATE_OF_BIRTH"
+                }, {
+                  "name" : "INDIVIDUAL_PLACE_OF_BIRTH",
+                  "type" : {
+                    "type" : "array",
+                    "items" : {
+                      "type" : "record",
+                      "name" : "AnonType_INDIVIDUAL_PLACE_OF_BIRTH",
+                      "fields" : [ {
+                        "name" : "CITY",
+                        "type" : [ "null", "string" ],
+                        "source" : "element CITY"
+                      }, {
+                        "name" : "STATE_PROVINCE",
+                        "type" : [ "null", "string" ],
+                        "source" : "element STATE_PROVINCE"
+                      }, {
+                        "name" : "COUNTRY",
+                        "type" : [ "null", "string" ],
+                        "source" : "element COUNTRY"
+                      }, {
+                        "name" : "NOTE",
+                        "type" : [ "null", "string" ],
+                        "source" : "element NOTE"
+                      } ]
+                    }
+                  },
+                  "source" : "element INDIVIDUAL_PLACE_OF_BIRTH"
+                }, {
+                  "name" : "INDIVIDUAL_DOCUMENT",
+                  "type" : {
+                    "type" : "array",
+                    "items" : {
+                      "type" : "record",
+                      "name" : "AnonType_INDIVIDUAL_DOCUMENT",
+                      "fields" : [ {
+                        "name" : "TYPE_OF_DOCUMENT",
+                        "type" : [ "null", "string" ],
+                        "source" : "element TYPE_OF_DOCUMENT"
+                      }, {
+                        "name" : "TYPE_OF_DOCUMENT2",
+                        "type" : [ "null", "string" ],
+                        "source" : "element TYPE_OF_DOCUMENT2"
+                      }, {
+                        "name" : "NUMBER",
+                        "type" : [ "null", "string" ],
+                        "source" : "element NUMBER"
+                      }, {
+                        "name" : "ISSUING_COUNTRY",
+                        "type" : [ "null", "string" ],
+                        "source" : "element ISSUING_COUNTRY"
+                      }, {
+                        "name" : "DATE_OF_ISSUE",
+                        "type" : [ "null", "string" ],
+                        "source" : "element DATE_OF_ISSUE"
+                      }, {
+                        "name" : "CITY_OF_ISSUE",
+                        "type" : [ "null", "string" ],
+                        "source" : "element CITY_OF_ISSUE"
+                      }, {
+                        "name" : "COUNTRY_OF_ISSUE",
+                        "type" : [ "null", "string" ],
+                        "source" : "element COUNTRY_OF_ISSUE"
+                      }, {
+                        "name" : "NOTE",
+                        "type" : [ "null", "string" ],
+                        "source" : "element NOTE"
+                      } ]
+                    }
+                  },
+                  "source" : "element INDIVIDUAL_DOCUMENT"
+                }, {
+                  "name" : "SORT_KEY",
+                  "type" : "string",
+                  "source" : "element SORT_KEY"
+                }, {
+                  "name" : "SORT_KEY_LAST_MOD",
+                  "type" : "string",
+                  "source" : "element SORT_KEY_LAST_MOD"
+                }, {
+                  "name" : "DELISTED_ON",
+                  "type" : [ "null", "string" ],
+                  "source" : "element DELISTED_ON"
+                } ]
+              }
+            },
+            "source" : "element INDIVIDUAL"
+          } ]
+        },
+        "source" : "element INDIVIDUALS"
+      }, {
+        "name" : "ENTITIES",
+        "type" : "AnonType_ENTITIES",
+        "source" : "element ENTITIES"
+      } ]
+    } ],
+    "source" : "element CONSOLIDATED_LIST"
+  }, {
+    "name" : "TYPE_OF_DOCUMENT",
+    "type" : [ "null", "string" ],
+    "source" : "element TYPE_OF_DOCUMENT"
+  }, {
+    "name" : "FOURTH_NAME",
+    "type" : [ "null", "string" ],
+    "source" : "element FOURTH_NAME"
+  }, {
+    "name" : "ALIAS_NAME",
+    "type" : [ "null", "string" ],
+    "source" : "element ALIAS_NAME"
+  }, {
+    "name" : "REFERENCE_NUMBER",
+    "type" : [ "null", "string" ],
+    "source" : "element REFERENCE_NUMBER"
+  }, {
+    "name" : "SUBMITTED_ON",
+    "type" : [ "null", "string" ],
+    "source" : "element SUBMITTED_ON"
+  }, {
+    "name" : "CITY",
+    "type" : [ "null", "string" ],
+    "source" : "element CITY"
+  }, {
+    "name" : "NUMBER",
+    "type" : [ "null", "string" ],
+    "source" : "element NUMBER"
+  }, {
+    "name" : "INDIVIDUAL_ALIAS",
+    "type" : [ "null", "AnonType_INDIVIDUAL_ALIAS" ],
+    "source" : "element INDIVIDUAL_ALIAS"
+  }, {
+    "name" : "INDIVIDUALS",
+    "type" : [ "null", "AnonType_INDIVIDUALS" ],
+    "source" : "element INDIVIDUALS"
+  }, {
+    "name" : "TYPE_OF_DATE",
+    "type" : [ "null", "string" ],
+    "source" : "element TYPE_OF_DATE"
+  }, {
+    "name" : "COMMENTS1",
+    "type" : [ "null", "string" ],
+    "source" : "element COMMENTS1"
+  }, {
+    "name" : "INDIVIDUAL_DOCUMENT",
+    "type" : [ "null", "AnonType_INDIVIDUAL_DOCUMENT" ],
+    "source" : "element INDIVIDUAL_DOCUMENT"
+  }, {
+    "name" : "DESIGNATION",
+    "type" : [ "null", "AnonType_DESIGNATION" ],
+    "source" : "element DESIGNATION"
+  }, {
+    "name" : "NAME_ORIGINAL_SCRIPT",
+    "type" : [ "null", "string" ],
+    "source" : "element NAME_ORIGINAL_SCRIPT"
+  }, {
+    "name" : "SUBMITTED_BY",
+    "type" : [ "null", "string" ],
+    "source" : "element SUBMITTED_BY"
+  }, {
+    "name" : "INDIVIDUAL",
+    "type" : [ "null", "AnonType_INDIVIDUAL" ],
+    "source" : "element INDIVIDUAL"
+  }, {
+    "name" : "UN_LIST_TYPE",
+    "type" : [ "null", "string" ],
+    "source" : "element UN_LIST_TYPE"
+  }, {
+    "name" : "FROM_YEAR",
+    "type" : [ "null", "string" ],
+    "source" : "element FROM_YEAR"
+  }, {
+    "name" : "SORT_KEY",
+    "type" : [ "null", "string" ],
+    "source" : "element SORT_KEY"
+  }, {
+    "name" : "LAST_DAY_UPDATED",
+    "type" : [ "null", "AnonType_LAST_DAY_UPDATED" ],
+    "source" : "element LAST_DAY_UPDATED"
+  }, {
+    "name" : "VALUE",
+    "type" : [ "null", "string" ],
+    "source" : "element VALUE"
+  }, {
+    "name" : "LISTED_ON",
+    "type" : [ "null", "string" ],
+    "source" : "element LISTED_ON"
+  }, {
+    "name" : "INDIVIDUAL_DATE_OF_BIRTH",
+    "type" : [ "null", "AnonType_INDIVIDUAL_DATE_OF_BIRTH" ],
+    "source" : "element INDIVIDUAL_DATE_OF_BIRTH"
+  }, {
+    "name" : "YEAR",
+    "type" : [ "null", "string" ],
+    "source" : "element YEAR"
+  }, {
+    "name" : "DELISTED_ON",
+    "type" : [ "null", "string" ],
+    "source" : "element DELISTED_ON"
+  }, {
+    "name" : "QUALITY",
+    "type" : [ "null", "string" ],
+    "source" : "element QUALITY"
+  }, {
+    "name" : "NATIONALITY",
+    "type" : [ "null", "AnonType_NATIONALITY" ],
+    "source" : "element NATIONALITY"
+  }, {
+    "name" : "INDIVIDUAL_PLACE_OF_BIRTH",
+    "type" : [ "null", "AnonType_INDIVIDUAL_PLACE_OF_BIRTH" ],
+    "source" : "element INDIVIDUAL_PLACE_OF_BIRTH"
+  }, {
+    "name" : "SECOND_NAME",
+    "type" : [ "null", "string" ],
+    "source" : "element SECOND_NAME"
+  }, {
+    "name" : "STREET",
+    "type" : [ "null", "string" ],
+    "source" : "element STREET"
+  }, {
+    "name" : "ENTITY_ALIAS",
+    "type" : [ "null", "AnonType_ENTITY_ALIAS" ],
+    "source" : "element ENTITY_ALIAS"
+  }, {
+    "name" : "TO_YEAR",
+    "type" : [ "null", "string" ],
+    "source" : "element TO_YEAR"
+  }, {
+    "name" : "GENDER",
+    "type" : [ "null", "string" ],
+    "source" : "element GENDER"
+  } ],
+  "source" : "document"
+}

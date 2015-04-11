@@ -1,0 +1,944 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONSOLIDATED_LIST
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd"
+   dateGenerated="2015-03-17T17:34:45.006-04:00">
+   <INDIVIDUALS>
+      <INDIVIDUAL
+         xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>6908032</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>Yasin</FIRST_NAME>
+         <SECOND_NAME>Ali</SECOND_NAME>
+         <THIRD_NAME>Baynah</THIRD_NAME>
+         <UN_LIST_TYPE>Somalia</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>SOi.001</REFERENCE_NUMBER>
+         <LISTED_ON>2010-04-12</LISTED_ON>
+         <NATIONALITY>
+            <VALUE>Somalia</VALUE>
+            <VALUE>Sweden</VALUE>
+         </NATIONALITY>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>ALI, Yasin Baynah</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>ALI, Yassin Mohamed</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>BAYNAH, Yasin</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>BAYNAH, Yassin</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>BAYNAX, Yasiin Cali</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>BEENAH, Yasin</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>BEENAH, Yassin</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>BEENAX, Yasin  </ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>BEENAX, Yassin</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>BENAH, Yasin</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>BENAH, Yassin  </ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>BENAX, Yassin</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>BEYNAH, Yasin  </ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>BINAH, Yassin  </ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>CALI, Yasiin Baynax</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS>
+            <CITY>Rinkeby</CITY>
+            <STATE_PROVINCE>Stockholm</STATE_PROVINCE>
+            <COUNTRY>Sweden</COUNTRY>
+         </INDIVIDUAL_ADDRESS>
+         <INDIVIDUAL_ADDRESS>
+            <CITY>Mogadishu</CITY>
+            <COUNTRY>Somalia</COUNTRY>
+         </INDIVIDUAL_ADDRESS>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1965-12-24</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH />
+         <INDIVIDUAL_DOCUMENT />
+         <SORT_KEY>BaynahYasin Ali </SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-26</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL
+         xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>6908034</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>HASSAN </FIRST_NAME>
+         <SECOND_NAME>DAHIR</SECOND_NAME>
+         <THIRD_NAME>AWEYS</THIRD_NAME>
+         <UN_LIST_TYPE>Somalia</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>SOi.002</REFERENCE_NUMBER>
+         <LISTED_ON>2010-04-12</LISTED_ON>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>ALI, Sheikh Hassan Dahir Aweys  </ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>AWES, Hassan Dahir  </ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>AWES, Shaykh Hassan Dahir</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>AWEYES, Hassen Dahir</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>AWEYS, Ahmed Dahir</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>AWEYS, Sheikh</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>AWEYS, Sheikh Hassan Dahir </ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>DAHIR, Aweys Hassan</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>IBRAHIM, Mohammed Hassan  </ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>OAIS, Hassan Tahir  </ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>UWAYS, Hassan Tahir </ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>"HASSAN, Sheikh"  </ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <NATIONALITY>
+            <VALUE>Somalia</VALUE>
+         </NATIONALITY>
+         <INDIVIDUAL_ADDRESS>
+            <COUNTRY>Somalia</COUNTRY>
+         </INDIVIDUAL_ADDRESS>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <YEAR>1935</YEAR>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH />
+         <INDIVIDUAL_DOCUMENT />
+         <SORT_KEY>AWEYSHASSAN DAHIR </SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-07-03</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL
+         xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>6908035</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>HASSAN </FIRST_NAME>
+         <SECOND_NAME>ABDULLAH </SECOND_NAME>
+         <THIRD_NAME>HERSI </THIRD_NAME>
+         <FOURTH_NAME>AL-TURKI</FOURTH_NAME>
+         <UN_LIST_TYPE>Somalia</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>SOi.003</REFERENCE_NUMBER>
+         <LISTED_ON>2010-04-12</LISTED_ON>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>AL-TURKI, Hassan</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>TURKI, Hassan</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>TURKI, Hassan Abdillahi Hersi</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>TURKI, Sheikh Hassan</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>XIRSI, Xasan Cabdilaahi</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>XIRSI, Xasan Cabdulle</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <NATIONALITY>
+            <VALUE>Somalia</VALUE>
+         </NATIONALITY>
+         <INDIVIDUAL_ADDRESS>
+            <COUNTRY>Somalia</COUNTRY>
+         </INDIVIDUAL_ADDRESS>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Approximately</TYPE_OF_DATE>
+            <YEAR>1944</YEAR>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <STATE_PROVINCE>Ogaden Region</STATE_PROVINCE>
+            <COUNTRY> Ethiopia</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <SORT_KEY>AL-TURKIHASSAN ABDULLAH HERSI </SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-07-03</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL
+         xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>6908036</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>AHMED</FIRST_NAME>
+         <SECOND_NAME>ABDI</SECOND_NAME>
+         <THIRD_NAME>AW-MOHAMED</THIRD_NAME>
+         <FOURTH_NAME />
+         <UN_LIST_TYPE>Somalia</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>SOi.004</REFERENCE_NUMBER>
+         <LISTED_ON>2010-04-12</LISTED_ON>
+         <COMMENTS1 />
+         <LIST_TYPE>
+            <VALUE />
+         </LIST_TYPE>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>ABU ZUBEYR, Muktar Abdirahman</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>ABUZUBAIR, Muktar Abdulrahim  </ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>AW MOHAMMED, Ahmed Abdi  </ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>AW-MOHAMUD, Ahmed Abdi  </ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>"GODANE"  </ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>"GODANI"</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>"MUKHTAR, Shaykh"  </ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>"ZUBEYR, Abu"</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <NATIONALITY>
+            <VALUE>Somalia</VALUE>
+         </NATIONALITY>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <DATE>1977-07-10</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Hargeysa</CITY>
+            <COUNTRY>Somalia </COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_DOCUMENT />
+         <SORT_KEY>AW-MOHAMEDAHMED ABDI </SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-07-03</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL
+         xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>6908037</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>FUAD</FIRST_NAME>
+         <SECOND_NAME>MOHAMED</SECOND_NAME>
+         <THIRD_NAME>KHALAF</THIRD_NAME>
+         <UN_LIST_TYPE>Somalia</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>SOi.005</REFERENCE_NUMBER>
+         <LISTED_ON>2010-04-12</LISTED_ON>
+         <COMMENTS1 />
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Fuad Mohamed Khalif</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Fuad Mohamed Qalaf</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Fuad Mohammed Kalaf</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Fuad Mohamed Kalaf</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Fuad Mohammed Khalif</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Fuad Khalaf</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Fuad Shongale</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Fuad Shongole</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Fuad Shangole</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Fuad Songale  </ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Fouad Shongale </ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Fuad Muhammad Khalaf Shongole </ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <NATIONALITY>
+            <VALUE>Somali</VALUE>
+         </NATIONALITY>
+         <INDIVIDUAL_ADDRESS>
+            <CITY>Mogadishu </CITY>
+            <COUNTRY>Somalia</COUNTRY>
+         </INDIVIDUAL_ADDRESS>
+         <INDIVIDUAL_ADDRESS>
+            <COUNTRY>Somalia </COUNTRY>
+         </INDIVIDUAL_ADDRESS>
+         <INDIVIDUAL_DATE_OF_BIRTH />
+         <INDIVIDUAL_PLACE_OF_BIRTH />
+         <INDIVIDUAL_DOCUMENT />
+         <SORT_KEY>KHALAFFOUAD MOHAMED </SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-07-03</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL
+         xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>6908038</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>BASHIR </FIRST_NAME>
+         <SECOND_NAME>MOHAMED</SECOND_NAME>
+         <THIRD_NAME> MAHAMOUD</THIRD_NAME>
+         <UN_LIST_TYPE>Somalia</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>SOi.006</REFERENCE_NUMBER>
+         <LISTED_ON>2010-04-12</LISTED_ON>
+         <COMMENTS1 />
+         <NATIONALITY>
+            <VALUE>Somali</VALUE>
+         </NATIONALITY>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Bashir Mohamed Mahmoud</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Bashir Mahmud Mohammed</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME> Bashir Mohamed Mohamud</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME> Bashir Mohamed Mohamoud</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME> Bashir Yare</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Bashir Qorgab</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Gure Gap</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>"Abu Muscab"</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>"Qorgab"</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS>
+            <CITY>Mogadishu</CITY>
+            <COUNTRY>Somalia</COUNTRY>
+         </INDIVIDUAL_ADDRESS>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <YEAR>1979</YEAR>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <YEAR>1980</YEAR>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <YEAR>1981</YEAR>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <YEAR>1982</YEAR>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH />
+         <INDIVIDUAL_DOCUMENT />
+         <SORT_KEY>MAHAMOUDBASHIR MOHAMED </SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-07-03</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL
+         xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>6908040</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>FARES </FIRST_NAME>
+         <SECOND_NAME>MOHAMMED</SECOND_NAME>
+         <THIRD_NAME>MANA'A</THIRD_NAME>
+         <FOURTH_NAME />
+         <UN_LIST_TYPE>Somalia</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>SOi.008</REFERENCE_NUMBER>
+         <LISTED_ON>2010-04-12</LISTED_ON>
+         <COMMENTS1 />
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Faris Mana'a</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME> Fares Mohammed Manaa</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS />
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <DATE>1965-02-08</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Sadah</CITY>
+            <COUNTRY>Yemen</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_DOCUMENT>
+            <TYPE_OF_DOCUMENT>Passport</TYPE_OF_DOCUMENT>
+            <NUMBER>00514146</NUMBER>
+            <CITY_OF_ISSUE>Sanaa</CITY_OF_ISSUE>
+            <COUNTRY_OF_ISSUE>Yemen</COUNTRY_OF_ISSUE>
+            <NOTE>Date of issue 7 January 1996</NOTE>
+         </INDIVIDUAL_DOCUMENT>
+         <INDIVIDUAL_DOCUMENT>
+            <TYPE_OF_DOCUMENT>National Identification Number</TYPE_OF_DOCUMENT>
+            <NUMBER> 1417576</NUMBER>
+            <CITY_OF_ISSUE>Al-Amana</CITY_OF_ISSUE>
+            <COUNTRY_OF_ISSUE>Yemen</COUNTRY_OF_ISSUE>
+            <NOTE>issued on 7 Jan. 1996</NOTE>
+         </INDIVIDUAL_DOCUMENT>
+         <SORT_KEY>MANA'AFARES MOHAMMED </SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-07-03</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL
+         xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>6908041</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>HASSAN</FIRST_NAME>
+         <SECOND_NAME>MAHAT</SECOND_NAME>
+         <THIRD_NAME>OMAR</THIRD_NAME>
+         <UN_LIST_TYPE>Somalia</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>SOi.009</REFERENCE_NUMBER>
+         <LISTED_ON>2011-07-28</LISTED_ON>
+         <COMMENTS1 />
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Hassaan Hussein Adam</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Hassane Mahad Omar</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Xassaan Xuseen Adan</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Asan Mahad Cumar  </ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Abu Salman</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Abu Salmaan  </ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Sheikh Hassaan Hussein</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <NATIONALITY>
+            <VALUE>Possibly Ethiopian</VALUE>
+         </NATIONALITY>
+         <INDIVIDUAL_ADDRESS>
+            <CITY>Nairobi</CITY>
+            <COUNTRY>Kenya</COUNTRY>
+         </INDIVIDUAL_ADDRESS>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <DATE>1979-04-10</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Garissa</CITY>
+            <COUNTRY>Kenya</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_DOCUMENT>
+            <TYPE_OF_DOCUMENT>Passport</TYPE_OF_DOCUMENT>
+            <NUMBER>A1180173</NUMBER>
+            <COUNTRY_OF_ISSUE>Kenya</COUNTRY_OF_ISSUE>
+            <NOTE>exp. 20 Aug 2017</NOTE>
+         </INDIVIDUAL_DOCUMENT>
+         <INDIVIDUAL_DOCUMENT>
+            <TYPE_OF_DOCUMENT>National Identification Number</TYPE_OF_DOCUMENT>
+            <NUMBER>23446085</NUMBER>
+            <NOTE>National ID Card</NOTE>
+         </INDIVIDUAL_DOCUMENT>
+         <SORT_KEY>OMARHASSAN MAHAT </SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-07-03</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL
+         xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>6908042</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>OMAR </FIRST_NAME>
+         <SECOND_NAME>HAMMAMI</SECOND_NAME>
+         <UN_LIST_TYPE>Somalia</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>SOi.010</REFERENCE_NUMBER>
+         <LISTED_ON>2011-07-28</LISTED_ON>
+         <COMMENTS1>Married to a Somali woman. Lived in Egypt in 2005 and moved to Somalia in 2009</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Abu Maansuur Al-Amriki</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Abu Mansour Al-Amriki</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Abu Mansuur Al-Amriki  </ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Umar Hammami  </ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Abu Mansur Al-Amriki  </ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <NATIONALITY>
+            <VALUE>United States. Also believed to hold Syrian nationality</VALUE>
+         </NATIONALITY>
+         <INDIVIDUAL_ADDRESS>
+            <COUNTRY>Somalia</COUNTRY>
+         </INDIVIDUAL_ADDRESS>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <DATE>1986-05-06</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Alabama</CITY>
+            <COUNTRY>United States</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_DOCUMENT>
+            <TYPE_OF_DOCUMENT>Passport</TYPE_OF_DOCUMENT>
+            <NUMBER>403062567 (US)</NUMBER>
+         </INDIVIDUAL_DOCUMENT>
+         <INDIVIDUAL_DOCUMENT>
+            <TYPE_OF_DOCUMENT>National Identification Number</TYPE_OF_DOCUMENT>
+            <NUMBER>Social Security Number 423-31-3021 (US)</NUMBER>
+         </INDIVIDUAL_DOCUMENT>
+         <SORT_KEY>HAMMAMIOMAR </SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-07-03</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL
+         xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>6908043</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>ABOUD</FIRST_NAME>
+         <SECOND_NAME>ROGO</SECOND_NAME>
+         <THIRD_NAME>MOHAMMED</THIRD_NAME>
+         <FOURTH_NAME />
+         <UN_LIST_TYPE>Somalia</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>SOi.011</REFERENCE_NUMBER>
+         <LISTED_ON>2012-07-25</LISTED_ON>
+         <COMMENTS1 />
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Aboud Mohammad Rogo  </ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Aboud Seif Rogo</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Aboud Mohammed Rogo</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Sheikh Aboud Rogo</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Aboud Rogo Muhammad  </ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Aboud Rogo Mohamed  </ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS />
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1960-11-11</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1967-11-11</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1969-11-11</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1969-01-01</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Lamu Island</CITY>
+            <COUNTRY>Kenya</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_DOCUMENT />
+         <SORT_KEY>MOHAMMEDABOUD ROGO </SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-07-03</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL
+         xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>6908044</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>ABUBAKER</FIRST_NAME>
+         <SECOND_NAME>SHARIFF</SECOND_NAME>
+         <THIRD_NAME>AHMED</THIRD_NAME>
+         <UN_LIST_TYPE>Somalia</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>SOi.012</REFERENCE_NUMBER>
+         <LISTED_ON>2012-08-23</LISTED_ON>
+         <COMMENTS1 />
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Makaburi  </ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Sheikh Abubakar Ahmed  </ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Abubaker Shariff Ahmed  </ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Abu Makaburi Shariff</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Abubaker Shariff  </ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Abubakar Ahmed</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS>
+            <CITY>Majengo area, Mombasa</CITY>
+            <COUNTRY>Kenya</COUNTRY>
+         </INDIVIDUAL_ADDRESS>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <YEAR>1962</YEAR>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <YEAR>1967</YEAR>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <COUNTRY>Kenya</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_DOCUMENT />
+         <SORT_KEY>AHMEDABUBAKER SHARIFF </SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-07-03</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL
+         xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>6908432</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>MAALIM</FIRST_NAME>
+         <SECOND_NAME>SALMAN</SECOND_NAME>
+         <UN_LIST_TYPE>Somalia</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>SOi.013</REFERENCE_NUMBER>
+         <LISTED_ON>2014-09-23</LISTED_ON>
+         <COMMENTS1 />
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME> Mu’alim Salman</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Mualem Suleiman</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Ameer Salman</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Ma’alim Suleiman</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME> Maalim Salman Ali</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Maalim Selman Ali</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Ma’alim Selman</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Ma’alin Sulayman</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS>
+            <COUNTRY>Somalia</COUNTRY>
+         </INDIVIDUAL_ADDRESS>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Approximately</TYPE_OF_DATE>
+            <YEAR>1979</YEAR>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Nairobi</CITY>
+            <COUNTRY>Kenya</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_DOCUMENT />
+         <SORT_KEY>SalmanMaalim </SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-07-03</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL
+         xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>6908433</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>AHMED</FIRST_NAME>
+         <SECOND_NAME>DIRIYE</SECOND_NAME>
+         <UN_LIST_TYPE>Somalia</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>SOi.014</REFERENCE_NUMBER>
+         <LISTED_ON>2014-09-24</LISTED_ON>
+         <COMMENTS1 />
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Sheikh Ahmed Umar Abu Ubaidah</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Sheikh Omar Abu Ubaidaha</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Sheikh Ahmed Umar</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Sheikh Mahad Omar Abdikarim</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Abu Ubaidah</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Abu Diriye</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS>
+            <COUNTRY>Somalia</COUNTRY>
+         </INDIVIDUAL_ADDRESS>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Approximately</TYPE_OF_DATE>
+            <YEAR>1972</YEAR>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <COUNTRY>Somalia</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_DOCUMENT />
+         <SORT_KEY>DiriyeAhmed </SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-07-03</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+   </INDIVIDUALS>
+   <ENTITIES>
+      <ENTITY
+         xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>6908033</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>AL-SHABAAB  </FIRST_NAME>
+         <UN_LIST_TYPE>Somalia</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>SOe.001</REFERENCE_NUMBER>
+         <LISTED_ON>2010-04-12</LISTED_ON>
+         <ENTITY_ALIAS>
+            <QUALITY>a.k.a.</QUALITY>
+            <ALIAS_NAME>AL-SHABAB</ALIAS_NAME>
+         </ENTITY_ALIAS>
+         <ENTITY_ALIAS>
+            <QUALITY>a.k.a.</QUALITY>
+            <ALIAS_NAME>SHABAAB</ALIAS_NAME>
+         </ENTITY_ALIAS>
+         <ENTITY_ALIAS>
+            <QUALITY>a.k.a.</QUALITY>
+            <ALIAS_NAME>THE YOUTH</ALIAS_NAME>
+         </ENTITY_ALIAS>
+         <ENTITY_ALIAS>
+            <QUALITY>a.k.a.</QUALITY>
+            <ALIAS_NAME>MUJAHIDIN AL-SHABAAB MOVEMENT  </ALIAS_NAME>
+         </ENTITY_ALIAS>
+         <ENTITY_ALIAS>
+            <QUALITY>a.k.a.</QUALITY>
+            <ALIAS_NAME>MUJAHIDEEN YOUTH MOVEMENT</ALIAS_NAME>
+         </ENTITY_ALIAS>
+         <ENTITY_ALIAS>
+            <QUALITY>a.k.a.</QUALITY>
+            <ALIAS_NAME>MUJAHIDIN YOUTH MOVEMENT</ALIAS_NAME>
+         </ENTITY_ALIAS>
+         <ENTITY_ALIAS>
+            <QUALITY>a.k.a.</QUALITY>
+            <ALIAS_NAME>MYM </ALIAS_NAME>
+         </ENTITY_ALIAS>
+         <ENTITY_ALIAS>
+            <QUALITY>a.k.a.</QUALITY>
+            <ALIAS_NAME>HARAKAT SHABAB AL-MUJAHIDIN </ALIAS_NAME>
+         </ENTITY_ALIAS>
+         <ENTITY_ALIAS>
+            <QUALITY>a.k.a.</QUALITY>
+            <ALIAS_NAME>HIZBUL SHABAAB </ALIAS_NAME>
+         </ENTITY_ALIAS>
+         <ENTITY_ALIAS>
+            <QUALITY>a.k.a.</QUALITY>
+            <ALIAS_NAME>HISB’UL SHABAAB</ALIAS_NAME>
+         </ENTITY_ALIAS>
+         <ENTITY_ALIAS>
+            <QUALITY>a.k.a.</QUALITY>
+            <ALIAS_NAME>AL-SHABAAB AL-ISLAMIYA</ALIAS_NAME>
+         </ENTITY_ALIAS>
+         <ENTITY_ALIAS>
+            <QUALITY>a.k.a.</QUALITY>
+            <ALIAS_NAME>YOUTH WING</ALIAS_NAME>
+         </ENTITY_ALIAS>
+         <ENTITY_ALIAS>
+            <QUALITY>a.k.a.</QUALITY>
+            <ALIAS_NAME>AL-SHABAAB AL-ISLAAM</ALIAS_NAME>
+         </ENTITY_ALIAS>
+         <ENTITY_ALIAS>
+            <QUALITY>a.k.a.</QUALITY>
+            <ALIAS_NAME>AL-SHABAAB AL-JIHAAD</ALIAS_NAME>
+         </ENTITY_ALIAS>
+         <ENTITY_ALIAS>
+            <QUALITY>a.k.a.</QUALITY>
+            <ALIAS_NAME>THE UNITY OF ISLAMIC YOUTH</ALIAS_NAME>
+         </ENTITY_ALIAS>
+         <ENTITY_ALIAS>
+            <QUALITY>a.k.a.</QUALITY>
+            <ALIAS_NAME>HARAKAT AL - SHABAAB AL - MUJAAHIDIIN</ALIAS_NAME>
+         </ENTITY_ALIAS>
+         <ENTITY_ALIAS>
+            <QUALITY>a.k.a.</QUALITY>
+            <ALIAS_NAME>HARAKATUL SHABAAB AL MUJAAHIDIIN</ALIAS_NAME>
+         </ENTITY_ALIAS>
+         <ENTITY_ALIAS>
+            <QUALITY>a.k.a.</QUALITY>
+            <ALIAS_NAME>MUJAAHIDIIN YOUTH MOVEMENT</ALIAS_NAME>
+         </ENTITY_ALIAS>
+         <ENTITY_ADDRESS />
+         <SORT_KEY>AL-SHABAAB</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-07-03</SORT_KEY_LAST_MOD>
+      </ENTITY>
+   </ENTITIES>
+</CONSOLIDATED_LIST>

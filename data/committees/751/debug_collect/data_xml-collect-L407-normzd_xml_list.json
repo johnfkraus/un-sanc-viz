@@ -1,0 +1,1212 @@
+{
+ "nodes": [
+  {
+   "DATAID": "6908032",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "Yasin",
+   "SECOND_NAME": "Ali",
+   "THIRD_NAME": "Baynah",
+   "UN_LIST_TYPE": "Somalia",
+   "REFERENCE_NUMBER": "SOi.001",
+   "LISTED_ON": "2010-04-12",
+   "NATIONALITY": {
+    "VALUE": [
+     "Somalia",
+     "Sweden"
+    ]
+   },
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ALIAS": [
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "ALI, Yasin Baynah"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "ALI, Yassin Mohamed"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "BAYNAH, Yasin"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "BAYNAH, Yassin"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "BAYNAX, Yasiin Cali"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "BEENAH, Yasin"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "BEENAH, Yassin"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "BEENAX, Yasin"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "BEENAX, Yassin"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "BENAH, Yasin"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "BENAH, Yassin"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "BENAX, Yassin"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "BEYNAH, Yasin"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "BINAH, Yassin"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "CALI, Yasiin Baynax"
+    }
+   ],
+   "INDIVIDUAL_ADDRESS": [
+    {
+     "CITY": "Rinkeby",
+     "STATE_PROVINCE": "Stockholm",
+     "COUNTRY": "Sweden"
+    },
+    {
+     "CITY": "Mogadishu",
+     "COUNTRY": "Somalia"
+    }
+   ],
+   "INDIVIDUAL_DATE_OF_BIRTH": {
+    "TYPE_OF_DATE": "Exact",
+    "DATE": "1965-12-24"
+   },
+   "INDIVIDUAL_PLACE_OF_BIRTH": "",
+   "INDIVIDUAL_DOCUMENT": "",
+   "SORT_KEY": "BaynahYasin Ali",
+   "SORT_KEY_LAST_MOD": "2014-06-26",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "23 December 1965 (Exact)",
+   "indivPlaceOfBirthString": "",
+   "aliasCount": 15,
+   "indivAliasString": "ALI, Yasin Baynah (Good); ALI, Yassin Mohamed (Good); BAYNAH, Yasin (Good); BAYNAH, Yassin (Good); BAYNAX, Yasiin Cali (Good); BEENAH, Yasin (Good); BEENAH, Yassin (Good); BEENAX, Yasin (Good); BEENAX, Yassin (Good); BENAH, Yasin (Good); BENAH, Yassin (Good); BENAX, Yassin (Good); BEYNAH, Yasin (Good); BINAH, Yassin (Good); CALI, Yasiin Baynax (Good); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 1,
+   "id": "SOi.001",
+   "name": "Yasin Ali Baynah",
+   "natnlty": [
+    "Somalia",
+    "Sweden"
+   ],
+   "two_Digit_Country_ISO_Code": "SO",
+   "committeeResNum": "751 (1992) / 1907 (2009)",
+   "subject_Matter_Abbreviated": "Resolutions 751 (1992) and 1907 (2009) concerning Somalia and Eritrea",
+   "indivOrEntFromId": "1"
+  },
+  {
+   "DATAID": "6908034",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "HASSAN",
+   "SECOND_NAME": "DAHIR",
+   "THIRD_NAME": "AWEYS",
+   "UN_LIST_TYPE": "Somalia",
+   "REFERENCE_NUMBER": "SOi.002",
+   "LISTED_ON": "2010-04-12",
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ALIAS": [
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "ALI, Sheikh Hassan Dahir Aweys"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "AWES, Hassan Dahir"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "AWES, Shaykh Hassan Dahir"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "AWEYES, Hassen Dahir"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "AWEYS, Ahmed Dahir"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "AWEYS, Sheikh"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "AWEYS, Sheikh Hassan Dahir"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "DAHIR, Aweys Hassan"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "IBRAHIM, Mohammed Hassan"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "OAIS, Hassan Tahir"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "UWAYS, Hassan Tahir"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "\"HASSAN, Sheikh\""
+    }
+   ],
+   "NATIONALITY": {
+    "VALUE": "Somalia"
+   },
+   "INDIVIDUAL_ADDRESS": {
+    "COUNTRY": "Somalia"
+   },
+   "INDIVIDUAL_DATE_OF_BIRTH": {
+    "TYPE_OF_DATE": "Exact",
+    "YEAR": "1935"
+   },
+   "INDIVIDUAL_PLACE_OF_BIRTH": "",
+   "INDIVIDUAL_DOCUMENT": "",
+   "SORT_KEY": "AWEYSHASSAN DAHIR",
+   "SORT_KEY_LAST_MOD": "2014-07-03",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "1935 (Exact)",
+   "indivPlaceOfBirthString": "",
+   "aliasCount": 12,
+   "indivAliasString": "ALI, Sheikh Hassan Dahir Aweys (Good); AWES, Hassan Dahir (Good); AWES, Shaykh Hassan Dahir (Good); AWEYES, Hassen Dahir (Good); AWEYS, Ahmed Dahir (Good); AWEYS, Sheikh (Good); AWEYS, Sheikh Hassan Dahir (Good); DAHIR, Aweys Hassan (Good); IBRAHIM, Mohammed Hassan (Good); OAIS, Hassan Tahir (Good); UWAYS, Hassan Tahir (Good); \"HASSAN, Sheikh\" (Good); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 2,
+   "id": "SOi.002",
+   "name": "HASSAN DAHIR AWEYS",
+   "natnlty": "Somalia",
+   "two_Digit_Country_ISO_Code": "SO",
+   "committeeResNum": "751 (1992) / 1907 (2009)",
+   "subject_Matter_Abbreviated": "Resolutions 751 (1992) and 1907 (2009) concerning Somalia and Eritrea",
+   "indivOrEntFromId": "1"
+  },
+  {
+   "DATAID": "6908035",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "HASSAN",
+   "SECOND_NAME": "ABDULLAH",
+   "THIRD_NAME": "HERSI",
+   "FOURTH_NAME": "AL-TURKI",
+   "UN_LIST_TYPE": "Somalia",
+   "REFERENCE_NUMBER": "SOi.003",
+   "LISTED_ON": "2010-04-12",
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ALIAS": [
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "AL-TURKI, Hassan"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "TURKI, Hassan"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "TURKI, Hassan Abdillahi Hersi"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "TURKI, Sheikh Hassan"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "XIRSI, Xasan Cabdilaahi"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "XIRSI, Xasan Cabdulle"
+    }
+   ],
+   "NATIONALITY": {
+    "VALUE": "Somalia"
+   },
+   "INDIVIDUAL_ADDRESS": {
+    "COUNTRY": "Somalia"
+   },
+   "INDIVIDUAL_DATE_OF_BIRTH": {
+    "TYPE_OF_DATE": "Approximately",
+    "YEAR": "1944"
+   },
+   "INDIVIDUAL_PLACE_OF_BIRTH": {
+    "STATE_PROVINCE": "Ogaden Region",
+    "COUNTRY": "Ethiopia"
+   },
+   "SORT_KEY": "AL-TURKIHASSAN ABDULLAH HERSI",
+   "SORT_KEY_LAST_MOD": "2014-07-03",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "1944 (Approximately)",
+   "indivPlaceOfBirthString": "Ogaden Region, Ethiopia, ",
+   "aliasCount": 6,
+   "indivAliasString": "AL-TURKI, Hassan (Good); TURKI, Hassan (Good); TURKI, Hassan Abdillahi Hersi (Good); TURKI, Sheikh Hassan (Good); XIRSI, Xasan Cabdilaahi (Good); XIRSI, Xasan Cabdulle (Good); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 3,
+   "id": "SOi.003",
+   "name": "HASSAN ABDULLAH HERSI AL-TURKI",
+   "natnlty": "Somalia",
+   "two_Digit_Country_ISO_Code": "SO",
+   "committeeResNum": "751 (1992) / 1907 (2009)",
+   "subject_Matter_Abbreviated": "Resolutions 751 (1992) and 1907 (2009) concerning Somalia and Eritrea",
+   "indivOrEntFromId": "1"
+  },
+  {
+   "DATAID": "6908036",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "AHMED",
+   "SECOND_NAME": "ABDI",
+   "THIRD_NAME": "AW-MOHAMED",
+   "FOURTH_NAME": "",
+   "UN_LIST_TYPE": "Somalia",
+   "REFERENCE_NUMBER": "SOi.004",
+   "LISTED_ON": "2010-04-12",
+   "COMMENTS1": "",
+   "LIST_TYPE": {
+    "VALUE": ""
+   },
+   "INDIVIDUAL_ALIAS": [
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "ABU ZUBEYR, Muktar Abdirahman"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "ABUZUBAIR, Muktar Abdulrahim"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "AW MOHAMMED, Ahmed Abdi"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "AW-MOHAMUD, Ahmed Abdi"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "\"GODANE\""
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "\"GODANI\""
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "\"MUKHTAR, Shaykh\""
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "\"ZUBEYR, Abu\""
+    }
+   ],
+   "NATIONALITY": {
+    "VALUE": "Somalia"
+   },
+   "INDIVIDUAL_DATE_OF_BIRTH": {
+    "DATE": "1977-07-10"
+   },
+   "INDIVIDUAL_PLACE_OF_BIRTH": {
+    "CITY": "Hargeysa",
+    "COUNTRY": "Somalia"
+   },
+   "INDIVIDUAL_DOCUMENT": "",
+   "SORT_KEY": "AW-MOHAMEDAHMED ABDI",
+   "SORT_KEY_LAST_MOD": "2014-07-03",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "9 July 1977",
+   "indivPlaceOfBirthString": "Hargeysa, Somalia, ",
+   "aliasCount": 8,
+   "indivAliasString": "ABU ZUBEYR, Muktar Abdirahman (Good); ABUZUBAIR, Muktar Abdulrahim (Good); AW MOHAMMED, Ahmed Abdi (Good); AW-MOHAMUD, Ahmed Abdi (Good); \"GODANE\" (Good); \"GODANI\" (Good); \"MUKHTAR, Shaykh\" (Good); \"ZUBEYR, Abu\" (Good); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 4,
+   "id": "SOi.004",
+   "name": "AHMED ABDI AW-MOHAMED",
+   "natnlty": "Somalia",
+   "two_Digit_Country_ISO_Code": "SO",
+   "committeeResNum": "751 (1992) / 1907 (2009)",
+   "subject_Matter_Abbreviated": "Resolutions 751 (1992) and 1907 (2009) concerning Somalia and Eritrea",
+   "indivOrEntFromId": "1"
+  },
+  {
+   "DATAID": "6908037",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "FUAD",
+   "SECOND_NAME": "MOHAMED",
+   "THIRD_NAME": "KHALAF",
+   "UN_LIST_TYPE": "Somalia",
+   "REFERENCE_NUMBER": "SOi.005",
+   "LISTED_ON": "2010-04-12",
+   "COMMENTS1": "",
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ALIAS": [
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Fuad Mohamed Khalif"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Fuad Mohamed Qalaf"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Fuad Mohammed Kalaf"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Fuad Mohamed Kalaf"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Fuad Mohammed Khalif"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Fuad Khalaf"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Fuad Shongale"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Fuad Shongole"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Fuad Shangole"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Fuad Songale"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Fouad Shongale"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Fuad Muhammad Khalaf Shongole"
+    }
+   ],
+   "NATIONALITY": {
+    "VALUE": "Somali"
+   },
+   "INDIVIDUAL_ADDRESS": [
+    {
+     "CITY": "Mogadishu",
+     "COUNTRY": "Somalia"
+    },
+    {
+     "COUNTRY": "Somalia"
+    }
+   ],
+   "INDIVIDUAL_DATE_OF_BIRTH": "",
+   "INDIVIDUAL_PLACE_OF_BIRTH": "",
+   "INDIVIDUAL_DOCUMENT": "",
+   "SORT_KEY": "KHALAFFOUAD MOHAMED",
+   "SORT_KEY_LAST_MOD": "2014-07-03",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "",
+   "indivPlaceOfBirthString": "",
+   "aliasCount": 12,
+   "indivAliasString": "Fuad Mohamed Khalif (Good); Fuad Mohamed Qalaf (Good); Fuad Mohammed Kalaf (Good); Fuad Mohamed Kalaf (Good); Fuad Mohammed Khalif (Good); Fuad Khalaf (Good); Fuad Shongale (Good); Fuad Shongole (Good); Fuad Shangole (Good); Fuad Songale (Good); Fouad Shongale (Good); Fuad Muhammad Khalaf Shongole (Good); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 5,
+   "id": "SOi.005",
+   "name": "FUAD MOHAMED KHALAF",
+   "natnlty": "Somali",
+   "two_Digit_Country_ISO_Code": "SO",
+   "committeeResNum": "751 (1992) / 1907 (2009)",
+   "subject_Matter_Abbreviated": "Resolutions 751 (1992) and 1907 (2009) concerning Somalia and Eritrea",
+   "indivOrEntFromId": "1"
+  },
+  {
+   "DATAID": "6908038",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "BASHIR",
+   "SECOND_NAME": "MOHAMED",
+   "THIRD_NAME": "MAHAMOUD",
+   "UN_LIST_TYPE": "Somalia",
+   "REFERENCE_NUMBER": "SOi.006",
+   "LISTED_ON": "2010-04-12",
+   "COMMENTS1": "",
+   "NATIONALITY": {
+    "VALUE": "Somali"
+   },
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ALIAS": [
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Bashir Mohamed Mahmoud"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Bashir Mahmud Mohammed"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Bashir Mohamed Mohamud"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Bashir Mohamed Mohamoud"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Bashir Yare"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Bashir Qorgab"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Gure Gap"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "\"Abu Muscab\""
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "\"Qorgab\""
+    }
+   ],
+   "INDIVIDUAL_ADDRESS": {
+    "CITY": "Mogadishu",
+    "COUNTRY": "Somalia"
+   },
+   "INDIVIDUAL_DATE_OF_BIRTH": [
+    {
+     "TYPE_OF_DATE": "Exact",
+     "YEAR": "1979"
+    },
+    {
+     "TYPE_OF_DATE": "Exact",
+     "YEAR": "1980"
+    },
+    {
+     "TYPE_OF_DATE": "Exact",
+     "YEAR": "1981"
+    },
+    {
+     "TYPE_OF_DATE": "Exact",
+     "YEAR": "1982"
+    }
+   ],
+   "INDIVIDUAL_PLACE_OF_BIRTH": "",
+   "INDIVIDUAL_DOCUMENT": "",
+   "SORT_KEY": "MAHAMOUDBASHIR MOHAMED",
+   "SORT_KEY_LAST_MOD": "2014-07-03",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "",
+   "indivPlaceOfBirthString": "",
+   "aliasCount": 9,
+   "indivAliasString": "Bashir Mohamed Mahmoud (Good); Bashir Mahmud Mohammed (Good); Bashir Mohamed Mohamud (Good); Bashir Mohamed Mohamoud (Good); Bashir Yare (Good); Bashir Qorgab (Good); Gure Gap (Good); \"Abu Muscab\" (Good); \"Qorgab\" (Good); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 6,
+   "id": "SOi.006",
+   "name": "BASHIR MOHAMED MAHAMOUD",
+   "natnlty": "Somali",
+   "two_Digit_Country_ISO_Code": "SO",
+   "committeeResNum": "751 (1992) / 1907 (2009)",
+   "subject_Matter_Abbreviated": "Resolutions 751 (1992) and 1907 (2009) concerning Somalia and Eritrea",
+   "indivOrEntFromId": "1"
+  },
+  {
+   "DATAID": "6908040",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "FARES",
+   "SECOND_NAME": "MOHAMMED",
+   "THIRD_NAME": "MANA'A",
+   "FOURTH_NAME": "",
+   "UN_LIST_TYPE": "Somalia",
+   "REFERENCE_NUMBER": "SOi.008",
+   "LISTED_ON": "2010-04-12",
+   "COMMENTS1": "",
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ALIAS": [
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Faris Mana'a"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Fares Mohammed Manaa"
+    }
+   ],
+   "INDIVIDUAL_ADDRESS": "",
+   "INDIVIDUAL_DATE_OF_BIRTH": {
+    "DATE": "1965-02-08"
+   },
+   "INDIVIDUAL_PLACE_OF_BIRTH": {
+    "CITY": "Sadah",
+    "COUNTRY": "Yemen"
+   },
+   "INDIVIDUAL_DOCUMENT": [
+    {
+     "TYPE_OF_DOCUMENT": "Passport",
+     "NUMBER": "00514146",
+     "CITY_OF_ISSUE": "Sanaa",
+     "COUNTRY_OF_ISSUE": "Yemen",
+     "NOTE": "Date of issue 7 January 1996"
+    },
+    {
+     "TYPE_OF_DOCUMENT": "National Identification Number",
+     "NUMBER": "1417576",
+     "CITY_OF_ISSUE": "Al-Amana",
+     "COUNTRY_OF_ISSUE": "Yemen",
+     "NOTE": "issued on 7 Jan. 1996"
+    }
+   ],
+   "SORT_KEY": "MANA'AFARES MOHAMMED",
+   "SORT_KEY_LAST_MOD": "2014-07-03",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "7 February 1965",
+   "indivPlaceOfBirthString": "Sadah, Yemen, ",
+   "aliasCount": 2,
+   "indivAliasString": "Faris Mana'a (Good); Fares Mohammed Manaa (Good); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 7,
+   "id": "SOi.008",
+   "name": "FARES MOHAMMED MANA'A",
+   "two_Digit_Country_ISO_Code": "SO",
+   "committeeResNum": "751 (1992) / 1907 (2009)",
+   "subject_Matter_Abbreviated": "Resolutions 751 (1992) and 1907 (2009) concerning Somalia and Eritrea",
+   "indivOrEntFromId": "1"
+  },
+  {
+   "DATAID": "6908041",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "HASSAN",
+   "SECOND_NAME": "MAHAT",
+   "THIRD_NAME": "OMAR",
+   "UN_LIST_TYPE": "Somalia",
+   "REFERENCE_NUMBER": "SOi.009",
+   "LISTED_ON": "2011-07-28",
+   "COMMENTS1": "",
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ALIAS": [
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Hassaan Hussein Adam"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Hassane Mahad Omar"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Xassaan Xuseen Adan"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Asan Mahad Cumar"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Abu Salman"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Abu Salmaan"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Sheikh Hassaan Hussein"
+    }
+   ],
+   "NATIONALITY": {
+    "VALUE": "Possibly Ethiopian"
+   },
+   "INDIVIDUAL_ADDRESS": {
+    "CITY": "Nairobi",
+    "COUNTRY": "Kenya"
+   },
+   "INDIVIDUAL_DATE_OF_BIRTH": {
+    "DATE": "1979-04-10"
+   },
+   "INDIVIDUAL_PLACE_OF_BIRTH": {
+    "CITY": "Garissa",
+    "COUNTRY": "Kenya"
+   },
+   "INDIVIDUAL_DOCUMENT": [
+    {
+     "TYPE_OF_DOCUMENT": "Passport",
+     "NUMBER": "A1180173",
+     "COUNTRY_OF_ISSUE": "Kenya",
+     "NOTE": "exp. 20 Aug 2017"
+    },
+    {
+     "TYPE_OF_DOCUMENT": "National Identification Number",
+     "NUMBER": "23446085",
+     "NOTE": "National ID Card"
+    }
+   ],
+   "SORT_KEY": "OMARHASSAN MAHAT",
+   "SORT_KEY_LAST_MOD": "2014-07-03",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "9 April 1979",
+   "indivPlaceOfBirthString": "Garissa, Kenya, ",
+   "aliasCount": 7,
+   "indivAliasString": "Hassaan Hussein Adam (Good); Hassane Mahad Omar (Good); Xassaan Xuseen Adan (Good); Asan Mahad Cumar (Good); Abu Salman (Good); Abu Salmaan (Good); Sheikh Hassaan Hussein (Good); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 8,
+   "id": "SOi.009",
+   "name": "HASSAN MAHAT OMAR",
+   "natnlty": "Possibly Ethiopian",
+   "two_Digit_Country_ISO_Code": "SO",
+   "committeeResNum": "751 (1992) / 1907 (2009)",
+   "subject_Matter_Abbreviated": "Resolutions 751 (1992) and 1907 (2009) concerning Somalia and Eritrea",
+   "indivOrEntFromId": "1"
+  },
+  {
+   "DATAID": "6908042",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "OMAR",
+   "SECOND_NAME": "HAMMAMI",
+   "UN_LIST_TYPE": "Somalia",
+   "REFERENCE_NUMBER": "SOi.010",
+   "LISTED_ON": "2011-07-28",
+   "COMMENTS1": "Married to a Somali woman. Lived in Egypt in 2005 and moved to Somalia in 2009",
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ALIAS": [
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Abu Maansuur Al-Amriki"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Abu Mansour Al-Amriki"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Abu Mansuur Al-Amriki"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Umar Hammami"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Abu Mansur Al-Amriki"
+    }
+   ],
+   "NATIONALITY": {
+    "VALUE": "United States. Also believed to hold Syrian nationality"
+   },
+   "INDIVIDUAL_ADDRESS": {
+    "COUNTRY": "Somalia"
+   },
+   "INDIVIDUAL_DATE_OF_BIRTH": {
+    "DATE": "1986-05-06"
+   },
+   "INDIVIDUAL_PLACE_OF_BIRTH": {
+    "CITY": "Alabama",
+    "COUNTRY": "United States"
+   },
+   "INDIVIDUAL_DOCUMENT": [
+    {
+     "TYPE_OF_DOCUMENT": "Passport",
+     "NUMBER": "403062567 (US)"
+    },
+    {
+     "TYPE_OF_DOCUMENT": "National Identification Number",
+     "NUMBER": "Social Security Number 423-31-3021 (US)"
+    }
+   ],
+   "SORT_KEY": "HAMMAMIOMAR",
+   "SORT_KEY_LAST_MOD": "2014-07-03",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "5 May 1986",
+   "indivPlaceOfBirthString": "Alabama, United States, ",
+   "aliasCount": 5,
+   "indivAliasString": "Abu Maansuur Al-Amriki (Good); Abu Mansour Al-Amriki (Good); Abu Mansuur Al-Amriki (Good); Umar Hammami (Good); Abu Mansur Al-Amriki (Good); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 9,
+   "id": "SOi.010",
+   "name": "OMAR HAMMAMI",
+   "natnlty": "United States. Also believed to hold Syrian nationality",
+   "two_Digit_Country_ISO_Code": "SO",
+   "committeeResNum": "751 (1992) / 1907 (2009)",
+   "subject_Matter_Abbreviated": "Resolutions 751 (1992) and 1907 (2009) concerning Somalia and Eritrea",
+   "indivOrEntFromId": "1"
+  },
+  {
+   "DATAID": "6908043",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "ABOUD",
+   "SECOND_NAME": "ROGO",
+   "THIRD_NAME": "MOHAMMED",
+   "FOURTH_NAME": "",
+   "UN_LIST_TYPE": "Somalia",
+   "REFERENCE_NUMBER": "SOi.011",
+   "LISTED_ON": "2012-07-25",
+   "COMMENTS1": "",
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ALIAS": [
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Aboud Mohammad Rogo"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Aboud Seif Rogo"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Aboud Mohammed Rogo"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Sheikh Aboud Rogo"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Aboud Rogo Muhammad"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Aboud Rogo Mohamed"
+    }
+   ],
+   "INDIVIDUAL_ADDRESS": "",
+   "INDIVIDUAL_DATE_OF_BIRTH": [
+    {
+     "TYPE_OF_DATE": "Exact",
+     "DATE": "1960-11-11"
+    },
+    {
+     "TYPE_OF_DATE": "Exact",
+     "DATE": "1967-11-11"
+    },
+    {
+     "TYPE_OF_DATE": "Exact",
+     "DATE": "1969-11-11"
+    },
+    {
+     "TYPE_OF_DATE": "Exact",
+     "DATE": "1969-01-01"
+    }
+   ],
+   "INDIVIDUAL_PLACE_OF_BIRTH": {
+    "CITY": "Lamu Island",
+    "COUNTRY": "Kenya"
+   },
+   "INDIVIDUAL_DOCUMENT": "",
+   "SORT_KEY": "MOHAMMEDABOUD ROGO",
+   "SORT_KEY_LAST_MOD": "2014-07-03",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "",
+   "indivPlaceOfBirthString": "Lamu Island, Kenya, ",
+   "aliasCount": 6,
+   "indivAliasString": "Aboud Mohammad Rogo (Good); Aboud Seif Rogo (Good); Aboud Mohammed Rogo (Good); Sheikh Aboud Rogo (Good); Aboud Rogo Muhammad (Good); Aboud Rogo Mohamed (Good); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 10,
+   "id": "SOi.011",
+   "name": "ABOUD ROGO MOHAMMED",
+   "two_Digit_Country_ISO_Code": "SO",
+   "committeeResNum": "751 (1992) / 1907 (2009)",
+   "subject_Matter_Abbreviated": "Resolutions 751 (1992) and 1907 (2009) concerning Somalia and Eritrea",
+   "indivOrEntFromId": "1"
+  },
+  {
+   "DATAID": "6908044",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "ABUBAKER",
+   "SECOND_NAME": "SHARIFF",
+   "THIRD_NAME": "AHMED",
+   "UN_LIST_TYPE": "Somalia",
+   "REFERENCE_NUMBER": "SOi.012",
+   "LISTED_ON": "2012-08-23",
+   "COMMENTS1": "",
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ALIAS": [
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Makaburi"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Sheikh Abubakar Ahmed"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Abubaker Shariff Ahmed"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Abu Makaburi Shariff"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Abubaker Shariff"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Abubakar Ahmed"
+    }
+   ],
+   "INDIVIDUAL_ADDRESS": {
+    "CITY": "Majengo area, Mombasa",
+    "COUNTRY": "Kenya"
+   },
+   "INDIVIDUAL_DATE_OF_BIRTH": [
+    {
+     "TYPE_OF_DATE": "Exact",
+     "YEAR": "1962"
+    },
+    {
+     "TYPE_OF_DATE": "Exact",
+     "YEAR": "1967"
+    }
+   ],
+   "INDIVIDUAL_PLACE_OF_BIRTH": {
+    "COUNTRY": "Kenya"
+   },
+   "INDIVIDUAL_DOCUMENT": "",
+   "SORT_KEY": "AHMEDABUBAKER SHARIFF",
+   "SORT_KEY_LAST_MOD": "2014-07-03",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "",
+   "indivPlaceOfBirthString": "Kenya, ",
+   "aliasCount": 6,
+   "indivAliasString": "Makaburi (Good); Sheikh Abubakar Ahmed (Good); Abubaker Shariff Ahmed (Good); Abu Makaburi Shariff (Good); Abubaker Shariff (Good); Abubakar Ahmed (Good); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 11,
+   "id": "SOi.012",
+   "name": "ABUBAKER SHARIFF AHMED",
+   "two_Digit_Country_ISO_Code": "SO",
+   "committeeResNum": "751 (1992) / 1907 (2009)",
+   "subject_Matter_Abbreviated": "Resolutions 751 (1992) and 1907 (2009) concerning Somalia and Eritrea",
+   "indivOrEntFromId": "1"
+  },
+  {
+   "DATAID": "6908432",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "MAALIM",
+   "SECOND_NAME": "SALMAN",
+   "UN_LIST_TYPE": "Somalia",
+   "REFERENCE_NUMBER": "SOi.013",
+   "LISTED_ON": "2014-09-23",
+   "COMMENTS1": "",
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ALIAS": [
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Mu’alim Salman"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Mualem Suleiman"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Ameer Salman"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Ma’alim Suleiman"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Maalim Salman Ali"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Maalim Selman Ali"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Ma’alim Selman"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Ma’alin Sulayman"
+    }
+   ],
+   "INDIVIDUAL_ADDRESS": {
+    "COUNTRY": "Somalia"
+   },
+   "INDIVIDUAL_DATE_OF_BIRTH": {
+    "TYPE_OF_DATE": "Approximately",
+    "YEAR": "1979"
+   },
+   "INDIVIDUAL_PLACE_OF_BIRTH": {
+    "CITY": "Nairobi",
+    "COUNTRY": "Kenya"
+   },
+   "INDIVIDUAL_DOCUMENT": "",
+   "SORT_KEY": "SalmanMaalim",
+   "SORT_KEY_LAST_MOD": "2014-07-03",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "1979 (Approximately)",
+   "indivPlaceOfBirthString": "Nairobi, Kenya, ",
+   "aliasCount": 8,
+   "indivAliasString": "Mu’alim Salman (Good); Mualem Suleiman (Good); Ameer Salman (Good); Ma’alim Suleiman (Good); Maalim Salman Ali (Good); Maalim Selman Ali (Good); Ma’alim Selman (Good); Ma’alin Sulayman (Good); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 12,
+   "id": "SOi.013",
+   "name": "MAALIM SALMAN",
+   "two_Digit_Country_ISO_Code": "SO",
+   "committeeResNum": "751 (1992) / 1907 (2009)",
+   "subject_Matter_Abbreviated": "Resolutions 751 (1992) and 1907 (2009) concerning Somalia and Eritrea",
+   "indivOrEntFromId": "1"
+  },
+  {
+   "DATAID": "6908433",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "AHMED",
+   "SECOND_NAME": "DIRIYE",
+   "UN_LIST_TYPE": "Somalia",
+   "REFERENCE_NUMBER": "SOi.014",
+   "LISTED_ON": "2014-09-24",
+   "COMMENTS1": "",
+   "LIST_TYPE": {
+    "VALUE": "UN List"
+   },
+   "INDIVIDUAL_ALIAS": [
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Sheikh Ahmed Umar Abu Ubaidah"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Sheikh Omar Abu Ubaidaha"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Sheikh Ahmed Umar"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Sheikh Mahad Omar Abdikarim"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Abu Ubaidah"
+    },
+    {
+     "QUALITY": "Good",
+     "ALIAS_NAME": "Abu Diriye"
+    }
+   ],
+   "INDIVIDUAL_ADDRESS": {
+    "COUNTRY": "Somalia"
+   },
+   "INDIVIDUAL_DATE_OF_BIRTH": {
+    "TYPE_OF_DATE": "Approximately",
+    "YEAR": "1972"
+   },
+   "INDIVIDUAL_PLACE_OF_BIRTH": {
+    "COUNTRY": "Somalia"
+   },
+   "INDIVIDUAL_DOCUMENT": "",
+   "SORT_KEY": "DiriyeAhmed",
+   "SORT_KEY_LAST_MOD": "2014-07-03",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 0,
+   "indivDobString": "1972 (Approximately)",
+   "indivPlaceOfBirthString": "Somalia, ",
+   "aliasCount": 6,
+   "indivAliasString": "Sheikh Ahmed Umar Abu Ubaidah (Good); Sheikh Omar Abu Ubaidaha (Good); Sheikh Ahmed Umar (Good); Sheikh Mahad Omar Abdikarim (Good); Abu Ubaidah (Good); Abu Diriye (Good); ",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 13,
+   "id": "SOi.014",
+   "name": "AHMED DIRIYE",
+   "two_Digit_Country_ISO_Code": "SO",
+   "committeeResNum": "751 (1992) / 1907 (2009)",
+   "subject_Matter_Abbreviated": "Resolutions 751 (1992) and 1907 (2009) concerning Somalia and Eritrea",
+   "indivOrEntFromId": "1"
+  },
+  {
+   "DATAID": "6908033",
+   "VERSIONNUM": "1",
+   "FIRST_NAME": "AL-SHABAAB",
+   "UN_LIST_TYPE": "Somalia",
+   "REFERENCE_NUMBER": "SOe.001",
+   "LISTED_ON": "2010-04-12",
+   "ENTITY_ALIAS": [
+    {
+     "QUALITY": "a.k.a.",
+     "ALIAS_NAME": "AL-SHABAB"
+    },
+    {
+     "QUALITY": "a.k.a.",
+     "ALIAS_NAME": "SHABAAB"
+    },
+    {
+     "QUALITY": "a.k.a.",
+     "ALIAS_NAME": "THE YOUTH"
+    },
+    {
+     "QUALITY": "a.k.a.",
+     "ALIAS_NAME": "MUJAHIDIN AL-SHABAAB MOVEMENT"
+    },
+    {
+     "QUALITY": "a.k.a.",
+     "ALIAS_NAME": "MUJAHIDEEN YOUTH MOVEMENT"
+    },
+    {
+     "QUALITY": "a.k.a.",
+     "ALIAS_NAME": "MUJAHIDIN YOUTH MOVEMENT"
+    },
+    {
+     "QUALITY": "a.k.a.",
+     "ALIAS_NAME": "MYM"
+    },
+    {
+     "QUALITY": "a.k.a.",
+     "ALIAS_NAME": "HARAKAT SHABAB AL-MUJAHIDIN"
+    },
+    {
+     "QUALITY": "a.k.a.",
+     "ALIAS_NAME": "HIZBUL SHABAAB"
+    },
+    {
+     "QUALITY": "a.k.a.",
+     "ALIAS_NAME": "HISB’UL SHABAAB"
+    },
+    {
+     "QUALITY": "a.k.a.",
+     "ALIAS_NAME": "AL-SHABAAB AL-ISLAMIYA"
+    },
+    {
+     "QUALITY": "a.k.a.",
+     "ALIAS_NAME": "YOUTH WING"
+    },
+    {
+     "QUALITY": "a.k.a.",
+     "ALIAS_NAME": "AL-SHABAAB AL-ISLAAM"
+    },
+    {
+     "QUALITY": "a.k.a.",
+     "ALIAS_NAME": "AL-SHABAAB AL-JIHAAD"
+    },
+    {
+     "QUALITY": "a.k.a.",
+     "ALIAS_NAME": "THE UNITY OF ISLAMIC YOUTH"
+    },
+    {
+     "QUALITY": "a.k.a.",
+     "ALIAS_NAME": "HARAKAT AL - SHABAAB AL - MUJAAHIDIIN"
+    },
+    {
+     "QUALITY": "a.k.a.",
+     "ALIAS_NAME": "HARAKATUL SHABAAB AL MUJAAHIDIIN"
+    },
+    {
+     "QUALITY": "a.k.a.",
+     "ALIAS_NAME": "MUJAAHIDIIN YOUTH MOVEMENT"
+    }
+   ],
+   "ENTITY_ADDRESS": "",
+   "SORT_KEY": "AL-SHABAAB",
+   "SORT_KEY_LAST_MOD": "2014-07-03",
+   "noLongerListed": 0,
+   "indiv0OrEnt1": 1,
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 14,
+   "id": "SOe.001",
+   "name": "AL-SHABAAB",
+   "two_Digit_Country_ISO_Code": "SO",
+   "committeeResNum": "751 (1992) / 1907 (2009)",
+   "subject_Matter_Abbreviated": "Resolutions 751 (1992) and 1907 (2009) concerning Somalia and Eritrea",
+   "indivOrEntFromId": "0"
+  },
+  {
+   "id": "SOe.000",
+   "indiv0OrEnt1": 1,
+   "noLongerListed": 1,
+   "name": "Name (no longer listed)",
+   "FIRST_NAME": "Name (no longer listed)",
+   "REFERENCE_NUMBER": "SOe.000",
+   "COMMENTS1": "",
+   "lastDateUpdatedCount": 0,
+   "dateUpdatedString": "",
+   "nodeNumber": 15,
+   "two_Digit_Country_ISO_Code": "SO",
+   "committeeResNum": "751 (1992) / 1907 (2009)",
+   "subject_Matter_Abbreviated": "Resolutions 751 (1992) and 1907 (2009) concerning Somalia and Eritrea",
+   "indivOrEntFromId": "0"
+  }
+ ],
+ "dateGenerated": "03-17-2015",
+ "dateCollected": "03-30-2015",
+ "message": "Collected consolidated.xml labeled as generated on: 03-17-2015 [Tue Mar 17 2015 00:00:00 GMT-0400 (Eastern Daylight Time)]",
+ "comments": {
+  "links": []
+ },
+ "narratives": {
+  "links": []
+ }
+}

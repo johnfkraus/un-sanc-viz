@@ -1,0 +1,3053 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONSOLIDATED_LIST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd"
+                   dateGenerated="2015-03-17T17:34:48.302-04:00">
+   <INDIVIDUALS>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110404</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>MOHAMMAD BAQER</FIRST_NAME>
+         <SECOND_NAME>ZOLQADR</SECOND_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRi.043</REFERENCE_NUMBER>
+         <LISTED_ON>2007-03-24</LISTED_ON>
+         <COMMENTS1>[Old Reference # I.47.D.7]</COMMENTS1>
+         <DESIGNATION>
+            <VALUE>General/IRGC officer</VALUE>
+            <VALUE>Deputy Interior Minister for Security Affairs</VALUE>
+         </DESIGNATION>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <LAST_DAY_UPDATED>
+            <VALUE>2014-12-17</VALUE>
+         </LAST_DAY_UPDATED>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Mohammad Bakr Zolqadr; Mohammad Bakr Zolkadr; Mohammad Baqer Zolqadir; Mohammad Baqer Zolqader</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH/>
+         <INDIVIDUAL_PLACE_OF_BIRTH/>
+         <INDIVIDUAL_DOCUMENT/>
+         <SORT_KEY>Zolqadr</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110405</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>MOHAMMAD REZA</FIRST_NAME>
+         <SECOND_NAME>ZAHEDI</SECOND_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRi.042</REFERENCE_NUMBER>
+         <LISTED_ON>2007-03-24</LISTED_ON>
+         <COMMENTS1>[Old Reference # I.47.D.3]</COMMENTS1>
+         <DESIGNATION>
+            <VALUE>Brigadier General/Commander of IRGC Ground Forces</VALUE>
+         </DESIGNATION>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <LAST_DAY_UPDATED>
+            <VALUE>2014-12-17</VALUE>
+         </LAST_DAY_UPDATED>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Mohammad Reza Zahidi; Mohammad Raza Zahedi</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <YEAR>1944</YEAR>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Isfahan</CITY>
+            <COUNTRY>Iran</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_DOCUMENT/>
+         <SORT_KEY>Zahedi Mohammad Reza</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110406</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>ALI AKBAR</FIRST_NAME>
+         <SECOND_NAME>TABATABAEI</SECOND_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRi.041</REFERENCE_NUMBER>
+         <LISTED_ON>2012-04-18</LISTED_ON>
+         <COMMENTS1>Facilitated a breach of paragraph 5 of resolution 1747 (2007) prohibiting the export of arms and related materiel from Iran. [Old Reference # I.AC.50.18.04.12.(2)]</COMMENTS1>
+         <DESIGNATION>
+            <VALUE>Member of the IRGC Qods Force operating under the direction of Qods Force Commander, Major General Qasem Soleimani who was designated by the UN Security Council in resolution 1747 (2007) (designated under IRi.039).</VALUE>
+         </DESIGNATION>
+         <NATIONALITY>
+            <VALUE>Iran</VALUE>
+         </NATIONALITY>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <LAST_DAY_UPDATED>
+            <VALUE>2014-12-17</VALUE>
+         </LAST_DAY_UPDATED>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Sayed Akbar Tahmaesebi; Syed Akber Tahmaesebi</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Ali Akber Tabatabaei; Ali Akber Tahmaesebi; Ali Akbar Tahmaesebi</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <YEAR>1967</YEAR>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH/>
+         <INDIVIDUAL_DOCUMENT>
+            <TYPE_OF_DOCUMENT>Passport</TYPE_OF_DOCUMENT>
+            <NUMBER>9003213</NUMBER>
+            <COUNTRY_OF_ISSUE>Iran / unknown</COUNTRY_OF_ISSUE>
+         </INDIVIDUAL_DOCUMENT>
+         <INDIVIDUAL_DOCUMENT>
+            <TYPE_OF_DOCUMENT>Passport</TYPE_OF_DOCUMENT>
+            <NUMBER>6620505</NUMBER>
+            <COUNTRY_OF_ISSUE>Iran / unknown</COUNTRY_OF_ISSUE>
+         </INDIVIDUAL_DOCUMENT>
+         <SORT_KEY>Tabatabaei Ali Akbar</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110407</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>GHASEM</FIRST_NAME>
+         <SECOND_NAME>SOLEYMANI</SECOND_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRi.040</REFERENCE_NUMBER>
+         <LISTED_ON>2008-03-03</LISTED_ON>
+         <COMMENTS1>[Old Reference # I.03.I.13]</COMMENTS1>
+         <DESIGNATION>
+            <VALUE>Director of Uranium Mining Operations at the Saghand Uranium Mine</VALUE>
+         </DESIGNATION>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <LAST_DAY_UPDATED>
+            <VALUE>2014-12-17</VALUE>
+         </LAST_DAY_UPDATED>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Ghasim Soleymani; Ghasem Sulaymani; Ghasem Solaymani</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH/>
+         <INDIVIDUAL_PLACE_OF_BIRTH/>
+         <INDIVIDUAL_DOCUMENT/>
+         <SORT_KEY>Soleymani Ghasem</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110408</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>QASEM</FIRST_NAME>
+         <SECOND_NAME>SOLEIMANI</SECOND_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRi.039</REFERENCE_NUMBER>
+         <LISTED_ON>2007-03-24</LISTED_ON>
+         <COMMENTS1>Promoted to Major General, retaining his position as Commander of Qods force. [Old Reference # I.47.D.6]</COMMENTS1>
+         <DESIGNATION>
+            <VALUE>Brigadier General/Commander of Qods force</VALUE>
+         </DESIGNATION>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <LAST_DAY_UPDATED>
+            <VALUE>2014-12-17</VALUE>
+         </LAST_DAY_UPDATED>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Qasim Soleimani; Qasem Sulaimani; Qasim Sulaimani; Qasim Sulaymani; Qasem Sulaymani; Kasim Soleimani; Kasim Sulaimani; Kasim Sulaymani</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Low</QUALITY>
+            <ALIAS_NAME>Haj Qasem; Haji Qassem; Sardar Soleimani</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1957-03-11</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Qom</CITY>
+            <COUNTRY>Iran</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_DOCUMENT>
+            <TYPE_OF_DOCUMENT>Passport</TYPE_OF_DOCUMENT>
+            <NUMBER>008827 </NUMBER>
+            <COUNTRY_OF_ISSUE>Iran</COUNTRY_OF_ISSUE>
+         </INDIVIDUAL_DOCUMENT>
+         <SORT_KEY>Soleimani Qasem</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110409</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>HOSEIN</FIRST_NAME>
+         <SECOND_NAME>SALIMI </SECOND_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRi.038</REFERENCE_NUMBER>
+         <LISTED_ON>2006-12-23</LISTED_ON>
+         <COMMENTS1>[Old Reference # I.37.D.1]</COMMENTS1>
+         <DESIGNATION>
+            <VALUE>General/Commander of the Air Force, IRGC (Pasdaran)</VALUE>
+         </DESIGNATION>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <LAST_DAY_UPDATED>
+            <VALUE>2014-12-17</VALUE>
+         </LAST_DAY_UPDATED>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Husain Salimi; Hosain Salimi; Hussain Salimi; Hosein Saleemi; Husain Saleemi; Hosain Saleemi; Hussain Saleemi; Hossein Salimi; Hossein Saleemi</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH/>
+         <INDIVIDUAL_PLACE_OF_BIRTH/>
+         <INDIVIDUAL_DOCUMENT>
+            <TYPE_OF_DOCUMENT>Passport</TYPE_OF_DOCUMENT>
+            <NUMBER>D08531177 </NUMBER>
+            <COUNTRY_OF_ISSUE>Iran</COUNTRY_OF_ISSUE>
+         </INDIVIDUAL_DOCUMENT>
+         <SORT_KEY>Salimi Hosein</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110410</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>SEYED JABER</FIRST_NAME>
+         <SECOND_NAME>SAFDARI</SECOND_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRi.037</REFERENCE_NUMBER>
+         <LISTED_ON>2007-03-24</LISTED_ON>
+         <COMMENTS1>[Old Reference # I.47.C.3]</COMMENTS1>
+         <DESIGNATION>
+            <VALUE>Manager of the Natanz Enrichment Facilities</VALUE>
+         </DESIGNATION>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <LAST_DAY_UPDATED>
+            <VALUE>2014-12-17</VALUE>
+         </LAST_DAY_UPDATED>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Syed Jaber Safdari</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH/>
+         <INDIVIDUAL_PLACE_OF_BIRTH/>
+         <INDIVIDUAL_DOCUMENT/>
+         <SORT_KEY>Safdari Seyed Jaber</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110411</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>YAHYA RAHIM</FIRST_NAME>
+         <SECOND_NAME>SAFAVI</SECOND_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRi.036</REFERENCE_NUMBER>
+         <LISTED_ON>2006-12-23</LISTED_ON>
+         <COMMENTS1>[Old Refence # I.37.E.1]</COMMENTS1>
+         <DESIGNATION>
+            <VALUE>Major General/Commander, IRGC (Pasdaran)</VALUE>
+         </DESIGNATION>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <LAST_DAY_UPDATED>
+            <VALUE>2014-12-17</VALUE>
+         </LAST_DAY_UPDATED>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Yahya Raheem Safavi</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <YEAR>1952</YEAR>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Isfahan</CITY>
+            <COUNTRY>Iran</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_DOCUMENT/>
+         <SORT_KEY>Safavi Yahya Rahim</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110412</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>MORTEZA</FIRST_NAME>
+         <SECOND_NAME>SAFARI</SECOND_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRi.035</REFERENCE_NUMBER>
+         <LISTED_ON>2007-03-24</LISTED_ON>
+         <COMMENTS1>[Old Reference #I.47.D.4]</COMMENTS1>
+         <DESIGNATION>
+            <VALUE>Rear Admiral/Commander of IRGC Navy</VALUE>
+         </DESIGNATION>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <LAST_DAY_UPDATED>
+            <VALUE>2014-12-17</VALUE>
+         </LAST_DAY_UPDATED>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Mortaza Safari; Morteza Saferi; Murtaza Saferi; Murtaza Safari</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH/>
+         <INDIVIDUAL_PLACE_OF_BIRTH/>
+         <INDIVIDUAL_DOCUMENT/>
+         <SORT_KEY>Safari Morteza</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110413</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>M. JAVAD</FIRST_NAME>
+         <SECOND_NAME>KARIMI SABET</SECOND_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRi.034</REFERENCE_NUMBER>
+         <LISTED_ON>2008-03-03</LISTED_ON>
+         <COMMENTS1>[Old Reference # I.03.I.8]</COMMENTS1>
+         <DESIGNATION>
+            <VALUE>Head of Novin Energy Company, which is designated under resolution 1747 (2007) (designated under IRe.046).</VALUE>
+         </DESIGNATION>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <LAST_DAY_UPDATED>
+            <VALUE>2014-12-17</VALUE>
+         </LAST_DAY_UPDATED>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Mohammed Sabet; Mohammad Sabet b) M. Javad Kareemi Sabet; M. Jawad Kareemi Sabet; M. Jawad Karimi Sabet</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1973-07-25</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH/>
+         <INDIVIDUAL_DOCUMENT/>
+         <SORT_KEY>Sabet M. Javad Karimi</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110414</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>MORTEZA</FIRST_NAME>
+         <SECOND_NAME>REZAIE</SECOND_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRi.033</REFERENCE_NUMBER>
+         <LISTED_ON>2007-03-24</LISTED_ON>
+         <COMMENTS1>[Old Reference # I.47.D.1]</COMMENTS1>
+         <DESIGNATION>
+            <VALUE>Brigadier General/Deputy Commander of IRGC</VALUE>
+         </DESIGNATION>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <LAST_DAY_UPDATED>
+            <VALUE>2014-12-17</VALUE>
+         </LAST_DAY_UPDATED>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Mortaza Rezaie; Mortaza Rezai; Morteza Rezai</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <YEAR>1956</YEAR>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH/>
+         <INDIVIDUAL_DOCUMENT/>
+         <SORT_KEY>Rezaie Morteza</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110415</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>ABBAS</FIRST_NAME>
+         <SECOND_NAME>RASHIDI</SECOND_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRi.032</REFERENCE_NUMBER>
+         <LISTED_ON>2008-03-03</LISTED_ON>
+         <COMMENTS1>[Old Reference # I.03.I.12]</COMMENTS1>
+         <DESIGNATION>
+            <VALUE>Designated for involvement in enrichment work at Natanz.</VALUE>
+         </DESIGNATION>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <LAST_DAY_UPDATED>
+            <VALUE>2014-12-17</VALUE>
+         </LAST_DAY_UPDATED>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Abas Rashidi; Abbas Rashedi; Abas Rashedi</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH/>
+         <INDIVIDUAL_PLACE_OF_BIRTH/>
+         <INDIVIDUAL_DOCUMENT/>
+         <SORT_KEY>Rashidi Abbas</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110416</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>JAVAD</FIRST_NAME>
+         <SECOND_NAME>RAHIQI</SECOND_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRi.031</REFERENCE_NUMBER>
+         <LISTED_ON>2012-04-18</LISTED_ON>
+         <COMMENTS1>[Old Reference # I.29.A.23]</COMMENTS1>
+         <DESIGNATION>
+            <VALUE>Head of the AEOI Esfahan Nuclear Technology Center</VALUE>
+         </DESIGNATION>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <LAST_DAY_UPDATED>
+            <VALUE>2014-12-17</VALUE>
+         </LAST_DAY_UPDATED>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Javad Rahigi; Jawad Rahigi; Jawad Rahiqi</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <DATE>1954-04-24</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Marshad</CITY>
+            <COUNTRY>Iran</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_DOCUMENT/>
+         <SORT_KEY>Rahiqi Javad</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110417</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>AMIR</FIRST_NAME>
+         <SECOND_NAME>RAHIMI</SECOND_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRi.030</REFERENCE_NUMBER>
+         <LISTED_ON>2007-03-24</LISTED_ON>
+         <COMMENTS1>The Esfahan Nuclear Fuel Research and Production Center is part of the AEOI Nuclear Fuel Production and Procurement Company, which is involved in enrichment related activities. [Old Reference # I.47.C.4]</COMMENTS1>
+         <DESIGNATION>
+            <VALUE>Head of Esfahan Nuclear Fuel Research and Production Center</VALUE>
+         </DESIGNATION>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <LAST_DAY_UPDATED>
+            <VALUE>2014-12-17</VALUE>
+         </LAST_DAY_UPDATED>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY/>
+            <ALIAS_NAME/>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH/>
+         <INDIVIDUAL_PLACE_OF_BIRTH/>
+         <INDIVIDUAL_DOCUMENT/>
+         <SORT_KEY>Rahimi Amir</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110418</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>MOHAMMAD</FIRST_NAME>
+         <SECOND_NAME>QANNADI</SECOND_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRi.029</REFERENCE_NUMBER>
+         <LISTED_ON>2006-12-23</LISTED_ON>
+         <COMMENTS1>[Old Reference # I.37.C.1]</COMMENTS1>
+         <DESIGNATION>
+            <VALUE>Vice President for Research and Development of the AEOI</VALUE>
+         </DESIGNATION>
+         <NATIONALITY>
+            <VALUE>Iran</VALUE>
+         </NATIONALITY>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <LAST_DAY_UPDATED>
+            <VALUE>2014-12-17</VALUE>
+         </LAST_DAY_UPDATED>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY/>
+            <ALIAS_NAME/>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1952-10-13</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH/>
+         <INDIVIDUAL_DOCUMENT>
+            <TYPE_OF_DOCUMENT>Passport</TYPE_OF_DOCUMENT>
+            <NUMBER>20694</NUMBER>
+            <COUNTRY_OF_ISSUE>Iran</COUNTRY_OF_ISSUE>
+         </INDIVIDUAL_DOCUMENT>
+         <INDIVIDUAL_DOCUMENT>
+            <TYPE_OF_DOCUMENT>Passport</TYPE_OF_DOCUMENT>
+            <NUMBER>A0003044</NUMBER>
+            <COUNTRY_OF_ISSUE>Iran</COUNTRY_OF_ISSUE>
+         </INDIVIDUAL_DOCUMENT>
+         <SORT_KEY>Qannadi Mohammad</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110419</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>HOUSHANG</FIRST_NAME>
+         <SECOND_NAME>NOBARI</SECOND_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRi.028</REFERENCE_NUMBER>
+         <LISTED_ON>2008-03-03</LISTED_ON>
+         <COMMENTS1>[Old Reference # I.03.I.11]</COMMENTS1>
+         <DESIGNATION>
+            <VALUE>Designated for involvement in the management of the Natanz enrichment complex.</VALUE>
+         </DESIGNATION>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <LAST_DAY_UPDATED>
+            <VALUE>2014-12-17</VALUE>
+         </LAST_DAY_UPDATED>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY/>
+            <ALIAS_NAME/>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH/>
+         <INDIVIDUAL_PLACE_OF_BIRTH/>
+         <INDIVIDUAL_DOCUMENT/>
+         <SORT_KEY>Nobari Houshang</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110420</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>MOHAMMAD MEHDI</FIRST_NAME>
+         <SECOND_NAME>NEJAD NOURI</SECOND_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRi.027</REFERENCE_NUMBER>
+         <LISTED_ON>2006-12-23</LISTED_ON>
+         <COMMENTS1>Deputy Minister of Science, Research and Technology. [Old Reference # I.37.C.7]</COMMENTS1>
+         <DESIGNATION>
+            <VALUE>Lieutenant General/Rector of Malek Ashtar University of Defence Technology (chemistry department, affiliated to MODAFL, has conducted experiments on beryllium).</VALUE>
+         </DESIGNATION>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <LAST_DAY_UPDATED>
+            <VALUE>2014-12-17</VALUE>
+         </LAST_DAY_UPDATED>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY/>
+            <ALIAS_NAME/>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH/>
+         <INDIVIDUAL_PLACE_OF_BIRTH/>
+         <INDIVIDUAL_DOCUMENT/>
+         <SORT_KEY>Nejad Nouri Mohammad Mehdi</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110421</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>MOHAMMAD REZA</FIRST_NAME>
+         <SECOND_NAME>NAQDI</SECOND_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRi.026</REFERENCE_NUMBER>
+         <LISTED_ON>2008-03-03</LISTED_ON>
+         <COMMENTS1>Engaged in efforts to get round the sanctions imposed by resolutions 1737 (2006) and 1747 (2007). [Old Reference # I.03.I.10]</COMMENTS1>
+         <DESIGNATION>
+            <VALUE>Brigadier-General/Former Deputy Chief of Armed Forces General Staff for Logistics and Industrial Research/Head of State Anti-Smuggling Headquarters</VALUE>
+         </DESIGNATION>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <LAST_DAY_UPDATED>
+            <VALUE>2014-12-17</VALUE>
+         </LAST_DAY_UPDATED>
+         <INDIVIDUAL_ALIAS/>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1949-02-11</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1952-02-11</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1953-02-11</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1961-02-11</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Najaf</CITY>
+            <COUNTRY>Iraq</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Tehran</CITY>
+            <COUNTRY>Iran</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_DOCUMENT/>
+         <SORT_KEY>Naqdi Mohammad Reza</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110422</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>EHSAN</FIRST_NAME>
+         <SECOND_NAME>MONAJEMI</SECOND_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRi.025</REFERENCE_NUMBER>
+         <LISTED_ON>2006-12-23</LISTED_ON>
+         <COMMENTS1>[Old Reference # I.37.C.4]</COMMENTS1>
+         <DESIGNATION>
+            <VALUE>Construction Project Manager, Natanz</VALUE>
+         </DESIGNATION>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <LAST_DAY_UPDATED>
+            <VALUE>2014-12-17</VALUE>
+         </LAST_DAY_UPDATED>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Ihsan Monajemi</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH/>
+         <INDIVIDUAL_PLACE_OF_BIRTH/>
+         <INDIVIDUAL_DOCUMENT/>
+         <SORT_KEY>Monajemi Ehsan</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110423</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>JAFAR</FIRST_NAME>
+         <SECOND_NAME>MOHAMMADI</SECOND_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRi.024</REFERENCE_NUMBER>
+         <LISTED_ON>2006-12-23</LISTED_ON>
+         <COMMENTS1>[Old Reference # I.37.C.5]</COMMENTS1>
+         <DESIGNATION>
+            <VALUE>Technical Adviser to the AEOI in charge of managing the production of valves for centrifuges.</VALUE>
+         </DESIGNATION>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY/>
+            <ALIAS_NAME/>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH/>
+         <INDIVIDUAL_PLACE_OF_BIRTH/>
+         <INDIVIDUAL_DOCUMENT/>
+         <SORT_KEY>Mohammadi Jafar</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110424</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>HAMID-REZA</FIRST_NAME>
+         <SECOND_NAME>MOHAJERANI</SECOND_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRi.023</REFERENCE_NUMBER>
+         <LISTED_ON>2008-03-03</LISTED_ON>
+         <COMMENTS1>[Old Reference # I.03.I.9]</COMMENTS1>
+         <DESIGNATION>
+            <VALUE>Designated for involvement in production management at the Uranium Conversion Facility (UCF) at Esfahan.</VALUE>
+         </DESIGNATION>
+         <NATIONALITY>
+            <VALUE>Iran</VALUE>
+         </NATIONALITY>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <LAST_DAY_UPDATED>
+            <VALUE>2014-12-17</VALUE>
+         </LAST_DAY_UPDATED>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Hamid Reza Mohajerani Araghi</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1977-09-09</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH/>
+         <INDIVIDUAL_DOCUMENT>
+            <TYPE_OF_DOCUMENT>Passport</TYPE_OF_DOCUMENT>
+            <NUMBER>Diplomatic Passport: Z30321794 </NUMBER>
+            <COUNTRY_OF_ISSUE>Iran</COUNTRY_OF_ISSUE>
+            <NOTE>Issued on 12 June 2014, expires 12 June 2019</NOTE>
+         </INDIVIDUAL_DOCUMENT>
+         <SORT_KEY>Mohajerani Hamid-Reza</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110425</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>NASER</FIRST_NAME>
+         <SECOND_NAME>MALEKI</SECOND_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRi.022</REFERENCE_NUMBER>
+         <LISTED_ON>2007-03-24</LISTED_ON>
+         <COMMENTS1>[Old Reference # I.47.C.7]</COMMENTS1>
+         <DESIGNATION>
+            <VALUE>Head of Shahid Hemmat Industrial Group (SHIG), which is designated under resolution 1737 (2006) for its role in Iran's ballistic missile programme (designated under IRe.067).</VALUE>
+            <VALUE>MODAFL official overseeing work on the Shahab-3 ballistic missile programme, Iran's long range ballistic missile currently in service.</VALUE>
+         </DESIGNATION>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <LAST_DAY_UPDATED>
+            <VALUE>2014-12-17</VALUE>
+         </LAST_DAY_UPDATED>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY/>
+            <ALIAS_NAME/>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <YEAR>1960</YEAR>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH/>
+         <INDIVIDUAL_DOCUMENT>
+            <TYPE_OF_DOCUMENT>Passport</TYPE_OF_DOCUMENT>
+            <NUMBER>A0003039</NUMBER>
+            <COUNTRY_OF_ISSUE>Iran</COUNTRY_OF_ISSUE>
+         </INDIVIDUAL_DOCUMENT>
+         <INDIVIDUAL_DOCUMENT>
+            <TYPE_OF_DOCUMENT>National Identification Number</TYPE_OF_DOCUMENT>
+            <NUMBER>0035011785</NUMBER>
+            <COUNTRY_OF_ISSUE>Iran</COUNTRY_OF_ISSUE>
+         </INDIVIDUAL_DOCUMENT>
+         <SORT_KEY>Maleki Naser</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110426</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>ALI HAJINIA</FIRST_NAME>
+         <SECOND_NAME>LEILABADI</SECOND_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRi.021</REFERENCE_NUMBER>
+         <LISTED_ON>2006-12-23</LISTED_ON>
+         <COMMENTS1>[Old Reference # I.37.C.6]</COMMENTS1>
+         <DESIGNATION>
+            <VALUE>Director General of Mesbah Energy Company</VALUE>
+         </DESIGNATION>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <LAST_DAY_UPDATED>
+            <VALUE>2014-12-17</VALUE>
+         </LAST_DAY_UPDATED>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY/>
+            <ALIAS_NAME/>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1950-02-19</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH/>
+         <INDIVIDUAL_DOCUMENT>
+            <TYPE_OF_DOCUMENT>Passport</TYPE_OF_DOCUMENT>
+            <NUMBER>E4710151</NUMBER>
+            <COUNTRY_OF_ISSUE>Iran</COUNTRY_OF_ISSUE>
+            <NOTE>Issued 15 October 2000; expired 15 October 2005</NOTE>
+         </INDIVIDUAL_DOCUMENT>
+         <SORT_KEY>Leilabadi Ali Hajinia</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110427</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>MEHRDADA AKHLAGHI</FIRST_NAME>
+         <SECOND_NAME>KETABACHI</SECOND_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRi.020</REFERENCE_NUMBER>
+         <LISTED_ON>2007-03-24</LISTED_ON>
+         <COMMENTS1>[Old Reference # I.47.C.6]</COMMENTS1>
+         <DESIGNATION>
+            <VALUE>Head of the Shahid Bagheri Industrial Group (SBIG), which is designated under resolution 1737 (2006) for its role in the ballistic missile programme (designated under IRe.066).</VALUE>
+         </DESIGNATION>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <LAST_DAY_UPDATED>
+            <VALUE>2014-12-17</VALUE>
+         </LAST_DAY_UPDATED>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY/>
+            <ALIAS_NAME/>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1958-09-10</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH/>
+         <INDIVIDUAL_DOCUMENT>
+            <TYPE_OF_DOCUMENT>Passport</TYPE_OF_DOCUMENT>
+            <NUMBER>A0030940</NUMBER>
+            <CITY_OF_ISSUE>Iran</CITY_OF_ISSUE>
+         </INDIVIDUAL_DOCUMENT>
+         <SORT_KEY>Ketabachi Mehrdada Akhlaghi</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110428</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>SEYYED HUSSEIN</FIRST_NAME>
+         <SECOND_NAME>HOSSEINI</SECOND_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRi.019</REFERENCE_NUMBER>
+         <LISTED_ON>2008-03-03</LISTED_ON>
+         <COMMENTS1>[Old Reference # I.03.I.7]</COMMENTS1>
+         <DESIGNATION>
+            <VALUE>AEOI official involved in the heavy water research reactor project at Arak.</VALUE>
+         </DESIGNATION>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <LAST_DAY_UPDATED>
+            <VALUE>2014-12-17</VALUE>
+         </LAST_DAY_UPDATED>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Syed Husain Husaini; Syed Husein Huseini</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1973-07-27</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH/>
+         <INDIVIDUAL_DOCUMENT>
+            <TYPE_OF_DOCUMENT>Passport</TYPE_OF_DOCUMENT>
+            <NUMBER>K8196482</NUMBER>
+         </INDIVIDUAL_DOCUMENT>
+         <SORT_KEY>Hosseini Seyyed Hussein</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110429</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>MOHSEN</FIRST_NAME>
+         <SECOND_NAME>HOJATI</SECOND_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRi.018</REFERENCE_NUMBER>
+         <LISTED_ON>2007-03-24</LISTED_ON>
+         <COMMENTS1>[Old Reference # I.47.C.5]</COMMENTS1>
+         <DESIGNATION>
+            <VALUE>Head of Fajr Industrial Group, which is designated under resolution 1737 (2006) for its role in the ballistic missile programme.</VALUE>
+         </DESIGNATION>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <LAST_DAY_UPDATED>
+            <VALUE>2014-12-17</VALUE>
+         </LAST_DAY_UPDATED>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY/>
+            <ALIAS_NAME/>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1955-09-28</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH/>
+         <INDIVIDUAL_DOCUMENT>
+            <TYPE_OF_DOCUMENT>Passport</TYPE_OF_DOCUMENT>
+            <NUMBER>G4506013</NUMBER>
+            <COUNTRY_OF_ISSUE>Iran</COUNTRY_OF_ISSUE>
+         </INDIVIDUAL_DOCUMENT>
+         <SORT_KEY>Hojati Mohsen</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110430</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>MOHAMMAD</FIRST_NAME>
+         <SECOND_NAME>HEJAZI</SECOND_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRi.017</REFERENCE_NUMBER>
+         <LISTED_ON>2007-03-24</LISTED_ON>
+         <COMMENTS1>[Old Reference # I.47.D.5]</COMMENTS1>
+         <DESIGNATION>
+            <VALUE>Brigadier General/Commander of Bassij resistance force</VALUE>
+         </DESIGNATION>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <LAST_DAY_UPDATED>
+            <VALUE>2014-12-17</VALUE>
+         </LAST_DAY_UPDATED>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Mohammed Hijazi</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <YEAR>1959</YEAR>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Isfahan</CITY>
+            <COUNTRY>Iran</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_DOCUMENT/>
+         <SORT_KEY>Hejazi Mohammad</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110431</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>MOHSEN</FIRST_NAME>
+         <SECOND_NAME>FAKHRIZADEH-MAHABADI</SECOND_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRi.016</REFERENCE_NUMBER>
+         <LISTED_ON>2007-03-24</LISTED_ON>
+         <COMMENTS1>The IAEA have asked to interview him about the activities of the PHRC over the period he was head but Iran has refused. [Old Reference # I.47.C.2]</COMMENTS1>
+         <DESIGNATION>
+            <VALUE>Senior MODAFL scientist; Former head of the Physics Research Centre (PHRC)</VALUE>
+         </DESIGNATION>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <LAST_DAY_UPDATED>
+            <VALUE>2014-12-17</VALUE>
+         </LAST_DAY_UPDATED>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY/>
+            <ALIAS_NAME/>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH/>
+         <INDIVIDUAL_PLACE_OF_BIRTH/>
+         <INDIVIDUAL_DOCUMENT>
+            <TYPE_OF_DOCUMENT>Passport</TYPE_OF_DOCUMENT>
+            <NUMBER>A0009228</NUMBER>
+            <COUNTRY_OF_ISSUE>Unconfirmed (likely Iran)</COUNTRY_OF_ISSUE>
+         </INDIVIDUAL_DOCUMENT>
+         <INDIVIDUAL_DOCUMENT>
+            <TYPE_OF_DOCUMENT>Passport</TYPE_OF_DOCUMENT>
+            <NUMBER>4229533</NUMBER>
+            <COUNTRY_OF_ISSUE>Unconfirmed (likely Iran)</COUNTRY_OF_ISSUE>
+         </INDIVIDUAL_DOCUMENT>
+         <SORT_KEY>Fakhrizadeh-Mahabadi Mohsen</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110432</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>REZA-GHOLI</FIRST_NAME>
+         <SECOND_NAME>ESMAELI</SECOND_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRi.015</REFERENCE_NUMBER>
+         <LISTED_ON>2006-12-23</LISTED_ON>
+         <COMMENTS1>[Old Reference # I.37.D.3]</COMMENTS1>
+         <DESIGNATION>
+            <VALUE>Head of Trade and International Affairs Department of the AIO.</VALUE>
+         </DESIGNATION>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <LAST_DAY_UPDATED>
+            <VALUE>2014-12-17</VALUE>
+         </LAST_DAY_UPDATED>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Reza-Gholi Ismaili</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1961-04-03</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH/>
+         <INDIVIDUAL_DOCUMENT>
+            <TYPE_OF_DOCUMENT>Passport</TYPE_OF_DOCUMENT>
+            <NUMBER>A0002302</NUMBER>
+            <COUNTRY_OF_ISSUE>Iran</COUNTRY_OF_ISSUE>
+         </INDIVIDUAL_DOCUMENT>
+         <SORT_KEY>Esmaeli Reza-Gholi</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110433</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>MOHAMMAD</FIRST_NAME>
+         <SECOND_NAME>ESLAMI</SECOND_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRi.014</REFERENCE_NUMBER>
+         <LISTED_ON>2008-03-03</LISTED_ON>
+         <COMMENTS1>Served as Deputy Defence Minister from 2012 to 2013. [Old Reference # I.03.I.6]</COMMENTS1>
+         <TITLE>
+            <VALUE>Dr.</VALUE>
+         </TITLE>
+         <DESIGNATION>
+            <VALUE>Head of Iran's Defence Industries Training and Research Institute.</VALUE>
+         </DESIGNATION>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <LAST_DAY_UPDATED>
+            <VALUE>2014-12-17</VALUE>
+         </LAST_DAY_UPDATED>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Mohammad Islami; Mohamed Islami; Mohammed Islami</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY/>
+            <ALIAS_NAME/>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH/>
+         <INDIVIDUAL_PLACE_OF_BIRTH/>
+         <INDIVIDUAL_DOCUMENT/>
+         <SORT_KEY>Eslami Mohammad</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110434</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>AHMAD</FIRST_NAME>
+         <SECOND_NAME>DERAKHSHANDEH</SECOND_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRi.013</REFERENCE_NUMBER>
+         <LISTED_ON>2007-03-24</LISTED_ON>
+         <COMMENTS1>[Old Reference # I.47.C.8]</COMMENTS1>
+         <DESIGNATION>
+            <VALUE>Chairman and Managing Director of Bank Sepah, which provides support for the AIO and subordinates, including SHIG and SBIG, both of which were designated under resolution 1737 (2006).</VALUE>
+         </DESIGNATION>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <LAST_DAY_UPDATED>
+            <VALUE>2014-12-17</VALUE>
+         </LAST_DAY_UPDATED>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY/>
+            <ALIAS_NAME/>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS>
+            <STREET>33 Hormozan Building, Pirozan St., Sharak Ghods</STREET>
+            <CITY>Tehran</CITY>
+            <COUNTRY>Iran</COUNTRY>
+         </INDIVIDUAL_ADDRESS>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1956-08-11</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH/>
+         <INDIVIDUAL_DOCUMENT/>
+         <SORT_KEY>Derakhshandeh Ahmad</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110435</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>AHMAD VAHID </FIRST_NAME>
+         <SECOND_NAME>DASTJERDI</SECOND_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRi.012</REFERENCE_NUMBER>
+         <LISTED_ON>2006-12-23</LISTED_ON>
+         <COMMENTS1>Served as Deputy Defense Minister 2009-10. [Old Reference # I.37.D.2]</COMMENTS1>
+         <DESIGNATION>
+            <VALUE>Head of the AIO</VALUE>
+         </DESIGNATION>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <LAST_DAY_UPDATED>
+            <VALUE>2014-12-17</VALUE>
+         </LAST_DAY_UPDATED>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY/>
+            <ALIAS_NAME/>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1954-01-15</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH/>
+         <INDIVIDUAL_DOCUMENT>
+            <TYPE_OF_DOCUMENT>Passport</TYPE_OF_DOCUMENT>
+            <NUMBER>A0002987</NUMBER>
+            <COUNTRY_OF_ISSUE>Iran</COUNTRY_OF_ISSUE>
+         </INDIVIDUAL_DOCUMENT>
+         <SORT_KEY>Dastjerdi Ahmad Vahid </SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110436</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>MORTEZA</FIRST_NAME>
+         <SECOND_NAME>BEHZAD</SECOND_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRi.011</REFERENCE_NUMBER>
+         <LISTED_ON>2008-03-03</LISTED_ON>
+         <COMMENTS1>[Old Reference # I.03.I.5]</COMMENTS1>
+         <DESIGNATION>
+            <VALUE>Designated for involvement in making centrifuge components.</VALUE>
+         </DESIGNATION>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <LAST_DAY_UPDATED>
+            <VALUE>2014-12-17</VALUE>
+         </LAST_DAY_UPDATED>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY/>
+            <ALIAS_NAME/>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1959-06-07</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH/>
+         <INDIVIDUAL_DOCUMENT/>
+         <SORT_KEY>Behzad Morteza</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110437</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>HALEH</FIRST_NAME>
+         <SECOND_NAME>BAKHTIAR</SECOND_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRi.010</REFERENCE_NUMBER>
+         <LISTED_ON>2008-03-03</LISTED_ON>
+         <COMMENTS1>[Old Reference # I.03.I.4]</COMMENTS1>
+         <DESIGNATION>
+            <VALUE>Designated for involvement in the production of magnesium at a concentration of 99.9%.</VALUE>
+         </DESIGNATION>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <LAST_DAY_UPDATED>
+            <VALUE>2014-12-17</VALUE>
+         </LAST_DAY_UPDATED>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Halen Bakhtiar; Haleh Bakhtiari; Haleh Bakhtiyar</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <YEAR>1975</YEAR>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH/>
+         <INDIVIDUAL_DOCUMENT/>
+         <SORT_KEY>Bakhtiar Haleh</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110438</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>BAHMANYAR MORTEZA</FIRST_NAME>
+         <SECOND_NAME>BAHMANYAR</SECOND_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRi.009</REFERENCE_NUMBER>
+         <LISTED_ON>2006-12-23</LISTED_ON>
+         <COMMENTS1>[Old Reference # I.37.D.4]</COMMENTS1>
+         <DESIGNATION>
+            <VALUE>Head of Finance and Budget Department of the Aerospace Industries Organization (AIO).</VALUE>
+         </DESIGNATION>
+         <NATIONALITY>
+            <VALUE>Iran</VALUE>
+         </NATIONALITY>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <LAST_DAY_UPDATED>
+            <VALUE>2014-12-17</VALUE>
+         </LAST_DAY_UPDATED>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY/>
+            <ALIAS_NAME/>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1952-12-31</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH/>
+         <INDIVIDUAL_DOCUMENT>
+            <TYPE_OF_DOCUMENT>Passport</TYPE_OF_DOCUMENT>
+            <NUMBER>I0005159</NUMBER>
+            <COUNTRY_OF_ISSUE>Iran</COUNTRY_OF_ISSUE>
+         </INDIVIDUAL_DOCUMENT>
+         <INDIVIDUAL_DOCUMENT>
+            <TYPE_OF_DOCUMENT>Passport</TYPE_OF_DOCUMENT>
+            <NUMBER>10005159</NUMBER>
+            <COUNTRY_OF_ISSUE>Iran</COUNTRY_OF_ISSUE>
+         </INDIVIDUAL_DOCUMENT>
+         <SORT_KEY>Bahmanyar Bahmanyar Morteza</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110439</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>ABBAS REZAEE</FIRST_NAME>
+         <SECOND_NAME>ASHTIANI</SECOND_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRi.008</REFERENCE_NUMBER>
+         <LISTED_ON>2008-03-03</LISTED_ON>
+         <COMMENTS1>[Old Reference # I.03.I.3]</COMMENTS1>
+         <DESIGNATION>
+            <VALUE>Senior official at the AEOI Office of Exploration and Mining Affairs</VALUE>
+         </DESIGNATION>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <LAST_DAY_UPDATED>
+            <VALUE>2014-12-17</VALUE>
+         </LAST_DAY_UPDATED>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY/>
+            <ALIAS_NAME/>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH/>
+         <INDIVIDUAL_PLACE_OF_BIRTH/>
+         <INDIVIDUAL_DOCUMENT/>
+         <SORT_KEY>Ashtiani Abbas Rezaee</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110440</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>MOHAMMAD FEDAI</FIRST_NAME>
+         <SECOND_NAME>ASHIANI</SECOND_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRi.007</REFERENCE_NUMBER>
+         <LISTED_ON>2008-03-03</LISTED_ON>
+         <COMMENTS1>[Old Reference # I.03.I.2]</COMMENTS1>
+         <DESIGNATION>
+            <VALUE>Designated for involvement in the production of ammonium uranyl carbonate and management of the Natanz enrichment complex.</VALUE>
+         </DESIGNATION>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <LAST_DAY_UPDATED>
+            <VALUE>2014-12-17</VALUE>
+         </LAST_DAY_UPDATED>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY/>
+            <ALIAS_NAME/>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH/>
+         <INDIVIDUAL_PLACE_OF_BIRTH/>
+         <INDIVIDUAL_DOCUMENT/>
+         <SORT_KEY>Ashiani  Mohammad Fedai</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110441</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>BEHMAN</FIRST_NAME>
+         <SECOND_NAME>ASGARPOUR</SECOND_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRi.006</REFERENCE_NUMBER>
+         <LISTED_ON>2006-12-23</LISTED_ON>
+         <COMMENTS1>[Old Reference # I.37.C.2]</COMMENTS1>
+         <DESIGNATION>
+            <VALUE>Operational Manager (Arak)</VALUE>
+         </DESIGNATION>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <LAST_DAY_UPDATED>
+            <VALUE>2014-12-17</VALUE>
+         </LAST_DAY_UPDATED>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Behman Asgharpour; Behman Asgharpur</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH/>
+         <INDIVIDUAL_PLACE_OF_BIRTH/>
+         <INDIVIDUAL_DOCUMENT/>
+         <SORT_KEY>Asgarpour Behman</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110442</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>AMIR MOAYYED</FIRST_NAME>
+         <SECOND_NAME>ALAI</SECOND_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRi.005</REFERENCE_NUMBER>
+         <LISTED_ON>2008-03-03</LISTED_ON>
+         <COMMENTS1>[Old Reference # I.03.I.1]</COMMENTS1>
+         <DESIGNATION>
+            <VALUE>Designated for involvement in managing the assembly and engineering of centrifuges.</VALUE>
+         </DESIGNATION>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <LAST_DAY_UPDATED>
+            <VALUE>2014-12-17</VALUE>
+         </LAST_DAY_UPDATED>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY/>
+            <ALIAS_NAME/>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH/>
+         <INDIVIDUAL_PLACE_OF_BIRTH/>
+         <INDIVIDUAL_DOCUMENT/>
+         <SORT_KEY>Alai Amir Moayyed</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110443</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>ALI AKBAR</FIRST_NAME>
+         <SECOND_NAME>AHMADIAN</SECOND_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRi.004</REFERENCE_NUMBER>
+         <LISTED_ON>2007-03-24</LISTED_ON>
+         <COMMENTS1>Position changed. [Old Reference # I.47.D.2]</COMMENTS1>
+         <DESIGNATION>
+            <VALUE>Vice Admiral; Chief of IRGC Joint Staff</VALUE>
+         </DESIGNATION>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <LAST_DAY_UPDATED>
+            <VALUE>2014-12-17</VALUE>
+         </LAST_DAY_UPDATED>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Ali Akbar Ahmedian</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <YEAR>1961</YEAR>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Kerman</CITY>
+            <COUNTRY>Iran</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_DOCUMENT/>
+         <SORT_KEY>Ahmadian Ali Akbar</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110444</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>AZIM</FIRST_NAME>
+         <SECOND_NAME>AGHAJANI</SECOND_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRi.003</REFERENCE_NUMBER>
+         <LISTED_ON>2012-04-18</LISTED_ON>
+         <COMMENTS1>Facilitated a breach of paragraph 5 of resolution 1747 (2007) prohibiting the export of arms and related materiel from Iran. [Old Reference # I.AC.50.18.04.12.(1)]</COMMENTS1>
+         <DESIGNATION>
+            <VALUE>Member of the IRGC-Qods Force operating under the direction of Qods Force Commander, Major General Qasem Soleimani, who was designated by the UN Security Council in resolution 1747 (2007)</VALUE>
+         </DESIGNATION>
+         <NATIONALITY>
+            <VALUE>Iran</VALUE>
+         </NATIONALITY>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <LAST_DAY_UPDATED>
+            <VALUE>2014-12-17</VALUE>
+         </LAST_DAY_UPDATED>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Azim Adhajani; Azim Agha-Jani</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH/>
+         <INDIVIDUAL_PLACE_OF_BIRTH/>
+         <INDIVIDUAL_DOCUMENT>
+            <TYPE_OF_DOCUMENT>Passport</TYPE_OF_DOCUMENT>
+            <NUMBER>6620505</NUMBER>
+            <COUNTRY_OF_ISSUE>Iran</COUNTRY_OF_ISSUE>
+         </INDIVIDUAL_DOCUMENT>
+         <INDIVIDUAL_DOCUMENT>
+            <TYPE_OF_DOCUMENT>Passport</TYPE_OF_DOCUMENT>
+            <NUMBER>9003213</NUMBER>
+            <COUNTRY_OF_ISSUE>Iran</COUNTRY_OF_ISSUE>
+         </INDIVIDUAL_DOCUMENT>
+         <SORT_KEY>Aghajani Azim</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110445</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>DAWOOD</FIRST_NAME>
+         <SECOND_NAME>AGHA-JANI</SECOND_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRi.002</REFERENCE_NUMBER>
+         <LISTED_ON>2006-12-23</LISTED_ON>
+         <COMMENTS1>[Old Reference # I.37.C.3]</COMMENTS1>
+         <DESIGNATION>
+            <VALUE>Head of the Pilot Fuel Enrichment Plant (PFEP) (Natanz)</VALUE>
+         </DESIGNATION>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <LAST_DAY_UPDATED>
+            <VALUE>2014-12-17</VALUE>
+         </LAST_DAY_UPDATED>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY/>
+            <ALIAS_NAME/>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1957-04-23</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Ardebil</CITY>
+            <COUNTRY>Iran</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_DOCUMENT>
+            <TYPE_OF_DOCUMENT>Passport</TYPE_OF_DOCUMENT>
+            <NUMBER>I5824769</NUMBER>
+            <COUNTRY_OF_ISSUE>Iran</COUNTRY_OF_ISSUE>
+         </INDIVIDUAL_DOCUMENT>
+         <SORT_KEY>Agha-Jani Dawood</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110446</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>FEREIDOUN</FIRST_NAME>
+         <SECOND_NAME>ABBASI-DAVANI</SECOND_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRi.001</REFERENCE_NUMBER>
+         <LISTED_ON>2007-03-24</LISTED_ON>
+         <COMMENTS1>Has "links to the Institute of Applied Physics, working closely with Mohsen Fakhrizadeh-Mahabadi" (designated under IRi.016) [Old Reference # I.47.C.1].</COMMENTS1>
+         <DESIGNATION>
+            <VALUE>Senior Ministry of Defence and Armed Forces Logistics (MODAFL) Scientist</VALUE>
+         </DESIGNATION>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <LAST_DAY_UPDATED>
+            <VALUE>2014-12-17</VALUE>
+         </LAST_DAY_UPDATED>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY/>
+            <ALIAS_NAME/>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <YEAR>1958</YEAR>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <YEAR>1959</YEAR>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Abadan</CITY>
+            <COUNTRY>Iran</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_DOCUMENT/>
+         <SORT_KEY>Abbasi-Davani Fereidoun</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+   </INDIVIDUALS>
+   <ENTITIES>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110326</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>YAZD METALLURGY INDUSTRIES (YMI)</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.078</REFERENCE_NUMBER>
+         <LISTED_ON>2010-06-09</LISTED_ON>
+         <COMMENTS1>YMI is a subordinate of DIO. [Old Reference #E.29.I.22].</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS>
+            <QUALITY>a.k.a.</QUALITY>
+            <ALIAS_NAME>Yazd Ammunition Manufacturing and Metallurgy Industries</ALIAS_NAME>
+         </ENTITY_ALIAS>
+         <ENTITY_ALIAS>
+            <QUALITY>a.k.a.</QUALITY>
+            <ALIAS_NAME>Directorate of Yazd Ammunition and Metallurgy Industries</ALIAS_NAME>
+         </ENTITY_ALIAS>
+         <ENTITY_ADDRESS>
+            <STREET>Pasdaran Avenue, next to Telecommunication Industry</STREET>
+            <CITY>Tehran, 16588</CITY>
+            <COUNTRY>Iran</COUNTRY>
+         </ENTITY_ADDRESS>
+         <ENTITY_ADDRESS>
+            <STREET>Postal Box 89195/878</STREET>
+            <CITY>Yazd</CITY>
+            <COUNTRY>Iran</COUNTRY>
+         </ENTITY_ADDRESS>
+         <ENTITY_ADDRESS>
+            <STREET>P.O. Box 89195-678</STREET>
+            <CITY>Yazd</CITY>
+            <COUNTRY>Iran</COUNTRY>
+         </ENTITY_ADDRESS>
+         <ENTITY_ADDRESS>
+            <STREET>Km 5 of Taft Road</STREET>
+            <CITY>Yazd</CITY>
+            <COUNTRY>Iran</COUNTRY>
+         </ENTITY_ADDRESS>
+         <SORT_KEY>Yazd Metallurgy Industries</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110327</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>YAS AIR</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.077</REFERENCE_NUMBER>
+         <LISTED_ON>2012-12-20</LISTED_ON>
+         <COMMENTS1>Yas Air is the new name for Pars Air, a company that was owned by Pars Aviation Services Company, which in turn was designated by the United Nations Security Council in resolution 1747 (2007). Yas Air has assisted Pars Aviation Services Company, a United Nations-designated entity, in violating paragraph 5 of resolution 1747 (2007). [Old Reference # I.AC.50.20.12.12.(1)]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS>
+            <STREET>Mehrabad International Airport, Next to Terminal No. 6</STREET>
+            <CITY>Tehran</CITY>
+            <COUNTRY>Iran</COUNTRY>
+         </ENTITY_ADDRESS>
+         <SORT_KEY>Yas Air</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110328</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>YA MAHDI INDUSTRIES GROUP</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.076</REFERENCE_NUMBER>
+         <LISTED_ON>2007-03-24</LISTED_ON>
+         <COMMENTS1>Subordinate to AIO, which is involved in international purchases of missile equipment. [Old Reference # E.47.A.10]</COMMENTS1>
+         <DESIGNATION/>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS/>
+         <SORT_KEY>Ya Mahdi Industries Group</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110329</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>TIZ PARS</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.075</REFERENCE_NUMBER>
+         <LISTED_ON>2010-06-09</LISTED_ON>
+         <COMMENTS1>Tiz Pars is a cover name for SHIG. Between April and July 2007, Tiz Pars attempted to procure a five axis laser welding and cutting machine, which could make a material contribution to Iran's missile programme, on behalf of SHIG. [Old Reference # E.29.I.21]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS>
+            <STREET>Damavand Tehran Highway</STREET>
+            <CITY>Tehran</CITY>
+            <COUNTRY>Iran</COUNTRY>
+         </ENTITY_ADDRESS>
+         <SORT_KEY>Tiz Pars</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110330</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>TAMAS COMPANY</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.074</REFERENCE_NUMBER>
+         <LISTED_ON>2008-03-03</LISTED_ON>
+         <COMMENTS1>Involved in enrichment-related activities. TAMAS is the overarching body, under which four subsidiaries have been established, including one for uranium extraction to concentration and another in charge of uranium processing, enrichment and waste. [Old Reference # E.03.III.12]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS/>
+         <SORT_KEY>TAMAS Company</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110331</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>SPECIAL INDUSTRIES GROUP (SIG)</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.073</REFERENCE_NUMBER>
+         <LISTED_ON>2010-06-09</LISTED_ON>
+         <COMMENTS1>Subordinate of DIO. [Old Reference # E.29.I.20]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS>
+            <STREET>Pasdaran Avenue, PO Box 19585/777</STREET>
+            <CITY>Tehran</CITY>
+            <COUNTRY>Iran</COUNTRY>
+         </ENTITY_ADDRESS>
+         <SORT_KEY>Special Industries Group (SIG)</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110332</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>SOUTH SHIPPING LINE IRAN (SSL) </FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.072</REFERENCE_NUMBER>
+         <LISTED_ON>2010-06-09</LISTED_ON>
+         <COMMENTS1>[Old Reference # E.29.III.3]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS>
+            <STREET>Qaem Magham Farahani St.</STREET>
+            <CITY>Tehran</CITY>
+            <COUNTRY>Iran</COUNTRY>
+         </ENTITY_ADDRESS>
+         <ENTITY_ADDRESS>
+            <STREET>Apt. No. 7, 3rd Floor, No. 2, 4th Alley, Gandi Ave.</STREET>
+            <CITY>Tehran</CITY>
+            <COUNTRY>Iran</COUNTRY>
+         </ENTITY_ADDRESS>
+         <SORT_KEY>South Shipping Line Iran (SSL) </SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110333</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>SHO'A' AVIATION</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.071</REFERENCE_NUMBER>
+         <LISTED_ON>2007-03-24</LISTED_ON>
+         <COMMENTS1>Produces micro-lights which IRGC has claimed it is using as part of its asymmetric warfare doctrine. [Old Reference # E.47.B.3]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS/>
+         <SORT_KEY>Sho'a' Aviation</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110334</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>SHAHID SAYYADE SHIRAZI INDUSTRIES (SSSI)</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.070</REFERENCE_NUMBER>
+         <LISTED_ON>2010-06-09</LISTED_ON>
+         <COMMENTS1>SSSI is owned or controlled by, or acts on behalf of, DIO. [Old Reference # E.29.I.19]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS>
+            <STREET>Next To Nirou Battery Mfg. Co, Shahid Babaii Expressway, Nobonyad Square</STREET>
+            <CITY>Tehran</CITY>
+            <COUNTRY>Iran</COUNTRY>
+         </ENTITY_ADDRESS>
+         <ENTITY_ADDRESS>
+            <STREET>Pasdaran St., P.O. Box 16765</STREET>
+            <CITY>Tehran, 1835</CITY>
+            <COUNTRY>Iran</COUNTRY>
+         </ENTITY_ADDRESS>
+         <ENTITY_ADDRESS>
+            <STREET>Babaei Highway - Next to Niru M.F.G</STREET>
+            <CITY>Tehran</CITY>
+            <COUNTRY>Iran</COUNTRY>
+         </ENTITY_ADDRESS>
+         <SORT_KEY>Shahid Sayyade Shirazi Industries</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110335</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>SHAHID SATTARI INDUSTRIES</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.069</REFERENCE_NUMBER>
+         <LISTED_ON>2010-06-09</LISTED_ON>
+         <COMMENTS1>Owned or controlled by, or acts on behalf of, SBIG. [Old Reference # E.29.I.18]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS>
+            <QUALITY>a.k.a.</QUALITY>
+            <ALIAS_NAME>Shahid Sattari Group Equipment Industries</ALIAS_NAME>
+         </ENTITY_ALIAS>
+         <ENTITY_ADDRESS>
+            <CITY>Southeast Tehran</CITY>
+            <COUNTRY>Iran</COUNTRY>
+         </ENTITY_ADDRESS>
+         <SORT_KEY>Shahid Sattari Industries</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110336</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>SHAHID KARRAZI INDUSTRIES</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.068</REFERENCE_NUMBER>
+         <LISTED_ON>2010-06-09</LISTED_ON>
+         <COMMENTS1>Owned or controlled by, or acts on behalf of, SBIG. [Old Reference # E.29.I.17]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS>
+            <CITY> Tehran</CITY>
+            <COUNTRY>Iran</COUNTRY>
+         </ENTITY_ADDRESS>
+         <SORT_KEY>Shahid Karrazi Industries</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110337</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>SHAHID HEMMAT INDUSTRIAL GROUP (SHIG)</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.067</REFERENCE_NUMBER>
+         <LISTED_ON>2006-12-23</LISTED_ON>
+         <COMMENTS1>Subordinate entity of AIO. [Old Reference # E.37.B.1]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS/>
+         <SORT_KEY>Shahid Hemmat Industrial Group (SHIG)</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110338</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>SHAHID BAGHERI INDUSTRIAL GROUP (SBIG)</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.066</REFERENCE_NUMBER>
+         <LISTED_ON>2006-12-23</LISTED_ON>
+         <COMMENTS1>Subordinate entity of AIO. [Old Reference # E.37.B.2]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS/>
+         <SORT_KEY>Shahid Bagheri Industrial Group (SBIG)</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110339</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>SEPASAD ENGINEERING COMPANY</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.065</REFERENCE_NUMBER>
+         <LISTED_ON>2010-06-09</LISTED_ON>
+         <COMMENTS1>Owned or controlled by, or acting on behalf of, KAA. [Old Reference # E.29.II.15]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS/>
+         <SORT_KEY>Sepasad Engineering Company</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110340</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>SEPANIR</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.064</REFERENCE_NUMBER>
+         <LISTED_ON>2010-06-09</LISTED_ON>
+         <COMMENTS1>Owned or controlled by, or acting on behalf of, KAA. [Old Reference # E.29.II.14]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS/>
+         <SORT_KEY>Sepanir</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110341</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>SANAM INDUSTRIAL GROUP</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.063</REFERENCE_NUMBER>
+         <LISTED_ON>2007-03-24</LISTED_ON>
+         <COMMENTS1>Subordinate to AIO, which has purchased equipment on AIO's behalf for the missile programme. [Old Reference # E.47.A.9]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS/>
+         <SORT_KEY>Sanam Industrial Group</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110342</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>SAHEL CONSULTANT ENGINEERS</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.062</REFERENCE_NUMBER>
+         <LISTED_ON>2010-06-09</LISTED_ON>
+         <COMMENTS1>Owned or controlled by Ghorb Nooh. [Old Reference # E.29.II.13]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS/>
+         <SORT_KEY>Sahel Consultant Engineers</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110343</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>SAHAND ALUMINUM PARTS INDUSTRIAL COMPANY (SAPICO)</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.061</REFERENCE_NUMBER>
+         <LISTED_ON>2010-06-09</LISTED_ON>
+         <COMMENTS1>SAPICO is a cover name for SHIG. [Old Reference # E.29.I.16]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS>
+            <STREET>Damavand Tehran Highway</STREET>
+            <CITY>Tehran</CITY>
+            <COUNTRY>Iran</COUNTRY>
+         </ENTITY_ADDRESS>
+         <SORT_KEY>Sahand Aluminum Parts Industrial Company (SAPICO)</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110344</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>SAFETY EQUIPMENT PROCUREMENT (SEP)</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.060</REFERENCE_NUMBER>
+         <LISTED_ON>2008-03-03</LISTED_ON>
+         <COMMENTS1>AIO front-company, involved in the ballistic missile programme. [Old Reference # E.03.III.11]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS/>
+         <SORT_KEY>Safety Equipment Procurement (SEP)</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110345</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>SAD IMPORT EXPORT COMPANY</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.059</REFERENCE_NUMBER>
+         <LISTED_ON>2012-12-20</LISTED_ON>
+         <COMMENTS1>Assisted Parchin Chemical Industries and 7th of Tir Industries, designated in resolutions 1747 (2007) and 1737 (2006), in violating paragraph 5 of resolution 1747 (2007). [Old Reference # I.AC.50.20.12.12.(2)]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <LAST_DAY_UPDATED>
+            <VALUE>2014-12-17</VALUE>
+         </LAST_DAY_UPDATED>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS>
+            <STREET>Haftom Tir Square, South Mofte Avenue, Tour Line No 3/1</STREET>
+            <CITY>Tehran</CITY>
+            <COUNTRY>Iran</COUNTRY>
+         </ENTITY_ADDRESS>
+         <ENTITY_ADDRESS>
+            <STREET>P.O. Box 1584864813</STREET>
+            <CITY>Tehran</CITY>
+            <COUNTRY>Iran</COUNTRY>
+         </ENTITY_ADDRESS>
+         <SORT_KEY>SAD Import Export Company</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110346</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>SABALAN COMPANY</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.058</REFERENCE_NUMBER>
+         <LISTED_ON>2010-06-09</LISTED_ON>
+         <COMMENTS1>Sabalan is a cover name for SHIG. [Old Reference # E.29.I.15]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS>
+            <STREET>Damavand Tehran Highway</STREET>
+            <CITY>Tehran</CITY>
+            <COUNTRY>Iran</COUNTRY>
+         </ENTITY_ADDRESS>
+         <SORT_KEY>Sabalan Company</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110347</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>RAHAB ENGINEERING INSTITUTE</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.057</REFERENCE_NUMBER>
+         <LISTED_ON>2010-06-09</LISTED_ON>
+         <COMMENTS1>Owned or controlled by, or acting on behalf of, KAA and is a subsidiary of KAA. [Old Reference # E.29.II.12]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS/>
+         <SORT_KEY>Rahab Engineering Institute</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110348</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>RAH SAHEL</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.056</REFERENCE_NUMBER>
+         <LISTED_ON>2010-06-09</LISTED_ON>
+         <COMMENTS1>Owned or controlled by, or acting on behalf of, KAA. [Old Reference # E.29.II.11]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS/>
+         <SORT_KEY>Rah Sahel</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110349</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>QODS AERONAUTICS INDUSTRIES</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.055</REFERENCE_NUMBER>
+         <LISTED_ON>2007-03-24</LISTED_ON>
+         <COMMENTS1>Produces unmanned aerial vehicles (UAVs), parachutes, para-gliders, para-motors, etc. IRGC has boasted of using these products as part of its asymmetric warfare doctrine. [Old Reference # E.47.B.1]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS/>
+         <SORT_KEY>Qods Aeronautics Industries</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110350</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>PISHGAM ENERGY INDUSTRIES</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.054</REFERENCE_NUMBER>
+         <LISTED_ON>2008-03-03</LISTED_ON>
+         <COMMENTS1>Participated in the construction of the Uranium Conversion Facility at Esfahan. [Old Reference # E.03.III.10]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS>
+            <QUALITY>a.k.a.</QUALITY>
+            <ALIAS_NAME>Pioneer Energy Industries</ALIAS_NAME>
+         </ENTITY_ALIAS>
+         <ENTITY_ADDRESS/>
+         <SORT_KEY>Pishgam Energy Industries</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110351</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>PEJMAN INDUSTRIAL SERVICES CORPORATION</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.053</REFERENCE_NUMBER>
+         <LISTED_ON>2010-06-09</LISTED_ON>
+         <COMMENTS1>Owned or controlled by, or acts on behalf of, SBIG. [Old Reference # E.29.I.14]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS>
+            <STREET>P.O. Box 16785-195</STREET>
+            <CITY>Tehran</CITY>
+            <COUNTRY>Iran</COUNTRY>
+         </ENTITY_ADDRESS>
+         <SORT_KEY>Pejman Industrial Services Corporation</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110352</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>PARS TRASH COMPANY</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.052</REFERENCE_NUMBER>
+         <LISTED_ON>2006-12-23</LISTED_ON>
+         <COMMENTS1>Involved in centrifuge programme, identified in IAEA reports. [Old Reference # E.37.A.4]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS/>
+         <SORT_KEY>Pars Trash Company</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110353</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>PARS AVIATION SERVICES COMPANY</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.051</REFERENCE_NUMBER>
+         <LISTED_ON>2007-03-24</LISTED_ON>
+         <COMMENTS1>Maintains various aircraft, including MI-171, used by IRGC Air Force. [Old Reference # E.47.B.2]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS/>
+         <SORT_KEY>Pars Aviation Services Company</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110354</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>PARCHIN CHEMICAL INDUSTRIES</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.050</REFERENCE_NUMBER>
+         <LISTED_ON>2007-03-24</LISTED_ON>
+         <COMMENTS1>Branch of DIO, which produces ammunition, explosives, as well as solid propellants for rockets and missiles. [Old Reference # E.47.A.4]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS/>
+         <SORT_KEY>Parchin Chemical Industries</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110355</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>ORIENTAL OIL KISH</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.049</REFERENCE_NUMBER>
+         <LISTED_ON>2010-06-09</LISTED_ON>
+         <COMMENTS1>Owned or controlled by, or acts on behalf of, KAA. [Old Reference # E.29.II.10]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS/>
+         <SORT_KEY>Oriental Oil Kish</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110356</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>OMRAN SAHEL</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.048</REFERENCE_NUMBER>
+         <LISTED_ON>2010-06-09</LISTED_ON>
+         <COMMENTS1>Owned or controlled by Ghorb Nooh. [Old Reference # E.29.II.9]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS/>
+         <SORT_KEY>Omran Sahel</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110357</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>NUCLEAR RESEARCH CENTER FOR AGRICULTURE AND MEDICINE (NFRPC)</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.047</REFERENCE_NUMBER>
+         <LISTED_ON>2010-06-09</LISTED_ON>
+         <COMMENTS1>NFRPC is a large research component of AEOI, which was designated in resolution 1737 (2006). The NFRPC is AEOI's center for the development of nuclear fuel and is involved in enrichment-related activities. [Old Reference # E.29.I.13]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <LAST_DAY_UPDATED>
+            <VALUE>2014-12-17</VALUE>
+         </LAST_DAY_UPDATED>
+         <ENTITY_ALIAS>
+            <QUALITY>a.k.a.</QUALITY>
+            <ALIAS_NAME>Center for Agricultural Research and Nuclear Medicine</ALIAS_NAME>
+         </ENTITY_ALIAS>
+         <ENTITY_ALIAS>
+            <QUALITY>a.k.a.</QUALITY>
+            <ALIAS_NAME>Karaji Agricultural and Medical Research Center</ALIAS_NAME>
+         </ENTITY_ALIAS>
+         <ENTITY_ADDRESS>
+            <STREET>P.O. Box 31585-4395</STREET>
+            <CITY>Karaj</CITY>
+            <COUNTRY>Iran</COUNTRY>
+         </ENTITY_ADDRESS>
+         <SORT_KEY>Nuclear Research Center for Agriculture and Medicine</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110358</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>NOVIN ENERGY COMPANY</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.046</REFERENCE_NUMBER>
+         <LISTED_ON>2007-03-24</LISTED_ON>
+         <COMMENTS1>Operates within AEOI and has transferred funds on behalf of AEOI to entities associated with Iran's nuclear programme. [Old Reference # E.47.A.6]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS>
+            <QUALITY>a.k.a.</QUALITY>
+            <ALIAS_NAME>Pars Novin</ALIAS_NAME>
+         </ENTITY_ALIAS>
+         <ENTITY_ADDRESS/>
+         <SORT_KEY>Novin Energy Company</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110359</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>NIRU BATTERY MANUFACTURING COMPANY</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.045</REFERENCE_NUMBER>
+         <LISTED_ON>2008-03-03</LISTED_ON>
+         <COMMENTS1>Subsidiary of DIO. Its role is to manufacture power units for the Iranian military including missile systems. [Old Reference # E.03.III.9]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS/>
+         <SORT_KEY>Niru Battery Manufacturing Company</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110360</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>MODERN INDUSTRIES TECHNIQUE COMPANY (MITEC)</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.044</REFERENCE_NUMBER>
+         <LISTED_ON>2010-06-09</LISTED_ON>
+         <COMMENTS1>MITEC is responsible for design and construction of the IR-40 heavy water reactor in Arak. MITEC has spearheaded procurement for the construction of the IR-40 heavy water reactor. [Old Reference # E.29.I.12]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <LAST_DAY_UPDATED>
+            <VALUE>2014-12-17</VALUE>
+         </LAST_DAY_UPDATED>
+         <ENTITY_ALIAS>
+            <QUALITY>a.k.a.</QUALITY>
+            <ALIAS_NAME>MITEC</ALIAS_NAME>
+         </ENTITY_ALIAS>
+         <ENTITY_ALIAS>
+            <QUALITY>a.k.a.</QUALITY>
+            <ALIAS_NAME>Rahkar Company</ALIAS_NAME>
+         </ENTITY_ALIAS>
+         <ENTITY_ALIAS>
+            <QUALITY>a.k.a.</QUALITY>
+            <ALIAS_NAME>Rahkar Industries</ALIAS_NAME>
+         </ENTITY_ALIAS>
+         <ENTITY_ALIAS>
+            <QUALITY>a.k.a.</QUALITY>
+            <ALIAS_NAME>Rahkar Sanaye Company</ALIAS_NAME>
+         </ENTITY_ALIAS>
+         <ENTITY_ALIAS>
+            <QUALITY>a.k.a.</QUALITY>
+            <ALIAS_NAME>Rahkar Sanaye Novin</ALIAS_NAME>
+         </ENTITY_ALIAS>
+         <ENTITY_ADDRESS>
+            <CITY>Arak</CITY>
+            <COUNTRY>Iran</COUNTRY>
+         </ENTITY_ADDRESS>
+         <SORT_KEY>Modern Industries Technique Company</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110361</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>MIZAN MACHINERY MANUFACTURING</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.043</REFERENCE_NUMBER>
+         <LISTED_ON>2010-06-09</LISTED_ON>
+         <COMMENTS1>Owned or controlled by, or acts on behalf of, SHIG. [Old Reference # E.29.I.11]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS>
+            <QUALITY>a.k.a.</QUALITY>
+            <ALIAS_NAME>3MG</ALIAS_NAME>
+         </ENTITY_ALIAS>
+         <ENTITY_ADDRESS>
+            <STREET>P.O. Box 16595-365</STREET>
+            <CITY>Tehran</CITY>
+            <COUNTRY>Iran</COUNTRY>
+         </ENTITY_ADDRESS>
+         <SORT_KEY>Mizan Machinery Manufacturing</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110362</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>MINISTRY OF DEFENSE LOGISTICS EXPORT</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.042</REFERENCE_NUMBER>
+         <LISTED_ON>2010-06-09</LISTED_ON>
+         <COMMENTS1>MODLEX sells Iranian-produced arms to customers around the world in contravention of resolution 1747 (2007), which prohibits Iran from selling arms or related materiel. [Old Reference # E.29.I.10]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS>
+            <QUALITY>a.k.a.</QUALITY>
+            <ALIAS_NAME>MODLEX</ALIAS_NAME>
+         </ENTITY_ALIAS>
+         <ENTITY_ADDRESS>
+            <STREET>P.O. Box 16315-189</STREET>
+            <CITY>Tehran</CITY>
+            <COUNTRY>Iran</COUNTRY>
+         </ENTITY_ADDRESS>
+         <ENTITY_ADDRESS>
+            <STREET>Located on the west side of Dabestan Street, Abbas Abad District</STREET>
+            <CITY>Tehran</CITY>
+            <COUNTRY>Iran</COUNTRY>
+         </ENTITY_ADDRESS>
+         <SORT_KEY>Ministry of Defense Logistics Export</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110363</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>MESBAH ENERGY COMPANY</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.041</REFERENCE_NUMBER>
+         <LISTED_ON>2006-12-23</LISTED_ON>
+         <COMMENTS1>Provider for A-40 research reactor, Arak. [Old Reference # E.37.A.2]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS/>
+         <SORT_KEY>Mesbah Energy Company</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110364</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>MALEK ASHTAR UNIVERSITY</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.040</REFERENCE_NUMBER>
+         <LISTED_ON>2010-06-09</LISTED_ON>
+         <COMMENTS1>Subordinate of the DTRSC within MODAFL. This includes research groups previously falling under the Physics Research Center (PHRC). IAEA inspectors have not been allowed to interview staff or see documents under the control of this organization to resolve the outstanding issue of the possible military dimension to Iran's nuclear programme. [Old Reference # E.29.I.9]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS>
+            <STREET>Corner of Imam Ali Highway and Babaei Highway</STREET>
+            <CITY>Tehran</CITY>
+            <COUNTRY>Iran</COUNTRY>
+         </ENTITY_ADDRESS>
+         <SORT_KEY>Malek Ashtar University</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110365</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>MAKIN</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.039</REFERENCE_NUMBER>
+         <LISTED_ON>2010-06-09</LISTED_ON>
+         <COMMENTS1>Owned or controlled by or acting on behalf of KAA, and is a subsidiary of KAA. [Old Reference # E.29.II.8]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS/>
+         <SORT_KEY>Makin</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110366</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>M. BABAIE INDUSTRIES</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.038</REFERENCE_NUMBER>
+         <LISTED_ON>2010-06-09</LISTED_ON>
+         <COMMENTS1>Subordinate to Shahid Ahmad Kazemi Industries Group (formally the Air Defense Missile Industries Group) of Iran's Aerospace Industries Organization (AIO). AIO controls the missile organizations Shahid Hemmat Industrial Group (SHIG) and the Shahid Bakeri Industrial Group (SBIG), both of which were designated in resolution 1737 (2006). [Old Reference # E.29.I.8]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS>
+            <STREET>P.O. Box 16535-76</STREET>
+            <CITY>Tehran, 16548</CITY>
+            <COUNTRY>Iran</COUNTRY>
+         </ENTITY_ADDRESS>
+         <SORT_KEY>M. Babaie Industries</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110367</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>KHORASAN METALLURGY INDUSTRIES</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.037</REFERENCE_NUMBER>
+         <LISTED_ON>2008-03-03</LISTED_ON>
+         <COMMENTS1>Subsidiary of AMIG which depends on DIO. Involved in the production of centrifuges components. [Old Reference # E.03.III.8]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS/>
+         <SORT_KEY>Khorasan Metallurgy Industries</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110368</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>KHATAM AL-ANBIYA CONSTRUCTION HEADQUARTERS (KAA)</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.036</REFERENCE_NUMBER>
+         <LISTED_ON>2010-06-09</LISTED_ON>
+         <COMMENTS1>KAA is an IRGC-owned company involved in large scale civil and military construction projects and other engineering activities. It undertakes a significant amount of work on Passive Defense Organization projects. In particular, KAA subsidiaries were heavily involved in the construction of the uranium enrichment site at Qom/Fordow. [Old Reference # E.29.II.7]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <LAST_DAY_UPDATED>
+            <VALUE>2014-12-17</VALUE>
+         </LAST_DAY_UPDATED>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS/>
+         <SORT_KEY>Khatam al-Anbiya Construction Headquarters</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110369</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>KAVOSHYAR COMPANY</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.035</REFERENCE_NUMBER>
+         <LISTED_ON>2007-03-24</LISTED_ON>
+         <COMMENTS1>Subsidiary company of AEOI which has sought glass fibres, vacuum chamber furnaces and laboratory equipment for Iran's nuclear programme. [Old Reference # E.47.A.3]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS/>
+         <SORT_KEY>Kavoshyar Company</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110370</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>KAVEH CUTTING TOOLS COMPANY</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.034</REFERENCE_NUMBER>
+         <LISTED_ON>2010-06-09</LISTED_ON>
+         <COMMENTS1>Owned or controlled by, or acts on behalf of, DIO. [Old Reference # E.29.I.7]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS>
+            <STREET>3rd Km of Khalaj Road, Seyyedi Street</STREET>
+            <CITY>Mashad, 91638</CITY>
+            <COUNTRY>Iran</COUNTRY>
+         </ENTITY_ADDRESS>
+         <ENTITY_ADDRESS>
+            <STREET>Km 4 of Khalaj Road, End of Seyedi Street</STREET>
+            <CITY>Mashad</CITY>
+            <COUNTRY>Iran</COUNTRY>
+         </ENTITY_ADDRESS>
+         <ENTITY_ADDRESS>
+            <STREET>P.O. Box 91735-549</STREET>
+            <CITY>Mashad</CITY>
+            <COUNTRY>Iran</COUNTRY>
+         </ENTITY_ADDRESS>
+         <ENTITY_ADDRESS>
+            <STREET>Khalaj Rd., End of Seyyedi Alley</STREET>
+            <CITY>Mashad</CITY>
+            <COUNTRY>Iran</COUNTRY>
+         </ENTITY_ADDRESS>
+         <ENTITY_ADDRESS>
+            <STREET>Moqan St., Pasdaran St., Pasdaran Cross Rd.</STREET>
+            <CITY>Tehran</CITY>
+            <COUNTRY>Iran</COUNTRY>
+         </ENTITY_ADDRESS>
+         <SORT_KEY>Kaveh Cutting Tools Company</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110371</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>KARAJ NUCLEAR RESEARCH CENTRE</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.033</REFERENCE_NUMBER>
+         <LISTED_ON>2007-03-24</LISTED_ON>
+         <COMMENTS1>Part of AEOI's research division. [Old Reference # E.47.A.5]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS/>
+         <SORT_KEY>Karaj Nuclear Research Centre</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110372</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>KALA-ELECTRIC</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.032</REFERENCE_NUMBER>
+         <LISTED_ON>2006-12-23</LISTED_ON>
+         <COMMENTS1>Provider for PFEP - Natanz. [Old Reference # E.37.A.3]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS>
+            <QUALITY>a.k.a.</QUALITY>
+            <ALIAS_NAME>Kalaye Electric</ALIAS_NAME>
+         </ENTITY_ALIAS>
+         <ENTITY_ADDRESS/>
+         <SORT_KEY>Kala-Electric</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110373</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>JOZA INDUSTRIAL CO.</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.031</REFERENCE_NUMBER>
+         <LISTED_ON>2008-03-03</LISTED_ON>
+         <COMMENTS1>AIO front-company, involved in the ballistic missile programme. [Old Reference # E.03.III.7]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS/>
+         <SORT_KEY>Joza Industrial Co.</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110374</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>JABBER IBN HAYAN</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.030</REFERENCE_NUMBER>
+         <LISTED_ON>2008-03-03</LISTED_ON>
+         <COMMENTS1>AEOI laboratory involved in fuel-cycle activities. [Old Reference # E.03.III.6]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS/>
+         <SORT_KEY>Jabber Ibn Hayan</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110375</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>IRISL BENELUX NV</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.029</REFERENCE_NUMBER>
+         <LISTED_ON>2010-06-09</LISTED_ON>
+         <COMMENTS1> Additional information: VAT Number BE480224531 [Old Reference # E.29.III.2]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS>
+            <STREET>Noorderlaan 139, B-2030</STREET>
+            <CITY>Antwerp</CITY>
+            <COUNTRY>Belgium</COUNTRY>
+         </ENTITY_ADDRESS>
+         <SORT_KEY>IRISL Benelux NV</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110376</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>IRANO HIND SHIPPING COMPANY</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.028</REFERENCE_NUMBER>
+         <LISTED_ON>2010-06-09</LISTED_ON>
+         <COMMENTS1>[Old Reference # E.29.III.1]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS>
+            <STREET>18 Mehrshad Street, Sadaghat Street, Opposite of Park Mellat, Valie-Asr Ave.</STREET>
+            <CITY>Tehran</CITY>
+            <COUNTRY>Iran</COUNTRY>
+         </ENTITY_ADDRESS>
+         <ENTITY_ADDRESS>
+            <STREET>265, Next to Mehrshad, Sedaghat St., Opposite of Mellat Park, Vali Asr Ave.</STREET>
+            <CITY>Tehran, 1A001</CITY>
+            <COUNTRY>Iran</COUNTRY>
+         </ENTITY_ADDRESS>
+         <SORT_KEY>Irano Hind Shipping Company</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110377</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>INDUSTRIAL FACTORIES OF PRECISION (IFP) MACHINERY</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.027</REFERENCE_NUMBER>
+         <LISTED_ON>2008-03-03</LISTED_ON>
+         <COMMENTS1>Used by AIO for some acquisition attempts. [Old Reference # E.03.III.5]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS>
+            <QUALITY>a.k.a.</QUALITY>
+            <ALIAS_NAME>Instrumentation Factories Plant</ALIAS_NAME>
+         </ENTITY_ALIAS>
+         <ENTITY_ADDRESS/>
+         <SORT_KEY>Industrial Factories of Precision (IFP) Machinery</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110378</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>IMENSAZAN CONSULTANT ENGINEERS INSTITUTE</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.026</REFERENCE_NUMBER>
+         <LISTED_ON>2010-06-09</LISTED_ON>
+         <COMMENTS1>Owned or controlled by, or acts on behalf of, KAA. [Old Reference # E.29.II.6]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS/>
+         <SORT_KEY>Imensazan Consultant Engineers Institute</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110379</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>HARA COMPANY</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.025</REFERENCE_NUMBER>
+         <LISTED_ON>2010-06-09</LISTED_ON>
+         <COMMENTS1>Owned or controlled by Ghorb Nooh. [Old Reference # E.29.II.5]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS/>
+         <SORT_KEY>Hara Company</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110380</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>GHORB NOOH</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.024</REFERENCE_NUMBER>
+         <LISTED_ON>2010-06-09</LISTED_ON>
+         <COMMENTS1>Owned or controlled by KAA. [Old Reference # E.29.II.4]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS/>
+         <SORT_KEY>Ghorb Nooh</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110381</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>GHORB KARBALA</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.023</REFERENCE_NUMBER>
+         <LISTED_ON>2010-06-09</LISTED_ON>
+         <COMMENTS1>Owned or controlled by KAA. [Old Reference # E.29.II.3]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS/>
+         <SORT_KEY>Ghorb Karbala</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110382</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>GHARAGAHE SAZANDEGI GHAEM</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.022</REFERENCE_NUMBER>
+         <LISTED_ON>2010-06-09</LISTED_ON>
+         <COMMENTS1>Owned or controlled by KAA. [Old Reference # E.29.II.2]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS/>
+         <SORT_KEY>Gharagahe Sazandegi Ghaem</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110383</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>FIRST EAST EXPORT BANK, P.L.C.</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.021</REFERENCE_NUMBER>
+         <LISTED_ON>2010-06-09</LISTED_ON>
+         <COMMENTS1>Owned or controlled by, or acts on behalf of, Bank Mellat. Bank Mellat has facilitated hundreds of millions of dollars in transactions for Iranian nuclear, missile, and defense entities. (Additional information: Business Registration Number LL06889 (Malaysia)) [Old Reference # E.29.I.6]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS>
+            <STREET>Unit Level 10 (B1), Main Office Tower, Financial Park Labuan, Jalan Merdeka, 87000 WP</STREET>
+            <CITY>Labuan</CITY>
+            <COUNTRY>Malaysia</COUNTRY>
+         </ENTITY_ADDRESS>
+         <SORT_KEY>First East Export Bank, P.L.C.</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110384</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>FATER INSTITUTE</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.020</REFERENCE_NUMBER>
+         <LISTED_ON>2010-06-09</LISTED_ON>
+         <COMMENTS1>Khatam al-Anbiya (KAA) subsidiary. Fater has worked with foreign suppliers, likely on behalf of other KAA companies on IRGC projects in Iran. [Old Reference # E.29.II.1]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS>
+            <QUALITY>a.k.a.</QUALITY>
+            <ALIAS_NAME>Faater Institute</ALIAS_NAME>
+         </ENTITY_ALIAS>
+         <ENTITY_ADDRESS/>
+         <SORT_KEY>Fater Institute</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110385</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>FARAYAND TECHNIQUE</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.019</REFERENCE_NUMBER>
+         <LISTED_ON>2006-12-23</LISTED_ON>
+         <COMMENTS1>Involved in centrifuge programme, identified in IAEA reports. [Old Reference # E.37.A.5]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS/>
+         <SORT_KEY>Farayand Technique</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110386</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>FARASAKHT INDUSTRIES</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.018</REFERENCE_NUMBER>
+         <LISTED_ON>2010-06-09</LISTED_ON>
+         <COMMENTS1>Owned or controlled by, or acts on behalf of, the Iran Aircraft Manufacturing Company, which in turn is owned or controlled by MODAFL. [Old Reference # E.29.I.5]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS>
+            <STREET>P.O. Box 83145-311, Kilometer 28, Esfahan-Tehran Freeway, Shahin Shahr</STREET>
+            <CITY>Esfahan</CITY>
+            <COUNTRY>Iran</COUNTRY>
+         </ENTITY_ADDRESS>
+         <SORT_KEY>Farasakht Industries</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110387</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>FAJR INDUSTRIAL GROUP</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.017</REFERENCE_NUMBER>
+         <LISTED_ON>2006-12-23</LISTED_ON>
+         <COMMENTS1>Subordinate entity of AIO. [Old Reference # E.37.B.3]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS>
+            <QUALITY>f.k.a.</QUALITY>
+            <ALIAS_NAME>Instrumentation Factory Plant</ALIAS_NAME>
+         </ENTITY_ALIAS>
+         <ENTITY_ADDRESS/>
+         <SORT_KEY>Fajr Industrial Group</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110388</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>ETTEHAD TECHNICAL GROUP</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.016</REFERENCE_NUMBER>
+         <LISTED_ON>2008-03-03</LISTED_ON>
+         <COMMENTS1>AIO front-company, involved in the ballistic missile programme. [Old Reference # E.03.III.4]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS/>
+         <SORT_KEY>Ettehad Technical Group</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110389</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>ESFAHAN NUCLEAR FUEL RESEARCH AND PRODUCTION CENTRE (NFRPC) AND ESFAHAN NUCLEAR TECHNOLOGY CENTRE (ENTC)</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.015</REFERENCE_NUMBER>
+         <LISTED_ON>2007-03-24</LISTED_ON>
+         <COMMENTS1>Parts of the Atomic Energy Organisation of Iran's (AEOI) Nuclear Fuel Production and Procurement Company, which is involved in enrichment-related activities. AEOI is designated under resolution 1737 (2006). [Old Reference # E.47.A.2]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS/>
+         <SORT_KEY>Esfahan Nuclear Fuel Research and Production Centre (NFRPC) and Esfahan Nuclear Technology Centre (ENTC)</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110390</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>ELECTRO SANAM COMPANY</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.014</REFERENCE_NUMBER>
+         <LISTED_ON>2008-03-03</LISTED_ON>
+         <COMMENTS1>AIO front-company, involved in the ballistic missile programme. [Old Reference # E.03.III.3]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS>
+            <QUALITY>a.k.a.</QUALITY>
+            <ALIAS_NAME>E. S. Co.</ALIAS_NAME>
+         </ENTITY_ALIAS>
+         <ENTITY_ALIAS>
+            <QUALITY>a.k.a.</QUALITY>
+            <ALIAS_NAME>E. X. Co.</ALIAS_NAME>
+         </ENTITY_ALIAS>
+         <ENTITY_ADDRESS/>
+         <SORT_KEY>Electro Sanam Company</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110391</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>DOOSTAN INTERNATIONAL COMPANY (DICO)</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.013</REFERENCE_NUMBER>
+         <LISTED_ON>2010-06-09</LISTED_ON>
+         <COMMENTS1>Supplies elements to Iran's ballistic missile programme. [Old Reference # E.29.I.4]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <LAST_DAY_UPDATED>
+            <VALUE>2014-12-17</VALUE>
+         </LAST_DAY_UPDATED>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS/>
+         <SORT_KEY>Doostan International Company</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110392</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>DEFENSE TECHNOLOGY AND SCIENCE RESEARCH CENTER (DTSRC)</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.012</REFERENCE_NUMBER>
+         <LISTED_ON>2010-06-09</LISTED_ON>
+         <COMMENTS1>Owned or controlled by, or acts on behalf of, MODAFL, which oversees Iran's defence research and development, production, maintenance, exports and procurement. [Old Reference # E.29.I.3]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <LAST_DAY_UPDATED>
+            <VALUE>2014-12-17</VALUE>
+         </LAST_DAY_UPDATED>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS>
+            <STREET>Pasdaran Av., PO Box 19585/777</STREET>
+            <CITY>Tehran</CITY>
+            <COUNTRY>Iran</COUNTRY>
+         </ENTITY_ADDRESS>
+         <SORT_KEY>Defense Technology and Science Research Center</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110393</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>DEFENCE INDUSTRIES ORGANISATION (DIO)</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.011</REFERENCE_NUMBER>
+         <LISTED_ON>2006-12-23</LISTED_ON>
+         <COMMENTS1>Overarching MODAFL-controlled entity, some of whose subordinates have been involved in the centrifuge programme making components, and in the missile programme. [Old Reference # E.37.A.6]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS/>
+         <SORT_KEY>Defence Industries Organisation</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110394</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>CRUISE MISSILE INDUSTRY GROUP</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.010</REFERENCE_NUMBER>
+         <LISTED_ON>2007-03-24</LISTED_ON>
+         <COMMENTS1>Production and development of cruise missiles. Responsible for naval missiles including cruise missiles. [Old Reference # E.47.A.7]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS>
+            <QUALITY>a.k.a.</QUALITY>
+            <ALIAS_NAME>Naval Defence Missile Industry Group</ALIAS_NAME>
+         </ENTITY_ALIAS>
+         <ENTITY_ADDRESS/>
+         <SORT_KEY>Cruise Missile Industry Group</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110395</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>BEHINEH TRADING CO.</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.009</REFERENCE_NUMBER>
+         <LISTED_ON>2012-04-18</LISTED_ON>
+         <COMMENTS1>An Iranian company that played a key role in Iran's illicit transfer of arms to West Africa and acted on behalf of the IRGC Qods Force, commanded by Major General Qasem Soleimani, designated by the UN Security Council in resolution 1747 (2007), as the shipper of the weapons consignment. (Additional Information: Telephone: 98-919-538-2305; Website: http://www.behinehco.ir) [Old Reference # E.AC.50.18.04.12]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS>
+            <STREET>Tavakoli Building, Opposite of 15th Alley, Emam-Jomeh Street</STREET>
+            <CITY>Tehran</CITY>
+            <COUNTRY>Iran</COUNTRY>
+         </ENTITY_ADDRESS>
+         <SORT_KEY>Behineh Trading Co.</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110396</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>BARZAGANI TEJARAT TAVANMAD SACCAL COMPANIES</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.008</REFERENCE_NUMBER>
+         <LISTED_ON>2008-03-03</LISTED_ON>
+         <COMMENTS1>A subsidiary of Saccal System companies, this company tried to purchase sensitive goods for an entity listed in resolution 1737 (2006). [Old Reference # E.03.III.2]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS/>
+         <SORT_KEY>Barzagani Tejarat Tavanmad Saccal companies</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110397</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>BANK SEPAH AND BANK SEPAH INTERNATIONAL</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.007</REFERENCE_NUMBER>
+         <LISTED_ON>2007-03-24</LISTED_ON>
+         <COMMENTS1>Bank Sepah provides support for the Aerospace Industries Organisation (AIO) and subordinates, including Shahid Hemmat Industrial Group (SHIG) and Shahid Bagheri Industrial Group (SBIG), both of which were designated under resolution 1737 (2006). [Old Reference # E.47.A.8]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS/>
+         <SORT_KEY>Bank Sepah and Bank Sepah International</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110398</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>ATOMIC ENERGY ORGANISATION OF IRAN (AEOI)</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.006</REFERENCE_NUMBER>
+         <LISTED_ON>2006-12-23</LISTED_ON>
+         <COMMENTS1>[Old Reference # E.37.A.1]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS/>
+         <SORT_KEY>Atomic Energy Organisation of Iran</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110399</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>ARMAMENT INDUSTRIES GROUP (AIG)</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.005</REFERENCE_NUMBER>
+         <LISTED_ON>2010-06-09</LISTED_ON>
+         <COMMENTS1>Manufacturers and services a variety of small arms and light weapons, including large- and medium-calibre guns and related technology. AIG conducts the majority of its procurement activity through Hadid Industries Complex. [Old Reference # E.29.I.2]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <LAST_DAY_UPDATED>
+            <VALUE>2014-12-17</VALUE>
+         </LAST_DAY_UPDATED>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS>
+            <STREET>Sepah Islam Road, Karaj Special Road Km 10</STREET>
+            <COUNTRY>Iran</COUNTRY>
+         </ENTITY_ADDRESS>
+         <ENTITY_ADDRESS>
+            <STREET>Pasdaran Ave.  </STREET>
+            <CITY>Tehran</CITY>
+            <COUNTRY>Iran</COUNTRY>
+         </ENTITY_ADDRESS>
+         <ENTITY_ADDRESS>
+            <STREET>P.O. Box 19585/777 </STREET>
+            <CITY>Tehran</CITY>
+            <COUNTRY>Iran</COUNTRY>
+         </ENTITY_ADDRESS>
+         <SORT_KEY>Armament Industries Group</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110400</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>AMMUNITION AND METALLURGY INDUSTRIES GROUP (AMIG)</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.004</REFERENCE_NUMBER>
+         <LISTED_ON>2007-03-24</LISTED_ON>
+         <COMMENTS1>Controls 7th of Tir, which is designated under resolution 1737 (2006) for its role in Iran's centrifuge programme. AMIG is in turn owned and controlled by DIO, which is designated under resolution 1737 (2006). [Old Reference # E.47.A.1]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <LAST_DAY_UPDATED>
+            <VALUE>2014-12-17</VALUE>
+         </LAST_DAY_UPDATED>
+         <ENTITY_ALIAS>
+            <QUALITY>a.k.a.</QUALITY>
+            <ALIAS_NAME>Ammunition Industries Group</ALIAS_NAME>
+         </ENTITY_ALIAS>
+         <ENTITY_ADDRESS/>
+         <SORT_KEY>Ammunition and Metallurgy Industries Group</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110401</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>AMIN INDUSTRIAL COMPLEX</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.003</REFERENCE_NUMBER>
+         <LISTED_ON>2010-06-09</LISTED_ON>
+         <COMMENTS1>Sought temperature controllers which may be used in nuclear research and operational/production facilities. Amin Industrial Complex is owned or controlled by, or acts on behalf of, DIO, which was designated in resolution 1737 (2006). [Old Reference # E.29.I.1]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <LAST_DAY_UPDATED>
+            <VALUE>2014-12-17</VALUE>
+         </LAST_DAY_UPDATED>
+         <ENTITY_ALIAS>
+            <QUALITY>a.k.a.</QUALITY>
+            <ALIAS_NAME>Amin Industrial Compound</ALIAS_NAME>
+         </ENTITY_ALIAS>
+         <ENTITY_ALIAS>
+            <QUALITY>a.k.a.</QUALITY>
+            <ALIAS_NAME>Amin Industrial Company</ALIAS_NAME>
+         </ENTITY_ALIAS>
+         <ENTITY_ADDRESS>
+            <STREET>P.O. Box 91735-549</STREET>
+            <CITY>Mashad</CITY>
+            <COUNTRY>Iran</COUNTRY>
+         </ENTITY_ADDRESS>
+         <ENTITY_ADDRESS>
+            <STREET>Amin Industrial Estate, Khalage Rd., Seyedi District</STREET>
+            <CITY>Mashad</CITY>
+            <COUNTRY>Iran</COUNTRY>
+         </ENTITY_ADDRESS>
+         <ENTITY_ADDRESS>
+            <STREET>Kaveh Complex, Khalaj Rd., Seyedi St.</STREET>
+            <CITY>Mashad</CITY>
+            <COUNTRY>Iran</COUNTRY>
+         </ENTITY_ADDRESS>
+         <SORT_KEY>Amin Industrial Complex</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110402</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>ABZAR BORESH KAVEH CO. (BK CO.)</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.002</REFERENCE_NUMBER>
+         <LISTED_ON>2008-03-03</LISTED_ON>
+         <COMMENTS1>Involved in the production of centrifuge components. [Old Reference # E.03.III.1]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <LAST_DAY_UPDATED>
+            <VALUE>2014-12-17</VALUE>
+         </LAST_DAY_UPDATED>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS/>
+         <SORT_KEY>Abzar Boresh Kaveh Co.</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+      <ENTITY xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>110403</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>7TH OF TIR</FIRST_NAME>
+         <UN_LIST_TYPE>Iran</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>IRe.001</REFERENCE_NUMBER>
+         <LISTED_ON>2006-12-23</LISTED_ON>
+         <COMMENTS1>Subordinate of Defence Industries Organisation (DIO), widely recognized as being directly involved in the nuclear programme. [Old Reference #E.37.A.7]</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <LAST_DAY_UPDATED>
+            <VALUE>2014-12-17</VALUE>
+         </LAST_DAY_UPDATED>
+         <ENTITY_ALIAS/>
+         <ENTITY_ADDRESS/>
+         <SORT_KEY>7th of Tir</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-18</SORT_KEY_LAST_MOD>
+      </ENTITY>
+   </ENTITIES>
+</CONSOLIDATED_LIST>

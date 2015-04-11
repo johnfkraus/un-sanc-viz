@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONSOLIDATED_LIST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd"
+                   dateGenerated="2015-03-17T17:34:43.965-04:00">
+   <INDIVIDUALS>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>690727</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>FRANÇOIS</FIRST_NAME>
+         <SECOND_NAME>YANGOUVONDA</SECOND_NAME>
+         <THIRD_NAME>BOZIZÉ</THIRD_NAME>
+         <UN_LIST_TYPE>CAR</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>CFi.001</REFERENCE_NUMBER>
+         <LISTED_ON>2014-05-09</LISTED_ON>
+         <COMMENTS1>Mother’s name is Martine Kofio</COMMENTS1>
+         <NATIONALITY>
+            <VALUE>Central African Republic</VALUE>
+         </NATIONALITY>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <LAST_DAY_UPDATED>
+            <VALUE>2014-11-04</VALUE>
+         </LAST_DAY_UPDATED>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Bozize Yangouvonda</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS>
+            <COUNTRY>Uganda</COUNTRY>
+         </INDIVIDUAL_ADDRESS>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1946-10-14</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Mouila</CITY>
+            <COUNTRY>Gabon</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_DOCUMENT/>
+         <SORT_KEY>BOZIZÉ FRANÇOIS YANGOUVONDA </SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-05-13</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>690728</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>NOURREDINE</FIRST_NAME>
+         <SECOND_NAME>ADAM</SECOND_NAME>
+         <UN_LIST_TYPE>CAR</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>CFi.002</REFERENCE_NUMBER>
+         <LISTED_ON>2014-05-09</LISTED_ON>
+         <COMMENTS1>na</COMMENTS1>
+         <DESIGNATION>
+            <VALUE>General</VALUE>
+            <VALUE>Minister for Security</VALUE>
+            <VALUE>Director General of the "Extraordinary Committee for the Defence of Democratic Achievements</VALUE>
+         </DESIGNATION>
+         <NATIONALITY>
+            <VALUE>Central African Republic</VALUE>
+         </NATIONALITY>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <LAST_DAY_UPDATED>
+            <VALUE>2014-11-04</VALUE>
+         </LAST_DAY_UPDATED>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Nureldine Adam</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Nourreldine Adam</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Nourreddine Adam</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Mahamat Nouradine Adam</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS>
+            <CITY>Birao</CITY>
+            <COUNTRY>Central African Republic</COUNTRY>
+         </INDIVIDUAL_ADDRESS>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <YEAR>1970</YEAR>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <YEAR>1969</YEAR>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <YEAR>1971</YEAR>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1970-01-01</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Ndele</CITY>
+            <COUNTRY>Central African Republic</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_DOCUMENT>
+            <TYPE_OF_DOCUMENT>Passport</TYPE_OF_DOCUMENT>
+            <NUMBER>D00001184</NUMBER>
+         </INDIVIDUAL_DOCUMENT>
+         <SORT_KEY>ADAM NOURREDINE </SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-05-13</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+   </INDIVIDUALS>
+   <ENTITIES/>
+</CONSOLIDATED_LIST>

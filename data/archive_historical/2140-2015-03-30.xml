@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONSOLIDATED_LIST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd"
+                   dateGenerated="2015-03-17T17:34:49.847-04:00">
+   <INDIVIDUALS>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>6908434</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>ABD</FIRST_NAME>
+         <SECOND_NAME>AL-KHALIQ </SECOND_NAME>
+         <THIRD_NAME>AL-HUTHI </THIRD_NAME>
+         <FOURTH_NAME/>
+         <UN_LIST_TYPE>Yemen</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>YEi.001</REFERENCE_NUMBER>
+         <LISTED_ON>2014-11-07</LISTED_ON>
+         <NAME_ORIGINAL_SCRIPT>عبدالخالق الحوثي  </NAME_ORIGINAL_SCRIPT>
+         <COMMENTS1>Gender [Male]. </COMMENTS1>
+         <TITLE/>
+         <DESIGNATION>
+            <VALUE>Huthi military commander </VALUE>
+         </DESIGNATION>
+         <NATIONALITY>
+            <VALUE>Yemen</VALUE>
+         </NATIONALITY>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <LAST_DAY_UPDATED>
+            <VALUE>2014-11-20</VALUE>
+         </LAST_DAY_UPDATED>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Abd-al-Khaliq al-Huthi </ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Abd-al-Khaliq Badr-al-Din al Huthi </ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>‘Abd al-Khaliq Badr al-Din al-Huthi </ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Low</QUALITY>
+            <ALIAS_NAME>Abu-Yunus </ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <YEAR>1984</YEAR>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH/>
+         <INDIVIDUAL_DOCUMENT/>
+         <SORT_KEY>AL-HUTHI ABD AL-KHALIQ </SORT_KEY>
+         <SORT_KEY_LAST_MOD/>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>6908435</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>ABDULLAH </FIRST_NAME>
+         <SECOND_NAME>YAHYA  </SECOND_NAME>
+         <THIRD_NAME>AL HAKIM </THIRD_NAME>
+         <FOURTH_NAME/>
+         <UN_LIST_TYPE>Yemen</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>YEi.002</REFERENCE_NUMBER>
+         <LISTED_ON>2014-11-07</LISTED_ON>
+         <NAME_ORIGINAL_SCRIPT>عبد الله يحيى الحاكم  </NAME_ORIGINAL_SCRIPT>
+         <COMMENTS1>Gender [Male]. </COMMENTS1>
+         <TITLE/>
+         <DESIGNATION>
+            <VALUE>Huthi group second-in-command </VALUE>
+         </DESIGNATION>
+         <NATIONALITY>
+            <VALUE>Yemen</VALUE>
+         </NATIONALITY>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <LAST_DAY_UPDATED>
+            <VALUE>2014-11-20</VALUE>
+         </LAST_DAY_UPDATED>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Abu Ali al Hakim </ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Abu-Ali al-Hakim </ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Abdallah al-Hakim </ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Abu Ali Alhakim </ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Abdallah al-Mu’ayyad </ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS>
+            <CITY>Dahyan</CITY>
+            <STATE_PROVINCE>Sa’dah Governorate</STATE_PROVINCE>
+            <COUNTRY>Yemen </COUNTRY>
+         </INDIVIDUAL_ADDRESS>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Approximately</TYPE_OF_DATE>
+            <YEAR>1985</YEAR>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Between</TYPE_OF_DATE>
+            <FROM_YEAR>1984</FROM_YEAR>
+            <TO_YEAR>1986</TO_YEAR>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Dahyan</CITY>
+            <COUNTRY>Yemen</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Sa’dah Governorate</CITY>
+            <COUNTRY>Yemen</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_DOCUMENT/>
+         <SORT_KEY>AL-HAKIM ABDULLAH YAHYA </SORT_KEY>
+         <SORT_KEY_LAST_MOD/>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>6908436</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>ALI  </FIRST_NAME>
+         <SECOND_NAME>ABDULLAH   </SECOND_NAME>
+         <THIRD_NAME>SALEH </THIRD_NAME>
+         <FOURTH_NAME/>
+         <UN_LIST_TYPE>Yemen</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>YEi.003</REFERENCE_NUMBER>
+         <LISTED_ON>2014-11-07</LISTED_ON>
+         <NAME_ORIGINAL_SCRIPT>علي عبد الله صالح  </NAME_ORIGINAL_SCRIPT>
+         <COMMENTS1>Gender [Male]. </COMMENTS1>
+         <TITLE/>
+         <DESIGNATION>
+            <VALUE>President of Yemen’s General People’s Congress party </VALUE>
+            <VALUE>Former President of the Republic of Yemen </VALUE>
+         </DESIGNATION>
+         <NATIONALITY>
+            <VALUE>Yemen</VALUE>
+         </NATIONALITY>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <LAST_DAY_UPDATED>
+            <VALUE>2014-11-20</VALUE>
+         </LAST_DAY_UPDATED>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Ali Abdallah Salih </ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1945-03-21</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1946-03-21</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1942-03-21</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1947-03-21</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Bayt al-Ahmar</CITY>
+            <STATE_PROVINCE>Sana’a Governorate</STATE_PROVINCE>
+            <COUNTRY>Yemen</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Sana’a</CITY>
+            <COUNTRY>Yemen</COUNTRY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Sana’a</CITY>
+            <STATE_PROVINCE>Sanhan, Al-Rib’ al-Sharqi</STATE_PROVINCE>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_DOCUMENT>
+            <TYPE_OF_DOCUMENT>Passport</TYPE_OF_DOCUMENT>
+            <NUMBER>00016161 (Yemen) </NUMBER>
+         </INDIVIDUAL_DOCUMENT>
+         <INDIVIDUAL_DOCUMENT>
+            <TYPE_OF_DOCUMENT>National Identification Number</TYPE_OF_DOCUMENT>
+            <NUMBER>01010744444</NUMBER>
+         </INDIVIDUAL_DOCUMENT>
+         <SORT_KEY>SALEH ALI ABDULLAH </SORT_KEY>
+         <SORT_KEY_LAST_MOD/>
+      </INDIVIDUAL>
+   </INDIVIDUALS>
+   <ENTITIES/>
+</CONSOLIDATED_LIST>

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONSOLIDATED_LIST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd"
+                   dateGenerated="2015-03-17T17:34:47.616-04:00">
+   <INDIVIDUALS>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>690784</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>GAFFAR</FIRST_NAME>
+         <SECOND_NAME>MOHAMMED</SECOND_NAME>
+         <THIRD_NAME>ELHASSAN</THIRD_NAME>
+         <UN_LIST_TYPE>Sudan</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>SDi.001</REFERENCE_NUMBER>
+         <LISTED_ON>2006-04-25</LISTED_ON>
+         <DESIGNATION>
+            <VALUE>Major-General and Commander of the Western Military Region for the Sudanese Armed Forces (SAF)</VALUE>
+         </DESIGNATION>
+         <COMMENTS1>Retired from the Sudanese Army.</COMMENTS1>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Gaffar Mohmed Elhassan</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS>
+            <STREET>El Waha</STREET>
+            <CITY>Omdurman</CITY>
+            <COUNTRY>Sudan</COUNTRY>
+         </INDIVIDUAL_ADDRESS>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1952-06-24</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_DOCUMENT>
+            <TYPE_OF_DOCUMENT>National Identification Number</TYPE_OF_DOCUMENT>
+            <TYPE_OF_DOCUMENT2>Ex-serviceman’s identification card</TYPE_OF_DOCUMENT2>
+            <NUMBER>4302</NUMBER>
+         </INDIVIDUAL_DOCUMENT>
+         <SORT_KEY>Elhassan Gaffar Mohammed </SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-12</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>690785</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>MUSA</FIRST_NAME>
+         <SECOND_NAME>HILAL</SECOND_NAME>
+         <THIRD_NAME>ABDALLA</THIRD_NAME>
+         <FOURTH_NAME>ALNSIEM</FOURTH_NAME>
+         <UN_LIST_TYPE>Sudan</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>SDi.002</REFERENCE_NUMBER>
+         <LISTED_ON>2006-04-25</LISTED_ON>
+         <COMMENTS1/>
+         <DESIGNATION>
+            <VALUE>Member of the National Assembly of Sudan</VALUE>
+            <VALUE>In 2008, appointed by the President of Sudan as special adviser to the Ministry of Federal Affairs</VALUE>
+            <VALUE>Paramount Chief of the Jalul Tribe in North Darfur</VALUE>
+         </DESIGNATION>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Low</QUALITY>
+            <ALIAS_NAME>(Sheikh) Musa Hilal</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Low</QUALITY>
+            <ALIAS_NAME>Abd Allah</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Low</QUALITY>
+            <ALIAS_NAME>Abdallah</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Low</QUALITY>
+            <ALIAS_NAME>AlNasim</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Low</QUALITY>
+            <ALIAS_NAME>Al Nasim</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Low</QUALITY>
+            <ALIAS_NAME>AlNaseem</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Low</QUALITY>
+            <ALIAS_NAME>Al Naseem</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Low</QUALITY>
+            <ALIAS_NAME>AlNasseem</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Low</QUALITY>
+            <ALIAS_NAME>Al Nasseem</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS>
+            <CITY>Kabkabiya</CITY>
+            <COUNTRY>Sudan</COUNTRY>
+         </INDIVIDUAL_ADDRESS>
+         <INDIVIDUAL_ADDRESS>
+            <CITY>Kutum</CITY>
+            <COUNTRY>Sudan</COUNTRY>
+            <NOTE>Resides in Kabkabiya and the city of Kutum, Northern Darfur and has resided in Khartoum.</NOTE>
+         </INDIVIDUAL_ADDRESS>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1964-01-01</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <YEAR>1959</YEAR>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>Kutum</CITY>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_DOCUMENT>
+            <TYPE_OF_DOCUMENT>Passport</TYPE_OF_DOCUMENT>
+            <TYPE_OF_DOCUMENT2>Diplomatic Passport</TYPE_OF_DOCUMENT2>
+            <NUMBER>D014433</NUMBER>
+            <DATE_OF_ISSUE>2013-02-21</DATE_OF_ISSUE>
+            <NOTE>Expires 21 February 2015</NOTE>
+         </INDIVIDUAL_DOCUMENT>
+         <INDIVIDUAL_DOCUMENT>
+            <TYPE_OF_DOCUMENT>National Identification Number</TYPE_OF_DOCUMENT>
+            <TYPE_OF_DOCUMENT2>Certificate of Nationality</TYPE_OF_DOCUMENT2>
+            <NUMBER>A0680623</NUMBER>
+         </INDIVIDUAL_DOCUMENT>
+         <SORT_KEY>Alnsiem Musa Hilal Abdalla </SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-12</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>690787</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>ADAM</FIRST_NAME>
+         <SECOND_NAME>YACUB</SECOND_NAME>
+         <THIRD_NAME>SHARIF</THIRD_NAME>
+         <UN_LIST_TYPE>Sudan</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>SDi.003</REFERENCE_NUMBER>
+         <LISTED_ON>2006-04-25</LISTED_ON>
+         <COMMENTS1>Reportedly deceased on 7 June 2012. </COMMENTS1>
+         <DESIGNATION>
+            <VALUE>Sudanese Liberation Army (SLA) Commander</VALUE>
+         </DESIGNATION>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Adam Yacub Shant</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Adam Yacoub</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS/>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Approximately</TYPE_OF_DATE>
+            <YEAR>1976</YEAR>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <SORT_KEY>Sharif Adam Yacub </SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-12</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+      <INDIVIDUAL xsi:noNamespaceSchemaLocation="http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd">
+         <DATAID>690788</DATAID>
+         <VERSIONNUM>1</VERSIONNUM>
+         <FIRST_NAME>JIBRIL</FIRST_NAME>
+         <SECOND_NAME>ABDULKARIM</SECOND_NAME>
+         <THIRD_NAME>IBRAHIM</THIRD_NAME>
+         <FOURTH_NAME>MAYU</FOURTH_NAME>
+         <UN_LIST_TYPE>Sudan</UN_LIST_TYPE>
+         <REFERENCE_NUMBER>SDi.004</REFERENCE_NUMBER>
+         <LISTED_ON>2006-04-25</LISTED_ON>
+         <COMMENTS1/>
+         <DESIGNATION>
+            <VALUE>National Movement for Reform and Development (NMRD) Field Commander</VALUE>
+         </DESIGNATION>
+         <NATIONALITY>
+            <VALUE>Sudanese by birth</VALUE>
+         </NATIONALITY>
+         <LIST_TYPE>
+            <VALUE>UN List</VALUE>
+         </LIST_TYPE>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>General Gibril Abdul Kareem Barey</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>“Tek”</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ALIAS>
+            <QUALITY>Good</QUALITY>
+            <ALIAS_NAME>Gabril Abdul Kareem Badri</ALIAS_NAME>
+         </INDIVIDUAL_ALIAS>
+         <INDIVIDUAL_ADDRESS>
+            <CITY>Tine</CITY>
+            <COUNTRY>Sudan</COUNTRY>
+            <NOTE>Resides in Tine, on the Sudanese side of the border with Chad</NOTE>
+         </INDIVIDUAL_ADDRESS>
+         <INDIVIDUAL_DATE_OF_BIRTH>
+            <TYPE_OF_DATE>Exact</TYPE_OF_DATE>
+            <DATE>1967-01-01</DATE>
+         </INDIVIDUAL_DATE_OF_BIRTH>
+         <INDIVIDUAL_PLACE_OF_BIRTH>
+            <CITY>El-Fasher</CITY>
+            <STATE_PROVINCE>North Darfur</STATE_PROVINCE>
+            <NOTE>Place of Birth: Nile District, El-Fasher, El- Fasher, North Darfur</NOTE>
+         </INDIVIDUAL_PLACE_OF_BIRTH>
+         <INDIVIDUAL_DOCUMENT>
+            <TYPE_OF_DOCUMENT>National Identification Number</TYPE_OF_DOCUMENT>
+            <NUMBER>192-3238459- 9</NUMBER>
+         </INDIVIDUAL_DOCUMENT>
+         <INDIVIDUAL_DOCUMENT>
+            <TYPE_OF_DOCUMENT>National Identification Number</TYPE_OF_DOCUMENT>
+            <TYPE_OF_DOCUMENT2>Certificate of nationality acquired through birth</TYPE_OF_DOCUMENT2>
+            <NUMBER>302581</NUMBER>
+         </INDIVIDUAL_DOCUMENT>
+         <SORT_KEY>Mayu Jibril Abdulkarim Ibrahim</SORT_KEY>
+         <SORT_KEY_LAST_MOD>2014-06-12</SORT_KEY_LAST_MOD>
+      </INDIVIDUAL>
+   </INDIVIDUALS>
+   <ENTITIES/>
+</CONSOLIDATED_LIST>

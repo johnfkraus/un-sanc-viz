@@ -1,0 +1,134 @@
+{
+ "CONSOLIDATED_LIST": {
+  "$": {
+   "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+   "xsi:noNamespaceSchemaLocation": "http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd",
+   "dateGenerated": "2015-03-17T17:34:43.965-04:00"
+  },
+  "INDIVIDUALS": {
+   "INDIVIDUAL": [
+    {
+     "$": {
+      "xsi:noNamespaceSchemaLocation": "http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd"
+     },
+     "DATAID": "690727",
+     "VERSIONNUM": "1",
+     "FIRST_NAME": "FRANÇOIS",
+     "SECOND_NAME": "YANGOUVONDA",
+     "THIRD_NAME": "BOZIZÉ",
+     "UN_LIST_TYPE": "CAR",
+     "REFERENCE_NUMBER": "CFi.001",
+     "LISTED_ON": "2014-05-09",
+     "COMMENTS1": "Mother’s name is Martine Kofio",
+     "NATIONALITY": {
+      "VALUE": "Central African Republic"
+     },
+     "LIST_TYPE": {
+      "VALUE": "UN List"
+     },
+     "LAST_DAY_UPDATED": {
+      "VALUE": "2014-11-04"
+     },
+     "INDIVIDUAL_ALIAS": {
+      "QUALITY": "Good",
+      "ALIAS_NAME": "Bozize Yangouvonda"
+     },
+     "INDIVIDUAL_ADDRESS": {
+      "COUNTRY": "Uganda"
+     },
+     "INDIVIDUAL_DATE_OF_BIRTH": {
+      "TYPE_OF_DATE": "Exact",
+      "DATE": "1946-10-14"
+     },
+     "INDIVIDUAL_PLACE_OF_BIRTH": {
+      "CITY": "Mouila",
+      "COUNTRY": "Gabon"
+     },
+     "INDIVIDUAL_DOCUMENT": "",
+     "SORT_KEY": "BOZIZÉ FRANÇOIS YANGOUVONDA",
+     "SORT_KEY_LAST_MOD": "2014-05-13"
+    },
+    {
+     "$": {
+      "xsi:noNamespaceSchemaLocation": "http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd"
+     },
+     "DATAID": "690728",
+     "VERSIONNUM": "1",
+     "FIRST_NAME": "NOURREDINE",
+     "SECOND_NAME": "ADAM",
+     "UN_LIST_TYPE": "CAR",
+     "REFERENCE_NUMBER": "CFi.002",
+     "LISTED_ON": "2014-05-09",
+     "COMMENTS1": "na",
+     "DESIGNATION": {
+      "VALUE": [
+       "General",
+       "Minister for Security",
+       "Director General of the \"Extraordinary Committee for the Defence of Democratic Achievements"
+      ]
+     },
+     "NATIONALITY": {
+      "VALUE": "Central African Republic"
+     },
+     "LIST_TYPE": {
+      "VALUE": "UN List"
+     },
+     "LAST_DAY_UPDATED": {
+      "VALUE": "2014-11-04"
+     },
+     "INDIVIDUAL_ALIAS": [
+      {
+       "QUALITY": "Good",
+       "ALIAS_NAME": "Nureldine Adam"
+      },
+      {
+       "QUALITY": "Good",
+       "ALIAS_NAME": "Nourreldine Adam"
+      },
+      {
+       "QUALITY": "Good",
+       "ALIAS_NAME": "Nourreddine Adam"
+      },
+      {
+       "QUALITY": "Good",
+       "ALIAS_NAME": "Mahamat Nouradine Adam"
+      }
+     ],
+     "INDIVIDUAL_ADDRESS": {
+      "CITY": "Birao",
+      "COUNTRY": "Central African Republic"
+     },
+     "INDIVIDUAL_DATE_OF_BIRTH": [
+      {
+       "TYPE_OF_DATE": "Exact",
+       "YEAR": "1970"
+      },
+      {
+       "TYPE_OF_DATE": "Exact",
+       "YEAR": "1969"
+      },
+      {
+       "TYPE_OF_DATE": "Exact",
+       "YEAR": "1971"
+      },
+      {
+       "TYPE_OF_DATE": "Exact",
+       "DATE": "1970-01-01"
+      }
+     ],
+     "INDIVIDUAL_PLACE_OF_BIRTH": {
+      "CITY": "Ndele",
+      "COUNTRY": "Central African Republic"
+     },
+     "INDIVIDUAL_DOCUMENT": {
+      "TYPE_OF_DOCUMENT": "Passport",
+      "NUMBER": "D00001184"
+     },
+     "SORT_KEY": "ADAM NOURREDINE",
+     "SORT_KEY_LAST_MOD": "2014-05-13"
+    }
+   ]
+  },
+  "ENTITIES": ""
+ }
+}

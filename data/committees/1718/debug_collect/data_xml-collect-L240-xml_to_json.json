@@ -1,0 +1,1168 @@
+{
+ "CONSOLIDATED_LIST": {
+  "$": {
+   "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+   "xsi:noNamespaceSchemaLocation": "http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd",
+   "dateGenerated": "2015-03-17T17:34:47.834-04:00"
+  },
+  "INDIVIDUALS": {
+   "INDIVIDUAL": [
+    {
+     "$": {
+      "xsi:noNamespaceSchemaLocation": "http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd"
+     },
+     "DATAID": "690734",
+     "VERSIONNUM": "1",
+     "FIRST_NAME": "YUN",
+     "SECOND_NAME": "HO-JIN",
+     "UN_LIST_TYPE": "DPRK",
+     "REFERENCE_NUMBER": "KPi.001",
+     "LISTED_ON": "2009-07-16",
+     "COMMENTS1": "Director of Namchongang Trading Corporation; oversees the import of items needed for the uranium enrichment program.",
+     "DESIGNATION": {
+      "VALUE": "Director of Namchongang Trading Corporation"
+     },
+     "NATIONALITY": {
+      "VALUE": "DPRK"
+     },
+     "LIST_TYPE": {
+      "VALUE": "UN List"
+     },
+     "INDIVIDUAL_ALIAS": {
+      "QUALITY": "Good",
+      "ALIAS_NAME": "Yun Ho-chin"
+     },
+     "INDIVIDUAL_ADDRESS": "",
+     "INDIVIDUAL_DATE_OF_BIRTH": {
+      "TYPE_OF_DATE": "Exact",
+      "DATE": "1944-10-13"
+     },
+     "INDIVIDUAL_PLACE_OF_BIRTH": "",
+     "SORT_KEY": "YUN  HO-JIN",
+     "SORT_KEY_LAST_MOD": "2014-08-01"
+    },
+    {
+     "$": {
+      "xsi:noNamespaceSchemaLocation": "http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd"
+     },
+     "DATAID": "690739",
+     "VERSIONNUM": "1",
+     "FIRST_NAME": "HWANG",
+     "SECOND_NAME": "SOK-HWA",
+     "UN_LIST_TYPE": "DPRK",
+     "REFERENCE_NUMBER": "KPi.003",
+     "LISTED_ON": "2009-07-16",
+     "COMMENTS1": "Director in the General Bureau of Atomic Energy (GBAE); involved in DPRK’s nuclear program; as Chief of the Scientific Guidance Bureau in the GBAE, served on the Science Committee inside the Joint Institute for Nuclear Research.",
+     "DESIGNATION": {
+      "VALUE": "Director in the General Bureau of Atomic Energy (GBAE)"
+     },
+     "NATIONALITY": {
+      "VALUE": "DPRK"
+     },
+     "LIST_TYPE": {
+      "VALUE": "UN List"
+     },
+     "INDIVIDUAL_ADDRESS": "",
+     "INDIVIDUAL_DATE_OF_BIRTH": "",
+     "INDIVIDUAL_PLACE_OF_BIRTH": "",
+     "SORT_KEY": "HWANG SOK-HWA",
+     "SORT_KEY_LAST_MOD": "2014-06-11"
+    },
+    {
+     "$": {
+      "xsi:noNamespaceSchemaLocation": "http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd"
+     },
+     "DATAID": "690740",
+     "VERSIONNUM": "1",
+     "FIRST_NAME": "RI",
+     "SECOND_NAME": "HONG-SOP",
+     "UN_LIST_TYPE": "DPRK",
+     "REFERENCE_NUMBER": "KPi.004",
+     "LISTED_ON": "2009-07-16",
+     "COMMENTS1": "Former director, Yongbyon Nuclear Research Center, oversaw three core facilities that assist in the production of weapons-grade plutonium: the Fuel Fabrication Facility, the Nuclear Reactor, and the Reprocessing Plant.",
+     "DESIGNATION": {
+      "VALUE": "Former director, Yongbyon Nuclear Research Center"
+     },
+     "NATIONALITY": {
+      "VALUE": "DPRK"
+     },
+     "LIST_TYPE": {
+      "VALUE": "UN List"
+     },
+     "INDIVIDUAL_ADDRESS": "",
+     "INDIVIDUAL_DATE_OF_BIRTH": {
+      "TYPE_OF_DATE": "Exact",
+      "YEAR": "1940"
+     },
+     "INDIVIDUAL_PLACE_OF_BIRTH": "",
+     "SORT_KEY": "RI HONG-SOP",
+     "SORT_KEY_LAST_MOD": "2014-06-11"
+    },
+    {
+     "$": {
+      "xsi:noNamespaceSchemaLocation": "http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd"
+     },
+     "DATAID": "690741",
+     "VERSIONNUM": "1",
+     "FIRST_NAME": "HAN",
+     "SECOND_NAME": "YU-RO",
+     "UN_LIST_TYPE": "DPRK",
+     "REFERENCE_NUMBER": "KPi.005",
+     "LISTED_ON": "2009-07-16",
+     "COMMENTS1": "Director of Korea Ryongaksan General Trading Corporation; involved in DPRK’s ballistic missile program.",
+     "DESIGNATION": {
+      "VALUE": "Director of Korea Ryongaksan General Trading Corporation"
+     },
+     "NATIONALITY": {
+      "VALUE": "DPRK"
+     },
+     "LIST_TYPE": {
+      "VALUE": "UN List"
+     },
+     "INDIVIDUAL_ADDRESS": "",
+     "INDIVIDUAL_DATE_OF_BIRTH": "",
+     "INDIVIDUAL_PLACE_OF_BIRTH": "",
+     "SORT_KEY": "HAN YU-RO",
+     "SORT_KEY_LAST_MOD": "2014-06-11"
+    },
+    {
+     "$": {
+      "xsi:noNamespaceSchemaLocation": "http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd"
+     },
+     "DATAID": "690743",
+     "VERSIONNUM": "1",
+     "FIRST_NAME": "CHANG",
+     "SECOND_NAME": "MYONG-CHIN",
+     "UN_LIST_TYPE": "DPRK",
+     "REFERENCE_NUMBER": "KPi.007",
+     "LISTED_ON": "2013-01-22",
+     "GENDER": "MALE",
+     "COMMENTS1": "General Manager of the Sohae Satellite Launching Station and head of launch center at which the 13 April and 12 December 2012 launches took place.",
+     "DESIGNATION": {
+      "VALUE": "General Manager of the Sohae Satellite Launching Station and head of launch center at which the 13 April and 12 December 2012 launches took place."
+     },
+     "NATIONALITY": {
+      "VALUE": "DPRK"
+     },
+     "LIST_TYPE": {
+      "VALUE": "UN List"
+     },
+     "INDIVIDUAL_ALIAS": {
+      "QUALITY": "Good",
+      "ALIAS_NAME": "Jang Myong-Jin"
+     },
+     "INDIVIDUAL_ADDRESS": "",
+     "INDIVIDUAL_DATE_OF_BIRTH": [
+      {
+       "TYPE_OF_DATE": "Exact",
+       "DATE": "1968-02-19"
+      },
+      {
+       "TYPE_OF_DATE": "Exact",
+       "YEAR": "1965"
+      },
+      {
+       "TYPE_OF_DATE": "Exact",
+       "YEAR": "1966"
+      }
+     ],
+     "INDIVIDUAL_PLACE_OF_BIRTH": "",
+     "SORT_KEY": "CHANG MYONG-CHIN",
+     "SORT_KEY_LAST_MOD": "2014-08-14"
+    },
+    {
+     "$": {
+      "xsi:noNamespaceSchemaLocation": "http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd"
+     },
+     "DATAID": "690744",
+     "VERSIONNUM": "1",
+     "FIRST_NAME": "RA",
+     "SECOND_NAME": "KY'ONG-SU",
+     "UN_LIST_TYPE": "DPRK",
+     "REFERENCE_NUMBER": "KPi.008",
+     "LISTED_ON": "2013-01-22",
+     "GENDER": "MALE",
+     "COMMENTS1": "Ra Ky'ong-Su is a Tanchon Commercial Bank (TCB) official. In this capacity he has facilitated transactions for TCB. Tanchon was designated by the Committee in April 2009 as the main DPRK financial entity responsible for sales of conventional arms, ballistic missiles, and goods related to the assembly and manufacture of such weapons.",
+     "DESIGNATION": {
+      "VALUE": "Tanchon Commercial Bank (TCB) official"
+     },
+     "NATIONALITY": {
+      "VALUE": "DPRK"
+     },
+     "LIST_TYPE": {
+      "VALUE": "UN List"
+     },
+     "INDIVIDUAL_ALIAS": {
+      "QUALITY": "Good",
+      "ALIAS_NAME": "Ra Kyung-Su"
+     },
+     "INDIVIDUAL_ADDRESS": "",
+     "INDIVIDUAL_DATE_OF_BIRTH": {
+      "TYPE_OF_DATE": "Exact",
+      "DATE": "1954-06-04"
+     },
+     "INDIVIDUAL_PLACE_OF_BIRTH": "",
+     "INDIVIDUAL_DOCUMENT": {
+      "TYPE_OF_DOCUMENT": "Passport",
+      "NUMBER": "645120196",
+      "COUNTRY_OF_ISSUE": "DPRK"
+     },
+     "SORT_KEY": "RA KY'ONG-SU",
+     "SORT_KEY_LAST_MOD": "2014-08-14"
+    },
+    {
+     "$": {
+      "xsi:noNamespaceSchemaLocation": "http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd"
+     },
+     "DATAID": "690745",
+     "VERSIONNUM": "1",
+     "FIRST_NAME": "KIM",
+     "SECOND_NAME": "KWANG-IL",
+     "UN_LIST_TYPE": "DPRK",
+     "REFERENCE_NUMBER": "KPi.009",
+     "LISTED_ON": "2013-01-22",
+     "GENDER": "MALE",
+     "COMMENTS1": "Kim Kwang-il is a Tanchon Commercial Bank (TCB) official. In this capacity, he has facilitated transactions for TCB and the Korea Mining Development Trading Corporation (KOMID). Tanchon was designated by the Committee in April 2009 as the main DPRK financial entity responsible for sales of conventional arms, ballistic missiles, and goods related to the assembly and manufacture of such weapons. KOMID was designated by the Committee in April 2009 and is the DPRK’s primary arms dealer and main exporter of goods and equipment related to ballistic missiles and conventional weapons.",
+     "DESIGNATION": {
+      "VALUE": "Tanchon Commercial Bank (TCB) official"
+     },
+     "NATIONALITY": {
+      "VALUE": "DPRK"
+     },
+     "LIST_TYPE": {
+      "VALUE": "UN List"
+     },
+     "INDIVIDUAL_ALIAS": "",
+     "INDIVIDUAL_ADDRESS": "",
+     "INDIVIDUAL_DATE_OF_BIRTH": {
+      "TYPE_OF_DATE": "Exact",
+      "DATE": "1969-09-01"
+     },
+     "INDIVIDUAL_PLACE_OF_BIRTH": "",
+     "INDIVIDUAL_DOCUMENT": {
+      "TYPE_OF_DOCUMENT": "Passport",
+      "NUMBER": "PS381420397",
+      "COUNTRY_OF_ISSUE": "DPRK"
+     },
+     "SORT_KEY": "KIM KWANG-IL",
+     "SORT_KEY_LAST_MOD": "2014-08-14"
+    },
+    {
+     "$": {
+      "xsi:noNamespaceSchemaLocation": "http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd"
+     },
+     "DATAID": "690746",
+     "VERSIONNUM": "1",
+     "FIRST_NAME": "YO'N",
+     "SECOND_NAME": "CHO'NG NAM",
+     "UN_LIST_TYPE": "DPRK",
+     "REFERENCE_NUMBER": "KPi.010",
+     "LISTED_ON": "2013-03-07",
+     "COMMENTS1": "Chief Representative for the Korea Mining Development Trading Corporation (KOMID). The KOMID was designated by the Committee in April 2009 and is the DPRK’s primary arms dealer and main exporter of goods and equipment related to ballistic missiles and conventional weapons.",
+     "DESIGNATION": {
+      "VALUE": "Chief Representative for the Korea Mining Development Trading Corporation (KOMID)"
+     },
+     "NATIONALITY": {
+      "VALUE": "DPRK"
+     },
+     "LIST_TYPE": {
+      "VALUE": "UN List"
+     },
+     "INDIVIDUAL_ADDRESS": "",
+     "INDIVIDUAL_DATE_OF_BIRTH": "",
+     "INDIVIDUAL_PLACE_OF_BIRTH": "",
+     "SORT_KEY": "YO'N CHO'NG NAM",
+     "SORT_KEY_LAST_MOD": "2014-08-14"
+    },
+    {
+     "$": {
+      "xsi:noNamespaceSchemaLocation": "http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd"
+     },
+     "DATAID": "690747",
+     "VERSIONNUM": "1",
+     "FIRST_NAME": "PAEK",
+     "SECOND_NAME": "CHANG-HO",
+     "UN_LIST_TYPE": "DPRK",
+     "REFERENCE_NUMBER": "KPi.006",
+     "LISTED_ON": "2013-01-22",
+     "GENDER": "MALE",
+     "COMMENTS1": "Senior official and head of the satellite control center of Korean Committee for Space Technology.",
+     "DESIGNATION": {
+      "VALUE": "Senior official and head of the satellite control center of Korean Committee for Space Technology"
+     },
+     "NATIONALITY": {
+      "VALUE": "DPRK"
+     },
+     "LIST_TYPE": {
+      "VALUE": "UN List"
+     },
+     "INDIVIDUAL_ALIAS": [
+      {
+       "QUALITY": "Good",
+       "ALIAS_NAME": "Pak Chang-Ho"
+      },
+      {
+       "QUALITY": "Good",
+       "ALIAS_NAME": "Paek Ch'ang-Ho"
+      }
+     ],
+     "INDIVIDUAL_ADDRESS": "",
+     "INDIVIDUAL_DATE_OF_BIRTH": {
+      "TYPE_OF_DATE": "Exact",
+      "DATE": "1964-06-18"
+     },
+     "INDIVIDUAL_PLACE_OF_BIRTH": {
+      "CITY": "Kaesong",
+      "COUNTRY": "DPRK"
+     },
+     "INDIVIDUAL_DOCUMENT": {
+      "TYPE_OF_DOCUMENT": "Passport",
+      "NUMBER": "381420754",
+      "DATE_OF_ISSUE": "2011-12-07",
+      "NOTE": "EXPIRES ON 2016-12-07"
+     },
+     "SORT_KEY": "PAEK CHANG-HO",
+     "SORT_KEY_LAST_MOD": "2014-08-14"
+    },
+    {
+     "$": {
+      "xsi:noNamespaceSchemaLocation": "http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd"
+     },
+     "DATAID": "690749",
+     "VERSIONNUM": "1",
+     "FIRST_NAME": "KO",
+     "SECOND_NAME": "CH'O'L-CHAE",
+     "UN_LIST_TYPE": "DPRK",
+     "REFERENCE_NUMBER": "KPi.011",
+     "LISTED_ON": "2013-03-07",
+     "COMMENTS1": "Deputy Chief Representative for the Korea Mining Development Trading Corporation (KOMID). The KOMID was designated by the Committee in April 2009 and is the DPRK’s primary arms dealer and main exporter of goods and equipment related to ballistic missiles and conventional weapons.",
+     "DESIGNATION": {
+      "VALUE": "Deputy Chief Representative for the Korea Mining Development Trading Corporation (KOMID)"
+     },
+     "NATIONALITY": {
+      "VALUE": "DPRK"
+     },
+     "LIST_TYPE": {
+      "VALUE": "UN List"
+     },
+     "INDIVIDUAL_ALIAS": "",
+     "INDIVIDUAL_ADDRESS": "",
+     "INDIVIDUAL_DATE_OF_BIRTH": "",
+     "INDIVIDUAL_PLACE_OF_BIRTH": "",
+     "SORT_KEY": "KO CH'O'L-CHAE",
+     "SORT_KEY_LAST_MOD": "2014-08-14"
+    },
+    {
+     "$": {
+      "xsi:noNamespaceSchemaLocation": "http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd"
+     },
+     "DATAID": "690750",
+     "VERSIONNUM": "1",
+     "FIRST_NAME": "MUN",
+     "SECOND_NAME": "CHO'NG-CH'O'L",
+     "UN_LIST_TYPE": "DPRK",
+     "REFERENCE_NUMBER": "KPi.012",
+     "LISTED_ON": "2013-03-07",
+     "COMMENTS1": "Mun Cho'ng-Ch'o'l is a TCB official. In this capacity he has facilitated transactions for TCB. Tanchon was designated by the Committee in April 2009 is the main DPRK financial entity for sales of conventional arms, ballistic missiles, and goods related to the assembly and manufacture of such weapons.",
+     "DESIGNATION": {
+      "VALUE": "Tanchon Commercial Bank (TCB) official"
+     },
+     "NATIONALITY": {
+      "VALUE": "DPRK"
+     },
+     "LIST_TYPE": {
+      "VALUE": "UN List"
+     },
+     "INDIVIDUAL_ALIAS": "",
+     "INDIVIDUAL_ADDRESS": "",
+     "INDIVIDUAL_DATE_OF_BIRTH": "",
+     "INDIVIDUAL_PLACE_OF_BIRTH": "",
+     "SORT_KEY": "MUN CHO'NG-CH'O'L",
+     "SORT_KEY_LAST_MOD": "2014-08-14"
+    },
+    {
+     "$": {
+      "xsi:noNamespaceSchemaLocation": "http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd"
+     },
+     "DATAID": "6908045",
+     "VERSIONNUM": "1",
+     "FIRST_NAME": "RI",
+     "SECOND_NAME": "JE-SON",
+     "UN_LIST_TYPE": "DPRK",
+     "REFERENCE_NUMBER": "KPi.002",
+     "LISTED_ON": "2009-07-16",
+     "COMMENTS1": "Minister of Atomic Energy Industry since April 2014. Former Director of the General Bureau of Atomic Energy (GBAE), chief agency directing DPRK's nuclear program; facilitated several nuclear endeavors including GBAE's management of Yongbyon Nuclear Research Center and Namchongang Trading Corporation.",
+     "DESIGNATION": {
+      "VALUE": "Minister of Atomic Energy Industry since April 2014."
+     },
+     "NATIONALITY": {
+      "VALUE": "DPRK"
+     },
+     "LIST_TYPE": {
+      "VALUE": "UN List"
+     },
+     "LAST_DAY_UPDATED": {
+      "VALUE": "2014-07-30"
+     },
+     "INDIVIDUAL_ALIAS": {
+      "QUALITY": "Good",
+      "ALIAS_NAME": "Ri Che-son"
+     },
+     "INDIVIDUAL_ADDRESS": "",
+     "INDIVIDUAL_DATE_OF_BIRTH": {
+      "TYPE_OF_DATE": "Exact",
+      "YEAR": "1938"
+     },
+     "INDIVIDUAL_PLACE_OF_BIRTH": "",
+     "INDIVIDUAL_DOCUMENT": "",
+     "SORT_KEY": "RI JE-SON",
+     "SORT_KEY_LAST_MOD": "2014-08-01"
+    }
+   ]
+  },
+  "ENTITIES": {
+   "ENTITY": [
+    {
+     "$": {
+      "xsi:noNamespaceSchemaLocation": "http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd"
+     },
+     "DATAID": "690735",
+     "VERSIONNUM": "1",
+     "FIRST_NAME": "KOREA MINING DEVELOPMENT TRADING CORPORATION",
+     "UN_LIST_TYPE": "DPRK",
+     "REFERENCE_NUMBER": "KPe.001",
+     "LISTED_ON": "2009-04-24",
+     "COMMENTS1": "Primary arms dealer and main exporter of goods and equipment related to ballistic missiles and conventional weapons.",
+     "LIST_TYPE": {
+      "VALUE": "UN List"
+     },
+     "ENTITY_ALIAS": [
+      {
+       "QUALITY": "a.k.a.",
+       "ALIAS_NAME": "CHANGGWANG SINYONG CORPORATION"
+      },
+      {
+       "QUALITY": "a.k.a.",
+       "ALIAS_NAME": "EXTERNAL TECHNOLOGY GENERAL CORPORATION"
+      },
+      {
+       "QUALITY": "a.k.a.",
+       "ALIAS_NAME": "DPRKN MINING DEVELOPMENT TRADING COOPERATION"
+      },
+      {
+       "QUALITY": "a.k.a.",
+       "ALIAS_NAME": "\"KOMID\""
+      }
+     ],
+     "ENTITY_ADDRESS": {
+      "STREET": "Central District",
+      "CITY": "Pyongyang",
+      "COUNTRY": "DPRK"
+     },
+     "SORT_KEY": "KOREA MINING DEVELOPMENT TRADING CORPORATION",
+     "SORT_KEY_LAST_MOD": "2014-06-05"
+    },
+    {
+     "$": {
+      "xsi:noNamespaceSchemaLocation": "http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd"
+     },
+     "DATAID": "690751",
+     "VERSIONNUM": "1",
+     "FIRST_NAME": "KOREA RYONBONG GENERAL CORPORATION",
+     "UN_LIST_TYPE": "DPRK",
+     "REFERENCE_NUMBER": "KPe.002",
+     "LISTED_ON": "2009-04-24",
+     "COMMENTS1": "Defense conglomerate specializing in acquisition for DPRK defense industries and support to that country’s military-related sales.",
+     "LIST_TYPE": {
+      "VALUE": "UN List"
+     },
+     "ENTITY_ALIAS": [
+      {
+       "QUALITY": "a.k.a.",
+       "ALIAS_NAME": "KOREA YONBONG GENERAL CORPORATION"
+      },
+      {
+       "QUALITY": "f.k.a.",
+       "ALIAS_NAME": "LYONGAKSAN GENERAL TRADING CORPORATION"
+      }
+     ],
+     "ENTITY_ADDRESS": [
+      {
+       "STREET": "Pot’onggang District",
+       "CITY": "Pyongyang",
+       "COUNTRY": "DPRK"
+      },
+      {
+       "STREET": "Rakwon-dong, Pothonggang District",
+       "CITY": "Pyongyang",
+       "COUNTRY": "DPRK"
+      }
+     ],
+     "SORT_KEY": "KOREA RYONBONG GENERAL CORPORATION",
+     "SORT_KEY_LAST_MOD": "2014-06-11"
+    },
+    {
+     "$": {
+      "xsi:noNamespaceSchemaLocation": "http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd"
+     },
+     "DATAID": "690752",
+     "VERSIONNUM": "1",
+     "FIRST_NAME": "TANCHON COMMERICAL BANK",
+     "UN_LIST_TYPE": "DPRK",
+     "REFERENCE_NUMBER": "KPe.003",
+     "LISTED_ON": "2009-04-24",
+     "COMMENTS1": "Main DPRK financial entity for sales of conventional arms, ballistic missiles, and goods related to the assembly and manufacture of such weapons.",
+     "LIST_TYPE": {
+      "VALUE": "UN List"
+     },
+     "ENTITY_ALIAS": [
+      {
+       "QUALITY": "f.k.a.",
+       "ALIAS_NAME": "CHANGGWANG CREDIT BANK"
+      },
+      {
+       "QUALITY": "f.k.a.",
+       "ALIAS_NAME": "KOREA CHANGGWANG CREDIT BANK"
+      }
+     ],
+     "ENTITY_ADDRESS": {
+      "STREET": "Saemul 1-Dong Pyongchon District",
+      "CITY": "Pyongyang",
+      "COUNTRY": "DPRK"
+     },
+     "SORT_KEY": "TANCHON COMMERICAL BANK",
+     "SORT_KEY_LAST_MOD": "2014-06-11"
+    },
+    {
+     "$": {
+      "xsi:noNamespaceSchemaLocation": "http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd"
+     },
+     "DATAID": "690753",
+     "VERSIONNUM": "1",
+     "FIRST_NAME": "NAMCHONGANG TRADING CORPORATION",
+     "UN_LIST_TYPE": "DPRK",
+     "REFERENCE_NUMBER": "KPe.004",
+     "LISTED_ON": "2009-07-16",
+     "COMMENTS1": "Namchongang is a DPRK trading company subordinate to the General Bureau of Atomic Energy (GBAE). Namchongang has been involved in the procurement of Japanese origin vacuum pumps that were identified at a DPRK nuclear facility, as well as nuclear-related procurement associated with a German individual. It has further been involved in the purchase of aluminum tubes and other equipment specifically suitable for a uranium enrichment program from the late 1990s. Its representative is a former diplomat who served as DPRK’s representative for the IAEA inspection of the Yongbyon nuclear facilities in 2007. Namchongang's proliferation activities are of grave concern given the DPRK’s past proliferation activities.",
+     "LIST_TYPE": {
+      "VALUE": "UN List"
+     },
+     "ENTITY_ALIAS": [
+      {
+       "QUALITY": "a.k.a.",
+       "ALIAS_NAME": "NCG"
+      },
+      {
+       "QUALITY": "a.k.a.",
+       "ALIAS_NAME": "NAMCHONGANG TRADING"
+      },
+      {
+       "QUALITY": "a.k.a.",
+       "ALIAS_NAME": "NAM CHON GANG CORPORATION"
+      },
+      {
+       "QUALITY": "a.k.a.",
+       "ALIAS_NAME": "NOMCHONGANG TRADING CO."
+      },
+      {
+       "QUALITY": "a.k.a.",
+       "ALIAS_NAME": "NAM CHONG GAN TRADING CORPORATION"
+      }
+     ],
+     "ENTITY_ADDRESS": {
+      "CITY": "Pyongyang",
+      "COUNTRY": "DPRK"
+     },
+     "SORT_KEY": "NAMCHONGANG TRADING CORPORATION",
+     "SORT_KEY_LAST_MOD": "2014-06-11"
+    },
+    {
+     "$": {
+      "xsi:noNamespaceSchemaLocation": "http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd"
+     },
+     "DATAID": "690755",
+     "VERSIONNUM": "1",
+     "FIRST_NAME": "HONG KONG ELECTRONICS",
+     "UN_LIST_TYPE": "DPRK",
+     "REFERENCE_NUMBER": "KPe.005",
+     "LISTED_ON": "2009-07-16",
+     "COMMENTS1": "Owned or controlled by, or acts or purports to act for or on behalf of Tanchon Commercial Bank and KOMID. Hong Kong Electronics has transferred millions of dollars of proliferation-related funds on behalf of Tanchon Commercial Bank and KOMID (both designated by the Committee in April 2009) since 2007. Hong Kong Electronics has facilitated the movement of money from Iran to the DPRK on behalf of KOMID.",
+     "LIST_TYPE": {
+      "VALUE": "UN List"
+     },
+     "ENTITY_ALIAS": {
+      "QUALITY": "a.k.a.",
+      "ALIAS_NAME": "HONG KONG ELECTRONICS KISH CO."
+     },
+     "ENTITY_ADDRESS": {
+      "STREET": "Sanaee Street",
+      "CITY": "Kish Island",
+      "COUNTRY": "IRAN"
+     },
+     "SORT_KEY": "HONG KONG ELECTRICS",
+     "SORT_KEY_LAST_MOD": "2014-06-11"
+    },
+    {
+     "$": {
+      "xsi:noNamespaceSchemaLocation": "http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd"
+     },
+     "DATAID": "690756",
+     "VERSIONNUM": "1",
+     "FIRST_NAME": "KOREA HYOKSIN TRADING CORPORATION",
+     "UN_LIST_TYPE": "DPRK",
+     "REFERENCE_NUMBER": "KPe.006",
+     "LISTED_ON": "2009-07-16",
+     "COMMENTS1": "A DPRK company based in Pyongyang that is subordinate to Korea Ryonbong General Corporation (designated by the Committee in April 2009) and is involved in the development of WMD.",
+     "LIST_TYPE": {
+      "VALUE": "UN List"
+     },
+     "ENTITY_ALIAS": {
+      "QUALITY": "a.k.a.",
+      "ALIAS_NAME": "KOREA HYOKSIN EXPORT AND IMPORT CORPORATION"
+     },
+     "ENTITY_ADDRESS": {
+      "STREET": "Rakwon-dong, Pothonggang District",
+      "CITY": "Pyongyang",
+      "COUNTRY": "DPRK"
+     },
+     "SORT_KEY": "KOREA HYOKSIN TRADING CORPORATION",
+     "SORT_KEY_LAST_MOD": "2014-06-11"
+    },
+    {
+     "$": {
+      "xsi:noNamespaceSchemaLocation": "http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd"
+     },
+     "DATAID": "690758",
+     "VERSIONNUM": "1",
+     "FIRST_NAME": "GENERAL BUREAU OF ATOMIC ENERGY (GBAE)",
+     "UN_LIST_TYPE": "DPRK",
+     "REFERENCE_NUMBER": "KPe.007",
+     "LISTED_ON": "2009-07-16",
+     "COMMENTS1": "The GBAE is responsible for the DPRK’s nuclear program, which includes the Yongbyon Nuclear Research Center and its 5 MWe (25 MWt) plutonium production research reactor, as well as its fuel fabrication and reprocessing facilities. The GBAE has held nuclear-related meetings and discussions with the International Atomic Energy Agency.  GBAE is the primary DPRK government agency that oversees nuclear programs, including the operation of the Yongbyon Nuclear Research Center.",
+     "LIST_TYPE": {
+      "VALUE": "UN List"
+     },
+     "ENTITY_ALIAS": {
+      "QUALITY": "a.k.a.",
+      "ALIAS_NAME": "General Department of Atomic Energy (GDAE)"
+     },
+     "ENTITY_ADDRESS": {
+      "STREET": "Haeudong, Pyongchen District",
+      "CITY": "Pyongyang",
+      "COUNTRY": "DPRK"
+     },
+     "SORT_KEY": "GENERAL BUREAU OF ATOMIC ENERGY (GBAE)",
+     "SORT_KEY_LAST_MOD": "2014-06-11"
+    },
+    {
+     "$": {
+      "xsi:noNamespaceSchemaLocation": "http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd"
+     },
+     "DATAID": "690759",
+     "VERSIONNUM": "1",
+     "FIRST_NAME": "KOREAN TANGUN TRADING CORPORATION",
+     "UN_LIST_TYPE": "DPRK",
+     "REFERENCE_NUMBER": "KPe.008",
+     "LISTED_ON": "2009-07-16",
+     "COMMENTS1": "Korea Tangun Trading Corporation is subordinate to DPRK’s Second Academy of Natural Sciences and is primarily responsible for the procurement of commodities and technologies to support DPRK’s defense research and development programs, including, but not limited to, WMD and delivery system programs and procurement, including materials that are controlled or prohibited under relevant multilateral control regimes.",
+     "LIST_TYPE": {
+      "VALUE": "UN List"
+     },
+     "ENTITY_ADDRESS": {
+      "CITY": "Pyongyang",
+      "COUNTRY": "DPRK"
+     },
+     "SORT_KEY": "KOREAN TANGUN TRADING CORPORATION",
+     "SORT_KEY_LAST_MOD": "2014-06-11"
+    },
+    {
+     "$": {
+      "xsi:noNamespaceSchemaLocation": "http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd"
+     },
+     "DATAID": "690760",
+     "VERSIONNUM": "1",
+     "FIRST_NAME": "AMROGGANG DEVELOPMENT BANKING CORPORATION",
+     "UN_LIST_TYPE": "DPRK",
+     "REFERENCE_NUMBER": "KPe.009",
+     "LISTED_ON": "2012-05-02",
+     "COMMENTS1": "Amroggang, which was established in 2006, is a Tanchon Commercial Bank-related company managed by Tanchon officials. Tanchon plays a role in financing KOMID’s sales of ballistic missiles and has also been involved in ballistic missile transactions from KOMID to Iran’s Shahid Hemmat Industrial Group (SHIG). Tanchon Commercial Bank was designated by the Committee in April 2009 and is the main DPRK financial entity for sales of conventional arms, ballistic missiles, and goods related to the assembly and manufacture of such weapons. KOMID was designated by the Committee in April 2009 and is the DPRK’s primary arms dealer and main exporter of goods and equipment related to ballistic missiles and conventional weapons. The Security Council designated SHIG in resolution 1737 (2006) as an entity involved in Iran’s ballistic missile programme.",
+     "LIST_TYPE": {
+      "VALUE": "UN List"
+     },
+     "ENTITY_ALIAS": [
+      {
+       "QUALITY": "a.k.a.",
+       "ALIAS_NAME": "AMROGGANG Development Bank"
+      },
+      {
+       "QUALITY": "a.k.a.",
+       "ALIAS_NAME": "Amnokkang Development Bank"
+      }
+     ],
+     "ENTITY_ADDRESS": {
+      "STREET": "Tongan-dong",
+      "CITY": "Pyongyang",
+      "COUNTRY": "DPRK"
+     },
+     "SORT_KEY": "AMROGGANG DEVELOPMENT BANKING CORPORATION",
+     "SORT_KEY_LAST_MOD": "2014-06-11"
+    },
+    {
+     "$": {
+      "xsi:noNamespaceSchemaLocation": "http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd"
+     },
+     "DATAID": "690761",
+     "VERSIONNUM": "1",
+     "FIRST_NAME": "GREEN PINE ASSOCIATED CORPORATION",
+     "UN_LIST_TYPE": "DPRK",
+     "REFERENCE_NUMBER": "KPe.010",
+     "LISTED_ON": "2012-05-02",
+     "COMMENTS1": "Green Pine Associated Corporation (“Green Pine”) has taken over many of the activities of the Korea Mining Development Trading Corporation (KOMID). KOMID was designated by the Committee in April 2009 and is the DPRK's primary arms dealer and main exporter of goods and equipment related to ballistic missiles and conventional weapons. Green Pine is also responsible for approximately half of the arms and related materiel exported by the DPRK. Green Pine has been identified for sanctions for exporting arms or related material from North Korea. Green Pine specializes in the production of maritime military craft and armaments, such as submarines, military boats and missile systems, and has exported torpedoes and technical assistance to Iranian defence-related firms.",
+     "LIST_TYPE": {
+      "VALUE": "UN List"
+     },
+     "ENTITY_ALIAS": [
+      {
+       "QUALITY": "a.k.a.",
+       "ALIAS_NAME": "CHO'NGSONG UNITED TRADING COMPANY"
+      },
+      {
+       "QUALITY": "a.k.a.",
+       "ALIAS_NAME": "CHONGSONG YONHAP"
+      },
+      {
+       "QUALITY": "a.k.a.",
+       "ALIAS_NAME": "CH'O'NGSONG YO'NHAP"
+      },
+      {
+       "QUALITY": "a.k.a.",
+       "ALIAS_NAME": "CHOSUN CHAWO'N KAEBAL T'UJA HOESA"
+      },
+      {
+       "QUALITY": "a.k.a.",
+       "ALIAS_NAME": "JINDALLAE"
+      },
+      {
+       "QUALITY": "a.k.a.",
+       "ALIAS_NAME": "KU'MHAERYONG COMPANY LTD."
+      },
+      {
+       "QUALITY": "a.k.a.",
+       "ALIAS_NAME": "NATURAL RESOURCES DEVELOPMENT AND INVESTMENT CORPORATION"
+      },
+      {
+       "QUALITY": "a.k.a.",
+       "ALIAS_NAME": "SAEINGP'IL COMPANY"
+      }
+     ],
+     "ENTITY_ADDRESS": [
+      {
+       "STREET": "c/o Reconnaissance General Bureau Headquarters, Hyongjesan-Guyok",
+       "CITY": "Pyongyang",
+       "COUNTRY": "DPRK"
+      },
+      {
+       "STREET": "Nungrado",
+       "CITY": "Pyongyang",
+       "COUNTRY": "DPRK"
+      }
+     ],
+     "SORT_KEY": "GREEN PINE ASSOCIATED CORPORATION",
+     "SORT_KEY_LAST_MOD": "2014-06-11"
+    },
+    {
+     "$": {
+      "xsi:noNamespaceSchemaLocation": "http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd"
+     },
+     "DATAID": "690762",
+     "VERSIONNUM": "1",
+     "FIRST_NAME": "KOREA HEUNGJIN TRADING COMPANY",
+     "UN_LIST_TYPE": "DPRK",
+     "REFERENCE_NUMBER": "KPe.011",
+     "LISTED_ON": "2012-05-02",
+     "COMMENTS1": "The Korea Heungjin Trading Company is used by KOMID for trading purposes.  We suspect it has been involved in supplying missile-related goods to Iran’s Shahid Hemmat Industrial Group (SHIG). Heungjin has been associated with KOMID, and, more specifically, KOMID’s procurement office. Heungjin has been used to procure an advanced digital controller with applications in missile design. KOMID was designated by the Committee in April 2009 and is the DPRK’s primary arms dealer and main exporter of goods and equipment related to ballistic missiles and conventional weapons. The Security Council designated SHIG in resolution 1737 (2006) as an entity involved in Iran’s ballistic missile programme.",
+     "LIST_TYPE": {
+      "VALUE": "UN List"
+     },
+     "ENTITY_ALIAS": [
+      {
+       "QUALITY": "a.k.a.",
+       "ALIAS_NAME": "Hunjin TRADING Co."
+      },
+      {
+       "QUALITY": "a.k.a.",
+       "ALIAS_NAME": "Korea Henjin Trading Co."
+      },
+      {
+       "QUALITY": "a.k.a.",
+       "ALIAS_NAME": "Korea Hengjin Trading Company"
+      }
+     ],
+     "ENTITY_ADDRESS": {
+      "CITY": "Pyongyang",
+      "COUNTRY": "DPRK"
+     },
+     "SORT_KEY": "KOREA HEUNGJIN TRADING COMPANY",
+     "SORT_KEY_LAST_MOD": "2014-06-11"
+    },
+    {
+     "$": {
+      "xsi:noNamespaceSchemaLocation": "http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd"
+     },
+     "DATAID": "690763",
+     "VERSIONNUM": "1",
+     "FIRST_NAME": "KOREAN COMMITTEE FOR SPACE TECHNOLOGY",
+     "UN_LIST_TYPE": "DPRK",
+     "REFERENCE_NUMBER": "KPe.012",
+     "LISTED_ON": "2013-01-22",
+     "COMMENTS1": "The Korean Committee for Space Technology (KCST) orchestrated the DPRK’s launches on 13 April 2012 and 12 December 2012 via the satellite control center and Sohae launch area.",
+     "LIST_TYPE": {
+      "VALUE": "UN List"
+     },
+     "ENTITY_ALIAS": [
+      {
+       "QUALITY": "a.k.a.",
+       "ALIAS_NAME": "DPRK Committee for Space Technology"
+      },
+      {
+       "QUALITY": "a.k.a.",
+       "ALIAS_NAME": "Department of Space Technology of the DPRK"
+      },
+      {
+       "QUALITY": "a.k.a.",
+       "ALIAS_NAME": "Committee for Space Technology"
+      },
+      {
+       "QUALITY": "a.k.a.",
+       "ALIAS_NAME": "KCST"
+      }
+     ],
+     "ENTITY_ADDRESS": {
+      "CITY": "Pyongyang",
+      "COUNTRY": "DPRK"
+     },
+     "SORT_KEY": "KOREAN COMMITTEE FOR SPACE TECHNOLOGY",
+     "SORT_KEY_LAST_MOD": "2014-06-11"
+    },
+    {
+     "$": {
+      "xsi:noNamespaceSchemaLocation": "http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd"
+     },
+     "DATAID": "690764",
+     "VERSIONNUM": "1",
+     "FIRST_NAME": "BANK OF EAST LAND",
+     "UN_LIST_TYPE": "DPRK",
+     "REFERENCE_NUMBER": "KPe.013",
+     "LISTED_ON": "2013-01-22",
+     "COMMENTS1": "DPRK financial institution Bank of East Land facilitates weapons-related transactions for, and other support to, arms manufacturer and exporter Green Pine Associated Corporation (Green Pine).  Bank of East Land has actively worked with Green Pine to transfer funds in a manner that circumvents sanctions. In 2007 and 2008, Bank of East Land facilitated transactions involving Green Pine and Iranian financial institutions, including Bank Melli and Bank Sepah. The Security Council designated Bank Sepah in resolution 1747 (2007) for providing support to Iran’s ballistic missile program. Green Pine was designated by the Committee in April 2012.",
+     "LIST_TYPE": {
+      "VALUE": "UN List"
+     },
+     "ENTITY_ALIAS": [
+      {
+       "QUALITY": "a.k.a.",
+       "ALIAS_NAME": "Dongbang BANK"
+      },
+      {
+       "QUALITY": "a.k.a.",
+       "ALIAS_NAME": "TONGBANG U’NHAENG"
+      },
+      {
+       "QUALITY": "a.k.a.",
+       "ALIAS_NAME": "TONGBANG BANK"
+      }
+     ],
+     "ENTITY_ADDRESS": {
+      "STREET": "PO Box 32, BEL Building, Jonseung-Dung, Moranbong District",
+      "CITY": "Pyongyang",
+      "COUNTRY": "DPRK"
+     },
+     "SORT_KEY": "BANK OF EAST LAND",
+     "SORT_KEY_LAST_MOD": "2014-06-11"
+    },
+    {
+     "$": {
+      "xsi:noNamespaceSchemaLocation": "http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd"
+     },
+     "DATAID": "690765",
+     "VERSIONNUM": "1",
+     "FIRST_NAME": "KOREA KUMRYONG TRADING CORPORATION",
+     "UN_LIST_TYPE": "DPRK",
+     "REFERENCE_NUMBER": "KPe.014",
+     "LISTED_ON": "2013-01-22",
+     "COMMENTS1": "Used as an alias by the Korea Mining Development Trading Corporation (KOMID) to carry out procurement activities. KOMID was designated by the Committee in April 2009 and is the DPRK’s primary arms dealer and main exporter of goods and equipment related to ballistic missiles and conventional weapons.",
+     "LIST_TYPE": {
+      "VALUE": "UN List"
+     },
+     "SORT_KEY": "KOREA KUMRYONG TRADING CORPORATION",
+     "SORT_KEY_LAST_MOD": "2014-06-11"
+    },
+    {
+     "$": {
+      "xsi:noNamespaceSchemaLocation": "http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd"
+     },
+     "DATAID": "690766",
+     "VERSIONNUM": "1",
+     "FIRST_NAME": "TOSONG TECHNOLOGY TRADING CORPORATION",
+     "UN_LIST_TYPE": "DPRK",
+     "REFERENCE_NUMBER": "KPe.015",
+     "LISTED_ON": "2013-01-22",
+     "COMMENTS1": "The Korea Mining Development Corporation (KOMID) is the parent company of Tosong Technology Trading Corporation. KOMID was designated by the Committee in April 2009 and is the DPRK’s primary arms dealer and main exporter of goods and equipment related to ballistic missiles and conventional weapons.",
+     "LIST_TYPE": {
+      "VALUE": "UN List"
+     },
+     "ENTITY_ADDRESS": {
+      "CITY": "Pyongyang",
+      "COUNTRY": "DPRK"
+     },
+     "SORT_KEY": "TOSONG TECHNOLOGY TRADING CORPORATION",
+     "SORT_KEY_LAST_MOD": "2014-06-11"
+    },
+    {
+     "$": {
+      "xsi:noNamespaceSchemaLocation": "http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd"
+     },
+     "DATAID": "690767",
+     "VERSIONNUM": "1",
+     "FIRST_NAME": "KOREA RYONHA MACHINERY JOINT VENTURE CORPORATION",
+     "UN_LIST_TYPE": "DPRK",
+     "REFERENCE_NUMBER": "KPe.016",
+     "LISTED_ON": "2013-01-22",
+     "COMMENTS1": "Korea Ryonbong General Corporation is the parent company of Korea Ryonha Machinery Joint Venture Corporation. Korea Ryonbong General Corporation was designated by the Committee in April 2009 and is a defense conglomerate specializing in acquisition for DPRK defense industries and support to that country's military-related sales. Email addresses: ryonha@silibank.com; sjc-117@hotmail.com; and millim@silibank.com. Telephone numbers: 850-2-18111; 850-2-18111-8642; and 850 2 18111-3818642. Facsimile number: 850-2-381-4410",
+     "LIST_TYPE": {
+      "VALUE": "UN List"
+     },
+     "LAST_DAY_UPDATED": {
+      "VALUE": [
+       "2014-01-07",
+       "2014-04-02"
+      ]
+     },
+     "ENTITY_ALIAS": [
+      {
+       "QUALITY": "a.k.a.",
+       "ALIAS_NAME": "Chosun Yunha Machinery Joint Operation Company"
+      },
+      {
+       "QUALITY": "a.k.a.",
+       "ALIAS_NAME": "Korea Ryenha Machinery J/V Corporation"
+      },
+      {
+       "QUALITY": "a.k.a.",
+       "ALIAS_NAME": "Ryonha Machinery Joint Venture Corporation"
+      },
+      {
+       "QUALITY": "a.k.a.",
+       "ALIAS_NAME": "Ryonha Machinery Corporation"
+      },
+      {
+       "QUALITY": "a.k.a.",
+       "ALIAS_NAME": "Ryonha Machinery"
+      },
+      {
+       "QUALITY": "a.k.a.",
+       "ALIAS_NAME": "Ryonha Machine Tool"
+      },
+      {
+       "QUALITY": "a.k.a.",
+       "ALIAS_NAME": "Ryonha Machine Tool Corporation"
+      },
+      {
+       "QUALITY": "a.k.a.",
+       "ALIAS_NAME": "Ryonha Machinery Corp."
+      },
+      {
+       "QUALITY": "a.k.a.",
+       "ALIAS_NAME": "Ryonhwa Machinery Joint Venture Corporation"
+      },
+      {
+       "QUALITY": "a.k.a.",
+       "ALIAS_NAME": "Ryonhwa Machinery JV"
+      },
+      {
+       "QUALITY": "a.k.a.",
+       "ALIAS_NAME": "Huichon Ryonha Machinery General Plant"
+      },
+      {
+       "QUALITY": "a.k.a.",
+       "ALIAS_NAME": "Unsan"
+      },
+      {
+       "QUALITY": "a.k.a.",
+       "ALIAS_NAME": "Unsan Solid Tools"
+      },
+      {
+       "QUALITY": "a.k.a.",
+       "ALIAS_NAME": "Millim Technology Company"
+      },
+      {
+       "QUALITY": "a.k.a.",
+       "ALIAS_NAME": "朝鲜联合机械贸易会社"
+      }
+     ],
+     "ENTITY_ADDRESS": [
+      {
+       "STREET": "Tongan-dong, Central District",
+       "CITY": "Pyongyang",
+       "COUNTRY": "DPRK"
+      },
+      {
+       "STREET": "Mangungdae-gu",
+       "CITY": "Pyongyang",
+       "COUNTRY": "DPRK"
+      },
+      {
+       "STREET": "Mangyongdae District",
+       "CITY": "Pyongyang",
+       "COUNTRY": "DPRK"
+      }
+     ],
+     "SORT_KEY": "KOREA RYONHA MACHINERY JOINT VENTURE CORPORATION",
+     "SORT_KEY_LAST_MOD": "2014-06-11"
+    },
+    {
+     "$": {
+      "xsi:noNamespaceSchemaLocation": "http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd"
+     },
+     "DATAID": "690768",
+     "VERSIONNUM": "1",
+     "FIRST_NAME": "LEADER (HONG KONG) INTERNATIONAL",
+     "UN_LIST_TYPE": "DPRK",
+     "REFERENCE_NUMBER": "KPe.017",
+     "LISTED_ON": "2013-01-22",
+     "COMMENTS1": "Facilitates shipments on behalf of the Korea Mining Development Trading Corporation (KOMID). KOMID was designated by the Committee in April 2009 and is the DPRK’s primary arms dealer and main exporter of goods and equipment related to ballistic missiles and conventional weapons. Hong Kong company registration number 1177053.",
+     "LIST_TYPE": {
+      "VALUE": "UN List"
+     },
+     "LAST_DAY_UPDATED": {
+      "VALUE": "2014-06-20"
+     },
+     "ENTITY_ALIAS": [
+      {
+       "QUALITY": "a.k.a.",
+       "ALIAS_NAME": "Leader International Trading Limited"
+      },
+      {
+       "QUALITY": "a.k.a.",
+       "ALIAS_NAME": "Leader (Hong Kong) International Trading Limited"
+      }
+     ],
+     "ENTITY_ADDRESS": {
+      "STREET": "LM-873, RM B, 14/F, Wah Hen Commercial Centre, 383 Hennessy Road, Wanchai",
+      "CITY": "Hong Kong",
+      "COUNTRY": "CHINA"
+     },
+     "SORT_KEY": "LEADER (HONG KONG) INTERNATIONAL",
+     "SORT_KEY_LAST_MOD": "2014-08-14"
+    },
+    {
+     "$": {
+      "xsi:noNamespaceSchemaLocation": "http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd"
+     },
+     "DATAID": "690769",
+     "VERSIONNUM": "1",
+     "FIRST_NAME": "SECOND ACADEMY OF NATURAL SCIENCES",
+     "UN_LIST_TYPE": "DPRK",
+     "REFERENCE_NUMBER": "KPe.018",
+     "LISTED_ON": "2013-03-07",
+     "COMMENTS1": "The Second Academy of Natural Sciences is a national-level organization responsible for research and development of the DPRK’s advanced weapons systems, including missiles and probably nuclear weapons.  The Second Academy of Natural Sciences uses a number of subordinate organizations to obtain technology, equipment, and information from overseas, including Tangun Trading Corporation, for use in the DPRK’s missile and probably nuclear weapons programs.  Tangun Trading Corporation was designated by the Committee in July 2009 and is primarily responsible for the procurement of commodities and technologies to support DPRK’s defense research and development programs, including, but not limited to, weapons of mass destruction and delivery system programs and procurement, including materials that are controlled or prohibited under relevant multilateral control regimes.",
+     "LIST_TYPE": {
+      "VALUE": "UN List"
+     },
+     "ENTITY_ALIAS": [
+      {
+       "QUALITY": "a.k.a.",
+       "ALIAS_NAME": "2ND ACADEMY OF NATURAL SCIENCES"
+      },
+      {
+       "QUALITY": "a.k.a.",
+       "ALIAS_NAME": "CHE 2 CHAYON KWAHAKWON"
+      },
+      {
+       "QUALITY": "a.k.a.",
+       "ALIAS_NAME": "ACADEMY OF NATURAL SCIENCES"
+      },
+      {
+       "QUALITY": "a.k.a.",
+       "ALIAS_NAME": "CHAYON KWAHAK-WON"
+      },
+      {
+       "QUALITY": "a.k.a.",
+       "ALIAS_NAME": "NATIONAL DEFENSE ACADEMY"
+      },
+      {
+       "QUALITY": "a.k.a.",
+       "ALIAS_NAME": "KUKPANG KWAHAK-WON"
+      },
+      {
+       "QUALITY": "a.k.a.",
+       "ALIAS_NAME": "SECOND ACADEMY OF NATURAL SCIENCES RESEARCH INSTITUTE"
+      },
+      {
+       "QUALITY": "a.k.a.",
+       "ALIAS_NAME": "SANSRI"
+      }
+     ],
+     "ENTITY_ADDRESS": {
+      "CITY": "Pyongyang",
+      "COUNTRY": "DPRK"
+     },
+     "SORT_KEY": "SECOND ACADEMY OF NATURAL SCIENCES",
+     "SORT_KEY_LAST_MOD": "2014-06-11"
+    },
+    {
+     "$": {
+      "xsi:noNamespaceSchemaLocation": "http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd"
+     },
+     "DATAID": "690770",
+     "VERSIONNUM": "1",
+     "FIRST_NAME": "KOREA COMPLEX EQUIPMENT IMPORT CORPORATION",
+     "UN_LIST_TYPE": "DPRK",
+     "REFERENCE_NUMBER": "KPe.019",
+     "LISTED_ON": "2013-03-07",
+     "COMMENTS1": "Korea Ryonbong General Corporation is the parent company of Korea Complex Equipment Import Corporation.  Korea Ryonbong General Corporation was designated by the Committee in April 2009 and is a defense conglomerate specializing in acquisition for DPRK defense industries and support to that country’s military-related sales.",
+     "LIST_TYPE": {
+      "VALUE": "UN List"
+     },
+     "ENTITY_ADDRESS": {
+      "STREET": "Rakwon-dong, Pothonggang District",
+      "CITY": "Pyongyang",
+      "COUNTRY": "DPRK"
+     },
+     "SORT_KEY": "KOREA COMPLEX EQUIPMENT IMPORT CORPORATION",
+     "SORT_KEY_LAST_MOD": "2014-06-11"
+    },
+    {
+     "$": {
+      "xsi:noNamespaceSchemaLocation": "http://www.un.org/sc/committees/resources/xsd/sc-sanctions.xsd"
+     },
+     "DATAID": "6908046",
+     "VERSIONNUM": "1",
+     "FIRST_NAME": "OCEAN MARITIME MANAGEMENT COMPANY, LIMITED (OMM)",
+     "UN_LIST_TYPE": "DPRK",
+     "REFERENCE_NUMBER": "KPe.020",
+     "LISTED_ON": "2014-07-28",
+     "COMMENTS1": "Ocean Maritime Management Company, Limited is the operator/manager of the vessel Chong Chon Gang. It played a key role in arranging the shipment of concealed cargo of arms and related materiel from Cuba to the DPRK in July 2013. As such, Ocean Maritime Management Company, Limited contributed to activities prohibited by the resolutions, namely the arms embargo imposed by resolution 1718 (2006), as modified by resolution 1874 (2009), and contributed to the evasion of the measures imposed by these resolutions. International Maritime Organization (IMO) Number: 1790183.",
+     "LIST_TYPE": {
+      "VALUE": "UN List"
+     },
+     "ENTITY_ALIAS": "",
+     "ENTITY_ADDRESS": [
+      {
+       "STREET": "Donghung Dong, Central District, PO Box 120",
+       "CITY": "Pyongyang",
+       "COUNTRY": "DPRK"
+      },
+      {
+       "STREET": "Dongheung-dong Changgwang Street, Chung-Ku, PO Box 125",
+       "CITY": "Pyongyang",
+       "COUNTRY": "DPRK"
+      }
+     ],
+     "SORT_KEY": "OCEAN MARITIME MANAGEMENT COMPANY, LIMITED (OMM)",
+     "SORT_KEY_LAST_MOD": "2014-08-01"
+    }
+   ]
+  }
+ }
+}
