@@ -1,4 +1,4 @@
-h1. U.N. Al-Qaida Sanctions Feed Network Visualization
+h1. United Nations Sanctions Committees Network Visualization
 
 Interim deployment: "https://al-qaida-viz.herokuapp.com/":https://al-qaida-viz.herokuapp.com/
 
