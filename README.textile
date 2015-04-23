@@ -3,6 +3,7 @@ h1. U.N. Al-Qaida Sanctions Feed Network Visualization
 U.N. website: "http://www.un.org/sc/committees/1267/":http://www.un.org/sc/committees/1267/
 U.N. Sanctions List in XML format: "http://www.un.org/sc/committees/consolidated.xml":http://www.un.org/sc/committees/consolidated.xml
 
+Interim deployment: "https://al-qaida-viz.herokuapp.com/":https://al-qaida-viz.herokuapp.com/
 Development url: "http://localhost:63342/aq-list-viz/index.html":http://localhost:63342/aq-list-viz/index.html
 
 h2.  Preparing the data
