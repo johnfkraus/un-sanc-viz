@@ -7,6 +7,8 @@ U.N. Sanctions List in XML format: "http://www.un.org/sc/committees/consolidated
 
 Development url: "http://localhost:63342/aq-list-viz/index.html":http://localhost:63342/aq-list-viz/index.html
 
+Note: This application is in the development stage and exists in an incomplete state.  For the time being, do not rely this application as the sole basis for any extreme, irrevocable field operations in the defense of freedom.
+
 h2.  Preparing the data
 
 Most U.N. sanctions committees publish a list of sanctioned parties to the Internet in an XML file.  Download these files.
