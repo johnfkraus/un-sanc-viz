@@ -9,6 +9,8 @@ Development url: "http://localhost:63342/aq-list-viz/index.html":http://localhos
 
 Note: This application is in the development stage and exists in an incomplete state.  For the time being, do not rely this application as the sole basis for any extreme, irrevocable field operations in the defense of freedom.
 
+See this related project: "https://github.com/johnfkraus/aq-list-viz":https://github.com/johnfkraus/aq-list-viz
+
 h2.  Preparing the data
 
 Most U.N. sanctions committees publish a list of sanctioned parties to the Internet in an XML file.  First we download these files.
