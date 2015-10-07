@@ -50,4 +50,4 @@ h2.  To Do
 Import the narrative pages and collect additional nodes.  Nodes represent individuals or entities.
 Add click to documentation for each node.
 Find a way to visualize a gynormous set of links between nodes.
-
+Figure out how to do SPARQL queries on related data sets.  SPARQL (pronounced "sparkle", a recursive acronym for SPARQL Protocol and RDF Query Language) is an RDF query language, that is, a semantic query language for databases, able to retrieve and manipulate data stored in Resource Description Framework (RDF) format.
