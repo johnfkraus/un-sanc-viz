@@ -49,7 +49,7 @@ h2.  To Do
 
 # Import the narrative pages and collect additional nodes.  Nodes represent individuals or entities.
 # Add click to documentation for each node, including images of bad guys.
-# Add representations of financial links to terror involving, say, "Union Bank of Switzerland, Citigroup, and HSBC":http://www.bloomberg.com/apps/news?pid=newsarchive&sid=aLhArWSlGNQQ&refer=europe.  Include pictures of individual dirtbag bankers.
+# Add representations of financial links to terror involving, say, "Union Bank of Switzerland, Citigroup, and HSBC":http://www.bloomberg.com/apps/news?pid=newsarchive&sid=aLhArWSlGNQQ&refer=europe.  Include pictures of individual "dirtbag bankers.":http://graphics8.nytimes.com/images/2012/12/14/business/UBS/UBS-articleInline.jpg
 # Find a way to visualize a gynormous set of links between nodes.
 # Figure out how to do SPARQL queries on related data sets.  SPARQL (pronounced "sparkle", a recursive acronym for SPARQL Protocol and RDF Query Language) is an RDF query language, that is, a semantic query language for databases, able to retrieve and manipulate data stored in Resource Description Framework (RDF) format.
 
@@ -57,4 +57,4 @@ h2.  To Do
 
 
 
-"I've forgotten what the heck this textile file format is all about":http://redcloth.org/hobix.com/textile/
+"I've forgotten what the heck this textile file format is all about.":http://redcloth.org/hobix.com/textile/
