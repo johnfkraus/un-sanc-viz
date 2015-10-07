@@ -52,3 +52,9 @@ Add click to documentation for each node, including images of bad guys.
 Add representations of financial links to terror involving, say, "Union Bank of Switzerland, Citigroup, and HSBC":http://www.bloomberg.com/apps/news?pid=newsarchive&sid=aLhArWSlGNQQ&refer=europe.
 Find a way to visualize a gynormous set of links between nodes.
 Figure out how to do SPARQL queries on related data sets.  SPARQL (pronounced "sparkle", a recursive acronym for SPARQL Protocol and RDF Query Language) is an RDF query language, that is, a semantic query language for databases, able to retrieve and manipulate data stored in Resource Description Framework (RDF) format.
+
+
+
+
+
+"I've forgotten what the heck this textile file format is all about""http://redcloth.org/hobix.com/textile/
