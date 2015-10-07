@@ -1,6 +1,6 @@
 h1. United Nations Sanctions Committees Network Visualization
 
-Interim deployment: "https://al-qaida-viz.herokuapp.com/":https://al-qaida-viz.herokuapp.com/
+Interim deployment (i.e., demo): "https://al-qaida-viz.herokuapp.com/":https://al-qaida-viz.herokuapp.com/
 
 U.N. website: "http://www.un.org/sc/committees/1267/":http://www.un.org/sc/committees/1267/
 U.N. Sanctions List in XML format: "http://www.un.org/sc/committees/consolidated.xml":http://www.un.org/sc/committees/consolidated.xml
@@ -11,11 +11,11 @@ Note: This application is in the development stage and exists in an incomplete s
 
 h2.  Preparing the data
 
-Most U.N. sanctions committees publish a list of sanctioned parties to the Internet in an XML file.  Download these files.
+Most U.N. sanctions committees publish a list of sanctioned parties to the Internet in an XML file.  First we download these files.
 
-Convert each XML file to JSON format.
+Then we convert each XML file to JSON format.
 
-TAC alternative step: Using the AQList-to-d3.xsl stylesheet, transform the AQList.xml to the AQ-d3.xml format.  Convert the AQ-d3.xml file to JSON with the following filename: al-qaeda.json, and put the new JSON file in the data directory.
+Alternative step for the TAC application: Using the AQList-to-d3.xsl stylesheet, transform the AQList.xml to the AQ-d3.xml format.  Convert the AQ-d3.xml file to JSON with the following filename: al-qaeda.json, and put the new JSON file in the data directory.
 
 Remove the root node from the al-qaida.json file.
 Make sure the al-qaida.json data file start off like this:
@@ -45,23 +45,9 @@ http://localhost:63342/aqlist-visualization/index.html
 
 Running in xampp/tomcat/webapps.
 
-Interesting irrelevant facts:
-
-You can start up a local webserver by using python's simple server:
-
-<pre>
-python -m SimpleHTTTPServer -p 3000
-</pre>
-
-or @thin@ in ruby
-
-<pre>
-thin start
-# might have to run 'bundle install' first
-</pre>
-
-
 h2.  To Do
 
-Import the narrative pages and collect additional nodes.
+Import the narrative pages and collect additional nodes.  Nodes represent individuals or entities.
 Add click to documentation for each node.
+Find a way to visualize a gynormous set of links between nodes.
+
