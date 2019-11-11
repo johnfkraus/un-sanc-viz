@@ -1,4 +1,4 @@
-![alt text](https://github.com/johnfkraus/un-sanc-viz/blob/master/aq-list-viz-screenshot.png "Al-Qaida U.N. Sanctions List Visualization")   
+!aq-list-viz-screenshot.png!
 
 h1. United Nations Sanctions Committees Network Visualization
 
