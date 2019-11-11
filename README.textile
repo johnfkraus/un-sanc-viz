@@ -1,3 +1,5 @@
+![alt text](https://github.com/johnfkraus/un-sanc-viz/blob/master/aq-list-viz-screenshot.png "Al-Qaida U.N. Sanctions List Visualization")   
+
 h1. United Nations Sanctions Committees Network Visualization
 
 Interim deployment (i.e., demo): "https://al-qaida-viz.herokuapp.com/":https://al-qaida-viz.herokuapp.com/
