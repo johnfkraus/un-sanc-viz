@@ -62,3 +62,12 @@ h2.  To Do
 
 
 "I've forgotten what the heck this textile file format is all about.":http://redcloth.org/hobix.com/textile/
+
+
+
+## To run this app:
+
+node index.js
+
+Browse to localhost:3000
+

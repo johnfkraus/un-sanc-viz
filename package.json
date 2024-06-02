@@ -21,13 +21,11 @@
     "fs-extra": "^0.12.0",
     "gulp": "^3.8.10",
     "gulp-markdown": "^1.0.0",
-    "httpsync": "^0.0.8",
+    "urllib-sync": "",
     "jquery": "^3.4.1",
     "json-patch": "^0.5.0",
     "markdown": "^0.5.0",
     "markdown-js": "^0.0.3",
-    "mongodb": "~2.0",
-    "mongojs": "*",
     "object-inspect": "^1.0.0",
     "request-enhanced": "^0.1.1",
     "log-rotate": "*",
@@ -38,8 +36,8 @@
     "xml2json": "^0.5.1"
   },
   "engines": {
-    "npm": "2.4.x",
-    "node": "0.10.x"
+    "npm": "9.6.x",
+    "node": "18.13.x"
   },
   "devDependencies": {
     "coffee-script": "^1.8.0",
