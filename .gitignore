@@ -39,3 +39,4 @@ terminal*.txt
 *.shtml.html
 ssh.secret.txt
 herokuAuthToken.txt
+**/.DS_Store
